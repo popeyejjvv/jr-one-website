@@ -1,0 +1,45 @@
+/* ── JR One Aluminum — Global Resets ── */
+/* Components use inline styles, so this is minimal */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-source-sans), "Source Sans 3", sans-serif;
+  color: #2D2D2D;
+  background: #0B1628;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+::placeholder {
+  color: #9CA3AF;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #C8952E !important;
+}
