@@ -131,7 +131,7 @@ export default function SeamlessGuttersPage() {
       {/* ══ NAV ══ */}
       <nav style={{ position: "sticky", top: 0, zIndex: 1000, padding: "12px 24px", background: "rgba(11,22,40,0.97)", backdropFilter: "blur(12px)", borderBottom: `1px solid ${C.navyLight}` }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <a href="/" style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 800, color: C.white, textDecoration: "none" }}>JR <span style={{ color: C.gold }}>ONE</span></a>
+          <a href="/" style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 800, color: C.white, textDecoration: "none" }}>JR <span style={{ color: C.gold }}>ONE</span> <span style={{color:C.white,fontSize:"16px"}}>★</span></a>
           <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>(844) 444-3114</a>
         </div>
       </nav>
@@ -176,8 +176,8 @@ export default function SeamlessGuttersPage() {
         <div style={{ flex: "1 1 400px", minWidth: "300px", maxWidth: "500px", aspectRatio: "4/3", background: `linear-gradient(135deg,${C.navyFade},${C.navy})`, borderRadius: "16px", border: `1px solid ${C.navyLight}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{ textAlign: "center", color: C.muted }}>
             <div style={{ fontSize: "48px", marginBottom: "12px" }}>📸</div>
-            <p style={{ fontFamily: f.h, fontSize: "13px", letterSpacing: "1px" }}>HERO PROJECT PHOTO</p>
-            <p style={{ fontFamily: f.b, fontSize: "12px", marginTop: "4px" }}>Best seamless gutter install shot from CompanyCam</p>
+            <p style={{ fontFamily: f.h, fontSize: "13px", letterSpacing: "1px" }}>PROJECT PHOTO COMING SOON</p>
+            
           </div>
         </div>
       </section>
@@ -374,7 +374,7 @@ export default function SeamlessGuttersPage() {
       {/* ══ FOOTER ══ */}
       <footer style={{ background: C.navyFade, borderTop: `1px solid ${C.navyLight}`, padding: "32px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
-          <div style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 800, color: C.white }}>JR <span style={{ color: C.gold }}>ONE</span> <span style={{ fontWeight: 400, fontSize: "13px", color: C.muted, marginLeft: "8px" }}>The Superior Soffit & Gutter Experts</span></div>
+          <div style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 800, color: C.white }}>JR <span style={{ color: C.gold }}>ONE</span> <span style={{color:C.white,fontSize:"16px"}}>★</span> <span style={{ fontWeight: 400, fontSize: "13px", color: C.muted, marginLeft: "8px" }}>The Superior Soffit & Gutter Experts</span></div>
           <p style={{ fontFamily: f.b, fontSize: "12px", color: C.muted }}>© 2026 JR One Aluminum LLC. All rights reserved.</p>
         </div>
       </footer>

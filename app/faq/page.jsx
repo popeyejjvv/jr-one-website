@@ -46,7 +46,7 @@ const CATEGORIES = [
     {q:"What warranty do you offer?",a:"We provide a 3-year workmanship warranty from the date of substantial completion. This covers defects in our labor that materially affect system performance under normal residential use. If our work fails because of how we installed it, we come back and fix it at no cost."},
     {q:"Do you offer financing?",a:"Yes. We partner with trusted third-party financing providers so you can protect your home now and pay over time. Quick approval, flexible terms, and no impact on your project pricing."},
     {q:"Do I need good credit to qualify for financing?",a:"Our financing partners work with a range of credit profiles. The initial check is typically a soft pull that doesn't affect your credit score."},
-    {q:"How do I make a warranty claim?",a:"Call (844) 444-3114 or email jrone.business@gmail.com. We don't make warranty claims difficult — we'd rather fix a problem fast than argue about it."},
+    {q:"How do I make a warranty claim?",a:"Call (844) 444-3114 or email info@jronegutters.com. We don't make warranty claims difficult — we'd rather fix a problem fast than argue about it."},
   ]},
   { name:"Maintenance", icon:"🧹", faqs:[
     {q:"How often should I have my gutters cleaned?",a:"In Tampa Bay, at least twice per year — once before hurricane season (May/June) and once after fall leaf drop (November/December). Homes with heavy tree coverage may need quarterly cleaning."},
@@ -110,7 +110,7 @@ export default function FAQPage() {
         <p style={{fontFamily:f.b,fontSize:"16px",color:C.offWhite,marginBottom:"24px",maxWidth:"500px",margin:"0 auto 24px"}}>We'd rather answer your question directly than have you guess. Call or text us — we respond fast.</p>
         <div style={{display:"flex",gap:"16px",justifyContent:"center",flexWrap:"wrap"}}>
           <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 (844) 444-3114</a>
-          <a href="mailto:jrone.business@gmail.com" style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>EMAIL US</a>
+          <a href="mailto:info@jronegutters.com" style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>EMAIL US</a>
         </div>
       </section>
 

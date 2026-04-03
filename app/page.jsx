@@ -36,6 +36,12 @@ const C = {
   success: "#2D8B4E",
   successDim: "rgba(45,139,78,0.15)",
   alert: "#B11A21",
+  trustBlue: "#3B82F6",
+  trustBlueDim: "rgba(59,130,246,0.15)",
+  trustGold: "#D4A843",
+  trustGoldDim: "rgba(212,168,67,0.15)",
+  trustCoral: "#EF6351",
+  trustCoralDim: "rgba(239,99,81,0.15)",
 };
 
 const font = {
@@ -79,11 +85,11 @@ const T = {
     servicesTitle: "WHAT WE DO",
     servicesSub: "Tampa Bay's most trusted aluminum specialists",
     serviceCards: [
-      { icon: "💧", title: "Seamless Gutters", desc: "Custom-fabricated on-site for a perfect fit. 5\", 6\", and 7\" systems in your choice of color.", link: "/seamless-aluminum-gutters" },
+      { icon: "💧", title: "Seamless Gutters", desc: "Custom-fabricated on-site for a perfect fit. 6\" and 7\" systems in your choice of color.", link: "/seamless-aluminum-gutters" },
       { icon: "🛡️", title: "Gutter Guards", desc: "Stop climbing ladders. Our guard systems keep debris out and water flowing — guaranteed.", link: "/gutter-guards" },
       { icon: "🏗️", title: "Soffit & Fascia", desc: "Aluminum and vinyl installations that protect your roof edge and improve your home's curb appeal.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Gutter Repair", desc: "Sagging, leaking, or damaged? We fix it right so you don't have to call again.", link: "/gutter-repair" },
-      { icon: "📐", title: "Siding", desc: "Vinyl and aluminum siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
+      { icon: "📐", title: "Siding", desc: "Vinyl siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
       { icon: "🧹", title: "Maintenance", desc: "Gutter cleaning, pressure washing, window cleaning, and seasonal maintenance programs.", link: "/maintenance" },
     ],
     whyTitle: "WHY HOMEOWNERS CHOOSE JR ONE",
@@ -129,7 +135,7 @@ const T = {
     footerCompany: "Company",
     footerContact: "Contact",
     phone: "(844) 444-3114",
-    email: "jrone.business@gmail.com",
+    email: "info@jronegutters.com",
     navItems: ["Services", "The Gold Standard", "Reviews", "Estimator", "FAQ", "Contact"],
     hablamos: "¡Hablamos Español!",
   },
@@ -167,11 +173,11 @@ const T = {
     servicesTitle: "LO QUE HACEMOS",
     servicesSub: "Los especialistas en aluminio más confiables de Tampa Bay",
     serviceCards: [
-      { icon: "💧", title: "Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto. Sistemas de 5\", 6\" y 7\" en el color de su elección.", link: "/seamless-aluminum-gutters" },
+      { icon: "💧", title: "Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto. Sistemas de 6\" y 7\" en el color de su elección.", link: "/seamless-aluminum-gutters" },
       { icon: "🛡️", title: "Protectores de Canaletas", desc: "Deje de subir escaleras. Nuestros protectores mantienen los escombros afuera y el agua fluyendo.", link: "/gutter-guards" },
       { icon: "🏗️", title: "Sofito y Fascia", desc: "Instalaciones de aluminio y vinilo que protegen el borde de su techo y mejoran la apariencia de su hogar.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Reparación de Canaletas", desc: "¿Hundidas, con fugas o dañadas? Lo arreglamos bien para que no tenga que llamar de nuevo.", link: "/gutter-repair" },
-      { icon: "📐", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo y aluminio. Protección resistente al clima.", link: "/siding" },
+      { icon: "📐", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo. Protección resistente al clima para hogares de Florida.", link: "/siding" },
       { icon: "🧹", title: "Mantenimiento", desc: "Limpieza de canaletas, lavado a presión, limpieza de ventanas y programas de mantenimiento.", link: "/maintenance" },
     ],
     whyTitle: "POR QUÉ LOS PROPIETARIOS ELIGEN JR ONE",
@@ -217,7 +223,7 @@ const T = {
     footerCompany: "Empresa",
     footerContact: "Contacto",
     phone: "(844) 444-3114",
-    email: "jrone.business@gmail.com",
+    email: "info@jronegutters.com",
     navItems: ["Servicios", "Estándar de Oro", "Reseñas", "Estimador", "Preguntas", "Contacto"],
     hablamos: "We Speak English!",
   },
@@ -331,7 +337,7 @@ export default function JROneHomepage() {
       {/* ══ NAVIGATION ══ */}
       <nav style={s.nav}>
         <div style={s.navInner}>
-          <div style={s.logo}>JR <span style={s.logoGold}>ONE</span></div>
+          <div style={s.logo}>JR <span style={s.logoGold}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span></div>
           <div style={{ ...s.navLinks, "@media(maxWidth:768px)": { display: "none" } }}>
             {t.navItems.map((item, i) => (
               <span key={i} style={s.navLink}>{item}</span>
@@ -345,7 +351,7 @@ export default function JROneHomepage() {
       </nav>
 
       {/* ══ HERO ══ */}
-      <section style={s.hero}>
+      <section style={s.hero} className="hero-stars">
         <div style={s.heroOverlay} />
         <div style={s.heroInner}>
           <div style={s.heroLeft}>
@@ -357,9 +363,18 @@ export default function JROneHomepage() {
             </h1>
             <p style={s.heroP}>{t.heroSub}</p>
             <div style={s.trustRow}>
-              <div style={s.trustBadge}><span style={s.trustIcon}>⏱</span><span style={s.trustText}>{t.trustYears}</span></div>
-              <div style={s.trustBadge}><span style={s.trustIcon}>⭐</span><span style={s.trustText}>{t.trustRating}</span></div>
-              <div style={s.trustBadge}><span style={s.trustIcon}>💬</span><span style={s.trustText}>{t.trustReviews}</span></div>
+              <div style={{ ...s.trustBadge, background: C.trustBlueDim, borderColor: `${C.trustBlue}40` }}>
+                <span style={s.trustIcon}>⏱</span>
+                <span style={{ ...s.trustText, color: "#60A5FA" }}>{t.trustYears}</span>
+              </div>
+              <div style={{ ...s.trustBadge, background: C.trustGoldDim, borderColor: `${C.trustGold}40` }}>
+                <span style={s.trustIcon}>⭐</span>
+                <span style={{ ...s.trustText, color: C.trustGold }}>{t.trustRating}</span>
+              </div>
+              <div style={{ ...s.trustBadge, background: C.trustCoralDim, borderColor: `${C.trustCoral}40` }}>
+                <span style={s.trustIcon}>💬</span>
+                <span style={{ ...s.trustText, color: "#F87171" }}>{t.trustReviews}</span>
+              </div>
               <div style={{ ...s.trustBadge, background: C.goldPale, borderColor: `${C.gold}40` }}>
                 <span style={s.trustIcon}>👷</span>
                 <span style={{ ...s.trustText, color: C.goldLight }}>{t.trustCrew}</span>
@@ -611,14 +626,14 @@ export default function JROneHomepage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px" }}>
           <div>
             <div style={{ fontFamily: font.heading, fontSize: "24px", fontWeight: 800, color: C.white, marginBottom: "4px" }}>
-              JR <span style={{ color: C.gold }}>ONE</span>
+              JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "18px" }}>★</span>
             </div>
             <p style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.gold, fontStyle: "italic", marginBottom: "12px" }}>{t.footerTagline}</p>
             <p style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, lineHeight: 1.55 }}>{t.footerAbout}</p>
           </div>
           <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerServices}</h4>
-            {(lang === "en" ? ["Seamless Gutters", "Gutter Guards", "Soffit & Fascia", "Gutter Repair", "Siding", "Maintenance"] : ["Canaletas", "Protectores", "Sofito y Fascia", "Reparación", "Revestimiento", "Mantenimiento"]).map((item, i) => (
+            {(lang === "en" ? ["Seamless Gutters", "Gutter Guards", "Soffit & Fascia", "Gutter Repair", "Siding", "Specialty Gutters", "SAGIPER", "Maintenance"] : ["Canaletas", "Protectores", "Sofito y Fascia", "Reparación", "Revestimiento", "Canaletas Especiales", "SAGIPER", "Mantenimiento"]).map((item, i) => (
               <p key={i} style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", cursor: "pointer" }}>{item}</p>
             ))}
           </div>
@@ -668,6 +683,23 @@ export default function JROneHomepage() {
         input:focus, select:focus { border-color: ${C.gold} !important; }
         @media (max-width: 768px) {
           nav div:last-child { display: none !important; }
+        }
+        .hero-stars::before {
+          content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 14px;
+          letter-spacing: 28px;
+          line-height: 42px;
+          color: rgba(255,255,255,0.03);
+          pointer-events: none;
+          z-index: 0;
+          overflow: hidden;
+          word-break: break-all;
+          padding: 20px;
         }
       `}</style>
     </div>

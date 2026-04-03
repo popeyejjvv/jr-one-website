@@ -30,7 +30,7 @@ export async function POST(request) {
 
       await transporter.sendMail({
         from: `"JR One Website" <${process.env.GMAIL_USER}>`,
-        to: "jrone.business@gmail.com",
+        to: "info@jronegutters.com",
         subject: `New Web Lead: ${name} — ${service || "General"} — ${zip || "N/A"}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px;">

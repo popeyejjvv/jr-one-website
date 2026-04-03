@@ -86,7 +86,7 @@ export default function ContactPage() {
           {/* Email */}
           <div style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px",marginBottom:"16px"}}>
             <div style={{fontFamily:f.h,fontSize:"11px",fontWeight:700,color:C.gold,letterSpacing:"2px",marginBottom:"8px"}}>EMAIL US</div>
-            <a href="mailto:jrone.business@gmail.com" style={{fontFamily:f.b,fontSize:"16px",color:C.white,textDecoration:"none"}}>jrone.business@gmail.com</a>
+            <a href="mailto:info@jronegutters.com" style={{fontFamily:f.b,fontSize:"16px",color:C.white,textDecoration:"none"}}>info@jronegutters.com</a>
             <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginTop:"8px"}}>We respond to emails within the same business day.</p>
           </div>
 

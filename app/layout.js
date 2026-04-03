@@ -8,7 +8,7 @@ const localBusinessSchema = {
   name: "JR One Aluminum LLC",
   url: "https://jronegutters.com",
   telephone: "(844) 444-3114",
-  email: "jrone.business@gmail.com",
+  email: "info@jronegutters.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Tampa",
