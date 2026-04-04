@@ -285,12 +285,12 @@ export default function JROneHomepage() {
   // ── Styles ────────────────────────────────────────────
   const s = {
     page: { background: C.bg, color: C.white, fontFamily: font.body, minHeight: "100vh", overflowX: "hidden", lineHeight: 1.65 },
-    nav: { position: "sticky", top: 0, zIndex: 1000, padding: scrolled ? "10px 24px" : "16px 24px", background: scrolled ? "rgba(11,22,40,0.97)" : "rgba(11,22,40,0.85)", backdropFilter: "blur(12px)", transition: "all 0.3s ease", borderBottom: scrolled ? `1px solid ${C.navyLight}` : "1px solid transparent" },
+    nav: { position: "sticky", top: 0, zIndex: 1000, padding: "10px 24px", background: "rgba(11,22,40,0.98)", backdropFilter: "blur(12px)", transition: "all 0.3s ease", borderBottom: `1px solid ${C.navyLight}` },
     navInner: { maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" },
-    logo: { fontFamily: font.heading, fontSize: "20px", fontWeight: 800, color: C.white, letterSpacing: "1px" },
+    logo: { fontFamily: font.heading, fontSize: "20px", fontWeight: 800, color: C.white },
     logoGold: { color: C.gold },
-    navLinks: { display: "flex", gap: "28px", alignItems: "center" },
-    navLink: { fontFamily: font.heading, fontSize: "13px", fontWeight: 500, color: C.muted, textDecoration: "none", letterSpacing: "0.5px", cursor: "pointer", transition: "color 0.2s" },
+    navLinks: { display: "flex", gap: "16px", alignItems: "center" },
+    navLink: { fontFamily: font.heading, fontSize: "11px", fontWeight: 600, color: C.muted, textDecoration: "none", letterSpacing: "0.5px", cursor: "pointer" },
     langBtn: { fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: C.gold, background: C.goldPale, border: `1px solid ${C.gold}`, borderRadius: "4px", padding: "4px 10px", cursor: "pointer", letterSpacing: "1px" },
 
     // Hero
