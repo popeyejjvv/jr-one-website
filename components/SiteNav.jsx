@@ -25,9 +25,11 @@ const SERVICE_LINKS = [
 ];
 
 const NAV_LINKS = [
+  { label: "The Gold Standard", href: "/#gold-standard" },
   { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Projects", href: "/projects" },
 ];
 
 const FEATURE_TABS = [

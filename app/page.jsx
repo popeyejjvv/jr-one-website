@@ -367,10 +367,11 @@ export default function JROneHomepage() {
               )}
             </div>
             {[
-              { label: t.navItems[1], href: "#gold-standard" },
-              { label: t.navItems[2], href: "#reviews" },
-              { label: t.navItems[4], href: "#faq" },
-              { label: t.navItems[5], href: "/contact" },
+              { label: lang === "en" ? "The Gold Standard" : "Estándar de Oro", href: "#gold-standard" },
+              { label: lang === "en" ? "About" : "Nosotros", href: "/about" },
+              { label: lang === "en" ? "Contact" : "Contacto", href: "/contact" },
+              { label: "FAQ", href: "#faq" },
+              { label: lang === "en" ? "Projects" : "Proyectos", href: "/projects" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{...s.navLink, textDecoration: "none"}}>{item.label}</a>
             ))}
@@ -394,14 +395,11 @@ export default function JROneHomepage() {
         {mobileMenu && (
           <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px" }}>
             {[
-              { label: t.navItems[0], href: "/seamless-aluminum-gutters" },
-              { label: lang === "en" ? "Gutter Guards" : "Protectores", href: "/gutter-guards" },
-              { label: lang === "en" ? "Soffit & Fascia" : "Sofito y Fascia", href: "/soffit-and-fascia" },
-              { label: lang === "en" ? "Repair" : "Reparación", href: "/gutter-repair" },
-              { label: lang === "en" ? "Siding" : "Revestimiento", href: "/siding" },
-              { label: lang === "en" ? "Specialty" : "Especiales", href: "/specialty-gutters" },
+              { label: lang === "en" ? "The Gold Standard" : "Estándar de Oro", href: "#gold-standard" },
               { label: lang === "en" ? "About" : "Nosotros", href: "/about" },
-              { label: t.navItems[5], href: "/contact" },
+              { label: lang === "en" ? "Contact" : "Contacto", href: "/contact" },
+              { label: "FAQ", href: "#faq" },
+              { label: lang === "en" ? "Projects" : "Proyectos", href: "/projects" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{item.label}</a>
             ))}
