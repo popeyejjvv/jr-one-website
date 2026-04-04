@@ -1,9 +1,4 @@
-"use client";
-
 import { useState, useEffect } from "react";
-import SiteNav from "../../components/SiteNav";
-import SiteFooter from "../../components/SiteFooter";
-import MobileCTA from "../../components/MobileCTA";
 
 const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
 const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D",success:"#2D8B4E",successDim:"rgba(45,139,78,0.15)" };
@@ -21,14 +16,15 @@ export default function WarrantyPage() {
     { q:"When does the warranty period start?", a:"The 3-year warranty begins on the date of Substantial Completion — meaning the day your system is fully installed and functioning as intended, even if minor punch-list items remain." },
     { q:"What's NOT covered by the warranty?", a:"Normal wear and tear, damage from severe weather events (hurricanes, tornadoes, hail), damage caused by third parties (painters, roofers, tree trimmers), alterations made by anyone other than JR One, and damage resulting from failure to maintain the system (e.g., never cleaning gutters that don't have guards)." },
     { q:"What about material warranties?", a:"Material warranties are provided by the material manufacturers, not JR One. Aluminum coil, copper, vinyl, and guard products each carry their own manufacturer warranties. We'll provide you with all relevant manufacturer warranty documentation at project completion." },
-    { q:"How do I make a warranty claim?", a:"Call us at (844) 444-3114 or email info@jronegutters.com. Describe the issue, and we'll schedule an inspection. If the issue falls within warranty coverage, we schedule the repair — no charge, no hassle. We don't make warranty claims difficult because we'd rather fix a problem fast than argue about it." },
+    { q:"How do I make a warranty claim?", a:"Call us at (844) 444-3114 or email jrone.business@gmail.com. Describe the issue, and we'll schedule an inspection. If the issue falls within warranty coverage, we schedule the repair — no charge, no hassle. We don't make warranty claims difficult because we'd rather fix a problem fast than argue about it." },
     { q:"Is the warranty transferable if I sell my home?", a:"Contact us to discuss transferability for your specific project. We handle these on a case-by-case basis." },
     { q:"Do you offer extended warranties?", a:"Our standard warranty is 3 years for workmanship. For extended coverage beyond that, ask about our maintenance plans — regular professional maintenance extends the life of your system and catches issues before they become problems." },
   ];
 
   return (
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
-      <SiteNav />
+      <div style={{background:`linear-gradient(90deg,${C.gold},${C.goldLight})`,padding:"10px 24px",textAlign:"center",fontFamily:f.h,fontSize:"13px",fontWeight:600,color:C.navy}}>🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114</div>
+      <nav style={{position:"sticky",top:0,zIndex:1000,padding:"12px 24px",background:"rgba(11,22,40,0.97)",backdropFilter:"blur(12px)",borderBottom:`1px solid ${C.navyLight}`}}><div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"center"}}><a href="/" style={{fontFamily:f.h,fontSize:"20px",fontWeight:800,color:C.white,textDecoration:"none"}}>JR <span style={{color:C.gold}}>ONE</span></a><a href="tel:8444443114" style={{fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.gold,textDecoration:"none"}}>(844) 444-3114</a></div></nav>
 
       {/* HERO */}
       <section style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
@@ -117,8 +113,7 @@ export default function WarrantyPage() {
         <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 (844) 444-3114</a>
       </section>
 
-      <SiteFooter />
-      <MobileCTA />
+      <footer style={{background:C.navyFade,borderTop:`1px solid ${C.navyLight}`,padding:"32px 24px"}}><div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:"12px"}}><div style={{fontFamily:f.h,fontSize:"16px",fontWeight:800,color:C.white}}>JR <span style={{color:C.gold}}>ONE</span></div><p style={{fontFamily:f.b,fontSize:"12px",color:C.muted}}>© 2026 JR One Aluminum LLC.</p></div></footer>
       <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
     </div>
   );

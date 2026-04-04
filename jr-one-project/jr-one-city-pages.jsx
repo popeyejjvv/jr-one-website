@@ -1,9 +1,4 @@
-"use client";
-
 import { useState, useEffect } from "react";
-import SiteNav from "./SiteNav";
-import SiteFooter from "./SiteFooter";
-import MobileCTA from "./MobileCTA";
 
 const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
 const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D",success:"#2D8B4E",successDim:"rgba(45,139,78,0.15)" };
@@ -115,8 +110,9 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
 
   return (
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
-      <SiteNav promoBanner={"🏠 Serving " + city.name + " — Call (844) 444-3114 for Your Free Quote"} />
-      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>Home</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span>Service Areas</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.gold}}>{city.name}</span></div></div>
+      <div style={{background:`linear-gradient(90deg,${C.gold},${C.goldLight})`,padding:"10px 24px",textAlign:"center",fontFamily:f.h,fontSize:"13px",fontWeight:600,color:C.navy}}>🏠 Serving {city.name} — Call (844) 444-3114 for Your Free Quote</div>
+      <nav style={{position:"sticky",top:0,zIndex:1000,padding:"12px 24px",background:"rgba(11,22,40,0.97)",backdropFilter:"blur(12px)",borderBottom:`1px solid ${C.navyLight}`}}><div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"center"}}><a href="/" style={{fontFamily:f.h,fontSize:"20px",fontWeight:800,color:C.white,textDecoration:"none"}}>JR <span style={{color:C.gold}}>ONE</span></a><a href="tel:8444443114" style={{fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.gold,textDecoration:"none"}}>(844) 444-3114</a></div></nav>
+      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><span style={{cursor:"pointer"}}>Home</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{cursor:"pointer"}}>Service Areas</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.gold}}>{city.name}</span></div></div>
 
       {/* HERO */}
       <section style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto",display:"flex",gap:"48px",alignItems:"center",flexWrap:"wrap"}}>
@@ -125,13 +121,8 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
           <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>{city.heroH1}<br/><span style={{color:C.gold}}>{city.heroH1Gold}</span></h1>
           <p style={{fontFamily:f.b,fontSize:"18px",color:C.offWhite,lineHeight:1.7,marginBottom:"24px",maxWidth:"560px"}}>{city.localP}</p>
           <div style={{display:"flex",flexWrap:"wrap",gap:"12px",marginBottom:"24px"}}>
-            {[
-              { label: "30+ Years", icon: "⏱", color: "#60A5FA", bg: "rgba(59,130,246,0.15)", border: "rgba(59,130,246,0.25)" },
-              { label: "4.9★ Google", icon: "⭐", color: "#D4A843", bg: "rgba(212,168,67,0.15)", border: "rgba(212,168,67,0.25)" },
-              { label: "In-House Crews Only", icon: "👷", color: "#F97316", bg: "rgba(249,115,22,0.15)", border: "rgba(249,115,22,0.25)" },
-              { label: "Fully Insured", icon: "✓", color: "#4ADE80", bg: "rgba(45,139,78,0.15)", border: "rgba(45,139,78,0.25)" },
-            ].map((badge, i) => (
-              <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: "6px", padding: "6px 14px", background: badge.bg, border: `1px solid ${badge.border}`, borderRadius: "6px", fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: badge.color }}><span>{badge.icon}</span>{badge.label}</span>
+            {["30+ Years","4.9★ Google","In-House Crews","Fully Insured"].map((badge,i) => (
+              <span key={i} style={{padding:"6px 14px",background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:"6px",fontFamily:f.h,fontSize:"12px",fontWeight:600,color:C.white}}>{badge}</span>
             ))}
           </div>
           <div style={{display:"flex",gap:"16px",flexWrap:"wrap"}}>
@@ -176,11 +167,11 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
           <GoldBar />
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:"20px",marginTop:"48px",textAlign:"left"}}>
             {SERVICES.map((svc,i) => (
-              <a key={i} href={svc.link} style={{textDecoration:"none",background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px",cursor:"pointer",transition:"border-color 0.3s",display:"block"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.gold} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}>
+              <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px",cursor:"pointer",transition:"border-color 0.3s"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.gold} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}>
                 <h3 style={{fontFamily:f.h,fontSize:"16px",fontWeight:700,color:C.white,marginBottom:"6px"}}>{svc.title}</h3>
                 <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginBottom:"12px"}}>{svc.desc}</p>
                 <span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"1px"}}>LEARN MORE →</span>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -250,8 +241,8 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
         </div>
       </div></section>
 
-      <SiteFooter />
-      <MobileCTA scrollTarget="city-form" />
+      <footer style={{background:C.navyFade,borderTop:`1px solid ${C.navyLight}`,padding:"32px 24px"}}><div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:"12px"}}><div style={{fontFamily:f.h,fontSize:"16px",fontWeight:800,color:C.white}}>JR <span style={{color:C.gold}}>ONE</span> <span style={{fontWeight:400,fontSize:"13px",color:C.muted,marginLeft:"8px"}}>The Superior Soffit & Gutter Experts</span></div><p style={{fontFamily:f.b,fontSize:"12px",color:C.muted}}>© 2026 JR One Aluminum LLC.</p></div></footer>
+      <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:999,background:"rgba(11,22,40,0.97)",backdropFilter:"blur(12px)",borderTop:`1px solid ${C.navyLight}`,padding:"12px 16px",display:"flex",gap:"10px"}}><a href="tel:8444443114" style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:"6px",padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 CALL NOW</a><button onClick={()=>document.getElementById("city-form")?.scrollIntoView({behavior:"smooth"})} style={{flex:1,padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.gold,background:"transparent",border:`2px solid ${C.gold}`,borderRadius:"8px",cursor:"pointer"}}>FREE QUOTE</button></div>
       <style>{`*{box-sizing:border-box;margin:0;padding:0}::placeholder{color:#9CA3AF}input:focus,select:focus{border-color:${C.gold}!important}`}</style>
     </div>
   );

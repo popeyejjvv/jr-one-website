@@ -1,9 +1,4 @@
-"use client";
-
 import { useState, useEffect } from "react";
-import SiteNav from "../../components/SiteNav";
-import SiteFooter from "../../components/SiteFooter";
-import MobileCTA from "../../components/MobileCTA";
 
 /* ═══════════════════════════════════════════════════════════
    JR ONE ALUMINUM — SEAMLESS GUTTERS SERVICE PAGE
@@ -126,7 +121,18 @@ export default function SeamlessGuttersPage() {
   return (
     <div style={{ background: C.bg, color: C.white, fontFamily: f.b, lineHeight: 1.65, minHeight: "100vh" }}>
 
-      <SiteNav />
+      {/* ══ PROMO BANNER ══ */}
+      <div style={{ background: `linear-gradient(90deg,${C.gold},${C.goldLight})`, padding: "10px 24px", textAlign: "center", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
+        🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114
+      </div>
+
+      {/* ══ NAV ══ */}
+      <nav style={{ position: "sticky", top: 0, zIndex: 1000, padding: "12px 24px", background: "rgba(11,22,40,0.97)", backdropFilter: "blur(12px)", borderBottom: `1px solid ${C.navyLight}` }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <a href="/" style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 800, color: C.white, textDecoration: "none" }}>JR <span style={{ color: C.gold }}>ONE</span></a>
+          <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>(844) 444-3114</a>
+        </div>
+      </nav>
 
       {/* ══ BREADCRUMB ══ */}
       <div style={{ padding: "16px 24px 0", maxWidth: "1200px", margin: "0 auto" }}>
@@ -168,8 +174,8 @@ export default function SeamlessGuttersPage() {
         <div style={{ flex: "1 1 400px", minWidth: "300px", maxWidth: "500px", aspectRatio: "4/3", background: `linear-gradient(135deg,${C.navyFade},${C.navy})`, borderRadius: "16px", border: `1px solid ${C.navyLight}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{ textAlign: "center", color: C.muted }}>
             <div style={{ fontSize: "48px", marginBottom: "12px" }}>📸</div>
-            <p style={{ fontFamily: f.h, fontSize: "13px", letterSpacing: "1px" }}>PROJECT PHOTO COMING SOON</p>
-            
+            <p style={{ fontFamily: f.h, fontSize: "13px", letterSpacing: "1px" }}>HERO PROJECT PHOTO</p>
+            <p style={{ fontFamily: f.b, fontSize: "12px", marginTop: "4px" }}>Best seamless gutter install shot from CompanyCam</p>
           </div>
         </div>
       </section>
@@ -216,44 +222,6 @@ export default function SeamlessGuttersPage() {
               </div>
             ))}
           </div>
-          {/* Downspout Styles Callout */}
-          <div style={{ marginTop: "40px", background: `linear-gradient(135deg, ${C.navyFade}, ${C.navy})`, border: `2px solid ${C.gold}`, borderRadius: "16px", padding: "32px", position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", top: "-20px", right: "-20px", fontSize: "120px", opacity: 0.04, transform: "rotate(-15deg)" }}>↓</div>
-            <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", marginBottom: "20px" }}>
-              <span style={{ fontSize: "28px" }}>💡</span>
-              <div>
-                <h3 style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.gold, marginBottom: "4px" }}>YOUR DOWNSPOUTS, YOUR STYLE</h3>
-                <p style={{ fontFamily: f.b, fontSize: "15px", color: C.offWhite, lineHeight: 1.6 }}>Most homeowners don't realize they have options beyond the standard rectangular downspout. We install multiple downspout styles to match your home's look and drainage needs:</p>
-              </div>
-            </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px", marginLeft: "44px" }}>
-              {[
-                { name: "Standard Rectangular", desc: "The classic — reliable and cost-effective" },
-                { name: "Smooth Rectangular", desc: "Sleek, modern look with a flat finish" },
-                { name: "Round Downspouts", desc: "Available in 2 sizes — elegant and distinctive" },
-                { name: "4×5 Rectangular", desc: "Oversized for maximum water volume" },
-                { name: "Box Style Commercial", desc: "Heavy-duty for high-capacity systems" },
-                { name: "Rain Chains", desc: "Decorative alternative — visible water flow as a design feature" },
-              ].map((ds, i) => (
-                <div key={i} style={{ background: "rgba(200,149,46,0.08)", borderRadius: "8px", padding: "12px 16px" }}>
-                  <div style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, marginBottom: "4px" }}>{ds.name}</div>
-                  <div style={{ fontFamily: f.b, fontSize: "13px", color: C.muted }}>{ds.desc}</div>
-                </div>
-              ))}
-            </div>
-            <p style={{ fontFamily: f.b, fontSize: "14px", color: C.muted, fontStyle: "italic", marginTop: "16px", marginLeft: "44px" }}>Ask us about downspout options during your free estimate — the right choice can transform your home's curb appeal.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ══ SPECIALTY GUTTERS CALLOUT ══ */}
-      <section style={{ background: C.navyFade, padding: "48px 24px", borderTop: `1px solid ${C.navyLight}`, borderBottom: `1px solid ${C.navyLight}` }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "24px" }}>
-          <div style={{ flex: "1 1 400px" }}>
-            <h3 style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>Looking for Something Beyond Standard?</h3>
-            <p style={{ fontFamily: f.b, fontSize: "16px", color: C.muted, lineHeight: 1.6 }}>We also install half-round, D-style, box, super gutter, and commercial specialty systems. If your home's architecture or water volume demands more than standard seamless gutters, we've got you covered.</p>
-          </div>
-          <a href="/specialty-gutters" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 28px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, letterSpacing: "1px", color: C.gold, border: `2px solid ${C.gold}`, borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap" }}>VIEW SPECIALTY GUTTERS →</a>
         </div>
       </section>
 
@@ -401,9 +369,23 @@ export default function SeamlessGuttersPage() {
         </div>
       </section>
 
-      <SiteFooter />
+      {/* ══ FOOTER ══ */}
+      <footer style={{ background: C.navyFade, borderTop: `1px solid ${C.navyLight}`, padding: "32px 24px" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
+          <div style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 800, color: C.white }}>JR <span style={{ color: C.gold }}>ONE</span> <span style={{ fontWeight: 400, fontSize: "13px", color: C.muted, marginLeft: "8px" }}>The Superior Soffit & Gutter Experts</span></div>
+          <p style={{ fontFamily: f.b, fontSize: "12px", color: C.muted }}>© 2026 JR One Aluminum LLC. All rights reserved.</p>
+        </div>
+      </footer>
 
-      <MobileCTA scrollTarget="quote-form" />
+      {/* ══ STICKY MOBILE CTA ══ */}
+      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 999, background: "rgba(11,22,40,0.97)", backdropFilter: "blur(12px)", borderTop: `1px solid ${C.navyLight}`, padding: "12px 16px", display: "flex", gap: "10px" }}>
+        <a href="tel:8444443114" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", padding: "14px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.navy, background: `linear-gradient(135deg,${C.gold},${C.goldLight})`, borderRadius: "8px", textDecoration: "none" }}>
+          📞 CALL NOW
+        </a>
+        <button onClick={() => document.getElementById("quote-form")?.scrollIntoView({ behavior: "smooth" })} style={{ flex: 1, padding: "14px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, background: "transparent", border: `2px solid ${C.gold}`, borderRadius: "8px", cursor: "pointer" }}>
+          FREE ESTIMATE
+        </button>
+      </div>
 
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }

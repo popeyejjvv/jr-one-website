@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import SiteNav from "../../components/SiteNav";
+import SiteFooter from "../../components/SiteFooter";
+import MobileCTA from "../../components/MobileCTA";
 
 /* ═══════════════════════════════════════════════════════════
    JR ONE ALUMINUM — SPECIALTY / CUSTOM GUTTERS PAGE
@@ -125,18 +128,7 @@ export default function SpecialtyGuttersPage() {
   return (
     <div style={{ background: C.bg, color: C.white, fontFamily: f.b, lineHeight: 1.65, minHeight: "100vh" }}>
 
-      {/* ══ PROMO BANNER ══ */}
-      <div style={{ background: `linear-gradient(90deg,${C.accent},${C.accentLight})`, padding: "10px 24px", textAlign: "center", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
-        🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114
-      </div>
-
-      {/* ══ NAV ══ */}
-      <nav style={{ position: "sticky", top: 0, zIndex: 1000, padding: "12px 24px", background: "rgba(11,22,40,0.97)", backdropFilter: "blur(12px)", borderBottom: `1px solid ${C.navyLight}` }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <a href="/" style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 800, color: C.white, textDecoration: "none" }}>JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span></a>
-          <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>(844) 444-3114</a>
-        </div>
-      </nav>
+      <SiteNav />
 
       {/* ══ BREADCRUMB ══ */}
       <div style={{ padding: "16px 24px 0", maxWidth: "1200px", margin: "0 auto" }}>
@@ -355,23 +347,9 @@ export default function SpecialtyGuttersPage() {
         </div>
       </section>
 
-      {/* ══ FOOTER ══ */}
-      <footer style={{ background: C.navyFade, borderTop: `1px solid ${C.navyLight}`, padding: "32px 24px" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
-          <div style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 800, color: C.white }}>JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span> <span style={{ fontWeight: 400, fontSize: "13px", color: C.muted, marginLeft: "8px" }}>The Superior Soffit & Gutter Experts</span></div>
-          <p style={{ fontFamily: f.b, fontSize: "12px", color: C.muted }}>© 2026 JR One Aluminum LLC. All rights reserved.</p>
-        </div>
-      </footer>
+      <SiteFooter />
 
-      {/* ══ STICKY MOBILE CTA ══ */}
-      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 999, background: "rgba(11,22,40,0.97)", backdropFilter: "blur(12px)", borderTop: `1px solid ${C.navyLight}`, padding: "12px 16px", display: "flex", gap: "10px" }}>
-        <a href="tel:8444443114" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", padding: "14px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.navy, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, borderRadius: "8px", textDecoration: "none" }}>
-          📞 CALL NOW
-        </a>
-        <button onClick={() => document.getElementById("quote-form")?.scrollIntoView({ behavior: "smooth" })} style={{ flex: 1, padding: "14px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.accent, background: "transparent", border: `2px solid ${C.accent}`, borderRadius: "8px", cursor: "pointer" }}>
-          FREE ESTIMATE
-        </button>
-      </div>
+      <MobileCTA scrollTarget="quote-form" />
 
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }

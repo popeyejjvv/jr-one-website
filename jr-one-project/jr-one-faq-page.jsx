@@ -1,9 +1,4 @@
-"use client";
-
 import { useState, useEffect } from "react";
-import SiteNav from "../../components/SiteNav";
-import SiteFooter from "../../components/SiteFooter";
-import MobileCTA from "../../components/MobileCTA";
 
 const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
 const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D" };
@@ -49,7 +44,7 @@ const CATEGORIES = [
     {q:"What warranty do you offer?",a:"We provide a 3-year workmanship warranty from the date of substantial completion. This covers defects in our labor that materially affect system performance under normal residential use. If our work fails because of how we installed it, we come back and fix it at no cost."},
     {q:"Do you offer financing?",a:"Yes. We partner with trusted third-party financing providers so you can protect your home now and pay over time. Quick approval, flexible terms, and no impact on your project pricing."},
     {q:"Do I need good credit to qualify for financing?",a:"Our financing partners work with a range of credit profiles. The initial check is typically a soft pull that doesn't affect your credit score."},
-    {q:"How do I make a warranty claim?",a:"Call (844) 444-3114 or email info@jronegutters.com. We don't make warranty claims difficult — we'd rather fix a problem fast than argue about it."},
+    {q:"How do I make a warranty claim?",a:"Call (844) 444-3114 or email jrone.business@gmail.com. We don't make warranty claims difficult — we'd rather fix a problem fast than argue about it."},
   ]},
   { name:"Maintenance", icon:"🧹", faqs:[
     {q:"How often should I have my gutters cleaned?",a:"In Tampa Bay, at least twice per year — once before hurricane season (May/June) and once after fall leaf drop (November/December). Homes with heavy tree coverage may need quarterly cleaning."},
@@ -67,7 +62,8 @@ export default function FAQPage() {
 
   return (
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
-      <SiteNav />
+      <div style={{background:`linear-gradient(90deg,${C.gold},${C.goldLight})`,padding:"10px 24px",textAlign:"center",fontFamily:f.h,fontSize:"13px",fontWeight:600,color:C.navy}}>🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114</div>
+      <nav style={{position:"sticky",top:0,zIndex:1000,padding:"12px 24px",background:"rgba(11,22,40,0.97)",backdropFilter:"blur(12px)",borderBottom:`1px solid ${C.navyLight}`}}><div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"center"}}><a href="/" style={{fontFamily:f.h,fontSize:"20px",fontWeight:800,color:C.white,textDecoration:"none"}}>JR <span style={{color:C.gold}}>ONE</span></a><a href="tel:8444443114" style={{fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.gold,textDecoration:"none"}}>(844) 444-3114</a></div></nav>
 
       <section style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>FAQ</Tag>
@@ -112,12 +108,11 @@ export default function FAQPage() {
         <p style={{fontFamily:f.b,fontSize:"16px",color:C.offWhite,marginBottom:"24px",maxWidth:"500px",margin:"0 auto 24px"}}>We'd rather answer your question directly than have you guess. Call or text us — we respond fast.</p>
         <div style={{display:"flex",gap:"16px",justifyContent:"center",flexWrap:"wrap"}}>
           <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 (844) 444-3114</a>
-          <a href="mailto:info@jronegutters.com" style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>EMAIL US</a>
+          <a href="mailto:jrone.business@gmail.com" style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>EMAIL US</a>
         </div>
       </section>
 
-      <SiteFooter />
-      <MobileCTA />
+      <footer style={{background:C.navyFade,borderTop:`1px solid ${C.navyLight}`,padding:"32px 24px"}}><div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:"12px"}}><div style={{fontFamily:f.h,fontSize:"16px",fontWeight:800,color:C.white}}>JR <span style={{color:C.gold}}>ONE</span></div><p style={{fontFamily:f.b,fontSize:"12px",color:C.muted}}>© 2026 JR One Aluminum LLC.</p></div></footer>
       <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
     </div>
   );

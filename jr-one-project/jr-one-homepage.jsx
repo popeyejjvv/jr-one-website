@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect, useRef } from "react";
 
 /* ═══════════════════════════════════════════════════════════
@@ -36,12 +34,6 @@ const C = {
   success: "#2D8B4E",
   successDim: "rgba(45,139,78,0.15)",
   alert: "#B11A21",
-  trustBlue: "#3B82F6",
-  trustBlueDim: "rgba(59,130,246,0.15)",
-  trustGold: "#D4A843",
-  trustGoldDim: "rgba(212,168,67,0.15)",
-  trustCoral: "#EF6351",
-  trustCoralDim: "rgba(239,99,81,0.15)",
 };
 
 const font = {
@@ -71,6 +63,7 @@ const T = {
     serviceOpt: ["Select a service...", "Gutter Installation", "Gutter Repair", "Gutter Guards", "Soffit & Fascia", "Siding", "Gutter Cleaning", "Other / Not Sure"],
     trustYears: "30+ Years",
     trustRating: "4.9★ Rating",
+    trustReviews: "55+ Reviews",
     trustCrew: "In-House Crews Only",
     trustInsured: "Fully Insured",
     goldTitle: "THE GOLD STANDARD",
@@ -84,11 +77,11 @@ const T = {
     servicesTitle: "WHAT WE DO",
     servicesSub: "Tampa Bay's most trusted aluminum specialists",
     serviceCards: [
-      { icon: "💧", title: "Seamless Gutters", desc: "Custom-fabricated on-site for a perfect fit. 6\" and 7\" systems in your choice of color.", link: "/seamless-aluminum-gutters" },
+      { icon: "💧", title: "Seamless Gutters", desc: "Custom-fabricated on-site for a perfect fit. 5\", 6\", and 7\" systems in your choice of color.", link: "/seamless-aluminum-gutters" },
       { icon: "🛡️", title: "Gutter Guards", desc: "Stop climbing ladders. Our guard systems keep debris out and water flowing — guaranteed.", link: "/gutter-guards" },
       { icon: "🏗️", title: "Soffit & Fascia", desc: "Aluminum and vinyl installations that protect your roof edge and improve your home's curb appeal.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Gutter Repair", desc: "Sagging, leaking, or damaged? We fix it right so you don't have to call again.", link: "/gutter-repair" },
-      { icon: "📐", title: "Siding", desc: "Vinyl siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
+      { icon: "📐", title: "Siding", desc: "Vinyl and aluminum siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
       { icon: "🧹", title: "Maintenance", desc: "Gutter cleaning, pressure washing, window cleaning, and seasonal maintenance programs.", link: "/maintenance" },
     ],
     whyTitle: "WHY HOMEOWNERS CHOOSE JR ONE",
@@ -134,7 +127,7 @@ const T = {
     footerCompany: "Company",
     footerContact: "Contact",
     phone: "(844) 444-3114",
-    email: "info@jronegutters.com",
+    email: "jrone.business@gmail.com",
     navItems: ["Services", "The Gold Standard", "Reviews", "Estimator", "FAQ", "Contact"],
     hablamos: "¡Hablamos Español!",
   },
@@ -158,6 +151,7 @@ const T = {
     serviceOpt: ["Seleccione un servicio...", "Instalación de Canaletas", "Reparación de Canaletas", "Protectores de Canaletas", "Sofito y Fascia", "Revestimiento", "Limpieza de Canaletas", "Otro / No Estoy Seguro"],
     trustYears: "30+ Años",
     trustRating: "4.9★ Calificación",
+    trustReviews: "55+ Reseñas",
     trustCrew: "Equipo Propio Exclusivo",
     trustInsured: "Totalmente Asegurados",
     goldTitle: "EL ESTÁNDAR DE ORO",
@@ -171,11 +165,11 @@ const T = {
     servicesTitle: "LO QUE HACEMOS",
     servicesSub: "Los especialistas en aluminio más confiables de Tampa Bay",
     serviceCards: [
-      { icon: "💧", title: "Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto. Sistemas de 6\" y 7\" en el color de su elección.", link: "/seamless-aluminum-gutters" },
+      { icon: "💧", title: "Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto. Sistemas de 5\", 6\" y 7\" en el color de su elección.", link: "/seamless-aluminum-gutters" },
       { icon: "🛡️", title: "Protectores de Canaletas", desc: "Deje de subir escaleras. Nuestros protectores mantienen los escombros afuera y el agua fluyendo.", link: "/gutter-guards" },
       { icon: "🏗️", title: "Sofito y Fascia", desc: "Instalaciones de aluminio y vinilo que protegen el borde de su techo y mejoran la apariencia de su hogar.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Reparación de Canaletas", desc: "¿Hundidas, con fugas o dañadas? Lo arreglamos bien para que no tenga que llamar de nuevo.", link: "/gutter-repair" },
-      { icon: "📐", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo. Protección resistente al clima para hogares de Florida.", link: "/siding" },
+      { icon: "📐", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo y aluminio. Protección resistente al clima.", link: "/siding" },
       { icon: "🧹", title: "Mantenimiento", desc: "Limpieza de canaletas, lavado a presión, limpieza de ventanas y programas de mantenimiento.", link: "/maintenance" },
     ],
     whyTitle: "POR QUÉ LOS PROPIETARIOS ELIGEN JR ONE",
@@ -221,7 +215,7 @@ const T = {
     footerCompany: "Empresa",
     footerContact: "Contacto",
     phone: "(844) 444-3114",
-    email: "info@jronegutters.com",
+    email: "jrone.business@gmail.com",
     navItems: ["Servicios", "Estándar de Oro", "Reseñas", "Estimador", "Preguntas", "Contacto"],
     hablamos: "We Speak English!",
   },
@@ -335,17 +329,10 @@ export default function JROneHomepage() {
       {/* ══ NAVIGATION ══ */}
       <nav style={s.nav}>
         <div style={s.navInner}>
-          <div style={s.logo}>JR <span style={s.logoGold}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span></div>
+          <div style={s.logo}>JR <span style={s.logoGold}>ONE</span></div>
           <div style={{ ...s.navLinks, "@media(maxWidth:768px)": { display: "none" } }}>
-            {[
-              { label: t.navItems[0], href: "/seamless-aluminum-gutters" },
-              { label: t.navItems[1], href: "#gold-standard" },
-              { label: t.navItems[2], href: "#reviews" },
-              { label: t.navItems[3], href: "#estimator" },
-              { label: t.navItems[4], href: "#faq" },
-              { label: t.navItems[5], href: "/contact" },
-            ].map((item, i) => (
-              <a key={i} href={item.href} style={{...s.navLink, textDecoration: "none"}}>{item.label}</a>
+            {t.navItems.map((item, i) => (
+              <span key={i} style={s.navLink}>{item}</span>
             ))}
             <a href="tel:8444443114" style={{ ...s.navLink, color: C.gold, fontWeight: 700 }}>{t.phone}</a>
             <button onClick={() => setLang(lang === "en" ? "es" : "en")} style={s.langBtn}>
@@ -356,7 +343,7 @@ export default function JROneHomepage() {
       </nav>
 
       {/* ══ HERO ══ */}
-      <section style={s.hero} className="hero-stars">
+      <section style={s.hero}>
         <div style={s.heroOverlay} />
         <div style={s.heroInner}>
           <div style={s.heroLeft}>
@@ -368,17 +355,12 @@ export default function JROneHomepage() {
             </h1>
             <p style={s.heroP}>{t.heroSub}</p>
             <div style={s.trustRow}>
-              <div style={{ ...s.trustBadge, background: C.trustBlueDim, borderColor: `${C.trustBlue}40` }}>
-                <span style={s.trustIcon}>⏱</span>
-                <span style={{ ...s.trustText, color: "#60A5FA" }}>{t.trustYears}</span>
-              </div>
-              <div style={{ ...s.trustBadge, background: C.trustGoldDim, borderColor: `${C.trustGold}40` }}>
-                <span style={s.trustIcon}>⭐</span>
-                <span style={{ ...s.trustText, color: C.trustGold }}>{t.trustRating}</span>
-              </div>
-              <div style={{ ...s.trustBadge, background: "rgba(249,115,22,0.15)", borderColor: "rgba(249,115,22,0.25)" }}>
+              <div style={s.trustBadge}><span style={s.trustIcon}>⏱</span><span style={s.trustText}>{t.trustYears}</span></div>
+              <div style={s.trustBadge}><span style={s.trustIcon}>⭐</span><span style={s.trustText}>{t.trustRating}</span></div>
+              <div style={s.trustBadge}><span style={s.trustIcon}>💬</span><span style={s.trustText}>{t.trustReviews}</span></div>
+              <div style={{ ...s.trustBadge, background: C.goldPale, borderColor: `${C.gold}40` }}>
                 <span style={s.trustIcon}>👷</span>
-                <span style={{ ...s.trustText, color: "#F97316" }}>{t.trustCrew}</span>
+                <span style={{ ...s.trustText, color: C.goldLight }}>{t.trustCrew}</span>
               </div>
               <div style={{ ...s.trustBadge, background: C.successDim, borderColor: C.success }}>
                 <span style={s.trustIcon}>✓</span>
@@ -426,7 +408,7 @@ export default function JROneHomepage() {
       </section>
 
       {/* ══ THE GOLD STANDARD ══ */}
-      <section id="gold-standard" style={{ background: C.navy, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
           <SectionTag>{t.goldTitle}</SectionTag>
           <h2 style={{ ...s.sectionTitle, color: C.white }}>{t.goldTitle}</h2>
@@ -498,7 +480,7 @@ export default function JROneHomepage() {
       </section>
 
       {/* ══ REVIEWS ══ */}
-      <section id="reviews" style={{ background: C.navy, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
           <SectionTag>{t.reviewsTitle}</SectionTag>
           <h2 style={{ ...s.sectionTitle, color: C.white }}>{t.reviewsTitle}</h2>
@@ -524,7 +506,7 @@ export default function JROneHomepage() {
       </section>
 
       {/* ══ ESTIMATOR GATE ══ */}
-      <section id="estimator" style={{ background: C.bg, padding: "80px 24px" }}>
+      <section style={{ background: C.bg, padding: "80px 24px" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
           <SectionTag>{lang === "en" ? "INSTANT ESTIMATOR" : "ESTIMADOR INSTANTÁNEO"}</SectionTag>
           <h2 style={{ ...s.sectionTitle, color: C.white }}>{t.estimatorTitle}</h2>
@@ -583,7 +565,7 @@ export default function JROneHomepage() {
       </section>
 
       {/* ══ FAQ ══ */}
-      <section id="faq" style={{ background: C.bg, padding: "80px 24px" }}>
+      <section style={{ background: C.bg, padding: "80px 24px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <SectionTag>{t.faqTitle}</SectionTag>
           <h2 style={{ ...s.sectionTitle, color: C.white }}>{t.faqTitle}</h2>
@@ -623,58 +605,35 @@ export default function JROneHomepage() {
       </section>
 
       {/* ══ FOOTER ══ */}
-      <footer style={{ background: C.navyFade, borderTop: `1px solid ${C.navyLight}`, padding: "60px 24px 100px" }}>
+      <footer style={{ background: C.navyFade, borderTop: `1px solid ${C.navyLight}`, padding: "60px 24px 32px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px" }}>
           <div>
             <div style={{ fontFamily: font.heading, fontSize: "24px", fontWeight: 800, color: C.white, marginBottom: "4px" }}>
-              JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "18px" }}>★</span>
+              JR <span style={{ color: C.gold }}>ONE</span>
             </div>
             <p style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.gold, fontStyle: "italic", marginBottom: "12px" }}>{t.footerTagline}</p>
             <p style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, lineHeight: 1.55 }}>{t.footerAbout}</p>
           </div>
           <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerServices}</h4>
-            {[
-              { en: "Seamless Gutters", es: "Canaletas", href: "/seamless-aluminum-gutters" },
-              { en: "Gutter Guards", es: "Protectores", href: "/gutter-guards" },
-              { en: "Soffit & Fascia", es: "Sofito y Fascia", href: "/soffit-and-fascia" },
-              { en: "Gutter Repair", es: "Reparación", href: "/gutter-repair" },
-              { en: "Siding", es: "Revestimiento", href: "/siding" },
-              { en: "Specialty Gutters", es: "Canaletas Especiales", href: "/specialty-gutters" },
-              { en: "SAGIPER", es: "SAGIPER", href: "/sagiper" },
-              { en: "Peak 301", es: "Peak 301", href: "/peak-301" },
-              { en: "Service Plans", es: "Planes de Servicio", href: "/service-plans" },
-              { en: "Copper Gutters", es: "Canaletas de Cobre", href: "/copper-gutters" },
-            ].map((svc, i) => (
-              <a key={i} href={svc.href} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{lang === "en" ? svc.en : svc.es}</a>
+            {(lang === "en" ? ["Seamless Gutters", "Gutter Guards", "Soffit & Fascia", "Gutter Repair", "Siding", "Maintenance"] : ["Canaletas", "Protectores", "Sofito y Fascia", "Reparación", "Revestimiento", "Mantenimiento"]).map((item, i) => (
+              <p key={i} style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", cursor: "pointer" }}>{item}</p>
             ))}
           </div>
           <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerAreas}</h4>
-            {[
-              { name: "Tampa", slug: "tampa" }, { name: "Clearwater", slug: "clearwater" }, { name: "St. Petersburg", slug: "st-petersburg" },
-              { name: "Sarasota", slug: "sarasota" }, { name: "Bradenton", slug: "bradenton" }, { name: "Lakeland", slug: "lakeland" },
-              { name: "Brandon", slug: "brandon" }, { name: "Wesley Chapel", slug: "wesley-chapel" }, { name: "Palm Harbor", slug: "palm-harbor" },
-              { name: "Riverview", slug: "riverview" }, { name: "New Port Richey", slug: "new-port-richey" }, { name: "Largo", slug: "largo" },
-              { name: "Spring Hill", slug: "spring-hill" }, { name: "Tarpon Springs", slug: "tarpon-springs" }, { name: "Land O' Lakes", slug: "land-o-lakes" },
-              { name: "Dunedin", slug: "dunedin" }, { name: "Ruskin", slug: "ruskin" }, { name: "Sun City Center", slug: "sun-city-center" },
-              { name: "Temple Terrace", slug: "temple-terrace" }, { name: "Plant City", slug: "plant-city" }, { name: "Lutz", slug: "lutz" },
-            ].map((city, i) => (
-              <a key={i} href={`/areas/${city.slug}`} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none", cursor: "pointer" }}>{city.name}</a>
+            {["Tampa", "Clearwater", "St. Petersburg", "Sarasota", "Bradenton", "Lakeland"].map((item, i) => (
+              <p key={i} style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", cursor: "pointer" }}>{item}</p>
             ))}
           </div>
           <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerContact}</h4>
-            <a href="tel:8444443114" style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.gold, marginBottom: "8px", fontWeight: 600, textDecoration: "none" }}>{t.phone}</a>
-            <a href="mailto:info@jronegutters.com" style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{t.email}</a>
+            <p style={{ fontFamily: font.body, fontSize: "14px", color: C.gold, marginBottom: "8px", fontWeight: 600 }}>{t.phone}</p>
+            <p style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px" }}>{t.email}</p>
             <p style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px" }}>Tampa, FL</p>
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
-              {[
-                { name: "Facebook", href: "https://www.facebook.com/jronealuminum" },
-                { name: "Instagram", href: "https://www.instagram.com/jronegutters" },
-                { name: "Google", href: "https://g.co/kgs/jronealuminum" },
-              ].map((social, i) => (
-                <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>{social.name}</a>
+              {["Facebook", "Instagram", "Google"].map((social, i) => (
+                <span key={i} style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", cursor: "pointer" }}>{social}</span>
               ))}
             </div>
           </div>
@@ -684,8 +643,8 @@ export default function JROneHomepage() {
             © 2026 JR One Aluminum LLC. {lang === "en" ? "All rights reserved." : "Todos los derechos reservados."}
           </p>
           <div style={{ display: "flex", gap: "20px" }}>
-            <a href="/privacy-policy" style={{ fontFamily: font.body, fontSize: "12px", color: C.muted, textDecoration: "none" }}>{lang === "en" ? "Privacy Policy" : "Política de Privacidad"}</a>
-            <a href="/terms-of-service" style={{ fontFamily: font.body, fontSize: "12px", color: C.muted, textDecoration: "none" }}>{lang === "en" ? "Terms of Service" : "Términos de Servicio"}</a>
+            <span style={{ fontFamily: font.body, fontSize: "12px", color: C.muted, cursor: "pointer" }}>{lang === "en" ? "Privacy Policy" : "Política de Privacidad"}</span>
+            <span style={{ fontFamily: font.body, fontSize: "12px", color: C.muted, cursor: "pointer" }}>{lang === "en" ? "Terms of Service" : "Términos de Servicio"}</span>
           </div>
         </div>
       </footer>
@@ -707,23 +666,6 @@ export default function JROneHomepage() {
         input:focus, select:focus { border-color: ${C.gold} !important; }
         @media (max-width: 768px) {
           nav div:last-child { display: none !important; }
-        }
-        .hero-stars::before {
-          content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          font-size: 14px;
-          letter-spacing: 28px;
-          line-height: 42px;
-          color: rgba(255,255,255,0.03);
-          pointer-events: none;
-          z-index: 0;
-          overflow: hidden;
-          word-break: break-all;
-          padding: 20px;
         }
       `}</style>
     </div>
