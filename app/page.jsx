@@ -354,6 +354,7 @@ export default function JROneHomepage() {
                     { label: "SAGIPER", href: "/sagiper" },
                     { label: "Peak 301", href: "/peak-301" },
                     { label: lang === "en" ? "Govee Lights" : "Luces Govee", href: "/govee-lights" },
+                    { label: lang === "en" ? "Service Plans" : "Planes de Servicio", href: "/service-plans" },
                     { label: lang === "en" ? "Drainage Installation" : "Instalación de Drenaje", href: "/drainage-assessment" },
                   ].map((svc, i) => (
                     <a key={i} href={svc.href} style={{ display: "block", padding: "8px 20px", fontFamily: font.heading, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none", transition: "color 0.15s" }}
@@ -701,8 +702,10 @@ export default function JROneHomepage() {
               { en: "Specialty Gutters", es: "Canaletas Especiales", href: "/specialty-gutters" },
               { en: "SAGIPER", es: "SAGIPER", href: "/sagiper" },
               { en: "Peak 301", es: "Peak 301", href: "/peak-301" },
+              { en: "Govee Lights", es: "Luces Govee", href: "/govee-lights" },
               { en: "Service Plans", es: "Planes de Servicio", href: "/service-plans" },
               { en: "Copper Gutters", es: "Canaletas de Cobre", href: "/copper-gutters" },
+              { en: "Drainage Installation", es: "Instalación de Drenaje", href: "/drainage-assessment" },
             ].map((svc, i) => (
               <a key={i} href={svc.href} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{lang === "en" ? svc.en : svc.es}</a>
             ))}

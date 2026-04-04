@@ -98,10 +98,7 @@ export default function AboutUsPage() {
             </div>
           </div>
 
-          {/* Photo placeholder */}
-          <div style={{margin:"0 0 56px",borderRadius:"12px",overflow:"hidden",border:`1px solid ${C.navyLight}`,background:C.navyFade,aspectRatio:"16/9",display:"flex",alignItems:"center",justifyContent:"center"}}>
-            <div style={{textAlign:"center",color:C.muted}}><div style={{fontSize:"48px",marginBottom:"8px"}}>📸</div><p style={{fontFamily:f.h,fontSize:"12px",letterSpacing:"1px"}}>CREW AT WORK / TEAM PHOTO</p></div>
-          </div>
+          {/* Crew photo placeholder removed */}
 
           {/* Chapter 4: Why It Matters */}
           <div style={{marginBottom:"56px"}}>

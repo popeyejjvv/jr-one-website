@@ -20,6 +20,7 @@ const SERVICE_LINKS = [
   { label: "SAGIPER", href: "/sagiper" },
   { label: "Peak 301", href: "/peak-301" },
   { label: "Govee Lights", href: "/govee-lights" },
+  { label: "Service Plans", href: "/service-plans" },
   { label: "Drainage Installation", href: "/drainage-assessment" },
 ];
 

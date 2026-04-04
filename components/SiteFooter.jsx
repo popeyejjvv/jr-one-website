@@ -23,6 +23,7 @@ const SERVICES = [
   { name: "Copper Gutters", href: "/copper-gutters" },
   { name: "SAGIPER", href: "/sagiper" },
   { name: "Peak 301", href: "/peak-301" },
+  { name: "Govee Lights", href: "/govee-lights" },
   { name: "Service Plans", href: "/service-plans" },
   { name: "Drainage Installation", href: "/drainage-assessment" },
 ];

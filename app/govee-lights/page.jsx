@@ -24,7 +24,7 @@ export default function GoveeLightsPage() {
 
       <section style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>SMART HOME</Tag>
-        <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>Govee Smart Lights,<br/><span style={{color:C.gold}}>Professionally Installed.</span></h1>
+        <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>Govee Smart Lights,<br/><span style={{color:C.accent}}>Professionally Installed.</span></h1>
         <p style={{fontFamily:f.b,fontSize:"18px",color:C.muted,maxWidth:"650px",margin:"0 auto"}}>You buy the Govee LED strip lights. We mount them cleanly, securely, and discreetly along your roofline or exterior — with the same precision we bring to every aluminum installation. No DIY ladder risks. No sloppy mounting. Just clean, professional results.</p>
       </section>
 
@@ -40,7 +40,7 @@ export default function GoveeLightsPage() {
               {num:"4",title:"You enjoy them",desc:"Control your lights from your phone — holidays, parties, everyday ambiance, or security lighting. Change colors, set schedules, sync to music."},
             ].map((step,i) =>
               <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",textAlign:"center"}}>
-                <div style={{fontFamily:f.h,fontSize:"36px",fontWeight:800,color:C.gold}}>{step.num}</div>
+                <div style={{fontFamily:f.h,fontSize:"36px",fontWeight:800,color:C.accent}}>{step.num}</div>
                 <h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,margin:"8px 0"}}>{step.title}</h3>
                 <p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.55}}>{step.desc}</p>
               </div>
@@ -55,18 +55,18 @@ export default function GoveeLightsPage() {
           <Tag>WHAT'S INCLUDED</Tag>
           <h2 style={{...secTitle,color:C.white}}>PROFESSIONAL INSTALLATION</h2>
           <GoldBar />
-          <div style={{background:C.navyFade,border:`2px solid ${C.gold}`,borderRadius:"16px",padding:"40px",marginTop:"40px"}}>
-            <div style={{fontFamily:f.h,fontSize:"20px",fontWeight:700,color:C.gold,marginBottom:"20px"}}>EVERY INSTALLATION INCLUDES</div>
+          <div style={{background:C.navyFade,border:`2px solid ${C.accent}`,borderRadius:"16px",padding:"40px",marginTop:"40px"}}>
+            <div style={{fontFamily:f.h,fontSize:"20px",fontWeight:700,color:C.accent,marginBottom:"20px"}}>EVERY INSTALLATION INCLUDES</div>
             <div style={{textAlign:"left",maxWidth:"400px",margin:"0 auto"}}>
               {["Professional mounting to roofline or exterior","Clean, discreet hardware placement","Secure fastening built for Florida weather","Basic setup and app connectivity","Multi-story homes available","All materials provided by homeowner"].map((item,i) =>
                 <div key={i} style={{display:"flex",gap:"10px",marginBottom:"10px"}}>
-                  <span style={{color:C.gold,flexShrink:0}}>✓</span>
+                  <span style={{color:C.accent,flexShrink:0}}>✓</span>
                   <span style={{fontFamily:f.b,fontSize:"15px",color:C.offWhite}}>{item}</span>
                 </div>
               )}
             </div>
-            <div style={{background:C.goldPale,borderRadius:"8px",padding:"14px",marginTop:"20px"}}>
-              <p style={{fontFamily:f.b,fontSize:"14px",color:C.gold}}>Pricing is based on your home's specific measurements and accessibility. Call us for a quick quote — most estimates take under 5 minutes.</p>
+            <div style={{background:C.accentPale,borderRadius:"8px",padding:"14px",marginTop:"20px"}}>
+              <p style={{fontFamily:f.b,fontSize:"14px",color:C.accent}}>Pricing is based on your home's specific measurements and accessibility. Call us for a quick quote — most estimates take under 5 minutes.</p>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function GoveeLightsPage() {
               {title:"Clean, invisible mounting",desc:"The whole point of accent lighting is the effect, not the hardware. We mount strips discreetly so you see the light, not the installation."},
             ].map((item,i) =>
               <div key={i} style={{display:"flex",gap:"20px",marginBottom:"28px"}}>
-                <div style={{width:"40px",height:"40px",borderRadius:"10px",background:C.goldPale,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><span style={{fontFamily:f.h,fontSize:"16px",fontWeight:800,color:C.gold}}>{i+1}</span></div>
+                <div style={{width:"40px",height:"40px",borderRadius:"10px",background:C.accentPale,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><span style={{fontFamily:f.h,fontSize:"16px",fontWeight:800,color:C.accent}}>{i+1}</span></div>
                 <div><h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,marginBottom:"4px"}}>{item.title}</h3><p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.6}}>{item.desc}</p></div>
               </div>
             )}

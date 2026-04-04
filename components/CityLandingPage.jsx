@@ -125,7 +125,7 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
             {[
               { label: "30+ Years", icon: "⏱", color: "#60A5FA", bg: "rgba(59,130,246,0.15)", border: "rgba(59,130,246,0.25)" },
               { label: "4.9★ Google", icon: "⭐", color: "#D4A843", bg: "rgba(212,168,67,0.15)", border: "rgba(212,168,67,0.25)" },
-              { label: "In-House Crews Only", icon: "👷", color: "#F97316", bg: "rgba(249,115,22,0.15)", border: "rgba(249,115,22,0.25)" },
+              { label: "In-House Crews", icon: "👷", color: "#F97316", bg: "rgba(249,115,22,0.15)", border: "rgba(249,115,22,0.25)" },
               { label: "Fully Insured", icon: "✓", color: "#4ADE80", bg: "rgba(45,139,78,0.15)", border: "rgba(45,139,78,0.25)" },
             ].map((badge, i) => (
               <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: "6px", padding: "6px 14px", background: badge.bg, border: `1px solid ${badge.border}`, borderRadius: "6px", fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: badge.color }}><span>{badge.icon}</span>{badge.label}</span>
