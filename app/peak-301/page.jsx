@@ -100,7 +100,6 @@ export default function Peak301Page() {
           </div>
           <div style={{display:"flex",gap:"24px",marginTop:"32px",flexWrap:"wrap"}}>{PAGE.stats.map((s,i) => <div key={i} style={{textAlign:"center"}}><div style={{fontFamily:f.h,fontSize:"28px",fontWeight:800,color:C.accent}}>{s.value}</div><div style={{fontFamily:f.b,fontSize:"12px",color:C.muted,maxWidth:"120px"}}>{s.label}</div></div>)}</div>
         </div>
-        <div style={{flex:"1 1 400px",minWidth:"300px",maxWidth:"500px",aspectRatio:"4/3",background:`linear-gradient(135deg,${C.navyFade},${C.navy})`,borderRadius:"16px",border:`1px solid ${C.navyLight}`,display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{textAlign:"center",color:C.muted}}><div style={{fontSize:"48px",marginBottom:"12px"}}>📸</div><p style={{fontFamily:f.h,fontSize:"13px",letterSpacing:"1px"}}>PEAK 301 APPLICATION PHOTO</p></div></div>
       </section>
 
       {/* INSURANCE ALERT */}
@@ -117,7 +116,9 @@ export default function Peak301Page() {
               <div style={{fontFamily:f.b,fontSize:"14px",color:C.muted,maxWidth:"200px"}}>{PAGE.insuranceAlert.stat2Label}</div>
             </div>
           </div>
-          <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,lineHeight:1.7,maxWidth:"700px",margin:"0 auto"}}>{PAGE.insuranceAlert.desc}</p>
+          <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,lineHeight:1.7,maxWidth:"700px",margin:"0 auto 32px"}}>{PAGE.insuranceAlert.desc}</p>
+          <a href="/insurance-resource-center" style={{display:"inline-flex",alignItems:"center",gap:"10px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1px",color:C.white,background:`linear-gradient(135deg,${C.alert},#D42A2A)`,borderRadius:"8px",textDecoration:"none",boxShadow:"0 4px 16px rgba(177,26,33,0.4)"}}>⚖️ INSURANCE RESOURCE CENTER — KNOW YOUR RIGHTS →</a>
+          <p style={{fontFamily:f.b,fontSize:"13px",color:C.muted,marginTop:"16px"}}>Florida law protects homeowners from losing insurance solely due to roof age. Learn the laws, the carrier types, and get free document templates.</p>
         </div>
       </section>
 
