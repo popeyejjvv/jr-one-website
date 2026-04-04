@@ -328,13 +328,12 @@ export default function JROneHomepage() {
 
   return (
     <div style={s.page}>
-      {/* ══ PROMO BANNER ══ */}
-      <div style={{ background: `linear-gradient(90deg, ${C.gold}, ${C.goldLight})`, padding: "10px 24px", textAlign: "center", fontFamily: font.heading, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
+      {/* ══ PROMO BANNER + NAVIGATION (sticky together) ══ */}
+      <div style={{ position: "sticky", top: 0, zIndex: 1000 }}>
+      <div style={{ background: `linear-gradient(90deg, ${C.gold}, ${C.goldLight})`, padding: "8px 24px", textAlign: "center", fontFamily: font.heading, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
         {t.promoLine}
       </div>
-
-      {/* ══ NAVIGATION ══ */}
-      <nav style={s.nav}>
+      <nav style={{ ...s.nav, position: "relative" }}>
         <div style={s.navInner}>
           <a href="/" style={{...s.logo, textDecoration: "none"}}>JR <span style={s.logoGold}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span></a>
           <div className="jr-hp-nav-desktop" style={s.navLinks}>
@@ -411,6 +410,7 @@ export default function JROneHomepage() {
           </div>
         )}
       </nav>
+      </div>{/* close sticky wrapper */}
 
       {/* ══ HERO ══ */}
       <section style={s.hero} className="hero-stars">

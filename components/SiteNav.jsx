@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyLight: "#2C3E5A", navyFade: "#162033",
@@ -41,14 +41,29 @@ const FEATURE_TABS = [
 export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114" }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [lang, setLang] = useState("en");
+
+  useEffect(() => {
+    const saved = typeof window !== "undefined" && localStorage.getItem("jr-lang");
+    if (saved === "es") setLang("es");
+  }, []);
+
+  const toggleLang = () => {
+    const next = lang === "en" ? "es" : "en";
+    setLang(next);
+    if (typeof window !== "undefined") localStorage.setItem("jr-lang", next);
+    window.location.href = next === "es" ? "/?lang=es" : "/";
+  };
 
   return (
-    <>
-      <div style={{ background: `linear-gradient(90deg,${C.gold},${C.goldLight})`, padding: "10px 24px", textAlign: "center", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
+    <div style={{ position: "sticky", top: 0, zIndex: 1000 }}>
+      {/* Promo Banner — sticks with nav */}
+      <div style={{ background: `linear-gradient(90deg,${C.gold},${C.goldLight})`, padding: "8px 24px", textAlign: "center", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
         {promoBanner}
       </div>
 
-      <nav style={{ position: "sticky", top: 0, zIndex: 1000, padding: "10px 24px", background: "rgba(11,22,40,0.98)", backdropFilter: "blur(12px)", borderBottom: `1px solid ${C.navyLight}` }}>
+      {/* Navigation */}
+      <nav style={{ padding: "10px 24px", background: "rgba(11,22,40,0.98)", backdropFilter: "blur(12px)", borderBottom: `1px solid ${C.navyLight}` }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <a href="/" style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 800, color: C.white, textDecoration: "none" }}>
             JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span>
@@ -77,6 +92,9 @@ export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Fu
               <a key={`ft-${i}`} href={tab.href} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: tab.color, background: tab.bg, padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: `1px solid ${tab.color}30` }}>{tab.label}</a>
             ))}
             <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>(844) 444-3114</a>
+            <button onClick={toggleLang} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, background: C.goldPale, border: `1px solid ${C.gold}`, borderRadius: "4px", padding: "4px 10px", cursor: "pointer", letterSpacing: "1px" }}>
+              {lang === "en" ? "ES" : "EN"}
+            </button>
           </div>
 
           <button className="jr-nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", padding: "8px", flexDirection: "column", gap: "5px" }}>
@@ -100,6 +118,9 @@ export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Fu
               <a key={`mft-${i}`} href={tab.href} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 700, color: tab.color, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{tab.label}</a>
             ))}
             <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 700, color: C.gold, textDecoration: "none", padding: "12px 0", textAlign: "center" }}>📞 (844) 444-3114</a>
+            <button onClick={toggleLang} style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, background: C.goldPale, border: `1px solid ${C.gold}`, borderRadius: "4px", padding: "10px", cursor: "pointer", letterSpacing: "1px", marginBottom: "8px" }}>
+              {lang === "en" ? "ESPAÑOL" : "ENGLISH"}
+            </button>
           </div>
         )}
       </nav>
@@ -113,6 +134,6 @@ export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Fu
           .jr-nav-hamburger { display: none !important; }
         }
       `}</style>
-    </>
+    </div>
   );
 }
