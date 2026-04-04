@@ -321,7 +321,7 @@ export default function JROneHomepage() {
     section: { padding: "80px 24px", maxWidth: "1200px", margin: "0 auto" },
     sectionDark: { background: C.bg },
     sectionNavy: { background: C.navy },
-    sectionCream: { background: C.cream },
+    sectionCream: { background: C.navy },
     sectionTitle: { fontFamily: font.heading, fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 800, letterSpacing: "2px", textAlign: "center", marginBottom: "8px" },
     sectionSub: { fontFamily: font.body, fontSize: "17px", textAlign: "center", marginBottom: "48px", maxWidth: "600px", margin: "0 auto 48px" },
   };
@@ -533,10 +533,10 @@ export default function JROneHomepage() {
       </section>
 
       {/* ══ WHY JR ONE ══ */}
-      <section style={{ background: C.cream, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <SectionTag>{lang === "en" ? "WHY US" : "POR QUÉ"}</SectionTag>
-          <h2 style={{ ...s.sectionTitle, color: C.navy }}>{t.whyTitle}</h2>
+          <h2 style={{ ...s.sectionTitle, color: C.white }}>{t.whyTitle}</h2>
           <GoldDivider />
           <div style={{ marginTop: "48px", textAlign: "left" }}>
             {t.whyItems.map((item, i) => (
@@ -547,8 +547,8 @@ export default function JROneHomepage() {
                   </span>
                 </div>
                 <div>
-                  <h3 style={{ fontFamily: font.heading, fontSize: "18px", fontWeight: 700, color: C.navy, marginBottom: "6px" }}>{item.title}</h3>
-                  <p style={{ fontFamily: font.body, fontSize: "16px", color: "#4B5563", lineHeight: 1.6 }}>{item.desc}</p>
+                  <h3 style={{ fontFamily: font.heading, fontSize: "18px", fontWeight: 700, color: C.white, marginBottom: "6px" }}>{item.title}</h3>
+                  <p style={{ fontFamily: font.body, fontSize: "16px", color: C.muted, lineHeight: 1.6 }}>{item.desc}</p>
                 </div>
               </div>
             ))}

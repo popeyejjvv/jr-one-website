@@ -173,12 +173,12 @@ export default function AboutUsPage() {
       </section>
 
       {/* ══ WHAT WE DO ══ */}
-      <section style={{background:C.cream,padding:"80px 24px"}}>
+      <section style={{background:C.navy,padding:"80px 24px"}}>
         <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
           <Tag>OUR SERVICES</Tag>
-          <h2 style={{...secTitle,color:C.navy}}>WHAT WE SPECIALIZE IN</h2>
+          <h2 style={{...secTitle,color:C.white}}>WHAT WE SPECIALIZE IN</h2>
           <GoldBar />
-          <p style={{fontFamily:f.b,fontSize:"17px",color:"#4B5563",maxWidth:"600px",margin:"0 auto 48px"}}>
+          <p style={{fontFamily:f.b,fontSize:"17px",color:C.muted,maxWidth:"600px",margin:"0 auto 48px"}}>
             We do one thing and we do it exceptionally — aluminum exterior systems. Gutters, soffit, fascia, siding, gutter guards, and roof rejuvenation. No roofing. No painting. No general contracting. Just aluminum, done right.
           </p>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",gap:"16px",textAlign:"left"}}>
@@ -190,9 +190,9 @@ export default function AboutUsPage() {
               {title:"Gutter Repair & Maintenance",desc:"Fix it right the first time. Seasonal programs available."},
               {title:"Peak 301 Roof Rejuvenation",desc:"Soy-based sealant that extends roof life 6-10 years."},
             ].map((svc,i) => (
-              <div key={i} style={{background:C.white,borderRadius:"8px",padding:"20px",borderLeft:`3px solid ${C.gold}`,cursor:"pointer"}}>
-                <h3 style={{fontFamily:f.h,fontSize:"15px",fontWeight:700,color:C.navy,marginBottom:"4px"}}>{svc.title}</h3>
-                <p style={{fontFamily:f.b,fontSize:"14px",color:"#6B7280"}}>{svc.desc}</p>
+              <div key={i} style={{background:C.navyFade,borderRadius:"8px",padding:"20px",borderLeft:`3px solid ${C.gold}`,border:`1px solid ${C.navyLight}`,cursor:"pointer"}}>
+                <h3 style={{fontFamily:f.h,fontSize:"15px",fontWeight:700,color:C.white,marginBottom:"4px"}}>{svc.title}</h3>
+                <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted}}>{svc.desc}</p>
               </div>
             ))}
           </div>

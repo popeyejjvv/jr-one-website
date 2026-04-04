@@ -56,10 +56,10 @@ export default function FinancingPage() {
       </section>
 
       {/* WHY FINANCE */}
-      <section style={{background:C.cream,padding:"80px 24px"}}>
+      <section style={{background:C.navy,padding:"80px 24px"}}>
         <div style={{maxWidth:"800px",margin:"0 auto",textAlign:"center"}}>
           <Tag>WHY FINANCE</Tag>
-          <h2 style={{...secTitle,color:C.navy}}>PROTECTING YOUR HOME IS AN INVESTMENT</h2>
+          <h2 style={{...secTitle,color:C.white}}>PROTECTING YOUR HOME IS AN INVESTMENT</h2>
           <GoldBar />
           <div style={{marginTop:"48px",textAlign:"left"}}>
             {[
@@ -73,8 +73,8 @@ export default function FinancingPage() {
                   <span style={{fontFamily:f.h,fontSize:"16px",fontWeight:800,color:C.gold}}>{i+1}</span>
                 </div>
                 <div>
-                  <h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.navy,marginBottom:"4px"}}>{item.title}</h3>
-                  <p style={{fontFamily:f.b,fontSize:"15px",color:"#4B5563",lineHeight:1.6}}>{item.desc}</p>
+                  <h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,marginBottom:"4px"}}>{item.title}</h3>
+                  <p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.6}}>{item.desc}</p>
                 </div>
               </div>
             )}
