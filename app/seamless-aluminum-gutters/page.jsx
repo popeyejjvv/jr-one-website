@@ -57,7 +57,7 @@ const PAGE = {
   heroTag: "SEAMLESS GUTTER INSTALLATION",
   heroH1: "Tampa Bay's Premier",
   heroH1Gold: "Seamless Gutter Systems",
-  heroP: "Custom-fabricated on-site for a watertight, perfect fit. Our in-house crews install 5\", 6\", and 7\" seamless aluminum gutters that protect your home from Florida's relentless rain — for decades, not seasons.",
+  heroP: "Custom-fabricated on-site for a watertight, perfect fit. Our in-house crews install 6\" and 7\" seamless aluminum gutters that protect your home from Florida's relentless rain — for decades, not seasons.",
   
   problemTitle: "WHY GUTTERS MATTER MORE THAN YOU THINK",
   problems: [
@@ -70,7 +70,7 @@ const PAGE = {
   solutionTitle: "HOW JR ONE DOES GUTTERS DIFFERENTLY",
   solutions: [
     { title: "Custom-fabricated on your property", desc: "We bring our gutter machine to your home and fabricate each run on-site to the exact measurements. No factory pre-cuts, no splices, no seams that leak. Every piece fits your roofline perfectly." },
-    { title: "Three sizes for every situation", desc: "5\" standard residential gutters for typical homes. 6\" high-capacity systems for homes with large roof areas or steep pitches. 7\" commercial-grade gutters for maximum water handling during Florida storms." },
+    { title: "Two sizes for every situation", desc: "6\" high-capacity systems for homes with standard to large roof areas. 7\" commercial-grade gutters for maximum water handling during Florida storms. We recommend 6\" as the baseline for every Florida home — standard 5\" gutters overflow during summer storms." },
     { title: "Multiple gauge options to fit your needs", desc: "We carry a range of aluminum gauges from standard .027 up to heavy-duty .032, and we help you choose the right one for your home, budget, and weather exposure. Thicker gauges resist denting and last longer — but we'll never upsell you on what you don't need." },
     { title: "Hidden hanger system", desc: "Internal hangers every 24 inches for maximum strength. No ugly spike-and-ferrule showing on the face of your gutters. Cleaner look, stronger hold, longer lifespan." },
     { title: "Precision-pitched for Florida rain", desc: "Every gutter run is pitched at the correct slope for optimal water flow. Incorrect pitch is the #1 cause of gutter overflow and standing water — and it's the mistake subcontracted gutter installers make most often." },
@@ -99,8 +99,8 @@ const PAGE = {
   ],
 
   faqs: [
-    { q: "How much do seamless gutters cost in Tampa?", a: "Seamless aluminum gutter installation in Tampa typically ranges from $11–$20 per linear foot, depending on gutter size (5\", 6\", or 7\"), accessibility, number of corners, and downspout configuration. Our estimates are detailed and transparent — you see every line item before any work begins." },
-    { q: "What's the difference between 5\", 6\", and 7\" gutters?", a: "The number refers to the width of the gutter opening. 5\" handles standard residential water flow. 6\" handles homes with larger roof areas, steeper pitches, or areas with heavy tree coverage. 7\" is commercial-grade capacity for maximum water handling during intense Florida storms. We assess your home and recommend the right size — we don't default to the cheapest option." },
+    { q: "How much do seamless gutters cost in Tampa?", a: "Seamless aluminum gutter installation in Tampa typically ranges from $11–$20 per linear foot, depending on gutter size (6\" or 7\"), accessibility, number of corners, and downspout configuration. Our estimates are detailed and transparent — you see every line item before any work begins." },
+    { q: "What's the difference between 6\" and 7\" gutters?", a: "The number refers to the width of the gutter opening. 6\" is our standard recommendation for Florida homes — it handles typical residential water flow plus the extra capacity needed for our heavy rain. 7\" is commercial-grade capacity for maximum water handling during intense storms, large roof areas, or steep pitches. We assess your home and recommend the right size." },
     { q: "How long does gutter installation take?", a: "Most residential gutter installations are completed in a single day. Homes with complex rooflines, multiple stories, or combined gutter and soffit/fascia projects may take 2–3 days. We give you a specific timeline before work begins." },
     { q: "Do seamless gutters really not leak?", a: "Seamless gutters eliminate the horizontal seams where sectional gutters typically fail. The only joints in a seamless system are at corners and downspout connections — and those are sealed with professional-grade sealant. The result is dramatically fewer leak points compared to pre-formed sectional gutters." },
     { q: "What colors are available for seamless gutters?", a: "We offer 40+ color options in our aluminum coil inventory. The most popular choices in Tampa Bay are white, almond, clay, bronze, dark bronze, and black — but we can match virtually any trim or fascia color on your home." },
@@ -162,14 +162,6 @@ export default function SeamlessGuttersPage() {
                 <div style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, maxWidth: "100px" }}>{s.label}</div>
               </div>
             ))}
-          </div>
-        </div>
-        {/* Photo placeholder */}
-        <div style={{ flex: "1 1 400px", minWidth: "300px", maxWidth: "500px", aspectRatio: "4/3", background: `linear-gradient(135deg,${C.navyFade},${C.navy})`, borderRadius: "16px", border: `1px solid ${C.navyLight}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ textAlign: "center", color: C.muted }}>
-            <div style={{ fontSize: "48px", marginBottom: "12px" }}>📸</div>
-            <p style={{ fontFamily: f.h, fontSize: "13px", letterSpacing: "1px" }}>PROJECT PHOTO COMING SOON</p>
-            
           </div>
         </div>
       </section>

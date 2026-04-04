@@ -166,14 +166,6 @@ export default function SpecialtyGuttersPage() {
             ))}
           </div>
         </div>
-        {/* Photo placeholder */}
-        <div style={{ flex: "1 1 400px", minWidth: "300px", maxWidth: "500px", aspectRatio: "4/3", background: `linear-gradient(135deg,${C.navyFade},${C.navy})`, borderRadius: "16px", border: `1px solid ${C.navyLight}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ textAlign: "center", color: C.muted }}>
-            <div style={{ fontSize: "48px", marginBottom: "12px" }}>📸</div>
-            <p style={{ fontFamily: f.h, fontSize: "13px", letterSpacing: "1px" }}>HERO PROJECT PHOTO</p>
-            <p style={{ fontFamily: f.b, fontSize: "12px", marginTop: "4px" }}>Best specialty gutter install shot from CompanyCam</p>
-          </div>
-        </div>
       </section>
 
       {/* ══ THE PROBLEM ══ */}
