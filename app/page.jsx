@@ -344,18 +344,18 @@ export default function JROneHomepage() {
               {servicesOpen && (
                 <div style={{ position: "absolute", top: "100%", left: "-12px", paddingTop: "4px" }}><div style={{ background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
                   {[
-                    { label: lang === "en" ? "Seamless Gutters" : "Canaletas", href: "/seamless-aluminum-gutters" },
-                    { label: lang === "en" ? "Gutter Guards" : "Protectores", href: "/gutter-guards" },
-                    { label: lang === "en" ? "Soffit & Fascia" : "Sofito y Fascia", href: "/soffit-and-fascia" },
-                    { label: lang === "en" ? "Gutter Repair" : "Reparación", href: "/gutter-repair" },
-                    { label: lang === "en" ? "Siding" : "Revestimiento", href: "/siding" },
-                    { label: lang === "en" ? "Specialty Gutters" : "Especiales", href: "/specialty-gutters" },
                     { label: lang === "en" ? "Copper Gutters" : "Cobre", href: "/copper-gutters" },
-                    { label: "SAGIPER", href: "/sagiper" },
-                    { label: "Peak 301", href: "/peak-301" },
-                    { label: lang === "en" ? "Govee Lights" : "Luces Govee", href: "/govee-lights" },
-                    { label: lang === "en" ? "Service Plans" : "Planes de Servicio", href: "/service-plans" },
                     { label: lang === "en" ? "Drainage Installation" : "Instalación de Drenaje", href: "/drainage-assessment" },
+                    { label: lang === "en" ? "Govee Lights" : "Luces Govee", href: "/govee-lights" },
+                    { label: lang === "en" ? "Gutter Guards" : "Protectores", href: "/gutter-guards" },
+                    { label: lang === "en" ? "Gutter Repair" : "Reparación", href: "/gutter-repair" },
+                    { label: "Peak 301", href: "/peak-301" },
+                    { label: "SAGIPER", href: "/sagiper" },
+                    { label: lang === "en" ? "Seamless Gutters" : "Canaletas", href: "/seamless-aluminum-gutters" },
+                    { label: lang === "en" ? "Service Plans" : "Planes de Servicio", href: "/service-plans" },
+                    { label: lang === "en" ? "Siding" : "Revestimiento", href: "/siding" },
+                    { label: lang === "en" ? "Soffit & Fascia" : "Sofito y Fascia", href: "/soffit-and-fascia" },
+                    { label: lang === "en" ? "Specialty Gutters" : "Especiales", href: "/specialty-gutters" },
                   ].map((svc, i) => (
                     <a key={i} href={svc.href} style={{ display: "block", padding: "8px 20px", fontFamily: font.heading, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none", transition: "color 0.15s" }}
                       onMouseOver={e => { e.target.style.color = C.gold; e.target.style.background = "rgba(200,149,46,0.08)"; }}
@@ -694,18 +694,18 @@ export default function JROneHomepage() {
           <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerServices}</h4>
             {[
-              { en: "Seamless Gutters", es: "Canaletas", href: "/seamless-aluminum-gutters" },
-              { en: "Gutter Guards", es: "Protectores", href: "/gutter-guards" },
-              { en: "Soffit & Fascia", es: "Sofito y Fascia", href: "/soffit-and-fascia" },
-              { en: "Gutter Repair", es: "Reparación", href: "/gutter-repair" },
-              { en: "Siding", es: "Revestimiento", href: "/siding" },
-              { en: "Specialty Gutters", es: "Canaletas Especiales", href: "/specialty-gutters" },
-              { en: "SAGIPER", es: "SAGIPER", href: "/sagiper" },
-              { en: "Peak 301", es: "Peak 301", href: "/peak-301" },
-              { en: "Govee Lights", es: "Luces Govee", href: "/govee-lights" },
-              { en: "Service Plans", es: "Planes de Servicio", href: "/service-plans" },
               { en: "Copper Gutters", es: "Canaletas de Cobre", href: "/copper-gutters" },
               { en: "Drainage Installation", es: "Instalación de Drenaje", href: "/drainage-assessment" },
+              { en: "Govee Lights", es: "Luces Govee", href: "/govee-lights" },
+              { en: "Gutter Guards", es: "Protectores", href: "/gutter-guards" },
+              { en: "Gutter Repair", es: "Reparación", href: "/gutter-repair" },
+              { en: "Peak 301", es: "Peak 301", href: "/peak-301" },
+              { en: "SAGIPER", es: "SAGIPER", href: "/sagiper" },
+              { en: "Seamless Gutters", es: "Canaletas", href: "/seamless-aluminum-gutters" },
+              { en: "Service Plans", es: "Planes de Servicio", href: "/service-plans" },
+              { en: "Siding", es: "Revestimiento", href: "/siding" },
+              { en: "Soffit & Fascia", es: "Sofito y Fascia", href: "/soffit-and-fascia" },
+              { en: "Specialty Gutters", es: "Canaletas Especiales", href: "/specialty-gutters" },
             ].map((svc, i) => (
               <a key={i} href={svc.href} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{lang === "en" ? svc.en : svc.es}</a>
             ))}
@@ -713,13 +713,27 @@ export default function JROneHomepage() {
           <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerAreas}</h4>
             {[
-              { name: "Tampa", slug: "tampa" }, { name: "Clearwater", slug: "clearwater" }, { name: "St. Petersburg", slug: "st-petersburg" },
-              { name: "Sarasota", slug: "sarasota" }, { name: "Bradenton", slug: "bradenton" }, { name: "Lakeland", slug: "lakeland" },
-              { name: "Brandon", slug: "brandon" }, { name: "Wesley Chapel", slug: "wesley-chapel" }, { name: "Palm Harbor", slug: "palm-harbor" },
-              { name: "Riverview", slug: "riverview" }, { name: "New Port Richey", slug: "new-port-richey" }, { name: "Largo", slug: "largo" },
-              { name: "Spring Hill", slug: "spring-hill" }, { name: "Tarpon Springs", slug: "tarpon-springs" }, { name: "Land O' Lakes", slug: "land-o-lakes" },
-              { name: "Dunedin", slug: "dunedin" }, { name: "Ruskin", slug: "ruskin" }, { name: "Sun City Center", slug: "sun-city-center" },
-              { name: "Temple Terrace", slug: "temple-terrace" }, { name: "Plant City", slug: "plant-city" }, { name: "Lutz", slug: "lutz" },
+              { name: "Bradenton", slug: "bradenton" },
+              { name: "Brandon", slug: "brandon" },
+              { name: "Clearwater", slug: "clearwater" },
+              { name: "Dunedin", slug: "dunedin" },
+              { name: "Lakeland", slug: "lakeland" },
+              { name: "Land O' Lakes", slug: "land-o-lakes" },
+              { name: "Largo", slug: "largo" },
+              { name: "Lutz", slug: "lutz" },
+              { name: "New Port Richey", slug: "new-port-richey" },
+              { name: "Palm Harbor", slug: "palm-harbor" },
+              { name: "Plant City", slug: "plant-city" },
+              { name: "Riverview", slug: "riverview" },
+              { name: "Ruskin", slug: "ruskin" },
+              { name: "Sarasota", slug: "sarasota" },
+              { name: "Spring Hill", slug: "spring-hill" },
+              { name: "St. Petersburg", slug: "st-petersburg" },
+              { name: "Sun City Center", slug: "sun-city-center" },
+              { name: "Tampa", slug: "tampa" },
+              { name: "Tarpon Springs", slug: "tarpon-springs" },
+              { name: "Temple Terrace", slug: "temple-terrace" },
+              { name: "Wesley Chapel", slug: "wesley-chapel" },
             ].map((city, i) => (
               <a key={i} href={`/areas/${city.slug}`} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none", cursor: "pointer" }}>{city.name}</a>
             ))}

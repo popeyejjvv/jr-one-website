@@ -10,18 +10,18 @@ const C = {
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
 const SERVICE_LINKS = [
-  { label: "Seamless Gutters", href: "/seamless-aluminum-gutters" },
-  { label: "Gutter Guards", href: "/gutter-guards" },
-  { label: "Soffit & Fascia", href: "/soffit-and-fascia" },
-  { label: "Gutter Repair", href: "/gutter-repair" },
-  { label: "Siding", href: "/siding" },
-  { label: "Specialty Gutters", href: "/specialty-gutters" },
   { label: "Copper Gutters", href: "/copper-gutters" },
-  { label: "SAGIPER", href: "/sagiper" },
-  { label: "Peak 301", href: "/peak-301" },
-  { label: "Govee Lights", href: "/govee-lights" },
-  { label: "Service Plans", href: "/service-plans" },
   { label: "Drainage Installation", href: "/drainage-assessment" },
+  { label: "Govee Lights", href: "/govee-lights" },
+  { label: "Gutter Guards", href: "/gutter-guards" },
+  { label: "Gutter Repair", href: "/gutter-repair" },
+  { label: "Peak 301", href: "/peak-301" },
+  { label: "SAGIPER", href: "/sagiper" },
+  { label: "Seamless Gutters", href: "/seamless-aluminum-gutters" },
+  { label: "Service Plans", href: "/service-plans" },
+  { label: "Siding", href: "/siding" },
+  { label: "Soffit & Fascia", href: "/soffit-and-fascia" },
+  { label: "Specialty Gutters", href: "/specialty-gutters" },
 ];
 
 const NAV_LINKS = [
