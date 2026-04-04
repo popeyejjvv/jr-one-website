@@ -25,7 +25,7 @@ const PAGE = {
   ],
 
   solutions: [
-    { title:"Multiple guard types — not one-size-fits-all", desc:"We carry micro mesh, screen, reverse curve, and foam insert guards. We assess your tree coverage, roof pitch, and debris type to recommend the right system — not just the most expensive one." },
+    { title:"Four guard options for every situation", desc:"We install aluminum gutter guards, standard gutter guards, micro mesh gutter guards, and EZ Mesh gutter guards. We assess your tree coverage, roof pitch, and debris type to recommend the right system — not just the most expensive one." },
     { title:"Premium micro mesh option", desc:"For maximum debris blocking, micro mesh guards filter out pine needles, shingle grit, and seed pods while still handling Florida's heaviest downpours. We recommend micro mesh for homes with heavy tree coverage or fine debris problems." },
     { title:"Guards + maintenance = complete protection", desc:"Guards keep debris out of your gutters, but surface buildup still happens over time. We offer ongoing maintenance programs to keep your guards clear and your entire system performing — so you get the full benefit of your investment." },
     { title:"Retrofit to your existing gutters", desc:"Most guard systems install directly onto your current gutters without replacement. If your gutters are in good shape, we protect them — we don't force you to buy new ones." },
@@ -74,6 +74,12 @@ export default function GutterGuardsPage() {
   useEffect(() => { injectFonts(); }, []);
   const sec = {padding:"80px 24px",maxWidth:"1200px",margin:"0 auto"};
   const secTitle = {fontFamily:f.h,fontSize:"clamp(24px,4vw,36px)",fontWeight:800,letterSpacing:"2px",textAlign:"center",marginBottom:"8px"};
+  const guardTypes = [
+    { icon:"🛡️", title:"Aluminum Gutter Guards", desc:"Heavy-duty aluminum guards that snap onto your existing gutters. Built to handle Florida's intense UV, heavy rain, and high winds without warping, rusting, or deteriorating. The strongest, longest-lasting guard option we offer — ideal for homes that need maximum durability.", spec:"Material: Aluminum" },
+    { icon:"📐", title:"Standard Gutter Guards", desc:"A reliable, cost-effective guard that keeps leaves and large debris out of your gutters while maintaining solid water flow. A practical choice for homes with moderate tree coverage that want gutter protection without the premium price point.", spec:"Type: Standard screen" },
+    { icon:"🔬", title:"Micro Mesh Gutter Guards", desc:"The finest filtration available. Micro mesh screens block pine needles, shingle grit, seed pods, and even roof sand granules while still handling Florida's heaviest downpours. Our top recommendation for homes surrounded by trees or dealing with fine debris problems.", spec:"Filtration: Ultra-fine mesh" },
+    { icon:"⚡", title:"EZ Mesh Gutter Guards", desc:"Quick-install mesh guards that provide excellent debris protection with minimal installation time. A smart balance between performance and value — effective against leaves and medium debris while keeping your gutter system flowing during Tampa's storm season.", spec:"Install: Quick-fit design" },
+  ];
 
   return (
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
@@ -123,6 +129,32 @@ export default function GutterGuardsPage() {
           <div style={{textAlign:"center"}}><Tag>THE JR ONE DIFFERENCE</Tag><h2 style={{...secTitle,color:C.white}}>GUTTER PROTECTION DONE RIGHT</h2><GoldBar /><p style={{fontFamily:f.b,fontSize:"17px",color:C.muted,maxWidth:"600px",margin:"0 auto 48px"}}>The right guard for the right situation — not a one-size-fits-all sales pitch.</p></div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(340px,1fr))",gap:"20px"}}>
             {PAGE.solutions.map((s,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",transition:"border-color 0.3s"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.accent} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}><div style={{fontFamily:f.h,fontSize:"11px",fontWeight:700,color:C.accent,letterSpacing:"2px",marginBottom:"8px"}}>0{i+1}</div><h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,marginBottom:"10px"}}>{s.title}</h3><p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.6}}>{s.desc}</p></div>)}
+          </div>
+        </div>
+      </section>
+
+      {/* GUARD TYPES */}
+      <section style={{ background: C.cream, padding: "80px 24px" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div style={{ textAlign: "center" }}>
+            <Tag>OUR GUARD OPTIONS</Tag>
+            <h2 style={{ fontFamily: f.h, fontSize: "clamp(24px,4vw,36px)", fontWeight: 800, letterSpacing: "2px", textAlign: "center", marginBottom: "8px", color: C.navy }}>CHOOSE THE RIGHT PROTECTION</h2>
+            <GoldBar />
+            <p style={{ fontFamily: f.b, fontSize: "17px", color: "#4B5563", maxWidth: "600px", margin: "0 auto 48px" }}>
+              Four guard systems — each designed for a specific level of protection and budget.
+            </p>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "20px" }}>
+            {guardTypes.map((g, i) => (
+              <div key={i} style={{ background: C.white, border: "1px solid #E5E7EB", borderRadius: "12px", padding: "28px", borderTop: `4px solid ${C.gold}` }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
+                  <span style={{ fontSize: "28px" }}>{g.icon}</span>
+                </div>
+                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.navy, marginBottom: "10px" }}>{g.title}</h3>
+                <p style={{ fontFamily: f.b, fontSize: "15px", color: "#4B5563", lineHeight: 1.6, marginBottom: "12px" }}>{g.desc}</p>
+                <div style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: C.gold, letterSpacing: "1px", padding: "6px 12px", background: C.goldPale, borderRadius: "4px", display: "inline-block" }}>{g.spec}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

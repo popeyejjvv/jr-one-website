@@ -639,8 +639,16 @@ export default function JROneHomepage() {
           </div>
           <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerAreas}</h4>
-            {["Tampa", "Clearwater", "St. Petersburg", "Sarasota", "Bradenton", "Lakeland"].map((item, i) => (
-              <p key={i} style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", cursor: "pointer" }}>{item}</p>
+            {[
+              { name: "Tampa", slug: "tampa" }, { name: "Clearwater", slug: "clearwater" }, { name: "St. Petersburg", slug: "st-petersburg" },
+              { name: "Sarasota", slug: "sarasota" }, { name: "Bradenton", slug: "bradenton" }, { name: "Lakeland", slug: "lakeland" },
+              { name: "Brandon", slug: "brandon" }, { name: "Wesley Chapel", slug: "wesley-chapel" }, { name: "Palm Harbor", slug: "palm-harbor" },
+              { name: "Riverview", slug: "riverview" }, { name: "New Port Richey", slug: "new-port-richey" }, { name: "Largo", slug: "largo" },
+              { name: "Spring Hill", slug: "spring-hill" }, { name: "Tarpon Springs", slug: "tarpon-springs" }, { name: "Land O' Lakes", slug: "land-o-lakes" },
+              { name: "Dunedin", slug: "dunedin" }, { name: "Ruskin", slug: "ruskin" }, { name: "Sun City Center", slug: "sun-city-center" },
+              { name: "Temple Terrace", slug: "temple-terrace" }, { name: "Plant City", slug: "plant-city" }, { name: "Lutz", slug: "lutz" },
+            ].map((city, i) => (
+              <a key={i} href={`/areas/${city.slug}`} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none", cursor: "pointer" }}>{city.name}</a>
             ))}
           </div>
           <div>

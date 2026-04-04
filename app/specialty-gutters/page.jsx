@@ -55,18 +55,15 @@ const PAGE = {
   heroTag: "CUSTOM & SPECIALTY GUTTER SYSTEMS",
   heroH1: "Beyond Standard.",
   heroH1Accent: "Built for Your Home.",
-  heroP: "Half-round, box, commercial, European, fascia, screen enclosure, and more. When standard gutters won't do, our specialty systems deliver the precision, capacity, and aesthetics your home demands.",
+  heroP: "Half-round, box, D-style, super gutter, commercial, and more. When standard gutters won't do, our specialty systems deliver the precision, capacity, and aesthetics your home demands.",
 
   gutterTypes: [
-    { icon: "\u{1F3DB}\u{FE0F}", title: "Half-Round Gutters", desc: "The classic semicircular profile. Elegant, smooth interior reduces debris buildup. Available in 6\", 7\", and 8\". Pairs perfectly with Mediterranean, Spanish Colonial, and barrel tile roofs \u2014 Tampa Bay's most popular architectural styles.", spec: "Sizes: 6\" / 7\" / 8\"" },
-    { icon: "\u{1F4E6}", title: "Box Style Gutters", desc: "Rectangular profile with maximum water capacity. Built into roof structures or hung externally. Custom-fabricated on a brake for exact dimensions. Ideal for commercial buildings, modern homes, and flat-roof drainage.", spec: "Sizes: 6\"\u201310\" custom" },
-    { icon: "\u{1F3E2}", title: "Commercial Gutters", desc: "Oversized, heavy-duty systems in .032\u2013.050 gauge aluminum. 6\" to 8\" K-style or box profile with 3x4 or 4x5 downspouts. Closer hanger spacing for hurricane-grade wind resistance. Built for large roof areas.", spec: "Sizes: 6\" / 7\" / 8\"" },
-    { icon: "\u{1F3E0}", title: "D-Style / OG Gutters", desc: "The single-curve ogee profile \u2014 the standard of Florida residential gutter installation. Smooth front face blends with any fascia. Hidden hanger mounting for a clean look. The proven workhorse for Tampa Bay homes.", spec: "Sizes: 6\" / 7\"" },
-    { icon: "\u{1F3F0}", title: "European Half-Round", desc: "Half-round with a rolled front bead for added rigidity and ornamental detail. European-style clip hangers. The Old World elegance of Tudor, French Country, and Mediterranean Revival architecture. Available in copper, zinc, and aluminum.", spec: "Sizes: 5\" / 6\" / 7\"" },
-    { icon: "\u2728", title: "Fascia Gutters", desc: "Gutter and fascia board combined into one seamless piece. No visible gutter below the roofline \u2014 the cleanest possible appearance. Eliminates the fascia-to-gutter gap where wasps nest and debris collects. One-piece construction for superior hurricane resistance.", spec: "Sizes: 7\"\u201310\" face" },
-    { icon: "\u{1F3CA}", title: "Screen Enclosure Gutters", desc: "Designed specifically for Florida lanai and pool cage enclosures. Low-profile 2\"\u20134\" systems that mount to screen enclosure frames without compromising structural integrity. Stop water from cascading off your enclosure onto patios and landscaping.", spec: "Sizes: 2\" / 3\" / 4\"" },
+    { icon: "\u{1F3DB}\u{FE0F}", title: "Half-Round Gutters", desc: "The classic semicircular profile. Elegant, smooth interior reduces debris buildup. Available in multiple sizes for different applications. Pairs perfectly with Mediterranean, Spanish Colonial, and barrel tile roofs \u2014 Tampa Bay's most popular architectural styles.", spec: "Profile: Classic semicircular" },
+    { icon: "\u26A1", title: "Super Gutter", desc: "The maximum-capacity residential gutter system. Oversized profile engineered to handle Florida's most extreme rainfall without overflow. When standard gutters can't keep up with your roof's water volume, the Super Gutter delivers the performance you need \u2014 no compromises.", spec: "Grade: Maximum capacity" },
+    { icon: "\u{1F3E0}", title: "D-Style Gutters", desc: "A smooth, single-curve profile that sits flush against the fascia for a clean, streamlined appearance. Popular across Florida residential homes for its simple aesthetic and reliable water handling. A versatile option that works with virtually any architectural style.", spec: "Profile: Smooth single-curve" },
+    { icon: "\u{1F4E6}", title: "Box Style Gutters", desc: "Rectangular profile with maximum water capacity. Built into roof structures or hung externally. Custom-fabricated on a brake for exact dimensions. Ideal for commercial buildings, modern homes, and flat-roof drainage.", spec: "Profile: Rectangular / custom" },
+    { icon: "\u{1F3E2}", title: "Commercial Gutters", desc: "Oversized, heavy-duty systems in .032\u2013.050 gauge aluminum. 6\" to 8\" K-style or box profile with 3x4 or 4x5 downspouts. Closer hanger spacing for hurricane-grade wind resistance. Built for large roof areas.", spec: "Grade: Heavy-duty commercial" },
     { icon: "\u{1F527}", title: "Rollform / Seamless", desc: "Every gutter we install is rollformed on-site from continuous aluminum coil \u2014 custom-cut to the exact length your home needs. No seams means no leaks. Up to 100+ feet in a single piece. The professional standard.", spec: "Method: On-site fabrication" },
-    { icon: "\u{1F4CF}", title: "K-Style Oversized", desc: "The same crown-molding profile as standard K-style, scaled to 6\" and 7\". Handles 40\u201350% more water than 5\" gutters. With 3x4 downspouts, this is the recommended upgrade for every Florida home tired of overflowing gutters.", spec: "Sizes: 6\" / 7\"" },
   ],
 
   whySpecialty: [
@@ -77,7 +74,7 @@ const PAGE = {
   ],
 
   stats: [
-    { value: "9+", label: "Specialty gutter types" },
+    { value: "6+", label: "Specialty gutter profiles" },
     { value: "8\"", label: "Max half-round size" },
     { value: "100+", label: "Ft seamless runs" },
     { value: ".050", label: "Gauge max thickness" },
@@ -86,7 +83,6 @@ const PAGE = {
   problems: [
     { icon: "\u{1F30A}", title: "Standard gutters overflow in Florida storms", desc: "5\" gutters can't handle 2\u20134 inches of rain per hour. Your foundation, landscaping, and fascia pay the price every summer." },
     { icon: "\u{1F3E0}", title: "Wrong gutter style ruins architectural look", desc: "K-style on a Mediterranean home. Half-round on a modern build. The wrong profile cheapens your entire exterior." },
-    { icon: "\u{1F3CA}", title: "Screen enclosures dump water on patios", desc: "Pool cages and lanai enclosures without gutters create waterfalls onto your patio furniture, landscaping, and walkways." },
     { icon: "\u{1F32A}\u{FE0F}", title: "Light-gauge gutters fail in hurricane winds", desc: "Cheap .019 gauge aluminum bends, pulls away from fascia, and rips off in high winds. Florida demands heavier materials." },
   ],
 
@@ -107,7 +103,6 @@ const PAGE = {
     { q: "What size gutters do I need in Tampa?", a: "For most Florida homes, 6\" gutters with 3x4 downspouts should be the baseline. Standard 5\" K-style gutters overflow during summer storms. We size every system based on your roof area and pitch." },
     { q: "Are half-round gutters more expensive?", a: "Yes, typically 20\u201330% more than K-style due to the profile and specialized mounting brackets. But on Mediterranean, Spanish, and barrel-tile homes, they're the architecturally correct choice." },
     { q: "Do you install copper specialty gutters?", a: "Yes. Copper half-round, European half-round, and copper box gutters. See our dedicated copper gutters page for details." },
-    { q: "Can you add gutters to my screen enclosure?", a: "Absolutely. This is one of our Florida-specific specialties. We install low-profile gutter systems on lanai and pool cage enclosures without compromising the structure." },
     { q: "What gauge aluminum do you use?", a: ".027 minimum for residential, .032 recommended for Florida conditions, up to .050 for commercial and high-wind applications. We never use cheap .019 gauge." },
     { q: "Do you do commercial gutter work?", a: "Yes. We install 6\"\u20138\" commercial gutter systems with oversized downspouts on offices, retail, churches, schools, and multi-family buildings throughout Tampa Bay." },
   ],
@@ -217,7 +212,7 @@ export default function SpecialtyGuttersPage() {
             <h2 style={{ ...secTitle, color: C.white }}>SPECIALTY GUTTER SYSTEMS</h2>
             <GoldBar />
             <p style={{ fontFamily: f.b, fontSize: "17px", color: C.muted, maxWidth: "600px", margin: "0 auto 48px" }}>
-              Nine specialty profiles — each engineered for a specific purpose, architecture, and performance requirement.
+              Six specialty profiles — each engineered for a specific purpose, architecture, and performance requirement.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "20px" }}>

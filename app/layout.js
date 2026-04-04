@@ -73,6 +73,10 @@ export const metadata = {
     title: "JR One Aluminum LLC",
     description: "Tampa Bay's trusted aluminum specialists. 30+ years. Free estimates.",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   robots: {
     index: true,
     follow: true,

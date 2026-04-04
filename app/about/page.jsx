@@ -24,8 +24,17 @@ export default function AboutUsPage() {
         <span style={{color:C.muted,cursor:"pointer"}}>Home</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.gold}}>About Us</span>
       </div></div>
 
+      {/* ══ JAVIER PHOTO ══ */}
+      <section style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+        <div style={{maxWidth:"500px",margin:"0 auto",borderRadius:"16px",overflow:"hidden",border:`2px solid ${C.gold}`,boxShadow:"0 8px 32px rgba(200,149,46,0.15)"}}>
+          <img src="/images/javier-rivera.jpg" alt="Javier Rivera — Founder of JR One Aluminum" style={{width:"100%",height:"auto",display:"block"}} />
+        </div>
+        <p style={{fontFamily:f.h,fontSize:"14px",fontWeight:600,color:C.gold,marginTop:"16px",letterSpacing:"1px"}}>JAVIER RIVERA — FOUNDER</p>
+        <p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,marginTop:"4px"}}>The man who started it all. Honduras to Tampa, 1990.</p>
+      </section>
+
       {/* ══ HERO ══ */}
-      <section style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+      <section style={{padding:"40px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>OUR STORY</Tag>
         <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>
           Three Decades. One Family.<br/>
