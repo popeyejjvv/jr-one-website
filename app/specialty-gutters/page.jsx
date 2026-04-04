@@ -23,7 +23,7 @@ const C = {
   goldPale: "rgba(200,149,46,0.12)", cream: "#F5F3EF", white: "#FFFFFF",
   offWhite: "#E8E4DC", muted: "#7A8FA8", charcoal: "#2D2D2D",
   success: "#2D8B4E", successDim: "rgba(45,139,78,0.15)",
-  accent: "#8B6914", accentLight: "#A67F1E", accentPale: "rgba(139,105,20,0.12)",
+  accent: "#3A3A3A", accentLight: "#555555", accentPale: "rgba(58,58,58,0.12)",
 };
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
@@ -37,7 +37,7 @@ const GoldBar = () => <div style={{ width: "60px", height: "3px", background: `l
 const Stars = ({ n = 5 }) => <span style={{ color: C.gold, fontSize: "14px", letterSpacing: "2px" }}>{"★".repeat(n)}</span>;
 
 const BtnPrimary = ({ children, onClick }) => (
-  <button onClick={onClick} style={{ padding: "16px 36px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(139,105,20,0.3)", transition: "transform 0.15s" }}
+  <button onClick={onClick} style={{ padding: "16px 36px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(58,58,58,0.3)", transition: "transform 0.15s" }}
     onMouseOver={e => e.target.style.transform = "translateY(-2px)"}
     onMouseOut={e => e.target.style.transform = "none"}>
     {children}
@@ -236,6 +236,20 @@ export default function SpecialtyGuttersPage() {
         </div>
       </section>
 
+      {/* ══ PEAK 301 CALLOUT ══ */}
+      <section style={{ background: "rgba(177,26,33,0.08)", padding: "32px 24px", borderTop: "2px solid #B11A21", borderBottom: "2px solid #B11A21" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "20px" }}>
+          <div style={{ flex: "1 1 400px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+              <span style={{ fontSize: "20px" }}>⚠️</span>
+              <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px", fontWeight: 700, color: "#B11A21", letterSpacing: "1px" }}>ROOF AGING?</span>
+            </div>
+            <p style={{ fontFamily: "'Source Sans 3', sans-serif", fontSize: "16px", color: "#E8E4DC", lineHeight: 1.6 }}>Peak 301 Roof Rejuvenation extends your roof's life 6–10 years for under 15% the cost of replacement. Save your roof. Save your insurance.</p>
+          </div>
+          <a href="/peak-301" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 28px", fontFamily: "'Montserrat', sans-serif", fontSize: "13px", fontWeight: 700, letterSpacing: "1px", color: "#FFFFFF", background: "linear-gradient(135deg, #B11A21, #D42A2A)", borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap", boxShadow: "0 4px 12px rgba(177,26,33,0.3)" }}>LEARN ABOUT PEAK 301 →</a>
+        </div>
+      </section>
+
       {/* ══ THE GOLD STANDARD ══ */}
       <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={sec}>
@@ -250,7 +264,7 @@ export default function SpecialtyGuttersPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px" }}>
             {PAGE.goldSteps.map((step, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", position: "relative" }}>
-                <div style={{ fontFamily: f.h, fontSize: "36px", fontWeight: 800, color: "rgba(139,105,20,0.08)", position: "absolute", top: "16px", right: "20px" }}>{step.num}</div>
+                <div style={{ fontFamily: f.h, fontSize: "36px", fontWeight: 800, color: "rgba(58,58,58,0.08)", position: "absolute", top: "16px", right: "20px" }}>{step.num}</div>
                 <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.accent, letterSpacing: "3px", marginBottom: "8px" }}>STEP {step.num}</div>
                 <h3 style={{ fontFamily: f.h, fontSize: "22px", fontWeight: 700, color: C.white, marginBottom: "12px" }}>{step.title}</h3>
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.6 }}>{step.desc}</p>
@@ -325,7 +339,7 @@ export default function SpecialtyGuttersPage() {
               <input style={inputStyle} placeholder="Phone Number" type="tel" value={formData.phone} onChange={e => setFormData({ ...formData, phone: e.target.value })} />
               <input style={inputStyle} placeholder="Email Address" type="email" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} />
               <input style={inputStyle} placeholder="ZIP Code" value={formData.zip} onChange={e => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-              <button onClick={() => setSubmitted(true)} style={{ width: "100%", padding: "16px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(139,105,20,0.3)" }}>
+              <button onClick={() => setSubmitted(true)} style={{ width: "100%", padding: "16px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(58,58,58,0.3)" }}>
                 REQUEST MY FREE ESTIMATE
               </button>
               <p style={{ fontFamily: f.b, fontSize: "12px", color: "#9CA3AF", textAlign: "center", marginTop: "12px" }}>No spam. No pressure. Just honest expert advice.</p>

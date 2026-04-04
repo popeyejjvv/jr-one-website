@@ -5,10 +5,10 @@ import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 
 const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
-const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D",success:"#2D8B4E",successDim:"rgba(45,139,78,0.15)",alert:"#B11A21",alertDim:"rgba(177,26,33,0.12)" };
+const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D",success:"#2D8B4E",successDim:"rgba(45,139,78,0.15)",alert:"#B11A21",alertDim:"rgba(177,26,33,0.12)",accent:"#E91E8C",accentLight:"#F472B6",accentPale:"rgba(233,30,140,0.12)" };
 const f = { h:"'Montserrat', sans-serif", b:"'Source Sans 3', sans-serif" };
-const Tag = ({children}) => <div style={{display:"inline-block",padding:"6px 16px",background:C.goldPale,borderRadius:"4px",marginBottom:"12px"}}><span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>{children}</span></div>;
-const GoldBar = () => <div style={{width:"60px",height:"3px",background:`linear-gradient(90deg,${C.gold},${C.goldLight})`,borderRadius:"2px",margin:"16px auto"}} />;
+const Tag = ({children}) => <div style={{display:"inline-block",padding:"6px 16px",background:C.accentPale,borderRadius:"4px",marginBottom:"12px"}}><span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.accent,letterSpacing:"3px"}}>{children}</span></div>;
+const GoldBar = () => <div style={{width:"60px",height:"3px",background:`linear-gradient(90deg,${C.accent},${C.accentLight})`,borderRadius:"2px",margin:"16px auto"}} />;
 
 const PAGE = {
   breadcrumb: ["Home","Referral Program"],
@@ -87,22 +87,22 @@ export default function ReferralPage() {
       <SiteNav />
 
       {/* BREADCRUMB */}
-      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>Home</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.gold}}>Referral Program</span></div></div>
+      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>Home</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.accent}}>Referral Program</span></div></div>
 
       {/* HERO */}
       <section style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto"}}>
         <div style={{maxWidth:"800px"}}>
           <Tag>{PAGE.heroTag}</Tag>
-          <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>{PAGE.heroH1}<br/><span style={{color:C.gold}}>{PAGE.heroH1Gold}</span></h1>
+          <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>{PAGE.heroH1}<br/><span style={{color:C.accent}}>{PAGE.heroH1Gold}</span></h1>
           <p style={{fontFamily:f.b,fontSize:"18px",color:C.offWhite,lineHeight:1.7,marginBottom:"32px",maxWidth:"680px"}}>{PAGE.heroP}</p>
           <div style={{display:"flex",gap:"16px",flexWrap:"wrap"}}>
-            <a href="tel:8444443114" style={{padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",textDecoration:"none",boxShadow:"0 4px 16px rgba(200,149,46,0.3)"}}>REFER SOMEONE NOW</a>
-            <a href="mailto:jrone.business@gmail.com?subject=Referral" style={{display:"inline-flex",alignItems:"center",padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>✉️ EMAIL A REFERRAL</a>
+            <a href="tel:8444443114" style={{padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.accent},${C.accentLight})`,border:"none",borderRadius:"8px",textDecoration:"none",boxShadow:"0 4px 16px rgba(233,30,140,0.3)"}}>REFER SOMEONE NOW</a>
+            <a href="mailto:jrone.business@gmail.com?subject=Referral" style={{display:"inline-flex",alignItems:"center",padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.accent,border:`2px solid ${C.accent}`,borderRadius:"8px",textDecoration:"none"}}>✉️ EMAIL A REFERRAL</a>
           </div>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"20px",marginTop:"56px"}}>
           {PAGE.stats.map((s,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px",textAlign:"center"}}>
-            <div style={{fontFamily:f.h,fontSize:"clamp(22px,3vw,32px)",fontWeight:800,color:C.gold,marginBottom:"6px"}}>{s.value}</div>
+            <div style={{fontFamily:f.h,fontSize:"clamp(22px,3vw,32px)",fontWeight:800,color:C.accent,marginBottom:"6px"}}>{s.value}</div>
             <div style={{fontFamily:f.b,fontSize:"13px",color:C.muted,lineHeight:1.4}}>{s.label}</div>
           </div>)}
         </div>
@@ -113,8 +113,8 @@ export default function ReferralPage() {
         <div style={sec}><div style={{textAlign:"center"}}><Tag>HOW IT WORKS</Tag><h2 style={{...secTitle,color:C.white}}>4 STEPS. THAT'S IT.</h2><GoldBar /></div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",gap:"24px",marginTop:"48px"}}>
             {PAGE.howItWorks.map((step,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",position:"relative"}}>
-              <div style={{fontFamily:f.h,fontSize:"36px",fontWeight:800,color:"rgba(200,149,46,0.08)",position:"absolute",top:"16px",right:"20px"}}>{step.num}</div>
-              <div style={{fontFamily:f.h,fontSize:"11px",fontWeight:700,color:C.gold,letterSpacing:"3px",marginBottom:"8px"}}>STEP {step.num}</div>
+              <div style={{fontFamily:f.h,fontSize:"36px",fontWeight:800,color:"rgba(233,30,140,0.08)",position:"absolute",top:"16px",right:"20px"}}>{step.num}</div>
+              <div style={{fontFamily:f.h,fontSize:"11px",fontWeight:700,color:C.accent,letterSpacing:"3px",marginBottom:"8px"}}>STEP {step.num}</div>
               <h3 style={{fontFamily:f.h,fontSize:"22px",fontWeight:700,color:C.white,marginBottom:"12px"}}>{step.title}</h3>
               <p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.6}}>{step.desc}</p>
             </div>)}
@@ -126,7 +126,7 @@ export default function ReferralPage() {
       <section style={{background:C.bg,padding:"80px 24px"}}>
         <div style={sec}><div style={{textAlign:"center"}}><Tag>WHO CAN REFER</Tag><h2 style={{...secTitle,color:C.white}}>EVERYONE EARNS</h2><GoldBar /></div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(340px,1fr))",gap:"20px",marginTop:"48px"}}>
-            {PAGE.whoCanRefer.map((item,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",transition:"border-color 0.3s"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.gold} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}>
+            {PAGE.whoCanRefer.map((item,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",transition:"border-color 0.3s"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.accent} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}>
               <div style={{fontSize:"32px",marginBottom:"12px"}}>{item.icon}</div>
               <h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,marginBottom:"10px"}}>{item.title}</h3>
               <p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.6}}>{item.desc}</p>
@@ -136,23 +136,23 @@ export default function ReferralPage() {
       </section>
 
       {/* INSURANCE AGENT SPOTLIGHT */}
-      <section style={{background:`linear-gradient(135deg, #1a1a0a, ${C.navy})`,padding:"80px 24px",borderTop:`2px solid ${C.gold}`,borderBottom:`2px solid ${C.gold}`}}>
+      <section style={{background:`linear-gradient(135deg, #1a1a0a, ${C.navy})`,padding:"80px 24px",borderTop:`2px solid ${C.accent}`,borderBottom:`2px solid ${C.accent}`}}>
         <div style={{maxWidth:"900px",margin:"0 auto"}}>
           <div style={{textAlign:"center"}}>
             <Tag>{PAGE.insuranceAgentSection.tag}</Tag>
             <h2 style={{fontFamily:f.h,fontSize:"clamp(22px,3.5vw,32px)",fontWeight:800,color:C.white,marginBottom:"4px"}}>{PAGE.insuranceAgentSection.title}</h2>
-            <h2 style={{fontFamily:f.h,fontSize:"clamp(22px,3.5vw,32px)",fontWeight:800,color:C.gold,marginBottom:"16px"}}>{PAGE.insuranceAgentSection.titleGold}</h2>
+            <h2 style={{fontFamily:f.h,fontSize:"clamp(22px,3.5vw,32px)",fontWeight:800,color:C.accent,marginBottom:"16px"}}>{PAGE.insuranceAgentSection.titleGold}</h2>
             <GoldBar />
             <p style={{fontFamily:f.b,fontSize:"16px",color:C.offWhite,lineHeight:1.7,maxWidth:"700px",margin:"0 auto 40px"}}>{PAGE.insuranceAgentSection.desc}</p>
           </div>
           <div style={{display:"grid",gap:"12px"}}>
-            {PAGE.insuranceAgentSection.benefits.map((b,i) => <div key={i} style={{display:"flex",gap:"12px",alignItems:"center",background:C.goldPale,borderRadius:"8px",padding:"16px 20px"}}>
-              <span style={{fontFamily:f.h,fontSize:"16px",color:C.gold,flexShrink:0}}>✓</span>
+            {PAGE.insuranceAgentSection.benefits.map((b,i) => <div key={i} style={{display:"flex",gap:"12px",alignItems:"center",background:C.accentPale,borderRadius:"8px",padding:"16px 20px"}}>
+              <span style={{fontFamily:f.h,fontSize:"16px",color:C.accent,flexShrink:0}}>✓</span>
               <p style={{fontFamily:f.b,fontSize:"15px",color:C.white}}>{b}</p>
             </div>)}
           </div>
           <div style={{textAlign:"center",marginTop:"40px"}}>
-            <a href="tel:8444443114" style={{padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none",boxShadow:"0 4px 16px rgba(200,149,46,0.3)"}}>BECOME A REFERRAL PARTNER</a>
+            <a href="tel:8444443114" style={{padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.accent},${C.accentLight})`,borderRadius:"8px",textDecoration:"none",boxShadow:"0 4px 16px rgba(233,30,140,0.3)"}}>BECOME A REFERRAL PARTNER</a>
           </div>
         </div>
       </section>
@@ -177,8 +177,8 @@ export default function ReferralPage() {
           <div style={{marginTop:"40px",textAlign:"left"}}>
             {PAGE.faqs.map((faq,i) => <div key={i} style={{borderBottom:`1px solid ${C.navyLight}`}}>
               <button onClick={()=>setOpenFaq(openFaq===i?null:i)} style={{width:"100%",padding:"20px 0",background:"none",border:"none",cursor:"pointer",display:"flex",justifyContent:"space-between",alignItems:"center",gap:"16px"}}>
-                <span style={{fontFamily:f.h,fontSize:"15px",fontWeight:600,color:openFaq===i?C.gold:C.white,textAlign:"left",transition:"color 0.2s"}}>{faq.q}</span>
-                <span style={{fontFamily:f.h,fontSize:"20px",color:C.gold,transform:openFaq===i?"rotate(45deg)":"none",transition:"transform 0.3s",flexShrink:0}}>+</span>
+                <span style={{fontFamily:f.h,fontSize:"15px",fontWeight:600,color:openFaq===i?C.accent:C.white,textAlign:"left",transition:"color 0.2s"}}>{faq.q}</span>
+                <span style={{fontFamily:f.h,fontSize:"20px",color:C.accent,transform:openFaq===i?"rotate(45deg)":"none",transition:"transform 0.3s",flexShrink:0}}>+</span>
               </button>
               {openFaq===i&&<div style={{padding:"0 0 20px",fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.65}}>{faq.a}</div>}
             </div>)}
@@ -192,15 +192,15 @@ export default function ReferralPage() {
           <h2 style={{fontFamily:f.h,fontSize:"clamp(28px,5vw,40px)",fontWeight:800,color:C.white,marginBottom:"12px"}}>{PAGE.ctaTitle}</h2>
           <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,marginBottom:"40px"}}>{PAGE.ctaSub}</p>
           <div style={{display:"flex",gap:"16px",justifyContent:"center",flexWrap:"wrap"}}>
-            <a href="tel:8444443114" style={{padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none",boxShadow:"0 4px 16px rgba(200,149,46,0.3)"}}>📞 CALL (844) 444-3114</a>
-            <a href="mailto:jrone.business@gmail.com?subject=Referral%20Program" style={{display:"inline-flex",alignItems:"center",padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>✉️ EMAIL US</a>
+            <a href="tel:8444443114" style={{padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.accent},${C.accentLight})`,borderRadius:"8px",textDecoration:"none",boxShadow:"0 4px 16px rgba(233,30,140,0.3)"}}>📞 CALL (844) 444-3114</a>
+            <a href="mailto:jrone.business@gmail.com?subject=Referral%20Program" style={{display:"inline-flex",alignItems:"center",padding:"16px 36px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.accent,border:`2px solid ${C.accent}`,borderRadius:"8px",textDecoration:"none"}}>✉️ EMAIL US</a>
           </div>
           <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginTop:"24px"}}>Programa disponible en español. Llámenos — somos bilingües.</p>
         </div>
       </section>
 
       <SiteFooter />
-      <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:999,background:"rgba(11,22,40,0.97)",backdropFilter:"blur(12px)",borderTop:`1px solid ${C.navyLight}`,padding:"12px 16px",display:"flex",gap:"10px"}}><a href="tel:8444443114" style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:"6px",padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 REFER NOW</a><a href="mailto:jrone.business@gmail.com?subject=Referral" style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.gold,background:"transparent",border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>✉️ EMAIL REFERRAL</a></div>
+      <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:999,background:"rgba(11,22,40,0.97)",backdropFilter:"blur(12px)",borderTop:`1px solid ${C.navyLight}`,padding:"12px 16px",display:"flex",gap:"10px"}}><a href="tel:8444443114" style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:"6px",padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.white,background:`linear-gradient(135deg,${C.accent},${C.accentLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 REFER NOW</a><a href="mailto:jrone.business@gmail.com?subject=Referral" style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.accent,background:"transparent",border:`2px solid ${C.accent}`,borderRadius:"8px",textDecoration:"none"}}>✉️ EMAIL REFERRAL</a></div>
       <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
     </div>
   );

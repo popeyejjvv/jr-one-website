@@ -84,7 +84,7 @@ export default function SiteFooter() {
             <div style={{ display: "flex", gap: "12px" }}>
               <a href="https://www.facebook.com/jronealuminum" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Facebook</a>
               <a href="https://www.instagram.com/jronegutters" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Instagram</a>
-              <a href="https://g.co/kgs/jronealuminum" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Google</a>
+              <a href="https://www.google.com/maps/place/JR+One+Aluminum+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Google</a>
             </div>
           </div>
         </div>

@@ -23,6 +23,7 @@ const C = {
   goldPale: "rgba(200,149,46,0.12)", cream: "#F5F3EF", white: "#FFFFFF",
   offWhite: "#E8E4DC", muted: "#7A8FA8", charcoal: "#2D2D2D",
   success: "#2D8B4E", successDim: "rgba(45,139,78,0.15)",
+  accent: "#4A90D9", accentLight: "#6BA3E3", accentPale: "rgba(74,144,217,0.12)",
 };
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
@@ -246,6 +247,20 @@ export default function SeamlessGuttersPage() {
             <p style={{ fontFamily: f.b, fontSize: "16px", color: C.muted, lineHeight: 1.6 }}>We also install half-round, D-style, box, super gutter, and commercial specialty systems. If your home's architecture or water volume demands more than standard seamless gutters, we've got you covered.</p>
           </div>
           <a href="/specialty-gutters" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 28px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, letterSpacing: "1px", color: C.gold, border: `2px solid ${C.gold}`, borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap" }}>VIEW SPECIALTY GUTTERS →</a>
+        </div>
+      </section>
+
+      {/* ══ PEAK 301 CALLOUT ══ */}
+      <section style={{ background: "rgba(177,26,33,0.08)", padding: "32px 24px", borderTop: "2px solid #B11A21", borderBottom: "2px solid #B11A21" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "20px" }}>
+          <div style={{ flex: "1 1 400px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+              <span style={{ fontSize: "20px" }}>⚠️</span>
+              <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px", fontWeight: 700, color: "#B11A21", letterSpacing: "1px" }}>ROOF AGING?</span>
+            </div>
+            <p style={{ fontFamily: "'Source Sans 3', sans-serif", fontSize: "16px", color: "#E8E4DC", lineHeight: 1.6 }}>Peak 301 Roof Rejuvenation extends your roof's life 6–10 years for under 15% the cost of replacement. Save your roof. Save your insurance.</p>
+          </div>
+          <a href="/peak-301" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 28px", fontFamily: "'Montserrat', sans-serif", fontSize: "13px", fontWeight: 700, letterSpacing: "1px", color: "#FFFFFF", background: "linear-gradient(135deg, #B11A21, #D42A2A)", borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap", boxShadow: "0 4px 12px rgba(177,26,33,0.3)" }}>LEARN ABOUT PEAK 301 →</a>
         </div>
       </section>
 
