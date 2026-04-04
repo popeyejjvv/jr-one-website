@@ -20,7 +20,7 @@ const SERVICE_LINKS = [
   { label: "SAGIPER", href: "/sagiper" },
   { label: "Peak 301", href: "/peak-301" },
   { label: "Govee Lights", href: "/govee-lights" },
-  { label: "Drainage Assessment", href: "/drainage-assessment" },
+  { label: "Drainage Installation", href: "/drainage-assessment" },
 ];
 
 const NAV_LINKS = [
@@ -32,7 +32,7 @@ const NAV_LINKS = [
 const FEATURE_TABS = [
   { label: "Estimator", href: "/#estimator", color: "#3B82F6", bg: "rgba(59,130,246,0.15)" },
   { label: "Financing", href: "/financing", color: "#22C55E", bg: "rgba(34,197,94,0.15)" },
-  { label: "Referral", href: "/referral", color: "#B11A21", bg: "rgba(177,26,33,0.15)" },
+  { label: "Referral", href: "/referral", color: "#E91E8C", bg: "rgba(233,30,140,0.15)" },
 ];
 
 export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114" }) {

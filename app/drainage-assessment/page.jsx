@@ -13,45 +13,46 @@ const GoldBar = () => <div style={{width:"60px",height:"3px",background:`linear-
 const inputStyle = {width:"100%",padding:"13px 16px",fontFamily:f.b,fontSize:"15px",border:"1.5px solid #D1D5DB",borderRadius:"8px",outline:"none",color:C.charcoal,marginBottom:"12px",background:"#FAFAFA",boxSizing:"border-box"};
 
 const PAGE = {
-  breadcrumb: ["Home","Services","Drainage Assessment"],
-  heroTag: "DRAINAGE ASSESSMENT",
-  heroH1: "Where Is Your Water Going?",
-  heroH1Accent: "We'll Find Out.",
-  heroP: "Florida dumps over 50 inches of rain per year on your home. If your gutters, downspouts, and grading aren't managing that water correctly, it's going somewhere you don't want it — your foundation, your walls, your landscaping. Our drainage assessment identifies exactly where your water is going and what needs to change.",
+  breadcrumb: ["Home","Services","Drainage Installation"],
+  heroTag: "DRAINAGE INSTALLATION",
+  heroH1: "Stop the Flooding.",
+  heroH1Accent: "We Install the Fix.",
+  heroP: "Florida dumps over 50 inches of rain per year on your home. When your gutters and downspouts aren't enough, you need a real drainage system. We install French drains, underground drainage lines, downspout extensions, catch basins, and channel drains — everything needed to move water away from your foundation and keep your property dry.",
 
   problems: [
-    { icon:"🌊", title:"Foundation pooling", desc:"Water collecting around your foundation causes cracks, settling, and structural damage. Most homeowners don't notice until the repair bill is $5,000–$15,000." },
-    { icon:"🏚️", title:"Fascia and soffit saturation", desc:"Overflowing gutters soak your fascia boards and soffit panels. Wood rots from the inside out — by the time you see paint peeling, the damage is already behind your walls." },
-    { icon:"🌿", title:"Landscape erosion", desc:"Uncontrolled water flow carves trenches through mulch beds, washes out plantings, and creates mud pits where you used to have a yard." },
-    { icon:"🦟", title:"Standing water and pests", desc:"Poorly drained areas create mosquito breeding grounds and attract pests. In Florida, standing water is a year-round health concern." },
+    { icon:"🌊", title:"Foundation pooling and damage", desc:"Water collecting around your foundation causes cracks, settling, and structural damage averaging $5,000–$15,000 in repairs. A properly installed drainage system eliminates this." },
+    { icon:"🏚️", title:"Yard flooding after every storm", desc:"If your yard turns into a swamp every time it rains, your property doesn't have adequate drainage. We install systems that move water underground and away from your home." },
+    { icon:"🌿", title:"Landscape and hardscape erosion", desc:"Uncontrolled water flow destroys mulch beds, washes out plantings, undermines pavers and walkways, and creates permanent mud pits." },
+    { icon:"🦟", title:"Standing water breeds pests", desc:"Pooling water that won't drain creates mosquito breeding grounds and attracts pests year-round. Proper drainage eliminates standing water entirely." },
   ],
 
-  whatWeAssess: [
-    { title:"Gutter system capacity", desc:"Are your gutters the right size for your roof area? We measure water volume against gutter capacity to identify overflow points." },
-    { title:"Downspout placement and routing", desc:"Where your downspouts discharge matters as much as the gutters themselves. We trace every downspout's path and evaluate whether water is being directed away from your foundation." },
-    { title:"Pitch and slope analysis", desc:"Gutters need precise pitch to move water effectively. We check every run for correct slope and identify low spots where water sits instead of flows." },
-    { title:"Ground grading around foundation", desc:"Even perfect gutters fail if the ground slopes toward your house. We evaluate the grade around your foundation perimeter." },
-    { title:"Downspout extensions and underground drainage", desc:"If your downspouts just dump water next to your foundation, that's a problem. We assess whether extensions, splash blocks, or underground drainage lines are needed." },
-    { title:"Overflow and saturation zones", desc:"We identify exactly where water is overflowing, pooling, or saturating areas it shouldn't — and map out the fix." },
+  whatWeInstall: [
+    { title:"French Drains", desc:"Perforated pipe installed in a gravel-filled trench that collects subsurface water and redirects it away from your foundation. The most effective solution for persistent yard flooding and foundation pooling." },
+    { title:"Underground Drainage Lines", desc:"Solid PVC pipe installed underground to carry water from your downspouts to a discharge point far from your home. Eliminates surface water entirely — everything flows underground." },
+    { title:"Downspout Extensions & Rerouting", desc:"When your downspouts dump water too close to your foundation, we extend and reroute them — above ground or underground — to discharge at a safe distance." },
+    { title:"Catch Basins & Grates", desc:"Surface-level collection points that capture standing water from low spots in your yard and feed it into the underground drainage system." },
+    { title:"Channel Drains", desc:"Linear drains installed across driveways, patios, and walkways to intercept surface water before it reaches your home. Essential for sloped driveways and patio areas." },
+    { title:"Pop-Up Emitters", desc:"Discharge points that open when water flows through the system and close when dry. Installed at the end of underground lines to release water away from your home without visible pipes in the yard." },
   ],
 
   goldSteps: [
-    { num:"01", title:"INSPECT", desc:"We walk your entire property, examine your gutter system, trace downspout discharge paths, check ground grading, and document every drainage issue with photos." },
-    { num:"02", title:"DIAGNOSE", desc:"We analyze water flow patterns, identify capacity problems, locate overflow and pooling zones, and determine root causes — not just symptoms." },
-    { num:"03", title:"RECOMMEND", desc:"You receive a clear, prioritized list of fixes with transparent pricing. We tell you what's urgent, what can wait, and what the cost of doing nothing is." },
-    { num:"04", title:"FIX", desc:"Our in-house crew handles everything — gutter resizing, downspout rerouting, extension installation, pitch correction, and drainage solutions." },
+    { num:"01", title:"EVALUATE", desc:"We inspect your property, identify where water is pooling and why, trace existing downspout paths, check grading, and determine exactly what drainage system your property needs." },
+    { num:"02", title:"DESIGN", desc:"Custom drainage plan with pipe routing, catch basin placement, discharge points, and integration with your existing gutter system. You see the plan and pricing before any digging starts." },
+    { num:"03", title:"INSTALL", desc:"Our in-house crew handles all trenching, pipe installation, catch basin placement, backfill, and landscape restoration. Most residential drainage installs are completed in 1–2 days." },
+    { num:"04", title:"VERIFY", desc:"We test the entire system with water flow to confirm proper drainage. You see it working before we leave. Backed by our craftsmanship warranty." },
   ],
 
   faqs: [
-    { q:"How much does a drainage assessment cost?", a:"Drainage assessments are a paid service. The cost depends on property size and complexity. Contact us for specific pricing. Unlike our standard gutter estimates, drainage assessments involve detailed analysis of water flow patterns, grading evaluation, and a comprehensive report with recommendations." },
-    { q:"How long does a drainage assessment take?", a:"Most residential drainage assessments take 1–2 hours on-site, depending on the size of your property and the complexity of your gutter and drainage system. You'll receive your findings and recommendations within 48 hours." },
-    { q:"Do I need a drainage assessment or just a gutter estimate?", a:"If you're getting new gutters installed, our standard free estimate covers basic drainage considerations like downspout placement and pitch. A dedicated drainage assessment is for homeowners with specific water management problems — pooling around the foundation, erosion, overflow issues, or recurring water damage — that need a more thorough evaluation." },
-    { q:"Can you fix the drainage problems you find?", a:"Yes. We handle everything from gutter resizing and downspout rerouting to French drain installation and grading corrections. Many drainage problems are gutter problems in disguise — undersized gutters, incorrect pitch, or poorly placed downspouts." },
-    { q:"What if my drainage problem isn't gutter-related?", a:"We'll tell you. If your drainage issue requires work outside our scope — like major regrading, sump pumps, or civil engineering — we'll identify the problem clearly and recommend the right type of contractor. We don't upsell you on services that won't solve your actual problem." },
+    { q:"How much does drainage installation cost?", a:"Drainage installation costs vary based on the type of system, property size, trenching requirements, and complexity. Contact us for a free on-site evaluation and detailed estimate. We provide transparent line-item pricing before any work begins." },
+    { q:"How long does installation take?", a:"Most residential drainage installations take 1–2 days. Larger properties or complex systems with multiple French drains and catch basins may take 2–3 days. We give you a specific timeline before work begins." },
+    { q:"Do you install French drains?", a:"Yes. French drains are one of our most commonly installed drainage solutions. We install them along foundations, across yards, and alongside driveways to collect and redirect subsurface water." },
+    { q:"Will you tear up my yard?", a:"We trench where needed and restore the surface afterward — including re-grading, re-sodding, or replacing mulch. We minimize disruption and clean up completely. Your yard will look better than before because the drainage problems will be solved." },
+    { q:"Can you connect drainage to my existing gutter system?", a:"Yes — that's one of our specialties. We integrate underground drainage lines with your existing downspouts so roof water is captured and routed away from your foundation entirely. This is often the most impactful upgrade we do." },
+    { q:"What if I also need new gutters?", a:"We bundle gutter installation with drainage work regularly. Installing both at the same time is more cost-effective and ensures the entire water management system works together from roof to discharge point." },
   ],
 
-  ctaTitle: "SCHEDULE YOUR DRAINAGE ASSESSMENT",
-  ctaSub: "Stop guessing where the water is going. Our team will trace every drop and give you the plan to fix it.",
+  ctaTitle: "GET YOUR DRAINAGE SYSTEM INSTALLED",
+  ctaSub: "Stop fighting the water. We'll design and install the drainage system your property needs — and you'll see the difference after the next rain.",
 };
 
 export default function DrainageAssessmentPage() {
@@ -65,7 +66,7 @@ export default function DrainageAssessmentPage() {
   return (
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
       <SiteNav />
-      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>Home</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.muted}}>Services</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.accent}}>Drainage Assessment</span></div></div>
+      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>Home</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.muted}}>Services</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.accent}}>Drainage Installation</span></div></div>
 
       {/* HERO */}
       <section style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto"}}>
@@ -95,9 +96,9 @@ export default function DrainageAssessmentPage() {
 
       {/* WHAT WE ASSESS */}
       <section style={{background:C.bg,padding:"80px 24px"}}>
-        <div style={sec}><div style={{textAlign:"center"}}><Tag>WHAT WE EVALUATE</Tag><h2 style={{...secTitle,color:C.white}}>COMPREHENSIVE DRAINAGE ANALYSIS</h2><GoldBar /><p style={{fontFamily:f.b,fontSize:"17px",color:C.muted,maxWidth:"600px",margin:"0 auto 48px"}}>Six areas we evaluate to find exactly where your water management is failing.</p></div>
+        <div style={sec}><div style={{textAlign:"center"}}><Tag>WHAT WE INSTALL</Tag><h2 style={{...secTitle,color:C.white}}>COMPLETE DRAINAGE SOLUTIONS</h2><GoldBar /><p style={{fontFamily:f.b,fontSize:"17px",color:C.muted,maxWidth:"600px",margin:"0 auto 48px"}}>Six drainage systems we install to solve your water problems permanently.</p></div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(340px,1fr))",gap:"20px"}}>
-            {PAGE.whatWeAssess.map((s,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",transition:"border-color 0.3s"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.accent} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}>
+            {PAGE.whatWeInstall.map((s,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",transition:"border-color 0.3s"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.accent} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}>
               <div style={{fontFamily:f.h,fontSize:"11px",fontWeight:700,color:C.accent,letterSpacing:"2px",marginBottom:"8px"}}>0{i+1}</div>
               <h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,marginBottom:"10px"}}>{s.title}</h3>
               <p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.6}}>{s.desc}</p>
@@ -123,7 +124,7 @@ export default function DrainageAssessmentPage() {
       {/* FAQ */}
       <section style={{background:C.bg,padding:"80px 24px"}}>
         <div style={{maxWidth:"800px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>FAQ</Tag><h2 style={{...secTitle,color:C.white}}>DRAINAGE ASSESSMENT QUESTIONS</h2><GoldBar />
+          <Tag>FAQ</Tag><h2 style={{...secTitle,color:C.white}}>DRAINAGE INSTALLATION QUESTIONS</h2><GoldBar />
           <div style={{marginTop:"40px",textAlign:"left"}}>
             {PAGE.faqs.map((faq,i) => <div key={i} style={{borderBottom:`1px solid ${C.navyLight}`}}>
               <button onClick={()=>setOpenFaq(openFaq===i?null:i)} style={{width:"100%",padding:"20px 0",background:"none",border:"none",cursor:"pointer",display:"flex",justifyContent:"space-between",alignItems:"center",gap:"16px"}}>
@@ -141,14 +142,14 @@ export default function DrainageAssessmentPage() {
         <div style={{maxWidth:"600px",margin:"0 auto",textAlign:"center"}}>
           <h2 style={{fontFamily:f.h,fontSize:"clamp(28px,5vw,40px)",fontWeight:800,color:C.white,marginBottom:"12px"}}>{PAGE.ctaTitle}</h2>
           <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,marginBottom:"40px"}}>{PAGE.ctaSub}</p>
-          {submitted ? <div style={{background:C.successDim,border:`1px solid ${C.success}`,borderRadius:"12px",padding:"32px"}}><div style={{fontSize:"48px",marginBottom:"12px"}}>✓</div><h3 style={{fontFamily:f.h,fontSize:"20px",fontWeight:700,color:"#4ADE80"}}>Assessment Request Received!</h3><p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,marginTop:"8px"}}>We'll get back to you within hours.</p></div> : <div style={{background:C.white,borderRadius:"16px",padding:"32px",boxShadow:"0 24px 80px rgba(0,0,0,0.4)",textAlign:"left"}}>
-            <h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy,textAlign:"center",marginBottom:"4px"}}>Request Your Drainage Assessment</h3>
+          {submitted ? <div style={{background:C.successDim,border:`1px solid ${C.success}`,borderRadius:"12px",padding:"32px"}}><div style={{fontSize:"48px",marginBottom:"12px"}}>✓</div><h3 style={{fontFamily:f.h,fontSize:"20px",fontWeight:700,color:"#4ADE80"}}>Estimate Request Received!</h3><p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,marginTop:"8px"}}>We'll get back to you within hours.</p></div> : <div style={{background:C.white,borderRadius:"16px",padding:"32px",boxShadow:"0 24px 80px rgba(0,0,0,0.4)",textAlign:"left"}}>
+            <h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy,textAlign:"center",marginBottom:"4px"}}>Request Your Drainage Estimate</h3>
             <div style={{width:"40px",height:"3px",background:C.accent,borderRadius:"2px",margin:"10px auto 20px"}} />
             <input style={inputStyle} placeholder="Full Name" value={formData.name} onChange={e=>setFormData({...formData,name:e.target.value})} />
             <input style={inputStyle} placeholder="Phone Number" type="tel" value={formData.phone} onChange={e=>setFormData({...formData,phone:e.target.value})} />
             <input style={inputStyle} placeholder="Email Address" type="email" value={formData.email} onChange={e=>setFormData({...formData,email:e.target.value})} />
             <input style={inputStyle} placeholder="ZIP Code" value={formData.zip} onChange={e=>setFormData({...formData,zip:e.target.value})} maxLength={5} />
-            <button onClick={()=>setSubmitted(true)} style={{width:"100%",padding:"16px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.accent},${C.accentLight})`,border:"none",borderRadius:"8px",cursor:"pointer",boxShadow:"0 4px 16px rgba(37,99,235,0.3)"}}>REQUEST MY DRAINAGE ASSESSMENT</button>
+            <button onClick={()=>setSubmitted(true)} style={{width:"100%",padding:"16px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.accent},${C.accentLight})`,border:"none",borderRadius:"8px",cursor:"pointer",boxShadow:"0 4px 16px rgba(37,99,235,0.3)"}}>REQUEST MY DRAINAGE ESTIMATE</button>
             <p style={{fontFamily:f.b,fontSize:"12px",color:"#9CA3AF",textAlign:"center",marginTop:"12px"}}>No spam. No pressure. Just honest expert advice.</p>
           </div>}
           <div style={{marginTop:"32px"}}><p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,marginBottom:"8px"}}>Prefer to talk?</p><a href="tel:8444443114" style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.gold,textDecoration:"none"}}>📞 (844) 444-3114</a></div>

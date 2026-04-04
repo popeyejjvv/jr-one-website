@@ -354,7 +354,7 @@ export default function JROneHomepage() {
                     { label: "SAGIPER", href: "/sagiper" },
                     { label: "Peak 301", href: "/peak-301" },
                     { label: lang === "en" ? "Govee Lights" : "Luces Govee", href: "/govee-lights" },
-                    { label: lang === "en" ? "Drainage Assessment" : "Evaluación de Drenaje", href: "/drainage-assessment" },
+                    { label: lang === "en" ? "Drainage Installation" : "Instalación de Drenaje", href: "/drainage-assessment" },
                   ].map((svc, i) => (
                     <a key={i} href={svc.href} style={{ display: "block", padding: "8px 20px", fontFamily: font.heading, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none", transition: "color 0.15s" }}
                       onMouseOver={e => { e.target.style.color = C.gold; e.target.style.background = "rgba(200,149,46,0.08)"; }}
@@ -376,7 +376,7 @@ export default function JROneHomepage() {
             {/* Color-coded feature tabs */}
             <a href="#estimator" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#3B82F6", background: "rgba(59,130,246,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(59,130,246,0.3)" }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
             <a href="/financing" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#22C55E", background: "rgba(34,197,94,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(34,197,94,0.3)" }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
-            <a href="/referral" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#B11A21", background: "rgba(177,26,33,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(177,26,33,0.3)" }}>{lang === "en" ? "Referral" : "Referidos"}</a>
+            <a href="/referral" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#E91E8C", background: "rgba(233,30,140,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(233,30,140,0.3)" }}>{lang === "en" ? "Referral" : "Referidos"}</a>
             <a href="tel:8444443114" style={{ ...s.navLink, color: C.gold, fontWeight: 700, textDecoration: "none" }}>{t.phone}</a>
             <button onClick={() => setLang(lang === "en" ? "es" : "en")} style={s.langBtn}>
               {t.otherLang}
@@ -406,7 +406,7 @@ export default function JROneHomepage() {
             ))}
             <a href="#estimator" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#3B82F6", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
             <a href="/financing" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#22C55E", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
-            <a href="/referral" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#B11A21", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Referral" : "Referidos"}</a>
+            <a href="/referral" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#E91E8C", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Referral" : "Referidos"}</a>
             <a href="tel:8444443114" style={{ fontFamily: font.heading, fontSize: "16px", fontWeight: 700, color: C.gold, textDecoration: "none", padding: "12px 0", textAlign: "center" }}>📞 {t.phone}</a>
             <button onClick={() => { setLang(lang === "en" ? "es" : "en"); setMobileMenu(false); }} style={{ ...s.langBtn, padding: "10px", marginBottom: "8px" }}>{t.otherLang}</button>
           </div>
