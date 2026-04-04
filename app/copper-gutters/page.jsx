@@ -105,19 +105,19 @@ export default function CopperGuttersPage() {
       <section style={{background:C.navy,padding:"80px 24px"}}><div style={{maxWidth:"1200px",margin:"0 auto"}}><div style={{textAlign:"center"}}><Tag>COPPER SYSTEMS</Tag><h2 style={{...secTitle,color:C.white}}>OUR COPPER GUTTER OFFERINGS</h2><GoldBar /></div><div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(340px,1fr))",gap:"20px",marginTop:"48px"}}>{PAGE.solutions.map((s,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",transition:"border-color 0.3s"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.copper} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}><div style={{fontFamily:f.h,fontSize:"11px",fontWeight:700,color:C.copper,letterSpacing:"2px",marginBottom:"8px"}}>0{i+1}</div><h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,marginBottom:"10px"}}>{s.title}</h3><p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.6}}>{s.desc}</p></div>)}</div></div></section>
 
       {/* COPPER VS ALUMINUM */}
-      <section style={{background:C.cream,padding:"80px 24px"}}><div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-        <Tag>COMPARISON</Tag><h2 style={{...secTitle,color:C.navy}}>COPPER VS. ALUMINUM</h2><GoldBar />
+      <section style={{background:C.navy,padding:"80px 24px"}}><div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+        <Tag>COMPARISON</Tag><h2 style={{...secTitle,color:C.white}}>COPPER VS. ALUMINUM</h2><GoldBar />
         <div style={{marginTop:"48px",overflowX:"auto"}}>
           <table style={{width:"100%",borderCollapse:"collapse",fontFamily:f.b,fontSize:"14px"}}>
             <thead><tr style={{borderBottom:`2px solid ${C.copper}`}}>
-              <th style={{padding:"12px 16px",textAlign:"left",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.navy}}>Feature</th>
+              <th style={{padding:"12px 16px",textAlign:"left",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.white}}>Feature</th>
               <th style={{padding:"12px 16px",textAlign:"center",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.muted}}>Aluminum</th>
               <th style={{padding:"12px 16px",textAlign:"center",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.copper}}>Copper</th>
             </tr></thead>
             <tbody>{PAGE.comparison.map((row,i) => (
-              <tr key={i} style={{borderBottom:"1px solid #E5E7EB",background:i%2===0?"#FAFAFA":"white"}}>
-                <td style={{padding:"12px 16px",color:C.navy,fontWeight:600}}>{row.feature}</td>
-                <td style={{padding:"12px 16px",textAlign:"center",color:"#6B7280"}}>{row.aluminum}</td>
+              <tr key={i} style={{borderBottom:`1px solid ${C.navyLight}`,background:i%2===0?C.navyFade:"transparent"}}>
+                <td style={{padding:"12px 16px",color:C.white,fontWeight:600}}>{row.feature}</td>
+                <td style={{padding:"12px 16px",textAlign:"center",color:C.muted}}>{row.aluminum}</td>
                 <td style={{padding:"12px 16px",textAlign:"center",color:C.copper,fontWeight:600}}>{row.copper}</td>
               </tr>
             ))}</tbody>

@@ -169,19 +169,19 @@ export default function SpecialtyGuttersPage() {
       </section>
 
       {/* ══ THE PROBLEM ══ */}
-      <section style={{ background: C.cream, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ ...sec, padding: 0 }}>
           <div style={{ textAlign: "center" }}>
             <Tag>THE PROBLEM</Tag>
-            <h2 style={{ ...secTitle, color: C.navy }}>WHY STANDARD GUTTERS FALL SHORT IN FLORIDA</h2>
+            <h2 style={{ ...secTitle, color: C.white }}>WHY STANDARD GUTTERS FALL SHORT IN FLORIDA</h2>
             <GoldBar />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px", marginTop: "48px" }}>
             {PAGE.problems.map((p, i) => (
-              <div key={i} style={{ background: C.white, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.accent}` }}>
+              <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.accent}` }}>
                 <div style={{ fontSize: "28px", marginBottom: "12px" }}>{p.icon}</div>
-                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.navy, marginBottom: "8px" }}>{p.title}</h3>
-                <p style={{ fontFamily: f.b, fontSize: "15px", color: "#4B5563", lineHeight: 1.55 }}>{p.desc}</p>
+                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>{p.title}</h3>
+                <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.55 }}>{p.desc}</p>
               </div>
             ))}
           </div>
@@ -218,18 +218,18 @@ export default function SpecialtyGuttersPage() {
       </section>
 
       {/* ══ WHY SPECIALTY ══ */}
-      <section style={{ background: C.cream, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ ...sec, padding: 0 }}>
           <div style={{ textAlign: "center" }}>
             <Tag>WHY SPECIALTY</Tag>
-            <h2 style={{ ...secTitle, color: C.navy }}>WHY THE RIGHT GUTTER MATTERS</h2>
+            <h2 style={{ ...secTitle, color: C.white }}>WHY THE RIGHT GUTTER MATTERS</h2>
             <GoldBar />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px", marginTop: "48px" }}>
             {PAGE.whySpecialty.map((w, i) => (
-              <div key={i} style={{ background: C.white, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.accent}` }}>
-                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.navy, marginBottom: "8px" }}>{w.title}</h3>
-                <p style={{ fontFamily: f.b, fontSize: "15px", color: "#4B5563", lineHeight: 1.55 }}>{w.desc}</p>
+              <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.accent}` }}>
+                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>{w.title}</h3>
+                <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.55 }}>{w.desc}</p>
               </div>
             ))}
           </div>

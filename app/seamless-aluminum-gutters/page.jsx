@@ -167,19 +167,19 @@ export default function SeamlessGuttersPage() {
       </section>
 
       {/* ══ THE PROBLEM ══ */}
-      <section style={{ background: C.cream, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ ...sec, padding: 0 }}>
           <div style={{ textAlign: "center" }}>
             <Tag>THE PROBLEM</Tag>
-            <h2 style={{ ...secTitle, color: C.navy }}>{PAGE.problemTitle}</h2>
+            <h2 style={{ ...secTitle, color: C.white }}>{PAGE.problemTitle}</h2>
             <GoldBar />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px", marginTop: "48px" }}>
             {PAGE.problems.map((p, i) => (
-              <div key={i} style={{ background: C.white, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.gold}` }}>
+              <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.gold}` }}>
                 <div style={{ fontSize: "28px", marginBottom: "12px" }}>{p.icon}</div>
-                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.navy, marginBottom: "8px" }}>{p.title}</h3>
-                <p style={{ fontFamily: f.b, fontSize: "15px", color: "#4B5563", lineHeight: 1.55 }}>{p.desc}</p>
+                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>{p.title}</h3>
+                <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.55 }}>{p.desc}</p>
               </div>
             ))}
           </div>
@@ -297,12 +297,12 @@ export default function SeamlessGuttersPage() {
       </section>
 
       {/* ══ PROJECT GALLERY ══ */}
-      <section style={{ background: C.cream, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
           <Tag>OUR WORK</Tag>
-          <h2 style={{ ...secTitle, color: C.navy }}>RECENT GUTTER PROJECTS</h2>
+          <h2 style={{ ...secTitle, color: C.white }}>RECENT GUTTER PROJECTS</h2>
           <GoldBar />
-          <p style={{ fontFamily: f.b, fontSize: "17px", color: "#4B5563", maxWidth: "600px", margin: "0 auto 40px" }}>
+          <p style={{ fontFamily: f.b, fontSize: "17px", color: C.muted, maxWidth: "600px", margin: "0 auto 40px" }}>
             Real projects. Real homes. Swipe to see our craftsmanship across Tampa Bay.
           </p>
         </div>
@@ -318,22 +318,22 @@ export default function SeamlessGuttersPage() {
               { label: "Commercial gutter system, Bradenton", tag: "COMMERCIAL" },
               { label: "Gutter + soffit + fascia combo, Wesley Chapel", tag: "FULL PACKAGE" },
             ].map((photo, i) => (
-              <div key={i} style={{ width: "280px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", border: "1px solid #D1D5DB", background: C.white }}>
-                <div style={{ width: "280px", height: "200px", background: `linear-gradient(135deg, ${i % 2 === 0 ? '#E5E7EB' : '#D1D5DB'}, ${i % 2 === 0 ? '#D1D5DB' : '#C4C7CC'})`, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+              <div key={i} style={{ width: "280px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", border: `1px solid ${C.navyLight}`, background: C.navyFade }}>
+                <div style={{ width: "280px", height: "200px", background: `linear-gradient(135deg, ${i % 2 === 0 ? C.navyFade : C.navyLight}, ${i % 2 === 0 ? C.navyLight : C.navyMid})`, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
                   <span style={{ fontFamily: f.h, fontSize: "32px" }}>📸</span>
                   <div style={{ position: "absolute", top: "10px", left: "10px", padding: "4px 10px", background: C.navy, borderRadius: "4px" }}>
                     <span style={{ fontFamily: f.h, fontSize: "10px", fontWeight: 700, color: C.gold, letterSpacing: "1px" }}>{photo.tag}</span>
                   </div>
                 </div>
                 <div style={{ padding: "14px 16px" }}>
-                  <p style={{ fontFamily: f.b, fontSize: "13px", color: "#4B5563", lineHeight: 1.4 }}>{photo.label}</p>
+                  <p style={{ fontFamily: f.b, fontSize: "13px", color: C.muted, lineHeight: 1.4 }}>{photo.label}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "24px" }}>
-          <span style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "1px", cursor: "pointer" }}>VIEW ALL PROJECTS →</span>
+          <span style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.gold, letterSpacing: "1px", cursor: "pointer" }}>VIEW ALL PROJECTS →</span>
         </div>
       </section>
 

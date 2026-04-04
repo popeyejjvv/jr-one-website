@@ -106,13 +106,13 @@ export default function GutterGuardsPage() {
       </section>
 
       {/* PROBLEM */}
-      <section style={{background:C.cream,padding:"80px 24px"}}>
+      <section style={{background:C.navy,padding:"80px 24px"}}>
         <div style={{maxWidth:"1200px",margin:"0 auto",textAlign:"center"}}>
           <Tag>THE PROBLEM</Tag>
-          <h2 style={{...secTitle,color:C.navy}}>THE REAL COST OF UNPROTECTED GUTTERS</h2>
+          <h2 style={{...secTitle,color:C.white}}>THE REAL COST OF UNPROTECTED GUTTERS</h2>
           <GoldBar />
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",gap:"24px",marginTop:"48px",textAlign:"left"}}>
-            {PAGE.problems.map((p,i) => <div key={i} style={{background:C.white,borderRadius:"12px",padding:"28px",borderLeft:`4px solid ${C.gold}`}}><div style={{fontSize:"28px",marginBottom:"12px"}}>{p.icon}</div><h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.navy,marginBottom:"8px"}}>{p.title}</h3><p style={{fontFamily:f.b,fontSize:"15px",color:"#4B5563",lineHeight:1.55}}>{p.desc}</p></div>)}
+            {PAGE.problems.map((p,i) => <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"28px",borderLeft:`4px solid ${C.gold}`}}><div style={{fontSize:"28px",marginBottom:"12px"}}>{p.icon}</div><h3 style={{fontFamily:f.h,fontSize:"17px",fontWeight:700,color:C.white,marginBottom:"8px"}}>{p.title}</h3><p style={{fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.55}}>{p.desc}</p></div>)}
           </div>
         </div>
       </section>
@@ -128,24 +128,24 @@ export default function GutterGuardsPage() {
       </section>
 
       {/* GUARD TYPES */}
-      <section style={{ background: C.cream, padding: "80px 24px" }}>
+      <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center" }}>
             <Tag>OUR GUARD OPTIONS</Tag>
-            <h2 style={{ fontFamily: f.h, fontSize: "clamp(24px,4vw,36px)", fontWeight: 800, letterSpacing: "2px", textAlign: "center", marginBottom: "8px", color: C.navy }}>CHOOSE THE RIGHT PROTECTION</h2>
+            <h2 style={{ fontFamily: f.h, fontSize: "clamp(24px,4vw,36px)", fontWeight: 800, letterSpacing: "2px", textAlign: "center", marginBottom: "8px", color: C.white }}>CHOOSE THE RIGHT PROTECTION</h2>
             <GoldBar />
-            <p style={{ fontFamily: f.b, fontSize: "17px", color: "#4B5563", maxWidth: "600px", margin: "0 auto 48px" }}>
+            <p style={{ fontFamily: f.b, fontSize: "17px", color: C.muted, maxWidth: "600px", margin: "0 auto 48px" }}>
               Four guard systems — each designed for a specific level of protection and budget.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "20px" }}>
             {guardTypes.map((g, i) => (
-              <div key={i} style={{ background: C.white, border: "1px solid #E5E7EB", borderRadius: "12px", padding: "28px", borderTop: `4px solid ${C.gold}` }}>
+              <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderTop: `4px solid ${C.gold}` }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                   <span style={{ fontSize: "28px" }}>{g.icon}</span>
                 </div>
-                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.navy, marginBottom: "10px" }}>{g.title}</h3>
-                <p style={{ fontFamily: f.b, fontSize: "15px", color: "#4B5563", lineHeight: 1.6, marginBottom: "12px" }}>{g.desc}</p>
+                <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "10px" }}>{g.title}</h3>
+                <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.6, marginBottom: "12px" }}>{g.desc}</p>
                 <div style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: C.gold, letterSpacing: "1px", padding: "6px 12px", background: C.goldPale, borderRadius: "4px", display: "inline-block" }}>{g.spec}</div>
               </div>
             ))}
