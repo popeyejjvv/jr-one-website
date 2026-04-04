@@ -284,7 +284,7 @@ export default function JROneHomepage() {
 
   // ── Styles ────────────────────────────────────────────
   const s = {
-    page: { background: C.bg, color: C.white, fontFamily: font.body, minHeight: "100vh", overflowX: "hidden", lineHeight: 1.65 },
+    page: { background: C.bg, color: C.white, fontFamily: font.body, minHeight: "100vh", lineHeight: 1.65 },
     nav: { position: "sticky", top: 0, zIndex: 1000, padding: "10px 24px", background: "rgba(11,22,40,0.98)", backdropFilter: "blur(12px)", transition: "all 0.3s ease", borderBottom: `1px solid ${C.navyLight}` },
     navInner: { maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" },
     logo: { fontFamily: font.heading, fontSize: "20px", fontWeight: 800, color: C.white },
@@ -804,12 +804,12 @@ export default function JROneHomepage() {
           .jr-hp-nav-hamburger { display: none !important; }
         }
         .hero-stars::before {
-          content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
+          content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
           position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
+          top: -50%;
+          left: -50%;
+          width: 200%;
+          height: 200%;
           font-size: 14px;
           letter-spacing: 28px;
           line-height: 42px;
@@ -819,6 +819,8 @@ export default function JROneHomepage() {
           overflow: hidden;
           word-break: break-all;
           padding: 20px;
+          transform: rotate(-25deg);
+          transform-origin: center center;
         }
       `}</style>
     </div>
