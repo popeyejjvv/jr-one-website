@@ -340,9 +340,9 @@ export default function JROneHomepage() {
           <div className="jr-hp-nav-desktop" style={s.navLinks}>
             {/* Services Dropdown */}
             <div style={{ position: "relative" }} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <span style={{ ...s.navLink, cursor: "pointer", display: "flex", alignItems: "center", gap: "4px" }}>{t.navItems[0]} <span style={{ fontSize: "8px" }}>▼</span></span>
+              <span style={{ ...s.navLink, cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", paddingBottom: "12px", marginBottom: "-12px" }}>{t.navItems[0]} <span style={{ fontSize: "8px" }}>▼</span></span>
               {servicesOpen && (
-                <div style={{ position: "absolute", top: "100%", left: "-12px", marginTop: "8px", background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
+                <div style={{ position: "absolute", top: "100%", left: "-12px", paddingTop: "4px" }}><div style={{ background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
                   {[
                     { label: lang === "en" ? "Seamless Gutters" : "Canaletas", href: "/seamless-aluminum-gutters" },
                     { label: lang === "en" ? "Gutter Guards" : "Protectores", href: "/gutter-guards" },
@@ -363,7 +363,7 @@ export default function JROneHomepage() {
                       {svc.label}
                     </a>
                   ))}
-                </div>
+                </div></div>
               )}
             </div>
             {[

@@ -29,15 +29,15 @@ const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
 // ── Reusable pieces ───────────────────────────────────────
 const Tag = ({ children }) => (
-  <div style={{ display: "inline-block", padding: "6px 16px", background: C.goldPale, borderRadius: "4px", marginBottom: "12px" }}>
-    <span style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 700, color: C.gold, letterSpacing: "3px" }}>{children}</span>
+  <div style={{ display: "inline-block", padding: "6px 16px", background: C.accentPale, borderRadius: "4px", marginBottom: "12px" }}>
+    <span style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 700, color: C.accent, letterSpacing: "3px" }}>{children}</span>
   </div>
 );
-const GoldBar = () => <div style={{ width: "60px", height: "3px", background: `linear-gradient(90deg,${C.gold},${C.goldLight})`, borderRadius: "2px", margin: "16px auto" }} />;
-const Stars = ({ n = 5 }) => <span style={{ color: C.gold, fontSize: "14px", letterSpacing: "2px" }}>{"★".repeat(n)}</span>;
+const GoldBar = () => <div style={{ width: "60px", height: "3px", background: `linear-gradient(90deg,${C.accent},${C.accentLight})`, borderRadius: "2px", margin: "16px auto" }} />;
+const Stars = ({ n = 5 }) => <span style={{ color: C.accent, fontSize: "14px", letterSpacing: "2px" }}>{"★".repeat(n)}</span>;
 
 const BtnPrimary = ({ children, onClick }) => (
-  <button onClick={onClick} style={{ padding: "16px 36px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.gold},${C.goldLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(200,149,46,0.3)", transition: "transform 0.15s" }}
+  <button onClick={onClick} style={{ padding: "16px 36px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(74,144,217,0.3)", transition: "transform 0.15s" }}
     onMouseOver={e => e.target.style.transform = "translateY(-2px)"}
     onMouseOut={e => e.target.style.transform = "none"}>
     {children}
@@ -45,7 +45,7 @@ const BtnPrimary = ({ children, onClick }) => (
 );
 
 const BtnOutline = ({ children, href }) => (
-  <a href={href} style={{ display: "inline-flex", alignItems: "center", padding: "16px 36px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.gold, background: "transparent", border: `2px solid ${C.gold}`, borderRadius: "8px", textDecoration: "none", cursor: "pointer" }}>
+  <a href={href} style={{ display: "inline-flex", alignItems: "center", padding: "16px 36px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.accent, background: "transparent", border: `2px solid ${C.accent}`, borderRadius: "8px", textDecoration: "none", cursor: "pointer" }}>
     {children}
   </a>
 );
@@ -135,7 +135,7 @@ export default function SeamlessGuttersPage() {
           {PAGE.breadcrumb.map((item, i) => (
             <span key={i}>
               {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-              <span style={{ color: i === PAGE.breadcrumb.length - 1 ? C.gold : C.muted, cursor: i < PAGE.breadcrumb.length - 1 ? "pointer" : "default" }}>{item}</span>
+              <span style={{ color: i === PAGE.breadcrumb.length - 1 ? C.accent : C.muted, cursor: i < PAGE.breadcrumb.length - 1 ? "pointer" : "default" }}>{item}</span>
             </span>
           ))}
         </div>
@@ -147,7 +147,7 @@ export default function SeamlessGuttersPage() {
           <Tag>{PAGE.heroTag}</Tag>
           <h1 style={{ fontFamily: f.h, fontSize: "clamp(32px,5vw,48px)", fontWeight: 800, lineHeight: 1.1, marginBottom: "20px" }}>
             {PAGE.heroH1}<br />
-            <span style={{ color: C.gold }}>{PAGE.heroH1Gold}</span>
+            <span style={{ color: C.accent }}>{PAGE.heroH1Gold}</span>
           </h1>
           <p style={{ fontFamily: f.b, fontSize: "18px", color: C.offWhite, lineHeight: 1.7, marginBottom: "32px", maxWidth: "560px" }}>{PAGE.heroP}</p>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
@@ -159,7 +159,7 @@ export default function SeamlessGuttersPage() {
           <div style={{ display: "flex", gap: "24px", marginTop: "32px", flexWrap: "wrap" }}>
             {PAGE.stats.map((s, i) => (
               <div key={i} style={{ textAlign: "center" }}>
-                <div style={{ fontFamily: f.h, fontSize: "28px", fontWeight: 800, color: C.gold }}>{s.value}</div>
+                <div style={{ fontFamily: f.h, fontSize: "28px", fontWeight: 800, color: C.accent }}>{s.value}</div>
                 <div style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, maxWidth: "100px" }}>{s.label}</div>
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function SeamlessGuttersPage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px", marginTop: "48px" }}>
             {PAGE.problems.map((p, i) => (
-              <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.gold}` }}>
+              <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.accent}` }}>
                 <div style={{ fontSize: "28px", marginBottom: "12px" }}>{p.icon}</div>
                 <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>{p.title}</h3>
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.55 }}>{p.desc}</p>
@@ -201,21 +201,21 @@ export default function SeamlessGuttersPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "20px" }}>
             {PAGE.solutions.map((s, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", transition: "border-color 0.3s" }}
-                onMouseOver={e => e.currentTarget.style.borderColor = C.gold}
+                onMouseOver={e => e.currentTarget.style.borderColor = C.accent}
                 onMouseOut={e => e.currentTarget.style.borderColor = C.navyLight}>
-                <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, letterSpacing: "2px", marginBottom: "8px" }}>0{i + 1}</div>
+                <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.accent, letterSpacing: "2px", marginBottom: "8px" }}>0{i + 1}</div>
                 <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "10px" }}>{s.title}</h3>
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.6 }}>{s.desc}</p>
               </div>
             ))}
           </div>
           {/* Downspout Styles Callout */}
-          <div style={{ marginTop: "40px", background: `linear-gradient(135deg, ${C.navyFade}, ${C.navy})`, border: `2px solid ${C.gold}`, borderRadius: "16px", padding: "32px", position: "relative", overflow: "hidden" }}>
+          <div style={{ marginTop: "40px", background: `linear-gradient(135deg, ${C.navyFade}, ${C.navy})`, border: `2px solid ${C.accent}`, borderRadius: "16px", padding: "32px", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: "-20px", right: "-20px", fontSize: "120px", opacity: 0.04, transform: "rotate(-15deg)" }}>↓</div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", marginBottom: "20px" }}>
               <span style={{ fontSize: "28px" }}>💡</span>
               <div>
-                <h3 style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.gold, marginBottom: "4px" }}>YOUR DOWNSPOUTS, YOUR STYLE</h3>
+                <h3 style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.accent, marginBottom: "4px" }}>YOUR DOWNSPOUTS, YOUR STYLE</h3>
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.offWhite, lineHeight: 1.6 }}>Most homeowners don't realize they have options beyond the standard rectangular downspout. We install multiple downspout styles to match your home's look and drainage needs:</p>
               </div>
             </div>
@@ -228,8 +228,8 @@ export default function SeamlessGuttersPage() {
                 { name: "Box Style Commercial", desc: "Heavy-duty for high-capacity systems" },
                 { name: "Rain Chains", desc: "Decorative alternative — visible water flow as a design feature" },
               ].map((ds, i) => (
-                <div key={i} style={{ background: "rgba(200,149,46,0.08)", borderRadius: "8px", padding: "12px 16px" }}>
-                  <div style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, marginBottom: "4px" }}>{ds.name}</div>
+                <div key={i} style={{ background: "rgba(74,144,217,0.08)", borderRadius: "8px", padding: "12px 16px" }}>
+                  <div style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.accent, marginBottom: "4px" }}>{ds.name}</div>
                   <div style={{ fontFamily: f.b, fontSize: "13px", color: C.muted }}>{ds.desc}</div>
                 </div>
               ))}
@@ -246,7 +246,7 @@ export default function SeamlessGuttersPage() {
             <h3 style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>Looking for Something Beyond Standard?</h3>
             <p style={{ fontFamily: f.b, fontSize: "16px", color: C.muted, lineHeight: 1.6 }}>We also install half-round, D-style, box, super gutter, and commercial specialty systems. If your home's architecture or water volume demands more than standard seamless gutters, we've got you covered.</p>
           </div>
-          <a href="/specialty-gutters" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 28px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, letterSpacing: "1px", color: C.gold, border: `2px solid ${C.gold}`, borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap" }}>VIEW SPECIALTY GUTTERS →</a>
+          <a href="/specialty-gutters" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 28px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, letterSpacing: "1px", color: C.accent, border: `2px solid ${C.accent}`, borderRadius: "8px", textDecoration: "none", whiteSpace: "nowrap" }}>VIEW SPECIALTY GUTTERS →</a>
         </div>
       </section>
 
@@ -278,8 +278,8 @@ export default function SeamlessGuttersPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px" }}>
             {PAGE.goldSteps.map((step, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", position: "relative" }}>
-                <div style={{ fontFamily: f.h, fontSize: "36px", fontWeight: 800, color: "rgba(200,149,46,0.08)", position: "absolute", top: "16px", right: "20px" }}>{step.num}</div>
-                <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, letterSpacing: "3px", marginBottom: "8px" }}>STEP {step.num}</div>
+                <div style={{ fontFamily: f.h, fontSize: "36px", fontWeight: 800, color: "rgba(74,144,217,0.08)", position: "absolute", top: "16px", right: "20px" }}>{step.num}</div>
+                <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.accent, letterSpacing: "3px", marginBottom: "8px" }}>STEP {step.num}</div>
                 <h3 style={{ fontFamily: f.h, fontSize: "22px", fontWeight: 700, color: C.white, marginBottom: "12px" }}>{step.title}</h3>
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.6 }}>{step.desc}</p>
               </div>
@@ -337,7 +337,7 @@ export default function SeamlessGuttersPage() {
                 <div style={{ width: "280px", height: "200px", background: `linear-gradient(135deg, ${i % 2 === 0 ? C.navyFade : C.navyLight}, ${i % 2 === 0 ? C.navyLight : C.navyMid})`, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
                   <span style={{ fontFamily: f.h, fontSize: "32px" }}>📸</span>
                   <div style={{ position: "absolute", top: "10px", left: "10px", padding: "4px 10px", background: C.navy, borderRadius: "4px" }}>
-                    <span style={{ fontFamily: f.h, fontSize: "10px", fontWeight: 700, color: C.gold, letterSpacing: "1px" }}>{photo.tag}</span>
+                    <span style={{ fontFamily: f.h, fontSize: "10px", fontWeight: 700, color: C.accent, letterSpacing: "1px" }}>{photo.tag}</span>
                   </div>
                 </div>
                 <div style={{ padding: "14px 16px" }}>
@@ -348,7 +348,7 @@ export default function SeamlessGuttersPage() {
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "24px" }}>
-          <span style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.gold, letterSpacing: "1px", cursor: "pointer" }}>VIEW ALL PROJECTS →</span>
+          <span style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.accent, letterSpacing: "1px", cursor: "pointer" }}>VIEW ALL PROJECTS →</span>
         </div>
       </section>
 
@@ -362,8 +362,8 @@ export default function SeamlessGuttersPage() {
             {PAGE.faqs.map((faq, i) => (
               <div key={i} style={{ borderBottom: `1px solid ${C.navyLight}` }}>
                 <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: "100%", padding: "20px 0", background: "none", border: "none", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px" }}>
-                  <span style={{ fontFamily: f.h, fontSize: "15px", fontWeight: 600, color: openFaq === i ? C.gold : C.white, textAlign: "left", transition: "color 0.2s" }}>{faq.q}</span>
-                  <span style={{ fontFamily: f.h, fontSize: "20px", color: C.gold, transform: openFaq === i ? "rotate(45deg)" : "none", transition: "transform 0.3s", flexShrink: 0 }}>+</span>
+                  <span style={{ fontFamily: f.h, fontSize: "15px", fontWeight: 600, color: openFaq === i ? C.accent : C.white, textAlign: "left", transition: "color 0.2s" }}>{faq.q}</span>
+                  <span style={{ fontFamily: f.h, fontSize: "20px", color: C.accent, transform: openFaq === i ? "rotate(45deg)" : "none", transition: "transform 0.3s", flexShrink: 0 }}>+</span>
                 </button>
                 {openFaq === i && (
                   <div style={{ padding: "0 0 20px", fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.65 }}>{faq.a}</div>
@@ -389,12 +389,12 @@ export default function SeamlessGuttersPage() {
           ) : (
             <div style={{ background: C.white, borderRadius: "16px", padding: "32px", boxShadow: "0 24px 80px rgba(0,0,0,0.4)", textAlign: "left" }}>
               <h3 style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.navy, textAlign: "center", marginBottom: "4px" }}>Get Your Free Gutter Estimate</h3>
-              <div style={{ width: "40px", height: "3px", background: C.gold, borderRadius: "2px", margin: "10px auto 20px" }} />
+              <div style={{ width: "40px", height: "3px", background: C.accent, borderRadius: "2px", margin: "10px auto 20px" }} />
               <input style={inputStyle} placeholder="Full Name" value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
               <input style={inputStyle} placeholder="Phone Number" type="tel" value={formData.phone} onChange={e => setFormData({ ...formData, phone: e.target.value })} />
               <input style={inputStyle} placeholder="Email Address" type="email" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} />
               <input style={inputStyle} placeholder="ZIP Code" value={formData.zip} onChange={e => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-              <button onClick={() => setSubmitted(true)} style={{ width: "100%", padding: "16px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.gold},${C.goldLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(200,149,46,0.3)" }}>
+              <button onClick={() => setSubmitted(true)} style={{ width: "100%", padding: "16px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(74,144,217,0.3)" }}>
                 REQUEST MY FREE GUTTER ESTIMATE
               </button>
               <p style={{ fontFamily: f.b, fontSize: "12px", color: "#9CA3AF", textAlign: "center", marginTop: "12px" }}>No spam. No pressure. Just honest expert advice.</p>
@@ -403,7 +403,7 @@ export default function SeamlessGuttersPage() {
 
           <div style={{ marginTop: "32px" }}>
             <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, marginBottom: "8px" }}>Prefer to talk?</p>
-            <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>📞 (844) 444-3114</a>
+            <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: "#C8952E", textDecoration: "none" }}>📞 (844) 444-3114</a>
           </div>
         </div>
       </section>
@@ -415,7 +415,7 @@ export default function SeamlessGuttersPage() {
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
         ::placeholder { color: #9CA3AF; }
-        input:focus { border-color: ${C.gold} !important; }
+        input:focus { border-color: ${C.accent} !important; }
       `}</style>
     </div>
   );

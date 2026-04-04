@@ -55,9 +55,9 @@ export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Fu
           <div className="jr-nav-desktop" style={{ display: "flex", gap: "16px", alignItems: "center" }}>
             {/* Services Dropdown */}
             <div style={{ position: "relative" }} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <span style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, letterSpacing: "0.5px", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px" }}>Services <span style={{ fontSize: "8px" }}>▼</span></span>
+              <span style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, letterSpacing: "0.5px", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", paddingBottom: "12px", marginBottom: "-12px" }}>Services <span style={{ fontSize: "8px" }}>▼</span></span>
               {servicesOpen && (
-                <div style={{ position: "absolute", top: "100%", left: "-12px", marginTop: "8px", background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
+                <div style={{ position: "absolute", top: "100%", left: "-12px", paddingTop: "4px" }}><div style={{ background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
                   {SERVICE_LINKS.map((svc, i) => (
                     <a key={i} href={svc.href} style={{ display: "block", padding: "8px 20px", fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none" }}
                       onMouseOver={e => { e.target.style.color = C.gold; e.target.style.background = "rgba(200,149,46,0.08)"; }}
@@ -65,7 +65,7 @@ export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Fu
                       {svc.label}
                     </a>
                   ))}
-                </div>
+                </div></div>
               )}
             </div>
             {NAV_LINKS.map((link, i) => (

@@ -100,7 +100,6 @@ export default function SagiperPage() {
           </div>
           <div style={{display:"flex",gap:"24px",marginTop:"32px",flexWrap:"wrap"}}>{PAGE.stats.map((s,i) => <div key={i} style={{textAlign:"center"}}><div style={{fontFamily:f.h,fontSize:"28px",fontWeight:800,color:C.accent}}>{s.value}</div><div style={{fontFamily:f.b,fontSize:"12px",color:C.muted,maxWidth:"120px"}}>{s.label}</div></div>)}</div>
         </div>
-        <div style={{flex:"1 1 400px",minWidth:"300px",maxWidth:"500px",aspectRatio:"4/3",background:`linear-gradient(135deg,${C.navyFade},${C.navy})`,borderRadius:"16px",border:`1px solid ${C.navyLight}`,display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{textAlign:"center",color:C.muted}}><div style={{fontSize:"48px",marginBottom:"12px"}}>📸</div><p style={{fontFamily:f.h,fontSize:"13px",letterSpacing:"1px"}}>SAGIPER CLADDING PHOTO</p></div></div>
       </section>
 
       {/* THE SAGIPER SYSTEM */}
