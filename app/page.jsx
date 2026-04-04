@@ -393,6 +393,24 @@ export default function JROneHomepage() {
         {/* Mobile Menu Dropdown */}
         {mobileMenu && (
           <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px" }}>
+            <div style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: C.gold, letterSpacing: "2px", padding: "8px 0 4px" }}>{lang === "en" ? "SERVICES" : "SERVICIOS"}</div>
+            {[
+              { label: lang === "en" ? "Copper Gutters" : "Canaletas de Cobre", href: "/copper-gutters" },
+              { label: lang === "en" ? "Drainage Installation" : "Instalación de Drenaje", href: "/drainage-assessment" },
+              { label: lang === "en" ? "Govee Lights" : "Luces Govee", href: "/govee-lights" },
+              { label: lang === "en" ? "Gutter Guards" : "Protectores", href: "/gutter-guards" },
+              { label: lang === "en" ? "Gutter Repair" : "Reparación", href: "/gutter-repair" },
+              { label: "Peak 301", href: "/peak-301" },
+              { label: "SAGIPER", href: "/sagiper" },
+              { label: lang === "en" ? "Seamless Gutters" : "Canaletas", href: "/seamless-aluminum-gutters" },
+              { label: lang === "en" ? "Service Plans" : "Planes de Servicio", href: "/service-plans" },
+              { label: lang === "en" ? "Siding" : "Revestimiento", href: "/siding" },
+              { label: lang === "en" ? "Soffit & Fascia" : "Sofito y Fascia", href: "/soffit-and-fascia" },
+              { label: lang === "en" ? "Specialty Gutters" : "Especiales", href: "/specialty-gutters" },
+            ].map((svc, i) => (
+              <a key={`svc-${i}`} href={svc.href} style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "12px", borderBottom: `1px solid ${C.navyLight}20` }}>{svc.label}</a>
+            ))}
+            <div style={{ height: "8px" }} />
             {[
               { label: lang === "en" ? "The Gold Standard" : "Estándar de Oro", href: "#gold-standard" },
               { label: lang === "en" ? "About" : "Nosotros", href: "/about" },
