@@ -335,24 +335,55 @@ export default function JROneHomepage() {
       {/* ══ NAVIGATION ══ */}
       <nav style={s.nav}>
         <div style={s.navInner}>
-          <div style={s.logo}>JR <span style={s.logoGold}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span></div>
-          <div style={{ ...s.navLinks, "@media(maxWidth:768px)": { display: "none" } }}>
+          <a href="/" style={{...s.logo, textDecoration: "none"}}>JR <span style={s.logoGold}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span></a>
+          <div className="jr-hp-nav-desktop" style={s.navLinks}>
             {[
               { label: t.navItems[0], href: "/seamless-aluminum-gutters" },
               { label: t.navItems[1], href: "#gold-standard" },
               { label: t.navItems[2], href: "#reviews" },
-              { label: t.navItems[3], href: "#estimator" },
               { label: t.navItems[4], href: "#faq" },
               { label: t.navItems[5], href: "/contact" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{...s.navLink, textDecoration: "none"}}>{item.label}</a>
             ))}
-            <a href="tel:8444443114" style={{ ...s.navLink, color: C.gold, fontWeight: 700 }}>{t.phone}</a>
+            {/* Color-coded feature tabs */}
+            <a href="#estimator" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#3B82F6", background: "rgba(59,130,246,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(59,130,246,0.3)" }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
+            <a href="/financing" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#22C55E", background: "rgba(34,197,94,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(34,197,94,0.3)" }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
+            <a href="/referral" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#B11A21", background: "rgba(177,26,33,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(177,26,33,0.3)" }}>{lang === "en" ? "Referral" : "Referidos"}</a>
+            <a href="tel:8444443114" style={{ ...s.navLink, color: C.gold, fontWeight: 700, textDecoration: "none" }}>{t.phone}</a>
             <button onClick={() => setLang(lang === "en" ? "es" : "en")} style={s.langBtn}>
               {t.otherLang}
             </button>
           </div>
+          {/* Mobile Hamburger */}
+          <button className="jr-hp-nav-hamburger" onClick={() => setMobileMenu(!mobileMenu)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", padding: "8px", flexDirection: "column", gap: "5px" }}>
+            <span style={{ display: "block", width: "22px", height: "2px", background: mobileMenu ? C.gold : C.white, transition: "all 0.3s", transform: mobileMenu ? "rotate(45deg) translateY(7px)" : "none" }} />
+            <span style={{ display: "block", width: "22px", height: "2px", background: C.white, transition: "all 0.3s", opacity: mobileMenu ? 0 : 1 }} />
+            <span style={{ display: "block", width: "22px", height: "2px", background: mobileMenu ? C.gold : C.white, transition: "all 0.3s", transform: mobileMenu ? "rotate(-45deg) translateY(-7px)" : "none" }} />
+          </button>
         </div>
+        {/* Mobile Menu Dropdown */}
+        {mobileMenu && (
+          <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px" }}>
+            {[
+              { label: t.navItems[0], href: "/seamless-aluminum-gutters" },
+              { label: lang === "en" ? "Gutter Guards" : "Protectores", href: "/gutter-guards" },
+              { label: lang === "en" ? "Soffit & Fascia" : "Sofito y Fascia", href: "/soffit-and-fascia" },
+              { label: lang === "en" ? "Repair" : "Reparación", href: "/gutter-repair" },
+              { label: lang === "en" ? "Siding" : "Revestimiento", href: "/siding" },
+              { label: lang === "en" ? "Specialty" : "Especiales", href: "/specialty-gutters" },
+              { label: lang === "en" ? "About" : "Nosotros", href: "/about" },
+              { label: t.navItems[5], href: "/contact" },
+            ].map((item, i) => (
+              <a key={i} href={item.href} style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{item.label}</a>
+            ))}
+            <a href="#estimator" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#3B82F6", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
+            <a href="/financing" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#22C55E", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
+            <a href="/referral" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#B11A21", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Referral" : "Referidos"}</a>
+            <a href="tel:8444443114" style={{ fontFamily: font.heading, fontSize: "16px", fontWeight: 700, color: C.gold, textDecoration: "none", padding: "12px 0", textAlign: "center" }}>📞 {t.phone}</a>
+            <button onClick={() => { setLang(lang === "en" ? "es" : "en"); setMobileMenu(false); }} style={{ ...s.langBtn, padding: "10px", marginBottom: "8px" }}>{t.otherLang}</button>
+          </div>
+        )}
       </nav>
 
       {/* ══ HERO ══ */}
@@ -705,8 +736,12 @@ export default function JROneHomepage() {
         * { box-sizing: border-box; margin: 0; padding: 0; }
         ::placeholder { color: #9CA3AF; }
         input:focus, select:focus { border-color: ${C.gold} !important; }
-        @media (max-width: 768px) {
-          nav div:last-child { display: none !important; }
+        @media (max-width: 900px) {
+          .jr-hp-nav-desktop { display: none !important; }
+          .jr-hp-nav-hamburger { display: flex !important; }
+        }
+        @media (min-width: 901px) {
+          .jr-hp-nav-hamburger { display: none !important; }
         }
         .hero-stars::before {
           content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
