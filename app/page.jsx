@@ -258,6 +258,7 @@ export default function JROneHomepage() {
   const [estUnlocked, setEstUnlocked] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const t = T[lang];
 
@@ -284,7 +285,7 @@ export default function JROneHomepage() {
   // ── Styles ────────────────────────────────────────────
   const s = {
     page: { background: C.bg, color: C.white, fontFamily: font.body, minHeight: "100vh", overflowX: "hidden", lineHeight: 1.65 },
-    nav: { position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, padding: scrolled ? "10px 24px" : "16px 24px", background: scrolled ? "rgba(11,22,40,0.97)" : "transparent", backdropFilter: scrolled ? "blur(12px)" : "none", transition: "all 0.3s ease", borderBottom: scrolled ? `1px solid ${C.navyLight}` : "1px solid transparent" },
+    nav: { position: "sticky", top: 0, zIndex: 1000, padding: scrolled ? "10px 24px" : "16px 24px", background: scrolled ? "rgba(11,22,40,0.97)" : "rgba(11,22,40,0.85)", backdropFilter: "blur(12px)", transition: "all 0.3s ease", borderBottom: scrolled ? `1px solid ${C.navyLight}` : "1px solid transparent" },
     navInner: { maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" },
     logo: { fontFamily: font.heading, fontSize: "20px", fontWeight: 800, color: C.white, letterSpacing: "1px" },
     logoGold: { color: C.gold },
@@ -337,8 +338,34 @@ export default function JROneHomepage() {
         <div style={s.navInner}>
           <a href="/" style={{...s.logo, textDecoration: "none"}}>JR <span style={s.logoGold}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span></a>
           <div className="jr-hp-nav-desktop" style={s.navLinks}>
+            {/* Services Dropdown */}
+            <div style={{ position: "relative" }} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
+              <span style={{ ...s.navLink, cursor: "pointer", display: "flex", alignItems: "center", gap: "4px" }}>{t.navItems[0]} <span style={{ fontSize: "8px" }}>▼</span></span>
+              {servicesOpen && (
+                <div style={{ position: "absolute", top: "100%", left: "-12px", marginTop: "8px", background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
+                  {[
+                    { label: lang === "en" ? "Seamless Gutters" : "Canaletas", href: "/seamless-aluminum-gutters" },
+                    { label: lang === "en" ? "Gutter Guards" : "Protectores", href: "/gutter-guards" },
+                    { label: lang === "en" ? "Soffit & Fascia" : "Sofito y Fascia", href: "/soffit-and-fascia" },
+                    { label: lang === "en" ? "Gutter Repair" : "Reparación", href: "/gutter-repair" },
+                    { label: lang === "en" ? "Siding" : "Revestimiento", href: "/siding" },
+                    { label: lang === "en" ? "Specialty Gutters" : "Especiales", href: "/specialty-gutters" },
+                    { label: lang === "en" ? "Copper Gutters" : "Cobre", href: "/copper-gutters" },
+                    { label: "SAGIPER", href: "/sagiper" },
+                    { label: "Peak 301", href: "/peak-301" },
+                    { label: lang === "en" ? "Govee Lights" : "Luces Govee", href: "/govee-lights" },
+                    { label: lang === "en" ? "Drainage Assessment" : "Evaluación de Drenaje", href: "/drainage-assessment" },
+                  ].map((svc, i) => (
+                    <a key={i} href={svc.href} style={{ display: "block", padding: "8px 20px", fontFamily: font.heading, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none", transition: "color 0.15s" }}
+                      onMouseOver={e => { e.target.style.color = C.gold; e.target.style.background = "rgba(200,149,46,0.08)"; }}
+                      onMouseOut={e => { e.target.style.color = C.muted; e.target.style.background = "transparent"; }}>
+                      {svc.label}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
             {[
-              { label: t.navItems[0], href: "/seamless-aluminum-gutters" },
               { label: t.navItems[1], href: "#gold-standard" },
               { label: t.navItems[2], href: "#reviews" },
               { label: t.navItems[4], href: "#faq" },
