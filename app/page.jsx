@@ -803,25 +803,7 @@ export default function JROneHomepage() {
         @media (min-width: 901px) {
           .jr-hp-nav-hamburger { display: none !important; }
         }
-        .hero-stars::before {
-          content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
-          position: absolute;
-          top: -50%;
-          left: -50%;
-          width: 200%;
-          height: 200%;
-          font-size: 14px;
-          letter-spacing: 28px;
-          line-height: 42px;
-          color: rgba(255,255,255,0.03);
-          pointer-events: none;
-          z-index: 0;
-          overflow: hidden;
-          word-break: break-all;
-          padding: 20px;
-          transform: rotate(-25deg);
-          transform-origin: center center;
-        }
+        /* hero-stars now in globals.css */
       `}</style>
     </div>
   );

@@ -27,7 +27,7 @@ export default function AboutUsPage() {
       </div></div>
 
       {/* ══ JAVIER PHOTO ══ */}
-      <section style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <div style={{maxWidth:"500px",margin:"0 auto",borderRadius:"16px",overflow:"hidden",border:`2px solid ${C.gold}`,boxShadow:"0 8px 32px rgba(200,149,46,0.15)"}}>
           <img src="/images/javier-rivera.jpg" alt="Javier Rivera — Founder of JR One Aluminum" style={{width:"100%",height:"auto",display:"block"}} />
         </div>

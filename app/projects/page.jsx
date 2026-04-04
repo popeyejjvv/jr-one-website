@@ -40,7 +40,7 @@ export default function ProjectsPage() {
       <SiteNav />
 
       {/* ══ HERO ══ */}
-      <section style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>OUR WORK</Tag>
         <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>
           Real Projects.<br/><span style={{color:C.gold}}>Real Homes.</span>

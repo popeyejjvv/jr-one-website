@@ -69,7 +69,7 @@ export default function FAQPage() {
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
       <SiteNav />
 
-      <section style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>FAQ</Tag>
         <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>Frequently Asked<br/><span style={{color:C.gold}}>Questions</span></h1>
         <p style={{fontFamily:f.b,fontSize:"18px",color:C.muted,maxWidth:"600px",margin:"0 auto"}}>Everything homeowners ask us — answered honestly. Can't find your question? Call (844) 444-3114 and we'll answer it directly.</p>

@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
       <SiteNav />
 
-      <section style={{padding:"60px 24px 80px",maxWidth:"800px",margin:"0 auto"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 80px",maxWidth:"800px",margin:"0 auto"}}>
         <div style={{display:"inline-block",padding:"6px 16px",background:C.goldPale,borderRadius:"4px",marginBottom:"12px"}}>
           <span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>LEGAL</span>
         </div>

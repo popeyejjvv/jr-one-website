@@ -25,7 +25,7 @@ export default function ContactPage() {
       <SiteNav />
 
       {/* ══ HERO ══ */}
-      <section style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>CONTACT US</Tag>
         <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>
           Let's Talk About<br/><span style={{color:C.gold}}>Your Project.</span>

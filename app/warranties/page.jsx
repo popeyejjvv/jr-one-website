@@ -31,7 +31,7 @@ export default function WarrantyPage() {
       <SiteNav />
 
       {/* HERO */}
-      <section style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>WARRANTIES</Tag>
         <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>We Stand Behind<br/><span style={{color:C.gold}}>Every Installation.</span></h1>
         <p style={{fontFamily:f.b,fontSize:"18px",color:C.muted,maxWidth:"650px",margin:"0 auto"}}>Our 3-year workmanship warranty isn't fine print designed to protect us — it's a commitment designed to protect you. If our work fails, we fix it. Period.</p>

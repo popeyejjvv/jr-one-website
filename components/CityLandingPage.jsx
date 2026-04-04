@@ -116,7 +116,7 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
       <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>Home</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span>Service Areas</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.gold}}>{city.name}</span></div></div>
 
       {/* HERO */}
-      <section style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto",display:"flex",gap:"48px",alignItems:"center",flexWrap:"wrap"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto",display:"flex",gap:"48px",alignItems:"center",flexWrap:"wrap"}}>
         <div style={{flex:"1 1 520px",minWidth:"300px"}}>
           <Tag>{city.name.toUpperCase()}, FL</Tag>
           <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>{city.heroH1}<br/><span style={{color:C.gold}}>{city.heroH1Gold}</span></h1>

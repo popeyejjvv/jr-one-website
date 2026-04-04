@@ -160,7 +160,7 @@ export default function InsuranceResourceCenter() {
       <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}>{PAGE.breadcrumb.map((item,i) => <span key={i}>{i>0&&<span style={{margin:"0 8px",opacity:0.5}}>/</span>}{i===PAGE.breadcrumb.length-1?<span style={{color:C.gold}}>{item}</span>:item==="Home"?<a href="/" style={{color:C.muted,textDecoration:"none"}}>{item}</a>:item==="Peak 301"?<a href="/peak-301" style={{color:C.muted,textDecoration:"none"}}>{item}</a>:<span style={{color:C.muted}}>{item}</span>}</span>)}</div></div>
 
       {/* HERO */}
-      <section style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto"}}>
+      <section className="hero-stars" style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto"}}>
         <div style={{maxWidth:"800px"}}>
           <Tag>{PAGE.heroTag}</Tag>
           <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>{PAGE.heroH1}<br/><span style={{color:C.gold}}>{PAGE.heroH1Gold}</span></h1>
