@@ -4,12 +4,58 @@ import { useEffect } from "react";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
+import { useLanguage } from "../../lib/LanguageContext";
 
 const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
 const C = { bg:"#0B1628",navy:"#1B2A4A",navyLight:"#2C3E5A",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8" };
 const f = { h:"'Montserrat', sans-serif", b:"'Source Sans 3', sans-serif" };
 
+const T = {
+  en: {
+    tag: "LEGAL",
+    title: "Privacy Policy",
+    updated: "Last updated: April 2026",
+    intro: 'JR One Aluminum LLC ("we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you visit jronegutters.com or interact with our services.',
+    h2Collect: "Information We Collect",
+    pCollect: "When you request a quote or contact us, we may collect your name, phone number, email address, ZIP code, and details about the service you need. We also collect standard website usage data through cookies and analytics tools, including your IP address, browser type, and pages visited.",
+    h2Use: "How We Use Your Information",
+    pUse: "We use your information to respond to quote requests, provide our services, communicate about your project, send relevant updates or promotions (with your consent), and improve our website and customer experience.",
+    h2Share: "Information Sharing",
+    pShare: "We do not sell or rent your personal information. We may share information with trusted service providers who help us operate our business (such as email platforms and CRM tools), but only as necessary to serve you. We may also disclose information if required by law.",
+    h2Security: "Data Security",
+    pSecurity: "We implement reasonable security measures to protect your information. However, no internet transmission is completely secure, and we cannot guarantee absolute security.",
+    h2Cookies: "Cookies",
+    pCookies: "Our website uses cookies and similar technologies to analyze traffic and improve your experience. You can control cookie preferences through your browser settings.",
+    h2Rights: "Your Rights",
+    pRights: "You may request access to, correction of, or deletion of your personal information at any time by contacting us. Florida residents may have additional rights under applicable state privacy laws.",
+    h2Contact: "Contact Us",
+    pContact: "If you have questions about this Privacy Policy, contact us at:",
+  },
+  es: {
+    tag: "LEGAL",
+    title: "Política de Privacidad",
+    updated: "Última actualización: abril 2026",
+    intro: 'JR One Aluminum LLC ("nosotros" o "nuestro") respeta su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos la información cuando visita jronegutters.com o interactúa con nuestros servicios.',
+    h2Collect: "Información que Recopilamos",
+    pCollect: "Cuando solicita un presupuesto o se comunica con nosotros, podemos recopilar su nombre, número de teléfono, dirección de correo electrónico, código postal y detalles sobre el servicio que necesita. También recopilamos datos estándar de uso del sitio web a través de cookies y herramientas de análisis, incluyendo su dirección IP, tipo de navegador y páginas visitadas.",
+    h2Use: "Cómo Usamos Su Información",
+    pUse: "Usamos su información para responder a solicitudes de presupuesto, proporcionar nuestros servicios, comunicarnos sobre su proyecto, enviar actualizaciones o promociones relevantes (con su consentimiento) y mejorar nuestro sitio web y la experiencia del cliente.",
+    h2Share: "Compartir Información",
+    pShare: "No vendemos ni alquilamos su información personal. Podemos compartir información con proveedores de servicios de confianza que nos ayudan a operar nuestro negocio (como plataformas de correo electrónico y herramientas CRM), pero solo según sea necesario para atenderle. También podemos divulgar información si lo requiere la ley.",
+    h2Security: "Seguridad de Datos",
+    pSecurity: "Implementamos medidas de seguridad razonables para proteger su información. Sin embargo, ninguna transmisión por Internet es completamente segura, y no podemos garantizar seguridad absoluta.",
+    h2Cookies: "Cookies",
+    pCookies: "Nuestro sitio web utiliza cookies y tecnologías similares para analizar el tráfico y mejorar su experiencia. Puede controlar las preferencias de cookies a través de la configuración de su navegador.",
+    h2Rights: "Sus Derechos",
+    pRights: "Puede solicitar acceso, corrección o eliminación de su información personal en cualquier momento comunicándose con nosotros. Los residentes de Florida pueden tener derechos adicionales bajo las leyes de privacidad estatales aplicables.",
+    h2Contact: "Contáctenos",
+    pContact: "Si tiene preguntas sobre esta Política de Privacidad, contáctenos en:",
+  },
+};
+
 export default function PrivacyPolicyPage() {
+  const { lang } = useLanguage();
+  const t = T[lang];
   useEffect(() => { injectFonts(); }, []);
 
   const h2 = { fontFamily:f.h, fontSize:"20px", fontWeight:700, color:C.white, marginTop:"40px", marginBottom:"12px" };
@@ -21,33 +67,33 @@ export default function PrivacyPolicyPage() {
 
       <section className="hero-stars" style={{padding:"60px 24px 80px",maxWidth:"800px",margin:"0 auto"}}>
         <div style={{display:"inline-block",padding:"6px 16px",background:C.goldPale,borderRadius:"4px",marginBottom:"12px"}}>
-          <span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>LEGAL</span>
+          <span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>{t.tag}</span>
         </div>
-        <h1 style={{fontFamily:f.h,fontSize:"clamp(28px,4vw,40px)",fontWeight:800,marginBottom:"8px"}}>Privacy Policy</h1>
-        <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginBottom:"32px"}}>Last updated: April 2026</p>
+        <h1 style={{fontFamily:f.h,fontSize:"clamp(28px,4vw,40px)",fontWeight:800,marginBottom:"8px"}}>{t.title}</h1>
+        <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginBottom:"32px"}}>{t.updated}</p>
 
-        <p style={p}>JR One Aluminum LLC ("we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you visit jronegutters.com or interact with our services.</p>
+        <p style={p}>{t.intro}</p>
 
-        <h2 style={h2}>Information We Collect</h2>
-        <p style={p}>When you request a quote or contact us, we may collect your name, phone number, email address, ZIP code, and details about the service you need. We also collect standard website usage data through cookies and analytics tools, including your IP address, browser type, and pages visited.</p>
+        <h2 style={h2}>{t.h2Collect}</h2>
+        <p style={p}>{t.pCollect}</p>
 
-        <h2 style={h2}>How We Use Your Information</h2>
-        <p style={p}>We use your information to respond to quote requests, provide our services, communicate about your project, send relevant updates or promotions (with your consent), and improve our website and customer experience.</p>
+        <h2 style={h2}>{t.h2Use}</h2>
+        <p style={p}>{t.pUse}</p>
 
-        <h2 style={h2}>Information Sharing</h2>
-        <p style={p}>We do not sell or rent your personal information. We may share information with trusted service providers who help us operate our business (such as email platforms and CRM tools), but only as necessary to serve you. We may also disclose information if required by law.</p>
+        <h2 style={h2}>{t.h2Share}</h2>
+        <p style={p}>{t.pShare}</p>
 
-        <h2 style={h2}>Data Security</h2>
-        <p style={p}>We implement reasonable security measures to protect your information. However, no internet transmission is completely secure, and we cannot guarantee absolute security.</p>
+        <h2 style={h2}>{t.h2Security}</h2>
+        <p style={p}>{t.pSecurity}</p>
 
-        <h2 style={h2}>Cookies</h2>
-        <p style={p}>Our website uses cookies and similar technologies to analyze traffic and improve your experience. You can control cookie preferences through your browser settings.</p>
+        <h2 style={h2}>{t.h2Cookies}</h2>
+        <p style={p}>{t.pCookies}</p>
 
-        <h2 style={h2}>Your Rights</h2>
-        <p style={p}>You may request access to, correction of, or deletion of your personal information at any time by contacting us. Florida residents may have additional rights under applicable state privacy laws.</p>
+        <h2 style={h2}>{t.h2Rights}</h2>
+        <p style={p}>{t.pRights}</p>
 
-        <h2 style={h2}>Contact Us</h2>
-        <p style={p}>If you have questions about this Privacy Policy, contact us at:</p>
+        <h2 style={h2}>{t.h2Contact}</h2>
+        <p style={p}>{t.pContact}</p>
         <p style={p}>JR One Aluminum LLC<br/>Tampa, FL<br/>Phone: <a href="tel:8444443114" style={{color:C.gold,textDecoration:"none"}}>(844) 444-3114</a><br/>Email: <a href="mailto:info@jronegutters.com" style={{color:C.gold,textDecoration:"none"}}>info@jronegutters.com</a></p>
       </section>
 

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import MobileCTA from "../components/MobileCTA";
+import { useLanguage } from "../lib/LanguageContext";
 
 /* ═══════════════════════════════════════════════════════════
    JR ONE ALUMINUM — HOMEPAGE
@@ -247,7 +248,7 @@ const GoldDivider = () => (
 );
 
 export default function JROneHomepage() {
-  const [lang, setLang] = useState("en");
+  const { lang, toggleLang } = useLanguage();
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", service: "", zip: "" });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [emailInput, setEmailInput] = useState("");
@@ -380,7 +381,7 @@ export default function JROneHomepage() {
             <a href="/financing" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#22C55E", background: "rgba(34,197,94,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(34,197,94,0.3)" }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
             <a href="/referral" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#E91E8C", background: "rgba(233,30,140,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(233,30,140,0.3)" }}>{lang === "en" ? "Referral" : "Referidos"}</a>
             <a href="tel:8444443114" style={{ ...s.navLink, color: C.gold, fontWeight: 700, textDecoration: "none" }}>{t.phone}</a>
-            <button onClick={() => setLang(lang === "en" ? "es" : "en")} style={s.langBtn}>
+            <button onClick={toggleLang} style={s.langBtn}>
               {t.otherLang}
             </button>
           </div>
@@ -425,7 +426,7 @@ export default function JROneHomepage() {
             <a href="/financing" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#22C55E", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
             <a href="/referral" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#E91E8C", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Referral" : "Referidos"}</a>
             <a href="tel:8444443114" style={{ fontFamily: font.heading, fontSize: "16px", fontWeight: 700, color: C.gold, textDecoration: "none", padding: "12px 0", textAlign: "center" }}>📞 {t.phone}</a>
-            <button onClick={() => { setLang(lang === "en" ? "es" : "en"); setMobileMenu(false); }} style={{ ...s.langBtn, padding: "10px", marginBottom: "8px" }}>{t.otherLang}</button>
+            <button onClick={() => { toggleLang(); setMobileMenu(false); }} style={{ ...s.langBtn, padding: "10px", marginBottom: "8px" }}>{t.otherLang}</button>
           </div>
         )}
       </nav>

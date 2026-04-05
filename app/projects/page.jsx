@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
+import { useLanguage } from "../../lib/LanguageContext";
 
 const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
 const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D" };
@@ -11,7 +12,58 @@ const f = { h:"'Montserrat', sans-serif", b:"'Source Sans 3', sans-serif" };
 const Tag = ({children}) => <div style={{display:"inline-block",padding:"6px 16px",background:C.goldPale,borderRadius:"4px",marginBottom:"12px"}}><span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>{children}</span></div>;
 const Stars = () => <span style={{color:C.gold,fontSize:"14px",letterSpacing:"2px"}}>★★★★★</span>;
 
+const T = {
+  en: {
+    tag: "OUR WORK",
+    heroTitle1: "Real Projects.",
+    heroTitle2: "Real Homes.",
+    heroP: "Every photo is from an actual JR One job — no stock images, no staged shoots. This is what our craftsmanship looks like across Tampa Bay.",
+    statProjects: "Projects completed",
+    statRating: "Google rating",
+    statCities: "Cities served",
+    statExperience: "Years experience",
+    filterAll: "All",
+    loading: "Loading projects from CompanyCam...",
+    error: "Could not load project photos. Please try again later.",
+    noPhotos: "No photos found for this filter.",
+    ctaTitle: "YOUR HOME COULD BE NEXT",
+    ctaP: "Every project in this gallery started with a phone call or a form submission. Ready to see what JR One can do for your home?",
+    ctaCall: "CALL (844) 444-3114",
+    ctaQuote: "REQUEST A QUOTE",
+    reviews: [
+      { text:"Work was done exactly to the quote and mock-up images. Not one detail missed.", name:"Jaclyn G." },
+      { text:"Amazing work and so respectful. Their work was beautiful and had it all done in one day.", name:"Jessica L." },
+      { text:"They took pictures of each step showing me what was transpiring. The workmanship was outstanding.", name:"Lois G." },
+    ],
+  },
+  es: {
+    tag: "NUESTRO TRABAJO",
+    heroTitle1: "Proyectos Reales.",
+    heroTitle2: "Hogares Reales.",
+    heroP: "Cada foto es de un trabajo real de JR One — sin imágenes de archivo, sin sesiones montadas. Así se ve nuestra artesanía en toda el área de Tampa Bay.",
+    statProjects: "Proyectos completados",
+    statRating: "Calificación en Google",
+    statCities: "Ciudades atendidas",
+    statExperience: "Años de experiencia",
+    filterAll: "Todos",
+    loading: "Cargando proyectos desde CompanyCam...",
+    error: "No se pudieron cargar las fotos del proyecto. Intente de nuevo más tarde.",
+    noPhotos: "No se encontraron fotos para este filtro.",
+    ctaTitle: "SU HOGAR PODRÍA SER EL SIGUIENTE",
+    ctaP: "Cada proyecto en esta galería comenzó con una llamada telefónica o un formulario enviado. ¿Listo para ver lo que JR One puede hacer por su hogar?",
+    ctaCall: "LLAME AL (844) 444-3114",
+    ctaQuote: "SOLICITE UN PRESUPUESTO",
+    reviews: [
+      { text:"El trabajo se hizo exactamente según el presupuesto y las imágenes de muestra. No se pasó ni un detalle.", name:"Jaclyn G." },
+      { text:"Trabajo increíble y muy respetuosos. Su trabajo fue hermoso y lo terminaron todo en un día.", name:"Jessica L." },
+      { text:"Tomaron fotos de cada paso mostrándome lo que estaba pasando. La mano de obra fue excepcional.", name:"Lois G." },
+    ],
+  },
+};
+
 export default function ProjectsPage() {
+  const { lang } = useLanguage();
+  const t = T[lang];
   const [filter, setFilter] = useState("all");
   const [photos, setPhotos] = useState([]);
   const [tagLabels, setTagLabels] = useState({});
@@ -35,7 +87,7 @@ export default function ProjectsPage() {
   }, []);
 
   const filtered = filter === "all" ? photos : photos.filter(p => p.tags.includes(filter));
-  const filterTabs = [{ key: "all", label: "All" }, ...Object.entries(tagLabels).map(([k, v]) => ({ key: k, label: v }))];
+  const filterTabs = [{ key: "all", label: t.filterAll }, ...Object.entries(tagLabels).map(([k, v]) => ({ key: k, label: v }))];
 
   // Lightbox navigation
   const openLightbox = (photo) => {
@@ -61,30 +113,32 @@ export default function ProjectsPage() {
     return () => window.removeEventListener("keydown", handler);
   }, [lightbox, navLightbox]);
 
+  const statsData = [
+    {v: stats.totalProjects ? `${stats.totalProjects}+` : "300+", l:t.statProjects},
+    {v:"4.9★",l:t.statRating},
+    {v:"20+",l:t.statCities},
+    {v:"30+",l:t.statExperience},
+  ];
+
   return (
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
       <SiteNav />
 
       {/* HERO */}
       <section className="hero-stars" style={{padding:"60px 24px 20px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-        <Tag>OUR WORK</Tag>
+        <Tag>{t.tag}</Tag>
         <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>
-          Real Projects.<br/><span style={{color:C.gold}}>Real Homes.</span>
+          {t.heroTitle1}<br/><span style={{color:C.gold}}>{t.heroTitle2}</span>
         </h1>
         <p style={{fontFamily:f.b,fontSize:"18px",color:C.muted,maxWidth:"600px",margin:"0 auto"}}>
-          Every photo is from an actual JR One job — no stock images, no staged shoots. This is what our craftsmanship looks like across Tampa Bay.
+          {t.heroP}
         </p>
       </section>
 
       {/* STATS BAR */}
       <section style={{padding:"20px 24px 40px"}}>
         <div style={{maxWidth:"800px",margin:"0 auto",display:"flex",justifyContent:"center",gap:"40px",flexWrap:"wrap"}}>
-          {[
-            {v: stats.totalProjects ? `${stats.totalProjects}+` : "300+", l:"Projects completed"},
-            {v:"4.9★",l:"Google rating"},
-            {v:"20+",l:"Cities served"},
-            {v:"30+",l:"Years experience"},
-          ].map((s,i) => (
+          {statsData.map((s,i) => (
             <div key={i} style={{textAlign:"center"}}>
               <div style={{fontFamily:f.h,fontSize:"28px",fontWeight:800,color:C.gold}}>{s.v}</div>
               <div style={{fontFamily:f.b,fontSize:"12px",color:C.muted}}>{s.l}</div>
@@ -113,13 +167,13 @@ export default function ProjectsPage() {
         {loading && (
           <div style={{textAlign:"center",padding:"60px 0"}}>
             <div style={{width:"40px",height:"40px",border:`3px solid ${C.navyLight}`,borderTopColor:C.gold,borderRadius:"50%",animation:"spin 0.8s linear infinite",margin:"0 auto 16px"}} />
-            <p style={{fontFamily:f.h,fontSize:"14px",color:C.muted}}>Loading projects from CompanyCam...</p>
+            <p style={{fontFamily:f.h,fontSize:"14px",color:C.muted}}>{t.loading}</p>
           </div>
         )}
 
         {error && (
           <div style={{textAlign:"center",padding:"60px 0"}}>
-            <p style={{fontFamily:f.h,fontSize:"16px",color:"#EF4444"}}>Could not load project photos. Please try again later.</p>
+            <p style={{fontFamily:f.h,fontSize:"16px",color:"#EF4444"}}>{t.error}</p>
           </div>
         )}
 
@@ -142,12 +196,12 @@ export default function ProjectsPage() {
                   />
                   {/* Tag badge */}
                   <div style={{position:"absolute",top:"10px",left:"10px",display:"flex",gap:"4px",flexWrap:"wrap"}}>
-                    {photo.tags.slice(0, 2).map(t => (
-                      <span key={t} style={{
+                    {photo.tags.slice(0, 2).map(tg => (
+                      <span key={tg} style={{
                         padding:"3px 10px",background:"rgba(11,22,40,0.85)",borderRadius:"4px",
                         fontFamily:f.h,fontSize:"10px",fontWeight:700,color:C.gold,letterSpacing:"1px",
                         backdropFilter:"blur(4px)"
-                      }}>{(tagLabels[t] || t).toUpperCase()}</span>
+                      }}>{(tagLabels[tg] || tg).toUpperCase()}</span>
                     ))}
                   </div>
                 </div>
@@ -165,7 +219,7 @@ export default function ProjectsPage() {
 
         {!loading && !error && filtered.length === 0 && (
           <div style={{textAlign:"center",padding:"60px 0"}}>
-            <p style={{fontFamily:f.h,fontSize:"16px",color:C.muted}}>No photos found for this filter.</p>
+            <p style={{fontFamily:f.h,fontSize:"16px",color:C.muted}}>{t.noPhotos}</p>
           </div>
         )}
       </section>
@@ -173,11 +227,11 @@ export default function ProjectsPage() {
       {/* CTA */}
       <section style={{background:C.navy,padding:"80px 24px",textAlign:"center"}}>
         <div style={{maxWidth:"700px",margin:"0 auto"}}>
-          <h2 style={{fontFamily:f.h,fontSize:"clamp(28px,5vw,36px)",fontWeight:800,color:C.white,marginBottom:"16px"}}>YOUR HOME COULD BE NEXT</h2>
-          <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,marginBottom:"36px"}}>Every project in this gallery started with a phone call or a form submission. Ready to see what JR One can do for your home?</p>
+          <h2 style={{fontFamily:f.h,fontSize:"clamp(28px,5vw,36px)",fontWeight:800,color:C.white,marginBottom:"16px"}}>{t.ctaTitle}</h2>
+          <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,marginBottom:"36px"}}>{t.ctaP}</p>
           <div style={{display:"flex",gap:"16px",justifyContent:"center",flexWrap:"wrap"}}>
-            <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 CALL (844) 444-3114</a>
-            <a href="/contact" style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>REQUEST A QUOTE</a>
+            <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 {t.ctaCall}</a>
+            <a href="/contact" style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>{t.ctaQuote}</a>
           </div>
         </div>
       </section>
@@ -185,11 +239,7 @@ export default function ProjectsPage() {
       {/* REVIEW STRIP */}
       <section style={{background:C.bg,padding:"60px 24px"}}>
         <div style={{maxWidth:"900px",margin:"0 auto",display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",gap:"20px"}}>
-          {[
-            {text:"Work was done exactly to the quote and mock-up images. Not one detail missed.",name:"Jaclyn G."},
-            {text:"Amazing work and so respectful. Their work was beautiful and had it all done in one day.",name:"Jessica L."},
-            {text:"They took pictures of each step showing me what was transpiring. The workmanship was outstanding.",name:"Lois G."},
-          ].map((rev,i) => (
+          {t.reviews.map((rev,i) => (
             <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px"}}>
               <Stars />
               <p style={{fontFamily:f.b,fontSize:"14px",color:C.offWhite,lineHeight:1.6,margin:"12px 0",fontStyle:"italic"}}>"{rev.text}"</p>
@@ -238,7 +288,7 @@ export default function ProjectsPage() {
             <div style={{textAlign:"center",marginTop:"12px"}}>
               <span style={{fontFamily:f.h,fontSize:"13px",color:C.muted}}>
                 {lightbox.photo.city && `${lightbox.photo.city}, ${lightbox.photo.state}`}
-                {lightbox.photo.tags.length > 0 && ` — ${lightbox.photo.tags.map(t => tagLabels[t] || t).join(", ")}`}
+                {lightbox.photo.tags.length > 0 && ` — ${lightbox.photo.tags.map(tg => tagLabels[tg] || tg).join(", ")}`}
               </span>
               <span style={{fontFamily:f.b,fontSize:"12px",color:C.navyLight,marginLeft:"12px"}}>
                 {lightbox.index + 1} / {filtered.length}

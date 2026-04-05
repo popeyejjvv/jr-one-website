@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useLanguage } from "../lib/LanguageContext";
 
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyLight: "#2C3E5A", navyFade: "#162033",
@@ -9,57 +10,51 @@ const C = {
 };
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
-const SERVICE_LINKS = [
-  { label: "Copper Gutters", href: "/copper-gutters" },
-  { label: "Drainage Installation", href: "/drainage-assessment" },
-  { label: "Govee Lights", href: "/govee-lights" },
-  { label: "Gutter Guards", href: "/gutter-guards" },
-  { label: "Gutter Repair", href: "/gutter-repair" },
-  { label: "Peak 301", href: "/peak-301" },
-  { label: "SAGIPER", href: "/sagiper" },
-  { label: "Seamless Gutters", href: "/seamless-aluminum-gutters" },
-  { label: "Service Plans", href: "/service-plans" },
-  { label: "Siding", href: "/siding" },
-  { label: "Soffit & Fascia", href: "/soffit-and-fascia" },
-  { label: "Specialty Gutters", href: "/specialty-gutters" },
+const SERVICE_HREFS = [
+  "/copper-gutters", "/drainage-assessment", "/govee-lights", "/gutter-guards",
+  "/gutter-repair", "/peak-301", "/sagiper", "/seamless-aluminum-gutters",
+  "/service-plans", "/siding", "/soffit-and-fascia", "/specialty-gutters",
 ];
 
-const NAV_LINKS = [
-  { label: "The Gold Standard", href: "/#gold-standard" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Projects", href: "/projects" },
+const FEATURE_META = [
+  { href: "/estimator", color: "#3B82F6", bg: "rgba(59,130,246,0.15)" },
+  { href: "/financing", color: "#22C55E", bg: "rgba(34,197,94,0.15)" },
+  { href: "/referral", color: "#E91E8C", bg: "rgba(233,30,140,0.15)" },
 ];
 
-const FEATURE_TABS = [
-  { label: "Estimator", href: "/estimator", color: "#3B82F6", bg: "rgba(59,130,246,0.15)" },
-  { label: "Financing", href: "/financing", color: "#22C55E", bg: "rgba(34,197,94,0.15)" },
-  { label: "Referral", href: "/referral", color: "#E91E8C", bg: "rgba(233,30,140,0.15)" },
-];
+const NAV_HREFS = ["/#gold-standard", "/about", "/contact", "/faq", "/projects"];
 
-export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114" }) {
+const T = {
+  en: {
+    services: "Services",
+    servicesMobile: "SERVICES",
+    serviceLabels: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
+    navLabels: ["The Gold Standard", "About", "Contact", "FAQ", "Projects"],
+    featureLabels: ["Estimator", "Financing", "Referral"],
+    promoBanner: "🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114",
+  },
+  es: {
+    services: "Servicios",
+    servicesMobile: "SERVICIOS",
+    serviceLabels: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
+    navLabels: ["El Estándar de Oro", "Nosotros", "Contacto", "Preguntas Frecuentes", "Proyectos"],
+    featureLabels: ["Estimador", "Financiamiento", "Referidos"],
+    promoBanner: "🏠 Protectores de Canaletas GRATIS con Instalación Completa — Llame al (844) 444-3114",
+  },
+};
+
+export default function SiteNav({ promoBanner }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [lang, setLang] = useState("en");
-
-  useEffect(() => {
-    const saved = typeof window !== "undefined" && localStorage.getItem("jr-lang");
-    if (saved === "es") setLang("es");
-  }, []);
-
-  const toggleLang = () => {
-    const next = lang === "en" ? "es" : "en";
-    setLang(next);
-    if (typeof window !== "undefined") localStorage.setItem("jr-lang", next);
-    window.location.href = next === "es" ? "/?lang=es" : "/";
-  };
+  const { lang, toggleLang } = useLanguage();
+  const t = T[lang];
+  const banner = promoBanner || t.promoBanner;
 
   return (
     <div style={{ position: "sticky", top: 0, zIndex: 1000 }}>
       {/* Promo Banner — sticks with nav */}
       <div style={{ background: `linear-gradient(90deg,${C.gold},${C.goldLight})`, padding: "8px 24px", textAlign: "center", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
-        {promoBanner}
+        {banner}
       </div>
 
       {/* Navigation */}
@@ -72,24 +67,24 @@ export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Fu
           <div className="jr-nav-desktop" style={{ display: "flex", gap: "16px", alignItems: "center" }}>
             {/* Services Dropdown */}
             <div style={{ position: "relative" }} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <span style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, letterSpacing: "0.5px", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", paddingBottom: "12px", marginBottom: "-12px" }}>Services <span style={{ fontSize: "8px" }}>▼</span></span>
+              <span style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, letterSpacing: "0.5px", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", paddingBottom: "12px", marginBottom: "-12px" }}>{t.services} <span style={{ fontSize: "8px" }}>▼</span></span>
               {servicesOpen && (
                 <div style={{ position: "absolute", top: "100%", left: "-12px", paddingTop: "4px" }}><div style={{ background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
-                  {SERVICE_LINKS.map((svc, i) => (
-                    <a key={i} href={svc.href} style={{ display: "block", padding: "8px 20px", fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none" }}
+                  {t.serviceLabels.map((label, i) => (
+                    <a key={i} href={SERVICE_HREFS[i]} style={{ display: "block", padding: "8px 20px", fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none" }}
                       onMouseOver={e => { e.target.style.color = C.gold; e.target.style.background = "rgba(200,149,46,0.08)"; }}
                       onMouseOut={e => { e.target.style.color = C.muted; e.target.style.background = "transparent"; }}>
-                      {svc.label}
+                      {label}
                     </a>
                   ))}
                 </div></div>
               )}
             </div>
-            {NAV_LINKS.map((link, i) => (
-              <a key={i} href={link.href} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, textDecoration: "none", letterSpacing: "0.5px" }}>{link.label}</a>
+            {t.navLabels.map((label, i) => (
+              <a key={i} href={NAV_HREFS[i]} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, textDecoration: "none", letterSpacing: "0.5px" }}>{label}</a>
             ))}
-            {FEATURE_TABS.map((tab, i) => (
-              <a key={`ft-${i}`} href={tab.href} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: tab.color, background: tab.bg, padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: `1px solid ${tab.color}30` }}>{tab.label}</a>
+            {t.featureLabels.map((label, i) => (
+              <a key={`ft-${i}`} href={FEATURE_META[i].href} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: FEATURE_META[i].color, background: FEATURE_META[i].bg, padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: `1px solid ${FEATURE_META[i].color}30` }}>{label}</a>
             ))}
             <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>(844) 444-3114</a>
             <button onClick={toggleLang} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, background: C.goldPale, border: `1px solid ${C.gold}`, borderRadius: "4px", padding: "4px 10px", cursor: "pointer", letterSpacing: "1px" }}>
@@ -106,16 +101,16 @@ export default function SiteNav({ promoBanner = "🏠 FREE Gutter Guards with Fu
 
         {menuOpen && (
           <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px" }}>
-            <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, letterSpacing: "2px", padding: "8px 0 4px" }}>SERVICES</div>
-            {SERVICE_LINKS.map((link, i) => (
-              <a key={i} href={link.href} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "12px", borderBottom: `1px solid ${C.navyLight}20` }}>{link.label}</a>
+            <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, letterSpacing: "2px", padding: "8px 0 4px" }}>{t.servicesMobile}</div>
+            {t.serviceLabels.map((label, i) => (
+              <a key={i} href={SERVICE_HREFS[i]} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "12px", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
             ))}
             <div style={{ height: "8px" }} />
-            {NAV_LINKS.map((link, i) => (
-              <a key={`n-${i}`} href={link.href} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{link.label}</a>
+            {t.navLabels.map((label, i) => (
+              <a key={`n-${i}`} href={NAV_HREFS[i]} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
             ))}
-            {FEATURE_TABS.map((tab, i) => (
-              <a key={`mft-${i}`} href={tab.href} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 700, color: tab.color, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{tab.label}</a>
+            {t.featureLabels.map((label, i) => (
+              <a key={`mft-${i}`} href={FEATURE_META[i].href} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 700, color: FEATURE_META[i].color, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
             ))}
             <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 700, color: C.gold, textDecoration: "none", padding: "12px 0", textAlign: "center" }}>📞 (844) 444-3114</a>
             <button onClick={toggleLang} style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, background: C.goldPale, border: `1px solid ${C.gold}`, borderRadius: "4px", padding: "10px", cursor: "pointer", letterSpacing: "1px", marginBottom: "8px" }}>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useLanguage } from "../lib/LanguageContext";
 import SiteNav from "./SiteNav";
 import SiteFooter from "./SiteFooter";
 import MobileCTA from "./MobileCTA";
@@ -99,56 +100,289 @@ const SERVICES = [
   {title:"Peak 301 Roof Rejuvenation",desc:"Extend your roof's life 6-10 years with this soy-based sealant.",link:"/peak-301"},
 ];
 
+// ══════════════════════════════════════════════════════════
+// SPANISH CITY DATA — unique per-city content
+// ══════════════════════════════════════════════════════════
+const CITIES_ES = {
+  tampa: {
+    heroH1: "Especialistas de Confianza en", heroH1Gold: "Canaletas y Aluminio en Tampa",
+    localP: "Los propietarios de Tampa enfrentan una combinacion unica de desafios — tormentas intensas en verano, temporada de huracanes, humedad todo el ano y viviendas envejecidas en barrios desde South Tampa hasta New Tampa. Sus canaletas, sofitos y fascias reciben lo peor. JR One ha protegido hogares en Tampa por mas de 30 anos, y muchas de las casas que atendemos hoy son las mismas que nuestro fundador Javier trabajo originalmente en los anos 90.",
+    weatherNote: "Tampa recibe un promedio de 51 pulgadas de lluvia al ano — muy por encima del promedio nacional. Ese volumen de agua necesita ir a algun lugar, y si su sistema de canaletas no lo maneja correctamente, sus cimientos, fascias y jardin pagan el precio.",
+    nearbyText: "Tambien servimos a Clearwater, St. Petersburg, Brandon, Temple Terrace y comunidades cercanas.",
+  },
+  clearwater: {
+    heroH1: "Expertos de Primera en", heroH1Gold: "Canaletas y Sofitos en Clearwater",
+    localP: "La ubicacion costera de Clearwater significa que el exterior de su hogar recibe castigo constante del aire salado, tormentas tropicales y exposicion intensa a rayos UV todo el ano. Las canaletas, sofitos y fascias de aluminio son ideales para las condiciones de Clearwater porque resisten la corrosion del aire salado que deteriora materiales inferiores. JR One sirve a Clearwater y todo Pinellas County con la misma precision y dedicacion que llevamos a cada comunidad de Tampa Bay.",
+    weatherNote: "La proximidad costera de Clearwater agrega corrosion por aire salado a los desafios estandar de Florida: lluvia intensa, rayos UV y humedad. El aluminio es el material ideal aqui porque maneja todo esto sin degradarse.",
+    nearbyText: "Tambien servimos a Palm Harbor, Dunedin, Safety Harbor, Largo y todo Pinellas County.",
+  },
+  "st-petersburg": {
+    heroH1: "Especialistas de Confianza en", heroH1Gold: "Aluminio en St. Petersburg",
+    localP: "La mezcla de casas historicas, barrios de mediados de siglo y construccion nueva en St. Petersburg significa que cada trabajo de canaletas y sofitos es diferente. Muchas casas antiguas de St. Pete todavia tienen sofitos y fascias originales de madera que se han deteriorado durante decadas con la humedad de Florida. JR One se especializa en reemplazar estos sistemas envejecidos con aluminio duradero que protege su hogar y mejora su apariencia.",
+    weatherNote: "St. Pete tiene el record Guinness de dias consecutivos de sol — 768 dias. Esa exposicion UV degrada los sofitos y fascias de madera mas rapido de lo que la mayoria de propietarios se imaginan.",
+    nearbyText: "Tambien servimos a Gulfport, Pinellas Park, Seminole, Largo y todo Pinellas County.",
+  },
+  sarasota: {
+    heroH1: "La Eleccion de Sarasota para", heroH1Gold: "Sistemas de Canaletas Premium",
+    localP: "Los propietarios de Sarasota invierten en sus propiedades — y esperan contratistas que esten a la altura. JR One sirve a Sarasota con la misma atencion meticulosa al detalle que la comunidad exige. Desde casas frente al agua en los cayos hasta barrios establecidos como Palmer Ranch y Lakewood Ranch, instalamos sistemas de aluminio de precision que funcionan y lucen impecables.",
+    weatherNote: "Las tormentas costeras de Sarasota lanzan lluvia de lado, poniendo a prueba canaletas y sofitos de maneras que las casas tierra adentro rara vez experimentan. La inclinacion adecuada de instalacion y la fijacion correcta no son opcionales aqui — son esenciales.",
+    nearbyText: "Tambien servimos a Bradenton, Venice, Osprey, North Port y comunidades cercanas.",
+  },
+  bradenton: {
+    heroH1: "El Equipo Confiable de", heroH1Gold: "Canaletas y Fascias en Bradenton",
+    localP: "Bradenton se encuentra en la interseccion del clima costero y el crecimiento suburbano, con barrios que van desde el centro historico hasta desarrollos nuevos en Lakewood Ranch y Parrish. Ya sea que mantenga una casa antigua o equipe una construccion nueva, JR One proporciona el mismo servicio Gold Standard en todo Manatee County.",
+    weatherNote: "La posicion de Bradenton sobre el Manatee River y Tampa Bay significa que las casas aqui enfrentan tanto marejadas costeras como inundaciones tierra adentro. Canaletas funcionando correctamente no son solo esteticas — son proteccion estructural.",
+    nearbyText: "Tambien servimos a Sarasota, Lakewood Ranch, Anna Maria Island y areas cercanas.",
+  },
+  lakeland: {
+    heroH1: "Expertos de Confianza en", heroH1Gold: "Instalacion de Canaletas en Lakeland",
+    localP: "La ubicacion interior de Lakeland significa que recibe todas las tormentas intensas de la tarde del centro de Florida sin la brisa costera para secar las cosas. La lluvia intensa y la humedad persistente hacen que los sistemas de canaletas de calidad sean esenciales para proteger los cimientos y el exterior de su hogar. JR One lleva artesania de calibre Tampa Bay a cada proyecto en Lakeland.",
+    weatherNote: "Lakeland esta en el 'Pasillo de Relampagos' de Florida — una de las regiones con mas actividad de tormentas en el pais. Esas tormentas de la tarde descargan cantidades masivas de agua en periodos cortos, y sus canaletas necesitan manejarlo.",
+    nearbyText: "Tambien servimos a Plant City, Brandon, Winter Haven y comunidades cercanas de Polk County.",
+  },
+  brandon: {
+    heroH1: "La Compania Preferida de", heroH1Gold: "Canaletas y Sofitos en Brandon",
+    localP: "El rapido crecimiento de Brandon en las ultimas dos decadas significa una mezcla de edades de vivienda — desde desarrollos establecidos de los anos 80 hasta construccion nueva. Ambos necesitan sistemas confiables de canaletas y sofitos, pero por diferentes razones. Las casas mas antiguas a menudo tienen sofitos de madera fallando y sistemas de canaletas obsoletos, mientras que las construcciones nuevas necesitan instalacion de calidad desde el primer dia. JR One maneja ambos en la comunidad de Brandon.",
+    weatherNote: "Brandon recibe la misma actividad intensa de tormentas que Tampa pero con mas cobertura de arboles suburbanos — lo que significa mas hojas, agujas de pino y escombros en sus canaletas.",
+    nearbyText: "Tambien servimos a Riverview, Tampa, Plant City y todo Hillsborough County.",
+  },
+  "wesley-chapel": {
+    heroH1: "El Contratista Preferido de Aluminio en", heroH1Gold: "Wesley Chapel",
+    localP: "Wesley Chapel es una de las comunidades de mas rapido crecimiento en Tampa Bay, con construccion nueva y barrios establecidos lado a lado. JR One sirve a propietarios de Wesley Chapel que quieren su trabajo de canaletas, sofitos y fascias hecho bien — no por el postor mas barato que el constructor pudo encontrar, sino por un equipo especialista con mas de 30 anos de experiencia.",
+    weatherNote: "El terreno plano de Pasco County significa que el drenaje es critico. Sin canaletas con la inclinacion adecuada, el agua se acumula alrededor de sus cimientos en lugar de ser dirigida lejos.",
+    nearbyText: "Tambien servimos a Land O' Lakes, Lutz, New Tampa y todo Pasco County.",
+  },
+  "palm-harbor": {
+    heroH1: "Especialistas de Confianza en", heroH1Gold: "Canaletas en Palm Harbor",
+    localP: "Los barrios establecidos y las calles arboladas de Palm Harbor son parte de lo que lo hace hermoso — y parte de por que el mantenimiento de canaletas importa aqui. Los robles y pinos dejan escombros todo el ano, y la proximidad de Palm Harbor al Golfo significa que el aire salado siempre es un factor. JR One proporciona soluciones de aluminio construidas exactamente para estas condiciones.",
+    weatherNote: "El dosel maduro de arboles de Palm Harbor significa mas escombros en las canaletas que la mayoria de las comunidades de Pinellas County. Los protectores y el mantenimiento regular son especialmente importantes aqui.",
+    nearbyText: "Tambien servimos a Tarpon Springs, Dunedin, Clearwater y areas cercanas.",
+  },
+  riverview: {
+    heroH1: "El Contratista Confiable de", heroH1Gold: "Canaletas y Fascias en Riverview",
+    localP: "El crecimiento explosivo de Riverview ha traido miles de casas nuevas — muchas construidas rapidamente por constructores de volumen. Si sus canaletas fueron instaladas como parte de un proceso de construccion rapida, puede que no hayan recibido la atencion a la inclinacion, espaciado de ganchos y calidad de material que un especialista proporciona. JR One arregla lo que los constructores hicieron a la ligera e instala sistemas nuevos construidos para durar.",
+    weatherNote: "La posicion de Riverview a lo largo del Alafia River significa que el drenaje adecuado es critico para prevenir problemas de cimientos y erosion del jardin.",
+    nearbyText: "Tambien servimos a Brandon, Sun City Center, Ruskin y todo Hillsborough County.",
+  },
+  "new-port-richey": {
+    heroH1: "Expertos en Aluminio en", heroH1Gold: "New Port Richey",
+    localP: "La mezcla de propiedades frente al agua y barrios interiores establecidos de New Port Richey requiere sistemas de canaletas y sofitos que puedan manejar todo, desde tormentas costeras hasta escombros de arboles. JR One sirve a New Port Richey y el oeste de Pasco County con el mismo enfoque Gold Standard que llevamos a cada comunidad en Tampa Bay.",
+    weatherNote: "Las propiedades frente al Golfo en New Port Richey reciben impacto directo de sistemas tropicales. La fijacion con clasificacion de huracan y el dimensionamiento adecuado de canaletas no son opcionales aqui.",
+    nearbyText: "Tambien servimos a Spring Hill, Trinity, Tarpon Springs y areas cercanas.",
+  },
+  largo: {
+    heroH1: "La Compania de Confianza de", heroH1Gold: "Canaletas y Sofitos en Largo",
+    localP: "Largo se encuentra en el corazon de Pinellas County — lo suficientemente cerca del Golfo para la exposicion al aire salado, lo suficientemente denso en copa de arboles para escombros constantes en canaletas, y lo suficientemente establecido para que muchas casas tengan sistemas de sofitos y fascias que ya pasaron su vida util. JR One lleva trabajo de aluminio a nivel de especialista a propietarios de Largo que quieren el trabajo bien hecho.",
+    weatherNote: "La ubicacion central de Largo en Pinellas significa que recibe tanto clima costero como cobertura de arboles suburbanos — una combinacion que acelera el desgaste de canaletas y sofitos.",
+    nearbyText: "Tambien servimos a Clearwater, Pinellas Park, Seminole, St. Petersburg y areas cercanas.",
+  },
+  "spring-hill": {
+    heroH1: "La Eleccion de Spring Hill para", heroH1Gold: "Trabajo de Canaletas de Calidad",
+    localP: "Las viviendas accesibles y la comunidad en crecimiento de Spring Hill hacen de esta un area donde el trabajo de contratistas de calidad tiene alta demanda pero no siempre es facil de encontrar. JR One extiende nuestra area de servicio de Tampa Bay a Spring Hill porque los propietarios aqui merecen la misma artesania Gold Standard que cualquier otra comunidad que servimos.",
+    weatherNote: "La posicion interior de Spring Hill significa tormentas intensas y lluvias estacionales fuertes sin alivio del viento costero. Las canaletas aqui trabajan duro todo el ano.",
+    nearbyText: "Tambien servimos a New Port Richey, Land O' Lakes y todo Hernando County.",
+  },
+  "tarpon-springs": {
+    heroH1: "Especialistas de Confianza en", heroH1Gold: "Canaletas y Aluminio en Tarpon Springs",
+    localP: "Tarpon Springs es famosa por su herencia griega y el historico Sponge Docks, con casas que van desde encantadoras cabanas frente al agua hasta desarrollos interiores mas nuevos. El aire salado del Golfo y las fuertes tormentas de verano ejercen estres constante sobre canaletas, sofitos y fascias — haciendo que el trabajo de aluminio de calidad sea esencial para preservar tanto la belleza como la estructura de las casas de Tarpon Springs.",
+    weatherNote: "La exposicion directa al Golfo de Tarpon Springs significa vientos cargados de sal y lluvia intensa durante sistemas tropicales. El aluminio resistente a la corrosion y la fijacion adecuada son innegociables aqui.",
+    nearbyText: "Tambien servimos a Palm Harbor, Dunedin y New Port Richey.",
+  },
+  "land-o-lakes": {
+    heroH1: "Los Expertos Preferidos en", heroH1Gold: "Canaletas y Sofitos en Land O' Lakes",
+    localP: "Land O' Lakes es una de las areas de mas rapido crecimiento de Pasco County, con comunidades de construccion nueva apareciendo junto a barrios establecidos. Muchas de estas casas fueron construidas rapidamente por constructores de volumen, y las instalaciones de canaletas y sofitos a menudo reflejan ese ritmo. JR One lleva precision a nivel de especialista a propietarios de Land O' Lakes que quieren su trabajo de aluminio bien hecho desde la primera vez.",
+    weatherNote: "El terreno plano de Pasco County y los numerosos lagos y humedales de Land O' Lakes significan que el drenaje lo es todo. Sin canaletas con la inclinacion y tamano adecuados, el agua se acumula alrededor de los cimientos en lugar de ser dirigida lejos.",
+    nearbyText: "Tambien servimos a Lutz, Wesley Chapel y New Tampa.",
+  },
+  dunedin: {
+    heroH1: "El Equipo Premier de", heroH1Gold: "Aluminio y Canaletas en Dunedin",
+    localP: "El centro historico de Dunedin, su encanto costero y sus calles arboladas lo convierten en una de las comunidades mas deseables de Pinellas County. Muchas casas aqui tienen caracter y anos — lo que tambien significa sistemas envejecidos de sofitos, fascias y canaletas que necesitan reemplazo profesional. JR One sirve a Dunedin con el cuidado que estas casas merecen, actualizando sistemas de madera a aluminio duradero que resiste el clima de la Costa del Golfo.",
+    weatherNote: "La posicion de Dunedin entre el Golfo y St. Joseph Sound significa exposicion constante al aire salado e impacto directo de tormentas costeras. Materiales de calidad y fijacion con clasificacion de huracan protegen su inversion.",
+    nearbyText: "Tambien servimos a Clearwater, Palm Harbor y Tarpon Springs.",
+  },
+  ruskin: {
+    heroH1: "El Contratista Confiable de", heroH1Gold: "Canaletas y Fascias en Ruskin",
+    localP: "Ruskin se encuentra en el sur de Hillsborough County donde las raices agricolas se encuentran con el rapido crecimiento residencial. Desde propiedades frente al agua a lo largo de Tampa Bay hasta desarrollos interiores mas nuevos, las casas aqui necesitan sistemas de canaletas y sofitos construidos para las condiciones mas duras de Florida. JR One lleva la misma artesania Gold Standard a Ruskin que entregamos en todo Tampa Bay.",
+    weatherNote: "El terreno bajo de Ruskin a lo largo de Tampa Bay hace que el manejo adecuado del agua sea critico. Las lluvias estacionales fuertes combinadas con niveles freaticos altos significan que sus canaletas son la primera linea de defensa contra danos a cimientos y jardin.",
+    nearbyText: "Tambien servimos a Sun City Center, Riverview y Brandon.",
+  },
+  "sun-city-center": {
+    heroH1: "Expertos de Confianza en", heroH1Gold: "Instalacion de Canaletas en Sun City Center",
+    localP: "Sun City Center es una de las principales comunidades de retiro activo de Florida, donde los propietarios se enorgullecen de propiedades bien mantenidas. Sistemas de canaletas envejecidos, sofitos deteriorados y fascias desgastadas no solo lucen mal — comprometen la proteccion de su hogar. JR One entiende los estandares que los residentes de Sun City Center esperan, y entregamos trabajo de aluminio preciso que mantiene las casas protegidas y con buena apariencia.",
+    weatherNote: "La ubicacion en el sur de Hillsborough de Sun City Center recibe toda la fuerza de las tormentas de verano y sistemas tropicales. Canaletas confiables no son opcionales — son esenciales para proteger el hogar en el que ha invertido.",
+    nearbyText: "Tambien servimos a Ruskin, Riverview y Brandon.",
+  },
+  "temple-terrace": {
+    heroH1: "Los Especialistas Preferidos de", heroH1Gold: "Canaletas y Sofitos en Temple Terrace",
+    localP: "Temple Terrace es una de las comunidades mas establecidas de Tampa, con copa de arboles madura y barrios que han estado aqui por decadas. Esa edad significa que muchas casas funcionan con sofitos originales de madera y sistemas de canaletas obsoletos que el clima de Florida ha castigado por anos. JR One reemplaza sistemas fallando con aluminio duradero construido para manejar lo que el clima de Temple Terrace le lance.",
+    weatherNote: "La densa cobertura de arboles de Temple Terrace significa escombros constantes en canaletas de robles y pinos, mientras que el corredor del Hillsborough River agrega humedad y desafios de drenaje que exigen sistemas de canaletas funcionando correctamente.",
+    nearbyText: "Tambien servimos a Tampa, Brandon y Lutz.",
+  },
+  "plant-city": {
+    heroH1: "La Eleccion de Plant City para", heroH1Gold: "Sistemas de Canaletas de Calidad",
+    localP: "Plant City — la Capital Mundial de la Fresa — se encuentra en el este de Hillsborough County donde la vida suburbana se encuentra con la herencia agricola. Las casas aqui enfrentan el mismo clima intenso de Florida que el resto de Tampa Bay, y el trabajo de calidad en canaletas y sofitos es esencial para proteger su propiedad. JR One extiende nuestro servicio Gold Standard a Plant City porque cada propietario merece trabajo de aluminio a nivel de especialista.",
+    weatherNote: "La posicion interior de Plant City la coloca directamente en el corredor de tormentas de Florida. Los aguaceros intensos de la tarde descargan cantidades masivas de agua en rafagas cortas, y su sistema de canaletas necesita manejar el volumen sin desbordarse.",
+    nearbyText: "Tambien servimos a Brandon, Lakeland y Tampa.",
+  },
+  lutz: {
+    heroH1: "Especialistas de Confianza en", heroH1Gold: "Aluminio y Canaletas en Lutz",
+    localP: "Lutz se extiende a ambos lados de la linea del condado Hillsborough-Pasco, ofreciendo un ambiente suburbano con gran cobertura de arboles y barrios establecidos junto a desarrollos mas nuevos. Esa cobertura de arboles es hermosa pero significa escombros constantes en canaletas, y muchas casas antiguas de Lutz necesitan actualizaciones de sofitos y fascias. JR One sirve a Lutz con la misma precision y dedicacion que llevamos a cada comunidad de Tampa Bay.",
+    weatherNote: "La caracteristica copa de robles y pinos de Lutz deja escombros todo el ano, haciendo que el mantenimiento de canaletas y los protectores sean especialmente importantes. Combinado con las fuertes lluvias estacionales de Florida, canaletas tapadas aqui llevan a pudricion de fascias y problemas de cimientos rapidamente.",
+    nearbyText: "Tambien servimos a Land O' Lakes, Wesley Chapel y Tampa.",
+  },
+};
+
+const SERVICES_ES = [
+  {title:"Instalacion de Canaletas Sin Costura",desc:"Fabricadas a medida en el sitio para un ajuste perfecto sin fugas.",link:"/seamless-aluminum-gutters"},
+  {title:"Protectores de Canaletas",desc:"Mantienen los escombros afuera y facilitan el mantenimiento.",link:"/gutter-guards"},
+  {title:"Sofitos y Fascias",desc:"Proteccion de aluminio y vinilo para el borde de su techo.",link:"/soffit-and-fascia"},
+  {title:"Reparacion de Canaletas",desc:"Arreglamos fugas, hundimientos y desbordamientos — bien hecho a la primera.",link:"/gutter-repair"},
+  {title:"Revestimiento",desc:"Revestimiento de vinilo y aluminio construido para el clima de Florida.",link:"/siding"},
+  {title:"Peak 301 Rejuvenecimiento de Techo",desc:"Extienda la vida de su techo 6-10 anos con este sellador a base de soya.",link:"/peak-301"},
+];
+
+// ══════════════════════════════════════════════════════════
+// UI TRANSLATIONS
+// ══════════════════════════════════════════════════════════
+const T = {
+  en: {
+    promoBannerPre: "Serving ",
+    promoBannerPost: " — Call (844) 444-3114 for Your Free Quote",
+    breadHome: "Home",
+    breadAreas: "Service Areas",
+    badge30: "30+ Years",
+    badgeGoogle: "4.9★ Google",
+    badgeCrews: "In-House Crews",
+    badgeInsured: "Fully Insured",
+    getQuote: "GET YOUR FREE QUOTE",
+    freeQuoteFor: "Free Quote for ",
+    freeQuoteSuffix: " Homeowners",
+    received: "Request Received!",
+    receivedSub: "We'll be in touch within hours.",
+    placeName: "Full Name",
+    placePhone: "Phone Number",
+    placeEmail: "Email Address",
+    placeService: "What do you need?",
+    serviceOpts: ["What do you need?","Gutter Installation","Gutter Repair","Gutter Guards","Soffit & Fascia","Siding","Peak 301 Roof Rejuvenation","Other"],
+    requestQuote: "REQUEST MY FREE QUOTE",
+    noSpam: "No spam. No pressure.",
+    whyGutters: "Why Gutters Matter in ",
+    servicesIn: "SERVICES IN ",
+    whatWeDo: "WHAT WE DO IN ",
+    learnMore: "LEARN MORE →",
+    goldStandard: "THE GOLD STANDARD",
+    howWeWork: "HOW WE WORK IN ",
+    goldMotto: "Every home. Every time. No exceptions.",
+    step1t: "Assess", step1d: "Free on-site inspection",
+    step2t: "Design", step2d: "Transparent custom estimate",
+    step3t: "Install", step3d: "Our in-house crew, precision work",
+    step4t: "Protect", step4d: "Warranty and follow-up",
+    neighborhoodsSuffix: " Neighborhoods We Serve",
+    reviews: "REVIEWS",
+    trustedAcross: "TRUSTED ACROSS TAMPA BAY",
+    ctaSuffix: " HOMEOWNER? LET'S TALK.",
+    ctaDesc: "Get your free, no-pressure quote from Tampa Bay's trusted aluminum specialists. We respond within hours.",
+    callCta: "CALL (844) 444-3114",
+    scrollForm: "SCROLL TO FORM",
+    notFound: "City page not found. Available: ",
+  },
+  es: {
+    promoBannerPre: "Sirviendo a ",
+    promoBannerPost: " — Llame al (844) 444-3114 para su Cotizacion Gratis",
+    breadHome: "Inicio",
+    breadAreas: "Areas de Servicio",
+    badge30: "30+ Anos",
+    badgeGoogle: "4.9★ Google",
+    badgeCrews: "Equipos Propios",
+    badgeInsured: "Totalmente Asegurados",
+    getQuote: "OBTENGA SU COTIZACION GRATIS",
+    freeQuoteFor: "Cotizacion Gratis para Propietarios en ",
+    freeQuoteSuffix: "",
+    received: "Solicitud Recibida!",
+    receivedSub: "Nos comunicaremos con usted en pocas horas.",
+    placeName: "Nombre Completo",
+    placePhone: "Numero de Telefono",
+    placeEmail: "Correo Electronico",
+    placeService: "Que necesita?",
+    serviceOpts: ["Que necesita?","Instalacion de Canaletas","Reparacion de Canaletas","Protectores de Canaletas","Sofitos y Fascias","Revestimiento","Peak 301 Rejuvenecimiento de Techo","Otro"],
+    requestQuote: "SOLICITAR MI COTIZACION GRATIS",
+    noSpam: "Sin correo basura. Sin presion.",
+    whyGutters: "Por Que Importan las Canaletas en ",
+    servicesIn: "SERVICIOS EN ",
+    whatWeDo: "LO QUE HACEMOS EN ",
+    learnMore: "MAS INFORMACION →",
+    goldStandard: "EL ESTANDAR DE ORO",
+    howWeWork: "COMO TRABAJAMOS EN ",
+    goldMotto: "Cada hogar. Cada vez. Sin excepciones.",
+    step1t: "Evaluar", step1d: "Inspeccion gratuita en el sitio",
+    step2t: "Disenar", step2d: "Presupuesto personalizado y transparente",
+    step3t: "Instalar", step3d: "Nuestro equipo propio, trabajo de precision",
+    step4t: "Proteger", step4d: "Garantia y seguimiento",
+    neighborhoodsSuffix: " — Vecindarios que Servimos",
+    reviews: "RESENAS",
+    trustedAcross: "DE CONFIANZA EN TODO TAMPA BAY",
+    ctaSuffix: " — PROPIETARIO? HABLEMOS.",
+    ctaDesc: "Obtenga su cotizacion gratis y sin presion de los especialistas en aluminio de confianza de Tampa Bay. Respondemos en pocas horas.",
+    callCta: "LLAMAR AL (844) 444-3114",
+    scrollForm: "IR AL FORMULARIO",
+    notFound: "Pagina de ciudad no encontrada. Disponibles: ",
+  },
+};
+
 // ══ CITY PAGE COMPONENT ══════════════════════════════════
 // Pass citySlug as prop — defaults to "tampa" for preview
 export default function CityLandingPage({ citySlug = "tampa" }) {
+  const { lang } = useLanguage();
+  const t = T[lang];
   const city = CITIES[citySlug];
+  const cityEs = CITIES_ES[citySlug] || {};
+  const servicesData = lang === "es" ? SERVICES_ES : SERVICES;
   const [formData, setFormData] = useState({name:"",phone:"",email:"",zip:"",service:""});
   const [submitted, setSubmitted] = useState(false);
   useEffect(() => { injectFonts(); }, []);
   const secTitle = {fontFamily:f.h,fontSize:"clamp(24px,4vw,36px)",fontWeight:800,letterSpacing:"2px",textAlign:"center",marginBottom:"8px"};
 
-  if (!city) return <div style={{padding:"100px 24px",textAlign:"center",fontFamily:f.h,color:C.white,background:C.bg}}>City page not found. Available: {Object.keys(CITIES).join(", ")}</div>;
+  if (!city) return <div style={{padding:"100px 24px",textAlign:"center",fontFamily:f.h,color:C.white,background:C.bg}}>{t.notFound}{Object.keys(CITIES).join(", ")}</div>;
 
   return (
     <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
-      <SiteNav promoBanner={"🏠 Serving " + city.name + " — Call (844) 444-3114 for Your Free Quote"} />
-      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>Home</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span>Service Areas</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.gold}}>{city.name}</span></div></div>
+      <SiteNav promoBanner={"🏠 " + t.promoBannerPre + city.name + t.promoBannerPost} />
+      <div style={{padding:"16px 24px 0",maxWidth:"1200px",margin:"0 auto"}}><div style={{fontFamily:f.b,fontSize:"13px",color:C.muted}}><a href="/" style={{color:C.muted,textDecoration:"none"}}>{t.breadHome}</a><span style={{margin:"0 8px",opacity:0.5}}>/</span><span>{t.breadAreas}</span><span style={{margin:"0 8px",opacity:0.5}}>/</span><span style={{color:C.gold}}>{city.name}</span></div></div>
 
       {/* HERO */}
       <section className="hero-stars" style={{padding:"60px 24px 80px",maxWidth:"1200px",margin:"0 auto",display:"flex",gap:"48px",alignItems:"center",flexWrap:"wrap"}}>
         <div style={{flex:"1 1 520px",minWidth:"300px"}}>
           <Tag>{city.name.toUpperCase()}, FL</Tag>
-          <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>{city.heroH1}<br/><span style={{color:C.gold}}>{city.heroH1Gold}</span></h1>
-          <p style={{fontFamily:f.b,fontSize:"18px",color:C.offWhite,lineHeight:1.7,marginBottom:"24px",maxWidth:"560px"}}>{city.localP}</p>
+          <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,48px)",fontWeight:800,lineHeight:1.1,marginBottom:"20px"}}>{lang === "es" ? cityEs.heroH1 : city.heroH1}<br/><span style={{color:C.gold}}>{lang === "es" ? cityEs.heroH1Gold : city.heroH1Gold}</span></h1>
+          <p style={{fontFamily:f.b,fontSize:"18px",color:C.offWhite,lineHeight:1.7,marginBottom:"24px",maxWidth:"560px"}}>{lang === "es" ? cityEs.localP : city.localP}</p>
           <div style={{display:"flex",flexWrap:"wrap",gap:"12px",marginBottom:"24px"}}>
             {[
-              { label: "30+ Years", icon: "⏱", color: "#60A5FA", bg: "rgba(59,130,246,0.15)", border: "rgba(59,130,246,0.25)" },
-              { label: "4.9★ Google", icon: "⭐", color: "#D4A843", bg: "rgba(212,168,67,0.15)", border: "rgba(212,168,67,0.25)" },
-              { label: "In-House Crews", icon: "👷", color: "#F97316", bg: "rgba(249,115,22,0.15)", border: "rgba(249,115,22,0.25)" },
-              { label: "Fully Insured", icon: "✓", color: "#4ADE80", bg: "rgba(45,139,78,0.15)", border: "rgba(45,139,78,0.25)" },
+              { label: t.badge30, icon: "⏱", color: "#60A5FA", bg: "rgba(59,130,246,0.15)", border: "rgba(59,130,246,0.25)" },
+              { label: t.badgeGoogle, icon: "⭐", color: "#D4A843", bg: "rgba(212,168,67,0.15)", border: "rgba(212,168,67,0.25)" },
+              { label: t.badgeCrews, icon: "👷", color: "#F97316", bg: "rgba(249,115,22,0.15)", border: "rgba(249,115,22,0.25)" },
+              { label: t.badgeInsured, icon: "✓", color: "#4ADE80", bg: "rgba(45,139,78,0.15)", border: "rgba(45,139,78,0.25)" },
             ].map((badge, i) => (
               <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: "6px", padding: "6px 14px", background: badge.bg, border: `1px solid ${badge.border}`, borderRadius: "6px", fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: badge.color }}><span>{badge.icon}</span>{badge.label}</span>
             ))}
           </div>
           <div style={{display:"flex",gap:"16px",flexWrap:"wrap"}}>
-            <button onClick={()=>document.getElementById("city-form")?.scrollIntoView({behavior:"smooth"})} style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",cursor:"pointer",boxShadow:"0 4px 16px rgba(200,149,46,0.3)"}}>GET YOUR FREE QUOTE</button>
+            <button onClick={()=>document.getElementById("city-form")?.scrollIntoView({behavior:"smooth"})} style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",cursor:"pointer",boxShadow:"0 4px 16px rgba(200,149,46,0.3)"}}>{t.getQuote}</button>
             <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,border:`2px solid ${C.gold}`,borderRadius:"8px",textDecoration:"none"}}>📞 (844) 444-3114</a>
           </div>
         </div>
         <div style={{flex:"1 1 380px",minWidth:"300px",maxWidth:"440px"}}>
           <div style={{background:C.white,borderRadius:"16px",padding:"28px",boxShadow:"0 24px 80px rgba(0,0,0,0.4)"}}>
-            <h2 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy,textAlign:"center",marginBottom:"4px"}}>Free Quote for {city.name} Homeowners</h2>
+            <h2 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy,textAlign:"center",marginBottom:"4px"}}>{t.freeQuoteFor}{city.name}{t.freeQuoteSuffix}</h2>
             <div style={{width:"40px",height:"3px",background:C.gold,borderRadius:"2px",margin:"10px auto 20px"}} />
-            {submitted ? <div style={{textAlign:"center",padding:"20px 0"}}><div style={{fontSize:"40px",marginBottom:"8px"}}>✓</div><h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy}}>Request Received!</h3><p style={{fontFamily:f.b,fontSize:"14px",color:"#6B7280",marginTop:"6px"}}>We'll be in touch within hours.</p></div> : <>
-              <input style={inputStyle} placeholder="Full Name" value={formData.name} onChange={e=>setFormData({...formData,name:e.target.value})} />
-              <input style={inputStyle} placeholder="Phone Number" type="tel" value={formData.phone} onChange={e=>setFormData({...formData,phone:e.target.value})} />
-              <input style={inputStyle} placeholder="Email Address" type="email" value={formData.email} onChange={e=>setFormData({...formData,email:e.target.value})} />
+            {submitted ? <div style={{textAlign:"center",padding:"20px 0"}}><div style={{fontSize:"40px",marginBottom:"8px"}}>✓</div><h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy}}>{t.received}</h3><p style={{fontFamily:f.b,fontSize:"14px",color:"#6B7280",marginTop:"6px"}}>{t.receivedSub}</p></div> : <>
+              <input style={inputStyle} placeholder={t.placeName} value={formData.name} onChange={e=>setFormData({...formData,name:e.target.value})} />
+              <input style={inputStyle} placeholder={t.placePhone} type="tel" value={formData.phone} onChange={e=>setFormData({...formData,phone:e.target.value})} />
+              <input style={inputStyle} placeholder={t.placeEmail} type="email" value={formData.email} onChange={e=>setFormData({...formData,email:e.target.value})} />
               <select style={{...inputStyle,cursor:"pointer"}} value={formData.service} onChange={e=>setFormData({...formData,service:e.target.value})}>
-                {["What do you need?","Gutter Installation","Gutter Repair","Gutter Guards","Soffit & Fascia","Siding","Peak 301 Roof Rejuvenation","Other"].map((o,i)=><option key={i} value={i===0?"":o}>{o}</option>)}
+                {t.serviceOpts.map((o,i)=><option key={i} value={i===0?"":o}>{o}</option>)}
               </select>
-              <button onClick={()=>setSubmitted(true)} style={{width:"100%",padding:"16px",fontFamily:f.h,fontSize:"13px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",cursor:"pointer"}}>REQUEST MY FREE QUOTE</button>
-              <p style={{fontFamily:f.b,fontSize:"11px",color:"#9CA3AF",textAlign:"center",marginTop:"10px"}}>No spam. No pressure.</p>
+              <button onClick={()=>setSubmitted(true)} style={{width:"100%",padding:"16px",fontFamily:f.h,fontSize:"13px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",cursor:"pointer"}}>{t.requestQuote}</button>
+              <p style={{fontFamily:f.b,fontSize:"11px",color:"#9CA3AF",textAlign:"center",marginTop:"10px"}}>{t.noSpam}</p>
             </>}
           </div>
         </div>
@@ -159,8 +393,8 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
         <div style={{maxWidth:"800px",margin:"0 auto",display:"flex",gap:"20px",alignItems:"flex-start"}}>
           <div style={{fontSize:"28px",flexShrink:0,marginTop:"4px"}}>🌧️</div>
           <div>
-            <h3 style={{fontFamily:f.h,fontSize:"16px",fontWeight:700,color:C.gold,marginBottom:"8px"}}>Why Gutters Matter in {city.name}</h3>
-            <p style={{fontFamily:f.b,fontSize:"16px",color:C.offWhite,lineHeight:1.65}}>{city.weatherNote}</p>
+            <h3 style={{fontFamily:f.h,fontSize:"16px",fontWeight:700,color:C.gold,marginBottom:"8px"}}>{t.whyGutters}{city.name}</h3>
+            <p style={{fontFamily:f.b,fontSize:"16px",color:C.offWhite,lineHeight:1.65}}>{lang === "es" ? cityEs.weatherNote : city.weatherNote}</p>
           </div>
         </div>
       </section>
@@ -168,15 +402,15 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
       {/* SERVICES */}
       <section style={{background:C.bg,padding:"80px 24px"}}>
         <div style={{maxWidth:"1200px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>SERVICES IN {city.name.toUpperCase()}</Tag>
-          <h2 style={{...secTitle,color:C.white}}>WHAT WE DO IN {city.name.toUpperCase()}</h2>
+          <Tag>{t.servicesIn}{city.name.toUpperCase()}</Tag>
+          <h2 style={{...secTitle,color:C.white}}>{t.whatWeDo}{city.name.toUpperCase()}</h2>
           <GoldBar />
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:"20px",marginTop:"48px",textAlign:"left"}}>
-            {SERVICES.map((svc,i) => (
+            {servicesData.map((svc,i) => (
               <a key={i} href={svc.link} style={{textDecoration:"none",background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px",cursor:"pointer",transition:"border-color 0.3s",display:"block"}} onMouseOver={e=>e.currentTarget.style.borderColor=C.gold} onMouseOut={e=>e.currentTarget.style.borderColor=C.navyLight}>
                 <h3 style={{fontFamily:f.h,fontSize:"16px",fontWeight:700,color:C.white,marginBottom:"6px"}}>{svc.title}</h3>
                 <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginBottom:"12px"}}>{svc.desc}</p>
-                <span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"1px"}}>LEARN MORE →</span>
+                <span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"1px"}}>{t.learnMore}</span>
               </a>
             ))}
           </div>
@@ -186,12 +420,12 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
       {/* GOLD STANDARD */}
       <section style={{background:C.cream,padding:"80px 24px"}}>
         <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>THE GOLD STANDARD</Tag>
-          <h2 style={{...secTitle,color:C.navy}}>HOW WE WORK IN {city.name.toUpperCase()}</h2>
+          <Tag>{t.goldStandard}</Tag>
+          <h2 style={{...secTitle,color:C.navy}}>{t.howWeWork}{city.name.toUpperCase()}</h2>
           <GoldBar />
-          <p style={{fontFamily:f.b,fontSize:"17px",color:"#4B5563",fontStyle:"italic",maxWidth:"500px",margin:"0 auto 48px"}}>Every home. Every time. No exceptions.</p>
+          <p style={{fontFamily:f.b,fontSize:"17px",color:"#4B5563",fontStyle:"italic",maxWidth:"500px",margin:"0 auto 48px"}}>{t.goldMotto}</p>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"20px"}}>
-            {[{n:"01",t:"Assess",d:"Free on-site inspection"},{n:"02",t:"Design",d:"Transparent custom estimate"},{n:"03",t:"Install",d:"Our in-house crew, precision work"},{n:"04",t:"Protect",d:"Warranty and follow-up"}].map((s,i) => (
+            {[{n:"01",t:t.step1t,d:t.step1d},{n:"02",t:t.step2t,d:t.step2d},{n:"03",t:t.step3t,d:t.step3d},{n:"04",t:t.step4t,d:t.step4d}].map((s,i) => (
               <div key={i} style={{background:C.white,borderRadius:"12px",padding:"24px",textAlign:"center",borderTop:`3px solid ${C.gold}`}}>
                 <div style={{fontFamily:f.h,fontSize:"28px",fontWeight:800,color:C.gold}}>{s.n}</div>
                 <h3 style={{fontFamily:f.h,fontSize:"16px",fontWeight:700,color:C.navy,margin:"8px 0 4px"}}>{s.t}</h3>
@@ -205,21 +439,21 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
       {/* NEIGHBORHOODS */}
       <section style={{background:C.bg,padding:"60px 24px"}}>
         <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-          <h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.white,marginBottom:"20px"}}>{city.name} Neighborhoods We Serve</h3>
+          <h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.white,marginBottom:"20px"}}>{city.name}{t.neighborhoodsSuffix}</h3>
           <div style={{display:"flex",flexWrap:"wrap",justifyContent:"center",gap:"8px"}}>
             {city.neighborhoods.map((n,i) => (
               <span key={i} style={{padding:"8px 16px",background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"6px",fontFamily:f.b,fontSize:"14px",color:C.offWhite}}>{n}</span>
             ))}
           </div>
-          <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginTop:"20px"}}>{city.nearbyText}</p>
+          <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginTop:"20px"}}>{lang === "es" ? cityEs.nearbyText : city.nearbyText}</p>
         </div>
       </section>
 
       {/* REVIEWS */}
       <section style={{background:C.navy,padding:"80px 24px"}}>
         <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>REVIEWS</Tag>
-          <h2 style={{...secTitle,color:C.white}}>TRUSTED ACROSS TAMPA BAY</h2>
+          <Tag>{t.reviews}</Tag>
+          <h2 style={{...secTitle,color:C.white}}>{t.trustedAcross}</h2>
           <GoldBar />
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",gap:"20px",marginTop:"48px",textAlign:"left"}}>
             {[
@@ -239,11 +473,11 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
 
       {/* CTA FORM */}
       <section id="city-form" style={{background:`linear-gradient(165deg,${C.navyMid},${C.navy})`,padding:"80px 24px"}}><div style={{maxWidth:"600px",margin:"0 auto",textAlign:"center"}}>
-        <h2 style={{fontFamily:f.h,fontSize:"clamp(28px,5vw,36px)",fontWeight:800,color:C.white,marginBottom:"12px"}}>{city.name} HOMEOWNER? LET'S TALK.</h2>
-        <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,marginBottom:"32px"}}>Get your free, no-pressure quote from Tampa Bay's trusted aluminum specialists. We respond within hours.</p>
+        <h2 style={{fontFamily:f.h,fontSize:"clamp(28px,5vw,36px)",fontWeight:800,color:C.white,marginBottom:"12px"}}>{city.name}{t.ctaSuffix}</h2>
+        <p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,marginBottom:"32px"}}>{t.ctaDesc}</p>
         <div style={{display:"flex",gap:"16px",justifyContent:"center",flexWrap:"wrap"}}>
-          <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 CALL (844) 444-3114</a>
-          <button onClick={()=>window.scrollTo({top:0,behavior:"smooth"})} style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,background:"transparent",border:`2px solid ${C.gold}`,borderRadius:"8px",cursor:"pointer"}}>SCROLL TO FORM</button>
+          <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 {t.callCta}</a>
+          <button onClick={()=>window.scrollTo({top:0,behavior:"smooth"})} style={{padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,background:"transparent",border:`2px solid ${C.gold}`,borderRadius:"8px",cursor:"pointer"}}>{t.scrollForm}</button>
         </div>
       </div></section>
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import MobileCTA from "../../components/MobileCTA";
+import { useLanguage } from "../../lib/LanguageContext";
 
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyMid: "#243556", navyLight: "#2C3E5A",
@@ -11,7 +12,32 @@ const C = {
 };
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
+const T = {
+  en: {
+    tag: "EXPERT RESOURCES",
+    title: "JR One Aluminum",
+    titleGold: "Blog",
+    subtitle: "Expert tips on gutters, soffit, fascia, siding, and protecting your Tampa Bay home.",
+    searchPlaceholder: "Search articles...",
+    all: "All",
+    noResults: "No articles found. Try a different search term.",
+    minRead: "min read",
+  },
+  es: {
+    tag: "RECURSOS EXPERTOS",
+    title: "JR One Aluminum",
+    titleGold: "Blog",
+    subtitle: "Consejos expertos sobre canaletas, sofitos, fascias, revestimientos y cómo proteger su hogar en Tampa Bay.",
+    searchPlaceholder: "Buscar artículos...",
+    all: "Todos",
+    noResults: "No se encontraron artículos. Intente con otro término de búsqueda.",
+    minRead: "min de lectura",
+  },
+};
+
 export default function BlogIndex({ posts }) {
+  const { lang } = useLanguage();
+  const t = T[lang];
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
 
@@ -32,14 +58,14 @@ export default function BlogIndex({ posts }) {
       <div style={{ background: C.navy, padding: "60px 20px 40px", textAlign: "center" }}>
         <div style={{ display: "inline-block", padding: "6px 16px", background: C.goldPale, borderRadius: "4px", marginBottom: "12px" }}>
           <span style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 700, color: C.gold, letterSpacing: "3px" }}>
-            EXPERT RESOURCES
+            {t.tag}
           </span>
         </div>
         <h1 style={{ fontFamily: f.h, fontSize: "clamp(28px, 5vw, 44px)", fontWeight: 800, color: C.white, marginBottom: "12px" }}>
-          JR One Aluminum <span style={{ color: C.gold }}>Blog</span>
+          {t.title} <span style={{ color: C.gold }}>{t.titleGold}</span>
         </h1>
         <p style={{ fontFamily: f.b, fontSize: "18px", color: C.muted, maxWidth: "600px", margin: "0 auto" }}>
-          Expert tips on gutters, soffit, fascia, siding, and protecting your Tampa Bay home.
+          {t.subtitle}
         </p>
       </div>
 
@@ -47,7 +73,7 @@ export default function BlogIndex({ posts }) {
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "30px 20px 0" }}>
         <input
           type="text"
-          placeholder="Search articles..."
+          placeholder={t.searchPlaceholder}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           style={{
@@ -69,7 +95,7 @@ export default function BlogIndex({ posts }) {
                 transition: "all 0.2s",
               }}
             >
-              {cat}
+              {cat === "All" ? t.all : cat}
             </button>
           ))}
         </div>
@@ -79,7 +105,7 @@ export default function BlogIndex({ posts }) {
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 20px 60px" }}>
         {filtered.length === 0 ? (
           <p style={{ color: C.muted, textAlign: "center", padding: "40px 0", fontFamily: f.b, fontSize: "16px" }}>
-            No articles found. Try a different search term.
+            {t.noResults}
           </p>
         ) : (
           <div style={{ display: "grid", gap: "20px" }}>
@@ -101,7 +127,7 @@ export default function BlogIndex({ posts }) {
                     {post.category}
                   </span>
                   <span style={{ fontFamily: f.b, fontSize: "13px", color: C.muted }}>
-                    {post.readingTime} min read
+                    {post.readingTime} {t.minRead}
                   </span>
                 </div>
                 <h2 style={{

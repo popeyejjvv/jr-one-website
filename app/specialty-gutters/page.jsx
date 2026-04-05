@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
+import { useLanguage } from "../../lib/LanguageContext";
 
 /* ═══════════════════════════════════════════════════════════
    JR ONE ALUMINUM — SPECIALTY / CUSTOM GUTTERS PAGE
@@ -52,70 +53,182 @@ const BtnOutline = ({ children, href }) => (
 
 const inputStyle = { width: "100%", padding: "13px 16px", fontFamily: f.b, fontSize: "15px", border: "1.5px solid #D1D5DB", borderRadius: "8px", outline: "none", color: C.charcoal, marginBottom: "12px", background: "#FAFAFA", boxSizing: "border-box" };
 
-// ── Page content ──────────────────────────────────────────
-const PAGE = {
-  breadcrumb: ["Home", "Services", "Specialty Gutters"],
-  heroTag: "CUSTOM & SPECIALTY GUTTER SYSTEMS",
-  heroH1: "Beyond Standard.",
-  heroH1Accent: "Built for Your Home.",
-  heroP: "Half-round, box, D-style, super gutter, commercial, and more. When standard gutters won't do, our specialty systems deliver the precision, capacity, and aesthetics your home demands.",
-
-  gutterTypes: [
-    { icon: "\u{1F3DB}\u{FE0F}", title: "Half-Round Gutters", desc: "The classic semicircular profile. Elegant, smooth interior reduces debris buildup. Available in multiple sizes for different applications. Pairs perfectly with Mediterranean, Spanish Colonial, and barrel tile roofs \u2014 Tampa Bay's most popular architectural styles.", spec: "Profile: Classic semicircular" },
-    { icon: "\u26A1", title: "Super Gutter", desc: "The maximum-capacity residential gutter system. Oversized profile engineered to handle Florida's most extreme rainfall without overflow. When standard gutters can't keep up with your roof's water volume, the Super Gutter delivers the performance you need \u2014 no compromises.", spec: "Grade: Maximum capacity" },
-    { icon: "\u{1F3E0}", title: "D-Style Gutters", desc: "A smooth, single-curve profile that sits flush against the fascia for a clean, streamlined appearance. Popular across Florida residential homes for its simple aesthetic and reliable water handling. A versatile option that works with virtually any architectural style.", spec: "Profile: Smooth single-curve" },
-    { icon: "\u{1F4E6}", title: "Box Style Gutters", desc: "Rectangular profile with maximum water capacity. Built into roof structures or hung externally. Custom-fabricated on a brake for exact dimensions. Ideal for commercial buildings, modern homes, and flat-roof drainage.", spec: "Profile: Rectangular / custom" },
-    { icon: "\u{1F3E2}", title: "Commercial Gutters", desc: "Oversized, heavy-duty systems in .032\u2013.050 gauge aluminum. 6\" to 8\" K-style or box profile with 3x4 or 4x5 downspouts. Closer hanger spacing for hurricane-grade wind resistance. Built for large roof areas.", spec: "Grade: Heavy-duty commercial" },
-    { icon: "\u{1F527}", title: "Rollform / Seamless", desc: "Every gutter we install is rollformed on-site from continuous aluminum coil \u2014 custom-cut to the exact length your home needs. No seams means no leaks. Up to 100+ feet in a single piece. The professional standard.", spec: "Method: On-site fabrication" },
-  ],
-
-  whySpecialty: [
-    { title: "Right gutter for the right home", desc: "Cookie-cutter doesn't cut it. Your architecture, roof style, and water volume determine the right system." },
-    { title: "Florida rainfall demands capacity", desc: "46–52 inches per year, 2–4 inches per hour in storms. Undersized gutters overflow — we size every system for Florida's demands." },
-    { title: "Architectural integrity", desc: "Half-round on a barrel tile roof. Box on a modern build. The right gutter completes the design." },
-    { title: "Hurricane-grade construction", desc: "Heavier gauge, closer hanger spacing, and proper sizing for Florida's demanding conditions." },
-  ],
-
-  stats: [
-    { value: "6+", label: "Specialty gutter profiles" },
-    { value: "8\"", label: "Max half-round size" },
-    { value: "100+", label: "Ft seamless runs" },
-    { value: ".050", label: "Gauge max thickness" },
-  ],
-
-  problems: [
-    { icon: "\u{1F30A}", title: "Standard gutters overflow in Florida storms", desc: "Undersized gutters can't handle 2–4 inches of rain per hour. Your foundation, landscaping, and fascia pay the price every summer." },
-    { icon: "\u{1F3E0}", title: "Wrong gutter style ruins architectural look", desc: "K-style on a Mediterranean home. Half-round on a modern build. The wrong profile cheapens your entire exterior." },
-    { icon: "\u{1F32A}\u{FE0F}", title: "Light-gauge gutters fail in hurricane winds", desc: "Cheap .019 gauge aluminum bends, pulls away from fascia, and rips off in high winds. Florida demands heavier materials." },
-  ],
-
-  goldSteps: [
-    { num: "01", title: "ASSESS", desc: "We inspect your roofline, measure water concentration points, evaluate architectural style, and recommend the right specialty system." },
-    { num: "02", title: "DESIGN", desc: "Material selection, size calculation, color matching, and downspout placement. You see the plan before we cut metal." },
-    { num: "03", title: "INSTALL", desc: "On-site fabrication and precision installation by our trained in-house crew. No subcontractors, no shortcuts." },
-    { num: "04", title: "PROTECT", desc: "Final walkthrough, gutter performance testing, and our craftsmanship warranty." },
-  ],
-
-  reviews: [
-    { text: "After Milton I called a dozen companies \u2014 only JR One called back. The team showed up and did a perfect job. Do not call anyone else.", name: "Matt D.", context: "Storm Damage Repair" },
-    { text: "Six guys on site with a crew manager. They removed old wood soffit, replaced everything with aluminum, fixed all termite damage \u2014 done in days. Best company for the money.", name: "Tampa Homeowner", context: "Full Soffit & Fascia" },
-    { text: "From the very beginning, they worked to ensure I received a fair quote. There was no high pressure selling. The workmanship was outstanding.", name: "Lois G.", context: "Gutters & Soffits" },
-  ],
-
-  faqs: [
-    { q: "What size gutters do I need in Tampa?", a: "For most Florida homes, 6\" gutters with 3x4 downspouts should be the baseline — and we recommend 7\" for larger roof areas or heavy tree coverage. We size every system based on your roof area, pitch, and local rainfall intensity." },
-    { q: "Are half-round gutters more expensive?", a: "Yes, typically 20\u201330% more than K-style due to the profile and specialized mounting brackets. But on Mediterranean, Spanish, and barrel-tile homes, they're the architecturally correct choice." },
-    { q: "Do you install copper specialty gutters?", a: "Yes. Copper half-round, European half-round, and copper box gutters. See our dedicated copper gutters page for details." },
-    { q: "What gauge aluminum do you use?", a: ".027 minimum for residential, .032 recommended for Florida conditions, up to .050 for commercial and high-wind applications. We never use cheap .019 gauge." },
-    { q: "Do you do commercial gutter work?", a: "Yes. We install 6\"\u20138\" commercial gutter systems with oversized downspouts on offices, retail, churches, schools, and multi-family buildings throughout Tampa Bay." },
-  ],
-
-  ctaTitle: "NEED A GUTTER SYSTEM THAT GOES BEYOND STANDARD?",
-  ctaSub: "Get your free specialty gutter consultation. We'll assess your home, recommend the right system, and give you a transparent estimate.",
+// ── Translations ─────────────────────────────────────────
+const T = {
+  en: {
+    breadcrumb: ["Home", "Services", "Specialty Gutters"],
+    heroTag: "CUSTOM & SPECIALTY GUTTER SYSTEMS",
+    heroH1: "Beyond Standard.",
+    heroH1Accent: "Built for Your Home.",
+    heroP: "Half-round, box, D-style, super gutter, commercial, and more. When standard gutters won't do, our specialty systems deliver the precision, capacity, and aesthetics your home demands.",
+    btnEstimate: "GET YOUR FREE ESTIMATE",
+    btnCall: "CALL (844) 444-3114",
+    stats: [
+      { value: "6+", label: "Specialty gutter profiles" },
+      { value: "8\"", label: "Max half-round size" },
+      { value: "100+", label: "Ft seamless runs" },
+      { value: ".050", label: "Gauge max thickness" },
+    ],
+    problemTag: "THE PROBLEM",
+    problemTitle: "WHY STANDARD GUTTERS FALL SHORT IN FLORIDA",
+    problems: [
+      { icon: "\u{1F30A}", title: "Standard gutters overflow in Florida storms", desc: "Undersized gutters can't handle 2–4 inches of rain per hour. Your foundation, landscaping, and fascia pay the price every summer." },
+      { icon: "\u{1F3E0}", title: "Wrong gutter style ruins architectural look", desc: "K-style on a Mediterranean home. Half-round on a modern build. The wrong profile cheapens your entire exterior." },
+      { icon: "\u{1F32A}\u{FE0F}", title: "Light-gauge gutters fail in hurricane winds", desc: "Cheap .019 gauge aluminum bends, pulls away from fascia, and rips off in high winds. Florida demands heavier materials." },
+    ],
+    typesTag: "THE JR ONE DIFFERENCE",
+    typesTitle: "SPECIALTY GUTTER SYSTEMS",
+    typesSub: "Six specialty profiles — each engineered for a specific purpose, architecture, and performance requirement.",
+    gutterTypes: [
+      { icon: "\u{1F3DB}\u{FE0F}", title: "Half-Round Gutters", desc: "The classic semicircular profile. Elegant, smooth interior reduces debris buildup. Available in multiple sizes for different applications. Pairs perfectly with Mediterranean, Spanish Colonial, and barrel tile roofs \u2014 Tampa Bay's most popular architectural styles.", spec: "Profile: Classic semicircular" },
+      { icon: "\u26A1", title: "Super Gutter", desc: "The maximum-capacity residential gutter system. Oversized profile engineered to handle Florida's most extreme rainfall without overflow. When standard gutters can't keep up with your roof's water volume, the Super Gutter delivers the performance you need \u2014 no compromises.", spec: "Grade: Maximum capacity" },
+      { icon: "\u{1F3E0}", title: "D-Style Gutters", desc: "A smooth, single-curve profile that sits flush against the fascia for a clean, streamlined appearance. Popular across Florida residential homes for its simple aesthetic and reliable water handling. A versatile option that works with virtually any architectural style.", spec: "Profile: Smooth single-curve" },
+      { icon: "\u{1F4E6}", title: "Box Style Gutters", desc: "Rectangular profile with maximum water capacity. Built into roof structures or hung externally. Custom-fabricated on a brake for exact dimensions. Ideal for commercial buildings, modern homes, and flat-roof drainage.", spec: "Profile: Rectangular / custom" },
+      { icon: "\u{1F3E2}", title: "Commercial Gutters", desc: "Oversized, heavy-duty systems in .032\u2013.050 gauge aluminum. 6\" to 8\" K-style or box profile with 3x4 or 4x5 downspouts. Closer hanger spacing for hurricane-grade wind resistance. Built for large roof areas.", spec: "Grade: Heavy-duty commercial" },
+      { icon: "\u{1F527}", title: "Rollform / Seamless", desc: "Every gutter we install is rollformed on-site from continuous aluminum coil \u2014 custom-cut to the exact length your home needs. No seams means no leaks. Up to 100+ feet in a single piece. The professional standard.", spec: "Method: On-site fabrication" },
+    ],
+    whyTag: "WHY SPECIALTY",
+    whyTitle: "WHY THE RIGHT GUTTER MATTERS",
+    whySpecialty: [
+      { title: "Right gutter for the right home", desc: "Cookie-cutter doesn't cut it. Your architecture, roof style, and water volume determine the right system." },
+      { title: "Florida rainfall demands capacity", desc: "46–52 inches per year, 2–4 inches per hour in storms. Undersized gutters overflow — we size every system for Florida's demands." },
+      { title: "Architectural integrity", desc: "Half-round on a barrel tile roof. Box on a modern build. The right gutter completes the design." },
+      { title: "Hurricane-grade construction", desc: "Heavier gauge, closer hanger spacing, and proper sizing for Florida's demanding conditions." },
+    ],
+    peakAlert: "FLORIDA INSURANCE ALERT",
+    peakTitle: "280% Increase in Non-Renewals — Roof Over 15 Years Old?",
+    peakDesc: "restores shingles from the inside out — adds 6–10 years at under 15% of replacement cost, with warranty docs your insurer must accept under FL law.",
+    peakBtn: "PEAK 301 INFO →",
+    peakRights: "YOUR RIGHTS →",
+    goldTag: "THE GOLD STANDARD",
+    goldTitle: "OUR SPECIALTY GUTTER PROCESS",
+    goldMotto: "Every home. Every time. No exceptions.",
+    goldSteps: [
+      { num: "01", title: "ASSESS", desc: "We inspect your roofline, measure water concentration points, evaluate architectural style, and recommend the right specialty system." },
+      { num: "02", title: "DESIGN", desc: "Material selection, size calculation, color matching, and downspout placement. You see the plan before we cut metal." },
+      { num: "03", title: "INSTALL", desc: "On-site fabrication and precision installation by our trained in-house crew. No subcontractors, no shortcuts." },
+      { num: "04", title: "PROTECT", desc: "Final walkthrough, gutter performance testing, and our craftsmanship warranty." },
+    ],
+    reviewTag: "CUSTOMER REVIEWS",
+    reviewTitle: "WHAT OUR CUSTOMERS SAY",
+    reviews: [
+      { text: "After Milton I called a dozen companies \u2014 only JR One called back. The team showed up and did a perfect job. Do not call anyone else.", name: "Matt D.", context: "Storm Damage Repair" },
+      { text: "Six guys on site with a crew manager. They removed old wood soffit, replaced everything with aluminum, fixed all termite damage \u2014 done in days. Best company for the money.", name: "Tampa Homeowner", context: "Full Soffit & Fascia" },
+      { text: "From the very beginning, they worked to ensure I received a fair quote. There was no high pressure selling. The workmanship was outstanding.", name: "Lois G.", context: "Gutters & Soffits" },
+    ],
+    faqTag: "FAQ",
+    faqTitle: "SPECIALTY GUTTER QUESTIONS",
+    faqs: [
+      { q: "What size gutters do I need in Tampa?", a: "For most Florida homes, 6\" gutters with 3x4 downspouts should be the baseline — and we recommend 7\" for larger roof areas or heavy tree coverage. We size every system based on your roof area, pitch, and local rainfall intensity." },
+      { q: "Are half-round gutters more expensive?", a: "Yes, typically 20\u201330% more than K-style due to the profile and specialized mounting brackets. But on Mediterranean, Spanish, and barrel-tile homes, they're the architecturally correct choice." },
+      { q: "Do you install copper specialty gutters?", a: "Yes. Copper half-round, European half-round, and copper box gutters. See our dedicated copper gutters page for details." },
+      { q: "What gauge aluminum do you use?", a: ".027 minimum for residential, .032 recommended for Florida conditions, up to .050 for commercial and high-wind applications. We never use cheap .019 gauge." },
+      { q: "Do you do commercial gutter work?", a: "Yes. We install 6\"\u20138\" commercial gutter systems with oversized downspouts on offices, retail, churches, schools, and multi-family buildings throughout Tampa Bay." },
+    ],
+    ctaTitle: "NEED A GUTTER SYSTEM THAT GOES BEYOND STANDARD?",
+    ctaSub: "Get your free specialty gutter consultation. We'll assess your home, recommend the right system, and give you a transparent estimate.",
+    formTitle: "Get Your Free Specialty Gutter Estimate",
+    formName: "Full Name",
+    formPhone: "Phone Number",
+    formEmail: "Email Address",
+    formZip: "ZIP Code",
+    formBtn: "REQUEST MY FREE ESTIMATE",
+    formDisclaimer: "No spam. No pressure. Just honest expert advice.",
+    formSuccess: "Quote Request Received!",
+    formSuccessSub: "We'll get back to you within hours.",
+    preferTalk: "Prefer to talk?",
+    stepLabel: "STEP",
+  },
+  es: {
+    breadcrumb: ["Inicio", "Servicios", "Canaletas Especiales"],
+    heroTag: "SISTEMAS DE CANALETAS PERSONALIZADOS Y ESPECIALES",
+    heroH1: "Mas Alla del Estandar.",
+    heroH1Accent: "Construido para Su Hogar.",
+    heroP: "Media cana, caja, estilo D, super canaleta, comercial y mas. Cuando las canaletas estandar no son suficientes, nuestros sistemas especiales ofrecen la precision, capacidad y estetica que su hogar exige.",
+    btnEstimate: "OBTENGA SU ESTIMADO GRATIS",
+    btnCall: "LLAME AL (844) 444-3114",
+    stats: [
+      { value: "6+", label: "Perfiles de canaletas especiales" },
+      { value: "8\"", label: "Tamano max media cana" },
+      { value: "100+", label: "Pies de tramos sin costuras" },
+      { value: ".050", label: "Calibre max de espesor" },
+    ],
+    problemTag: "EL PROBLEMA",
+    problemTitle: "POR QUE LAS CANALETAS ESTANDAR SE QUEDAN CORTAS EN FLORIDA",
+    problems: [
+      { icon: "\u{1F30A}", title: "Las canaletas estandar se desbordan en tormentas de Florida", desc: "Las canaletas de tamano insuficiente no pueden manejar 2–4 pulgadas de lluvia por hora. Su fundacion, jardin y fascia pagan el precio cada verano." },
+      { icon: "\u{1F3E0}", title: "El estilo equivocado de canaleta arruina la arquitectura", desc: "Estilo K en una casa mediterranea. Media cana en una construccion moderna. El perfil equivocado abarata todo su exterior." },
+      { icon: "\u{1F32A}\u{FE0F}", title: "Las canaletas de calibre ligero fallan en vientos de huracan", desc: "El aluminio barato de calibre .019 se dobla, se desprende de la fascia y se arranca con vientos fuertes. Florida exige materiales mas pesados." },
+    ],
+    typesTag: "LA DIFERENCIA JR ONE",
+    typesTitle: "SISTEMAS DE CANALETAS ESPECIALES",
+    typesSub: "Seis perfiles especiales — cada uno disenado para un proposito, arquitectura y requisito de rendimiento especifico.",
+    gutterTypes: [
+      { icon: "\u{1F3DB}\u{FE0F}", title: "Canaletas Media Cana", desc: "El perfil semicircular clasico. Elegante, su interior liso reduce la acumulacion de escombros. Disponible en multiples tamanos para diferentes aplicaciones. Combina perfectamente con techos mediterraneos, coloniales espanoles y de teja barril — los estilos arquitectonicos mas populares de Tampa Bay.", spec: "Perfil: Semicircular clasico" },
+      { icon: "\u26A1", title: "Super Canaleta", desc: "El sistema de canaletas residencial de maxima capacidad. Perfil sobredimensionado disenado para manejar las lluvias mas extremas de Florida sin desbordamiento. Cuando las canaletas estandar no pueden con el volumen de agua de su techo, la Super Canaleta entrega el rendimiento que necesita — sin compromisos.", spec: "Grado: Capacidad maxima" },
+      { icon: "\u{1F3E0}", title: "Canaletas Estilo D", desc: "Un perfil liso de curva unica que se asienta al ras contra la fascia para una apariencia limpia y aerodinamica. Popular en hogares residenciales de Florida por su estetica simple y manejo confiable de agua. Una opcion versatil que funciona con practicamente cualquier estilo arquitectonico.", spec: "Perfil: Curva unica lisa" },
+      { icon: "\u{1F4E6}", title: "Canaletas Estilo Caja", desc: "Perfil rectangular con capacidad maxima de agua. Integradas en estructuras de techo o montadas externamente. Fabricadas a medida en una dobladora para dimensiones exactas. Ideal para edificios comerciales, hogares modernos y drenaje de techos planos.", spec: "Perfil: Rectangular / personalizado" },
+      { icon: "\u{1F3E2}", title: "Canaletas Comerciales", desc: "Sistemas sobredimensionados de alta resistencia en aluminio de calibre .032–.050. Perfil K o caja de 6\" a 8\" con bajantes de 3x4 o 4x5. Espaciado de soportes mas cercano para resistencia a vientos de huracan. Disenados para grandes areas de techo.", spec: "Grado: Comercial de alta resistencia" },
+      { icon: "\u{1F527}", title: "Rollform / Sin Costuras", desc: "Cada canaleta que instalamos se forma en el sitio a partir de bobina continua de aluminio — cortada a medida exacta para su hogar. Sin costuras significa sin filtraciones. Hasta 100+ pies en una sola pieza. El estandar profesional.", spec: "Metodo: Fabricacion en sitio" },
+    ],
+    whyTag: "POR QUE ESPECIALES",
+    whyTitle: "POR QUE IMPORTA LA CANALETA CORRECTA",
+    whySpecialty: [
+      { title: "La canaleta correcta para el hogar correcto", desc: "Lo generico no funciona. Su arquitectura, estilo de techo y volumen de agua determinan el sistema correcto." },
+      { title: "La lluvia de Florida exige capacidad", desc: "46–52 pulgadas por ano, 2–4 pulgadas por hora en tormentas. Las canaletas de tamano insuficiente se desbordan — dimensionamos cada sistema para las exigencias de Florida." },
+      { title: "Integridad arquitectonica", desc: "Media cana en un techo de teja barril. Caja en una construccion moderna. La canaleta correcta completa el diseno." },
+      { title: "Construccion de grado huracan", desc: "Calibre mas pesado, espaciado de soportes mas cercano y dimensionamiento adecuado para las condiciones exigentes de Florida." },
+    ],
+    peakAlert: "ALERTA DE SEGUROS DE FLORIDA",
+    peakTitle: "Aumento del 280% en No-Renovaciones — Techo de mas de 15 anos?",
+    peakDesc: "restaura las tejas desde adentro — agrega 6–10 anos a menos del 15% del costo de reemplazo, con documentos de garantia que su aseguradora debe aceptar bajo la ley de FL.",
+    peakBtn: "INFO PEAK 301 →",
+    peakRights: "SUS DERECHOS →",
+    goldTag: "EL ESTANDAR DE ORO",
+    goldTitle: "NUESTRO PROCESO DE CANALETAS ESPECIALES",
+    goldMotto: "Cada hogar. Cada vez. Sin excepciones.",
+    goldSteps: [
+      { num: "01", title: "EVALUAR", desc: "Inspeccionamos su linea de techo, medimos puntos de concentracion de agua, evaluamos el estilo arquitectonico y recomendamos el sistema especial adecuado." },
+      { num: "02", title: "DISENAR", desc: "Seleccion de material, calculo de tamano, combinacion de color y ubicacion de bajantes. Usted ve el plan antes de que cortemos metal." },
+      { num: "03", title: "INSTALAR", desc: "Fabricacion en sitio e instalacion de precision por nuestro equipo interno capacitado. Sin subcontratistas, sin atajos." },
+      { num: "04", title: "PROTEGER", desc: "Recorrido final, prueba de rendimiento de canaletas y nuestra garantia de mano de obra." },
+    ],
+    reviewTag: "RESENAS DE CLIENTES",
+    reviewTitle: "LO QUE DICEN NUESTROS CLIENTES",
+    reviews: [
+      { text: "Despues de Milton llame a una docena de empresas — solo JR One devolvio la llamada. El equipo se presento e hizo un trabajo perfecto. No llame a nadie mas.", name: "Matt D.", context: "Reparacion de Dano por Tormenta" },
+      { text: "Seis personas en el sitio con un gerente de equipo. Removieron el sofito viejo de madera, reemplazaron todo con aluminio, arreglaron todo el dano por termitas — listo en dias. La mejor empresa por el dinero.", name: "Tampa Homeowner", context: "Sofito y Fascia Completo" },
+      { text: "Desde el principio, se esforzaron para asegurar que recibiera una cotizacion justa. No hubo presion de venta. La calidad del trabajo fue excepcional.", name: "Lois G.", context: "Canaletas y Sofitos" },
+    ],
+    faqTag: "PREGUNTAS FRECUENTES",
+    faqTitle: "PREGUNTAS SOBRE CANALETAS ESPECIALES",
+    faqs: [
+      { q: "Que tamano de canaletas necesito en Tampa?", a: "Para la mayoria de los hogares en Florida, canaletas de 6\" con bajantes de 3x4 deben ser el minimo — y recomendamos 7\" para areas de techo mas grandes o mucha cobertura de arboles. Dimensionamos cada sistema segun el area de su techo, inclinacion e intensidad de lluvia local." },
+      { q: "Son mas caras las canaletas de media cana?", a: "Si, tipicamente 20–30% mas que el estilo K debido al perfil y los soportes de montaje especializados. Pero en hogares mediterraneos, espanoles y de teja barril, son la eleccion arquitectonicamente correcta." },
+      { q: "Instalan canaletas especiales de cobre?", a: "Si. Media cana de cobre, media cana europea y canaletas de caja de cobre. Vea nuestra pagina dedicada de canaletas de cobre para detalles." },
+      { q: "Que calibre de aluminio usan?", a: ".027 minimo para residencial, .032 recomendado para condiciones de Florida, hasta .050 para aplicaciones comerciales y de alto viento. Nunca usamos el calibre barato .019." },
+      { q: "Hacen trabajo comercial de canaletas?", a: "Si. Instalamos sistemas de canaletas comerciales de 6\"–8\" con bajantes sobredimensionados en oficinas, locales comerciales, iglesias, escuelas y edificios multifamiliares en todo Tampa Bay." },
+    ],
+    ctaTitle: "NECESITA UN SISTEMA DE CANALETAS MAS ALLA DEL ESTANDAR?",
+    ctaSub: "Obtenga su consulta gratuita de canaletas especiales. Evaluaremos su hogar, recomendaremos el sistema correcto y le daremos un estimado transparente.",
+    formTitle: "Obtenga Su Estimado Gratis de Canaletas Especiales",
+    formName: "Nombre Completo",
+    formPhone: "Numero de Telefono",
+    formEmail: "Correo Electronico",
+    formZip: "Codigo Postal",
+    formBtn: "SOLICITAR MI ESTIMADO GRATIS",
+    formDisclaimer: "Sin spam. Sin presion. Solo consejo honesto de expertos.",
+    formSuccess: "Solicitud de Cotizacion Recibida!",
+    formSuccessSub: "Nos comunicaremos con usted en pocas horas.",
+    preferTalk: "Prefiere hablar?",
+    stepLabel: "PASO",
+  },
 };
 
 // ── Main Component ────────────────────────────────────────
 export default function SpecialtyGuttersPage() {
+  const { lang } = useLanguage();
+  const t = T[lang];
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "" });
   const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
@@ -133,10 +246,10 @@ export default function SpecialtyGuttersPage() {
       {/* ══ BREADCRUMB ══ */}
       <div style={{ padding: "16px 24px 0", maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ fontFamily: f.b, fontSize: "13px", color: C.muted }}>
-          {PAGE.breadcrumb.map((item, i) => (
+          {t.breadcrumb.map((item, i) => (
             <span key={i}>
               {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-              <span style={{ color: i === PAGE.breadcrumb.length - 1 ? C.accent : C.muted, cursor: i < PAGE.breadcrumb.length - 1 ? "pointer" : "default" }}>{item}</span>
+              <span style={{ color: i === t.breadcrumb.length - 1 ? C.accent : C.muted, cursor: i < t.breadcrumb.length - 1 ? "pointer" : "default" }}>{item}</span>
             </span>
           ))}
         </div>
@@ -145,20 +258,20 @@ export default function SpecialtyGuttersPage() {
       {/* ══ HERO ══ */}
       <section className="hero-stars" style={{ padding: "60px 24px 80px", maxWidth: "1200px", margin: "0 auto", display: "flex", gap: "48px", alignItems: "center", flexWrap: "wrap" }}>
         <div style={{ flex: "1 1 500px", minWidth: "300px" }}>
-          <Tag>{PAGE.heroTag}</Tag>
+          <Tag>{t.heroTag}</Tag>
           <h1 style={{ fontFamily: f.h, fontSize: "clamp(32px,5vw,48px)", fontWeight: 800, lineHeight: 1.1, marginBottom: "20px" }}>
-            {PAGE.heroH1}<br />
-            <span style={{ color: C.accent }}>{PAGE.heroH1Accent}</span>
+            {t.heroH1}<br />
+            <span style={{ color: C.accent }}>{t.heroH1Accent}</span>
           </h1>
-          <p style={{ fontFamily: f.b, fontSize: "18px", color: C.offWhite, lineHeight: 1.7, marginBottom: "32px", maxWidth: "560px" }}>{PAGE.heroP}</p>
+          <p style={{ fontFamily: f.b, fontSize: "18px", color: C.offWhite, lineHeight: 1.7, marginBottom: "32px", maxWidth: "560px" }}>{t.heroP}</p>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <BtnPrimary onClick={() => document.getElementById("quote-form")?.scrollIntoView({ behavior: "smooth" })}>
-              GET YOUR FREE ESTIMATE
+              {t.btnEstimate}
             </BtnPrimary>
-            <BtnOutline href="tel:8444443114">📞 CALL (844) 444-3114</BtnOutline>
+            <BtnOutline href="tel:8444443114">📞 {t.btnCall}</BtnOutline>
           </div>
           <div style={{ display: "flex", gap: "24px", marginTop: "32px", flexWrap: "wrap" }}>
-            {PAGE.stats.map((s, i) => (
+            {t.stats.map((s, i) => (
               <div key={i} style={{ textAlign: "center" }}>
                 <div style={{ fontFamily: f.h, fontSize: "28px", fontWeight: 800, color: C.accent }}>{s.value}</div>
                 <div style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, maxWidth: "100px" }}>{s.label}</div>
@@ -172,12 +285,12 @@ export default function SpecialtyGuttersPage() {
       <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ ...sec, padding: 0 }}>
           <div style={{ textAlign: "center" }}>
-            <Tag>THE PROBLEM</Tag>
-            <h2 style={{ ...secTitle, color: C.white }}>WHY STANDARD GUTTERS FALL SHORT IN FLORIDA</h2>
+            <Tag>{t.problemTag}</Tag>
+            <h2 style={{ ...secTitle, color: C.white }}>{t.problemTitle}</h2>
             <GoldBar />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px", marginTop: "48px" }}>
-            {PAGE.problems.map((p, i) => (
+            {t.problems.map((p, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.accent}` }}>
                 <div style={{ fontSize: "28px", marginBottom: "12px" }}>{p.icon}</div>
                 <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>{p.title}</h3>
@@ -192,15 +305,15 @@ export default function SpecialtyGuttersPage() {
       <section style={{ background: C.bg, padding: "80px 24px" }}>
         <div style={sec}>
           <div style={{ textAlign: "center" }}>
-            <Tag>THE JR ONE DIFFERENCE</Tag>
-            <h2 style={{ ...secTitle, color: C.white }}>SPECIALTY GUTTER SYSTEMS</h2>
+            <Tag>{t.typesTag}</Tag>
+            <h2 style={{ ...secTitle, color: C.white }}>{t.typesTitle}</h2>
             <GoldBar />
             <p style={{ fontFamily: f.b, fontSize: "17px", color: C.muted, maxWidth: "600px", margin: "0 auto 48px" }}>
-              Six specialty profiles — each engineered for a specific purpose, architecture, and performance requirement.
+              {t.typesSub}
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "20px" }}>
-            {PAGE.gutterTypes.map((g, i) => (
+            {t.gutterTypes.map((g, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", transition: "border-color 0.3s" }}
                 onMouseOver={e => e.currentTarget.style.borderColor = C.accent}
                 onMouseOut={e => e.currentTarget.style.borderColor = C.navyLight}>
@@ -221,12 +334,12 @@ export default function SpecialtyGuttersPage() {
       <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={{ ...sec, padding: 0 }}>
           <div style={{ textAlign: "center" }}>
-            <Tag>WHY SPECIALTY</Tag>
-            <h2 style={{ ...secTitle, color: C.white }}>WHY THE RIGHT GUTTER MATTERS</h2>
+            <Tag>{t.whyTag}</Tag>
+            <h2 style={{ ...secTitle, color: C.white }}>{t.whyTitle}</h2>
             <GoldBar />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px", marginTop: "48px" }}>
-            {PAGE.whySpecialty.map((w, i) => (
+            {t.whySpecialty.map((w, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", borderLeft: `4px solid ${C.accent}` }}>
                 <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.white, marginBottom: "8px" }}>{w.title}</h3>
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.55 }}>{w.desc}</p>
@@ -240,13 +353,13 @@ export default function SpecialtyGuttersPage() {
       <section style={{background:"linear-gradient(135deg, rgba(177,26,33,0.08), rgba(15,30,54,0.97))",padding:"28px 24px",borderTop:"2px solid #B11A21",borderBottom:"2px solid #B11A21"}}>
         <div style={{maxWidth:"1000px",margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:"20px"}}>
           <div style={{flex:"1 1 500px"}}>
-            <div style={{display:"flex",alignItems:"center",gap:"8px",marginBottom:"8px"}}><span style={{fontSize:"16px"}}>⚠️</span><span style={{fontFamily:"'Montserrat', sans-serif",fontSize:"11px",fontWeight:700,color:"#B11A21",letterSpacing:"2px"}}>FLORIDA INSURANCE ALERT</span></div>
-            <p style={{fontFamily:"'Montserrat', sans-serif",fontSize:"clamp(16px,2.5vw,20px)",fontWeight:800,color:"#FFFFFF",lineHeight:1.3,marginBottom:"6px"}}>280% Increase in Non-Renewals — Roof Over 15 Years Old?</p>
-            <p style={{fontFamily:"'Source Sans 3', sans-serif",fontSize:"14px",color:"#7A8FA8",lineHeight:1.5}}><strong style={{color:"#E8E4DC"}}>Peak 301</strong> restores shingles from the inside out — adds 6–10 years at under 15% of replacement cost, with warranty docs your insurer must accept under FL law.</p>
+            <div style={{display:"flex",alignItems:"center",gap:"8px",marginBottom:"8px"}}><span style={{fontSize:"16px"}}>⚠️</span><span style={{fontFamily:"'Montserrat', sans-serif",fontSize:"11px",fontWeight:700,color:"#B11A21",letterSpacing:"2px"}}>{t.peakAlert}</span></div>
+            <p style={{fontFamily:"'Montserrat', sans-serif",fontSize:"clamp(16px,2.5vw,20px)",fontWeight:800,color:"#FFFFFF",lineHeight:1.3,marginBottom:"6px"}}>{t.peakTitle}</p>
+            <p style={{fontFamily:"'Source Sans 3', sans-serif",fontSize:"14px",color:"#7A8FA8",lineHeight:1.5}}><strong style={{color:"#E8E4DC"}}>Peak 301</strong> {t.peakDesc}</p>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:"8px",flexShrink:0}}>
-            <a href="/peak-301" style={{padding:"12px 24px",fontFamily:"'Montserrat', sans-serif",fontSize:"12px",fontWeight:700,letterSpacing:"1px",color:"#FFFFFF",background:"linear-gradient(135deg, #B11A21, #D42A2A)",borderRadius:"6px",textDecoration:"none",textAlign:"center",boxShadow:"0 4px 12px rgba(177,26,33,0.3)"}}>PEAK 301 INFO →</a>
-            <a href="/insurance-resource-center" style={{padding:"12px 24px",fontFamily:"'Montserrat', sans-serif",fontSize:"12px",fontWeight:700,letterSpacing:"1px",color:"#B11A21",border:"1.5px solid #B11A21",borderRadius:"6px",textDecoration:"none",textAlign:"center"}}>YOUR RIGHTS →</a>
+            <a href="/peak-301" style={{padding:"12px 24px",fontFamily:"'Montserrat', sans-serif",fontSize:"12px",fontWeight:700,letterSpacing:"1px",color:"#FFFFFF",background:"linear-gradient(135deg, #B11A21, #D42A2A)",borderRadius:"6px",textDecoration:"none",textAlign:"center",boxShadow:"0 4px 12px rgba(177,26,33,0.3)"}}>{t.peakBtn}</a>
+            <a href="/insurance-resource-center" style={{padding:"12px 24px",fontFamily:"'Montserrat', sans-serif",fontSize:"12px",fontWeight:700,letterSpacing:"1px",color:"#B11A21",border:"1.5px solid #B11A21",borderRadius:"6px",textDecoration:"none",textAlign:"center"}}>{t.peakRights}</a>
           </div>
         </div>
       </section>
@@ -255,18 +368,18 @@ export default function SpecialtyGuttersPage() {
       <section style={{ background: C.navy, padding: "80px 24px" }}>
         <div style={sec}>
           <div style={{ textAlign: "center" }}>
-            <Tag>THE GOLD STANDARD</Tag>
-            <h2 style={{ ...secTitle, color: C.white }}>OUR SPECIALTY GUTTER PROCESS</h2>
+            <Tag>{t.goldTag}</Tag>
+            <h2 style={{ ...secTitle, color: C.white }}>{t.goldTitle}</h2>
             <GoldBar />
             <p style={{ fontFamily: f.b, fontSize: "17px", color: C.offWhite, fontStyle: "italic", maxWidth: "500px", margin: "0 auto 48px" }}>
-              Every home. Every time. No exceptions.
+              {t.goldMotto}
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: "24px" }}>
-            {PAGE.goldSteps.map((step, i) => (
+            {t.goldSteps.map((step, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px", position: "relative" }}>
                 <div style={{ fontFamily: f.h, fontSize: "36px", fontWeight: 800, color: "rgba(58,58,58,0.08)", position: "absolute", top: "16px", right: "20px" }}>{step.num}</div>
-                <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.accent, letterSpacing: "3px", marginBottom: "8px" }}>STEP {step.num}</div>
+                <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.accent, letterSpacing: "3px", marginBottom: "8px" }}>{t.stepLabel} {step.num}</div>
                 <h3 style={{ fontFamily: f.h, fontSize: "22px", fontWeight: 700, color: C.white, marginBottom: "12px" }}>{step.title}</h3>
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, lineHeight: 1.6 }}>{step.desc}</p>
               </div>
@@ -279,12 +392,12 @@ export default function SpecialtyGuttersPage() {
       <section style={{ background: C.bg, padding: "80px 24px" }}>
         <div style={sec}>
           <div style={{ textAlign: "center" }}>
-            <Tag>CUSTOMER REVIEWS</Tag>
-            <h2 style={{ ...secTitle, color: C.white }}>WHAT OUR CUSTOMERS SAY</h2>
+            <Tag>{t.reviewTag}</Tag>
+            <h2 style={{ ...secTitle, color: C.white }}>{t.reviewTitle}</h2>
             <GoldBar />
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "20px", marginTop: "48px" }}>
-            {PAGE.reviews.map((rev, i) => (
+            {t.reviews.map((rev, i) => (
               <div key={i} style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "12px", padding: "28px" }}>
                 <Stars />
                 <p style={{ fontFamily: f.b, fontSize: "15px", color: C.offWhite, lineHeight: 1.65, margin: "16px 0", fontStyle: "italic" }}>"{rev.text}"</p>
@@ -301,11 +414,11 @@ export default function SpecialtyGuttersPage() {
       {/* ══ FAQ ══ */}
       <section style={{ background: C.bg, padding: "80px 24px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <Tag>FAQ</Tag>
-          <h2 style={{ ...secTitle, color: C.white }}>SPECIALTY GUTTER QUESTIONS</h2>
+          <Tag>{t.faqTag}</Tag>
+          <h2 style={{ ...secTitle, color: C.white }}>{t.faqTitle}</h2>
           <GoldBar />
           <div style={{ marginTop: "40px", textAlign: "left" }}>
-            {PAGE.faqs.map((faq, i) => (
+            {t.faqs.map((faq, i) => (
               <div key={i} style={{ borderBottom: `1px solid ${C.navyLight}` }}>
                 <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: "100%", padding: "20px 0", background: "none", border: "none", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px" }}>
                   <span style={{ fontFamily: f.h, fontSize: "15px", fontWeight: 600, color: openFaq === i ? C.accent : C.white, textAlign: "left", transition: "color 0.2s" }}>{faq.q}</span>
@@ -323,32 +436,32 @@ export default function SpecialtyGuttersPage() {
       {/* ══ QUOTE FORM CTA ══ */}
       <section id="quote-form" style={{ background: `linear-gradient(165deg,${C.navy},${C.navyMid})`, padding: "80px 24px" }}>
         <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: f.h, fontSize: "clamp(28px,5vw,40px)", fontWeight: 800, color: C.white, marginBottom: "12px" }}>{PAGE.ctaTitle}</h2>
-          <p style={{ fontFamily: f.b, fontSize: "17px", color: C.offWhite, marginBottom: "40px" }}>{PAGE.ctaSub}</p>
+          <h2 style={{ fontFamily: f.h, fontSize: "clamp(28px,5vw,40px)", fontWeight: 800, color: C.white, marginBottom: "12px" }}>{t.ctaTitle}</h2>
+          <p style={{ fontFamily: f.b, fontSize: "17px", color: C.offWhite, marginBottom: "40px" }}>{t.ctaSub}</p>
 
           {submitted ? (
             <div style={{ background: C.successDim, border: `1px solid ${C.success}`, borderRadius: "12px", padding: "32px" }}>
               <div style={{ fontSize: "48px", marginBottom: "12px" }}>✓</div>
-              <h3 style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 700, color: "#4ADE80" }}>Quote Request Received!</h3>
-              <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, marginTop: "8px" }}>We'll get back to you within hours.</p>
+              <h3 style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 700, color: "#4ADE80" }}>{t.formSuccess}</h3>
+              <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, marginTop: "8px" }}>{t.formSuccessSub}</p>
             </div>
           ) : (
             <div style={{ background: C.white, borderRadius: "16px", padding: "32px", boxShadow: "0 24px 80px rgba(0,0,0,0.4)", textAlign: "left" }}>
-              <h3 style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.navy, textAlign: "center", marginBottom: "4px" }}>Get Your Free Specialty Gutter Estimate</h3>
+              <h3 style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.navy, textAlign: "center", marginBottom: "4px" }}>{t.formTitle}</h3>
               <div style={{ width: "40px", height: "3px", background: C.accent, borderRadius: "2px", margin: "10px auto 20px" }} />
-              <input style={inputStyle} placeholder="Full Name" value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
-              <input style={inputStyle} placeholder="Phone Number" type="tel" value={formData.phone} onChange={e => setFormData({ ...formData, phone: e.target.value })} />
-              <input style={inputStyle} placeholder="Email Address" type="email" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} />
-              <input style={inputStyle} placeholder="ZIP Code" value={formData.zip} onChange={e => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
+              <input style={inputStyle} placeholder={t.formName} value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
+              <input style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={e => setFormData({ ...formData, phone: e.target.value })} />
+              <input style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} />
+              <input style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={e => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
               <button onClick={() => setSubmitted(true)} style={{ width: "100%", padding: "16px", fontFamily: f.h, fontSize: "14px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: `linear-gradient(135deg,${C.accent},${C.accentLight})`, border: "none", borderRadius: "8px", cursor: "pointer", boxShadow: "0 4px 16px rgba(58,58,58,0.3)" }}>
-                REQUEST MY FREE ESTIMATE
+                {t.formBtn}
               </button>
-              <p style={{ fontFamily: f.b, fontSize: "12px", color: "#9CA3AF", textAlign: "center", marginTop: "12px" }}>No spam. No pressure. Just honest expert advice.</p>
+              <p style={{ fontFamily: f.b, fontSize: "12px", color: "#9CA3AF", textAlign: "center", marginTop: "12px" }}>{t.formDisclaimer}</p>
             </div>
           )}
 
           <div style={{ marginTop: "32px" }}>
-            <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, marginBottom: "8px" }}>Prefer to talk?</p>
+            <p style={{ fontFamily: f.b, fontSize: "15px", color: C.muted, marginBottom: "8px" }}>{t.preferTalk}</p>
             <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>📞 (844) 444-3114</a>
           </div>
         </div>

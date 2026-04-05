@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useLanguage } from "../../../lib/LanguageContext";
 import MobileCTA from "../../../components/MobileCTA";
 
 const C = {
@@ -10,13 +11,40 @@ const C = {
 };
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
+const T = {
+  en: {
+    backToBlog: "← Back to Blog",
+    byAuthor: "By JR One Aluminum",
+    minRead: " min read",
+    readyEstimate: "Ready for a Free Estimate?",
+    ctaDesc: "Tampa Bay's aluminum specialists. 30+ years experience. In-house crews.",
+    callCta: "Call (844) 444-3114",
+    getQuote: "Get Free Quote",
+    relatedArticles: "Related Articles",
+    dateLocale: "en-US",
+  },
+  es: {
+    backToBlog: "← Volver al Blog",
+    byAuthor: "Por JR One Aluminum",
+    minRead: " min de lectura",
+    readyEstimate: "Listo para una Cotizacion Gratis?",
+    ctaDesc: "Especialistas en aluminio de Tampa Bay. Mas de 30 anos de experiencia. Equipos propios.",
+    callCta: "Llamar al (844) 444-3114",
+    getQuote: "Cotizacion Gratis",
+    relatedArticles: "Articulos Relacionados",
+    dateLocale: "es-US",
+  },
+};
+
 export default function BlogPost({ post, related }) {
+  const { lang } = useLanguage();
+  const t = T[lang];
   return (
     <div style={{ background: C.bg, minHeight: "100vh", fontFamily: f.b }}>
       {/* Back link */}
       <div style={{ maxWidth: "780px", margin: "0 auto", padding: "20px 20px 0" }}>
         <Link href="/blog" style={{ fontFamily: f.h, fontSize: "13px", color: C.gold, textDecoration: "none" }}>
-          ← Back to Blog
+          {t.backToBlog}
         </Link>
       </div>
 
@@ -37,11 +65,11 @@ export default function BlogPost({ post, related }) {
             {post.title}
           </h1>
           <div style={{ display: "flex", gap: "20px", alignItems: "center", color: C.muted, fontSize: "14px" }}>
-            <span>By JR One Aluminum</span>
+            <span>{t.byAuthor}</span>
             <span>•</span>
-            <span>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+            <span>{new Date(post.date).toLocaleDateString(t.dateLocale, { year: "numeric", month: "long", day: "numeric" })}</span>
             <span>•</span>
-            <span>{post.readingTime} min read</span>
+            <span>{post.readingTime}{t.minRead}</span>
           </div>
         </div>
 
@@ -60,10 +88,10 @@ export default function BlogPost({ post, related }) {
           border: `2px solid ${C.gold}`, textAlign: "center",
         }}>
           <h3 style={{ fontFamily: f.h, fontSize: "22px", fontWeight: 700, color: C.white, marginBottom: "10px" }}>
-            Ready for a Free Estimate?
+            {t.readyEstimate}
           </h3>
           <p style={{ fontFamily: f.b, fontSize: "16px", color: C.muted, marginBottom: "20px" }}>
-            Tampa Bay's aluminum specialists. 30+ years experience. In-house crews.
+            {t.ctaDesc}
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
             <a
@@ -74,7 +102,7 @@ export default function BlogPost({ post, related }) {
                 textDecoration: "none", letterSpacing: "0.5px",
               }}
             >
-              Call (844) 444-3114
+              {t.callCta}
             </a>
             <Link
               href="/contact"
@@ -84,7 +112,7 @@ export default function BlogPost({ post, related }) {
                 borderRadius: "8px", border: `2px solid ${C.gold}`, textDecoration: "none",
               }}
             >
-              Get Free Quote
+              {t.getQuote}
             </Link>
           </div>
         </div>
@@ -93,7 +121,7 @@ export default function BlogPost({ post, related }) {
         {related.length > 0 && (
           <div style={{ marginTop: "50px" }}>
             <h3 style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 700, color: C.white, marginBottom: "20px" }}>
-              Related Articles
+              {t.relatedArticles}
             </h3>
             <div style={{ display: "grid", gap: "16px" }}>
               {related.map((r) => (
@@ -109,7 +137,7 @@ export default function BlogPost({ post, related }) {
                     {r.title}
                   </h4>
                   <span style={{ fontFamily: f.b, fontSize: "13px", color: C.muted }}>
-                    {r.readingTime} min read
+                    {r.readingTime}{t.minRead}
                   </span>
                 </Link>
               ))}

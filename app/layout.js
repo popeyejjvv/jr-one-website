@@ -1,5 +1,6 @@
 import Script from "next/script";
 import "./globals.css";
+import { Providers } from "./providers";
 
 // ── LocalBusiness + HomeAndConstructionBusiness Schema ──
 const localBusinessSchema = {
@@ -112,7 +113,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <Providers>
         {children}
+        </Providers>
 
         {/* ── BuildMyAgent Chatbot ──
             Replace CHATBOT_EMBED_ID with actual embed ID from BuildMyAgent dashboard.

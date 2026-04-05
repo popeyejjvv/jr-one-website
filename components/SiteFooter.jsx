@@ -6,6 +6,8 @@
    Used on every page for consistency
    ═══════════════════════════════════════════════════════════ */
 
+import { useLanguage } from "../lib/LanguageContext";
+
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyLight: "#2C3E5A", navyFade: "#162033",
   gold: "#C8952E", goldLight: "#D4A843",
@@ -13,20 +15,39 @@ const C = {
 };
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
-const SERVICES = [
-  { name: "Copper Gutters", href: "/copper-gutters" },
-  { name: "Drainage Installation", href: "/drainage-assessment" },
-  { name: "Govee Lights", href: "/govee-lights" },
-  { name: "Gutter Guards", href: "/gutter-guards" },
-  { name: "Gutter Repair", href: "/gutter-repair" },
-  { name: "Peak 301", href: "/peak-301" },
-  { name: "SAGIPER", href: "/sagiper" },
-  { name: "Seamless Gutters", href: "/seamless-aluminum-gutters" },
-  { name: "Service Plans", href: "/service-plans" },
-  { name: "Siding", href: "/siding" },
-  { name: "Soffit & Fascia", href: "/soffit-and-fascia" },
-  { name: "Specialty Gutters", href: "/specialty-gutters" },
+const SERVICE_NAMES = {
+  en: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
+  es: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
+};
+
+const SERVICE_HREFS = [
+  "/copper-gutters", "/drainage-assessment", "/govee-lights", "/gutter-guards",
+  "/gutter-repair", "/peak-301", "/sagiper", "/seamless-aluminum-gutters",
+  "/service-plans", "/siding", "/soffit-and-fascia", "/specialty-gutters",
 ];
+
+const T = {
+  en: {
+    tagline: "The Superior Soffit & Gutter Experts",
+    description: "Family-owned and operated for 30+ years. Tampa Bay's trusted aluminum specialists.",
+    services: "SERVICES",
+    serviceAreas: "SERVICE AREAS",
+    contact: "CONTACT",
+    copyright: "© 2026 JR One Aluminum LLC. All rights reserved.",
+    privacy: "Privacy Policy",
+    terms: "Terms of Service",
+  },
+  es: {
+    tagline: "Los Expertos Superiores en Sofito y Canaletas",
+    description: "Empresa familiar con más de 30 años de experiencia. Los especialistas en aluminio de confianza en Tampa Bay.",
+    services: "SERVICIOS",
+    serviceAreas: "ÁREAS DE SERVICIO",
+    contact: "CONTACTO",
+    copyright: "© 2026 JR One Aluminum LLC. Todos los derechos reservados.",
+    privacy: "Política de Privacidad",
+    terms: "Términos de Servicio",
+  },
+};
 
 const CITIES = [
   { name: "Bradenton", slug: "bradenton" },
@@ -53,6 +74,10 @@ const CITIES = [
 ];
 
 export default function SiteFooter() {
+  const { lang } = useLanguage();
+  const t = T[lang];
+  const serviceNames = SERVICE_NAMES[lang];
+
   return (
     <>
       <footer style={{ background: C.navyFade, borderTop: `1px solid ${C.navyLight}`, padding: "60px 24px 100px" }}>
@@ -62,25 +87,25 @@ export default function SiteFooter() {
             <div style={{ fontFamily: f.h, fontSize: "24px", fontWeight: 800, color: C.white, marginBottom: "4px" }}>
               JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "18px" }}>★</span>
             </div>
-            <p style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.gold, fontStyle: "italic", marginBottom: "12px" }}>The Superior Soffit & Gutter Experts</p>
-            <p style={{ fontFamily: f.b, fontSize: "14px", color: C.muted, lineHeight: 1.55 }}>Family-owned and operated for 30+ years. Tampa Bay's trusted aluminum specialists.</p>
+            <p style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.gold, fontStyle: "italic", marginBottom: "12px" }}>{t.tagline}</p>
+            <p style={{ fontFamily: f.b, fontSize: "14px", color: C.muted, lineHeight: 1.55 }}>{t.description}</p>
           </div>
 
           {/* Services */}
           <div>
-            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>SERVICES</h4>
-            {SERVICES.map((svc, i) => (
-              <a key={i} href={svc.href} style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}
+            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.services}</h4>
+            {serviceNames.map((name, i) => (
+              <a key={i} href={SERVICE_HREFS[i]} style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}
                 onMouseOver={e => e.target.style.color = C.gold}
                 onMouseOut={e => e.target.style.color = C.muted}>
-                {svc.name}
+                {name}
               </a>
             ))}
           </div>
 
           {/* Service Areas */}
           <div>
-            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>SERVICE AREAS</h4>
+            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.serviceAreas}</h4>
             {CITIES.map((city, i) => (
               <a key={i} href={`/areas/${city.slug}`} style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}
                 onMouseOver={e => e.target.style.color = C.gold}
@@ -92,7 +117,7 @@ export default function SiteFooter() {
 
           {/* Contact */}
           <div>
-            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>CONTACT</h4>
+            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.contact}</h4>
             <a href="tel:8444443114" style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.gold, marginBottom: "8px", fontWeight: 600, textDecoration: "none" }}>(844) 444-3114</a>
             <a href="mailto:info@jronegutters.com" style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>info@jronegutters.com</a>
             <p style={{ fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "16px" }}>Tampa, FL</p>
@@ -107,11 +132,11 @@ export default function SiteFooter() {
         {/* Copyright + Legal */}
         <div style={{ maxWidth: "1200px", margin: "40px auto 0", paddingTop: "24px", borderTop: `1px solid ${C.navyLight}`, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
           <p style={{ fontFamily: f.b, fontSize: "12px", color: C.muted }}>
-            © 2026 JR One Aluminum LLC. All rights reserved.
+            {t.copyright}
           </p>
           <div style={{ display: "flex", gap: "20px" }}>
-            <a href="/privacy-policy" style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, textDecoration: "none" }}>Privacy Policy</a>
-            <a href="/terms-of-service" style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, textDecoration: "none" }}>Terms of Service</a>
+            <a href="/privacy-policy" style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, textDecoration: "none" }}>{t.privacy}</a>
+            <a href="/terms-of-service" style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, textDecoration: "none" }}>{t.terms}</a>
           </div>
         </div>
       </footer>
