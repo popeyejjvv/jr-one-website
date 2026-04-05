@@ -107,6 +107,21 @@ export default function DrainageAssessmentPage() {
         </div>
       </section>
 
+      {/* ══ PEAK 301 CALLOUT ══ */}
+      <section style={{background:"linear-gradient(135deg, rgba(177,26,33,0.08), rgba(15,30,54,0.97))",padding:"28px 24px",borderTop:"2px solid #B11A21",borderBottom:"2px solid #B11A21"}}>
+        <div style={{maxWidth:"1000px",margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:"20px"}}>
+          <div style={{flex:"1 1 500px"}}>
+            <div style={{display:"flex",alignItems:"center",gap:"8px",marginBottom:"8px"}}><span style={{fontSize:"16px"}}>⚠️</span><span style={{fontFamily:"'Montserrat', sans-serif",fontSize:"11px",fontWeight:700,color:"#B11A21",letterSpacing:"2px"}}>FLORIDA INSURANCE ALERT</span></div>
+            <p style={{fontFamily:"'Montserrat', sans-serif",fontSize:"clamp(16px,2.5vw,20px)",fontWeight:800,color:"#FFFFFF",lineHeight:1.3,marginBottom:"6px"}}>280% Increase in Non-Renewals — Roof Over 15 Years Old?</p>
+            <p style={{fontFamily:"'Source Sans 3', sans-serif",fontSize:"14px",color:"#7A8FA8",lineHeight:1.5}}><strong style={{color:"#E8E4DC"}}>Peak 301</strong> restores shingles from the inside out — adds 6–10 years at under 15% of replacement cost, with warranty docs your insurer must accept under FL law.</p>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:"8px",flexShrink:0}}>
+            <a href="/peak-301" style={{padding:"12px 24px",fontFamily:"'Montserrat', sans-serif",fontSize:"12px",fontWeight:700,letterSpacing:"1px",color:"#FFFFFF",background:"linear-gradient(135deg, #B11A21, #D42A2A)",borderRadius:"6px",textDecoration:"none",textAlign:"center",boxShadow:"0 4px 12px rgba(177,26,33,0.3)"}}>PEAK 301 INFO →</a>
+            <a href="/insurance-resource-center" style={{padding:"12px 24px",fontFamily:"'Montserrat', sans-serif",fontSize:"12px",fontWeight:700,letterSpacing:"1px",color:"#B11A21",border:"1.5px solid #B11A21",borderRadius:"6px",textDecoration:"none",textAlign:"center"}}>YOUR RIGHTS →</a>
+          </div>
+        </div>
+      </section>
+
       {/* GOLD STANDARD */}
       <section style={{background:C.navy,padding:"80px 24px"}}>
         <div style={sec}><div style={{textAlign:"center"}}><Tag>THE PROCESS</Tag><h2 style={{...secTitle,color:C.white}}>HOW WE SOLVE DRAINAGE PROBLEMS</h2><GoldBar /><p style={{fontFamily:f.b,fontSize:"17px",color:C.offWhite,fontStyle:"italic",maxWidth:"500px",margin:"0 auto 48px"}}>Inspect. Diagnose. Recommend. Fix.</p></div>

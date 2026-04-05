@@ -33,7 +33,7 @@ const NAV_LINKS = [
 ];
 
 const FEATURE_TABS = [
-  { label: "Estimator", href: "/#estimator", color: "#3B82F6", bg: "rgba(59,130,246,0.15)" },
+  { label: "Estimator", href: "/estimator", color: "#3B82F6", bg: "rgba(59,130,246,0.15)" },
   { label: "Financing", href: "/financing", color: "#22C55E", bg: "rgba(34,197,94,0.15)" },
   { label: "Referral", href: "/referral", color: "#E91E8C", bg: "rgba(233,30,140,0.15)" },
 ];

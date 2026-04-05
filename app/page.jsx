@@ -369,13 +369,13 @@ export default function JROneHomepage() {
               { label: lang === "en" ? "The Gold Standard" : "Estándar de Oro", href: "#gold-standard" },
               { label: lang === "en" ? "About" : "Nosotros", href: "/about" },
               { label: lang === "en" ? "Contact" : "Contacto", href: "/contact" },
-              { label: "FAQ", href: "#faq" },
+              { label: "FAQ", href: "/faq" },
               { label: lang === "en" ? "Projects" : "Proyectos", href: "/projects" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{...s.navLink, textDecoration: "none"}}>{item.label}</a>
             ))}
             {/* Color-coded feature tabs */}
-            <a href="#estimator" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#3B82F6", background: "rgba(59,130,246,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(59,130,246,0.3)" }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
+            <a href="/estimator" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#3B82F6", background: "rgba(59,130,246,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(59,130,246,0.3)" }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
             <a href="/financing" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#22C55E", background: "rgba(34,197,94,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(34,197,94,0.3)" }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
             <a href="/referral" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: "#E91E8C", background: "rgba(233,30,140,0.15)", padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: "1px solid rgba(233,30,140,0.3)" }}>{lang === "en" ? "Referral" : "Referidos"}</a>
             <a href="tel:8444443114" style={{ ...s.navLink, color: C.gold, fontWeight: 700, textDecoration: "none" }}>{t.phone}</a>
@@ -415,12 +415,12 @@ export default function JROneHomepage() {
               { label: lang === "en" ? "The Gold Standard" : "Estándar de Oro", href: "#gold-standard" },
               { label: lang === "en" ? "About" : "Nosotros", href: "/about" },
               { label: lang === "en" ? "Contact" : "Contacto", href: "/contact" },
-              { label: "FAQ", href: "#faq" },
+              { label: "FAQ", href: "/faq" },
               { label: lang === "en" ? "Projects" : "Proyectos", href: "/projects" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{item.label}</a>
             ))}
-            <a href="#estimator" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#3B82F6", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
+            <a href="/estimator" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#3B82F6", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Estimator" : "Estimador"}</a>
             <a href="/financing" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#22C55E", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Financing" : "Financiamiento"}</a>
             <a href="/referral" style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: "#E91E8C", textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{lang === "en" ? "Referral" : "Referidos"}</a>
             <a href="tel:8444443114" style={{ fontFamily: font.heading, fontSize: "16px", fontWeight: 700, color: C.gold, textDecoration: "none", padding: "12px 0", textAlign: "center" }}>📞 {t.phone}</a>
@@ -598,43 +598,26 @@ export default function JROneHomepage() {
         </div>
       </section>
 
-      {/* ══ ESTIMATOR GATE ══ */}
+      {/* ══ ESTIMATOR CTA ══ */}
       <section id="estimator" style={{ background: C.bg, padding: "80px 24px" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
           <SectionTag>{lang === "en" ? "INSTANT ESTIMATOR" : "ESTIMADOR INSTANTÁNEO"}</SectionTag>
           <h2 style={{ ...s.sectionTitle, color: C.white }}>{t.estimatorTitle}</h2>
           <GoldDivider />
-          <p style={{ ...s.sectionSub, color: C.muted }}>{t.estimatorSub}</p>
-
-          {estUnlocked ? (
-            <div style={{ background: C.navyFade, border: `1px solid ${C.gold}`, borderRadius: "16px", padding: "40px 32px" }}>
-              <div style={{ fontSize: "48px", marginBottom: "16px" }}>🔓</div>
-              <h3 style={{ fontFamily: font.heading, fontSize: "20px", fontWeight: 700, color: C.gold, marginBottom: "8px" }}>
-                {lang === "en" ? "Estimator Unlocked!" : "¡Estimador Desbloqueado!"}
-              </h3>
-              <p style={{ fontFamily: font.body, fontSize: "15px", color: C.muted, marginBottom: "24px" }}>
-                {lang === "en" ? "The full estimator app loads here — select your services, enter measurements, and see your price range instantly." : "La aplicación completa del estimador carga aquí — seleccione sus servicios, ingrese medidas y vea su rango de precio."}
-              </p>
-              <div style={{ padding: "20px", background: C.navy, borderRadius: "8px", border: `1px dashed ${C.navyLight}` }}>
-                <p style={{ fontFamily: font.heading, fontSize: "13px", color: C.muted, letterSpacing: "1px" }}>
-                  [ ESTIMATOR APP COMPONENT RENDERS HERE ]
-                </p>
-              </div>
-            </div>
-          ) : (
-            <div style={{ background: C.navyFade, border: `1px solid ${C.navyLight}`, borderRadius: "16px", padding: "40px 32px" }}>
-              <div style={{ fontSize: "48px", marginBottom: "16px" }}>🔒</div>
-              <p style={{ fontFamily: font.body, fontSize: "15px", color: C.muted, marginBottom: "24px" }}>
-                {lang === "en" ? "Enter your contact info to access our instant pricing tool." : "Ingrese su información de contacto para acceder a nuestra herramienta de precios."}
-              </p>
-              <div style={{ maxWidth: "380px", margin: "0 auto" }}>
-                <input style={{ ...s.input, background: C.navy, color: C.white, borderColor: C.navyLight }} placeholder={t.formName} value={estName} onChange={(e) => setEstName(e.target.value)} />
-                <input style={{ ...s.input, background: C.navy, color: C.white, borderColor: C.navyLight }} placeholder={t.formPhone} type="tel" value={estPhone} onChange={(e) => setEstPhone(e.target.value)} />
-                <input style={{ ...s.input, background: C.navy, color: C.white, borderColor: C.navyLight }} placeholder={t.formEmail} type="email" value={estEmail} onChange={(e) => setEstEmail(e.target.value)} />
-                <button style={{ ...s.submitBtn, marginTop: "4px" }} onClick={handleEstUnlock}>{t.estimatorBtn}</button>
-              </div>
-            </div>
-          )}
+          <p style={{ ...s.sectionSub, color: C.muted, marginBottom: "32px" }}>{t.estimatorSub}</p>
+          <a href="/estimator" style={{
+            display: "inline-block", padding: "18px 48px",
+            fontFamily: font.heading, fontSize: "15px", fontWeight: 700, letterSpacing: "1.5px",
+            color: C.navy, background: `linear-gradient(135deg, ${C.gold}, ${C.goldLight})`,
+            borderRadius: "10px", textDecoration: "none", transition: "filter 0.2s"
+          }}>
+            {lang === "en" ? "OPEN THE ESTIMATOR" : "ABRIR EL ESTIMADOR"}
+          </a>
+          <p style={{ fontFamily: font.body, fontSize: "13px", color: C.muted, marginTop: "16px" }}>
+            {lang === "en"
+              ? "Measure your roof from satellite imagery and get an instant price range."
+              : "Mida su techo desde imágenes satelitales y obtenga un rango de precio al instante."}
+          </p>
         </div>
       </section>
 

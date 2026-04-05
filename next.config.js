@@ -40,9 +40,17 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)",
+        source: "/((?!estimator\\.html).*)",
         headers: [
           { key: "X-Frame-Options", value: "DENY" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "origin-when-cross-origin" },
+        ],
+      },
+      {
+        source: "/estimator.html",
+        headers: [
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "origin-when-cross-origin" },
         ],
@@ -63,6 +71,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "jronegutters.com",
+      },
+      {
+        protocol: "https",
+        hostname: "img.companycam.com",
       },
     ],
   },
