@@ -131,11 +131,16 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .action-btn.secondary:hover{border-color:var(--gold-warm)}
 .action-btn.danger{background:var(--navy);border:1px solid rgba(177,26,33,0.4);color:#e55}
 .action-btn.danger:hover{border-color:var(--red)}
-.instructions{background:var(--navy);border:1px solid var(--navy-slate);border-radius:8px;padding:12px;margin-top:10px}
-.instructions p{font-size:11px;color:var(--gray-med);line-height:1.6;margin-bottom:4px}
-.instructions p:last-child{margin-bottom:0}
-.instructions strong{color:var(--offwhite)}
-.kbd{display:inline-block;padding:1px 5px;background:var(--navy-slate);border-radius:3px;font-size:10px;color:var(--gold-warm);font-family:'Montserrat',sans-serif;font-weight:600}
+.instructions{background:linear-gradient(135deg,var(--navy),rgba(200,149,46,0.06));border:1px solid rgba(200,149,46,0.25);border-radius:10px;padding:16px;margin-top:12px}
+.instructions .inst-title{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.instructions .step{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
+.instructions .step:last-child{margin-bottom:0}
+.instructions .step-num{width:22px;height:22px;background:rgba(200,149,46,0.15);border:1px solid rgba(200,149,46,0.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:var(--gold);flex-shrink:0;margin-top:1px}
+.instructions .step-text{font-size:12px;color:var(--offwhite);line-height:1.5}
+.instructions .step-text strong{color:var(--gold)}
+.instructions .inst-note{margin-top:12px;padding-top:10px;border-top:1px solid rgba(200,149,46,0.15);font-size:11px;color:var(--gray-med);line-height:1.5;display:flex;align-items:center;gap:6px}
+.instructions .inst-note strong{color:var(--gold-warm)}
+.kbd{display:inline-block;padding:2px 8px;background:rgba(200,149,46,0.15);border:1px solid rgba(200,149,46,0.3);border-radius:4px;font-size:11px;color:var(--gold);font-family:'Montserrat',sans-serif;font-weight:600}
 
 /* LOADING OVERLAY */
 .loading-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(15,30,54,0.92);display:none;align-items:center;justify-content:center;z-index:3000;flex-direction:column;gap:16px}
@@ -247,13 +252,13 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
       </div>
     </div>
     <div class="instructions">
-      <p><strong>How to use:</strong></p>
-      <p>1. Search your address to find your home</p>
-      <p>2. Select what you're measuring</p>
-      <p>3. <strong>Click along your roof edges</strong> to measure</p>
-      <p>4. Press <span class="kbd">Finish Line</span> when a section is done</p>
-      <p>5. Repeat for each service you need</p>
-      <p><strong>Downspouts calculated automatically</strong> from gutter footage and home height.</p>
+      <div class="inst-title">📐 How to Use</div>
+      <div class="step"><span class="step-num">1</span><span class="step-text"><strong>Search your address</strong> above to find your home on the map</span></div>
+      <div class="step"><span class="step-num">2</span><span class="step-text"><strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, or Leaf Guard</span></div>
+      <div class="step"><span class="step-num">3</span><span class="step-text"><strong>Click along your roof edges</strong> on the map to draw measurement lines</span></div>
+      <div class="step"><span class="step-num">4</span><span class="step-text">Press <span class="kbd">Finish Line</span> when each section is complete</span></div>
+      <div class="step"><span class="step-num">5</span><span class="step-text">Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong></span></div>
+      <div class="inst-note">⚡ <strong>Downspouts calculated automatically</strong> from your gutter footage and home height.</div>
     </div>
   </div>
 
