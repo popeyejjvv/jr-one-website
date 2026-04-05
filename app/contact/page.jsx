@@ -207,9 +207,18 @@ export default function ContactPage() {
             {t.serviceAreaP}
           </p>
 
-          {/* Map placeholder */}
-          <div style={{borderRadius:"16px",overflow:"hidden",border:`1px solid ${C.navyLight}`,background:C.navyFade,aspectRatio:"16/9",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"40px"}}>
-            <div style={{textAlign:"center",color:C.muted}}><div style={{fontSize:"48px",marginBottom:"8px"}}>🗺️</div><p style={{fontFamily:f.h,fontSize:"12px",letterSpacing:"1px"}}>{t.mapLabel}</p><p style={{fontFamily:f.b,fontSize:"12px",marginTop:"4px"}}>{t.mapSub}</p></div>
+          {/* Google Map — Tampa Bay service area */}
+          <div style={{borderRadius:"16px",overflow:"hidden",border:`1px solid ${C.navyLight}`,aspectRatio:"16/9",marginBottom:"40px"}}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451515.5502975698!2d-82.73085988125!3d27.9477595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sJR%20One%20Aluminum%20LLC!5e0!3m2!1sen!2sus!4v1712300000000"
+              width="100%"
+              height="100%"
+              style={{border:0}}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="JR One Aluminum service area map"
+            />
           </div>
 
           {/* City grid */}
