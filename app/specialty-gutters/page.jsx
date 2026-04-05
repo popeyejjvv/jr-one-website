@@ -71,7 +71,7 @@ const PAGE = {
 
   whySpecialty: [
     { title: "Right gutter for the right home", desc: "Cookie-cutter doesn't cut it. Your architecture, roof style, and water volume determine the right system." },
-    { title: "Florida rainfall demands capacity", desc: "46\u201352 inches per year, 2\u20134 inches per hour in storms. Standard 5\" gutters overflow." },
+    { title: "Florida rainfall demands capacity", desc: "46–52 inches per year, 2–4 inches per hour in storms. Undersized gutters overflow — we size every system for Florida's demands." },
     { title: "Architectural integrity", desc: "Half-round on a barrel tile roof. Box on a modern build. The right gutter completes the design." },
     { title: "Hurricane-grade construction", desc: "Heavier gauge, closer hanger spacing, and proper sizing for Florida's demanding conditions." },
   ],
@@ -84,7 +84,7 @@ const PAGE = {
   ],
 
   problems: [
-    { icon: "\u{1F30A}", title: "Standard gutters overflow in Florida storms", desc: "5\" gutters can't handle 2\u20134 inches of rain per hour. Your foundation, landscaping, and fascia pay the price every summer." },
+    { icon: "\u{1F30A}", title: "Standard gutters overflow in Florida storms", desc: "Undersized gutters can't handle 2–4 inches of rain per hour. Your foundation, landscaping, and fascia pay the price every summer." },
     { icon: "\u{1F3E0}", title: "Wrong gutter style ruins architectural look", desc: "K-style on a Mediterranean home. Half-round on a modern build. The wrong profile cheapens your entire exterior." },
     { icon: "\u{1F32A}\u{FE0F}", title: "Light-gauge gutters fail in hurricane winds", desc: "Cheap .019 gauge aluminum bends, pulls away from fascia, and rips off in high winds. Florida demands heavier materials." },
   ],
@@ -103,7 +103,7 @@ const PAGE = {
   ],
 
   faqs: [
-    { q: "What size gutters do I need in Tampa?", a: "For most Florida homes, 6\" gutters with 3x4 downspouts should be the baseline. Standard 5\" K-style gutters overflow during summer storms. We size every system based on your roof area and pitch." },
+    { q: "What size gutters do I need in Tampa?", a: "For most Florida homes, 6\" gutters with 3x4 downspouts should be the baseline — and we recommend 7\" for larger roof areas or heavy tree coverage. We size every system based on your roof area, pitch, and local rainfall intensity." },
     { q: "Are half-round gutters more expensive?", a: "Yes, typically 20\u201330% more than K-style due to the profile and specialized mounting brackets. But on Mediterranean, Spanish, and barrel-tile homes, they're the architecturally correct choice." },
     { q: "Do you install copper specialty gutters?", a: "Yes. Copper half-round, European half-round, and copper box gutters. See our dedicated copper gutters page for details." },
     { q: "What gauge aluminum do you use?", a: ".027 minimum for residential, .032 recommended for Florida conditions, up to .050 for commercial and high-wind applications. We never use cheap .019 gauge." },
