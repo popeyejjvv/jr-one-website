@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import MobileCTA from "../components/MobileCTA";
 
 /* ═══════════════════════════════════════════════════════════
    JR ONE ALUMINUM — HOMEPAGE
@@ -764,15 +765,7 @@ export default function JROneHomepage() {
         </div>
       </footer>
 
-      {/* ══ STICKY MOBILE CTA ══ */}
-      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 999, background: "rgba(11,22,40,0.97)", backdropFilter: "blur(12px)", borderTop: `1px solid ${C.navyLight}`, padding: "12px 16px", display: "flex", gap: "10px" }}>
-        <a href="tel:8444443114" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", padding: "14px", fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.navy, background: `linear-gradient(135deg, ${C.gold}, ${C.goldLight})`, borderRadius: "8px", textDecoration: "none", letterSpacing: "0.5px" }}>
-          📞 {lang === "en" ? "CALL NOW" : "LLAMAR"}
-        </a>
-        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ flex: 1, padding: "14px", fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.gold, background: "transparent", border: `2px solid ${C.gold}`, borderRadius: "8px", cursor: "pointer", letterSpacing: "0.5px" }}>
-          {lang === "en" ? "GET QUOTE" : "COTIZACIÓN"}
-        </button>
-      </div>
+      <MobileCTA />
 
       <style>{`
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }

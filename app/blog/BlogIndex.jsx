@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import MobileCTA from "../../components/MobileCTA";
 
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyMid: "#243556", navyLight: "#2C3E5A",
@@ -117,6 +118,7 @@ export default function BlogIndex({ posts }) {
           </div>
         )}
       </div>
+      <MobileCTA />
     </div>
   );
 }

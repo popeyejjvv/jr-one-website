@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
+import MobileCTA from "../../components/MobileCTA";
 
 const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
 const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D",success:"#2D8B4E",successDim:"rgba(45,139,78,0.15)",alert:"#B11A21",alertDim:"rgba(177,26,33,0.12)",accent:"#E91E8C",accentLight:"#F472B6",accentPale:"rgba(233,30,140,0.12)" };
@@ -200,7 +201,7 @@ export default function ReferralPage() {
       </section>
 
       <SiteFooter />
-      <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:999,background:"rgba(11,22,40,0.97)",backdropFilter:"blur(12px)",borderTop:`1px solid ${C.navyLight}`,padding:"12px 16px",display:"flex",gap:"10px"}}><a href="tel:8444443114" style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:"6px",padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.white,background:`linear-gradient(135deg,${C.accent},${C.accentLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 REFER NOW</a><a href="mailto:info@jronegutters.com?subject=Referral" style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",padding:"14px",fontFamily:f.h,fontSize:"13px",fontWeight:700,color:C.accent,background:"transparent",border:`2px solid ${C.accent}`,borderRadius:"8px",textDecoration:"none"}}>✉️ EMAIL REFERRAL</a></div>
+      <MobileCTA />
       <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
     </div>
   );
