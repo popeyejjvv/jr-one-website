@@ -210,7 +210,7 @@ export default function ContactPage() {
           {/* Google Map — Tampa Bay service area */}
           <div style={{borderRadius:"16px",overflow:"hidden",border:`1px solid ${C.navyLight}`,aspectRatio:"16/9",marginBottom:"40px"}}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451515.5502975698!2d-82.73085988125!3d27.9477595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sJR%20One%20Aluminum%20LLC!5e0!3m2!1sen!2sus!4v1712300000000"
+              src="https://www.google.com/maps/d/embed?mid=1BhrHVWGj21ruUX0-Y4-CmuFd4y3KQCk"
               width="100%"
               height="100%"
               style={{border:0}}
