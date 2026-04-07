@@ -704,6 +704,12 @@ async function sendToJROne(){
   try{
     await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});
   }catch(e){console.error('Send error:',e)}
+
+  // ALSO send to BuilderPrime via our own server-side route (added 2026-04-06 by EA)
+  // — the API key stays on the server, never exposed in the browser bundle
+  try{
+    await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  }catch(e){console.error('BP send error:',e)}
 }
 
 // ═══ SEND TO CUSTOMER ═══
@@ -746,6 +752,10 @@ async function sendToCustomer(){
 
   try{
     await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});
+    // ALSO send to BuilderPrime via our server-side route (added 2026-04-06 by EA)
+    try{
+      await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    }catch(bpErr){console.error('BP send error:',bpErr)}
     showToast('✓ Estimate sent to '+email);
     btn.textContent='✓ SENT!';
     setTimeout(()=>{btn.textContent='SEND MY ESTIMATE';btn.disabled=false},3000);
