@@ -1,4 +1,6 @@
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
+import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
+import { triggerOutboundCall } from "@/lib/vapi-client";
 
 // =============================================================================
 // JR One — Estimator Lead API
@@ -179,6 +181,28 @@ export async function POST(request) {
       }
     } else {
       console.warn("⚠ BUILDER_PRIME_API_KEY not set in environment — skipping BP create");
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // After-hours voice callback (fire-and-forget) — see send-lead/route.js
+    // for rationale. Runs post-response via next/server `after()` so the BP
+    // path is never blocked or affected by Vapi latency / errors.
+    // ─────────────────────────────────────────────────────────────────────────
+    if (bpResult.ok && bpResult.opportunity_id && isAfterHours() && isVoiceAgentEnabled()) {
+      after(async () => {
+        try {
+          await triggerOutboundCall({
+            phone: normalizePhone(phone),
+            language: "en",
+            bpOpportunityId: bpResult.opportunity_id,
+            customerName: customerName || "Estimator Lead",
+            leadSource: "estimator-lead",
+          });
+          console.log(`✓ Vapi after-hours callback triggered for estimator opp ${bpResult.opportunity_id}`);
+        } catch (vapiErr) {
+          console.error(`✗ Vapi trigger failed (non-fatal): ${vapiErr.message}`);
+        }
+      });
     }
 
     return NextResponse.json({

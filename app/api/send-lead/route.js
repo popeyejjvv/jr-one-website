@@ -1,5 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
 import nodemailer from "nodemailer";
+import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
+import { triggerOutboundCall } from "@/lib/vapi-client";
 
 // =============================================================================
 // JR One — Lead Submission API
@@ -135,6 +137,29 @@ export async function POST(request) {
       }
     } else {
       console.warn("⚠ BUILDER_PRIME_API_KEY not set in environment — skipping BP create");
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // 1b. ADDITIVE: After-hours voice callback via Vapi (fire-and-forget)
+    //     Only fires if BP create succeeded AND it's currently after hours
+    //     AND the kill switch is off. Uses next/server `after()` so it runs
+    //     post-response — never blocks, slows, or fails the BP creation path.
+    // ─────────────────────────────────────────────────────────────────────────
+    if (bpResult.ok && bpResult.opportunity_id && isAfterHours() && isVoiceAgentEnabled()) {
+      after(async () => {
+        try {
+          await triggerOutboundCall({
+            phone: normalizedPhone,
+            language: "en",
+            bpOpportunityId: bpResult.opportunity_id,
+            customerName: name,
+            leadSource: "send-lead",
+          });
+          console.log(`✓ Vapi after-hours callback triggered for opp ${bpResult.opportunity_id}`);
+        } catch (vapiErr) {
+          console.error(`✗ Vapi trigger failed (non-fatal) for opp ${bpResult.opportunity_id}: ${vapiErr.message}`);
+        }
+      });
     }
 
     // ─────────────────────────────────────────────────────────────────────────
