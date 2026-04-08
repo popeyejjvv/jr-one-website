@@ -38,8 +38,9 @@ const localBusinessSchema = {
   numberOfEmployees: "15-20",
   knowsLanguage: ["English", "Spanish"],
   sameAs: [
-    "https://www.facebook.com/jronealuminum",
+    "https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/",
     "https://www.instagram.com/jronegutters",
+    "https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.9614157,-82.5032424,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675!16s%2Fg%2F11fcvc1w45",
   ],
 };
 

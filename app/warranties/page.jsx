@@ -48,6 +48,27 @@ const T = {
       { title:"Vinyl Soffit/Siding", desc:"Manufacturer warranties vary by brand. Typically limited lifetime warranties covering defects in material." },
       { title:"Gutter Guards", desc:"Guard manufacturer warranties vary by product type. Documentation provided at installation." },
     ],
+    downloadTag: "DOWNLOAD CENTER",
+    downloadTitle: "YOUR WARRANTY DOCUMENTS",
+    downloadIntro: "Save these to your records. Both available in English and Spanish.",
+    englishPdf: "ENGLISH PDF",
+    spanishPdf: "ESPAÑOL PDF",
+    downloadDocs: [
+      {
+        icon: "📄",
+        title: "Consumer Warranty",
+        desc: "For residential installations. Covers our 3-year workmanship warranty plus the 20-year manufacturer paint warranty on painted aluminum products. Includes coverage details, conditions, and how to file a claim.",
+        en: "JR_One_Consumer_Warranty.pdf",
+        es: "es-JR_One_Consumer_Warranty.pdf",
+      },
+      {
+        icon: "🏗️",
+        title: "Commercial Warranty",
+        desc: "For commercial projects. Same 3-year workmanship + 20-year paint coverage, written for commercial clients with direct line access to ownership for any warranty claim.",
+        en: "JR_One_Commercial_Warranty.pdf",
+        es: "es-JR_One_Commercial_Warranty.pdf",
+      },
+    ],
     faqTag: "FAQ",
     faqTitle: "WARRANTY QUESTIONS",
     faqs: [
@@ -96,6 +117,27 @@ const T = {
       { title:"Cobre", desc:"El cobre no tiene garantía tradicional porque no falla. El material en sí dura más que cualquier período de garantía." },
       { title:"Sofito/Revestimiento de Vinilo", desc:"Las garantías del fabricante varían según la marca. Típicamente garantías limitadas de por vida que cubren defectos en el material." },
       { title:"Protectores de Canaletas", desc:"Las garantías del fabricante de protectores varían según el tipo de producto. Documentación proporcionada en la instalación." },
+    ],
+    downloadTag: "CENTRO DE DESCARGAS",
+    downloadTitle: "SUS DOCUMENTOS DE GARANTÍA",
+    downloadIntro: "Guárdelos para sus registros. Ambos disponibles en inglés y español.",
+    englishPdf: "ENGLISH PDF",
+    spanishPdf: "ESPAÑOL PDF",
+    downloadDocs: [
+      {
+        icon: "📄",
+        title: "Garantía del Consumidor",
+        desc: "Para instalaciones residenciales. Cubre nuestra garantía de mano de obra de 3 años más la garantía de pintura del fabricante de 20 años en productos de aluminio pintado. Incluye detalles de cobertura, condiciones y cómo presentar un reclamo.",
+        en: "JR_One_Consumer_Warranty.pdf",
+        es: "es-JR_One_Consumer_Warranty.pdf",
+      },
+      {
+        icon: "🏗️",
+        title: "Garantía Comercial",
+        desc: "Para proyectos comerciales. La misma cobertura de mano de obra de 3 años + pintura de 20 años, redactada para clientes comerciales con línea directa con la dirección para cualquier reclamo de garantía.",
+        en: "JR_One_Commercial_Warranty.pdf",
+        es: "es-JR_One_Commercial_Warranty.pdf",
+      },
     ],
     faqTag: "PREGUNTAS FRECUENTES",
     faqTitle: "PREGUNTAS SOBRE GARANTÍAS",
@@ -183,6 +225,29 @@ export default function WarrantyPage() {
               <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"20px"}}>
                 <h3 style={{fontFamily:f.h,fontSize:"14px",fontWeight:700,color:C.gold,marginBottom:"8px"}}>{item.title}</h3>
                 <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,lineHeight:1.55}}>{item.desc}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* DOWNLOAD CENTER */}
+      <section style={{background:C.bg,padding:"80px 24px"}}>
+        <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
+          <Tag>{t.downloadTag}</Tag>
+          <h2 style={{...secTitle,color:C.white}}>{t.downloadTitle}</h2>
+          <GoldBar />
+          <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,maxWidth:"600px",margin:"0 auto 40px"}}>{t.downloadIntro}</p>
+          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",gap:"20px",textAlign:"left"}}>
+            {t.downloadDocs.map((doc,i) =>
+              <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px"}}>
+                <div style={{fontSize:"28px",marginBottom:"8px"}}>{doc.icon}</div>
+                <h3 style={{fontFamily:f.h,fontSize:"16px",fontWeight:700,color:C.gold,marginBottom:"10px",letterSpacing:"1px"}}>{doc.title}</h3>
+                <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,lineHeight:1.6,marginBottom:"18px"}}>{doc.desc}</p>
+                <div style={{display:"flex",gap:"10px",flexWrap:"wrap"}}>
+                  <a href={`/documents/${doc.en}`} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"6px",padding:"10px 16px",fontFamily:f.h,fontSize:"11px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"6px",textDecoration:"none"}}>↓ {t.englishPdf}</a>
+                  <a href={`/documents/${doc.es}`} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"6px",padding:"10px 16px",fontFamily:f.h,fontSize:"11px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,background:"transparent",border:`1.5px solid ${C.gold}`,borderRadius:"6px",textDecoration:"none"}}>↓ {t.spanishPdf}</a>
+                </div>
               </div>
             )}
           </div>

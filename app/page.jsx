@@ -746,9 +746,9 @@ export default function JROneHomepage() {
             <p style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px" }}>Tampa, FL</p>
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
               {[
-                { name: "Facebook", href: "https://www.facebook.com/jronealuminum" },
+                { name: "Facebook", href: "https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/" },
                 { name: "Instagram", href: "https://www.instagram.com/jronegutters" },
-                { name: "Google", href: "https://g.co/kgs/jronealuminum" },
+                { name: "Google", href: "https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.9614157,-82.5032424,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675!16s%2Fg%2F11fcvc1w45" },
               ].map((social, i) => (
                 <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>{social.name}</a>
               ))}

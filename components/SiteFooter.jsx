@@ -33,6 +33,15 @@ const T = {
     services: "SERVICES",
     serviceAreas: "SERVICE AREAS",
     contact: "CONTACT",
+    resources: "RESOURCES",
+    resourceLinks: [
+      { label: "Warranties", href: "/warranties" },
+      { label: "License & Insurance", href: "/resources" },
+      { label: "Care Guides", href: "/resources" },
+      { label: "About Us", href: "/about" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Financing", href: "/financing" },
+    ],
     copyright: "© 2026 JR One Aluminum LLC. All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Service",
@@ -43,6 +52,15 @@ const T = {
     services: "SERVICIOS",
     serviceAreas: "ÁREAS DE SERVICIO",
     contact: "CONTACTO",
+    resources: "RECURSOS",
+    resourceLinks: [
+      { label: "Garantías", href: "/warranties" },
+      { label: "Licencia y Seguro", href: "/resources" },
+      { label: "Guías de Cuidado", href: "/resources" },
+      { label: "Sobre Nosotros", href: "/about" },
+      { label: "Preguntas Frecuentes", href: "/faq" },
+      { label: "Financiamiento", href: "/financing" },
+    ],
     copyright: "© 2026 JR One Aluminum LLC. Todos los derechos reservados.",
     privacy: "Política de Privacidad",
     terms: "Términos de Servicio",
@@ -115,16 +133,28 @@ export default function SiteFooter() {
             ))}
           </div>
 
+          {/* Resources */}
+          <div>
+            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.resources}</h4>
+            {t.resourceLinks.map((link, i) => (
+              <a key={i} href={link.href} style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}
+                onMouseOver={e => e.target.style.color = C.gold}
+                onMouseOut={e => e.target.style.color = C.muted}>
+                {link.label}
+              </a>
+            ))}
+          </div>
+
           {/* Contact */}
           <div>
             <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.contact}</h4>
             <a href="tel:8444443114" style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.gold, marginBottom: "8px", fontWeight: 600, textDecoration: "none" }}>(844) 444-3114</a>
             <a href="mailto:info@jronegutters.com" style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>info@jronegutters.com</a>
             <p style={{ fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "16px" }}>Tampa, FL</p>
-            <div style={{ display: "flex", gap: "12px" }}>
-              <a href="https://www.facebook.com/jronealuminum" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Facebook</a>
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              <a href="https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Facebook</a>
               <a href="https://www.instagram.com/jronegutters" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Instagram</a>
-              <a href="https://www.google.com/maps/place/JR+One+Aluminum+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Google</a>
+              <a href="https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.9614157,-82.5032424,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675!16s%2Fg%2F11fcvc1w45" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Google</a>
             </div>
           </div>
         </div>
