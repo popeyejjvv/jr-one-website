@@ -112,11 +112,27 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
+        {/* Ahrefs Site Audit — HTML tag verification (added 2026-04-09) */}
+        <meta
+          name="ahrefs-site-verification"
+          content="19a129f813202b159a550ff53c4ed7764b9664f901a134c96e3dae30520dae28"
+        />
       </head>
       <body>
         <Providers>
         {children}
         </Providers>
+
+        {/* ── Ahrefs Web Analytics ──
+            Privacy-first, cookie-less analytics included with Ahrefs Lite.
+            Installed 2026-04-09 during Phase 1 SEO activation.
+            See ~/Desktop/JRONE/seo/ahrefs-baseline-2026-04-09.md */}
+        <Script
+          id="ahrefs-analytics"
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="ZRxzzMEe3FBle/3vIs9F0Q"
+          strategy="afterInteractive"
+        />
 
         {/* ── BuildMyAgent Chatbot ──
             Replace CHATBOT_EMBED_ID with actual embed ID from BuildMyAgent dashboard.
