@@ -339,7 +339,32 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
   const servicesData = lang === "es" ? SERVICES_ES : SERVICES;
   const [formData, setFormData] = useState({name:"",phone:"",email:"",zip:"",service:""});
   const [submitted, setSubmitted] = useState(false);
+  const [formLoading, setFormLoading] = useState(false);
   useEffect(() => { injectFonts(); }, []);
+
+  const handleCityForm = async () => {
+    if (!formData.name || !formData.phone) return;
+    setFormLoading(true);
+    try {
+      const params = new URLSearchParams(window.location.search);
+      await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name, phone: formData.phone, email: formData.email,
+          service: formData.service, zip: formData.zip,
+          page: window.location.pathname, city: city.name, state: "FL",
+          gclid: params.get("gclid") || "",
+          utm_source: params.get("utm_source") || "",
+          utm_medium: params.get("utm_medium") || "",
+          utm_campaign: params.get("utm_campaign") || "",
+          utm_term: params.get("utm_term") || "",
+        }),
+      });
+    } catch {}
+    setSubmitted(true);
+    setFormLoading(false);
+  };
   const secTitle = {fontFamily:f.h,fontSize:"clamp(24px,4vw,36px)",fontWeight:800,letterSpacing:"2px",textAlign:"center",marginBottom:"8px"};
 
   if (!city) return <div style={{padding:"100px 24px",textAlign:"center",fontFamily:f.h,color:C.white,background:C.bg}}>{t.notFound}{Object.keys(CITIES).join(", ")}</div>;
@@ -381,7 +406,7 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
               <select style={{...inputStyle,cursor:"pointer"}} value={formData.service} onChange={e=>setFormData({...formData,service:e.target.value})}>
                 {t.serviceOpts.map((o,i)=><option key={i} value={i===0?"":o}>{o}</option>)}
               </select>
-              <button onClick={()=>setSubmitted(true)} style={{width:"100%",padding:"16px",fontFamily:f.h,fontSize:"13px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",cursor:"pointer"}}>{t.requestQuote}</button>
+              <button onClick={handleCityForm} disabled={formLoading} style={{width:"100%",padding:"16px",fontFamily:f.h,fontSize:"13px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",cursor:"pointer",opacity:formLoading?0.6:1}}>{formLoading ? "..." : t.requestQuote}</button>
               <p style={{fontFamily:f.b,fontSize:"11px",color:"#9CA3AF",textAlign:"center",marginTop:"10px"}}>{t.noSpam}</p>
             </>}
           </div>

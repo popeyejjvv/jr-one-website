@@ -271,9 +271,38 @@ export default function JROneHomepage() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleForm = (e) => {
+  const [formLoading, setFormLoading] = useState(false);
+
+  const handleForm = async (e) => {
     e?.preventDefault?.();
-    setFormSubmitted(true);
+    if (!formData.name || !formData.phone) return;
+    setFormLoading(true);
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const res = await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          service: formData.service,
+          zip: formData.zip,
+          page: window.location.pathname,
+          gclid: params.get("gclid") || "",
+          utm_source: params.get("utm_source") || "",
+          utm_medium: params.get("utm_medium") || "",
+          utm_campaign: params.get("utm_campaign") || "",
+          utm_term: params.get("utm_term") || "",
+        }),
+      });
+      if (res.ok) setFormSubmitted(true);
+      else setFormSubmitted(true);
+    } catch {
+      setFormSubmitted(true);
+    } finally {
+      setFormLoading(false);
+    }
   };
   const handleEmail = (e) => {
     e?.preventDefault?.();

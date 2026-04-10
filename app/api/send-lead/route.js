@@ -63,7 +63,8 @@ function normalizePhone(phone) {
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { name, phone, email, service, zip, message, page, address, city, state } = body;
+    const { name, phone, email, service, zip, message, page, address, city, state,
+            gclid, utm_source, utm_medium, utm_campaign, utm_term } = body;
 
     // ── Validate required fields ──
     if (!name || !phone) {
@@ -127,6 +128,33 @@ export async function POST(request) {
           const oppMatch = bpText.match(/Opportunity:\s*(\d+)/);
           if (oppMatch) bpResult.opportunity_id = oppMatch[1];
           console.log(`✓ Builder Prime lead created (opportunity ${bpResult.opportunity_id || "?"})`);
+
+          // Log Google Ads attribution as a BP activity if any tracking params exist
+          if (bpResult.opportunity_id && (gclid || utm_source || utm_campaign)) {
+            const attrParts = [];
+            if (gclid) attrParts.push(`gclid: ${gclid}`);
+            if (utm_source) attrParts.push(`source: ${utm_source}`);
+            if (utm_medium) attrParts.push(`medium: ${utm_medium}`);
+            if (utm_campaign) attrParts.push(`campaign: ${utm_campaign}`);
+            if (utm_term) attrParts.push(`term: ${utm_term}`);
+            if (page) attrParts.push(`page: ${page}`);
+            try {
+              await fetch(`${BP_BASE_URL}/client-activities/v1`, {
+                method: "POST",
+                headers: {
+                  "x-api-key": process.env.BUILDER_PRIME_API_KEY,
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                },
+                body: JSON.stringify({
+                  opportunityId: parseInt(bpResult.opportunity_id, 10),
+                  description: `[AD ATTRIBUTION] ${attrParts.join(" | ")}`,
+                }),
+              });
+            } catch (attrErr) {
+              console.error(`✗ Attribution activity log failed (non-fatal): ${attrErr.message}`);
+            }
+          }
         } else {
           bpResult.error = `${bpResponse.status}: ${bpText.slice(0, 500)}`;
           console.error(`✗ Builder Prime error: ${bpResult.error}`);
