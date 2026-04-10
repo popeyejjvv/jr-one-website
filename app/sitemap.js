@@ -28,6 +28,13 @@ const STATIC_PAGES = [
   { path: "/govee-lights", priority: 0.6, changeFrequency: "monthly" },
   { path: "/faq", priority: 0.7, changeFrequency: "monthly" },
   { path: "/blog", priority: 0.8, changeFrequency: "daily" },
+  { path: "/insurance-resource-center", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/referral", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/resources", priority: 0.5, changeFrequency: "monthly" },
+  { path: "/estimator", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/drainage-assessment", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/specialty-gutters", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/sagiper", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 export default function sitemap() {

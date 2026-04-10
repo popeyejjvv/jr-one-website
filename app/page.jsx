@@ -91,7 +91,7 @@ const T = {
       { icon: "🏗️", title: "Soffit & Fascia", desc: "Aluminum and vinyl installations that protect your roof edge and improve your home's curb appeal.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Gutter Repair", desc: "Sagging, leaking, or damaged? We fix it right so you don't have to call again.", link: "/gutter-repair" },
       { icon: "📐", title: "Siding", desc: "Vinyl siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
-      { icon: "🧹", title: "Maintenance", desc: "Gutter cleaning, pressure washing, window cleaning, and seasonal maintenance programs.", link: "/maintenance" },
+      { icon: "🧹", title: "Maintenance", desc: "Gutter cleaning, pressure washing, window cleaning, and seasonal maintenance programs.", link: "/service-plans" },
     ],
     whyTitle: "WHY HOMEOWNERS CHOOSE JR ONE",
     whyItems: [
@@ -178,7 +178,7 @@ const T = {
       { icon: "🏗️", title: "Sofito y Fascia", desc: "Instalaciones de aluminio y vinilo que protegen el borde de su techo y mejoran la apariencia de su hogar.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Reparación de Canaletas", desc: "¿Hundidas, con fugas o dañadas? Lo arreglamos bien para que no tenga que llamar de nuevo.", link: "/gutter-repair" },
       { icon: "📐", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo. Protección resistente al clima para hogares de Florida.", link: "/siding" },
-      { icon: "🧹", title: "Mantenimiento", desc: "Limpieza de canaletas, lavado a presión, limpieza de ventanas y programas de mantenimiento.", link: "/maintenance" },
+      { icon: "🧹", title: "Mantenimiento", desc: "Limpieza de canaletas, lavado a presión, limpieza de ventanas y programas de mantenimiento.", link: "/service-plans" },
     ],
     whyTitle: "POR QUÉ LOS PROPIETARIOS ELIGEN JR ONE",
     whyItems: [
