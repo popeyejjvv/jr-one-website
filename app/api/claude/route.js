@@ -19,7 +19,10 @@ export async function POST(request) {
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        // 2026-04-11: swapped from claude-sonnet-4 → claude-haiku-4-5 after
+        // the API credit blowout. Contact form only needs lead routing,
+        // not creative writing — Haiku is ~15x cheaper for identical function.
+        model: "claude-haiku-4-5-20251001",
         max_tokens: 1024,
         system: body.system || "",
         messages: body.messages || [],
