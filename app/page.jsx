@@ -769,6 +769,19 @@ export default function JROneHomepage() {
             ))}
           </div>
           <div>
+            <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{lang === "en" ? "RESOURCES" : "RECURSOS"}</h4>
+            {[
+              { en: "Warranties", es: "Garantías", href: "/warranties" },
+              { en: "License & Insurance", es: "Licencia y Seguro", href: "/resources" },
+              { en: "Care Guides", es: "Guías de Cuidado", href: "/resources" },
+              { en: "About Us", es: "Sobre Nosotros", href: "/about" },
+              { en: "FAQ", es: "Preguntas Frecuentes", href: "/faq" },
+              { en: "Financing", es: "Financiamiento", href: "/financing" },
+            ].map((item, i) => (
+              <a key={i} href={item.href} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{lang === "en" ? item.en : item.es}</a>
+            ))}
+          </div>
+          <div>
             <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerContact}</h4>
             <a href="tel:8444443114" style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.gold, marginBottom: "8px", fontWeight: 600, textDecoration: "none" }}>{t.phone}</a>
             <a href="mailto:info@jronegutters.com" style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{t.email}</a>
