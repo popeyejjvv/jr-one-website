@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JR One Aluminum — Aerial Estimator</title>
+<meta name="description" content="Free instant aerial estimate from JR One Aluminum — Tampa Bay's seamless gutter, soffit, fascia, and leaf guard specialists.">
+<meta property="og:title" content="JR One Aluminum — Aerial Estimator">
+<meta property="og:description" content="Measure your home from the sky and get an instant price range in under 2 minutes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.jronegutters.com/estimator">
+<link rel="canonical" href="https://www.jronegutters.com/estimator">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -19,6 +25,10 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .brand-text{font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;letter-spacing:1px;color:var(--white)}
 .brand-text span{color:var(--gold)}
 .brand-sub{font-size:10px;color:var(--gray-med);letter-spacing:2px;text-transform:uppercase}
+.lang-toggle{display:flex;gap:2px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;padding:2px;flex-shrink:0}
+.lang-toggle button{padding:5px 10px;background:transparent;border:none;color:var(--gray-med);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.5px;cursor:pointer;border-radius:4px;transition:all 0.15s}
+.lang-toggle button.active{background:var(--gold);color:var(--navy-deep)}
+.lang-toggle button:hover:not(.active){color:var(--offwhite)}
 .search-wrap{flex:1;max-width:500px;position:relative}
 .search-wrap input{width:100%;padding:10px 16px 10px 40px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:8px;color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s}
 .search-wrap input:focus{border-color:var(--gold)}
@@ -45,10 +55,10 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .mode-btn:hover{border-color:var(--gold-warm)}
 .mode-btn.active{background:rgba(200,149,46,0.15);border-color:var(--gold);color:var(--gold)}
 .mode-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
-.story-selector{display:flex;gap:4px;margin-top:10px}
-.story-btn{flex:1;padding:8px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;color:var(--gray-med);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;cursor:pointer;text-align:center;transition:all 0.2s}
-.story-btn:hover{border-color:var(--gold-warm);color:var(--offwhite)}
-.story-btn.active{background:rgba(200,149,46,0.12);border-color:var(--gold);color:var(--gold)}
+.story-selector,.size-selector{display:flex;gap:4px;margin-top:10px}
+.story-btn,.size-btn{flex:1;padding:8px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;color:var(--gray-med);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;cursor:pointer;text-align:center;transition:all 0.2s}
+.story-btn:hover,.size-btn:hover{border-color:var(--gold-warm);color:var(--offwhite)}
+.story-btn.active,.size-btn.active{background:rgba(200,149,46,0.12);border-color:var(--gold);color:var(--gold)}
 .segment-list{margin-top:10px}
 .segment-item{display:flex;align-items:center;justify-content:space-between;padding:9px 11px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;margin-bottom:5px;font-size:13px;transition:background 0.15s}
 .segment-item:hover{background:var(--navy-slate)}
@@ -67,22 +77,24 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .total-row.grand .t-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px}
 .total-row.grand .t-value{font-size:17px}
 
-/* PHONE GATE */
-.gate-overlay{padding:30px 16px;text-align:center}
-.gate-overlay .gate-icon{font-size:44px;margin-bottom:14px}
-.gate-overlay h3{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:6px}
-.gate-overlay p{font-size:13px;color:var(--gray-med);line-height:1.5;margin-bottom:20px}
-.gate-input{width:100%;padding:14px 16px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:8px;color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:16px;outline:none;text-align:center;letter-spacing:1px;transition:border-color 0.2s;margin-bottom:10px}
-.gate-input:focus{border-color:var(--gold)}
-.gate-input::placeholder{color:var(--gray-med);letter-spacing:0}
-.gate-submit{width:100%;padding:14px;background:linear-gradient(135deg,var(--gold),var(--gold-deep));border:none;border-radius:8px;color:var(--navy-deep);font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.5px;cursor:pointer;transition:filter 0.2s}
-.gate-submit:hover{filter:brightness(1.1)}
-.gate-submit:disabled{opacity:0.5;cursor:not-allowed}
-.gate-note{font-size:11px;color:var(--gray-med);margin-top:10px;line-height:1.4}
-.gate-lock{display:inline-block;margin-right:4px}
+/* SOFT GATE (inline price reveal) */
+.soft-gate{background:linear-gradient(135deg,var(--navy),rgba(200,149,46,0.12));border:1px solid rgba(200,149,46,0.45);border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:14px}
+.soft-gate .gate-icon{font-size:26px;margin-bottom:6px}
+.soft-gate h3{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:4px}
+.soft-gate p{font-size:12px;color:var(--gray-med);line-height:1.5;margin-bottom:12px}
+.soft-gate input{width:100%;padding:12px 14px;background:var(--navy-deep);border:1px solid var(--navy-slate);border-radius:8px;color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:15px;outline:none;text-align:center;letter-spacing:1px;transition:border-color 0.2s;margin-bottom:8px}
+.soft-gate input:focus{border-color:var(--gold)}
+.soft-gate input::placeholder{color:var(--gray-med);letter-spacing:0}
+.soft-gate button{width:100%;padding:12px;background:linear-gradient(135deg,var(--gold),var(--gold-deep));border:none;border-radius:8px;color:var(--navy-deep);font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.5px;cursor:pointer;transition:filter 0.2s}
+.soft-gate button:hover:not(:disabled){filter:brightness(1.1)}
+.soft-gate button:disabled{opacity:0.5;cursor:not-allowed}
+.soft-gate .gate-fine{font-size:10px;color:var(--gray-med);margin-top:8px}
+
+/* PRICE BLUR (soft-gate reveal) */
+.price-hidden{filter:blur(8px);user-select:none;pointer-events:none;transition:filter 0.3s ease}
 
 /* ESTIMATE PANEL */
-.estimate-hero{text-align:center;padding:22px 16px;background:linear-gradient(135deg,var(--navy),rgba(200,149,46,0.08));border:1px solid rgba(200,149,46,0.3);border-radius:12px;margin-bottom:14px}
+.estimate-hero{text-align:center;padding:22px 16px;background:linear-gradient(135deg,var(--navy),rgba(200,149,46,0.08));border:1px solid rgba(200,149,46,0.3);border-radius:12px;margin-bottom:14px;position:relative}
 .est-label{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray-med);margin-bottom:6px}
 .est-range{font-family:'Montserrat',sans-serif;font-weight:800;font-size:26px;color:var(--gold);margin-bottom:4px}
 .est-note{font-size:11px;color:var(--gray-med);line-height:1.5}
@@ -189,145 +201,151 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 <div class="header">
   <div class="header-brand">
     <a href="/" style="text-decoration:none;font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:var(--white);letter-spacing:0.5px">JR <span style="color:var(--gold)">ONE</span> <span style="color:var(--white);font-size:16px">★</span></a>
-    <div class="brand-sub">Aerial Estimator</div>
+    <div class="brand-sub" data-i18n="aerial_estimator">Aerial Estimator</div>
   </div>
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="addressInput" placeholder="Enter your address to get started" autocomplete="off"/>
+    <input type="text" id="addressInput" placeholder="Enter your address to get started" data-i18n-placeholder="search_placeholder" autocomplete="off"/>
     <div class="search-results" id="searchResults"></div>
+  </div>
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button type="button" id="langEn" class="active" onclick="setLang('en')">EN</button>
+    <button type="button" id="langEs" onclick="setLang('es')">ES</button>
   </div>
 </div>
 
 <div class="main-layout">
 <div class="sidebar">
   <div class="tool-tabs">
-    <div class="tool-tab active" onclick="switchTab('measure')"><span class="tool-tab-icon">📐</span>MEASURE</div>
-    <div class="tool-tab" onclick="switchTab('estimate')"><span class="tool-tab-icon">💰</span>MY ESTIMATE</div>
+    <div class="tool-tab active" onclick="switchTab('measure')"><span class="tool-tab-icon">📐</span><span data-i18n="tab_measure">MEASURE</span></div>
+    <div class="tool-tab" onclick="switchTab('estimate')"><span class="tool-tab-icon">💰</span><span data-i18n="tab_estimate">MY ESTIMATE</span></div>
   </div>
 
   <!-- ═══ MEASURE PANEL ═══ -->
   <div class="measure-panel" id="measurePanel">
     <div class="panel-section">
-      <div class="panel-label">What Are You Measuring?</div>
+      <div class="panel-label" data-i18n="what_measuring">What Are You Measuring?</div>
       <div class="mode-selector">
-        <button class="mode-btn active" data-mode="gutter" onclick="setMode('gutter')"><span class="mode-dot" style="background:#4A9EFF"></span>Gutters</button>
-        <button class="mode-btn" data-mode="soffit" onclick="setMode('soffit')"><span class="mode-dot" style="background:#FF6B6B"></span>Soffit</button>
-        <button class="mode-btn" data-mode="fascia" onclick="setMode('fascia')"><span class="mode-dot" style="background:#51CF66"></span>Fascia</button>
-        <button class="mode-btn" data-mode="guard" onclick="setMode('guard')"><span class="mode-dot" style="background:#FFA94D"></span>Leaf Guard</button>
+        <button class="mode-btn active" data-mode="gutter" onclick="setMode('gutter')"><span class="mode-dot" style="background:#4A9EFF"></span><span data-i18n="gutter_label">Gutters</span></button>
+        <button class="mode-btn" data-mode="soffit" onclick="setMode('soffit')"><span class="mode-dot" style="background:#FF6B6B"></span><span data-i18n="soffit_label">Soffit</span></button>
+        <button class="mode-btn" data-mode="fascia" onclick="setMode('fascia')"><span class="mode-dot" style="background:#51CF66"></span><span data-i18n="fascia_label">Fascia</span></button>
+        <button class="mode-btn" data-mode="guard" onclick="setMode('guard')"><span class="mode-dot" style="background:#FFA94D"></span><span data-i18n="guard_label">Leaf Guard</span></button>
       </div>
     </div>
     <div class="panel-section">
-      <div class="panel-label">Home Type</div>
+      <div class="panel-label" data-i18n="gutter_size">Gutter Size</div>
+      <div class="size-selector">
+        <button class="size-btn active" id="size6Btn" onclick="setGutterSize(6)" data-i18n="size_6">6" Standard</button>
+        <button class="size-btn" id="size7Btn" onclick="setGutterSize(7)" data-i18n="size_7">7" Premium</button>
+      </div>
+    </div>
+    <div class="panel-section">
+      <div class="panel-label" data-i18n="home_type">Home Type</div>
       <div class="story-selector">
-        <button class="story-btn active" onclick="setStories(1)">1 Story</button>
-        <button class="story-btn" onclick="setStories(2)">2 Story</button>
-        <button class="story-btn" onclick="setStories(3)">3 Story</button>
+        <button class="story-btn active" onclick="setStories(1)" data-i18n="story_1">1 Story</button>
+        <button class="story-btn" onclick="setStories(2)" data-i18n="story_2">2 Story</button>
+        <button class="story-btn" onclick="setStories(3)" data-i18n="story_3">3 Story</button>
       </div>
     </div>
     <div class="panel-section">
-      <div class="panel-label">Your Measurements</div>
+      <div class="panel-label" data-i18n="your_measurements">Your Measurements</div>
       <div class="segment-list" id="segmentList">
-        <div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;">Search your address above, then<br>click along your roof edges to measure.</div>
+        <div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;" data-i18n-html="measure_help">Search your address above, then<br>click along your roof edges to measure.</div>
       </div>
     </div>
     <div class="panel-section" id="totalsSection" style="display:none">
-      <div class="panel-label">Summary</div>
+      <div class="panel-label" data-i18n="summary">Summary</div>
       <div class="totals-card">
-        <div class="total-row" id="totalGutter" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#4A9EFF;margin-right:6px"></span>Gutters</span><span class="t-value" id="totalGutterVal">0 ft</span></div>
-        <div class="total-row" id="totalDownspout" style="display:none"><span class="t-label" style="padding-left:16px"><span class="t-sub">↳ Downspouts (auto)</span></span><span class="t-value" style="font-size:12px" id="totalDownspoutVal">0</span></div>
-        <div class="total-row" id="totalSoffit" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FF6B6B;margin-right:6px"></span>Soffit</span><span class="t-value" id="totalSoffitVal">0 ft</span></div>
-        <div class="total-row" id="totalFascia" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#51CF66;margin-right:6px"></span>Fascia</span><span class="t-value" id="totalFasciaVal">0 ft</span></div>
-        <div class="total-row" id="totalGuard" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FFA94D;margin-right:6px"></span>Leaf Guard</span><span class="t-value" id="totalGuardVal">0 ft</span></div>
-        <div class="total-row grand"><span class="t-label">Total Linear Feet</span><span class="t-value" id="grandTotal">0 ft</span></div>
+        <div class="total-row" id="totalGutter" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#4A9EFF;margin-right:6px"></span><span data-i18n="gutter_label">Gutters</span></span><span class="t-value" id="totalGutterVal">0 ft</span></div>
+        <div class="total-row" id="totalDownspout" style="display:none"><span class="t-label" style="padding-left:16px"><span class="t-sub" data-i18n="downspouts_auto">↳ Downspouts (auto)</span></span><span class="t-value" style="font-size:12px" id="totalDownspoutVal">0</span></div>
+        <div class="total-row" id="totalSoffit" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FF6B6B;margin-right:6px"></span><span data-i18n="soffit_label">Soffit</span></span><span class="t-value" id="totalSoffitVal">0 ft</span></div>
+        <div class="total-row" id="totalFascia" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#51CF66;margin-right:6px"></span><span data-i18n="fascia_label">Fascia</span></span><span class="t-value" id="totalFasciaVal">0 ft</span></div>
+        <div class="total-row" id="totalGuard" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FFA94D;margin-right:6px"></span><span data-i18n="guard_label">Leaf Guard</span></span><span class="t-value" id="totalGuardVal">0 ft</span></div>
+        <div class="total-row grand"><span class="t-label" data-i18n="total_lf">Total Linear Feet</span><span class="t-value" id="grandTotal">0 ft</span></div>
       </div>
     </div>
     <div class="panel-section">
       <div class="action-row">
-        <button class="action-btn secondary" onclick="undoLast()">↩ Undo</button>
-        <button class="action-btn secondary" onclick="finishSegment()">✓ Finish Line</button>
+        <button class="action-btn secondary" onclick="undoLast()" data-i18n="undo">↩ Undo</button>
+        <button class="action-btn secondary" onclick="finishSegment()" data-i18n="finish_line">✓ Finish Line</button>
       </div>
       <div class="action-row">
-        <button class="action-btn primary" onclick="switchTab('estimate')">SEE MY ESTIMATE →</button>
-        <button class="action-btn danger" onclick="clearAll()">Clear All</button>
+        <button class="action-btn primary" onclick="switchTab('estimate')" data-i18n="see_estimate">SEE MY ESTIMATE →</button>
+        <button class="action-btn danger" onclick="clearAll()" data-i18n="clear_all">Clear All</button>
       </div>
     </div>
     <div class="instructions">
-      <div class="inst-title">📐 How to Use</div>
-      <div class="step"><span class="step-num">1</span><span class="step-text"><strong>Search your address</strong> above to find your home on the map</span></div>
-      <div class="step"><span class="step-num">2</span><span class="step-text"><strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, or Leaf Guard</span></div>
-      <div class="step"><span class="step-num">3</span><span class="step-text"><strong>Click along your roof edges</strong> on the map to draw measurement lines</span></div>
-      <div class="step"><span class="step-num">4</span><span class="step-text">Press <span class="kbd">Finish Line</span> when each section is complete</span></div>
-      <div class="step"><span class="step-num">5</span><span class="step-text">Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong></span></div>
-      <div class="inst-note">⚡ <strong>Downspouts calculated automatically</strong> from your gutter footage and home height.</div>
+      <div class="inst-title" data-i18n="how_to_use">📐 How to Use</div>
+      <div class="step"><span class="step-num">1</span><span class="step-text" data-i18n-html="step_1"><strong>Search your address</strong> above to find your home on the map</span></div>
+      <div class="step"><span class="step-num">2</span><span class="step-text" data-i18n-html="step_2"><strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, or Leaf Guard</span></div>
+      <div class="step"><span class="step-num">3</span><span class="step-text" data-i18n-html="step_3"><strong>Click along your roof edges</strong> on the map to draw measurement lines</span></div>
+      <div class="step"><span class="step-num">4</span><span class="step-text" data-i18n-html="step_4">Press <span class="kbd">Finish Line</span> when each section is complete</span></div>
+      <div class="step"><span class="step-num">5</span><span class="step-text" data-i18n-html="step_5">Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong></span></div>
+      <div class="inst-note" data-i18n-html="downspout_note">⚡ <strong>Downspouts calculated automatically</strong> from your gutter footage and home height.</div>
     </div>
   </div>
 
   <!-- ═══ ESTIMATE PANEL ═══ -->
-  <div class="measure-panel" id="estimatePanel" style="display:none">
+  <div class="measure-panel" id="estimatePanel" style="display:none;position:relative">
 
-    <!-- PHONE GATE -->
-    <div id="phoneGate">
-      <div class="gate-overlay">
-        <div class="gate-icon">🔒</div>
-        <h3>Unlock Your Estimate</h3>
-        <p>Enter your phone number to see your personalized estimate and receive a <strong>5% discount code</strong> valid for 30 days.</p>
-        <input type="tel" class="gate-input" id="phoneInput" placeholder="(555) 123-4567" maxlength="14" oninput="formatPhone(this)"/>
-        <button class="gate-submit" id="gateSubmit" onclick="unlockEstimate()" disabled>UNLOCK MY ESTIMATE</button>
-        <div class="gate-note"><span class="gate-lock">🔒</span>Your number is only used to contact you about your estimate. No spam, no sharing.</div>
+    <!-- Loading overlay (shown during PDF/BP pipeline) -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="spinner"></div>
+      <div class="loading-text" data-i18n="generating">GENERATING YOUR ESTIMATE...</div>
+    </div>
+
+    <!-- SOFT GATE (visible until phone submitted) -->
+    <div class="soft-gate" id="softGate">
+      <div class="gate-icon">🔒</div>
+      <h3 data-i18n="gate_title">See Your Price Range</h3>
+      <p data-i18n="gate_sub">Drop your number below and we'll text you this estimate so you have it for 30 days. No spam, no sharing.</p>
+      <input type="tel" id="phoneInput" placeholder="(555) 123-4567" data-i18n-placeholder="gate_placeholder" maxlength="14" oninput="formatPhone(this)"/>
+      <button id="gateSubmit" onclick="unlockEstimate()" disabled data-i18n="gate_btn">REVEAL MY PRICE</button>
+      <div class="gate-fine" data-i18n="gate_fine">Your number is only used to contact you about your estimate.</div>
+    </div>
+
+    <div class="estimate-hero">
+      <div class="est-label" data-i18n="project_range">Your Estimated Project Range</div>
+      <div class="est-range price-hidden" id="heroRange">$0 – $0</div>
+      <div class="est-note" data-i18n-html="based_on_aerial">Based on aerial measurements. Final pricing<br>confirmed with a free on-site consultation.</div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-label" data-i18n="breakdown">Breakdown</div>
+      <div id="breakdownList"></div>
+    </div>
+
+    <!-- DISCOUNT CODE -->
+    <div class="discount-card" id="discountCard" style="display:none">
+      <h4 data-i18n="discount_earned">YOU EARNED 5% OFF YOUR PROJECT</h4>
+      <p style="font-size:12px;color:var(--gray-med);margin-top:4px" data-i18n="discount_thanks">Thank you for using our Aerial Estimator</p>
+      <div class="code-display" id="discountCode">JR1-AE-XXXXX</div>
+      <div class="exp-date"><span data-i18n="valid_through">Valid through</span> <strong id="expDate">—</strong></div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-card" id="ctaCard" style="display:none">
+      <h3 data-i18n="cta_title">Ready to Lock In Your Project?</h3>
+      <p data-i18n="cta_body">Mention your discount code when you call to lock in your 5% savings.</p>
+      <a href="tel:8444443114" class="cta-phone" onclick="trackEvent('estimator_call_click')">📞 (844) 444-3114</a>
+      <span class="cta-or" data-i18n="or_label">or</span>
+      <a href="https://jronegutters.com/contact" class="cta-link" target="_blank" data-i18n="request_consult">Request Free Consultation →</a>
+    </div>
+
+    <!-- EMAIL SELF -->
+    <div class="email-self-section" id="emailSelfSection" style="display:none">
+      <button class="email-self-btn" onclick="toggleEmailForm()" data-i18n="email_me">📧 Email Me My Estimate</button>
+      <div class="email-form" id="emailForm">
+        <input type="text" class="email-field" id="custName" placeholder="Your Name" data-i18n-placeholder="your_name"/>
+        <input type="email" class="email-field" id="custEmail" placeholder="Your Email Address" data-i18n-placeholder="your_email"/>
+        <button class="email-send" id="emailSendBtn" onclick="sendToCustomer()" data-i18n="send_estimate">SEND MY ESTIMATE</button>
       </div>
     </div>
 
-    <!-- ESTIMATE CONTENT (hidden until phone entered) -->
-    <div id="estimateContent" style="display:none">
-      <!-- Loading overlay -->
-      <div class="loading-overlay" id="loadingOverlay">
-        <div class="spinner"></div>
-        <div class="loading-text">GENERATING YOUR ESTIMATE...</div>
-      </div>
+    <div class="disclaimer" data-i18n="disclaimer">Estimates are approximate. Final pricing depends on roof pitch, accessibility, material selection, and existing conditions. All measurements confirmed on-site.</div>
 
-      <div class="estimate-hero">
-        <div class="est-label">Your Estimated Project Range</div>
-        <div class="est-range" id="heroRange">$0 – $0</div>
-        <div class="est-note">Based on aerial measurements. Final pricing<br>confirmed with a free on-site consultation.</div>
-      </div>
-
-      <div class="panel-section">
-        <div class="panel-label">Breakdown</div>
-        <div id="breakdownList"></div>
-      </div>
-
-      <!-- DISCOUNT CODE -->
-      <div class="discount-card">
-        <h4>YOU EARNED 5% OFF YOUR PROJECT</h4>
-        <p style="font-size:12px;color:var(--gray-med);margin-top:4px">Thank you for using our Aerial Estimator</p>
-        <div class="code-display" id="discountCode">JR1-AE-XXXXX</div>
-        <div class="exp-date">Valid through <strong id="expDate">—</strong></div>
-      </div>
-
-      <!-- CTA -->
-      <div class="cta-card">
-        <h3>Ready for Your Exact Price?</h3>
-        <p>Mention your discount code when you call to lock in your 5% savings.</p>
-        <a href="tel:8444443114" class="cta-phone">📞 (844) 444-3114</a>
-        <span class="cta-or">or</span>
-        <a href="https://jronegutters.com/contact" class="cta-link" target="_blank">Request Free Consultation →</a>
-      </div>
-
-      <!-- EMAIL SELF -->
-      <div class="email-self-section">
-        <button class="email-self-btn" onclick="toggleEmailForm()">📧 Email Me My Estimate</button>
-        <div class="email-form" id="emailForm">
-          <input type="text" class="email-field" id="custName" placeholder="Your Name"/>
-          <input type="email" class="email-field" id="custEmail" placeholder="Your Email Address"/>
-          <button class="email-send" id="emailSendBtn" onclick="sendToCustomer()">SEND MY ESTIMATE</button>
-        </div>
-      </div>
-
-      <div class="disclaimer">Estimates are approximate. Final pricing depends on roof pitch, accessibility, material selection, and existing conditions. All measurements confirmed on-site.</div>
-
-      <div class="action-row" style="margin-top:14px">
-        <button class="action-btn secondary" onclick="switchTab('measure')">← Back to Measure</button>
-      </div>
+    <div class="action-row" style="margin-top:14px">
+      <button class="action-btn secondary" onclick="switchTab('measure')" data-i18n="back_measure">← Back to Measure</button>
     </div>
   </div>
 </div>
@@ -342,35 +360,198 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <button class="map-ctrl-btn active" id="toggleMeasure" onclick="toggleMeasuring()" title="Toggle Measuring">📐</button>
   </div>
   <div class="status-bar">
-    <div class="status-item"><span>Zoom:</span><span class="val" id="zoomLevel">18</span></div>
-    <div class="status-item"><span>Mode:</span><span class="val gold" id="statusMode">Gutters</span></div>
-    <div class="status-item"><span>Points:</span><span class="val" id="pointCount">0</span></div>
+    <div class="status-item"><span data-i18n="zoom_label">Zoom:</span><span class="val" id="zoomLevel">18</span></div>
+    <div class="status-item"><span data-i18n="mode_label">Mode:</span><span class="val gold" id="statusMode">Gutters</span></div>
+    <div class="status-item"><span data-i18n="points_label">Points:</span><span class="val" id="pointCount">0</span></div>
   </div>
 </div>
 </div>
 
 <script>
-// ═══════════════════════════════════════
-// GOOGLE APPS SCRIPT ENDPOINT
-// Replace this URL after deploying the script
-// ═══════════════════════════════════════
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyAYpIL03rlqDBVf1RPNvILxPQnzZqrsP3RoU7idx2yXiNxIS7JznbbZkGdUplhjxXg/exec';
-
-// ═══ INTERNAL PRICING (+10%) — NEVER SHOWN ═══
-const RATES = { gutter:11.55, soffit:17.60, fascia:14.30, guard:13.20 };
+// ═══ INTERNAL PRICING — NEVER SHOWN TO CUSTOMERS ═══
+// Locked 2026-04-11 per Popeye. Gutters default to 6"; 7" is premium upsell.
+// These rates are used only for internal totals calculation. The PDF and UI
+// show total + range, never per-foot math.
+const RATES = { gutter6:14.00, gutter7:20.00, soffit:28.00, fascia:28.00, guard:13.50 };
 const DS_FOOTAGE = { 1:13, 2:23, 3:33 };
 const DS_COST_PER_FT = 11.00;
 const RANGE_LOW = 0.85, RANGE_HIGH = 1.15;
+function gutterRate(){return RATES['gutter'+gutterSize]}
 
 // ═══ STATE ═══
-let map, measuring = true, currentMode = 'gutter', stories = 1;
+let map, measuring = true, currentMode = 'gutter', stories = 1, gutterSize = 6;
 let segments = [], activePoints = [], activeMarkers = [], activePolyline = null, hoverLine = null;
 let estimateUnlocked = false, currentDiscountCode = '', currentExpDate = '', customerPhone = '';
 let pdfBase64 = '', mapScreenshotBase64 = '';
+let parsedAddress = { city:'', state:'FL', zip:'' };
+let searchResultsCache = [];
+let firstMeasurementTracked = false;
 
 const COLORS = { gutter:'#4A9EFF', soffit:'#FF6B6B', fascia:'#51CF66', guard:'#FFA94D' };
-const LABELS = { gutter:'Gutters', soffit:'Soffit', fascia:'Fascia', guard:'Leaf Guard' };
 const ICONS = { gutter:'🏠', soffit:'🌬️', fascia:'🔧', guard:'🛡️' };
+
+// ═══ BILINGUAL STRINGS ═══
+const STRINGS = {
+  en: {
+    aerial_estimator:'Aerial Estimator',
+    search_placeholder:'Enter your address to get started',
+    tab_measure:'MEASURE', tab_estimate:'MY ESTIMATE',
+    what_measuring:"What Are You Measuring?",
+    gutter_label:'Gutters', soffit_label:'Soffit', fascia_label:'Fascia', guard_label:'Leaf Guard',
+    gutter_size:'Gutter Size', size_6:'6" Standard', size_7:'7" Premium',
+    home_type:'Home Type', story_1:'1 Story', story_2:'2 Story', story_3:'3 Story',
+    your_measurements:'Your Measurements',
+    measure_help:'Search your address above, then<br>click along your roof edges to measure.',
+    summary:'Summary', downspouts_auto:'↳ Downspouts (auto)', total_lf:'Total Linear Feet',
+    undo:'↩ Undo', finish_line:'✓ Finish Line', see_estimate:'SEE MY ESTIMATE →', clear_all:'Clear All',
+    how_to_use:'📐 How to Use',
+    step_1:'<strong>Search your address</strong> above to find your home on the map',
+    step_2:"<strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, or Leaf Guard",
+    step_3:'<strong>Click along your roof edges</strong> on the map to draw measurement lines',
+    step_4:'Press <span class="kbd">Finish Line</span> when each section is complete',
+    step_5:'Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong>',
+    downspout_note:'⚡ <strong>Downspouts calculated automatically</strong> from your gutter footage and home height.',
+    gate_title:'See Your Price Range',
+    gate_sub:"Drop your number below and we'll text you this estimate so you have it for 30 days. No spam, no sharing.",
+    gate_placeholder:'(555) 123-4567',
+    gate_btn:'REVEAL MY PRICE',
+    gate_fine:'Your number is only used to contact you about your estimate.',
+    project_range:'Your Estimated Project Range',
+    based_on_aerial:'Based on aerial measurements. Final pricing<br>confirmed with a free on-site consultation.',
+    breakdown:'Breakdown',
+    discount_earned:'YOU EARNED 5% OFF YOUR PROJECT',
+    discount_thanks:'Thank you for using our Aerial Estimator',
+    valid_through:'Valid through',
+    cta_title:'Ready to Lock In Your Project?',
+    cta_body:'Mention your discount code when you call to lock in your 5% savings.',
+    or_label:'or',
+    request_consult:'Request Free Consultation →',
+    email_me:'📧 Email Me My Estimate',
+    your_name:'Your Name', your_email:'Your Email Address', send_estimate:'SEND MY ESTIMATE',
+    disclaimer:'Estimates are approximate. Final pricing depends on roof pitch, accessibility, material selection, and existing conditions. All measurements confirmed on-site.',
+    back_measure:'← Back to Measure',
+    generating:'GENERATING YOUR ESTIMATE...',
+    zoom_label:'Zoom:', mode_label:'Mode:', points_label:'Points:',
+    measuring_prefix:'MEASURING ',
+    no_results:'No results found',
+    please_valid_email:'Please enter a valid name and email',
+    estimate_sent_jr:'✓ Estimate sent to JR One Aluminum',
+    estimate_sent_to:'✓ Estimate sent to ',
+    error_sending:'Error sending — please try again',
+    sending:'SENDING...',
+    sent:'✓ SENT!',
+    active_suffix:'(active)',
+    gutter_breakdown_title:'Seamless Gutters',
+    gutter_breakdown_sub:function(lf,ds){return lf+' linear feet · '+ds+' downspouts included · '+gutterSize+'" profile'},
+    soffit_breakdown_sub:function(lf){return lf+' linear feet'},
+    fascia_breakdown_sub:function(lf){return lf+' linear feet'},
+    guard_breakdown_sub:function(lf){return lf+' linear feet'},
+    soffit_breakdown_title:'Soffit',
+    fascia_breakdown_title:'Fascia',
+    guard_breakdown_title:'Aluminum Leaf Guard'
+  },
+  es: {
+    aerial_estimator:'Estimador Aéreo',
+    search_placeholder:'Ingresa tu dirección para comenzar',
+    tab_measure:'MEDIR', tab_estimate:'MI ESTIMADO',
+    what_measuring:'¿Qué estás midiendo?',
+    gutter_label:'Canaletas', soffit_label:'Plafón', fascia_label:'Fascia', guard_label:'Protector de Hojas',
+    gutter_size:'Tamaño de Canaleta', size_6:'6" Estándar', size_7:'7" Premium',
+    home_type:'Tipo de Casa', story_1:'1 Piso', story_2:'2 Pisos', story_3:'3 Pisos',
+    your_measurements:'Tus Medidas',
+    measure_help:'Busca tu dirección arriba y luego<br>haz clic en los bordes del techo para medir.',
+    summary:'Resumen', downspouts_auto:'↳ Bajantes (auto)', total_lf:'Pies Lineales Totales',
+    undo:'↩ Deshacer', finish_line:'✓ Terminar Línea', see_estimate:'VER MI ESTIMADO →', clear_all:'Borrar Todo',
+    how_to_use:'📐 Cómo Usar',
+    step_1:'<strong>Busca tu dirección</strong> arriba para encontrar tu casa en el mapa',
+    step_2:'<strong>Elige qué vas a medir</strong> — Canaletas, Plafón, Fascia o Protector',
+    step_3:'<strong>Haz clic en los bordes del techo</strong> para dibujar las líneas de medida',
+    step_4:'Presiona <span class="kbd">Terminar Línea</span> cuando cada sección esté completa',
+    step_5:'Repite para cada servicio que necesites, luego haz clic en <strong>VER MI ESTIMADO</strong>',
+    downspout_note:'⚡ <strong>Los bajantes se calculan automáticamente</strong> según tus pies lineales y la altura de la casa.',
+    gate_title:'Ve Tu Rango de Precio',
+    gate_sub:'Deja tu número y te enviamos este estimado por mensaje para que lo tengas por 30 días. Sin spam, sin compartir.',
+    gate_placeholder:'(555) 123-4567',
+    gate_btn:'VER MI PRECIO',
+    gate_fine:'Tu número solo se usa para contactarte sobre tu estimado.',
+    project_range:'Rango Estimado del Proyecto',
+    based_on_aerial:'Basado en medidas aéreas. El precio final<br>se confirma con una consulta gratuita en sitio.',
+    breakdown:'Desglose',
+    discount_earned:'GANASTE 5% DE DESCUENTO',
+    discount_thanks:'Gracias por usar nuestro Estimador Aéreo',
+    valid_through:'Válido hasta',
+    cta_title:'¿Listo para Asegurar Tu Proyecto?',
+    cta_body:'Menciona tu código de descuento cuando llames para asegurar tu 5% de ahorro.',
+    or_label:'o',
+    request_consult:'Solicitar Consulta Gratis →',
+    email_me:'📧 Envíame Mi Estimado',
+    your_name:'Tu Nombre', your_email:'Tu Correo Electrónico', send_estimate:'ENVIAR MI ESTIMADO',
+    disclaimer:'Los estimados son aproximados. El precio final depende de la pendiente del techo, acceso, selección de materiales y condiciones existentes. Todas las medidas se confirman en sitio.',
+    back_measure:'← Volver a Medir',
+    generating:'GENERANDO TU ESTIMADO...',
+    zoom_label:'Zoom:', mode_label:'Modo:', points_label:'Puntos:',
+    measuring_prefix:'MIDIENDO ',
+    no_results:'No se encontraron resultados',
+    please_valid_email:'Ingresa un nombre y correo válidos',
+    estimate_sent_jr:'✓ Estimado enviado a JR One Aluminum',
+    estimate_sent_to:'✓ Estimado enviado a ',
+    error_sending:'Error al enviar — intenta de nuevo',
+    sending:'ENVIANDO...',
+    sent:'✓ ¡ENVIADO!',
+    active_suffix:'(activo)',
+    gutter_breakdown_title:'Canaletas Continuas',
+    gutter_breakdown_sub:function(lf,ds){return lf+' pies lineales · '+ds+' bajantes incluidos · perfil '+gutterSize+'"'},
+    soffit_breakdown_sub:function(lf){return lf+' pies lineales'},
+    fascia_breakdown_sub:function(lf){return lf+' pies lineales'},
+    guard_breakdown_sub:function(lf){return lf+' pies lineales'},
+    soffit_breakdown_title:'Plafón',
+    fascia_breakdown_title:'Fascia',
+    guard_breakdown_title:'Protector de Aluminio'
+  }
+};
+let lang = (function(){
+  try{
+    const q=new URLSearchParams(location.search).get('lang');
+    if(q==='es'||q==='en')return q;
+    const stored=localStorage.getItem('jr1_lang');
+    if(stored==='es'||stored==='en')return stored;
+    if((navigator.language||'').toLowerCase().startsWith('es'))return 'es';
+  }catch(e){}
+  return 'en';
+})();
+function t(k){const v=(STRINGS[lang]&&STRINGS[lang][k])||STRINGS.en[k]||k;return typeof v==='function'?v:v}
+function tf(k,...args){const v=(STRINGS[lang]&&STRINGS[lang][k])||STRINGS.en[k];return typeof v==='function'?v(...args):v}
+function LABEL(m){return t(m+'_label')}
+function applyLang(){
+  document.documentElement.lang=lang;
+  document.getElementById('langEn').classList.toggle('active',lang==='en');
+  document.getElementById('langEs').classList.toggle('active',lang==='es');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.dataset.i18n; el.textContent=t(k);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{
+    const k=el.dataset.i18nHtml; el.innerHTML=t(k);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
+    const k=el.dataset.i18nPlaceholder; el.placeholder=t(k);
+  });
+  // Re-render dynamic content so LABEL() picks up new language
+  document.getElementById('statusMode').textContent=LABEL(currentMode);
+  document.getElementById('cursorLabel').textContent=t('measuring_prefix')+LABEL(currentMode).toUpperCase();
+  updateSegmentList();
+  if(estimateUnlocked||document.getElementById('estimatePanel').style.display!=='none')renderEstimate();
+}
+function setLang(l){
+  if(l!==lang){lang=l;try{localStorage.setItem('jr1_lang',l)}catch(e){}applyLang();trackEvent('estimator_lang_change',{lang:l});}
+}
+
+// ═══ ANALYTICS ═══
+function trackEvent(name,params){
+  try{
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push(Object.assign({event:name,tool:'estimator'},params||{}));
+  }catch(e){}
+}
 
 // ═══ MAP ═══
 map = L.map('map',{center:[27.9506,-82.4572],zoom:18,maxZoom:21,zoomControl:false,preferCanvas:true});
@@ -399,6 +580,7 @@ function addPoint(ll){
   }
   document.getElementById('pointCount').textContent=activePoints.length;
   updateSegmentList();
+  if(!firstMeasurementTracked){firstMeasurementTracked=true;trackEvent('estimator_measure_start',{mode:currentMode})}
 }
 
 function finishSegment(){
@@ -433,19 +615,29 @@ function setMode(mode){
   else{activeMarkers.forEach(m=>map.removeLayer(m));if(activePolyline)map.removeLayer(activePolyline);if(hoverLine)map.removeLayer(hoverLine);activePoints=[];activeMarkers=[];activePolyline=null;hoverLine=null}
   currentMode=mode;
   document.querySelectorAll('.mode-btn').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
-  document.getElementById('statusMode').textContent=LABELS[mode];
-  document.getElementById('cursorLabel').textContent='MEASURING '+LABELS[mode].toUpperCase();
+  document.getElementById('statusMode').textContent=LABEL(mode);
+  document.getElementById('cursorLabel').textContent=t('measuring_prefix')+LABEL(mode).toUpperCase();
   document.getElementById('cursorDot').style.background=COLORS[mode];
   document.getElementById('pointCount').textContent='0';
 }
-function setStories(n){stories=n;document.querySelectorAll('.story-btn').forEach((b,i)=>b.classList.toggle('active',i===n-1));updateTotals()}
+function setStories(n){stories=n;document.querySelectorAll('.story-btn').forEach((b,i)=>b.classList.toggle('active',i===n-1));updateTotals();if(estimateUnlocked)renderEstimate()}
+function setGutterSize(sz){
+  gutterSize=sz;
+  document.getElementById('size6Btn').classList.toggle('active',sz===6);
+  document.getElementById('size7Btn').classList.toggle('active',sz===7);
+  updateTotals();
+  if(document.getElementById('estimatePanel').style.display!=='none')renderEstimate();
+  trackEvent('estimator_gutter_size_change',{size:sz});
+}
 function toggleMeasuring(){measuring=!measuring;document.getElementById('toggleMeasure').classList.toggle('active',measuring);document.getElementById('cursorMode').classList.toggle('show',measuring);map.getContainer().style.cursor=measuring?'crosshair':'';if(!measuring&&hoverLine){map.removeLayer(hoverLine);hoverLine=null}}
 
 function switchTab(tab){
+  // Auto-finish any in-progress segment when leaving measure tab
+  if(tab==='estimate'&&activePoints.length>=2)finishSegment();
   document.querySelectorAll('.tool-tab').forEach((t,i)=>t.classList.toggle('active',(tab==='measure'&&i===0)||(tab==='estimate'&&i===1)));
   document.getElementById('measurePanel').style.display=tab==='measure'?'':'none';
   document.getElementById('estimatePanel').style.display=tab==='estimate'?'':'none';
-  if(tab==='estimate'&&estimateUnlocked)renderEstimate();
+  if(tab==='estimate'){renderEstimate();trackEvent('estimator_see_estimate')}
 }
 
 function calcFt(p1,p2){const R=20902231,dLat=(p2.lat-p1.lat)*Math.PI/180,dLon=(p2.lng-p1.lng)*Math.PI/180,a=Math.sin(dLat/2)**2+Math.cos(p1.lat*Math.PI/180)*Math.cos(p2.lat*Math.PI/180)*Math.sin(dLon/2)**2;return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a))}
@@ -455,24 +647,24 @@ function getModeTotals(){const t={gutter:0,soffit:0,fascia:0,guard:0};segments.f
 function updateSegmentList(){
   const el=document.getElementById('segmentList');let aLen=0;
   if(activePoints.length>=2)for(let i=1;i<activePoints.length;i++)aLen+=calcFt(activePoints[i-1],activePoints[i]);
-  if(segments.length===0&&activePoints.length<2){el.innerHTML='<div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;">Search your address above, then<br>click along your roof edges to measure.</div>';return}
+  if(segments.length===0&&activePoints.length<2){el.innerHTML='<div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;">'+t('measure_help')+'</div>';return}
   let h='';
-  segments.forEach((s,i)=>{const n=segments.filter((x,j)=>x.mode===s.mode&&j<=i).length;h+=`<div class="segment-item"><div class="segment-info"><span class="segment-color" style="background:${COLORS[s.mode]}"></span><span class="segment-label">${LABELS[s.mode]} #${n}</span></div><div style="display:flex;align-items:center;gap:8px"><span class="segment-ft">${s.totalFt.toFixed(1)} ft</span><button class="segment-delete" onclick="deleteSegment(${i})">✕</button></div></div>`});
-  if(activePoints.length>=2)h+=`<div class="segment-item" style="border-color:${COLORS[currentMode]};opacity:0.7"><div class="segment-info"><span class="segment-color" style="background:${COLORS[currentMode]}"></span><span class="segment-label" style="font-style:italic">${LABELS[currentMode]} (active)</span></div><span class="segment-ft">${aLen.toFixed(1)} ft</span></div>`;
+  segments.forEach((s,i)=>{const n=segments.filter((x,j)=>x.mode===s.mode&&j<=i).length;h+=`<div class="segment-item"><div class="segment-info"><span class="segment-color" style="background:${COLORS[s.mode]}"></span><span class="segment-label">${LABEL(s.mode)} #${n}</span></div><div style="display:flex;align-items:center;gap:8px"><span class="segment-ft">${s.totalFt.toFixed(1)} ft</span><button class="segment-delete" onclick="deleteSegment(${i})">✕</button></div></div>`});
+  if(activePoints.length>=2)h+=`<div class="segment-item" style="border-color:${COLORS[currentMode]};opacity:0.7"><div class="segment-info"><span class="segment-color" style="background:${COLORS[currentMode]}"></span><span class="segment-label" style="font-style:italic">${LABEL(currentMode)} ${t('active_suffix')}</span></div><span class="segment-ft">${aLen.toFixed(1)} ft</span></div>`;
   el.innerHTML=h;
 }
 function deleteSegment(i){const s=segments[i];if(s.polyline)map.removeLayer(s.polyline);s.markers.forEach(m=>map.removeLayer(m));segments.splice(i,1);updateSegmentList();updateTotals()}
 
 function updateTotals(){
-  const t=getModeTotals(),ds=calcDownspouts(t.gutter),has=Object.values(t).some(v=>v>0);
+  const tot=getModeTotals(),ds=calcDownspouts(tot.gutter),has=Object.values(tot).some(v=>v>0);
   document.getElementById('totalsSection').style.display=has?'':'none';
   const show=(id,val,vis)=>{document.getElementById(id).style.display=vis?'':'none';if(vis)document.getElementById(id+'Val').textContent=val};
-  show('totalGutter',t.gutter.toFixed(1)+' ft',t.gutter>0);
-  show('totalDownspout',ds.count+' × '+ds.ftEach+'ft = '+ds.totalFt+' ft',t.gutter>0);
-  show('totalSoffit',t.soffit.toFixed(1)+' ft',t.soffit>0);
-  show('totalFascia',t.fascia.toFixed(1)+' ft',t.fascia>0);
-  show('totalGuard',t.guard.toFixed(1)+' ft',t.guard>0);
-  document.getElementById('grandTotal').textContent=(t.gutter+t.soffit+t.fascia+t.guard).toFixed(1)+' ft';
+  show('totalGutter',tot.gutter.toFixed(1)+' ft',tot.gutter>0);
+  show('totalDownspout',ds.count+' × '+ds.ftEach+'ft = '+ds.totalFt+' ft',tot.gutter>0);
+  show('totalSoffit',tot.soffit.toFixed(1)+' ft',tot.soffit>0);
+  show('totalFascia',tot.fascia.toFixed(1)+' ft',tot.fascia>0);
+  show('totalGuard',tot.guard.toFixed(1)+' ft',tot.guard>0);
+  document.getElementById('grandTotal').textContent=(tot.gutter+tot.soffit+tot.fascia+tot.guard).toFixed(1)+' ft';
 }
 
 // ═══ PHONE GATE ═══
@@ -487,8 +679,13 @@ function formatPhone(el){
 }
 
 async function unlockEstimate(){
+  // Double-click guard — first thing, before any async
+  const submitBtn=document.getElementById('gateSubmit');
+  if(submitBtn.disabled)return;
+  submitBtn.disabled=true;
+
   const phone=document.getElementById('phoneInput').value;
-  if(phone.replace(/\D/g,'').length<10)return;
+  if(phone.replace(/\D/g,'').length<10){submitBtn.disabled=false;return}
   customerPhone=phone;
   estimateUnlocked=true;
 
@@ -499,73 +696,94 @@ async function unlockEstimate(){
 
   // Expiration: 30 days from now
   const exp=new Date();exp.setDate(exp.getDate()+30);
-  currentExpDate=exp.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+  const expLocale=lang==='es'?'es-US':'en-US';
+  currentExpDate=exp.toLocaleDateString(expLocale,{month:'long',day:'numeric',year:'numeric'});
 
-  // Show estimate content, hide gate
-  document.getElementById('phoneGate').style.display='none';
-  document.getElementById('estimateContent').style.display='';
-  document.getElementById('loadingOverlay').classList.add('show');
+  // Reveal: hide soft gate, unblur prices, show discount + cta + email
+  document.getElementById('softGate').style.display='none';
+  document.getElementById('heroRange').classList.remove('price-hidden');
+  document.querySelectorAll('#breakdownList .breakdown-value').forEach(el=>el.classList.remove('price-hidden'));
+  document.getElementById('discountCard').style.display='';
+  document.getElementById('ctaCard').style.display='';
+  document.getElementById('emailSelfSection').style.display='';
 
   renderEstimate();
+  document.getElementById('loadingOverlay').classList.add('show');
+  trackEvent('estimator_unlocked',{size:gutterSize,stories:stories});
 
-  // Capture screenshot & generate PDF
+  // CRITICAL: BP lead capture FIRST — revenue data path.
+  // Screenshot + PDF are best-effort; a failure there must NOT lose the lead.
+  try{
+    await sendToJROne();
+  }catch(e){console.error('BP submission error:',e)}
+
   try{
     await captureMapScreenshot();
-    await generatePDF();
-    await sendToJROne();
-    showToast('✓ Estimate sent to JR One Aluminum');
-  }catch(e){console.error('Pipeline error:',e)}
+  }catch(e){console.error('Screenshot error:',e);mapScreenshotBase64=''}
 
+  try{
+    await generatePDF();
+  }catch(e){console.error('PDF error:',e)}
+
+  showToast(t('estimate_sent_jr'));
   document.getElementById('loadingOverlay').classList.remove('show');
 }
 
 // ═══ RENDER ESTIMATE ═══
 function renderEstimate(){
-  const t=getModeTotals(),ds=calcDownspouts(t.gutter);
+  const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
   let grandBase=0,breakdownHTML='';
-  if(t.gutter>0){const b=t.gutter*RATES.gutter+ds.totalFt*DS_COST_PER_FT;grandBase+=b;breakdownHTML+=bdItem('gutter','rgba(74,158,255,0.15)',ICONS.gutter,'Seamless Gutters',t.gutter.toFixed(0)+' linear feet · '+ds.count+' downspouts included',fmtRange(b))}
-  if(t.soffit>0){const b=t.soffit*RATES.soffit;grandBase+=b;breakdownHTML+=bdItem('soffit','rgba(255,107,107,0.15)',ICONS.soffit,'Soffit',t.soffit.toFixed(0)+' linear feet',fmtRange(b))}
-  if(t.fascia>0){const b=t.fascia*RATES.fascia;grandBase+=b;breakdownHTML+=bdItem('fascia','rgba(81,207,102,0.15)',ICONS.fascia,'Fascia',t.fascia.toFixed(0)+' linear feet',fmtRange(b))}
-  if(t.guard>0){const b=t.guard*RATES.guard;grandBase+=b;breakdownHTML+=bdItem('guard','rgba(255,169,77,0.15)',ICONS.guard,'Aluminum Leaf Guard',t.guard.toFixed(0)+' linear feet',fmtRange(b))}
+  const locked=!estimateUnlocked;
+  const blurCls=locked?' price-hidden':'';
+  if(tot.gutter>0){
+    const b=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;grandBase+=b;
+    breakdownHTML+=bdItem('gutter','rgba(74,158,255,0.15)',ICONS.gutter,t('gutter_breakdown_title'),tf('gutter_breakdown_sub',tot.gutter.toFixed(0),ds.count),fmtRange(b),blurCls);
+  }
+  if(tot.soffit>0){
+    const b=tot.soffit*RATES.soffit;grandBase+=b;
+    breakdownHTML+=bdItem('soffit','rgba(255,107,107,0.15)',ICONS.soffit,t('soffit_breakdown_title'),tf('soffit_breakdown_sub',tot.soffit.toFixed(0)),fmtRange(b),blurCls);
+  }
+  if(tot.fascia>0){
+    const b=tot.fascia*RATES.fascia;grandBase+=b;
+    breakdownHTML+=bdItem('fascia','rgba(81,207,102,0.15)',ICONS.fascia,t('fascia_breakdown_title'),tf('fascia_breakdown_sub',tot.fascia.toFixed(0)),fmtRange(b),blurCls);
+  }
+  if(tot.guard>0){
+    const b=tot.guard*RATES.guard;grandBase+=b;
+    breakdownHTML+=bdItem('guard','rgba(255,169,77,0.15)',ICONS.guard,t('guard_breakdown_title'),tf('guard_breakdown_sub',tot.guard.toFixed(0)),fmtRange(b),blurCls);
+  }
+  if(!breakdownHTML){
+    breakdownHTML='<div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;">'+t('measure_help')+'</div>';
+  }
   document.getElementById('breakdownList').innerHTML=breakdownHTML;
-  document.getElementById('heroRange').textContent='$'+Math.round(grandBase*RANGE_LOW).toLocaleString()+' – $'+Math.round(grandBase*RANGE_HIGH).toLocaleString();
-  document.getElementById('discountCode').textContent=currentDiscountCode;
-  document.getElementById('expDate').textContent=currentExpDate;
+  const heroEl=document.getElementById('heroRange');
+  heroEl.textContent='$'+Math.round(grandBase*RANGE_LOW).toLocaleString()+' – $'+Math.round(grandBase*RANGE_HIGH).toLocaleString();
+  heroEl.classList.toggle('price-hidden',locked);
+  if(currentDiscountCode){document.getElementById('discountCode').textContent=currentDiscountCode;document.getElementById('expDate').textContent=currentExpDate}
 }
 
-function bdItem(m,bg,ic,name,det,range){return`<div class="breakdown-item"><div class="breakdown-left"><div class="breakdown-icon" style="background:${bg}">${ic}</div><div><div class="breakdown-name">${name}</div><div class="breakdown-detail">${det}</div></div></div><div class="breakdown-value">${range}</div></div>`}
+function bdItem(m,bg,ic,name,det,range,blurCls){return`<div class="breakdown-item"><div class="breakdown-left"><div class="breakdown-icon" style="background:${bg}">${ic}</div><div><div class="breakdown-name">${name}</div><div class="breakdown-detail">${det}</div></div></div><div class="breakdown-value${blurCls||''}">${range}</div></div>`}
 function fmtRange(b){return'$'+Math.round(b*RANGE_LOW).toLocaleString()+' – $'+Math.round(b*RANGE_HIGH).toLocaleString()}
 function fmt$(v){return'$'+Math.round(v).toLocaleString()}
 
 // ═══ MAP SCREENSHOT ═══
 async function captureMapScreenshot(){
   try{
-    // Collect all measurement points and fit map to them
     const allPoints=[];
     segments.forEach(s=>s.points.forEach(p=>allPoints.push(p)));
     if(allPoints.length>0){
       const bounds=L.latLngBounds(allPoints);
       map.fitBounds(bounds,{padding:[40,40],animate:false});
     }
-    // Wait for tiles to load after repositioning
     map.invalidateSize();
     await new Promise(r=>setTimeout(r,1500));
-    
+
     const mapEl=document.getElementById('map');
     const canvas=await html2canvas(mapEl,{
-      useCORS:true,
-      allowTaint:true,
-      scale:1,
-      logging:false,
-      backgroundColor:'#0F1E36',
-      scrollX:0,
-      scrollY:0,
-      x:mapEl.getBoundingClientRect().left,
-      y:mapEl.getBoundingClientRect().top,
-      width:mapEl.offsetWidth,
-      height:mapEl.offsetHeight,
-      windowWidth:document.documentElement.offsetWidth,
-      windowHeight:document.documentElement.offsetHeight
+      useCORS:true,allowTaint:true,scale:1,logging:false,backgroundColor:'#0F1E36',
+      scrollX:0,scrollY:0,
+      x:mapEl.getBoundingClientRect().left,y:mapEl.getBoundingClientRect().top,
+      width:mapEl.offsetWidth,height:mapEl.offsetHeight,
+      windowWidth:document.documentElement.offsetWidth,windowHeight:document.documentElement.offsetHeight
     });
     mapScreenshotBase64=canvas.toDataURL('image/jpeg',0.85);
   }catch(e){
@@ -579,7 +797,7 @@ async function generatePDF(){
   const{jsPDF}=window.jspdf;
   const doc=new jsPDF({orientation:'portrait',unit:'mm',format:'letter'});
   const W=215.9,H=279.4,M=15;
-  const t=getModeTotals(),ds=calcDownspouts(t.gutter);
+  const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
   let y=0;
 
   // ── Header bar ──
@@ -594,7 +812,7 @@ async function generatePDF(){
   doc.text('Aerial Property Estimate',M,22);
   doc.setFontSize(8);doc.setTextColor(150,150,150);
   doc.text('(844) 444-3114  |  jronegutters.com',W-M,15,{align:'right'});
-  doc.text('Tampa Bay\'s Aluminum Specialists — 30+ Years',W-M,21,{align:'right'});
+  doc.text('Tampa Bay\'s Aluminum Specialists — Family-Owned',W-M,21,{align:'right'});
 
   y=40;
 
@@ -625,11 +843,11 @@ async function generatePDF(){
   doc.text('MEASUREMENT SUMMARY',M+3,y+5);
   y+=12;
   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(60,60,60);
-  if(t.gutter>0){doc.text('Seamless Gutters:',M+3,y);doc.text(t.gutter.toFixed(1)+' linear feet',M+70,y);y+=5;
+  if(tot.gutter>0){doc.text('Seamless Gutters ('+gutterSize+'"):',M+3,y);doc.text(tot.gutter.toFixed(1)+' linear feet',M+70,y);y+=5;
     doc.text('   Downspouts (auto):',M+3,y);doc.text(ds.count+' units × '+ds.ftEach+'ft = '+ds.totalFt+' ft',M+70,y);y+=5}
-  if(t.soffit>0){doc.text('Soffit:',M+3,y);doc.text(t.soffit.toFixed(1)+' linear feet',M+70,y);y+=5}
-  if(t.fascia>0){doc.text('Fascia:',M+3,y);doc.text(t.fascia.toFixed(1)+' linear feet',M+70,y);y+=5}
-  if(t.guard>0){doc.text('Aluminum Leaf Guard:',M+3,y);doc.text(t.guard.toFixed(1)+' linear feet',M+70,y);y+=5}
+  if(tot.soffit>0){doc.text('Soffit:',M+3,y);doc.text(tot.soffit.toFixed(1)+' linear feet',M+70,y);y+=5}
+  if(tot.fascia>0){doc.text('Fascia:',M+3,y);doc.text(tot.fascia.toFixed(1)+' linear feet',M+70,y);y+=5}
+  if(tot.guard>0){doc.text('Aluminum Leaf Guard:',M+3,y);doc.text(tot.guard.toFixed(1)+' linear feet',M+70,y);y+=5}
   y+=3;
 
   // ── Estimate ranges ──
@@ -639,10 +857,10 @@ async function generatePDF(){
   y+=12;
   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(60,60,60);
   let grandBase=0;
-  if(t.gutter>0){const b=t.gutter*RATES.gutter+ds.totalFt*DS_COST_PER_FT;grandBase+=b;doc.text('Gutters + Downspouts:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
-  if(t.soffit>0){const b=t.soffit*RATES.soffit;grandBase+=b;doc.text('Soffit:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
-  if(t.fascia>0){const b=t.fascia*RATES.fascia;grandBase+=b;doc.text('Fascia:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
-  if(t.guard>0){const b=t.guard*RATES.guard;grandBase+=b;doc.text('Leaf Guard:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
+  if(tot.gutter>0){const b=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;grandBase+=b;doc.text('Gutters + Downspouts ('+gutterSize+'"):',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
+  if(tot.soffit>0){const b=tot.soffit*RATES.soffit;grandBase+=b;doc.text('Soffit:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
+  if(tot.fascia>0){const b=tot.fascia*RATES.fascia;grandBase+=b;doc.text('Fascia:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
+  if(tot.guard>0){const b=tot.guard*RATES.guard;grandBase+=b;doc.text('Leaf Guard:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
   y+=2;
   doc.setDrawColor(200,149,46);doc.setLineWidth(0.3);doc.line(M,y,W-M,y);y+=4;
   doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(27,42,74);
@@ -667,7 +885,7 @@ async function generatePDF(){
   doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(200,149,46);
   doc.text('(844) 444-3114',W/2,H-12,{align:'center'});
   doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(180,180,180);
-  doc.text('jronegutters.com  |  Tampa Bay\'s #1 in Aluminum  |  30+ Years of Excellence',W/2,H-6,{align:'center'});
+  doc.text('jronegutters.com  |  Tampa Bay\'s #1 in Aluminum  |  Family-Owned · Licensed & Insured',W/2,H-6,{align:'center'});
 
   // ── Disclaimer ──
   doc.setFontSize(7);doc.setTextColor(150,150,150);
@@ -679,36 +897,36 @@ async function generatePDF(){
 
 // ═══ SEND TO JR ONE (auto on unlock) ═══
 async function sendToJROne(){
-  const t=getModeTotals(),ds=calcDownspouts(t.gutter);
+  const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
   let grandBase=0;
-  if(t.gutter>0)grandBase+=t.gutter*RATES.gutter+ds.totalFt*DS_COST_PER_FT;
-  if(t.soffit>0)grandBase+=t.soffit*RATES.soffit;
-  if(t.fascia>0)grandBase+=t.fascia*RATES.fascia;
-  if(t.guard>0)grandBase+=t.guard*RATES.guard;
+  if(tot.gutter>0)grandBase+=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;
+  if(tot.soffit>0)grandBase+=tot.soffit*RATES.soffit;
+  if(tot.fascia>0)grandBase+=tot.fascia*RATES.fascia;
+  if(tot.guard>0)grandBase+=tot.guard*RATES.guard;
 
   const payload={
     type:'lead',
     phone:customerPhone,
     address:document.getElementById('addressInput').value||'Not specified',
+    addressCity:parsedAddress.city,
+    addressState:parsedAddress.state,
+    addressZip:parsedAddress.zip,
     stories:stories,
-    measurements:t,
+    gutterSize:gutterSize,
+    measurements:tot,
     downspouts:ds,
     estimateLow:Math.round(grandBase*RANGE_LOW),
     estimateHigh:Math.round(grandBase*RANGE_HIGH),
     discountCode:currentDiscountCode,
     expDate:currentExpDate,
-    timestamp:new Date().toISOString(),
-    pdfBase64:pdfBase64
+    lang:lang,
+    timestamp:new Date().toISOString()
   };
 
+  // Send to BuilderPrime via server-side route (API key stays server-side).
   try{
-    await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});
-  }catch(e){console.error('Send error:',e)}
-
-  // ALSO send to BuilderPrime via our own server-side route (added 2026-04-06 by EA)
-  // — the API key stays on the server, never exposed in the browser bundle
-  try{
-    await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const resp=await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    if(!resp.ok)console.warn('BP capture non-OK:',resp.status);
   }catch(e){console.error('BP send error:',e)}
 }
 
@@ -720,18 +938,19 @@ function toggleEmailForm(){
 
 async function sendToCustomer(){
   const name=document.getElementById('custName').value.trim();
-  const email=document.getElementById('custEmail').value.trim();
-  if(!name||!email||!email.includes('@')){showToast('Please enter your name and email');return}
+  let email=document.getElementById('custEmail').value.trim().toLowerCase();
+  const emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+  if(!name||!emailOk){showToast(t('please_valid_email'));return}
 
   const btn=document.getElementById('emailSendBtn');
-  btn.disabled=true;btn.textContent='SENDING...';
+  btn.disabled=true;btn.textContent=t('sending');
 
-  const t=getModeTotals(),ds=calcDownspouts(t.gutter);
+  const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
   let grandBase=0;
-  if(t.gutter>0)grandBase+=t.gutter*RATES.gutter+ds.totalFt*DS_COST_PER_FT;
-  if(t.soffit>0)grandBase+=t.soffit*RATES.soffit;
-  if(t.fascia>0)grandBase+=t.fascia*RATES.fascia;
-  if(t.guard>0)grandBase+=t.guard*RATES.guard;
+  if(tot.gutter>0)grandBase+=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;
+  if(tot.soffit>0)grandBase+=tot.soffit*RATES.soffit;
+  if(tot.fascia>0)grandBase+=tot.fascia*RATES.fascia;
+  if(tot.guard>0)grandBase+=tot.guard*RATES.guard;
 
   const payload={
     type:'customer',
@@ -739,30 +958,32 @@ async function sendToCustomer(){
     customerName:name,
     customerEmail:email,
     address:document.getElementById('addressInput').value||'Not specified',
+    addressCity:parsedAddress.city,
+    addressState:parsedAddress.state,
+    addressZip:parsedAddress.zip,
     stories:stories,
-    measurements:t,
+    gutterSize:gutterSize,
+    measurements:tot,
     downspouts:ds,
     estimateLow:Math.round(grandBase*RANGE_LOW),
     estimateHigh:Math.round(grandBase*RANGE_HIGH),
     discountCode:currentDiscountCode,
     expDate:currentExpDate,
-    timestamp:new Date().toISOString(),
-    pdfBase64:pdfBase64
+    lang:lang,
+    timestamp:new Date().toISOString()
   };
 
   try{
-    await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});
-    // ALSO send to BuilderPrime via our server-side route (added 2026-04-06 by EA)
-    try{
-      await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    }catch(bpErr){console.error('BP send error:',bpErr)}
-    showToast('✓ Estimate sent to '+email);
-    btn.textContent='✓ SENT!';
-    setTimeout(()=>{btn.textContent='SEND MY ESTIMATE';btn.disabled=false},3000);
+    const resp=await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    if(!resp.ok)console.warn('BP capture non-OK:',resp.status);
+    showToast(t('estimate_sent_to')+email);
+    btn.textContent=t('sent');
+    trackEvent('estimator_email_sent');
+    setTimeout(()=>{btn.textContent=t('send_estimate');btn.disabled=false},3000);
   }catch(e){
     console.error(e);
-    btn.textContent='SEND MY ESTIMATE';btn.disabled=false;
-    showToast('Error sending — please try again');
+    btn.textContent=t('send_estimate');btn.disabled=false;
+    showToast(t('error_sending'));
   }
 }
 
@@ -779,14 +1000,49 @@ searchInput.addEventListener('input',function(){
   clearTimeout(searchTimeout);const q=this.value.trim();
   if(q.length<3){searchResults.classList.remove('show');return}
   searchTimeout=setTimeout(async()=>{
-    try{const r=await fetch('https://nominatim.openstreetmap.org/search?q='+encodeURIComponent(q)+'&format=json&limit=5&countrycodes=us&addressdetails=1',{headers:{'Accept-Language':'en'}});const d=await r.json();
-    if(!d.length){searchResults.innerHTML='<div class="search-result-item" style="color:var(--gray-med)">No results found</div>';searchResults.classList.add('show');return}
-    searchResults.innerHTML=d.map(r=>'<div class="search-result-item" onclick="flyTo('+r.lat+','+r.lon+',\''+r.display_name.replace(/'/g,"\\'")+'\')">'+r.display_name+'</div>').join('');
-    searchResults.classList.add('show')}catch(e){console.error(e)}},400);
+    try{
+      const r=await fetch('https://nominatim.openstreetmap.org/search?q='+encodeURIComponent(q)+'&format=json&limit=5&countrycodes=us&addressdetails=1',{headers:{'Accept-Language':lang}});
+      const d=await r.json();
+      searchResultsCache=d;
+      if(!d.length){searchResults.innerHTML='<div class="search-result-item" style="color:var(--gray-med)">'+t('no_results')+'</div>';searchResults.classList.add('show');return}
+      searchResults.innerHTML=d.map((item,i)=>'<div class="search-result-item" data-idx="'+i+'">'+escapeHtml(item.display_name)+'</div>').join('');
+      searchResults.querySelectorAll('.search-result-item').forEach(el=>{
+        if(el.dataset.idx===undefined)return;
+        el.addEventListener('click',()=>{
+          const idx=parseInt(el.dataset.idx);
+          const item=searchResultsCache[idx];
+          if(item)selectAddress(item);
+        });
+      });
+      searchResults.classList.add('show');
+    }catch(e){console.error(e)}
+  },400);
 });
-searchInput.addEventListener('keydown',e=>{if(e.key==='Enter'){const f=searchResults.querySelector('.search-result-item');if(f)f.click()}});
+searchInput.addEventListener('keydown',e=>{if(e.key==='Enter'){const f=searchResults.querySelector('.search-result-item[data-idx]');if(f)f.click()}});
 document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))searchResults.classList.remove('show')});
+
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+function selectAddress(item){
+  const lat=parseFloat(item.lat),lng=parseFloat(item.lon);
+  map.flyTo([lat,lng],19,{duration:1.5});
+  searchInput.value=item.display_name;
+  searchResults.classList.remove('show');
+  const a=item.address||{};
+  parsedAddress={
+    city:a.city||a.town||a.village||a.hamlet||a.suburb||a.neighbourhood||'',
+    state:'FL',
+    zip:a.postcode||''
+  };
+  trackEvent('estimator_address_selected',{city:parsedAddress.city,zip:parsedAddress.zip});
+}
+
+// Legacy fn kept for backward compat with any inline handler — new path uses selectAddress
 function flyTo(lat,lng,name){map.flyTo([lat,lng],19,{duration:1.5});searchInput.value=name;searchResults.classList.remove('show')}
+
+// ═══ INIT ═══
+applyLang();
+trackEvent('estimator_view');
 </script>
 </body>
 </html>

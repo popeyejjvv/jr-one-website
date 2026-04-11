@@ -20,6 +20,49 @@ import { triggerOutboundCall } from "@/lib/vapi-client";
 const BP_SUBDOMAIN = "jronegutters";
 const BP_BASE_URL = `https://${BP_SUBDOMAIN}.builderprime.com/api`;
 
+// =============================================================================
+// Simple in-memory rate limiter. Prevents a bot from flooding BuilderPrime
+// with fake leads or exhausting Vapi minutes. Not distributed across Vercel
+// instances — that's fine; the goal is to make abuse cost-prohibitive, not
+// perfect. Each IP gets RATE_LIMIT_MAX requests per RATE_LIMIT_WINDOW_MS.
+// =============================================================================
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const rateLimitMap = new Map();
+
+function checkRateLimit(ip) {
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+  if (!record || now > record.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return { ok: true, remaining: RATE_LIMIT_MAX - 1 };
+  }
+  if (record.count >= RATE_LIMIT_MAX) {
+    return { ok: false, retryAfter: Math.ceil((record.resetAt - now) / 1000) };
+  }
+  record.count++;
+  return { ok: true, remaining: RATE_LIMIT_MAX - record.count };
+}
+
+// Opportunistic cleanup of expired entries — keeps the map from growing
+// unbounded across a long-lived serverless instance. Cheap: runs at most
+// once per request when the map has more than 1000 entries.
+function maybeCleanupRateLimitMap() {
+  if (rateLimitMap.size < 1000) return;
+  const now = Date.now();
+  for (const [ip, record] of rateLimitMap.entries()) {
+    if (now > record.resetAt) rateLimitMap.delete(ip);
+  }
+}
+
+function getClientIp(request) {
+  const xff = request.headers.get("x-forwarded-for");
+  if (xff) return xff.split(",")[0].trim();
+  const real = request.headers.get("x-real-ip");
+  if (real) return real;
+  return "unknown";
+}
+
 function splitName(fullName) {
   if (!fullName) return { firstName: "Estimator", lastName: "Lead" };
   const parts = String(fullName).trim().split(/\s+/);
@@ -57,19 +100,36 @@ function inferProjectType(measurements) {
 
 export async function POST(request) {
   try {
+    // Rate limit by client IP before parsing the body
+    const ip = getClientIp(request);
+    maybeCleanupRateLimitMap();
+    const rl = checkRateLimit(ip);
+    if (!rl.ok) {
+      console.warn(`⚠ Rate limit hit for ${ip}, retry in ${rl.retryAfter}s`);
+      return NextResponse.json(
+        { error: "Too many requests — please try again in a moment." },
+        { status: 429, headers: { "Retry-After": String(rl.retryAfter) } }
+      );
+    }
+
     const body = await request.json();
 
     // Estimator payload shape (from public/estimator.html sendToJROne / sendToCustomer):
     //   type: 'lead' | 'customer'
-    //   phone, address, stories, measurements, downspouts,
-    //   estimateLow, estimateHigh, discountCode, expDate, timestamp
+    //   phone, address, addressCity/State/Zip, stories, gutterSize, lang,
+    //   measurements, downspouts, estimateLow, estimateHigh,
+    //   discountCode, expDate, timestamp
     //   customerName, customerEmail (only on type='customer')
-    //   pdfBase64 (we ignore in BP — too big)
     const {
       type,
       phone,
       address,
+      addressCity,
+      addressState,
+      addressZip,
       stories,
+      gutterSize,
+      lang,
       measurements,
       downspouts,
       estimateLow,
@@ -102,7 +162,9 @@ export async function POST(request) {
         const notes = [
           `Lead from Instant Estimator tool (jronegutters.com/estimator)`,
           `Type: ${type || "lead"}`,
+          `Language: ${lang || "en"}`,
           `Stories: ${stories || "?"}`,
+          gutterSize ? `Gutter size: ${gutterSize}"` : "",
           measurements
             ? `Measurements: gutter=${measurements.gutter || 0}ft, soffit=${measurements.soffit || 0}ft, fascia=${measurements.fascia || 0}ft, guard=${measurements.guard || 0}ft`
             : "",
@@ -125,9 +187,9 @@ export async function POST(request) {
           emailAddress: customerEmail || "",
           phoneNumber: normalizePhone(phone),
           addressLine1: address || "",
-          city: "",
-          state: "FL",
-          zip: "",
+          city: addressCity || "",
+          state: addressState || "FL",
+          zip: addressZip || "",
           leadSourceDescription: "Form Inquiry",
           projectTypeDescription: inferProjectType(measurements),
           buildingTypeDescription: "Single Family",
@@ -193,7 +255,7 @@ export async function POST(request) {
         try {
           await triggerOutboundCall({
             phone: normalizePhone(phone),
-            language: "en",
+            language: lang === "es" ? "es" : "en",
             bpOpportunityId: bpResult.opportunity_id,
             customerName: customerName || "Estimator Lead",
             leadSource: "estimator-lead",
