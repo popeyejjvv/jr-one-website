@@ -61,7 +61,7 @@ const T = {
     heroH1a: "Done Right.",
     heroH1b: "Done Once.",
     heroH1c: "Guaranteed.",
-    heroSub: "Precision gutters, soffit & fascia installed by our own crews — never subcontractors. Family-owned, serving Tampa Bay since 1990.",
+    heroSub: "Precision gutters, soffit & fascia installed by our own crews — never subcontractors. Family-owned and family-operated. Over 30 years in the Tampa Bay gutter industry.",
     formTitle: "Get Your Free Quote",
     formName: "Full Name",
     formPhone: "Phone Number",
@@ -71,7 +71,7 @@ const T = {
     formBtn: "REQUEST MY FREE QUOTE",
     formNote: "No spam. No pressure. Just honest expert advice.",
     serviceOpt: ["Select a service...", "Gutter Installation", "Gutter Repair", "Gutter Guards", "Soffit & Fascia", "Siding", "Gutter Cleaning", "Other / Not Sure"],
-    trustYears: "30+ Years",
+    trustYears: "Family-Owned",
     trustRating: "4.9★ Rating",
     trustCrew: "In-House Crews",
     trustInsured: "Fully Insured",
@@ -98,7 +98,7 @@ const T = {
       { title: "We specialize. Period.", desc: "Your roofer does roofs. Your painter does paint. We do gutters, soffit, and fascia — and we do them right. Singular focus means every installation benefits from thousands of hours of specialized experience." },
       { title: "Our crew. Not subcontractors.", desc: "Every person on your property is a trained JR One team member. No random subs, no surprise faces, no finger-pointing if something goes wrong." },
       { title: "Done right the first time.", desc: "We don't cut corners. We don't want callbacks. Our price reflects that you won't have to call us back — and if you do, we keep coming back until everything meets your standards." },
-      { title: "Your neighbors trust us.", desc: "4.9 stars on Google. Family-owned, serving Tampa Bay since 1990. We live here, we work here, and our reputation is built one home at a time." },
+      { title: "Your neighbors trust us.", desc: "4.9 stars on Google. Family-owned and family-operated. Over 30 years in the Tampa Bay gutter industry. We live here, we work here, and our reputation is built one home at a time." },
     ],
     reviewsTitle: "WHAT OUR CUSTOMERS SAY",
     reviews: [
@@ -130,7 +130,7 @@ const T = {
     ctaPhone: "CALL (844) 444-3114",
     ctaForm: "REQUEST A QUOTE",
     footerTagline: "The Superior Soffit & Gutter Experts",
-    footerAbout: "Family-owned and operated since 1990. Tampa Bay's trusted aluminum specialists.",
+    footerAbout: "Family-owned and family-operated. Over 30 years in the Tampa Bay gutter industry.",
     footerServices: "Services",
     footerAreas: "Service Areas",
     footerCompany: "Company",
@@ -148,7 +148,7 @@ const T = {
     heroH1a: "Bien Hecho.",
     heroH1b: "Una Sola Vez.",
     heroH1c: "Garantizado.",
-    heroSub: "Canaletas, sofito y fascia de precisión, instalados por nuestro propio equipo — nunca subcontratistas. Empresa familiar, sirviendo a Tampa Bay desde 1990.",
+    heroSub: "Canaletas, sofito y fascia de precisión, instalados por nuestro propio equipo — nunca subcontratistas. Empresa familiar, operada por la familia. Más de 30 años en la industria de canaletas en Tampa Bay.",
     formTitle: "Obtenga Su Cotización Gratis",
     formName: "Nombre Completo",
     formPhone: "Número de Teléfono",
@@ -158,7 +158,7 @@ const T = {
     formBtn: "SOLICITAR MI COTIZACIÓN GRATIS",
     formNote: "Sin spam. Sin presión. Solo asesoría experta y honesta.",
     serviceOpt: ["Seleccione un servicio...", "Instalación de Canaletas", "Reparación de Canaletas", "Protectores de Canaletas", "Sofito y Fascia", "Revestimiento", "Limpieza de Canaletas", "Otro / No Estoy Seguro"],
-    trustYears: "30+ Años",
+    trustYears: "Empresa Familiar",
     trustRating: "4.9★ Calificación",
     trustCrew: "Equipo Propio",
     trustInsured: "Totalmente Asegurados",
@@ -185,7 +185,7 @@ const T = {
       { title: "Nos especializamos. Punto.", desc: "Su techador hace techos. Su pintor pinta. Nosotros hacemos canaletas, sofito y fascia — y lo hacemos bien." },
       { title: "Nuestro equipo. No subcontratistas.", desc: "Cada persona en su propiedad es un miembro capacitado del equipo JR One. Sin sorpresas." },
       { title: "Bien hecho a la primera.", desc: "No cortamos esquinas. No queremos que nos vuelvan a llamar. Nuestro precio refleja que no tendrá que llamarnos de nuevo." },
-      { title: "Sus vecinos confían en nosotros.", desc: "4.9 estrellas en Google. Empresa familiar, sirviendo a Tampa Bay desde 1990. Vivimos aquí y nuestra reputación se construye hogar por hogar." },
+      { title: "Sus vecinos confían en nosotros.", desc: "4.9 estrellas en Google. Empresa familiar, operada por la familia. Más de 30 años en la industria de canaletas en Tampa Bay. Vivimos aquí y nuestra reputación se construye hogar por hogar." },
     ],
     reviewsTitle: "LO QUE DICEN NUESTROS CLIENTES",
     reviews: [
@@ -217,7 +217,7 @@ const T = {
     ctaPhone: "LLAMAR (844) 444-3114",
     ctaForm: "SOLICITAR COTIZACIÓN",
     footerTagline: "Los Expertos Superiores en Sofito y Canaletas",
-    footerAbout: "Empresa familiar sirviendo a Tampa Bay desde 1990. Los especialistas en aluminio de confianza.",
+    footerAbout: "Empresa familiar, operada por la familia. Más de 30 años en la industria de canaletas en Tampa Bay.",
     footerServices: "Servicios",
     footerAreas: "Áreas de Servicio",
     footerCompany: "Empresa",
@@ -259,6 +259,7 @@ export default function JROneHomepage() {
   const [estPhone, setEstPhone] = useState("");
   const [estUnlocked, setEstUnlocked] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
@@ -423,9 +424,12 @@ export default function JROneHomepage() {
         </div>
         {/* Mobile Menu Dropdown */}
         {mobileMenu && (
-          <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px" }}>
-            <div style={{ fontFamily: font.heading, fontSize: "11px", fontWeight: 700, color: C.gold, letterSpacing: "2px", padding: "8px 0 4px" }}>{lang === "en" ? "SERVICES" : "SERVICIOS"}</div>
-            {[
+          <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px", maxHeight: "calc(100vh - 140px)", overflowY: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch" }}>
+            <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", background: "none", border: "none", cursor: "pointer", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>
+              <span style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 700, color: C.gold, letterSpacing: "2px" }}>{lang === "en" ? "SERVICES" : "SERVICIOS"}</span>
+              <span style={{ fontFamily: font.heading, fontSize: "14px", color: C.gold, transform: mobileServicesOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}>▼</span>
+            </button>
+            {mobileServicesOpen && [
               { label: lang === "en" ? "Copper Gutters" : "Canaletas de Cobre", href: "/copper-gutters" },
               { label: lang === "en" ? "Drainage Installation" : "Instalación de Drenaje", href: "/drainage-assessment" },
               { label: lang === "en" ? "Govee Lights" : "Luces Govee", href: "/govee-lights" },
@@ -439,7 +443,7 @@ export default function JROneHomepage() {
               { label: lang === "en" ? "Soffit & Fascia" : "Sofito y Fascia", href: "/soffit-and-fascia" },
               { label: lang === "en" ? "Specialty Gutters" : "Especiales", href: "/specialty-gutters" },
             ].map((svc, i) => (
-              <a key={`svc-${i}`} href={svc.href} style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "12px", borderBottom: `1px solid ${C.navyLight}20` }}>{svc.label}</a>
+              <a key={`svc-${i}`} href={svc.href} style={{ fontFamily: font.heading, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "16px", borderBottom: `1px solid ${C.navyLight}20` }}>{svc.label}</a>
             ))}
             <div style={{ height: "8px" }} />
             {[
@@ -777,6 +781,7 @@ export default function JROneHomepage() {
               { en: "About Us", es: "Sobre Nosotros", href: "/about" },
               { en: "FAQ", es: "Preguntas Frecuentes", href: "/faq" },
               { en: "Financing", es: "Financiamiento", href: "/financing" },
+              { en: "Insurance Resource Center", es: "Centro de Recursos de Seguros", href: "/insurance-resource-center" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{lang === "en" ? item.en : item.es}</a>
             ))}

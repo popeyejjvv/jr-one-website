@@ -1,6 +1,6 @@
 ---
 title: "How Much Do New Gutters Cost in Tampa? 2026 Price Guide"
-description: "Complete breakdown of gutter installation costs in Tampa, FL. Seamless aluminum, copper, and gutter guard pricing from a 30-year local specialist."
+description: "Complete breakdown of gutter installation costs in Tampa, FL. Seamless aluminum, copper, and gutter guard pricing from a family-owned Tampa Bay gutter specialist."
 date: "2026-04-01"
 category: "Gutters"
 keyword: "gutter installation cost tampa"
@@ -13,7 +13,7 @@ faqs:
 
 # How Much Do New Gutters Cost in Tampa? 2026 Price Guide
 
-If you're a Tampa homeowner researching gutter prices, you've probably found a wide range of numbers online — and most of them aren't specific to Florida. This guide breaks down what gutter installation actually costs in Tampa Bay, based on 30+ years of local experience.
+If you're a Tampa homeowner researching gutter prices, you've probably found a wide range of numbers online — and most of them aren't specific to Florida. This guide breaks down what gutter installation actually costs in Tampa Bay, based on over 30 years of family experience in the Tampa Bay gutter industry.
 
 ## Tampa Gutter Installation Cost Breakdown
 

@@ -16,7 +16,8 @@ const T = {
   en: {
     heroTag: "FINANCING",
     heroH1a: "Quality Work Shouldn't",
-    heroH1b: "Break the Bank.",
+    heroH1b: "Break the ",
+    heroH1bAccent: "Bank.",
     heroP: "We partner with trusted third-party financing providers so you can protect your home now and pay over time. Flexible terms, quick approval, and no impact on your project pricing.",
     steps: [
       {num:"1",title:"Get your estimate",desc:"We provide a detailed, transparent estimate for your project. Same price whether you pay upfront or finance — no markup."},
@@ -48,7 +49,8 @@ const T = {
   es: {
     heroTag: "FINANCIAMIENTO",
     heroH1a: "Un Trabajo de Calidad No Deberia",
-    heroH1b: "Vaciar Tu Bolsillo.",
+    heroH1b: "Vaciar Tu ",
+    heroH1bAccent: "Bolsillo.",
     heroP: "Nos asociamos con proveedores de financiamiento terceros de confianza para que puedas proteger tu hogar ahora y pagar con el tiempo. Terminos flexibles, aprobacion rapida y sin impacto en el precio de tu proyecto.",
     steps: [
       {num:"1",title:"Obtene tu estimado",desc:"Proporcionamos un estimado detallado y transparente para tu proyecto. Mismo precio ya sea que pagues por adelantado o financies — sin recargo."},
@@ -92,7 +94,7 @@ export default function FinancingPage() {
 
       <section className="hero-stars" style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
         <Tag>{t.heroTag}</Tag>
-        <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>{t.heroH1a}<br/><span style={{color:C.gold}}>{t.heroH1b}</span></h1>
+        <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>{t.heroH1a}<br/><span style={{color:"#22C55E"}}>{t.heroH1b}{t.heroH1bAccent}</span></h1>
         <p style={{fontFamily:f.b,fontSize:"18px",color:C.muted,maxWidth:"650px",margin:"0 auto"}}>{t.heroP}</p>
       </section>
 

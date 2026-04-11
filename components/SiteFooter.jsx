@@ -29,7 +29,7 @@ const SERVICE_HREFS = [
 const T = {
   en: {
     tagline: "The Superior Soffit & Gutter Experts",
-    description: "Family-owned and operated for 30+ years. Tampa Bay's trusted aluminum specialists.",
+    description: "Family-owned and family-operated. Over 30 years in the Tampa Bay gutter industry.",
     services: "SERVICES",
     serviceAreas: "SERVICE AREAS",
     contact: "CONTACT",
@@ -41,6 +41,7 @@ const T = {
       { label: "About Us", href: "/about" },
       { label: "FAQ", href: "/faq" },
       { label: "Financing", href: "/financing" },
+      { label: "Insurance Resource Center", href: "/insurance-resource-center" },
     ],
     copyright: "© 2026 JR One Aluminum LLC. All rights reserved.",
     privacy: "Privacy Policy",
@@ -48,7 +49,7 @@ const T = {
   },
   es: {
     tagline: "Los Expertos Superiores en Sofito y Canaletas",
-    description: "Empresa familiar con más de 30 años de experiencia. Los especialistas en aluminio de confianza en Tampa Bay.",
+    description: "Empresa familiar, operada por la familia. Más de 30 años en la industria de canaletas en Tampa Bay.",
     services: "SERVICIOS",
     serviceAreas: "ÁREAS DE SERVICIO",
     contact: "CONTACTO",
@@ -60,6 +61,7 @@ const T = {
       { label: "Sobre Nosotros", href: "/about" },
       { label: "Preguntas Frecuentes", href: "/faq" },
       { label: "Financiamiento", href: "/financing" },
+      { label: "Centro de Recursos de Seguros", href: "/insurance-resource-center" },
     ],
     copyright: "© 2026 JR One Aluminum LLC. Todos los derechos reservados.",
     privacy: "Política de Privacidad",

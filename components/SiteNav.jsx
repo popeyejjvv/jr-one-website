@@ -46,6 +46,7 @@ const T = {
 export default function SiteNav({ promoBanner }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const { lang, toggleLang } = useLanguage();
   const t = T[lang];
   const banner = promoBanner || t.promoBanner;
@@ -100,10 +101,13 @@ export default function SiteNav({ promoBanner }) {
         </div>
 
         {menuOpen && (
-          <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px" }}>
-            <div style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, letterSpacing: "2px", padding: "8px 0 4px" }}>{t.servicesMobile}</div>
-            {t.serviceLabels.map((label, i) => (
-              <a key={i} href={SERVICE_HREFS[i]} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "12px", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
+          <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px", maxHeight: "calc(100vh - 140px)", overflowY: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch" }}>
+            <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", background: "none", border: "none", cursor: "pointer", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>
+              <span style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 700, color: C.gold, letterSpacing: "2px" }}>{t.servicesMobile}</span>
+              <span style={{ fontFamily: f.h, fontSize: "14px", color: C.gold, transform: mobileServicesOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}>▼</span>
+            </button>
+            {mobileServicesOpen && t.serviceLabels.map((label, i) => (
+              <a key={i} href={SERVICE_HREFS[i]} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "16px", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
             ))}
             <div style={{ height: "8px" }} />
             {t.navLabels.map((label, i) => (

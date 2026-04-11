@@ -21,7 +21,7 @@ const CITIES = {
   tampa: {
     name: "Tampa", county: "Hillsborough County", slug: "tampa",
     heroH1: "Tampa's Trusted", heroH1Gold: "Gutter & Aluminum Specialists",
-    localP: "Tampa homeowners face a unique combination of challenges — intense summer thunderstorms, hurricane season, year-round humidity, and aging housing stock across neighborhoods from South Tampa to New Tampa. Your gutters, soffit, and fascia take the worst of it. JR One has been protecting Tampa homes for over 30 years, and many of the homes we service today are ones our founder Javier originally worked on in the 1990s.",
+    localP: "Tampa homeowners face a unique combination of challenges — intense summer thunderstorms, hurricane season, year-round humidity, and aging housing stock across neighborhoods from South Tampa to New Tampa. Your gutters, soffit, and fascia take the worst of it. JR One is family-owned and family-operated, with over 30 years of family experience in the Tampa Bay gutter industry — our founder Javier has been installing gutters in Tampa personally since 1990, and many of the homes we service today are homes he originally worked on decades ago.",
     weatherNote: "Tampa averages 51 inches of rain per year — significantly above the national average. That volume of water needs to go somewhere, and if your gutter system isn't handling it properly, your foundation, fascia, and landscaping pay the price.",
     neighborhoods: ["South Tampa","Westchase","Carrollwood","New Tampa","Seminole Heights","Hyde Park","Davis Islands","Palma Ceia","Channelside","Ybor City","Town 'N Country","Northdale"],
     nearbyText: "We also serve Clearwater, St. Petersburg, Brandon, Temple Terrace, and surrounding communities.",
@@ -74,7 +74,7 @@ const CITIES = {
     neighborhoods: ["Bloomingdale","Riverglen","Providence","FishHawk","Valrico","Lithia","Durant"],
     nearbyText: "We also serve Riverview, Tampa, Plant City, and surrounding Hillsborough County.",
   },
-  "wesley-chapel": { name:"Wesley Chapel", county:"Pasco County", slug:"wesley-chapel", heroH1:"Wesley Chapel's Preferred", heroH1Gold:"Aluminum Contractor", localP:"Wesley Chapel is one of Tampa Bay's fastest-growing communities, with new construction and established neighborhoods side by side. JR One serves Wesley Chapel homeowners who want their gutter, soffit, and fascia work done right — not by the lowest bidder the builder could find, but by a family-owned specialist team working in Tampa Bay since 1990.", weatherNote:"Pasco County's flat terrain means drainage is critical. Without properly pitched gutters, water pools around your foundation instead of being directed away.", neighborhoods:["Meadow Pointe","Seven Oaks","Wiregrass","Cypress Creek","Chapel Pines","Watergrass"], nearbyText:"We also serve Land O' Lakes, Lutz, New Tampa, and surrounding Pasco County." },
+  "wesley-chapel": { name:"Wesley Chapel", county:"Pasco County", slug:"wesley-chapel", heroH1:"Wesley Chapel's Preferred", heroH1Gold:"Aluminum Contractor", localP:"Wesley Chapel is one of Tampa Bay's fastest-growing communities, with new construction and established neighborhoods side by side. JR One serves Wesley Chapel homeowners who want their gutter, soffit, and fascia work done right — not by the lowest bidder the builder could find, but by a family-owned specialist team with over 30 years in the Tampa Bay gutter industry.", weatherNote:"Pasco County's flat terrain means drainage is critical. Without properly pitched gutters, water pools around your foundation instead of being directed away.", neighborhoods:["Meadow Pointe","Seven Oaks","Wiregrass","Cypress Creek","Chapel Pines","Watergrass"], nearbyText:"We also serve Land O' Lakes, Lutz, New Tampa, and surrounding Pasco County." },
   "palm-harbor": { name:"Palm Harbor", county:"Pinellas County", slug:"palm-harbor", heroH1:"Palm Harbor's Trusted", heroH1Gold:"Gutter Specialists", localP:"Palm Harbor's established neighborhoods and tree-lined streets are part of what makes it beautiful — and part of why gutter maintenance matters here. Oak and pine canopies drop debris year-round, and Palm Harbor's proximity to the Gulf means salt air is always a factor. JR One provides aluminum solutions built for exactly these conditions.", weatherNote:"Palm Harbor's mature tree canopy means more gutter debris than most Pinellas County communities. Guards and regular maintenance are especially important here.", neighborhoods:["Ozona","Crystal Beach","East Lake","Lansbrook","Palm Harbor Proper"], nearbyText:"We also serve Tarpon Springs, Dunedin, Clearwater, and surrounding areas." },
   riverview: { name:"Riverview", county:"Hillsborough County", slug:"riverview", heroH1:"Riverview's Reliable", heroH1Gold:"Gutter & Fascia Contractor", localP:"Riverview's explosive growth has brought thousands of new homes — many built quickly by volume builders. If your gutters were installed as part of a fast-paced new construction process, they may not have received the attention to pitch, hanger spacing, and material quality that a specialist provides. JR One fixes what builders cut corners on and installs new systems built to last.", weatherNote:"Riverview's position along the Alafia River means proper drainage is critical for preventing foundation issues and yard erosion.", neighborhoods:["FishHawk","Riverview Hills","Boyette","Summerfield","Pavilion"], nearbyText:"We also serve Brandon, Sun City Center, Ruskin, and surrounding Hillsborough County." },
   "new-port-richey": { name:"New Port Richey", county:"Pasco County", slug:"new-port-richey", heroH1:"New Port Richey's", heroH1Gold:"Aluminum Experts", localP:"New Port Richey's mix of waterfront properties and established inland neighborhoods requires gutter and soffit systems that can handle everything from coastal storms to tree debris. JR One serves New Port Richey and western Pasco County with the same Gold Standard approach we bring to every community across Tampa Bay.", weatherNote:"Gulf-facing properties in New Port Richey take direct impact from tropical systems. Hurricane-rated fastening and proper gutter sizing aren't optional here.", neighborhoods:["Gulf Harbors","Beacon Square","Seven Springs","Elfers","Port Richey"], nearbyText:"We also serve Spring Hill, Trinity, Tarpon Springs, and surrounding areas." },
@@ -106,7 +106,7 @@ const SERVICES = [
 const CITIES_ES = {
   tampa: {
     heroH1: "Especialistas de Confianza en", heroH1Gold: "Canaletas y Aluminio en Tampa",
-    localP: "Los propietarios de Tampa enfrentan una combinacion unica de desafios — tormentas intensas en verano, temporada de huracanes, humedad todo el ano y viviendas envejecidas en barrios desde South Tampa hasta New Tampa. Sus canaletas, sofitos y fascias reciben lo peor. JR One ha protegido hogares en Tampa por mas de 30 anos, y muchas de las casas que atendemos hoy son las mismas que nuestro fundador Javier trabajo originalmente en los anos 90.",
+    localP: "Los propietarios de Tampa enfrentan una combinacion unica de desafios — tormentas intensas en verano, temporada de huracanes, humedad todo el ano y viviendas envejecidas en barrios desde South Tampa hasta New Tampa. Sus canaletas, sofitos y fascias reciben lo peor. JR One es una empresa familiar, operada por la familia, con mas de 30 anos de experiencia familiar en la industria de canaletas en Tampa Bay — nuestro fundador Javier ha estado instalando canaletas en Tampa personalmente desde 1990, y muchas de las casas que atendemos hoy son las mismas que el trabajo hace decadas.",
     weatherNote: "Tampa recibe un promedio de 51 pulgadas de lluvia al ano — muy por encima del promedio nacional. Ese volumen de agua necesita ir a algun lugar, y si su sistema de canaletas no lo maneja correctamente, sus cimientos, fascias y jardin pagan el precio.",
     nearbyText: "Tambien servimos a Clearwater, St. Petersburg, Brandon, Temple Terrace y comunidades cercanas.",
   },
@@ -148,7 +148,7 @@ const CITIES_ES = {
   },
   "wesley-chapel": {
     heroH1: "El Contratista Preferido de Aluminio en", heroH1Gold: "Wesley Chapel",
-    localP: "Wesley Chapel es una de las comunidades de mas rapido crecimiento en Tampa Bay, con construccion nueva y barrios establecidos lado a lado. JR One sirve a propietarios de Wesley Chapel que quieren su trabajo de canaletas, sofitos y fascias hecho bien — no por el postor mas barato que el constructor pudo encontrar, sino por un equipo especialista familiar trabajando en Tampa Bay desde 1990.",
+    localP: "Wesley Chapel es una de las comunidades de mas rapido crecimiento en Tampa Bay, con construccion nueva y barrios establecidos lado a lado. JR One sirve a propietarios de Wesley Chapel que quieren su trabajo de canaletas, sofitos y fascias hecho bien — no por el postor mas barato que el constructor pudo encontrar, sino por un equipo especialista familiar con mas de 30 anos en la industria de canaletas en Tampa Bay.",
     weatherNote: "El terreno plano de Pasco County significa que el drenaje es critico. Sin canaletas con la inclinacion adecuada, el agua se acumula alrededor de sus cimientos en lugar de ser dirigida lejos.",
     nearbyText: "Tambien servimos a Land O' Lakes, Lutz, New Tampa y todo Pasco County.",
   },
@@ -250,7 +250,7 @@ const T = {
     promoBannerPost: " — Call (844) 444-3114 for Your Free Quote",
     breadHome: "Home",
     breadAreas: "Service Areas",
-    badge30: "30+ Years",
+    badge30: "Family-Owned",
     badgeGoogle: "4.9★ Google",
     badgeCrews: "In-House Crews",
     badgeInsured: "Fully Insured",
@@ -291,7 +291,7 @@ const T = {
     promoBannerPost: " — Llame al (844) 444-3114 para su Cotizacion Gratis",
     breadHome: "Inicio",
     breadAreas: "Areas de Servicio",
-    badge30: "30+ Anos",
+    badge30: "Empresa Familiar",
     badgeGoogle: "4.9★ Google",
     badgeCrews: "Equipos Propios",
     badgeInsured: "Totalmente Asegurados",

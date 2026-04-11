@@ -1,16 +1,22 @@
 {
   "name": "JR One Aluminum LLC",
   "short_name": "JR One",
-  "description": "Tampa Bay's Trusted Gutters, Soffit & Fascia Specialists",
+  "description": "The Superior Soffit & Gutter Experts — Tampa Bay",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0B1628",
-  "theme_color": "#C8952E",
+  "theme_color": "#0B1628",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "any",
-      "type": "image/x-icon"
+      "src": "/icon",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

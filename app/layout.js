@@ -34,7 +34,6 @@ const localBusinessSchema = {
     "Land O' Lakes","Dunedin","Ruskin","Sun City Center",
     "Temple Terrace","Plant City","Lutz",
   ],
-  foundingDate: "1990",
   numberOfEmployees: "15-20",
   knowsLanguage: ["English", "Spanish"],
   sameAs: [
@@ -47,11 +46,15 @@ const localBusinessSchema = {
 export const metadata = {
   metadataBase: new URL("https://jronegutters.com"),
   title: {
-    default: "JR One Aluminum LLC | Tampa Bay Gutters, Soffit & Fascia Specialists",
+    default: "JR One Aluminum LLC | The Superior Soffit & Gutter Experts — Tampa Bay",
     template: "%s | JR One Aluminum",
   },
   description:
-    "Tampa Bay's trusted aluminum specialists. Seamless gutter installation, soffit, fascia, siding, and gutter guards. 30+ years experience. In-house crews. Free estimates. (844) 444-3114.",
+    "The Superior Soffit & Gutter Experts. Family-owned, over 30 years in the Tampa Bay gutter industry. Seamless gutters, soffit, fascia, siding, gutter guards. In-house crews. Free estimates. (844) 444-3114.",
+  applicationName: "JR One Aluminum",
+  authors: [{ name: "JR One Aluminum LLC", url: "https://jronegutters.com" }],
+  creator: "JR One Aluminum LLC",
+  publisher: "JR One Aluminum LLC",
   keywords: [
     "gutter installation Tampa",
     "seamless gutters Tampa",
@@ -66,19 +69,17 @@ export const metadata = {
     locale: "en_US",
     url: "https://jronegutters.com",
     siteName: "JR One Aluminum LLC",
-    title: "JR One Aluminum LLC | Tampa Bay Gutters, Soffit & Fascia Specialists",
+    title: "JR One Aluminum LLC — The Superior Soffit & Gutter Experts",
     description:
-      "Tampa Bay's trusted aluminum specialists. 30+ years experience. In-house crews. Free estimates.",
+      "Family-owned. Over 30 years in the Tampa Bay gutter industry. In-house crews. Free estimates. (844) 444-3114.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "JR One Aluminum LLC",
-    description: "Tampa Bay's trusted aluminum specialists. 30+ years. Free estimates.",
+    title: "JR One Aluminum LLC — The Superior Soffit & Gutter Experts",
+    description:
+      "Family-owned. Over 30 years in the Tampa Bay gutter industry. In-house crews. Free estimates.",
   },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
+  manifest: "/manifest.json",
   robots: {
     index: true,
     follow: true,
@@ -87,6 +88,13 @@ export const metadata = {
   alternates: {
     canonical: "https://jronegutters.com",
   },
+};
+
+export const viewport = {
+  themeColor: "#0B1628",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {

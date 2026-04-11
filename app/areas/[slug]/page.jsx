@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
     .join(" ");
   return {
     title: `Gutter & Soffit Services in ${cityName}, FL | JR One Aluminum`,
-    description: `Professional gutter installation, soffit, fascia, and siding services in ${cityName}, Florida. 30+ years experience. Free estimates. Call (844) 444-3114.`,
+    description: `Professional gutter installation, soffit, fascia, and siding services in ${cityName}, Florida. Family-owned gutter specialists. Free estimates. Call (844) 444-3114.`,
   };
 }
 
