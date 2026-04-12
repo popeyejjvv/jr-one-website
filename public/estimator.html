@@ -230,6 +230,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
         <button class="mode-btn" data-mode="soffit" onclick="setMode('soffit')"><span class="mode-dot" style="background:#FF6B6B"></span><span data-i18n="soffit_label">Soffit</span></button>
         <button class="mode-btn" data-mode="fascia" onclick="setMode('fascia')"><span class="mode-dot" style="background:#51CF66"></span><span data-i18n="fascia_label">Fascia</span></button>
         <button class="mode-btn" data-mode="guard" onclick="setMode('guard')"><span class="mode-dot" style="background:#FFA94D"></span><span data-i18n="guard_label">Leaf Guard</span></button>
+        <button class="mode-btn" data-mode="cleaning" onclick="setMode('cleaning')"><span class="mode-dot" style="background:#B07DFF"></span><span data-i18n="cleaning_label">Gutter Cleaning</span></button>
       </div>
     </div>
     <div class="panel-section">
@@ -261,6 +262,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
         <div class="total-row" id="totalSoffit" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FF6B6B;margin-right:6px"></span><span data-i18n="soffit_label">Soffit</span></span><span class="t-value" id="totalSoffitVal">0 ft</span></div>
         <div class="total-row" id="totalFascia" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#51CF66;margin-right:6px"></span><span data-i18n="fascia_label">Fascia</span></span><span class="t-value" id="totalFasciaVal">0 ft</span></div>
         <div class="total-row" id="totalGuard" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FFA94D;margin-right:6px"></span><span data-i18n="guard_label">Leaf Guard</span></span><span class="t-value" id="totalGuardVal">0 ft</span></div>
+        <div class="total-row" id="totalCleaning" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#B07DFF;margin-right:6px"></span><span data-i18n="cleaning_label">Gutter Cleaning</span></span><span class="t-value" id="totalCleaningVal">0 ft</span></div>
         <div class="total-row grand"><span class="t-label" data-i18n="total_lf">Total Linear Feet</span><span class="t-value" id="grandTotal">0 ft</span></div>
       </div>
     </div>
@@ -369,13 +371,15 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 
 <script>
 // ═══ INTERNAL PRICING — NEVER SHOWN TO CUSTOMERS ═══
-// Locked 2026-04-11 per Popeye. Gutters default to 6"; 7" is premium upsell.
-// These rates are used only for internal totals calculation. The PDF and UI
-// show total + range, never per-foot math.
-const RATES = { gutter6:14.00, gutter7:20.00, soffit:28.00, fascia:28.00, guard:13.50 };
+// Updated 2026-04-11. Explicit low/high per-foot ranges per Popeye.
+// Gutter rates are all-in (downspouts included in per-foot price).
+// 1 downspout per ~34 ft of gutter (min 1).
+const RATES = {
+  gutter6:{low:14,high:18}, gutter7:{low:18,high:22},
+  soffit:{low:25,high:30}, fascia:{low:14,high:18},
+  guard:{low:12,high:16}, cleaning:{low:6,high:10}
+};
 const DS_FOOTAGE = { 1:13, 2:23, 3:33 };
-const DS_COST_PER_FT = 11.00;
-const RANGE_LOW = 0.85, RANGE_HIGH = 1.15;
 function gutterRate(){return RATES['gutter'+gutterSize]}
 
 // ═══ STATE ═══
@@ -387,8 +391,8 @@ let parsedAddress = { city:'', state:'FL', zip:'' };
 let searchResultsCache = [];
 let firstMeasurementTracked = false;
 
-const COLORS = { gutter:'#4A9EFF', soffit:'#FF6B6B', fascia:'#51CF66', guard:'#FFA94D' };
-const ICONS = { gutter:'🏠', soffit:'🌬️', fascia:'🔧', guard:'🛡️' };
+const COLORS = { gutter:'#4A9EFF', soffit:'#FF6B6B', fascia:'#51CF66', guard:'#FFA94D', cleaning:'#B07DFF' };
+const ICONS = { gutter:'🏠', soffit:'🌬️', fascia:'🔧', guard:'🛡️', cleaning:'🧹' };
 
 // ═══ BILINGUAL STRINGS ═══
 const STRINGS = {
@@ -397,8 +401,8 @@ const STRINGS = {
     search_placeholder:'Enter your address to get started',
     tab_measure:'MEASURE', tab_estimate:'MY ESTIMATE',
     what_measuring:"What Are You Measuring?",
-    gutter_label:'Gutters', soffit_label:'Soffit', fascia_label:'Fascia', guard_label:'Leaf Guard',
-    gutter_size:'Gutter Size', size_6:'6" Standard', size_7:'7" Premium',
+    gutter_label:'K-Style Gutters', soffit_label:'Soffit', fascia_label:'Fascia', guard_label:'Leaf Guard', cleaning_label:'Gutter Cleaning',
+    gutter_size:'Gutter Size', size_6:'6" K-Style', size_7:'7" K-Style',
     home_type:'Home Type', story_1:'1 Story', story_2:'2 Story', story_3:'3 Story',
     your_measurements:'Your Measurements',
     measure_help:'Search your address above, then<br>click along your roof edges to measure.',
@@ -406,7 +410,7 @@ const STRINGS = {
     undo:'↩ Undo', finish_line:'✓ Finish Line', see_estimate:'SEE MY ESTIMATE →', clear_all:'Clear All',
     how_to_use:'📐 How to Use',
     step_1:'<strong>Search your address</strong> above to find your home on the map',
-    step_2:"<strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, or Leaf Guard",
+    step_2:"<strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, Leaf Guard, or Gutter Cleaning",
     step_3:'<strong>Click along your roof edges</strong> on the map to draw measurement lines',
     step_4:'Press <span class="kbd">Finish Line</span> when each section is complete',
     step_5:'Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong>',
@@ -441,22 +445,24 @@ const STRINGS = {
     sending:'SENDING...',
     sent:'✓ SENT!',
     active_suffix:'(active)',
-    gutter_breakdown_title:'Seamless Gutters',
-    gutter_breakdown_sub:function(lf,ds){return lf+' linear feet · '+ds+' downspouts included · '+gutterSize+'" profile'},
+    gutter_breakdown_title:'K-Style Gutters',
+    gutter_breakdown_sub:function(lf,ds){return lf+' linear feet · '+ds+' downspouts included'},
     soffit_breakdown_sub:function(lf){return lf+' linear feet'},
     fascia_breakdown_sub:function(lf){return lf+' linear feet'},
     guard_breakdown_sub:function(lf){return lf+' linear feet'},
+    cleaning_breakdown_sub:function(lf){return lf+' linear feet'},
     soffit_breakdown_title:'Soffit',
     fascia_breakdown_title:'Fascia',
-    guard_breakdown_title:'Aluminum Leaf Guard'
+    guard_breakdown_title:'Aluminum Leaf Guard',
+    cleaning_breakdown_title:'Gutter Cleaning'
   },
   es: {
     aerial_estimator:'Estimador Aéreo',
     search_placeholder:'Ingresa tu dirección para comenzar',
     tab_measure:'MEDIR', tab_estimate:'MI ESTIMADO',
     what_measuring:'¿Qué estás midiendo?',
-    gutter_label:'Canaletas', soffit_label:'Plafón', fascia_label:'Fascia', guard_label:'Protector de Hojas',
-    gutter_size:'Tamaño de Canaleta', size_6:'6" Estándar', size_7:'7" Premium',
+    gutter_label:'Canaletas K-Style', soffit_label:'Plafón', fascia_label:'Fascia', guard_label:'Protector de Hojas', cleaning_label:'Limpieza de Canaletas',
+    gutter_size:'Tamaño de Canaleta', size_6:'6" K-Style', size_7:'7" K-Style',
     home_type:'Tipo de Casa', story_1:'1 Piso', story_2:'2 Pisos', story_3:'3 Pisos',
     your_measurements:'Tus Medidas',
     measure_help:'Busca tu dirección arriba y luego<br>haz clic en los bordes del techo para medir.',
@@ -464,7 +470,7 @@ const STRINGS = {
     undo:'↩ Deshacer', finish_line:'✓ Terminar Línea', see_estimate:'VER MI ESTIMADO →', clear_all:'Borrar Todo',
     how_to_use:'📐 Cómo Usar',
     step_1:'<strong>Busca tu dirección</strong> arriba para encontrar tu casa en el mapa',
-    step_2:'<strong>Elige qué vas a medir</strong> — Canaletas, Plafón, Fascia o Protector',
+    step_2:'<strong>Elige qué vas a medir</strong> — Canaletas, Plafón, Fascia, Protector o Limpieza',
     step_3:'<strong>Haz clic en los bordes del techo</strong> para dibujar las líneas de medida',
     step_4:'Presiona <span class="kbd">Terminar Línea</span> cuando cada sección esté completa',
     step_5:'Repite para cada servicio que necesites, luego haz clic en <strong>VER MI ESTIMADO</strong>',
@@ -499,14 +505,16 @@ const STRINGS = {
     sending:'ENVIANDO...',
     sent:'✓ ¡ENVIADO!',
     active_suffix:'(activo)',
-    gutter_breakdown_title:'Canaletas Continuas',
-    gutter_breakdown_sub:function(lf,ds){return lf+' pies lineales · '+ds+' bajantes incluidos · perfil '+gutterSize+'"'},
+    gutter_breakdown_title:'Canaletas K-Style',
+    gutter_breakdown_sub:function(lf,ds){return lf+' pies lineales · '+ds+' bajantes incluidos'},
     soffit_breakdown_sub:function(lf){return lf+' pies lineales'},
     fascia_breakdown_sub:function(lf){return lf+' pies lineales'},
     guard_breakdown_sub:function(lf){return lf+' pies lineales'},
+    cleaning_breakdown_sub:function(lf){return lf+' pies lineales'},
     soffit_breakdown_title:'Plafón',
     fascia_breakdown_title:'Fascia',
-    guard_breakdown_title:'Protector de Aluminio'
+    guard_breakdown_title:'Protector de Aluminio',
+    cleaning_breakdown_title:'Limpieza de Canaletas'
   }
 };
 let lang = (function(){
@@ -641,8 +649,8 @@ function switchTab(tab){
 }
 
 function calcFt(p1,p2){const R=20902231,dLat=(p2.lat-p1.lat)*Math.PI/180,dLon=(p2.lng-p1.lng)*Math.PI/180,a=Math.sin(dLat/2)**2+Math.cos(p1.lat*Math.PI/180)*Math.cos(p2.lat*Math.PI/180)*Math.sin(dLon/2)**2;return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a))}
-function calcDownspouts(lf){if(lf<=0)return{count:0,totalFt:0,ftEach:0};const c=Math.max(2,Math.ceil(lf/30)),fe=DS_FOOTAGE[stories]||13;return{count:c,totalFt:c*fe,ftEach:fe}}
-function getModeTotals(){const t={gutter:0,soffit:0,fascia:0,guard:0};segments.forEach(s=>t[s.mode]+=s.totalFt);return t}
+function calcDownspouts(lf){if(lf<=0)return{count:0,totalFt:0,ftEach:0};const c=Math.max(1,Math.ceil(lf/34)),fe=DS_FOOTAGE[stories]||13;return{count:c,totalFt:c*fe,ftEach:fe}}
+function getModeTotals(){const t={gutter:0,soffit:0,fascia:0,guard:0,cleaning:0};segments.forEach(s=>t[s.mode]+=s.totalFt);return t}
 
 function updateSegmentList(){
   const el=document.getElementById('segmentList');let aLen=0;
@@ -664,7 +672,8 @@ function updateTotals(){
   show('totalSoffit',tot.soffit.toFixed(1)+' ft',tot.soffit>0);
   show('totalFascia',tot.fascia.toFixed(1)+' ft',tot.fascia>0);
   show('totalGuard',tot.guard.toFixed(1)+' ft',tot.guard>0);
-  document.getElementById('grandTotal').textContent=(tot.gutter+tot.soffit+tot.fascia+tot.guard).toFixed(1)+' ft';
+  show('totalCleaning',tot.cleaning.toFixed(1)+' ft',tot.cleaning>0);
+  document.getElementById('grandTotal').textContent=(tot.gutter+tot.soffit+tot.fascia+tot.guard+tot.cleaning).toFixed(1)+' ft';
 }
 
 // ═══ PHONE GATE ═══
@@ -732,37 +741,41 @@ async function unlockEstimate(){
 // ═══ RENDER ESTIMATE ═══
 function renderEstimate(){
   const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
-  let grandBase=0,breakdownHTML='';
+  let grandLow=0,grandHigh=0,breakdownHTML='';
   const locked=!estimateUnlocked;
   const blurCls=locked?' price-hidden':'';
   if(tot.gutter>0){
-    const b=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;grandBase+=b;
-    breakdownHTML+=bdItem('gutter','rgba(74,158,255,0.15)',ICONS.gutter,t('gutter_breakdown_title'),tf('gutter_breakdown_sub',tot.gutter.toFixed(0),ds.count),fmtRange(b),blurCls);
+    const r=gutterRate();const lo=tot.gutter*r.low,hi=tot.gutter*r.high;grandLow+=lo;grandHigh+=hi;
+    breakdownHTML+=bdItem('gutter','rgba(74,158,255,0.15)',ICONS.gutter,gutterSize+'" '+t('gutter_breakdown_title'),tf('gutter_breakdown_sub',tot.gutter.toFixed(0),ds.count),fmtRange(lo,hi),blurCls);
   }
   if(tot.soffit>0){
-    const b=tot.soffit*RATES.soffit;grandBase+=b;
-    breakdownHTML+=bdItem('soffit','rgba(255,107,107,0.15)',ICONS.soffit,t('soffit_breakdown_title'),tf('soffit_breakdown_sub',tot.soffit.toFixed(0)),fmtRange(b),blurCls);
+    const lo=tot.soffit*RATES.soffit.low,hi=tot.soffit*RATES.soffit.high;grandLow+=lo;grandHigh+=hi;
+    breakdownHTML+=bdItem('soffit','rgba(255,107,107,0.15)',ICONS.soffit,t('soffit_breakdown_title'),tf('soffit_breakdown_sub',tot.soffit.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(tot.fascia>0){
-    const b=tot.fascia*RATES.fascia;grandBase+=b;
-    breakdownHTML+=bdItem('fascia','rgba(81,207,102,0.15)',ICONS.fascia,t('fascia_breakdown_title'),tf('fascia_breakdown_sub',tot.fascia.toFixed(0)),fmtRange(b),blurCls);
+    const lo=tot.fascia*RATES.fascia.low,hi=tot.fascia*RATES.fascia.high;grandLow+=lo;grandHigh+=hi;
+    breakdownHTML+=bdItem('fascia','rgba(81,207,102,0.15)',ICONS.fascia,t('fascia_breakdown_title'),tf('fascia_breakdown_sub',tot.fascia.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(tot.guard>0){
-    const b=tot.guard*RATES.guard;grandBase+=b;
-    breakdownHTML+=bdItem('guard','rgba(255,169,77,0.15)',ICONS.guard,t('guard_breakdown_title'),tf('guard_breakdown_sub',tot.guard.toFixed(0)),fmtRange(b),blurCls);
+    const lo=tot.guard*RATES.guard.low,hi=tot.guard*RATES.guard.high;grandLow+=lo;grandHigh+=hi;
+    breakdownHTML+=bdItem('guard','rgba(255,169,77,0.15)',ICONS.guard,t('guard_breakdown_title'),tf('guard_breakdown_sub',tot.guard.toFixed(0)),fmtRange(lo,hi),blurCls);
+  }
+  if(tot.cleaning>0){
+    const lo=tot.cleaning*RATES.cleaning.low,hi=tot.cleaning*RATES.cleaning.high;grandLow+=lo;grandHigh+=hi;
+    breakdownHTML+=bdItem('cleaning','rgba(176,125,255,0.15)',ICONS.cleaning,t('cleaning_breakdown_title'),tf('cleaning_breakdown_sub',tot.cleaning.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(!breakdownHTML){
     breakdownHTML='<div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;">'+t('measure_help')+'</div>';
   }
   document.getElementById('breakdownList').innerHTML=breakdownHTML;
   const heroEl=document.getElementById('heroRange');
-  heroEl.textContent='$'+Math.round(grandBase*RANGE_LOW).toLocaleString()+' – $'+Math.round(grandBase*RANGE_HIGH).toLocaleString();
+  heroEl.textContent='$'+Math.round(grandLow).toLocaleString()+' – $'+Math.round(grandHigh).toLocaleString();
   heroEl.classList.toggle('price-hidden',locked);
   if(currentDiscountCode){document.getElementById('discountCode').textContent=currentDiscountCode;document.getElementById('expDate').textContent=currentExpDate}
 }
 
 function bdItem(m,bg,ic,name,det,range,blurCls){return`<div class="breakdown-item"><div class="breakdown-left"><div class="breakdown-icon" style="background:${bg}">${ic}</div><div><div class="breakdown-name">${name}</div><div class="breakdown-detail">${det}</div></div></div><div class="breakdown-value${blurCls||''}">${range}</div></div>`}
-function fmtRange(b){return'$'+Math.round(b*RANGE_LOW).toLocaleString()+' – $'+Math.round(b*RANGE_HIGH).toLocaleString()}
+function fmtRange(lo,hi){return'$'+Math.round(lo).toLocaleString()+' – $'+Math.round(hi).toLocaleString()}
 function fmt$(v){return'$'+Math.round(v).toLocaleString()}
 
 // ═══ MAP SCREENSHOT ═══
@@ -843,11 +856,12 @@ async function generatePDF(){
   doc.text('MEASUREMENT SUMMARY',M+3,y+5);
   y+=12;
   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(60,60,60);
-  if(tot.gutter>0){doc.text('Seamless Gutters ('+gutterSize+'"):',M+3,y);doc.text(tot.gutter.toFixed(1)+' linear feet',M+70,y);y+=5;
+  if(tot.gutter>0){doc.text(gutterSize+'" K-Style Gutters:',M+3,y);doc.text(tot.gutter.toFixed(1)+' linear feet',M+70,y);y+=5;
     doc.text('   Downspouts (auto):',M+3,y);doc.text(ds.count+' units × '+ds.ftEach+'ft = '+ds.totalFt+' ft',M+70,y);y+=5}
   if(tot.soffit>0){doc.text('Soffit:',M+3,y);doc.text(tot.soffit.toFixed(1)+' linear feet',M+70,y);y+=5}
   if(tot.fascia>0){doc.text('Fascia:',M+3,y);doc.text(tot.fascia.toFixed(1)+' linear feet',M+70,y);y+=5}
   if(tot.guard>0){doc.text('Aluminum Leaf Guard:',M+3,y);doc.text(tot.guard.toFixed(1)+' linear feet',M+70,y);y+=5}
+  if(tot.cleaning>0){doc.text('Gutter Cleaning:',M+3,y);doc.text(tot.cleaning.toFixed(1)+' linear feet',M+70,y);y+=5}
   y+=3;
 
   // ── Estimate ranges ──
@@ -856,17 +870,18 @@ async function generatePDF(){
   doc.text('ESTIMATED PRICE RANGES',M+3,y+5);
   y+=12;
   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(60,60,60);
-  let grandBase=0;
-  if(tot.gutter>0){const b=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;grandBase+=b;doc.text('Gutters + Downspouts ('+gutterSize+'"):',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
-  if(tot.soffit>0){const b=tot.soffit*RATES.soffit;grandBase+=b;doc.text('Soffit:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
-  if(tot.fascia>0){const b=tot.fascia*RATES.fascia;grandBase+=b;doc.text('Fascia:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
-  if(tot.guard>0){const b=tot.guard*RATES.guard;grandBase+=b;doc.text('Leaf Guard:',M+3,y);doc.text(fmtRange(b),M+70,y);y+=5}
+  let grandLow=0,grandHigh=0;
+  if(tot.gutter>0){const r=gutterRate();const lo=tot.gutter*r.low,hi=tot.gutter*r.high;grandLow+=lo;grandHigh+=hi;doc.text(gutterSize+'" K-Style Gutters (incl. downspouts):',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.soffit>0){const lo=tot.soffit*RATES.soffit.low,hi=tot.soffit*RATES.soffit.high;grandLow+=lo;grandHigh+=hi;doc.text('Soffit:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.fascia>0){const lo=tot.fascia*RATES.fascia.low,hi=tot.fascia*RATES.fascia.high;grandLow+=lo;grandHigh+=hi;doc.text('Fascia:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.guard>0){const lo=tot.guard*RATES.guard.low,hi=tot.guard*RATES.guard.high;grandLow+=lo;grandHigh+=hi;doc.text('Leaf Guard:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.cleaning>0){const lo=tot.cleaning*RATES.cleaning.low,hi=tot.cleaning*RATES.cleaning.high;grandLow+=lo;grandHigh+=hi;doc.text('Gutter Cleaning:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
   y+=2;
   doc.setDrawColor(200,149,46);doc.setLineWidth(0.3);doc.line(M,y,W-M,y);y+=4;
   doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(27,42,74);
   doc.text('PROJECT TOTAL:',M+3,y);
   doc.setTextColor(200,149,46);
-  doc.text('$'+Math.round(grandBase*RANGE_LOW).toLocaleString()+' – $'+Math.round(grandBase*RANGE_HIGH).toLocaleString(),M+70,y);
+  doc.text(fmtRange(grandLow,grandHigh),M+70,y);
   y+=10;
 
   // ── Discount box ──
@@ -898,11 +913,12 @@ async function generatePDF(){
 // ═══ SEND TO JR ONE (auto on unlock) ═══
 async function sendToJROne(){
   const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
-  let grandBase=0;
-  if(tot.gutter>0)grandBase+=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;
-  if(tot.soffit>0)grandBase+=tot.soffit*RATES.soffit;
-  if(tot.fascia>0)grandBase+=tot.fascia*RATES.fascia;
-  if(tot.guard>0)grandBase+=tot.guard*RATES.guard;
+  let grandLow=0,grandHigh=0;
+  if(tot.gutter>0){const r=gutterRate();grandLow+=tot.gutter*r.low;grandHigh+=tot.gutter*r.high}
+  if(tot.soffit>0){grandLow+=tot.soffit*RATES.soffit.low;grandHigh+=tot.soffit*RATES.soffit.high}
+  if(tot.fascia>0){grandLow+=tot.fascia*RATES.fascia.low;grandHigh+=tot.fascia*RATES.fascia.high}
+  if(tot.guard>0){grandLow+=tot.guard*RATES.guard.low;grandHigh+=tot.guard*RATES.guard.high}
+  if(tot.cleaning>0){grandLow+=tot.cleaning*RATES.cleaning.low;grandHigh+=tot.cleaning*RATES.cleaning.high}
 
   const payload={
     type:'lead',
@@ -915,8 +931,8 @@ async function sendToJROne(){
     gutterSize:gutterSize,
     measurements:tot,
     downspouts:ds,
-    estimateLow:Math.round(grandBase*RANGE_LOW),
-    estimateHigh:Math.round(grandBase*RANGE_HIGH),
+    estimateLow:Math.round(grandLow),
+    estimateHigh:Math.round(grandHigh),
     discountCode:currentDiscountCode,
     expDate:currentExpDate,
     lang:lang,
@@ -946,11 +962,12 @@ async function sendToCustomer(){
   btn.disabled=true;btn.textContent=t('sending');
 
   const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
-  let grandBase=0;
-  if(tot.gutter>0)grandBase+=tot.gutter*gutterRate()+ds.totalFt*DS_COST_PER_FT;
-  if(tot.soffit>0)grandBase+=tot.soffit*RATES.soffit;
-  if(tot.fascia>0)grandBase+=tot.fascia*RATES.fascia;
-  if(tot.guard>0)grandBase+=tot.guard*RATES.guard;
+  let grandLow=0,grandHigh=0;
+  if(tot.gutter>0){const r=gutterRate();grandLow+=tot.gutter*r.low;grandHigh+=tot.gutter*r.high}
+  if(tot.soffit>0){grandLow+=tot.soffit*RATES.soffit.low;grandHigh+=tot.soffit*RATES.soffit.high}
+  if(tot.fascia>0){grandLow+=tot.fascia*RATES.fascia.low;grandHigh+=tot.fascia*RATES.fascia.high}
+  if(tot.guard>0){grandLow+=tot.guard*RATES.guard.low;grandHigh+=tot.guard*RATES.guard.high}
+  if(tot.cleaning>0){grandLow+=tot.cleaning*RATES.cleaning.low;grandHigh+=tot.cleaning*RATES.cleaning.high}
 
   const payload={
     type:'customer',
@@ -965,8 +982,8 @@ async function sendToCustomer(){
     gutterSize:gutterSize,
     measurements:tot,
     downspouts:ds,
-    estimateLow:Math.round(grandBase*RANGE_LOW),
-    estimateHigh:Math.round(grandBase*RANGE_HIGH),
+    estimateLow:Math.round(grandLow),
+    estimateHigh:Math.round(grandHigh),
     discountCode:currentDiscountCode,
     expDate:currentExpDate,
     lang:lang,
