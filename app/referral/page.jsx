@@ -49,7 +49,7 @@ const T = {
     insTag: "FOR INSURANCE AGENTS",
     insTitle: "YOUR CLIENTS ARE PANICKING ABOUT ROOF AGE.",
     insTitleGold: "GIVE THEM A REAL OPTION.",
-    insDesc: "When your client gets a non-renewal notice because their roof is 15+ years old, they have two choices: spend $15,000–$25,000 on a full replacement, or explore roof rejuvenation. Peak 301 treatment costs under 15% of replacement, restores shingle flexibility, and comes with warranty documentation and a Remaining Useful Life certification that Florida law requires carriers to accept.",
+    insDesc: "When your client gets a non-renewal notice because their roof is 15+ years old, they have two choices: spend $15,000–$25,000 on a full replacement, or explore roof rejuvenation. Peak 301 treatment costs a fraction of what you'd pay for a full replacement, restores shingle flexibility, and comes with warranty documentation and a Remaining Useful Life certification that Florida law requires carriers to accept.",
     insBenefits: [
       "Your client keeps their coverage without a $20K roof replacement",
       "You retain the client instead of losing them to a carrier that won't write older roofs",
@@ -129,7 +129,7 @@ const T = {
     insTag: "PARA AGENTES DE SEGUROS",
     insTitle: "TUS CLIENTES ESTAN EN PANICO POR LA EDAD DEL TECHO.",
     insTitleGold: "DALES UNA OPCION REAL.",
-    insDesc: "Cuando tu cliente recibe un aviso de no-renovacion porque su techo tiene mas de 15 anos, tiene dos opciones: gastar $15,000–$25,000 en un reemplazo completo, o explorar el rejuvenecimiento de techo. El tratamiento Peak 301 cuesta menos del 15% del reemplazo, restaura la flexibilidad de las tejas y viene con documentacion de garantia y una certificacion de Vida Util Remanente que la ley de Florida requiere que las aseguradoras acepten.",
+    insDesc: "Cuando tu cliente recibe un aviso de no-renovacion porque su techo tiene mas de 15 anos, tiene dos opciones: gastar $15,000–$25,000 en un reemplazo completo, o explorar el rejuvenecimiento de techo. El tratamiento Peak 301 cuesta una fraccion de lo que pagaria por un reemplazo completo, restaura la flexibilidad de las tejas y viene con documentacion de garantia y una certificacion de Vida Util Remanente que la ley de Florida requiere que las aseguradoras acepten.",
     insBenefits: [
       "Tu cliente mantiene su cobertura sin un reemplazo de techo de $20K",
       "Retienes al cliente en vez de perderlo ante una aseguradora que no asegura techos viejos",
