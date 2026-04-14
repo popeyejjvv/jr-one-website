@@ -297,9 +297,9 @@
       <input type="range" min="2000" max="7000" value="3748" step="50" oninput="uRf()" id="rf-ins-s">
     </div>
     <div class="rg">
-      <div class="rc hl"><div class="rc-lbl">Peak 301 treatment</div><div class="rc-v bl" id="rf-treat">$2,420</div><div class="rc-s">One day · 6-yr warranty</div></div>
+      <div class="rc hl"><div class="rc-lbl">Peak 301 treatment</div><div class="rc-v bl" id="rf-treat">Free Quote</div><div class="rc-s">One day · 6-yr warranty</div></div>
       <div class="rc rd"><div class="rc-lbl">Full replacement cost</div><div class="rc-v rd" id="rf-rep">$14,300</div><div class="rc-s">Asphalt shingle · Tampa Bay</div></div>
-      <div class="rc gr"><div class="rc-lbl">Immediate savings</div><div class="rc-v gr" id="rf-save">$11,880</div><div class="rc-s">Treatment vs. replacement</div></div>
+      <div class="rc gr"><div class="rc-lbl">Typical savings vs. replacement</div><div class="rc-v gr" id="rf-save">$10K+</div><div class="rc-s">Based on industry replacement cost</div></div>
       <div class="rc" id="rf-ins-card"><div class="rc-lbl">Insurance risk status</div><div class="ins-pill low" id="rf-pill">Low risk</div><div class="rc-s" id="rf-ins-sub">Under 15-yr threshold</div></div>
     </div>
     <div id="rf-warn" class="risk-box yw" style="display:none">
@@ -307,7 +307,7 @@
       <ul id="rf-warn-list"></ul>
     </div>
     <div class="ann-tbl">
-      <div class="ann-r"><span>Treatment amortized over 6-year warranty</span><span class="v-bl" id="rf-amort">$404/yr</span></div>
+      <div class="ann-r"><span>Treatment cost — exact pricing after free assessment</span><span class="v-bl" id="rf-amort">Call for quote</span></div>
       <div class="ann-r"><span>Insurance premium risk if roof ages out</span><span class="v-rd" id="rf-irisk">$1,500/yr potential</span></div>
       <div class="ann-r"><span>Replacement deferred (annualized value)</span><span class="v-gr" id="rf-def">$1,980/yr</span></div>
       <div class="ann-r tot"><span>Net annual benefit of treating now</span><span class="v-gr" id="rf-net">$3,077/yr</span></div>
@@ -460,17 +460,17 @@ function uRf() {
   document.getElementById('rf-sz-val').textContent=sq.toLocaleString()+' sq ft';
   document.getElementById('rf-age-val').textContent=age+' years';
   document.getElementById('rf-ins-val').textContent=fmt(ins);
-  const treat=Math.round(sq*1.025), rep=Math.round(sq*6.5);
-  const save=rep-treat, amort=Math.round(treat/6), def=Math.round(rep/6);
+  const rep=Math.round(sq*6.5);
+  const def=Math.round(rep/6);
   const irisk=age>=15?Math.round(ins*0.35):age>=12?Math.round(ins*0.20):Math.round(ins*0.05);
-  const net=def+irisk-amort;
-  document.getElementById('rf-treat').textContent=fmt(treat);
+  const net=def+irisk;
+  document.getElementById('rf-treat').textContent='Free Quote';
   document.getElementById('rf-rep').textContent=fmt(rep);
-  document.getElementById('rf-save').textContent=fmt(save);
-  document.getElementById('rf-amort').textContent=fmt(amort)+'/yr';
+  document.getElementById('rf-save').textContent=rep<12000?'Thousands':'$10K+';
+  document.getElementById('rf-amort').textContent='Call for quote';
   document.getElementById('rf-irisk').textContent=fmt(irisk)+'/yr potential';
   document.getElementById('rf-def').textContent=fmt(def)+'/yr';
-  document.getElementById('rf-net').textContent=fmt(net)+'/yr';
+  document.getElementById('rf-net').textContent=fmt(net)+'/yr value';
   const pill=document.getElementById('rf-pill');
   const warn=document.getElementById('rf-warn');
   if(age>=15){
