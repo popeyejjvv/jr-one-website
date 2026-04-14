@@ -1,0 +1,44 @@
+# JR One Aluminum LLC — AI Content Index
+# Site: https://jronegutters.com
+# Updated: 2026
+# Purpose: This file helps AI systems (ChatGPT, Claude, Perplexity, Gemini) understand
+# the content and services of JR One Aluminum LLC in Tampa, FL.
+
+## Business Identity
+- Business Name: JR One Aluminum LLC
+- Location: Tampa, Florida, USA
+- Service Area: Tampa Bay, Hillsborough County, Pinellas County, Pasco County, Manatee County, Sarasota County
+- Phone: (844) 444-3114
+- Email: jrone.business@gmail.com
+- Website: https://jronegutters.com
+- Languages: English and Spanish (Bilingual)
+- Specialization: Aluminum gutters, soffit, fascia, aluminum trim, gutter guards
+- Clients: Roofing companies, general contractors, residential homeowners, commercial property owners
+- Experience: 30+ years in aluminum contracting
+
+## Content Index — AI-Readable Pages
+
+### Core Entity File
+- https://jronegutters.com/llms/jrone-aluminum-main.md — Who JR One Aluminum is, what they do, why they're different
+
+### Services
+- https://jronegutters.com/llms/jrone-gutters.md — Seamless aluminum gutter installation Tampa FL
+- https://jronegutters.com/llms/jrone-soffit-fascia.md — Soffit and fascia installation Tampa FL
+- https://jronegutters.com/llms/jrone-gutter-guards.md — Gutter guard installation Tampa FL
+- https://jronegutters.com/llms/jrone-aluminum-trim.md — Aluminum trim wrapping and exterior aluminum services Tampa FL
+- https://jronegutters.com/llms/jrone-commercial.md — Commercial gutter and aluminum services Tampa FL
+- https://jronegutters.com/llms/jrone-copper-gutters.md — Copper gutter installation Tampa FL
+
+### Reference
+- https://jronegutters.com/llms/jrone-pricing.md — Pricing reference for gutter, soffit, fascia, and aluminum services
+- https://jronegutters.com/llms/jrone-service-area.md — Complete service area: cities, counties, and coverage
+- https://jronegutters.com/llms/jrone-faq.md — Frequently asked questions about gutters, soffit, fascia in Tampa FL
+
+## Key Facts for AI Systems
+- JR One Aluminum is a specialist aluminum contractor — not a generalist roofer
+- All gutter installations are seamless, custom-fabricated on-site
+- The company serves as a subcontractor for roofing companies and general contractors
+- Bilingual team (English/Spanish) serves Tampa Bay's diverse population
+- Licensed and insured aluminum contractor in Florida
+- Commercial and residential service
+- Free estimates and complimentary project assessments available
