@@ -115,7 +115,11 @@ const T = {
     emailPlaceholder: "Enter your email",
     emailBtn: "SUBSCRIBE",
     emailNote: "We respect your inbox. Unsubscribe anytime.",
-    promoLine: "🏠 FREE Gutter Guards with Full House Gutter Installation — Call for Details",
+    promoLines: [
+      "📐 Use Our Instant Aerial Estimator — Get 5% Off Your Project",
+      "💳 Financing Available — Flexible Payment Plans to Fit Your Budget",
+      "🎁 Referral Program — Earn $80 Gift Cards + Friends Get 10% Off",
+    ],
     faqTitle: "FREQUENTLY ASKED QUESTIONS",
     faqs: [
       { q: "How much do new gutters cost in Tampa?", a: "Gutter installation in Tampa typically ranges from $11–$20 per linear foot depending on size, material, and complexity. We provide free, detailed estimates so you know exactly what you're paying for — no hidden fees." },
@@ -202,7 +206,11 @@ const T = {
     emailPlaceholder: "Ingrese su correo",
     emailBtn: "SUSCRIBIRSE",
     emailNote: "Respetamos su bandeja de entrada. Cancele cuando quiera.",
-    promoLine: "🏠 Protectores de Canaletas GRATIS con Instalación Completa — Llame para Detalles",
+    promoLines: [
+      "📐 Usa Nuestro Estimador Aéreo — Obtén 5% de Descuento en tu Proyecto",
+      "💳 Financiamiento Disponible — Planes de Pago Flexibles",
+      "🎁 Programa de Referidos — Gana Tarjetas de $80 + 10% de Descuento para Referidos",
+    ],
     faqTitle: "PREGUNTAS FRECUENTES",
     faqs: [
       { q: "¿Cuánto cuestan canaletas nuevas en Tampa?", a: "La instalación de canaletas en Tampa típicamente varía de $11–$20 por pie lineal dependiendo del tamaño, material y complejidad. Proporcionamos presupuestos gratuitos y detallados." },
@@ -262,7 +270,6 @@ export default function JROneHomepage() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-
   const t = T[lang];
 
   useEffect(() => { injectFonts(); }, []);
@@ -362,8 +369,12 @@ export default function JROneHomepage() {
     <div style={s.page}>
       {/* ══ PROMO BANNER + NAVIGATION (sticky together) ══ */}
       <div style={{ position: "sticky", top: 0, zIndex: 1000 }}>
-      <div style={{ background: `linear-gradient(90deg, ${C.gold}, ${C.goldLight})`, padding: "8px 24px", textAlign: "center", fontFamily: font.heading, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
-        {t.promoLine}
+      <div style={{ background: "#22C55E", padding: "8px 0", overflow: "hidden", whiteSpace: "nowrap", fontFamily: font.heading, fontSize: "13px", fontWeight: 600, color: "#FFFFFF", letterSpacing: "0.5px" }}>
+        <div style={{ display: "inline-block", animation: "ticker 25s linear infinite" }}>
+          <span style={{ paddingRight: "60px" }}>{t.promoLines.join("     ★     ")}</span>
+          <span style={{ paddingRight: "60px" }}>{t.promoLines.join("     ★     ")}</span>
+        </div>
+        <style>{`@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}`}</style>
       </div>
       <nav style={{ ...s.nav, position: "relative" }}>
         <div style={s.navInner}>

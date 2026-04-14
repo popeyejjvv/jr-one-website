@@ -31,7 +31,11 @@ const T = {
     serviceLabels: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
     navLabels: ["The Gold Standard", "About", "Contact", "FAQ", "Projects"],
     featureLabels: ["Estimator", "Financing", "Referral"],
-    promoBanner: "🏠 FREE Gutter Guards with Full House Gutter Installation — Call (844) 444-3114",
+    promoBanner: [
+      "📐 Use Our Instant Aerial Estimator — Get 5% Off Your Project",
+      "💳 Financing Available — Flexible Payment Plans to Fit Your Budget",
+      "🎁 Referral Program — Earn $80 Gift Cards + Friends Get 10% Off",
+    ],
   },
   es: {
     services: "Servicios",
@@ -39,7 +43,11 @@ const T = {
     serviceLabels: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
     navLabels: ["El Estándar de Oro", "Nosotros", "Contacto", "Preguntas Frecuentes", "Proyectos"],
     featureLabels: ["Estimador", "Financiamiento", "Referidos"],
-    promoBanner: "🏠 Protectores de Canaletas GRATIS con Instalación Completa — Llame al (844) 444-3114",
+    promoBanner: [
+      "📐 Usa Nuestro Estimador Aéreo — Obtén 5% de Descuento en tu Proyecto",
+      "💳 Financiamiento Disponible — Planes de Pago Flexibles",
+      "🎁 Programa de Referidos — Gana Tarjetas de $80 + 10% de Descuento para Referidos",
+    ],
   },
 };
 
@@ -49,13 +57,18 @@ export default function SiteNav({ promoBanner }) {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const { lang, toggleLang } = useLanguage();
   const t = T[lang];
-  const banner = promoBanner || t.promoBanner;
+  const bannerMessages = promoBanner ? (Array.isArray(promoBanner) ? promoBanner : [promoBanner]) : t.promoBanner;
+  const tickerText = bannerMessages.join("     ★     ");
 
   return (
     <div style={{ position: "sticky", top: 0, zIndex: 1000 }}>
       {/* Promo Banner — sticks with nav */}
-      <div style={{ background: `linear-gradient(90deg,${C.gold},${C.goldLight})`, padding: "8px 24px", textAlign: "center", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.navy, letterSpacing: "0.5px" }}>
-        {banner}
+      <div style={{ background: "#22C55E", padding: "8px 0", overflow: "hidden", whiteSpace: "nowrap", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.white, letterSpacing: "0.5px" }}>
+        <div style={{ display: "inline-block", animation: "ticker 25s linear infinite" }}>
+          <span style={{ paddingRight: "60px" }}>{tickerText}</span>
+          <span style={{ paddingRight: "60px" }}>{tickerText}</span>
+        </div>
+        <style>{`@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}`}</style>
       </div>
 
       {/* Navigation */}
