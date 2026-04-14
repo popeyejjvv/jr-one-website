@@ -32,13 +32,21 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Soffit and Fascia Installation Tampa FL | Aluminum Specialist",
+  title: "Soffit and Fascia Replacement Tampa FL | Rotted Wood + Aluminum Install",
   description:
-    "Aluminum soffit and fascia installation in Tampa Bay. Vented and non-vented panels, custom-bent fascia wraps, wood replacement when rotted. Free estimate — (844) 444-3114.",
+    "Soffit and fascia replacement in Tampa — rotted wood replaced, aluminum installed. Vented panels, custom-bent fascia wraps, pest-seal, repaint eliminated. Free estimate — (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/soffit-and-fascia" },
+  keywords: [
+    "soffit and fascia replacement tampa",
+    "soffit and fascia repair tampa",
+    "soffit repair tampa",
+    "soffit and fascia tampa",
+    "fascia replacement tampa",
+    "aluminum soffit tampa",
+  ],
   openGraph: {
-    title: "Soffit and Fascia Tampa FL — JR One Aluminum",
-    description: "Aluminum soffit and fascia specialists in Tampa Bay. 30+ years experience. Free estimates.",
+    title: "Soffit and Fascia Replacement Tampa FL — JR One Aluminum",
+    description: "Rotted wood out, aluminum in. Soffit and fascia replacement specialists in Tampa Bay for over 30 years. Free estimates.",
     url: "https://jronegutters.com/soffit-and-fascia",
     type: "website",
   },
