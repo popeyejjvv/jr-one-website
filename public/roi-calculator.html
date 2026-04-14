@@ -299,7 +299,7 @@
     <div class="rg">
       <div class="rc hl"><div class="rc-lbl">Peak 301 treatment</div><div class="rc-v bl" id="rf-treat">Free Quote</div><div class="rc-s">One day · 6-yr warranty</div></div>
       <div class="rc rd"><div class="rc-lbl">Full replacement cost</div><div class="rc-v rd" id="rf-rep">$14,300</div><div class="rc-s">Asphalt shingle · Tampa Bay</div></div>
-      <div class="rc gr"><div class="rc-lbl">Typical savings vs. replacement</div><div class="rc-v gr" id="rf-save">$10K+</div><div class="rc-s">Based on industry replacement cost</div></div>
+      <div class="rc gr"><div class="rc-lbl">Typical savings vs. replacement</div><div class="rc-v gr" id="rf-save">Up to 70%</div><div class="rc-s">Less than a new roof install</div></div>
       <div class="rc" id="rf-ins-card"><div class="rc-lbl">Insurance risk status</div><div class="ins-pill low" id="rf-pill">Low risk</div><div class="rc-s" id="rf-ins-sub">Under 15-yr threshold</div></div>
     </div>
     <div id="rf-warn" class="risk-box yw" style="display:none">
@@ -466,7 +466,7 @@ function uRf() {
   const net=def+irisk;
   document.getElementById('rf-treat').textContent='Free Quote';
   document.getElementById('rf-rep').textContent=fmt(rep);
-  document.getElementById('rf-save').textContent=rep<12000?'Thousands':'$10K+';
+  document.getElementById('rf-save').textContent='Up to 70%';
   document.getElementById('rf-amort').textContent='Call for quote';
   document.getElementById('rf-irisk').textContent=fmt(irisk)+'/yr potential';
   document.getElementById('rf-def').textContent=fmt(def)+'/yr';
