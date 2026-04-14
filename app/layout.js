@@ -6,20 +6,31 @@ import { Providers } from "./providers";
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
+  "@id": "https://jronegutters.com/#business",
   name: "JR One Aluminum LLC",
+  alternateName: "JR One Gutters",
   url: "https://jronegutters.com",
   telephone: "(844) 444-3114",
   email: "info@jronegutters.com",
+  hasMap:
+    "https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.961411,-82.5006675,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675",
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "Google Place ID",
+    value: "ChIJJ5X3uyzDwogRjqf87jhh9tQ",
+  },
   address: {
     "@type": "PostalAddress",
+    streetAddress: "3420 W Cherry St",
     addressLocality: "Tampa",
     addressRegion: "FL",
+    postalCode: "33607",
     addressCountry: "US",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "27.9506",
-    longitude: "-82.4572",
+    latitude: "27.961411",
+    longitude: "-82.5006675",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -27,6 +38,14 @@ const localBusinessSchema = {
     reviewCount: "55",
   },
   priceRange: "$$",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      opens: "07:00",
+      closes: "18:00",
+    },
+  ],
   areaServed: [
     "Tampa","Clearwater","St. Petersburg","Sarasota","Bradenton",
     "Lakeland","Brandon","Wesley Chapel","Palm Harbor","Riverview",
@@ -34,6 +53,22 @@ const localBusinessSchema = {
     "Land O' Lakes","Dunedin","Ruskin","Sun City Center",
     "Temple Terrace","Plant City","Lutz",
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "JR One Aluminum Services",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Seamless Aluminum Gutter Installation", url: "https://jronegutters.com/seamless-aluminum-gutters" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Guards", url: "https://jronegutters.com/gutter-guards" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Soffit and Fascia Replacement", url: "https://jronegutters.com/soffit-and-fascia" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Repair", url: "https://jronegutters.com/gutter-repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Siding Installation", url: "https://jronegutters.com/siding" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Copper Gutters", url: "https://jronegutters.com/copper-gutters" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Drainage Installation", url: "https://jronegutters.com/drainage-assessment" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Peak 301 Roof Rejuvenation", url: "https://jronegutters.com/peak-301" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sagiper Premium Cladding", url: "https://jronegutters.com/sagiper" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Govee Permanent Exterior Lighting", url: "https://jronegutters.com/govee-lights" } },
+    ],
+  },
   numberOfEmployees: "15-20",
   knowsLanguage: ["English", "Spanish"],
   sameAs: [
@@ -151,10 +186,9 @@ export default function RootLayout({ children }) {
           src={`https://app.buildmyagent.com/widget/CHATBOT_EMBED_ID`}
         /> */}
 
-        {/* ── Google Analytics 4 ──
-            Replace G-XXXXXXXXXX with actual GA4 measurement ID */}
-        {/* <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+        {/* ── Google Analytics 4 ── */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HY6GK76P44"
           strategy="afterInteractive"
         />
         <Script id="ga4-init" strategy="afterInteractive">
@@ -162,9 +196,9 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-HY6GK76P44');
           `}
-        </Script> */}
+        </Script>
       </body>
     </html>
   );
