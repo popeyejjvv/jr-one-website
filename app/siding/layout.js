@@ -1,0 +1,55 @@
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Siding Installation",
+  serviceType: "Siding Installation",
+  provider: {
+    "@type": "HomeAndConstructionBusiness",
+    name: "JR One Aluminum LLC",
+    url: "https://jronegutters.com",
+    telephone: "(844) 444-3114",
+    address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
+  },
+  areaServed: [
+    { "@type": "City", name: "Tampa" },
+    { "@type": "City", name: "Brandon" },
+    { "@type": "City", name: "Riverview" },
+    { "@type": "City", name: "Wesley Chapel" },
+    { "@type": "City", name: "Clearwater" },
+    { "@type": "City", name: "St. Petersburg" },
+  ],
+  description:
+    "Siding installation in Tampa Bay — vinyl lap, Hardie board lap, Hardie batten and shaker, custom aluminum. Integrated with soffit, fascia, and gutters by one specialist crew. 30+ years experience.",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Siding", item: "https://jronegutters.com/siding" },
+  ],
+};
+
+export const metadata = {
+  title: "Siding Installation Tampa FL | Hardie Board, Vinyl, Aluminum",
+  description:
+    "Siding installation in Tampa Bay — Hardie board, vinyl lap, custom aluminum. One crew handles siding, soffit, fascia, and gutters. Free estimate — (844) 444-3114.",
+  alternates: { canonical: "https://jronegutters.com/siding" },
+  openGraph: {
+    title: "Siding Installation Tampa FL — JR One Aluminum",
+    description: "Tampa Bay siding specialist — Hardie, vinyl, custom aluminum. Integrated with soffit, fascia, and gutters.",
+    url: "https://jronegutters.com/siding",
+    type: "website",
+  },
+};
+
+export default function Layout({ children }) {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {children}
+    </>
+  );
+}
