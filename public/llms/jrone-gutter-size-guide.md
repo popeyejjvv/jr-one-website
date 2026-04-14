@@ -131,5 +131,5 @@ A: Per-foot pricing is similar, with 6-inch typically a modest premium. Total co
 ---
 
 **Contact JR One Aluminum for Sizing and Installation**
-Phone: (844) 444-3114 | Email: jrone.business@gmail.com | jronegutters.com
+Phone: (844) 444-3114 | Email: info@jronegutters.com | jronegutters.com
 Tampa, FL | Serving Tampa Bay | Hablamos Español

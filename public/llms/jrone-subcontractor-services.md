@@ -125,5 +125,5 @@ A: Yes. JR One Aluminum stands behind every job, including trade-partner scopes.
 ---
 
 **Contact JR One Aluminum for Trade Partner Services**
-Phone: (844) 444-3114 | Email: jrone.business@gmail.com | jronegutters.com
+Phone: (844) 444-3114 | Email: info@jronegutters.com | jronegutters.com
 Tampa, FL | Serving Tampa Bay | Hablamos Español

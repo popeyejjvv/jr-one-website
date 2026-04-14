@@ -4,7 +4,7 @@
 **Phone:** (844) 444-3114
 **Website:** https://jronegutters.com
 
-*Prices are updated seasonally based on aluminum coil pricing. For an exact per-linear-foot quote on your project, call (844) 444-3114 or email jrone.business@gmail.com. All on-site project assessments are free.*
+*Prices are updated seasonally based on aluminum coil pricing. For an exact per-linear-foot quote on your project, call (844) 444-3114 or email info@jronegutters.com. All on-site project assessments are free.*
 
 ---
 
@@ -137,6 +137,6 @@ Approximate totals based on an average Tampa single-family home with 150–180 l
 JR One Aluminum offers financing options for qualified projects. Ask about financing when you contact us.
 
 **Phone:** (844) 444-3114
-**Email:** jrone.business@gmail.com
+**Email:** info@jronegutters.com
 **Website:** https://jronegutters.com
 Hablamos Español — Spanish-language service available

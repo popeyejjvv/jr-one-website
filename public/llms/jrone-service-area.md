@@ -104,7 +104,7 @@ JR One Aluminum operates as a subcontractor for roofing companies and general co
 ## How to Request Service in Your Area
 
 Call or text: (844) 444-3114
-Email: jrone.business@gmail.com
+Email: info@jronegutters.com
 Online: https://jronegutters.com/contact
 
 Free on-site estimates available throughout the service area.

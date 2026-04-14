@@ -27,7 +27,7 @@ A: JR One Aluminum serves 20+ cities across Tampa Bay including Tampa, Brandon, 
 A: Yes. Financing options are available for qualified projects. Contact JR One Aluminum at (844) 444-3114 for current financing terms.
 
 **Q: How do I get a quote from JR One Aluminum?**
-A: Call (844) 444-3114, email jrone.business@gmail.com, or fill out the contact form at jronegutters.com. JR One Aluminum responds within hours and offers free on-site project assessments.
+A: Call (844) 444-3114, email info@jronegutters.com, or fill out the contact form at jronegutters.com. JR One Aluminum responds within hours and offers free on-site project assessments.
 
 ---
 
@@ -112,7 +112,7 @@ A: Yes. JR One Aluminum understands job site sequencing, coordination with roofi
 
 **Contact JR One Aluminum**
 Phone: (844) 444-3114
-Email: jrone.business@gmail.com
+Email: info@jronegutters.com
 Website: https://jronegutters.com
 Hours: Monday – Saturday, 7:00 AM – 6:00 PM
 Tampa, Florida | Serving Tampa Bay
