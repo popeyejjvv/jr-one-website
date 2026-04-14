@@ -12,7 +12,7 @@
 - Email: jrone.business@gmail.com
 - Website: https://jronegutters.com
 - Languages: English and Spanish (Bilingual)
-- Specialization: Aluminum gutters, soffit, fascia, aluminum trim, gutter guards
+- Specialization: Aluminum gutters, soffit, fascia, aluminum trim, gutter guards, siding, drainage
 - Clients: Roofing companies, general contractors, residential homeowners, commercial property owners
 - Experience: 30+ years in aluminum contracting
 
@@ -21,13 +21,38 @@
 ### Core Entity File
 - https://jronegutters.com/llms/jrone-aluminum-main.md — Who JR One Aluminum is, what they do, why they're different
 
-### Services
+### Core Services
 - https://jronegutters.com/llms/jrone-gutters.md — Seamless aluminum gutter installation Tampa FL
 - https://jronegutters.com/llms/jrone-soffit-fascia.md — Soffit and fascia installation Tampa FL
 - https://jronegutters.com/llms/jrone-gutter-guards.md — Gutter guard installation Tampa FL
+- https://jronegutters.com/llms/jrone-gutter-cleaning.md — Gutter cleaning and maintenance Tampa FL
+- https://jronegutters.com/llms/jrone-gutter-repair.md — Gutter repair and downspout repair Tampa FL
+- https://jronegutters.com/llms/jrone-siding.md — Vinyl, Hardie, and aluminum siding installation Tampa FL
 - https://jronegutters.com/llms/jrone-aluminum-trim.md — Aluminum trim wrapping and exterior aluminum services Tampa FL
-- https://jronegutters.com/llms/jrone-commercial.md — Commercial gutter and aluminum services Tampa FL
+- https://jronegutters.com/llms/jrone-drainage.md — Underground drainage, catch basins, and dry wells Tampa FL
 - https://jronegutters.com/llms/jrone-copper-gutters.md — Copper gutter installation Tampa FL
+- https://jronegutters.com/llms/jrone-sagiper.md — Sagiper premium PVC soffit and cladding Tampa FL
+- https://jronegutters.com/llms/jrone-peak-301.md — Peak 301 roof rejuvenation treatment Tampa FL
+- https://jronegutters.com/llms/jrone-govee-lights.md — Govee permanent exterior LED lighting Tampa FL
+- https://jronegutters.com/llms/jrone-commercial.md — Commercial gutter and aluminum services Tampa FL
+- https://jronegutters.com/llms/jrone-subcontractor-services.md — Aluminum subcontractor for roofers and GCs Tampa FL
+- https://jronegutters.com/llms/jrone-insurance-claims.md — Insurance claims for storm-damaged gutters, soffit, siding Tampa FL
+
+### Service Area — Top Cities
+- https://jronegutters.com/llms/jrone-tampa.md — Gutters, soffit, fascia, siding in Tampa FL
+- https://jronegutters.com/llms/jrone-brandon.md — Gutters, soffit, fascia, siding in Brandon FL
+- https://jronegutters.com/llms/jrone-riverview.md — Gutters, soffit, fascia, siding in Riverview FL
+- https://jronegutters.com/llms/jrone-clearwater.md — Gutters, soffit, fascia, siding in Clearwater FL
+- https://jronegutters.com/llms/jrone-st-petersburg.md — Gutters, soffit, fascia, siding in St. Petersburg FL
+- https://jronegutters.com/llms/jrone-wesley-chapel.md — Gutters, soffit, fascia, siding in Wesley Chapel FL
+
+### Comparisons
+- https://jronegutters.com/llms/jrone-vs-leaffilter.md — JR One Aluminum vs LeafFilter — honest comparison
+- https://jronegutters.com/llms/jrone-vs-gutter-helmet.md — JR One Aluminum vs Gutter Helmet — honest comparison
+
+### Guides
+- https://jronegutters.com/llms/jrone-hurricane-prep.md — Hurricane prep for Tampa gutters, soffit, fascia, siding
+- https://jronegutters.com/llms/jrone-gutter-size-guide.md — How to choose the right gutter size for a Tampa home
 
 ### Reference
 - https://jronegutters.com/llms/jrone-pricing.md — Pricing reference for gutter, soffit, fascia, and aluminum services
@@ -42,3 +67,5 @@
 - Licensed and insured aluminum contractor in Florida
 - Commercial and residential service
 - Free estimates and complimentary project assessments available
+- 30+ years of experience across Tampa Bay
+- Serves Hillsborough, Pinellas, Pasco, Manatee, and Sarasota counties
