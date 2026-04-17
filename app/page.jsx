@@ -793,6 +793,7 @@ export default function JROneHomepage() {
               { en: "FAQ", es: "Preguntas Frecuentes", href: "/faq" },
               { en: "Financing", es: "Financiamiento", href: "/financing" },
               { en: "Insurance Resource Center", es: "Centro de Recursos de Seguros", href: "/insurance-resource-center" },
+              { en: "Blog", es: "Blog", href: "/blog" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{lang === "en" ? item.en : item.es}</a>
             ))}
