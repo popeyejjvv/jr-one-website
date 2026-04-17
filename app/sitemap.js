@@ -1,6 +1,22 @@
 import { getAllPostSlugs } from "@/lib/blog";
+import fs from "fs";
+import path from "path";
 
 const BASE_URL = "https://jronegutters.com";
+
+// AI-citation knowledge markdown files — auto-discovered from public/llms/
+// so new MDs get crawled without a sitemap edit. These are the dense factual
+// docs ChatGPT / Claude / Perplexity / Gemini fetch when citing JR One.
+function getKnowledgeMdPaths() {
+  try {
+    const llmsDir = path.join(process.cwd(), "public", "llms");
+    return fs.readdirSync(llmsDir)
+      .filter((f) => f.endsWith(".md"))
+      .map((f) => `/llms/${f}`);
+  } catch {
+    return [];
+  }
+}
 
 const CITY_SLUGS = [
   "tampa","clearwater","st-petersburg","sarasota","bradenton",
@@ -8,6 +24,11 @@ const CITY_SLUGS = [
   "new-port-richey","largo","spring-hill","tarpon-springs",
   "land-o-lakes","dunedin","ruskin","sun-city-center",
   "temple-terrace","plant-city","lutz",
+];
+
+const CITY_SERVICE_SLUGS = [
+  "seamless-aluminum-gutters","gutter-guards","gutter-cleaning","gutter-repair",
+  "soffit-and-fascia","siding","copper-gutters","drainage-assessment",
 ];
 
 const STATIC_PAGES = [
@@ -35,6 +56,11 @@ const STATIC_PAGES = [
   { path: "/drainage-assessment", priority: 0.8, changeFrequency: "monthly" },
   { path: "/specialty-gutters", priority: 0.7, changeFrequency: "monthly" },
   { path: "/sagiper", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/hoa-contracts", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/rental-property-maintenance", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/commercial-gutters", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/gutter-cleaning", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/7-inch-gutters", priority: 0.8, changeFrequency: "monthly" },
 ];
 
 export default function sitemap() {
@@ -52,6 +78,15 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
+  const cityServiceEntries = CITY_SLUGS.flatMap((slug) =>
+    CITY_SERVICE_SLUGS.map((service) => ({
+      url: `${BASE_URL}/areas/${slug}/${service}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }))
+  );
+
   const blogSlugs = getAllPostSlugs();
   const blogEntries = blogSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}`,
@@ -60,5 +95,28 @@ export default function sitemap() {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...cityEntries, ...blogEntries];
+  // Knowledge markdown files for AI citation (ChatGPT/Claude/Perplexity/Gemini).
+  // Listed at priority 0.5 — lower than HTML pages because these are reference
+  // material, not primary landing pages, but must be in sitemap for discovery.
+  const knowledgeMdEntries = getKnowledgeMdPaths().map((p) => ({
+    url: `${BASE_URL}${p}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.5,
+  }));
+
+  // Top-level llms index files for AI crawlers.
+  const aiIndexEntries = [
+    { url: `${BASE_URL}/llms.txt`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE_URL}/llms-full.txt`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 },
+  ];
+
+  return [
+    ...staticEntries,
+    ...cityEntries,
+    ...cityServiceEntries,
+    ...blogEntries,
+    ...knowledgeMdEntries,
+    ...aiIndexEntries,
+  ];
 }

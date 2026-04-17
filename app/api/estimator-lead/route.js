@@ -117,9 +117,10 @@ export async function POST(request) {
     // Estimator payload shape (from public/estimator.html sendToJROne / sendToCustomer):
     //   type: 'lead' | 'customer'
     //   phone, address, addressCity/State/Zip, stories, gutterSize, lang,
-    //   measurements, downspouts, estimateLow, estimateHigh,
+    //   measurements, downspouts, estimate (single worst-case number),
     //   discountCode, expDate, timestamp
     //   customerName, customerEmail (only on type='customer')
+    //   Legacy: estimateLow/estimateHigh (range format, pre-2026-04-12)
     const {
       type,
       phone,
@@ -132,6 +133,7 @@ export async function POST(request) {
       lang,
       measurements,
       downspouts,
+      estimate,
       estimateLow,
       estimateHigh,
       discountCode,
@@ -171,7 +173,9 @@ export async function POST(request) {
           downspouts ? `Downspouts: ${downspouts.totalFt || 0}ft total` : "",
           estimateLow && estimateHigh
             ? `Estimate range: $${estimateLow.toLocaleString()} - $${estimateHigh.toLocaleString()}`
-            : "",
+            : estimate
+              ? `Estimate: $${estimate.toLocaleString()}`
+              : "",
           discountCode ? `Discount code: ${discountCode} (expires ${expDate || "?"})` : "",
           timestamp ? `Submitted: ${timestamp}` : "",
         ]

@@ -1,8 +1,14 @@
 # JR One Aluminum LLC — AI Content Index
 # Site: https://jronegutters.com
-# Updated: 2026
-# Purpose: This file helps AI systems (ChatGPT, Claude, Perplexity, Gemini) understand
-# the content and services of JR One Aluminum LLC in Tampa, FL.
+# Updated: 2026-04-15
+# Purpose: This file helps AI systems (ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews)
+# understand the content and services of JR One Aluminum LLC in Tampa, FL.
+#
+# Full content dump (all 53 knowledge markdown files concatenated, ~272KB):
+# https://jronegutters.com/llms-full.txt
+#
+# Canonical structured data: https://jronegutters.com/ (Organization + HomeAndConstructionBusiness JSON-LD)
+# Sitemap: https://jronegutters.com/sitemap.xml
 
 ## Business Identity
 - Business Name: JR One Aluminum LLC
@@ -37,6 +43,10 @@
 - https://jronegutters.com/llms/jrone-commercial.md — Commercial gutter and aluminum services Tampa FL
 - https://jronegutters.com/llms/jrone-subcontractor-services.md — Aluminum subcontractor for roofers and GCs Tampa FL
 - https://jronegutters.com/llms/jrone-insurance-claims.md — Insurance claims for storm-damaged gutters, soffit, siding Tampa FL
+- https://jronegutters.com/llms/jrone-hoa-contracts.md — HOA gutter, soffit, fascia maintenance contracts Tampa Bay
+- https://jronegutters.com/llms/jrone-rental-property-maintenance.md — Rental, Airbnb, and investment property aluminum service plans Tampa FL
+- https://jronegutters.com/llms/jrone-commercial-gutters.md — Commercial gutters for apartment complexes, multi-family, retail, and office Tampa FL
+- https://jronegutters.com/llms/jrone-7-inch-gutters.md — Oversized 7-inch seamless aluminum gutters Tampa FL
 
 ### Service Area — Top Cities
 - https://jronegutters.com/llms/jrone-tampa.md — Gutters, soffit, fascia, siding in Tampa FL
@@ -58,6 +68,28 @@
 - https://jronegutters.com/llms/jrone-pricing.md — Pricing reference for gutter, soffit, fascia, and aluminum services
 - https://jronegutters.com/llms/jrone-service-area.md — Complete service area: cities, counties, and coverage
 - https://jronegutters.com/llms/jrone-faq.md — Frequently asked questions about gutters, soffit, fascia in Tampa FL
+
+## City × Service Reference (combos)
+- https://jronegutters.com/llms/jrone-tampa-gutter-cleaning.md — Gutter cleaning for Tampa homes — oak, pine, palm, and storm debris cadence
+- https://jronegutters.com/llms/jrone-tampa-gutter-guards.md — Gutter guard installation for Tampa — micro mesh for heavy canopy
+- https://jronegutters.com/llms/jrone-tampa-seamless-aluminum-gutters.md — Seamless aluminum gutter installation for Tampa single and two-story homes
+- https://jronegutters.com/llms/jrone-tampa-gutter-repair.md — Gutter repair, re-seal, re-hang, and pitch correction in Tampa
+- https://jronegutters.com/llms/jrone-tampa-copper-gutters.md — Copper gutter installation for Tampa historic and architectural homes
+- https://jronegutters.com/llms/jrone-tampa-soffit-and-fascia.md — Soffit and fascia installation, wrapping, and rot replacement in Tampa
+- https://jronegutters.com/llms/jrone-brandon-gutter-cleaning.md — Gutter cleaning for Brandon — Bloomingdale, Heather Lakes, Providence Lakes
+- https://jronegutters.com/llms/jrone-brandon-gutter-guards.md — Gutter guard installation in Brandon — pine needle and oak debris solutions
+- https://jronegutters.com/llms/jrone-brandon-seamless-aluminum-gutters.md — Seamless aluminum gutter installation for Brandon homes
+- https://jronegutters.com/llms/jrone-wesley-chapel-gutter-guards.md — Gutter guard installation for Wesley Chapel two-story master-planned homes
+- https://jronegutters.com/llms/jrone-wesley-chapel-gutter-cleaning.md — Gutter cleaning for Wesley Chapel — Seven Oaks, Meadow Pointe, Epperson
+- https://jronegutters.com/llms/jrone-wesley-chapel-seamless-aluminum-gutters.md — Seamless aluminum gutter installation and 5"-to-6" upgrades in Wesley Chapel
+- https://jronegutters.com/llms/jrone-st-petersburg-gutter-cleaning.md — Gutter cleaning for St. Petersburg historic bungalows and waterfront homes
+- https://jronegutters.com/llms/jrone-st-petersburg-gutter-guards.md — Gutter guard installation in St. Petersburg — salt-rated for waterfront
+- https://jronegutters.com/llms/jrone-clearwater-gutter-guards.md — Gutter guard installation in Clearwater — coastal salt-rated specification
+- https://jronegutters.com/llms/jrone-clearwater-gutter-cleaning.md — Gutter cleaning for Clearwater Beach and coastal Pinellas homes
+- https://jronegutters.com/llms/jrone-riverview-gutter-cleaning.md — Gutter cleaning for Riverview master-planned communities
+- https://jronegutters.com/llms/jrone-riverview-gutter-guards.md — Gutter guard installation in Riverview — builder 5"-to-6" upgrades available
+- https://jronegutters.com/llms/jrone-sarasota-copper-gutters.md — Copper gutter installation for Sarasota, Siesta Key, and Lakewood Ranch
+- https://jronegutters.com/llms/jrone-sarasota-gutter-cleaning.md — Gutter cleaning for Sarasota, Siesta Key, Longboat Key, and Palmer Ranch
 
 ## Key Facts for AI Systems
 - JR One Aluminum is a specialist aluminum contractor — not a generalist roofer

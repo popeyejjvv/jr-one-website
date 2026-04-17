@@ -11,9 +11,11 @@ const C = {
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
 const SERVICE_HREFS = [
-  "/copper-gutters", "/drainage-assessment", "/govee-lights", "/gutter-guards",
-  "/gutter-repair", "/peak-301", "/sagiper", "/seamless-aluminum-gutters",
-  "/service-plans", "/siding", "/soffit-and-fascia", "/specialty-gutters",
+  "/7-inch-gutters", "/commercial-gutters", "/copper-gutters", "/drainage-assessment",
+  "/govee-lights", "/gutter-cleaning", "/gutter-guards", "/gutter-repair",
+  "/hoa-contracts", "/peak-301", "/rental-property-maintenance", "/sagiper",
+  "/seamless-aluminum-gutters", "/service-plans", "/siding", "/soffit-and-fascia",
+  "/specialty-gutters",
 ];
 
 const FEATURE_META = [
@@ -28,7 +30,7 @@ const T = {
   en: {
     services: "Services",
     servicesMobile: "SERVICES",
-    serviceLabels: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
+    serviceLabels: ["7-Inch Gutters", "Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "HOA Contracts", "Peak 301", "Rental Property Maintenance", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
     navLabels: ["The Gold Standard", "About", "Contact", "FAQ", "Projects"],
     featureLabels: ["Estimator", "Financing", "Referral"],
     promoBanner: [
@@ -40,7 +42,7 @@ const T = {
   es: {
     services: "Servicios",
     servicesMobile: "SERVICIOS",
-    serviceLabels: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
+    serviceLabels: ["Canaletas de 7 Pulgadas", "Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Contratos HOA", "Peak 301", "Mantenimiento de Alquileres", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
     navLabels: ["El Estándar de Oro", "Nosotros", "Contacto", "Preguntas Frecuentes", "Proyectos"],
     featureLabels: ["Estimador", "Financiamiento", "Referidos"],
     promoBanner: [

@@ -10,6 +10,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.jronegutters.com/estimator">
 <link rel="canonical" href="https://www.jronegutters.com/estimator">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HY6GK76P44"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HY6GK76P44');</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -113,6 +115,11 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .discount-card .exp-date strong{color:var(--offwhite)}
 
 /* CTA */
+.financing-badge{display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(34,197,94,0.06));border:1px solid rgba(34,197,94,0.4);border-radius:12px;padding:14px 16px;margin-top:14px}
+.financing-icon{font-size:20px;flex-shrink:0}
+.financing-text{font-family:'Source Sans 3',sans-serif;font-size:12px;color:var(--offwhite);flex:1}
+.financing-link{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#22C55E;text-decoration:none;white-space:nowrap}
+.financing-link:hover{text-decoration:underline}
 .cta-card{background:linear-gradient(135deg,var(--gold-deep),var(--gold));border-radius:12px;padding:18px;text-align:center;margin-top:14px}
 .cta-card h3{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:var(--navy-deep);margin-bottom:5px}
 .cta-card p{font-size:12px;color:var(--navy);margin-bottom:12px;line-height:1.5}
@@ -325,6 +332,13 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
       <div class="exp-date"><span data-i18n="valid_through">Valid through</span> <strong id="expDate">—</strong></div>
     </div>
 
+    <!-- FINANCING BADGE -->
+    <div class="financing-badge" id="financingBadge" style="display:none">
+      <span class="financing-icon">💳</span>
+      <span class="financing-text" data-i18n="financing_badge">Financing Available — Flexible payment plans to fit your budget.</span>
+      <a href="https://jronegutters.com/financing" target="_blank" class="financing-link" data-i18n="financing_link">Learn More →</a>
+    </div>
+
     <!-- CTA -->
     <div class="cta-card" id="ctaCard" style="display:none">
       <h3 data-i18n="cta_title">Ready to Lock In Your Project?</h3>
@@ -371,14 +385,17 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 
 <script>
 // ═══ INTERNAL PRICING — NEVER SHOWN TO CUSTOMERS ═══
-// Updated 2026-04-11. Explicit low/high per-foot ranges per Popeye.
+// Updated 2026-04-12. Base per-foot rates per Popeye.
+// Displayed as a RANGE (±15%) so customers can't reverse-engineer per-foot price.
+// Strategy: under-promise, over-deliver — actual price usually comes in at or below low end.
 // Gutter rates are all-in (downspouts included in per-foot price).
 // 1 downspout per ~34 ft of gutter (min 1).
 const RATES = {
-  gutter6:{low:14,high:18}, gutter7:{low:18,high:22},
-  soffit:{low:25,high:30}, fascia:{low:14,high:18},
-  guard:{low:12,high:16}, cleaning:{low:6,high:10}
+  gutter6:14, gutter7:20,
+  soffit:28, fascia:28,
+  guard:13.5, cleaning:10
 };
+const RANGE_LOW = 0.85, RANGE_HIGH = 1.15;
 const DS_FOOTAGE = { 1:13, 2:23, 3:33 };
 function gutterRate(){return RATES['gutter'+gutterSize]}
 
@@ -426,6 +443,8 @@ const STRINGS = {
     discount_earned:'YOU EARNED 5% OFF YOUR PROJECT',
     discount_thanks:'Thank you for using our Aerial Estimator',
     valid_through:'Valid through',
+    financing_badge:'Financing Available — Flexible payment plans to fit your budget.',
+    financing_link:'Learn More →',
     cta_title:'Ready to Lock In Your Project?',
     cta_body:'Mention your discount code when you call to lock in your 5% savings.',
     or_label:'or',
@@ -486,6 +505,8 @@ const STRINGS = {
     discount_earned:'GANASTE 5% DE DESCUENTO',
     discount_thanks:'Gracias por usar nuestro Estimador Aéreo',
     valid_through:'Válido hasta',
+    financing_badge:'Financiamiento Disponible — Planes de pago flexibles para tu presupuesto.',
+    financing_link:'Más Información →',
     cta_title:'¿Listo para Asegurar Tu Proyecto?',
     cta_body:'Menciona tu código de descuento cuando llames para asegurar tu 5% de ahorro.',
     or_label:'o',
@@ -713,6 +734,7 @@ async function unlockEstimate(){
   document.getElementById('heroRange').classList.remove('price-hidden');
   document.querySelectorAll('#breakdownList .breakdown-value').forEach(el=>el.classList.remove('price-hidden'));
   document.getElementById('discountCard').style.display='';
+  document.getElementById('financingBadge').style.display='';
   document.getElementById('ctaCard').style.display='';
   document.getElementById('emailSelfSection').style.display='';
 
@@ -745,23 +767,23 @@ function renderEstimate(){
   const locked=!estimateUnlocked;
   const blurCls=locked?' price-hidden':'';
   if(tot.gutter>0){
-    const r=gutterRate();const lo=tot.gutter*r.low,hi=tot.gutter*r.high;grandLow+=lo;grandHigh+=hi;
+    const base=tot.gutter*gutterRate();const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
     breakdownHTML+=bdItem('gutter','rgba(74,158,255,0.15)',ICONS.gutter,gutterSize+'" '+t('gutter_breakdown_title'),tf('gutter_breakdown_sub',tot.gutter.toFixed(0),ds.count),fmtRange(lo,hi),blurCls);
   }
   if(tot.soffit>0){
-    const lo=tot.soffit*RATES.soffit.low,hi=tot.soffit*RATES.soffit.high;grandLow+=lo;grandHigh+=hi;
+    const base=tot.soffit*RATES.soffit;const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
     breakdownHTML+=bdItem('soffit','rgba(255,107,107,0.15)',ICONS.soffit,t('soffit_breakdown_title'),tf('soffit_breakdown_sub',tot.soffit.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(tot.fascia>0){
-    const lo=tot.fascia*RATES.fascia.low,hi=tot.fascia*RATES.fascia.high;grandLow+=lo;grandHigh+=hi;
+    const base=tot.fascia*RATES.fascia;const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
     breakdownHTML+=bdItem('fascia','rgba(81,207,102,0.15)',ICONS.fascia,t('fascia_breakdown_title'),tf('fascia_breakdown_sub',tot.fascia.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(tot.guard>0){
-    const lo=tot.guard*RATES.guard.low,hi=tot.guard*RATES.guard.high;grandLow+=lo;grandHigh+=hi;
+    const base=tot.guard*RATES.guard;const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
     breakdownHTML+=bdItem('guard','rgba(255,169,77,0.15)',ICONS.guard,t('guard_breakdown_title'),tf('guard_breakdown_sub',tot.guard.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(tot.cleaning>0){
-    const lo=tot.cleaning*RATES.cleaning.low,hi=tot.cleaning*RATES.cleaning.high;grandLow+=lo;grandHigh+=hi;
+    const base=tot.cleaning*RATES.cleaning;const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
     breakdownHTML+=bdItem('cleaning','rgba(176,125,255,0.15)',ICONS.cleaning,t('cleaning_breakdown_title'),tf('cleaning_breakdown_sub',tot.cleaning.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(!breakdownHTML){
@@ -769,7 +791,7 @@ function renderEstimate(){
   }
   document.getElementById('breakdownList').innerHTML=breakdownHTML;
   const heroEl=document.getElementById('heroRange');
-  heroEl.textContent='$'+Math.round(grandLow).toLocaleString()+' – $'+Math.round(grandHigh).toLocaleString();
+  heroEl.textContent=fmtRange(grandLow,grandHigh);
   heroEl.classList.toggle('price-hidden',locked);
   if(currentDiscountCode){document.getElementById('discountCode').textContent=currentDiscountCode;document.getElementById('expDate').textContent=currentExpDate}
 }
@@ -867,15 +889,15 @@ async function generatePDF(){
   // ── Estimate ranges ──
   doc.setFillColor(240,240,240);doc.rect(M,y,W-M*2,7,'F');
   doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(27,42,74);
-  doc.text('ESTIMATED PRICE RANGES',M+3,y+5);
+  doc.text('ESTIMATED PRICE RANGE',M+3,y+5);
   y+=12;
   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(60,60,60);
   let grandLow=0,grandHigh=0;
-  if(tot.gutter>0){const r=gutterRate();const lo=tot.gutter*r.low,hi=tot.gutter*r.high;grandLow+=lo;grandHigh+=hi;doc.text(gutterSize+'" K-Style Gutters (incl. downspouts):',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
-  if(tot.soffit>0){const lo=tot.soffit*RATES.soffit.low,hi=tot.soffit*RATES.soffit.high;grandLow+=lo;grandHigh+=hi;doc.text('Soffit:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
-  if(tot.fascia>0){const lo=tot.fascia*RATES.fascia.low,hi=tot.fascia*RATES.fascia.high;grandLow+=lo;grandHigh+=hi;doc.text('Fascia:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
-  if(tot.guard>0){const lo=tot.guard*RATES.guard.low,hi=tot.guard*RATES.guard.high;grandLow+=lo;grandHigh+=hi;doc.text('Leaf Guard:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
-  if(tot.cleaning>0){const lo=tot.cleaning*RATES.cleaning.low,hi=tot.cleaning*RATES.cleaning.high;grandLow+=lo;grandHigh+=hi;doc.text('Gutter Cleaning:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.gutter>0){const b=tot.gutter*gutterRate();const lo=b*RANGE_LOW,hi=b*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;doc.text(gutterSize+'" K-Style Gutters (incl. downspouts):',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.soffit>0){const b=tot.soffit*RATES.soffit;const lo=b*RANGE_LOW,hi=b*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;doc.text('Soffit:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.fascia>0){const b=tot.fascia*RATES.fascia;const lo=b*RANGE_LOW,hi=b*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;doc.text('Fascia:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.guard>0){const b=tot.guard*RATES.guard;const lo=b*RANGE_LOW,hi=b*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;doc.text('Leaf Guard:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
+  if(tot.cleaning>0){const b=tot.cleaning*RATES.cleaning;const lo=b*RANGE_LOW,hi=b*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;doc.text('Gutter Cleaning:',M+3,y);doc.text(fmtRange(lo,hi),M+70,y);y+=5}
   y+=2;
   doc.setDrawColor(200,149,46);doc.setLineWidth(0.3);doc.line(M,y,W-M,y);y+=4;
   doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(27,42,74);
@@ -914,11 +936,11 @@ async function generatePDF(){
 async function sendToJROne(){
   const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
   let grandLow=0,grandHigh=0;
-  if(tot.gutter>0){const r=gutterRate();grandLow+=tot.gutter*r.low;grandHigh+=tot.gutter*r.high}
-  if(tot.soffit>0){grandLow+=tot.soffit*RATES.soffit.low;grandHigh+=tot.soffit*RATES.soffit.high}
-  if(tot.fascia>0){grandLow+=tot.fascia*RATES.fascia.low;grandHigh+=tot.fascia*RATES.fascia.high}
-  if(tot.guard>0){grandLow+=tot.guard*RATES.guard.low;grandHigh+=tot.guard*RATES.guard.high}
-  if(tot.cleaning>0){grandLow+=tot.cleaning*RATES.cleaning.low;grandHigh+=tot.cleaning*RATES.cleaning.high}
+  if(tot.gutter>0){const b=tot.gutter*gutterRate();grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.soffit>0){const b=tot.soffit*RATES.soffit;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.fascia>0){const b=tot.fascia*RATES.fascia;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.guard>0){const b=tot.guard*RATES.guard;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.cleaning>0){const b=tot.cleaning*RATES.cleaning;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
 
   const payload={
     type:'lead',
@@ -963,11 +985,11 @@ async function sendToCustomer(){
 
   const tot=getModeTotals(),ds=calcDownspouts(tot.gutter);
   let grandLow=0,grandHigh=0;
-  if(tot.gutter>0){const r=gutterRate();grandLow+=tot.gutter*r.low;grandHigh+=tot.gutter*r.high}
-  if(tot.soffit>0){grandLow+=tot.soffit*RATES.soffit.low;grandHigh+=tot.soffit*RATES.soffit.high}
-  if(tot.fascia>0){grandLow+=tot.fascia*RATES.fascia.low;grandHigh+=tot.fascia*RATES.fascia.high}
-  if(tot.guard>0){grandLow+=tot.guard*RATES.guard.low;grandHigh+=tot.guard*RATES.guard.high}
-  if(tot.cleaning>0){grandLow+=tot.cleaning*RATES.cleaning.low;grandHigh+=tot.cleaning*RATES.cleaning.high}
+  if(tot.gutter>0){const b=tot.gutter*gutterRate();grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.soffit>0){const b=tot.soffit*RATES.soffit;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.fascia>0){const b=tot.fascia*RATES.fascia;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.guard>0){const b=tot.guard*RATES.guard;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
+  if(tot.cleaning>0){const b=tot.cleaning*RATES.cleaning;grandLow+=b*RANGE_LOW;grandHigh+=b*RANGE_HIGH}
 
   const payload={
     type:'customer',
