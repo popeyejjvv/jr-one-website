@@ -2,7 +2,7 @@ import { getAllPostSlugs } from "@/lib/blog";
 import fs from "fs";
 import path from "path";
 
-const BASE_URL = "https://jronegutters.com";
+const BASE_URL = "https://www.jronegutters.com";
 
 // AI-citation knowledge markdown files — auto-discovered from public/llms/
 // so new MDs get crawled without a sitemap edit. These are the dense factual

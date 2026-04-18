@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
       authors: ["JR One Aluminum"],
     },
     alternates: {
-      canonical: `https://jronegutters.com/blog/${slug}`,
+      canonical: `https://www.jronegutters.com/blog/${slug}`,
     },
   };
 }
@@ -50,8 +50,33 @@ export default async function BlogPostPage({ params }) {
       }
     : null;
 
+  // Breadcrumb schema for blog posts
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.jronegutters.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://www.jronegutters.com/blog/${slug}` },
+    ],
+  };
+
+  // Article schema for rich results
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
+    publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
+    mainEntityOfPage: `https://www.jronegutters.com/blog/${slug}`,
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && (
         <script
           type="application/ld+json"
