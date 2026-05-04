@@ -207,6 +207,17 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-HY6GK76P44');
           `}
         </Script>
+
+        {/* ── Microsoft Clarity ── installed 2026-05-04, project wlqlwuzdj3 */}
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "wlqlwuzdj3");
+          `}
+        </Script>
       </body>
     </html>
   );
