@@ -5,7 +5,7 @@ const VALID_SLUGS = [
   "lakeland","brandon","wesley-chapel","palm-harbor","riverview",
   "new-port-richey","largo","spring-hill","tarpon-springs",
   "land-o-lakes","dunedin","ruskin","sun-city-center",
-  "temple-terrace","plant-city","lutz"
+  "temple-terrace","plant-city","lutz","south-tampa"
 ];
 
 const slugToCity = (slug) =>

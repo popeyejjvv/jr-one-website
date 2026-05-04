@@ -26,7 +26,7 @@ const CITY_SLUGS = [
   "lakeland","brandon","wesley-chapel","palm-harbor","riverview",
   "new-port-richey","largo","spring-hill","tarpon-springs",
   "land-o-lakes","dunedin","ruskin","sun-city-center",
-  "temple-terrace","plant-city","lutz",
+  "temple-terrace","plant-city","lutz","south-tampa",
 ];
 
 const SERVICES = {
@@ -158,6 +158,7 @@ const CITY_META = {
   "temple-terrace": { name: "Temple Terrace", localP: "Temple Terrace is one of Tampa's most established communities, with decades-old neighborhoods where many homes are still running original wood soffit.", weatherNote: "Dense tree coverage means constant gutter debris from oaks and pines. The Hillsborough River corridor adds humidity and drainage challenges.", nearby: ["tampa","brandon","lutz"] },
   "plant-city": { name: "Plant City", localP: "Plant City — the Strawberry Capital of the World — sits in eastern Hillsborough where suburban living meets agricultural heritage and intense inland weather.", weatherNote: "Inland position puts Plant City squarely in Florida's thunderstorm corridor. Intense afternoon downpours dump huge water volume in short bursts.", nearby: ["brandon","lakeland","tampa"] },
   lutz: { name: "Lutz", localP: "Lutz straddles the Hillsborough-Pasco county line — heavy tree canopy, established neighborhoods, and newer developments side by side.", weatherNote: "Oak and pine canopy drops debris year-round. Combined with heavy seasonal rains, clogged gutters here lead to fascia rot and foundation issues fast.", nearby: ["land-o-lakes","wesley-chapel","tampa"] },
+  "south-tampa": { name: "South Tampa", localP: "South Tampa runs from Bayshore Boulevard to Davis Islands, Hyde Park to Beach Park — historic homes with original copper, premium new construction, and HOA architectural review boards that don't accept rushed work.", weatherNote: "Bayshore-facing properties get constant salt air plus direct exposure to tropical-system storm surge. Inland South Tampa sees the same intense afternoon thunderstorms as the rest of the city. Both demand corrosion-resistant aluminum and proper hurricane-rated fastening.", nearby: ["tampa","clearwater","st-petersburg"] },
 };
 
 // ── Next.js config ────────────────────────────────────────────────────────
