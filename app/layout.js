@@ -155,6 +155,9 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"
           rel="stylesheet"
         />
+        {/* AEO discovery — link AI crawlers to llms.txt + llms-full.txt (53-page AI content index) */}
+        <link rel="llm" href="/llms.txt" />
+        <link rel="llm-full" href="/llms-full.txt" />
         {/* LocalBusiness Schema */}
         <script
           type="application/ld+json"

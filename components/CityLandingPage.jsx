@@ -400,10 +400,10 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
             <h2 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy,textAlign:"center",marginBottom:"4px"}}>{t.freeQuoteFor}{city.name}{t.freeQuoteSuffix}</h2>
             <div style={{width:"40px",height:"3px",background:C.gold,borderRadius:"2px",margin:"10px auto 20px"}} />
             {submitted ? <div style={{textAlign:"center",padding:"20px 0"}}><div style={{fontSize:"40px",marginBottom:"8px"}}>✓</div><h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.navy}}>{t.received}</h3><p style={{fontFamily:f.b,fontSize:"14px",color:"#6B7280",marginTop:"6px"}}>{t.receivedSub}</p></div> : <>
-              <input style={inputStyle} placeholder={t.placeName} value={formData.name} onChange={e=>setFormData({...formData,name:e.target.value})} />
-              <input style={inputStyle} placeholder={t.placePhone} type="tel" value={formData.phone} onChange={e=>setFormData({...formData,phone:e.target.value})} />
-              <input style={inputStyle} placeholder={t.placeEmail} type="email" value={formData.email} onChange={e=>setFormData({...formData,email:e.target.value})} />
-              <select style={{...inputStyle,cursor:"pointer"}} value={formData.service} onChange={e=>setFormData({...formData,service:e.target.value})}>
+              <input aria-label={t.placeName} style={inputStyle} placeholder={t.placeName} value={formData.name} onChange={e=>setFormData({...formData,name:e.target.value})} />
+              <input aria-label={t.placePhone} style={inputStyle} placeholder={t.placePhone} type="tel" value={formData.phone} onChange={e=>setFormData({...formData,phone:e.target.value})} />
+              <input aria-label={t.placeEmail} style={inputStyle} placeholder={t.placeEmail} type="email" value={formData.email} onChange={e=>setFormData({...formData,email:e.target.value})} />
+              <select aria-label="Service" style={{...inputStyle,cursor:"pointer"}} value={formData.service} onChange={e=>setFormData({...formData,service:e.target.value})}>
                 {t.serviceOpts.map((o,i)=><option key={i} value={i===0?"":o}>{o}</option>)}
               </select>
               <button onClick={handleCityForm} disabled={formLoading} style={{width:"100%",padding:"16px",fontFamily:f.h,fontSize:"13px",fontWeight:700,letterSpacing:"1.5px",color:C.white,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,border:"none",borderRadius:"8px",cursor:"pointer",opacity:formLoading?0.6:1}}>{formLoading ? "..." : t.requestQuote}</button>

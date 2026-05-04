@@ -528,13 +528,13 @@ export default function JROneHomepage() {
                 <>
                   <h2 style={s.formTitle}>{t.formTitle}</h2>
                   <div style={s.formDivider} />
-                  <input style={s.input} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
-                  <input style={s.input} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
-                  <input style={s.input} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
-                  <select style={s.select} value={formData.service} onChange={(e) => setFormData({ ...formData, service: e.target.value })}>
+                  <input aria-label={t.formName} style={s.input} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
+                  <input aria-label={t.formPhone} style={s.input} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
+                  <input aria-label={t.formEmail} style={s.input} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                  <select aria-label="Service" style={s.select} value={formData.service} onChange={(e) => setFormData({ ...formData, service: e.target.value })}>
                     {t.serviceOpt.map((opt, i) => <option key={i} value={i === 0 ? "" : opt}>{opt}</option>)}
                   </select>
-                  <input style={s.input} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
+                  <input aria-label={t.formZip} style={s.input} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
                   <button style={s.submitBtn} onClick={handleForm} onMouseOver={(e) => { e.target.style.transform = "translateY(-2px)"; e.target.style.boxShadow = "0 8px 24px rgba(200,149,46,0.4)"; }} onMouseOut={(e) => { e.target.style.transform = "none"; e.target.style.boxShadow = "0 4px 16px rgba(200,149,46,0.3)"; }}>
                     {t.formBtn}
                   </button>
@@ -678,7 +678,7 @@ export default function JROneHomepage() {
             </p>
           ) : (
             <div style={{ display: "flex", gap: "12px", maxWidth: "500px", margin: "0 auto", flexWrap: "wrap", justifyContent: "center" }}>
-              <input style={{ flex: "1 1 280px", padding: "14px 18px", fontFamily: font.body, fontSize: "15px", border: "2px solid rgba(27,42,74,0.2)", borderRadius: "8px", outline: "none", color: C.navy, background: "rgba(255,255,255,0.9)" }} placeholder={t.emailPlaceholder} value={emailInput} onChange={(e) => setEmailInput(e.target.value)} />
+              <input aria-label={t.emailPlaceholder} style={{ flex: "1 1 280px", padding: "14px 18px", fontFamily: font.body, fontSize: "15px", border: "2px solid rgba(27,42,74,0.2)", borderRadius: "8px", outline: "none", color: C.navy, background: "rgba(255,255,255,0.9)" }} placeholder={t.emailPlaceholder} value={emailInput} onChange={(e) => setEmailInput(e.target.value)} />
               <button onClick={handleEmail} style={{ padding: "14px 28px", fontFamily: font.heading, fontSize: "13px", fontWeight: 700, letterSpacing: "1.5px", color: C.white, background: C.navy, border: "none", borderRadius: "8px", cursor: "pointer", whiteSpace: "nowrap" }}>{t.emailBtn}</button>
             </div>
           )}
