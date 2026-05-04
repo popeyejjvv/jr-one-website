@@ -168,6 +168,11 @@ export default function RootLayout({ children }) {
           name="ahrefs-site-verification"
           content="19a129f813202b159a550ff53c4ed7764b9664f901a134c96e3dae30520dae28"
         />
+        {/* Google Search Console — HTML tag verification (re-verified 2026-05-04 after prior method dropped) */}
+        <meta
+          name="google-site-verification"
+          content="Kpcj-1KGIae9QG5XpTgV_Yf6utDcTVfRku0KA4WdZGo"
+        />
       </head>
       <body>
         <Providers>
