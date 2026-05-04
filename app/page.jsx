@@ -427,7 +427,7 @@ export default function JROneHomepage() {
             </button>
           </div>
           {/* Mobile Hamburger */}
-          <button className="jr-hp-nav-hamburger" onClick={() => setMobileMenu(!mobileMenu)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", padding: "8px", flexDirection: "column", gap: "5px" }}>
+          <button aria-label={lang === "en" ? "Toggle navigation menu" : "Abrir menu de navegacion"} aria-expanded={mobileMenu} className="jr-hp-nav-hamburger" onClick={() => setMobileMenu(!mobileMenu)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", padding: "8px", flexDirection: "column", gap: "5px" }}>
             <span style={{ display: "block", width: "22px", height: "2px", background: mobileMenu ? C.gold : C.white, transition: "all 0.3s", transform: mobileMenu ? "rotate(45deg) translateY(7px)" : "none" }} />
             <span style={{ display: "block", width: "22px", height: "2px", background: C.white, transition: "all 0.3s", opacity: mobileMenu ? 0 : 1 }} />
             <span style={{ display: "block", width: "22px", height: "2px", background: mobileMenu ? C.gold : C.white, transition: "all 0.3s", transform: mobileMenu ? "rotate(-45deg) translateY(-7px)" : "none" }} />
@@ -517,9 +517,9 @@ export default function JROneHomepage() {
               {formSubmitted ? (
                 <div style={{ textAlign: "center", padding: "24px 0" }}>
                   <div style={{ fontSize: "48px", marginBottom: "12px" }}>✓</div>
-                  <h3 style={{ fontFamily: font.heading, fontSize: "20px", fontWeight: 700, color: C.navy, marginBottom: "8px" }}>
+                  <h2 style={{ fontFamily: font.heading, fontSize: "20px", fontWeight: 700, color: C.navy, marginBottom: "8px" }}>
                     {lang === "en" ? "Quote Request Received!" : "¡Solicitud Recibida!"}
-                  </h3>
+                  </h2>
                   <p style={{ fontFamily: font.body, fontSize: "15px", color: "#6B7280" }}>
                     {lang === "en" ? "We'll get back to you within hours. In the meantime, try our instant estimator below." : "Le responderemos en horas. Mientras tanto, pruebe nuestro estimador instantáneo."}
                   </p>
@@ -737,7 +737,7 @@ export default function JROneHomepage() {
             <p style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, lineHeight: 1.55 }}>{t.footerAbout}</p>
           </div>
           <div>
-            <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerServices}</h4>
+            <h3 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerServices}</h3>
             {[
               { en: "Copper Gutters", es: "Canaletas de Cobre", href: "/copper-gutters" },
               { en: "Drainage Installation", es: "Instalación de Drenaje", href: "/drainage-assessment" },
@@ -756,7 +756,7 @@ export default function JROneHomepage() {
             ))}
           </div>
           <div>
-            <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerAreas}</h4>
+            <h3 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerAreas}</h3>
             {[
               { name: "Bradenton", slug: "bradenton" },
               { name: "Brandon", slug: "brandon" },
@@ -784,7 +784,7 @@ export default function JROneHomepage() {
             ))}
           </div>
           <div>
-            <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{lang === "en" ? "RESOURCES" : "RECURSOS"}</h4>
+            <h3 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{lang === "en" ? "RESOURCES" : "RECURSOS"}</h3>
             {[
               { en: "Warranties", es: "Garantías", href: "/warranties" },
               { en: "License & Insurance", es: "Licencia y Seguro", href: "/resources" },
@@ -799,7 +799,7 @@ export default function JROneHomepage() {
             ))}
           </div>
           <div>
-            <h4 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerContact}</h4>
+            <h3 style={{ fontFamily: font.heading, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.footerContact}</h3>
             <a href="tel:8444443114" style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.gold, marginBottom: "8px", fontWeight: 600, textDecoration: "none" }}>{t.phone}</a>
             <a href="mailto:info@jronegutters.com" style={{ display: "block", fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>{t.email}</a>
             <p style={{ fontFamily: font.body, fontSize: "14px", color: C.muted, marginBottom: "8px" }}>Tampa, FL</p>

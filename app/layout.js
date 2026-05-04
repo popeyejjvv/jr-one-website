@@ -171,7 +171,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Providers>
-        {children}
+        <main>{children}</main>
         </Providers>
 
         {/* ── Ahrefs Web Analytics ──
