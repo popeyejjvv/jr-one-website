@@ -109,6 +109,8 @@ export default function SiteNav({ promoBanner }) {
               color: "var(--jr-paper)",
               letterSpacing: "1px",
               paddingRight: "var(--jr-space-10)",
+              whiteSpace: "nowrap",
+              flexShrink: 0,
             }}
           >
             JR <span style={{ color: "var(--jr-gold)" }}>ONE</span>
