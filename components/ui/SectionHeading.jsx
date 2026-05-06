@@ -45,6 +45,7 @@ export default function SectionHeading({
               color: "var(--jr-gold)",
               letterSpacing: "3px",
               textTransform: "uppercase",
+              whiteSpace: "nowrap",
             }}
           >
             {eyebrow}
@@ -61,6 +62,7 @@ export default function SectionHeading({
           lineHeight: 1.15,
           color: onDark ? "var(--jr-paper)" : "var(--jr-ink)",
           marginBottom: "var(--jr-space-3)",
+          whiteSpace: "nowrap",
         }}
       >
         {title}
