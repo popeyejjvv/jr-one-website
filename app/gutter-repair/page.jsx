@@ -250,8 +250,8 @@ export default function GutterRepairPage() {
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-10)" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.btnEstimate}</Button>
-                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.btnCall}</Button>
+                <Button href="#quote-form" variant="primary" size="lg" iconRight accent={ACCENT} accentLight={ACCENT_LIGHT}>{t.btnEstimate}</Button>
+                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT}>{t.btnCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
@@ -344,7 +344,7 @@ export default function GutterRepairPage() {
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading}>{formLoading ? "Sending..." : t.formBtn}</Button>
+                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading} accent={ACCENT} accentLight={ACCENT_LIGHT}>{formLoading ? "Sending..." : t.formBtn}</Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formDisclaimer}</p>
                 </form>
               )}
@@ -363,6 +363,8 @@ export default function GutterRepairPage() {
           sub={lang === "en" ? "Get a free inspection today. We respond within hours." : "Obtenga una inspeccion gratis hoy. Respondemos en horas."}
           primaryLabel={lang === "en" ? "Request a Quote" : "Solicitar Cotizacion"}
           primaryHref="#quote-form"
+          accent={ACCENT}
+          accentLight={ACCENT_LIGHT}
         />
       </main>
 

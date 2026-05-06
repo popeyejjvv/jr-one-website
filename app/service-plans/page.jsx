@@ -360,10 +360,10 @@ export default function ServicePlansPage() {
                 {t.heroP}
               </p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>
+                <Button href="#quote-form" variant="primary" size="lg" iconRight accent={ACCENT} accentLight={ACCENT_LIGHT}>
                   {t.heroCta}
                 </Button>
-                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>
+                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT}>
                   {t.heroCall}
                 </Button>
               </div>
@@ -497,6 +497,8 @@ export default function ServicePlansPage() {
                     size="md"
                     fullWidth
                     iconRight
+                    accent={ACCENT}
+                    accentLight={ACCENT_LIGHT}
                   >
                     {plan.highlight ? t.getStarted : t.learnMore}
                   </Button>
@@ -651,7 +653,7 @@ export default function ServicePlansPage() {
                       <option key={i} value={i === 0 ? "" : o} style={{ color: "var(--jr-ink)" }}>{o}</option>
                     ))}
                   </select>
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>
+                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading} accent={ACCENT} accentLight={ACCENT_LIGHT}>
                     {loading ? (lang === "en" ? "Sending..." : "Enviando...") : t.formBtn}
                   </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>
@@ -664,7 +666,7 @@ export default function ServicePlansPage() {
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-2)" }}>
                 {t.preferTalk}
               </p>
-              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={18} />}>
+              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={18} />} accent={ACCENT}>
                 (844) 444-3114
               </Button>
             </div>
@@ -678,6 +680,8 @@ export default function ServicePlansPage() {
             : "Empresa familiar, mas de 30 anos en el oficio. Programa el plan correcto para tu hogar."}
           primaryLabel={t.heroCta}
           primaryHref="#quote-form"
+          accent={ACCENT}
+          accentLight={ACCENT_LIGHT}
         />
       </main>
       <SiteFooter />

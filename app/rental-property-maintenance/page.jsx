@@ -335,6 +335,8 @@ export default function RentalPropertyMaintenancePage() {
                   variant="primary"
                   size="lg"
                   iconRight
+                  accent={ACCENT}
+                  accentLight={ACCENT_LIGHT}
                   style={{
                     background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
                     color: "#FFFFFF",
@@ -344,7 +346,7 @@ export default function RentalPropertyMaintenancePage() {
                 >
                   {t.btnEstimate}
                 </Button>
-                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>
+                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>
                   {t.btnCall}
                 </Button>
               </div>
@@ -499,6 +501,8 @@ export default function RentalPropertyMaintenancePage() {
                 variant="primary"
                 size="md"
                 iconRight
+                accent={ACCENT}
+                accentLight={ACCENT_LIGHT}
                 style={{
                   background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
                   color: "#FFFFFF",
@@ -634,6 +638,8 @@ export default function RentalPropertyMaintenancePage() {
                     fullWidth
                     iconRight
                     disabled={loading}
+                    accent={ACCENT}
+                    accentLight={ACCENT_LIGHT}
                     style={{
                       background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
                       color: "#FFFFFF",
@@ -653,7 +659,7 @@ export default function RentalPropertyMaintenancePage() {
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-2)" }}>
                 {t.preferTalk}
               </p>
-              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={18} />}>
+              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={18} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>
                 (844) 444-3114
               </Button>
             </div>
@@ -667,6 +673,8 @@ export default function RentalPropertyMaintenancePage() {
             : "Reportes con fotos, servicio programado, coordinacion con inquilinos. Obtene tu plan personalizado."}
           primaryLabel={t.btnEstimate}
           primaryHref="#quote-form"
+          accent={ACCENT}
+          accentLight={ACCENT_LIGHT}
         />
       </main>
       <SiteFooter />

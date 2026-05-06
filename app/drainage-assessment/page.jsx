@@ -251,6 +251,8 @@ export default function DrainageAssessmentPage() {
                   variant="primary"
                   size="lg"
                   iconRight
+                  accent={ACCENT}
+                  accentLight={ACCENT_LIGHT}
                   style={{
                     background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
                     color: "#FFFFFF",
@@ -260,7 +262,7 @@ export default function DrainageAssessmentPage() {
                 >
                   {t.heroCta}
                 </Button>
-                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
+                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
@@ -363,6 +365,8 @@ export default function DrainageAssessmentPage() {
                     fullWidth
                     iconRight
                     disabled={loading}
+                    accent={ACCENT}
+                    accentLight={ACCENT_LIGHT}
                     style={{
                       background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
                       color: "#FFFFFF",
@@ -377,7 +381,7 @@ export default function DrainageAssessmentPage() {
               )}
             </div>
             <div style={{ marginTop: "var(--jr-space-8)" }}>
-              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={16} />}>(844) 444-3114</Button>
+              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={16} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>(844) 444-3114</Button>
             </div>
           </Container>
         </section>

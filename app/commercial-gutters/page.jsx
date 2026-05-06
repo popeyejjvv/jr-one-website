@@ -288,6 +288,8 @@ export default function CommercialGuttersPage() {
                   variant="primary"
                   size="lg"
                   iconRight
+                  accent={ACCENT}
+                  accentLight={ACCENT_LIGHT}
                   style={{
                     background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
                     color: "var(--jr-navy)",
@@ -297,7 +299,7 @@ export default function CommercialGuttersPage() {
                 >
                   {t.heroCta}
                 </Button>
-                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
+                <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
@@ -373,7 +375,7 @@ export default function CommercialGuttersPage() {
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{t.gcDesc}</p>
               </div>
               <div style={{ flexShrink: 0 }}>
-                <Button href="/contact" variant="primary" size="md" iconRight>{t.gcBtn}</Button>
+                <Button href="/contact" variant="primary" size="md" iconRight accent={ACCENT} accentLight={ACCENT_LIGHT}>{t.gcBtn}</Button>
               </div>
             </div>
           </Container>
@@ -443,6 +445,8 @@ export default function CommercialGuttersPage() {
                     fullWidth
                     iconRight
                     disabled={loading}
+                    accent={ACCENT}
+                    accentLight={ACCENT_LIGHT}
                     style={{
                       background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
                       color: "var(--jr-navy)",
@@ -457,7 +461,7 @@ export default function CommercialGuttersPage() {
               )}
             </div>
             <div style={{ marginTop: "var(--jr-space-8)" }}>
-              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={16} />}>(844) 444-3114</Button>
+              <Button href="tel:8444443114" variant="ghost" size="md" iconLeft={<PhoneIcon size={16} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>(844) 444-3114</Button>
             </div>
           </Container>
         </section>

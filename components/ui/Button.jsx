@@ -24,6 +24,8 @@ export default function Button({
   fullWidth = false,
   iconRight = false,
   iconLeft = null,
+  accent,
+  accentLight,
   children,
   type,
   style = {},
@@ -38,26 +40,34 @@ export default function Button({
     lg: { padding: "18px 32px", fontSize: 15, letterSpacing: "2px" },
   };
 
+  // When `accent` is passed, all variants render in the page accent color
+  // (overrides the gold defaults so service pages can keep their identity).
+  const goldFill = accent || "var(--jr-gold)";
+  const goldFillLight = accentLight || accent || "var(--jr-gold-2)";
+  const goldStroke = accent || "var(--jr-gold)";
+  const goldText = accent || "var(--jr-gold)";
+  const goldShadow = accent ? `0 8px 24px ${accent}33` : "var(--jr-shadow-gold)";
+
   const variants = {
     primary: {
-      background: "var(--jr-gold)",
+      background: accent ? `linear-gradient(135deg, ${goldFill}, ${goldFillLight})` : "var(--jr-gold)",
       color: "var(--jr-navy)",
-      border: "2px solid var(--jr-gold)",
-      boxShadow: "var(--jr-shadow-gold)",
+      border: `2px solid ${goldStroke}`,
+      boxShadow: goldShadow,
     },
     navy: {
       background: "var(--jr-navy)",
-      color: "var(--jr-gold)",
-      border: "2px solid var(--jr-gold)",
+      color: goldText,
+      border: `2px solid ${goldStroke}`,
     },
     outline: {
       background: "transparent",
-      color: "var(--jr-gold)",
-      border: "2px solid var(--jr-gold)",
+      color: goldText,
+      border: `2px solid ${goldStroke}`,
     },
     ghost: {
       background: "transparent",
-      color: "var(--jr-gold)",
+      color: goldText,
       border: "2px solid transparent",
       padding: 0,
     },

@@ -30,6 +30,10 @@ import {
   PhoneIcon,
 } from "../../lib/icons";
 
+// Page-identity accent: hot pink (referral program brand mark).
+const ACCENT = "#E91E8C";
+const ACCENT_LIGHT = "#F0489E";
+
 const T = {
   en: {
     breadcrumbHome: "Home",
@@ -299,7 +303,7 @@ export default function ReferralPage() {
                 {t.heroP}
               </p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap" }}>
-                <Button href="tel:8444443114" variant="primary" size="lg" iconLeft={<PhoneIcon size={18} />}>
+                <Button href="tel:8444443114" variant="primary" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>
                   {t.referNowBtn}
                 </Button>
                 <Button
@@ -307,6 +311,8 @@ export default function ReferralPage() {
                   variant="outline"
                   size="lg"
                   iconLeft={<MailIcon size={18} />}
+                  accent={ACCENT}
+                  accentLight={ACCENT_LIGHT}
                 >
                   {t.emailReferralBtn}
                 </Button>
@@ -556,7 +562,7 @@ export default function ReferralPage() {
               ))}
             </div>
             <div style={{ textAlign: "center", marginTop: "var(--jr-space-10)" }}>
-              <Button href="tel:8444443114" variant="primary" size="lg" iconLeft={<PhoneIcon size={18} />}>
+              <Button href="tel:8444443114" variant="primary" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT} accentLight={ACCENT_LIGHT}>
                 {t.insBtn}
               </Button>
             </div>
@@ -675,6 +681,8 @@ export default function ReferralPage() {
                 variant="primary"
                 size="lg"
                 iconLeft={<PhoneIcon size={18} />}
+                accent={ACCENT}
+                accentLight={ACCENT_LIGHT}
               >
                 {t.ctaCallBtn}
               </Button>
@@ -683,6 +691,8 @@ export default function ReferralPage() {
                 variant="outline"
                 size="lg"
                 iconLeft={<MailIcon size={18} />}
+                accent={ACCENT}
+                accentLight={ACCENT_LIGHT}
               >
                 {t.ctaEmailBtn}
               </Button>

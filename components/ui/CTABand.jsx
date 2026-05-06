@@ -14,6 +14,8 @@ export default function CTABand({
   phoneHref = "tel:8444443114",
   primaryLabel = "Request a Quote",
   primaryHref = "/contact",
+  accent,
+  accentLight,
 }) {
   return (
     <section
@@ -62,10 +64,19 @@ export default function CTABand({
             variant="primary"
             size="lg"
             iconLeft={<PhoneIcon size={18} />}
+            accent={accent}
+            accentLight={accentLight}
           >
             Call {phone}
           </Button>
-          <Button href={primaryHref} variant="outline" size="lg" iconRight>
+          <Button
+            href={primaryHref}
+            variant="outline"
+            size="lg"
+            iconRight
+            accent={accent}
+            accentLight={accentLight}
+          >
             {primaryLabel}
           </Button>
         </div>
