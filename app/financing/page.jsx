@@ -142,7 +142,7 @@ export default function FinancingPage() {
               }}
             >
               {t.heroH1a}<br />
-              {t.heroH1b}<span style={{ color: "var(--jr-gold)" }}>{t.heroH1bAccent}</span>
+              {t.heroH1b}<span style={{ color: "#22C55E" }}>{t.heroH1bAccent}</span>
             </h1>
             <p
               style={{

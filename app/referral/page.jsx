@@ -212,7 +212,7 @@ function PageEyebrow({ children }) {
       style={{
         display: "inline-block",
         padding: "6px 14px",
-        background: "var(--jr-gold-pale)",
+        background: "rgba(233, 30, 140, 0.12)",
         border: "1px solid rgba(200, 149, 46, 0.28)",
         borderRadius: "var(--jr-radius-sm)",
         marginBottom: "var(--jr-space-3)",
@@ -223,7 +223,7 @@ function PageEyebrow({ children }) {
           fontFamily: "var(--jr-font-heading)",
           fontSize: "var(--jr-text-xs)",
           fontWeight: 700,
-          color: "var(--jr-gold)",
+          color: "#E91E8C",
           letterSpacing: "3px",
           textTransform: "uppercase",
         }}
@@ -258,7 +258,7 @@ export default function ReferralPage() {
                 {t.breadcrumbHome}
               </a>
               <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>
-              <span style={{ color: "var(--jr-gold)" }}>{t.breadcrumbReferral}</span>
+              <span style={{ color: "#E91E8C" }}>{t.breadcrumbReferral}</span>
             </nav>
           </Container>
         </div>
@@ -284,7 +284,7 @@ export default function ReferralPage() {
                 }}
               >
                 {t.heroH1}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span>
+                <span style={{ color: "#E91E8C" }}>{t.heroH1Gold}</span>
               </h1>
               <p
                 style={{
@@ -340,12 +340,12 @@ export default function ReferralPage() {
                         width: 48,
                         height: 48,
                         borderRadius: "var(--jr-radius-md)",
-                        background: "var(--jr-gold-pale)",
+                        background: "rgba(233, 30, 140, 0.12)",
                         border: "1px solid rgba(200, 149, 46, 0.32)",
                         display: "inline-flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        color: "var(--jr-gold)",
+                        color: "#E91E8C",
                         marginBottom: "var(--jr-space-3)",
                       }}
                     >
@@ -356,7 +356,7 @@ export default function ReferralPage() {
                         fontFamily: "var(--jr-font-heading)",
                         fontSize: "var(--jr-text-2xl)",
                         fontWeight: 800,
-                        color: "var(--jr-gold)",
+                        color: "#E91E8C",
                         marginBottom: "var(--jr-space-2)",
                       }}
                     >
@@ -426,12 +426,12 @@ export default function ReferralPage() {
                         width: 52,
                         height: 52,
                         borderRadius: "var(--jr-radius-md)",
-                        background: "var(--jr-gold-pale)",
+                        background: "rgba(233, 30, 140, 0.12)",
                         border: "1px solid rgba(200, 149, 46, 0.32)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        color: "var(--jr-gold)",
+                        color: "#E91E8C",
                         marginBottom: "var(--jr-space-4)",
                       }}
                     >
@@ -470,8 +470,8 @@ export default function ReferralPage() {
           style={{
             background: "linear-gradient(135deg, var(--jr-navy-deep) 0%, var(--jr-navy) 100%)",
             padding: "var(--jr-space-20) 0",
-            borderTop: "1px solid var(--jr-gold)",
-            borderBottom: "1px solid var(--jr-gold)",
+            borderTop: "1px solid #E91E8C",
+            borderBottom: "1px solid #E91E8C",
           }}
         >
           <Container size="narrow">
@@ -495,7 +495,7 @@ export default function ReferralPage() {
                   fontFamily: "var(--jr-font-heading)",
                   fontSize: "var(--jr-text-3xl)",
                   fontWeight: 700,
-                  color: "var(--jr-gold)",
+                  color: "#E91E8C",
                   letterSpacing: "0.3px",
                   lineHeight: 1.2,
                   marginBottom: "var(--jr-space-4)",
@@ -508,7 +508,7 @@ export default function ReferralPage() {
                 style={{
                   width: 60,
                   height: 3,
-                  background: "var(--jr-gold)",
+                  background: "#E91E8C",
                   borderRadius: 2,
                   margin: "0 auto var(--jr-space-6)",
                 }}
@@ -534,13 +534,13 @@ export default function ReferralPage() {
                     display: "flex",
                     gap: "var(--jr-space-3)",
                     alignItems: "center",
-                    background: "var(--jr-gold-pale)",
+                    background: "rgba(233, 30, 140, 0.12)",
                     border: "1px solid rgba(200, 149, 46, 0.32)",
                     borderRadius: "var(--jr-radius-md)",
                     padding: "var(--jr-space-4) var(--jr-space-5)",
                   }}
                 >
-                  <span style={{ color: "var(--jr-gold)", flexShrink: 0 }}>
+                  <span style={{ color: "#E91E8C", flexShrink: 0 }}>
                     <CheckIcon size={20} />
                   </span>
                   <p
