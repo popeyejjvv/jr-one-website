@@ -11,11 +11,18 @@ export default function SectionHeading({
   subtitle,
   theme = "dark",
   align = "center",
+  accent,
   as: Tag = "h2",
   id,
 }) {
   const onDark = theme === "dark";
   const isCentered = align === "center";
+
+  // When accent passed, use it for eyebrow chip + divider. Default = gold.
+  const eyebrowBg = accent ? `${accent}1F` : "var(--jr-gold-pale)";
+  const eyebrowBorder = accent ? `1px solid ${accent}52` : "1px solid rgba(200, 149, 46, 0.28)";
+  const eyebrowColor = accent || "var(--jr-gold)";
+  const dividerColor = accent || "var(--jr-gold)";
 
   return (
     <header
@@ -31,8 +38,8 @@ export default function SectionHeading({
           style={{
             display: "inline-block",
             padding: "6px 14px",
-            background: "var(--jr-gold-pale)",
-            border: "1px solid rgba(200, 149, 46, 0.28)",
+            background: eyebrowBg,
+            border: eyebrowBorder,
             borderRadius: "var(--jr-radius-sm)",
             marginBottom: "var(--jr-space-3)",
           }}
@@ -42,7 +49,7 @@ export default function SectionHeading({
               fontFamily: "var(--jr-font-heading)",
               fontSize: "var(--jr-text-xs)",
               fontWeight: 700,
-              color: "var(--jr-gold)",
+              color: eyebrowColor,
               letterSpacing: "3px",
               textTransform: "uppercase",
               whiteSpace: "nowrap",
@@ -72,7 +79,7 @@ export default function SectionHeading({
         style={{
           width: "60px",
           height: "3px",
-          background: "var(--jr-gold)",
+          background: dividerColor,
           borderRadius: "2px",
           margin: isCentered ? "var(--jr-space-3) auto var(--jr-space-4)" : "var(--jr-space-3) 0 var(--jr-space-4)",
         }}

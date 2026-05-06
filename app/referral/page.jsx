@@ -216,8 +216,8 @@ function PageEyebrow({ children }) {
       style={{
         display: "inline-block",
         padding: "6px 14px",
-        background: "rgba(233, 30, 140, 0.12)",
-        border: "1px solid rgba(200, 149, 46, 0.28)",
+        background: `${ACCENT}1F`,
+        border: `1px solid ${ACCENT}52`,
         borderRadius: "var(--jr-radius-sm)",
         marginBottom: "var(--jr-space-3)",
       }}
@@ -227,7 +227,7 @@ function PageEyebrow({ children }) {
           fontFamily: "var(--jr-font-heading)",
           fontSize: "var(--jr-text-xs)",
           fontWeight: 700,
-          color: "#E91E8C",
+          color: ACCENT,
           letterSpacing: "3px",
           textTransform: "uppercase",
         }}
@@ -346,8 +346,8 @@ export default function ReferralPage() {
                         width: 48,
                         height: 48,
                         borderRadius: "var(--jr-radius-md)",
-                        background: "rgba(233, 30, 140, 0.12)",
-                        border: "1px solid rgba(200, 149, 46, 0.32)",
+                        background: `${ACCENT}1F`,
+                        border: `1px solid ${ACCENT}52`,
                         display: "inline-flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -388,7 +388,7 @@ export default function ReferralPage() {
         {/* HOW IT WORKS */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.howTag} title={t.howTitle} theme="dark" />
+            <SectionHeading eyebrow={t.howTag} title={t.howTitle} theme="dark" accent={ACCENT} />
             <div
               style={{
                 display: "grid",
@@ -397,7 +397,7 @@ export default function ReferralPage() {
               }}
             >
               {t.howSteps.map((step) => (
-                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />
+                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />
               ))}
             </div>
           </Container>
@@ -406,7 +406,7 @@ export default function ReferralPage() {
         {/* WHO CAN REFER */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.whoTag} title={t.whoTitle} theme="dark" />
+            <SectionHeading eyebrow={t.whoTag} title={t.whoTitle} theme="dark" accent={ACCENT} />
             <div
               style={{
                 display: "grid",
@@ -432,8 +432,8 @@ export default function ReferralPage() {
                         width: 52,
                         height: 52,
                         borderRadius: "var(--jr-radius-md)",
-                        background: "rgba(233, 30, 140, 0.12)",
-                        border: "1px solid rgba(200, 149, 46, 0.32)",
+                        background: `${ACCENT}1F`,
+                        border: `1px solid ${ACCENT}52`,
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -540,8 +540,8 @@ export default function ReferralPage() {
                     display: "flex",
                     gap: "var(--jr-space-3)",
                     alignItems: "center",
-                    background: "rgba(233, 30, 140, 0.12)",
-                    border: "1px solid rgba(200, 149, 46, 0.32)",
+                    background: `${ACCENT}1F`,
+                    border: `1px solid ${ACCENT}52`,
                     borderRadius: "var(--jr-radius-md)",
                     padding: "var(--jr-space-4) var(--jr-space-5)",
                   }}
@@ -572,7 +572,7 @@ export default function ReferralPage() {
         {/* QUALIFYING SERVICES */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">
-            <SectionHeading eyebrow={t.svcTag} title={t.svcTitle} subtitle={t.svcP} theme="dark" />
+            <SectionHeading eyebrow={t.svcTag} title={t.svcTitle} subtitle={t.svcP} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gap: "var(--jr-space-2)" }}>
               {t.services.map((svc, i) => (
                 <div
@@ -635,7 +635,7 @@ export default function ReferralPage() {
         {/* FAQ */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container size="prose">
-            <SectionHeading eyebrow={t.faqTag} title={t.faqTitle} theme="dark" />
+            <SectionHeading eyebrow={t.faqTag} title={t.faqTitle} theme="dark" accent={ACCENT} />
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>
         </section>

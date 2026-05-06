@@ -259,7 +259,7 @@ export default function CopperGuttersPage() {
 
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.solutionsEyebrow} title={t.solutionsTitle} theme="dark" />
+            <SectionHeading eyebrow={t.solutionsEyebrow} title={t.solutionsTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
@@ -277,7 +277,7 @@ export default function CopperGuttersPage() {
         {/* COMPARISON TABLE */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">
-            <SectionHeading eyebrow={t.comparisonEyebrow} title={t.comparisonTitle} theme="dark" />
+            <SectionHeading eyebrow={t.comparisonEyebrow} title={t.comparisonTitle} theme="dark" accent={ACCENT} />
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)" }}>
                 <thead>
@@ -303,7 +303,7 @@ export default function CopperGuttersPage() {
 
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.idealEyebrow} title={t.idealTitle} theme="dark" />
+            <SectionHeading eyebrow={t.idealEyebrow} title={t.idealTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.idealFor.map((item, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
@@ -318,17 +318,17 @@ export default function CopperGuttersPage() {
 
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.goldEyebrow} title={t.goldTitle} subtitle={t.goldSub} theme="dark" />
+            <SectionHeading eyebrow={t.goldEyebrow} title={t.goldTitle} subtitle={t.goldSub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.goldSteps.map((step) => <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />)}
+              {t.goldSteps.map((step) => <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />)}
             </div>
           </Container>
         </section>
 
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container size="prose">
-            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" />
-            <FAQAccordion items={t.faqs} theme="dark" />
+            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" accent={ACCENT} />
+            <FAQAccordion items={t.faqs} theme="dark" accent={ACCENT} />
           </Container>
         </section>
 

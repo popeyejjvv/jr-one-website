@@ -388,6 +388,7 @@ export default function ServicePlansPage() {
               eyebrow={t.problemEyebrow}
               title={t.problemTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
@@ -422,6 +423,7 @@ export default function ServicePlansPage() {
               title={t.planTitle}
               subtitle={t.planSub}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "var(--jr-space-6)", alignItems: "start" }}>
               {t.plans.map((plan, i) => (
@@ -512,6 +514,7 @@ export default function ServicePlansPage() {
                 eyebrow={t.alaCarteEyebrow}
                 title={t.alaCarteTitle}
                 theme="dark"
+                accent={ACCENT}
               />
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-4)" }}>
                 {t.alaCarte.map((svc, i) => (
@@ -554,10 +557,11 @@ export default function ServicePlansPage() {
               title={t.goldTitle}
               subtitle={t.goldSub}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.goldSteps.map((step) => (
-                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />
+                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />
               ))}
             </div>
           </Container>
@@ -570,6 +574,7 @@ export default function ServicePlansPage() {
               eyebrow={t.faqEyebrow}
               title={t.faqTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>

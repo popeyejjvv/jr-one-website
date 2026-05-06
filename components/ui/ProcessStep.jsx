@@ -4,7 +4,12 @@
  * Big numeral watermark, eyebrow STEP NN, step title, description.
  * Hover: gold border, lift (gated to mouse).
  */
-export default function ProcessStep({ num, title, desc }) {
+export default function ProcessStep({ num, title, desc, accent }) {
+  // When accent passed, use it for both the watermark number behind the card
+  // (low-opacity) and the "STEP 01" eyebrow label. Default = gold.
+  const watermarkColor = accent ? `${accent}1A` : "rgba(200, 149, 46, 0.10)";
+  const stepLabelColor = accent || "var(--jr-gold)";
+
   return (
     <article
       className="jr-hover-lift"
@@ -27,7 +32,7 @@ export default function ProcessStep({ num, title, desc }) {
           fontFamily: "var(--jr-font-heading)",
           fontSize: "84px",
           fontWeight: 800,
-          color: "rgba(200, 149, 46, 0.10)",
+          color: watermarkColor,
           lineHeight: 1,
           letterSpacing: "-2px",
           pointerEvents: "none",
@@ -41,7 +46,7 @@ export default function ProcessStep({ num, title, desc }) {
           fontFamily: "var(--jr-font-heading)",
           fontSize: "var(--jr-text-xs)",
           fontWeight: 700,
-          color: "var(--jr-gold)",
+          color: stepLabelColor,
           letterSpacing: "3px",
           marginBottom: "var(--jr-space-2)",
           textTransform: "uppercase",

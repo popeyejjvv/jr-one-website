@@ -285,8 +285,8 @@ export default function HOAContractsPage() {
                 style={{
                   display: "inline-block",
                   padding: "6px 14px",
-                  background: "var(--jr-gold-pale)",
-                  border: "1px solid rgba(200, 149, 46, 0.28)",
+                  background: `${ACCENT}1F`,
+                  border: `1px solid ${ACCENT}52`,
                   borderRadius: "var(--jr-radius-sm)",
                   marginBottom: "var(--jr-space-3)",
                 }}
@@ -296,7 +296,7 @@ export default function HOAContractsPage() {
                     fontFamily: "var(--jr-font-heading)",
                     fontSize: "var(--jr-text-xs)",
                     fontWeight: 700,
-                    color: "var(--jr-gold)",
+                    color: ACCENT,
                     letterSpacing: "3px",
                     textTransform: "uppercase",
                   }}
@@ -357,6 +357,7 @@ export default function HOAContractsPage() {
               eyebrow={t.problemEyebrow}
               title={t.problemTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
@@ -391,6 +392,7 @@ export default function HOAContractsPage() {
               title={t.solutionTitle}
               subtitle={t.solutionSub}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
@@ -427,6 +429,7 @@ export default function HOAContractsPage() {
               title={t.scopeTitle}
               subtitle={t.scopeSub}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.scopeItems.map((g, i) => (
@@ -495,10 +498,11 @@ export default function HOAContractsPage() {
               title={t.goldTitle}
               subtitle={t.goldMotto}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.goldSteps.map((step) => (
-                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />
+                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />
               ))}
             </div>
           </Container>
@@ -511,6 +515,7 @@ export default function HOAContractsPage() {
               eyebrow={t.reviewEyebrow}
               title={t.reviewTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.reviews.map((rev, i) => (
@@ -527,6 +532,7 @@ export default function HOAContractsPage() {
               eyebrow={t.faqEyebrow}
               title={t.faqTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>

@@ -310,7 +310,7 @@ export default function SagiperPage() {
         {/* ── PRODUCT SYSTEM ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.systemEyebrow} title={t.systemTitle} theme="dark" />
+            <SectionHeading eyebrow={t.systemEyebrow} title={t.systemTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.products.map((p, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderTop: `3px solid ${ACCENT}` }}>
@@ -329,7 +329,7 @@ export default function SagiperPage() {
         {/* ── PROBLEM ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
+            <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
@@ -347,7 +347,7 @@ export default function SagiperPage() {
         {/* ── WHY SAGIPER ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.whyEyebrow} title={t.whyTitle} subtitle={t.whySub} theme="dark" />
+            <SectionHeading eyebrow={t.whyEyebrow} title={t.whyTitle} subtitle={t.whySub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.whyItems.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
@@ -366,10 +366,10 @@ export default function SagiperPage() {
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.goldEyebrow} title={t.goldTitle} subtitle={t.goldSub} theme="dark" />
+            <SectionHeading eyebrow={t.goldEyebrow} title={t.goldTitle} subtitle={t.goldSub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.goldSteps.map((step) => (
-                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />
+                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />
               ))}
             </div>
           </Container>
@@ -378,7 +378,7 @@ export default function SagiperPage() {
         {/* ── REVIEWS ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.reviewsEyebrow} title={t.reviewsTitle} theme="dark" />
+            <SectionHeading eyebrow={t.reviewsEyebrow} title={t.reviewsTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.reviews.map((rev, i) => (
                 <ReviewCard key={i} {...rev} />
@@ -390,7 +390,7 @@ export default function SagiperPage() {
         {/* ── FAQ ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container size="prose">
-            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" />
+            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" accent={ACCENT} />
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>
         </section>

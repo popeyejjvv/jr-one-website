@@ -371,6 +371,7 @@ export default function RentalPropertyMaintenancePage() {
               eyebrow={t.problemEyebrow}
               title={t.problemTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
@@ -407,6 +408,7 @@ export default function RentalPropertyMaintenancePage() {
               title={t.solutionTitle}
               subtitle={t.solutionSub}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
@@ -443,6 +445,7 @@ export default function RentalPropertyMaintenancePage() {
               title={t.scopeTitle}
               subtitle={t.scopeSub}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.scopeItems.map((g, i) => (
@@ -527,10 +530,11 @@ export default function RentalPropertyMaintenancePage() {
               title={t.goldTitle}
               subtitle={t.goldMotto}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.goldSteps.map((step) => (
-                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />
+                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />
               ))}
             </div>
           </Container>
@@ -543,6 +547,7 @@ export default function RentalPropertyMaintenancePage() {
               eyebrow={t.reviewEyebrow}
               title={t.reviewTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.reviews.map((rev, i) => (
@@ -559,6 +564,7 @@ export default function RentalPropertyMaintenancePage() {
               eyebrow={t.faqEyebrow}
               title={t.faqTitle}
               theme="dark"
+              accent={ACCENT}
             />
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>

@@ -316,7 +316,7 @@ export default function CommercialGuttersPage() {
         {/* ── PROBLEM ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
+            <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
@@ -334,7 +334,7 @@ export default function CommercialGuttersPage() {
         {/* ── SOLUTION ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.solutionEyebrow} title={t.solutionTitle} subtitle={t.solutionSub} theme="dark" />
+            <SectionHeading eyebrow={t.solutionEyebrow} title={t.solutionTitle} subtitle={t.solutionSub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
@@ -350,7 +350,7 @@ export default function CommercialGuttersPage() {
         {/* ── BUILDING TYPES ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.scopeEyebrow} title={t.scopeTitle} subtitle={t.scopeSub} theme="dark" />
+            <SectionHeading eyebrow={t.scopeEyebrow} title={t.scopeTitle} subtitle={t.scopeSub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.scopeItems.map((g, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderTop: `4px solid ${ACCENT}` }}>
@@ -387,10 +387,10 @@ export default function CommercialGuttersPage() {
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.goldEyebrow} title={t.goldTitle} subtitle={t.goldSub} theme="dark" />
+            <SectionHeading eyebrow={t.goldEyebrow} title={t.goldTitle} subtitle={t.goldSub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.goldSteps.map((step) => (
-                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />
+                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />
               ))}
             </div>
           </Container>
@@ -399,7 +399,7 @@ export default function CommercialGuttersPage() {
         {/* ── REVIEWS ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.reviewsEyebrow} title={t.reviewsTitle} theme="dark" />
+            <SectionHeading eyebrow={t.reviewsEyebrow} title={t.reviewsTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.reviews.map((rev, i) => (
                 <ReviewCard key={i} {...rev} />
@@ -411,7 +411,7 @@ export default function CommercialGuttersPage() {
         {/* ── FAQ ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container size="prose">
-            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" />
+            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" accent={ACCENT} />
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>
         </section>

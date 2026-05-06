@@ -279,7 +279,7 @@ export default function DrainageAssessmentPage() {
         {/* ── PROBLEM ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
+            <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
@@ -297,7 +297,7 @@ export default function DrainageAssessmentPage() {
         {/* ── WHAT WE INSTALL ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.installEyebrow} title={t.installTitle} subtitle={t.installSub} theme="dark" />
+            <SectionHeading eyebrow={t.installEyebrow} title={t.installTitle} subtitle={t.installSub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.whatWeInstall.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
@@ -319,10 +319,10 @@ export default function DrainageAssessmentPage() {
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
           <Container>
-            <SectionHeading eyebrow={t.processEyebrow} title={t.processTitle} subtitle={t.processSub} theme="dark" />
+            <SectionHeading eyebrow={t.processEyebrow} title={t.processTitle} subtitle={t.processSub} theme="dark" accent={ACCENT} />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.goldSteps.map((step) => (
-                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} />
+                <ProcessStep key={step.num} num={step.num} title={step.title} desc={step.desc} accent={ACCENT} />
               ))}
             </div>
           </Container>
@@ -331,7 +331,7 @@ export default function DrainageAssessmentPage() {
         {/* ── FAQ ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
           <Container size="prose">
-            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" />
+            <SectionHeading eyebrow={t.faqEyebrow} title={t.faqTitle} theme="dark" accent={ACCENT} />
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>
         </section>
