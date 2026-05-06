@@ -1,14 +1,15 @@
 "use client";
 
-import { useEffect } from "react";
+/* ═══════════════════════════════════════════════════════════
+   JR ONE ALUMINUM: PRIVACY POLICY
+   Brand-brain compliant. Tokens via app/tokens.css.
+   ═══════════════════════════════════════════════════════════ */
+
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
+import Container from "../../components/ui/Container";
 import { useLanguage } from "../../lib/LanguageContext";
-
-const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
-const C = { bg:"#0B1628",navy:"#1B2A4A",navyLight:"#2C3E5A",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8" };
-const f = { h:"'Montserrat', sans-serif", b:"'Source Sans 3', sans-serif" };
 
 const T = {
   en: {
@@ -21,7 +22,7 @@ const T = {
     h2Use: "How We Use Your Information",
     pUse: "We use your information to respond to quote requests, provide our services, communicate about your project, send relevant updates or promotions (with your consent), and improve our website and customer experience.",
     h2Share: "Information Sharing",
-    pShare: "We do not sell or rent your personal information. We may share information with trusted service providers who help us operate our business (such as email platforms and CRM tools), but only as necessary to serve you. We may also disclose information if required by law.",
+    pShare: "We do not sell or rent your personal information. We may share information with service providers who help us operate our business (such as email platforms and CRM tools), but only as necessary to serve you. We may also disclose information if required by law.",
     h2Security: "Data Security",
     pSecurity: "We implement reasonable security measures to protect your information. However, no internet transmission is completely secure, and we cannot guarantee absolute security.",
     h2Cookies: "Cookies",
@@ -41,7 +42,7 @@ const T = {
     h2Use: "Cómo Usamos Su Información",
     pUse: "Usamos su información para responder a solicitudes de presupuesto, proporcionar nuestros servicios, comunicarnos sobre su proyecto, enviar actualizaciones o promociones relevantes (con su consentimiento) y mejorar nuestro sitio web y la experiencia del cliente.",
     h2Share: "Compartir Información",
-    pShare: "No vendemos ni alquilamos su información personal. Podemos compartir información con proveedores de servicios de confianza que nos ayudan a operar nuestro negocio (como plataformas de correo electrónico y herramientas CRM), pero solo según sea necesario para atenderle. También podemos divulgar información si lo requiere la ley.",
+    pShare: "No vendemos ni alquilamos su información personal. Podemos compartir información con proveedores de servicios que nos ayudan a operar nuestro negocio (como plataformas de correo electrónico y herramientas CRM), pero solo según sea necesario para atenderle. También podemos divulgar información si lo requiere la ley.",
     h2Security: "Seguridad de Datos",
     pSecurity: "Implementamos medidas de seguridad razonables para proteger su información. Sin embargo, ninguna transmisión por Internet es completamente segura, y no podemos garantizar seguridad absoluta.",
     h2Cookies: "Cookies",
@@ -56,50 +57,114 @@ const T = {
 export default function PrivacyPolicyPage() {
   const { lang } = useLanguage();
   const t = T[lang];
-  useEffect(() => { injectFonts(); }, []);
 
-  const h2 = { fontFamily:f.h, fontSize:"20px", fontWeight:700, color:C.white, marginTop:"40px", marginBottom:"12px" };
-  const p = { fontFamily:f.b, fontSize:"15px", color:C.offWhite, lineHeight:1.7, marginBottom:"16px" };
+  const h2Style = {
+    fontFamily: "var(--jr-font-heading)",
+    fontSize: "var(--jr-text-xl)",
+    fontWeight: 700,
+    color: "var(--jr-paper)",
+    marginTop: "var(--jr-space-10)",
+    marginBottom: "var(--jr-space-3)",
+    letterSpacing: "0.3px",
+  };
+  const pStyle = {
+    fontFamily: "var(--jr-font-body)",
+    fontSize: "var(--jr-text-md)",
+    color: "var(--jr-cream-2)",
+    lineHeight: 1.75,
+    marginBottom: "var(--jr-space-4)",
+  };
+  const linkStyle = { color: "var(--jr-gold)", textDecoration: "none" };
 
   return (
-    <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
+    <div style={{ background: "var(--jr-navy)", color: "var(--jr-paper)", minHeight: "100vh" }}>
+      <a href="#main" className="jr-skip-link">Skip to content</a>
       <SiteNav />
 
-      <section className="hero-stars" style={{padding:"60px 24px 80px",maxWidth:"800px",margin:"0 auto"}}>
-        <div style={{display:"inline-block",padding:"6px 16px",background:C.goldPale,borderRadius:"4px",marginBottom:"12px"}}>
-          <span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>{t.tag}</span>
-        </div>
-        <h1 style={{fontFamily:f.h,fontSize:"clamp(28px,4vw,40px)",fontWeight:800,marginBottom:"8px"}}>{t.title}</h1>
-        <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,marginBottom:"32px"}}>{t.updated}</p>
+      <main id="main">
+        <section style={{ padding: "var(--jr-space-16) 0 var(--jr-space-20)" }}>
+          <Container size="prose">
+            <div
+              style={{
+                display: "inline-block",
+                padding: "6px 14px",
+                background: "var(--jr-gold-pale)",
+                border: "1px solid rgba(200, 149, 46, 0.28)",
+                borderRadius: "var(--jr-radius-sm)",
+                marginBottom: "var(--jr-space-3)",
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "var(--jr-text-xs)",
+                  fontWeight: 700,
+                  color: "var(--jr-gold)",
+                  letterSpacing: "3px",
+                  textTransform: "uppercase",
+                }}
+              >
+                {t.tag}
+              </span>
+            </div>
+            <h1
+              style={{
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "var(--jr-text-3xl)",
+                fontWeight: 800,
+                color: "var(--jr-paper)",
+                marginBottom: "var(--jr-space-2)",
+                letterSpacing: "-0.3px",
+                lineHeight: 1.1,
+              }}
+            >
+              {t.title}
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--jr-font-body)",
+                fontSize: "var(--jr-text-sm)",
+                color: "var(--jr-muted-on-dark)",
+                marginBottom: "var(--jr-space-8)",
+              }}
+            >
+              {t.updated}
+            </p>
 
-        <p style={p}>{t.intro}</p>
+            <p style={pStyle}>{t.intro}</p>
 
-        <h2 style={h2}>{t.h2Collect}</h2>
-        <p style={p}>{t.pCollect}</p>
+            <h2 style={h2Style}>{t.h2Collect}</h2>
+            <p style={pStyle}>{t.pCollect}</p>
 
-        <h2 style={h2}>{t.h2Use}</h2>
-        <p style={p}>{t.pUse}</p>
+            <h2 style={h2Style}>{t.h2Use}</h2>
+            <p style={pStyle}>{t.pUse}</p>
 
-        <h2 style={h2}>{t.h2Share}</h2>
-        <p style={p}>{t.pShare}</p>
+            <h2 style={h2Style}>{t.h2Share}</h2>
+            <p style={pStyle}>{t.pShare}</p>
 
-        <h2 style={h2}>{t.h2Security}</h2>
-        <p style={p}>{t.pSecurity}</p>
+            <h2 style={h2Style}>{t.h2Security}</h2>
+            <p style={pStyle}>{t.pSecurity}</p>
 
-        <h2 style={h2}>{t.h2Cookies}</h2>
-        <p style={p}>{t.pCookies}</p>
+            <h2 style={h2Style}>{t.h2Cookies}</h2>
+            <p style={pStyle}>{t.pCookies}</p>
 
-        <h2 style={h2}>{t.h2Rights}</h2>
-        <p style={p}>{t.pRights}</p>
+            <h2 style={h2Style}>{t.h2Rights}</h2>
+            <p style={pStyle}>{t.pRights}</p>
 
-        <h2 style={h2}>{t.h2Contact}</h2>
-        <p style={p}>{t.pContact}</p>
-        <p style={p}>JR One Aluminum LLC<br/>Tampa, FL<br/>Phone: <a href="tel:8444443114" style={{color:C.gold,textDecoration:"none"}}>(844) 444-3114</a><br/>Email: <a href="mailto:info@jronegutters.com" style={{color:C.gold,textDecoration:"none"}}>info@jronegutters.com</a></p>
-      </section>
+            <h2 style={h2Style}>{t.h2Contact}</h2>
+            <p style={pStyle}>{t.pContact}</p>
+            <p style={pStyle}>
+              JR One Aluminum LLC<br />
+              Tampa, FL<br />
+              Phone: <a href="tel:8444443114" style={linkStyle}>(844) 444-3114</a><br />
+              Email: <a href="mailto:info@jronegutters.com" style={linkStyle}>info@jronegutters.com</a>
+            </p>
+          </Container>
+        </section>
+      </main>
 
       <SiteFooter />
       <MobileCTA />
-      <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
     </div>
   );
 }

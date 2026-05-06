@@ -19,7 +19,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Underground drainage installation in Tampa Bay — Schedule 40 PVC, corrugated pipe, catch basins, dry wells, French drains, pop-up emitters. Move downspout water away from foundations.",
+    "Underground drainage installation in Tampa Bay, Schedule 40 PVC, corrugated pipe, catch basins, dry wells, French drains, pop-up emitters. Move downspout water away from foundations.",
 };
 
 const breadcrumbSchema = {
@@ -34,11 +34,11 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Drainage Installation Tampa FL | French Drains, Catch Basins, Dry Wells",
   description:
-    "Underground drainage systems in Tampa Bay. Schedule 40 PVC, catch basins, dry wells, French drains. Protect foundation from Florida rainfall. Free assessment — (844) 444-3114.",
+    "Underground drainage systems in Tampa Bay. Schedule 40 PVC, catch basins, dry wells, French drains. Protect foundation from Florida rainfall. Free assessment, (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/drainage-assessment" },
   openGraph: {
-    title: "Drainage Installation Tampa FL — JR One Aluminum",
-    description: "Tampa Bay drainage specialists — PVC, catch basins, dry wells. Move water away from foundations.",
+    title: "Drainage Installation Tampa FL, JR One Aluminum",
+    description: "Tampa Bay drainage specialists, PVC, catch basins, dry wells. Move water away from foundations.",
     url: "https://jronegutters.com/drainage-assessment",
     type: "website",
   },

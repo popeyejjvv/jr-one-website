@@ -1,54 +1,57 @@
 "use client";
 
-import { useEffect } from "react";
+/* ═══════════════════════════════════════════════════════════
+   JR ONE ALUMINUM: RESOURCES
+   Brand-brain compliant. Tokens via app/tokens.css.
+   ═══════════════════════════════════════════════════════════ */
+
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
+import Container from "../../components/ui/Container";
+import Button from "../../components/ui/Button";
+import SectionHeading from "../../components/ui/SectionHeading";
+import CTABand from "../../components/ui/CTABand";
 import { useLanguage } from "../../lib/LanguageContext";
-
-const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
-const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D",success:"#2D8B4E",successDim:"rgba(45,139,78,0.15)" };
-const f = { h:"'Montserrat', sans-serif", b:"'Source Sans 3', sans-serif" };
-const Tag = ({children}) => <div style={{display:"inline-block",padding:"6px 16px",background:C.goldPale,borderRadius:"4px",marginBottom:"12px"}}><span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>{children}</span></div>;
-const GoldBar = () => <div style={{width:"60px",height:"3px",background:`linear-gradient(90deg,${C.gold},${C.goldLight})`,borderRadius:"2px",margin:"16px auto"}} />;
+import { WrenchIcon, ShieldIcon, HardHatIcon, RoofEdgeIcon } from "../../lib/icons";
 
 const T = {
   en: {
     tag: "RESOURCES",
     heroTitle1: "Everything You Need.",
     heroTitle2: "All In One Place.",
-    heroP: "Care guides, license verification, and insurance documentation. Whether you're a homeowner protecting your install for the long run, or a builder vetting us for your next project — it's all here.",
+    heroP: "Care guides, license verification, and insurance documentation. Whether you're a homeowner protecting your install for the long run, or a builder vetting us for your next project, it's all here.",
 
     careTag: "MAINTENANCE",
-    careTitle: "CARE & MAINTENANCE",
-    careIntro: "Your aluminum exterior is built to last decades — but it still needs occasional attention. This plain-English guide walks you through the few simple things that will keep your gutters, soffit, and fascia working for the long run. Available in English and Spanish.",
+    careTitle: "Care & Maintenance",
+    careIntro: "Your aluminum exterior is built to last decades, but it still needs occasional attention. This plain-English guide walks you through the few simple things that will keep your gutters, soffit, and fascia working for the long run. Available in English and Spanish.",
     careDoc: {
-      icon: "🧰",
+      icon: "wrench",
       title: "Maintenance & Care Guide",
-      desc: "A 2-page homeowner guide covering gutter cleaning, soffit and fascia care, what to do twice a year, what to never do, and exactly when to call us instead of DIY. Written in plain language — no jargon, no contractor-speak.",
+      desc: "A 2-page homeowner guide covering gutter cleaning, soffit and fascia care, what to do twice a year, what to never do, and exactly when to call us instead of DIY. Written in plain language. No jargon, no contractor-speak.",
       en: "JR_One_Maintenance_Care_Guide.pdf",
       es: "es-JR_One_Maintenance_Care_Guide.pdf",
     },
 
     legalTag: "LICENSE & INSURANCE",
-    legalTitle: "VERIFICATION DOCUMENTS",
-    legalIntro: "We don't expect you to take our word for it. Below are our official documents — straight from the State of Florida and our insurance carriers. Download whichever you need.",
+    legalTitle: "Verification Documents",
+    legalIntro: "We don't expect you to take our word for it. Below are our official documents, straight from the State of Florida and our insurance carriers. Download whichever you need.",
     legalDocs: [
       {
-        icon: "🏛️",
+        icon: "edge",
         title: "Florida LLC Certificate of Active Status",
         desc: "Certificate of Status from the Florida Department of State confirming JR One Aluminum LLC is an active limited liability company in good standing. Filed November 5, 2010. Document number L10000115561. Most recent annual report filed April 7, 2026.",
         file: "JR_One_Sunbiz_Active_Status_2026.pdf",
       },
       {
-        icon: "🛡️",
-        title: "Certificate of Insurance — General Liability",
+        icon: "shield",
+        title: "Certificate of Insurance: General Liability",
         desc: "ACORD 25 Certificate of Liability Insurance. $1M each occurrence, $2M general aggregate, $2M products/completed operations aggregate. Carrier: Ascendant Commercial Insurance Co. Policy GL-60282-7. Coverage for gutters installation work.",
         file: "JR_One_COI_General_Liability_2026.pdf",
       },
       {
-        icon: "👷",
-        title: "Certificate of Insurance — Workers' Comp + Auto",
+        icon: "hardhat",
+        title: "Certificate of Insurance: Workers' Comp + Auto",
         desc: "ACORD 25 Certificate covering Workers' Compensation ($1M each accident / $1M disease) via PIE Insurance Company, plus Commercial Auto Liability via Berkshire Hathaway Homestate. Includes blanket waiver of subrogation when required by written contract.",
         file: "JR_One_COI_Workers_Comp_Auto_2026.pdf",
       },
@@ -59,48 +62,48 @@ const T = {
     spanishPdf: "ESPAÑOL PDF",
 
     trustTag: "TRANSPARENCY",
-    trustTitle: "WHY WE PUT THIS HERE",
-    trustBody: "Most contractors hide their license and insurance documents — or make you call and ask for them. We don't. Our LLC has been active in Florida since 2010, our insurance is current, and our work is backed by a 3-year workmanship warranty. If you want to verify any of it before signing a contract — you should be able to do that on your own time.",
+    trustTitle: "Why We Put This Here",
+    trustBody: "Most contractors hide their license and insurance documents, or make you call and ask for them. We don't. Our LLC has been active in Florida since 2010, our insurance is current, and our work is backed by a 3-year workmanship warranty. If you want to verify any of it before signing a contract, you should be able to do that on your own time.",
 
-    ctaTitle: "QUESTIONS ABOUT ANY OF THIS?",
-    ctaSub: "Call us. We answer the phone — and we'll send anything you need by email if you can't find it here.",
+    ctaTitle: "Questions About Any of This?",
+    ctaSub: "Call us. We answer the phone, and we'll send anything you need by email if you can't find it here.",
   },
   es: {
     tag: "RECURSOS",
     heroTitle1: "Todo Lo Que Necesita.",
     heroTitle2: "En Un Solo Lugar.",
-    heroP: "Guías de cuidado, verificación de licencia y documentación de seguro. Ya sea que sea un propietario protegiendo su instalación a largo plazo, o un constructor evaluándonos para su próximo proyecto — todo está aquí.",
+    heroP: "Guías de cuidado, verificación de licencia y documentación de seguro. Ya sea que sea un propietario protegiendo su instalación a largo plazo, o un constructor evaluándonos para su próximo proyecto, todo está aquí.",
 
     careTag: "MANTENIMIENTO",
-    careTitle: "CUIDADO Y MANTENIMIENTO",
-    careIntro: "Su exterior de aluminio está construido para durar décadas — pero aún necesita atención ocasional. Esta guía en lenguaje sencillo le explica las pocas cosas simples que mantendrán sus canaletas, sofito y fascia funcionando a largo plazo. Disponible en inglés y español.",
+    careTitle: "Cuidado y Mantenimiento",
+    careIntro: "Su exterior de aluminio está construido para durar décadas, pero aún necesita atención ocasional. Esta guía en lenguaje sencillo le explica las pocas cosas simples que mantendrán sus canaletas, sofito y fascia funcionando a largo plazo. Disponible en inglés y español.",
     careDoc: {
-      icon: "🧰",
+      icon: "wrench",
       title: "Guía de Mantenimiento y Cuidado",
-      desc: "Una guía de 2 páginas para propietarios que cubre la limpieza de canaletas, el cuidado del sofito y la fascia, qué hacer dos veces al año, qué nunca hacer y exactamente cuándo llamarnos en lugar de hacerlo usted mismo. Escrita en lenguaje sencillo — sin jerga, sin tecnicismos.",
+      desc: "Una guía de 2 páginas para propietarios que cubre la limpieza de canaletas, el cuidado del sofito y la fascia, qué hacer dos veces al año, qué nunca hacer y exactamente cuándo llamarnos en lugar de hacerlo usted mismo. Escrita en lenguaje sencillo. Sin jerga, sin tecnicismos.",
       en: "JR_One_Maintenance_Care_Guide.pdf",
       es: "es-JR_One_Maintenance_Care_Guide.pdf",
     },
 
     legalTag: "LICENCIA Y SEGURO",
-    legalTitle: "DOCUMENTOS DE VERIFICACIÓN",
-    legalIntro: "No esperamos que solo crea en nuestra palabra. A continuación están nuestros documentos oficiales — directamente del Estado de Florida y nuestras compañías de seguros. Descargue lo que necesite.",
+    legalTitle: "Documentos de Verificación",
+    legalIntro: "No esperamos que solo crea en nuestra palabra. A continuación están nuestros documentos oficiales, directamente del Estado de Florida y nuestras compañías de seguros. Descargue lo que necesite.",
     legalDocs: [
       {
-        icon: "🏛️",
-        title: "Certificado de Estado Activo — Florida LLC",
+        icon: "edge",
+        title: "Certificado de Estado Activo: Florida LLC",
         desc: "Certificado de Estado del Departamento de Estado de Florida que confirma que JR One Aluminum LLC es una compañía de responsabilidad limitada activa y en buen estado. Registrada el 5 de noviembre de 2010. Número de documento L10000115561. Reporte anual más reciente presentado el 7 de abril de 2026.",
         file: "JR_One_Sunbiz_Active_Status_2026.pdf",
       },
       {
-        icon: "🛡️",
-        title: "Certificado de Seguro — Responsabilidad General",
+        icon: "shield",
+        title: "Certificado de Seguro: Responsabilidad General",
         desc: "Certificado ACORD 25 de Seguro de Responsabilidad. $1M por ocurrencia, $2M agregado general, $2M agregado de productos/operaciones completadas. Aseguradora: Ascendant Commercial Insurance Co. Póliza GL-60282-7. Cobertura para trabajo de instalación de canaletas.",
         file: "JR_One_COI_General_Liability_2026.pdf",
       },
       {
-        icon: "👷",
-        title: "Certificado de Seguro — Compensación al Trabajador + Auto",
+        icon: "hardhat",
+        title: "Certificado de Seguro: Compensación al Trabajador + Auto",
         desc: "Certificado ACORD 25 que cubre Compensación al Trabajador ($1M por accidente / $1M por enfermedad) a través de PIE Insurance Company, más Responsabilidad de Auto Comercial a través de Berkshire Hathaway Homestate. Incluye exención general de subrogación cuando sea requerida por contrato escrito.",
         file: "JR_One_COI_Workers_Comp_Auto_2026.pdf",
       },
@@ -111,94 +114,316 @@ const T = {
     spanishPdf: "ESPAÑOL PDF",
 
     trustTag: "TRANSPARENCIA",
-    trustTitle: "POR QUÉ PUBLICAMOS ESTO",
-    trustBody: "La mayoría de los contratistas esconden sus documentos de licencia y seguro — o hacen que llame y los pida. Nosotros no. Nuestra LLC ha estado activa en Florida desde 2010, nuestro seguro está vigente, y nuestro trabajo está respaldado por una garantía de mano de obra de 3 años. Si quiere verificar cualquiera de esto antes de firmar un contrato — debería poder hacerlo en su propio tiempo.",
+    trustTitle: "Por Qué Publicamos Esto",
+    trustBody: "La mayoría de los contratistas esconden sus documentos de licencia y seguro, o hacen que llame y los pida. Nosotros no. Nuestra LLC ha estado activa en Florida desde 2010, nuestro seguro está vigente, y nuestro trabajo está respaldado por una garantía de mano de obra de 3 años. Si quiere verificar cualquiera de esto antes de firmar un contrato, debería poder hacerlo en su propio tiempo.",
 
-    ctaTitle: "¿PREGUNTAS SOBRE ALGO DE ESTO?",
-    ctaSub: "Llámenos. Contestamos el teléfono — y le enviaremos cualquier cosa que necesite por correo si no la encuentra aquí.",
+    ctaTitle: "¿Preguntas Sobre Algo de Esto?",
+    ctaSub: "Llámenos. Contestamos el teléfono, y le enviaremos cualquier cosa que necesite por correo si no la encuentra aquí.",
   },
 };
+
+const ICON_MAP = {
+  wrench: WrenchIcon,
+  shield: ShieldIcon,
+  hardhat: HardHatIcon,
+  edge: RoofEdgeIcon,
+};
+
+function PageEyebrow({ children }) {
+  return (
+    <div
+      style={{
+        display: "inline-block",
+        padding: "6px 14px",
+        background: "var(--jr-gold-pale)",
+        border: "1px solid rgba(200, 149, 46, 0.28)",
+        borderRadius: "var(--jr-radius-sm)",
+        marginBottom: "var(--jr-space-3)",
+      }}
+    >
+      <span
+        style={{
+          fontFamily: "var(--jr-font-heading)",
+          fontSize: "var(--jr-text-xs)",
+          fontWeight: 700,
+          color: "var(--jr-gold)",
+          letterSpacing: "3px",
+          textTransform: "uppercase",
+        }}
+      >
+        {children}
+      </span>
+    </div>
+  );
+}
 
 export default function ResourcesPage() {
   const { lang } = useLanguage();
   const t = T[lang];
-  useEffect(() => { injectFonts(); }, []);
-  const secTitle = {fontFamily:f.h,fontSize:"clamp(24px,4vw,36px)",fontWeight:800,letterSpacing:"2px",textAlign:"center",marginBottom:"8px"};
+  const CareIcon = ICON_MAP[t.careDoc.icon] || WrenchIcon;
 
   return (
-    <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
+    <div style={{ background: "var(--jr-navy)", color: "var(--jr-paper)", minHeight: "100vh" }}>
+      <a href="#main" className="jr-skip-link">Skip to content</a>
       <SiteNav />
 
-      {/* HERO */}
-      <section className="hero-stars" style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-        <Tag>{t.tag}</Tag>
-        <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>{t.heroTitle1}<br/><span style={{color:C.gold}}>{t.heroTitle2}</span></h1>
-        <p style={{fontFamily:f.b,fontSize:"18px",color:C.muted,maxWidth:"650px",margin:"0 auto"}}>{t.heroP}</p>
-      </section>
+      <main id="main">
+        {/* HERO */}
+        <section
+          style={{
+            padding: "var(--jr-space-16) var(--jr-space-6) var(--jr-space-10)",
+            background: "linear-gradient(165deg, var(--jr-navy-deep) 0%, var(--jr-navy) 60%, var(--jr-navy-2) 100%)",
+          }}
+        >
+          <Container size="narrow" style={{ textAlign: "center" }}>
+            <PageEyebrow>{t.tag}</PageEyebrow>
+            <h1
+              style={{
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "var(--jr-text-4xl)",
+                fontWeight: 800,
+                lineHeight: 1.1,
+                marginBottom: "var(--jr-space-4)",
+                letterSpacing: "-0.5px",
+              }}
+            >
+              {t.heroTitle1}<br />
+              <span style={{ color: "var(--jr-gold)" }}>{t.heroTitle2}</span>
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--jr-font-body)",
+                fontSize: "var(--jr-text-lg)",
+                color: "var(--jr-cream-2)",
+                lineHeight: 1.65,
+                maxWidth: "640px",
+                margin: "0 auto",
+              }}
+            >
+              {t.heroP}
+            </p>
+          </Container>
+        </section>
 
-      {/* CARE GUIDE */}
-      <section style={{padding:"40px 24px 60px"}}>
-        <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>{t.careTag}</Tag>
-          <h2 style={{...secTitle,color:C.white}}>{t.careTitle}</h2>
-          <GoldBar />
-          <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,maxWidth:"650px",margin:"0 auto 32px"}}>{t.careIntro}</p>
-
-          <div style={{maxWidth:"600px",margin:"0 auto",background:C.navyFade,border:`2px solid ${C.gold}`,borderRadius:"16px",padding:"32px",textAlign:"left"}}>
-            <div style={{fontSize:"36px",marginBottom:"12px",textAlign:"center"}}>{t.careDoc.icon}</div>
-            <h3 style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.gold,marginBottom:"12px",letterSpacing:"1px",textAlign:"center"}}>{t.careDoc.title}</h3>
-            <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,lineHeight:1.65,marginBottom:"22px"}}>{t.careDoc.desc}</p>
-            <div style={{display:"flex",gap:"12px",flexWrap:"wrap",justifyContent:"center"}}>
-              <a href={`/documents/${t.careDoc.en}`} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"6px",padding:"12px 20px",fontFamily:f.h,fontSize:"12px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"6px",textDecoration:"none"}}>↓ {t.englishPdf}</a>
-              <a href={`/documents/${t.careDoc.es}`} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"6px",padding:"12px 20px",fontFamily:f.h,fontSize:"12px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,background:"transparent",border:`1.5px solid ${C.gold}`,borderRadius:"6px",textDecoration:"none"}}>↓ {t.spanishPdf}</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* LEGAL / VERIFICATION DOCS */}
-      <section style={{background:C.navy,padding:"80px 24px"}}>
-        <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>{t.legalTag}</Tag>
-          <h2 style={{...secTitle,color:C.white}}>{t.legalTitle}</h2>
-          <GoldBar />
-          <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,maxWidth:"650px",margin:"0 auto 40px"}}>{t.legalIntro}</p>
-
-          <div style={{display:"grid",gridTemplateColumns:"1fr",gap:"16px",textAlign:"left"}}>
-            {t.legalDocs.map((doc,i) =>
-              <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px",display:"flex",gap:"20px",alignItems:"flex-start",flexWrap:"wrap"}}>
-                <div style={{fontSize:"36px",flexShrink:0}}>{doc.icon}</div>
-                <div style={{flex:"1 1 300px"}}>
-                  <h3 style={{fontFamily:f.h,fontSize:"15px",fontWeight:700,color:C.gold,marginBottom:"10px",letterSpacing:"1px"}}>{doc.title}</h3>
-                  <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,lineHeight:1.6,marginBottom:"16px"}}>{doc.desc}</p>
-                  <a href={`/documents/${doc.file}`} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"6px",padding:"10px 18px",fontFamily:f.h,fontSize:"11px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"6px",textDecoration:"none"}}>↓ {t.downloadBtn}</a>
-                </div>
+        {/* CARE GUIDE */}
+        <section style={{ padding: "var(--jr-space-12) 0 var(--jr-space-16)" }}>
+          <Container size="narrow">
+            <SectionHeading
+              eyebrow={t.careTag}
+              title={t.careTitle}
+              subtitle={t.careIntro}
+              theme="dark"
+            />
+            <div
+              style={{
+                maxWidth: 600,
+                margin: "0 auto",
+                background: "var(--jr-navy-deep)",
+                border: "2px solid var(--jr-gold)",
+                borderRadius: "var(--jr-radius-xl)",
+                padding: "var(--jr-space-8)",
+              }}
+            >
+              <div
+                style={{
+                  width: 60,
+                  height: 60,
+                  borderRadius: "var(--jr-radius-md)",
+                  background: "var(--jr-gold-pale)",
+                  border: "1px solid rgba(200, 149, 46, 0.32)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "var(--jr-gold)",
+                  margin: "0 auto var(--jr-space-3)",
+                }}
+              >
+                <CareIcon size={30} />
               </div>
-            )}
-          </div>
-        </div>
-      </section>
+              <h3
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "var(--jr-text-lg)",
+                  fontWeight: 700,
+                  color: "var(--jr-gold)",
+                  marginBottom: "var(--jr-space-3)",
+                  letterSpacing: "0.5px",
+                  textAlign: "center",
+                }}
+              >
+                {t.careDoc.title}
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--jr-font-body)",
+                  fontSize: "var(--jr-text-md)",
+                  color: "var(--jr-cream-2)",
+                  lineHeight: 1.7,
+                  marginBottom: "var(--jr-space-5)",
+                }}
+              >
+                {t.careDoc.desc}
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "var(--jr-space-3)",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                }}
+              >
+                <Button
+                  href={`/documents/${t.careDoc.en}`}
+                  variant="primary"
+                  size="sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.englishPdf}
+                </Button>
+                <Button
+                  href={`/documents/${t.careDoc.es}`}
+                  variant="outline"
+                  size="sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.spanishPdf}
+                </Button>
+              </div>
+            </div>
+          </Container>
+        </section>
 
-      {/* TRANSPARENCY BLURB */}
-      <section style={{background:C.bg,padding:"80px 24px"}}>
-        <div style={{maxWidth:"720px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>{t.trustTag}</Tag>
-          <h2 style={{...secTitle,color:C.white}}>{t.trustTitle}</h2>
-          <GoldBar />
-          <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,lineHeight:1.7,marginTop:"24px"}}>{t.trustBody}</p>
-        </div>
-      </section>
+        {/* LEGAL DOCS */}
+        <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
+          <Container size="narrow">
+            <SectionHeading
+              eyebrow={t.legalTag}
+              title={t.legalTitle}
+              subtitle={t.legalIntro}
+              theme="dark"
+            />
+            <div style={{ display: "grid", gap: "var(--jr-space-4)" }}>
+              {t.legalDocs.map((doc, i) => {
+                const Icon = ICON_MAP[doc.icon] || ShieldIcon;
+                return (
+                  <div
+                    key={i}
+                    style={{
+                      background: "var(--jr-navy)",
+                      border: "1px solid var(--jr-navy-3)",
+                      borderRadius: "var(--jr-radius-lg)",
+                      padding: "var(--jr-space-6)",
+                      display: "flex",
+                      gap: "var(--jr-space-5)",
+                      alignItems: "flex-start",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <div
+                      style={{
+                        flexShrink: 0,
+                        width: 56,
+                        height: 56,
+                        borderRadius: "var(--jr-radius-md)",
+                        background: "var(--jr-gold-pale)",
+                        border: "1px solid rgba(200, 149, 46, 0.32)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: "var(--jr-gold)",
+                      }}
+                    >
+                      <Icon size={28} />
+                    </div>
+                    <div style={{ flex: "1 1 280px" }}>
+                      <h3
+                        style={{
+                          fontFamily: "var(--jr-font-heading)",
+                          fontSize: "var(--jr-text-md)",
+                          fontWeight: 700,
+                          color: "var(--jr-gold)",
+                          marginBottom: "var(--jr-space-3)",
+                          letterSpacing: "0.5px",
+                        }}
+                      >
+                        {doc.title}
+                      </h3>
+                      <p
+                        style={{
+                          fontFamily: "var(--jr-font-body)",
+                          fontSize: "var(--jr-text-sm)",
+                          color: "var(--jr-muted-on-dark)",
+                          lineHeight: 1.65,
+                          marginBottom: "var(--jr-space-4)",
+                        }}
+                      >
+                        {doc.desc}
+                      </p>
+                      <Button
+                        href={`/documents/${doc.file}`}
+                        variant="primary"
+                        size="sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t.downloadBtn}
+                      </Button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </Container>
+        </section>
 
-      {/* CTA */}
-      <section style={{background:C.navy,padding:"60px 24px",textAlign:"center"}}>
-        <h2 style={{fontFamily:f.h,fontSize:"28px",fontWeight:800,color:C.white,marginBottom:"12px"}}>{t.ctaTitle}</h2>
-        <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,marginBottom:"24px",maxWidth:"600px",margin:"0 auto 24px"}}>{t.ctaSub}</p>
-        <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 (844) 444-3114</a>
-      </section>
+        {/* TRANSPARENCY */}
+        <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
+          <Container size="prose" style={{ textAlign: "center" }}>
+            <PageEyebrow>{t.trustTag}</PageEyebrow>
+            <h2
+              style={{
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "var(--jr-text-3xl)",
+                fontWeight: 700,
+                color: "var(--jr-paper)",
+                letterSpacing: "0.3px",
+                lineHeight: 1.2,
+                marginBottom: "var(--jr-space-3)",
+              }}
+            >
+              {t.trustTitle}
+            </h2>
+            <div
+              aria-hidden
+              style={{
+                width: 60,
+                height: 3,
+                background: "var(--jr-gold)",
+                borderRadius: 2,
+                margin: "var(--jr-space-3) auto var(--jr-space-5)",
+              }}
+            />
+            <p
+              style={{
+                fontFamily: "var(--jr-font-body)",
+                fontSize: "var(--jr-text-md)",
+                color: "var(--jr-cream-2)",
+                lineHeight: 1.75,
+              }}
+            >
+              {t.trustBody}
+            </p>
+          </Container>
+        </section>
+
+        {/* CTA */}
+        <CTABand title={t.ctaTitle} sub={t.ctaSub} primaryHref="/contact" />
+      </main>
 
       <SiteFooter />
       <MobileCTA />
-      <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
     </div>
   );
 }

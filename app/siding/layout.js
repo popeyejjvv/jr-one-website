@@ -19,7 +19,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Siding installation in Tampa Bay — vinyl lap, Hardie board lap, Hardie batten and shaker, custom aluminum. Integrated with soffit, fascia, and gutters by one specialist crew. 30+ years experience.",
+    "Siding installation in Tampa Bay, vinyl lap, Hardie board lap, Hardie batten and shaker, custom aluminum. Integrated with soffit, fascia, and gutters by one specialist crew. 30+ years experience.",
 };
 
 const breadcrumbSchema = {
@@ -34,11 +34,11 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Siding Installation Tampa FL | Hardie Board, Vinyl, Aluminum",
   description:
-    "Siding installation in Tampa Bay — Hardie board, vinyl lap, custom aluminum. One crew handles siding, soffit, fascia, and gutters. Free estimate — (844) 444-3114.",
+    "Siding installation in Tampa Bay, Hardie board, vinyl lap, custom aluminum. One crew handles siding, soffit, fascia, and gutters. Free estimate, (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/siding" },
   openGraph: {
-    title: "Siding Installation Tampa FL — JR One Aluminum",
-    description: "Tampa Bay siding specialist — Hardie, vinyl, custom aluminum. Integrated with soffit, fascia, and gutters.",
+    title: "Siding Installation Tampa FL, JR One Aluminum",
+    description: "Tampa Bay siding specialist, Hardie, vinyl, custom aluminum. Integrated with soffit, fascia, and gutters.",
     url: "https://jronegutters.com/siding",
     type: "website",
   },

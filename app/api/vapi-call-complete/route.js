@@ -2,16 +2,16 @@ import { NextResponse } from "next/server";
 import crypto from "crypto";
 
 // =============================================================================
-// JR One — Vapi Call-Complete Webhook
+// JR One, Vapi Call-Complete Webhook
 // =============================================================================
 // Receives end-of-call events from Vapi and posts a client-activity note onto
 // the originating BuilderPrime opportunity. Used by the after-hours voice
 // callback layer (Phase 1).
 //
 // Security: HMAC-SHA256 over the raw request body using VAPI_WEBHOOK_SECRET.
-// Fail-closed — any signature mismatch (or missing secret) returns 401.
+// Fail-closed, any signature mismatch (or missing secret) returns 401.
 //
-// Activity-note shape mirrors estimator-lead/route.js:154–171 (same headers,
+// Activity-note shape mirrors estimator-lead/route.js:154-171 (same headers,
 // same /client-activities/v1 endpoint, same opportunityId/description body).
 // =============================================================================
 
@@ -27,7 +27,7 @@ const BP_BASE_URL = `https://${BP_SUBDOMAIN}.builderprime.com/api`;
 // distinctive enough to never collide with normal conversation. If Vapi later
 // exposes a clean structured field (e.g. analysis.structuredOutput.spanishDetected
 // or endedReason: "spanish-handoff"), prefer that and keep these substrings as
-// a fallback. Detection is best-effort — false negatives just mean the morning
+// a fallback. Detection is best-effort, false negatives just mean the morning
 // team won't see the [NEEDS SPANISH CALLBACK] flag, not data loss.
 const HANDOFF_PHRASE = "i'm only able to help in english right now";
 const SPANISH_SIGNAL_FALLBACKS = [
@@ -83,7 +83,7 @@ export async function POST(request) {
   // ── HMAC validation (fail-closed) ──────────────────────────────────────────
   const secret = process.env.VAPI_WEBHOOK_SECRET;
   if (!secret) {
-    console.error("✗ VAPI_WEBHOOK_SECRET not set — rejecting webhook");
+    console.error("✗ VAPI_WEBHOOK_SECRET not set, rejecting webhook");
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
@@ -129,7 +129,7 @@ export async function POST(request) {
   const bpOpportunityId = metadata.bpOpportunityId;
 
   if (!bpOpportunityId) {
-    console.warn("⚠ Vapi webhook missing bpOpportunityId in metadata — nothing to attach");
+    console.warn("⚠ Vapi webhook missing bpOpportunityId in metadata, nothing to attach");
     return NextResponse.json({ ok: true, skipped: "no-opportunity-id" });
   }
 
@@ -158,8 +158,8 @@ export async function POST(request) {
   // ── Build the activity note ────────────────────────────────────────────────
   const truncatedTranscript = String(transcript).slice(0, 2000);
   const headline = needsSpanishCallback
-    ? "[NEEDS SPANISH CALLBACK] AFTER-HOURS VOICE CALLBACK — Vapi"
-    : "AFTER-HOURS VOICE CALLBACK — Vapi";
+    ? "[NEEDS SPANISH CALLBACK] AFTER-HOURS VOICE CALLBACK, Vapi"
+    : "AFTER-HOURS VOICE CALLBACK, Vapi";
 
   const description = [
     headline,
@@ -171,7 +171,7 @@ export async function POST(request) {
     .filter(Boolean)
     .join("\n");
 
-  // ── Attach to BP opportunity (mirrors estimator-lead/route.js:154–171) ─────
+  // ── Attach to BP opportunity (mirrors estimator-lead/route.js:154-171) ─────
   if (process.env.BUILDER_PRIME_API_KEY) {
     try {
       const bpResponse = await fetch(`${BP_BASE_URL}/client-activities/v1`, {
@@ -201,7 +201,7 @@ export async function POST(request) {
       console.error(`✗ BP activity-note exception: ${bpErr.message}`);
     }
   } else {
-    console.warn("⚠ BUILDER_PRIME_API_KEY not set — Vapi note not attached");
+    console.warn("⚠ BUILDER_PRIME_API_KEY not set, Vapi note not attached");
   }
 
   // Always 200 so Vapi doesn't retry the webhook forever.

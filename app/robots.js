@@ -1,7 +1,7 @@
 export default function robots() {
   // Explicit allow rules for AI crawlers so LLM answer engines
   // (ChatGPT, Claude, Perplexity, Gemini, Google SGE, etc.) can cite
-  // JR One content. Default-allow covers it, but explicit is safer —
+  // JR One content. Default-allow covers it, but explicit is safer ,
   // some AI crawlers respect per-UA blocks that a blanket "*" wouldn't catch.
   const AI_CRAWLERS = [
     "GPTBot",            // OpenAI / ChatGPT training + browsing
@@ -32,13 +32,13 @@ export default function robots() {
 
   return {
     rules: [
-      // Default — all standard search engines + anything not explicitly listed
+      // Default, all standard search engines + anything not explicitly listed
       {
         userAgent: "*",
         allow: "/",
         disallow: ["/api/", "/contractors/"],
       },
-      // AI engines — explicitly allowed so they can fetch /llms.txt + knowledge MDs
+      // AI engines, explicitly allowed so they can fetch /llms.txt + knowledge MDs
       ...aiAllowRules,
     ],
     sitemap: "https://www.jronegutters.com/sitemap.xml",

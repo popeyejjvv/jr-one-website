@@ -21,7 +21,7 @@ const serviceSchema = {
     { "@type": "City", name: "Bradenton" },
   ],
   description:
-    "Professional gutter cleaning and maintenance in Tampa Bay — debris removal, downspout flushing, pitch and hanger inspection, haul-away. Typical single-family home $150-$400. Photo documentation of any issues found.",
+    "Professional gutter cleaning and maintenance in Tampa Bay, debris removal, downspout flushing, pitch and hanger inspection, haul-away. Typical single-family home $150-$400. Photo documentation of any issues found.",
   offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
 };
 
@@ -45,7 +45,7 @@ const faqSchema = {
       name: "How much does gutter cleaning cost in Tampa?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Typical single-family homes run $150-$400 depending on roof height, linear footage of gutter, debris level, and access. Two-story homes with complex rooflines run higher. Smaller one-story homes with straightforward access run lower. Exact pricing after a quick look — no generic rate quoted sight-unseen.",
+        text: "Typical single-family homes run $150-$400 depending on roof height, linear footage of gutter, debris level, and access. Two-story homes with complex rooflines run higher. Smaller one-story homes with straightforward access run lower. Exact pricing after a quick look, no generic rate quoted sight-unseen.",
       },
     },
     {
@@ -53,7 +53,7 @@ const faqSchema = {
       name: "How often should I clean my gutters in Tampa?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Heavy tree coverage (live oaks, pines, magnolias nearby): 3-4 cleanings per year. Moderate cover: twice a year — pre-summer (May) and post-hurricane (November). Homes with gutter guards: every 2-3 years. Open-lot homes with no trees: once a year minimum. Add a cleaning after any named storm regardless of the cycle.",
+        text: "Heavy tree coverage (live oaks, pines, magnolias nearby): 3-4 cleanings per year. Moderate cover: twice a year, pre-summer (May) and post-hurricane (November). Homes with gutter guards: every 2-3 years. Open-lot homes with no trees: once a year minimum. Add a cleaning after any named storm regardless of the cycle.",
       },
     },
     {
@@ -69,7 +69,7 @@ const faqSchema = {
       name: "What's the difference between your cleaning and a handyman?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most general handymen scoop what they can see and leave. We clear every run end-to-end, flush every downspout, inspect hangers and sealant, photograph issues, and haul the waste. Plus we're an aluminum specialty contractor — we can quote any repair we find on the spot instead of telling you to call someone else.",
+        text: "Most general handymen scoop what they can see and leave. We clear every run end-to-end, flush every downspout, inspect hangers and sealant, photograph issues, and haul the waste. Plus we're an aluminum specialty contractor, we can quote any repair we find on the spot instead of telling you to call someone else.",
       },
     },
     {
@@ -85,7 +85,7 @@ const faqSchema = {
       name: "Do you service rental properties and absentee owners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. See our rental property maintenance page for recurring service plans built around absentee owners — scheduled visits, tenant coordination, and photo reports after every cleaning.",
+        text: "Yes. See our rental property maintenance page for recurring service plans built around absentee owners, scheduled visits, tenant coordination, and photo reports after every cleaning.",
       },
     },
     {
@@ -102,18 +102,18 @@ const faqSchema = {
 export const metadata = {
   title: "Gutter Cleaning Tampa FL | $150-$400 Single-Family | JR One",
   description:
-    "Professional gutter cleaning in Tampa Bay — full debris removal, downspout flushing, hanger inspection, haul-away. Typical single-family $150-$400. Same-day estimates at (844) 444-3114.",
+    "Professional gutter cleaning in Tampa Bay, full debris removal, downspout flushing, hanger inspection, haul-away. Typical single-family $150-$400. Same-day estimates at (844) 444-3114.",
   keywords: "gutter cleaning Tampa, gutter cleaning cost Tampa FL, downspout flushing, gutter maintenance Tampa Bay, professional gutter cleaner Florida, gutter cleaning Clearwater St Petersburg",
   alternates: { canonical: "https://jronegutters.com/gutter-cleaning" },
   openGraph: {
-    title: "Gutter Cleaning Tampa FL — JR One Aluminum",
+    title: "Gutter Cleaning Tampa FL, JR One Aluminum",
     description: "Full debris removal, downspout flushing, photo documentation. Typical single-family $150-$400.",
     url: "https://jronegutters.com/gutter-cleaning",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gutter Cleaning Tampa FL — JR One Aluminum",
+    title: "Gutter Cleaning Tampa FL, JR One Aluminum",
     description: "Full service cleaning, flushing, and inspection with photo documentation.",
   },
 };

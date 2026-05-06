@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "JR One Aluminum LLC — The Superior Soffit & Gutter Experts, Tampa Bay";
+export const alt = "JR One Aluminum LLC, Tampa Bay Specialty Trade, Tampa Bay";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -129,7 +129,7 @@ export default function Image() {
             marginBottom: "32px",
           }}
         >
-          The Superior Soffit & Gutter Experts — Tampa Bay
+          Tampa Bay Specialty Trade, Tampa Bay
         </div>
 
         {/* Stats row */}

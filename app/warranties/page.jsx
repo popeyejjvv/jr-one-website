@@ -1,27 +1,31 @@
 "use client";
 
-import { useState, useEffect } from "react";
+/* ═══════════════════════════════════════════════════════════
+   JR ONE ALUMINUM: WARRANTIES
+   Brand-brain compliant. Tokens via app/tokens.css.
+   ═══════════════════════════════════════════════════════════ */
+
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
+import Container from "../../components/ui/Container";
+import Button from "../../components/ui/Button";
+import SectionHeading from "../../components/ui/SectionHeading";
+import FAQAccordion from "../../components/ui/FAQAccordion";
+import CTABand from "../../components/ui/CTABand";
 import { useLanguage } from "../../lib/LanguageContext";
-
-const injectFonts = () => { if (typeof document==="undefined"||document.querySelector("#jr-fonts")) return; const l=document.createElement("link"); l.id="jr-fonts"; l.rel="stylesheet"; l.href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"; document.head.appendChild(l); };
-const C = { bg:"#0B1628",navy:"#1B2A4A",navyMid:"#243556",navyLight:"#2C3E5A",navyFade:"#162033",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",offWhite:"#E8E4DC",muted:"#7A8FA8",charcoal:"#2D2D2D",success:"#2D8B4E",successDim:"rgba(45,139,78,0.15)" };
-const f = { h:"'Montserrat', sans-serif", b:"'Source Sans 3', sans-serif" };
-const Tag = ({children}) => <div style={{display:"inline-block",padding:"6px 16px",background:C.goldPale,borderRadius:"4px",marginBottom:"12px"}}><span style={{fontFamily:f.h,fontSize:"12px",fontWeight:700,color:C.gold,letterSpacing:"3px"}}>{children}</span></div>;
-const GoldBar = () => <div style={{width:"60px",height:"3px",background:`linear-gradient(90deg,${C.gold},${C.goldLight})`,borderRadius:"2px",margin:"16px auto"}} />;
+import { CheckIcon, XIcon, ShieldIcon, RoofEdgeIcon } from "../../lib/icons";
 
 const T = {
   en: {
     tag: "WARRANTIES",
     heroTitle1: "We Stand Behind",
     heroTitle2: "Every Installation.",
-    heroP: "Our 3-year workmanship warranty isn't fine print designed to protect us — it's a commitment designed to protect you. If our work fails, we fix it. Period.",
+    heroP: "Our 3-year workmanship warranty isn't fine print designed to protect us. It's a commitment designed to protect you. If our work fails, we fix it. Period.",
     warrantyYears: "3",
     warrantyLabel: "YEAR WORKMANSHIP WARRANTY",
-    warrantyDesc: "Covers defects in our labor that materially affect how your system performs under normal residential use. From the date of substantial completion, if something we installed isn't working because of how we installed it — we come back and make it right.",
-    coveredTitle: "WHAT'S COVERED",
+    warrantyDesc: "Covers defects in our labor that materially affect how your system performs under normal residential use. From the date of substantial completion, if something we installed isn't working because of how we installed it, we come back and make it right.",
+    coveredTitle: "What's Covered",
     covered: [
       "Gutter seam or joint failures due to installation",
       "Soffit or fascia panels detaching from improper fastening",
@@ -30,7 +34,7 @@ const T = {
       "Downspout connection failures",
       "Any defect in our labor that affects system performance",
     ],
-    notCoveredTitle: "WHAT'S NOT COVERED",
+    notCoveredTitle: "What's Not Covered",
     notCovered: [
       "Normal wear and tear over time",
       "Hurricane, tornado, or severe storm damage",
@@ -40,29 +44,29 @@ const T = {
       "Cosmetic changes (oxidation, color fading from UV)",
     ],
     materialsTag: "MATERIALS",
-    materialsTitle: "MANUFACTURER WARRANTIES",
+    materialsTitle: "Manufacturer Warranties",
     materialsDesc: "In addition to our workmanship warranty, the materials we install carry their own manufacturer warranties. We provide all relevant documentation at project completion.",
     materials: [
-      { title:"Aluminum Coil", desc:"Manufacturer paint finish warranties vary by brand and color. Typically 20-40 years on finish." },
-      { title:"Copper", desc:"Copper carries no traditional warranty because it doesn't fail. The material itself outlasts any warranty period." },
-      { title:"Vinyl Soffit/Siding", desc:"Manufacturer warranties vary by brand. Typically limited lifetime warranties covering defects in material." },
-      { title:"Gutter Guards", desc:"Guard manufacturer warranties vary by product type. Documentation provided at installation." },
+      { title: "Aluminum Coil", desc: "Manufacturer paint finish warranties vary by brand and color. Typically 20-40 years on finish." },
+      { title: "Copper", desc: "Copper carries no traditional warranty because it doesn't fail. The material itself outlasts any warranty period." },
+      { title: "Vinyl Soffit/Siding", desc: "Manufacturer warranties vary by brand. Typically limited lifetime warranties covering defects in material." },
+      { title: "Gutter Guards", desc: "Guard manufacturer warranties vary by product type. Documentation provided at installation." },
     ],
     downloadTag: "DOWNLOAD CENTER",
-    downloadTitle: "YOUR WARRANTY DOCUMENTS",
+    downloadTitle: "Your Warranty Documents",
     downloadIntro: "Save these to your records. Both available in English and Spanish.",
     englishPdf: "ENGLISH PDF",
     spanishPdf: "ESPAÑOL PDF",
     downloadDocs: [
       {
-        icon: "📄",
+        icon: "shield",
         title: "Consumer Warranty",
         desc: "For residential installations. Covers our 3-year workmanship warranty plus the 20-year manufacturer paint warranty on painted aluminum products. Includes coverage details, conditions, and how to file a claim.",
         en: "JR_One_Consumer_Warranty.pdf",
         es: "es-JR_One_Consumer_Warranty.pdf",
       },
       {
-        icon: "🏗️",
+        icon: "edge",
         title: "Commercial Warranty",
         desc: "For commercial projects. Same 3-year workmanship + 20-year paint coverage, written for commercial clients with direct line access to ownership for any warranty claim.",
         en: "JR_One_Commercial_Warranty.pdf",
@@ -70,28 +74,28 @@ const T = {
       },
     ],
     faqTag: "FAQ",
-    faqTitle: "WARRANTY QUESTIONS",
+    faqTitle: "Warranty Questions",
     faqs: [
-      { q:"What does the 3-year workmanship warranty cover?", a:"Our warranty covers defects in our labor that materially affect how your gutter, soffit, fascia, or siding system performs under normal residential use. If something we installed fails because of how we installed it — not because of weather damage, impact, or wear — we come back and fix it at no cost." },
-      { q:"When does the warranty period start?", a:"The 3-year warranty begins on the date of Substantial Completion — meaning the day your system is fully installed and functioning as intended, even if minor punch-list items remain." },
-      { q:"What's NOT covered by the warranty?", a:"Normal wear and tear, damage from severe weather events (hurricanes, tornadoes, hail), damage caused by third parties (painters, roofers, tree trimmers), alterations made by anyone other than JR One, and damage resulting from failure to maintain the system (e.g., never cleaning gutters that don't have guards)." },
-      { q:"What about material warranties?", a:"Material warranties are provided by the material manufacturers, not JR One. Aluminum coil, copper, vinyl, and guard products each carry their own manufacturer warranties. We'll provide you with all relevant manufacturer warranty documentation at project completion." },
-      { q:"How do I make a warranty claim?", a:"Call us at (844) 444-3114 or email info@jronegutters.com. Describe the issue, and we'll schedule an inspection. If the issue falls within warranty coverage, we schedule the repair — no charge, no hassle. We don't make warranty claims difficult because we'd rather fix a problem fast than argue about it." },
-      { q:"Is the warranty transferable if I sell my home?", a:"Contact us to discuss transferability for your specific project. We handle these on a case-by-case basis." },
-      { q:"Do you offer extended warranties?", a:"Our standard warranty is 3 years for workmanship. For extended coverage beyond that, ask about our maintenance plans — regular professional maintenance extends the life of your system and catches issues before they become problems." },
+      { q: "What does the 3-year workmanship warranty cover?", a: "Our warranty covers defects in our labor that materially affect how your gutter, soffit, fascia, or siding system performs under normal residential use. If something we installed fails because of how we installed it (not because of weather damage, impact, or wear), we come back and fix it at no cost." },
+      { q: "When does the warranty period start?", a: "The 3-year warranty begins on the date of Substantial Completion: the day your system is fully installed and functioning as intended, even if minor punch-list items remain." },
+      { q: "What's NOT covered by the warranty?", a: "Normal wear and tear, damage from severe weather events (hurricanes, tornadoes, hail), damage caused by third parties (painters, roofers, tree trimmers), alterations made by anyone other than JR One, and damage resulting from failure to maintain the system (e.g., never cleaning gutters that don't have guards)." },
+      { q: "What about material warranties?", a: "Material warranties are provided by the material manufacturers, not JR One. Aluminum coil, copper, vinyl, and guard products each carry their own manufacturer warranties. We'll provide you with all relevant manufacturer warranty documentation at project completion." },
+      { q: "How do I make a warranty claim?", a: "Call us at (844) 444-3114 or email info@jronegutters.com. Describe the issue, and we'll schedule an inspection. If the issue falls within warranty coverage, we schedule the repair. No charge, no hassle. We don't make warranty claims difficult because we'd rather fix a problem fast than argue about it." },
+      { q: "Is the warranty transferable if I sell my home?", a: "Contact us to discuss transferability for your specific project. We handle these on a case-by-case basis." },
+      { q: "Do you offer extended warranties?", a: "Our standard warranty is 3 years for workmanship. For extended coverage beyond that, ask about our maintenance plans. Regular professional maintenance extends the life of your system and catches issues before they become problems." },
     ],
-    ctaTitle: "QUESTIONS ABOUT YOUR WARRANTY?",
+    ctaTitle: "Questions About Your Warranty?",
     ctaSub: "Call us. We don't make warranty claims difficult.",
   },
   es: {
     tag: "GARANTÍAS",
     heroTitle1: "Respaldamos",
     heroTitle2: "Cada Instalación.",
-    heroP: "Nuestra garantía de mano de obra de 3 años no es letra pequeña diseñada para protegernos a nosotros — es un compromiso diseñado para protegerle a usted. Si nuestro trabajo falla, lo arreglamos. Punto.",
+    heroP: "Nuestra garantía de mano de obra de 3 años no es letra pequeña diseñada para protegernos a nosotros. Es un compromiso diseñado para protegerle a usted. Si nuestro trabajo falla, lo arreglamos. Punto.",
     warrantyYears: "3",
     warrantyLabel: "AÑOS DE GARANTÍA DE MANO DE OBRA",
-    warrantyDesc: "Cubre defectos en nuestra mano de obra que afecten materialmente el rendimiento de su sistema bajo uso residencial normal. Desde la fecha de finalización sustancial, si algo que instalamos no funciona por cómo lo instalamos — volvemos y lo corregimos.",
-    coveredTitle: "QUÉ ESTÁ CUBIERTO",
+    warrantyDesc: "Cubre defectos en nuestra mano de obra que afecten materialmente el rendimiento de su sistema bajo uso residencial normal. Desde la fecha de finalización sustancial, si algo que instalamos no funciona por cómo lo instalamos, volvemos y lo corregimos.",
+    coveredTitle: "Qué Está Cubierto",
     covered: [
       "Fallas en juntas o uniones de canaletas por la instalación",
       "Paneles de sofito o fascia que se desprendan por fijación inadecuada",
@@ -100,7 +104,7 @@ const T = {
       "Fallas en conexiones de bajantes",
       "Cualquier defecto en nuestra mano de obra que afecte el rendimiento del sistema",
     ],
-    notCoveredTitle: "QUÉ NO ESTÁ CUBIERTO",
+    notCoveredTitle: "Qué No Está Cubierto",
     notCovered: [
       "Desgaste normal con el tiempo",
       "Daños por huracanes, tornados o tormentas severas",
@@ -110,170 +114,459 @@ const T = {
       "Cambios cosméticos (oxidación, decoloración por rayos UV)",
     ],
     materialsTag: "MATERIALES",
-    materialsTitle: "GARANTÍAS DEL FABRICANTE",
+    materialsTitle: "Garantías del Fabricante",
     materialsDesc: "Además de nuestra garantía de mano de obra, los materiales que instalamos tienen sus propias garantías del fabricante. Proporcionamos toda la documentación relevante al completar el proyecto.",
     materials: [
-      { title:"Bobina de Aluminio", desc:"Las garantías de acabado de pintura del fabricante varían según la marca y el color. Típicamente 20-40 años en acabado." },
-      { title:"Cobre", desc:"El cobre no tiene garantía tradicional porque no falla. El material en sí dura más que cualquier período de garantía." },
-      { title:"Sofito/Revestimiento de Vinilo", desc:"Las garantías del fabricante varían según la marca. Típicamente garantías limitadas de por vida que cubren defectos en el material." },
-      { title:"Protectores de Canaletas", desc:"Las garantías del fabricante de protectores varían según el tipo de producto. Documentación proporcionada en la instalación." },
+      { title: "Bobina de Aluminio", desc: "Las garantías de acabado de pintura del fabricante varían según la marca y el color. Típicamente 20-40 años en acabado." },
+      { title: "Cobre", desc: "El cobre no tiene garantía tradicional porque no falla. El material en sí dura más que cualquier período de garantía." },
+      { title: "Sofito/Revestimiento de Vinilo", desc: "Las garantías del fabricante varían según la marca. Típicamente garantías limitadas de por vida que cubren defectos en el material." },
+      { title: "Protectores de Canaletas", desc: "Las garantías del fabricante de protectores varían según el tipo de producto. Documentación proporcionada en la instalación." },
     ],
     downloadTag: "CENTRO DE DESCARGAS",
-    downloadTitle: "SUS DOCUMENTOS DE GARANTÍA",
+    downloadTitle: "Sus Documentos de Garantía",
     downloadIntro: "Guárdelos para sus registros. Ambos disponibles en inglés y español.",
     englishPdf: "ENGLISH PDF",
     spanishPdf: "ESPAÑOL PDF",
     downloadDocs: [
       {
-        icon: "📄",
+        icon: "shield",
         title: "Garantía del Consumidor",
         desc: "Para instalaciones residenciales. Cubre nuestra garantía de mano de obra de 3 años más la garantía de pintura del fabricante de 20 años en productos de aluminio pintado. Incluye detalles de cobertura, condiciones y cómo presentar un reclamo.",
         en: "JR_One_Consumer_Warranty.pdf",
         es: "es-JR_One_Consumer_Warranty.pdf",
       },
       {
-        icon: "🏗️",
+        icon: "edge",
         title: "Garantía Comercial",
-        desc: "Para proyectos comerciales. La misma cobertura de mano de obra de 3 años + pintura de 20 años, redactada para clientes comerciales con línea directa con la dirección para cualquier reclamo de garantía.",
+        desc: "Para proyectos comerciales. La misma cobertura de mano de obra de 3 años más pintura de 20 años, redactada para clientes comerciales con línea directa con la dirección para cualquier reclamo de garantía.",
         en: "JR_One_Commercial_Warranty.pdf",
         es: "es-JR_One_Commercial_Warranty.pdf",
       },
     ],
-    faqTag: "PREGUNTAS FRECUENTES",
-    faqTitle: "PREGUNTAS SOBRE GARANTÍAS",
+    faqTag: "Preguntas Frecuentes",
+    faqTitle: "Preguntas sobre Garantías",
     faqs: [
-      { q:"¿Qué cubre la garantía de mano de obra de 3 años?", a:"Nuestra garantía cubre defectos en nuestra mano de obra que afecten materialmente el rendimiento de su sistema de canaletas, sofito, fascia o revestimiento bajo uso residencial normal. Si algo que instalamos falla por cómo lo instalamos — no por daños climáticos, impacto o desgaste — volvemos y lo arreglamos sin costo." },
-      { q:"¿Cuándo comienza el período de garantía?", a:"La garantía de 3 años comienza en la fecha de Finalización Sustancial — es decir, el día en que su sistema está completamente instalado y funcionando como se esperaba, incluso si quedan detalles menores pendientes." },
-      { q:"¿Qué NO está cubierto por la garantía?", a:"Desgaste normal, daños por eventos climáticos severos (huracanes, tornados, granizo), daños causados por terceros (pintores, techadores, podadores de árboles), modificaciones hechas por alguien que no sea JR One, y daños resultantes de la falta de mantenimiento del sistema (ej., nunca limpiar canaletas que no tienen protectores)." },
-      { q:"¿Qué pasa con las garantías de materiales?", a:"Las garantías de materiales son proporcionadas por los fabricantes de los materiales, no por JR One. Los productos de bobina de aluminio, cobre, vinilo y protectores tienen cada uno sus propias garantías del fabricante. Le proporcionaremos toda la documentación relevante de garantía del fabricante al completar el proyecto." },
-      { q:"¿Cómo hago un reclamo de garantía?", a:"Llámenos al (844) 444-3114 o envíe un correo a info@jronegutters.com. Describa el problema y programaremos una inspección. Si el problema está dentro de la cobertura de garantía, programamos la reparación — sin cargo, sin complicaciones. No hacemos difíciles los reclamos de garantía porque preferimos arreglar un problema rápido que discutir sobre él." },
-      { q:"¿Es transferible la garantía si vendo mi casa?", a:"Contáctenos para discutir la transferibilidad de su proyecto específico. Manejamos estos casos individualmente." },
-      { q:"¿Ofrecen garantías extendidas?", a:"Nuestra garantía estándar es de 3 años para mano de obra. Para cobertura extendida más allá de eso, pregunte sobre nuestros planes de mantenimiento — el mantenimiento profesional regular extiende la vida de su sistema y detecta problemas antes de que se conviertan en problemas mayores." },
+      { q: "¿Qué cubre la garantía de mano de obra de 3 años?", a: "Nuestra garantía cubre defectos en nuestra mano de obra que afecten materialmente el rendimiento de su sistema de canaletas, sofito, fascia o revestimiento bajo uso residencial normal. Si algo que instalamos falla por cómo lo instalamos (no por daños climáticos, impacto o desgaste), volvemos y lo arreglamos sin costo." },
+      { q: "¿Cuándo comienza el período de garantía?", a: "La garantía de 3 años comienza en la fecha de Finalización Sustancial: el día en que su sistema está completamente instalado y funcionando como se esperaba, incluso si quedan detalles menores pendientes." },
+      { q: "¿Qué NO está cubierto por la garantía?", a: "Desgaste normal, daños por eventos climáticos severos (huracanes, tornados, granizo), daños causados por terceros (pintores, techadores, podadores de árboles), modificaciones hechas por alguien que no sea JR One, y daños resultantes de la falta de mantenimiento del sistema (ej., nunca limpiar canaletas que no tienen protectores)." },
+      { q: "¿Qué pasa con las garantías de materiales?", a: "Las garantías de materiales son proporcionadas por los fabricantes de los materiales, no por JR One. Los productos de bobina de aluminio, cobre, vinilo y protectores tienen cada uno sus propias garantías del fabricante. Le proporcionaremos toda la documentación relevante de garantía del fabricante al completar el proyecto." },
+      { q: "¿Cómo hago un reclamo de garantía?", a: "Llámenos al (844) 444-3114 o envíe un correo a info@jronegutters.com. Describa el problema y programaremos una inspección. Si el problema está dentro de la cobertura de garantía, programamos la reparación. Sin cargo, sin complicaciones. No hacemos difíciles los reclamos de garantía porque preferimos arreglar un problema rápido que discutir sobre él." },
+      { q: "¿Es transferible la garantía si vendo mi casa?", a: "Contáctenos para discutir la transferibilidad de su proyecto específico. Manejamos estos casos individualmente." },
+      { q: "¿Ofrecen garantías extendidas?", a: "Nuestra garantía estándar es de 3 años para mano de obra. Para cobertura extendida más allá de eso, pregunte sobre nuestros planes de mantenimiento. El mantenimiento profesional regular extiende la vida de su sistema y detecta problemas antes de que se conviertan en problemas mayores." },
     ],
-    ctaTitle: "¿PREGUNTAS SOBRE SU GARANTÍA?",
+    ctaTitle: "¿Preguntas Sobre Su Garantía?",
     ctaSub: "Llámenos. No hacemos difíciles los reclamos de garantía.",
   },
 };
 
+const ICON_MAP = { shield: ShieldIcon, edge: RoofEdgeIcon };
+
+function PageEyebrow({ children }) {
+  return (
+    <div
+      style={{
+        display: "inline-block",
+        padding: "6px 14px",
+        background: "var(--jr-gold-pale)",
+        border: "1px solid rgba(200, 149, 46, 0.28)",
+        borderRadius: "var(--jr-radius-sm)",
+        marginBottom: "var(--jr-space-3)",
+      }}
+    >
+      <span
+        style={{
+          fontFamily: "var(--jr-font-heading)",
+          fontSize: "var(--jr-text-xs)",
+          fontWeight: 700,
+          color: "var(--jr-gold)",
+          letterSpacing: "3px",
+          textTransform: "uppercase",
+        }}
+      >
+        {children}
+      </span>
+    </div>
+  );
+}
+
 export default function WarrantyPage() {
   const { lang } = useLanguage();
   const t = T[lang];
-  const [openFaq, setOpenFaq] = useState(null);
-  useEffect(() => { injectFonts(); }, []);
-  const secTitle = {fontFamily:f.h,fontSize:"clamp(24px,4vw,36px)",fontWeight:800,letterSpacing:"2px",textAlign:"center",marginBottom:"8px"};
 
   return (
-    <div style={{background:C.bg,color:C.white,fontFamily:f.b,lineHeight:1.65,minHeight:"100vh"}}>
+    <div style={{ background: "var(--jr-navy)", color: "var(--jr-paper)", minHeight: "100vh" }}>
+      <a href="#main" className="jr-skip-link">Skip to content</a>
       <SiteNav />
 
-      {/* HERO */}
-      <section className="hero-stars" style={{padding:"60px 24px 40px",maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-        <Tag>{t.tag}</Tag>
-        <h1 style={{fontFamily:f.h,fontSize:"clamp(32px,5vw,44px)",fontWeight:800,lineHeight:1.1,marginBottom:"16px"}}>{t.heroTitle1}<br/><span style={{color:C.gold}}>{t.heroTitle2}</span></h1>
-        <p style={{fontFamily:f.b,fontSize:"18px",color:C.muted,maxWidth:"650px",margin:"0 auto"}}>{t.heroP}</p>
-      </section>
-
-      {/* WARRANTY CARD */}
-      <section style={{padding:"20px 24px 80px"}}>
-        <div style={{maxWidth:"800px",margin:"0 auto"}}>
-          <div style={{background:C.navyFade,border:`2px solid ${C.gold}`,borderRadius:"16px",padding:"40px 32px",textAlign:"center"}}>
-            <div style={{fontFamily:f.h,fontSize:"64px",fontWeight:800,color:C.gold,lineHeight:1}}>{t.warrantyYears}</div>
-            <div style={{fontFamily:f.h,fontSize:"18px",fontWeight:700,color:C.gold,letterSpacing:"3px",marginTop:"8px"}}>{t.warrantyLabel}</div>
-            <div style={{width:"60px",height:"2px",background:C.gold,margin:"20px auto"}} />
-            <p style={{fontFamily:f.b,fontSize:"16px",color:C.offWhite,maxWidth:"550px",margin:"0 auto",lineHeight:1.7}}>
-              {t.warrantyDesc}
+      <main id="main">
+        {/* HERO */}
+        <section
+          style={{
+            padding: "var(--jr-space-16) var(--jr-space-6) var(--jr-space-10)",
+            background: "linear-gradient(165deg, var(--jr-navy-deep) 0%, var(--jr-navy) 60%, var(--jr-navy-2) 100%)",
+          }}
+        >
+          <Container size="narrow" style={{ textAlign: "center" }}>
+            <PageEyebrow>{t.tag}</PageEyebrow>
+            <h1
+              style={{
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "var(--jr-text-4xl)",
+                fontWeight: 800,
+                lineHeight: 1.1,
+                marginBottom: "var(--jr-space-4)",
+                letterSpacing: "-0.5px",
+              }}
+            >
+              {t.heroTitle1}<br />
+              <span style={{ color: "var(--jr-gold)" }}>{t.heroTitle2}</span>
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--jr-font-body)",
+                fontSize: "var(--jr-text-lg)",
+                color: "var(--jr-cream-2)",
+                lineHeight: 1.65,
+                maxWidth: "640px",
+                margin: "0 auto",
+              }}
+            >
+              {t.heroP}
             </p>
-          </div>
-        </div>
-      </section>
+          </Container>
+        </section>
 
-      {/* WHAT'S COVERED */}
-      <section style={{background:C.navy,padding:"80px 24px"}}>
-        <div style={{maxWidth:"900px",margin:"0 auto",display:"grid",gridTemplateColumns:"1fr 1fr",gap:"32px"}}>
-          <div>
-            <h2 style={{fontFamily:f.h,fontSize:"20px",fontWeight:700,color:C.gold,marginBottom:"20px"}}>{"✓ " + t.coveredTitle}</h2>
-            {t.covered.map((item,i) =>
-              <div key={i} style={{display:"flex",gap:"12px",marginBottom:"14px",alignItems:"flex-start"}}>
-                <span style={{color:"#4ADE80",fontSize:"16px",flexShrink:0,marginTop:"2px"}}>✓</span>
-                <p style={{fontFamily:f.b,fontSize:"15px",color:C.offWhite}}>{item}</p>
+        {/* WARRANTY CARD */}
+        <section style={{ padding: "var(--jr-space-10) 0 var(--jr-space-16)" }}>
+          <Container size="narrow">
+            <div
+              style={{
+                background: "var(--jr-navy-deep)",
+                border: "2px solid var(--jr-gold)",
+                borderRadius: "var(--jr-radius-xl)",
+                padding: "var(--jr-space-10) var(--jr-space-8)",
+                textAlign: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "64px",
+                  fontWeight: 800,
+                  color: "var(--jr-gold)",
+                  lineHeight: 1,
+                }}
+              >
+                {t.warrantyYears}
               </div>
-            )}
-          </div>
-          <div>
-            <h2 style={{fontFamily:f.h,fontSize:"20px",fontWeight:700,color:C.muted,marginBottom:"20px"}}>{"✗ " + t.notCoveredTitle}</h2>
-            {t.notCovered.map((item,i) =>
-              <div key={i} style={{display:"flex",gap:"12px",marginBottom:"14px",alignItems:"flex-start"}}>
-                <span style={{color:C.muted,fontSize:"16px",flexShrink:0,marginTop:"2px"}}>✗</span>
-                <p style={{fontFamily:f.b,fontSize:"15px",color:C.muted}}>{item}</p>
+              <div
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "var(--jr-text-lg)",
+                  fontWeight: 700,
+                  color: "var(--jr-gold)",
+                  letterSpacing: "3px",
+                  marginTop: "var(--jr-space-2)",
+                }}
+              >
+                {t.warrantyLabel}
               </div>
-            )}
-          </div>
-        </div>
-      </section>
+              <div
+                aria-hidden
+                style={{
+                  width: 60,
+                  height: 2,
+                  background: "var(--jr-gold)",
+                  margin: "var(--jr-space-5) auto",
+                }}
+              />
+              <p
+                style={{
+                  fontFamily: "var(--jr-font-body)",
+                  fontSize: "var(--jr-text-md)",
+                  color: "var(--jr-cream-2)",
+                  maxWidth: "560px",
+                  margin: "0 auto",
+                  lineHeight: 1.7,
+                }}
+              >
+                {t.warrantyDesc}
+              </p>
+            </div>
+          </Container>
+        </section>
 
-      {/* MANUFACTURER WARRANTIES */}
-      <section style={{background:C.bg,padding:"80px 24px"}}>
-        <div style={{maxWidth:"800px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>{t.materialsTag}</Tag>
-          <h2 style={{...secTitle,color:C.white}}>{t.materialsTitle}</h2>
-          <GoldBar />
-          <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,maxWidth:"600px",margin:"0 auto 40px"}}>
-            {t.materialsDesc}
-          </p>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:"16px",textAlign:"left"}}>
-            {t.materials.map((item,i) =>
-              <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"20px"}}>
-                <h3 style={{fontFamily:f.h,fontSize:"14px",fontWeight:700,color:C.gold,marginBottom:"8px"}}>{item.title}</h3>
-                <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,lineHeight:1.55}}>{item.desc}</p>
+        {/* COVERED / NOT COVERED */}
+        <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
+          <Container>
+            <div
+              className="jr-cover-grid"
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "var(--jr-space-10)",
+              }}
+            >
+              <div>
+                <h2
+                  style={{
+                    fontFamily: "var(--jr-font-heading)",
+                    fontSize: "var(--jr-text-xl)",
+                    fontWeight: 700,
+                    color: "var(--jr-gold)",
+                    marginBottom: "var(--jr-space-5)",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "var(--jr-space-2)",
+                  }}
+                >
+                  <CheckIcon size={22} /> {t.coveredTitle}
+                </h2>
+                {t.covered.map((item, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      display: "flex",
+                      gap: "var(--jr-space-3)",
+                      marginBottom: "var(--jr-space-3)",
+                      alignItems: "flex-start",
+                    }}
+                  >
+                    <span style={{ color: "var(--jr-success)", flexShrink: 0, marginTop: 2 }}>
+                      <CheckIcon size={16} />
+                    </span>
+                    <p
+                      style={{
+                        fontFamily: "var(--jr-font-body)",
+                        fontSize: "var(--jr-text-md)",
+                        color: "var(--jr-cream-2)",
+                        lineHeight: 1.6,
+                      }}
+                    >
+                      {item}
+                    </p>
+                  </div>
+                ))}
               </div>
-            )}
-          </div>
-        </div>
-      </section>
+              <div>
+                <h2
+                  style={{
+                    fontFamily: "var(--jr-font-heading)",
+                    fontSize: "var(--jr-text-xl)",
+                    fontWeight: 700,
+                    color: "var(--jr-muted-on-dark)",
+                    marginBottom: "var(--jr-space-5)",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "var(--jr-space-2)",
+                  }}
+                >
+                  <XIcon size={22} /> {t.notCoveredTitle}
+                </h2>
+                {t.notCovered.map((item, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      display: "flex",
+                      gap: "var(--jr-space-3)",
+                      marginBottom: "var(--jr-space-3)",
+                      alignItems: "flex-start",
+                    }}
+                  >
+                    <span style={{ color: "var(--jr-muted-on-dark)", flexShrink: 0, marginTop: 2 }}>
+                      <XIcon size={16} />
+                    </span>
+                    <p
+                      style={{
+                        fontFamily: "var(--jr-font-body)",
+                        fontSize: "var(--jr-text-md)",
+                        color: "var(--jr-muted-on-dark)",
+                        lineHeight: 1.6,
+                      }}
+                    >
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Container>
+        </section>
 
-      {/* DOWNLOAD CENTER */}
-      <section style={{background:C.bg,padding:"80px 24px"}}>
-        <div style={{maxWidth:"900px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>{t.downloadTag}</Tag>
-          <h2 style={{...secTitle,color:C.white}}>{t.downloadTitle}</h2>
-          <GoldBar />
-          <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,maxWidth:"600px",margin:"0 auto 40px"}}>{t.downloadIntro}</p>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",gap:"20px",textAlign:"left"}}>
-            {t.downloadDocs.map((doc,i) =>
-              <div key={i} style={{background:C.navyFade,border:`1px solid ${C.navyLight}`,borderRadius:"12px",padding:"24px"}}>
-                <div style={{fontSize:"28px",marginBottom:"8px"}}>{doc.icon}</div>
-                <h3 style={{fontFamily:f.h,fontSize:"16px",fontWeight:700,color:C.gold,marginBottom:"10px",letterSpacing:"1px"}}>{doc.title}</h3>
-                <p style={{fontFamily:f.b,fontSize:"14px",color:C.muted,lineHeight:1.6,marginBottom:"18px"}}>{doc.desc}</p>
-                <div style={{display:"flex",gap:"10px",flexWrap:"wrap"}}>
-                  <a href={`/documents/${doc.en}`} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"6px",padding:"10px 16px",fontFamily:f.h,fontSize:"11px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"6px",textDecoration:"none"}}>↓ {t.englishPdf}</a>
-                  <a href={`/documents/${doc.es}`} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"6px",padding:"10px 16px",fontFamily:f.h,fontSize:"11px",fontWeight:700,letterSpacing:"1.5px",color:C.gold,background:"transparent",border:`1.5px solid ${C.gold}`,borderRadius:"6px",textDecoration:"none"}}>↓ {t.spanishPdf}</a>
+        {/* MATERIALS */}
+        <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
+          <Container size="narrow">
+            <SectionHeading
+              eyebrow={t.materialsTag}
+              title={t.materialsTitle}
+              subtitle={t.materialsDesc}
+              theme="dark"
+            />
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+                gap: "var(--jr-space-4)",
+              }}
+            >
+              {t.materials.map((item, i) => (
+                <div
+                  key={i}
+                  style={{
+                    background: "var(--jr-navy-deep)",
+                    border: "1px solid var(--jr-navy-3)",
+                    borderRadius: "var(--jr-radius-lg)",
+                    padding: "var(--jr-space-5)",
+                  }}
+                >
+                  <h3
+                    style={{
+                      fontFamily: "var(--jr-font-heading)",
+                      fontSize: "var(--jr-text-md)",
+                      fontWeight: 700,
+                      color: "var(--jr-gold)",
+                      marginBottom: "var(--jr-space-2)",
+                    }}
+                  >
+                    {item.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: "var(--jr-font-body)",
+                      fontSize: "var(--jr-text-sm)",
+                      color: "var(--jr-muted-on-dark)",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {item.desc}
+                  </p>
                 </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
+              ))}
+            </div>
+          </Container>
+        </section>
 
-      {/* FAQ */}
-      <section style={{background:C.navy,padding:"80px 24px"}}>
-        <div style={{maxWidth:"800px",margin:"0 auto",textAlign:"center"}}>
-          <Tag>{t.faqTag}</Tag>
-          <h2 style={{...secTitle,color:C.white}}>{t.faqTitle}</h2>
-          <GoldBar />
-          <div style={{marginTop:"40px",textAlign:"left"}}>{t.faqs.map((faq,i) => <div key={i} style={{borderBottom:`1px solid ${C.navyLight}`}}><button onClick={()=>setOpenFaq(openFaq===i?null:i)} style={{width:"100%",padding:"20px 0",background:"none",border:"none",cursor:"pointer",display:"flex",justifyContent:"space-between",alignItems:"center",gap:"16px"}}><span style={{fontFamily:f.h,fontSize:"15px",fontWeight:600,color:openFaq===i?C.gold:C.white,textAlign:"left"}}>{faq.q}</span><span style={{fontFamily:f.h,fontSize:"20px",color:C.gold,transform:openFaq===i?"rotate(45deg)":"none",transition:"transform 0.3s",flexShrink:0}}>+</span></button>{openFaq===i&&<div style={{padding:"0 0 20px",fontFamily:f.b,fontSize:"15px",color:C.muted,lineHeight:1.65}}>{faq.a}</div>}</div>)}</div>
-        </div>
-      </section>
+        {/* DOWNLOAD CENTER */}
+        <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
+          <Container>
+            <SectionHeading
+              eyebrow={t.downloadTag}
+              title={t.downloadTitle}
+              subtitle={t.downloadIntro}
+              theme="dark"
+            />
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+                gap: "var(--jr-space-5)",
+              }}
+            >
+              {t.downloadDocs.map((doc, i) => {
+                const Icon = ICON_MAP[doc.icon] || ShieldIcon;
+                return (
+                  <div
+                    key={i}
+                    style={{
+                      background: "var(--jr-navy)",
+                      border: "1px solid var(--jr-navy-3)",
+                      borderRadius: "var(--jr-radius-lg)",
+                      padding: "var(--jr-space-6)",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 52,
+                        height: 52,
+                        borderRadius: "var(--jr-radius-md)",
+                        background: "var(--jr-gold-pale)",
+                        border: "1px solid rgba(200, 149, 46, 0.32)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: "var(--jr-gold)",
+                        marginBottom: "var(--jr-space-4)",
+                      }}
+                    >
+                      <Icon size={26} />
+                    </div>
+                    <h3
+                      style={{
+                        fontFamily: "var(--jr-font-heading)",
+                        fontSize: "var(--jr-text-md)",
+                        fontWeight: 700,
+                        color: "var(--jr-gold)",
+                        marginBottom: "var(--jr-space-3)",
+                        letterSpacing: "0.5px",
+                      }}
+                    >
+                      {doc.title}
+                    </h3>
+                    <p
+                      style={{
+                        fontFamily: "var(--jr-font-body)",
+                        fontSize: "var(--jr-text-sm)",
+                        color: "var(--jr-muted-on-dark)",
+                        lineHeight: 1.6,
+                        marginBottom: "var(--jr-space-5)",
+                      }}
+                    >
+                      {doc.desc}
+                    </p>
+                    <div style={{ display: "flex", gap: "var(--jr-space-2)", flexWrap: "wrap" }}>
+                      <Button
+                        href={`/documents/${doc.en}`}
+                        variant="primary"
+                        size="sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t.englishPdf}
+                      </Button>
+                      <Button
+                        href={`/documents/${doc.es}`}
+                        variant="outline"
+                        size="sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t.spanishPdf}
+                      </Button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </Container>
+        </section>
 
-      {/* CTA */}
-      <section style={{background:C.bg,padding:"60px 24px",textAlign:"center"}}>
-        <h2 style={{fontFamily:f.h,fontSize:"28px",fontWeight:800,color:C.white,marginBottom:"12px"}}>{t.ctaTitle}</h2>
-        <p style={{fontFamily:f.b,fontSize:"16px",color:C.muted,marginBottom:"24px"}}>{t.ctaSub}</p>
-        <a href="tel:8444443114" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"16px 32px",fontFamily:f.h,fontSize:"14px",fontWeight:700,letterSpacing:"1.5px",color:C.navy,background:`linear-gradient(135deg,${C.gold},${C.goldLight})`,borderRadius:"8px",textDecoration:"none"}}>📞 (844) 444-3114</a>
-      </section>
+        {/* FAQ */}
+        <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
+          <Container size="prose">
+            <SectionHeading
+              eyebrow={t.faqTag}
+              title={t.faqTitle}
+              theme="dark"
+            />
+            <FAQAccordion items={t.faqs} theme="dark" />
+          </Container>
+        </section>
+
+        {/* CTA */}
+        <CTABand title={t.ctaTitle} sub={t.ctaSub} primaryHref="/contact" />
+      </main>
 
       <SiteFooter />
       <MobileCTA />
-      <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
+
+      <style>{`
+        @media (max-width: 720px) {
+          .jr-cover-grid {
+            grid-template-columns: 1fr !important;
+            gap: var(--jr-space-8) !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

@@ -3,13 +3,13 @@ import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
 
 // =============================================================================
-// JR One — Estimator Lead API
+// JR One, Estimator Lead API
 // =============================================================================
 // Receives lead submissions from the Instant Estimator tool (public/estimator.html)
 // and creates a corresponding client record in BuilderPrime.
 //
 // This route was added 2026-04-06 because the original estimator only sent leads
-// to a Google Apps Script (Google Sheet) and bypassed BuilderPrime entirely —
+// to a Google Apps Script (Google Sheet) and bypassed BuilderPrime entirely ,
 // every lead generated through the estimator was invisible to the CRM and the
 // outreach automation.
 //
@@ -23,7 +23,7 @@ const BP_BASE_URL = `https://${BP_SUBDOMAIN}.builderprime.com/api`;
 // =============================================================================
 // Simple in-memory rate limiter. Prevents a bot from flooding BuilderPrime
 // with fake leads or exhausting Vapi minutes. Not distributed across Vercel
-// instances — that's fine; the goal is to make abuse cost-prohibitive, not
+// instances, that's fine; the goal is to make abuse cost-prohibitive, not
 // perfect. Each IP gets RATE_LIMIT_MAX requests per RATE_LIMIT_WINDOW_MS.
 // =============================================================================
 const RATE_LIMIT_MAX = 5;
@@ -44,7 +44,7 @@ function checkRateLimit(ip) {
   return { ok: true, remaining: RATE_LIMIT_MAX - record.count };
 }
 
-// Opportunistic cleanup of expired entries — keeps the map from growing
+// Opportunistic cleanup of expired entries, keeps the map from growing
 // unbounded across a long-lived serverless instance. Cheap: runs at most
 // once per request when the map has more than 1000 entries.
 function maybeCleanupRateLimitMap() {
@@ -107,7 +107,7 @@ export async function POST(request) {
     if (!rl.ok) {
       console.warn(`⚠ Rate limit hit for ${ip}, retry in ${rl.retryAfter}s`);
       return NextResponse.json(
-        { error: "Too many requests — please try again in a moment." },
+        { error: "Too many requests, please try again in a moment." },
         { status: 429, headers: { "Retry-After": String(rl.retryAfter) } }
       );
     }
@@ -218,7 +218,7 @@ export async function POST(request) {
 
           // Best-effort: append a client activity note with the full estimator details
           // This way the sales rep sees the measurements + estimate range + discount code
-          // when they open the lead in BP. Non-blocking — failure is OK.
+          // when they open the lead in BP. Non-blocking, failure is OK.
           if (bpResult.opportunity_id) {
             try {
               await fetch(`${BP_BASE_URL}/client-activities/v1`, {
@@ -246,11 +246,11 @@ export async function POST(request) {
         console.error(`✗ Builder Prime exception: ${bpErr.message}`);
       }
     } else {
-      console.warn("⚠ BUILDER_PRIME_API_KEY not set in environment — skipping BP create");
+      console.warn("⚠ BUILDER_PRIME_API_KEY not set in environment, skipping BP create");
     }
 
     // ─────────────────────────────────────────────────────────────────────────
-    // After-hours voice callback (fire-and-forget) — see send-lead/route.js
+    // After-hours voice callback (fire-and-forget), see send-lead/route.js
     // for rationale. Runs post-response via next/server `after()` so the BP
     // path is never blocked or affected by Vapi latency / errors.
     // ─────────────────────────────────────────────────────────────────────────

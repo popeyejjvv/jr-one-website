@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useLanguage } from "../lib/LanguageContext";
+/* ═══════════════════════════════════════════════════════════
+   JR ONE , SHARED NAV
+   Promo ticker + sticky nav + services dropdown + mobile drawer.
+   Brand-brain compliant: no emoji, no em-dashes, no off-palette colors.
+   ═══════════════════════════════════════════════════════════ */
 
-const C = {
-  bg: "#0B1628", navy: "#1B2A4A", navyLight: "#2C3E5A", navyFade: "#162033",
-  gold: "#C8952E", goldLight: "#D4A843", goldPale: "rgba(200,149,46,0.12)",
-  white: "#FFFFFF", muted: "#7A8FA8",
-};
-const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
+import { useState } from "react";
+import { useLanguage } from "../lib/LanguageContext";
+import { ChevronDownIcon, MenuIcon, XIcon, PhoneIcon, RulerIcon, CardIcon, GiftIcon } from "../lib/icons";
 
 const SERVICE_HREFS = [
   "/7-inch-gutters", "/commercial-gutters", "/copper-gutters", "/drainage-assessment",
@@ -18,40 +18,40 @@ const SERVICE_HREFS = [
   "/specialty-gutters",
 ];
 
-const FEATURE_META = [
-  { href: "/estimator", color: "#3B82F6", bg: "rgba(59,130,246,0.15)" },
-  { href: "/financing", color: "#22C55E", bg: "rgba(34,197,94,0.15)" },
-  { href: "/referral", color: "#E91E8C", bg: "rgba(233,30,140,0.15)" },
-];
-
 const NAV_HREFS = ["/#gold-standard", "/about", "/contact", "/faq", "/projects"];
+
+const FEATURE_HREFS = ["/estimator", "/financing", "/referral"];
 
 const T = {
   en: {
     services: "Services",
-    servicesMobile: "SERVICES",
     serviceLabels: ["7-Inch Gutters", "Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "HOA Contracts", "Peak 301", "Rental Property Maintenance", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
     navLabels: ["The Gold Standard", "About", "Contact", "FAQ", "Projects"],
     featureLabels: ["Estimator", "Financing", "Referral"],
     promoBanner: [
-      "📐 Use Our Instant Aerial Estimator — Get 5% Off Your Project",
-      "💳 Financing Available — Flexible Payment Plans to Fit Your Budget",
-      "🎁 Referral Program — Earn $80 Gift Cards + Friends Get 10% Off",
+      "Use the aerial estimator. 5% off your project.",
+      "Financing available. Flexible payment plans.",
+      "Refer a neighbor. You get $80, they save 10%.",
     ],
+    open: "Open menu",
+    close: "Close menu",
   },
   es: {
     services: "Servicios",
-    servicesMobile: "SERVICIOS",
     serviceLabels: ["Canaletas de 7 Pulgadas", "Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Contratos HOA", "Peak 301", "Mantenimiento de Alquileres", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
     navLabels: ["El Estándar de Oro", "Nosotros", "Contacto", "Preguntas Frecuentes", "Proyectos"],
     featureLabels: ["Estimador", "Financiamiento", "Referidos"],
     promoBanner: [
-      "📐 Usa Nuestro Estimador Aéreo — Obtén 5% de Descuento en tu Proyecto",
-      "💳 Financiamiento Disponible — Planes de Pago Flexibles",
-      "🎁 Programa de Referidos — Gana Tarjetas de $80 + 10% de Descuento para Referidos",
+      "Usa el estimador aéreo. 5% de descuento en tu proyecto.",
+      "Financiamiento disponible. Planes de pago flexibles.",
+      "Refiere a un vecino. Tú ganas $80, él ahorra 10%.",
     ],
+    open: "Abrir menú",
+    close: "Cerrar menú",
   },
 };
+
+const FEATURE_ICONS = [RulerIcon, CardIcon, GiftIcon];
 
 export default function SiteNav({ promoBanner }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,76 +63,376 @@ export default function SiteNav({ promoBanner }) {
   const tickerText = bannerMessages.join("     ★     ");
 
   return (
-    <div style={{ position: "sticky", top: 0, zIndex: 1000 }}>
-      {/* Promo Banner — sticks with nav */}
-      <div style={{ background: "#22C55E", padding: "8px 0", overflow: "hidden", whiteSpace: "nowrap", fontFamily: f.h, fontSize: "13px", fontWeight: 600, color: C.white, letterSpacing: "0.5px" }}>
-        <div style={{ display: "inline-block", animation: "ticker 25s linear infinite" }}>
+    <div style={{ position: "sticky", top: 0, zIndex: "var(--jr-z-nav)" }}>
+      {/* Promo banner */}
+      <div
+        className="jr-marquee"
+        style={{
+          background: "var(--jr-gold)",
+          color: "var(--jr-navy)",
+          padding: "9px 0",
+          fontFamily: "var(--jr-font-heading)",
+          fontSize: "13px",
+          fontWeight: 700,
+          letterSpacing: "0.6px",
+        }}
+      >
+        <div className="jr-marquee-track">
           <span style={{ paddingRight: "60px" }}>{tickerText}</span>
           <span style={{ paddingRight: "60px" }}>{tickerText}</span>
         </div>
-        <style>{`@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}`}</style>
       </div>
 
-      {/* Navigation */}
-      <nav style={{ padding: "10px 24px", background: "rgba(11,22,40,0.98)", backdropFilter: "blur(12px)", borderBottom: `1px solid ${C.navyLight}` }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <a href="/" style={{ fontFamily: f.h, fontSize: "20px", fontWeight: 800, color: C.white, textDecoration: "none" }}>
-            JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "16px" }}>★</span>
+      {/* Nav */}
+      <nav
+        aria-label="Primary"
+        style={{
+          padding: "10px 24px",
+          background: "rgba(27, 42, 74, 0.94)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
+          borderBottom: "var(--jr-hair-darker)",
+        }}
+      >
+        <div style={{ maxWidth: "var(--jr-container)", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <a
+            href="/"
+            aria-label="JR One Aluminum home"
+            style={{
+              fontFamily: "var(--jr-font-heading)",
+              fontSize: "20px",
+              fontWeight: 800,
+              color: "var(--jr-paper)",
+              letterSpacing: "1px",
+            }}
+          >
+            JR <span style={{ color: "var(--jr-gold)" }}>ONE</span>
+            <span aria-hidden style={{ marginLeft: 6, color: "var(--jr-gold)" }}>★</span>
           </a>
 
-          <div className="jr-nav-desktop" style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-            {/* Services Dropdown */}
+          <div className="jr-nav-desktop" style={{ display: "flex", gap: "18px", alignItems: "center" }}>
+            {/* Services dropdown */}
             <div style={{ position: "relative" }} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <span style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, letterSpacing: "0.5px", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", paddingBottom: "12px", marginBottom: "-12px" }}>{t.services} <span style={{ fontSize: "8px" }}>▼</span></span>
+              <button
+                aria-haspopup="true"
+                aria-expanded={servicesOpen}
+                onClick={() => setServicesOpen((v) => !v)}
+                onFocus={() => setServicesOpen(true)}
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  color: "var(--jr-muted-on-dark)",
+                  letterSpacing: "0.6px",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
+                  padding: "8px 0",
+                  textTransform: "uppercase",
+                }}
+              >
+                {t.services}
+                <span
+                  aria-hidden
+                  style={{
+                    display: "inline-flex",
+                    transform: servicesOpen ? "rotate(180deg)" : "rotate(0deg)",
+                    transition: "transform var(--jr-dur-fast) var(--jr-ease-out)",
+                  }}
+                >
+                  <ChevronDownIcon size={12} />
+                </span>
+              </button>
               {servicesOpen && (
-                <div style={{ position: "absolute", top: "100%", left: "-12px", paddingTop: "4px" }}><div style={{ background: "rgba(11,22,40,0.98)", border: `1px solid ${C.navyLight}`, borderRadius: "8px", padding: "8px 0", minWidth: "220px", boxShadow: "0 8px 32px rgba(0,0,0,0.4)", backdropFilter: "blur(12px)" }}>
+                <div
+                  role="menu"
+                  style={{
+                    position: "absolute",
+                    top: "calc(100% + 4px)",
+                    left: "-12px",
+                    background: "var(--jr-navy-deep)",
+                    border: "1px solid var(--jr-navy-3)",
+                    borderRadius: "var(--jr-radius-md)",
+                    padding: "8px 0",
+                    minWidth: "240px",
+                    boxShadow: "var(--jr-shadow-lg)",
+                    transformOrigin: "top left",
+                  }}
+                >
                   {t.serviceLabels.map((label, i) => (
-                    <a key={i} href={SERVICE_HREFS[i]} style={{ display: "block", padding: "8px 20px", fontFamily: f.h, fontSize: "12px", fontWeight: 600, color: C.muted, textDecoration: "none" }}
-                      onMouseOver={e => { e.target.style.color = C.gold; e.target.style.background = "rgba(200,149,46,0.08)"; }}
-                      onMouseOut={e => { e.target.style.color = C.muted; e.target.style.background = "transparent"; }}>
+                    <a
+                      key={i}
+                      role="menuitem"
+                      href={SERVICE_HREFS[i]}
+                      style={{
+                        display: "block",
+                        padding: "8px 20px",
+                        fontFamily: "var(--jr-font-heading)",
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        color: "var(--jr-muted-on-dark)",
+                        letterSpacing: "0.4px",
+                        transition: "color var(--jr-dur-fast) var(--jr-ease-out), background-color var(--jr-dur-fast) var(--jr-ease-out)",
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.color = "var(--jr-gold)";
+                        e.currentTarget.style.background = "var(--jr-gold-pale)";
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.color = "var(--jr-muted-on-dark)";
+                        e.currentTarget.style.background = "transparent";
+                      }}
+                    >
                       {label}
                     </a>
                   ))}
-                </div></div>
+                </div>
               )}
             </div>
+
             {t.navLabels.map((label, i) => (
-              <a key={i} href={NAV_HREFS[i]} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, textDecoration: "none", letterSpacing: "0.5px" }}>{label}</a>
+              <a
+                key={i}
+                href={NAV_HREFS[i]}
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  color: "var(--jr-muted-on-dark)",
+                  letterSpacing: "0.6px",
+                  textTransform: "uppercase",
+                  transition: "color var(--jr-dur-fast) var(--jr-ease-out)",
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.color = "var(--jr-gold)")}
+                onMouseOut={(e) => (e.currentTarget.style.color = "var(--jr-muted-on-dark)")}
+              >
+                {label}
+              </a>
             ))}
-            {t.featureLabels.map((label, i) => (
-              <a key={`ft-${i}`} href={FEATURE_META[i].href} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: FEATURE_META[i].color, background: FEATURE_META[i].bg, padding: "5px 12px", borderRadius: "4px", textDecoration: "none", letterSpacing: "0.5px", border: `1px solid ${FEATURE_META[i].color}30` }}>{label}</a>
-            ))}
-            <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 700, color: C.gold, textDecoration: "none" }}>(844) 444-3114</a>
-            <button onClick={toggleLang} style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 700, color: C.gold, background: C.goldPale, border: `1px solid ${C.gold}`, borderRadius: "4px", padding: "4px 10px", cursor: "pointer", letterSpacing: "1px" }}>
+
+            {t.featureLabels.map((label, i) => {
+              const Icon = FEATURE_ICONS[i];
+              return (
+                <a
+                  key={`ft-${i}`}
+                  href={FEATURE_HREFS[i]}
+                  className="jr-press"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    fontFamily: "var(--jr-font-heading)",
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    color: "var(--jr-gold)",
+                    background: "var(--jr-gold-pale)",
+                    padding: "6px 12px",
+                    borderRadius: "var(--jr-radius-sm)",
+                    letterSpacing: "0.6px",
+                    border: "1px solid rgba(200, 149, 46, 0.32)",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  <Icon size={13} />
+                  {label}
+                </a>
+              );
+            })}
+
+            <a
+              href="tel:8444443114"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 6,
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "12px",
+                fontWeight: 700,
+                color: "var(--jr-gold)",
+                letterSpacing: "0.4px",
+              }}
+            >
+              <PhoneIcon size={13} />
+              (844) 444-3114
+            </a>
+
+            <button
+              onClick={toggleLang}
+              aria-label={lang === "en" ? "Switch to Spanish" : "Switch to English"}
+              className="jr-press"
+              style={{
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "11px",
+                fontWeight: 700,
+                color: "var(--jr-gold)",
+                background: "var(--jr-gold-pale)",
+                border: "1px solid var(--jr-gold)",
+                borderRadius: "var(--jr-radius-sm)",
+                padding: "5px 10px",
+                letterSpacing: "1px",
+              }}
+            >
               {lang === "en" ? "ES" : "EN"}
             </button>
           </div>
 
-          <button className="jr-nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", padding: "8px", flexDirection: "column", gap: "5px" }}>
-            <span style={{ display: "block", width: "22px", height: "2px", background: menuOpen ? C.gold : C.white, transition: "all 0.3s", transform: menuOpen ? "rotate(45deg) translateY(7px)" : "none" }} />
-            <span style={{ display: "block", width: "22px", height: "2px", background: C.white, transition: "all 0.3s", opacity: menuOpen ? 0 : 1 }} />
-            <span style={{ display: "block", width: "22px", height: "2px", background: menuOpen ? C.gold : C.white, transition: "all 0.3s", transform: menuOpen ? "rotate(-45deg) translateY(-7px)" : "none" }} />
+          {/* Hamburger */}
+          <button
+            className="jr-nav-hamburger jr-press"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-expanded={menuOpen}
+            aria-label={menuOpen ? t.close : t.open}
+            style={{
+              display: "none",
+              background: "none",
+              border: "none",
+              padding: "8px",
+              color: menuOpen ? "var(--jr-gold)" : "var(--jr-paper)",
+            }}
+          >
+            {menuOpen ? <XIcon size={22} /> : <MenuIcon size={22} />}
           </button>
         </div>
 
         {menuOpen && (
-          <div style={{ maxWidth: "1200px", margin: "12px auto 0", paddingTop: "12px", borderTop: `1px solid ${C.navyLight}`, display: "flex", flexDirection: "column", gap: "4px", maxHeight: "calc(100vh - 140px)", overflowY: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch" }}>
-            <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", background: "none", border: "none", cursor: "pointer", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>
-              <span style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 700, color: C.gold, letterSpacing: "2px" }}>{t.servicesMobile}</span>
-              <span style={{ fontFamily: f.h, fontSize: "14px", color: C.gold, transform: mobileServicesOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}>▼</span>
+          <div
+            id="jr-mobile-menu"
+            style={{
+              maxWidth: "var(--jr-container)",
+              margin: "12px auto 0",
+              paddingTop: "12px",
+              borderTop: "var(--jr-hair-darker)",
+              display: "flex",
+              flexDirection: "column",
+              gap: "2px",
+              maxHeight: "calc(100vh - 160px)",
+              overflowY: "auto",
+              overscrollBehavior: "contain",
+              WebkitOverflowScrolling: "touch",
+            }}
+          >
+            <button
+              onClick={() => setMobileServicesOpen((v) => !v)}
+              aria-expanded={mobileServicesOpen}
+              style={{
+                display: "flex",
+                width: "100%",
+                justifyContent: "space-between",
+                alignItems: "center",
+                background: "none",
+                border: "none",
+                padding: "12px 0",
+                borderBottom: "1px solid rgba(255,255,255,0.06)",
+              }}
+            >
+              <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "14px", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", textTransform: "uppercase" }}>
+                {t.services}
+              </span>
+              <span
+                aria-hidden
+                style={{
+                  display: "inline-flex",
+                  color: "var(--jr-gold)",
+                  transform: mobileServicesOpen ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "transform var(--jr-dur-fast) var(--jr-ease-out)",
+                }}
+              >
+                <ChevronDownIcon size={16} />
+              </span>
             </button>
             {mobileServicesOpen && t.serviceLabels.map((label, i) => (
-              <a key={i} href={SERVICE_HREFS[i]} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "8px 0", paddingLeft: "16px", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
+              <a
+                key={i}
+                href={SERVICE_HREFS[i]}
+                style={{
+                  display: "block",
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "var(--jr-muted-on-dark)",
+                  padding: "8px 0",
+                  paddingLeft: "16px",
+                  borderBottom: "1px solid rgba(255,255,255,0.04)",
+                }}
+              >
+                {label}
+              </a>
             ))}
             <div style={{ height: "8px" }} />
             {t.navLabels.map((label, i) => (
-              <a key={`n-${i}`} href={NAV_HREFS[i]} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.muted, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
+              <a
+                key={`n-${i}`}
+                href={NAV_HREFS[i]}
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "var(--jr-muted-on-dark)",
+                  padding: "10px 0",
+                  borderBottom: "1px solid rgba(255,255,255,0.06)",
+                }}
+              >
+                {label}
+              </a>
             ))}
-            {t.featureLabels.map((label, i) => (
-              <a key={`mft-${i}`} href={FEATURE_META[i].href} style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 700, color: FEATURE_META[i].color, textDecoration: "none", padding: "10px 0", borderBottom: `1px solid ${C.navyLight}20` }}>{label}</a>
-            ))}
-            <a href="tel:8444443114" style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 700, color: C.gold, textDecoration: "none", padding: "12px 0", textAlign: "center" }}>📞 (844) 444-3114</a>
-            <button onClick={toggleLang} style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, background: C.goldPale, border: `1px solid ${C.gold}`, borderRadius: "4px", padding: "10px", cursor: "pointer", letterSpacing: "1px", marginBottom: "8px" }}>
+            {t.featureLabels.map((label, i) => {
+              const Icon = FEATURE_ICONS[i];
+              return (
+                <a
+                  key={`mft-${i}`}
+                  href={FEATURE_HREFS[i]}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    fontFamily: "var(--jr-font-heading)",
+                    fontSize: "14px",
+                    fontWeight: 700,
+                    color: "var(--jr-gold)",
+                    padding: "10px 0",
+                    borderBottom: "1px solid rgba(255,255,255,0.06)",
+                  }}
+                >
+                  <Icon size={14} />
+                  {label}
+                </a>
+              );
+            })}
+            <a
+              href="tel:8444443114"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 8,
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "16px",
+                fontWeight: 700,
+                color: "var(--jr-gold)",
+                padding: "12px 0",
+              }}
+            >
+              <PhoneIcon size={18} /> (844) 444-3114
+            </a>
+            <button
+              onClick={() => { toggleLang(); setMenuOpen(false); }}
+              className="jr-press"
+              style={{
+                fontFamily: "var(--jr-font-heading)",
+                fontSize: "13px",
+                fontWeight: 700,
+                color: "var(--jr-gold)",
+                background: "var(--jr-gold-pale)",
+                border: "1px solid var(--jr-gold)",
+                borderRadius: "var(--jr-radius-sm)",
+                padding: "10px",
+                letterSpacing: "1px",
+                marginBottom: "8px",
+              }}
+            >
               {lang === "en" ? "ESPAÑOL" : "ENGLISH"}
             </button>
           </div>
@@ -140,11 +440,11 @@ export default function SiteNav({ promoBanner }) {
       </nav>
 
       <style>{`
-        @media (max-width: 900px) {
+        @media (max-width: 1024px) {
           .jr-nav-desktop { display: none !important; }
-          .jr-nav-hamburger { display: flex !important; }
+          .jr-nav-hamburger { display: inline-flex !important; align-items: center; justify-content: center; }
         }
-        @media (min-width: 901px) {
+        @media (min-width: 1025px) {
           .jr-nav-hamburger { display: none !important; }
         }
       `}</style>

@@ -19,7 +19,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Gutter repair in Tampa Bay — fix sagging gutters, leaking seams, pulled hangers, clogged downspouts, pitch correction, and combined fascia repair. 30+ years of aluminum specialist experience.",
+    "Gutter repair in Tampa Bay, fix sagging gutters, leaking seams, pulled hangers, clogged downspouts, pitch correction, and combined fascia repair. 30+ years of aluminum specialist experience.",
 };
 
 const breadcrumbSchema = {
@@ -34,11 +34,11 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Gutter Repair Tampa FL | Sagging, Leaks, Overflow Fixed Fast",
   description:
-    "Gutter repair in Tampa Bay — sagging gutters, leaking seams, clogged downspouts, pitch correction, fascia repair. Same-week scheduling. Free assessment — (844) 444-3114.",
+    "Gutter repair in Tampa Bay, sagging gutters, leaking seams, clogged downspouts, pitch correction, fascia repair. Same-week scheduling. Free assessment, (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/gutter-repair" },
   openGraph: {
-    title: "Gutter Repair Tampa FL — JR One Aluminum",
-    description: "Tampa Bay gutter repair specialists. Sagging, leaks, overflow, fascia — fixed by aluminum experts with 30+ years experience.",
+    title: "Gutter Repair Tampa FL, JR One Aluminum",
+    description: "Tampa Bay gutter repair specialists. Sagging, leaks, overflow, fascia, fixed by aluminum experts with 30+ years experience.",
     url: "https://jronegutters.com/gutter-repair",
     type: "website",
   },

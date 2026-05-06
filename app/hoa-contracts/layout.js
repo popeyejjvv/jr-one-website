@@ -69,7 +69,7 @@ const faqSchema = {
       name: "Can you coordinate with our existing roofing vendor?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. We coordinate directly with roofing contractors, painters, and landscapers when scopes overlap — particularly on soffit/fascia work that touches the roofline. We've worked alongside most of Tampa's larger exterior trades.",
+        text: "Yes. We coordinate directly with roofing contractors, painters, and landscapers when scopes overlap, particularly on soffit/fascia work that touches the roofline. We've worked alongside most of Tampa's larger exterior trades.",
       },
     },
     {
@@ -106,14 +106,14 @@ export const metadata = {
   keywords: "HOA gutter maintenance Tampa, HOA contract gutter cleaning, property management aluminum services, HOA soffit fascia Tampa, community gutter contract Florida",
   alternates: { canonical: "https://jronegutters.com/hoa-contracts" },
   openGraph: {
-    title: "HOA Maintenance Contracts Tampa FL — JR One Aluminum",
+    title: "HOA Maintenance Contracts Tampa FL, JR One Aluminum",
     description: "Gutter, soffit, and fascia maintenance contracts for Tampa Bay HOAs. Community-wide pricing. Free walkthrough.",
     url: "https://jronegutters.com/hoa-contracts",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HOA Maintenance Contracts Tampa FL — JR One Aluminum",
+    title: "HOA Maintenance Contracts Tampa FL, JR One Aluminum",
     description: "Gutter, soffit, and fascia contracts for Tampa Bay HOAs. Bilingual crews, single-point accountability.",
   },
 };

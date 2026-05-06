@@ -1,7 +1,7 @@
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Specialty Gutters — Half-Round, Commercial Box, D-Style",
+  name: "Specialty Gutters, Half-Round, Commercial Box, D-Style",
   serviceType: "Specialty Gutter Installation",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -18,7 +18,7 @@ const serviceSchema = {
     { "@type": "City", name: "Bradenton" },
   ],
   description:
-    "Specialty gutter installation in Tampa Bay — 6\" and 8\" half-round aluminum, 7\" commercial box, 7\" commercial D-style, oversized K-style. For historic homes, architectural properties, and high-volume commercial applications.",
+    "Specialty gutter installation in Tampa Bay, 6\" and 8\" half-round aluminum, 7\" commercial box, 7\" commercial D-style, oversized K-style. For historic homes, architectural properties, and high-volume commercial applications.",
 };
 
 const breadcrumbSchema = {
@@ -36,7 +36,7 @@ export const metadata = {
     "Half-round, commercial box, D-style, and oversized K-style aluminum gutters installed in Tampa Bay. Historic homes, architectural properties, commercial. (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/specialty-gutters" },
   openGraph: {
-    title: "Specialty Gutters Tampa FL — JR One Aluminum",
+    title: "Specialty Gutters Tampa FL, JR One Aluminum",
     description: "Half-round, box, D-style specialty gutter profiles for Tampa Bay homes and commercial.",
     url: "https://jronegutters.com/specialty-gutters",
     type: "website",

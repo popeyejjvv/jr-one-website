@@ -1,5 +1,6 @@
-/* ── JR One Aluminum — Global Resets ── */
-/* Components use inline styles, so this is minimal */
+@import './tokens.css';
+
+/* ── JR One Aluminum , Global resets + base ── */
 
 *,
 *::before,
@@ -13,13 +14,15 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  font-family: var(--font-source-sans), "Source Sans 3", sans-serif;
-  color: #2D2D2D;
-  background: #0B1628;
+  font-family: var(--jr-font-body);
+  color: var(--jr-paper);
+  background: var(--jr-navy);
   overflow-x: hidden;
+  line-height: 1.65;
 }
 
 a {
@@ -27,10 +30,16 @@ a {
   color: inherit;
 }
 
-img {
+img,
+svg {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -41,29 +50,114 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #C8952E !important;
+  border-color: var(--jr-gold) !important;
 }
 
-/* ── Diagonal star pattern for hero sections ── */
-.hero-stars {
-  position: relative;
-  overflow: hidden;
+/* Visible focus ring for keyboard users.
+   :focus-visible only fires for keyboard nav, not clicks. */
+:focus-visible {
+  outline: 2px solid var(--jr-gold);
+  outline-offset: 2px;
+  border-radius: var(--jr-radius-sm);
 }
-.hero-stars::before {
-  content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
+
+/* Skip-to-content link. Hidden until focused. */
+.jr-skip-link {
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  font-size: 16px;
-  letter-spacing: 32px;
-  line-height: 48px;
-  color: rgba(255,255,255,0.03);
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: var(--jr-z-toast);
+}
+.jr-skip-link:focus {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 10px 16px;
+  background: var(--jr-gold);
+  color: var(--jr-navy);
+  font-family: var(--jr-font-heading);
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: var(--jr-radius-md);
+  text-transform: uppercase;
+}
+
+/* Reduced motion (Emil: keep opacity/color, kill movement). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* JR One promo ticker (used in nav promo strip). */
+@keyframes jr-ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Subtle navy texture (replaces gimmicky stars overlay; pure CSS, no DOM cost). */
+.jr-noise-bg {
+  position: relative;
+  isolation: isolate;
+}
+.jr-noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1.4px);
+  background-size: 28px 28px;
   pointer-events: none;
   z-index: 0;
-  word-break: break-all;
-  padding: 20px;
-  transform: rotate(-25deg);
-  transform-origin: center center;
 }
+
+/* Hover + press primitives. Emil: gate hover behind capability query. */
+@media (hover: hover) and (pointer: fine) {
+  .jr-hover-lift {
+    transition: transform var(--jr-dur-slow) var(--jr-ease-out),
+                border-color var(--jr-dur-slow) var(--jr-ease-out),
+                box-shadow var(--jr-dur-slow) var(--jr-ease-out);
+  }
+  .jr-hover-lift:hover {
+    transform: translateY(-3px);
+    border-color: var(--jr-gold);
+  }
+}
+
+.jr-press {
+  transition: transform var(--jr-dur-press) var(--jr-ease-out);
+  will-change: transform;
+}
+.jr-press:active {
+  transform: scale(0.97);
+}
+
+/* Marquee bar baseline (used by promo banner) */
+.jr-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.jr-marquee-track {
+  display: inline-block;
+  animation: jr-ticker 30s linear infinite;
+}
+
+/* Hairline divider variants */
+.jr-hairline-light { border-top: var(--jr-hair-light); }
+.jr-hairline-dark { border-top: var(--jr-hair-dark); }
+.jr-hairline-darker { border-top: var(--jr-hair-darker); }
+.jr-hairline-gold { border-top: var(--jr-hair-gold); }
+
+/* Legacy compatibility: keep .hero-stars selector empty so old homepage still
+   class-resolves while Phase 2 rewrite is in flight. Removed once homepage
+   is migrated. */
+.hero-stars { position: relative; }

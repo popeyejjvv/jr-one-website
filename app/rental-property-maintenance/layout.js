@@ -20,7 +20,7 @@ const serviceSchema = {
     { "@type": "City", name: "Sarasota" },
   ],
   description:
-    "Gutter, soffit, and fascia maintenance for Airbnb, VRBO, long-term rental, and investment properties across Tampa Bay. Built for absentee owners — scheduled service, photo reports, and tenant coordination without the owner showing up.",
+    "Gutter, soffit, and fascia maintenance for Airbnb, VRBO, long-term rental, and investment properties across Tampa Bay. Built for absentee owners, scheduled service, photo reports, and tenant coordination without the owner showing up.",
   offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
 };
 
@@ -44,7 +44,7 @@ const faqSchema = {
       name: "How much does a rental service plan cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Single-rental plans typically run $300-$800 annually for semi-annual gutter cleaning + inspection on a standard single-family rental, depending on linear footage and access. Portfolio plans get bundled pricing that drops per-property cost materially. Exact pricing after a walkthrough — no generic rate quoted over the phone.",
+        text: "Single-rental plans typically run $300-$800 annually for semi-annual gutter cleaning + inspection on a standard single-family rental, depending on linear footage and access. Portfolio plans get bundled pricing that drops per-property cost materially. Exact pricing after a walkthrough, no generic rate quoted over the phone.",
       },
     },
     {
@@ -76,7 +76,7 @@ const faqSchema = {
       name: "Do you work with property managers?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Many of our rental accounts come through property managers who want a single aluminum vendor across their managed portfolio. We invoice the manager, report to the manager, and coordinate through the manager — not the owner directly unless requested.",
+        text: "Yes. Many of our rental accounts come through property managers who want a single aluminum vendor across their managed portfolio. We invoice the manager, report to the manager, and coordinate through the manager, not the owner directly unless requested.",
       },
     },
     {
@@ -84,7 +84,7 @@ const faqSchema = {
       name: "Can you handle soffit or fascia damage, not just cleaning?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. We're a specialty aluminum contractor — gutters, soffit, fascia, aluminum trim, and drainage. If a scheduled visit turns up rotted fascia or blown soffit panels, we flag it for owner approval and execute the repair in the same property visit.",
+        text: "Yes. We're a specialty aluminum contractor, gutters, soffit, fascia, aluminum trim, and drainage. If a scheduled visit turns up rotted fascia or blown soffit panels, we flag it for owner approval and execute the repair in the same property visit.",
       },
     },
     {
@@ -101,18 +101,18 @@ const faqSchema = {
 export const metadata = {
   title: "Rental Property Gutter Maintenance Tampa FL | Airbnb, LTR, Investor",
   description:
-    "Gutter, soffit, and fascia service for Airbnb, long-term rentals, and investment properties in Tampa Bay. Built for absentee owners — scheduled visits, photo reports, tenant coordination. (844) 444-3114.",
+    "Gutter, soffit, and fascia service for Airbnb, long-term rentals, and investment properties in Tampa Bay. Built for absentee owners, scheduled visits, photo reports, tenant coordination. (844) 444-3114.",
   keywords: "rental property gutter maintenance Tampa, Airbnb exterior maintenance, absentee owner gutter service, investment property Tampa, VRBO property maintenance Florida",
   alternates: { canonical: "https://jronegutters.com/rental-property-maintenance" },
   openGraph: {
-    title: "Rental Property Maintenance Tampa FL — JR One Aluminum",
+    title: "Rental Property Maintenance Tampa FL, JR One Aluminum",
     description: "Gutter, soffit, and fascia maintenance for Tampa Bay rentals. Absentee-owner-friendly with photo reporting.",
     url: "https://jronegutters.com/rental-property-maintenance",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rental Property Maintenance Tampa FL — JR One Aluminum",
+    title: "Rental Property Maintenance Tampa FL, JR One Aluminum",
     description: "Gutter, soffit, fascia service for Airbnb, LTR, and investor properties in Tampa Bay.",
   },
 };

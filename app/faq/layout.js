@@ -1,4 +1,4 @@
-// FAQPage schema — server-side JSON-LD so Google gets rich Q&A snippets
+// FAQPage schema, server-side JSON-LD so Google gets rich Q&A snippets
 // in search results even though the /faq UI is a client component.
 // Top 20 Q&As covering the highest-intent customer queries.
 
@@ -11,7 +11,7 @@ const faqSchema = {
       name: "What services does JR One offer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JR One specializes in seamless aluminum gutters (6\" and 7\"), copper gutters, gutter guards (aluminum, standard, micro mesh, EZ mesh), soffit and fascia installation, siding, SAGIPER architectural cladding, gutter repair, Peak 301 roof rejuvenation, Govee smart light installation, drainage installation, and maintenance plans. Aluminum exterior specialists — that's all we do.",
+        text: "JR One specializes in seamless aluminum gutters (6\" and 7\"), copper gutters, gutter guards (aluminum, standard, micro mesh, EZ mesh), soffit and fascia installation, siding, SAGIPER architectural cladding, gutter repair, Peak 301 roof rejuvenation, Govee smart light installation, drainage installation, and maintenance plans. Aluminum exterior specialists, that's all we do.",
       },
     },
     {
@@ -43,7 +43,7 @@ const faqSchema = {
       name: "Does JR One speak Spanish?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. JR One is a fully bilingual company — English and Spanish. Communication happens in whichever language the customer is most comfortable with, from first call through final walkthrough. Hablamos Español.",
+        text: "Yes. JR One is a fully bilingual company, English and Spanish. Communication happens in whichever language the customer is most comfortable with, from first call through final walkthrough. Hablamos Español.",
       },
     },
     {
@@ -51,7 +51,7 @@ const faqSchema = {
       name: "Does JR One use subcontractors?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Never. Every person on the property is a trained, full-time JR One crew member. JR One runs three in-house crews. No subcontracted work — quality control and accountability stay in-house on every job.",
+        text: "Never. Every person on the property is a trained, full-time JR One crew member. JR One runs three in-house crews. No subcontracted work, quality control and accountability stay in-house on every job.",
       },
     },
     {
@@ -67,7 +67,7 @@ const faqSchema = {
       name: "What are seamless gutters and why do they matter?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seamless gutters are custom-formed on-site from a single continuous piece of aluminum — no seams, joints, or splice points along the run. Traditional sectional gutters have joints every 10 feet that eventually leak. Seamless gutters eliminate those failure points for fewer leaks and cleaner aesthetics.",
+        text: "Seamless gutters are custom-formed on-site from a single continuous piece of aluminum, no seams, joints, or splice points along the run. Traditional sectional gutters have joints every 10 feet that eventually leak. Seamless gutters eliminate those failure points for fewer leaks and cleaner aesthetics.",
       },
     },
     {
@@ -75,7 +75,7 @@ const faqSchema = {
       name: "Should I get 5-inch or 6-inch gutters in Tampa?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "6-inch gutters have 40% more water-carrying capacity than 5-inch. For most Tampa homes — given Florida's intense rainfall (46–50 inches annually) and larger roof footprints — 6-inch is often the right choice. JR One recommends size based on specific roof area and pitch during the free assessment.",
+        text: "6-inch gutters have 40% more water-carrying capacity than 5-inch. For most Tampa homes, given Florida's intense rainfall (46-50 inches annually) and larger roof footprints, 6-inch is often the right choice. JR One recommends size based on specific roof area and pitch during the free assessment.",
       },
     },
     {
@@ -83,7 +83,7 @@ const faqSchema = {
       name: "How long do seamless aluminum gutters last in Tampa?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Quality aluminum gutters installed correctly last 20–30 years in Tampa's climate with basic maintenance. Copper gutters last 50+ years. Main factors that shorten life: improper installation, standing water from incorrect pitch, and infrequent cleaning.",
+        text: "Quality aluminum gutters installed correctly last 20-30 years in Tampa's climate with basic maintenance. Copper gutters last 50+ years. Main factors that shorten life: improper installation, standing water from incorrect pitch, and infrequent cleaning.",
       },
     },
     {
@@ -91,7 +91,7 @@ const faqSchema = {
       name: "How much does gutter installation cost in Tampa?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For a typical Tampa home with 150–180 linear feet of gutters, full seamless aluminum gutter installation runs approximately $1,500–$2,500 depending on configuration. Exact pricing depends on linear footage, gutter size, downspout count, and access.",
+        text: "For a typical Tampa home with 150-180 linear feet of gutters, full seamless aluminum gutter installation runs approximately $1,500-$2,500 depending on configuration. Exact pricing depends on linear footage, gutter size, downspout count, and access.",
       },
     },
     {
@@ -99,7 +99,7 @@ const faqSchema = {
       name: "How often should I clean my gutters in Tampa?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Homes with trees nearby typically need cleaning 2–4 times per year due to live oak leaves, pine needles, and seed pods. Without gutter guards, neglected gutters cause overflow, fascia damage, and foundation issues. Gutter guards reduce cleaning frequency to every 1–3 years for most homes.",
+        text: "Homes with trees nearby typically need cleaning 2-4 times per year due to live oak leaves, pine needles, and seed pods. Without gutter guards, neglected gutters cause overflow, fascia damage, and foundation issues. Gutter guards reduce cleaning frequency to every 1-3 years for most homes.",
       },
     },
     {
@@ -107,7 +107,7 @@ const faqSchema = {
       name: "What is soffit and why does it matter in Florida?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Soffit is the material that covers the underside of the roof overhang. Vented soffit allows airflow into the attic. In Florida, attics without adequate soffit ventilation can exceed 160°F — accelerating roof deck damage, increasing cooling costs dramatically, and creating mold conditions.",
+        text: "Soffit is the material that covers the underside of the roof overhang. Vented soffit allows airflow into the attic. In Florida, attics without adequate soffit ventilation can exceed 160°F, accelerating roof deck damage, increasing cooling costs dramatically, and creating mold conditions.",
       },
     },
     {
@@ -115,7 +115,7 @@ const faqSchema = {
       name: "What is fascia?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Fascia is the horizontal board at the lower edge of the roofline, directly behind the gutters. It's what gutters mount to. Rotted or damaged fascia causes gutters to sag, pull away, and fail to drain properly — no matter how well the gutters themselves are installed.",
+        text: "Fascia is the horizontal board at the lower edge of the roofline, directly behind the gutters. It's what gutters mount to. Rotted or damaged fascia causes gutters to sag, pull away, and fail to drain properly, no matter how well the gutters themselves are installed.",
       },
     },
     {
@@ -131,7 +131,7 @@ const faqSchema = {
       name: "Are LeafFilter and Gutter Helmet worth the extra cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "They make quality products, but pricing ($13–$20+/ft) reflects national advertising budgets and franchise overhead. JR One installs equivalent micro mesh technology at significantly lower rates — typically $1,000–$1,500 less for the average home — with 30+ years local specialist experience.",
+        text: "They make quality products, but pricing ($13-$20+/ft) reflects national advertising budgets and franchise overhead. JR One installs equivalent micro mesh technology at significantly lower rates, typically $1,000-$1,500 less for the average home, with 30+ years local specialist experience.",
       },
     },
     {
@@ -139,7 +139,7 @@ const faqSchema = {
       name: "How long does aluminum soffit and fascia last?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Aluminum soffit and fascia, properly installed, can last 30–40+ years. It does not rot, does not require painting, and is corrosion-resistant — ideal for Florida's humid, salt-air environment.",
+        text: "Aluminum soffit and fascia, properly installed, can last 30-40+ years. It does not rot, does not require painting, and is corrosion-resistant, ideal for Florida's humid, salt-air environment.",
       },
     },
     {
@@ -155,7 +155,7 @@ const faqSchema = {
       name: "What is Peak 301 roof rejuvenation?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Peak 301 is a soy-based roof rejuvenation sealant that penetrates asphalt shingles and restores the oils UV and heat have depleted. Not a coating — works from inside the shingle out. Adds 6–10 years of life to an existing roof, backed by a 6-year warranty.",
+        text: "Peak 301 is a soy-based roof rejuvenation sealant that penetrates asphalt shingles and restores the oils UV and heat have depleted. Not a coating, works from inside the shingle out. Adds 6-10 years of life to an existing roof, backed by a 6-year warranty.",
       },
     },
     {
@@ -170,12 +170,12 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "FAQ — Gutter, Soffit, Siding Questions Answered | JR One Aluminum Tampa",
+  title: "FAQ, Gutter, Soffit, Siding Questions Answered | JR One Aluminum Tampa",
   description:
     "Straight answers to every gutter, soffit, fascia, gutter guard, siding, and Peak 301 question Tampa Bay homeowners ask. Still stuck? Call (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/faq" },
   openGraph: {
-    title: "JR One Aluminum FAQ — Tampa Gutter & Soffit Questions Answered",
+    title: "JR One Aluminum FAQ, Tampa Gutter & Soffit Questions Answered",
     description: "60+ honest answers on gutters, soffit, fascia, guards, siding, Peak 301, and insurance claims.",
     url: "https://jronegutters.com/faq",
     type: "website",

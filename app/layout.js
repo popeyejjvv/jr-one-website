@@ -86,11 +86,11 @@ const localBusinessSchema = {
 export const metadata = {
   metadataBase: new URL("https://jronegutters.com"),
   title: {
-    default: "JR One Aluminum LLC | The Superior Soffit & Gutter Experts — Tampa Bay",
+    default: "JR One Aluminum LLC | Tampa Bay Gutters, Soffit, Fascia, Drainage",
     template: "%s | JR One Aluminum",
   },
   description:
-    "The Superior Soffit & Gutter Experts. Family-owned, over 30 years in the Tampa Bay gutter industry. Seamless gutters, soffit, fascia, siding, gutter guards. In-house crews. Free estimates. (844) 444-3114.",
+    "Family-owned, over 30 years in the trade. Seamless gutters, soffit, fascia, drainage, Peak 301 roof rejuvenation. In-house crews, fully insured. Tampa Bay specialty trade contractor. Free estimates. (844) 444-3114.",
   applicationName: "JR One Aluminum",
   authors: [{ name: "JR One Aluminum LLC", url: "https://jronegutters.com" }],
   creator: "JR One Aluminum LLC",
@@ -109,13 +109,13 @@ export const metadata = {
     locale: "en_US",
     url: "https://jronegutters.com",
     siteName: "JR One Aluminum LLC",
-    title: "JR One Aluminum LLC — The Superior Soffit & Gutter Experts",
+    title: "JR One Aluminum LLC | Tampa Bay Specialty Trade",
     description:
       "Family-owned. Over 30 years in the Tampa Bay gutter industry. In-house crews. Free estimates. (844) 444-3114.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "JR One Aluminum LLC — The Superior Soffit & Gutter Experts",
+    title: "JR One Aluminum LLC | Tampa Bay Specialty Trade",
     description:
       "Family-owned. Over 30 years in the Tampa Bay gutter industry. In-house crews. Free estimates.",
   },
@@ -131,7 +131,7 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#0B1628",
+  themeColor: "#1B2A4A",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -155,7 +155,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"
           rel="stylesheet"
         />
-        {/* AEO discovery — link AI crawlers to llms.txt + llms-full.txt (53-page AI content index) */}
+        {/* AEO discovery, link AI crawlers to llms.txt + llms-full.txt (53-page AI content index) */}
         <link rel="llm" href="/llms.txt" />
         <link rel="llm-full" href="/llms-full.txt" />
         {/* LocalBusiness Schema */}
@@ -163,12 +163,12 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
-        {/* Ahrefs Site Audit — HTML tag verification (added 2026-04-09) */}
+        {/* Ahrefs Site Audit, HTML tag verification (added 2026-04-09) */}
         <meta
           name="ahrefs-site-verification"
           content="19a129f813202b159a550ff53c4ed7764b9664f901a134c96e3dae30520dae28"
         />
-        {/* Google Search Console — HTML tag verification (re-verified 2026-05-04 after prior method dropped) */}
+        {/* Google Search Console, HTML tag verification (re-verified 2026-05-04 after prior method dropped) */}
         <meta
           name="google-site-verification"
           content="Kpcj-1KGIae9QG5XpTgV_Yf6utDcTVfRku0KA4WdZGo"

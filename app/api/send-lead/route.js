@@ -4,10 +4,10 @@ import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
 
 // =============================================================================
-// JR One — Lead Submission API
+// JR One, Lead Submission API
 // =============================================================================
 // Receives form submissions from the website and:
-//   1. Creates a client record in BuilderPrime (PRIMARY — verified working)
+//   1. Creates a client record in BuilderPrime (PRIMARY, verified working)
 //   2. Sends an email notification to info@jronegutters.com (FALLBACK)
 //   3. Logs to console for debugging
 //
@@ -57,7 +57,7 @@ function normalizePhone(phone) {
   const digits = String(phone).replace(/\D/g, "");
   if (digits.length === 10) return `+1${digits}`;
   if (digits.length === 11 && digits.startsWith("1")) return `+${digits}`;
-  return phone; // return as-is if format unexpected — let BP handle it
+  return phone; // return as-is if format unexpected, let BP handle it
 }
 
 export async function POST(request) {
@@ -164,14 +164,14 @@ export async function POST(request) {
         console.error(`✗ Builder Prime exception: ${bpErr.message}`);
       }
     } else {
-      console.warn("⚠ BUILDER_PRIME_API_KEY not set in environment — skipping BP create");
+      console.warn("⚠ BUILDER_PRIME_API_KEY not set in environment, skipping BP create");
     }
 
     // ─────────────────────────────────────────────────────────────────────────
     // 1b. ADDITIVE: After-hours voice callback via Vapi (fire-and-forget)
     //     Only fires if BP create succeeded AND it's currently after hours
     //     AND the kill switch is off. Uses next/server `after()` so it runs
-    //     post-response — never blocks, slows, or fails the BP creation path.
+    //     post-response, never blocks, slows, or fails the BP creation path.
     // ─────────────────────────────────────────────────────────────────────────
     if (bpResult.ok && bpResult.opportunity_id && isAfterHours() && isVoiceAgentEnabled()) {
       after(async () => {
@@ -207,12 +207,12 @@ export async function POST(request) {
 
         const bpStatusBadge = bpResult.ok
           ? `<span style="background:#10B981;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">✓ In BuilderPrime (Opp ${bpResult.opportunity_id || "?"})</span>`
-          : `<span style="background:#EF4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">⚠ NOT in BuilderPrime — manual entry required</span>`;
+          : `<span style="background:#EF4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">⚠ NOT in BuilderPrime, manual entry required</span>`;
 
         await transporter.sendMail({
           from: `"JR One Website" <${process.env.GMAIL_USER}>`,
           to: "info@jronegutters.com",
-          subject: `New Web Lead: ${name} — ${service || "General"} — ${zip || "N/A"}`,
+          subject: `New Web Lead: ${name}, ${service || "General"}, ${zip || "N/A"}`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px;">
               <h2 style="color: #1B2A4A; border-bottom: 3px solid #C8952E; padding-bottom: 10px;">
@@ -242,7 +242,7 @@ export async function POST(request) {
         console.error("✗ Email notification failed:", emailErr.message);
       }
     } else {
-      console.warn("⚠ GMAIL_USER or GMAIL_APP_PASSWORD not set — skipping email notification");
+      console.warn("⚠ GMAIL_USER or GMAIL_APP_PASSWORD not set, skipping email notification");
     }
 
     // ─────────────────────────────────────────────────────────────────────────

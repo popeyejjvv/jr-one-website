@@ -45,7 +45,7 @@ const faqSchema = {
       name: "What size gutter do I need for a commercial building?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "It depends on roof area, pitch, and rainfall collection. Most commercial buildings in Tampa Bay spec into 7-inch box gutters or 7-inch D-style commercial profiles. We calculate the correct size during the walkthrough — the wrong call here is expensive, so we don't guess.",
+        text: "It depends on roof area, pitch, and rainfall collection. Most commercial buildings in Tampa Bay spec into 7-inch box gutters or 7-inch D-style commercial profiles. We calculate the correct size during the walkthrough, the wrong call here is expensive, so we don't guess.",
       },
     },
     {
@@ -69,7 +69,7 @@ const faqSchema = {
       name: "How is commercial pricing structured?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Commercial pricing is custom per project — based on gutter linear footage, profile, gauge, downspout count, drainage integration, and scope. GCs and property portfolios with recurring volume can negotiate pricing for repeat work.",
+        text: "Commercial pricing is custom per project, based on gutter linear footage, profile, gauge, downspout count, drainage integration, and scope. GCs and property portfolios with recurring volume can negotiate pricing for repeat work.",
       },
     },
     {
@@ -77,7 +77,7 @@ const faqSchema = {
       name: "Do you handle drainage too, or just the gutter itself?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Full scope. Commercial roofs demand real drainage — we install Schedule 40 PVC underground drainage, corrugated pipe, catch basins, and trenching alongside the gutter system. One contractor for the complete water-management package.",
+        text: "Full scope. Commercial roofs demand real drainage, we install Schedule 40 PVC underground drainage, corrugated pipe, catch basins, and trenching alongside the gutter system. One contractor for the complete water-management package.",
       },
     },
     {
@@ -93,7 +93,7 @@ const faqSchema = {
       name: "How long does commercial installation take?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Varies widely — a single retail pad can be a day, a 200-unit apartment complex is weeks. We commit to a specific schedule before work begins and communicate any changes in advance.",
+        text: "Varies widely, a single retail pad can be a day, a 200-unit apartment complex is weeks. We commit to a specific schedule before work begins and communicate any changes in advance.",
       },
     },
   ],
@@ -106,14 +106,14 @@ export const metadata = {
   keywords: "commercial gutters Tampa, apartment complex gutter installation, multi-family gutters Florida, retail center gutter contractor, commercial aluminum Tampa Bay, 7 inch box gutter commercial",
   alternates: { canonical: "https://jronegutters.com/commercial-gutters" },
   openGraph: {
-    title: "Commercial Gutters Tampa FL — JR One Aluminum",
+    title: "Commercial Gutters Tampa FL, JR One Aluminum",
     description: "Commercial aluminum gutter, soffit, and drainage for apartment complexes, retail, and multi-family in Tampa Bay.",
     url: "https://jronegutters.com/commercial-gutters",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Commercial Gutters Tampa FL — JR One Aluminum",
+    title: "Commercial Gutters Tampa FL, JR One Aluminum",
     description: "7-inch box, D-style, and large-capacity commercial gutter systems. Tampa Bay-wide.",
   },
 };

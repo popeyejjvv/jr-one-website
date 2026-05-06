@@ -1,30 +1,88 @@
 "use client";
 
 /* ═══════════════════════════════════════════════════════════
-   JR ONE — SHARED STICKY MOBILE CTA
-   Fixed bottom bar with Call + Quote buttons
+   JR ONE , STICKY MOBILE CTA
+   Fixed bottom bar: Call + Free Estimate.
+   Brand-brain compliant: SVG icons, no emoji, custom easing.
    ═══════════════════════════════════════════════════════════ */
 
 import { useLanguage } from "../lib/LanguageContext";
-
-const C = { gold: "#C8952E", goldLight: "#D4A843", navy: "#0B1628", navyLight: "#2C3E5A" };
-const f = { h: "'Montserrat', sans-serif" };
+import { PhoneIcon } from "../lib/icons";
 
 const T = {
-  en: { callNow: "CALL NOW", freeEstimate: "FREE ESTIMATE" },
-  es: { callNow: "LLAMAR AHORA", freeEstimate: "COTIZACIÓN GRATIS" },
+  en: { callNow: "Call Now", freeEstimate: "Free Estimate" },
+  es: { callNow: "Llamar Ahora", freeEstimate: "Cotización Gratis" },
 };
 
 export default function MobileCTA({ scrollTarget = "quote-form" }) {
   const { lang } = useLanguage();
   const t = T[lang];
 
+  const handleEstimate = () => {
+    const el = document.getElementById(scrollTarget);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 999, background: "rgba(11,22,40,0.97)", backdropFilter: "blur(12px)", borderTop: `1px solid ${C.navyLight}`, padding: "12px 16px", display: "flex", gap: "10px" }}>
-      <a href="tel:8444443114" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", padding: "14px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.navy, background: `linear-gradient(135deg,${C.gold},${C.goldLight})`, borderRadius: "8px", textDecoration: "none", letterSpacing: "0.5px" }}>
-        📞 {t.callNow}
+    <div
+      role="region"
+      aria-label="Quick contact actions"
+      style={{
+        position: "fixed",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: "var(--jr-z-mobile-cta)",
+        background: "rgba(22, 32, 51, 0.97)",
+        backdropFilter: "blur(12px)",
+        WebkitBackdropFilter: "blur(12px)",
+        borderTop: "var(--jr-hair-darker)",
+        padding: "12px 16px",
+        display: "flex",
+        gap: "10px",
+      }}
+    >
+      <a
+        href="tel:8444443114"
+        className="jr-press"
+        style={{
+          flex: 1,
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "8px",
+          padding: "14px",
+          fontFamily: "var(--jr-font-heading)",
+          fontSize: "13px",
+          fontWeight: 700,
+          color: "var(--jr-navy)",
+          background: "var(--jr-gold)",
+          borderRadius: "var(--jr-radius-md)",
+          letterSpacing: "0.6px",
+          textTransform: "uppercase",
+        }}
+      >
+        <PhoneIcon size={16} />
+        {t.callNow}
       </a>
-      <button onClick={() => document.getElementById(scrollTarget)?.scrollIntoView({ behavior: "smooth" }) || window.scrollTo({ top: 0, behavior: "smooth" })} style={{ flex: 1, padding: "14px", fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.gold, background: "transparent", border: `2px solid ${C.gold}`, borderRadius: "8px", cursor: "pointer", letterSpacing: "0.5px" }}>
+      <button
+        onClick={handleEstimate}
+        className="jr-press"
+        style={{
+          flex: 1,
+          padding: "14px",
+          fontFamily: "var(--jr-font-heading)",
+          fontSize: "13px",
+          fontWeight: 700,
+          color: "var(--jr-gold)",
+          background: "transparent",
+          border: "2px solid var(--jr-gold)",
+          borderRadius: "var(--jr-radius-md)",
+          letterSpacing: "0.6px",
+          textTransform: "uppercase",
+        }}
+      >
         {t.freeEstimate}
       </button>
     </div>

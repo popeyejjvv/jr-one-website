@@ -57,10 +57,10 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Seamless Aluminum Gutter Installation Tampa FL | 30+ Years Experience",
   description:
-    "Custom-fabricated seamless aluminum gutters installed on-site in Tampa Bay. 5\", 6\", 7\" K-style and half-round profiles. Licensed, insured, bilingual. Free estimate — (844) 444-3114.",
+    "Custom-fabricated seamless aluminum gutters installed on-site in Tampa Bay. 5\", 6\", 7\" K-style and half-round profiles. Licensed, insured, bilingual. Free estimate, (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/seamless-aluminum-gutters" },
   openGraph: {
-    title: "Seamless Aluminum Gutter Installation Tampa FL — JR One Aluminum",
+    title: "Seamless Aluminum Gutter Installation Tampa FL, JR One Aluminum",
     description:
       "Custom-fabricated seamless aluminum gutters in Tampa Bay. Over 30 years installing gutters, soffit, fascia. Free estimates.",
     url: "https://jronegutters.com/seamless-aluminum-gutters",

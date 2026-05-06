@@ -4,7 +4,7 @@ import path from "path";
 
 const BASE_URL = "https://www.jronegutters.com";
 
-// AI-citation knowledge markdown files — auto-discovered from public/llms/
+// AI-citation knowledge markdown files, auto-discovered from public/llms/
 // so new MDs get crawled without a sitemap edit. These are the dense factual
 // docs ChatGPT / Claude / Perplexity / Gemini fetch when citing JR One.
 function getKnowledgeMdPaths() {
@@ -96,7 +96,7 @@ export default function sitemap() {
   }));
 
   // Knowledge markdown files for AI citation (ChatGPT/Claude/Perplexity/Gemini).
-  // Listed at priority 0.5 — lower than HTML pages because these are reference
+  // Listed at priority 0.5, lower than HTML pages because these are reference
   // material, not primary landing pages, but must be in sitemap for discovery.
   const knowledgeMdEntries = getKnowledgeMdPaths().map((p) => ({
     url: `${BASE_URL}${p}`,

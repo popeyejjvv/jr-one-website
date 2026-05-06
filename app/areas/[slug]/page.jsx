@@ -32,8 +32,8 @@ export async function generateMetadata({ params }) {
       `aluminum contractor ${cityName}`,
     ],
     openGraph: {
-      title: `${cityName}, FL Gutters, Soffit & Fascia — JR One Aluminum`,
-      description: `Aluminum specialists in ${cityName}, FL. Seamless gutters, soffit, fascia, gutter guards, siding. Free estimate — (844) 444-3114.`,
+      title: `${cityName}, FL Gutters, Soffit & Fascia, JR One Aluminum`,
+      description: `Aluminum specialists in ${cityName}, FL. Seamless gutters, soffit, fascia, gutter guards, siding. Free estimate, (844) 444-3114.`,
       url: `https://jronegutters.com/areas/${slug}`,
       type: "website",
     },

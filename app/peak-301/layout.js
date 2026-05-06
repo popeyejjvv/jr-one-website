@@ -19,7 +19,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Peak 301 soy-based roof rejuvenation treatment in Tampa Bay. Penetrates asphalt shingles to restore oils lost to UV and heat. Adds 6–10 years of roof life. 6-year warranty. Supports Florida insurance renewal under Statute 627.7011.",
+    "Peak 301 soy-based roof rejuvenation treatment in Tampa Bay. Penetrates asphalt shingles to restore oils lost to UV and heat. Adds 6-10 years of roof life. 6-year warranty. Supports Florida insurance renewal under Statute 627.7011.",
 };
 
 const breadcrumbSchema = {
@@ -34,11 +34,11 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Peak 301 Roof Rejuvenation Tampa FL | Up to 70% Less Than New Roof",
   description:
-    "Peak 301 soy-based roof rejuvenation in Tampa Bay. Adds 6–10 years of life. 6-year warranty. Supports Florida insurance renewal under Statute 627.7011. Free inspection — (844) 444-3114.",
+    "Peak 301 soy-based roof rejuvenation in Tampa Bay. Adds 6-10 years of life. 6-year warranty. Supports Florida insurance renewal under Statute 627.7011. Free inspection, (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/peak-301" },
   openGraph: {
-    title: "Peak 301 Roof Rejuvenation Tampa FL — JR One Aluminum",
-    description: "Extend roof life 6–10 years at a fraction of replacement cost. Supports Florida insurance renewal.",
+    title: "Peak 301 Roof Rejuvenation Tampa FL, JR One Aluminum",
+    description: "Extend roof life 6-10 years at a fraction of replacement cost. Supports Florida insurance renewal.",
     url: "https://jronegutters.com/peak-301",
     type: "website",
   },

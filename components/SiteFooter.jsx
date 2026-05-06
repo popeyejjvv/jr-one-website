@@ -1,19 +1,13 @@
 "use client";
 
 /* ═══════════════════════════════════════════════════════════
-   JR ONE — SHARED FOOTER COMPONENT
-   Full 4-column footer + copyright + privacy/terms
-   Used on every page for consistency
+   JR ONE , SHARED FOOTER
+   4-col: company, services, areas, resources, contact (5 cols on wide).
+   Brand-brain compliant: tagline rewritten, no puffery.
    ═══════════════════════════════════════════════════════════ */
 
 import { useLanguage } from "../lib/LanguageContext";
-
-const C = {
-  bg: "#0B1628", navy: "#1B2A4A", navyLight: "#2C3E5A", navyFade: "#162033",
-  gold: "#C8952E", goldLight: "#D4A843",
-  white: "#FFFFFF", muted: "#7A8FA8",
-};
-const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
+import { PhoneIcon, MailIcon, MapPinIcon } from "../lib/icons";
 
 const SERVICE_NAMES = {
   en: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
@@ -28,12 +22,12 @@ const SERVICE_HREFS = [
 
 const T = {
   en: {
-    tagline: "The Superior Soffit & Gutter Experts",
-    description: "Family-owned and family-operated. Over 30 years in the Tampa Bay gutter industry.",
-    services: "SERVICES",
-    serviceAreas: "SERVICE AREAS",
-    contact: "CONTACT",
-    resources: "RESOURCES",
+    tagline: "Family-Owned. Over 30 Years in the Trade.",
+    description: "A Tampa Bay specialty trade contractor. Gutters, soffit, fascia, drainage, and Peak 301 roof rejuvenation. Fully insured.",
+    services: "Services",
+    serviceAreas: "Service Areas",
+    contact: "Contact",
+    resources: "Resources",
     resourceLinks: [
       { label: "Warranties", href: "/warranties" },
       { label: "License & Insurance", href: "/resources" },
@@ -44,17 +38,18 @@ const T = {
       { label: "Insurance Resource Center", href: "/insurance-resource-center" },
       { label: "Blog", href: "/blog" },
     ],
+    address: "3420 W Cherry St, Tampa FL 33607",
     copyright: "© 2026 JR One Aluminum LLC. All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Service",
   },
   es: {
-    tagline: "Los Expertos Superiores en Sofito y Canaletas",
-    description: "Empresa familiar, operada por la familia. Más de 30 años en la industria de canaletas en Tampa Bay.",
-    services: "SERVICIOS",
-    serviceAreas: "ÁREAS DE SERVICIO",
-    contact: "CONTACTO",
-    resources: "RECURSOS",
+    tagline: "Empresa familiar. Más de 30 años en el oficio.",
+    description: "Un contratista especialista de Tampa Bay. Canaletas, sofito, fascia, drenaje y rejuvenecimiento Peak 301. Totalmente asegurados.",
+    services: "Servicios",
+    serviceAreas: "Áreas de Servicio",
+    contact: "Contacto",
+    resources: "Recursos",
     resourceLinks: [
       { label: "Garantías", href: "/warranties" },
       { label: "Licencia y Seguro", href: "/resources" },
@@ -65,6 +60,7 @@ const T = {
       { label: "Centro de Recursos de Seguros", href: "/insurance-resource-center" },
       { label: "Blog", href: "/blog" },
     ],
+    address: "3420 W Cherry St, Tampa FL 33607",
     copyright: "© 2026 JR One Aluminum LLC. Todos los derechos reservados.",
     privacy: "Política de Privacidad",
     terms: "Términos de Servicio",
@@ -95,85 +91,227 @@ const CITIES = [
   { name: "Wesley Chapel", slug: "wesley-chapel" },
 ];
 
+const linkStyle = {
+  display: "block",
+  fontFamily: "var(--jr-font-body)",
+  fontSize: "14px",
+  color: "var(--jr-muted-on-dark)",
+  marginBottom: "8px",
+  transition: "color var(--jr-dur-fast) var(--jr-ease-out)",
+};
+
+const headingStyle = {
+  fontFamily: "var(--jr-font-heading)",
+  fontSize: "12px",
+  fontWeight: 700,
+  color: "var(--jr-paper)",
+  letterSpacing: "2px",
+  marginBottom: "16px",
+  textTransform: "uppercase",
+};
+
+function FooterLink({ href, children, target, rel }) {
+  return (
+    <a
+      href={href}
+      target={target}
+      rel={rel}
+      style={linkStyle}
+      onMouseOver={(e) => (e.currentTarget.style.color = "var(--jr-gold)")}
+      onMouseOut={(e) => (e.currentTarget.style.color = "var(--jr-muted-on-dark)")}
+    >
+      {children}
+    </a>
+  );
+}
+
 export default function SiteFooter() {
   const { lang } = useLanguage();
   const t = T[lang];
   const serviceNames = SERVICE_NAMES[lang];
 
   return (
-    <>
-      <footer style={{ background: C.navyFade, borderTop: `1px solid ${C.navyLight}`, padding: "60px 24px 100px" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px" }}>
-          {/* Company */}
-          <div>
-            <div style={{ fontFamily: f.h, fontSize: "24px", fontWeight: 800, color: C.white, marginBottom: "4px" }}>
-              JR <span style={{ color: C.gold }}>ONE</span> <span style={{ color: C.white, fontSize: "18px" }}>★</span>
-            </div>
-            <p style={{ fontFamily: f.h, fontSize: "14px", fontWeight: 600, color: C.gold, fontStyle: "italic", marginBottom: "12px" }}>{t.tagline}</p>
-            <p style={{ fontFamily: f.b, fontSize: "14px", color: C.muted, lineHeight: 1.55 }}>{t.description}</p>
+    <footer
+      style={{
+        background: "var(--jr-navy-deep)",
+        borderTop: "var(--jr-hair-darker)",
+        padding: "60px 24px 100px",
+        color: "var(--jr-muted-on-dark)",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "var(--jr-container)",
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          gap: "40px",
+        }}
+      >
+        {/* Company */}
+        <div>
+          <div
+            style={{
+              fontFamily: "var(--jr-font-heading)",
+              fontSize: "24px",
+              fontWeight: 800,
+              color: "var(--jr-paper)",
+              marginBottom: "6px",
+              letterSpacing: "1px",
+            }}
+          >
+            JR <span style={{ color: "var(--jr-gold)" }}>ONE</span>
+            <span aria-hidden style={{ color: "var(--jr-gold)", marginLeft: 6, fontSize: "18px" }}>★</span>
           </div>
-
-          {/* Services */}
-          <div>
-            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.services}</h4>
-            {serviceNames.map((name, i) => (
-              <a key={i} href={SERVICE_HREFS[i]} style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}
-                onMouseOver={e => e.target.style.color = C.gold}
-                onMouseOut={e => e.target.style.color = C.muted}>
-                {name}
-              </a>
-            ))}
-          </div>
-
-          {/* Service Areas */}
-          <div>
-            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.serviceAreas}</h4>
-            {CITIES.map((city, i) => (
-              <a key={i} href={`/areas/${city.slug}`} style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}
-                onMouseOver={e => e.target.style.color = C.gold}
-                onMouseOut={e => e.target.style.color = C.muted}>
-                {city.name}
-              </a>
-            ))}
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.resources}</h4>
-            {t.resourceLinks.map((link, i) => (
-              <a key={i} href={link.href} style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}
-                onMouseOver={e => e.target.style.color = C.gold}
-                onMouseOut={e => e.target.style.color = C.muted}>
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 style={{ fontFamily: f.h, fontSize: "13px", fontWeight: 700, color: C.white, letterSpacing: "2px", marginBottom: "16px" }}>{t.contact}</h4>
-            <a href="tel:8444443114" style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.gold, marginBottom: "8px", fontWeight: 600, textDecoration: "none" }}>(844) 444-3114</a>
-            <a href="mailto:info@jronegutters.com" style={{ display: "block", fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "8px", textDecoration: "none" }}>info@jronegutters.com</a>
-            <p style={{ fontFamily: f.b, fontSize: "14px", color: C.muted, marginBottom: "16px" }}>Tampa, FL</p>
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-              <a href="https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Facebook</a>
-              <a href="https://www.instagram.com/jronegutters" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Instagram</a>
-              <a href="https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.9614157,-82.5032424,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675!16s%2Fg%2F11fcvc1w45" target="_blank" rel="noopener noreferrer" style={{ fontFamily: f.h, fontSize: "11px", fontWeight: 600, color: C.muted, padding: "6px 10px", border: `1px solid ${C.navyLight}`, borderRadius: "4px", textDecoration: "none" }}>Google</a>
-            </div>
-          </div>
-        </div>
-
-        {/* Copyright + Legal */}
-        <div style={{ maxWidth: "1200px", margin: "40px auto 0", paddingTop: "24px", borderTop: `1px solid ${C.navyLight}`, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
-          <p style={{ fontFamily: f.b, fontSize: "12px", color: C.muted }}>
-            {t.copyright}
+          <p
+            style={{
+              fontFamily: "var(--jr-font-heading)",
+              fontSize: "13px",
+              fontWeight: 600,
+              color: "var(--jr-gold)",
+              marginBottom: "12px",
+              letterSpacing: "0.5px",
+            }}
+          >
+            {t.tagline}
           </p>
-          <div style={{ display: "flex", gap: "20px" }}>
-            <a href="/privacy-policy" style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, textDecoration: "none" }}>{t.privacy}</a>
-            <a href="/terms-of-service" style={{ fontFamily: f.b, fontSize: "12px", color: C.muted, textDecoration: "none" }}>{t.terms}</a>
+          <p
+            style={{
+              fontFamily: "var(--jr-font-body)",
+              fontSize: "14px",
+              color: "var(--jr-muted-on-dark)",
+              lineHeight: 1.6,
+            }}
+          >
+            {t.description}
+          </p>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h4 style={headingStyle}>{t.services}</h4>
+          {serviceNames.map((name, i) => (
+            <FooterLink key={i} href={SERVICE_HREFS[i]}>{name}</FooterLink>
+          ))}
+        </div>
+
+        {/* Areas */}
+        <div>
+          <h4 style={headingStyle}>{t.serviceAreas}</h4>
+          {CITIES.map((city) => (
+            <FooterLink key={city.slug} href={`/areas/${city.slug}`}>{city.name}</FooterLink>
+          ))}
+        </div>
+
+        {/* Resources */}
+        <div>
+          <h4 style={headingStyle}>{t.resources}</h4>
+          {t.resourceLinks.map((link, i) => (
+            <FooterLink key={i} href={link.href}>{link.label}</FooterLink>
+          ))}
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h4 style={headingStyle}>{t.contact}</h4>
+          <a
+            href="tel:8444443114"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              fontFamily: "var(--jr-font-heading)",
+              fontSize: "14px",
+              color: "var(--jr-gold)",
+              fontWeight: 700,
+              marginBottom: "10px",
+            }}
+          >
+            <PhoneIcon size={14} />
+            (844) 444-3114
+          </a>
+          <a
+            href="mailto:info@jronegutters.com"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              fontFamily: "var(--jr-font-body)",
+              fontSize: "14px",
+              color: "var(--jr-muted-on-dark)",
+              marginBottom: "10px",
+            }}
+          >
+            <MailIcon size={14} />
+            info@jronegutters.com
+          </a>
+          <p
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              fontFamily: "var(--jr-font-body)",
+              fontSize: "14px",
+              color: "var(--jr-muted-on-dark)",
+              marginBottom: "16px",
+            }}
+          >
+            <MapPinIcon size={14} />
+            {t.address}
+          </p>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            {[
+              { label: "Facebook", href: "https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/" },
+              { label: "Instagram", href: "https://www.instagram.com/jronegutters" },
+              { label: "Google", href: "https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.9614157,-82.5032424,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675!16s%2Fg%2F11fcvc1w45" },
+            ].map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="jr-press"
+                style={{
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  color: "var(--jr-muted-on-dark)",
+                  padding: "6px 10px",
+                  border: "var(--jr-hair-darker)",
+                  borderRadius: "var(--jr-radius-sm)",
+                  letterSpacing: "0.4px",
+                  textTransform: "uppercase",
+                }}
+              >
+                {s.label}
+              </a>
+            ))}
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+
+      {/* Bottom bar */}
+      <div
+        style={{
+          maxWidth: "var(--jr-container)",
+          margin: "40px auto 0",
+          paddingTop: "24px",
+          borderTop: "var(--jr-hair-darker)",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "12px",
+        }}
+      >
+        <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-muted-on-dark)" }}>
+          {t.copyright}
+        </p>
+        <div style={{ display: "flex", gap: "20px" }}>
+          <a href="/privacy-policy" style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-muted-on-dark)" }}>{t.privacy}</a>
+          <a href="/terms-of-service" style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-muted-on-dark)" }}>{t.terms}</a>
+        </div>
+      </div>
+    </footer>
   );
 }

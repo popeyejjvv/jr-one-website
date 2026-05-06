@@ -1,0 +1,105 @@
+/* ════════════════════════════════════════════════════════════
+   JR ONE ALUMINUM , Design Tokens
+   Single source of truth for color, type, motion, spacing.
+   Locked by brand-brain (references/brand-brains/jrone.md).
+   ════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Color (brand-brain Pillar 04) ── */
+  --jr-navy: #1B2A4A;            /* primary */
+  --jr-navy-2: #243556;          /* mid */
+  --jr-navy-3: #2C3E5A;          /* light */
+  --jr-navy-deep: #162033;       /* deeper, recessed */
+  --jr-gold: #C8952E;            /* accent */
+  --jr-gold-2: #D4A843;          /* hover/light gold */
+  --jr-gold-pale: rgba(200, 149, 46, 0.12);
+  --jr-gold-glass: rgba(200, 149, 46, 0.18);
+  --jr-cream: #F8F6F1;           /* off-white surface */
+  --jr-cream-2: #E8E4DC;
+  --jr-ink: #1A1A1A;             /* near-black on light */
+  --jr-paper: #FFFFFF;
+  --jr-muted-on-light: #6B7280;
+  --jr-muted-on-dark: #9DB0C8;   /* on navy: bumped contrast vs old #7A8FA8 to clear WCAG AA */
+
+  /* Functional */
+  --jr-success: #2D8B4E;
+  --jr-success-soft: rgba(45, 139, 78, 0.16);
+  --jr-alert: #B11A21;
+
+  /* ── Typography ── */
+  --jr-font-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --jr-font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  --jr-font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Type scale: clamp() responsive base */
+  --jr-text-xs: 12px;
+  --jr-text-sm: 13px;
+  --jr-text-base: 15px;
+  --jr-text-md: 16px;
+  --jr-text-lg: 18px;
+  --jr-text-xl: clamp(20px, 1.6vw, 22px);
+  --jr-text-2xl: clamp(22px, 2.4vw, 28px);
+  --jr-text-3xl: clamp(28px, 4vw, 36px);
+  --jr-text-4xl: clamp(36px, 6vw, 56px);
+  --jr-text-5xl: clamp(44px, 7.5vw, 72px);
+
+  /* ── Spacing (4px base) ── */
+  --jr-space-1: 4px;
+  --jr-space-2: 8px;
+  --jr-space-3: 12px;
+  --jr-space-4: 16px;
+  --jr-space-5: 20px;
+  --jr-space-6: 24px;
+  --jr-space-8: 32px;
+  --jr-space-10: 40px;
+  --jr-space-12: 48px;
+  --jr-space-16: 64px;
+  --jr-space-20: 80px;
+  --jr-space-24: 96px;
+
+  /* ── Layout ── */
+  --jr-container: 1200px;
+  --jr-container-wide: 1320px;
+  --jr-container-narrow: 880px;
+  --jr-container-prose: 720px;
+
+  /* ── Radius ── */
+  --jr-radius-sm: 4px;
+  --jr-radius-md: 8px;
+  --jr-radius-lg: 12px;
+  --jr-radius-xl: 16px;
+  --jr-radius-pill: 999px;
+
+  /* ── Easing (Emil Kowalski strong custom curves) ── */
+  --jr-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --jr-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --jr-ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* ── Duration (Emil: UI animations stay under 300ms) ── */
+  --jr-dur-press: 120ms;
+  --jr-dur-fast: 160ms;
+  --jr-dur-base: 200ms;
+  --jr-dur-slow: 260ms;
+  --jr-dur-modal: 320ms;
+
+  /* ── Hairlines ── */
+  --jr-hair-light: 1px solid rgba(0, 0, 0, 0.08);
+  --jr-hair-dark: 1px solid rgba(255, 255, 255, 0.08);
+  --jr-hair-darker: 1px solid rgba(255, 255, 255, 0.14);
+  --jr-hair-gold: 1px solid var(--jr-gold);
+
+  /* ── Shadow (tinted toward brand hue, not generic black) ── */
+  --jr-shadow-sm: 0 1px 2px rgba(11, 22, 40, 0.08);
+  --jr-shadow-md: 0 6px 16px rgba(11, 22, 40, 0.16);
+  --jr-shadow-lg: 0 18px 48px rgba(11, 22, 40, 0.32);
+  --jr-shadow-form: 0 24px 64px rgba(11, 22, 40, 0.42);
+  --jr-shadow-gold: 0 8px 24px rgba(200, 149, 46, 0.28);
+
+  /* ── Z-index scale ── */
+  --jr-z-base: 1;
+  --jr-z-sticky: 100;
+  --jr-z-nav: 1000;
+  --jr-z-mobile-cta: 999;
+  --jr-z-modal: 5000;
+  --jr-z-toast: 6000;
+}

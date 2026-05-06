@@ -37,10 +37,10 @@ const SERVICES = {
     blurb: "Custom-fabricated on-site from a single continuous coil so there are no seams, no leaks, and a perfect fit for your roofline.",
     who: "The right choice for any home upgrading from sectional gutters, replacing a failing system, or outfitting new construction.",
     props: [
-      ["On-site fabrication","Gutters cut to your exact roofline — not ordered from a warehouse."],
+      ["On-site fabrication","Gutters cut to your exact roofline, not ordered from a warehouse."],
       ["25+ colors","Matched to fascia, trim, and body to enhance curb appeal."],
       ["5\" and 6\" K-style","6\" handles the heavy Florida rain volume without overflow."],
-      ["Hidden hangers, screw-in","Hurricane-rated fastening — no nails that pull out."],
+      ["Hidden hangers, screw-in","Hurricane-rated fastening, no nails that pull out."],
     ],
   },
   "gutter-guards": {
@@ -48,11 +48,11 @@ const SERVICES = {
     short: "gutter guards",
     link: "/gutter-guards",
     blurb: "Micro-mesh and stainless screen systems that keep leaves, pine needles, shingle grit, and debris out while letting water flow through freely.",
-    who: "Essential for homes with oak, pine, or palm canopy — and for any homeowner tired of climbing a ladder every season.",
+    who: "Essential for homes with oak, pine, or palm canopy, and for any homeowner tired of climbing a ladder every season.",
     props: [
       ["Micro-mesh filtering","Blocks even pine needles and shingle grit."],
       ["Stainless steel mesh","Won't rust, warp, or collapse under debris load."],
-      ["Works with existing gutters","Retrofit onto your current system — no full replacement needed."],
+      ["Works with existing gutters","Retrofit onto your current system, no full replacement needed."],
       ["Reduces maintenance","Cuts cleaning frequency from quarterly to annual in most cases."],
     ],
   },
@@ -63,7 +63,7 @@ const SERVICES = {
     blurb: "Professional debris removal, downspout flushing, and flow testing to keep water moving off your roof and away from your foundation.",
     who: "For any homeowner who doesn't have guards installed, or any property where mature trees drop steady debris year-round.",
     props: [
-      ["Full debris removal","Leaves, pine needles, shingle grit — bagged and hauled away."],
+      ["Full debris removal","Leaves, pine needles, shingle grit, bagged and hauled away."],
       ["Downspout flushing","Confirms water actually exits at grade, not just the gutter."],
       ["Flow test","We run water through every run before we leave."],
       ["Damage inspection","We flag loose hangers, separating seams, or fascia rot while we're up there."],
@@ -73,10 +73,10 @@ const SERVICES = {
     name: "Gutter Repair",
     short: "gutter repair",
     link: "/gutter-repair",
-    blurb: "Sagging runs, leaking seams, pulled-away sections, and overflow issues — fixed properly instead of patched with caulk that fails by next season.",
+    blurb: "Sagging runs, leaking seams, pulled-away sections, and overflow issues, fixed properly instead of patched with caulk that fails by next season.",
     who: "For homeowners whose gutters were installed wrong, installed long ago, or damaged in a storm.",
     props: [
-      ["Re-pitch and re-hang","Most sagging is fixed with proper hangers — not new gutters."],
+      ["Re-pitch and re-hang","Most sagging is fixed with proper hangers, not new gutters."],
       ["Seam sealing (done right)","Commercial-grade gutter sealant, not silicone caulk."],
       ["Downspout replacement","Correct sizing so volume isn't the bottleneck."],
       ["Storm damage repair","Insurance-ready documentation if the claim is open."],
@@ -86,7 +86,7 @@ const SERVICES = {
     name: "Soffit & Fascia",
     short: "soffit and fascia",
     link: "/soffit-and-fascia",
-    blurb: "Aluminum and vinyl soffit + fascia replacement — sealing the roof edge against Florida humidity, pests, and wind-driven rain.",
+    blurb: "Aluminum and vinyl soffit + fascia replacement, sealing the roof edge against Florida humidity, pests, and wind-driven rain.",
     who: "Critical for any home with aging wood soffit, visible fascia rot, or pest entry at the roofline.",
     props: [
       ["Full wood-to-aluminum conversion","Kills the rot cycle permanently."],
@@ -99,66 +99,66 @@ const SERVICES = {
     name: "Siding",
     short: "siding",
     link: "/siding",
-    blurb: "Vinyl and aluminum siding built for Florida weather — UV-stable, wind-rated, and installed with the same precision we bring to gutter work.",
+    blurb: "Vinyl and aluminum siding built for Florida weather, UV-stable, wind-rated, and installed with the same precision we bring to gutter work.",
     who: "For homes with failing stucco, rotting wood siding, or older vinyl that's faded, cracked, or warped.",
     props: [
       ["UV-stable color","Won't chalk or fade the way builder-grade siding does in Florida sun."],
       ["Wind-rated install","Fastening that holds through tropical storm wind loads."],
       ["Insulated options","Adds R-value and cuts sound transmission."],
-      ["Trim detail","Corners, J-channel, and window wraps done right — not rushed."],
+      ["Trim detail","Corners, J-channel, and window wraps done right, not rushed."],
     ],
   },
   "copper-gutters": {
     name: "Copper Gutters",
     short: "copper gutters",
     link: "/copper-gutters",
-    blurb: "Half-round and K-style copper gutter systems — the lifetime choice for homeowners who want a system that outlives the roof.",
+    blurb: "Half-round and K-style copper gutter systems, the lifetime choice for homeowners who want a system that outlives the roof.",
     who: "For historic homes, high-end new construction, and owners who view gutters as an architectural feature, not just a utility.",
     props: [
       ["Lifetime material","Copper outlasts the house in most cases."],
-      ["Develops a patina","Turns from bright copper to deep bronze over years — a feature, not a flaw."],
+      ["Develops a patina","Turns from bright copper to deep bronze over years, a feature, not a flaw."],
       ["Soldered seams","Joints that never leak, for the life of the system."],
-      ["Custom fabrication","Half-round, K-style, European — built to match the architecture."],
+      ["Custom fabrication","Half-round, K-style, European, built to match the architecture."],
     ],
   },
   "drainage-assessment": {
     name: "Drainage Assessment",
     short: "drainage assessment",
     link: "/drainage-assessment",
-    blurb: "A full evaluation of how water actually moves across your property — from the roof to the gutter, through the downspout, and away from your foundation.",
+    blurb: "A full evaluation of how water actually moves across your property, from the roof to the gutter, through the downspout, and away from your foundation.",
     who: "For homes with pooling, foundation staining, mulch washout, fascia rot, or any sign that water isn't leaving the property cleanly.",
     props: [
       ["Roof-to-grade analysis","We trace every drop from shingle to splash block."],
       ["Downspout sizing check","Undersized downspouts are the #1 cause of overflow."],
       ["Grade and extension review","Often the fix is at the bottom, not the top."],
-      ["Written report","Specific, prioritized fixes — not a sales pitch."],
+      ["Written report","Specific, prioritized fixes, not a sales pitch."],
     ],
   },
 };
 
 const CITY_META = {
-  tampa: { name: "Tampa", localP: "Tampa homeowners face intense summer thunderstorms, hurricane season, year-round humidity, and a mix of aging housing stock and new construction from South Tampa to New Tampa.", weatherNote: "Tampa averages 51 inches of rain per year — well above the national average. Your gutter system has to move serious water volume or your foundation pays the price.", nearby: ["clearwater","brandon","temple-terrace","riverview"] },
-  clearwater: { name: "Clearwater", localP: "Clearwater's coastal location means salt air, tropical storms, and intense UV exposure year-round — conditions that corrode anything less than proper aluminum.", weatherNote: "Coastal proximity adds salt air corrosion on top of Florida's standard heavy rain, UV, and humidity. Aluminum is the material of choice because it handles all of it.", nearby: ["palm-harbor","dunedin","largo","tarpon-springs"] },
-  "st-petersburg": { name: "St. Petersburg", localP: "St. Pete's mix of historic homes, mid-century neighborhoods, and new construction means every job is different — and many older homes still have original wood soffit that's been rotting for decades.", weatherNote: "St. Pete holds the Guinness record for consecutive sunny days — 768. That UV exposure degrades wood soffit and fascia faster than most homeowners realize.", nearby: ["largo","clearwater","tampa","dunedin"] },
-  sarasota: { name: "Sarasota", localP: "Sarasota homeowners expect contractors who match the standard of their properties — from waterfront homes on the keys to established neighborhoods like Palmer Ranch and Lakewood Ranch.", weatherNote: "Coastal storms here drive rain sideways, testing gutters and soffit in ways inland homes rarely experience. Proper install pitch and fastening aren't optional.", nearby: ["bradenton"] },
+  tampa: { name: "Tampa", localP: "Tampa homeowners face intense summer thunderstorms, hurricane season, year-round humidity, and a mix of aging housing stock and new construction from South Tampa to New Tampa.", weatherNote: "Tampa averages 51 inches of rain per year, well above the national average. Your gutter system has to move serious water volume or your foundation pays the price.", nearby: ["clearwater","brandon","temple-terrace","riverview"] },
+  clearwater: { name: "Clearwater", localP: "Clearwater's coastal location means salt air, tropical storms, and intense UV exposure year-round, conditions that corrode anything less than proper aluminum.", weatherNote: "Coastal proximity adds salt air corrosion on top of Florida's standard heavy rain, UV, and humidity. Aluminum is the material of choice because it handles all of it.", nearby: ["palm-harbor","dunedin","largo","tarpon-springs"] },
+  "st-petersburg": { name: "St. Petersburg", localP: "St. Pete's mix of historic homes, mid-century neighborhoods, and new construction means every job is different, and many older homes still have original wood soffit that's been rotting for decades.", weatherNote: "St. Pete holds the Guinness record for consecutive sunny days, 768. That UV exposure degrades wood soffit and fascia faster than most homeowners realize.", nearby: ["largo","clearwater","tampa","dunedin"] },
+  sarasota: { name: "Sarasota", localP: "Sarasota homeowners expect contractors who match the standard of their properties, from waterfront homes on the keys to established neighborhoods like Palmer Ranch and Lakewood Ranch.", weatherNote: "Coastal storms here drive rain sideways, testing gutters and soffit in ways inland homes rarely experience. Proper install pitch and fastening aren't optional.", nearby: ["bradenton"] },
   bradenton: { name: "Bradenton", localP: "Bradenton sits where coastal weather meets suburban growth, from historic downtown to newer developments in Lakewood Ranch and Parrish.", weatherNote: "Bradenton's position on the Manatee River and Tampa Bay means both coastal storm surges and inland flooding. Functioning gutters are structural protection, not cosmetic.", nearby: ["sarasota"] },
-  lakeland: { name: "Lakeland", localP: "Lakeland's inland position gets Central Florida's intense afternoon thunderstorms without the coastal breeze to dry things out.", weatherNote: "Lakeland sits in Florida's 'Lightning Alley' — one of the most storm-active regions in the country. Afternoon storms dump massive water in short periods.", nearby: ["plant-city","brandon"] },
-  brandon: { name: "Brandon", localP: "Brandon's rapid growth means a mix of housing ages — 1980s established developments alongside brand-new construction, each with different gutter needs.", weatherNote: "Brandon gets Tampa-level thunderstorm activity with more suburban tree coverage, meaning heavier leaf and pine-needle load in gutters.", nearby: ["riverview","tampa","plant-city"] },
+  lakeland: { name: "Lakeland", localP: "Lakeland's inland position gets Central Florida's intense afternoon thunderstorms without the coastal breeze to dry things out.", weatherNote: "Lakeland sits in Florida's 'Lightning Alley', one of the most storm-active regions in the country. Afternoon storms dump massive water in short periods.", nearby: ["plant-city","brandon"] },
+  brandon: { name: "Brandon", localP: "Brandon's rapid growth means a mix of housing ages, 1980s established developments alongside brand-new construction, each with different gutter needs.", weatherNote: "Brandon gets Tampa-level thunderstorm activity with more suburban tree coverage, meaning heavier leaf and pine-needle load in gutters.", nearby: ["riverview","tampa","plant-city"] },
   "wesley-chapel": { name: "Wesley Chapel", localP: "Wesley Chapel is one of Tampa Bay's fastest-growing communities, with new construction and established neighborhoods side by side.", weatherNote: "Pasco County's flat terrain makes drainage critical. Without properly pitched gutters, water pools at the foundation instead of being directed away.", nearby: ["land-o-lakes","lutz","tampa"] },
   "palm-harbor": { name: "Palm Harbor", localP: "Palm Harbor's tree-lined streets and Gulf proximity make gutter maintenance and corrosion resistance both critical year-round.", weatherNote: "Palm Harbor's mature tree canopy means more gutter debris than most Pinellas communities. Guards and regular maintenance are especially important here.", nearby: ["tarpon-springs","dunedin","clearwater"] },
-  riverview: { name: "Riverview", localP: "Riverview's explosive new-construction growth brought thousands of homes built fast by volume builders — often with gutter work that cut corners on pitch and hanger spacing.", weatherNote: "Riverview's position along the Alafia River makes proper drainage critical for preventing foundation issues and yard erosion.", nearby: ["brandon","sun-city-center","ruskin"] },
+  riverview: { name: "Riverview", localP: "Riverview's explosive new-construction growth brought thousands of homes built fast by volume builders, often with gutter work that cut corners on pitch and hanger spacing.", weatherNote: "Riverview's position along the Alafia River makes proper drainage critical for preventing foundation issues and yard erosion.", nearby: ["brandon","sun-city-center","ruskin"] },
   "new-port-richey": { name: "New Port Richey", localP: "New Port Richey's mix of waterfront properties and established inland neighborhoods requires gutter and soffit systems that handle coastal storms and tree debris both.", weatherNote: "Gulf-facing properties here take direct impact from tropical systems. Hurricane-rated fastening and proper gutter sizing aren't optional.", nearby: ["spring-hill","tarpon-springs"] },
-  largo: { name: "Largo", localP: "Largo sits in the heart of Pinellas County — coastal salt air, heavy tree canopy, and established housing with soffit and fascia well past their lifespan.", weatherNote: "Central Pinellas location means both coastal weather and suburban tree coverage — a combination that accelerates gutter and soffit wear.", nearby: ["clearwater","st-petersburg"] },
+  largo: { name: "Largo", localP: "Largo sits in the heart of Pinellas County, coastal salt air, heavy tree canopy, and established housing with soffit and fascia well past their lifespan.", weatherNote: "Central Pinellas location means both coastal weather and suburban tree coverage, a combination that accelerates gutter and soffit wear.", nearby: ["clearwater","st-petersburg"] },
   "spring-hill": { name: "Spring Hill", localP: "Spring Hill's affordable housing and growing community make quality contractor work in high demand but not always easy to find.", weatherNote: "Spring Hill's inland position means intense thunderstorms and heavy seasonal rain without coastal wind relief. Gutters here work hard year-round.", nearby: ["new-port-richey","land-o-lakes"] },
-  "tarpon-springs": { name: "Tarpon Springs", localP: "Tarpon Springs' Greek heritage and historic Sponge Docks sit alongside waterfront cottages and newer inland developments — all taking constant stress from Gulf storms.", weatherNote: "Direct Gulf exposure means salt-laden winds and driving rain during tropical systems. Corrosion-resistant aluminum and proper fastening are non-negotiable.", nearby: ["palm-harbor","dunedin","new-port-richey"] },
+  "tarpon-springs": { name: "Tarpon Springs", localP: "Tarpon Springs' Greek heritage and historic Sponge Docks sit alongside waterfront cottages and newer inland developments, all taking constant stress from Gulf storms.", weatherNote: "Direct Gulf exposure means salt-laden winds and driving rain during tropical systems. Corrosion-resistant aluminum and proper fastening are non-negotiable.", nearby: ["palm-harbor","dunedin","new-port-richey"] },
   "land-o-lakes": { name: "Land O' Lakes", localP: "Land O' Lakes is one of Pasco's fastest-growing areas, with volume-builder homes that often got fast, imprecise gutter installs from day one.", weatherNote: "Flat terrain and numerous lakes/wetlands mean drainage is everything. Without properly pitched gutters, water pools at foundations instead of draining away.", nearby: ["lutz","wesley-chapel"] },
-  dunedin: { name: "Dunedin", localP: "Dunedin's historic downtown and tree-lined streets are full of character-rich homes — which also means aging wood soffit, fascia, and gutter systems due for replacement.", weatherNote: "Dunedin's position between the Gulf and St. Joseph Sound means constant salt air and direct impact from coastal storms.", nearby: ["clearwater","palm-harbor","tarpon-springs"] },
-  ruskin: { name: "Ruskin", localP: "Ruskin sits in southern Hillsborough where agricultural roots meet rapid residential growth — waterfront and inland alike.", weatherNote: "Low-lying terrain along Tampa Bay makes water management critical. Heavy seasonal rains plus high water tables put your gutters on the front line.", nearby: ["sun-city-center","riverview","brandon"] },
+  dunedin: { name: "Dunedin", localP: "Dunedin's historic downtown and tree-lined streets are full of character-rich homes, which also means aging wood soffit, fascia, and gutter systems due for replacement.", weatherNote: "Dunedin's position between the Gulf and St. Joseph Sound means constant salt air and direct impact from coastal storms.", nearby: ["clearwater","palm-harbor","tarpon-springs"] },
+  ruskin: { name: "Ruskin", localP: "Ruskin sits in southern Hillsborough where agricultural roots meet rapid residential growth, waterfront and inland alike.", weatherNote: "Low-lying terrain along Tampa Bay makes water management critical. Heavy seasonal rains plus high water tables put your gutters on the front line.", nearby: ["sun-city-center","riverview","brandon"] },
   "sun-city-center": { name: "Sun City Center", localP: "Sun City Center is one of Florida's premier active retirement communities, where homeowners take pride in well-maintained properties and don't accept cut-rate work.", weatherNote: "Southern Hillsborough gets the full force of summer thunderstorms and tropical systems. Reliable gutters are essential protection, not optional.", nearby: ["ruskin","riverview","brandon"] },
   "temple-terrace": { name: "Temple Terrace", localP: "Temple Terrace is one of Tampa's most established communities, with decades-old neighborhoods where many homes are still running original wood soffit.", weatherNote: "Dense tree coverage means constant gutter debris from oaks and pines. The Hillsborough River corridor adds humidity and drainage challenges.", nearby: ["tampa","brandon","lutz"] },
-  "plant-city": { name: "Plant City", localP: "Plant City — the Strawberry Capital of the World — sits in eastern Hillsborough where suburban living meets agricultural heritage and intense inland weather.", weatherNote: "Inland position puts Plant City squarely in Florida's thunderstorm corridor. Intense afternoon downpours dump huge water volume in short bursts.", nearby: ["brandon","lakeland","tampa"] },
-  lutz: { name: "Lutz", localP: "Lutz straddles the Hillsborough-Pasco county line — heavy tree canopy, established neighborhoods, and newer developments side by side.", weatherNote: "Oak and pine canopy drops debris year-round. Combined with heavy seasonal rains, clogged gutters here lead to fascia rot and foundation issues fast.", nearby: ["land-o-lakes","wesley-chapel","tampa"] },
-  "south-tampa": { name: "South Tampa", localP: "South Tampa runs from Bayshore Boulevard to Davis Islands, Hyde Park to Beach Park — historic homes with original copper, premium new construction, and HOA architectural review boards that don't accept rushed work.", weatherNote: "Bayshore-facing properties get constant salt air plus direct exposure to tropical-system storm surge. Inland South Tampa sees the same intense afternoon thunderstorms as the rest of the city. Both demand corrosion-resistant aluminum and proper hurricane-rated fastening.", nearby: ["tampa","clearwater","st-petersburg"] },
+  "plant-city": { name: "Plant City", localP: "Plant City, the Strawberry Capital of the World, sits in eastern Hillsborough where suburban living meets agricultural heritage and intense inland weather.", weatherNote: "Inland position puts Plant City squarely in Florida's thunderstorm corridor. Intense afternoon downpours dump huge water volume in short bursts.", nearby: ["brandon","lakeland","tampa"] },
+  lutz: { name: "Lutz", localP: "Lutz straddles the Hillsborough-Pasco county line, heavy tree canopy, established neighborhoods, and newer developments side by side.", weatherNote: "Oak and pine canopy drops debris year-round. Combined with heavy seasonal rains, clogged gutters here lead to fascia rot and foundation issues fast.", nearby: ["land-o-lakes","wesley-chapel","tampa"] },
+  "south-tampa": { name: "South Tampa", localP: "South Tampa runs from Bayshore Boulevard to Davis Islands, Hyde Park to Beach Park, historic homes with original copper, premium new construction, and HOA architectural review boards that don't accept rushed work.", weatherNote: "Bayshore-facing properties get constant salt air plus direct exposure to tropical-system storm surge. Inland South Tampa sees the same intense afternoon thunderstorms as the rest of the city. Both demand corrosion-resistant aluminum and proper hurricane-rated fastening.", nearby: ["tampa","clearwater","st-petersburg"] },
 };
 
 // ── Next.js config ────────────────────────────────────────────────────────
@@ -195,7 +195,7 @@ export async function generateMetadata({ params }) {
       `${svc.short} installation ${city.name} FL`,
     ],
     openGraph: {
-      title: `${svc.name} — ${city.name}, FL | JR One Aluminum`,
+      title: `${svc.name}, ${city.name}, FL | JR One Aluminum`,
       description: `${svc.name} in ${city.name}, FL. Specialist aluminum contractor, over 30 years experience. (844) 444-3114.`,
       url,
       type: "website",
@@ -203,7 +203,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: `${svc.name} in ${city.name}, FL`,
-      description: `Specialist ${svc.short} in ${city.name}. Free estimate — (844) 444-3114.`,
+      description: `Specialist ${svc.short} in ${city.name}. Free estimate, (844) 444-3114.`,
     },
   };
 }
@@ -316,7 +316,7 @@ export default async function CityServicePage({ params }) {
             {city.weatherNote}
           </p>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: C.offWhite }}>
-            {svc.who} JR One has over 30 years of Tampa Bay aluminum specialist experience, and we bring the same Gold Standard service to every {city.name} project — fully insured, bilingual English/Spanish, family-owned and family-operated.
+            {svc.who} JR One has over 30 years of Tampa Bay aluminum specialist experience, and we bring the same Gold Standard service to every {city.name} project, fully insured, bilingual English/Spanish, family-owned and family-operated.
           </p>
         </section>
 
