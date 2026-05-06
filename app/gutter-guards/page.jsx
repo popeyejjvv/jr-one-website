@@ -17,7 +17,8 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
-import { CheckCircleIcon, PhoneIcon, ShieldIcon, RulerIcon, SparkleIcon } from "../../lib/icons";
+import Peak301Alert from "../../components/ui/Peak301Alert";
+import { CheckCircleIcon, PhoneIcon } from "../../lib/icons";
 
 const T = {
   en: {
@@ -57,10 +58,10 @@ const T = {
     guardTitle: "Choose the Right Protection",
     guardSub: "Four guard systems. Each designed for a specific level of protection and budget.",
     guardTypes: [
-      { icon: ShieldIcon, title: "Aluminum Gutter Guards", desc: "Heavy-duty aluminum guards that snap onto your existing gutters. Built to handle Florida's intense UV, heavy rain, and high winds without warping, rusting, or deteriorating. The strongest, longest-lasting guard option we offer.", spec: "Material: Aluminum" },
-      { icon: RulerIcon, title: "Standard Gutter Guards", desc: "A reliable, cost-effective guard that keeps leaves and large debris out of your gutters while maintaining solid water flow. A practical choice for homes with moderate tree coverage that want gutter protection without the higher price point.", spec: "Type: Standard screen" },
-      { icon: SparkleIcon, title: "Micro Mesh Gutter Guards", desc: "The finest filtration available. Micro mesh screens block pine needles, shingle grit, seed pods, and even roof sand granules while still handling Florida's heaviest downpours. Our top recommendation for homes surrounded by trees.", spec: "Filtration: Ultra-fine mesh" },
-      { icon: ShieldIcon, title: "EZ Mesh Gutter Guards", desc: "Quick-install mesh guards that provide debris protection with minimal installation time. A smart balance between performance and value. Effective against leaves and medium debris while keeping your gutter system flowing during Tampa's storm season.", spec: "Install: Quick-fit design" },
+      { icon: "🛡️", title: "Aluminum Gutter Guards", desc: "Heavy-duty aluminum guards that snap onto your existing gutters. Built to handle Florida's intense UV, heavy rain, and high winds without warping, rusting, or deteriorating. The strongest, longest-lasting guard option we offer.", spec: "Material: Aluminum" },
+      { icon: "📐", title: "Standard Gutter Guards", desc: "A reliable, cost-effective guard that keeps leaves and large debris out of your gutters while maintaining solid water flow. A practical choice for homes with moderate tree coverage that want gutter protection without the higher price point.", spec: "Type: Standard screen" },
+      { icon: "✨", title: "Micro Mesh Gutter Guards", desc: "The finest filtration available. Micro mesh screens block pine needles, shingle grit, seed pods, and even roof sand granules while still handling Florida's heaviest downpours. Our top recommendation for homes surrounded by trees.", spec: "Filtration: Ultra-fine mesh" },
+      { icon: "🔧", title: "EZ Mesh Gutter Guards", desc: "Quick-install mesh guards that provide debris protection with minimal installation time. A smart balance between performance and value. Effective against leaves and medium debris while keeping your gutter system flowing during Tampa's storm season.", spec: "Install: Quick-fit design" },
     ],
     goldEyebrow: "THE GOLD STANDARD",
     goldTitle: "Our Guard Installation Process",
@@ -139,10 +140,10 @@ const T = {
     guardTitle: "Elija la Proteccion Correcta",
     guardSub: "Cuatro sistemas de protectores. Cada uno disenado para un nivel especifico de proteccion y presupuesto.",
     guardTypes: [
-      { icon: ShieldIcon, title: "Protectores de Aluminio", desc: "Protectores de aluminio de alta resistencia que se ajustan a sus canaletas existentes. Disenados para manejar los rayos UV intensos, lluvias fuertes y vientos altos de Florida sin deformarse, oxidarse o deteriorarse. La opcion mas fuerte y duradera que ofrecemos.", spec: "Material: Aluminio" },
-      { icon: RulerIcon, title: "Protectores Estandar", desc: "Un protector confiable y economico que mantiene las hojas y escombros grandes fuera de sus canaletas mientras mantiene un buen flujo de agua. Una opcion practica para hogares con cobertura moderada de arboles que desean proteccion sin precio elevado.", spec: "Tipo: Malla estandar" },
-      { icon: SparkleIcon, title: "Protectores de Micro Malla", desc: "La filtracion mas fina disponible. Las mallas micro filtran agujas de pino, granulos de tejas, vainas de semillas e incluso granulos de arena del techo mientras manejan los aguaceros mas fuertes de Florida. Nuestra principal recomendacion para hogares rodeados de arboles.", spec: "Filtracion: Malla ultra fina" },
-      { icon: ShieldIcon, title: "Protectores EZ Mesh", desc: "Protectores de malla de instalacion rapida que brindan proteccion contra escombros con tiempo minimo de instalacion. Un balance inteligente entre rendimiento y valor. Efectivos contra hojas y escombros medianos mientras mantienen su sistema fluyendo durante la temporada de tormentas.", spec: "Instalacion: Diseno de ajuste rapido" },
+      { icon: "🛡️", title: "Protectores de Aluminio", desc: "Protectores de aluminio de alta resistencia que se ajustan a sus canaletas existentes. Disenados para manejar los rayos UV intensos, lluvias fuertes y vientos altos de Florida sin deformarse, oxidarse o deteriorarse. La opcion mas fuerte y duradera que ofrecemos.", spec: "Material: Aluminio" },
+      { icon: "📐", title: "Protectores Estandar", desc: "Un protector confiable y economico que mantiene las hojas y escombros grandes fuera de sus canaletas mientras mantiene un buen flujo de agua. Una opcion practica para hogares con cobertura moderada de arboles que desean proteccion sin precio elevado.", spec: "Tipo: Malla estandar" },
+      { icon: "✨", title: "Protectores de Micro Malla", desc: "La filtracion mas fina disponible. Las mallas micro filtran agujas de pino, granulos de tejas, vainas de semillas e incluso granulos de arena del techo mientras manejan los aguaceros mas fuertes de Florida. Nuestra principal recomendacion para hogares rodeados de arboles.", spec: "Filtracion: Malla ultra fina" },
+      { icon: "🔧", title: "Protectores EZ Mesh", desc: "Protectores de malla de instalacion rapida que brindan proteccion contra escombros con tiempo minimo de instalacion. Un balance inteligente entre rendimiento y valor. Efectivos contra hojas y escombros medianos mientras mantienen su sistema fluyendo durante la temporada de tormentas.", spec: "Instalacion: Diseno de ajuste rapido" },
     ],
     goldEyebrow: "EL ESTANDAR DE ORO",
     goldTitle: "Nuestro Proceso de Instalacion",
@@ -200,6 +201,9 @@ const inputStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
+const ACCENT = "#8B9DAF";
+const ACCENT_LIGHT = "#A3B5C8";
+
 export default function GutterGuardsPage() {
   const { lang } = useLanguage();
   const t = T[lang];
@@ -251,7 +255,7 @@ export default function GutterGuardsPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </nav>
@@ -270,12 +274,12 @@ export default function GutterGuardsPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container>
             <div style={{ position: "relative", zIndex: 1, maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>
                 {t.heroTag}
               </div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span>
+                <span style={{ color: ACCENT }}>{t.heroH1Gold}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>
                 {t.heroP}
@@ -287,7 +291,7 @@ export default function GutterGuardsPage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "120px", marginTop: "4px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -302,7 +306,7 @@ export default function GutterGuardsPage() {
             <SectionHeading eyebrow={t.problemTag} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
-                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: "4px solid var(--jr-gold)" }}>
+                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: `4px solid ${ACCENT}` }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
                 </article>
@@ -318,7 +322,7 @@ export default function GutterGuardsPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{s.desc}</p>
                 </article>
@@ -332,19 +336,16 @@ export default function GutterGuardsPage() {
           <Container>
             <SectionHeading eyebrow={t.guardEyebrow} title={t.guardTitle} subtitle={t.guardSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.guardTypes.map((g, i) => {
-                const Icon = g.icon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: "4px solid var(--jr-gold)" }}>
-                    <div style={{ display: "inline-flex", padding: "10px", background: "var(--jr-gold-pale)", borderRadius: "var(--jr-radius-md)", color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
-                      <Icon size={24} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6, marginBottom: "var(--jr-space-3)" }}>{g.desc}</p>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 600, color: "var(--jr-gold)", letterSpacing: "1px", padding: "6px 12px", background: "var(--jr-gold-pale)", borderRadius: "var(--jr-radius-sm)", display: "inline-block" }}>{g.spec}</div>
-                  </article>
-                );
-              })}
+              {t.guardTypes.map((g, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `4px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{g.icon}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6, marginBottom: "var(--jr-space-3)" }}>{g.desc}</p>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 600, color: ACCENT, letterSpacing: "1px", padding: "6px 12px", background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-sm)", display: "inline-block" }}>{g.spec}</div>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -379,6 +380,9 @@ export default function GutterGuardsPage() {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT ── */}
+        <Peak301Alert />
+
         {/* ── QUOTE FORM ── */}
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">
@@ -398,7 +402,7 @@ export default function GutterGuardsPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
@@ -411,7 +415,7 @@ export default function GutterGuardsPage() {
               )}
               <div style={{ marginTop: "var(--jr-space-8)", textAlign: "center" }}>
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-2)" }}>{t.preferTalk}</p>
-                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-gold)", textDecoration: "none" }}>
+                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: ACCENT, textDecoration: "none" }}>
                   <PhoneIcon size={18} /> (844) 444-3114
                 </a>
               </div>

@@ -21,12 +21,11 @@ import FAQAccordion from "../../components/ui/FAQAccordion";
 import {
   CheckCircleIcon,
   PhoneIcon,
-  ShieldIcon,
-  CardIcon,
-  RoofEdgeIcon,
-  WaterDropIcon,
-  SparkleIcon,
 } from "../../lib/icons";
+
+// Page-identity accent: storm-alert red. Peak 301 IS the alert page.
+const ACCENT = "#B11A21";
+const ACCENT_LIGHT = "#D42A2A";
 
 const T = {
   en: {
@@ -55,10 +54,10 @@ const T = {
     problemEyebrow: "The Problem",
     problemTitle: "Why Tampa Homeowners Are Losing Coverage",
     problems: [
-      { icon: "shield", title: "Insurance non-renewal notices", desc: "Florida insurers are dropping homeowners with roofs over 15 years old, regardless of condition. A non-renewal letter means scrambling for expensive surplus coverage or facing a gap in protection." },
-      { icon: "card", title: "Full replacement costs $15K to $25K+", desc: "A new roof is one of the most expensive home repairs. Many homeowners can't afford it on short notice, and shouldn't have to if their existing shingle roof still has structural life left." },
-      { icon: "water", title: "Shingle deterioration from inside", desc: "Florida's UV exposure and heat cycles dry out the oils in your shingles over time. They become brittle, crack, curl, and lose granules. Not because they're worn out, but because they're dried out." },
-      { icon: "edge", title: "Storm vulnerability rises with age", desc: "Dried, brittle shingles are far more likely to lift, crack, or fly off during hurricane-force winds. Restored flexibility means better storm performance." },
+      { emoji: "🛡️", title: "Insurance non-renewal notices", desc: "Florida insurers are dropping homeowners with roofs over 15 years old, regardless of condition. A non-renewal letter means scrambling for expensive surplus coverage or facing a gap in protection." },
+      { emoji: "💳", title: "Full replacement costs $15K to $25K+", desc: "A new roof is one of the most expensive home repairs. Many homeowners can't afford it on short notice, and shouldn't have to if their existing shingle roof still has structural life left." },
+      { emoji: "💧", title: "Shingle deterioration from inside", desc: "Florida's UV exposure and heat cycles dry out the oils in your shingles over time. They become brittle, crack, curl, and lose granules. Not because they're worn out, but because they're dried out." },
+      { emoji: "🌪️", title: "Storm vulnerability rises with age", desc: "Dried, brittle shingles are far more likely to lift, crack, or fly off during hurricane-force winds. Restored flexibility means better storm performance." },
     ],
     solutionEyebrow: "The Solution",
     solutionTitle: "How Peak 301 Saves Your Roof and Your Insurance",
@@ -140,10 +139,10 @@ const T = {
     problemEyebrow: "El Problema",
     problemTitle: "Por Qué Tampa Está Perdiendo Cobertura",
     problems: [
-      { icon: "shield", title: "Avisos de no renovación de seguros", desc: "Las aseguradoras de Florida están cancelando propietarios con techos de más de 15 años, sin importar la condición. Una carta de no renovación significa buscar cobertura costosa o enfrentar un vacío en la protección." },
-      { icon: "card", title: "El reemplazo total cuesta $15K a $25K+", desc: "Un techo nuevo es una de las reparaciones más costosas. Muchos propietarios no pueden pagarlo con poco aviso, y no deberían tener que hacerlo si su techo de tejas existente aún tiene vida estructural." },
-      { icon: "water", title: "Deterioro de tejas desde adentro", desc: "La exposición UV y los ciclos de calor de Florida secan los aceites de sus tejas con el tiempo. Se vuelven frágiles, se agrietan, se curvan y pierden gránulos. No porque estén gastadas, sino porque están secas." },
-      { icon: "edge", title: "La vulnerabilidad a tormentas crece con la edad", desc: "Las tejas secas y frágiles tienen mucha más probabilidad de levantarse, agrietarse o salir volando durante vientos de huracán. La flexibilidad restaurada significa mejor rendimiento ante tormentas." },
+      { emoji: "🛡️", title: "Avisos de no renovación de seguros", desc: "Las aseguradoras de Florida están cancelando propietarios con techos de más de 15 años, sin importar la condición. Una carta de no renovación significa buscar cobertura costosa o enfrentar un vacío en la protección." },
+      { emoji: "💳", title: "El reemplazo total cuesta $15K a $25K+", desc: "Un techo nuevo es una de las reparaciones más costosas. Muchos propietarios no pueden pagarlo con poco aviso, y no deberían tener que hacerlo si su techo de tejas existente aún tiene vida estructural." },
+      { emoji: "💧", title: "Deterioro de tejas desde adentro", desc: "La exposición UV y los ciclos de calor de Florida secan los aceites de sus tejas con el tiempo. Se vuelven frágiles, se agrietan, se curvan y pierden gránulos. No porque estén gastadas, sino porque están secas." },
+      { emoji: "🌪️", title: "La vulnerabilidad a tormentas crece con la edad", desc: "Las tejas secas y frágiles tienen mucha más probabilidad de levantarse, agrietarse o salir volando durante vientos de huracán. La flexibilidad restaurada significa mejor rendimiento ante tormentas." },
     ],
     solutionEyebrow: "La Solución",
     solutionTitle: "Cómo Peak 301 Salva Su Techo y Su Seguro",
@@ -199,14 +198,6 @@ const T = {
     formSent: "Solicitud Recibida",
     formSentSub: "Nos pondremos en contacto en horas para programar su inspección de techo.",
   },
-};
-
-const ICON_MAP = {
-  shield: ShieldIcon,
-  card: CardIcon,
-  water: WaterDropIcon,
-  edge: RoofEdgeIcon,
-  spark: SparkleIcon,
 };
 
 const inputStyle = {
@@ -301,24 +292,37 @@ export default function Peak301Page() {
           />
           <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>
-                {t.heroTag}
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase", display: "inline-flex", alignItems: "center", gap: 8 }}>
+                <span aria-hidden style={{ fontSize: 14 }}>⚠️</span> {t.heroTag}
               </div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1a} {t.heroH1b}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1c}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1c}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "660px" }}>
                 {t.heroP}
               </p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-8)" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.heroCta}</Button>
+                <Button
+                  href="#quote-form"
+                  variant="primary"
+                  size="lg"
+                  iconRight
+                  style={{
+                    background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                    color: "#FFFFFF",
+                    border: `2px solid ${ACCENT}`,
+                    boxShadow: `0 4px 14px rgba(177, 26, 33, 0.32)`,
+                  }}
+                >
+                  {t.heroCta}
+                </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -330,25 +334,38 @@ export default function Peak301Page() {
         {/* ── INSURANCE ALERT ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-16) 0", borderTop: "var(--jr-hair-darker)", borderBottom: "var(--jr-hair-darker)" }}>
           <Container size="narrow" style={{ textAlign: "center" }}>
-            <div style={{ display: "inline-block", padding: "6px 14px", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.28)", borderRadius: "var(--jr-radius-sm)", marginBottom: "var(--jr-space-3)" }}>
-              <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "3px", textTransform: "uppercase" }}>
-                {t.insuranceLabel}
+            <div style={{ display: "inline-block", padding: "6px 14px", background: "rgba(177, 26, 33, 0.10)", border: `1px solid ${ACCENT}`, borderRadius: "var(--jr-radius-sm)", marginBottom: "var(--jr-space-3)" }}>
+              <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "3px", textTransform: "uppercase" }}>
+                <span aria-hidden style={{ marginRight: 6 }}>⚠️</span>{t.insuranceLabel}
               </span>
             </div>
             <div style={{ display: "flex", justifyContent: "center", gap: "var(--jr-space-12)", flexWrap: "wrap", margin: "var(--jr-space-8) 0" }}>
               <div>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{t.insuranceStat1}</div>
+                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{t.insuranceStat1}</div>
                 <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", maxWidth: "220px" }}>{t.insuranceStat1Label}</div>
               </div>
               <div>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{t.insuranceStat2}</div>
+                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{t.insuranceStat2}</div>
                 <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", maxWidth: "220px" }}>{t.insuranceStat2Label}</div>
               </div>
             </div>
             <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.7, maxWidth: "720px", margin: "0 auto var(--jr-space-8)" }}>
               {t.insuranceDesc}
             </p>
-            <Button href="/insurance-resource-center" variant="primary" size="lg" iconRight>{t.insuranceCta}</Button>
+            <Button
+              href="/insurance-resource-center"
+              variant="primary"
+              size="lg"
+              iconRight
+              style={{
+                background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                color: "#FFFFFF",
+                border: `2px solid ${ACCENT}`,
+                boxShadow: `0 4px 14px rgba(177, 26, 33, 0.32)`,
+              }}
+            >
+              {t.insuranceCta}
+            </Button>
             <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", marginTop: "var(--jr-space-4)" }}>{t.insuranceSub}</p>
           </Container>
         </section>
@@ -358,18 +375,15 @@ export default function Peak301Page() {
           <Container>
             <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = ICON_MAP[p.icon] || ShieldIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: "4px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(177, 26, 33, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{p.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -381,7 +395,7 @@ export default function Peak301Page() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{s.desc}</p>
                 </article>
@@ -400,9 +414,9 @@ export default function Peak301Page() {
                 <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-3xl)", fontWeight: 800, color: "var(--jr-paper)" }}>{t.mathReplacementPrice}</div>
                 <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", marginTop: "var(--jr-space-3)", lineHeight: 1.6 }}>{t.mathReplacementDesc}</div>
               </div>
-              <div style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-gold)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", textAlign: "center", boxShadow: "var(--jr-shadow-gold)" }}>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-3)", textTransform: "uppercase" }}>{t.mathPeakLabel}</div>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-3xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{t.mathPeakPrice}</div>
+              <div style={{ background: "var(--jr-navy-deep)", border: `1px solid ${ACCENT}`, borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", textAlign: "center", boxShadow: `0 6px 20px rgba(177, 26, 33, 0.22)` }}>
+                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-3)", textTransform: "uppercase" }}>{t.mathPeakLabel}</div>
+                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-3xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{t.mathPeakPrice}</div>
                 <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", marginTop: "var(--jr-space-3)", lineHeight: 1.6 }}>{t.mathPeakDesc}</div>
               </div>
             </div>
@@ -449,12 +463,25 @@ export default function Peak301Page() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)", textAlign: "left" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="md"
+                    fullWidth
+                    iconRight
+                    disabled={loading}
+                    style={{
+                      background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                      color: "#FFFFFF",
+                      border: `2px solid ${ACCENT}`,
+                      boxShadow: `0 4px 14px rgba(177, 26, 33, 0.32)`,
+                    }}
+                  >
                     {loading ? "Sending..." : t.formBtn}
                   </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formNote}</p>

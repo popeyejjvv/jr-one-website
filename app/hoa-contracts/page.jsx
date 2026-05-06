@@ -17,21 +17,15 @@ import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import CTABand from "../../components/ui/CTABand";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
   MapPinIcon,
-  HouseIcon,
-  WaterDropIcon,
-  ShieldIcon,
-  WrenchIcon,
-  RoofEdgeIcon,
-  BroomIcon,
-  HardHatIcon,
 } from "../../lib/icons";
 
-const PROBLEM_ICONS = [HouseIcon, WaterDropIcon, ShieldIcon, HardHatIcon];
-const SCOPE_ICONS = [BroomIcon, ShieldIcon, WrenchIcon, RoofEdgeIcon, WaterDropIcon, HardHatIcon];
+const PROBLEM_EMOJIS = ["🏠", "💧", "🛡️", "👷"];
+const SCOPE_EMOJIS = ["🧹", "🛡️", "🔧", "🏗️", "💧", "⚠️"];
 
 const T = {
   en: {
@@ -226,6 +220,9 @@ const inputLightStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
+const ACCENT = "#C8952E";
+const ACCENT_LIGHT = "#D4A843";
+
 export default function HOAContractsPage() {
   const { lang } = useLanguage();
   const t = T[lang];
@@ -362,31 +359,26 @@ export default function HOAContractsPage() {
               theme="dark"
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = PROBLEM_ICONS[i] || HouseIcon;
-                return (
-                  <article
-                    key={i}
-                    style={{
-                      background: "var(--jr-navy)",
-                      border: "1px solid var(--jr-navy-3)",
-                      borderLeft: "4px solid var(--jr-gold)",
-                      borderRadius: "var(--jr-radius-lg)",
-                      padding: "var(--jr-space-6)",
-                    }}
-                  >
-                    <div style={{ color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
-                      <Icon size={28} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>
-                      {p.title}
-                    </h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>
-                      {p.desc}
-                    </p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article
+                  key={i}
+                  style={{
+                    background: "var(--jr-navy)",
+                    border: "1px solid var(--jr-navy-3)",
+                    borderLeft: `4px solid ${ACCENT}`,
+                    borderRadius: "var(--jr-radius-lg)",
+                    padding: "var(--jr-space-6)",
+                  }}
+                >
+                  <span aria-hidden style={{ display: "inline-block", fontSize: 28, lineHeight: 1, marginBottom: "var(--jr-space-3)" }}>{PROBLEM_EMOJIS[i] || "🏠"}</span>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>
+                    {p.title}
+                  </h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>
+                    {p.desc}
+                  </p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -437,31 +429,28 @@ export default function HOAContractsPage() {
               theme="dark"
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.scopeItems.map((g, i) => {
-                const Icon = SCOPE_ICONS[i] || ShieldIcon;
-                return (
-                  <article
-                    key={i}
-                    style={{
-                      background: "var(--jr-navy)",
-                      border: "1px solid var(--jr-navy-3)",
-                      borderTop: "4px solid var(--jr-gold)",
-                      borderRadius: "var(--jr-radius-lg)",
-                      padding: "var(--jr-space-6)",
-                    }}
-                  >
-                    <div style={{ color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
-                      <Icon size={28} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>
-                      {g.title}
-                    </h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>
-                      {g.desc}
-                    </p>
-                  </article>
-                );
-              })}
+              {t.scopeItems.map((g, i) => (
+                <article
+                  key={i}
+                  style={{
+                    background: "var(--jr-navy)",
+                    border: "1px solid var(--jr-navy-3)",
+                    borderTop: `4px solid ${ACCENT}`,
+                    borderRadius: "var(--jr-radius-lg)",
+                    padding: "var(--jr-space-6)",
+                  }}
+                >
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{SCOPE_EMOJIS[i] || "🛡️"}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>
+                    {g.title}
+                  </h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>
+                    {g.desc}
+                  </p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -542,6 +531,9 @@ export default function HOAContractsPage() {
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>
         </section>
+
+        {/* PEAK 301 ALERT */}
+        <Peak301Alert />
 
         {/* CTA FORM */}
         <section

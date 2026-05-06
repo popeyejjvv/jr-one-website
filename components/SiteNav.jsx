@@ -8,7 +8,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "../lib/LanguageContext";
-import { ChevronDownIcon, MenuIcon, XIcon, PhoneIcon, RulerIcon, CardIcon, GiftIcon } from "../lib/icons";
+import { ChevronDownIcon, MenuIcon, XIcon, PhoneIcon } from "../lib/icons";
 
 const SERVICE_HREFS = [
   "/7-inch-gutters", "/commercial-gutters", "/copper-gutters", "/drainage-assessment",
@@ -29,9 +29,9 @@ const T = {
     navLabels: ["The Gold Standard", "About", "Contact", "FAQ", "Projects"],
     featureLabels: ["Estimator", "Financing", "Referral"],
     promoBanner: [
-      "Use the aerial estimator. 5% off your project.",
-      "Financing available. Flexible payment plans.",
-      "Refer a neighbor. You get $80, they save 10%.",
+      "📐 Use the aerial estimator. 5% off your project.",
+      "💳 Financing available. Flexible payment plans.",
+      "🎁 Refer a neighbor. You get $80, they save 10%.",
     ],
     open: "Open menu",
     close: "Close menu",
@@ -42,16 +42,20 @@ const T = {
     navLabels: ["El Estándar de Oro", "Nosotros", "Contacto", "Preguntas Frecuentes", "Proyectos"],
     featureLabels: ["Estimador", "Financiamiento", "Referidos"],
     promoBanner: [
-      "Usa el estimador aéreo. 5% de descuento en tu proyecto.",
-      "Financiamiento disponible. Planes de pago flexibles.",
-      "Refiere a un vecino. Tú ganas $80, él ahorra 10%.",
+      "📐 Usa el estimador aéreo. 5% de descuento en tu proyecto.",
+      "💳 Financiamiento disponible. Planes de pago flexibles.",
+      "🎁 Refiere a un vecino. Tú ganas $80, él ahorra 10%.",
     ],
     open: "Abrir menú",
     close: "Cerrar menú",
   },
 };
 
-const FEATURE_ICONS = [RulerIcon, CardIcon, GiftIcon];
+const FEATURE_META = [
+  { color: "#3B82F6", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.30)", emoji: "📐" }, // Estimator: blue
+  { color: "#22C55E", bg: "rgba(34, 197, 94, 0.15)", border: "rgba(34, 197, 94, 0.30)", emoji: "💳" }, // Financing: green
+  { color: "#E91E8C", bg: "rgba(233, 30, 140, 0.15)", border: "rgba(233, 30, 140, 0.30)", emoji: "🎁" }, // Referral: pink
+];
 
 export default function SiteNav({ promoBanner }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,17 +68,17 @@ export default function SiteNav({ promoBanner }) {
 
   return (
     <div style={{ position: "sticky", top: 0, zIndex: "var(--jr-z-nav)" }}>
-      {/* Promo banner */}
+      {/* Promo banner — intentionally green for attention-catching */}
       <div
         className="jr-marquee"
         style={{
-          background: "var(--jr-gold)",
-          color: "var(--jr-navy)",
-          padding: "9px 0",
+          background: "#22C55E",
+          color: "#FFFFFF",
+          padding: "8px 0",
           fontFamily: "var(--jr-font-heading)",
           fontSize: "13px",
-          fontWeight: 700,
-          letterSpacing: "0.6px",
+          fontWeight: 600,
+          letterSpacing: "0.5px",
         }}
       >
         <div className="jr-marquee-track">
@@ -214,7 +218,7 @@ export default function SiteNav({ promoBanner }) {
             ))}
 
             {t.featureLabels.map((label, i) => {
-              const Icon = FEATURE_ICONS[i];
+              const meta = FEATURE_META[i];
               return (
                 <a
                   key={`ft-${i}`}
@@ -223,20 +227,20 @@ export default function SiteNav({ promoBanner }) {
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
-                    gap: "6px",
+                    gap: "5px",
                     fontFamily: "var(--jr-font-heading)",
                     fontSize: "11px",
                     fontWeight: 700,
-                    color: "var(--jr-gold)",
-                    background: "var(--jr-gold-pale)",
-                    padding: "6px 12px",
+                    color: meta.color,
+                    background: meta.bg,
+                    padding: "5px 12px",
                     borderRadius: "var(--jr-radius-sm)",
-                    letterSpacing: "0.6px",
-                    border: "1px solid rgba(200, 149, 46, 0.32)",
+                    letterSpacing: "0.5px",
+                    border: `1px solid ${meta.border}`,
                     textTransform: "uppercase",
                   }}
                 >
-                  <Icon size={13} />
+                  <span aria-hidden style={{ fontSize: 12 }}>{meta.emoji}</span>
                   {label}
                 </a>
               );
@@ -379,7 +383,7 @@ export default function SiteNav({ promoBanner }) {
               </a>
             ))}
             {t.featureLabels.map((label, i) => {
-              const Icon = FEATURE_ICONS[i];
+              const meta = FEATURE_META[i];
               return (
                 <a
                   key={`mft-${i}`}
@@ -391,12 +395,12 @@ export default function SiteNav({ promoBanner }) {
                     fontFamily: "var(--jr-font-heading)",
                     fontSize: "14px",
                     fontWeight: 700,
-                    color: "var(--jr-gold)",
+                    color: meta.color,
                     padding: "10px 0",
                     borderBottom: "1px solid rgba(255,255,255,0.06)",
                   }}
                 >
-                  <Icon size={14} />
+                  <span aria-hidden style={{ fontSize: 14 }}>{meta.emoji}</span>
                   {label}
                 </a>
               );

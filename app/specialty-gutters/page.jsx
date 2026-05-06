@@ -17,7 +17,8 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
-import { CheckCircleIcon, PhoneIcon, HouseIcon, RoofEdgeIcon, RulerIcon, WrenchIcon, WaterDropIcon, SparkleIcon } from "../../lib/icons";
+import Peak301Alert from "../../components/ui/Peak301Alert";
+import { CheckCircleIcon, PhoneIcon } from "../../lib/icons";
 
 const T = {
   en: {
@@ -45,20 +46,20 @@ const T = {
     typesTitle: "Specialty Gutter Systems",
     typesSub: "Six profiles. Each engineered for a specific purpose, architecture, and performance requirement.",
     gutterTypes: [
-      { icon: HouseIcon, title: "Half-Round Gutters", desc: "The classic semicircular profile. Elegant, smooth interior reduces debris buildup. Available in multiple sizes for different applications. Pairs perfectly with Mediterranean, Spanish Colonial, and barrel tile roofs. Tampa Bay's most popular architectural styles.", spec: "Profile: Classic semicircular" },
-      { icon: WaterDropIcon, title: "Super Gutter", desc: "The maximum-capacity residential gutter system. Oversized profile engineered to handle Florida's most extreme rainfall without overflow. When standard gutters can't keep up with your roof's water volume, the Super Gutter delivers the performance you need.", spec: "Grade: Maximum capacity" },
-      { icon: RoofEdgeIcon, title: "D-Style Gutters", desc: "A smooth, single-curve profile that sits flush against the fascia for a clean, streamlined appearance. Popular across Florida residential homes for its simple look and reliable water handling. A versatile option that works with virtually any architectural style.", spec: "Profile: Smooth single-curve" },
-      { icon: RulerIcon, title: "Box Style Gutters", desc: "Rectangular profile with maximum water capacity. Built into roof structures or hung externally. Custom-fabricated on a brake for exact dimensions. Ideal for commercial buildings, modern homes, and flat-roof drainage.", spec: "Profile: Rectangular / custom" },
-      { icon: HouseIcon, title: "Commercial Gutters", desc: "Oversized, heavy-duty systems in .032 to .050 gauge aluminum. 6\" to 8\" K-style or box profile with 3x4 or 4x5 downspouts. Closer hanger spacing for hurricane-grade wind resistance. Built for large roof areas.", spec: "Grade: Heavy-duty commercial" },
-      { icon: WrenchIcon, title: "Rollform / Seamless", desc: "Every gutter we install is rollformed on-site from continuous aluminum coil. Custom-cut to the exact length your home needs. No seams means no leaks. Up to 100+ feet in a single piece.", spec: "Method: On-site fabrication" },
+      { emoji: "🏛️", title: "Half-Round Gutters", desc: "The classic semicircular profile. Elegant, smooth interior reduces debris buildup. Available in multiple sizes for different applications. Pairs perfectly with Mediterranean, Spanish Colonial, and barrel tile roofs. Tampa Bay's most popular architectural styles.", spec: "Profile: Classic semicircular" },
+      { emoji: "💧", title: "Super Gutter", desc: "The maximum-capacity residential gutter system. Oversized profile engineered to handle Florida's most extreme rainfall without overflow. When standard gutters can't keep up with your roof's water volume, the Super Gutter delivers the performance you need.", spec: "Grade: Maximum capacity" },
+      { emoji: "📐", title: "D-Style Gutters", desc: "A smooth, single-curve profile that sits flush against the fascia for a clean, streamlined appearance. Popular across Florida residential homes for its simple look and reliable water handling. A versatile option that works with virtually any architectural style.", spec: "Profile: Smooth single-curve" },
+      { emoji: "🏗️", title: "Box Style Gutters", desc: "Rectangular profile with maximum water capacity. Built into roof structures or hung externally. Custom-fabricated on a brake for exact dimensions. Ideal for commercial buildings, modern homes, and flat-roof drainage.", spec: "Profile: Rectangular / custom" },
+      { emoji: "🏠", title: "Commercial Gutters", desc: "Oversized, heavy-duty systems in .032 to .050 gauge aluminum. 6\" to 8\" K-style or box profile with 3x4 or 4x5 downspouts. Closer hanger spacing for hurricane-grade wind resistance. Built for large roof areas.", spec: "Grade: Heavy-duty commercial" },
+      { emoji: "🔧", title: "Rollform / Seamless", desc: "Every gutter we install is rollformed on-site from continuous aluminum coil. Custom-cut to the exact length your home needs. No seams means no leaks. Up to 100+ feet in a single piece.", spec: "Method: On-site fabrication" },
     ],
     whyEyebrow: "WHY SPECIALTY",
     whyTitle: "Why the Right Gutter Matters",
     whySpecialty: [
-      { title: "Right gutter for the right home", desc: "Cookie-cutter doesn't cut it. Your architecture, roof style, and water volume determine the right system." },
-      { title: "Florida rainfall demands capacity", desc: "46 to 52 inches per year, 2 to 4 inches per hour in storms. Undersized gutters overflow. We size every system for Florida's demands." },
-      { title: "Architectural integrity", desc: "Half-round on a barrel tile roof. Box on a modern build. The right gutter completes the design." },
-      { title: "Hurricane-grade construction", desc: "Heavier gauge, closer hanger spacing, and proper sizing for Florida's demanding conditions." },
+      { emoji: "🏠", title: "Right gutter for the right home", desc: "Cookie-cutter doesn't cut it. Your architecture, roof style, and water volume determine the right system." },
+      { emoji: "💧", title: "Florida rainfall demands capacity", desc: "46 to 52 inches per year, 2 to 4 inches per hour in storms. Undersized gutters overflow. We size every system for Florida's demands." },
+      { emoji: "🎨", title: "Architectural integrity", desc: "Half-round on a barrel tile roof. Box on a modern build. The right gutter completes the design." },
+      { emoji: "💪", title: "Hurricane-grade construction", desc: "Heavier gauge, closer hanger spacing, and proper sizing for Florida's demanding conditions." },
     ],
     goldEyebrow: "THE GOLD STANDARD",
     goldTitle: "Our Specialty Gutter Process",
@@ -123,20 +124,20 @@ const T = {
     typesTitle: "Sistemas de Canaletas Especiales",
     typesSub: "Seis perfiles. Cada uno disenado para un proposito, arquitectura y requisito de rendimiento especifico.",
     gutterTypes: [
-      { icon: HouseIcon, title: "Canaletas Media Cana", desc: "El perfil semicircular clasico. Elegante, su interior liso reduce la acumulacion de escombros. Disponible en multiples tamanos. Combina perfectamente con techos mediterraneos, coloniales espanoles y de teja barril. Los estilos arquitectonicos mas populares de Tampa Bay.", spec: "Perfil: Semicircular clasico" },
-      { icon: WaterDropIcon, title: "Super Canaleta", desc: "El sistema de canaletas residencial de maxima capacidad. Perfil sobredimensionado disenado para manejar las lluvias mas extremas de Florida sin desbordamiento. Cuando las canaletas estandar no pueden con el volumen de agua de su techo, la Super Canaleta entrega el rendimiento que necesita.", spec: "Grado: Capacidad maxima" },
-      { icon: RoofEdgeIcon, title: "Canaletas Estilo D", desc: "Un perfil liso de curva unica que se asienta al ras contra la fascia para una apariencia limpia y aerodinamica. Popular en hogares residenciales de Florida por su estetica simple y manejo confiable de agua. Una opcion versatil que funciona con practicamente cualquier estilo arquitectonico.", spec: "Perfil: Curva unica lisa" },
-      { icon: RulerIcon, title: "Canaletas Estilo Caja", desc: "Perfil rectangular con capacidad maxima de agua. Integradas en estructuras de techo o montadas externamente. Fabricadas a medida en una dobladora para dimensiones exactas. Ideal para edificios comerciales, hogares modernos y drenaje de techos planos.", spec: "Perfil: Rectangular / personalizado" },
-      { icon: HouseIcon, title: "Canaletas Comerciales", desc: "Sistemas sobredimensionados de alta resistencia en aluminio de calibre .032 a .050. Perfil K o caja de 6\" a 8\" con bajantes de 3x4 o 4x5. Espaciado de soportes mas cercano para resistencia a vientos de huracan. Disenados para grandes areas de techo.", spec: "Grado: Comercial de alta resistencia" },
-      { icon: WrenchIcon, title: "Rollform / Sin Costuras", desc: "Cada canaleta que instalamos se forma en el sitio a partir de bobina continua de aluminio. Cortada a medida exacta para su hogar. Sin costuras significa sin filtraciones. Hasta 100+ pies en una sola pieza.", spec: "Metodo: Fabricacion en sitio" },
+      { emoji: "🏛️", title: "Canaletas Media Cana", desc: "El perfil semicircular clasico. Elegante, su interior liso reduce la acumulacion de escombros. Disponible en multiples tamanos. Combina perfectamente con techos mediterraneos, coloniales espanoles y de teja barril. Los estilos arquitectonicos mas populares de Tampa Bay.", spec: "Perfil: Semicircular clasico" },
+      { emoji: "💧", title: "Super Canaleta", desc: "El sistema de canaletas residencial de maxima capacidad. Perfil sobredimensionado disenado para manejar las lluvias mas extremas de Florida sin desbordamiento. Cuando las canaletas estandar no pueden con el volumen de agua de su techo, la Super Canaleta entrega el rendimiento que necesita.", spec: "Grado: Capacidad maxima" },
+      { emoji: "📐", title: "Canaletas Estilo D", desc: "Un perfil liso de curva unica que se asienta al ras contra la fascia para una apariencia limpia y aerodinamica. Popular en hogares residenciales de Florida por su estetica simple y manejo confiable de agua. Una opcion versatil que funciona con practicamente cualquier estilo arquitectonico.", spec: "Perfil: Curva unica lisa" },
+      { emoji: "🏗️", title: "Canaletas Estilo Caja", desc: "Perfil rectangular con capacidad maxima de agua. Integradas en estructuras de techo o montadas externamente. Fabricadas a medida en una dobladora para dimensiones exactas. Ideal para edificios comerciales, hogares modernos y drenaje de techos planos.", spec: "Perfil: Rectangular / personalizado" },
+      { emoji: "🏠", title: "Canaletas Comerciales", desc: "Sistemas sobredimensionados de alta resistencia en aluminio de calibre .032 a .050. Perfil K o caja de 6\" a 8\" con bajantes de 3x4 o 4x5. Espaciado de soportes mas cercano para resistencia a vientos de huracan. Disenados para grandes areas de techo.", spec: "Grado: Comercial de alta resistencia" },
+      { emoji: "🔧", title: "Rollform / Sin Costuras", desc: "Cada canaleta que instalamos se forma en el sitio a partir de bobina continua de aluminio. Cortada a medida exacta para su hogar. Sin costuras significa sin filtraciones. Hasta 100+ pies en una sola pieza.", spec: "Metodo: Fabricacion en sitio" },
     ],
     whyEyebrow: "POR QUE ESPECIALES",
     whyTitle: "Por Que Importa la Canaleta Correcta",
     whySpecialty: [
-      { title: "La canaleta correcta para el hogar correcto", desc: "Lo generico no funciona. Su arquitectura, estilo de techo y volumen de agua determinan el sistema correcto." },
-      { title: "La lluvia de Florida exige capacidad", desc: "46 a 52 pulgadas por ano, 2 a 4 pulgadas por hora en tormentas. Las canaletas de tamano insuficiente se desbordan. Dimensionamos cada sistema para las exigencias de Florida." },
-      { title: "Integridad arquitectonica", desc: "Media cana en un techo de teja barril. Caja en una construccion moderna. La canaleta correcta completa el diseno." },
-      { title: "Construccion de grado huracan", desc: "Calibre mas pesado, espaciado de soportes mas cercano y dimensionamiento adecuado para las condiciones exigentes de Florida." },
+      { emoji: "🏠", title: "La canaleta correcta para el hogar correcto", desc: "Lo generico no funciona. Su arquitectura, estilo de techo y volumen de agua determinan el sistema correcto." },
+      { emoji: "💧", title: "La lluvia de Florida exige capacidad", desc: "46 a 52 pulgadas por ano, 2 a 4 pulgadas por hora en tormentas. Las canaletas de tamano insuficiente se desbordan. Dimensionamos cada sistema para las exigencias de Florida." },
+      { emoji: "🎨", title: "Integridad arquitectonica", desc: "Media cana en un techo de teja barril. Caja en una construccion moderna. La canaleta correcta completa el diseno." },
+      { emoji: "💪", title: "Construccion de grado huracan", desc: "Calibre mas pesado, espaciado de soportes mas cercano y dimensionamiento adecuado para las condiciones exigentes de Florida." },
     ],
     goldEyebrow: "EL ESTANDAR DE ORO",
     goldTitle: "Nuestro Proceso",
@@ -184,6 +185,9 @@ const inputStyle = {
   color: "var(--jr-ink)", background: "#FAFAFA", marginBottom: "12px",
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
+
+const ACCENT = "#3A3A3A";
+const ACCENT_LIGHT = "#555555";
 
 export default function SpecialtyGuttersPage() {
   const { lang } = useLanguage();
@@ -261,7 +265,7 @@ export default function SpecialtyGuttersPage() {
             <SectionHeading eyebrow={t.problemTag} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
-                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: "4px solid var(--jr-gold)" }}>
+                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: `4px solid ${ACCENT_LIGHT}` }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
                 </article>
@@ -274,22 +278,19 @@ export default function SpecialtyGuttersPage() {
           <Container>
             <SectionHeading eyebrow={t.typesTag} title={t.typesTitle} subtitle={t.typesSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.gutterTypes.map((g, i) => {
-                const Icon = g.icon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-3)", marginBottom: "var(--jr-space-3)" }}>
-                      <div style={{ display: "inline-flex", padding: "10px", background: "var(--jr-gold-pale)", borderRadius: "var(--jr-radius-md)", color: "var(--jr-gold)" }}>
-                        <Icon size={22} />
-                      </div>
-                      <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px" }}>0{i + 1}</div>
+              {t.gutterTypes.map((g, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT_LIGHT}` }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-3)", marginBottom: "var(--jr-space-3)" }}>
+                    <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 44, height: 44, background: "rgba(255, 255, 255, 0.06)", border: `1px solid ${ACCENT_LIGHT}`, borderRadius: "var(--jr-radius-md)" }}>
+                      <span aria-hidden style={{ fontSize: 22, lineHeight: 1 }}>{g.emoji}</span>
                     </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6, marginBottom: "var(--jr-space-3)" }}>{g.desc}</p>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 600, color: "var(--jr-gold)", letterSpacing: "1px", padding: "6px 12px", background: "var(--jr-gold-pale)", borderRadius: "var(--jr-radius-sm)", display: "inline-block" }}>{g.spec}</div>
-                  </article>
-                );
-              })}
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-cream-2)", letterSpacing: "2px" }}>0{i + 1}</div>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6, marginBottom: "var(--jr-space-3)" }}>{g.desc}</p>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 600, color: "var(--jr-cream-2)", letterSpacing: "1px", padding: "6px 12px", background: "rgba(255, 255, 255, 0.06)", border: `1px solid ${ACCENT_LIGHT}`, borderRadius: "var(--jr-radius-sm)", display: "inline-block" }}>{g.spec}</div>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -299,8 +300,8 @@ export default function SpecialtyGuttersPage() {
             <SectionHeading eyebrow={t.whyEyebrow} title={t.whyTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.whySpecialty.map((w, i) => (
-                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: "4px solid var(--jr-gold)" }}>
-                  <div style={{ display: "inline-flex", color: "var(--jr-gold)", marginBottom: "var(--jr-space-2)" }}><SparkleIcon size={18} /></div>
+                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: `4px solid ${ACCENT_LIGHT}` }}>
+                  <span aria-hidden style={{ display: "inline-block", fontSize: 22, lineHeight: 1, marginBottom: "var(--jr-space-2)" }}>{w.emoji}</span>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-md)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{w.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>{w.desc}</p>
                 </article>
@@ -333,6 +334,8 @@ export default function SpecialtyGuttersPage() {
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>
         </section>
+
+        <Peak301Alert />
 
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">

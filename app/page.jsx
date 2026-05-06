@@ -14,7 +14,6 @@ import MobileCTA from "../components/MobileCTA";
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
 import SectionHeading from "../components/ui/SectionHeading";
-import TrustLine from "../components/ui/TrustLine";
 import ServiceCard from "../components/ui/ServiceCard";
 import ReviewCard from "../components/ui/ReviewCard";
 import FAQAccordion from "../components/ui/FAQAccordion";
@@ -41,11 +40,11 @@ const T = {
     formSent: "Quote Request Received",
     formSentSub: "We'll get back to you within hours. In the meantime, try our instant estimator below.",
     serviceOpt: ["Select a service...", "Gutter Installation", "Gutter Repair", "Gutter Guards", "Soffit & Fascia", "Siding", "Gutter Cleaning", "Other / Not Sure"],
-    trust: [
-      { icon: "family", label: "Family-Owned" },
-      { icon: "star", label: "4.9 on Google" },
-      { icon: "crew", label: "In-House Crews" },
-      { icon: "insured", label: "Fully Insured" },
+    trustBadges: [
+      { emoji: "⏱", label: "Family-Owned", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
+      { emoji: "⭐", label: "4.9★ Rating", color: "#D4A843", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "👷", label: "In-House Crews", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
+      { emoji: "✓", label: "Fully Insured", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
     hablamos: "Hablamos Español",
     goldEyebrow: "The Gold Standard",
@@ -61,12 +60,12 @@ const T = {
     servicesTitle: "What We Do",
     servicesSub: "Gutters, soffit, fascia, drainage, and Peak 301. Tampa Bay specialty trade.",
     serviceCards: [
-      { icon: "water", title: "Seamless Gutters", desc: "Custom-fabricated on-site for a perfect fit. 6\" and 7\" systems in your choice of color.", link: "/seamless-aluminum-gutters" },
-      { icon: "shield", title: "Gutter Guards", desc: "Stop climbing ladders. Our guard systems keep debris out and water flowing.", link: "/gutter-guards" },
-      { icon: "edge", title: "Soffit & Fascia", desc: "Aluminum and vinyl installations that protect your roof edge and clean up the trim line.", link: "/soffit-and-fascia" },
-      { icon: "wrench", title: "Gutter Repair", desc: "Sagging, leaking, or damaged. We fix it right so you don't have to call again.", link: "/gutter-repair" },
-      { icon: "ruler", title: "Siding", desc: "Vinyl siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
-      { icon: "broom", title: "Maintenance", desc: "Gutter cleaning, pressure washing, window cleaning, and seasonal maintenance plans.", link: "/service-plans" },
+      { icon: "💧", title: "Seamless Gutters", desc: "Custom-fabricated on-site for a perfect fit. 6\" and 7\" systems in your choice of color.", link: "/seamless-aluminum-gutters" },
+      { icon: "🛡️", title: "Gutter Guards", desc: "Stop climbing ladders. Our guard systems keep debris out and water flowing.", link: "/gutter-guards" },
+      { icon: "🏗️", title: "Soffit & Fascia", desc: "Aluminum and vinyl installations that protect your roof edge and clean up the trim line.", link: "/soffit-and-fascia" },
+      { icon: "🔧", title: "Gutter Repair", desc: "Sagging, leaking, or damaged. We fix it right so you don't have to call again.", link: "/gutter-repair" },
+      { icon: "📐", title: "Siding", desc: "Vinyl siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
+      { icon: "🧹", title: "Maintenance", desc: "Gutter cleaning, pressure washing, window cleaning, and seasonal maintenance plans.", link: "/service-plans" },
     ],
     whyEyebrow: "Why Us",
     whyTitle: "Why Homeowners Choose JR One",
@@ -128,11 +127,11 @@ const T = {
     formSent: "Solicitud Recibida",
     formSentSub: "Le responderemos en horas. Mientras tanto, pruebe nuestro estimador instantáneo.",
     serviceOpt: ["Seleccione un servicio...", "Instalación de Canaletas", "Reparación de Canaletas", "Protectores de Canaletas", "Sofito y Fascia", "Revestimiento", "Limpieza de Canaletas", "Otro / No Estoy Seguro"],
-    trust: [
-      { icon: "family", label: "Empresa Familiar" },
-      { icon: "star", label: "4.9 en Google" },
-      { icon: "crew", label: "Equipo Propio" },
-      { icon: "insured", label: "Totalmente Asegurados" },
+    trustBadges: [
+      { emoji: "⏱", label: "Empresa Familiar", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
+      { emoji: "⭐", label: "4.9★ Calificación", color: "#D4A843", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "👷", label: "Equipo Propio", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
+      { emoji: "✓", label: "Totalmente Asegurados", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
     hablamos: "We Speak English",
     goldEyebrow: "El Estándar de Oro",
@@ -148,12 +147,12 @@ const T = {
     servicesTitle: "Lo Que Hacemos",
     servicesSub: "Canaletas, sofito, fascia, drenaje y Peak 301. Oficio especializado en Tampa Bay.",
     serviceCards: [
-      { icon: "water", title: "Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio. Sistemas de 6\" y 7\" en el color de su elección.", link: "/seamless-aluminum-gutters" },
-      { icon: "shield", title: "Protectores de Canaletas", desc: "Deje de subir escaleras. Nuestros protectores mantienen los escombros afuera y el agua fluyendo.", link: "/gutter-guards" },
-      { icon: "edge", title: "Sofito y Fascia", desc: "Instalaciones de aluminio y vinilo que protegen el borde de su techo y mejoran la línea de acabado.", link: "/soffit-and-fascia" },
-      { icon: "wrench", title: "Reparación de Canaletas", desc: "Hundidas, con fugas o dañadas. Lo arreglamos bien para que no tenga que llamar de nuevo.", link: "/gutter-repair" },
-      { icon: "ruler", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo. Protección resistente al clima para hogares de Florida.", link: "/siding" },
-      { icon: "broom", title: "Mantenimiento", desc: "Limpieza de canaletas, lavado a presión, limpieza de ventanas y planes de mantenimiento estacional.", link: "/service-plans" },
+      { icon: "💧", title: "Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio. Sistemas de 6\" y 7\" en el color de su elección.", link: "/seamless-aluminum-gutters" },
+      { icon: "🛡️", title: "Protectores de Canaletas", desc: "Deje de subir escaleras. Nuestros protectores mantienen los escombros afuera y el agua fluyendo.", link: "/gutter-guards" },
+      { icon: "🏗️", title: "Sofito y Fascia", desc: "Instalaciones de aluminio y vinilo que protegen el borde de su techo y mejoran la línea de acabado.", link: "/soffit-and-fascia" },
+      { icon: "🔧", title: "Reparación de Canaletas", desc: "Hundidas, con fugas o dañadas. Lo arreglamos bien para que no tenga que llamar de nuevo.", link: "/gutter-repair" },
+      { icon: "📐", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo. Protección resistente al clima para hogares de Florida.", link: "/siding" },
+      { icon: "🧹", title: "Mantenimiento", desc: "Limpieza de canaletas, lavado a presión, limpieza de ventanas y planes de mantenimiento estacional.", link: "/service-plans" },
     ],
     whyEyebrow: "Por Qué",
     whyTitle: "Por Qué los Propietarios Eligen JR One",
@@ -301,8 +300,34 @@ export default function JROneHomepage() {
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-6)", maxWidth: "540px" }}>
                   {t.heroSub}
                 </p>
-                <div style={{ marginBottom: "var(--jr-space-6)" }}>
-                  <TrustLine items={t.trust} />
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "var(--jr-space-6)" }}>
+                  {t.trustBadges.map((b, i) => (
+                    <div
+                      key={i}
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        padding: "8px 14px",
+                        background: b.bg,
+                        border: `1px solid ${b.border}`,
+                        borderRadius: "var(--jr-radius-md)",
+                      }}
+                    >
+                      <span aria-hidden style={{ fontSize: 16 }}>{b.emoji}</span>
+                      <span
+                        style={{
+                          fontFamily: "var(--jr-font-heading)",
+                          fontSize: "13px",
+                          fontWeight: 600,
+                          color: b.color,
+                          letterSpacing: "0.3px",
+                        }}
+                      >
+                        {b.label}
+                      </span>
+                    </div>
+                  ))}
                 </div>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: "var(--jr-space-2)", fontFamily: "var(--jr-font-heading)", fontSize: "13px", fontWeight: 600, color: "var(--jr-gold)", letterSpacing: "1px", textTransform: "uppercase" }}>
                   {t.hablamos}

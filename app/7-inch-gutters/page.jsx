@@ -17,7 +17,8 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
-import { CheckCircleIcon, PhoneIcon, HouseIcon, RulerIcon, WaterDropIcon, WrenchIcon } from "../../lib/icons";
+import Peak301Alert from "../../components/ui/Peak301Alert";
+import { CheckCircleIcon, PhoneIcon } from "../../lib/icons";
 
 const T = {
   en: {
@@ -40,12 +41,12 @@ const T = {
     solutionTitle: "What You Get with a 7-Inch Upgrade",
     solutionSub: "Commercial-grade water capacity on a residential installation. Same aesthetic, dramatically more performance.",
     solutions: [
-      { title: "About 40% more water capacity", desc: "A 7-inch K-style gutter moves roughly 40% more water than a standard 6-inch. Not a small gain. That headroom is the difference between a gutter that flows during a storm and a gutter that pours water over the front edge." },
-      { title: "Fewer downspouts, cleaner look", desc: "Because each run handles more water, a 7-inch system often needs fewer downspouts than a 6-inch system on the same home. The front of the house looks cleaner with fewer downspouts breaking up the facade." },
-      { title: "Matches larger downspout options", desc: "7-inch gutters pair with 4x5 rectangular or oversized round downspouts, moving far more water than the standard 3x4 downspout on a 6-inch system. End-to-end capacity, not just a bigger opening." },
-      { title: "Still seamless, still on-site fabricated", desc: "We bring the gutter machine to your home and fabricate 7-inch runs on-site. Same seamless, no-splice construction as our 6-inch installations. No factory joints, no horizontal seams." },
-      { title: "Hidden hangers every 24 inches", desc: "A heavier gutter with more water volume needs stronger support. 7-inch installs get our standard hidden-hanger system every 24 inches. No exposed spikes on the face, better hold on the fascia." },
-      { title: "40+ color options, no visual hit", desc: "Same aluminum coil color spectrum as 6-inch gutters. The 7-inch profile is slightly larger but still residential-appropriate. Most homeowners can't tell at a glance. The performance difference is what you notice." },
+      { emoji: "💧", title: "About 40% more water capacity", desc: "A 7-inch K-style gutter moves roughly 40% more water than a standard 6-inch. Not a small gain. That headroom is the difference between a gutter that flows during a storm and a gutter that pours water over the front edge." },
+      { emoji: "🏠", title: "Fewer downspouts, cleaner look", desc: "Because each run handles more water, a 7-inch system often needs fewer downspouts than a 6-inch system on the same home. The front of the house looks cleaner with fewer downspouts breaking up the facade." },
+      { emoji: "📐", title: "Matches larger downspout options", desc: "7-inch gutters pair with 4x5 rectangular or oversized round downspouts, moving far more water than the standard 3x4 downspout on a 6-inch system. End-to-end capacity, not just a bigger opening." },
+      { emoji: "🏗️", title: "Still seamless, still on-site fabricated", desc: "We bring the gutter machine to your home and fabricate 7-inch runs on-site. Same seamless, no-splice construction as our 6-inch installations. No factory joints, no horizontal seams." },
+      { emoji: "🔧", title: "Hidden hangers every 24 inches", desc: "A heavier gutter with more water volume needs stronger support. 7-inch installs get our standard hidden-hanger system every 24 inches. No exposed spikes on the face, better hold on the fascia." },
+      { emoji: "🎨", title: "40+ color options, no visual hit", desc: "Same aluminum coil color spectrum as 6-inch gutters. The 7-inch profile is slightly larger but still residential-appropriate. Most homeowners can't tell at a glance. The performance difference is what you notice." },
     ],
     stats: [
       { value: "~40%", label: "More capacity vs 6-inch" },
@@ -57,12 +58,12 @@ const T = {
     scopeTitle: "Homes That Actually Need Oversized Gutters",
     scopeSub: "7-inch isn't for every home. For these it's the right spec. We'll tell you honestly during the walkthrough.",
     scopeItems: [
-      { icon: HouseIcon, title: "South Tampa Luxury Homes", desc: "Large roof areas, steep pitches, and landscaping that can't tolerate overflow. The home's scale and the cost of water damage both argue for commercial-grade capacity." },
-      { icon: RulerIcon, title: "Steep-Pitch Roofs", desc: "Steep pitches move water to the gutter fast. If your home has a high-pitch roof and you see overflow during summer storms, 7-inch is the fix. Not more downspouts on the same 6-inch system." },
-      { icon: HouseIcon, title: "Large Roof Areas (3,500+ sqft)", desc: "Homes above roughly 3,500 sqft of roof area shed enough water in a Florida storm that 6-inch gutters are at or past their capacity limit. 7-inch gives real headroom." },
-      { icon: WaterDropIcon, title: "Homes with Existing Overflow Issues", desc: "If your current 6-inch gutters overflow during storms even when clean, you don't need more cleaning. You need more capacity. 7-inch solves what no amount of maintenance can." },
-      { icon: HouseIcon, title: "Custom & Architectural Homes", desc: "Custom builds with complex rooflines, multi-plane roofs, or unusual geometry often concentrate water at specific gutter runs. 7-inch handles those concentration zones without overflow." },
-      { icon: WrenchIcon, title: "Replacement Upgrades", desc: "Replacing aging 5-inch or 6-inch gutters is the perfect moment to upgrade to 7-inch. Installation cost is already in play, marginal upcharge is modest, and you get 20+ years of headroom capacity." },
+      { emoji: "🏠", title: "South Tampa Luxury Homes", desc: "Large roof areas, steep pitches, and landscaping that can't tolerate overflow. The home's scale and the cost of water damage both argue for commercial-grade capacity." },
+      { emoji: "📐", title: "Steep-Pitch Roofs", desc: "Steep pitches move water to the gutter fast. If your home has a high-pitch roof and you see overflow during summer storms, 7-inch is the fix. Not more downspouts on the same 6-inch system." },
+      { emoji: "🏗️", title: "Large Roof Areas (3,500+ sqft)", desc: "Homes above roughly 3,500 sqft of roof area shed enough water in a Florida storm that 6-inch gutters are at or past their capacity limit. 7-inch gives real headroom." },
+      { emoji: "💧", title: "Homes with Existing Overflow Issues", desc: "If your current 6-inch gutters overflow during storms even when clean, you don't need more cleaning. You need more capacity. 7-inch solves what no amount of maintenance can." },
+      { emoji: "🎨", title: "Custom & Architectural Homes", desc: "Custom builds with complex rooflines, multi-plane roofs, or unusual geometry often concentrate water at specific gutter runs. 7-inch handles those concentration zones without overflow." },
+      { emoji: "🔧", title: "Replacement Upgrades", desc: "Replacing aging 5-inch or 6-inch gutters is the perfect moment to upgrade to 7-inch. Installation cost is already in play, marginal upcharge is modest, and you get 20+ years of headroom capacity." },
     ],
     callToWalkTitle: "Most Tampa homes do fine with 6-inch. When they don't, it's obvious.",
     callToWalkDesc: "If your home is under 3,000 sqft of roof area with a moderate pitch and no current overflow, 6-inch is the right call. If you're above that, or you already see overflow, 7-inch pays for itself in avoided water damage. We'll tell you which you are during the free walkthrough.",
@@ -128,12 +129,12 @@ const T = {
     solutionTitle: "Lo Que Obtiene con un Upgrade a 7\"",
     solutionSub: "Capacidad grado comercial en instalacion residencial. Misma estetica, rendimiento dramaticamente superior.",
     solutions: [
-      { title: "Cerca de 40% mas capacidad de agua", desc: "Una canaleta K-style de 7\" mueve aproximadamente 40% mas agua que una estandar de 6\". No una ganancia pequena. Ese margen es la diferencia entre una canaleta que fluye durante una tormenta y una que vierte agua sobre el borde." },
-      { title: "Menos bajantes, apariencia mas limpia", desc: "Porque cada tramo maneja mas agua, un sistema de 7\" a menudo necesita menos bajantes que uno de 6\" en la misma casa. El frente de la casa se ve mas limpio." },
-      { title: "Combina con bajantes mas grandes", desc: "Las canaletas de 7\" se emparejan con bajantes rectangulares de 4x5 o redondos de tamano mayor, moviendo mucho mas agua que el bajante 3x4 estandar. Capacidad de extremo a extremo." },
-      { title: "Aun sin costuras, aun fabricadas en sitio", desc: "Llevamos la maquina de canaletas a su casa y fabricamos los tramos de 7\" en sitio. Misma construccion sin empalmes. Sin juntas de fabrica, sin costuras horizontales." },
-      { title: "Soportes ocultos cada 24 pulgadas", desc: "Una canaleta mas pesada con mas volumen necesita mayor soporte. Las instalaciones de 7\" usan nuestro sistema estandar de soportes ocultos cada 24\"." },
-      { title: "Mas de 40 opciones de color, sin impacto visual", desc: "Mismo espectro de colores de aluminio que 6\". El perfil de 7\" es ligeramente mayor pero aun residencial. La mayoria de duenos no lo nota a simple vista." },
+      { emoji: "💧", title: "Cerca de 40% mas capacidad de agua", desc: "Una canaleta K-style de 7\" mueve aproximadamente 40% mas agua que una estandar de 6\". No una ganancia pequena. Ese margen es la diferencia entre una canaleta que fluye durante una tormenta y una que vierte agua sobre el borde." },
+      { emoji: "🏠", title: "Menos bajantes, apariencia mas limpia", desc: "Porque cada tramo maneja mas agua, un sistema de 7\" a menudo necesita menos bajantes que uno de 6\" en la misma casa. El frente de la casa se ve mas limpio." },
+      { emoji: "📐", title: "Combina con bajantes mas grandes", desc: "Las canaletas de 7\" se emparejan con bajantes rectangulares de 4x5 o redondos de tamano mayor, moviendo mucho mas agua que el bajante 3x4 estandar. Capacidad de extremo a extremo." },
+      { emoji: "🏗️", title: "Aun sin costuras, aun fabricadas en sitio", desc: "Llevamos la maquina de canaletas a su casa y fabricamos los tramos de 7\" en sitio. Misma construccion sin empalmes. Sin juntas de fabrica, sin costuras horizontales." },
+      { emoji: "🔧", title: "Soportes ocultos cada 24 pulgadas", desc: "Una canaleta mas pesada con mas volumen necesita mayor soporte. Las instalaciones de 7\" usan nuestro sistema estandar de soportes ocultos cada 24\"." },
+      { emoji: "🎨", title: "Mas de 40 opciones de color, sin impacto visual", desc: "Mismo espectro de colores de aluminio que 6\". El perfil de 7\" es ligeramente mayor pero aun residencial. La mayoria de duenos no lo nota a simple vista." },
     ],
     stats: [
       { value: "~40%", label: "Mas capacidad vs 6\"" },
@@ -145,12 +146,12 @@ const T = {
     scopeTitle: "Casas que Realmente Necesitan 7\"",
     scopeSub: "7\" no es para cada casa. Para estas es la especificacion correcta. Le diremos honestamente durante el recorrido.",
     scopeItems: [
-      { icon: HouseIcon, title: "Casas de Lujo en South Tampa", desc: "Areas de techo grandes, pendientes fuertes y paisajismo que no tolera desbordamiento. La escala de la casa y el costo del dano por agua ambos argumentan por capacidad grado comercial." },
-      { icon: RulerIcon, title: "Techos de Pendiente Fuerte", desc: "Las pendientes fuertes mueven el agua rapido. Si su casa tiene techo empinado y ve desbordamiento en tormentas, 7\" es el arreglo. No mas bajantes en el mismo sistema de 6\"." },
-      { icon: HouseIcon, title: "Areas Grandes (3,500+ sqft)", desc: "Casas sobre 3,500 sqft de techo descargan suficiente agua en una tormenta de Florida que 6\" esta en o pasado su limite. 7\" da margen real." },
-      { icon: WaterDropIcon, title: "Casas con Desbordamiento", desc: "Si sus canaletas actuales de 6\" se desbordan en tormentas aun limpias, no necesita mas limpieza. Necesita mas capacidad. 7\" resuelve lo que ninguna cantidad de mantenimiento puede." },
-      { icon: HouseIcon, title: "Casas Personalizadas", desc: "Construcciones personalizadas con lineas de techo complejas, techos multi-plano o geometria inusual concentran agua en tramos especificos. 7\" maneja esas zonas sin desbordamiento." },
-      { icon: WrenchIcon, title: "Upgrades de Reemplazo", desc: "Reemplazar canaletas viejas de 5\" o 6\" es el momento perfecto para subir a 7\". El costo de instalacion ya esta en juego, el sobrecosto marginal es modesto." },
+      { emoji: "🏠", title: "Casas de Lujo en South Tampa", desc: "Areas de techo grandes, pendientes fuertes y paisajismo que no tolera desbordamiento. La escala de la casa y el costo del dano por agua ambos argumentan por capacidad grado comercial." },
+      { emoji: "📐", title: "Techos de Pendiente Fuerte", desc: "Las pendientes fuertes mueven el agua rapido. Si su casa tiene techo empinado y ve desbordamiento en tormentas, 7\" es el arreglo. No mas bajantes en el mismo sistema de 6\"." },
+      { emoji: "🏗️", title: "Areas Grandes (3,500+ sqft)", desc: "Casas sobre 3,500 sqft de techo descargan suficiente agua en una tormenta de Florida que 6\" esta en o pasado su limite. 7\" da margen real." },
+      { emoji: "💧", title: "Casas con Desbordamiento", desc: "Si sus canaletas actuales de 6\" se desbordan en tormentas aun limpias, no necesita mas limpieza. Necesita mas capacidad. 7\" resuelve lo que ninguna cantidad de mantenimiento puede." },
+      { emoji: "🎨", title: "Casas Personalizadas", desc: "Construcciones personalizadas con lineas de techo complejas, techos multi-plano o geometria inusual concentran agua en tramos especificos. 7\" maneja esas zonas sin desbordamiento." },
+      { emoji: "🔧", title: "Upgrades de Reemplazo", desc: "Reemplazar canaletas viejas de 5\" o 6\" es el momento perfecto para subir a 7\". El costo de instalacion ya esta en juego, el sobrecosto marginal es modesto." },
     ],
     callToWalkTitle: "La mayoria de casas de Tampa estan bien con 6\". Cuando no, es obvio.",
     callToWalkDesc: "Si su casa es menos de 3,000 sqft de techo con pendiente moderada y sin desbordamiento actual, 6\" es la decision correcta. Si esta arriba de eso, o ya ve desbordamiento, 7\" se paga sola en dano evitado. Le diremos cual es usted durante el recorrido gratis.",
@@ -204,6 +205,9 @@ const inputStyle = {
   color: "var(--jr-ink)", background: "#FAFAFA", marginBottom: "12px",
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
+
+const ACCENT = "#C8952E";
+const ACCENT_LIGHT = "#D4A843";
 
 export default function SevenInchGuttersPage() {
   const { lang } = useLanguage();
@@ -295,8 +299,10 @@ export default function SevenInchGuttersPage() {
             <SectionHeading eyebrow={t.solutionTag} title={t.solutionTitle} subtitle={t.solutionSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
-                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{s.emoji}</span>
+                  </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{s.desc}</p>
                 </article>
@@ -309,18 +315,15 @@ export default function SevenInchGuttersPage() {
           <Container>
             <SectionHeading eyebrow={t.scopeEyebrow} title={t.scopeTitle} subtitle={t.scopeSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.scopeItems.map((g, i) => {
-                const Icon = g.icon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: "4px solid var(--jr-gold)" }}>
-                    <div style={{ display: "inline-flex", padding: "10px", background: "var(--jr-gold-pale)", borderRadius: "var(--jr-radius-md)", color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
-                      <Icon size={24} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{g.desc}</p>
-                  </article>
-                );
-              })}
+              {t.scopeItems.map((g, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `4px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{g.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{g.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -362,6 +365,8 @@ export default function SevenInchGuttersPage() {
             <FAQAccordion items={t.faqs} theme="dark" />
           </Container>
         </section>
+
+        <Peak301Alert />
 
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">

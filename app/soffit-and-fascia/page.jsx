@@ -16,16 +16,15 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
-  RoofEdgeIcon,
-  ShieldIcon,
-  WaterDropIcon,
-  HouseIcon,
-  WrenchIcon,
-  HardHatIcon,
 } from "../../lib/icons";
+
+// Page-identity accent: soffit & fascia warm orange (roof-edge sun).
+const ACCENT = "#E67E22";
+const ACCENT_LIGHT = "#F39C12";
 
 const T = {
   en: {
@@ -46,10 +45,10 @@ const T = {
     problemEyebrow: "The Problem",
     problemTitle: "What Happens When Soffit and Fascia Fail",
     problems: [
-      { icon: "water", title: "Rotting wood fascia", desc: "Florida's humidity and rain cycles destroy wood fascia boards from the inside out. By the time you see paint peeling, the rot has already spread behind your gutters and into your roof structure." },
-      { icon: "shield", title: "Pest entry points", desc: "Damaged or missing soffit panels are open invitations for wasps, birds, squirrels, bats, and rodents to nest in your attic. Once inside, they cause electrical damage, insulation contamination, and health hazards." },
-      { icon: "edge", title: "Ventilation failure", desc: "Soffit vents are your attic's primary air intake. When they're blocked, damaged, or missing, your attic traps heat. That drives up energy bills and accelerates shingle deterioration from underneath." },
-      { icon: "house", title: "Curb-appeal collapse", desc: "Stained, sagging, or mismatched soffit and fascia instantly age your home's appearance. It's the first thing people notice when they look up, and the last thing sellers want buyers to see." },
+      { emoji: "💧", title: "Rotting wood fascia", desc: "Florida's humidity and rain cycles destroy wood fascia boards from the inside out. By the time you see paint peeling, the rot has already spread behind your gutters and into your roof structure." },
+      { emoji: "🛡️", title: "Pest entry points", desc: "Damaged or missing soffit panels are open invitations for wasps, birds, squirrels, bats, and rodents to nest in your attic. Once inside, they cause electrical damage, insulation contamination, and health hazards." },
+      { emoji: "🌤️", title: "Ventilation failure", desc: "Soffit vents are your attic's primary air intake. When they're blocked, damaged, or missing, your attic traps heat. That drives up energy bills and accelerates shingle deterioration from underneath." },
+      { emoji: "🏠", title: "Curb-appeal collapse", desc: "Stained, sagging, or mismatched soffit and fascia instantly age your home's appearance. It's the first thing people notice when they look up, and the last thing sellers want buyers to see." },
     ],
     solutionEyebrow: "The JR One Difference",
     solutionTitle: "Soffit & Fascia Done Right",
@@ -123,10 +122,10 @@ const T = {
     problemEyebrow: "El Problema",
     problemTitle: "Qué Pasa Cuando el Sofito y la Fascia Fallan",
     problems: [
-      { icon: "water", title: "Fascia de madera podrida", desc: "La humedad y los ciclos de lluvia de Florida destruyen las tablas de fascia de madera desde adentro. Para cuando ve la pintura descascarándose, la pudrición ya se extendió detrás de sus canaletas y hacia la estructura del techo." },
-      { icon: "shield", title: "Puntos de entrada de plagas", desc: "Los paneles de sofito dañados o faltantes son invitaciones abiertas para avispas, pájaros, ardillas, murciélagos y roedores que anidan en su ático. Una vez adentro, causan daños eléctricos, contaminación del aislamiento y riesgos de salud." },
-      { icon: "edge", title: "Falla de ventilación", desc: "Las rejillas del sofito son la entrada principal de aire de su ático. Cuando están bloqueadas, dañadas o faltantes, su ático atrapa calor. Eso aumenta las facturas de energía y acelera el deterioro de las tejas desde abajo." },
-      { icon: "house", title: "Pérdida de atractivo exterior", desc: "El sofito y fascia manchados, combados o que no combinan envejecen instantáneamente la apariencia de su hogar. Es lo primero que la gente nota al mirar hacia arriba, y lo último que los vendedores quieren que los compradores vean." },
+      { emoji: "💧", title: "Fascia de madera podrida", desc: "La humedad y los ciclos de lluvia de Florida destruyen las tablas de fascia de madera desde adentro. Para cuando ve la pintura descascarándose, la pudrición ya se extendió detrás de sus canaletas y hacia la estructura del techo." },
+      { emoji: "🛡️", title: "Puntos de entrada de plagas", desc: "Los paneles de sofito dañados o faltantes son invitaciones abiertas para avispas, pájaros, ardillas, murciélagos y roedores que anidan en su ático. Una vez adentro, causan daños eléctricos, contaminación del aislamiento y riesgos de salud." },
+      { emoji: "🌤️", title: "Falla de ventilación", desc: "Las rejillas del sofito son la entrada principal de aire de su ático. Cuando están bloqueadas, dañadas o faltantes, su ático atrapa calor. Eso aumenta las facturas de energía y acelera el deterioro de las tejas desde abajo." },
+      { emoji: "🏠", title: "Pérdida de atractivo exterior", desc: "El sofito y fascia manchados, combados o que no combinan envejecen instantáneamente la apariencia de su hogar. Es lo primero que la gente nota al mirar hacia arriba, y lo último que los vendedores quieren que los compradores vean." },
     ],
     solutionEyebrow: "La Diferencia JR One",
     solutionTitle: "Sofito y Fascia Bien Hecho",
@@ -182,15 +181,6 @@ const T = {
     formSent: "Solicitud de Inspección Recibida",
     formSentSub: "Nos comunicaremos con usted en pocas horas.",
   },
-};
-
-const ICON_MAP = {
-  water: WaterDropIcon,
-  shield: ShieldIcon,
-  edge: RoofEdgeIcon,
-  house: HouseIcon,
-  wrench: WrenchIcon,
-  hardhat: HardHatIcon,
 };
 
 const inputStyle = {
@@ -266,20 +256,33 @@ export default function SoffitFasciaPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1a}<br />{t.heroH1b}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1c}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1c}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "660px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-8)" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.heroCta}</Button>
+                <Button
+                  href="#quote-form"
+                  variant="primary"
+                  size="lg"
+                  iconRight
+                  style={{
+                    background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                    color: "#FFFFFF",
+                    border: `2px solid ${ACCENT}`,
+                    boxShadow: `0 4px 14px rgba(230, 126, 34, 0.32)`,
+                  }}
+                >
+                  {t.heroCta}
+                </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -293,18 +296,15 @@ export default function SoffitFasciaPage() {
           <Container>
             <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = ICON_MAP[p.icon] || ShieldIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: "4px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(230, 126, 34, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{p.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -316,7 +316,7 @@ export default function SoffitFasciaPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{s.desc}</p>
                 </article>
@@ -325,22 +325,8 @@ export default function SoffitFasciaPage() {
           </Container>
         </section>
 
-        {/* ── PEAK 301 CALLOUT ── */}
-        <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-12) 0", borderTop: "var(--jr-hair-darker)", borderBottom: "var(--jr-hair-darker)" }}>
-          <Container>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-6)" }}>
-              <div style={{ flex: "1 1 460px" }}>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>{t.peakAlertLabel}</div>
-                <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", lineHeight: 1.3, marginBottom: "var(--jr-space-2)" }}>{t.peakAlertTitle}</h3>
-                <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{t.peakAlertDesc}</p>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "var(--jr-space-2)", flexShrink: 0 }}>
-                <Button href="/peak-301" variant="primary" size="md" iconRight>{t.peakBtn}</Button>
-                <Button href="/insurance-resource-center" variant="outline" size="md" iconRight>{t.peakRights}</Button>
-              </div>
-            </div>
-          </Container>
-        </section>
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
@@ -391,12 +377,27 @@ export default function SoffitFasciaPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)", textAlign: "left" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>{loading ? "Sending..." : t.formBtn}</Button>
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="md"
+                    fullWidth
+                    iconRight
+                    disabled={loading}
+                    style={{
+                      background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                      color: "#FFFFFF",
+                      border: `2px solid ${ACCENT}`,
+                      boxShadow: `0 4px 14px rgba(230, 126, 34, 0.32)`,
+                    }}
+                  >
+                    {loading ? "Sending..." : t.formBtn}
+                  </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formNote}</p>
                 </form>
               )}

@@ -17,6 +17,7 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import { CheckCircleIcon, PhoneIcon } from "../../lib/icons";
 
 const T = {
@@ -40,12 +41,12 @@ const T = {
     solutionTitle: "Repairs That Actually Last",
     solutionSub: "We diagnose the root cause and fix it permanently. No band-aid solutions that fail next storm season.",
     solutions: [
-      { title: "Leak repair and sealing", desc: "We locate every leak point (seams, end caps, corners, downspout connections) and seal them with professional-grade sealant that flexes with temperature changes. No temporary fixes that fail in six months." },
-      { title: "Hanger replacement and realignment", desc: "We replace failed spike-and-ferrule hangers with modern hidden bracket systems, refasten gutters to solid fascia, and re-pitch for proper water flow. Your gutters hang straight and drain completely." },
-      { title: "Downspout repair and rerouting", desc: "We repair or replace damaged downspouts, add extensions to direct water away from your foundation, and reroute drainage when the original layout isn't working." },
-      { title: "Gutter cleaning and debris removal", desc: "Full cleanout of leaves, pine needles, shingle grit, and standing water. We flush every downspout to confirm clear flow and inspect for damage while we're up there." },
-      { title: "Storm damage emergency response", desc: "Tampa hurricane season doesn't wait and neither do we. We respond quickly to storm-damaged gutters. Temporary stabilization first to prevent further damage, then permanent repair as soon as materials and scheduling allow." },
-      { title: "Seasonal maintenance programs", desc: "Preventive maintenance twice a year keeps your gutters performing and extends their lifespan significantly. We clean, inspect, tighten, seal, and document the condition of your entire system." },
+      { emoji: "💧", title: "Leak repair and sealing", desc: "We locate every leak point (seams, end caps, corners, downspout connections) and seal them with professional-grade sealant that flexes with temperature changes. No temporary fixes that fail in six months." },
+      { emoji: "🔧", title: "Hanger replacement and realignment", desc: "We replace failed spike-and-ferrule hangers with modern hidden bracket systems, refasten gutters to solid fascia, and re-pitch for proper water flow. Your gutters hang straight and drain completely." },
+      { emoji: "🛠️", title: "Downspout repair and rerouting", desc: "We repair or replace damaged downspouts, add extensions to direct water away from your foundation, and reroute drainage when the original layout isn't working." },
+      { emoji: "🧹", title: "Gutter cleaning and debris removal", desc: "Full cleanout of leaves, pine needles, shingle grit, and standing water. We flush every downspout to confirm clear flow and inspect for damage while we're up there." },
+      { emoji: "⚠️", title: "Storm damage emergency response", desc: "Tampa hurricane season doesn't wait and neither do we. We respond quickly to storm-damaged gutters. Temporary stabilization first to prevent further damage, then permanent repair as soon as materials and scheduling allow." },
+      { emoji: "📋", title: "Seasonal maintenance programs", desc: "Preventive maintenance twice a year keeps your gutters performing and extends their lifespan significantly. We clean, inspect, tighten, seal, and document the condition of your entire system." },
     ],
     stats: [
       { value: "Same Day", label: "Emergency response available" },
@@ -112,12 +113,12 @@ const T = {
     solutionTitle: "Reparaciones que Realmente Duran",
     solutionSub: "Diagnosticamos la causa raiz y la arreglamos permanentemente. Sin soluciones temporales que fallan en la proxima temporada de tormentas.",
     solutions: [
-      { title: "Reparacion y sellado de filtraciones", desc: "Localizamos cada punto de filtracion (costuras, tapas, esquinas, conexiones de bajantes) y los sellamos con sellador de grado profesional que se flexiona con los cambios de temperatura. Sin arreglos temporales que fallan en seis meses." },
-      { title: "Reemplazo y realineacion de soportes", desc: "Reemplazamos soportes de clavos y ferrulas fallidos con sistemas modernos de soportes ocultos, refijamos las canaletas a fascia solida y re-inclinamos para un flujo de agua adecuado. Sus canaletas quedan rectas y drenan completamente." },
-      { title: "Reparacion y redireccion de bajantes", desc: "Reparamos o reemplazamos bajantes danados, agregamos extensiones para dirigir el agua lejos de su fundacion y redirigimos el drenaje cuando el diseno original no funciona." },
-      { title: "Limpieza de canaletas y remocion de escombros", desc: "Limpieza completa de hojas, agujas de pino, granulos de tejas y agua estancada. Lavamos cada bajante para confirmar flujo libre e inspeccionamos danos mientras estamos arriba." },
-      { title: "Respuesta de emergencia por danos de tormenta", desc: "La temporada de huracanes de Tampa no espera y nosotros tampoco. Respondemos rapidamente a canaletas danadas por tormentas. Estabilizacion temporal primero para prevenir mas danos, luego reparacion permanente tan pronto como los materiales y la programacion lo permitan." },
-      { title: "Programas de mantenimiento estacional", desc: "Mantenimiento preventivo dos veces al ano mantiene sus canaletas funcionando y extiende su vida util significativamente. Limpiamos, inspeccionamos, ajustamos, sellamos y documentamos la condicion de todo su sistema." },
+      { emoji: "💧", title: "Reparacion y sellado de filtraciones", desc: "Localizamos cada punto de filtracion (costuras, tapas, esquinas, conexiones de bajantes) y los sellamos con sellador de grado profesional que se flexiona con los cambios de temperatura. Sin arreglos temporales que fallan en seis meses." },
+      { emoji: "🔧", title: "Reemplazo y realineacion de soportes", desc: "Reemplazamos soportes de clavos y ferrulas fallidos con sistemas modernos de soportes ocultos, refijamos las canaletas a fascia solida y re-inclinamos para un flujo de agua adecuado. Sus canaletas quedan rectas y drenan completamente." },
+      { emoji: "🛠️", title: "Reparacion y redireccion de bajantes", desc: "Reparamos o reemplazamos bajantes danados, agregamos extensiones para dirigir el agua lejos de su fundacion y redirigimos el drenaje cuando el diseno original no funciona." },
+      { emoji: "🧹", title: "Limpieza de canaletas y remocion de escombros", desc: "Limpieza completa de hojas, agujas de pino, granulos de tejas y agua estancada. Lavamos cada bajante para confirmar flujo libre e inspeccionamos danos mientras estamos arriba." },
+      { emoji: "⚠️", title: "Respuesta de emergencia por danos de tormenta", desc: "La temporada de huracanes de Tampa no espera y nosotros tampoco. Respondemos rapidamente a canaletas danadas por tormentas. Estabilizacion temporal primero para prevenir mas danos, luego reparacion permanente tan pronto como los materiales y la programacion lo permitan." },
+      { emoji: "📋", title: "Programas de mantenimiento estacional", desc: "Mantenimiento preventivo dos veces al ano mantiene sus canaletas funcionando y extiende su vida util significativamente. Limpiamos, inspeccionamos, ajustamos, sellamos y documentamos la condicion de todo su sistema." },
     ],
     stats: [
       { value: "Mismo Dia", label: "Respuesta de emergencia" },
@@ -180,6 +181,9 @@ const inputStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
+const ACCENT = "#EAB308";
+const ACCENT_LIGHT = "#FACC15";
+
 export default function GutterRepairPage() {
   const { lang } = useLanguage();
   const t = T[lang];
@@ -230,7 +234,7 @@ export default function GutterRepairPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </nav>
@@ -240,9 +244,9 @@ export default function GutterRepairPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container>
             <div style={{ position: "relative", zIndex: 1, maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
-                {t.heroH1}<br /><span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span>
+                {t.heroH1}<br /><span style={{ color: ACCENT }}>{t.heroH1Gold}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-10)" }}>
@@ -252,7 +256,7 @@ export default function GutterRepairPage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "120px", marginTop: "4px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -266,7 +270,7 @@ export default function GutterRepairPage() {
             <SectionHeading eyebrow={t.problemTag} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
-                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: "4px solid var(--jr-gold)" }}>
+                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: `4px solid ${ACCENT}` }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
                 </article>
@@ -280,8 +284,10 @@ export default function GutterRepairPage() {
             <SectionHeading eyebrow={t.solutionTag} title={t.solutionTitle} subtitle={t.solutionSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
-                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{s.emoji}</span>
+                  </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{s.desc}</p>
                 </article>
@@ -315,6 +321,8 @@ export default function GutterRepairPage() {
           </Container>
         </section>
 
+        <Peak301Alert />
+
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">
             <div style={{ textAlign: "center", marginBottom: "var(--jr-space-10)" }}>
@@ -331,7 +339,7 @@ export default function GutterRepairPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
@@ -342,7 +350,7 @@ export default function GutterRepairPage() {
               )}
               <div style={{ marginTop: "var(--jr-space-8)", textAlign: "center" }}>
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-2)" }}>{t.preferTalk}</p>
-                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-gold)", textDecoration: "none" }}>
+                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: ACCENT, textDecoration: "none" }}>
                   <PhoneIcon size={18} /> (844) 444-3114
                 </a>
               </div>

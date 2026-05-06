@@ -17,6 +17,7 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import { CheckCircleIcon, PhoneIcon, ClockIcon } from "../../lib/icons";
 
 const T = {
@@ -40,12 +41,12 @@ const T = {
     solutionTitle: "What a Real Gutter Cleaning Looks Like",
     solutionSub: "Aluminum-trade eyes on your system while we clean. You get the cleaning plus a free diagnostic of anything that needs attention.",
     solutions: [
-      { title: "Full debris removal, not just the easy stuff", desc: "Every gutter run hand-cleared or vacuum-extracted end-to-end. Roof valleys and corners included. No ignoring the hard-to-reach sections because they're inconvenient." },
-      { title: "Downspout flush on every downspout", desc: "Every downspout gets flushed with water to confirm clear flow. Partial clogs buried in the downspout (the #1 cause of overflow after a cleaning) get cleared or flagged for further work." },
-      { title: "Hanger, pitch and sealant inspection", desc: "While we're up there, we check hanger tightness, gutter pitch, and sealant condition at miters and corners. Issues get photographed and reported before they turn into expensive repairs." },
-      { title: "Photo documentation of any issues", desc: "If we find rotted fascia, failing sealant, sagging hangers, or drainage problems, you get photos and a written summary. Not a vague you-might-want-to-fix-some-stuff conversation." },
-      { title: "Bagged and hauled away", desc: "All debris bagged and removed from the property. You don't come home to piles of leaves or buckets of muck on the driveway. Clean job, clean exit." },
-      { title: "Aluminum-trade eyes, not a general handyman", desc: "JR One is family-owned with over 30 years in the aluminum trade. We see things generalist cleaners miss, and we can quote any repair on the spot because we're the contractor who'd do the fix anyway." },
+      { emoji: "🧹", title: "Full debris removal, not just the easy stuff", desc: "Every gutter run hand-cleared or vacuum-extracted end-to-end. Roof valleys and corners included. No ignoring the hard-to-reach sections because they're inconvenient." },
+      { emoji: "💧", title: "Downspout flush on every downspout", desc: "Every downspout gets flushed with water to confirm clear flow. Partial clogs buried in the downspout (the #1 cause of overflow after a cleaning) get cleared or flagged for further work." },
+      { emoji: "🔧", title: "Hanger, pitch and sealant inspection", desc: "While we're up there, we check hanger tightness, gutter pitch, and sealant condition at miters and corners. Issues get photographed and reported before they turn into expensive repairs." },
+      { emoji: "📋", title: "Photo documentation of any issues", desc: "If we find rotted fascia, failing sealant, sagging hangers, or drainage problems, you get photos and a written summary. Not a vague you-might-want-to-fix-some-stuff conversation." },
+      { emoji: "🛠️", title: "Bagged and hauled away", desc: "All debris bagged and removed from the property. You don't come home to piles of leaves or buckets of muck on the driveway. Clean job, clean exit." },
+      { emoji: "👷", title: "Aluminum-trade eyes, not a general handyman", desc: "JR One is family-owned with over 30 years in the aluminum trade. We see things generalist cleaners miss, and we can quote any repair on the spot because we're the contractor who'd do the fix anyway." },
     ],
     stats: [
       { value: "$150-$400", label: "Typical single-family range" },
@@ -57,12 +58,12 @@ const T = {
     scopeTitle: "Choose the Right Cleaning",
     scopeSub: "Full-service, basic tune-up, guard-package, or targeted downspout service. Your system, your call.",
     scopeItems: [
-      { title: "Full-Service Cleaning", desc: "Full debris removal, downspout flush, hanger and sealant inspection, photo documentation, and debris haul-away. The recommended default for most Tampa homes." },
-      { title: "Basic Tune-Up", desc: "Inspection and spot cleaning for gutters in reasonable condition or on a regular recurring schedule. Lower cost for systems that aren't heavily soiled." },
-      { title: "Deluxe Guard Package", desc: "When you're adding gutter guards, we clean first so the guards install over a clean system. Bundled pricing vs. two separate visits." },
-      { title: "Downspout Clean-Out", desc: "Targeted fix for a single clogged downspout. Common symptom: gutter fills and overflows at one spot even after a general cleaning." },
-      { title: "Recurring Schedule", desc: "Semi-annual, quarterly, or post-storm recurring cleaning. Priced below one-off cleanings and priority-slotted during storm seasons." },
-      { title: "Commercial & HOA", desc: "Apartment complexes, retail, HOA-managed communities, and commercial buildings. Priced and scheduled separately. See the commercial and HOA pages for contract structure." },
+      { emoji: "⭐", title: "Full-Service Cleaning", desc: "Full debris removal, downspout flush, hanger and sealant inspection, photo documentation, and debris haul-away. The recommended default for most Tampa homes." },
+      { emoji: "🧹", title: "Basic Tune-Up", desc: "Inspection and spot cleaning for gutters in reasonable condition or on a regular recurring schedule. Lower cost for systems that aren't heavily soiled." },
+      { emoji: "🛡️", title: "Deluxe Guard Package", desc: "When you're adding gutter guards, we clean first so the guards install over a clean system. Bundled pricing vs. two separate visits." },
+      { emoji: "💧", title: "Downspout Clean-Out", desc: "Targeted fix for a single clogged downspout. Common symptom: gutter fills and overflows at one spot even after a general cleaning." },
+      { emoji: "⏱", title: "Recurring Schedule", desc: "Semi-annual, quarterly, or post-storm recurring cleaning. Priced below one-off cleanings and priority-slotted during storm seasons." },
+      { emoji: "🏠", title: "Commercial & HOA", desc: "Apartment complexes, retail, HOA-managed communities, and commercial buildings. Priced and scheduled separately. See the commercial and HOA pages for contract structure." },
     ],
     timingTitle: "Pre-summer (May) and post-hurricane (November) is the sweet spot.",
     timingDesc: "Heavy tree cover: 3 to 4 times per year. Moderate: 2 times per year (spring + fall). Homes with guards: every 2 to 3 years. After every named storm, regardless of the schedule, hurricane debris is its own event.",
@@ -128,12 +129,12 @@ const T = {
     solutionTitle: "Como se Ve una Limpieza Real",
     solutionSub: "Ojos del oficio de aluminio en su sistema. Limpieza mas diagnostico gratis de cualquier cosa que necesite atencion.",
     solutions: [
-      { title: "Remocion completa de escombros", desc: "Cada tramo aclarado a mano o extraido con aspiradora de extremo a extremo. Valles y esquinas incluidos. Sin ignorar las secciones dificiles." },
-      { title: "Lavado de cada bajante", desc: "Cada bajante se lava con agua para confirmar flujo. Bloqueos parciales en el bajante (causa #1 de desbordamiento despues de una limpieza) se aclaran o se marcan." },
-      { title: "Inspeccion de soportes, pendiente y sellador", desc: "Mientras estamos arriba, chequeamos apriete de soportes, pendiente de canaleta y sellador en esquinas. Problemas se fotografian y se reportan." },
-      { title: "Documentacion fotografica de problemas", desc: "Si encontramos fascia podrida, sellador fallando, soportes caidos o problemas de drenaje, recibe fotos y resumen escrito. No una conversacion vaga." },
-      { title: "Embolsado y llevado", desc: "Todo el escombro embolsado y removido de la propiedad. No llega a casa a montones de hojas o cubetas de mugre en la entrada." },
-      { title: "Ojos del oficio, no handyman generalista", desc: "JR One es empresa familiar con mas de 30 anos en el oficio del aluminio. Vemos cosas que los generalistas se pierden, y podemos cotizar cualquier reparacion en el momento." },
+      { emoji: "🧹", title: "Remocion completa de escombros", desc: "Cada tramo aclarado a mano o extraido con aspiradora de extremo a extremo. Valles y esquinas incluidos. Sin ignorar las secciones dificiles." },
+      { emoji: "💧", title: "Lavado de cada bajante", desc: "Cada bajante se lava con agua para confirmar flujo. Bloqueos parciales en el bajante (causa #1 de desbordamiento despues de una limpieza) se aclaran o se marcan." },
+      { emoji: "🔧", title: "Inspeccion de soportes, pendiente y sellador", desc: "Mientras estamos arriba, chequeamos apriete de soportes, pendiente de canaleta y sellador en esquinas. Problemas se fotografian y se reportan." },
+      { emoji: "📋", title: "Documentacion fotografica de problemas", desc: "Si encontramos fascia podrida, sellador fallando, soportes caidos o problemas de drenaje, recibe fotos y resumen escrito. No una conversacion vaga." },
+      { emoji: "🛠️", title: "Embolsado y llevado", desc: "Todo el escombro embolsado y removido de la propiedad. No llega a casa a montones de hojas o cubetas de mugre en la entrada." },
+      { emoji: "👷", title: "Ojos del oficio, no handyman generalista", desc: "JR One es empresa familiar con mas de 30 anos en el oficio del aluminio. Vemos cosas que los generalistas se pierden, y podemos cotizar cualquier reparacion en el momento." },
     ],
     stats: [
       { value: "$150-$400", label: "Rango tipico unifamiliar" },
@@ -145,12 +146,12 @@ const T = {
     scopeTitle: "Elija la Limpieza Correcta",
     scopeSub: "Servicio completo, basica, paquete con protector o servicio de bajante. Su sistema, su decision.",
     scopeItems: [
-      { title: "Limpieza Completa", desc: "Remocion completa, lavado de bajantes, inspeccion de soportes y sellador, documentacion fotografica y llevado de escombros. Por defecto recomendado para la mayoria de casas." },
-      { title: "Ajuste Basico", desc: "Inspeccion y limpieza puntual para canaletas en condicion razonable o en horario recurrente. Menor costo para sistemas no muy sucios." },
-      { title: "Paquete Deluxe con Protectores", desc: "Cuando agrega protectores, limpiamos primero para que se instalen sobre un sistema limpio. Precio combinado vs. dos visitas separadas." },
-      { title: "Limpieza de Bajante", desc: "Arreglo dirigido para un bajante obstruido. Sintoma comun: canaleta se llena y desborda en un punto aun despues de limpieza general." },
-      { title: "Horario Recurrente", desc: "Limpieza semestral, trimestral o post-tormenta. Con precio por debajo de limpiezas unicas y espacio prioritario en temporada de tormentas." },
-      { title: "Comercial y HOA", desc: "Complejos, retail, comunidades HOA y edificios comerciales. Cotizados y programados separadamente. Vea paginas comercial y HOA." },
+      { emoji: "⭐", title: "Limpieza Completa", desc: "Remocion completa, lavado de bajantes, inspeccion de soportes y sellador, documentacion fotografica y llevado de escombros. Por defecto recomendado para la mayoria de casas." },
+      { emoji: "🧹", title: "Ajuste Basico", desc: "Inspeccion y limpieza puntual para canaletas en condicion razonable o en horario recurrente. Menor costo para sistemas no muy sucios." },
+      { emoji: "🛡️", title: "Paquete Deluxe con Protectores", desc: "Cuando agrega protectores, limpiamos primero para que se instalen sobre un sistema limpio. Precio combinado vs. dos visitas separadas." },
+      { emoji: "💧", title: "Limpieza de Bajante", desc: "Arreglo dirigido para un bajante obstruido. Sintoma comun: canaleta se llena y desborda en un punto aun despues de limpieza general." },
+      { emoji: "⏱", title: "Horario Recurrente", desc: "Limpieza semestral, trimestral o post-tormenta. Con precio por debajo de limpiezas unicas y espacio prioritario en temporada de tormentas." },
+      { emoji: "🏠", title: "Comercial y HOA", desc: "Complejos, retail, comunidades HOA y edificios comerciales. Cotizados y programados separadamente. Vea paginas comercial y HOA." },
     ],
     timingTitle: "Pre-verano (mayo) y post-huracan (noviembre) es el momento ideal.",
     timingDesc: "Mucha cobertura de arboles: 3 a 4 veces al ano. Moderada: 2 veces al ano. Casas con protectores: cada 2 a 3 anos. Despues de cada tormenta, sin importar el horario, los escombros de huracan son un evento propio.",
@@ -205,6 +206,9 @@ const inputStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
+const ACCENT = "#2D8B4E";
+const ACCENT_LIGHT = "#4ADE80";
+
 export default function GutterCleaningPage() {
   const { lang } = useLanguage();
   const t = T[lang];
@@ -247,7 +251,7 @@ export default function GutterCleaningPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </nav>
@@ -257,8 +261,8 @@ export default function GutterCleaningPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container>
             <div style={{ position: "relative", zIndex: 1, maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
-              <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>{t.heroH1}<br /><span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span></h1>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>{t.heroH1}<br /><span style={{ color: ACCENT }}>{t.heroH1Gold}</span></h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-10)" }}>
                 <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.btnEstimate}</Button>
@@ -267,7 +271,7 @@ export default function GutterCleaningPage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px", marginTop: "4px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -281,7 +285,7 @@ export default function GutterCleaningPage() {
             <SectionHeading eyebrow={t.problemTag} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
-                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: "4px solid var(--jr-gold)" }}>
+                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: `4px solid ${ACCENT}` }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
                 </article>
@@ -295,8 +299,10 @@ export default function GutterCleaningPage() {
             <SectionHeading eyebrow={t.solutionTag} title={t.solutionTitle} subtitle={t.solutionSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
-                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{s.emoji}</span>
+                  </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{s.desc}</p>
                 </article>
@@ -310,7 +316,10 @@ export default function GutterCleaningPage() {
             <SectionHeading eyebrow={t.scopeEyebrow} title={t.scopeTitle} subtitle={t.scopeSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.scopeItems.map((g, i) => (
-                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: "4px solid var(--jr-gold)" }}>
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `4px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{g.emoji}</span>
+                  </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{g.desc}</p>
                 </article>
@@ -320,11 +329,11 @@ export default function GutterCleaningPage() {
         </section>
 
         {/* When-to-clean callout */}
-        <section style={{ background: "linear-gradient(135deg, var(--jr-gold-pale), var(--jr-navy-deep))", padding: "var(--jr-space-8) var(--jr-space-6)", borderTop: "2px solid var(--jr-gold)", borderBottom: "2px solid var(--jr-gold)" }}>
+        <section style={{ background: `linear-gradient(135deg, ${ACCENT}1F, var(--jr-navy-deep))`, padding: "var(--jr-space-8) var(--jr-space-6)", borderTop: `2px solid ${ACCENT}`, borderBottom: `2px solid ${ACCENT}` }}>
           <Container>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-5)" }}>
               <div style={{ flex: "1 1 500px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-2)", marginBottom: "var(--jr-space-2)", color: "var(--jr-gold)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-2)", marginBottom: "var(--jr-space-2)", color: ACCENT }}>
                   <ClockIcon size={16} />
                   <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, letterSpacing: "2px" }}>{t.timingLabel}</span>
                 </div>
@@ -361,6 +370,8 @@ export default function GutterCleaningPage() {
           </Container>
         </section>
 
+        <Peak301Alert />
+
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">
             <div style={{ textAlign: "center", marginBottom: "var(--jr-space-10)" }}>
@@ -377,7 +388,7 @@ export default function GutterCleaningPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
@@ -388,7 +399,7 @@ export default function GutterCleaningPage() {
               )}
               <div style={{ marginTop: "var(--jr-space-8)", textAlign: "center" }}>
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-2)" }}>{t.preferTalk}</p>
-                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-gold)", textDecoration: "none" }}>
+                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: ACCENT, textDecoration: "none" }}>
                   <PhoneIcon size={18} /> (844) 444-3114
                 </a>
               </div>

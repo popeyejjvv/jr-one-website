@@ -35,7 +35,11 @@ export default function ServiceCard({
   href,
   cta = "Learn more",
 }) {
-  const Icon = ICON_MAP[icon] || ShieldIcon;
+  // Icon prop can be either an SVG-key (rendered via ICON_MAP) or a literal
+  // emoji/text string (rendered directly). Falls through to ShieldIcon only
+  // when it's an unknown SVG-key (i.e. plain ASCII like "shield-x").
+  const Icon = ICON_MAP[icon] || (typeof icon === "string" && /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{1F000}-\u{1F8FF}]/u.test(icon) ? null : ShieldIcon);
+  const isEmoji = !Icon;
 
   const inner = (
     <>
@@ -53,7 +57,11 @@ export default function ServiceCard({
           color: "var(--jr-gold)",
         }}
       >
-        <Icon size={26} />
+        {isEmoji ? (
+          <span style={{ fontSize: 28, lineHeight: 1 }} aria-hidden>{icon}</span>
+        ) : (
+          <Icon size={26} />
+        )}
       </div>
       <h3
         style={{

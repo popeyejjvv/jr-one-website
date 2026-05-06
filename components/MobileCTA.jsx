@@ -57,13 +57,13 @@ export default function MobileCTA({ scrollTarget = "quote-form" }) {
           fontSize: "13px",
           fontWeight: 700,
           color: "var(--jr-navy)",
-          background: "var(--jr-gold)",
+          background: "linear-gradient(135deg, var(--jr-gold), var(--jr-gold-2))",
           borderRadius: "var(--jr-radius-md)",
           letterSpacing: "0.6px",
           textTransform: "uppercase",
         }}
       >
-        <PhoneIcon size={16} />
+        <span aria-hidden style={{ fontSize: 16 }}>📞</span>
         {t.callNow}
       </a>
       <button

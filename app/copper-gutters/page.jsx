@@ -16,7 +16,8 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import FAQAccordion from "../../components/ui/FAQAccordion";
-import { CheckCircleIcon, PhoneIcon, CheckIcon } from "../../lib/icons";
+import Peak301Alert from "../../components/ui/Peak301Alert";
+import { CheckCircleIcon, PhoneIcon } from "../../lib/icons";
 
 const T = {
   en: {
@@ -30,12 +31,12 @@ const T = {
     solutionsEyebrow: "COPPER SYSTEMS",
     solutionsTitle: "Our Copper Gutter Offerings",
     solutions: [
-      { title: "6\" copper half-round gutters", desc: "Our signature copper offering. Half-round profiles create a classic, elegant look that complements historic homes, Mediterranean architecture, and high-end new construction. Custom-fabricated with a hanger system for lasting durability." },
-      { title: "Full copper downspout systems", desc: "Matching 3x4 and 4-inch round copper downspouts with soldered or sealed connections. Copper straps and brackets maintain the look from roofline to ground level. Available in 4x5 oversized for high-volume applications." },
-      { title: "Copper gutter guards", desc: "6\" and 7\" copper leaf guards that protect your investment while maintaining the seamless copper look. No mismatched aluminum guards on a copper system. Everything matches." },
-      { title: "Leader heads and rain chains", desc: "Decorative copper leader heads at downspout transitions and copper rain chains as alternatives to traditional downspouts. These custom touches elevate the entire exterior." },
-      { title: "50+ year lifespan, realistically forever", desc: "Copper doesn't rust. It doesn't corrode. It doesn't degrade in salt air, UV, or humidity. Over time, it develops a natural green patina that protects the underlying material. Many copper gutter systems outlast the homes they're installed on." },
-      { title: "The patina effect", desc: "New copper starts with a brilliant warm tone and gradually develops a green patina over years of exposure. This natural aging process is considered one of copper's most desirable features. It's why historic buildings, churches, and monuments use copper." },
+      { emoji: "🏛️", title: "6\" copper half-round gutters", desc: "Our signature copper offering. Half-round profiles create a classic, elegant look that complements historic homes, Mediterranean architecture, and high-end new construction. Custom-fabricated with a hanger system for lasting durability." },
+      { emoji: "💧", title: "Full copper downspout systems", desc: "Matching 3x4 and 4-inch round copper downspouts with soldered or sealed connections. Copper straps and brackets maintain the look from roofline to ground level. Available in 4x5 oversized for high-volume applications." },
+      { emoji: "🛡️", title: "Copper gutter guards", desc: "6\" and 7\" copper leaf guards that protect your investment while maintaining the seamless copper look. No mismatched aluminum guards on a copper system. Everything matches." },
+      { emoji: "🎨", title: "Leader heads and rain chains", desc: "Decorative copper leader heads at downspout transitions and copper rain chains as alternatives to traditional downspouts. These custom touches elevate the entire exterior." },
+      { emoji: "⭐", title: "50+ year lifespan, realistically forever", desc: "Copper doesn't rust. It doesn't corrode. It doesn't degrade in salt air, UV, or humidity. Over time, it develops a natural green patina that protects the underlying material. Many copper gutter systems outlast the homes they're installed on." },
+      { emoji: "✨", title: "The patina effect", desc: "New copper starts with a brilliant warm tone and gradually develops a green patina over years of exposure. This natural aging process is considered one of copper's most desirable features. It's why historic buildings, churches, and monuments use copper." },
     ],
     stats: [
       { value: "50+", label: "Year lifespan (often 100+)" },
@@ -58,10 +59,10 @@ const T = {
     idealEyebrow: "BEST FIT",
     idealTitle: "Who Copper Gutters Are For",
     idealFor: [
-      { title: "Historic and Mediterranean homes", desc: "Copper's classic look complements Spanish tile, barrel tile, and historic architectural styles found throughout Tampa Bay's older neighborhoods." },
-      { title: "Coastal and waterfront properties", desc: "Salt air destroys aluminum faster. Copper is essentially immune to corrosion, making it the material of choice for homes on the water." },
-      { title: "High-end new construction", desc: "Builders and architects spec copper when the home's exterior needs to make a statement. Copper gutters signal that no detail was overlooked." },
-      { title: "Forever homes", desc: "If you're staying in your home for 20+ years, copper's higher upfront cost pays for itself. You'll never replace them, and they add value every year." },
+      { emoji: "🏛️", title: "Historic and Mediterranean homes", desc: "Copper's classic look complements Spanish tile, barrel tile, and historic architectural styles found throughout Tampa Bay's older neighborhoods." },
+      { emoji: "🌊", title: "Coastal and waterfront properties", desc: "Salt air destroys aluminum faster. Copper is essentially immune to corrosion, making it the material of choice for homes on the water." },
+      { emoji: "🏠", title: "High-end new construction", desc: "Builders and architects spec copper when the home's exterior needs to make a statement. Copper gutters signal that no detail was overlooked." },
+      { emoji: "⭐", title: "Forever homes", desc: "If you're staying in your home for 20+ years, copper's higher upfront cost pays for itself. You'll never replace them, and they add value every year." },
     ],
     goldEyebrow: "THE GOLD STANDARD",
     goldTitle: "Our Copper Installation Process",
@@ -107,12 +108,12 @@ const T = {
     solutionsEyebrow: "SISTEMAS DE COBRE",
     solutionsTitle: "Nuestras Ofertas de Canalones de Cobre",
     solutions: [
-      { title: "Canalones half-round de cobre de 6\"", desc: "Nuestra oferta insignia en cobre. Los perfiles half-round crean un aspecto clasico y elegante que complementa casas historicas, arquitectura mediterranea y construcciones nuevas de alta gama. Fabricados a medida con un sistema de ganchos para durabilidad." },
-      { title: "Sistemas completos de bajantes de cobre", desc: "Bajantes de cobre de 3x4 y 4 pulgadas redondos con conexiones soldadas o selladas. Correas y soportes de cobre mantienen el aspecto desde la linea del techo hasta el suelo. Disponible en 4x5 para aplicaciones de alto volumen." },
-      { title: "Guardas de canalones de cobre", desc: "Guardas de hojas de cobre de 6\" y 7\" que protegen su inversion manteniendo la estetica continua del cobre. Sin guardas de aluminio que no combinen. Todo hace juego." },
-      { title: "Cabezales decorativos y cadenas de lluvia", desc: "Cabezales decorativos de cobre en las transiciones de bajantes y cadenas de lluvia de cobre como alternativa a los bajantes tradicionales. Estos toques personalizados elevan todo el exterior." },
-      { title: "Vida util de 50+ anos, practicamente para siempre", desc: "El cobre no se oxida. No se corroe. No se degrada con el aire salado, los rayos UV ni la humedad. Con el tiempo, desarrolla una patina verde natural que protege el material. Muchos sistemas de canalones de cobre duran mas que las casas donde se instalan." },
-      { title: "El efecto de la patina", desc: "El cobre nuevo comienza con un tono calido brillante y gradualmente desarrolla una patina verde con los anos de exposicion. Este proceso natural es una de las caracteristicas mas deseadas del cobre. Por eso los edificios historicos, iglesias y monumentos usan cobre." },
+      { emoji: "🏛️", title: "Canalones half-round de cobre de 6\"", desc: "Nuestra oferta insignia en cobre. Los perfiles half-round crean un aspecto clasico y elegante que complementa casas historicas, arquitectura mediterranea y construcciones nuevas de alta gama. Fabricados a medida con un sistema de ganchos para durabilidad." },
+      { emoji: "💧", title: "Sistemas completos de bajantes de cobre", desc: "Bajantes de cobre de 3x4 y 4 pulgadas redondos con conexiones soldadas o selladas. Correas y soportes de cobre mantienen el aspecto desde la linea del techo hasta el suelo. Disponible en 4x5 para aplicaciones de alto volumen." },
+      { emoji: "🛡️", title: "Guardas de canalones de cobre", desc: "Guardas de hojas de cobre de 6\" y 7\" que protegen su inversion manteniendo la estetica continua del cobre. Sin guardas de aluminio que no combinen. Todo hace juego." },
+      { emoji: "🎨", title: "Cabezales decorativos y cadenas de lluvia", desc: "Cabezales decorativos de cobre en las transiciones de bajantes y cadenas de lluvia de cobre como alternativa a los bajantes tradicionales. Estos toques personalizados elevan todo el exterior." },
+      { emoji: "⭐", title: "Vida util de 50+ anos, practicamente para siempre", desc: "El cobre no se oxida. No se corroe. No se degrada con el aire salado, los rayos UV ni la humedad. Con el tiempo, desarrolla una patina verde natural que protege el material. Muchos sistemas de canalones de cobre duran mas que las casas donde se instalan." },
+      { emoji: "✨", title: "El efecto de la patina", desc: "El cobre nuevo comienza con un tono calido brillante y gradualmente desarrolla una patina verde con los anos de exposicion. Este proceso natural es una de las caracteristicas mas deseadas del cobre. Por eso los edificios historicos, iglesias y monumentos usan cobre." },
     ],
     stats: [
       { value: "50+", label: "Anos de vida util" },
@@ -135,10 +136,10 @@ const T = {
     idealEyebrow: "IDEAL PARA",
     idealTitle: "Para Quien Son los Canalones de Cobre",
     idealFor: [
-      { title: "Casas historicas y mediterraneas", desc: "La estetica clasica del cobre complementa la teja espanola, la teja barril y los estilos arquitectonicos historicos que se encuentran en los vecindarios mas antiguos de Tampa Bay." },
-      { title: "Propiedades costeras y frente al agua", desc: "El aire salado destruye el aluminio mas rapido. El cobre es practicamente inmune a la corrosion, lo que lo convierte en el material preferido para casas junto al agua." },
-      { title: "Construccion nueva de alta gama", desc: "Constructores y arquitectos especifican cobre cuando el exterior de la casa necesita hacer una declaracion. Los canalones de cobre demuestran que ningun detalle fue pasado por alto." },
-      { title: "Casas para siempre", desc: "Si planea quedarse en su casa por 20+ anos, el costo inicial mas alto del cobre se paga solo. Nunca los reemplazara, y agregan valor cada ano." },
+      { emoji: "🏛️", title: "Casas historicas y mediterraneas", desc: "La estetica clasica del cobre complementa la teja espanola, la teja barril y los estilos arquitectonicos historicos que se encuentran en los vecindarios mas antiguos de Tampa Bay." },
+      { emoji: "🌊", title: "Propiedades costeras y frente al agua", desc: "El aire salado destruye el aluminio mas rapido. El cobre es practicamente inmune a la corrosion, lo que lo convierte en el material preferido para casas junto al agua." },
+      { emoji: "🏠", title: "Construccion nueva de alta gama", desc: "Constructores y arquitectos especifican cobre cuando el exterior de la casa necesita hacer una declaracion. Los canalones de cobre demuestran que ningun detalle fue pasado por alto." },
+      { emoji: "⭐", title: "Casas para siempre", desc: "Si planea quedarse en su casa por 20+ anos, el costo inicial mas alto del cobre se paga solo. Nunca los reemplazara, y agregan valor cada ano." },
     ],
     goldEyebrow: "EL ESTANDAR DE ORO",
     goldTitle: "Nuestro Proceso de Instalacion",
@@ -182,6 +183,9 @@ const inputStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
+const ACCENT = "#B87333";
+const ACCENT_LIGHT = "#CD8E47";
+
 export default function CopperGuttersPage() {
   const { lang } = useLanguage();
   const t = T[lang];
@@ -224,7 +228,7 @@ export default function CopperGuttersPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </nav>
@@ -234,8 +238,8 @@ export default function CopperGuttersPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container>
             <div style={{ position: "relative", zIndex: 1, maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
-              <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>{t.heroH1}<br /><span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span></h1>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>{t.heroH1}<br /><span style={{ color: ACCENT }}>{t.heroH1Gold}</span></h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-10)" }}>
                 <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.btnEstimate}</Button>
@@ -244,7 +248,7 @@ export default function CopperGuttersPage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px", marginTop: "4px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -258,8 +262,10 @@ export default function CopperGuttersPage() {
             <SectionHeading eyebrow={t.solutionsEyebrow} title={t.solutionsTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
-                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{s.emoji}</span>
+                  </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{s.desc}</p>
                 </article>
@@ -275,10 +281,10 @@ export default function CopperGuttersPage() {
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)" }}>
                 <thead>
-                  <tr style={{ borderBottom: "2px solid var(--jr-gold)" }}>
+                  <tr style={{ borderBottom: `2px solid ${ACCENT}` }}>
                     <th style={{ padding: "var(--jr-space-3) var(--jr-space-4)", textAlign: "left", fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-sm)", fontWeight: 700, color: "var(--jr-paper)" }}>{t.comparisonHeaders.feature}</th>
                     <th style={{ padding: "var(--jr-space-3) var(--jr-space-4)", textAlign: "center", fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-sm)", fontWeight: 700, color: "var(--jr-muted-on-dark)" }}>{t.comparisonHeaders.aluminum}</th>
-                    <th style={{ padding: "var(--jr-space-3) var(--jr-space-4)", textAlign: "center", fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-sm)", fontWeight: 700, color: "var(--jr-gold)" }}>{t.comparisonHeaders.copper}</th>
+                    <th style={{ padding: "var(--jr-space-3) var(--jr-space-4)", textAlign: "center", fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-sm)", fontWeight: 700, color: ACCENT }}>{t.comparisonHeaders.copper}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -286,7 +292,7 @@ export default function CopperGuttersPage() {
                     <tr key={i} style={{ borderBottom: "1px solid var(--jr-navy-3)", background: i % 2 === 0 ? "var(--jr-navy-deep)" : "transparent" }}>
                       <td style={{ padding: "var(--jr-space-3) var(--jr-space-4)", color: "var(--jr-paper)", fontWeight: 600 }}>{row.feature}</td>
                       <td style={{ padding: "var(--jr-space-3) var(--jr-space-4)", textAlign: "center", color: "var(--jr-muted-on-dark)" }}>{row.aluminum}</td>
-                      <td style={{ padding: "var(--jr-space-3) var(--jr-space-4)", textAlign: "center", color: "var(--jr-gold)", fontWeight: 600 }}>{row.copper}</td>
+                      <td style={{ padding: "var(--jr-space-3) var(--jr-space-4)", textAlign: "center", color: ACCENT, fontWeight: 600 }}>{row.copper}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -300,8 +306,8 @@ export default function CopperGuttersPage() {
             <SectionHeading eyebrow={t.idealEyebrow} title={t.idealTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.idealFor.map((item, i) => (
-                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: "3px solid var(--jr-gold)" }}>
-                  <div style={{ display: "inline-flex", color: "var(--jr-gold)", marginBottom: "var(--jr-space-2)" }}><CheckIcon size={20} /></div>
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
+                  <span aria-hidden style={{ display: "inline-block", fontSize: 28, lineHeight: 1, marginBottom: "var(--jr-space-2)" }}>{item.emoji}</span>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-md)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{item.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>{item.desc}</p>
                 </article>
@@ -326,6 +332,8 @@ export default function CopperGuttersPage() {
           </Container>
         </section>
 
+        <Peak301Alert />
+
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">
             <div style={{ textAlign: "center", marginBottom: "var(--jr-space-10)" }}>
@@ -342,7 +350,7 @@ export default function CopperGuttersPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
@@ -353,7 +361,7 @@ export default function CopperGuttersPage() {
               )}
               <div style={{ marginTop: "var(--jr-space-8)", textAlign: "center" }}>
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-2)" }}>{t.preferTalk}</p>
-                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-gold)", textDecoration: "none" }}>
+                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: ACCENT, textDecoration: "none" }}>
                   <PhoneIcon size={18} /> (844) 444-3114
                 </a>
               </div>

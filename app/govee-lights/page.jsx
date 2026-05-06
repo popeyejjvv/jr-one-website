@@ -16,16 +16,15 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
-  LightBulbIcon,
-  RulerIcon,
-  ShieldIcon,
-  HardHatIcon,
-  WrenchIcon,
-  SparkleIcon,
 } from "../../lib/icons";
+
+// Page-identity accent: govee smart-light purple (LED color spectrum).
+const ACCENT = "#9333EA";
+const ACCENT_LIGHT = "#A855F7";
 
 const T = {
   en: {
@@ -45,10 +44,10 @@ const T = {
     problemEyebrow: "The Problem",
     problemTitle: "Why DIY LED Installation Fails",
     problems: [
-      { icon: "spark", title: "Adhesive melts in Florida heat", desc: "Tampa's 95-degree summers soften adhesive-only LED mounting within months. Strips sag, peel, and fall off your roofline, leaving residue on your fascia and lights dangling from your house." },
-      { icon: "ruler", title: "Crooked, uneven lines", desc: "Without professional tools and a trained eye, DIY LED strips end up wavy, misaligned, and visually distracting. The whole point of accent lighting is a clean, seamless line, not a craft project gone wrong." },
-      { icon: "hardhat", title: "Ladder safety risks", desc: "Roofline LED installation means working at height on ladders, the same height that sends thousands of homeowners to the ER every year. One wrong step on a wet Florida morning and you're a statistic." },
-      { icon: "wrench", title: "Gaps and connectivity issues", desc: "DIY installations often leave visible gaps between strip segments, exposed wiring, and controllers mounted in awkward locations. Poor connections mean zones that don't respond and lights that flicker or fail." },
+      { emoji: "🔥", title: "Adhesive melts in Florida heat", desc: "Tampa's 95-degree summers soften adhesive-only LED mounting within months. Strips sag, peel, and fall off your roofline, leaving residue on your fascia and lights dangling from your house." },
+      { emoji: "📐", title: "Crooked, uneven lines", desc: "Without professional tools and a trained eye, DIY LED strips end up wavy, misaligned, and visually distracting. The whole point of accent lighting is a clean, seamless line, not a craft project gone wrong." },
+      { emoji: "🪜", title: "Ladder safety risks", desc: "Roofline LED installation means working at height on ladders, the same height that sends thousands of homeowners to the ER every year. One wrong step on a wet Florida morning and you're a statistic." },
+      { emoji: "🔧", title: "Gaps and connectivity issues", desc: "DIY installations often leave visible gaps between strip segments, exposed wiring, and controllers mounted in awkward locations. Poor connections mean zones that don't respond and lights that flicker or fail." },
     ],
     solutionEyebrow: "The JR One Difference",
     solutionTitle: "Smart-Light Installation Done Right",
@@ -122,10 +121,10 @@ const T = {
     problemEyebrow: "El Problema",
     problemTitle: "Por Qué la Instalación LED Casera Falla",
     problems: [
-      { icon: "spark", title: "El adhesivo se derrite con el calor de Florida", desc: "Los veranos de 95 grados en Tampa ablandan el montaje solo con adhesivo en meses. Las tiras se caen, se despegan y cuelgan de su techo, dejando residuos en su fascia y luces colgando de su casa." },
-      { icon: "ruler", title: "Líneas torcidas y desiguales", desc: "Sin herramientas profesionales y ojo entrenado, las tiras LED quedan onduladas, desalineadas y visualmente distractoras. El propósito de la iluminación de acento es una línea limpia y continua, no un proyecto casero que salió mal." },
-      { icon: "hardhat", title: "Riesgos de seguridad con escaleras", desc: "La instalación LED en la línea del techo significa trabajar en altura sobre escaleras, la misma altura que envía a miles de propietarios a urgencias cada año. Un paso en falso en una mañana húmeda de Florida y usted es una estadística." },
-      { icon: "wrench", title: "Espacios y problemas de conectividad", desc: "Las instalaciones caseras frecuentemente dejan espacios visibles entre segmentos de tiras, cableado expuesto y controladores montados en lugares incómodos. Las malas conexiones significan zonas que no responden y luces que parpadean o fallan." },
+      { emoji: "🔥", title: "El adhesivo se derrite con el calor de Florida", desc: "Los veranos de 95 grados en Tampa ablandan el montaje solo con adhesivo en meses. Las tiras se caen, se despegan y cuelgan de su techo, dejando residuos en su fascia y luces colgando de su casa." },
+      { emoji: "📐", title: "Líneas torcidas y desiguales", desc: "Sin herramientas profesionales y ojo entrenado, las tiras LED quedan onduladas, desalineadas y visualmente distractoras. El propósito de la iluminación de acento es una línea limpia y continua, no un proyecto casero que salió mal." },
+      { emoji: "🪜", title: "Riesgos de seguridad con escaleras", desc: "La instalación LED en la línea del techo significa trabajar en altura sobre escaleras, la misma altura que envía a miles de propietarios a urgencias cada año. Un paso en falso en una mañana húmeda de Florida y usted es una estadística." },
+      { emoji: "🔧", title: "Espacios y problemas de conectividad", desc: "Las instalaciones caseras frecuentemente dejan espacios visibles entre segmentos de tiras, cableado expuesto y controladores montados en lugares incómodos. Las malas conexiones significan zonas que no responden y luces que parpadean o fallan." },
     ],
     solutionEyebrow: "La Diferencia JR One",
     solutionTitle: "Instalación de Luces Inteligentes Hecha Bien",
@@ -182,15 +181,6 @@ const T = {
     formSent: "Solicitud de Presupuesto Recibida",
     formSentSub: "Nos pondremos en contacto en horas.",
   },
-};
-
-const ICON_MAP = {
-  bulb: LightBulbIcon,
-  spark: SparkleIcon,
-  ruler: RulerIcon,
-  shield: ShieldIcon,
-  hardhat: HardHatIcon,
-  wrench: WrenchIcon,
 };
 
 const inputStyle = {
@@ -266,20 +256,33 @@ export default function GoveeLightsPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1a}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1b}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1b}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "660px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-8)" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.heroCta}</Button>
+                <Button
+                  href="#quote-form"
+                  variant="primary"
+                  size="lg"
+                  iconRight
+                  style={{
+                    background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                    color: "#FFFFFF",
+                    border: `2px solid ${ACCENT}`,
+                    boxShadow: `0 4px 14px rgba(147, 51, 234, 0.32)`,
+                  }}
+                >
+                  {t.heroCta}
+                </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -293,18 +296,15 @@ export default function GoveeLightsPage() {
           <Container>
             <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = ICON_MAP[p.icon] || ShieldIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: "4px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(147, 51, 234, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{p.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -316,7 +316,7 @@ export default function GoveeLightsPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{s.desc}</p>
                 </article>
@@ -325,22 +325,8 @@ export default function GoveeLightsPage() {
           </Container>
         </section>
 
-        {/* ── PEAK 301 CALLOUT ── */}
-        <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-12) 0", borderTop: "var(--jr-hair-darker)", borderBottom: "var(--jr-hair-darker)" }}>
-          <Container>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-6)" }}>
-              <div style={{ flex: "1 1 460px" }}>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>{t.peakAlertLabel}</div>
-                <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", lineHeight: 1.3, marginBottom: "var(--jr-space-2)" }}>{t.peakAlertTitle}</h3>
-                <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{t.peakAlertDesc}</p>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "var(--jr-space-2)", flexShrink: 0 }}>
-                <Button href="/peak-301" variant="primary" size="md" iconRight>{t.peakBtn}</Button>
-                <Button href="/insurance-resource-center" variant="outline" size="md" iconRight>{t.peakRights}</Button>
-              </div>
-            </div>
-          </Container>
-        </section>
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
@@ -391,12 +377,27 @@ export default function GoveeLightsPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)", textAlign: "left" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>{loading ? "Sending..." : t.formBtn}</Button>
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="md"
+                    fullWidth
+                    iconRight
+                    disabled={loading}
+                    style={{
+                      background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                      color: "#FFFFFF",
+                      border: `2px solid ${ACCENT}`,
+                      boxShadow: `0 4px 14px rgba(147, 51, 234, 0.32)`,
+                    }}
+                  >
+                    {loading ? "Sending..." : t.formBtn}
+                  </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formNote}</p>
                 </form>
               )}

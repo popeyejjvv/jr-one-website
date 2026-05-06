@@ -17,22 +17,19 @@ import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import CTABand from "../../components/ui/CTABand";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
   MapPinIcon,
-  HouseIcon,
-  StarOutlineIcon,
-  RoofEdgeIcon,
-  WrenchIcon,
-  WaterDropIcon,
-  ShieldIcon,
-  HardHatIcon,
-  RulerIcon,
 } from "../../lib/icons";
 
-const PROBLEM_ICONS = [HouseIcon, StarOutlineIcon, RoofEdgeIcon, WrenchIcon];
-const SCOPE_ICONS = [HouseIcon, RulerIcon, ShieldIcon, RoofEdgeIcon, WaterDropIcon, HardHatIcon];
+// Page-identity accent: rental investor blue (calm, owner-friendly).
+const ACCENT = "#4A90D9";
+const ACCENT_LIGHT = "#6BA3E3";
+
+const PROBLEM_EMOJIS = ["🏠", "⭐", "📐", "🔧"];
+const SCOPE_EMOJIS = ["🏠", "📋", "🛠️", "🏘️", "🌧️", "👷"];
 
 const T = {
   en: {
@@ -289,8 +286,8 @@ export default function RentalPropertyMaintenancePage() {
                 style={{
                   display: "inline-block",
                   padding: "6px 14px",
-                  background: "var(--jr-gold-pale)",
-                  border: "1px solid rgba(200, 149, 46, 0.28)",
+                  background: "rgba(74, 144, 217, 0.12)",
+                  border: `1px solid ${ACCENT}`,
                   borderRadius: "var(--jr-radius-sm)",
                   marginBottom: "var(--jr-space-3)",
                 }}
@@ -300,7 +297,7 @@ export default function RentalPropertyMaintenancePage() {
                     fontFamily: "var(--jr-font-heading)",
                     fontSize: "var(--jr-text-xs)",
                     fontWeight: 700,
-                    color: "var(--jr-gold)",
+                    color: ACCENT_LIGHT,
                     letterSpacing: "3px",
                     textTransform: "uppercase",
                   }}
@@ -318,7 +315,7 @@ export default function RentalPropertyMaintenancePage() {
                 }}
               >
                 {t.heroH1}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1Gold}</span>
               </h1>
               <p
                 style={{
@@ -333,7 +330,18 @@ export default function RentalPropertyMaintenancePage() {
                 {t.heroP}
               </p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>
+                <Button
+                  href="#quote-form"
+                  variant="primary"
+                  size="lg"
+                  iconRight
+                  style={{
+                    background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                    color: "#FFFFFF",
+                    border: `2px solid ${ACCENT}`,
+                    boxShadow: `0 4px 14px rgba(74, 144, 217, 0.32)`,
+                  }}
+                >
                   {t.btnEstimate}
                 </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>
@@ -343,7 +351,7 @@ export default function RentalPropertyMaintenancePage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", marginTop: "var(--jr-space-10)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "28px", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "28px", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px", marginTop: "var(--jr-space-1)" }}>
                       {s.label}
                     </div>
@@ -363,31 +371,28 @@ export default function RentalPropertyMaintenancePage() {
               theme="dark"
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = PROBLEM_ICONS[i] || HouseIcon;
-                return (
-                  <article
-                    key={i}
-                    style={{
-                      background: "var(--jr-navy)",
-                      border: "1px solid var(--jr-navy-3)",
-                      borderLeft: "4px solid var(--jr-gold)",
-                      borderRadius: "var(--jr-radius-lg)",
-                      padding: "var(--jr-space-6)",
-                    }}
-                  >
-                    <div style={{ color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
-                      <Icon size={28} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>
-                      {p.title}
-                    </h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>
-                      {p.desc}
-                    </p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article
+                  key={i}
+                  style={{
+                    background: "var(--jr-navy)",
+                    border: "1px solid var(--jr-navy-3)",
+                    borderLeft: `4px solid ${ACCENT}`,
+                    borderRadius: "var(--jr-radius-lg)",
+                    padding: "var(--jr-space-6)",
+                  }}
+                >
+                  <div style={{ marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 32, lineHeight: 1 }}>{PROBLEM_EMOJIS[i] || "🏠"}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>
+                    {p.title}
+                  </h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>
+                    {p.desc}
+                  </p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -413,7 +418,7 @@ export default function RentalPropertyMaintenancePage() {
                     padding: "var(--jr-space-6)",
                   }}
                 >
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>
@@ -438,31 +443,28 @@ export default function RentalPropertyMaintenancePage() {
               theme="dark"
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.scopeItems.map((g, i) => {
-                const Icon = SCOPE_ICONS[i] || ShieldIcon;
-                return (
-                  <article
-                    key={i}
-                    style={{
-                      background: "var(--jr-navy)",
-                      border: "1px solid var(--jr-navy-3)",
-                      borderTop: "4px solid var(--jr-gold)",
-                      borderRadius: "var(--jr-radius-lg)",
-                      padding: "var(--jr-space-6)",
-                    }}
-                  >
-                    <div style={{ color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
-                      <Icon size={28} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>
-                      {g.title}
-                    </h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>
-                      {g.desc}
-                    </p>
-                  </article>
-                );
-              })}
+              {t.scopeItems.map((g, i) => (
+                <article
+                  key={i}
+                  style={{
+                    background: "var(--jr-navy)",
+                    border: "1px solid var(--jr-navy-3)",
+                    borderTop: `4px solid ${ACCENT}`,
+                    borderRadius: "var(--jr-radius-lg)",
+                    padding: "var(--jr-space-6)",
+                  }}
+                >
+                  <div style={{ marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 32, lineHeight: 1 }}>{SCOPE_EMOJIS[i] || "🏠"}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>
+                    {g.title}
+                  </h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>
+                    {g.desc}
+                  </p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -470,16 +472,16 @@ export default function RentalPropertyMaintenancePage() {
         {/* COVERAGE CALLOUT */}
         <section
           style={{
-            background: "linear-gradient(135deg, rgba(200,149,46,0.08), var(--jr-navy-deep))",
+            background: `linear-gradient(135deg, rgba(74, 144, 217, 0.10), var(--jr-navy-deep))`,
             padding: "var(--jr-space-8) var(--jr-space-6)",
-            borderTop: "2px solid var(--jr-gold)",
-            borderBottom: "2px solid var(--jr-gold)",
+            borderTop: `2px solid ${ACCENT}`,
+            borderBottom: `2px solid ${ACCENT}`,
           }}
         >
           <Container>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-5)" }}>
               <div style={{ flex: "1 1 500px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-2)", color: "var(--jr-gold)", marginBottom: "var(--jr-space-2)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-2)", color: ACCENT_LIGHT, marginBottom: "var(--jr-space-2)" }}>
                   <MapPinIcon size={16} />
                   <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase" }}>
                     {t.coverageLabel}
@@ -492,12 +494,26 @@ export default function RentalPropertyMaintenancePage() {
                   {t.coverageDesc}
                 </p>
               </div>
-              <Button href="/contact" variant="primary" size="md" iconRight>
+              <Button
+                href="/contact"
+                variant="primary"
+                size="md"
+                iconRight
+                style={{
+                  background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                  color: "#FFFFFF",
+                  border: `2px solid ${ACCENT}`,
+                  boxShadow: `0 4px 14px rgba(74, 144, 217, 0.32)`,
+                }}
+              >
                 {t.coverageBtn}
               </Button>
             </div>
           </Container>
         </section>
+
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* GOLD STANDARD */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
@@ -606,12 +622,25 @@ export default function RentalPropertyMaintenancePage() {
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>
                     {t.formTitle}
                   </h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputLightStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputLightStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputLightStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputLightStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="md"
+                    fullWidth
+                    iconRight
+                    disabled={loading}
+                    style={{
+                      background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                      color: "#FFFFFF",
+                      border: `2px solid ${ACCENT}`,
+                      boxShadow: `0 4px 14px rgba(74, 144, 217, 0.32)`,
+                    }}
+                  >
                     {loading ? (lang === "en" ? "Sending..." : "Enviando...") : t.formBtn}
                   </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>

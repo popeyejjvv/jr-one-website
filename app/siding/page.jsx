@@ -16,16 +16,15 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
-  ShieldIcon,
-  WaterDropIcon,
-  HouseIcon,
-  SparkleIcon,
-  RulerIcon,
-  WrenchIcon,
 } from "../../lib/icons";
+
+// Page-identity accent: siding terracotta (warm exterior cladding).
+const ACCENT = "#CC6B49";
+const ACCENT_LIGHT = "#E07D5A";
 
 const T = {
   en: {
@@ -46,10 +45,10 @@ const T = {
     problemEyebrow: "The Problem",
     problemTitle: "What Failing Siding Costs You",
     problems: [
-      { icon: "spark", title: "Storm-damage exposure", desc: "Florida's hurricane season puts enormous stress on siding. Impact from debris, sustained wind loads, and driving rain find every weakness in aging or poorly installed siding." },
-      { icon: "ruler", title: "UV and heat degradation", desc: "Tampa's intense sun warps, fades, and embrittles low-quality siding within years. What looked great at installation starts cracking and yellowing faster than you'd expect." },
-      { icon: "water", title: "Moisture infiltration", desc: "Damaged or improperly installed siding lets moisture behind your walls. In Florida's humidity, that moisture breeds mold, rots framing, and creates air-quality problems inside your home." },
-      { icon: "house", title: "Declining home value", desc: "Damaged siding is one of the first things buyers and appraisers notice. It signals neglected maintenance and can reduce your home's appraised value by 5 to 10%." },
+      { emoji: "🌪️", title: "Storm-damage exposure", desc: "Florida's hurricane season puts enormous stress on siding. Impact from debris, sustained wind loads, and driving rain find every weakness in aging or poorly installed siding." },
+      { emoji: "🔥", title: "UV and heat degradation", desc: "Tampa's intense sun warps, fades, and embrittles low-quality siding within years. What looked great at installation starts cracking and yellowing faster than you'd expect." },
+      { emoji: "💧", title: "Moisture infiltration", desc: "Damaged or improperly installed siding lets moisture behind your walls. In Florida's humidity, that moisture breeds mold, rots framing, and creates air-quality problems inside your home." },
+      { emoji: "🏠", title: "Declining home value", desc: "Damaged siding is one of the first things buyers and appraisers notice. It signals neglected maintenance and can reduce your home's appraised value by 5 to 10%." },
     ],
     solutionEyebrow: "The JR One Difference",
     solutionTitle: "Siding That Handles Florida",
@@ -122,10 +121,10 @@ const T = {
     problemEyebrow: "El Problema",
     problemTitle: "Lo Que Le Cuesta un Revestimiento Dañado",
     problems: [
-      { icon: "spark", title: "Exposición a daños por tormenta", desc: "La temporada de huracanes de Florida somete al revestimiento a un estrés enorme. El impacto de escombros, cargas de viento sostenidas y lluvia torrencial encuentran cada debilidad en el revestimiento viejo o mal instalado." },
-      { icon: "ruler", title: "Degradación por UV y calor", desc: "El sol intenso de Tampa deforma, descolora y hace frágil el revestimiento de baja calidad en pocos años. Lo que se veía bien al instalarse comienza a agrietarse y amarillarse más rápido de lo esperado." },
-      { icon: "water", title: "Infiltración de humedad", desc: "El revestimiento dañado o mal instalado deja pasar la humedad detrás de sus paredes. Con la humedad de Florida, esa humedad cría moho, pudre la estructura y crea problemas de calidad de aire dentro de su hogar." },
-      { icon: "house", title: "Disminución del valor de la propiedad", desc: "El revestimiento dañado es una de las primeras cosas que notan los compradores y tasadores. Señala mantenimiento descuidado y puede reducir el valor tasado de su hogar entre 5 y 10%." },
+      { emoji: "🌪️", title: "Exposición a daños por tormenta", desc: "La temporada de huracanes de Florida somete al revestimiento a un estrés enorme. El impacto de escombros, cargas de viento sostenidas y lluvia torrencial encuentran cada debilidad en el revestimiento viejo o mal instalado." },
+      { emoji: "🔥", title: "Degradación por UV y calor", desc: "El sol intenso de Tampa deforma, descolora y hace frágil el revestimiento de baja calidad en pocos años. Lo que se veía bien al instalarse comienza a agrietarse y amarillarse más rápido de lo esperado." },
+      { emoji: "💧", title: "Infiltración de humedad", desc: "El revestimiento dañado o mal instalado deja pasar la humedad detrás de sus paredes. Con la humedad de Florida, esa humedad cría moho, pudre la estructura y crea problemas de calidad de aire dentro de su hogar." },
+      { emoji: "🏠", title: "Disminución del valor de la propiedad", desc: "El revestimiento dañado es una de las primeras cosas que notan los compradores y tasadores. Señala mantenimiento descuidado y puede reducir el valor tasado de su hogar entre 5 y 10%." },
     ],
     solutionEyebrow: "La Diferencia JR One",
     solutionTitle: "Revestimiento Que Resiste Florida",
@@ -180,15 +179,6 @@ const T = {
     formSent: "Solicitud de Cotización Recibida",
     formSentSub: "Nos pondremos en contacto en horas.",
   },
-};
-
-const ICON_MAP = {
-  spark: SparkleIcon,
-  ruler: RulerIcon,
-  water: WaterDropIcon,
-  house: HouseIcon,
-  shield: ShieldIcon,
-  wrench: WrenchIcon,
 };
 
 const inputStyle = {
@@ -264,20 +254,33 @@ export default function SidingPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1a}<br />{t.heroH1b}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1c}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1c}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "660px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-8)" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.heroCta}</Button>
+                <Button
+                  href="#quote-form"
+                  variant="primary"
+                  size="lg"
+                  iconRight
+                  style={{
+                    background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                    color: "#FFFFFF",
+                    border: `2px solid ${ACCENT}`,
+                    boxShadow: `0 4px 14px rgba(204, 107, 73, 0.32)`,
+                  }}
+                >
+                  {t.heroCta}
+                </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -291,18 +294,15 @@ export default function SidingPage() {
           <Container>
             <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = ICON_MAP[p.icon] || ShieldIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: "4px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(204, 107, 73, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{p.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -314,7 +314,7 @@ export default function SidingPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{s.desc}</p>
                 </article>
@@ -323,22 +323,8 @@ export default function SidingPage() {
           </Container>
         </section>
 
-        {/* ── PEAK 301 CALLOUT ── */}
-        <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-12) 0", borderTop: "var(--jr-hair-darker)", borderBottom: "var(--jr-hair-darker)" }}>
-          <Container>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-6)" }}>
-              <div style={{ flex: "1 1 460px" }}>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>{t.peakAlertLabel}</div>
-                <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", lineHeight: 1.3, marginBottom: "var(--jr-space-2)" }}>{t.peakAlertTitle}</h3>
-                <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{t.peakAlertDesc}</p>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "var(--jr-space-2)", flexShrink: 0 }}>
-                <Button href="/peak-301" variant="primary" size="md" iconRight>{t.peakBtn}</Button>
-                <Button href="/insurance-resource-center" variant="outline" size="md" iconRight>{t.peakRights}</Button>
-              </div>
-            </div>
-          </Container>
-        </section>
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>
@@ -389,12 +375,27 @@ export default function SidingPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)", textAlign: "left" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>{loading ? "Sending..." : t.formBtn}</Button>
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="md"
+                    fullWidth
+                    iconRight
+                    disabled={loading}
+                    style={{
+                      background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                      color: "#FFFFFF",
+                      border: `2px solid ${ACCENT}`,
+                      boxShadow: `0 4px 14px rgba(204, 107, 73, 0.32)`,
+                    }}
+                  >
+                    {loading ? "Sending..." : t.formBtn}
+                  </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formNote}</p>
                 </form>
               )}

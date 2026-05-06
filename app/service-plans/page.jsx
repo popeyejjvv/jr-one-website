@@ -16,17 +16,14 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import CTABand from "../../components/ui/CTABand";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   CheckIcon,
   PhoneIcon,
-  HouseIcon,
-  WaterDropIcon,
-  BroomIcon,
-  ShieldIcon,
 } from "../../lib/icons";
 
-const PROBLEM_ICONS = [BroomIcon, WaterDropIcon, ShieldIcon, HouseIcon];
+const PROBLEM_EMOJIS = ["🧹", "💧", "🛡️", "🏠"];
 
 const T = {
   en: {
@@ -253,6 +250,9 @@ const inputDarkStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
+const ACCENT = "#0D9488";
+const ACCENT_LIGHT = "#14B8A6";
+
 export default function ServicePlansPage() {
   const { lang } = useLanguage();
   const t = T[lang];
@@ -302,7 +302,7 @@ export default function ServicePlansPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 var(--jr-space-2)", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </div>
@@ -316,8 +316,8 @@ export default function ServicePlansPage() {
                 style={{
                   display: "inline-block",
                   padding: "6px 14px",
-                  background: "var(--jr-gold-pale)",
-                  border: "1px solid rgba(200, 149, 46, 0.28)",
+                  background: `${ACCENT}1F`,
+                  border: `1px solid ${ACCENT}55`,
                   borderRadius: "var(--jr-radius-sm)",
                   marginBottom: "var(--jr-space-3)",
                 }}
@@ -327,7 +327,7 @@ export default function ServicePlansPage() {
                     fontFamily: "var(--jr-font-heading)",
                     fontSize: "var(--jr-text-xs)",
                     fontWeight: 700,
-                    color: "var(--jr-gold)",
+                    color: ACCENT_LIGHT,
                     letterSpacing: "3px",
                     textTransform: "uppercase",
                   }}
@@ -345,7 +345,7 @@ export default function ServicePlansPage() {
                 }}
               >
                 {t.heroH1}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1Accent}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1Accent}</span>
               </h1>
               <p
                 style={{
@@ -370,7 +370,7 @@ export default function ServicePlansPage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", marginTop: "var(--jr-space-10)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "28px", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "28px", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px", marginTop: "var(--jr-space-1)" }}>
                       {s.label}
                     </div>
@@ -390,31 +390,26 @@ export default function ServicePlansPage() {
               theme="dark"
             />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = PROBLEM_ICONS[i] || HouseIcon;
-                return (
-                  <article
-                    key={i}
-                    style={{
-                      background: "var(--jr-navy)",
-                      border: "1px solid var(--jr-navy-3)",
-                      borderLeft: "4px solid var(--jr-gold)",
-                      borderRadius: "var(--jr-radius-lg)",
-                      padding: "var(--jr-space-6)",
-                    }}
-                  >
-                    <div style={{ color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
-                      <Icon size={28} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>
-                      {p.title}
-                    </h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>
-                      {p.desc}
-                    </p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article
+                  key={i}
+                  style={{
+                    background: "var(--jr-navy)",
+                    border: "1px solid var(--jr-navy-3)",
+                    borderLeft: `4px solid ${ACCENT}`,
+                    borderRadius: "var(--jr-radius-lg)",
+                    padding: "var(--jr-space-6)",
+                  }}
+                >
+                  <span aria-hidden style={{ display: "inline-block", fontSize: 28, lineHeight: 1, marginBottom: "var(--jr-space-3)" }}>{PROBLEM_EMOJIS[i] || "🏠"}</span>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>
+                    {p.title}
+                  </h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.55 }}>
+                    {p.desc}
+                  </p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -435,7 +430,7 @@ export default function ServicePlansPage() {
                   className="jr-hover-lift"
                   style={{
                     background: "var(--jr-navy-deep)",
-                    border: plan.highlight ? "2px solid var(--jr-gold)" : "1px solid var(--jr-navy-3)",
+                    border: plan.highlight ? `2px solid ${ACCENT}` : "1px solid var(--jr-navy-3)",
                     borderRadius: "var(--jr-radius-xl)",
                     padding: "var(--jr-space-8)",
                     position: "relative",
@@ -448,8 +443,8 @@ export default function ServicePlansPage() {
                         top: "-14px",
                         left: "50%",
                         transform: "translateX(-50%)",
-                        background: "var(--jr-gold)",
-                        color: "var(--jr-navy)",
+                        background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                        color: "#FFFFFF",
                         fontFamily: "var(--jr-font-heading)",
                         fontSize: "var(--jr-text-xs)",
                         fontWeight: 700,
@@ -461,13 +456,13 @@ export default function ServicePlansPage() {
                       {t.mostPopular}
                     </div>
                   )}
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: plan.highlight ? "var(--jr-gold)" : "var(--jr-muted-on-dark)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: plan.highlight ? ACCENT_LIGHT : "var(--jr-muted-on-dark)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>
                     {plan.tag}
                   </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>
                     {plan.name}
                   </h3>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-md)", fontWeight: 700, color: "var(--jr-gold)", marginBottom: "var(--jr-space-3)" }}>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-md)", fontWeight: 700, color: ACCENT_LIGHT, marginBottom: "var(--jr-space-3)" }}>
                     {plan.price}
                   </div>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-5)", lineHeight: 1.55 }}>
@@ -476,7 +471,7 @@ export default function ServicePlansPage() {
                   <div style={{ borderTop: "var(--jr-hair-darker)", paddingTop: "var(--jr-space-4)", marginBottom: "var(--jr-space-4)" }}>
                     {plan.features.map((feat, j) => (
                       <div key={j} style={{ display: "flex", gap: "10px", marginBottom: "10px", alignItems: "flex-start" }}>
-                        <span style={{ color: "var(--jr-gold)", flexShrink: 0, marginTop: "2px" }} aria-hidden>
+                        <span style={{ color: ACCENT_LIGHT, flexShrink: 0, marginTop: "2px" }} aria-hidden>
                           <CheckIcon size={16} />
                         </span>
                         <span style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-cream-2)", lineHeight: 1.5 }}>{feat}</span>
@@ -485,13 +480,13 @@ export default function ServicePlansPage() {
                   </div>
                   <div
                     style={{
-                      background: "var(--jr-gold-pale)",
+                      background: `${ACCENT}1F`,
                       borderRadius: "var(--jr-radius-md)",
                       padding: "12px 14px",
                       marginBottom: "var(--jr-space-5)",
                     }}
                   >
-                    <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "1px", marginRight: "var(--jr-space-2)" }}>
+                    <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "1px", marginRight: "var(--jr-space-2)" }}>
                       {t.bestFor}
                     </span>
                     <span style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-cream-2)" }}>{plan.best}</span>
@@ -532,7 +527,7 @@ export default function ServicePlansPage() {
                       <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-md)", fontWeight: 700, color: "var(--jr-paper)" }}>
                         {svc.title}
                       </h3>
-                      <span style={{ color: "var(--jr-gold)" }} aria-hidden>
+                      <span style={{ color: ACCENT_LIGHT }} aria-hidden>
                         <CheckIcon size={18} />
                       </span>
                     </div>
@@ -547,40 +542,7 @@ export default function ServicePlansPage() {
         </section>
 
         {/* PEAK 301 ALERT */}
-        <section
-          style={{
-            background: "linear-gradient(135deg, rgba(177,26,33,0.10), var(--jr-navy-deep))",
-            padding: "var(--jr-space-8) var(--jr-space-6)",
-            borderTop: "2px solid var(--jr-alert)",
-            borderBottom: "2px solid var(--jr-alert)",
-          }}
-        >
-          <Container>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-5)" }}>
-              <div style={{ flex: "1 1 500px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-2)", marginBottom: "var(--jr-space-2)" }}>
-                  <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-alert)", letterSpacing: "2px", textTransform: "uppercase" }}>
-                    {t.peakAlertLabel}
-                  </span>
-                </div>
-                <p style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", lineHeight: 1.3, marginBottom: "var(--jr-space-2)" }}>
-                  {t.peakAlertTitle}
-                </p>
-                <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", lineHeight: 1.5 }}>
-                  <strong style={{ color: "var(--jr-cream-2)" }}>Peak 301</strong> {t.peakAlertDesc}
-                </p>
-              </div>
-              <div style={{ display: "flex", gap: "var(--jr-space-3)", flexWrap: "wrap" }}>
-                <Button href="/peak-301" variant="primary" size="md" iconRight>
-                  {t.peakBtn}
-                </Button>
-                <Button href="/insurance-resource-center" variant="outline" size="md" iconRight>
-                  {t.peakRightsBtn}
-                </Button>
-              </div>
-            </div>
-          </Container>
-        </section>
+        <Peak301Alert />
 
         {/* GOLD STANDARD */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
@@ -674,7 +636,7 @@ export default function ServicePlansPage() {
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-paper)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>
                     {t.formTitle}
                   </h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputDarkStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputDarkStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputDarkStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />

@@ -17,16 +17,15 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
-  HouseIcon,
-  RoofEdgeIcon,
-  ShieldIcon,
-  RulerIcon,
-  WaterDropIcon,
-  SparkleIcon,
 } from "../../lib/icons";
+
+// Page-identity accent: SAGIPER burgundy (architectural cladding).
+const ACCENT = "#722F37";
+const ACCENT_LIGHT = "#8B3A44";
 
 const T = {
   en: {
@@ -46,18 +45,18 @@ const T = {
     systemEyebrow: "The SAGIPER System",
     systemTitle: "Four Products. One Cohesive Exterior.",
     products: [
-      { icon: "house", name: "SAGIWALL", subtitle: "Exterior Siding & Cladding", desc: "Tongue-and-groove PVC with 5-layer Solar Shield Technology film. Channeled and V-groove profiles. 6\" width, lengths up to 35 ft (minimal seams). 30+ woodgrain, metallic, and RAL color finishes. ICC-ES ESR-4876 evaluated. NFPA 285 fire tested. ASTM E330 wind load tested. 50-year warranty, 15 years non-prorated." },
-      { icon: "edge", name: "SAGIREV", subtitle: "Soffit & Ceiling System", desc: "Interior and exterior. 4\" V-groove, 6\" V-groove, and 8\" flat profiles. Same Solar Shield Technology. Built for soffits, covered decks, lanais, and interior ceilings. M1 fire-rated (non-flammable). 50-year warranty." },
-      { icon: "shield", name: "SAGIBOND", subtitle: "Aluminum Composite Material Panels", desc: "Three constructions: FireGuard (fire-rated), HexaCore (honeycomb, superior rigidity), SlimShield (solid 3mm aluminum). Modern commercial facades with woodgrain warmth. 4ft x 16ft sheets. 50-year warranty." },
-      { icon: "ruler", name: "SAGIBATTEN", subtitle: "Aluminum Batten System", desc: "2mm wall thickness. 7 size options from 1\"x2\" to 2\"x8\". 24+ woodgrain finishes including Nordic series. For contemporary facades, pergolas, accent walls, and baffle ceilings. 50-year warranty." },
+      { emoji: "🏠", name: "SAGIWALL", subtitle: "Exterior Siding & Cladding", desc: "Tongue-and-groove PVC with 5-layer Solar Shield Technology film. Channeled and V-groove profiles. 6\" width, lengths up to 35 ft (minimal seams). 30+ woodgrain, metallic, and RAL color finishes. ICC-ES ESR-4876 evaluated. NFPA 285 fire tested. ASTM E330 wind load tested. 50-year warranty, 15 years non-prorated." },
+      { emoji: "🏗️", name: "SAGIREV", subtitle: "Soffit & Ceiling System", desc: "Interior and exterior. 4\" V-groove, 6\" V-groove, and 8\" flat profiles. Same Solar Shield Technology. Built for soffits, covered decks, lanais, and interior ceilings. M1 fire-rated (non-flammable). 50-year warranty." },
+      { emoji: "🛡️", name: "SAGIBOND", subtitle: "Aluminum Composite Material Panels", desc: "Three constructions: FireGuard (fire-rated), HexaCore (honeycomb, superior rigidity), SlimShield (solid 3mm aluminum). Modern commercial facades with woodgrain warmth. 4ft x 16ft sheets. 50-year warranty." },
+      { emoji: "📐", name: "SAGIBATTEN", subtitle: "Aluminum Batten System", desc: "2mm wall thickness. 7 size options from 1\"x2\" to 2\"x8\". 24+ woodgrain finishes including Nordic series. For contemporary facades, pergolas, accent walls, and baffle ceilings. 50-year warranty." },
     ],
     problemEyebrow: "The Problem",
     problemTitle: "Why Standard Siding Fails in Florida",
     problems: [
-      { icon: "spark", title: "Vinyl fades and warps in Florida sun", desc: "Standard vinyl and wood siding can't handle relentless UV exposure. Colors fade, materials warp, and you're left with a home that looks tired after just a few years." },
-      { icon: "shield", title: "Paint and stain maintenance never ends", desc: "Wood siding wants repainting or restaining every 3 to 5 years. That's thousands of dollars and days of disruption, on repeat, forever." },
-      { icon: "water", title: "Vinyl limits dark-color choices", desc: "Want charcoal, walnut, or black? Standard vinyl absorbs heat and warps. Homeowners get stuck with light colors or accept inevitable damage." },
-      { icon: "house", title: "Generic siding looks like every house on the block", desc: "Lumber-yard vinyl comes in limited profiles and colors. Your home deserves architect-grade materials, not builder-basic aesthetics." },
+      { emoji: "🔥", title: "Vinyl fades and warps in Florida sun", desc: "Standard vinyl and wood siding can't handle relentless UV exposure. Colors fade, materials warp, and you're left with a home that looks tired after just a few years." },
+      { emoji: "🎨", title: "Paint and stain maintenance never ends", desc: "Wood siding wants repainting or restaining every 3 to 5 years. That's thousands of dollars and days of disruption, on repeat, forever." },
+      { emoji: "☔", title: "Vinyl limits dark-color choices", desc: "Want charcoal, walnut, or black? Standard vinyl absorbs heat and warps. Homeowners get stuck with light colors or accept inevitable damage." },
+      { emoji: "🏠", title: "Generic siding looks like every house on the block", desc: "Lumber-yard vinyl comes in limited profiles and colors. Your home deserves architect-grade materials, not builder-basic aesthetics." },
     ],
     whyEyebrow: "Why SAGIPER",
     whyTitle: "Engineered for Florida. Designed for Architects.",
@@ -129,18 +128,18 @@ const T = {
     systemEyebrow: "El Sistema SAGIPER",
     systemTitle: "Cuatro Productos. Un Exterior Cohesivo.",
     products: [
-      { icon: "house", name: "SAGIWALL", subtitle: "Revestimiento Exterior", desc: "PVC machihembrado con película Solar Shield Technology de 5 capas. Perfiles acanalados y V-groove. Ancho de 6\", longitudes hasta 35 ft (uniones mínimas). 30+ acabados de madera, metálicos y colores RAL. Evaluado ICC-ES ESR-4876. Probado NFPA 285 contra incendios. Probado ASTM E330 carga de viento. Garantía de 50 años, 15 años sin prorrateo." },
-      { icon: "edge", name: "SAGIREV", subtitle: "Sistema de Sofito y Techo", desc: "Interior y exterior. Perfiles V-groove de 4\", V-groove de 6\" y plano de 8\". Misma Tecnología Solar Shield. Hecho para sofitos, terrazas cubiertas, lanais y techos interiores. Clasificación M1 contra incendios (no inflamable). Garantía de 50 años." },
-      { icon: "shield", name: "SAGIBOND", subtitle: "Paneles de Material Compuesto de Aluminio", desc: "Tres construcciones: FireGuard (clasificado contra incendios), HexaCore (panal, rigidez superior), SlimShield (aluminio sólido de 3mm). Fachadas comerciales modernas con calidez de madera. Láminas de 4ft x 16ft. Garantía de 50 años." },
-      { icon: "ruler", name: "SAGIBATTEN", subtitle: "Sistema de Listones de Aluminio", desc: "Espesor de pared de 2mm. 7 opciones de tamaño desde 1\"x2\" hasta 2\"x8\". 24+ acabados de madera incluyendo serie Nordic. Para fachadas contemporáneas, pérgolas, paredes de acento y techos de deflectores. Garantía de 50 años." },
+      { emoji: "🏠", name: "SAGIWALL", subtitle: "Revestimiento Exterior", desc: "PVC machihembrado con película Solar Shield Technology de 5 capas. Perfiles acanalados y V-groove. Ancho de 6\", longitudes hasta 35 ft (uniones mínimas). 30+ acabados de madera, metálicos y colores RAL. Evaluado ICC-ES ESR-4876. Probado NFPA 285 contra incendios. Probado ASTM E330 carga de viento. Garantía de 50 años, 15 años sin prorrateo." },
+      { emoji: "🏗️", name: "SAGIREV", subtitle: "Sistema de Sofito y Techo", desc: "Interior y exterior. Perfiles V-groove de 4\", V-groove de 6\" y plano de 8\". Misma Tecnología Solar Shield. Hecho para sofitos, terrazas cubiertas, lanais y techos interiores. Clasificación M1 contra incendios (no inflamable). Garantía de 50 años." },
+      { emoji: "🛡️", name: "SAGIBOND", subtitle: "Paneles de Material Compuesto de Aluminio", desc: "Tres construcciones: FireGuard (clasificado contra incendios), HexaCore (panal, rigidez superior), SlimShield (aluminio sólido de 3mm). Fachadas comerciales modernas con calidez de madera. Láminas de 4ft x 16ft. Garantía de 50 años." },
+      { emoji: "📐", name: "SAGIBATTEN", subtitle: "Sistema de Listones de Aluminio", desc: "Espesor de pared de 2mm. 7 opciones de tamaño desde 1\"x2\" hasta 2\"x8\". 24+ acabados de madera incluyendo serie Nordic. Para fachadas contemporáneas, pérgolas, paredes de acento y techos de deflectores. Garantía de 50 años." },
     ],
     problemEyebrow: "El Problema",
     problemTitle: "Por Qué el Revestimiento Estándar Falla en Florida",
     problems: [
-      { icon: "spark", title: "El vinilo se desvanece y deforma con el sol de Florida", desc: "El vinilo y la madera estándar no pueden con la exposición UV constante. Los colores se desvanecen, los materiales se deforman y su casa se ve deteriorada en pocos años." },
-      { icon: "shield", title: "El mantenimiento de pintura y tinte nunca termina", desc: "El revestimiento de madera necesita repintado o retintado cada 3 a 5 años. Son miles de dólares y días de interrupción, repetidamente, para siempre." },
-      { icon: "water", title: "El vinilo limita las opciones de colores oscuros", desc: "¿Quiere carbón, nogal o negro? El vinilo estándar absorbe calor y se deforma. Los propietarios se limitan a colores claros o aceptan el daño inevitable." },
-      { icon: "house", title: "El revestimiento genérico se ve igual que todas las casas", desc: "El vinilo de ferretería viene en perfiles y colores limitados. Su casa merece materiales de grado arquitectónico, no estética básica de constructor." },
+      { emoji: "🔥", title: "El vinilo se desvanece y deforma con el sol de Florida", desc: "El vinilo y la madera estándar no pueden con la exposición UV constante. Los colores se desvanecen, los materiales se deforman y su casa se ve deteriorada en pocos años." },
+      { emoji: "🎨", title: "El mantenimiento de pintura y tinte nunca termina", desc: "El revestimiento de madera necesita repintado o retintado cada 3 a 5 años. Son miles de dólares y días de interrupción, repetidamente, para siempre." },
+      { emoji: "☔", title: "El vinilo limita las opciones de colores oscuros", desc: "¿Quiere carbón, nogal o negro? El vinilo estándar absorbe calor y se deforma. Los propietarios se limitan a colores claros o aceptan el daño inevitable." },
+      { emoji: "🏠", title: "El revestimiento genérico se ve igual que todas las casas", desc: "El vinilo de ferretería viene en perfiles y colores limitados. Su casa merece materiales de grado arquitectónico, no estética básica de constructor." },
     ],
     whyEyebrow: "Por Qué SAGIPER",
     whyTitle: "Ingeniería para Florida. Diseñado para Arquitectos.",
@@ -195,15 +194,6 @@ const T = {
     formSent: "Solicitud de Consulta Recibida",
     formSentSub: "Nos pondremos en contacto en horas para programar su consulta SAGIPER.",
   },
-};
-
-const ICON_MAP = {
-  house: HouseIcon,
-  edge: RoofEdgeIcon,
-  shield: ShieldIcon,
-  ruler: RulerIcon,
-  spark: SparkleIcon,
-  water: WaterDropIcon,
 };
 
 const inputStyle = {
@@ -280,20 +270,33 @@ export default function SagiperPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1a}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1b}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1b}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "660px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-8)" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.heroCta}</Button>
+                <Button
+                  href="#quote-form"
+                  variant="primary"
+                  size="lg"
+                  iconRight
+                  style={{
+                    background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                    color: "#FFFFFF",
+                    border: `2px solid ${ACCENT}`,
+                    boxShadow: `0 4px 14px rgba(114, 47, 55, 0.32)`,
+                  }}
+                >
+                  {t.heroCta}
+                </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -307,19 +310,16 @@ export default function SagiperPage() {
           <Container>
             <SectionHeading eyebrow={t.systemEyebrow} title={t.systemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.products.map((p, i) => {
-                const Icon = ICON_MAP[p.icon] || HouseIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderTop: "3px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", marginBottom: "var(--jr-space-1)" }}>{p.name}</h3>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 600, color: "var(--jr-gold)", letterSpacing: "1px", marginBottom: "var(--jr-space-3)", textTransform: "uppercase" }}>{p.subtitle}</div>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{p.desc}</p>
-                  </article>
-                );
-              })}
+              {t.products.map((p, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderTop: `3px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(114, 47, 55, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{p.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", marginBottom: "var(--jr-space-1)" }}>{p.name}</h3>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 600, color: ACCENT_LIGHT, letterSpacing: "1px", marginBottom: "var(--jr-space-3)", textTransform: "uppercase" }}>{p.subtitle}</div>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{p.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -329,18 +329,15 @@ export default function SagiperPage() {
           <Container>
             <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = ICON_MAP[p.icon] || ShieldIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: "4px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(114, 47, 55, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{p.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -352,7 +349,7 @@ export default function SagiperPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.whyItems.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{s.desc}</p>
                 </article>
@@ -361,22 +358,8 @@ export default function SagiperPage() {
           </Container>
         </section>
 
-        {/* ── PEAK 301 CALLOUT ── */}
-        <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-12) 0", borderTop: "var(--jr-hair-darker)", borderBottom: "var(--jr-hair-darker)" }}>
-          <Container>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-6)" }}>
-              <div style={{ flex: "1 1 460px" }}>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>{t.peakAlertLabel}</div>
-                <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", lineHeight: 1.3, marginBottom: "var(--jr-space-2)" }}>{t.peakAlertTitle}</h3>
-                <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{t.peakAlertDesc}</p>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "var(--jr-space-2)", flexShrink: 0 }}>
-                <Button href="/peak-301" variant="primary" size="md" iconRight>{t.peakBtn}</Button>
-                <Button href="/insurance-resource-center" variant="outline" size="md" iconRight>{t.peakRights}</Button>
-              </div>
-            </div>
-          </Container>
-        </section>
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
@@ -427,12 +410,27 @@ export default function SagiperPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)", textAlign: "left" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>{loading ? "Sending..." : t.formBtn}</Button>
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="md"
+                    fullWidth
+                    iconRight
+                    disabled={loading}
+                    style={{
+                      background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                      color: "#FFFFFF",
+                      border: `2px solid ${ACCENT}`,
+                      boxShadow: `0 4px 14px rgba(114, 47, 55, 0.32)`,
+                    }}
+                  >
+                    {loading ? "Sending..." : t.formBtn}
+                  </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formNote}</p>
                 </form>
               )}

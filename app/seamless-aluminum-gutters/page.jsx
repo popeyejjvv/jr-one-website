@@ -18,6 +18,7 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import { CheckCircleIcon, PhoneIcon } from "../../lib/icons";
 
 const T = {
@@ -41,12 +42,12 @@ const T = {
     solutionTitle: "How We Do Gutters",
     solutionSub: "Six things we do that most gutter companies don't.",
     solutions: [
-      { title: "Custom-fabricated on your property", desc: "We bring our gutter machine to your home and fabricate each run on-site to the exact measurements. No factory pre-cuts, no splices, no seams that leak. Every piece fits your roofline perfectly." },
-      { title: "Two sizes for every situation", desc: "6\" high-capacity systems for homes with standard to large roof areas. 7\" commercial-grade gutters for maximum water handling during Florida storms. We recommend 6\" as the baseline for every Florida home. Undersized gutters overflow during summer storms." },
-      { title: "Multiple gauge options to fit your needs", desc: "We carry a range of aluminum gauges from standard .027 up to heavy-duty .032, and we help you choose the right one for your home, budget, and weather exposure. Thicker gauges resist denting and last longer. We will never upsell you on what you don't need." },
-      { title: "Hidden hanger system", desc: "Internal hangers every 24 inches for maximum strength. No spike-and-ferrule showing on the face of your gutters. Cleaner look, stronger hold, longer lifespan." },
-      { title: "Pitched right for Florida rain", desc: "Every gutter run is pitched at the correct slope for proper water flow. Incorrect pitch is the #1 cause of gutter overflow and standing water, and it's the mistake subcontracted gutter installers make most often." },
-      { title: "40+ color options", desc: "Match your gutters to your trim, fascia, roof, or siding. We carry the full aluminum coil color spectrum so your gutters look intentional, not afterthought." },
+      { emoji: "🏗️", title: "Custom-fabricated on your property", desc: "We bring our gutter machine to your home and fabricate each run on-site to the exact measurements. No factory pre-cuts, no splices, no seams that leak. Every piece fits your roofline perfectly." },
+      { emoji: "📐", title: "Two sizes for every situation", desc: "6\" high-capacity systems for homes with standard to large roof areas. 7\" commercial-grade gutters for maximum water handling during Florida storms. We recommend 6\" as the baseline for every Florida home. Undersized gutters overflow during summer storms." },
+      { emoji: "💪", title: "Multiple gauge options to fit your needs", desc: "We carry a range of aluminum gauges from standard .027 up to heavy-duty .032, and we help you choose the right one for your home, budget, and weather exposure. Thicker gauges resist denting and last longer. We will never upsell you on what you don't need." },
+      { emoji: "🔧", title: "Hidden hanger system", desc: "Internal hangers every 24 inches for maximum strength. No spike-and-ferrule showing on the face of your gutters. Cleaner look, stronger hold, longer lifespan." },
+      { emoji: "💧", title: "Pitched right for Florida rain", desc: "Every gutter run is pitched at the correct slope for proper water flow. Incorrect pitch is the #1 cause of gutter overflow and standing water, and it's the mistake subcontracted gutter installers make most often." },
+      { emoji: "🎨", title: "40+ color options", desc: "Match your gutters to your trim, fascia, roof, or siding. We carry the full aluminum coil color spectrum so your gutters look intentional, not afterthought." },
     ],
     stats: [
       { value: "3,000+", label: "Gutter installations completed" },
@@ -128,12 +129,12 @@ const T = {
     solutionTitle: "Como Hacemos las Canaletas",
     solutionSub: "Seis cosas que hacemos que la mayoria de las empresas de canaletas no hacen.",
     solutions: [
-      { title: "Fabricadas a medida en su propiedad", desc: "Llevamos nuestra maquina de canaletas a su hogar y fabricamos cada tramo en el sitio con las medidas exactas. Sin cortes prefabricados, sin empalmes, sin costuras que filtren. Cada pieza se ajusta perfectamente a su linea de techo." },
-      { title: "Dos tamanos para cada situacion", desc: "Sistemas de 6\" de alta capacidad para hogares con areas de techo estandar a grandes. Canaletas de 7\" de grado comercial para maximo manejo de agua durante tormentas de Florida. Recomendamos 6\" como minimo para cada hogar en Florida. Las canaletas pequenas se desbordan durante las tormentas de verano." },
-      { title: "Multiples opciones de calibre", desc: "Manejamos una variedad de calibres de aluminio desde el estandar .027 hasta el de alta resistencia .032, y le ayudamos a elegir el adecuado para su hogar, presupuesto y exposicion al clima. Los calibres mas gruesos resisten abolladuras y duran mas. Nunca le venderemos lo que no necesita." },
-      { title: "Sistema de soportes ocultos", desc: "Soportes internos cada 24 pulgadas para maxima resistencia. Sin clavos ni ferrulas visibles en la cara de sus canaletas. Mejor apariencia, mayor agarre, mayor vida util." },
-      { title: "Inclinacion correcta para la lluvia de Florida", desc: "Cada tramo de canaleta tiene la inclinacion correcta para un flujo de agua optimo. La inclinacion incorrecta es la causa #1 de desbordamiento y agua estancada, y es el error que los instaladores subcontratados cometen con mas frecuencia." },
-      { title: "Mas de 40 opciones de color", desc: "Combine sus canaletas con su moldura, fascia, techo o revestimiento. Tenemos el espectro completo de colores de aluminio para que sus canaletas se vean intencionales, no improvisadas." },
+      { emoji: "🏗️", title: "Fabricadas a medida en su propiedad", desc: "Llevamos nuestra maquina de canaletas a su hogar y fabricamos cada tramo en el sitio con las medidas exactas. Sin cortes prefabricados, sin empalmes, sin costuras que filtren. Cada pieza se ajusta perfectamente a su linea de techo." },
+      { emoji: "📐", title: "Dos tamanos para cada situacion", desc: "Sistemas de 6\" de alta capacidad para hogares con areas de techo estandar a grandes. Canaletas de 7\" de grado comercial para maximo manejo de agua durante tormentas de Florida. Recomendamos 6\" como minimo para cada hogar en Florida. Las canaletas pequenas se desbordan durante las tormentas de verano." },
+      { emoji: "💪", title: "Multiples opciones de calibre", desc: "Manejamos una variedad de calibres de aluminio desde el estandar .027 hasta el de alta resistencia .032, y le ayudamos a elegir el adecuado para su hogar, presupuesto y exposicion al clima. Los calibres mas gruesos resisten abolladuras y duran mas. Nunca le venderemos lo que no necesita." },
+      { emoji: "🔧", title: "Sistema de soportes ocultos", desc: "Soportes internos cada 24 pulgadas para maxima resistencia. Sin clavos ni ferrulas visibles en la cara de sus canaletas. Mejor apariencia, mayor agarre, mayor vida util." },
+      { emoji: "💧", title: "Inclinacion correcta para la lluvia de Florida", desc: "Cada tramo de canaleta tiene la inclinacion correcta para un flujo de agua optimo. La inclinacion incorrecta es la causa #1 de desbordamiento y agua estancada, y es el error que los instaladores subcontratados cometen con mas frecuencia." },
+      { emoji: "🎨", title: "Mas de 40 opciones de color", desc: "Combine sus canaletas con su moldura, fascia, techo o revestimiento. Tenemos el espectro completo de colores de aluminio para que sus canaletas se vean intencionales, no improvisadas." },
     ],
     stats: [
       { value: "3,000+", label: "Instalaciones de canaletas completadas" },
@@ -211,6 +212,9 @@ const inputStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
+const ACCENT = "#4A90D9";
+const ACCENT_LIGHT = "#6BA3E3";
+
 export default function SeamlessGuttersPage() {
   const { lang } = useLanguage();
   const t = T[lang];
@@ -262,7 +266,7 @@ export default function SeamlessGuttersPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </nav>
@@ -289,12 +293,12 @@ export default function SeamlessGuttersPage() {
           />
           <Container>
             <div style={{ position: "relative", zIndex: 1, maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>
                 {t.heroTag}
               </div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span>
+                <span style={{ color: ACCENT }}>{t.heroH1Gold}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>
                 {t.heroP}
@@ -310,7 +314,7 @@ export default function SeamlessGuttersPage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "120px", marginTop: "4px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -325,7 +329,7 @@ export default function SeamlessGuttersPage() {
             <SectionHeading eyebrow={t.problemTag} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.problems.map((p, i) => (
-                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: "4px solid var(--jr-gold)" }}>
+                <article key={i} style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderLeft: `4px solid ${ACCENT}` }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
                 </article>
@@ -340,8 +344,10 @@ export default function SeamlessGuttersPage() {
             <SectionHeading eyebrow={t.solutionTag} title={t.solutionTitle} subtitle={t.solutionSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
-                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "var(--jr-space-6)", borderTop: `3px solid ${ACCENT}` }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", marginBottom: "var(--jr-space-3)" }}>
+                    <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{s.emoji}</span>
+                  </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{s.desc}</p>
                 </article>
@@ -349,15 +355,15 @@ export default function SeamlessGuttersPage() {
             </div>
 
             {/* Downspout Styles Callout */}
-            <div style={{ marginTop: "var(--jr-space-12)", background: "linear-gradient(135deg, var(--jr-navy-deep), var(--jr-navy-2))", border: "1px solid var(--jr-gold)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8)" }}>
+            <div style={{ marginTop: "var(--jr-space-12)", background: "linear-gradient(135deg, var(--jr-navy-deep), var(--jr-navy-2))", border: `1px solid ${ACCENT}`, borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8)" }}>
               <div style={{ marginBottom: "var(--jr-space-5)" }}>
-                <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-gold)", marginBottom: "var(--jr-space-2)" }}>{t.downspoutTitle}</h3>
+                <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: ACCENT, marginBottom: "var(--jr-space-2)" }}>{t.downspoutTitle}</h3>
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-cream-2)", lineHeight: 1.6 }}>{t.downspoutIntro}</p>
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "var(--jr-space-3)" }}>
                 {t.downspouts.map((ds, i) => (
-                  <div key={i} style={{ background: "var(--jr-gold-pale)", borderRadius: "var(--jr-radius-md)", padding: "var(--jr-space-4)" }}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-sm)", fontWeight: 700, color: "var(--jr-gold)", marginBottom: "4px" }}>{ds.name}</div>
+                  <div key={i} style={{ background: `${ACCENT}1F`, borderRadius: "var(--jr-radius-md)", padding: "var(--jr-space-4)" }}>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-sm)", fontWeight: 700, color: ACCENT, marginBottom: "4px" }}>{ds.name}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)" }}>{ds.desc}</div>
                   </div>
                 ))}
@@ -414,6 +420,9 @@ export default function SeamlessGuttersPage() {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT ── */}
+        <Peak301Alert />
+
         {/* ── QUOTE FORM ── */}
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">
@@ -433,7 +442,7 @@ export default function SeamlessGuttersPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
@@ -446,7 +455,7 @@ export default function SeamlessGuttersPage() {
               )}
               <div style={{ marginTop: "var(--jr-space-8)", textAlign: "center" }}>
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", marginBottom: "var(--jr-space-2)" }}>{t.preferTalk}</p>
-                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-gold)", textDecoration: "none" }}>
+                <a href="tel:8444443114" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: ACCENT, textDecoration: "none" }}>
                   <PhoneIcon size={18} /> (844) 444-3114
                 </a>
               </div>

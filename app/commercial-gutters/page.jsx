@@ -16,17 +16,15 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
-  WaterDropIcon,
-  RoofEdgeIcon,
-  ShieldIcon,
-  RulerIcon,
-  HouseIcon,
-  HardHatIcon,
-  WrenchIcon,
 } from "../../lib/icons";
+
+// Page-identity accent: commercial steel-gray (industrial gravity).
+const ACCENT = "#8B9DAF";
+const ACCENT_LIGHT = "#A3B5C8";
 
 const T = {
   en: {
@@ -46,10 +44,10 @@ const T = {
     problemEyebrow: "The Commercial Reality",
     problemTitle: "Why Residential Gutters Fail on Commercial Buildings",
     problems: [
-      { icon: "water", title: "Undersized for the roof area", desc: "Apartment buildings and retail centers shed 3 to 10 times the water volume of a single-family home. Standard 5\" or 6\" residential gutters overflow within the first heavy storm, pouring water onto entries, parking, and walkways." },
-      { icon: "edge", title: "Wrong profile for the load", desc: "Commercial roofs need box gutters, D-style profiles, or super gutters, not K-style residential. The wrong profile warps, pulls off the fascia, and creates liability the property insurer won't cover." },
-      { icon: "shield", title: "Liability from water on tenant paths", desc: "Water pooling at retail entries, apartment walkways, or office park sidewalks is a slip-and-fall lawsuit waiting to happen. Inadequate gutters are the first thing a plaintiff's attorney points at." },
-      { icon: "house", title: "Lost revenue during shutdown", desc: "A retail tenant closed for water damage is revenue gone. An apartment unit unrentable because of interior water intrusion is revenue gone. Gutter-system failure on commercial is expensive in ways homeowners don't see." },
+      { emoji: "💧", title: "Undersized for the roof area", desc: "Apartment buildings and retail centers shed 3 to 10 times the water volume of a single-family home. Standard 5\" or 6\" residential gutters overflow within the first heavy storm, pouring water onto entries, parking, and walkways." },
+      { emoji: "📐", title: "Wrong profile for the load", desc: "Commercial roofs need box gutters, D-style profiles, or super gutters, not K-style residential. The wrong profile warps, pulls off the fascia, and creates liability the property insurer won't cover." },
+      { emoji: "🛡️", title: "Liability from water on tenant paths", desc: "Water pooling at retail entries, apartment walkways, or office park sidewalks is a slip-and-fall lawsuit waiting to happen. Inadequate gutters are the first thing a plaintiff's attorney points at." },
+      { emoji: "💳", title: "Lost revenue during shutdown", desc: "A retail tenant closed for water damage is revenue gone. An apartment unit unrentable because of interior water intrusion is revenue gone. Gutter-system failure on commercial is expensive in ways homeowners don't see." },
     ],
     solutionEyebrow: "The JR One Commercial Difference",
     solutionTitle: "Built for the Job, Sized for the Building",
@@ -66,12 +64,12 @@ const T = {
     scopeTitle: "Commercial Properties We Build For",
     scopeSub: "From 4-unit townhomes to 300-unit apartment complexes. Plus retail, office, and industrial.",
     scopeItems: [
-      { icon: "house", title: "Apartment complexes", desc: "Multi-building apartment properties. Gutter, soffit, fascia, and drainage designed for high-density water shed and durability between scheduled maintenance cycles." },
-      { icon: "house", title: "Multi-family and townhomes", desc: "Townhome communities, condominium buildings, and small multi-family. Color-matched to community spec, installed building-by-building without disrupting residents." },
-      { icon: "ruler", title: "Retail strip centers", desc: "Strip centers and standalone retail. Entry-zone drainage is critical. We route water away from customer paths and storefronts, not into them." },
-      { icon: "edge", title: "Office buildings and business parks", desc: "Single-building office and multi-building business parks. Coordinated with landscape and paving drainage to prevent tenant-space water intrusion." },
-      { icon: "shield", title: "Industrial and warehouse", desc: "Warehouse and industrial facilities with large roof areas. Box-gutter systems and commercial downspout specifications engineered for the volume." },
-      { icon: "hardhat", title: "Hotels, hospitality, institutional", desc: "Hotels, churches, schools, and institutional buildings. Scheduled around the facility's operational windows. No disruption to guests, congregations, or classes." },
+      { emoji: "🏠", title: "Apartment complexes", desc: "Multi-building apartment properties. Gutter, soffit, fascia, and drainage designed for high-density water shed and durability between scheduled maintenance cycles." },
+      { emoji: "🏘️", title: "Multi-family and townhomes", desc: "Townhome communities, condominium buildings, and small multi-family. Color-matched to community spec, installed building-by-building without disrupting residents." },
+      { emoji: "🏬", title: "Retail strip centers", desc: "Strip centers and standalone retail. Entry-zone drainage is critical. We route water away from customer paths and storefronts, not into them." },
+      { emoji: "🏢", title: "Office buildings and business parks", desc: "Single-building office and multi-building business parks. Coordinated with landscape and paving drainage to prevent tenant-space water intrusion." },
+      { emoji: "🏭", title: "Industrial and warehouse", desc: "Warehouse and industrial facilities with large roof areas. Box-gutter systems and commercial downspout specifications engineered for the volume." },
+      { emoji: "👷", title: "Hotels, hospitality, institutional", desc: "Hotels, churches, schools, and institutional buildings. Scheduled around the facility's operational windows. No disruption to guests, congregations, or classes." },
     ],
     gcEyebrow: "For General Contractors & Roofers",
     gcTitle: "We Sub for Tampa Bay's Roofing Companies and GCs",
@@ -133,10 +131,10 @@ const T = {
     problemEyebrow: "La Realidad Comercial",
     problemTitle: "Por Qué las Canaletas Residenciales Fallan en Edificios Comerciales",
     problems: [
-      { icon: "water", title: "Pequeñas para el área del techo", desc: "Edificios de apartamentos y centros comerciales descargan 3 a 10 veces el volumen de agua de una casa. Las canaletas residenciales de 5\" o 6\" se desbordan en la primera tormenta fuerte, vertiendo agua en entradas, estacionamientos y caminos." },
-      { icon: "edge", title: "Perfil incorrecto para la carga", desc: "Los techos comerciales necesitan canaletas de caja, perfiles D o súper canaletas, no K-style residencial. El perfil incorrecto se deforma, se despega y crea responsabilidad civil que la aseguradora no cubre." },
-      { icon: "shield", title: "Responsabilidad por agua en pasillos", desc: "Agua acumulada en entradas minoristas, pasillos de apartamentos o aceras de oficinas es una demanda por caídas esperando. Las canaletas inadecuadas son lo primero que señala el abogado demandante." },
-      { icon: "house", title: "Ingresos perdidos por cierre", desc: "Un inquilino minorista cerrado por daño de agua es ingreso perdido. Una unidad no rentable por intrusión de agua es ingreso perdido. La falla del sistema de canaletas en comercial es costosa de formas que los propietarios residenciales no ven." },
+      { emoji: "💧", title: "Pequeñas para el área del techo", desc: "Edificios de apartamentos y centros comerciales descargan 3 a 10 veces el volumen de agua de una casa. Las canaletas residenciales de 5\" o 6\" se desbordan en la primera tormenta fuerte, vertiendo agua en entradas, estacionamientos y caminos." },
+      { emoji: "📐", title: "Perfil incorrecto para la carga", desc: "Los techos comerciales necesitan canaletas de caja, perfiles D o súper canaletas, no K-style residencial. El perfil incorrecto se deforma, se despega y crea responsabilidad civil que la aseguradora no cubre." },
+      { emoji: "🛡️", title: "Responsabilidad por agua en pasillos", desc: "Agua acumulada en entradas minoristas, pasillos de apartamentos o aceras de oficinas es una demanda por caídas esperando. Las canaletas inadecuadas son lo primero que señala el abogado demandante." },
+      { emoji: "💳", title: "Ingresos perdidos por cierre", desc: "Un inquilino minorista cerrado por daño de agua es ingreso perdido. Una unidad no rentable por intrusión de agua es ingreso perdido. La falla del sistema de canaletas en comercial es costosa de formas que los propietarios residenciales no ven." },
     ],
     solutionEyebrow: "La Diferencia Comercial de JR One",
     solutionTitle: "Hecho para el Trabajo, Dimensionado para el Edificio",
@@ -153,12 +151,12 @@ const T = {
     scopeTitle: "Propiedades Comerciales para las Que Construimos",
     scopeSub: "Desde townhomes de 4 unidades hasta complejos de 300 apartamentos. Más retail, oficinas e industrial.",
     scopeItems: [
-      { icon: "house", title: "Complejos de apartamentos", desc: "Propiedades multifamiliares de varios edificios. Canaletas, sofito, fascia y drenaje diseñados para alta densidad de descarga de agua y durabilidad entre ciclos de mantenimiento programados." },
-      { icon: "house", title: "Multifamiliar y townhomes", desc: "Comunidades de townhomes, condominios y multifamiliar pequeño. Combinado al color de la comunidad, instalado edificio por edificio sin interrumpir residentes." },
-      { icon: "ruler", title: "Centros comerciales", desc: "Strip centers y minoristas independientes. El drenaje de la zona de entrada es crítico. Dirigimos el agua lejos de caminos de clientes y fachadas." },
-      { icon: "edge", title: "Edificios de oficinas y parques empresariales", desc: "Oficina de un edificio y parques empresariales de varios edificios. Coordinado con drenaje de jardinería y pavimento para prevenir intrusión de agua en espacios de inquilinos." },
-      { icon: "shield", title: "Industrial y bodegas", desc: "Bodegas e instalaciones industriales con áreas de techo grandes. Sistemas de canaletas de caja y especificaciones de bajantes comerciales dimensionados para el volumen." },
-      { icon: "hardhat", title: "Hoteles, hospitalidad, institucional", desc: "Hoteles, iglesias, escuelas y edificios institucionales. Programados alrededor de las ventanas operativas de la instalación. Sin interrupción a huéspedes, congregaciones o clases." },
+      { emoji: "🏠", title: "Complejos de apartamentos", desc: "Propiedades multifamiliares de varios edificios. Canaletas, sofito, fascia y drenaje diseñados para alta densidad de descarga de agua y durabilidad entre ciclos de mantenimiento programados." },
+      { emoji: "🏘️", title: "Multifamiliar y townhomes", desc: "Comunidades de townhomes, condominios y multifamiliar pequeño. Combinado al color de la comunidad, instalado edificio por edificio sin interrumpir residentes." },
+      { emoji: "🏬", title: "Centros comerciales", desc: "Strip centers y minoristas independientes. El drenaje de la zona de entrada es crítico. Dirigimos el agua lejos de caminos de clientes y fachadas." },
+      { emoji: "🏢", title: "Edificios de oficinas y parques empresariales", desc: "Oficina de un edificio y parques empresariales de varios edificios. Coordinado con drenaje de jardinería y pavimento para prevenir intrusión de agua en espacios de inquilinos." },
+      { emoji: "🏭", title: "Industrial y bodegas", desc: "Bodegas e instalaciones industriales con áreas de techo grandes. Sistemas de canaletas de caja y especificaciones de bajantes comerciales dimensionados para el volumen." },
+      { emoji: "👷", title: "Hoteles, hospitalidad, institucional", desc: "Hoteles, iglesias, escuelas y edificios institucionales. Programados alrededor de las ventanas operativas de la instalación. Sin interrupción a huéspedes, congregaciones o clases." },
     ],
     gcEyebrow: "Para GCs y Techeros",
     gcTitle: "Subcontratamos para Techeros y GCs de Tampa Bay",
@@ -203,16 +201,6 @@ const T = {
     formSent: "Solicitud Recibida",
     formSentSub: "Le responderemos dentro de un día hábil.",
   },
-};
-
-const ICON_MAP = {
-  water: WaterDropIcon,
-  edge: RoofEdgeIcon,
-  shield: ShieldIcon,
-  ruler: RulerIcon,
-  house: HouseIcon,
-  hardhat: HardHatIcon,
-  wrench: WrenchIcon,
 };
 
 const inputStyle = {
@@ -288,20 +276,33 @@ export default function CommercialGuttersPage() {
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
-              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
+              <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
               <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
                 {t.heroH1a}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1b}</span>
+                <span style={{ color: ACCENT_LIGHT }}>{t.heroH1b}</span>
               </h1>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "660px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-8)" }}>
-                <Button href="#quote-form" variant="primary" size="lg" iconRight>{t.heroCta}</Button>
+                <Button
+                  href="#quote-form"
+                  variant="primary"
+                  size="lg"
+                  iconRight
+                  style={{
+                    background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                    color: "var(--jr-navy)",
+                    border: `2px solid ${ACCENT}`,
+                    boxShadow: `0 4px 14px rgba(139, 157, 175, 0.32)`,
+                  }}
+                >
+                  {t.heroCta}
+                </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />}>{t.heroCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-2xl)", fontWeight: 800, color: ACCENT_LIGHT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "160px" }}>{s.label}</div>
                   </div>
                 ))}
@@ -315,18 +316,15 @@ export default function CommercialGuttersPage() {
           <Container>
             <SectionHeading eyebrow={t.problemEyebrow} title={t.problemTitle} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.problems.map((p, i) => {
-                const Icon = ICON_MAP[p.icon] || ShieldIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: "4px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
-                  </article>
-                );
-              })}
+              {t.problems.map((p, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderLeft: `4px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(139, 157, 175, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{p.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-2)" }}>{p.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{p.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -338,7 +336,7 @@ export default function CommercialGuttersPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "var(--jr-space-5)" }}>
               {t.solutions.map((s, i) => (
                 <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy-deep)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px" }}>
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>0{i + 1}</div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{s.title}</h3>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.65 }}>{s.desc}</p>
                 </article>
@@ -352,18 +350,15 @@ export default function CommercialGuttersPage() {
           <Container>
             <SectionHeading eyebrow={t.scopeEyebrow} title={t.scopeTitle} subtitle={t.scopeSub} theme="dark" />
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--jr-space-5)" }}>
-              {t.scopeItems.map((g, i) => {
-                const Icon = ICON_MAP[g.icon] || HouseIcon;
-                return (
-                  <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderTop: "4px solid var(--jr-gold)" }}>
-                    <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "var(--jr-gold-pale)", border: "1px solid rgba(200, 149, 46, 0.32)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)", color: "var(--jr-gold)" }}>
-                      <Icon size={26} />
-                    </div>
-                    <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
-                    <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{g.desc}</p>
-                  </article>
-                );
-              })}
+              {t.scopeItems.map((g, i) => (
+                <article key={i} className="jr-hover-lift" style={{ background: "var(--jr-navy)", border: "1px solid var(--jr-navy-3)", borderRadius: "var(--jr-radius-lg)", padding: "28px 24px", borderTop: `4px solid ${ACCENT}` }}>
+                  <div style={{ width: 52, height: 52, borderRadius: "var(--jr-radius-md)", background: "rgba(139, 157, 175, 0.10)", border: `1px solid ${ACCENT}`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "var(--jr-space-4)" }}>
+                    <span aria-hidden style={{ fontSize: 28, lineHeight: 1 }}>{g.emoji}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{g.desc}</p>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
@@ -383,6 +378,9 @@ export default function CommercialGuttersPage() {
             </div>
           </Container>
         </section>
+
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
@@ -433,12 +431,27 @@ export default function CommercialGuttersPage() {
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)", textAlign: "left" }}>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                  <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>{loading ? "Sending..." : t.formBtn}</Button>
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="md"
+                    fullWidth
+                    iconRight
+                    disabled={loading}
+                    style={{
+                      background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_LIGHT})`,
+                      color: "var(--jr-navy)",
+                      border: `2px solid ${ACCENT}`,
+                      boxShadow: `0 4px 14px rgba(139, 157, 175, 0.32)`,
+                    }}
+                  >
+                    {loading ? "Sending..." : t.formBtn}
+                  </Button>
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formNote}</p>
                 </form>
               )}
