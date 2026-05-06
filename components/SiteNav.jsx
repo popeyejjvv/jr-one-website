@@ -211,6 +211,7 @@ export default function SiteNav({ promoBanner }) {
                   color: "var(--jr-muted-on-dark)",
                   letterSpacing: "0.6px",
                   textTransform: "uppercase",
+                  whiteSpace: "nowrap",
                   transition: "color var(--jr-dur-fast) var(--jr-ease-out)",
                 }}
                 onMouseOver={(e) => (e.currentTarget.style.color = "var(--jr-gold)")}
@@ -241,6 +242,7 @@ export default function SiteNav({ promoBanner }) {
                     letterSpacing: "0.5px",
                     border: `1px solid ${meta.border}`,
                     textTransform: "uppercase",
+                    whiteSpace: "nowrap",
                   }}
                 >
                   <span aria-hidden style={{ fontSize: 12 }}>{meta.emoji}</span>
@@ -260,6 +262,8 @@ export default function SiteNav({ promoBanner }) {
                 fontWeight: 700,
                 color: "var(--jr-gold)",
                 letterSpacing: "0.4px",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
               }}
             >
               <PhoneIcon size={13} />
