@@ -244,7 +244,7 @@ export default function SidingPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </nav>

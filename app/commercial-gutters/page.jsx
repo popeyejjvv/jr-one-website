@@ -266,7 +266,7 @@ export default function CommercialGuttersPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </nav>
@@ -368,7 +368,7 @@ export default function CommercialGuttersPage() {
           <Container>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-6)" }}>
               <div style={{ flex: "1 1 460px" }}>
-                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>{t.gcEyebrow}</div>
+                <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)", textTransform: "uppercase" }}>{t.gcEyebrow}</div>
                 <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 800, color: "var(--jr-paper)", lineHeight: 1.3, marginBottom: "var(--jr-space-2)" }}>{t.gcTitle}</h3>
                 <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{t.gcDesc}</p>
               </div>
