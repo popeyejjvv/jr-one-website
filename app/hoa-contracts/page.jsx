@@ -220,8 +220,9 @@ const inputLightStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
-const ACCENT = "#C8952E";
-const ACCENT_LIGHT = "#D4A843";
+// Page-identity accent: burnt orange (community, scheduled maintenance, board-ready).
+const ACCENT = "#EA580C";
+const ACCENT_LIGHT = "#FB923C";
 
 export default function HOAContractsPage() {
   const { lang } = useLanguage();

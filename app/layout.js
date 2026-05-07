@@ -71,7 +71,6 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "HOA Gutter & Soffit Maintenance Contracts", url: "https://jronegutters.com/hoa-contracts" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rental & Airbnb Property Maintenance", url: "https://jronegutters.com/rental-property-maintenance" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Commercial Gutter & Aluminum Services", url: "https://jronegutters.com/commercial-gutters" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "7-Inch Oversized Seamless Gutters", url: "https://jronegutters.com/7-inch-gutters" } },
     ],
   },
   numberOfEmployees: "15-20",

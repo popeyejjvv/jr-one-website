@@ -22,9 +22,9 @@ import {
   PhoneIcon,
 } from "../../lib/icons";
 
-// Page-identity accent: commercial steel-gray (industrial gravity).
-const ACCENT = "#8B9DAF";
-const ACCENT_LIGHT = "#A3B5C8";
+// Page-identity accent: deep teal (commercial gravity, B2B trust).
+const ACCENT = "#0D9488";
+const ACCENT_LIGHT = "#14B8A6";
 
 const T = {
   en: {

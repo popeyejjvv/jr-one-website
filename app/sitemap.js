@@ -60,7 +60,6 @@ const STATIC_PAGES = [
   { path: "/rental-property-maintenance", priority: 0.8, changeFrequency: "monthly" },
   { path: "/commercial-gutters", priority: 0.8, changeFrequency: "monthly" },
   { path: "/gutter-cleaning", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/7-inch-gutters", priority: 0.8, changeFrequency: "monthly" },
 ];
 
 export default function sitemap() {

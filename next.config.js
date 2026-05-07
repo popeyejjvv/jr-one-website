@@ -3,6 +3,12 @@ const nextConfig = {
   // ── 301 Redirects: Old URLs → New Routes ──
   async redirects() {
     return [
+      // ── 7-Inch Gutters merged into Seamless Aluminum Gutters (2026-05-07) ──
+      // The seamless-aluminum-gutters page now showcases both 6" and 7" sizing.
+      // Custom shapes (half-round, D-style, box, etc.) live on /specialty-gutters.
+      { source: "/7-inch-gutters", destination: "/seamless-aluminum-gutters", permanent: true },
+      { source: "/7-inch-gutters/", destination: "/seamless-aluminum-gutters", permanent: true },
+
       // ── Old service pages (Google-indexed, still ranking) ──
       // 2026-04-15: /gutter-cleaning now has its own dedicated page + FAQPage schema —
       // removed the 301 that used to redirect it to /service-plans. The /:slug catch-all

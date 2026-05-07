@@ -24,9 +24,9 @@ import {
   MapPinIcon,
 } from "../../lib/icons";
 
-// Page-identity accent: rental investor blue (calm, owner-friendly).
-const ACCENT = "#4A90D9";
-const ACCENT_LIGHT = "#6BA3E3";
+// Page-identity accent: magenta (recurring revenue, turnover urgency).
+const ACCENT = "#BE185D";
+const ACCENT_LIGHT = "#DB2777";
 
 const PROBLEM_EMOJIS = ["🏠", "⭐", "📐", "🔧"];
 const SCOPE_EMOJIS = ["🏠", "📋", "🛠️", "🏘️", "🌧️", "👷"];

@@ -186,8 +186,9 @@ const inputStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
-const ACCENT = "#A0A0A0";
-const ACCENT_LIGHT = "#C0C0C0";
+// Page-identity accent: violet (custom-craft, premium specialty profiles).
+const ACCENT = "#8B5CF6";
+const ACCENT_LIGHT = "#A78BFA";
 
 export default function SpecialtyGuttersPage() {
   const { lang } = useLanguage();

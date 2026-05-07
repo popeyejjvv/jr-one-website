@@ -10,12 +10,17 @@ import { useState, useRef } from "react";
 import { useLanguage } from "../lib/LanguageContext";
 import { ChevronDownIcon, MenuIcon, XIcon, PhoneIcon } from "../lib/icons";
 
+// Alphabetical for the standard services. HOA Contracts and Rental Property
+// Maintenance are pinned last (B2B / recurring-contract tier, kept together
+// at the end so homeowners see retail services first). 7-Inch Gutters merged
+// into Seamless (which now showcases 6" and 7" sizes); /7-inch-gutters
+// 301-redirects to /seamless-aluminum-gutters via next.config.js.
 const SERVICE_HREFS = [
-  "/7-inch-gutters", "/commercial-gutters", "/copper-gutters", "/drainage-assessment",
+  "/commercial-gutters", "/copper-gutters", "/drainage-assessment",
   "/govee-lights", "/gutter-cleaning", "/gutter-guards", "/gutter-repair",
-  "/hoa-contracts", "/peak-301", "/rental-property-maintenance", "/sagiper",
-  "/seamless-aluminum-gutters", "/service-plans", "/siding", "/soffit-and-fascia",
-  "/specialty-gutters",
+  "/peak-301", "/sagiper", "/seamless-aluminum-gutters", "/service-plans",
+  "/siding", "/soffit-and-fascia", "/specialty-gutters",
+  "/hoa-contracts", "/rental-property-maintenance",
 ];
 
 const NAV_HREFS = ["/#gold-standard", "/about", "/contact", "/faq", "/projects"];
@@ -25,7 +30,7 @@ const FEATURE_HREFS = ["/estimator", "/financing", "/referral"];
 const T = {
   en: {
     services: "Services",
-    serviceLabels: ["7-Inch Gutters", "Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "HOA Contracts", "Peak 301", "Rental Property Maintenance", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
+    serviceLabels: ["Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "HOA Contracts", "Rental Property Maintenance"],
     navLabels: ["The Gold Standard", "About", "Contact", "FAQ", "Projects"],
     featureLabels: ["Estimator", "Financing", "Referral"],
     promoBanner: [
@@ -38,7 +43,7 @@ const T = {
   },
   es: {
     services: "Servicios",
-    serviceLabels: ["Canaletas de 7 Pulgadas", "Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Contratos HOA", "Peak 301", "Mantenimiento de Alquileres", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
+    serviceLabels: ["Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Contratos HOA", "Mantenimiento de Alquileres"],
     navLabels: ["El Estándar de Oro", "Nosotros", "Contacto", "Preguntas Frecuentes", "Proyectos"],
     featureLabels: ["Estimador", "Financiamiento", "Referidos"],
     promoBanner: [
