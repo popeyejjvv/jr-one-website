@@ -30,6 +30,22 @@ const RATE_LIMIT_MAX = 5;
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const rateLimitMap = new Map();
 
+// Origin allow-list. Block off-site bot abuse — 2026-05-07.
+const ALLOWED_ORIGINS = new Set([
+  "https://jronegutters.com",
+  "https://www.jronegutters.com",
+]);
+
+function isAllowedOrigin(request) {
+  const origin = request.headers.get("origin");
+  const referer = request.headers.get("referer") || "";
+  if (origin && ALLOWED_ORIGINS.has(origin)) return true;
+  for (const allowed of ALLOWED_ORIGINS) {
+    if (referer.startsWith(allowed)) return true;
+  }
+  return false;
+}
+
 function checkRateLimit(ip) {
   const now = Date.now();
   const record = rateLimitMap.get(ip);
@@ -100,6 +116,11 @@ function inferProjectType(measurements) {
 
 export async function POST(request) {
   try {
+    // Origin check (block off-site bots before any other work)
+    if (!isAllowedOrigin(request)) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+
     // Rate limit by client IP before parsing the body
     const ip = getClientIp(request);
     maybeCleanupRateLimitMap();

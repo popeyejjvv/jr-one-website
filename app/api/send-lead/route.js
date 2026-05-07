@@ -18,6 +18,61 @@ import { triggerOutboundCall } from "@/lib/vapi-client";
 const BP_SUBDOMAIN = "jronegutters";
 const BP_BASE_URL = `https://${BP_SUBDOMAIN}.builderprime.com/api`;
 
+// =============================================================================
+// Per-IP rate limiter + origin check. Mirrors estimator-lead/route.js — caps
+// abuse at 5 submissions/min/IP and rejects requests that don't originate from
+// jronegutters.com. Goal: stop bots from flooding BuilderPrime with fake leads,
+// blowing the Gmail send quota, or burning Vapi minutes after hours.
+// Added 2026-05-07 after the /api/claude proxy incident.
+// =============================================================================
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const rateLimitMap = new Map();
+const ALLOWED_ORIGINS = new Set([
+  "https://jronegutters.com",
+  "https://www.jronegutters.com",
+]);
+
+function checkRateLimit(ip) {
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+  if (!record || now > record.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return { ok: true };
+  }
+  if (record.count >= RATE_LIMIT_MAX) {
+    return { ok: false, retryAfter: Math.ceil((record.resetAt - now) / 1000) };
+  }
+  record.count++;
+  return { ok: true };
+}
+
+function maybeCleanupRateLimitMap() {
+  if (rateLimitMap.size < 1000) return;
+  const now = Date.now();
+  for (const [ip, record] of rateLimitMap.entries()) {
+    if (now > record.resetAt) rateLimitMap.delete(ip);
+  }
+}
+
+function getClientIp(request) {
+  const xff = request.headers.get("x-forwarded-for");
+  if (xff) return xff.split(",")[0].trim();
+  const real = request.headers.get("x-real-ip");
+  if (real) return real;
+  return "unknown";
+}
+
+function isAllowedOrigin(request) {
+  const origin = request.headers.get("origin");
+  const referer = request.headers.get("referer") || "";
+  if (origin && ALLOWED_ORIGINS.has(origin)) return true;
+  for (const allowed of ALLOWED_ORIGINS) {
+    if (referer.startsWith(allowed)) return true;
+  }
+  return false;
+}
+
 // Map website form service strings to BuilderPrime project type descriptions
 function mapServiceToProjectType(service) {
   if (!service) return "";
@@ -62,6 +117,22 @@ function normalizePhone(phone) {
 
 export async function POST(request) {
   try {
+    // ── Origin check (block off-site bots) ──
+    if (!isAllowedOrigin(request)) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+
+    // ── Rate limit (5/min/IP) ──
+    maybeCleanupRateLimitMap();
+    const ip = getClientIp(request);
+    const rl = checkRateLimit(ip);
+    if (!rl.ok) {
+      return NextResponse.json(
+        { error: "Too many requests" },
+        { status: 429, headers: { "Retry-After": String(rl.retryAfter || 60) } }
+      );
+    }
+
     const body = await request.json();
     const { name, phone, email, service, zip, message, page, address, city, state,
             gclid, utm_source, utm_medium, utm_campaign, utm_term } = body;
