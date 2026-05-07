@@ -272,7 +272,7 @@ export default function HOAContractsPage() {
             {t.breadcrumb.map((item, i) => (
               <span key={i}>
                 {i > 0 && <span style={{ margin: "0 var(--jr-space-2)", opacity: 0.5 }}>/</span>}
-                <span style={{ color: i === t.breadcrumb.length - 1 ? "var(--jr-gold)" : "var(--jr-muted-on-dark)" }}>{item}</span>
+                <span style={{ color: i === t.breadcrumb.length - 1 ? ACCENT : "var(--jr-muted-on-dark)" }}>{item}</span>
               </span>
             ))}
           </div>
@@ -315,7 +315,7 @@ export default function HOAContractsPage() {
                 }}
               >
                 {t.heroH1}<br />
-                <span style={{ color: "var(--jr-gold)" }}>{t.heroH1Gold}</span>
+                <span style={{ color: ACCENT }}>{t.heroH1Gold}</span>
               </h1>
               <p
                 style={{
@@ -340,7 +340,7 @@ export default function HOAContractsPage() {
               <div style={{ display: "flex", gap: "var(--jr-space-8)", marginTop: "var(--jr-space-10)", flexWrap: "wrap" }}>
                 {t.stats.map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "28px", fontWeight: 800, color: "var(--jr-gold)" }}>{s.value}</div>
+                    <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "28px", fontWeight: 800, color: ACCENT }}>{s.value}</div>
                     <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-dark)", maxWidth: "140px", marginTop: "var(--jr-space-1)" }}>
                       {s.label}
                     </div>
@@ -407,7 +407,7 @@ export default function HOAContractsPage() {
                     padding: "var(--jr-space-6)",
                   }}
                 >
-                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: "var(--jr-gold)", letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>
+                  <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT, letterSpacing: "2px", marginBottom: "var(--jr-space-2)" }}>
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>
@@ -464,14 +464,14 @@ export default function HOAContractsPage() {
           style={{
             background: "linear-gradient(135deg, rgba(200,149,46,0.08), var(--jr-navy-deep))",
             padding: "var(--jr-space-8) var(--jr-space-6)",
-            borderTop: "2px solid var(--jr-gold)",
-            borderBottom: "2px solid var(--jr-gold)",
+            borderTop: `2px solid ${ACCENT}`,
+            borderBottom: `2px solid ${ACCENT}`,
           }}
         >
           <Container>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "var(--jr-space-5)" }}>
               <div style={{ flex: "1 1 500px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-2)", color: "var(--jr-gold)", marginBottom: "var(--jr-space-2)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "var(--jr-space-2)", color: ACCENT, marginBottom: "var(--jr-space-2)" }}>
                   <MapPinIcon size={16} />
                   <span style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase" }}>
                     {t.coverageLabel}
@@ -605,7 +605,7 @@ export default function HOAContractsPage() {
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>
                     {t.formTitle}
                   </h3>
-                  <div aria-hidden style={{ width: 40, height: 3, background: "var(--jr-gold)", borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
+                  <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputLightStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                   <input aria-label={t.formPhone} style={inputLightStyle} placeholder={t.formPhone} type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                   <input aria-label={t.formEmail} style={inputLightStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
