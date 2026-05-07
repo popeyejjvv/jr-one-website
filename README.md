@@ -87,7 +87,6 @@ temple-terrace, plant-city, lutz
 | Route | Purpose |
 |-------|---------|
 | `/api/send-lead` | Form submissions → Email + Builder Prime |
-| `/api/claude` | Estimator chatbot proxy |
 
 ### Auto-generated
 - `/sitemap.xml` — Dynamic sitemap with all pages
