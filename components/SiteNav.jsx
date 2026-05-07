@@ -6,7 +6,7 @@
    Brand-brain compliant: no emoji, no em-dashes, no off-palette colors.
    ═══════════════════════════════════════════════════════════ */
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useLanguage } from "../lib/LanguageContext";
 import { ChevronDownIcon, MenuIcon, XIcon, PhoneIcon } from "../lib/icons";
 
@@ -61,6 +61,17 @@ export default function SiteNav({ promoBanner }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  // Hover-intent timer: 250ms grace window so the dropdown doesn't slam shut
+  // when the cursor briefly leaves the panel (diagonal sweep, sub-menu reach).
+  const closeTimerRef = useRef(null);
+  const openServices = () => {
+    if (closeTimerRef.current) { clearTimeout(closeTimerRef.current); closeTimerRef.current = null; }
+    setServicesOpen(true);
+  };
+  const closeServicesSoon = () => {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = setTimeout(() => setServicesOpen(false), 250);
+  };
   const { lang, toggleLang } = useLanguage();
   const t = T[lang];
   const bannerMessages = promoBanner ? (Array.isArray(promoBanner) ? promoBanner : [promoBanner]) : t.promoBanner;
@@ -119,12 +130,12 @@ export default function SiteNav({ promoBanner }) {
 
           <div className="jr-nav-desktop" style={{ display: "flex", gap: "18px", alignItems: "center" }}>
             {/* Services dropdown */}
-            <div style={{ position: "relative" }} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
+            <div style={{ position: "relative" }} onMouseEnter={openServices} onMouseLeave={closeServicesSoon}>
               <button
                 aria-haspopup="true"
                 aria-expanded={servicesOpen}
                 onClick={() => setServicesOpen((v) => !v)}
-                onFocus={() => setServicesOpen(true)}
+                onFocus={openServices}
                 style={{
                   fontFamily: "var(--jr-font-heading)",
                   fontSize: "11px",
@@ -154,12 +165,23 @@ export default function SiteNav({ promoBanner }) {
                 </span>
               </button>
               {servicesOpen && (
+                // Outer wrapper: sits flush against the button (top: 100%) and
+                // uses paddingTop as a transparent hover bridge, so the cursor
+                // never leaves the hover surface while moving from button to
+                // menu. Re-entering this wrapper cancels the close timer.
+                <div
+                  onMouseEnter={openServices}
+                  onMouseLeave={closeServicesSoon}
+                  style={{
+                    position: "absolute",
+                    top: "100%",
+                    left: "-12px",
+                    paddingTop: "8px",
+                  }}
+                >
                 <div
                   role="menu"
                   style={{
-                    position: "absolute",
-                    top: "calc(100% + 4px)",
-                    left: "-12px",
                     background: "var(--jr-navy-deep)",
                     border: "1px solid var(--jr-navy-3)",
                     borderRadius: "var(--jr-radius-md)",
@@ -196,6 +218,7 @@ export default function SiteNav({ promoBanner }) {
                       {label}
                     </a>
                   ))}
+                </div>
                 </div>
               )}
             </div>
