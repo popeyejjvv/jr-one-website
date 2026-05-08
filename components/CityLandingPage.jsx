@@ -1022,6 +1022,119 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
           </Container>
         </section>
 
+        {/* TAMPA BAY RESOURCES (blog + AEO internal linking) */}
+        <section style={{ background: "var(--jr-paper)", padding: "var(--jr-space-20) 0" }}>
+          <Container>
+            <SectionHeading
+              eyebrow={lang === "en" ? "TAMPA BAY RESOURCES" : "RECURSOS DE TAMPA BAY"}
+              title={lang === "en" ? `${city.name} Homeowner Guides` : `Guias para Propietarios en ${city.name}`}
+            />
+            <p
+              style={{
+                fontFamily: "var(--jr-font-body)",
+                fontSize: "var(--jr-text-base)",
+                lineHeight: 1.65,
+                color: "var(--jr-ink-soft)",
+                maxWidth: 720,
+                margin: "0 auto var(--jr-space-10)",
+                textAlign: "center",
+              }}
+            >
+              {lang === "en"
+                ? `Detailed pricing, comparisons, and Tampa Bay specifics from 30+ years in the trade. Real numbers, no fluff.`
+                : `Precios detallados, comparaciones y especificos de Tampa Bay con 30+ anos en el oficio. Numeros reales, sin relleno.`}
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+                gap: "var(--jr-space-5)",
+              }}
+            >
+              {[
+                {
+                  href: "/blog/gutter-installation-cost-tampa-2026",
+                  title: lang === "en" ? "Gutter Installation Cost in Tampa (2026)" : "Costo de Instalacion de Canaletas en Tampa (2026)",
+                  desc: lang === "en" ? "Per-foot pricing by material, per-city Tampa Bay rates, two-story breakdowns, red flags in quotes." : "Precio por pie por material, tarifas por ciudad en Tampa Bay, desgloses de dos pisos, banderas rojas en cotizaciones.",
+                },
+                {
+                  href: "/blog/best-gutter-guards-florida-homes",
+                  title: lang === "en" ? "Best Gutter Guards for Florida Homes" : "Mejores Protectores de Canaletas para Casas de Florida",
+                  desc: lang === "en" ? "Brand comparison (LeafFilter, Gutter Helmet, MasterShield), micro mesh vs solid, what works in Tampa." : "Comparacion de marcas (LeafFilter, Gutter Helmet, MasterShield), malla fina vs solido, lo que funciona en Tampa.",
+                },
+                {
+                  href: "/blog/peak-301-roof-rejuvenation-tampa",
+                  title: lang === "en" ? "Peak 301 Roof Rejuvenation in Tampa" : "Rejuvenecimiento de Techo Peak 301 en Tampa",
+                  desc: lang === "en" ? "Save up to 70% versus replacement. Cost per sq ft, Roof Maxx comparison, ideal candidate roofs." : "Ahorre hasta 70% versus reemplazo. Costo por pie cuadrado, comparacion con Roof Maxx, techos candidatos ideales.",
+                },
+                {
+                  href: "/blog/gutter-cleaning-cost-guide",
+                  title: lang === "en" ? "Gutter Cleaning Cost in Tampa (2026)" : "Costo de Limpieza de Canaletas en Tampa (2026)",
+                  desc: lang === "en" ? "What's a fair price, per-city pricing, DIY vs professional decision tree, hurricane-season timing." : "Cual es un precio justo, precios por ciudad, decision DIY vs profesional, momento para temporada de huracanes.",
+                },
+              ].map((r, i) => (
+                <a
+                  key={i}
+                  href={r.href}
+                  style={{
+                    display: "block",
+                    background: "var(--jr-paper)",
+                    border: "1px solid var(--jr-hair)",
+                    borderRadius: 8,
+                    padding: "var(--jr-space-6)",
+                    textDecoration: "none",
+                    color: "inherit",
+                    transition: "border-color 0.2s, transform 0.2s",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = "var(--jr-gold)";
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "var(--jr-hair)";
+                    e.currentTarget.style.transform = "translateY(0)";
+                  }}
+                >
+                  <h3
+                    style={{
+                      fontFamily: "var(--jr-font-heading)",
+                      fontSize: "var(--jr-text-lg)",
+                      fontWeight: 700,
+                      color: "var(--jr-navy)",
+                      marginBottom: "var(--jr-space-3)",
+                      lineHeight: 1.3,
+                    }}
+                  >
+                    {r.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: "var(--jr-font-body)",
+                      fontSize: "var(--jr-text-sm)",
+                      lineHeight: 1.55,
+                      color: "var(--jr-ink-soft)",
+                      marginBottom: "var(--jr-space-4)",
+                    }}
+                  >
+                    {r.desc}
+                  </p>
+                  <span
+                    style={{
+                      fontFamily: "var(--jr-font-body)",
+                      fontSize: "var(--jr-text-sm)",
+                      fontWeight: 600,
+                      color: "var(--jr-gold)",
+                      letterSpacing: "0.5px",
+                    }}
+                  >
+                    {lang === "en" ? "Read the guide →" : "Leer la guia →"}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </Container>
+        </section>
+
         {/* CTA */}
         <section
           style={{
