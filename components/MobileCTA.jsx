@@ -63,7 +63,7 @@ export default function MobileCTA({ scrollTarget = "quote-form" }) {
           textTransform: "uppercase",
         }}
       >
-        <span aria-hidden style={{ fontSize: 16 }}>📞</span>
+        <PhoneIcon size={16} />
         {t.callNow}
       </a>
       <button
