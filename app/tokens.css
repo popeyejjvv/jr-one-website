@@ -26,9 +26,12 @@
   --jr-success-soft: rgba(45, 139, 78, 0.16);
   --jr-alert: #B11A21;
 
-  /* ── Typography ── */
-  --jr-font-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
-  --jr-font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  /* ── Typography ──
+     Fonts loaded via next/font/google in app/layout.js, exposed as
+     --font-montserrat + --font-source-sans CSS variables on <html>.
+     Fallback chain handles font-display:swap window. */
+  --jr-font-heading: var(--font-montserrat), system-ui, -apple-system, sans-serif;
+  --jr-font-body: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   --jr-font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* Type scale: clamp() responsive base */

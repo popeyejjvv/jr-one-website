@@ -1,6 +1,21 @@
 import Script from "next/script";
+import { Montserrat, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["300", "400", "600"],
+  variable: "--font-source-sans",
+  display: "swap",
+});
 
 // ── LocalBusiness + HomeAndConstructionBusiness Schema ──
 const localBusinessSchema = {
@@ -138,22 +153,10 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${montserrat.variable} ${sourceSans.variable}`}>
       <head>
-        {/* Google Fonts */}
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap"
-          rel="stylesheet"
-        />
+        {/* Fonts now self-hosted via next/font/google (above) — eliminates render-blocking
+            external CSS request, cut LCP by ~1-2s on mobile per Lighthouse 2026-05-08. */}
         {/* AEO discovery, link AI crawlers to llms.txt + llms-full.txt (53-page AI content index) */}
         <link rel="llm" href="/llms.txt" />
         <link rel="llm-full" href="/llms-full.txt" />
