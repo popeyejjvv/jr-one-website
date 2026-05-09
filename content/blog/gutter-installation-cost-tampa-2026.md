@@ -8,13 +8,13 @@ faqs:
   - question: "How much do new gutters cost in Tampa in 2026?"
     answer: "Seamless aluminum gutter installation in Tampa typically costs $8 to $15 per linear foot installed in 2026, depending on gutter size, home height, and complexity. A typical Tampa home with 150 to 200 linear feet of gutters costs between $1,200 and $3,000 total. Two-story homes run 25 to 40 percent higher than single-story."
   - question: "What does the average Tampa Bay home pay for gutters?"
-    answer: "Most Tampa Bay single-family homes pay between $1,400 and $2,400 for new seamless aluminum gutters in 2026. The biggest cost drivers are linear footage, home stories, fascia condition, and downspout count. Homes with rotted fascia or upgraded materials (6-inch gutters, copper, gutter guards) can run $3,000 to $6,000 plus."
+    answer: "Most Tampa Bay single-family homes pay between $1,400 and $2,400 for new seamless aluminum gutters in 2026. The biggest cost drivers are linear footage, home stories, fascia condition, and downspout count. Homes with rotted fascia or upgraded materials (7-inch gutters, copper, gutter guards) can run $3,000 to $6,000 plus."
   - question: "Are seamless gutters worth the extra cost?"
     answer: "Yes. Seamless gutters eliminate the joints where sectional gutters leak and fail. In Tampa's heavy rain environment, seamless aluminum gutters last 20 to 30 years versus 10 to 15 years for sectional. The lifetime cost is lower despite higher upfront pricing, and they look cleaner from the curb."
   - question: "Why are gutters more expensive in Tampa than other parts of Florida?"
     answer: "Tampa pricing is roughly average for Florida. Coastal exposure, high humidity, and 51 inches of annual rainfall require thicker aluminum (.032 vs .027), more downspouts per foot, and tighter hanger spacing. These add cost but extend system life. Inland Florida cities with less rain often run 10 to 15 percent cheaper but with shorter system lifespans."
-  - question: "Should I get 5-inch or 6-inch gutters in Tampa?"
-    answer: "6-inch gutters are recommended for most Tampa homes. They handle 40 percent more water volume than 5-inch, which matters during summer thunderstorms that drop two inches of rain in 30 minutes. The cost premium is $2 to $3 per linear foot, and the larger size reduces overflow during peak storm events."
+  - question: "What size gutter do I need in Tampa?"
+    answer: "JR One installs 6-inch and 7-inch seamless aluminum gutters only — we do not install 5-inch in Florida. 6-inch is the baseline for most Tampa homes. 7-inch is the upgrade for larger roof spans, steep pitches, or homes that already overflow with 6-inch. The 7-inch upgrade adds roughly $3 to $5 per linear foot over 6-inch and prevents overflow during summer thunderstorms that drop two inches of rain in 30 minutes."
   - question: "How much does fascia replacement add to gutter installation?"
     answer: "Aluminum fascia wrap typically adds $6 to $12 per linear foot to a gutter installation in Tampa. Wood fascia replacement runs $10 to $20 per linear foot. Most Tampa homes 15 plus years old need at least partial fascia work due to humidity and prior gutter leaks. We assess fascia condition before quoting and include any necessary work upfront."
   - question: "Are national brands like LeafFilter more expensive than local installers?"
@@ -39,9 +39,8 @@ If you're a Tampa homeowner researching gutter prices, you've probably found a w
 
 | What you're getting | Typical Tampa price |
 |---------------------|----------------------|
-| 5-inch seamless aluminum | $8 to $12 per linear foot |
-| 6-inch seamless aluminum | $10 to $15 per linear foot |
-| 7-inch seamless aluminum (heavy rain) | $13 to $18 per linear foot |
+| 6-inch seamless aluminum (JR One baseline) | $10 to $15 per linear foot |
+| 7-inch seamless aluminum (heavy rain upgrade) | $13 to $18 per linear foot |
 | Copper gutters | $25 to $40 per linear foot |
 | Galvalume (commercial-grade) | $14 to $22 per linear foot |
 | Aluminum fascia wrap | $6 to $12 per linear foot added |
@@ -55,16 +54,16 @@ These are real 2026 ranges for Tampa, Wesley Chapel, St. Petersburg, Clearwater,
 
 The cost of new gutters depends on four main factors: material, gutter size, home height and complexity, and who's doing the work.
 
+JR One installs 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida — it is undersized for most Tampa roofs.
+
 ### Cost by Material
 
 | Material | Cost Per Linear Foot | Lifespan (Tampa) | Best For |
 |----------|---------------------|------------------|----------|
-| 5-inch seamless aluminum | $8 to $12 | 20 to 30 years | Most Tampa homes |
-| 6-inch seamless aluminum | $10 to $15 | 25 to 35 years | Larger roofs, heavy rain areas |
-| 7-inch seamless aluminum | $13 to $18 | 25 to 35 years | Wide roof spans, commercial residential |
+| 6-inch seamless aluminum | $10 to $15 | 25 to 35 years | JR One baseline for most Tampa homes |
+| 7-inch seamless aluminum | $13 to $18 | 25 to 35 years | Larger roofs, steep pitches, heavy rain |
 | Copper gutters | $25 to $40 | 50 to 100 years | Historic homes, premium installs |
 | Galvalume steel | $14 to $22 | 30 to 40 years | Coastal properties, commercial |
-| Vinyl/sectional | $4 to $8 | 5 to 10 years | Budget only, not recommended for FL |
 
 ### Cost by Home Size and Stories
 
@@ -171,7 +170,7 @@ A legitimate gutter quote in Tampa includes all of the following. If any are mis
 
 1. **Linear footage** of gutter and downspout broken out separately
 2. **Material gauge** (.027 vs .032 aluminum)
-3. **Gutter size** (5-inch, 6-inch, 7-inch)
+3. **Gutter size** (6-inch standard or 7-inch heavy-rain upgrade — JR One does not install 5-inch in Florida)
 4. **Hanger type and spacing** (hidden hangers at 24 or 36 inches)
 5. **Downspout count and size** (2x3 vs 3x4)
 6. **Fascia condition assessment** with any repair scope itemized
@@ -194,7 +193,7 @@ Every home is different. The only way to get an accurate price is a professional
 
 - [Best Gutter Guards for Florida Homes](/blog/best-gutter-guards-florida-homes)
 - [Gutter Cleaning Cost Guide](/blog/gutter-cleaning-cost-guide)
-- [5-inch vs 6-inch vs 7-inch Gutters](/blog/5-inch-vs-6-inch-vs-7-inch-gutters)
+- [6-inch vs 7-inch Gutters: Which Tampa Homes Need 7-inch](/blog/6-inch-vs-7-inch-gutters-tampa)
 - [Aluminum vs Vinyl Gutters in Florida](/blog/aluminum-vs-vinyl-gutters-florida)
 - [Gutter Gauge Thickness: .027 vs .032](/blog/gutter-gauge-thickness-027-vs-032)
 - [How to Choose a Gutter Contractor in Tampa](/blog/how-to-choose-gutter-contractor-tampa)

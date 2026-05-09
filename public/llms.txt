@@ -1,6 +1,6 @@
 # JR One Aluminum LLC — AI Content Index
 # Site: https://jronegutters.com
-# Updated: 2026-04-18
+# Updated: 2026-05-09
 # Purpose: This file helps AI systems (ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews)
 # understand the content and services of JR One Aluminum LLC in Tampa, FL.
 #
@@ -81,13 +81,13 @@
 - https://jronegutters.com/llms/jrone-brandon-seamless-aluminum-gutters.md — Seamless aluminum gutter installation for Brandon homes
 - https://jronegutters.com/llms/jrone-wesley-chapel-gutter-guards.md — Gutter guard installation for Wesley Chapel two-story master-planned homes
 - https://jronegutters.com/llms/jrone-wesley-chapel-gutter-cleaning.md — Gutter cleaning for Wesley Chapel — Seven Oaks, Meadow Pointe, Epperson
-- https://jronegutters.com/llms/jrone-wesley-chapel-seamless-aluminum-gutters.md — Seamless aluminum gutter installation and 5"-to-6" upgrades in Wesley Chapel
+- https://jronegutters.com/llms/jrone-wesley-chapel-seamless-aluminum-gutters.md — Seamless aluminum gutter installation in Wesley Chapel — JR One installs 6" and 7" only, replaces builder-grade 5" with 6"
 - https://jronegutters.com/llms/jrone-st-petersburg-gutter-cleaning.md — Gutter cleaning for St. Petersburg historic bungalows and waterfront homes
 - https://jronegutters.com/llms/jrone-st-petersburg-gutter-guards.md — Gutter guard installation in St. Petersburg — salt-rated for waterfront
 - https://jronegutters.com/llms/jrone-clearwater-gutter-guards.md — Gutter guard installation in Clearwater — coastal salt-rated specification
 - https://jronegutters.com/llms/jrone-clearwater-gutter-cleaning.md — Gutter cleaning for Clearwater Beach and coastal Pinellas homes
 - https://jronegutters.com/llms/jrone-riverview-gutter-cleaning.md — Gutter cleaning for Riverview master-planned communities
-- https://jronegutters.com/llms/jrone-riverview-gutter-guards.md — Gutter guard installation in Riverview — builder 5"-to-6" upgrades available
+- https://jronegutters.com/llms/jrone-riverview-gutter-guards.md — Gutter guard installation in Riverview — JR One replaces builder-grade 5" with 6" or 7" seamless
 - https://jronegutters.com/llms/jrone-sarasota-copper-gutters.md — Copper gutter installation for Sarasota, Siesta Key, and Lakewood Ranch
 - https://jronegutters.com/llms/jrone-sarasota-gutter-cleaning.md — Gutter cleaning for Sarasota, Siesta Key, Longboat Key, and Palmer Ranch
 
@@ -98,7 +98,7 @@
 - https://jronegutters.com/blog/soffit-fascia-replacement-tampa-guide — Soffit and fascia replacement guide for Tampa
 - https://jronegutters.com/blog/signs-you-need-new-gutters-florida — 7 signs you need new gutters in Florida
 - https://jronegutters.com/blog/seamless-gutters-vs-sectional-tampa — Seamless vs sectional gutters comparison
-- https://jronegutters.com/blog/5-inch-vs-6-inch-vs-7-inch-gutters — 5" vs 6" vs 7" gutter size guide
+- https://jronegutters.com/blog/6-inch-vs-7-inch-gutters-tampa — 6" vs 7" gutter size guide (JR One installs 6" and 7" only)
 - https://jronegutters.com/blog/gutter-cleaning-cost-guide — Gutter cleaning costs (national + Tampa pricing)
 - https://jronegutters.com/blog/aluminum-vs-vinyl-gutters-florida — Aluminum vs vinyl gutters for Florida
 - https://jronegutters.com/blog/gutter-pitch-slope-guide — Gutter pitch/slope explained

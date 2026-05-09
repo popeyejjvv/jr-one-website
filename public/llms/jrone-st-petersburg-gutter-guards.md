@@ -21,7 +21,7 @@ St. Pete gets less rain than the rest of Tampa Bay thanks to its sunshine record
 - Standard perforated leaf guards for simple big-leaf yards
 - Copper guards matched to historic bungalow copper systems
 - Salt-rated hardware on waterfront installs
-- Sizing for 5-inch, 6-inch, 7-inch, and half-round profiles
+- Sizing for 6-inch, 7-inch, and half-round profiles (JR One does not install 5-inch)
 - Hanger tightening and miter resealing during install
 - Gentle handling of historic bungalow fascia and trim
 

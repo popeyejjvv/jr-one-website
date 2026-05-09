@@ -41,7 +41,7 @@ Brandon, FL is one of JR One Aluminum's core service areas. The mix of establish
 
 ## Services Available in Brandon
 
-- Seamless aluminum gutter installation (5", 6", 7")
+- Seamless aluminum gutter installation (6", 7")
 - Copper gutter systems
 - Soffit installation and replacement
 - Fascia installation and wrapping

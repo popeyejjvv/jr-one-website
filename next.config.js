@@ -26,6 +26,12 @@ const nextConfig = {
       { source: "/why-our-gutter-guard-installation-stands-out-as-the-best-choice-for-your-home", destination: "/gutter-guards", permanent: true },
       { source: "/why-our-gutter-guard-installation-stands-out-as-the-best-choice-for-your-home/", destination: "/gutter-guards", permanent: true },
 
+      // ── 5-inch comparison post slug retired (2026-05-09) ──
+      // JR One installs 6-inch and 7-inch only — the old 5-vs-6-vs-7 comparison
+      // implied 5-inch was a JR One service. New slug is 6-inch-vs-7-inch only.
+      { source: "/blog/5-inch-vs-6-inch-vs-7-inch-gutters", destination: "/blog/6-inch-vs-7-inch-gutters-tampa", permanent: true },
+      { source: "/blog/5-inch-vs-6-inch-vs-7-inch-gutters/", destination: "/blog/6-inch-vs-7-inch-gutters-tampa", permanent: true },
+
       // ── Old /gutter-cleaning/{city}-fl → /areas/{city}/gutter-cleaning ──
       // 2026-04-17: Fixed — was pointing to generic /areas/{city}, now points to
       // the specific service page so Google preserves keyword relevance.

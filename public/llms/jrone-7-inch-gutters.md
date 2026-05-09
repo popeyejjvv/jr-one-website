@@ -22,7 +22,7 @@ JR One Aluminum LLC installs oversized 7-inch seamless aluminum gutters for Tamp
 - Large homes (approximately 3,500+ sqft of roof area)
 - Homes with existing 6-inch overflow problems during Florida storms
 - Custom and architectural homes with multi-plane rooflines and water-concentration zones
-- Replacement upgrades when aging 5-inch or 6-inch gutters are already being removed
+- Replacement upgrades when aging builder-grade 5-inch or existing 6-inch gutters are already being removed (JR One does not install 5-inch — only 6-inch and 7-inch)
 
 ---
 

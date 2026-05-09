@@ -15,6 +15,8 @@ faqs:
 
 If you're building a home or buying new construction in Tampa Bay, the gutters your builder installs are almost certainly the minimum viable product. Builders optimize for cost per unit, not 20-year performance. Understanding what they cut corners on helps you make a smart upgrade decision before or right after closing.
 
+> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida — references to 5-inch in this post are about builder-grade systems we replace, not what we install.
+
 ## What Builders Typically Install
 
 Most Florida volume builders install:
@@ -65,5 +67,7 @@ Don't wait until the builder-grade system fails. If you notice overflow during s
 ## The Bottom Line
 
 New construction gutters in Florida are designed to pass inspection at the lowest cost — not to perform for 20 years in our climate. Upgrading from builder-grade 5-inch sectional to professional 6-inch seamless costs a small fraction of the home's price and prevents the overflow, leaking, and water damage that cheap gutters guarantee within a decade.
+
+JR One installs 6-inch and 7-inch seamless aluminum (and copper and galvalume in the same sizes) only — never 5-inch. New construction upgrade jobs almost always step the home from builder 5-inch to JR One 6-inch as the baseline; 7-inch is reserved for steep pitches, large multi-wing roofs, or homes that already overflow with 6-inch.
 
 **[Get a free estimate for new construction gutter upgrades](/estimator)** or call **(844) 444-3114**. We work with homeowners and builders across Tampa Bay.

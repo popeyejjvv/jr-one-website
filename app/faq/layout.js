@@ -72,10 +72,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Should I get 5-inch or 6-inch gutters in Tampa?",
+      name: "What size gutter does JR One install?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "6-inch gutters have 40% more water-carrying capacity than 5-inch. For most Tampa homes, given Florida's intense rainfall (46-50 inches annually) and larger roof footprints, 6-inch is often the right choice. JR One recommends size based on specific roof area and pitch during the free assessment.",
+        text: "JR One installs 6-inch and 7-inch seamless aluminum gutters only — plus copper and galvalume in the same sizes. We do not install 5-inch in Florida because it's undersized for our 51 inches of annual rainfall on most roof sizes. 6-inch is the baseline for most Tampa homes; 7-inch is the upgrade for larger roofs, steep pitches, or homes that already overflow with 6-inch. JR One recommends the right size during the free on-site assessment based on roof area and pitch.",
       },
     },
     {

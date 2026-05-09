@@ -8,7 +8,7 @@ faqs:
   - question: "How many downspouts do I need?"
     answer: "One downspout for every 20-30 linear feet of gutter run. A typical Tampa home with 175 linear feet of gutters needs 6-8 downspouts. More downspouts means faster drainage and less chance of overflow during heavy Florida storms."
   - question: "What size downspouts should I use?"
-    answer: "2x3 inch for 5-inch gutters, 3x4 inch for 6-inch gutters, and 3x4 or 4x5 inch for 7-inch gutters. Oversized downspouts are always better than undersized — they handle heavy rain volume without backing up."
+    answer: "JR One installs 6-inch and 7-inch gutters only. 6-inch gutters pair with 3x4 inch downspouts and 7-inch with 3x4 or 4x5 inch. 5-inch gutters with 2x3 inch downspouts is the builder-grade combo we replace, not what we install. Oversized downspouts are always better than undersized — they handle heavy rain volume without backing up."
 ---
 
 # Gutter Downspout Guide: Sizing, Placement, and Common Mistakes
@@ -32,14 +32,14 @@ In Florida, err toward more downspouts. Our rain intensity means the system need
 
 ## Downspout Sizing
 
-Downspouts come in standard rectangular sizes:
+Downspouts come in standard rectangular sizes. JR One installs 6-inch and 7-inch gutters only — 5-inch is shown for reference only because we frequently replace builder-grade 5-inch with 2x3 downspouts.
 
 | Downspout Size | Pairs With | Water Capacity |
 |---------------|-----------|----------------|
-| 2x3 inch | 5-inch gutters | Standard |
-| 3x4 inch | 6-inch gutters | High volume |
+| 3x4 inch | 6-inch gutters (JR One baseline) | High volume |
 | 4x5 inch | 7-inch gutters / commercial | Maximum |
 | Round (3" or 4") | Specialty / decorative | Varies |
+| 2x3 inch | 5-inch gutters — builder-grade only, not installed by JR One | Standard |
 
 **The most common mistake:** 6-inch gutters paired with 2x3-inch downspouts. The gutter has capacity for heavy rain, but the undersized downspout creates a bottleneck. Water backs up at the downspout transition, fills the gutter, and overflows.
 

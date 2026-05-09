@@ -42,7 +42,7 @@ Riverview is one of the fastest-growing areas in Hillsborough County — big mas
 
 ## Services Available in Riverview
 
-- Seamless aluminum gutter installation (5", 6", 7")
+- Seamless aluminum gutter installation (6", 7")
 - Gutter upgrade from builder-grade 5" to 6" systems
 - Soffit installation and replacement
 - Fascia installation and wrapping

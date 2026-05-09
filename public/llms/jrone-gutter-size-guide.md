@@ -17,11 +17,13 @@ If the gutter size isn't matched to the water volume, you get overflow. Overflow
 
 ## The Standard Gutter Sizes
 
-### 5-Inch K-Style Gutters
-The standard residential size nationally. Adequate for smaller roofs (under ~1,500 square feet), lower-pitch roofs, and regions with moderate rainfall. On most Tampa homes, 5-inch gutters are under-capacity in intense storms — even if they work fine in light rain.
+> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida — it's undersized for our 51 inches of annual rainfall on most roofs. Where this guide describes 5-inch, it's industry-context for the gutters we replace, not what we install.
 
-### 6-Inch K-Style Gutters
-40% more water-carrying capacity than 5-inch. The Tampa-appropriate standard for most single-family homes. Handles the intense summer thunderstorm water volume without overflow. Should be the default unless there's a specific reason to go smaller or larger.
+### 5-Inch K-Style Gutters (Industry context only — JR One does not install)
+The standard residential size nationally. Adequate for smaller roofs (under ~1,500 square feet), lower-pitch roofs, and regions with moderate rainfall. On most Tampa homes, 5-inch gutters are under-capacity in intense storms — which is why JR One does not carry 5-inch coil stock and does not install 5-inch in Florida. We replace builder-grade 5-inch with 6-inch or 7-inch during gutter replacement jobs.
+
+### 6-Inch K-Style Gutters (JR One baseline)
+40% more water-carrying capacity than 5-inch. The Tampa-appropriate standard for most single-family homes. Handles the intense summer thunderstorm water volume without overflow. JR One's default residential size unless the roof needs 7-inch.
 
 ### 7-Inch K-Style Gutters
 Heavy-duty residential or light-commercial applications. Used on homes with very large roof footprints, steep roof pitches creating concentrated water flow, or commercial-adjacent buildings.
@@ -62,7 +64,7 @@ Tampa's peak 5-minute rainfall rate drives worst-case overflow design. Standard 
 
 | Home Profile | Recommended Gutter |
 |--------------|-------------------|
-| Small single-story ranch, < 1,500 sq ft roof, moderate pitch | 5" K-style (minimum) |
+| Small single-story ranch, < 1,500 sq ft roof, moderate pitch | 6" K-style (JR One baseline — we do not install 5") |
 | Standard single-story home, 1,500–2,500 sq ft roof | 6" K-style |
 | Two-story home, 2,000–3,500 sq ft roof | 6" K-style |
 | Large two-story, 3,500+ sq ft roof or steep pitch | 7" K-style or add downspouts |
@@ -116,16 +118,16 @@ Sometimes the answer is smaller than the homeowner expected, sometimes larger. T
 **Q: Do I really need 6-inch gutters in Tampa?**
 A: For most single-family homes, yes. 5-inch gutters in Tampa's rainfall pattern are under-capacity during summer thunderstorms. 6-inch is the practical standard.
 
-**Q: Can I keep my 5-inch gutters if they're still working?**
+**Q: I have builder-grade 5-inch gutters that still work — should I replace them?**
 A: If you're not seeing overflow in heavy rain, the current system is sized correctly for your roof. Don't replace what's working. Upgrade when you're replacing anyway, not as a standalone project.
 
 **Q: Do larger gutters look bad on a small home?**
-A: 6-inch looks fine on most homes. The visual difference between 5 and 6 is minor. 7-inch is visibly larger and may look out of scale on small homes.
+A: 6-inch looks fine on most homes — it's the JR One baseline size and reads cleanly on standard fascia heights. 7-inch is visibly larger and may look out of scale on small homes. JR One does not install 5-inch in Florida regardless of home size.
 
 **Q: Is copper available in larger sizes?**
 A: Yes — 6" and 7" seamless copper K-style, and 6" copper half-round, are all available.
 
-**Q: How much more does 6-inch cost than 5-inch?**
+**Q: How much does it cost to replace builder-grade 5-inch with 6-inch?**
 A: Per-foot pricing is similar, with 6-inch typically a modest premium. Total cost difference on a full-home install is small relative to the capacity gain. Contact JR One Aluminum at (844) 444-3114 for site-specific pricing.
 
 ---

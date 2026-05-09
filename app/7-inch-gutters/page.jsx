@@ -63,7 +63,7 @@ const T = {
       { emoji: "🏗️", title: "Large Roof Areas (3,500+ sqft)", desc: "Homes above roughly 3,500 sqft of roof area shed enough water in a Florida storm that 6-inch gutters are at or past their capacity limit. 7-inch gives real headroom." },
       { emoji: "💧", title: "Homes with Existing Overflow Issues", desc: "If your current 6-inch gutters overflow during storms even when clean, you don't need more cleaning. You need more capacity. 7-inch solves what no amount of maintenance can." },
       { emoji: "🎨", title: "Custom & Architectural Homes", desc: "Custom builds with complex rooflines, multi-plane roofs, or unusual geometry often concentrate water at specific gutter runs. 7-inch handles those concentration zones without overflow." },
-      { emoji: "🔧", title: "Replacement Upgrades", desc: "Replacing aging 5-inch or 6-inch gutters is the perfect moment to upgrade to 7-inch. Installation cost is already in play, marginal upcharge is modest, and you get 20+ years of headroom capacity." },
+      { emoji: "🔧", title: "Replacement Upgrades", desc: "Replacing aging builder-grade or 6-inch gutters is the perfect moment to upgrade to 7-inch. Installation cost is already in play, marginal upcharge is modest, and you get 20+ years of headroom capacity." },
     ],
     callToWalkTitle: "Most Tampa homes do fine with 6-inch. When they don't, it's obvious.",
     callToWalkDesc: "If your home is under 3,000 sqft of roof area with a moderate pitch and no current overflow, 6-inch is the right call. If you're above that, or you already see overflow, 7-inch pays for itself in avoided water damage. We'll tell you which you are during the free walkthrough.",

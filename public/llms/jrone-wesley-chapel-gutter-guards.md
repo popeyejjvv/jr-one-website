@@ -20,7 +20,7 @@ Wesley Chapel is mostly newer master-planned construction — big two-story roof
 - Micro mesh guards — best performer for mixed oak/pine debris common in Pasco
 - Standard perforated leaf guards for simpler big-leaf yards
 - Copper guards matched to premium systems
-- Sizing for 5-inch, 6-inch, and 7-inch gutters
+- Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Guard install on two-story Wesley Chapel homes (proper ladders and safety)
 - Hanger tightening and miter resealing during install
 - Guard reinstallation if gutters need future repair

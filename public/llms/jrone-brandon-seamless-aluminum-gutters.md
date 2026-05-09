@@ -1,7 +1,7 @@
 # Seamless Aluminum Gutters in Brandon, FL — JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Seamless aluminum gutter installation (5", 6", 7" K-style and half-round)
+**Service:** Seamless aluminum gutter installation (6", 7" K-style and half-round)
 **Location:** Brandon, Florida — Hillsborough County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/brandon/seamless-aluminum-gutters
@@ -16,7 +16,7 @@ Central Brandon owners whose 20–30 year old original gutters are sagging, leak
 Brandon gets the same 50-plus inches of rain as the rest of Tampa Bay, delivered in the same intense summer thunderstorms. Sectional big-box gutters leak at every joint — humidity, UV, and rain cycles chew through the seals within a few years. Seamless runs come off a truck-mounted machine as one continuous piece sized to the roofline. The only joints are at corners and downspout outlets. Heavier aluminum gauge, hidden hangers screwed into the fascia, and properly-sized downspouts handle Brandon's rain loads and last decades longer than builder-grade.
 
 ## What JR One Aluminum Does for Brandon Homeowners
-- On-site custom fabrication of seamless runs in 5", 6", and 7" profiles
+- On-site custom fabrication of seamless runs in 6" and 7" profiles
 - K-style and half-round profiles
 - Heavier aluminum coil than builder-grade
 - Hidden hangers — no spike-and-ferrule
@@ -28,7 +28,7 @@ Brandon gets the same 50-plus inches of rain as the rest of Tampa Bay, delivered
 
 ## Pricing Reference
 - Typical Brandon single-family install: **$8–$12 per linear foot** for 6-inch aluminum
-- 5-inch: lower end of the range
+<!-- 5-inch pricing bullet removed: JR One installs 6-inch and 7-inch only -->
 - 7-inch oversized: quoted separately
 - Average full-home install: **$1,500–$2,500**
 - Tear-off adds to the job

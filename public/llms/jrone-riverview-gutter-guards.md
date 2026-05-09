@@ -19,8 +19,8 @@ Riverview's master-planned subdivisions are dense with builder-grade 5-inch gutt
 - Pre-install cleaning
 - Micro mesh guards — best performer for Riverview's mixed oak/pine debris
 - Standard perforated leaf guards for simpler big-leaf yards
-- Sizing for 5-inch, 6-inch, and 7-inch gutters
-- Optional gutter upgrade at the same time (5-inch to 6-inch)
+- Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
+- Optional gutter upgrade at the same time (builder-grade 5-inch replaced with JR One 6-inch or 7-inch)
 - Hanger tightening and miter resealing during install
 - Two-story access with proper equipment
 - Guard reinstallation after any future repair
@@ -29,7 +29,7 @@ Riverview's master-planned subdivisions are dense with builder-grade 5-inch gutt
 - Typical installed cost: **$8–$15 per linear foot** depending on guard type
 - Average Riverview two-story home (180–240 linear feet): **$1,500–$3,000** installed
 - Single-story: **$1,200–$2,400**
-- Upgrade from 5-inch to 6-inch seamless at the same time: quoted together, typically $8–$12/ft for the gutter
+- Upgrade from builder-grade 5-inch to JR One 6-inch seamless at the same time: quoted together, typically $8–$12/ft for the gutter
 - LeafFilter and Gutter Helmet typically run $13–$20+ per foot; JR One installs comparable micro mesh for 30–50% less
 - All ballpark
 

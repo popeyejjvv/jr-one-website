@@ -22,7 +22,7 @@ JR One Aluminum fabricates seamless gutters on-site using a portable roll-formin
 JR One Aluminum installs multiple seamless gutter profiles:
 
 ### K-Style Gutters (Most Common)
-- **5-inch K-style** — Standard residential size. Handles average rainfall load for single-story homes and most two-story homes.
+- <!-- 5-inch K-style section removed: JR One installs 6-inch and 7-inch only -->
 - **6-inch K-style** — Recommended for larger roof areas, high-pitch roofs, or homes in areas with intense rainfall. Florida's subtropical climate often warrants 6-inch gutters.
 - **7-inch K-style seamless** — Heavy-duty residential or light commercial applications.
 
@@ -47,7 +47,7 @@ JR One Aluminum installs multiple seamless gutter profiles:
 
 ## Pricing Reference
 
-Contact JR One Aluminum at (844) 444-3114 for current per-linear-foot pricing on 5-inch, 6-inch, and 7-inch K-style, half-round, and commercial profiles, as well as copper gutter systems. Pricing does not include downspouts and is quoted on-site based on your specific measurements.
+Contact JR One Aluminum at (844) 444-3114 for current per-linear-foot pricing on 6-inch and 7-inch K-style, half-round, and commercial profiles, as well as copper gutter systems. Pricing does not include downspouts and is quoted on-site based on your specific measurements. JR One installs 6-inch and 7-inch only — we do not install 5-inch in Florida.
 
 ---
 
@@ -79,8 +79,8 @@ A correctly pitched, properly installed seamless aluminum gutter system directs 
 
 ## Frequently Asked Questions — Seamless Gutters Tampa FL
 
-**Q: What's the difference between 5-inch and 6-inch gutters?**
-A: 6-inch gutters have 40% more water-carrying capacity than 5-inch. For Florida's intense rainfall and larger roof footprints, 6-inch is often the right choice. JR One Aluminum recommends the correct size based on your roof's square footage and pitch.
+**Q: What size gutter does JR One install?**
+A: JR One installs 6-inch and 7-inch seamless aluminum gutters only — plus copper and galvalume in the same sizes. We do not install 5-inch in Florida. 6-inch is the baseline; 7-inch is the upgrade for larger roof footprints, steep pitches, or homes that already overflow with 6-inch. JR One Aluminum recommends the correct size based on your roof's square footage and pitch during the on-site assessment.
 
 **Q: How long do seamless aluminum gutters last in Tampa?**
 A: Quality aluminum gutters last 20–30 years in Tampa's climate with basic maintenance (annual cleaning, checking hangers). Copper gutters last 50+ years.

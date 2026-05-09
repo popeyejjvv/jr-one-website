@@ -17,6 +17,8 @@ Water sheeting over the front edge of your gutters during a storm isn't normal. 
 
 Here are the five causes, in order from most common to least, and the specific fix for each.
 
+> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida — it's undersized for Tampa rainfall on most roofs. Where this guide mentions 5-inch gutters, it's referring to existing builder-grade systems, not what we install.
+
 ## 1. Clogged Gutters or Downspouts (Most Common)
 
 **What you see:** Water pours over the front edge during any rain, even moderate. The gutter channel is full of standing water and debris.

@@ -1,7 +1,7 @@
 # Seamless Aluminum Gutters in Wesley Chapel, FL — JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Seamless aluminum gutter installation (5", 6", 7" K-style and half-round)
+**Service:** Seamless aluminum gutter installation (6", 7" K-style and half-round)
 **Location:** Wesley Chapel, Florida — Pasco County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/wesley-chapel/seamless-aluminum-gutters
@@ -16,7 +16,7 @@ Seven Oaks, Meadow Pointe, and Watergrass owners whose builder-grade 5-inch gutt
 Wesley Chapel has bigger-than-average roof footprints — master-planned two-story homes with 2,500 to 4,000+ square feet of roof area. Those roofs shed a lot of water fast in a Pasco County thunderstorm. Builder-grade 5-inch gutters with sectional joints were spec'd to hit a price point, not to move that water volume. Seamless 6-inch aluminum comes off a truck-mounted machine as one continuous piece, with only corner and downspout joints, and moves about 40% more water than 5-inch. In a Tampa Bay summer storm that's the difference between a clean edge drip and an overflow waterfall.
 
 ## What JR One Aluminum Does for Wesley Chapel Homeowners
-- On-site custom fabrication in 5", 6", and 7" profiles
+- On-site custom fabrication in 6" and 7" profiles
 - K-style and half-round profiles
 - Upgrade from builder 5-inch to 6-inch seamless
 - Heavier gauge aluminum coil than builder stock
@@ -28,7 +28,7 @@ Wesley Chapel has bigger-than-average roof footprints — master-planned two-sto
 
 ## Pricing Reference
 - Typical Wesley Chapel install: **$8–$12 per linear foot** for 6-inch aluminum
-- 5-inch: lower end of the range
+<!-- 5-inch pricing bullet removed: JR One installs 6-inch and 7-inch only -->
 - 7-inch oversized: quoted separately
 - Average two-story full-home install: **$2,000–$3,200** depending on linear footage
 - Single-story: **$1,500–$2,500**

@@ -42,7 +42,7 @@ Wesley Chapel is newer-build territory — master-planned communities, two-story
 
 ## Services Available in Wesley Chapel
 
-- Seamless aluminum gutter installation (5", 6", 7")
+- Seamless aluminum gutter installation (6", 7")
 - Gutter upgrade from builder 5" to 6" systems (a major Wesley Chapel workload)
 - Soffit installation and replacement
 - Fascia installation and wrapping

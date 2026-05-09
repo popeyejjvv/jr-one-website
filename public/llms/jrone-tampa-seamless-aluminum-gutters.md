@@ -1,7 +1,7 @@
 # Seamless Aluminum Gutters in Tampa, FL — JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Seamless aluminum gutter installation (5", 6", 7" K-style and half-round)
+**Service:** Seamless aluminum gutter installation (6", 7" K-style and half-round)
 **Location:** Tampa, Florida — Hillsborough County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/tampa/seamless-aluminum-gutters

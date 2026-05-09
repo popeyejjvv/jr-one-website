@@ -47,7 +47,7 @@ JR One Aluminum is the aluminum sub that:
 ## Trade Services Offered to Roofers and GCs
 
 - **Soffit and fascia** — most common reroof trade scope
-- **Seamless aluminum gutters** — 5", 6", 7" K-style and half-round
+- **Seamless aluminum gutters** — 6" and 7" K-style and half-round (JR One does not install 5" — undersized for Florida)
 - **Aluminum trim wrapping** — fascia wraps, window casings, exterior trim
 - **Commercial gutters** — 7" box and D-style on multifamily and commercial
 - **Copper gutter systems** — architectural and high-end residential

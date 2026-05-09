@@ -163,7 +163,7 @@ If you're in Tampa Bay, stainless micro mesh is almost always the right answer b
 Three factors determine which guard type works best:
 
 1. **Tree coverage type, not just amount.** Pine needles and oak catkins demand micro mesh. Magnolia leaves and palm fronds work with solid aluminum. Mixed coverage favors micro mesh because it handles both.
-2. **Gutter size.** Guards must be matched to your gutter width. If your gutters are undersized (5-inch), upgrading to [6-inch gutters](/blog/5-inch-vs-6-inch-vs-7-inch-gutters) and adding guards at the same time is the most cost-effective approach.
+2. **Gutter size.** Guards must be matched to your gutter width. If you have builder-grade undersized gutters (5-inch), JR One replaces them with [6-inch or 7-inch seamless](/blog/6-inch-vs-7-inch-gutters-tampa) and installs guards at the same time — most cost-effective approach. JR One installs 6-inch and 7-inch only — never 5-inch.
 3. **Roof pitch.** Steep roofs shed water faster, which puts more volume pressure on guards. Steep pitches favor micro mesh; shallow pitches handle solid aluminum better.
 4. **Budget and timeline.** Quality micro mesh at local pricing is the best value. Franchise pricing buys you the warranty and the sales experience, not better protection.
 

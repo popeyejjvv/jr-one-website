@@ -34,12 +34,12 @@ A: Call (844) 444-3114, email info@jronegutters.com, or fill out the contact for
 ## Gutter Questions
 
 **Q: What type of gutters does JR One Aluminum install?**
-A: JR One Aluminum installs seamless aluminum gutters custom-fabricated on-site. Available profiles include K-style (5", 6", 7"), half-round (6", 8"), commercial box gutters (7"), and commercial D-style gutters (7"). Copper gutters are also available.
+A: JR One Aluminum installs seamless aluminum gutters custom-fabricated on-site. Available profiles include K-style (6", 7"), half-round (6", 8"), commercial box gutters (7"), and commercial D-style gutters (7"). Copper gutters are also available.
 
 **Q: What is a seamless gutter?**
 A: A seamless gutter is fabricated in one continuous piece cut to the exact length of your roofline. It has no joints or seams along the straight runs, only at corners and downspout connections. This dramatically reduces leak points compared to sectional gutters sold in hardware stores.
 
-**Q: Should I get 5-inch or 6-inch gutters?**
+**Q: What size gutter does JR One install?**
 A: 6-inch gutters have 40% more water-carrying capacity. For most Tampa homes — given Florida's intense rainfall (46–50 inches annually) and larger roof footprints — 6-inch gutters are often the better choice. JR One Aluminum recommends the correct size based on your specific roof area and pitch during the free assessment.
 
 **Q: How long do aluminum gutters last in Tampa?**

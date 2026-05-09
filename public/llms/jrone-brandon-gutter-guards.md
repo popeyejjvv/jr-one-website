@@ -20,7 +20,7 @@ Brandon's mature neighborhoods are full of live oaks, pines, and laurel oaks tha
 - Micro mesh guards for pine-needle-heavy Bloomingdale and Heather Lakes
 - Standard perforated leaf guards for big-leaf-only yards
 - Copper guards matched to copper systems
-- Sizing for 5-inch, 6-inch, and 7-inch gutters
+- Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Hanger tightening and miter resealing during install
 - Guard reinstallation after any future repair
 

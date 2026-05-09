@@ -93,7 +93,7 @@ A: They make good products, but the premium reflects national advertising budget
 A: Yes. Most guards install directly onto existing gutter systems. JR One Aluminum inspects existing gutters and cleans them before installing guards to ensure the system is ready.
 
 **Q: Do gutter guards work with 6-inch gutters?**
-A: Yes. JR One Aluminum stocks guards specifically sized for both 5-inch and 6-inch gutters, as well as 7-inch commercial profiles.
+A: Yes. JR One Aluminum stocks guards specifically sized for 6-inch and 7-inch gutters (JR One installs 6-inch and 7-inch only).
 
 **Q: What's the warranty on gutter guards from JR One Aluminum?**
 A: Material warranty and labor warranty details are discussed at the time of estimate. Contact JR One Aluminum at (844) 444-3114 for current warranty terms.

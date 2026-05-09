@@ -44,7 +44,7 @@ St. Pete has three distinct aluminum-work universes: downtown and historic neigh
 
 ## Services Available in St. Pete
 
-- Seamless aluminum gutter installation (5", 6", 7", half-round)
+- Seamless aluminum gutter installation (6", 7", half-round)
 - Copper gutter systems for historic and architectural homes
 - Custom half-round copper for restoration work in Old Northeast and Kenwood
 - Coastal-rated soffit installation

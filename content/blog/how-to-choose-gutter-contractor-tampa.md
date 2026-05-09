@@ -41,7 +41,7 @@ If an uninsured worker falls off a ladder on your property, that's potentially y
 
 A professional estimate should include:
 - Linear footage of gutters
-- Gutter size (5", 6", or 7")
+- Gutter size (6" baseline or 7" upgrade — JR One does not install 5" in Florida)
 - Material gauge (.027 or .032 aluminum)
 - Hanger type and spacing
 - Downspout count, size, and routing

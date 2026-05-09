@@ -22,7 +22,7 @@ The problem is that most gutter failure happens gradually. By the time you notic
 If water sheets over the edge of your gutters during a storm, something is wrong. The three causes:
 
 - **Clogged gutters** — debris blocking water flow. Fix: cleaning (not replacement).
-- **Undersized gutters** — 5-inch gutters can't handle Florida's rain volume on most roof sizes. Fix: upgrade to 6-inch or 7-inch seamless.
+- **Undersized gutters** — builder-grade 5-inch gutters can't handle Florida's rain volume on most roof sizes. Fix: JR One replaces with 6-inch or 7-inch seamless (we install 6-inch and 7-inch only).
 - **Improper pitch** — water pools instead of flowing to the downspout. Fix: re-pitch (repair) or replace if the system is too old to re-hang.
 
 If cleaning doesn't solve the overflow, your gutters are either too small or too far gone.

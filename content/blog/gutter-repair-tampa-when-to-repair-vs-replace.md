@@ -21,6 +21,8 @@ The question is always the same: **can this be fixed, or do I need new gutters?*
 
 Here's how to tell.
 
+> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida — it's undersized for Tampa rainfall on most roofs. Where this guide mentions 5-inch gutters, it's referring to existing builder-grade systems we replace, not what we install.
+
 ## Common Gutter Problems in Tampa
 
 Tampa's climate is hard on gutters. Fifty-one inches of rain per year, intense UV exposure, salt air near the coast, and year-round tree debris create conditions that accelerate wear faster than most other parts of the country.

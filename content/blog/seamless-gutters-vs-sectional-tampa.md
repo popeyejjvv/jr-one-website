@@ -67,13 +67,13 @@ Honestly? Almost never in Tampa. The cost savings don't justify the shorter life
 
 For any home you plan to live in for more than 5 years, seamless aluminum is the right investment.
 
-## Gutter Size: 5-Inch vs. 6-Inch vs. 7-Inch
+## Gutter Size: 6-Inch vs. 7-Inch (JR One Does Not Install 5-Inch)
 
-While you're choosing between seamless and sectional, choose the right size too:
+While you're choosing between seamless and sectional, choose the right size too. JR One installs 6-inch and 7-inch seamless aluminum only — we do not install 5-inch in Florida because it's undersized for our rain volume on most roofs.
 
-- **5-inch:** Standard in many parts of the country. Undersized for most Tampa homes — can't handle our rain volume on anything but a small, simple roof.
-- **6-inch K-style:** The right choice for most Tampa residential applications. Handles heavy rain, works with standard downspouts, and fits standard fascia heights.
+- **6-inch K-style:** The JR One baseline for most Tampa residential applications. Handles heavy rain, works with standard 3x4 downspouts, and fits standard fascia heights.
 - **7-inch:** For larger roofs, steeper pitches, commercial buildings, or homes with unusually high water volume. We're one of the few Tampa Bay contractors who fabricate 7-inch on-site.
+- **5-inch:** Not installed by JR One. Builder-grade 5-inch gutters are common on volume-built Tampa homes, but they overflow during summer thunderstorms. We replace them with 6-inch or 7-inch seamless during gutter replacement jobs.
 
 ## The Bottom Line
 

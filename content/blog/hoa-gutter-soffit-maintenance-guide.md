@@ -85,7 +85,7 @@ When individual homeowners handle their own gutters, compliance varies wildly. S
 
 Most Tampa Bay HOA communities were built by volume builders who installed the cheapest, smallest gutters available — 5-inch sectional aluminum or (worse) vinyl. These systems are already failing at 10-15 years old across dozens of communities in Brandon, Riverview, Wesley Chapel, and Land O' Lakes.
 
-The board needs to plan for community-wide gutter replacement as a capital improvement, not treat it as individual unit repairs.
+The board needs to plan for community-wide gutter replacement as a capital improvement, not treat it as individual unit repairs. JR One replaces builder-grade undersized gutters with 6-inch or 7-inch seamless aluminum — we install 6-inch and 7-inch only.
 
 ## Budgeting for Gutter Maintenance
 

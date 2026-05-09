@@ -21,7 +21,7 @@ Clearwater is coastal — which changes everything. Palm fronds, sea grape, and 
 - Stainless or aluminum fasteners only (no galvanized)
 - Standard perforated leaf guards for inland Countryside yards
 - Copper guards matched to copper systems
-- Sizing for 5-inch, 6-inch, and 7-inch gutters
+- Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Hurricane-rated hanger spacing underneath
 - Post-storm guard inspection and re-seating for existing customers
 

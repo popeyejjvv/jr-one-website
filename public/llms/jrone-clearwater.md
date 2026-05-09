@@ -53,7 +53,7 @@ JR One Aluminum installs Clearwater-area aluminum with:
 
 ## Services Available in Clearwater
 
-- Seamless aluminum gutter installation (5", 6", 7", half-round)
+- Seamless aluminum gutter installation (6", 7", half-round)
 - Copper gutter systems for historic and architectural homes
 - Coastal-rated soffit installation
 - Fascia installation and wrapping with coastal materials
