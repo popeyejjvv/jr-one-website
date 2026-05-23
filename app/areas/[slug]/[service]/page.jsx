@@ -27,6 +27,9 @@ const CITY_SLUGS = [
   "new-port-richey","largo","spring-hill","tarpon-springs",
   "land-o-lakes","dunedin","ruskin","sun-city-center",
   "temple-terrace","plant-city","lutz","south-tampa",
+  // ── 7 mission cities added 2026-05-23 (Play 4) ──
+  "new-tampa","valrico","lithia","oldsmar","safety-harbor",
+  "seminole","pinellas-park",
 ];
 
 const SERVICES = {
