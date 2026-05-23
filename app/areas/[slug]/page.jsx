@@ -5,7 +5,10 @@ const VALID_SLUGS = [
   "lakeland","brandon","wesley-chapel","palm-harbor","riverview",
   "new-port-richey","largo","spring-hill","tarpon-springs",
   "land-o-lakes","dunedin","ruskin","sun-city-center",
-  "temple-terrace","plant-city","lutz","south-tampa"
+  "temple-terrace","plant-city","lutz","south-tampa",
+  // ── 7 mission cities added 2026-05-23 (Play 4) ──
+  "new-tampa","valrico","lithia","oldsmar","safety-harbor",
+  "seminole","pinellas-park"
 ];
 
 const slugToCity = (slug) =>
@@ -21,7 +24,14 @@ export async function generateMetadata({ params }) {
   return {
     title: `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
     description: `Seamless gutters, soffit repair, fascia replacement, gutter guards, and siding in ${cityName}, Florida. Family-owned Tampa Bay aluminum specialists. 30+ years experience. Free estimate (844) 444-3114.`,
-    alternates: { canonical: `https://jronegutters.com/areas/${slug}` },
+    alternates: {
+      canonical: `https://jronegutters.com/areas/${slug}`,
+      languages: {
+        "en-US": `https://jronegutters.com/areas/${slug}`,
+        "es-US": `https://jronegutters.com/es/areas/${slug}`,
+        "x-default": `https://jronegutters.com/areas/${slug}`,
+      },
+    },
     keywords: [
       `gutters ${cityName} FL`,
       `gutter installation ${cityName}`,
