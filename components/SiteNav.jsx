@@ -7,8 +7,46 @@
    ═══════════════════════════════════════════════════════════ */
 
 import { useState, useRef } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import { useLanguage } from "../lib/LanguageContext";
 import { ChevronDownIcon, MenuIcon, XIcon, PhoneIcon } from "../lib/icons";
+
+// Paired EN ↔ ES route map. Toggle navigates to the paired URL so /es/* stays
+// SSR-rendered in Spanish (vs. just flipping state, which the locked /es layout ignores).
+const EN_TO_ES = {
+  "/": "/es",
+  "/seamless-aluminum-gutters": "/es/canaletas-sin-costura-tampa",
+  "/gutter-cleaning": "/es/limpieza-canaletas-tampa",
+  "/soffit-and-fascia": "/es/sofito-fascia-tampa",
+  "/gutter-guards": "/es/protectores-canaletas-tampa",
+  "/gutter-repair": "/es/reparacion-canaletas-tampa",
+  "/peak-301": "/es/peak-301-rejuvenecimiento-techo-tampa",
+  "/storm-damage-gutters-tampa": "/es/canaletas-dano-tormenta-tampa",
+  "/7-inch-gutters": "/es/canaletas-7-pulgadas-tampa",
+  "/commercial-gutters": "/es/canaletas-comerciales-tampa",
+  "/copper-gutters": "/es/canaletas-cobre-tampa",
+  "/drainage-assessment": "/es/evaluacion-drenaje-tampa",
+  "/govee-lights": "/es/luces-govee-tampa",
+  "/hoa-contracts": "/es/contratos-hoa-tampa",
+  "/rental-property-maintenance": "/es/mantenimiento-propiedad-alquiler-tampa",
+  "/sagiper": "/es/sagiper-soffit-pvc-tampa",
+  "/siding": "/es/revestimiento-tampa",
+  "/specialty-gutters": "/es/canaletas-especiales-tampa",
+};
+const ES_TO_EN = Object.fromEntries(Object.entries(EN_TO_ES).map(([k, v]) => [v, k]));
+
+function pairedUrl(currentPath, currentLang) {
+  if (currentLang === "en") {
+    if (EN_TO_ES[currentPath]) return EN_TO_ES[currentPath];
+    if (currentPath.startsWith("/areas/")) return "/es" + currentPath;
+    return "/es" + (currentPath.startsWith("/") ? currentPath : "/" + currentPath);
+  }
+  if (ES_TO_EN[currentPath]) return ES_TO_EN[currentPath];
+  if (currentPath.startsWith("/es/areas/")) return currentPath.replace(/^\/es/, "");
+  if (currentPath.startsWith("/es/")) return currentPath.replace(/^\/es/, "");
+  if (currentPath === "/es") return "/";
+  return "/";
+}
 
 // Alphabetical for the standard services. HOA Contracts and Rental Property
 // Maintenance are pinned last (B2B / recurring-contract tier, kept together
@@ -78,6 +116,19 @@ export default function SiteNav({ promoBanner }) {
     closeTimerRef.current = setTimeout(() => setServicesOpen(false), 250);
   };
   const { lang, toggleLang } = useLanguage();
+  const router = useRouter();
+  const pathname = usePathname() || "/";
+  // When on a locked /es/* page, toggleLang() is a no-op (LanguageContext stays
+  // locked). The right move is navigation to the paired URL so SSR renders the
+  // other language at a distinct, indexable URL.
+  const handleLanguageToggle = () => {
+    const target = pairedUrl(pathname, lang);
+    if (target && target !== pathname) {
+      router.push(target);
+    } else {
+      toggleLang();
+    }
+  };
   const t = T[lang];
   const bannerMessages = promoBanner ? (Array.isArray(promoBanner) ? promoBanner : [promoBanner]) : t.promoBanner;
   const tickerText = bannerMessages.join("     ★     ");
@@ -299,7 +350,7 @@ export default function SiteNav({ promoBanner }) {
             </a>
 
             <button
-              onClick={toggleLang}
+              onClick={handleLanguageToggle}
               aria-label={lang === "en" ? "Switch to Spanish" : "Switch to English"}
               className="jr-press"
               style={{
@@ -457,7 +508,7 @@ export default function SiteNav({ promoBanner }) {
               <PhoneIcon size={18} /> (844) 444-3114
             </a>
             <button
-              onClick={() => { toggleLang(); setMenuOpen(false); }}
+              onClick={() => { handleLanguageToggle(); setMenuOpen(false); }}
               className="jr-press"
               style={{
                 fontFamily: "var(--jr-font-heading)",
