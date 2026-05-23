@@ -141,6 +141,11 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://jronegutters.com",
+    languages: {
+      "en-US": "https://jronegutters.com",
+      "es-US": "https://jronegutters.com/es",
+      "x-default": "https://jronegutters.com",
+    },
   },
 };
 
