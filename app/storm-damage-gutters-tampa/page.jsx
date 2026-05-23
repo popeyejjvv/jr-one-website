@@ -175,7 +175,13 @@ export default function StormDamagePage() {
       <SiteNav />
 
       {/* Hero */}
-      <section style={{ background: "var(--jr-navy-deep)", color: "var(--jr-paper)", padding: "var(--jr-space-20) 0 var(--jr-space-12)" }}>
+      <section style={{
+        backgroundImage: "linear-gradient(rgba(11, 22, 51, 0.78), rgba(11, 22, 51, 0.88)), url('/images/storm-damage-hero.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        color: "var(--jr-paper)",
+        padding: "var(--jr-space-20) 0 var(--jr-space-12)",
+      }}>
         <Container>
           <nav style={{ fontFamily: "var(--jr-font-heading)", fontSize: 12, opacity: 0.7, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 16 }}>
             {t.breadcrumb}
