@@ -67,9 +67,12 @@ const STATIC_PAGES = [
   { path: "/storm-damage-gutters-tampa", priority: 0.9, changeFrequency: "monthly" },
 ];
 
-// Spanish-locale routes (Play 5 + Play 1 + Play 4 — all /es/* URLs).
+// Spanish-locale routes (Play 5 + Play 1 + Play 4 + Spanish market expansion 2026-05-23).
 // Each entry maps the EN path the Spanish page mirrors so hreflang pairing is implicit.
 const ES_STATIC_PAGES = [
+  // Spanish homepage
+  { path: "/es", priority: 1.0, changeFrequency: "weekly" },
+  // Phase 1 service routes (May 23 mission)
   { path: "/es/canaletas-dano-tormenta-tampa", priority: 0.9, changeFrequency: "monthly" },
   { path: "/es/canaletas-sin-costura-tampa", priority: 0.9, changeFrequency: "monthly" },
   { path: "/es/limpieza-canaletas-tampa", priority: 0.8, changeFrequency: "monthly" },
@@ -77,6 +80,17 @@ const ES_STATIC_PAGES = [
   { path: "/es/protectores-canaletas-tampa", priority: 0.9, changeFrequency: "monthly" },
   { path: "/es/reparacion-canaletas-tampa", priority: 0.9, changeFrequency: "monthly" },
   { path: "/es/peak-301-rejuvenecimiento-techo-tampa", priority: 0.7, changeFrequency: "monthly" },
+  // Spanish market expansion 2026-05-23: 10 new service routes
+  { path: "/es/canaletas-7-pulgadas-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/canaletas-comerciales-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/canaletas-cobre-tampa", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/es/evaluacion-drenaje-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/luces-govee-tampa", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/es/contratos-hoa-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/mantenimiento-propiedad-alquiler-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/sagiper-soffit-pvc-tampa", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/es/revestimiento-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/canaletas-especiales-tampa", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 export default function sitemap() {
