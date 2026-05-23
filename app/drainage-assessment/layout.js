@@ -35,7 +35,14 @@ export const metadata = {
   title: "Underground Drainage Installation Tampa FL | PVC, Catch Basins, Pop-Up Emitters",
   description:
     "Tampa Bay underground drainage. PVC, catch basins, surface grates, pop-up emitters. We do not install french drains or channel drains. Free assessment, (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/drainage-assessment" },
+  alternates: {
+    canonical: "https://jronegutters.com/drainage-assessment",
+    languages: {
+      "en-US": "https://jronegutters.com/drainage-assessment",
+      "es-US": "https://jronegutters.com/es/evaluacion-drenaje-tampa",
+      "x-default": "https://jronegutters.com/drainage-assessment",
+    },
+  },
   openGraph: {
     title: "Drainage Installation Tampa FL, JR One Aluminum",
     description: "Tampa Bay drainage specialists, PVC, catch basins, dry wells. Move water away from foundations.",

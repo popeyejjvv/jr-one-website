@@ -104,7 +104,14 @@ export const metadata = {
   description:
     "Commercial gutter, soffit, fascia, and drainage for apartment complexes, multi-family, retail centers, and office buildings in Tampa Bay. 7-inch box & D-style systems. GC and building-owner trusted. (844) 444-3114.",
   keywords: "commercial gutters Tampa, apartment complex gutter installation, multi-family gutters Florida, retail center gutter contractor, commercial aluminum Tampa Bay, 7 inch box gutter commercial",
-  alternates: { canonical: "https://jronegutters.com/commercial-gutters" },
+  alternates: {
+    canonical: "https://jronegutters.com/commercial-gutters",
+    languages: {
+      "en-US": "https://jronegutters.com/commercial-gutters",
+      "es-US": "https://jronegutters.com/es/canaletas-comerciales-tampa",
+      "x-default": "https://jronegutters.com/commercial-gutters",
+    },
+  },
   openGraph: {
     title: "Commercial Gutters Tampa FL, JR One Aluminum",
     description: "Commercial aluminum gutter, soffit, and drainage for apartment complexes, retail, and multi-family in Tampa Bay.",
