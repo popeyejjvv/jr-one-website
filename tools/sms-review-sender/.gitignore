@@ -1,0 +1,15 @@
+# Never commit secrets
+.env
+.env.local
+*.env
+
+# Never commit the send log (contains customer phone numbers — PII)
+sms-review-send-log.json
+sms-review-send-log.*.json
+sms-review.log
+
+# Python venv
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
