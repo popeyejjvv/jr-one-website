@@ -237,6 +237,7 @@ const SERVICES = [
   { icon: "wrench", title: "Gutter Repair", desc: "Fix leaks, sagging, and overflow. Done right the first time.", link: "/gutter-repair" },
   { icon: "ruler", title: "Siding", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding" },
   { icon: "broom", title: "Peak 301 Roof Rejuvenation", desc: "Extend your roof's life 6 to 10 years with this soy-based sealant.", link: "/peak-301" },
+  { icon: "wrench", title: "Storm Damage Repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
 ];
 
 // ══════════════════════════════════════════════════════════
