@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const cityName = slugToCity(slug);
   return {
-    title: `Gutters, Soffit, Fascia & Siding in ${cityName}, FL | JR One Aluminum`,
+    title: `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
     description: `Seamless gutters, soffit repair, fascia replacement, gutter guards, and siding in ${cityName}, Florida. Family-owned Tampa Bay aluminum specialists. 30+ years experience. Free estimate (844) 444-3114.`,
     alternates: { canonical: `https://jronegutters.com/areas/${slug}` },
     keywords: [

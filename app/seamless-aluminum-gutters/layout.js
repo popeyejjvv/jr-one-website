@@ -32,7 +32,7 @@ const serviceSchema = {
     { "@type": "City", name: "Apollo Beach" },
   ],
   description:
-    "Custom-fabricated on-site seamless aluminum gutters in 5\", 6\", and 7\" K-style and half-round profiles. Tampa Bay residential and commercial installation by JR One Aluminum specialist crews. 30+ years of experience.",
+    "Custom-fabricated on-site seamless aluminum gutters in 6\" and 7\" K-style and half-round profiles. Tampa Bay residential and commercial installation by JR One Aluminum specialist crews. Over 30 years in the trade. We install 6\" and 7\" only (not 5\") because Florida rain volume needs the larger capacity.",
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",
@@ -57,7 +57,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Seamless Aluminum Gutter Installation Tampa FL | 30+ Years Experience",
   description:
-    "Custom-fabricated seamless aluminum gutters installed on-site in Tampa Bay. 5\", 6\", 7\" K-style and half-round profiles. Licensed, insured, bilingual. Free estimate, (844) 444-3114.",
+    "Custom-fabricated seamless aluminum gutters installed on-site in Tampa Bay. 6\" and 7\" K-style and half-round profiles (no 5\" in Florida). Licensed, insured, bilingual. Free estimate, (844) 444-3114.",
   alternates: { canonical: "https://jronegutters.com/seamless-aluminum-gutters" },
   openGraph: {
     title: "Seamless Aluminum Gutter Installation Tampa FL, JR One Aluminum",

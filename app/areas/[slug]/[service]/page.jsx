@@ -39,7 +39,7 @@ const SERVICES = {
     props: [
       ["On-site fabrication","Gutters cut to your exact roofline, not ordered from a warehouse."],
       ["25+ colors","Matched to fascia, trim, and body to enhance curb appeal."],
-      ["5\" and 6\" K-style","6\" handles the heavy Florida rain volume without overflow."],
+      ["6\" and 7\" K-style","Tampa Bay rain volume needs 6\" minimum; 7\" upgrade for large or steep roofs. We do not install 5\" in Florida."],
       ["Hidden hangers, screw-in","Hurricane-rated fastening, no nails that pull out."],
     ],
   },
@@ -179,7 +179,7 @@ export async function generateMetadata({ params }) {
   }
   const city = CITY_META[slug];
   const svc = SERVICES[service];
-  const title = `${svc.name} in ${city.name}, FL | JR One Aluminum`;
+  const title = `${svc.name} in ${city.name}, FL`;
   const description = `${svc.name} in ${city.name}, Florida. Family-owned specialist with over 30 years in Tampa Bay. Bilingual English/Spanish. Free estimate (844) 444-3114.`;
   const url = `https://jronegutters.com/areas/${slug}/${service}`;
   return {
@@ -195,7 +195,7 @@ export async function generateMetadata({ params }) {
       `${svc.short} installation ${city.name} FL`,
     ],
     openGraph: {
-      title: `${svc.name}, ${city.name}, FL | JR One Aluminum`,
+      title: `${svc.name}, ${city.name}, FL`,
       description: `${svc.name} in ${city.name}, FL. Specialist aluminum contractor, over 30 years experience. (844) 444-3114.`,
       url,
       type: "website",

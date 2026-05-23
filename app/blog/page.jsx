@@ -3,9 +3,10 @@ import { getAllPosts } from "@/lib/blog";
 import BlogIndex from "./BlogIndex";
 
 export const metadata = {
-  title: "Blog | Gutter, Soffit & Fascia Tips",
+  title: "Blog: Gutter, Soffit & Fascia Tips",
   description:
-    "Expert tips on gutter installation, soffit repair, fascia replacement, siding, and home exterior maintenance from Tampa Bay's aluminum specialists.",
+    "Expert tips on gutter installation (6\" and 7\" only), soffit repair, fascia replacement, drainage, Peak 301, and home exterior maintenance from Tampa Bay's aluminum specialists.",
+  alternates: { canonical: "https://jronegutters.com/blog" },
 };
 
 export default function BlogPage() {
