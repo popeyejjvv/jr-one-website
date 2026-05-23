@@ -35,7 +35,14 @@ export const metadata = {
   title: "Gutter Repair Tampa FL | Sagging, Leaks, Overflow Fixed Fast",
   description:
     "Gutter repair in Tampa Bay, sagging gutters, leaking seams, clogged downspouts, pitch correction, fascia repair. Same-week scheduling. Free assessment, (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/gutter-repair" },
+  alternates: {
+    canonical: "https://jronegutters.com/gutter-repair",
+    languages: {
+      "en-US": "https://jronegutters.com/gutter-repair",
+      "es-US": "https://jronegutters.com/es/reparacion-canaletas-tampa",
+      "x-default": "https://jronegutters.com/gutter-repair",
+    },
+  },
   openGraph: {
     title: "Gutter Repair Tampa FL, JR One Aluminum",
     description: "Tampa Bay gutter repair specialists. Sagging, leaks, overflow, fascia, fixed by aluminum experts with 30+ years experience.",

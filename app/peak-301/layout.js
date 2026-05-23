@@ -35,7 +35,14 @@ export const metadata = {
   title: "Peak 301 Roof Rejuvenation Tampa FL | Up to 70% Less Than New Roof",
   description:
     "Peak 301 soy-based roof rejuvenation in Tampa Bay. Adds 6-10 years of life. 6-year warranty. Supports Florida insurance renewal under Statute 627.7011. Free inspection, (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/peak-301" },
+  alternates: {
+    canonical: "https://jronegutters.com/peak-301",
+    languages: {
+      "en-US": "https://jronegutters.com/peak-301",
+      "es-US": "https://jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa",
+      "x-default": "https://jronegutters.com/peak-301",
+    },
+  },
   openGraph: {
     title: "Peak 301 Roof Rejuvenation Tampa FL, JR One Aluminum",
     description: "Extend roof life 6-10 years at a fraction of replacement cost. Supports Florida insurance renewal.",

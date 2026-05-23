@@ -35,7 +35,14 @@ export const metadata = {
   title: "Soffit and Fascia Replacement Tampa FL | Rotted Wood + Aluminum Install",
   description:
     "Soffit and fascia replacement in Tampa, rotted wood replaced, aluminum installed. Vented panels, custom-bent fascia wraps, pest-seal, repaint eliminated. Free estimate, (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/soffit-and-fascia" },
+  alternates: {
+    canonical: "https://jronegutters.com/soffit-and-fascia",
+    languages: {
+      "en-US": "https://jronegutters.com/soffit-and-fascia",
+      "es-US": "https://jronegutters.com/es/sofito-fascia-tampa",
+      "x-default": "https://jronegutters.com/soffit-and-fascia",
+    },
+  },
   keywords: [
     "soffit and fascia replacement tampa",
     "soffit and fascia repair tampa",

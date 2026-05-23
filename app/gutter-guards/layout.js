@@ -40,7 +40,14 @@ export const metadata = {
   title: "Gutter Guard Installation Tampa FL | Micro Mesh, Leaf Guard, Copper",
   description:
     "Professional gutter guard installation in Tampa Bay. Micro mesh for pine needles and fine debris. 30+ years specialist experience. Local pricing, free estimate at (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/gutter-guards" },
+  alternates: {
+    canonical: "https://jronegutters.com/gutter-guards",
+    languages: {
+      "en-US": "https://jronegutters.com/gutter-guards",
+      "es-US": "https://jronegutters.com/es/protectores-canaletas-tampa",
+      "x-default": "https://jronegutters.com/gutter-guards",
+    },
+  },
   openGraph: {
     title: "Gutter Guards Tampa FL, JR One Aluminum",
     description: "Micro mesh and standard gutter guards professionally installed in Tampa Bay. Free estimates.",
