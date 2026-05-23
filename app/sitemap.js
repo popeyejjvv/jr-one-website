@@ -24,6 +24,9 @@ const CITY_SLUGS = [
   "new-port-richey","largo","spring-hill","tarpon-springs",
   "land-o-lakes","dunedin","ruskin","sun-city-center",
   "temple-terrace","plant-city","lutz",
+  // ── 7 mission cities added 2026-05-23 (Play 4) ──
+  "new-tampa","valrico","lithia","oldsmar","safety-harbor",
+  "seminole","pinellas-park",
 ];
 
 const CITY_SERVICE_SLUGS = [
@@ -60,6 +63,34 @@ const STATIC_PAGES = [
   { path: "/rental-property-maintenance", priority: 0.8, changeFrequency: "monthly" },
   { path: "/commercial-gutters", priority: 0.8, changeFrequency: "monthly" },
   { path: "/gutter-cleaning", priority: 0.8, changeFrequency: "monthly" },
+  // ── Hurricane-season landing added 2026-05-23 (Play 1) ──
+  { path: "/storm-damage-gutters-tampa", priority: 0.9, changeFrequency: "monthly" },
+];
+
+// Spanish-locale routes (Play 5 + Play 1 + Play 4 + Spanish market expansion 2026-05-23).
+// Each entry maps the EN path the Spanish page mirrors so hreflang pairing is implicit.
+const ES_STATIC_PAGES = [
+  // Spanish homepage
+  { path: "/es", priority: 1.0, changeFrequency: "weekly" },
+  // Phase 1 service routes (May 23 mission)
+  { path: "/es/canaletas-dano-tormenta-tampa", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/es/canaletas-sin-costura-tampa", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/es/limpieza-canaletas-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/sofito-fascia-tampa", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/es/protectores-canaletas-tampa", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/es/reparacion-canaletas-tampa", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/es/peak-301-rejuvenecimiento-techo-tampa", priority: 0.7, changeFrequency: "monthly" },
+  // Spanish market expansion 2026-05-23: 10 new service routes
+  { path: "/es/canaletas-7-pulgadas-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/canaletas-comerciales-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/canaletas-cobre-tampa", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/es/evaluacion-drenaje-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/luces-govee-tampa", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/es/contratos-hoa-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/mantenimiento-propiedad-alquiler-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/sagiper-soffit-pvc-tampa", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/es/revestimiento-tampa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/canaletas-especiales-tampa", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 export default function sitemap() {
@@ -110,6 +141,21 @@ export default function sitemap() {
     { url: `${BASE_URL}/llms-full.txt`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 },
   ];
 
+  // Spanish-locale entries (added 2026-05-23 for Plays 1, 4, 5).
+  const esStaticEntries = ES_STATIC_PAGES.map((page) => ({
+    url: `${BASE_URL}${page.path}`,
+    lastModified: new Date(),
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+  }));
+
+  const esCityEntries = CITY_SLUGS.map((slug) => ({
+    url: `${BASE_URL}/es/areas/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.75,
+  }));
+
   return [
     ...staticEntries,
     ...cityEntries,
@@ -117,5 +163,7 @@ export default function sitemap() {
     ...blogEntries,
     ...knowledgeMdEntries,
     ...aiIndexEntries,
+    ...esStaticEntries,
+    ...esCityEntries,
   ];
 }

@@ -27,6 +27,9 @@ const CITY_SLUGS = [
   "new-port-richey","largo","spring-hill","tarpon-springs",
   "land-o-lakes","dunedin","ruskin","sun-city-center",
   "temple-terrace","plant-city","lutz","south-tampa",
+  // ── 7 mission cities added 2026-05-23 (Play 4) ──
+  "new-tampa","valrico","lithia","oldsmar","safety-harbor",
+  "seminole","pinellas-park",
 ];
 
 const SERVICES = {
@@ -39,7 +42,7 @@ const SERVICES = {
     props: [
       ["On-site fabrication","Gutters cut to your exact roofline, not ordered from a warehouse."],
       ["25+ colors","Matched to fascia, trim, and body to enhance curb appeal."],
-      ["5\" and 6\" K-style","6\" handles the heavy Florida rain volume without overflow."],
+      ["6\" and 7\" K-style","Tampa Bay rain volume needs 6\" minimum; 7\" upgrade for large or steep roofs. We do not install 5\" in Florida."],
       ["Hidden hangers, screw-in","Hurricane-rated fastening, no nails that pull out."],
     ],
   },
@@ -159,6 +162,14 @@ const CITY_META = {
   "plant-city": { name: "Plant City", localP: "Plant City, the Strawberry Capital of the World, sits in eastern Hillsborough where suburban living meets agricultural heritage and intense inland weather.", weatherNote: "Inland position puts Plant City squarely in Florida's thunderstorm corridor. Intense afternoon downpours dump huge water volume in short bursts.", nearby: ["brandon","lakeland","tampa"] },
   lutz: { name: "Lutz", localP: "Lutz straddles the Hillsborough-Pasco county line, heavy tree canopy, established neighborhoods, and newer developments side by side.", weatherNote: "Oak and pine canopy drops debris year-round. Combined with heavy seasonal rains, clogged gutters here lead to fascia rot and foundation issues fast.", nearby: ["land-o-lakes","wesley-chapel","tampa"] },
   "south-tampa": { name: "South Tampa", localP: "South Tampa runs from Bayshore Boulevard to Davis Islands, Hyde Park to Beach Park, historic homes with original copper, premium new construction, and HOA architectural review boards that don't accept rushed work.", weatherNote: "Bayshore-facing properties get constant salt air plus direct exposure to tropical-system storm surge. Inland South Tampa sees the same intense afternoon thunderstorms as the rest of the city. Both demand corrosion-resistant aluminum and proper hurricane-rated fastening.", nearby: ["tampa","clearwater","st-petersburg"] },
+  // ── 7 mission cities added 2026-05-23 (Play 4) ──
+  "new-tampa": { name: "New Tampa", localP: "New Tampa's planned communities (Cory Lake Isles, Tampa Palms, Hunter's Green, West Meadows, K-Bar Ranch) sit at the inland edge of Hillsborough with 2,800 to 4,500 sq ft roof footprints that overwhelm 5-inch gutters.", weatherNote: "Inland thunderstorms unload heavy rain in short windows with no Gulf-coast breeze to dry roofs. Mature oak and pine canopy drops debris year-round.", nearby: ["wesley-chapel","tampa","lutz","temple-terrace"] },
+  valrico: { name: "Valrico", localP: "Valrico sits in East Hillsborough where Bloomingdale and FishHawk-adjacent neighborhoods mix mature oak canopy with suburban family homes. Oaks drop debris year-round, slow-draining soil makes underground PVC drainage essential.", weatherNote: "Heavier afternoon thunderstorms than coastal cities see, plus mature oak canopy that clogs undersized gutters fast.", nearby: ["brandon","riverview","lithia","plant-city"] },
+  lithia: { name: "Lithia", localP: "Lithia centers on FishHawk Ranch, where larger homes, steeper rooflines, and HOA architectural-review boards demand real gutter capacity, real guard systems, and real fascia detail.", weatherNote: "East Hillsborough gets the heaviest afternoon thunderstorms with very little Gulf-coast breeze. Year-round humidity plus mature oak coverage accelerates fascia rot.", nearby: ["valrico","riverview","brandon"] },
+  oldsmar: { name: "Oldsmar", localP: "Oldsmar sits at the head of Old Tampa Bay where salt air corrodes anything but aluminum, and older neighborhoods have wood soffit and fascia softened by thirty years of humidity.", weatherNote: "Bay-head position means tropical storm surge pushes inland from Old Tampa Bay. Salt-laden winds reach further than most Pinellas towns realize.", nearby: ["safety-harbor","tampa","clearwater","palm-harbor"] },
+  "safety-harbor": { name: "Safety Harbor", localP: "Safety Harbor's historic downtown along Bayshore Boulevard, Philippe Park's centuries-old oaks, and waterfront homes from the 1950s-1980s era mean most properties need full wood-to-aluminum soffit and fascia conversion.", weatherNote: "Old Tampa Bay tropical-system path plus centuries-old oak canopy at Philippe Park drops debris into every gutter along the bayshore.", nearby: ["dunedin","clearwater","oldsmar","palm-harbor"] },
+  seminole: { name: "Seminole", localP: "Seminole sits in mid-county Pinellas with 1970s-1990s housing stock dominant. Original wood soffit and fascia have been baking for 40+ years, plus undersized gutters that never matched the roof load.", weatherNote: "Central Pinellas gets coastal weather without coastal address premiums. Established residential density means tree debris and aging downspouts are constant maintenance items.", nearby: ["largo","pinellas-park","st-petersburg","clearwater"] },
+  "pinellas-park": { name: "Pinellas Park", localP: "Pinellas Park is dense mid-county Pinellas with established single-family neighborhoods, small commercial properties, and multi-family apartments that all need gutter, soffit, and fascia work built for Florida weather.", weatherNote: "Mid-county position gets storm activity without the salt-air breeze that dries neighboring coastal towns. Older suburban housing stock means aluminum soffit and fascia are overdue replacements.", nearby: ["largo","seminole","st-petersburg","clearwater"] },
 };
 
 // ── Next.js config ────────────────────────────────────────────────────────
@@ -179,7 +190,7 @@ export async function generateMetadata({ params }) {
   }
   const city = CITY_META[slug];
   const svc = SERVICES[service];
-  const title = `${svc.name} in ${city.name}, FL | JR One Aluminum`;
+  const title = `${svc.name} in ${city.name}, FL`;
   const description = `${svc.name} in ${city.name}, Florida. Family-owned specialist with over 30 years in Tampa Bay. Bilingual English/Spanish. Free estimate (844) 444-3114.`;
   const url = `https://jronegutters.com/areas/${slug}/${service}`;
   return {
@@ -195,7 +206,7 @@ export async function generateMetadata({ params }) {
       `${svc.short} installation ${city.name} FL`,
     ],
     openGraph: {
-      title: `${svc.name}, ${city.name}, FL | JR One Aluminum`,
+      title: `${svc.name}, ${city.name}, FL`,
       description: `${svc.name} in ${city.name}, FL. Specialist aluminum contractor, over 30 years experience. (844) 444-3114.`,
       url,
       type: "website",

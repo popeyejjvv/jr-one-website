@@ -104,7 +104,14 @@ export const metadata = {
   description:
     "HOA maintenance contracts for gutter, soffit, and fascia upkeep across Tampa Bay managed communities. Bilingual crews, community-wide pricing, single-point property-manager accountability. (844) 444-3114.",
   keywords: "HOA gutter maintenance Tampa, HOA contract gutter cleaning, property management aluminum services, HOA soffit fascia Tampa, community gutter contract Florida",
-  alternates: { canonical: "https://jronegutters.com/hoa-contracts" },
+  alternates: {
+    canonical: "https://jronegutters.com/hoa-contracts",
+    languages: {
+      "en-US": "https://jronegutters.com/hoa-contracts",
+      "es-US": "https://jronegutters.com/es/contratos-hoa-tampa",
+      "x-default": "https://jronegutters.com/hoa-contracts",
+    },
+  },
   openGraph: {
     title: "HOA Maintenance Contracts Tampa FL, JR One Aluminum",
     description: "Gutter, soffit, and fascia maintenance contracts for Tampa Bay HOAs. Community-wide pricing. Free walkthrough.",

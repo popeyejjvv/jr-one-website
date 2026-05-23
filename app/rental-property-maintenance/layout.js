@@ -103,7 +103,14 @@ export const metadata = {
   description:
     "Gutter, soffit, and fascia service for Airbnb, long-term rentals, and investment properties in Tampa Bay. Built for absentee owners, scheduled visits, photo reports, tenant coordination. (844) 444-3114.",
   keywords: "rental property gutter maintenance Tampa, Airbnb exterior maintenance, absentee owner gutter service, investment property Tampa, VRBO property maintenance Florida",
-  alternates: { canonical: "https://jronegutters.com/rental-property-maintenance" },
+  alternates: {
+    canonical: "https://jronegutters.com/rental-property-maintenance",
+    languages: {
+      "en-US": "https://jronegutters.com/rental-property-maintenance",
+      "es-US": "https://jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
+      "x-default": "https://jronegutters.com/rental-property-maintenance",
+    },
+  },
   openGraph: {
     title: "Rental Property Maintenance Tampa FL, JR One Aluminum",
     description: "Gutter, soffit, and fascia maintenance for Tampa Bay rentals. Absentee-owner-friendly with photo reporting.",

@@ -228,6 +228,70 @@ const CITIES = {
     neighborhoods: ["Bayshore Boulevard", "Hyde Park", "Davis Islands", "Palma Ceia", "Beach Park", "SoHo", "Bayshore Beautiful", "Sunset Park", "Virginia Park", "Westshore"],
     nearbyText: "We also serve Tampa, Clearwater, St. Petersburg, and surrounding Hillsborough County.",
   },
+  // ── 7 mission cities added 2026-05-23 (Play 4) ──
+  "new-tampa": {
+    name: "New Tampa", county: "Hillsborough County", slug: "new-tampa",
+    heroH1: "New Tampa's Family-Owned",
+    heroH1Gold: "Gutter, Soffit & Aluminum Trade",
+    localP: "New Tampa sits at the inland edge of Hillsborough County, where planned communities like Cory Lake Isles, Tampa Palms, Hunter's Green, West Meadows, Cross Creek, K-Bar Ranch, Easton Park, Live Oak Preserve, Heritage Isles, and Pebble Creek take a beating from afternoon thunderstorms the Gulf-coast breeze never reaches. The roof footprints in Tampa Palms and Hunter's Green run 2,800 to 4,500 square feet, which means undersized 5-inch gutters overflow on the first heavy rain. JR One installs 6-inch as the New Tampa baseline and 7-inch when the roof load demands it.",
+    weatherNote: "Inland thunderstorms unload heavier rain in shorter windows. The Gulf-coast breeze that dries Pinellas roofs never reaches K-Bar Ranch or Live Oak Preserve. Proper downspout sizing plus underground PVC drainage carries that volume away from the slab before it has a chance to rot fascia or wash mulch into the driveway.",
+    neighborhoods: ["Cory Lake Isles", "Tampa Palms", "Hunter's Green", "West Meadows", "Cross Creek", "K-Bar Ranch", "Easton Park", "Live Oak Preserve", "Heritage Isles", "Pebble Creek", "Arbor Greene", "Grand Hampton"],
+    nearbyText: "We also serve Wesley Chapel, Tampa, Lutz, Temple Terrace, and surrounding Hillsborough County.",
+  },
+  valrico: {
+    name: "Valrico", county: "Hillsborough County", slug: "valrico",
+    heroH1: "Valrico's Family-Owned",
+    heroH1Gold: "Gutter & Soffit Trade",
+    localP: "Valrico sits in East Hillsborough where established neighborhoods like Bloomingdale and the FishHawk-adjacent communities mix mature oak canopy with suburban family homes. The oaks drop debris year-round, the summer thunderstorms unload more rain than the Gulf-coast cities see, and the soil drains slowly. JR One handles Valrico the way the houses here deserve: 6-inch and 7-inch seamless gutters, micro-mesh guards, and underground PVC drainage that moves water away from the slab.",
+    weatherNote: "Valrico's mature oak canopy means leaves and acorns clog gutters faster than open-lot homes. Combined with East Hillsborough's heavier afternoon storms, the difference between a 6-inch system with guards and a builder-grade 5-inch system is the difference between a clean foundation and four-thousand-dollar fascia rot.",
+    neighborhoods: ["Bloomingdale", "Buckhorn Estates", "River Hills", "Twin Lakes", "Lithia Pinecrest corridor", "Diamond Hill", "Valrico Hills"],
+    nearbyText: "We also serve Brandon, Riverview, Lithia, Plant City, and surrounding Hillsborough County.",
+  },
+  lithia: {
+    name: "Lithia", county: "Hillsborough County", slug: "lithia",
+    heroH1: "Lithia's Family-Owned",
+    heroH1Gold: "Gutter, Copper & Aluminum Trade",
+    localP: "Lithia centers on FishHawk Ranch, one of the most respected master-planned communities in East Hillsborough. FishHawk homes are larger, the rooflines are steeper, and the trees are older. That combination requires real gutter capacity (7-inch on the bigger roofs), real guard systems for the oak debris load, and real attention to fascia detail because FishHawk's HOA committees notice everything. JR One brings 30 years of family experience in the Tampa Bay gutter trade to every Lithia install.",
+    weatherNote: "Lithia and FishHawk get East Hillsborough's heaviest afternoon thunderstorms with very little Gulf-coast breeze to dry roofs between storms. Year-round humidity plus mature oak coverage accelerates fascia rot, especially behind undersized gutters that overflow at the corners.",
+    neighborhoods: ["FishHawk Ranch", "FishHawk West", "FishHawk Trails", "Channing Park", "Starling at FishHawk", "Hawk Creek"],
+    nearbyText: "We also serve Valrico, Riverview, Brandon, and surrounding East Hillsborough County.",
+  },
+  oldsmar: {
+    name: "Oldsmar", county: "Pinellas County", slug: "oldsmar",
+    heroH1: "Oldsmar's Family-Owned",
+    heroH1Gold: "Gutter & Aluminum Trade",
+    localP: "Oldsmar sits at the head of Old Tampa Bay where Pinellas, Hillsborough, and the open water meet. Salt air corrodes anything but aluminum, the tropical systems push water inland through Safety Harbor and Tampa Road, and the older neighborhoods have wood soffit and fascia that thirty years of humidity have softened. JR One serves Oldsmar with corrosion-resistant aluminum gutters, vented soffit replacement, and the kind of hurricane-rated fastening Pinellas needs.",
+    weatherNote: "Oldsmar's bay-head position means tropical storm surge pushes inland from Old Tampa Bay, and salt-laden winds reach further than most Pinellas towns realize. Aluminum is the only gutter and soffit material that holds up here long-term.",
+    neighborhoods: ["East Lake Woodlands", "Bayside", "Forest Lakes", "Cypress Lake", "Sheffield"],
+    nearbyText: "We also serve Safety Harbor, Tampa, Clearwater, Palm Harbor, and surrounding Pinellas County.",
+  },
+  "safety-harbor": {
+    name: "Safety Harbor", county: "Pinellas County", slug: "safety-harbor",
+    heroH1: "Safety Harbor's Family-Owned",
+    heroH1Gold: "Gutter & Soffit Trade",
+    localP: "Safety Harbor is one of Pinellas County's most distinctive towns, with a historic downtown along Bayshore Boulevard, Philippe Park's centuries-old oaks, and waterfront homes that have weathered everything from Hurricane Elena to Hurricane Idalia. Many of these homes are forty to seventy years old with original wood soffit and fascia that have been rotting quietly behind the gutters for years. JR One replaces those systems with factory-finished aluminum that matches the architecture and ends the rot cycle permanently.",
+    weatherNote: "Safety Harbor's position on Old Tampa Bay puts it in the path of every tropical system that pushes inland from the Gulf, and the centuries-old oak canopy at Philippe Park drops debris into every gutter along the bayshore. Aluminum + micro-mesh guards is the right combination here, not vinyl, not painted wood, and never 5-inch gutters.",
+    neighborhoods: ["Bayshore Drive", "Philippe Park", "Downtown Safety Harbor", "Espiritu Santo Springs", "Briar Creek", "Mariner Estates"],
+    nearbyText: "We also serve Dunedin, Clearwater, Oldsmar, Palm Harbor, and surrounding Pinellas County.",
+  },
+  seminole: {
+    name: "Seminole", county: "Pinellas County", slug: "seminole",
+    heroH1: "Seminole's Family-Owned",
+    heroH1Gold: "Gutter & Aluminum Trade",
+    localP: "Seminole sits in the heart of mid-county Pinellas where 1970s through 1990s housing stock is the dominant inventory. That means most homes here have original wood soffit and fascia that have been baking in Florida sun and humidity for forty-plus years, plus undersized gutter systems that never matched the roof load. JR One handles Seminole the way these homes deserve: full wood-to-aluminum conversion on soffit and fascia, 6-inch seamless aluminum gutters as the new baseline, and underground drainage when the slab needs it.",
+    weatherNote: "Seminole's central Pinellas location gets coastal weather without coastal address premiums, plus established residential density that means tree debris and aging downspouts are constant maintenance items. Properly sized gutters and aluminum-wrapped fascia prevent the cascade of problems that starts with one overflow event.",
+    neighborhoods: ["Seminole Lake", "Ridgewood Lakes", "Cross Bayou", "Indian Bluff Island", "Lake Seminole"],
+    nearbyText: "We also serve Largo, Pinellas Park, St. Petersburg, Clearwater, and surrounding Pinellas County.",
+  },
+  "pinellas-park": {
+    name: "Pinellas Park", county: "Pinellas County", slug: "pinellas-park",
+    heroH1: "Pinellas Park's Family-Owned",
+    heroH1Gold: "Gutter & Commercial Trade",
+    localP: "Pinellas Park is dense mid-county Pinellas: established single-family neighborhoods, small commercial properties, and multi-family apartment buildings that all need gutter, soffit, and fascia work that holds up under Florida weather. The commercial side here is busier than most Pinellas cities, which makes Pinellas Park a natural fit for JR One's commercial gutter systems and HOA maintenance contracts in addition to standard residential work.",
+    weatherNote: "Pinellas Park's mid-county position means you get the storm activity without the salt-air breeze that dries neighboring coastal towns. Year-round humidity plus the older suburban housing stock means aluminum soffit and fascia are usually overdue replacements, not luxury upgrades.",
+    neighborhoods: ["Park Boulevard corridor", "Mainlands", "Bardmoor adjacent", "Skyview", "Lealman"],
+    nearbyText: "We also serve Largo, Seminole, St. Petersburg, Clearwater, and surrounding Pinellas County.",
+  },
 };
 
 const SERVICES = [
@@ -237,6 +301,7 @@ const SERVICES = [
   { icon: "wrench", title: "Gutter Repair", desc: "Fix leaks, sagging, and overflow. Done right the first time.", link: "/gutter-repair" },
   { icon: "ruler", title: "Siding", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding" },
   { icon: "broom", title: "Peak 301 Roof Rejuvenation", desc: "Extend your roof's life 6 to 10 years with this soy-based sealant.", link: "/peak-301" },
+  { icon: "wrench", title: "Storm Damage Repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
 ];
 
 // ══════════════════════════════════════════════════════════
@@ -397,6 +462,56 @@ const CITIES_ES = {
     weatherNote: "Las propiedades frente a Bayshore reciben aire salado constante mas exposicion directa a marejadas de sistemas tropicales. Los huracanes Idalia y Helene metieron agua en plantas bajas al sur de Gandy. Los vecindarios interiores de South Tampa ven las mismas tormentas intensas de la tarde que el resto de la ciudad. Ambos exigen aluminio resistente a la corrosion y fijacion con clasificacion para huracanes, y ambos recompensan el trabajo de calidad con vida util mucho mas larga.",
     nearbyText: "Tambien servimos a Tampa, Clearwater, St. Petersburg y comunidades cercanas de Hillsborough County.",
   },
+  // ── 7 mission cities added 2026-05-23 (Play 4) ──
+  "new-tampa": {
+    heroH1: "Empresa Familiar de New Tampa en",
+    heroH1Gold: "Canaletas, Sofito y Aluminio",
+    localP: "New Tampa esta en el borde interior del condado de Hillsborough, donde las comunidades planificadas de Cory Lake Isles, Tampa Palms, Hunter's Green, West Meadows, Cross Creek, K-Bar Ranch, Easton Park, Live Oak Preserve, Heritage Isles y Pebble Creek reciben tormentas fuertes sin la brisa del Golfo que seca los techos. Los techos de Tampa Palms y Hunter's Green corren de 2,800 a 4,500 pies cuadrados, lo que significa que las canaletas de 5 pulgadas se desbordan en la primera lluvia fuerte. JR One instala canaletas de 6 pulgadas como base en New Tampa y 7 pulgadas cuando la carga del techo lo exige. Familia, mas de 30 anos en el oficio. Hablamos espanol.",
+    weatherNote: "Las tormentas del interior dejan caer lluvia mas pesada en menos tiempo. La brisa del Golfo que seca los techos de Pinellas nunca llega a K-Bar Ranch o Live Oak Preserve. Bajantes del tamano correcto mas drenaje subterraneo PVC sacan ese volumen lejos de la losa antes de que rote la fascia.",
+    nearbyText: "Tambien servimos a Wesley Chapel, Tampa, Lutz, Temple Terrace y comunidades cercanas de Hillsborough County.",
+  },
+  valrico: {
+    heroH1: "Empresa Familiar de Valrico en",
+    heroH1Gold: "Canaletas y Sofito",
+    localP: "Valrico esta en el este de Hillsborough donde vecindarios establecidos como Bloomingdale y las comunidades cercanas a FishHawk mezclan dosel maduro de roble con hogares familiares suburbanos. Los robles dejan caer escombros todo el ano, las tormentas de verano descargan mas lluvia que las ciudades costeras del Golfo, y el suelo drena lentamente. JR One maneja Valrico como las casas aqui lo merecen: canaletas continuas de 6 y 7 pulgadas, protectores de malla fina, y drenaje subterraneo PVC que mueve el agua lejos de la losa. Familia, mas de 30 anos en el oficio.",
+    weatherNote: "El dosel maduro de roble de Valrico significa que las hojas y bellotas tapan las canaletas mas rapido que en casas sin arboles. Combinado con las tormentas de la tarde mas fuertes del este de Hillsborough, la diferencia entre un sistema de 6 pulgadas con protectores y uno de 5 pulgadas calidad-constructor es la diferencia entre cimientos limpios y cuatro mil dolares de pudricion de fascia.",
+    nearbyText: "Tambien servimos a Brandon, Riverview, Lithia, Plant City y comunidades cercanas de Hillsborough County.",
+  },
+  lithia: {
+    heroH1: "Empresa Familiar de Lithia en",
+    heroH1Gold: "Canaletas, Cobre y Aluminio",
+    localP: "Lithia se centra en FishHawk Ranch, una de las comunidades planificadas mas respetadas del este de Hillsborough. Las casas de FishHawk son mas grandes, los techos mas inclinados, y los arboles mas viejos. Esa combinacion requiere capacidad real de canaleta (7 pulgadas en los techos mas grandes), sistemas de proteccion reales para la carga de escombros del roble, y atencion real al detalle del fascia porque los comites de HOA de FishHawk notan todo. JR One trae 30 anos de experiencia familiar en el oficio de canaletas de Tampa Bay a cada instalacion en Lithia. Hablamos espanol.",
+    weatherNote: "Lithia y FishHawk reciben las tormentas de la tarde mas fuertes del este de Hillsborough con muy poca brisa del Golfo para secar los techos entre tormentas. La humedad todo el ano mas la cobertura madura de roble acelera la pudricion de fascia, especialmente detras de canaletas subdimensionadas que se desbordan en las esquinas.",
+    nearbyText: "Tambien servimos a Valrico, Riverview, Brandon y comunidades cercanas del este de Hillsborough County.",
+  },
+  oldsmar: {
+    heroH1: "Empresa Familiar de Oldsmar en",
+    heroH1Gold: "Canaletas y Aluminio",
+    localP: "Oldsmar esta en la cabecera de Old Tampa Bay donde Pinellas, Hillsborough y el agua abierta se encuentran. El aire salado corroe todo menos el aluminio, los sistemas tropicales empujan agua tierra adentro por Safety Harbor y Tampa Road, y los vecindarios mas antiguos tienen sofito y fascia de madera que treinta anos de humedad han ablandado. JR One sirve a Oldsmar con canaletas de aluminio resistentes a la corrosion, reemplazo de sofito ventilado, y la fijacion resistente a huracan que Pinellas necesita. Familia, mas de 30 anos en el oficio. Hablamos espanol.",
+    weatherNote: "La posicion de cabecera de bahia de Oldsmar significa que la marejada de tormentas tropicales empuja tierra adentro desde Old Tampa Bay, y los vientos cargados de sal llegan mas lejos de lo que la mayoria de los pueblos de Pinellas se imaginan. El aluminio es el unico material de canaleta y sofito que aguanta aqui a largo plazo.",
+    nearbyText: "Tambien servimos a Safety Harbor, Tampa, Clearwater, Palm Harbor y comunidades cercanas de Pinellas County.",
+  },
+  "safety-harbor": {
+    heroH1: "Empresa Familiar de Safety Harbor en",
+    heroH1Gold: "Canaletas y Sofito",
+    localP: "Safety Harbor es uno de los pueblos mas distintivos de Pinellas County, con un centro historico a lo largo de Bayshore Boulevard, los robles centenarios de Philippe Park, y hogares frente al agua que han aguantado todo desde el Huracan Elena hasta el Huracan Idalia. Muchas de estas casas tienen cuarenta a setenta anos con sofito y fascia originales de madera que llevan anos pudriendose silenciosamente detras de las canaletas. JR One reemplaza esos sistemas con aluminio con acabado de fabrica que combina con la arquitectura y termina el ciclo de pudricion permanentemente. Familia, mas de 30 anos en el oficio.",
+    weatherNote: "La posicion de Safety Harbor sobre Old Tampa Bay la pone en el camino de cada sistema tropical que empuja tierra adentro desde el Golfo, y el dosel centenario de robles en Philippe Park deja caer escombros en cada canaleta a lo largo de la bayshore. Aluminio mas protectores de malla fina es la combinacion correcta aqui, no vinilo, no madera pintada, y nunca canaletas de 5 pulgadas.",
+    nearbyText: "Tambien servimos a Dunedin, Clearwater, Oldsmar, Palm Harbor y comunidades cercanas de Pinellas County.",
+  },
+  seminole: {
+    heroH1: "Empresa Familiar de Seminole en",
+    heroH1Gold: "Canaletas y Aluminio",
+    localP: "Seminole esta en el corazon del condado central de Pinellas donde la vivienda de los anos 70 a 90 es el inventario dominante. Eso significa que la mayoria de las casas aqui tienen sofito y fascia originales de madera que llevan mas de cuarenta anos cocinandose en el sol y la humedad de Florida, mas sistemas de canaleta subdimensionados que nunca igualaron la carga del techo. JR One maneja Seminole como estas casas lo merecen: conversion completa de madera a aluminio en sofito y fascia, canaletas de aluminio sin costura de 6 pulgadas como nueva base, y drenaje subterraneo cuando la losa lo necesita. Hablamos espanol.",
+    weatherNote: "La ubicacion central de Pinellas de Seminole recibe el clima costero sin las primas de direccion costera, mas densidad residencial establecida que significa escombros de arboles y bajantes envejecidos como items constantes de mantenimiento. Canaletas del tamano correcto y fascia envuelto en aluminio previenen la cascada de problemas que empieza con un evento de desbordamiento.",
+    nearbyText: "Tambien servimos a Largo, Pinellas Park, St. Petersburg, Clearwater y comunidades cercanas de Pinellas County.",
+  },
+  "pinellas-park": {
+    heroH1: "Empresa Familiar de Pinellas Park en",
+    heroH1Gold: "Canaletas y Trabajo Comercial",
+    localP: "Pinellas Park es Pinellas central denso: vecindarios establecidos de viviendas unifamiliares, propiedades comerciales pequenas, y edificios de apartamentos multifamiliares que todos necesitan trabajo de canaletas, sofito y fascia que aguante el clima de Florida. El lado comercial aqui es mas activo que en la mayoria de las ciudades de Pinellas, lo que hace de Pinellas Park un encaje natural para los sistemas de canaletas comerciales de JR One y los contratos de mantenimiento HOA ademas del trabajo residencial estandar. Familia, mas de 30 anos en el oficio. Hablamos espanol.",
+    weatherNote: "La posicion central de Pinellas Park significa que usted recibe la actividad de tormentas sin la brisa de aire salado que seca los pueblos costeros vecinos. La humedad todo el ano mas el inventario de vivienda suburbana mas antigua significa que el sofito y fascia de aluminio son reemplazos generalmente atrasados, no actualizaciones de lujo.",
+    nearbyText: "Tambien servimos a Largo, Seminole, St. Petersburg, Clearwater y comunidades cercanas de Pinellas County.",
+  },
 };
 
 const SERVICES_ES = [
@@ -406,6 +521,7 @@ const SERVICES_ES = [
   { icon: "wrench", title: "Reparacion de Canaletas", desc: "Arreglamos fugas, hundimientos y desbordamientos. Bien hecho a la primera.", link: "/gutter-repair" },
   { icon: "ruler", title: "Revestimiento", desc: "Revestimiento de vinilo y aluminio construido para el clima de Florida.", link: "/siding" },
   { icon: "broom", title: "Peak 301 Rejuvenecimiento de Techo", desc: "Extienda la vida de su techo 6 a 10 anos con este sellador a base de soya.", link: "/peak-301" },
+  { icon: "wrench", title: "Reparacion por Dano de Tormenta", desc: "Instalacion misma semana despues de tormentas con nombre. Documentacion de reclamo para su ajustador.", link: "/es/canaletas-dano-tormenta-tampa" },
 ];
 
 // ══════════════════════════════════════════════════════════

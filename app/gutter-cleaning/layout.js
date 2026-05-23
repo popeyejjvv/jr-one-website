@@ -104,7 +104,14 @@ export const metadata = {
   description:
     "Professional gutter cleaning in Tampa Bay, full debris removal, downspout flushing, hanger inspection, haul-away. Typical single-family $150-$400. Same-day estimates at (844) 444-3114.",
   keywords: "gutter cleaning Tampa, gutter cleaning cost Tampa FL, downspout flushing, gutter maintenance Tampa Bay, professional gutter cleaner Florida, gutter cleaning Clearwater St Petersburg",
-  alternates: { canonical: "https://jronegutters.com/gutter-cleaning" },
+  alternates: {
+    canonical: "https://jronegutters.com/gutter-cleaning",
+    languages: {
+      "en-US": "https://jronegutters.com/gutter-cleaning",
+      "es-US": "https://jronegutters.com/es/limpieza-canaletas-tampa",
+      "x-default": "https://jronegutters.com/gutter-cleaning",
+    },
+  },
   openGraph: {
     title: "Gutter Cleaning Tampa FL, JR One Aluminum",
     description: "Full debris removal, downspout flushing, photo documentation. Typical single-family $150-$400.",

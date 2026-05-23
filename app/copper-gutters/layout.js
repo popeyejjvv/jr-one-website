@@ -34,7 +34,14 @@ export const metadata = {
   title: "Copper Gutter Installation Tampa FL | Seamless and Half-Round",
   description:
     "Premium copper gutter systems for Tampa Bay architectural homes. Seamless K-style and half-round copper, conductor heads, downspouts. 50+ year lifespan. (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/copper-gutters" },
+  alternates: {
+    canonical: "https://jronegutters.com/copper-gutters",
+    languages: {
+      "en-US": "https://jronegutters.com/copper-gutters",
+      "es-US": "https://jronegutters.com/es/canaletas-cobre-tampa",
+      "x-default": "https://jronegutters.com/copper-gutters",
+    },
+  },
   openGraph: {
     title: "Copper Gutters Tampa FL, JR One Aluminum",
     description: "Custom copper gutter installation in Tampa Bay. Seamless K-style and half-round. For architectural and historic homes.",

@@ -35,7 +35,14 @@ export const metadata = {
   title: "Siding Installation Tampa FL | Hardie Board, Vinyl, Aluminum",
   description:
     "Siding installation in Tampa Bay, Hardie board, vinyl lap, custom aluminum. One crew handles siding, soffit, fascia, and gutters. Free estimate, (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/siding" },
+  alternates: {
+    canonical: "https://jronegutters.com/siding",
+    languages: {
+      "en-US": "https://jronegutters.com/siding",
+      "es-US": "https://jronegutters.com/es/revestimiento-tampa",
+      "x-default": "https://jronegutters.com/siding",
+    },
+  },
   openGraph: {
     title: "Siding Installation Tampa FL, JR One Aluminum",
     description: "Tampa Bay siding specialist, Hardie, vinyl, custom aluminum. Integrated with soffit, fascia, and gutters.",

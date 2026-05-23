@@ -35,7 +35,14 @@ export const metadata = {
   title: "Govee Permanent Exterior LED Lights Tampa FL | Year-Round Smart Lighting",
   description:
     "Govee permanent exterior LED light installation in Tampa Bay. App-controlled, 16M colors, holiday and accent lighting year-round. Alexa + Google Home compatible. Free quote, (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/govee-lights" },
+  alternates: {
+    canonical: "https://jronegutters.com/govee-lights",
+    languages: {
+      "en-US": "https://jronegutters.com/govee-lights",
+      "es-US": "https://jronegutters.com/es/luces-govee-tampa",
+      "x-default": "https://jronegutters.com/govee-lights",
+    },
+  },
   openGraph: {
     title: "Govee Exterior LED Lighting Tampa FL, JR One Aluminum",
     description: "Permanent smart LED lighting installed along your Tampa roofline. Holiday + team colors + security, all year.",
