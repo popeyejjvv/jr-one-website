@@ -33,6 +33,7 @@ const T = {
     heroH1a: "The Part of Your Home",
     heroH1b: "Nobody Thinks About",
     heroH1c: "Until It Fails.",
+    heroH2Sub: "Soffit and Fascia Replacement in Tampa Bay",
     heroP: "Soffit and fascia protect the most vulnerable edges of your roof from water, pests, and rot. When they fail, the damage spreads fast and gets expensive. We replace and install aluminum and vinyl soffit and fascia systems built for Florida weather.",
     heroCta: "Get Your Free Inspection",
     heroCall: "Call (844) 444-3114",
@@ -110,6 +111,7 @@ const T = {
     heroH1a: "La Parte de Su Hogar",
     heroH1b: "En la Que Nadie Piensa",
     heroH1c: "Hasta Que Falla.",
+    heroH2Sub: "Reemplazo de Sofito y Fascia en Tampa Bay",
     heroP: "El sofito y la fascia protegen los bordes más vulnerables de su techo contra el agua, plagas y pudrición. Cuando fallan, el daño se propaga rápido y se vuelve costoso. Reemplazamos e instalamos sistemas de sofito y fascia de aluminio y vinilo diseñados para el clima de Florida.",
     heroCta: "Obtenga Su Inspección Gratis",
     heroCall: "Llame al (844) 444-3114",
@@ -257,10 +259,11 @@ export default function SoffitFasciaPage() {
           <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
               <div style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xs)", fontWeight: 700, color: ACCENT_LIGHT, letterSpacing: "4px", marginBottom: "var(--jr-space-4)", textTransform: "uppercase" }}>{t.heroTag}</div>
-              <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-6)", letterSpacing: "-0.5px" }}>
+              <h1 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-4xl)", fontWeight: 800, lineHeight: 1.05, marginBottom: "var(--jr-space-4)", letterSpacing: "-0.5px" }}>
                 {t.heroH1a}<br />{t.heroH1b}<br />
                 <span style={{ color: ACCENT_LIGHT }}>{t.heroH1c}</span>
               </h1>
+              <h2 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 600, lineHeight: 1.25, color: "var(--jr-cream-2)", marginBottom: "var(--jr-space-6)", maxWidth: "660px", letterSpacing: "-0.2px" }}>{t.heroH2Sub}</h2>
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "660px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-8)" }}>
                 <Button

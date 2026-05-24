@@ -195,6 +195,11 @@ const T = {
     ctaTitle: "¿Listo Para Proteger Su Hogar?",
     ctaSub: "Obtenga su cotización gratuita hoy. Llámenos o complete el formulario. Respondemos en horas, no días.",
     ctaForm: "Solicitar Cotización",
+    esBannerEyebrow: "HABLAMOS ESPAÑOL",
+    esBannerH2: "Servicio Bilingüe Para Familias de Tampa Bay",
+    esBannerSub: "Sirviendo a la comunidad hispana de Tampa Bay por más de 30 años. Familia que entiende familia. Llámenos al (844) 444-3114 para un estimado gratis sin presión.",
+    esBannerCallCta: "Llamar (844) 444-3114",
+    esBannerFormCta: "Estimado Gratis",
   },
 };
 
@@ -401,6 +406,95 @@ export default function JROneHomepage() {
             </div>
           </Container>
         </section>
+
+        {/* ── HABLAMOS ESPAÑOL TRUST BANNER (only renders on /es) ── */}
+        {lang === "es" && (
+          <section
+            aria-label="Hablamos Español"
+            style={{
+              position: "relative",
+              backgroundImage:
+                "linear-gradient(135deg, rgba(11,22,51,0.78) 0%, rgba(17,32,67,0.82) 60%, rgba(22,42,80,0.86) 100%), url('/images/spanish-hero-familia.webp')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              padding: "var(--jr-space-20) 0",
+              borderTop: "1px solid var(--jr-navy-3)",
+              borderBottom: "1px solid var(--jr-navy-3)",
+            }}
+          >
+            <Container>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "minmax(0, 1fr)",
+                  maxWidth: 760,
+                  margin: "0 auto",
+                  textAlign: "center",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: "var(--jr-font-heading)",
+                    fontSize: "var(--jr-text-xs)",
+                    fontWeight: 700,
+                    color: "var(--jr-gold)",
+                    letterSpacing: "4px",
+                    marginBottom: "var(--jr-space-3)",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {t.esBannerEyebrow}
+                </div>
+                <h2
+                  style={{
+                    fontFamily: "var(--jr-font-heading)",
+                    fontSize: "var(--jr-text-3xl)",
+                    fontWeight: 800,
+                    lineHeight: 1.1,
+                    color: "var(--jr-paper)",
+                    marginBottom: "var(--jr-space-4)",
+                    textShadow: "0 2px 8px rgba(0,0,0,0.45)",
+                  }}
+                >
+                  {t.esBannerH2}
+                </h2>
+                <p
+                  style={{
+                    fontFamily: "var(--jr-font-body)",
+                    fontSize: "var(--jr-text-lg)",
+                    color: "var(--jr-cream-2)",
+                    lineHeight: 1.65,
+                    marginBottom: "var(--jr-space-8)",
+                  }}
+                >
+                  {t.esBannerSub}
+                </p>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "var(--jr-space-4)",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <Button
+                    href="tel:8444443114"
+                    variant="primary"
+                    size="lg"
+                    iconLeft={<PhoneIcon size={18} />}
+                  >
+                    {t.esBannerCallCta}
+                  </Button>
+                  <Button href="#quote-form" variant="outline" size="lg" iconRight>
+                    {t.esBannerFormCta}
+                  </Button>
+                </div>
+              </div>
+            </Container>
+          </section>
+        )}
 
         {/* ── SERVICES ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>

@@ -72,6 +72,7 @@ export const metadata = {
 export default function EsLayout({ children }) {
   return (
     <LanguageProvider initialLang="es" forceLang={true}>
+      <link rel="preload" as="image" href="/images/spanish-hero-familia.webp" fetchPriority="high" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
       {children}

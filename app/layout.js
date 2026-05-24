@@ -262,7 +262,7 @@ export default function RootLayout({ children }) {
           id="ahrefs-analytics"
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="ZRxzzMEe3FBle/3vIs9F0Q"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
         {/* ── BuildMyAgent Chatbot ──
@@ -288,8 +288,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* ── Microsoft Clarity ── installed 2026-05-04, project wlqlwuzdj3 */}
-        <Script id="ms-clarity" strategy="afterInteractive">
+        {/* ── Microsoft Clarity ── installed 2026-05-04, project wlqlwuzdj3. Deferred to lazyOnload (2026-05-24) per Lighthouse — session-replay tooling doesn't need to block LCP. */}
+        <Script id="ms-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
