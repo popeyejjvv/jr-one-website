@@ -23,8 +23,20 @@ const localBusinessSchema = {
   "@type": "HomeAndConstructionBusiness",
   "@id": "https://jronegutters.com/#business",
   name: "JR One Aluminum LLC",
-  alternateName: "JR One Gutters",
+  alternateName: [
+    "JR One Gutters",
+    "JR Gutters",
+    "JR Aluminum",
+    "JR-One Aluminum",
+    "JR1 Aluminum",
+    "Jr One Aluminum",
+  ],
   url: "https://jronegutters.com",
+  image: [
+    "https://jronegutters.com/images/seamless-gutter-install.webp",
+    "https://jronegutters.com/images/soffit-fascia-detail.webp",
+    "https://jronegutters.com/images/gutter-guard-installed.webp",
+  ],
   telephone: "(844) 444-3114",
   email: "info@jronegutters.com",
   hasMap:
@@ -95,6 +107,52 @@ const localBusinessSchema = {
     "https://www.instagram.com/jronegutters",
     "https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.9614157,-82.5032424,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675!16s%2Fg%2F11fcvc1w45",
   ],
+};
+
+// Brand-recognition Organization entity (paired with LocalBusiness via @id reference).
+// Helps Google bind branded queries ("jr aluminum", "jr gutters") to this exact entity.
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://jronegutters.com/#organization",
+  name: "JR One Aluminum LLC",
+  alternateName: [
+    "JR One Gutters",
+    "JR Gutters",
+    "JR Aluminum",
+    "JR-One Aluminum",
+    "JR1 Aluminum",
+  ],
+  legalName: "JR One Aluminum LLC",
+  url: "https://jronegutters.com",
+  logo: "https://jronegutters.com/images/seamless-gutter-install.webp",
+  description: "Family-owned Tampa Bay aluminum specialty contractor. Seamless gutters (6 inch and 7 inch only), soffit, fascia, drainage, and Peak 301 roof rejuvenation. Over 30 years in the trade.",
+  foundingDate: "2006",
+  founders: [{ "@type": "Person", name: "Christopher J Rivera" }],
+  sameAs: [
+    "https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/",
+    "https://www.instagram.com/jronegutters",
+    "https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.9614157,-82.5032424,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c32cbbf79527:0xd4f66138eefca78e!8m2!3d27.961411!4d-82.5006675!16s%2Fg%2F11fcvc1w45",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "(844) 444-3114",
+    contactType: "customer service",
+    availableLanguage: ["English", "Spanish"],
+    areaServed: "US",
+  },
+};
+
+// WebSite entity with SearchAction unlocks Google sitelinks search box for branded queries.
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://jronegutters.com/#website",
+  url: "https://jronegutters.com",
+  name: "JR One Aluminum",
+  alternateName: ["JR One Gutters", "JR Aluminum", "JR Gutters"],
+  inLanguage: ["en-US", "es-US"],
+  publisher: { "@id": "https://jronegutters.com/#organization" },
 };
 
 export const metadata = {
@@ -169,6 +227,16 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        {/* Organization Schema (brand entity for "jr aluminum" / "jr gutters" branded queries) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        {/* WebSite Schema with SearchAction (unlocks sitelinks searchbox) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         {/* Ahrefs Site Audit, HTML tag verification (added 2026-04-09) */}
         <meta

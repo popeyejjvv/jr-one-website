@@ -1,10 +1,12 @@
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Drainage Assessment and Installation",
+  name: "Drainage Assessment and Installation Tampa",
   serviceType: "Drainage Installation",
+  image: "https://jronegutters.com/images/florida-rain-gutters.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
+    "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
     url: "https://jronegutters.com",
     telephone: "(844) 444-3114",
@@ -48,12 +50,15 @@ export const metadata = {
     description: "Tampa Bay drainage specialists, PVC, catch basins, dry wells. Move water away from foundations.",
     url: "https://jronegutters.com/drainage-assessment",
     type: "website",
+    images: [{ url: "https://jronegutters.com/images/florida-rain-gutters.webp", width: 1920, height: 1080, alt: "Heavy tropical rain flowing through JR One Aluminum gutter and downspout system on a Tampa Bay home" }],
   },
+  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/florida-rain-gutters.webp"] },
 };
 
 export default function Layout({ children }) {
   return (
     <>
+      <link rel="preload" as="image" href="/images/florida-rain-gutters.webp" fetchPriority="high" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {children}

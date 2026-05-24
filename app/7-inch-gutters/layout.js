@@ -1,10 +1,12 @@
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "7-Inch Seamless Aluminum Gutters",
+  name: "7-Inch Seamless Aluminum Gutters Tampa",
   serviceType: "Oversized Gutter Installation",
+  image: "https://jronegutters.com/images/7inch-gutter-comparison.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
+    "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
     url: "https://jronegutters.com",
     telephone: "(844) 444-3114",
@@ -117,17 +119,20 @@ export const metadata = {
     description: "Oversized 7-inch seamless gutters for Tampa luxury homes and high-volume roofs. Commercial-grade capacity.",
     url: "https://jronegutters.com/7-inch-gutters",
     type: "website",
+    images: [{ url: "https://jronegutters.com/images/7inch-gutter-comparison.webp", width: 1920, height: 1080, alt: "Side-by-side 5-inch vs 7-inch gutter comparison by JR One Aluminum Tampa" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "7-Inch Gutters Tampa FL, JR One Aluminum",
     description: "Commercial-grade water capacity for South Tampa luxury homes and large-roof properties.",
+    images: ["https://jronegutters.com/images/7inch-gutter-comparison.webp"],
   },
 };
 
 export default function Layout({ children }) {
   return (
     <>
+      <link rel="preload" as="image" href="/images/7inch-gutter-comparison.webp" fetchPriority="high" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

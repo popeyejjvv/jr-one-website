@@ -296,9 +296,9 @@ const CITIES = {
 
 const SERVICES = [
   { icon: "water", title: "Seamless Gutter Installation", desc: "Custom-fabricated on-site for a perfect, leak-free fit.", link: "/seamless-aluminum-gutters" },
-  { icon: "shield", title: "Gutter Guards", desc: "Keep debris out and make maintenance easier.", link: "/gutter-guards" },
-  { icon: "edge", title: "Soffit & Fascia", desc: "Aluminum and vinyl protection for your roof edge.", link: "/soffit-and-fascia" },
-  { icon: "wrench", title: "Gutter Repair", desc: "Fix leaks, sagging, and overflow. Done right the first time.", link: "/gutter-repair" },
+  { icon: "shield", title: "Gutter Guards Tampa Bay", desc: "Keep debris out and make maintenance easier across Tampa, Clearwater, St Pete.", link: "/gutter-guards" },
+  { icon: "edge", title: "Soffit and Fascia Tampa Bay", desc: "Aluminum and vinyl protection for your roof edge across Tampa, Clearwater, St Pete.", link: "/soffit-and-fascia" },
+  { icon: "wrench", title: "Gutter Repair Tampa", desc: "Fix leaks, sagging, and overflow across Tampa Bay. Done right the first time.", link: "/gutter-repair" },
   { icon: "ruler", title: "Siding", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding" },
   { icon: "broom", title: "Peak 301 Roof Rejuvenation", desc: "Extend your roof's life 6 to 10 years with this soy-based sealant.", link: "/peak-301" },
   { icon: "wrench", title: "Storm Damage Repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },

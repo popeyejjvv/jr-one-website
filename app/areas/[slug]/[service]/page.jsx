@@ -86,7 +86,7 @@ const SERVICES = {
     ],
   },
   "soffit-and-fascia": {
-    name: "Soffit & Fascia",
+    name: "Soffit and Fascia",
     short: "soffit and fascia",
     link: "/soffit-and-fascia",
     blurb: "Aluminum and vinyl soffit + fascia replacement, sealing the roof edge against Florida humidity, pests, and wind-driven rain.",

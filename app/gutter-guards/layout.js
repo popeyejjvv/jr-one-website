@@ -1,10 +1,12 @@
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Gutter Guard Installation",
+  name: "Gutter Guard Installation Tampa",
   serviceType: "Gutter Guard Installation",
+  image: "https://jronegutters.com/images/gutter-guard-installed.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
+    "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
     url: "https://jronegutters.com",
     telephone: "(844) 444-3114",
@@ -53,12 +55,15 @@ export const metadata = {
     description: "Micro mesh and standard gutter guards professionally installed in Tampa Bay. Free estimates.",
     url: "https://jronegutters.com/gutter-guards",
     type: "website",
+    images: [{ url: "https://jronegutters.com/images/gutter-guard-installed.webp", width: 1920, height: 1080, alt: "Micro-mesh gutter guard installed on a JR One Aluminum seamless gutter in Tampa Bay" }],
   },
+  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/gutter-guard-installed.webp"] },
 };
 
 export default function Layout({ children }) {
   return (
     <>
+      <link rel="preload" as="image" href="/images/gutter-guard-installed.webp" fetchPriority="high" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {children}

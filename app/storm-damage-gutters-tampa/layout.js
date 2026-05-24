@@ -5,10 +5,12 @@
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Storm Damage Gutter Repair & Replacement",
-  serviceType: "Gutter Installation & Repair",
+  name: "Storm Damage Gutter Repair Tampa",
+  serviceType: "Gutter Installation and Repair",
+  image: "https://jronegutters.com/images/storm-damage-hero.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
+    "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
     url: "https://jronegutters.com",
     telephone: "(844) 444-3114",
@@ -55,7 +57,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Storm Damage Gutter Repair Tampa FL — Same-Week Install",
+  title: "Storm Damage Gutter Repair Tampa FL | Same-Week Install",
   description:
     "Hurricane-damaged gutters, fascia, soffit in Tampa Bay. Same-week install, insurance documentation, photos for adjuster. Family-owned, 30+ years. (844) 444-3114.",
   alternates: {
@@ -67,17 +69,20 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Storm Damage Gutter Repair Tampa Bay — JR One Aluminum",
+    title: "Storm Damage Gutter Repair Tampa Bay | JR One Aluminum",
     description: "Same-week install for hurricane-damaged gutters, fascia, soffit. Insurance claim documentation. (844) 444-3114.",
     url: "https://jronegutters.com/storm-damage-gutters-tampa",
     type: "website",
     locale: "en_US",
+    images: [{ url: "https://jronegutters.com/images/storm-damage-hero.webp", width: 1920, height: 1080, alt: "Storm-damaged gutters and fascia on a Tampa Bay home before JR One Aluminum same-week repair" }],
   },
+  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/storm-damage-hero.webp"] },
 };
 
 export default function Layout({ children }) {
   return (
     <>
+      <link rel="preload" as="image" href="/images/storm-damage-hero.webp" fetchPriority="high" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

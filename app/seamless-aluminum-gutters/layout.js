@@ -5,10 +5,12 @@
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Seamless Aluminum Gutter Installation",
+  name: "Seamless Aluminum Gutter Installation Tampa",
   serviceType: "Seamless Aluminum Gutter Installation",
+  image: "https://jronegutters.com/images/seamless-gutter-install.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
+    "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
     url: "https://jronegutters.com",
     telephone: "(844) 444-3114",
@@ -72,12 +74,15 @@ export const metadata = {
       "Custom-fabricated seamless aluminum gutters in Tampa Bay. Over 30 years installing gutters, soffit, fascia. Free estimates.",
     url: "https://jronegutters.com/seamless-aluminum-gutters",
     type: "website",
+    images: [{ url: "https://jronegutters.com/images/seamless-gutter-install.webp", width: 1920, height: 1080, alt: "JR One Aluminum installer mounting a 6-inch seamless aluminum gutter on a Tampa Bay home" }],
   },
+  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/seamless-gutter-install.webp"] },
 };
 
 export default function Layout({ children }) {
   return (
     <>
+      <link rel="preload" as="image" href="/images/seamless-gutter-install.webp" fetchPriority="high" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

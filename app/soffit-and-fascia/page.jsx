@@ -28,8 +28,8 @@ const ACCENT_LIGHT = "#F39C12";
 
 const T = {
   en: {
-    breadcrumb: ["Home", "Services", "Soffit & Fascia"],
-    heroTag: "SOFFIT & FASCIA INSTALLATION",
+    breadcrumb: ["Home", "Services", "Soffit and Fascia Tampa"],
+    heroTag: "TAMPA BAY SOFFIT AND FASCIA",
     heroH1a: "The Part of Your Home",
     heroH1b: "Nobody Thinks About",
     heroH1c: "Until It Fails.",
@@ -105,8 +105,8 @@ const T = {
     formSentSub: "We'll get back to you within hours.",
   },
   es: {
-    breadcrumb: ["Inicio", "Servicios", "Sofito y Fascia"],
-    heroTag: "INSTALACIÓN DE SOFITO Y FASCIA",
+    breadcrumb: ["Inicio", "Servicios", "Sofito y Fascia Tampa"],
+    heroTag: "SOFITO Y FASCIA TAMPA BAY",
     heroH1a: "La Parte de Su Hogar",
     heroH1b: "En la Que Nadie Piensa",
     heroH1c: "Hasta Que Falla.",
