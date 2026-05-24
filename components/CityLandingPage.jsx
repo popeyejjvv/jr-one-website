@@ -295,13 +295,13 @@ const CITIES = {
 };
 
 const SERVICES = [
-  { icon: "water", title: "Seamless Gutter Installation", desc: "Custom-fabricated on-site for a perfect, leak-free fit.", link: "/seamless-aluminum-gutters" },
-  { icon: "shield", title: "Gutter Guards Tampa Bay", desc: "Keep debris out and make maintenance easier across Tampa, Clearwater, St Pete.", link: "/gutter-guards" },
-  { icon: "edge", title: "Soffit and Fascia Tampa Bay", desc: "Aluminum and vinyl protection for your roof edge across Tampa, Clearwater, St Pete.", link: "/soffit-and-fascia" },
-  { icon: "wrench", title: "Gutter Repair Tampa", desc: "Fix leaks, sagging, and overflow across Tampa Bay. Done right the first time.", link: "/gutter-repair" },
-  { icon: "ruler", title: "Siding", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding" },
-  { icon: "broom", title: "Peak 301 Roof Rejuvenation", desc: "Extend your roof's life 6 to 10 years with this soy-based sealant.", link: "/peak-301" },
-  { icon: "wrench", title: "Storm Damage Repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
+  { icon: "water", title: "Seamless Gutter Installation", ctaPhrase: "seamless gutter installation", desc: "Custom-fabricated on-site for a perfect, leak-free fit.", link: "/seamless-aluminum-gutters" },
+  { icon: "shield", title: "Gutter Guards Tampa Bay", ctaPhrase: "gutter guard installation", desc: "Keep debris out and make maintenance easier across Tampa, Clearwater, St Pete.", link: "/gutter-guards" },
+  { icon: "edge", title: "Soffit and Fascia Tampa Bay", ctaPhrase: "soffit and fascia replacement", desc: "Aluminum and vinyl protection for your roof edge across Tampa, Clearwater, St Pete.", link: "/soffit-and-fascia" },
+  { icon: "wrench", title: "Gutter Repair Tampa", ctaPhrase: "gutter repair", desc: "Fix leaks, sagging, and overflow across Tampa Bay. Done right the first time.", link: "/gutter-repair" },
+  { icon: "ruler", title: "Siding", ctaPhrase: "siding installation", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding" },
+  { icon: "broom", title: "Peak 301 Roof Rejuvenation", ctaPhrase: "Peak 301 roof rejuvenation", desc: "Extend your roof's life 6 to 10 years with this soy-based sealant.", link: "/peak-301" },
+  { icon: "wrench", title: "Storm Damage Repair", ctaPhrase: "storm damage repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
 ];
 
 // ══════════════════════════════════════════════════════════
@@ -515,13 +515,13 @@ const CITIES_ES = {
 };
 
 const SERVICES_ES = [
-  { icon: "water", title: "Instalacion de Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto sin fugas.", link: "/seamless-aluminum-gutters" },
-  { icon: "shield", title: "Protectores de Canaletas", desc: "Mantienen los escombros afuera y facilitan el mantenimiento.", link: "/gutter-guards" },
-  { icon: "edge", title: "Sofitos y Fascias", desc: "Proteccion de aluminio y vinilo para el borde de su techo.", link: "/soffit-and-fascia" },
-  { icon: "wrench", title: "Reparacion de Canaletas", desc: "Arreglamos fugas, hundimientos y desbordamientos. Bien hecho a la primera.", link: "/gutter-repair" },
-  { icon: "ruler", title: "Revestimiento", desc: "Revestimiento de vinilo y aluminio construido para el clima de Florida.", link: "/siding" },
-  { icon: "broom", title: "Peak 301 Rejuvenecimiento de Techo", desc: "Extienda la vida de su techo 6 a 10 anos con este sellador a base de soya.", link: "/peak-301" },
-  { icon: "wrench", title: "Reparacion por Dano de Tormenta", desc: "Instalacion misma semana despues de tormentas con nombre. Documentacion de reclamo para su ajustador.", link: "/es/canaletas-dano-tormenta-tampa" },
+  { icon: "water", title: "Instalacion de Canaletas Sin Costura", ctaPhrase: "instalacion de canaletas sin costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto sin fugas.", link: "/seamless-aluminum-gutters" },
+  { icon: "shield", title: "Protectores de Canaletas", ctaPhrase: "instalacion de protectores de canaletas", desc: "Mantienen los escombros afuera y facilitan el mantenimiento.", link: "/gutter-guards" },
+  { icon: "edge", title: "Sofitos y Fascias", ctaPhrase: "reemplazo de sofito y fascia", desc: "Proteccion de aluminio y vinilo para el borde de su techo.", link: "/soffit-and-fascia" },
+  { icon: "wrench", title: "Reparacion de Canaletas", ctaPhrase: "reparacion de canaletas", desc: "Arreglamos fugas, hundimientos y desbordamientos. Bien hecho a la primera.", link: "/gutter-repair" },
+  { icon: "ruler", title: "Revestimiento", ctaPhrase: "instalacion de revestimiento", desc: "Revestimiento de vinilo y aluminio construido para el clima de Florida.", link: "/siding" },
+  { icon: "broom", title: "Peak 301 Rejuvenecimiento de Techo", ctaPhrase: "rejuvenecimiento de techo Peak 301", desc: "Extienda la vida de su techo 6 a 10 anos con este sellador a base de soya.", link: "/peak-301" },
+  { icon: "wrench", title: "Reparacion por Dano de Tormenta", ctaPhrase: "reparacion por dano de tormenta", desc: "Instalacion misma semana despues de tormentas con nombre. Documentacion de reclamo para su ajustador.", link: "/es/canaletas-dano-tormenta-tampa" },
 ];
 
 // ══════════════════════════════════════════════════════════
@@ -1037,7 +1037,11 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
                   title={svc.title}
                   desc={svc.desc}
                   href={svc.link}
-                  cta={lang === "en" ? "Learn more" : "Mas info"}
+                  cta={
+                    lang === "en"
+                      ? `Get ${svc.ctaPhrase || svc.title} in ${city.name}`
+                      : `Ver ${svc.ctaPhrase || svc.title} en ${city.name}`
+                  }
                 />
               ))}
             </div>
