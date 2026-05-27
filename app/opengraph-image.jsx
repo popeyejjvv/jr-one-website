@@ -1,11 +1,10 @@
 import { ImageResponse } from "next/og";
+import { HERO_BG_DATA_URI } from "./_og-hero.js";
 
 export const runtime = "edge";
 export const alt = "JR One Aluminum LLC. Tampa Bay seamless gutters, soffit, fascia, drainage, Peak 301 roof rejuvenation. Family-owned, 30+ years.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-
-const HERO_URL = "https://jronegutters.com/images/seamless-gutter-install.webp";
 
 const StarSVG = ({ size: s = 72, color = "#D4AF37" }) => (
   <svg
@@ -33,9 +32,10 @@ export default function Image() {
           background: "#0B1628",
         }}
       >
-        {/* Hero photo as full-bleed background */}
+        {/* Hero photo as full-bleed background (base64-embedded so the
+            edge runtime never has to fetch it over the network) */}
         <img
-          src={HERO_URL}
+          src={HERO_BG_DATA_URI}
           width={1200}
           height={630}
           style={{
