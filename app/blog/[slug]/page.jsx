@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
       authors: ["JR One Aluminum"],
     },
     alternates: {
-      canonical: `https://www.jronegutters.com/blog/${slug}`,
+      canonical: `https://jronegutters.com/blog/${slug}`,
     },
   };
 }
@@ -38,26 +38,15 @@ export default async function BlogPostPage({ params }) {
     .slice(0, 3);
 
   // Build FAQ schema if FAQs exist
-  const faqSchema = post.faqs.length > 0
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: post.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      }
-    : null;
 
   // Breadcrumb schema for blog posts
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.jronegutters.com/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://www.jronegutters.com/blog/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://jronegutters.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://jronegutters.com/blog/${slug}` },
     ],
   };
 
@@ -68,21 +57,15 @@ export default async function BlogPostPage({ params }) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
-    publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
-    mainEntityOfPage: `https://www.jronegutters.com/blog/${slug}`,
+    author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://jronegutters.com" },
+    publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://jronegutters.com" },
+    mainEntityOfPage: `https://jronegutters.com/blog/${slug}`,
   };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
       <BlogPost post={post} related={related} />
     </>
   );

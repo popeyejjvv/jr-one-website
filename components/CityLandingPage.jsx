@@ -294,12 +294,16 @@ const CITIES = {
   },
 };
 
+// comboSlug = render link as /areas/{city}/{comboSlug}. Added 2026-05-26 per
+// audit Tier 2.5 to route city-page service cards to their per-city combo pages
+// instead of the top-level service pages. Combo pages need internal links from
+// the city side of the link graph to be indexed and rank.
 const SERVICES = [
-  { icon: "water", title: "Seamless Gutter Installation", ctaPhrase: "seamless gutter installation", desc: "Custom-fabricated on-site for a perfect, leak-free fit.", link: "/seamless-aluminum-gutters" },
-  { icon: "shield", title: "Gutter Guards Tampa Bay", ctaPhrase: "gutter guard installation", desc: "Keep debris out and make maintenance easier across Tampa, Clearwater, St Pete.", link: "/gutter-guards" },
-  { icon: "edge", title: "Soffit and Fascia Tampa Bay", ctaPhrase: "soffit and fascia replacement", desc: "Aluminum and vinyl protection for your roof edge across Tampa, Clearwater, St Pete.", link: "/soffit-and-fascia" },
-  { icon: "wrench", title: "Gutter Repair Tampa", ctaPhrase: "gutter repair", desc: "Fix leaks, sagging, and overflow across Tampa Bay. Done right the first time.", link: "/gutter-repair" },
-  { icon: "ruler", title: "Siding", ctaPhrase: "siding installation", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding" },
+  { icon: "water", title: "Seamless Gutter Installation", ctaPhrase: "seamless gutter installation", desc: "Custom-fabricated on-site for a perfect, leak-free fit.", link: "/seamless-aluminum-gutters", comboSlug: "seamless-aluminum-gutters" },
+  { icon: "shield", title: "Gutter Guards Tampa Bay", ctaPhrase: "gutter guard installation", desc: "Keep debris out and make maintenance easier across Tampa, Clearwater, St Pete.", link: "/gutter-guards", comboSlug: "gutter-guards" },
+  { icon: "edge", title: "Soffit and Fascia Tampa Bay", ctaPhrase: "soffit and fascia replacement", desc: "Aluminum and vinyl protection for your roof edge across Tampa, Clearwater, St Pete.", link: "/soffit-and-fascia", comboSlug: "soffit-and-fascia" },
+  { icon: "wrench", title: "Gutter Repair Tampa", ctaPhrase: "gutter repair", desc: "Fix leaks, sagging, and overflow across Tampa Bay. Done right the first time.", link: "/gutter-repair", comboSlug: "gutter-repair" },
+  { icon: "ruler", title: "Siding", ctaPhrase: "siding installation", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding", comboSlug: "siding" },
   { icon: "broom", title: "Peak 301 Roof Rejuvenation", ctaPhrase: "Peak 301 roof rejuvenation", desc: "Extend your roof's life 6 to 10 years with this soy-based sealant.", link: "/peak-301" },
   { icon: "wrench", title: "Storm Damage Repair", ctaPhrase: "storm damage repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
 ];
@@ -515,11 +519,11 @@ const CITIES_ES = {
 };
 
 const SERVICES_ES = [
-  { icon: "water", title: "Instalacion de Canaletas Sin Costura", ctaPhrase: "instalacion de canaletas sin costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto sin fugas.", link: "/seamless-aluminum-gutters" },
-  { icon: "shield", title: "Protectores de Canaletas", ctaPhrase: "instalacion de protectores de canaletas", desc: "Mantienen los escombros afuera y facilitan el mantenimiento.", link: "/gutter-guards" },
-  { icon: "edge", title: "Sofitos y Fascias", ctaPhrase: "reemplazo de sofito y fascia", desc: "Proteccion de aluminio y vinilo para el borde de su techo.", link: "/soffit-and-fascia" },
-  { icon: "wrench", title: "Reparacion de Canaletas", ctaPhrase: "reparacion de canaletas", desc: "Arreglamos fugas, hundimientos y desbordamientos. Bien hecho a la primera.", link: "/gutter-repair" },
-  { icon: "ruler", title: "Revestimiento", ctaPhrase: "instalacion de revestimiento", desc: "Revestimiento de vinilo y aluminio construido para el clima de Florida.", link: "/siding" },
+  { icon: "water", title: "Instalacion de Canaletas Sin Costura", ctaPhrase: "instalacion de canaletas sin costura", desc: "Fabricadas a medida en el sitio para un ajuste perfecto sin fugas.", link: "/seamless-aluminum-gutters", comboSlug: "seamless-aluminum-gutters" },
+  { icon: "shield", title: "Protectores de Canaletas", ctaPhrase: "instalacion de protectores de canaletas", desc: "Mantienen los escombros afuera y facilitan el mantenimiento.", link: "/gutter-guards", comboSlug: "gutter-guards" },
+  { icon: "edge", title: "Sofitos y Fascias", ctaPhrase: "reemplazo de sofito y fascia", desc: "Proteccion de aluminio y vinilo para el borde de su techo.", link: "/soffit-and-fascia", comboSlug: "soffit-and-fascia" },
+  { icon: "wrench", title: "Reparacion de Canaletas", ctaPhrase: "reparacion de canaletas", desc: "Arreglamos fugas, hundimientos y desbordamientos. Bien hecho a la primera.", link: "/gutter-repair", comboSlug: "gutter-repair" },
+  { icon: "ruler", title: "Revestimiento", ctaPhrase: "instalacion de revestimiento", desc: "Revestimiento de vinilo y aluminio construido para el clima de Florida.", link: "/siding", comboSlug: "siding" },
   { icon: "broom", title: "Peak 301 Rejuvenecimiento de Techo", ctaPhrase: "rejuvenecimiento de techo Peak 301", desc: "Extienda la vida de su techo 6 a 10 anos con este sellador a base de soya.", link: "/peak-301" },
   { icon: "wrench", title: "Reparacion por Dano de Tormenta", ctaPhrase: "reparacion por dano de tormenta", desc: "Instalacion misma semana despues de tormentas con nombre. Documentacion de reclamo para su ajustador.", link: "/es/canaletas-dano-tormenta-tampa" },
 ];
@@ -534,10 +538,10 @@ const T = {
     breadHome: "Home",
     breadAreas: "Service Areas",
     trust: [
-      { icon: "family", label: "Family-Owned" },
-      { icon: "star", label: "4.9 on Google" },
-      { icon: "crew", label: "In-House Crews" },
-      { icon: "insured", label: "Fully Insured" },
+      { emoji: "⏱", label: "Family-Owned", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
+      { emoji: "⭐", label: "4.9 on Google", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "👷", label: "In-House Crews", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
+      { emoji: "✓", label: "Fully Insured", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
     getQuote: "GET YOUR FREE QUOTE",
     callBtn: "CALL (844) 444-3114",
@@ -585,10 +589,10 @@ const T = {
     breadHome: "Inicio",
     breadAreas: "Areas de Servicio",
     trust: [
-      { icon: "family", label: "Empresa Familiar" },
-      { icon: "star", label: "4.9 en Google" },
-      { icon: "crew", label: "Equipo Propio" },
-      { icon: "insured", label: "Totalmente Asegurados" },
+      { emoji: "⏱", label: "Empresa Familiar", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
+      { emoji: "⭐", label: "4.9 en Google", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "👷", label: "Equipo Propio", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
+      { emoji: "✓", label: "Totalmente Asegurados", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
     getQuote: "OBTENGA SU COTIZACION GRATIS",
     callBtn: "LLAMAR AL (844) 444-3114",
@@ -787,7 +791,7 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
                     gap: 6,
                     padding: "6px 14px",
                     background: "var(--jr-gold-pale)",
-                    border: "1px solid rgba(200, 149, 46, 0.28)",
+                    border: "1px solid rgba(212, 175, 55, 0.28)",
                     borderRadius: "var(--jr-radius-sm)",
                     marginBottom: "var(--jr-space-4)",
                     color: "var(--jr-gold)",
@@ -834,8 +838,34 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
                 >
                   {lang === "es" && cityEs.localP ? cityEs.localP : city.localP}
                 </p>
-                <div style={{ marginBottom: "var(--jr-space-6)" }}>
-                  <TrustLine items={t.trust} />
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "var(--jr-space-6)" }}>
+                  {t.trust.map((b, i) => (
+                    <div
+                      key={i}
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        padding: "8px 14px",
+                        background: b.bg,
+                        border: `1px solid ${b.border}`,
+                        borderRadius: "var(--jr-radius-md)",
+                      }}
+                    >
+                      <span aria-hidden style={{ fontSize: 16 }}>{b.emoji}</span>
+                      <span
+                        style={{
+                          fontFamily: "var(--jr-font-heading)",
+                          fontSize: "13px",
+                          fontWeight: 600,
+                          color: b.color,
+                          letterSpacing: "0.3px",
+                        }}
+                      >
+                        {b.label}
+                      </span>
+                    </div>
+                  ))}
                 </div>
                 <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap" }}>
                   <Button href="#city-form" variant="primary" size="lg" iconRight>
@@ -1036,7 +1066,7 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
                   icon={svc.icon}
                   title={svc.title}
                   desc={svc.desc}
-                  href={svc.link}
+                  href={svc.comboSlug ? `/areas/${city.slug}/${svc.comboSlug}` : svc.link}
                   cta={
                     lang === "en"
                       ? `Get ${svc.ctaPhrase || svc.title} in ${city.name}`

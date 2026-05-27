@@ -49,7 +49,7 @@ export default function ServiceCard({
           height: 52,
           borderRadius: "var(--jr-radius-md)",
           background: "var(--jr-gold-pale)",
-          border: "1px solid rgba(200, 149, 46, 0.32)",
+          border: "1px solid rgba(212, 175, 55, 0.32)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

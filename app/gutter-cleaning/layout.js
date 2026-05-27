@@ -107,81 +107,8 @@ const howToSchema = {
   ],
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://jronegutters.com/gutter-cleaning#faq",
-  mainEntityOfPage: "https://jronegutters.com/gutter-cleaning",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How much does gutter cleaning cost in Tampa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Typical single-family homes in Tampa Bay run $150 to $400 depending on roof height, linear footage of gutter, debris level, and access. Two-story homes with complex rooflines run higher. Smaller one-story homes with straightforward access run lower. Exact pricing after a quick look — no generic rate quoted sight-unseen.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How often should I clean my gutters in Tampa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Heavy tree coverage (live oaks, pines, magnolias nearby): 3-4 cleanings per year. Moderate cover: twice a year, pre-summer (May) and post-hurricane (November). Homes with gutter guards: every 2-3 years. Open-lot homes with no trees: once a year minimum. Add a cleaning after any named storm regardless of the cycle.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you haul away the debris?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. All debris is bagged and removed from your property. You do not deal with piles of leaves or buckets of muck after we leave. Clean job, clean exit.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the difference between your cleaning and a handyman?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most general handymen scoop what they can see and leave. We clear every run end-to-end, flush every downspout, inspect hangers and sealant, photograph issues, and haul the waste. Plus we are an aluminum specialty contractor, we can quote any repair we find on the spot instead of telling you to call someone else.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can you clean gutters on a two- or three-story home in Tampa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. JR One is equipped for multi-story residential and commercial. Our crews have the ladders, equipment, and training for high-access work homeowners should not try from a ladder.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you service rental properties and absentee owners?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. See our rental property maintenance page for recurring service plans built around absentee owners, scheduled visits, tenant coordination, and photo reports after every cleaning.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer emergency or post-storm gutter cleaning?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. After named storms we prioritize existing customers and contracted properties, with same-week or next-day availability depending on demand. Call and we will get you in as fast as the schedule allows.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Should I install gutter guards instead of cleaning?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Gutter guards reduce cleaning frequency from quarterly to every 2-3 years for most Tampa Bay homes. Guards are not maintenance-free, but the math usually works out within 3-5 years for homes with heavy oak or pine cover. See our gutter guards page for the cost-benefit breakdown.",
-      },
-    },
-  ],
-};
-
 export const metadata = {
-  title: "Gutter Cleaning Tampa | $150-$400 Single-Family Photo Report | JR One",
+  title: "Gutter Cleaning Tampa FL",
   description:
     "Professional gutter cleaning Tampa Bay, full debris removal, downspout flushing, hanger inspection, haul-away. Typical single-family $150-$400. Same-day estimates (844) 444-3114.",
   keywords: "gutter cleaning tampa, gutter cleaning tampa fl, gutter cleaning cost tampa, downspout flushing, gutter maintenance tampa bay, professional gutter cleaner florida, gutter cleaning clearwater, gutter cleaning st petersburg",
@@ -223,7 +150,6 @@ export default function Layout({ children }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

@@ -71,11 +71,7 @@ export default async function CityPage({ params }) {
         addressRegion: "FL",
         addressCountry: "US",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "55",
-      },
+      // aggregateRating removed 2026-05-26 per audit Tier 1.7 (self-serving rule).
     },
     areaServed: {
       "@type": "City",

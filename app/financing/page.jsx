@@ -113,7 +113,7 @@ export default function FinancingPage() {
                 display: "inline-block",
                 padding: "6px 14px",
                 background: "var(--jr-gold-pale)",
-                border: "1px solid rgba(200, 149, 46, 0.28)",
+                border: "1px solid rgba(212, 175, 55, 0.28)",
                 borderRadius: "var(--jr-radius-sm)",
                 marginBottom: "var(--jr-space-3)",
               }}
@@ -209,7 +209,7 @@ export default function FinancingPage() {
                       height: 56,
                       borderRadius: "var(--jr-radius-md)",
                       background: "var(--jr-gold-pale)",
-                      border: "1px solid rgba(200, 149, 46, 0.32)",
+                      border: "1px solid rgba(212, 175, 55, 0.32)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",

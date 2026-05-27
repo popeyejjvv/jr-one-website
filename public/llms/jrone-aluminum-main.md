@@ -38,7 +38,7 @@ JR One Aluminum is not a generalist roofer. Aluminum installation is the only th
 - Commercial gutter installation (box gutters, D-style commercial gutters)
 - Gutter repair and maintenance
 - Downspout installation and relocation
-- Drainage solutions (schedule 40 PVC, catch basins, dry wells, corrugated pipe)
+- Drainage solutions (schedule 40 PVC, catch basins, surface grates, pop-up emitters; no french drains, no channel drains, no dry wells, no corrugated pipe)
 - Patio screening with framing
 - Siding installation (vinyl lap, Hardie board)
 - Peak 301 roof rejuvenation treatment

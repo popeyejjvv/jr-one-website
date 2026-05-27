@@ -7,7 +7,7 @@ import { useLanguage } from "../../lib/LanguageContext";
 
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyMid: "#243556", navyLight: "#2C3E5A",
-  gold: "#C8952E", goldLight: "#D4A843", goldPale: "rgba(200,149,46,0.12)",
+  gold: "#D4AF37", goldLight: "#F2CD69", goldPale: "rgba(200,149,46,0.12)",
   cream: "#F5F3EF", white: "#FFFFFF", muted: "#7A8FA8", charcoal: "#2D2D2D",
 };
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };

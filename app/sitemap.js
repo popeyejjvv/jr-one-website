@@ -2,7 +2,10 @@ import { getAllPostSlugs } from "@/lib/blog";
 import fs from "fs";
 import path from "path";
 
-const BASE_URL = "https://www.jronegutters.com";
+// Apex host per Tier 2.13 audit fix 2026-05-26. Reconciles with app/layout.js
+// metadataBase + canonicals which use apex. Previously emitted www URLs which
+// caused a www/apex split in declared hosts.
+const BASE_URL = "https://jronegutters.com";
 
 // AI-citation knowledge markdown files, auto-discovered from public/llms/
 // so new MDs get crawled without a sitemap edit. These are the dense factual

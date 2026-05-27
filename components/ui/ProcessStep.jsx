@@ -7,7 +7,7 @@
 export default function ProcessStep({ num, title, desc, accent }) {
   // When accent passed, use it for both the watermark number behind the card
   // (low-opacity) and the "STEP 01" eyebrow label. Default = gold.
-  const watermarkColor = accent ? `${accent}1A` : "rgba(200, 149, 46, 0.10)";
+  const watermarkColor = accent ? `${accent}1A` : "rgba(212, 175, 55, 0.10)";
   const stepLabelColor = accent || "var(--jr-gold)";
 
   return (

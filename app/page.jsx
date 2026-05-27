@@ -42,7 +42,7 @@ const T = {
     serviceOpt: ["Select a service...", "Gutter Installation", "Gutter Repair", "Gutter Guards", "Soffit & Fascia", "Siding", "Gutter Cleaning", "Other / Not Sure"],
     trustBadges: [
       { emoji: "⏱", label: "Family-Owned", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
-      { emoji: "⭐", label: "4.9★ Rating", color: "#D4A843", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "⭐", label: "4.9★ Rating", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
       { emoji: "👷", label: "In-House Crews", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
       { emoji: "✓", label: "Fully Insured", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
@@ -65,7 +65,8 @@ const T = {
       { icon: "🏗️", title: "Soffit & Fascia", desc: "Aluminum and vinyl installations that protect your roof edge and clean up the trim line.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Gutter Repair", desc: "Sagging, leaking, or damaged. We fix it right so you don't have to call again.", link: "/gutter-repair" },
       { icon: "📐", title: "Siding", desc: "Vinyl siding installation and repair. Weather-tough protection for Florida homes.", link: "/siding" },
-      { icon: "🧹", title: "Maintenance", desc: "Gutter cleaning, pressure washing, window cleaning, and seasonal maintenance plans.", link: "/service-plans" },
+      { icon: "🧽", title: "Gutter Cleaning", desc: "One-time deep cleans across Tampa Bay. Removes leaves, palm fronds, and pine needles before they back up the system.", link: "/gutter-cleaning" },
+      { icon: "🧹", title: "Maintenance Plans", desc: "Recurring gutter cleaning, pressure washing, window cleaning, and seasonal maintenance plans.", link: "/service-plans" },
     ],
     whyEyebrow: "Why Us",
     whyTitle: "Why Homeowners Choose JR One",
@@ -129,7 +130,7 @@ const T = {
     serviceOpt: ["Seleccione un servicio...", "Instalación de Canaletas", "Reparación de Canaletas", "Protectores de Canaletas", "Sofito y Fascia", "Revestimiento", "Limpieza de Canaletas", "Otro / No Estoy Seguro"],
     trustBadges: [
       { emoji: "⏱", label: "Empresa Familiar", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
-      { emoji: "⭐", label: "4.9★ Calificación", color: "#D4A843", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "⭐", label: "4.9★ Calificación", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
       { emoji: "👷", label: "Equipo Propio", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
       { emoji: "✓", label: "Totalmente Asegurados", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
@@ -152,7 +153,8 @@ const T = {
       { icon: "🏗️", title: "Sofito y Fascia", desc: "Instalaciones de aluminio y vinilo que protegen el borde de su techo y mejoran la línea de acabado.", link: "/soffit-and-fascia" },
       { icon: "🔧", title: "Reparación de Canaletas", desc: "Hundidas, con fugas o dañadas. Lo arreglamos bien para que no tenga que llamar de nuevo.", link: "/gutter-repair" },
       { icon: "📐", title: "Revestimiento", desc: "Instalación y reparación de revestimiento de vinilo. Protección resistente al clima para hogares de Florida.", link: "/siding" },
-      { icon: "🧹", title: "Mantenimiento", desc: "Limpieza de canaletas, lavado a presión, limpieza de ventanas y planes de mantenimiento estacional.", link: "/service-plans" },
+      { icon: "🧽", title: "Limpieza de Canaletas", desc: "Limpiezas profundas de una sola vez en Tampa Bay. Remueve hojas, hojas de palma y agujas de pino antes que tapen el sistema.", link: "/gutter-cleaning" },
+      { icon: "🧹", title: "Planes de Mantenimiento", desc: "Limpieza de canaletas recurrente, lavado a presión, limpieza de ventanas y planes de mantenimiento estacional.", link: "/service-plans" },
     ],
     whyEyebrow: "Por Qué",
     whyTitle: "Por Qué los Propietarios Eligen JR One",
@@ -539,7 +541,7 @@ export default function JROneHomepage() {
                       height: 56,
                       borderRadius: "var(--jr-radius-md)",
                       background: "var(--jr-gold-pale)",
-                      border: "1px solid rgba(200, 149, 46, 0.32)",
+                      border: "1px solid rgba(212, 175, 55, 0.32)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -580,7 +582,7 @@ export default function JROneHomepage() {
             </div>
             <div style={{ marginTop: "var(--jr-space-8)", textAlign: "center" }}>
               <Button
-                href="https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.961411,-82.5006675,17z"
+                href="https://www.google.com/maps/place/JR+One+Aluminum+LLC+-+Gutter+Repair+%26+Installation/@27.961411,-82.5006675,17z?utm_source=jronegutters&utm_medium=website&utm_campaign=homepage-reviews"
                 variant="ghost"
                 size="md"
                 iconRight

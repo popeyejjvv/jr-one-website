@@ -10,10 +10,10 @@
   --jr-navy-2: #243556;          /* mid */
   --jr-navy-3: #2C3E5A;          /* light */
   --jr-navy-deep: #162033;       /* deeper, recessed */
-  --jr-gold: #C8952E;            /* accent */
-  --jr-gold-2: #D4A843;          /* hover/light gold */
-  --jr-gold-pale: rgba(200, 149, 46, 0.12);
-  --jr-gold-glass: rgba(200, 149, 46, 0.18);
+  --jr-gold: #D4AF37;            /* accent */
+  --jr-gold-2: #F2CD69;          /* hover/light gold */
+  --jr-gold-pale: rgba(212, 175, 55, 0.12);
+  --jr-gold-glass: rgba(212, 175, 55, 0.18);
   --jr-cream: #F8F6F1;           /* off-white surface */
   --jr-cream-2: #E8E4DC;
   --jr-ink: #1A1A1A;             /* near-black on light */
@@ -96,7 +96,7 @@
   --jr-shadow-md: 0 6px 16px rgba(11, 22, 40, 0.16);
   --jr-shadow-lg: 0 18px 48px rgba(11, 22, 40, 0.32);
   --jr-shadow-form: 0 24px 64px rgba(11, 22, 40, 0.42);
-  --jr-shadow-gold: 0 8px 24px rgba(200, 149, 46, 0.28);
+  --jr-shadow-gold: 0 8px 24px rgba(212, 175, 55, 0.28);
 
   /* ── Z-index scale ── */
   --jr-z-base: 1;

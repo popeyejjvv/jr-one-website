@@ -286,7 +286,7 @@ export async function POST(request) {
           subject: `New Web Lead: ${name}, ${service || "General"}, ${zip || "N/A"}`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px;">
-              <h2 style="color: #1B2A4A; border-bottom: 3px solid #C8952E; padding-bottom: 10px;">
+              <h2 style="color: #1B2A4A; border-bottom: 3px solid #D4AF37; padding-bottom: 10px;">
                 New Lead from jronegutters.com
               </h2>
               <div style="margin: 12px 0;">${bpStatusBadge}</div>

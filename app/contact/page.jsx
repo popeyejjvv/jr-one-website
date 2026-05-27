@@ -194,7 +194,7 @@ export default function ContactPage() {
                 display: "inline-block",
                 padding: "6px 14px",
                 background: "var(--jr-gold-pale)",
-                border: "1px solid rgba(200, 149, 46, 0.28)",
+                border: "1px solid rgba(212, 175, 55, 0.28)",
                 borderRadius: "var(--jr-radius-sm)",
                 marginBottom: "var(--jr-space-3)",
               }}
@@ -436,7 +436,7 @@ export default function ContactPage() {
                 <div
                   style={{
                     background: "var(--jr-gold-pale)",
-                    border: "1px solid rgba(200, 149, 46, 0.28)",
+                    border: "1px solid rgba(212, 175, 55, 0.28)",
                     borderRadius: "var(--jr-radius-lg)",
                     padding: "var(--jr-space-6)",
                   }}

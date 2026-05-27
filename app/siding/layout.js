@@ -32,7 +32,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Siding Installation Tampa FL | Hardie Board, Vinyl, Aluminum",
+  title: "Vinyl and Hardie Siding Tampa FL",
   description:
     "Siding installation in Tampa Bay, Hardie board, vinyl lap, custom aluminum. One crew handles siding, soffit, fascia, and gutters. Free estimate, (844) 444-3114.",
   alternates: {

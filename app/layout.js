@@ -59,11 +59,10 @@ const localBusinessSchema = {
     latitude: "27.961411",
     longitude: "-82.5006675",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "55",
-  },
+  // aggregateRating removed 2026-05-26 per audit Tier 1.7. Google's self-serving
+  // review policy: a business's own LocalBusiness/Organization markup is INELIGIBLE
+  // for the star rich result regardless of source. Stars in SERPs come from GBP.
+  // Source: https://developers.google.com/search/docs/appearance/structured-data/review-snippet
   priceRange: "$$",
   openingHoursSpecification: [
     {
@@ -298,6 +297,35 @@ export default function RootLayout({ children }) {
             })(window, document, "clarity", "script", "wlqlwuzdj3");
           `}
         </Script>
+
+        {/* ── Meta Pixel ── added 2026-05-26 per audit Tier 1.4 fix. */}
+        {/* Env-gated: renders nothing if NEXT_PUBLIC_META_PIXEL_ID is not set on */}
+        {/* Vercel. Set the env var with the Pixel ID from Meta Business Manager */}
+        {/* (Events Manager > Data Sources > the Pixel for jronegutters.com). */}
+        {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
+          <>
+            <Script id="meta-pixel" strategy="afterInteractive">
+              {`
+                !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '${process.env.NEXT_PUBLIC_META_PIXEL_ID}');
+                fbq('track', 'PageView');
+              `}
+            </Script>
+            <noscript>
+              <img
+                height="1"
+                width="1"
+                style={{ display: "none" }}
+                alt=""
+                src={`https://www.facebook.com/tr?id=${process.env.NEXT_PUBLIC_META_PIXEL_ID}&ev=PageView&noscript=1`}
+              />
+            </noscript>
+          </>
+        )}
       </body>
     </html>
   );

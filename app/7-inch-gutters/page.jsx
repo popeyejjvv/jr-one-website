@@ -206,8 +206,8 @@ const inputStyle = {
   transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
 };
 
-const ACCENT = "#C8952E";
-const ACCENT_LIGHT = "#D4A843";
+const ACCENT = "#D4AF37";
+const ACCENT_LIGHT = "#F2CD69";
 
 export default function SevenInchGuttersPage() {
   const { lang } = useLanguage();

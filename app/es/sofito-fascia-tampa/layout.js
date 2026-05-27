@@ -27,18 +27,6 @@ const breadcrumbSchemaEs = {
   ],
 };
 
-const faqSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  inLanguage: "es-US",
-  mainEntityOfPage: "https://jronegutters.com/es/sofito-fascia-tampa",
-  mainEntity: [
-    { "@type": "Question", name: "Como se si mi fascia esta podrido?", acceptedAnswer: { "@type": "Answer", text: "Senales de pudricion de fascia: madera suave o esponjosa al presionar un destornillador, pintura que se descascara y no se queda, canaleta separandose de la casa, manchas oscuras en la linea del techo, y pajaros o avispas entrando por huecos. La humedad de Florida acelera la pudricion de fascia, especialmente detras de canaletas que se desbordan." } },
-    { "@type": "Question", name: "Sofito y fascia se deben reemplazar juntos?", acceptedAnswer: { "@type": "Answer", text: "Usualmente si. La pudricion de fascia casi siempre significa que la humedad tambien ha estado entrando detras del sofito. JR One Aluminum remueve ambos, reemplaza el tablero de fascia, lo envuelve en aluminio con acabado de fabrica que combina con la canaleta, e instala sofito de aluminio ventilado. El envoltorio de aluminio detiene el ciclo de pudricion permanentemente." } },
-    { "@type": "Question", name: "Cual es la diferencia entre sofito ventilado y solido?", acceptedAnswer: { "@type": "Answer", text: "El sofito ventilado tiene perforaciones que dejan circular el aire del atico, lo cual mantiene el atico mas fresco y reduce las facturas de AC. El sofito solido se usa en areas seleccionadas como techos de porches o donde el atico esta climatizado. La mayoria del sofito en una casa de Tampa Bay debe ser ventilado." } },
-  ],
-};
-
 export const metadata = {
   title: "Reemplazo de Sofito y Fascia Tampa FL | Aluminio Ventilado",
   description: "Sofito y fascia de aluminio en Tampa Bay. Conversion de madera a aluminio que detiene el ciclo de pudricion. Del color de las canaletas. (844) 444-3114. Hablamos espanol.",
@@ -64,7 +52,6 @@ export default function Layout({ children }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaEs) }} />
       {children}
     </>
   );

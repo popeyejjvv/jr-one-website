@@ -32,7 +32,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Govee Permanent Exterior LED Lights Tampa FL | Year-Round Smart Lighting",
+  title: "Govee Permanent LED Lights Tampa",
   description:
     "Govee permanent exterior LED light installation in Tampa Bay. App-controlled, 16M colors, holiday and accent lighting year-round. Alexa + Google Home compatible. Free quote, (844) 444-3114.",
   alternates: {

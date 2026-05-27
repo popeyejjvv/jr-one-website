@@ -97,73 +97,8 @@ const howToSchema = {
   ],
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://jronegutters.com/gutter-repair#faq",
-  mainEntityOfPage: "https://jronegutters.com/gutter-repair",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How much does gutter repair cost in Tampa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Typical gutter repair calls in Tampa Bay run $150 to $750 depending on what is wrong. A simple resealing job is under $250. A re-pitching with hanger replacement and downspout work runs $400 to $750. Major fascia rot underneath the gutter pushes the job into the $1,500+ range.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "My gutters overflow during heavy rain, do I need new gutters or repair?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Usually repair. Most overflow in Tampa is incorrect pitch or undersized 5-inch gutters that cannot handle Florida rain volume. We re-pitch the existing 6-inch system in most cases. If you still have 5-inch gutters, we recommend a full upgrade to 6-inch or 7-inch since 5-inch will overflow no matter what we do to it.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can you repair gutters that are pulling away from the fascia?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, but we have to check why first. Pulled hangers usually mean the fascia board behind the gutter has rotted out from years of overflow. We probe the fascia, replace any rotted wood, then reinstall with hidden hangers every 24 inches.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How fast can you schedule a gutter repair in Tampa Bay?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most non-emergency gutter repairs in Tampa get scheduled within the same week. After named storms we prioritize storm-damage calls and existing customers but still hit same-week or next-day availability depending on demand.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you repair gutters on two-story homes?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. JR One is equipped for multi-story residential and commercial gutter work. Our crews carry the ladders, equipment, and training for high-access work homeowners should not attempt themselves.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Will you fix the underlying fascia at the same time?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We are a soffit-and-fascia specialty contractor, not a gutter-only company. If the fascia behind the gutter has rotted, we replace it as part of the same job so you do not have to bring in a second contractor.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you warranty gutter repairs in Tampa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Our craftsmanship warranty covers the repair work itself. Original-factory gutter material is covered under the manufacturer warranty separately. Both warranty documents are provided in writing.",
-      },
-    },
-  ],
-};
-
 export const metadata = {
-  title: "Gutter Repair Tampa | Sagging, Leaks, Overflow Fixed Same Week | JR One",
+  title: "Gutter Repair Tampa FL",
   description:
     "Gutter repair Tampa Bay, sagging gutters, leaking seams, clogged downspouts, pitch correction, fascia repair. Same-week scheduling. Free assessment (844) 444-3114.",
   alternates: {
@@ -213,7 +148,6 @@ export default function Layout({ children }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

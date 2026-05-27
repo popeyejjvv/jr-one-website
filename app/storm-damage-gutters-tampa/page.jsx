@@ -174,15 +174,44 @@ export default function StormDamagePage() {
     <>
       <SiteNav />
 
-      {/* Hero */}
+      {/* Hero — LCP-optimized 2026-05-26 per audit Tier 1.5 fix.
+          Was: CSS background-image with gradient overlay. The CSS image was not */}
+      {/* an explicit LCP candidate so browser preload + fetchPriority hints had */}
+      {/* limited effect (LCP 7.2s on Lighthouse 2026-05-24). Replaced with an */}
+      {/* explicit <img> element so the browser elects it as the LCP candidate */}
+      {/* immediately, plus a separate absolute-positioned gradient overlay div. */}
       <section style={{
-        backgroundImage: "linear-gradient(rgba(11, 22, 51, 0.78), rgba(11, 22, 51, 0.88)), url('/images/storm-damage-hero.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        position: "relative",
+        overflow: "hidden",
         color: "var(--jr-paper)",
         padding: "var(--jr-space-20) 0 var(--jr-space-12)",
       }}>
-        <Container>
+        <img
+          src="/images/storm-damage-hero.webp"
+          alt=""
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          decoding="async"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 0,
+          }}
+        />
+        <div
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(rgba(11, 22, 51, 0.78), rgba(11, 22, 51, 0.88))",
+            zIndex: 1,
+          }}
+        />
+        <Container style={{ position: "relative", zIndex: 2 }}>
           <nav style={{ fontFamily: "var(--jr-font-heading)", fontSize: 12, opacity: 0.7, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 16 }}>
             {t.breadcrumb}
           </nav>

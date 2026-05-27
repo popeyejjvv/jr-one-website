@@ -57,7 +57,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Seamless Aluminum Gutter Installation Tampa FL | 30+ Years Experience",
+  title: "Seamless Aluminum Gutters Tampa",
   description:
     "Custom-fabricated seamless aluminum gutters installed on-site in Tampa Bay. 6\" and 7\" K-style and half-round profiles (no 5\" in Florida). Licensed, insured, bilingual. Free estimate, (844) 444-3114.",
   alternates: {

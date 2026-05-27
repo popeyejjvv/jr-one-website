@@ -28,18 +28,6 @@ const breadcrumbSchemaEs = {
   ],
 };
 
-const faqSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  inLanguage: "es-US",
-  mainEntityOfPage: "https://jronegutters.com/es/canaletas-sin-costura-tampa",
-  mainEntity: [
-    { "@type": "Question", name: "Que tamano de canaleta instalan?", acceptedAnswer: { "@type": "Answer", text: "JR One Aluminum solo instala canaletas continuas de 6 pulgadas y 7 pulgadas, mas cobre y galvalume del mismo tamano. No instalamos 5 pulgadas en Florida porque el volumen de lluvia anual (51 pulgadas) requiere mayor capacidad. 6 pulgadas es la base para la mayoria de los hogares de Tampa; 7 pulgadas es la mejora para techos mas grandes." } },
-    { "@type": "Question", name: "Cuanto dura una canaleta de aluminio en Florida?", acceptedAnswer: { "@type": "Answer", text: "Una canaleta continua de aluminio correctamente instalada dura 20 anos o mas en el clima de Tampa. El acabado de fabrica esta clasificado para mantener el color a traves del sol de Florida sin descolorirse." } },
-    { "@type": "Question", name: "Fabrican las canaletas en el sitio?", acceptedAnswer: { "@type": "Answer", text: "Si. Cada tramo de canaleta de JR One Aluminum se corta en el sitio de un solo rollo continuo para coincidir exactamente con la longitud del techo. Esto elimina las juntas de costura entre esquinas y bajantes, que es donde las canaletas seccionales siempre comienzan a filtrarse primero." } },
-  ],
-};
-
 export const metadata = {
   title: "Canaletas Continuas de Aluminio Tampa FL | 6 y 7 Pulgadas",
   description: "Canaletas continuas de aluminio fabricadas a medida en Tampa Bay. Solo 6 y 7 pulgadas (no 5 pulgadas). Familia, mas de 30 anos en el oficio. Estimado gratis (844) 444-3114.",
@@ -65,7 +53,6 @@ export default function Layout({ children }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaEs) }} />
       {children}
     </>
   );

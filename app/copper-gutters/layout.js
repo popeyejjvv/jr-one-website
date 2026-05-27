@@ -31,7 +31,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Copper Gutter Installation Tampa FL | Seamless and Half-Round",
+  title: "Copper Gutters Tampa FL",
   description:
     "Premium copper gutter systems for Tampa Bay architectural homes. Seamless K-style and half-round copper, conductor heads, downspouts. 50+ year lifespan. (844) 444-3114.",
   alternates: {

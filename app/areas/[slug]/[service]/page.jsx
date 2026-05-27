@@ -10,8 +10,8 @@ const C = {
   navy: "#1B2A4A",
   navyMid: "#243556",
   navyLight: "#2C3E5A",
-  gold: "#C8952E",
-  goldLight: "#D4A843",
+  gold: "#D4AF37",
+  goldLight: "#F2CD69",
   goldPale: "rgba(200,149,46,0.12)",
   cream: "#F5F3EF",
   white: "#FFFFFF",
@@ -255,7 +255,7 @@ export default async function CityServicePage({ params }) {
         postalCode: "33607",
         addressCountry: "US",
       },
-      aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "55" },
+      // aggregateRating removed 2026-05-26 per audit Tier 1.7 (self-serving rule).
     },
     offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   };

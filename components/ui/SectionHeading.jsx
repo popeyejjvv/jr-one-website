@@ -20,7 +20,7 @@ export default function SectionHeading({
 
   // When accent passed, use it for eyebrow chip + divider. Default = gold.
   const eyebrowBg = accent ? `${accent}1F` : "var(--jr-gold-pale)";
-  const eyebrowBorder = accent ? `1px solid ${accent}52` : "1px solid rgba(200, 149, 46, 0.28)";
+  const eyebrowBorder = accent ? `1px solid ${accent}52` : "1px solid rgba(212, 175, 55, 0.28)";
   const eyebrowColor = accent || "var(--jr-gold)";
   const dividerColor = accent || "var(--jr-gold)";
 

@@ -55,9 +55,10 @@ Same-quality aluminum scope at commercial scale:
 
 Commercial roofs generate real water volume — real drainage systems required:
 - Schedule 40 PVC underground drainage
-- Corrugated drainage pipe
 - Catch basins
-- Trenching and excavation
+- Surface grates
+- Pop-up emitters
+- NOTE: no french drains, no channel drains, no dry wells, no corrugated drainage pipe, no standalone trenching service
 - Connection to storm systems where applicable
 
 ---
@@ -112,7 +113,7 @@ A: Yes. A meaningful share of commercial volume is subcontracted work for GCs an
 A: Yes. Full general liability and workers' compensation. Certificates delivered directly to the building owner, property management company, or GC with additional-insured endorsements where required.
 
 **Q: Do you handle drainage too?**
-A: Yes. Full scope — Schedule 40 PVC underground drainage, corrugated pipe, catch basins, and trenching alongside the gutter system.
+A: Yes. Full scope - Schedule 40 PVC underground drainage, catch basins, surface grates, and pop-up emitters alongside the gutter system. We do not install french drains, channel drains, dry wells, or corrugated drainage pipe.
 
 **Q: Maintenance contracts?**
 A: Yes — separate from installation. Commercial property maintenance agreements available for apartment complexes, property management portfolios, and building owners who want scheduled gutter cleaning and inspection on a commercial cadence.

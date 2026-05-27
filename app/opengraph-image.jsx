@@ -5,7 +5,7 @@ export const alt = "JR One Aluminum LLC, Tampa Bay Specialty Trade, Tampa Bay";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const StarSVG = ({ size: s = 72, color = "#C8952E" }) => (
+const StarSVG = ({ size: s = 72, color = "#D4AF37" }) => (
   <svg
     width={s}
     height={s}
@@ -45,7 +45,7 @@ export default function Image() {
             right: 0,
             height: "8px",
             background:
-              "linear-gradient(90deg, #C8952E 0%, #D4A843 50%, #C8952E 100%)",
+              "linear-gradient(90deg, #D4AF37 0%, #F2CD69 50%, #D4AF37 100%)",
           }}
         />
 
@@ -56,7 +56,7 @@ export default function Image() {
             marginBottom: "28px",
           }}
         >
-          <StarSVG size={84} color="#C8952E" />
+          <StarSVG size={84} color="#D4AF37" />
         </div>
 
         {/* Company name */}
@@ -83,7 +83,7 @@ export default function Image() {
             style={{
               fontSize: "104px",
               fontWeight: 800,
-              color: "#C8952E",
+              color: "#D4AF37",
               letterSpacing: "6px",
               lineHeight: 1,
             }}
@@ -97,7 +97,7 @@ export default function Image() {
           style={{
             fontSize: "22px",
             fontWeight: 600,
-            color: "#C8952E",
+            color: "#D4AF37",
             letterSpacing: "10px",
             marginBottom: "22px",
           }}
@@ -112,7 +112,7 @@ export default function Image() {
             width: "120px",
             height: "3px",
             background:
-              "linear-gradient(90deg, transparent 0%, #C8952E 50%, transparent 100%)",
+              "linear-gradient(90deg, transparent 0%, #D4AF37 50%, transparent 100%)",
             marginBottom: "22px",
           }}
         />
@@ -164,13 +164,13 @@ export default function Image() {
                   style={{
                     fontSize: "40px",
                     fontWeight: 800,
-                    color: "#C8952E",
+                    color: "#D4AF37",
                     lineHeight: 1,
                   }}
                 >
                   {stat.value}
                 </span>
-                {stat.withStar && <StarSVG size={30} color="#C8952E" />}
+                {stat.withStar && <StarSVG size={30} color="#D4AF37" />}
               </div>
               <span
                 style={{
@@ -198,7 +198,7 @@ export default function Image() {
             justifyContent: "center",
             fontSize: "22px",
             fontWeight: 700,
-            color: "#C8952E",
+            color: "#D4AF37",
             letterSpacing: "2px",
           }}
         >
@@ -214,7 +214,7 @@ export default function Image() {
             right: 0,
             height: "8px",
             background:
-              "linear-gradient(90deg, #C8952E 0%, #D4A843 50%, #C8952E 100%)",
+              "linear-gradient(90deg, #D4AF37 0%, #F2CD69 50%, #D4AF37 100%)",
           }}
         />
       </div>

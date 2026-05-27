@@ -323,7 +323,7 @@ function PageEyebrow({ children, alert = false }) {
         display: "inline-block",
         padding: "6px 14px",
         background: alert ? "rgba(177, 26, 33, 0.16)" : "var(--jr-gold-pale)",
-        border: `1px solid ${alert ? "rgba(177, 26, 33, 0.4)" : "rgba(200, 149, 46, 0.28)"}`,
+        border: `1px solid ${alert ? "rgba(177, 26, 33, 0.4)" : "rgba(212, 175, 55, 0.28)"}`,
         borderRadius: "var(--jr-radius-sm)",
         marginBottom: "var(--jr-space-3)",
       }}
@@ -686,7 +686,7 @@ export default function InsuranceResourceCenter() {
                         height: 56,
                         borderRadius: "var(--jr-radius-md)",
                         background: "var(--jr-gold-pale)",
-                        border: "1px solid rgba(200, 149, 46, 0.32)",
+                        border: "1px solid rgba(212, 175, 55, 0.32)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -720,7 +720,7 @@ export default function InsuranceResourceCenter() {
                   <div
                     style={{
                       background: "var(--jr-gold-pale)",
-                      border: "1px solid rgba(200, 149, 46, 0.32)",
+                      border: "1px solid rgba(212, 175, 55, 0.32)",
                       borderRadius: "var(--jr-radius-md)",
                       padding: "var(--jr-space-5)",
                       marginBottom: "var(--jr-space-3)",
@@ -890,7 +890,7 @@ export default function InsuranceResourceCenter() {
                       height: 52,
                       borderRadius: "var(--jr-radius-md)",
                       background: "var(--jr-gold-pale)",
-                      border: "1px solid rgba(200, 149, 46, 0.32)",
+                      border: "1px solid rgba(212, 175, 55, 0.32)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",

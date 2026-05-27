@@ -41,6 +41,6 @@ export default function robots() {
       // AI engines, explicitly allowed so they can fetch /llms.txt + knowledge MDs
       ...aiAllowRules,
     ],
-    sitemap: "https://www.jronegutters.com/sitemap.xml",
+    sitemap: "https://jronegutters.com/sitemap.xml",
   };
 }

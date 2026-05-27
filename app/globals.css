@@ -120,6 +120,21 @@ textarea:focus {
   z-index: 0;
 }
 
+/* Shared minimum hero height for every service page so clicking through the
+   Services nav doesn't shift each hero a different height. Tuned to match the
+   tallest of the existing heros (commercial-gutters / gutter-cleaning /
+   gutter-guards) which carry stats blocks and read as the "default" size. */
+.jr-service-hero {
+  min-height: 760px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .jr-service-hero {
+    min-height: 560px;
+  }
+}
+
 /* Hover + press primitives. Emil: gate hover behind capability query. */
 @media (hover: hover) and (pointer: fine) {
   .jr-hover-lift {

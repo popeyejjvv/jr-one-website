@@ -28,18 +28,6 @@ const breadcrumbSchemaEs = {
   ],
 };
 
-const faqSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  inLanguage: "es-US",
-  mainEntityOfPage: "https://jronegutters.com/es/limpieza-canaletas-tampa",
-  mainEntity: [
-    { "@type": "Question", name: "Cuanto cuesta limpiar canaletas en Tampa?", acceptedAnswer: { "@type": "Answer", text: "Las casas unifamiliares tipicas van de $150 a $400 dependiendo de la altura del techo, pies lineales de canaleta, nivel de escombros y acceso. Las casas de dos pisos con techos complejos van mas alto. Precio exacto despues de una revision rapida." } },
-    { "@type": "Question", name: "Con que frecuencia debo limpiar las canaletas en Tampa?", acceptedAnswer: { "@type": "Answer", text: "Cobertura pesada de arboles (robles vivos, pinos, magnolias): 3-4 limpiezas por ano. Cobertura moderada: dos veces por ano, antes del verano (mayo) y despues de huracanes (noviembre). Casas con protectores de canaleta: cada 2-3 anos. Agregue una limpieza despues de cualquier tormenta con nombre." } },
-    { "@type": "Question", name: "Se llevan los escombros?", acceptedAnswer: { "@type": "Answer", text: "Si. Todos los escombros se embolsan y se remueven de su propiedad. No tendra que lidiar con montones de hojas o cubetas de lodo despues de que nos vayamos." } },
-  ],
-};
-
 export const metadata = {
   title: "Limpieza de Canaletas Tampa FL | $150-$400 Casa Unifamiliar",
   description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa, lavado de bajantes, fotografias. Casa unifamiliar $150-$400. (844) 444-3114. Hablamos espanol.",
@@ -65,7 +53,6 @@ export default function Layout({ children }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaEs) }} />
       {children}
     </>
   );

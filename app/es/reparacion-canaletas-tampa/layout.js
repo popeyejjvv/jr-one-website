@@ -27,18 +27,6 @@ const breadcrumbSchemaEs = {
   ],
 };
 
-const faqSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  inLanguage: "es-US",
-  mainEntityOfPage: "https://jronegutters.com/es/reparacion-canaletas-tampa",
-  mainEntity: [
-    { "@type": "Question", name: "Por que se desbordan mis canaletas con lluvia fuerte?", acceptedAnswer: { "@type": "Answer", text: "Tres causas comunes en Tampa Bay: (1) las canaletas son demasiado pequenas (5 pulgadas en un techo que necesita 6 o 7 pulgadas; nosotros solo instalamos 6 y 7), (2) la pendiente esta incorrecta y el agua se acumula en lugar de correr al bajante, o (3) los bajantes son muy pequenos para el area del techo. JR One Aluminum diagnostica cual es durante el estimado gratis." } },
-    { "@type": "Question", name: "Las canaletas hundidas se pueden re-instalar en lugar de reemplazar?", acceptedAnswer: { "@type": "Answer", text: "Usualmente si. La mayoria del hundimiento se arregla con ganchos ocultos correctos espaciados para carga de viento de huracan, no con canaletas nuevas. Re-ajustamos la pendiente del tramo, instalamos nuevos sujetadores, y re-sellamos las esquinas. El reemplazo completo solo se necesita cuando el aluminio en si esta corroido o el tramo se dimensiono mal." } },
-    { "@type": "Question", name: "Hacen reparacion de canaletas danadas por tormenta?", acceptedAnswer: { "@type": "Answer", text: "Si. El dano por huracan y tormenta con nombre a canaletas, fascia, sofito y bajantes es una oferta principal de JR One. Despachamos misma semana durante la temporada de tormentas y proveemos fotografias listas para seguro y estimados de contratista para su ajustador." } },
-  ],
-};
-
 export const metadata = {
   title: "Reparacion de Canaletas Tampa FL | Hundimientos y Fugas",
   description: "Reparacion de canaletas en Tampa Bay: hundimientos, fugas, desbordamiento, dano de tormenta. Servicio misma semana. (844) 444-3114. Hablamos espanol.",
@@ -64,7 +52,6 @@ export default function Layout({ children }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaEs) }} />
       {children}
     </>
   );

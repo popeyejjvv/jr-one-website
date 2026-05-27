@@ -69,7 +69,7 @@ export default async function CityPageEs({ params }) {
         postalCode: "33607",
         addressCountry: "US",
       },
-      aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "55" },
+      // aggregateRating removed 2026-05-26 per audit Tier 1.7 (self-serving rule).
       availableLanguage: ["en", "es"],
     },
     areaServed: {

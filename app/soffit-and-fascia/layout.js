@@ -96,81 +96,8 @@ const howToSchema = {
   ],
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://jronegutters.com/soffit-and-fascia#faq",
-  mainEntityOfPage: "https://jronegutters.com/soffit-and-fascia",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How much does soffit and fascia replacement cost in Tampa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Soffit and fascia replacement in Tampa Bay typically runs $1,800 to $6,500 depending on linear footage, single vs multi-tier fascia profile, aluminum vs vinyl material, and whether wood substrate needs replacement underneath. Estimates are detailed line-item so you see exactly where the money goes.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Aluminum or vinyl soffit, which is better for Tampa homes?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Aluminum is the primary recommendation for Florida homes. It will not rot, warp, crack, or attract termites. It handles UV exposure, salt air, and hurricane-force rain without deteriorating. Vinyl is a budget-friendly alternative that still outperforms wood in every way but is less impact-resistant in storms.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do I need to replace fascia and soffit at the same time?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Usually yes. Fascia and soffit work as a system, the fascia caps the roof edge and the soffit forms the underside of the overhang. If one has failed there is almost always damage to the other behind it. Replacing both together is the right answer 90 percent of the time in Tampa Bay.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Will you wrap aluminum over my rotten wood fascia?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Wrapping aluminum over rotten wood hides the problem and forces another tear-out within 5 years. We replace the rotted substrate first, then wrap. It is the difference between fixing the problem and covering it up.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does soffit and fascia replacement take?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most Tampa Bay single-family homes are completed in 1 to 3 days. Larger homes with complex rooflines or significant wood-rot replacement underneath take longer. We give you a specific timeline before work starts.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you replace soffit and fascia after storm damage?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. After named storms our crews prioritize storm-damage repairs. We board exposed areas first to prevent further damage and schedule permanent soffit and fascia replacement as fast as the schedule allows.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you match my existing soffit and fascia colors?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We carry the full aluminum coil color spectrum and most popular vinyl soffit profiles. We match your existing trim, gutters, or roof so the finished look is seamless, not obviously a replacement.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are you fully insured for soffit and fascia work in Tampa Bay?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. JR One Aluminum LLC carries full liability and workers' compensation insurance. Certificate of insurance provided on request before any work begins.",
-      },
-    },
-  ],
-};
-
 export const metadata = {
-  title: "Soffit and Fascia Tampa | Aluminum + Vinyl Replacement | JR One",
+  title: "Soffit and Fascia Tampa FL",
   description:
     "Soffit and fascia Tampa Bay specialists. Aluminum and vinyl soffit, custom-bent fascia wraps, rotted wood replaced underneath. Free estimate (844) 444-3114. 30+ years in the trade.",
   alternates: {
@@ -222,7 +149,6 @@ export default function Layout({ children }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

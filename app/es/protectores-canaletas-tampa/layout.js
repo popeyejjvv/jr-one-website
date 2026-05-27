@@ -27,18 +27,6 @@ const breadcrumbSchemaEs = {
   ],
 };
 
-const faqSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  inLanguage: "es-US",
-  mainEntityOfPage: "https://jronegutters.com/es/protectores-canaletas-tampa",
-  mainEntity: [
-    { "@type": "Question", name: "Funcionan los protectores con pinos y robles?", acceptedAnswer: { "@type": "Answer", text: "Los protectores correctos si. JR One instala protectores de canaleta de malla fina de acero inoxidable que bloquean agujas de pino, arena de techo, y escombros de palma. Los protectores baratos de aluminio perforado NO funcionan contra agujas de pino, por eso no los vendemos." } },
-    { "@type": "Question", name: "Valen la pena los protectores de canaleta en Florida?", acceptedAnswer: { "@type": "Answer", text: "Para la mayoria de hogares de Tampa Bay con dosel maduro de arboles, si. Los protectores de canaleta reducen la frecuencia de limpieza de trimestral a anual en la mayoria de los casos y previenen el ciclo de pudricion de fascia que sigue al desbordamiento de canaletas tapadas. El retorno usualmente es de 2 a 4 anos." } },
-    { "@type": "Question", name: "Puedo instalar protectores en mis canaletas existentes?", acceptedAnswer: { "@type": "Answer", text: "Si, si las canaletas existentes todavia estan en buen estado. Evaluamos la condicion de la canaleta durante el estimado gratis y cotizamos protectores retrofit en canaletas existentes o canaletas nuevas con protectores integrados si el sistema existente esta fallando." } },
-  ],
-};
-
 export const metadata = {
   title: "Protectores de Canaleta Tampa FL | Malla Fina Anti-Pino",
   description: "Protectores de canaleta micro-malla en Tampa Bay. Bloquean agujas de pino y arena. Reducen limpieza a anual. (844) 444-3114. Hablamos espanol.",
@@ -64,7 +52,6 @@ export default function Layout({ children }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaEs) }} />
       {children}
     </>
   );

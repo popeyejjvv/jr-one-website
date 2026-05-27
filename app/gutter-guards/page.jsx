@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
+import ServiceAreaList from "../../components/ServiceAreaList";
 import MobileCTA from "../../components/MobileCTA";
 import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
@@ -263,7 +264,7 @@ export default function GutterGuardsPage() {
 
         {/* ── HERO ── */}
         <section
-          className="jr-noise-bg"
+          className="jr-noise-bg jr-service-hero"
           style={{
             position: "relative",
             padding: "var(--jr-space-16) var(--jr-space-6) var(--jr-space-20)",
@@ -435,6 +436,12 @@ export default function GutterGuardsPage() {
           accentLight={ACCENT_LIGHT}
         />
       </main>
+      <ServiceAreaList
+        service="gutter-guards"
+        serviceLabel={lang === "es" ? "Protectores de Canaletas" : "Gutter Guards"}
+        lang={lang}
+      />
+
 
       <SiteFooter />
       <MobileCTA scrollTarget="quote-form" />

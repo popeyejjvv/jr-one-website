@@ -52,9 +52,10 @@ Commercial soffit and fascia work follows the same quality standards as resident
 Large commercial roofs generate significant water volume. JR One Aluminum designs and installs commercial drainage systems:
 
 - Schedule 40 PVC underground drainage
-- Corrugated drainage pipe
 - Catch basins
-- Trenching and excavation
+- Surface grates
+- Pop-up emitters
+- NOTE: no french drains, no channel drains, no dry wells, no corrugated drainage pipe, no standalone trenching service
 
 ---
 

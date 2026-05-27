@@ -309,8 +309,8 @@ export default function ServicePlansPage() {
         </Container>
 
         {/* HERO */}
-        <section style={{ padding: "var(--jr-space-12) var(--jr-space-6) var(--jr-space-20)" }}>
-          <Container>
+        <section className="jr-noise-bg jr-service-hero" style={{ position: "relative", padding: "var(--jr-space-12) var(--jr-space-6) var(--jr-space-20)", backgroundImage: "linear-gradient(165deg, rgba(11,22,51,0.84) 0%, rgba(17,32,67,0.88) 55%, rgba(22,42,80,0.92) 100%), url('/images/service-plans-hero-v2.webp')", backgroundSize: "cover", backgroundPosition: "center", overflow: "hidden" }}>
+          <Container style={{ position: "relative", zIndex: 1 }}>
             <div style={{ maxWidth: "780px" }}>
               <div
                 style={{

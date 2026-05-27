@@ -67,12 +67,13 @@ JR One Aluminum installs:
 ## Drainage
 
 - Schedule 40 PVC underground drainage
-- 4-inch corrugated solid pipe
 - Catch basins
-- Mini dry wells
+- Surface grates
+- Pop-up emitters
 - Concrete splash guards
+- Downspout extensions and grading corrections
 - 4x5 reducers and 3x4 adapters
-- Trencher / excavation service
+- NOTE: JR One does NOT install french drains, channel drains, dry wells, or corrugated drainage pipe
 
 ---
 

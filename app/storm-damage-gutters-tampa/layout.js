@@ -41,23 +41,8 @@ const breadcrumbSchema = {
   ],
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://jronegutters.com/storm-damage-gutters-tampa#faq",
-  mainEntityOfPage: "https://jronegutters.com/storm-damage-gutters-tampa",
-  mainEntity: [
-    { "@type": "Question", name: "Will my homeowner's insurance cover storm-damaged gutters?", acceptedAnswer: { "@type": "Answer", text: "Most Florida homeowner policies cover storm damage to gutters, fascia, soffit, and downspouts when the damage is from a named storm or a documented severe weather event. Coverage depends on your specific policy, your deductible, and the cause of damage. JR One Aluminum documents the damage so your adjuster has what they need to evaluate the claim." } },
-    { "@type": "Question", name: "How fast can you replace the gutters after a hurricane?", acceptedAnswer: { "@type": "Answer", text: "JR One Aluminum books same-week installs during storm season. Material is in stock at the Tampa shop. Most single-family installs are done in one day. After a major named storm we triage by severity, homes with active water intrusion at the foundation jump the line." } },
-    { "@type": "Question", name: "Do you install hurricane-rated fasteners?", acceptedAnswer: { "@type": "Answer", text: "Yes. All JR One installs use hidden screw-in hangers spaced for hurricane wind load. We do not use nail-in hangers because they pull out under uplift." } },
-    { "@type": "Question", name: "Can you wrap the fascia in aluminum to prevent the next round of rot?", acceptedAnswer: { "@type": "Answer", text: "Yes. JR One Aluminum replaces the rotted fascia board, primes it, wraps it in factory-finished aluminum that matches the new gutters, and re-hangs. The aluminum wrap stops the rot cycle permanently because there is no wood exposed to the weather." } },
-    { "@type": "Question", name: "Do you do storm-damage roof work too?", acceptedAnswer: { "@type": "Answer", text: "No. JR One Aluminum is a specialty gutter, soffit, fascia, and drainage trade. For storm-damaged roofs we refer to vetted Tampa Bay roofers. JR One does install Peak 301 roof rejuvenation on shingle roofs that are not storm-damaged but are showing age." } },
-    { "@type": "Question", name: "What does post-storm install cost?", acceptedAnswer: { "@type": "Answer", text: "Pricing depends on linear footage, downspout count, fascia and soffit damage extent, gutter size (6\" or 7\"), color, and access. JR One Aluminum measures on-site, photographs the damage, and quotes in person. The estimate is free." } },
-  ],
-};
-
 export const metadata = {
-  title: "Storm Damage Gutter Repair Tampa FL | Same-Week Install",
+  title: "Storm Damage Gutter Repair Tampa",
   description:
     "Hurricane-damaged gutters, fascia, soffit in Tampa Bay. Same-week install, insurance documentation, photos for adjuster. Family-owned, 30+ years. (844) 444-3114.",
   alternates: {
@@ -85,7 +70,6 @@ export default function Layout({ children }) {
       <link rel="preload" as="image" href="/images/storm-damage-hero.webp" fetchPriority="high" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

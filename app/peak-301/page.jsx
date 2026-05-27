@@ -273,11 +273,13 @@ export default function Peak301Page() {
 
         {/* ── HERO ── */}
         <section
-          className="jr-noise-bg"
+          className="jr-noise-bg jr-service-hero"
           style={{
             position: "relative",
             padding: "var(--jr-space-12) var(--jr-space-6) var(--jr-space-20)",
-            background: "linear-gradient(165deg, var(--jr-navy-deep) 0%, var(--jr-navy) 55%, var(--jr-navy-2) 100%)",
+            backgroundImage: "linear-gradient(165deg, rgba(11,22,51,0.84) 0%, rgba(17,32,67,0.88) 55%, rgba(22,42,80,0.92) 100%), url('/images/peak-301-hero.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
             overflow: "hidden",
           }}
         >

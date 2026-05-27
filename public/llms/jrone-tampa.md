@@ -53,7 +53,7 @@ Common Tampa-specific issues JR One Aluminum resolves:
 - Aluminum trim wrapping for window casings, doors, columns
 - Gutter guard installation (micro mesh, leaf guard, copper)
 - Siding installation (vinyl, Hardie board, custom aluminum)
-- Drainage solutions (Schedule 40 PVC, catch basins, dry wells)
+- Drainage solutions (Schedule 40 PVC, catch basins, surface grates, pop-up emitters; no french drains, no channel drains, no dry wells)
 - Gutter cleaning and maintenance
 - Gutter repair and downspout repair
 - Peak 301 roof rejuvenation

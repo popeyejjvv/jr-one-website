@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Underground Drainage Installation Tampa FL | PVC, Catch Basins, Pop-Up Emitters",
+  title: "Underground Drainage Tampa FL",
   description:
     "Tampa Bay underground drainage. PVC, catch basins, surface grates, pop-up emitters. We do not install french drains or channel drains. Free assessment, (844) 444-3114.",
   alternates: {

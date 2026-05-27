@@ -30,7 +30,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Sagiper Premium PVC Soffit Tampa FL | Wood-Grain, Zero Maintenance",
+  title: "Sagiper PVC Soffit Tampa FL",
   description:
     "Sagiper cellular PVC soffit and cladding in Tampa Bay. Wood-grain texture, zero rot, zero paint. 30+ year warranty. Free estimate, (844) 444-3114.",
   alternates: {

@@ -57,11 +57,12 @@ JR One Aluminum installs:
 When downspouts discharge water close to the foundation or in areas where surface drainage is a problem, underground drainage systems move water farther from the structure. JR One Aluminum installs:
 
 - Schedule 40 PVC underground drainage
-- 4-inch corrugated solid pipe
 - Catch basins
-- Mini dry wells
+- Surface grates
+- Pop-up emitters
 - Concrete splash guards
-- Trenching and excavation service
+- Downspout extensions and grading corrections
+- NOTE: JR One does NOT install french drains, channel drains, dry wells, or corrugated drainage pipe, and does not offer standalone trenching service
 
 ---
 
@@ -109,7 +110,7 @@ A: It's the process of permanently covering exterior wood trim with custom-bent 
 A: JR One Aluminum assesses downspout sizing based on the gutter capacity and the roof's drainage area. A common problem is undersized or too-few downspouts that can't handle Tampa's intense rainfall rates, causing gutters to overflow even when clean and unobstructed.
 
 **Q: Can you install underground drainage to take water away from the house?**
-A: Yes. JR One Aluminum installs Schedule 40 PVC underground drainage, corrugated drainage pipe, catch basins, and dry wells to move water away from foundations.
+A: Yes. JR One Aluminum installs Schedule 40 PVC underground drainage, catch basins, surface grates, and pop-up emitters to move water away from foundations. We do not install french drains, channel drains, dry wells, or corrugated drainage pipe.
 
 ---
 

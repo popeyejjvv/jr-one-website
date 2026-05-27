@@ -5,7 +5,7 @@ export const metadata = {
   robots: { index: false, follow: false },
 };
 
-const C = { bg:"#0B1628",navy:"#1B2A4A",gold:"#C8952E",goldLight:"#D4A843",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",muted:"#7A8FA8" };
+const C = { bg:"#0B1628",navy:"#1B2A4A",gold:"#D4AF37",goldLight:"#F2CD69",goldPale:"rgba(200,149,46,0.12)",cream:"#F5F3EF",white:"#FFFFFF",muted:"#7A8FA8" };
 
 export default function NotFound() {
   return (

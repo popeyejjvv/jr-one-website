@@ -35,22 +35,6 @@ const breadcrumbSchemaEs = {
   ],
 };
 
-const faqSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://jronegutters.com/es/canaletas-dano-tormenta-tampa#faq",
-  mainEntityOfPage: "https://jronegutters.com/es/canaletas-dano-tormenta-tampa",
-  inLanguage: "es-US",
-  mainEntity: [
-    { "@type": "Question", name: "Mi seguro de hogar cubre canaletas danadas por tormenta?", acceptedAnswer: { "@type": "Answer", text: "La mayoria de polizas de hogar en Florida cubren dano de tormenta a canaletas, fascia, sofito y bajantes cuando el dano viene de una tormenta con nombre o un evento de clima severo documentado. La cobertura depende de su poliza, su deducible y la causa del dano. JR One Aluminum documenta el dano para que su ajustador tenga lo que necesita." } },
-    { "@type": "Question", name: "Que tan rapido pueden reemplazar las canaletas despues de un huracan?", acceptedAnswer: { "@type": "Answer", text: "JR One Aluminum reserva instalaciones misma semana durante la temporada de tormentas. Hay material en stock en el taller de Tampa. La mayoria de instalaciones residenciales se hacen en un dia. Despues de una tormenta con nombre priorizamos por severidad." } },
-    { "@type": "Question", name: "Instalan ganchos resistentes a huracan?", acceptedAnswer: { "@type": "Answer", text: "Si. Toda instalacion de JR One usa ganchos ocultos atornillados espaciados para carga de viento de huracan. No usamos ganchos de clavo porque se zafan bajo fuerza ascendente." } },
-    { "@type": "Question", name: "Pueden envolver el fascia en aluminio para evitar la proxima pudricion?", acceptedAnswer: { "@type": "Answer", text: "Si. JR One Aluminum reemplaza el tablero de fascia podrido, lo imprime, lo envuelve en aluminio con acabado de fabrica del color de las canaletas nuevas, y re-instala. El envoltorio de aluminio detiene el ciclo de pudricion permanentemente." } },
-    { "@type": "Question", name: "Tambien hacen trabajo de techo por dano de tormenta?", acceptedAnswer: { "@type": "Answer", text: "No. JR One Aluminum es oficio especializado en canaletas, sofito, fascia y drenaje. Para techos danados por tormenta referimos a techadores confiables. JR One si instala rejuvenecimiento de techo Peak 301 en techos de tejas que no estan danados pero estan envejecidos." } },
-    { "@type": "Question", name: "Cuanto cuesta una instalacion post-tormenta?", acceptedAnswer: { "@type": "Answer", text: "El precio depende de pies lineales, conteo de bajantes, extension del dano a fascia y sofito, tamano de canaleta (6 o 7 pulgadas), color y acceso. JR One Aluminum mide en sitio, fotografia el dano y da el precio en persona. El estimado es gratis." } },
-  ],
-};
-
 export const metadata = {
   title: "Reparacion de Canaletas por Tormenta Tampa FL — Misma Semana",
   description:
@@ -77,7 +61,6 @@ export default function Layout({ children }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaEs) }} />
       {children}
     </>
   );

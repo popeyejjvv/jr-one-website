@@ -39,7 +39,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Gutter Guard Installation Tampa FL | Micro Mesh, Leaf Guard, Copper",
+  title: "Gutter Guards Tampa FL",
   description:
     "Professional gutter guard installation in Tampa Bay. Micro mesh for pine needles and fine debris. 30+ years specialist experience. Local pricing, free estimate at (844) 444-3114.",
   alternates: {

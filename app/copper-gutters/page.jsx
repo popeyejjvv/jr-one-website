@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
+import ServiceAreaList from "../../components/ServiceAreaList";
 import MobileCTA from "../../components/MobileCTA";
 import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
@@ -234,7 +235,7 @@ export default function CopperGuttersPage() {
           </nav>
         </Container>
 
-        <section className="jr-noise-bg" style={{ position: "relative", padding: "var(--jr-space-16) var(--jr-space-6) var(--jr-space-20)", background: "linear-gradient(165deg, var(--jr-navy-deep) 0%, var(--jr-navy) 55%, var(--jr-navy-2) 100%)", overflow: "hidden" }}>
+        <section className="jr-noise-bg jr-service-hero" style={{ position: "relative", padding: "var(--jr-space-16) var(--jr-space-6) var(--jr-space-20)", backgroundImage: "linear-gradient(165deg, rgba(11,22,51,0.84) 0%, rgba(17,32,67,0.88) 55%, rgba(22,42,80,0.92) 100%), url('/images/copper-gutters-hero-v2.webp')", backgroundSize: "cover", backgroundPosition: "center", overflow: "hidden" }}>
           <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "radial-gradient(ellipse at 28% 22%, rgba(200,149,46,0.08) 0%, transparent 60%)", pointerEvents: "none" }} />
           <Container>
             <div style={{ position: "relative", zIndex: 1, maxWidth: "780px" }}>
@@ -378,6 +379,12 @@ export default function CopperGuttersPage() {
           accentLight={ACCENT_LIGHT}
         />
       </main>
+      <ServiceAreaList
+        service="copper-gutters"
+        serviceLabel={lang === "es" ? "Canaletas de Cobre" : "Copper Gutters"}
+        lang={lang}
+      />
+
 
       <SiteFooter />
       <MobileCTA scrollTarget="quote-form" />
