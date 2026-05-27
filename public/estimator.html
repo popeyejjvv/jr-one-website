@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JR One Aluminum — Aerial Estimator</title>
-<meta name="description" content="Free instant aerial estimate from JR One Aluminum — Tampa Bay's seamless gutter, soffit, fascia, and leaf guard specialists.">
+<meta name="description" content="Free instant aerial estimate from JR One Aluminum — Tampa Bay's seamless gutter, soffit & fascia, and leaf guard specialists.">
 <meta property="og:title" content="JR One Aluminum — Aerial Estimator">
 <meta property="og:description" content="Measure your home from the sky and get an instant price range in under 2 minutes.">
 <meta property="og:type" content="website">
@@ -234,8 +234,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
       <div class="panel-label" data-i18n="what_measuring">What Are You Measuring?</div>
       <div class="mode-selector">
         <button class="mode-btn active" data-mode="gutter" onclick="setMode('gutter')"><span class="mode-dot" style="background:#4A9EFF"></span><span data-i18n="gutter_label">Gutters</span></button>
-        <button class="mode-btn" data-mode="soffit" onclick="setMode('soffit')"><span class="mode-dot" style="background:#FF6B6B"></span><span data-i18n="soffit_label">Soffit</span></button>
-        <button class="mode-btn" data-mode="fascia" onclick="setMode('fascia')"><span class="mode-dot" style="background:#51CF66"></span><span data-i18n="fascia_label">Fascia</span></button>
+        <button class="mode-btn" data-mode="soffit" onclick="setMode('soffit')"><span class="mode-dot" style="background:#FF6B6B"></span><span data-i18n="soffit_label">Soffit &amp; Fascia</span></button>
         <button class="mode-btn" data-mode="guard" onclick="setMode('guard')"><span class="mode-dot" style="background:#FFA94D"></span><span data-i18n="guard_label">Leaf Guard</span></button>
         <button class="mode-btn" data-mode="cleaning" onclick="setMode('cleaning')"><span class="mode-dot" style="background:#B07DFF"></span><span data-i18n="cleaning_label">Gutter Cleaning</span></button>
       </div>
@@ -266,8 +265,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
       <div class="totals-card">
         <div class="total-row" id="totalGutter" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#4A9EFF;margin-right:6px"></span><span data-i18n="gutter_label">Gutters</span></span><span class="t-value" id="totalGutterVal">0 ft</span></div>
         <div class="total-row" id="totalDownspout" style="display:none"><span class="t-label" style="padding-left:16px"><span class="t-sub" data-i18n="downspouts_auto">↳ Downspouts (auto)</span></span><span class="t-value" style="font-size:12px" id="totalDownspoutVal">0</span></div>
-        <div class="total-row" id="totalSoffit" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FF6B6B;margin-right:6px"></span><span data-i18n="soffit_label">Soffit</span></span><span class="t-value" id="totalSoffitVal">0 ft</span></div>
-        <div class="total-row" id="totalFascia" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#51CF66;margin-right:6px"></span><span data-i18n="fascia_label">Fascia</span></span><span class="t-value" id="totalFasciaVal">0 ft</span></div>
+        <div class="total-row" id="totalSoffit" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FF6B6B;margin-right:6px"></span><span data-i18n="soffit_label">Soffit &amp; Fascia</span></span><span class="t-value" id="totalSoffitVal">0 ft</span></div>
         <div class="total-row" id="totalGuard" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#FFA94D;margin-right:6px"></span><span data-i18n="guard_label">Leaf Guard</span></span><span class="t-value" id="totalGuardVal">0 ft</span></div>
         <div class="total-row" id="totalCleaning" style="display:none"><span class="t-label"><span class="mode-dot" style="background:#B07DFF;margin-right:6px"></span><span data-i18n="cleaning_label">Gutter Cleaning</span></span><span class="t-value" id="totalCleaningVal">0 ft</span></div>
         <div class="total-row grand"><span class="t-label" data-i18n="total_lf">Total Linear Feet</span><span class="t-value" id="grandTotal">0 ft</span></div>
@@ -286,7 +284,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <div class="instructions">
       <div class="inst-title" data-i18n="how_to_use">📐 How to Use</div>
       <div class="step"><span class="step-num">1</span><span class="step-text" data-i18n-html="step_1"><strong>Search your address</strong> above to find your home on the map</span></div>
-      <div class="step"><span class="step-num">2</span><span class="step-text" data-i18n-html="step_2"><strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, or Leaf Guard</span></div>
+      <div class="step"><span class="step-num">2</span><span class="step-text" data-i18n-html="step_2"><strong>Select what you're measuring</strong> — Gutters, Soffit & Fascia, Leaf Guard, or Gutter Cleaning</span></div>
       <div class="step"><span class="step-num">3</span><span class="step-text" data-i18n-html="step_3"><strong>Click along your roof edges</strong> on the map to draw measurement lines</span></div>
       <div class="step"><span class="step-num">4</span><span class="step-text" data-i18n-html="step_4">Press <span class="kbd">Finish Line</span> when each section is complete</span></div>
       <div class="step"><span class="step-num">5</span><span class="step-text" data-i18n-html="step_5">Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong></span></div>
@@ -392,7 +390,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 // 1 downspout per ~34 ft of gutter (min 1).
 const RATES = {
   gutter6:14, gutter7:20,
-  soffit:28, fascia:28,
+  soffit:28,
   guard:13.5, cleaning:10
 };
 const RANGE_LOW = 0.85, RANGE_HIGH = 1.15;
@@ -408,8 +406,8 @@ let parsedAddress = { city:'', state:'FL', zip:'' };
 let searchResultsCache = [];
 let firstMeasurementTracked = false;
 
-const COLORS = { gutter:'#4A9EFF', soffit:'#FF6B6B', fascia:'#51CF66', guard:'#FFA94D', cleaning:'#B07DFF' };
-const ICONS = { gutter:'🏠', soffit:'🌬️', fascia:'🔧', guard:'🛡️', cleaning:'🧹' };
+const COLORS = { gutter:'#4A9EFF', soffit:'#FF6B6B', guard:'#FFA94D', cleaning:'#B07DFF' };
+const ICONS = { gutter:'🏠', soffit:'🌬️', guard:'🛡️', cleaning:'🧹' };
 
 // ═══ BILINGUAL STRINGS ═══
 const STRINGS = {
@@ -418,7 +416,7 @@ const STRINGS = {
     search_placeholder:'Enter your address to get started',
     tab_measure:'MEASURE', tab_estimate:'MY ESTIMATE',
     what_measuring:"What Are You Measuring?",
-    gutter_label:'K-Style Gutters', soffit_label:'Soffit', fascia_label:'Fascia', guard_label:'Leaf Guard', cleaning_label:'Gutter Cleaning',
+    gutter_label:'K-Style Gutters', soffit_label:'Soffit & Fascia', guard_label:'Leaf Guard', cleaning_label:'Gutter Cleaning',
     gutter_size:'Gutter Size', size_6:'6" K-Style', size_7:'7" K-Style',
     home_type:'Home Type', story_1:'1 Story', story_2:'2 Story', story_3:'3 Story',
     your_measurements:'Your Measurements',
@@ -427,7 +425,7 @@ const STRINGS = {
     undo:'↩ Undo', finish_line:'✓ Finish Line', see_estimate:'SEE MY ESTIMATE →', clear_all:'Clear All',
     how_to_use:'📐 How to Use',
     step_1:'<strong>Search your address</strong> above to find your home on the map',
-    step_2:"<strong>Select what you're measuring</strong> — Gutters, Soffit, Fascia, Leaf Guard, or Gutter Cleaning",
+    step_2:"<strong>Select what you're measuring</strong> — Gutters, Soffit & Fascia, Leaf Guard, or Gutter Cleaning",
     step_3:'<strong>Click along your roof edges</strong> on the map to draw measurement lines',
     step_4:'Press <span class="kbd">Finish Line</span> when each section is complete',
     step_5:'Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong>',
@@ -467,11 +465,9 @@ const STRINGS = {
     gutter_breakdown_title:'K-Style Gutters',
     gutter_breakdown_sub:function(lf,ds){return lf+' linear feet · '+ds+' downspouts included'},
     soffit_breakdown_sub:function(lf){return lf+' linear feet'},
-    fascia_breakdown_sub:function(lf){return lf+' linear feet'},
     guard_breakdown_sub:function(lf){return lf+' linear feet'},
     cleaning_breakdown_sub:function(lf){return lf+' linear feet'},
-    soffit_breakdown_title:'Soffit',
-    fascia_breakdown_title:'Fascia',
+    soffit_breakdown_title:'Soffit & Fascia',
     guard_breakdown_title:'Aluminum Leaf Guard',
     cleaning_breakdown_title:'Gutter Cleaning'
   },
@@ -480,7 +476,7 @@ const STRINGS = {
     search_placeholder:'Ingresa tu dirección para comenzar',
     tab_measure:'MEDIR', tab_estimate:'MI ESTIMADO',
     what_measuring:'¿Qué estás midiendo?',
-    gutter_label:'Canaletas K-Style', soffit_label:'Plafón', fascia_label:'Fascia', guard_label:'Protector de Hojas', cleaning_label:'Limpieza de Canaletas',
+    gutter_label:'Canaletas K-Style', soffit_label:'Plafón y Fascia', guard_label:'Protector de Hojas', cleaning_label:'Limpieza de Canaletas',
     gutter_size:'Tamaño de Canaleta', size_6:'6" K-Style', size_7:'7" K-Style',
     home_type:'Tipo de Casa', story_1:'1 Piso', story_2:'2 Pisos', story_3:'3 Pisos',
     your_measurements:'Tus Medidas',
@@ -489,7 +485,7 @@ const STRINGS = {
     undo:'↩ Deshacer', finish_line:'✓ Terminar Línea', see_estimate:'VER MI ESTIMADO →', clear_all:'Borrar Todo',
     how_to_use:'📐 Cómo Usar',
     step_1:'<strong>Busca tu dirección</strong> arriba para encontrar tu casa en el mapa',
-    step_2:'<strong>Elige qué vas a medir</strong> — Canaletas, Plafón, Fascia, Protector o Limpieza',
+    step_2:'<strong>Elige qué vas a medir</strong> — Canaletas, Plafón y Fascia, Protector o Limpieza',
     step_3:'<strong>Haz clic en los bordes del techo</strong> para dibujar las líneas de medida',
     step_4:'Presiona <span class="kbd">Terminar Línea</span> cuando cada sección esté completa',
     step_5:'Repite para cada servicio que necesites, luego haz clic en <strong>VER MI ESTIMADO</strong>',
@@ -529,11 +525,9 @@ const STRINGS = {
     gutter_breakdown_title:'Canaletas K-Style',
     gutter_breakdown_sub:function(lf,ds){return lf+' pies lineales · '+ds+' bajantes incluidos'},
     soffit_breakdown_sub:function(lf){return lf+' pies lineales'},
-    fascia_breakdown_sub:function(lf){return lf+' pies lineales'},
     guard_breakdown_sub:function(lf){return lf+' pies lineales'},
     cleaning_breakdown_sub:function(lf){return lf+' pies lineales'},
-    soffit_breakdown_title:'Plafón',
-    fascia_breakdown_title:'Fascia',
+    soffit_breakdown_title:'Plafón y Fascia',
     guard_breakdown_title:'Protector de Aluminio',
     cleaning_breakdown_title:'Limpieza de Canaletas'
   }
@@ -671,7 +665,7 @@ function switchTab(tab){
 
 function calcFt(p1,p2){const R=20902231,dLat=(p2.lat-p1.lat)*Math.PI/180,dLon=(p2.lng-p1.lng)*Math.PI/180,a=Math.sin(dLat/2)**2+Math.cos(p1.lat*Math.PI/180)*Math.cos(p2.lat*Math.PI/180)*Math.sin(dLon/2)**2;return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a))}
 function calcDownspouts(lf){if(lf<=0)return{count:0,totalFt:0,ftEach:0};const c=Math.max(1,Math.ceil(lf/34)),fe=DS_FOOTAGE[stories]||13;return{count:c,totalFt:c*fe,ftEach:fe}}
-function getModeTotals(){const t={gutter:0,soffit:0,fascia:0,guard:0,cleaning:0};segments.forEach(s=>t[s.mode]+=s.totalFt);return t}
+function getModeTotals(){const t={gutter:0,soffit:0,guard:0,cleaning:0};segments.forEach(s=>{if(t[s.mode]!==undefined)t[s.mode]+=s.totalFt});return t}
 
 function updateSegmentList(){
   const el=document.getElementById('segmentList');let aLen=0;
@@ -691,10 +685,9 @@ function updateTotals(){
   show('totalGutter',tot.gutter.toFixed(1)+' ft',tot.gutter>0);
   show('totalDownspout',ds.count+' × '+ds.ftEach+'ft = '+ds.totalFt+' ft',tot.gutter>0);
   show('totalSoffit',tot.soffit.toFixed(1)+' ft',tot.soffit>0);
-  show('totalFascia',tot.fascia.toFixed(1)+' ft',tot.fascia>0);
   show('totalGuard',tot.guard.toFixed(1)+' ft',tot.guard>0);
   show('totalCleaning',tot.cleaning.toFixed(1)+' ft',tot.cleaning>0);
-  document.getElementById('grandTotal').textContent=(tot.gutter+tot.soffit+tot.fascia+tot.guard+tot.cleaning).toFixed(1)+' ft';
+  document.getElementById('grandTotal').textContent=(tot.gutter+tot.soffit+tot.guard+tot.cleaning).toFixed(1)+' ft';
 }
 
 // ═══ PHONE GATE ═══
@@ -773,10 +766,6 @@ function renderEstimate(){
   if(tot.soffit>0){
     const base=tot.soffit*RATES.soffit;const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
     breakdownHTML+=bdItem('soffit','rgba(255,107,107,0.15)',ICONS.soffit,t('soffit_breakdown_title'),tf('soffit_breakdown_sub',tot.soffit.toFixed(0)),fmtRange(lo,hi),blurCls);
-  }
-  if(tot.fascia>0){
-    const base=tot.fascia*RATES.fascia;const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
-    breakdownHTML+=bdItem('fascia','rgba(81,207,102,0.15)',ICONS.fascia,t('fascia_breakdown_title'),tf('fascia_breakdown_sub',tot.fascia.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(tot.guard>0){
     const base=tot.guard*RATES.guard;const lo=base*RANGE_LOW,hi=base*RANGE_HIGH;grandLow+=lo;grandHigh+=hi;
