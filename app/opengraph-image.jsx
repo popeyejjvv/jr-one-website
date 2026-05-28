@@ -32,8 +32,9 @@ export default function Image() {
           background: "#0B1628",
         }}
       >
-        {/* Hero photo as full-bleed background (base64-embedded so the
-            edge runtime never has to fetch it over the network) */}
+        {/* Hero photo as full-bleed background. Pre-cropped to exact
+            1200x630 so we don't need objectFit:cover (unsupported in
+            next/og's CSS subset and crashes the function silently). */}
         <img
           src={HERO_BG_DATA_URI}
           width={1200}
@@ -42,9 +43,6 @@ export default function Image() {
             position: "absolute",
             top: 0,
             left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
           }}
         />
 
