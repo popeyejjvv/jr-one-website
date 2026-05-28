@@ -1,7 +1,11 @@
 import { ImageResponse } from "next/og";
-import { HERO_BG_DATA_URI } from "./_og-hero.js";
 
 export const runtime = "edge";
+
+// Hero photo served as a static public asset at a clean www-subdomain URL
+// (no apex->www redirect to confuse the edge fetch, no data-URI embedding
+// to fight Satori's image decoder).
+const HERO_URL = "https://www.jronegutters.com/og/hero.jpg";
 export const alt = "JR One Aluminum LLC. Tampa Bay seamless gutters, soffit, fascia, drainage, Peak 301 roof rejuvenation. Family-owned, 30+ years.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -30,12 +34,32 @@ export default function Image() {
           height: "100%",
           position: "relative",
           backgroundColor: "#0B1628",
-          backgroundImage: `linear-gradient(135deg, rgba(11,22,51,0.82) 0%, rgba(27,42,74,0.86) 55%, rgba(11,22,51,0.92) 100%), url(${HERO_BG_DATA_URI})`,
-          backgroundSize: "1200px 630px",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
         }}
       >
+        {/* Hero photo, pre-cropped to exactly 1200x630 so we don't need
+            objectFit (unsupported in next/og's CSS subset). Loaded from
+            the www subdomain so the apex 307 redirect doesn't interfere
+            with the edge function's fetch. */}
+        <img
+          src={HERO_URL}
+          width="1200"
+          height="630"
+          style={{ position: "absolute", top: 0, left: 0 }}
+        />
+
+        {/* Navy gradient overlay for text legibility */}
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(135deg, rgba(11,22,51,0.82) 0%, rgba(27,42,74,0.86) 55%, rgba(11,22,51,0.92) 100%)",
+          }}
+        />
 
         {/* Top gold bar */}
         <div
