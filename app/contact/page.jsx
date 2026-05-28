@@ -14,6 +14,7 @@ import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
 import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
+import PhotoUpload from "../../components/ui/PhotoUpload";
 import { CheckCircleIcon, PhoneIcon, MailIcon, MapPinIcon, CardIcon } from "../../lib/icons";
 
 const CITIES = [
@@ -144,6 +145,8 @@ export default function ContactPage() {
   const { lang } = useLanguage();
   const t = T[lang];
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "", service: "", message: "" });
+  const [photos, setPhotos] = useState([]);
+  const [photoProcessing, setPhotoProcessing] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -163,6 +166,7 @@ export default function ContactPage() {
           zip: formData.zip,
           service: formData.service,
           message: formData.message,
+          photos,
           page: typeof window !== "undefined" ? window.location.pathname : "/contact",
           gclid: params.get("gclid") || "",
           utm_source: params.get("utm_source") || "",
@@ -357,7 +361,16 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     />
-                    <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>
+
+                    <PhotoUpload
+                      photos={photos}
+                      onChange={setPhotos}
+                      onProcessingChange={setPhotoProcessing}
+                      theme="dark"
+                      idPrefix="contact-photo"
+                    />
+
+                    <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading || photoProcessing}>
                       {loading ? (lang === "en" ? "Sending..." : "Enviando...") : t.submitBtn}
                     </Button>
                     <p

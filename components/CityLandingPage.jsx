@@ -21,6 +21,7 @@ import ServiceCard from "./ui/ServiceCard";
 import ReviewCard from "./ui/ReviewCard";
 import ProcessStep from "./ui/ProcessStep";
 import TrustLine from "./ui/TrustLine";
+import PhotoUpload from "./ui/PhotoUpload";
 import { CheckCircleIcon, MapPinIcon, PhoneIcon } from "./../lib/icons";
 
 // ══════════════════════════════════════════════════════════
@@ -665,6 +666,8 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
     service: i === 2 ? (city ? city.county : r.service) : r.service,
   }));
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "", service: "" });
+  const [photos, setPhotos] = useState([]);
+  const [photoProcessing, setPhotoProcessing] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [formLoading, setFormLoading] = useState(false);
 
@@ -683,6 +686,7 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
           email: formData.email,
           service: formData.service,
           zip: formData.zip,
+          photos,
           page: window.location.pathname,
           city: city.name,
           state: "FL",
@@ -984,7 +988,14 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
                         onChange={(e) => setFormData({ ...formData, zip: e.target.value })}
                         maxLength={5}
                       />
-                      <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading}>
+                      <PhotoUpload
+                        photos={photos}
+                        onChange={setPhotos}
+                        onProcessingChange={setPhotoProcessing}
+                        theme="light"
+                        idPrefix="city-photo"
+                      />
+                      <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading || photoProcessing}>
                         {formLoading ? "..." : t.requestQuote}
                       </Button>
                       <p

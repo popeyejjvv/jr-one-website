@@ -109,6 +109,33 @@ function splitName(fullName) {
   };
 }
 
+// Validate + decode customer-attached photos from the contact form.
+// Input shape: [{ filename, dataUrl: "data:image/jpeg;base64,...", mimeType }, ...]
+// Returns: [{ filename, content: Buffer, contentType }] for nodemailer.attachments.
+// Hard caps mirror the client: max 5 files, max ~5MB decoded each, jpeg/png/webp only.
+function buildPhotoAttachments(photos) {
+  if (!Array.isArray(photos) || photos.length === 0) return [];
+  const ALLOWED = new Set(["image/jpeg", "image/png", "image/webp"]);
+  const MAX_DECODED_BYTES = 5 * 1024 * 1024;
+  const out = [];
+  for (const p of photos.slice(0, 5)) {
+    if (!p || typeof p.dataUrl !== "string") continue;
+    const m = p.dataUrl.match(/^data:([^;]+);base64,(.+)$/);
+    if (!m) continue;
+    const contentType = m[1].toLowerCase();
+    if (!ALLOWED.has(contentType)) continue;
+    let content;
+    try { content = Buffer.from(m[2], "base64"); } catch { continue; }
+    if (content.length === 0 || content.length > MAX_DECODED_BYTES) continue;
+    // Sanitize filename: strip path separators, cap length
+    const safeName = String(p.filename || "photo.jpg")
+      .replace(/[^\w.\-]/g, "_")
+      .slice(0, 80) || "photo.jpg";
+    out.push({ filename: safeName, content, contentType });
+  }
+  return out;
+}
+
 // Normalize phone to E.164 format that BuilderPrime expects (+1XXXXXXXXXX)
 function normalizePhone(phone) {
   if (!phone) return "";
@@ -158,7 +185,7 @@ export async function POST(request) {
     const searchParams = new URL(request.url).searchParams;
 
     const { name, phone, email, service, zip, message, page, address, city, state,
-            gclid } = body;
+            gclid, photos } = body;
 
     // UTM attribution: query string takes precedence over body (Google Ads appends
     // params to the landing-page URL; the form may also pass them in the body).
@@ -329,10 +356,15 @@ export async function POST(request) {
           ? `<span style="background:#10B981;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">✓ In BuilderPrime (Opp ${bpResult.opportunity_id || "?"})</span>`
           : `<span style="background:#EF4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">⚠ NOT in BuilderPrime, manual entry required</span>`;
 
+        const photoAttachments = buildPhotoAttachments(photos);
+        const photoRowHtml = photoAttachments.length > 0
+          ? `<tr><td style="padding: 8px; font-weight: bold; color: #1B2A4A;">Photos:</td><td style="padding: 8px;">📎 ${photoAttachments.length} attached (see attachments)</td></tr>`
+          : "";
+
         await transporter.sendMail({
           from: `"JR One Website" <${process.env.GMAIL_USER}>`,
           to: "info@jronegutters.com",
-          subject: `New Web Lead: ${name}, ${service || "General"}, ${zip || "N/A"}`,
+          subject: `New Web Lead: ${name}, ${service || "General"}, ${zip || "N/A"}${photoAttachments.length > 0 ? ` (📎 ${photoAttachments.length})` : ""}`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px;">
               <h2 style="color: #1B2A4A; border-bottom: 3px solid #D4AF37; padding-bottom: 10px;">
@@ -346,6 +378,7 @@ export async function POST(request) {
                 <tr style="background: #f9f9f9;"><td style="padding: 8px; font-weight: bold; color: #1B2A4A;">Service:</td><td style="padding: 8px;">${service || "Not specified"}</td></tr>
                 <tr><td style="padding: 8px; font-weight: bold; color: #1B2A4A;">Address:</td><td style="padding: 8px;">${address || "Not provided"}, ${city || ""} ${zip || ""}</td></tr>
                 <tr style="background: #f9f9f9;"><td style="padding: 8px; font-weight: bold; color: #1B2A4A;">Message:</td><td style="padding: 8px;">${message || "None"}</td></tr>
+                ${photoRowHtml}
                 <tr><td style="padding: 8px; font-weight: bold; color: #1B2A4A;">Page:</td><td style="padding: 8px;">${page || "Unknown"}</td></tr>
                 <tr style="background: #f9f9f9;"><td style="padding: 8px; font-weight: bold; color: #1B2A4A;">Time:</td><td style="padding: 8px;">${timestamp}</td></tr>
               </table>
@@ -354,6 +387,7 @@ export async function POST(request) {
               </p>
             </div>
           `,
+          attachments: photoAttachments,
         });
         emailResult.ok = true;
         console.log("✓ Email notification sent to info@jronegutters.com");

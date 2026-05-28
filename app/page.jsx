@@ -15,6 +15,7 @@ import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
 import SectionHeading from "../components/ui/SectionHeading";
 import ServiceCard from "../components/ui/ServiceCard";
+import PhotoUpload from "../components/ui/PhotoUpload";
 import ReviewCard from "../components/ui/ReviewCard";
 import FAQAccordion from "../components/ui/FAQAccordion";
 import ProcessStep from "../components/ui/ProcessStep";
@@ -223,6 +224,8 @@ export default function JROneHomepage() {
   const { lang } = useLanguage();
   const t = T[lang];
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", service: "", zip: "" });
+  const [photos, setPhotos] = useState([]);
+  const [photoProcessing, setPhotoProcessing] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formLoading, setFormLoading] = useState(false);
   const [emailInput, setEmailInput] = useState("");
@@ -243,6 +246,7 @@ export default function JROneHomepage() {
           email: formData.email,
           service: formData.service,
           zip: formData.zip,
+          photos,
           page: window.location.pathname,
           gclid: params.get("gclid") || "",
           utm_source: params.get("utm_source") || "",
@@ -378,7 +382,14 @@ export default function JROneHomepage() {
                         ))}
                       </select>
                       <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
-                      <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading}>
+                      <PhotoUpload
+                        photos={photos}
+                        onChange={setPhotos}
+                        onProcessingChange={setPhotoProcessing}
+                        theme="light"
+                        idPrefix="hero-photo"
+                      />
+                      <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading || photoProcessing}>
                         {formLoading ? "Sending..." : t.formBtn}
                       </Button>
                       <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>
