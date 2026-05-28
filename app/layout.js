@@ -183,12 +183,22 @@ export const metadata = {
     title: "JR One Aluminum LLC | Tampa Bay Specialty Trade",
     description:
       "Family-owned. Over 30 years in the Tampa Bay gutter industry. In-house crews. Free estimates. (844) 444-3114.",
+    images: [
+      {
+        url: "https://www.jronegutters.com/og/og-card.png",
+        width: 1200,
+        height: 630,
+        alt: "JR One Aluminum LLC. Tampa Bay seamless gutters, soffit, fascia, drainage, Peak 301. Family-owned, 30+ years.",
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "JR One Aluminum LLC | Tampa Bay Specialty Trade",
     description:
       "Family-owned. Over 30 years in the Tampa Bay gutter industry. In-house crews. Free estimates.",
+    images: ["https://www.jronegutters.com/og/og-card.png"],
   },
   manifest: "/manifest.json",
   robots: {
