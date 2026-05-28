@@ -82,16 +82,19 @@ function mapServiceToProjectType(service) {
   if (s.includes("gutter") && s.includes("clean")) return "Gutter Cleaning";
   if (s.includes("gutter") && s.includes("guard")) return "Gutter Guards";
   if (s.includes("gutter") && s.includes("replace")) return "Gutter Replacement";
-  if (s.includes("seamless")) return "Gutter Installation";
-  if (s.includes("copper")) return "Copper Gutters";
-  if (s.includes("specialty")) return "Specialty Gutters";
-  if (s.includes("soffit") || s.includes("fascia")) return "Soffit and Fascia";
-  if (s.includes("siding")) return "Siding";
+  if (s.includes("commercial")) return "Commercial Gutters";
+  if (s.includes("hoa") || s.includes("contrato")) return "Gutter Maintenance";
+  if (s.includes("rental") || s.includes("alquiler")) return "Gutter Maintenance";
+  if (s.includes("seamless") || s.includes("sin costura")) return "Gutter Installation";
+  if (s.includes("copper") || s.includes("cobre")) return "Copper Gutters";
+  if (s.includes("specialty") || s.includes("especial")) return "Specialty Gutters";
+  if (s.includes("soffit") || s.includes("fascia") || s.includes("sofito")) return "Soffit and Fascia";
+  if (s.includes("siding") || s.includes("revestimiento")) return "Siding";
   if (s.includes("sagiper")) return "Siding";
   if (s.includes("peak") || s.includes("301") || s.includes("rejuven")) return "Peak 301";
-  if (s.includes("govee") || s.includes("light")) return "Govee Lights";
-  if (s.includes("drainage") || s.includes("drain")) return "Drainage";
-  if (s.includes("service plan") || s.includes("maintenance")) return "Gutter Maintenance";
+  if (s.includes("govee") || s.includes("light") || s.includes("luces")) return "Govee Lights";
+  if (s.includes("drainage") || s.includes("drain") || s.includes("drenaje")) return "Drainage";
+  if (s.includes("service plan") || s.includes("plan de servicio") || s.includes("planes de servicio") || s.includes("maintenance")) return "Gutter Maintenance";
   return "Gutters"; // safe default
 }
 
@@ -115,6 +118,24 @@ function normalizePhone(phone) {
   return phone; // return as-is if format unexpected, let BP handle it
 }
 
+// =============================================================================
+// UTM helpers — parse from query string OR request body.
+// Query string takes precedence (e.g. Google Ads auto-tagging appends to URL).
+// Falls back to body fields if the form posts them in the payload.
+// =============================================================================
+
+/**
+ * Extract a named UTM parameter from query string first, then body.
+ * Returns the raw string value or undefined.
+ */
+function pickUtm(searchParams, body, key) {
+  const fromQs = searchParams.get(key);
+  if (fromQs) return fromQs;
+  const fromBody = body[key];
+  if (fromBody && String(fromBody).length <= 256) return String(fromBody);
+  return undefined;
+}
+
 export async function POST(request) {
   try {
     // ── Origin check (block off-site bots) ──
@@ -134,8 +155,18 @@ export async function POST(request) {
     }
 
     const body = await request.json();
+    const searchParams = new URL(request.url).searchParams;
+
     const { name, phone, email, service, zip, message, page, address, city, state,
-            gclid, utm_source, utm_medium, utm_campaign, utm_term } = body;
+            gclid } = body;
+
+    // UTM attribution: query string takes precedence over body (Google Ads appends
+    // params to the landing-page URL; the form may also pass them in the body).
+    const utm_source   = pickUtm(searchParams, body, "utm_source");
+    const utm_medium   = pickUtm(searchParams, body, "utm_medium");
+    const utm_campaign = pickUtm(searchParams, body, "utm_campaign");
+    const utm_term     = pickUtm(searchParams, body, "utm_term");
+    const utm_content  = pickUtm(searchParams, body, "utm_content");
 
     // ── Validate required fields ──
     if (!name || !phone) {
@@ -165,6 +196,19 @@ export async function POST(request) {
     if (process.env.BUILDER_PRIME_API_KEY) {
       bpResult.attempted = true;
       try {
+        // BP custom fields for UTM attribution.
+        // TODO: confirm exact BP custom field names with Popeye before relying
+        // on these in reports. Field names below match the standard naming
+        // convention in builderprime-lead-to-close-config.md Section 4 (UTM gap).
+        // If BP rejects unknown fields, remove the customFields block and rely
+        // solely on the activity-note fallback below.
+        const utmCustomFields = {};
+        if (utm_source)   utmCustomFields.lead_source   = utm_source;
+        if (utm_medium)   utmCustomFields.lead_medium   = utm_medium;
+        if (utm_campaign) utmCustomFields.lead_campaign = utm_campaign;
+        if (utm_term)     utmCustomFields.lead_term     = utm_term;
+        if (utm_content)  utmCustomFields.lead_content  = utm_content;
+
         const bpPayload = {
           userAccount: {
             firstName: firstName,
@@ -180,6 +224,8 @@ export async function POST(request) {
           leadSourceDescription: "Form Inquiry",
           projectTypeDescription: projectType,
           buildingTypeDescription: "Single Family",
+          // UTM attribution as BP custom fields (see TODO above)
+          ...(Object.keys(utmCustomFields).length > 0 && { customFields: utmCustomFields }),
         };
 
         const bpResponse = await fetch(`${BP_BASE_URL}/clients`, {
@@ -200,14 +246,17 @@ export async function POST(request) {
           if (oppMatch) bpResult.opportunity_id = oppMatch[1];
           console.log(`✓ Builder Prime lead created (opportunity ${bpResult.opportunity_id || "?"})`);
 
-          // Log Google Ads attribution as a BP activity if any tracking params exist
-          if (bpResult.opportunity_id && (gclid || utm_source || utm_campaign)) {
+          // Log UTM + gclid attribution as a BP activity note.
+          // Serves as a human-readable fallback if the BP custom fields above are
+          // rejected. The activity note is always visible on the opportunity timeline.
+          if (bpResult.opportunity_id && (gclid || utm_source || utm_campaign || utm_medium || utm_term || utm_content)) {
             const attrParts = [];
-            if (gclid) attrParts.push(`gclid: ${gclid}`);
-            if (utm_source) attrParts.push(`source: ${utm_source}`);
-            if (utm_medium) attrParts.push(`medium: ${utm_medium}`);
+            if (gclid)        attrParts.push(`gclid: ${gclid}`);
+            if (utm_source)   attrParts.push(`source: ${utm_source}`);
+            if (utm_medium)   attrParts.push(`medium: ${utm_medium}`);
             if (utm_campaign) attrParts.push(`campaign: ${utm_campaign}`);
-            if (utm_term) attrParts.push(`term: ${utm_term}`);
+            if (utm_term)     attrParts.push(`term: ${utm_term}`);
+            if (utm_content)  attrParts.push(`content: ${utm_content}`);
             if (page) attrParts.push(`page: ${page}`);
             try {
               await fetch(`${BP_BASE_URL}/client-activities/v1`, {

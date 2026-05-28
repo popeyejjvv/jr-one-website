@@ -39,7 +39,7 @@ const T = {
     formNote: "No spam. No pressure.",
     formSent: "Quote Request Received",
     formSentSub: "We'll get back to you within hours. In the meantime, try our instant estimator below.",
-    serviceOpt: ["Select a service...", "Gutter Installation", "Gutter Repair", "Gutter Guards", "Soffit & Fascia", "Siding", "Gutter Cleaning", "Other / Not Sure"],
+    serviceOpt: ["Select a service...", "Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "HOA Contracts", "Rental Property Maintenance", "Other / Not Sure"],
     trustBadges: [
       { emoji: "⏱", label: "Family-Owned", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
       { emoji: "⭐", label: "4.9★ Rating", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
@@ -127,7 +127,7 @@ const T = {
     formNote: "Sin spam. Sin presión.",
     formSent: "Solicitud Recibida",
     formSentSub: "Le responderemos en horas. Mientras tanto, pruebe nuestro estimador instantáneo.",
-    serviceOpt: ["Seleccione un servicio...", "Instalación de Canaletas", "Reparación de Canaletas", "Protectores de Canaletas", "Sofito y Fascia", "Revestimiento", "Limpieza de Canaletas", "Otro / No Estoy Seguro"],
+    serviceOpt: ["Seleccione un servicio...", "Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Contratos HOA", "Mantenimiento de Alquileres", "Otro / No Estoy Seguro"],
     trustBadges: [
       { emoji: "⏱", label: "Empresa Familiar", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
       { emoji: "⭐", label: "4.9★ Calificación", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
