@@ -29,36 +29,13 @@ export default function Image() {
           width: "100%",
           height: "100%",
           position: "relative",
-          background: "#0B1628",
+          backgroundColor: "#0B1628",
+          backgroundImage: `linear-gradient(135deg, rgba(11,22,51,0.82) 0%, rgba(27,42,74,0.86) 55%, rgba(11,22,51,0.92) 100%), url(${HERO_BG_DATA_URI})`,
+          backgroundSize: "1200px 630px",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
-        {/* Hero photo as full-bleed background. Pre-cropped to exact
-            1200x630 so we don't need objectFit:cover (unsupported in
-            next/og's CSS subset and crashes the function silently). */}
-        <img
-          src={HERO_BG_DATA_URI}
-          width={1200}
-          height={630}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-          }}
-        />
-
-        {/* Navy gradient overlay for text legibility */}
-        <div
-          style={{
-            display: "flex",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            background:
-              "linear-gradient(135deg, rgba(11,22,51,0.82) 0%, rgba(27,42,74,0.86) 55%, rgba(11,22,51,0.92) 100%)",
-          }}
-        />
 
         {/* Top gold bar */}
         <div
