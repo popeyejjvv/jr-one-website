@@ -655,7 +655,7 @@ const inputStyle = {
 // ══════════════════════════════════════════════════════════
 // CITY PAGE COMPONENT
 // ══════════════════════════════════════════════════════════
-export default function CityLandingPage({ citySlug = "tampa" }) {
+export default function CityLandingPage({ citySlug = "tampa", portfolio = null }) {
   const { lang } = useLanguage();
   const t = T[lang];
   const city = CITIES[citySlug];
@@ -1295,6 +1295,19 @@ export default function CityLandingPage({ citySlug = "tampa" }) {
             </div>
           </Container>
         </section>
+
+        {portfolio ? (
+          <section
+            className="city-portfolio-section"
+            style={{
+              background: "var(--jr-paper)",
+              padding: "var(--jr-space-16) 0",
+              borderTop: "var(--jr-hair)",
+            }}
+          >
+            <Container>{portfolio}</Container>
+          </section>
+        ) : null}
 
         {/* CTA */}
         <section
