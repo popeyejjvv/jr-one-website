@@ -1,4 +1,5 @@
 import CityLandingPage from "@/components/CityLandingPage";
+import CityPortfolio from "@/components/CityPortfolio";
 
 const VALID_SLUGS = [
   "tampa","clearwater","st-petersburg","sarasota","bradenton",
@@ -96,7 +97,10 @@ export default async function CityPage({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <CityLandingPage citySlug={slug} />
+      <CityLandingPage
+        citySlug={slug}
+        portfolio={<CityPortfolio citySlug={slug} cityName={cityName} limit={9} />}
+      />
     </>
   );
 }

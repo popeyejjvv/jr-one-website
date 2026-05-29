@@ -176,3 +176,68 @@ textarea:focus {
    class-resolves while Phase 2 rewrite is in flight. Removed once homepage
    is migrated. */
 .hero-stars { position: relative; }
+
+/* CompanyCam portfolio — per-city + per-service evidence layer (SEO Phase 1) */
+.city-portfolio,
+.service-portfolio {
+  color: var(--jr-ink);
+}
+.city-portfolio h2,
+.service-portfolio h2 {
+  font-family: var(--jr-font-heading);
+  font-size: var(--jr-text-3xl);
+  font-weight: 700;
+  color: var(--jr-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--jr-space-4);
+  text-align: center;
+}
+.portfolio-intro {
+  font-family: var(--jr-font-body);
+  font-size: var(--jr-text-base);
+  line-height: 1.65;
+  color: var(--jr-muted-on-light);
+  max-width: 720px;
+  margin: 0 auto var(--jr-space-10);
+  text-align: center;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--jr-space-6);
+}
+@media (max-width: 900px) {
+  .portfolio-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+.portfolio-photo {
+  border: var(--jr-hair-light);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--jr-shadow-sm);
+  transition: box-shadow var(--jr-dur-base) var(--jr-ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-photo:hover { box-shadow: var(--jr-shadow-md); }
+}
+.portfolio-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.portfolio-photo figcaption {
+  padding: var(--jr-space-3) var(--jr-space-4);
+  font-family: var(--jr-font-body);
+  font-size: var(--jr-text-sm);
+  color: var(--jr-muted-on-light);
+  line-height: 1.45;
+}
+.portfolio-photo__service { font-weight: 600; color: var(--jr-navy); }
+.portfolio-photo__location { color: var(--jr-ink); }
+.portfolio-photo__date { color: var(--jr-muted-on-light); }

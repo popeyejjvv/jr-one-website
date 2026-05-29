@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import MobileCTA from "@/components/MobileCTA";
+import CityPortfolio from "@/components/CityPortfolio";
 
 // ── Constants ─────────────────────────────────────────────────────────────
 const C = {
@@ -354,6 +355,20 @@ export default async function CityServicePage({ params }) {
             <span style={{ color: C.gold, fontSize: "18px", letterSpacing: "2px" }}>★★★★★</span>
             <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>4.9 / 5.0 · 55 reviews</span>
             <span style={{ color: C.muted, fontSize: "14px" }}>· Fully insured · Bilingual EN/ES</span>
+          </div>
+        </section>
+
+        {/* CompanyCam evidence — real per-city per-service portfolio */}
+        <section
+          className="city-portfolio-section"
+          style={{
+            background: C.cream,
+            color: C.charcoal,
+            padding: "60px 20px",
+          }}
+        >
+          <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+            <CityPortfolio citySlug={slug} cityName={city.name} serviceFilter={service} limit={9} />
           </div>
         </section>
 
