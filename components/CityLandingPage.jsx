@@ -1301,8 +1301,9 @@ export default function CityLandingPage({ citySlug = "tampa", portfolio = null }
             className="city-portfolio-section"
             style={{
               background: "var(--jr-paper)",
+              color: "var(--jr-ink)",
               padding: "var(--jr-space-16) 0",
-              borderTop: "var(--jr-hair)",
+              borderTop: "var(--jr-hair-light)",
             }}
           >
             <Container>{portfolio}</Container>
