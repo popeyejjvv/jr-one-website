@@ -26,7 +26,7 @@ const RESIZE_MAX_EDGE = 1600;
 const T = {
   en: {
     label: "Add Photos",
-    hint: "Optional. Share up to 5 photos of your gutters, soffit, or the project area — helps us prepare a more accurate estimate.",
+    hint: "Optional. Share up to 5 photos of your gutters, soffit, or the project area. Helps us prepare a more accurate estimate.",
     button: "Choose Photos",
     changeButton: "Add More",
     remove: "Remove",
@@ -38,7 +38,7 @@ const T = {
   },
   es: {
     label: "Agregar Fotos",
-    hint: "Opcional. Comparta hasta 5 fotos de sus canaletas, sofito, o el area del proyecto — nos ayuda a preparar una cotizacion mas precisa.",
+    hint: "Opcional. Comparta hasta 5 fotos de sus canaletas, sofito, o el area del proyecto. Nos ayuda a preparar una cotizacion mas precisa.",
     button: "Elegir Fotos",
     changeButton: "Agregar Mas",
     remove: "Quitar",
