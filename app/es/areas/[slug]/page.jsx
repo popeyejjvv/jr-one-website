@@ -94,7 +94,7 @@ export default async function CityPageEs({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaEs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
-      <CityLandingPage citySlug={slug} />
+      <CityLandingPage citySlug={slug} lang="es" />
     </>
   );
 }

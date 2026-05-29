@@ -99,6 +99,7 @@ export default async function CityPage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <CityLandingPage
         citySlug={slug}
+        lang="en"
         portfolio={<CityPortfolio citySlug={slug} cityName={cityName} limit={9} />}
       />
     </>
