@@ -6,6 +6,7 @@
 // Usage:
 //   <ServicePortfolio serviceSlug="seamless-aluminum-gutters" serviceLabel="Seamless aluminum gutter" limit={12} />
 
+import Image from "next/image";
 import {
   getJobsByService,
   getServiceEvidenceDensity,
@@ -40,13 +41,13 @@ export default async function ServicePortfolio({
       <div className="portfolio-grid" role="list">
         {photos.map((photo) => (
           <figure key={photo.id} className="portfolio-photo" role="listitem">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={photo.web}
               alt={photo.altText}
-              loading="lazy"
               width={400}
               height={300}
+              sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw"
+              loading="lazy"
             />
             <figcaption>
               <span className="portfolio-photo__service">{photo.serviceLabel}</span>

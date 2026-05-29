@@ -7,6 +7,7 @@
 //   <CityPortfolio citySlug="lakeland" cityName="Lakeland" limit={9} />
 //   <CityPortfolio citySlug="tampa" cityName="Tampa" serviceFilter="copper-gutters" limit={12} />
 
+import Image from "next/image";
 import {
   getJobsByCity,
   getCityEvidenceDensity,
@@ -90,15 +91,13 @@ function PortfolioGrid({ photos, regional = false }) {
     <div className="portfolio-grid" role="list">
       {photos.map((photo) => (
         <figure key={photo.id} className="portfolio-photo" role="listitem">
-          {/* DRAFT: using plain <img> for now; production swap to next/image with priority on first frame
-              once the wiring lands on a real page and we can measure LCP impact. */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={photo.web}
             alt={photo.altText}
-            loading="lazy"
             width={400}
             height={300}
+            sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw"
+            loading="lazy"
           />
           <figcaption>
             <span className="portfolio-photo__service">{photo.serviceLabel}</span>
