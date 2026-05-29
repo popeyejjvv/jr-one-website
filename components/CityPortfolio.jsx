@@ -101,11 +101,11 @@ function PortfolioGrid({ photos, regional = false }) {
           />
           <figcaption>
             <span className="portfolio-photo__service">{photo.serviceLabel}</span>
-            {" · "}
+            {" / "}
             <span className="portfolio-photo__location">
               {regional ? `${photo.countyDisplay} County` : `${photo.cityNameDisplay}, FL`}
             </span>
-            {" · "}
+            {" / "}
             <span className="portfolio-photo__date">{photo.captionDate}</span>
           </figcaption>
           <script
