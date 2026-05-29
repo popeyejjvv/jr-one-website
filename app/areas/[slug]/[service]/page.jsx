@@ -173,6 +173,223 @@ const CITY_META = {
   "pinellas-park": { name: "Pinellas Park", localP: "Pinellas Park is dense mid-county Pinellas with established single-family neighborhoods, small commercial properties, and multi-family apartments that all need gutter, soffit, and fascia work built for Florida weather.", weatherNote: "Mid-county position gets storm activity without the salt-air breeze that dries neighboring coastal towns. Older suburban housing stock means aluminum soffit and fascia are overdue replacements.", nearby: ["largo","seminole","st-petersburg","clearwater"] },
 };
 
+// ── Phase 3 Batch 1 — top-10 ROI combo enrichment (2026-05-29) ─────────────
+// Keyed by `${slug}/${service}`. When present, fields override the generic
+// city + service template content. Absent fields fall through to defaults so
+// the other 158 combos still render exactly as they did in PR #1.
+//
+// All numbers, neighborhoods, weather data, and housing-stock facts are
+// sourced from /Users/popeye/Desktop/EAPOPEYE/research-output/jrone-seo-build-2026-05-28/audit/:
+//   - companycam-per-city-density.md (project counts since 2022-01-01)
+//   - census-by-city.json (ACS demographics)
+//   - noaa-by-city.json (thunderstorm days, hurricanes, rainfall)
+//   - housing-stock-by-city.json (median year built, pre-1980 share)
+const ENRICHMENT = {
+  "lakeland/gutter-cleaning": {
+    introOverride: "Lakeland gets 75 thunderstorm days a year and 50.2 inches of rain on average, more than the U.S. national average and concentrated in heavy July through September downpours per NOAA. That volume goes straight through any gutter clogged with oak leaves, shingle grit, or wind-blown debris. With 43 percent of Lakeland homes built before 1980 per Polk County records, a lot of those gutters are the original runs at the original pitch, and they are not cleaning themselves.",
+    propsOverride: [
+      ["Full debris removal","Oak leaves, pine needles, and shingle grit hand-cleared and bagged, not blown into your beds."],
+      ["Downspout flush","We run water through every downspout to confirm it actually exits at grade, not at the elbow."],
+      ["Flow test","Every run gets tested with live water before we leave. If it ponds, we fix the pitch."],
+      ["Damage report","Loose hangers, separating seams, fascia rot, and undersized downspouts flagged in writing while we are up there."],
+    ],
+    faqs: [
+      { q: "How much does gutter cleaning cost in Lakeland?", a: "Standard ranch and split-level homes in Lakeland run roughly $150 to $275 for a full clean including downspout flushing and flow testing. Two-story homes, steep pitches, or homes with mature oak canopy that has gone uncleaned for more than a year run higher because we are removing more material and inspecting more length. We quote a flat price up front after a quick walk of the property, so there are no per-foot surprises at the end. Free estimate by phone or text." },
+      { q: "When is the best time of year to clean gutters in Lakeland?", a: "Twice a year is the floor: once in late spring before peak rainfall season (July through September per NOAA) and once after Florida's leaf-drop window in late fall through early winter, when laurel oaks and live oaks shed heavy. Homes with heavy oak or pine canopy often need a third clean mid-summer because thunderstorm wind pulls debris off the canopy faster than a twice-a-year schedule catches it. The worst time to wait is mid-July with a forecast full of afternoon storms." },
+      { q: "What is included in a JR One gutter cleaning in Lakeland?", a: "Full hand-removal of leaves, pine needles, shingle grit, twigs, and tennis balls. Every downspout flushed with water and confirmed to exit at grade. A flow test on every run with live water to verify pitch. A written damage report on anything we see up there, separating seams, loose hangers, fascia rot, undersized downspouts, missing splash blocks, gutter spike pull-out. Debris bagged and hauled off site. No blowing it into your beds and walking off." },
+      { q: "Do you clean gutters on two-story Lakeland homes?", a: "Yes. We carry the ladders, the fall protection, and the insurance to do two-story work safely. Roofs steeper than an 8/12 pitch get extra harnessing. We do not pressure homeowners to climb onto a roof or accept a cheaper price for a riskier job. If a roof is too steep or storm-damaged to walk safely, we say so and quote ground-and-ladder access only." },
+      { q: "Will you spot gutter damage while you are cleaning?", a: "That is half the value of having a specialist contractor clean versus a handyman. We are up there for an hour or two looking directly at the fascia, the hangers, the spikes, the seams, and the downspout connections. Anything failing or about to fail gets photographed, written into the damage report, and quoted as a separate repair if you want it done. The cleaning price does not change either way. Most Lakeland cleaning visits surface at least one item worth knowing about." },
+      { q: "Are you insured to clean gutters in Lakeland?", a: "Yes. JR One Aluminum LLC carries general liability and workers compensation. We will provide a current certificate of insurance on request before any work begins. Hiring an uninsured contractor on a Lakeland gutter cleaning is a foundation, fascia, and homeowner-liability risk that is not worth saving fifty bucks on." },
+    ],
+    neighborhoodsOfNote: ["Lakeland Highlands","Cleveland Heights","Christina","Lake Hollingsworth","Beacon Hill","South Lake Morton Historic District"],
+    trustNumbers: ["25 Lakeland projects in the JR One CompanyCam record since 2023, across cleanings, guard installs, and seamless-gutter replacements"],
+  },
+
+  "wesley-chapel/gutter-cleaning": {
+    introOverride: "Wesley Chapel is one of the newest housing markets in Tampa Bay, with a median home built around 2000 per Pasco County records and roughly 70 percent of homes built after the year 2000. New construction does not mean problem-free gutters. Pasco's flat terrain holds water at the foundation when downspouts are clogged, and Wesley Chapel sits in the same 78-thunderstorm-day-per-year band as the rest of north-central Florida per NOAA. Idalia in 2023 triggered Pasco County evacuation orders that included Wesley Chapel, and the homes that came through with the least damage were the ones with gutters actually moving water.",
+    propsOverride: [
+      ["Full debris removal","Pine needles, oak leaves, and roof grit pulled out by hand and bagged off site."],
+      ["Downspout flush + grade check","Pasco's flat terrain means a clean downspout is only half the answer. We confirm water exits past the foundation."],
+      ["Flow test","Live water through every run before we leave. No assumptions about pitch."],
+      ["HOA-friendly cleanup","Most Wesley Chapel neighborhoods have architectural-review boards. We leave the property cleaner than we found it."],
+    ],
+    faqs: [
+      { q: "How often should Wesley Chapel gutters be cleaned?", a: "Twice a year is the baseline. Once in late spring before the heavy July through September storm window per NOAA, and once in late fall after leaf drop. Homes backed up to wooded preserves or with mature oak in the yard often need a third clean in mid-summer. Homes in newer Wesley Chapel subdivisions with smaller trees can sometimes stretch to once a year if guards are installed." },
+      { q: "How much is gutter cleaning in Wesley Chapel?", a: "Typical single-story and two-story homes in subdivisions like Seven Oaks, Meadow Pointe, or Lexington Oaks run $175 to $325 depending on linear footage, number of downspouts, and how much material is in the gutter at the time of the clean. Larger custom homes in Estancia at Wiregrass or Lake Bernadette are quoted on a walk basis. Flat price up front, no per-foot surprises." },
+      { q: "What happens if I never clean my Wesley Chapel gutters?", a: "Three things compound. First, water overflows over the front of the gutter during heavy rain and pools at the foundation. On Pasco's flat terrain that means slab cracking, settling, and eventual foundation work that runs five figures. Second, water backs up under the shingles at the roof edge and rots the fascia and sometimes the roof deck. Third, the weight of wet debris pulls the gutter away from the fascia, separating seams and eventually pulling the whole run off. All three are preventable with two cleanings a year." },
+      { q: "Do you work in HOA neighborhoods in Wesley Chapel?", a: "Yes. Most Wesley Chapel subdivisions, Seven Oaks, Meadow Pointe, Lexington Oaks, Saddlebrook, Lake Bernadette, Estancia at Wiregrass, are HOA neighborhoods with architectural review boards. We follow posted hours, clean up debris completely, and provide written documentation if your HOA requires contractor proof of insurance. We have been working in Pasco County since 2023 with 77 logged projects in Wesley Chapel alone." },
+      { q: "Should I get gutter guards installed instead of cleaning twice a year?", a: "If your home is under heavy oak, pine, or laurel canopy, guards pay for themselves in three to five years versus the cost of recurring cleanings. If your home is in a newer Wesley Chapel subdivision with smaller landscaping, cleaning twice a year may be the more economical path. We will tell you straight which way the math works for your specific property during the free estimate, not push the more expensive option." },
+      { q: "Do you provide service calls for storm damage to Wesley Chapel gutters?", a: "Yes. After named storms, especially anything in the Idalia or Ian category that pushed wind through Pasco County, sections of gutter pull loose from fascia, downspouts get torn off, and debris loads quadruple. We prioritize storm calls and provide insurance-ready documentation if a homeowner has an open claim. If you can see daylight between your gutter and fascia after a storm, do not wait for the next rain event to call." },
+    ],
+    neighborhoodsOfNote: ["Seven Oaks","Meadow Pointe","Lexington Oaks","Saddlebrook","Lake Bernadette","Estancia at Wiregrass","Country Walk"],
+    trustNumbers: ["77 Wesley Chapel projects in the JR One CompanyCam record, the highest density of any Pasco County market we serve"],
+  },
+
+  "palm-harbor/gutter-cleaning": {
+    introOverride: "Palm Harbor's mature tree canopy is the defining gutter challenge here. Laurel oak, live oak, slash pine, and sand pine drop debris into gutters year-round, and the homes built in the 1970s and 1980s, roughly 42 percent of the stock per Pinellas County records, have gutters that were not sized for that volume of organic load. Add Pinellas's 82 thunderstorm days per year per NOAA and four named storms in the last ten years (Idalia, Ian, Eta, Elsa), and Palm Harbor gutter cleaning is not a once-a-year homeowner task, it is a twice or three times per year specialist call.",
+    propsOverride: [
+      ["Full debris removal","Pine needles, oak leaves, sweetgum balls, and shingle grit pulled by hand, bagged, hauled off."],
+      ["Downspout flush + flow test","Every downspout cleared and tested with live water from the gutter to grade."],
+      ["Coastal corrosion check","Salt air from the Gulf accelerates aluminum oxidation at fastener points. We flag what is failing."],
+      ["Fascia inspection","Mature Palm Harbor homes often have soft fascia behind the gutter. We document it before the next storm tears the gutter off."],
+    ],
+    faqs: [
+      { q: "How much does gutter cleaning cost in Palm Harbor?", a: "Single-story homes in neighborhoods like Highland Lakes, Spring Lake, or Crystal Beach run roughly $175 to $275 for a full clean including downspout flushing and flow testing. Two-story homes and homes under heavy oak or pine canopy run $250 to $425 because we are removing more material, testing more runs, and spending more time on the property. Free flat-price estimate by phone or text." },
+      { q: "How often should Palm Harbor gutters be cleaned?", a: "Twice a year for homes with moderate tree coverage, three times a year for homes under mature laurel oak, live oak, or pine canopy. The fall clean is non-negotiable, that is when oak and pine drop hardest. The spring clean clears the winter accumulation before the July through September heavy-rain season starts. Skipping either one is how fascia rot starts." },
+      { q: "What does pine debris do to my gutters that I should worry about?", a: "Pine needles are the worst gutter clog material in Florida. They knit together into a dense mat that water cannot push through, and they hold moisture against the aluminum and against the fascia for weeks at a time. The result is fascia rot from the back side that you cannot see from the ground, plus accelerated oxidation of the gutter itself. By the time you can see the problem, the fascia is already soft and the gutter pulls loose during the next thunderstorm." },
+      { q: "Does coastal Palm Harbor location affect gutter cleaning frequency?", a: "Yes, two ways. Gulf-facing properties get salt-air corrosion on top of the standard debris load, so cleaning visits double as inspection windows for aluminum failure at hanger fasteners and at downspout elbows. And tropical-system wind drives an entire season's worth of debris into your gutters in a single storm event. After Idalia in 2023, we logged storm-call cleanings throughout Palm Harbor where gutters were full to the lip in 24 hours." },
+      { q: "Will gutter cleaning fix my overflow problem?", a: "Sometimes yes, sometimes no. If the gutter is clogged with debris and overflows in rain, cleaning fixes it. If the downspout is undersized for the roof load, or the pitch was wrong from the original install, or the run has separated at a seam, cleaning will not fix it. Our flow test catches all three. If we find the problem is not the debris, we document it and quote the repair separately. We do not bill you for a cleaning that will not solve the actual problem." },
+      { q: "Do you offer gutter guards in Palm Harbor?", a: "Yes. For homes under heavy oak or pine canopy in Palm Harbor, guards pay for themselves in two to four years compared with three cleanings per year. We install micro-mesh stainless guards that handle pine needles, which is the test most gutter guards on the market fail. Free comparison estimate, guards versus cleaning schedule, during the same visit." },
+    ],
+    neighborhoodsOfNote: ["Highland Lakes","Spring Lake","Crystal Beach","Lansbrook","Tarpon Woods","Boot Ranch","Innisbrook"],
+    trustNumbers: ["65 Palm Harbor projects in the JR One CompanyCam record since November 2022, across cleanings, guards, and seamless-gutter replacements"],
+  },
+
+  "clearwater/gutter-cleaning": {
+    introOverride: "Clearwater is a coastal Pinellas County market with 82 thunderstorm days per year and 51.8 inches of average annual rainfall per NOAA. Idalia in 2023 produced severe storm surge that hit Treasure Island and Sunset Beach hardest, and four named storms have come within 50 miles of Clearwater in the last ten years (Idalia, Ian, Eta, Elsa). Combined with a 42-percent pre-1980 housing stock per Pinellas County records, much of which still runs the original gutter system at the original pitch, Clearwater homes need cleaning on a real schedule, not a maybe-this-year schedule.",
+    propsOverride: [
+      ["Full hand-clean","Leaves, pine needles, shingle grit, sand from coastal wind, all removed and bagged."],
+      ["Salt-corrosion check","Every fastener and downspout elbow inspected for the early oxidation pattern that coastal salt air drives."],
+      ["Downspout flush + flow test","Live water through every run. Coastal properties cannot afford a downspout that exits at the elbow instead of at grade."],
+      ["Storm-prep documentation","If hurricane season is approaching, we document what is loose or undersized so it does not become an insurance claim later."],
+    ],
+    faqs: [
+      { q: "How much is gutter cleaning in Clearwater?", a: "Standard single-story homes in neighborhoods like Countryside, Sunset Point, or Clearwater Beach run $175 to $300 depending on linear footage and debris load. Two-story homes and homes with mature trees run higher. Coastal-facing homes sometimes warrant an inspection-and-clean combo where we are looking specifically for salt-corrosion damage in addition to debris removal, which adds time but not a separate fee in most cases. Free flat-price estimate." },
+      { q: "When should I schedule pre-hurricane-season gutter cleaning in Clearwater?", a: "May or early June. NOAA's hurricane season runs June through November and peak rainfall hits July through September. A clean gutter in late May means storm debris has somewhere to go when the first system arrives. A clogged gutter in May becomes an emergency call after the first thunderstorm of the season. We see the same pattern every year and it is always worse in coastal Pinellas than inland Hillsborough." },
+      { q: "What is special about cleaning coastal Clearwater gutters?", a: "Salt-laden Gulf air drives oxidation at every fastener point on an aluminum gutter system. That oxidation is invisible from the ground but obvious once you are up on a ladder looking at the back of the gutter where the hidden hanger meets the fascia. Coastal Clearwater cleanings double as corrosion inspections, and that is one reason hiring a specialist aluminum contractor matters here, generic handyman cleanings miss what we look for." },
+      { q: "Do you clean gutters on coastal-facing Clearwater homes?", a: "Yes. We work all of Clearwater including Clearwater Beach, Island Estates, Sand Key, and the bridge-accessed islands. Direct Gulf-facing properties take the most weather and corrode aluminum the fastest, so the cleaning visit is also the time we flag any aluminum component that will not survive another storm season." },
+      { q: "What happens to Clearwater gutters during a hurricane?", a: "Three failure modes. First, debris-clogged gutters fill up in the first hour of a hurricane and pull away from the fascia under the weight of standing water. Second, undersized downspouts overflow at the foundation, eroding landscape grade and pushing water under the slab. Third, wind pressure lifts loose gutter sections and tears them off the fascia, which then becomes flying debris. Pre-season cleaning catches the debris problem. A separate inspection catches the other two." },
+      { q: "Are you insured to work on Clearwater homes?", a: "Yes. JR One Aluminum LLC carries general liability and workers compensation. We provide a current certificate of insurance on request before any work starts. Coastal Clearwater homes, especially anything HOA-controlled in Sand Key or Island Estates, often require contractor insurance documentation as a condition of access, and we have it on file." },
+    ],
+    neighborhoodsOfNote: ["Countryside","Sunset Point","Clearwater Beach","Island Estates","Sand Key","Belleair","Morningside","Skycrest"],
+    trustNumbers: ["102 Clearwater projects in the JR One CompanyCam record since November 2022, the second-highest density in Pinellas County for us"],
+  },
+
+  "sarasota/gutter-cleaning": {
+    introOverride: "Sarasota homes lean older than the Tampa Bay average. Sarasota County records show a median home year-built around 1975 and roughly 52 percent of the stock built before 1980, which is the oldest housing concentration in our service area. That matters for gutter cleaning because original-install gutters at the original pitch on a 50-year-old fascia board are not what builders are installing today, and they fail differently than newer systems. Add 53.1 inches of average annual rainfall per NOAA, the highest in our service area, plus three named storms in the last ten years (Idalia, Ian, Eta), and Sarasota gutter cleaning is foundation protection more than it is curb appeal.",
+    propsOverride: [
+      ["Hand debris removal","Oak leaves, pine needles, sand, and roof grit cleared and bagged. Beds left as we found them."],
+      ["Original-pitch verification","Older Sarasota homes were installed at pitch standards that have since improved. We test what is actually there."],
+      ["Downspout flush + extension check","Many Sarasota downspouts exit at a splash block that washed out years ago. We document and quote the fix."],
+      ["Fascia condition report","50-year-old fascia behind a clogged gutter is often soft. We flag what is failing in writing."],
+    ],
+    faqs: [
+      { q: "How much does gutter cleaning cost in Sarasota?", a: "Standard single-story homes in Palmer Ranch, Sarasota Springs, or Gulf Gate run $175 to $300 for a full clean with downspout flushing and flow testing. Homes on Siesta Key, Lido Key, or Bird Key with custom rooflines or two-story footprints run higher because we are working with longer ladders and more linear feet. Estate properties in Oyster Bay or West of Trail get walked and quoted on a per-property basis. Flat price up front, no per-foot surprises." },
+      { q: "How often should Sarasota gutters be cleaned?", a: "Twice a year minimum. Once in May or early June before the July through September heavy-rain window per NOAA, and once in late fall after Florida's leaf-drop season. Homes with mature oak canopy or homes on the keys with salt-tolerant landscaping (palms, sea grape) drop debris differently and may benefit from a third visit. Skipping a cycle on a 50-year-old gutter system is how the next overflow event becomes a fascia-rot project." },
+      { q: "What is different about cleaning gutters on older Sarasota homes?", a: "Two things. First, the pitch on a 50-year-old gutter run is rarely what it was on day one, original hangers loosen, fascia warps, and water starts pooling instead of flowing. A flow test with live water tells you in two minutes what a visual inspection cannot. Second, the fascia behind the gutter on a 1975 home is often soft from decades of moisture exposure. We document it and quote the fix instead of pretending it does not exist." },
+      { q: "Do you work on Siesta Key, Lido Key, and Bird Key?", a: "Yes. Island properties get the same service standard as inland Sarasota. We do work around bridge access, gated communities, and HOA architectural-review requirements. Salt-air corrosion is more aggressive on the keys, so the cleaning visit doubles as a corrosion inspection on every fastener and downspout elbow." },
+      { q: "Will you clean gutters that have not been cleaned in years?", a: "Yes, and that is a common Sarasota call. Five-year-clog cleanings take longer, sometimes require us to remove and reinstall sections to clear what is wedged in there, and usually surface fascia or seam damage that needs separate repair. We quote the cleaning flat and quote the repair separately. We do not refuse the job because it is overdue, but we are honest about what we find." },
+      { q: "Do you handle insurance-claim documentation after storms?", a: "Yes. After Idalia, Ian, and Eta we wrote dozens of insurance-ready damage reports for Sarasota homeowners. Photos, scope description, replacement-cost itemization. If your gutter system was damaged by a named storm and you have an open claim, the cleaning visit is the right time to also document what needs to be replaced or repaired. We work directly with adjusters." },
+    ],
+    neighborhoodsOfNote: ["Palmer Ranch","Lakewood Ranch","Siesta Key","Lido Key","Bird Key","Gulf Gate","Sarasota Springs","West of Trail","Oyster Bay"],
+    trustNumbers: ["85 Sarasota projects in the JR One CompanyCam record since November 2022, across cleanings, repairs, and seamless-gutter replacements"],
+  },
+
+  "bradenton/gutter-cleaning": {
+    introOverride: "Bradenton sits on the Manatee River at the mouth of Tampa Bay, with 52.4 inches of average annual rainfall and three named storms in the last ten years (Idalia, Ian, Eta) per NOAA. Idalia in 2023 triggered Manatee County evacuation orders, and Ian in 2022 produced a northeast wind flow that caused negative storm surge in the Tampa Bay area, exposing bay-floor sediment and then pushing it back as water returned. Manatee County records show median home year-built around 1980 with 44 percent of homes pre-1980, meaning a lot of original gutter systems are still in service. Twice-a-year cleaning is the minimum protection on housing stock that age.",
+    propsOverride: [
+      ["Hand debris removal","Oak leaves, pine needles, palm fronds, roof grit, all cleared and bagged off site."],
+      ["Downspout flush + flow test","Live water through every run. Bradenton's mix of waterfront and inland topography means drainage cannot be assumed."],
+      ["Original-system pitch check","44 percent of Bradenton homes are pre-1980. Original gutter pitch is rarely what it should be after 45 years."],
+      ["Storm-readiness report","With three named storms in 10 years we know what fails first. We document it before the next one tests it."],
+    ],
+    faqs: [
+      { q: "How much is gutter cleaning in Bradenton?", a: "Single-story homes in established neighborhoods like Cortez, Palma Sola, or West Bradenton run $150 to $275 for a full clean with downspout flushing and flow testing. Two-story homes and properties along the Manatee River or in Lakewood Ranch run $225 to $375. Waterfront homes on Anna Maria Island and Longboat Key get walked and quoted on a per-property basis because corrosion inspection is part of the work. Free flat-price estimate by phone or text." },
+      { q: "Why does Bradenton gutter cleaning need to happen before hurricane season?", a: "NOAA's hurricane season opens June 1 and peak rainfall hits July through September. A gutter clogged with last winter's debris will overflow in the first heavy thunderstorm of June and pull water into the fascia for the next four months. After Idalia in 2023 we logged cleanings throughout Bradenton where gutters were full to the lip within 12 hours of the storm hitting. Pre-season cleaning, ideally May, is the structural fix." },
+      { q: "What happens to old Bradenton gutters in a hurricane?", a: "Three failure modes. Original hangers spaced too wide pull loose under the weight of water plus debris. Aluminum that has been oxidizing for 30 plus years cracks at the fastener points. Downspouts disconnect at the elbow and water dumps directly against the foundation. Pre-season inspection catches all three. The cleaning visit is the right time to do it." },
+      { q: "Do you clean gutters in Lakewood Ranch?", a: "Yes. Lakewood Ranch spans the Sarasota and Manatee county line and we work both sides. Lakewood Ranch HOAs have strict contractor-insurance and cleanup requirements. We provide a current certificate of insurance, follow posted hours, and leave the property cleaner than we found it. Most Lakewood Ranch homes are post-2000 construction, so the cleaning is more debris-management than original-system rehab." },
+      { q: "How long does a gutter cleaning take in Bradenton?", a: "Single-story homes typically take 60 to 90 minutes start to finish, including the bagged debris haul-off. Two-story homes and homes with mature canopy run two to three hours. Estate properties and homes with heavy multi-year clog can run a half day. We block the time when we book the visit so we are not rushed off site before the flow test is done." },
+      { q: "Do you provide damage reports for insurance claims?", a: "Yes. After named storms we write insurance-ready reports with photos, scope of damage, and replacement-cost itemization, formatted to support a claim. If your Bradenton gutter system was damaged by Idalia, Ian, or any other named storm and you have an open claim, the cleaning visit is the right time to also document what needs to be replaced. We work directly with adjusters when needed." },
+    ],
+    neighborhoodsOfNote: ["Cortez","Palma Sola","West Bradenton","Lakewood Ranch","Bayshore Gardens","Anna Maria Island","Longboat Key","Palmetto","Parrish"],
+    trustNumbers: ["170 Bradenton projects in the JR One CompanyCam record since November 2022, the highest density of any market we serve outside Tampa and St. Petersburg"],
+  },
+
+  "brandon/gutter-repair": {
+    introOverride: "Brandon's housing stock skews newer than coastal Pinellas, median year-built 1990 with 45 percent of homes built after 2000 per Hillsborough County records. But newer does not mean trouble-free. Brandon gets 80 thunderstorm days per year and four named storms in the last ten years (Idalia, Ian, Eta, Elsa) per NOAA, and a 1990s or 2000s suburban subdivision install often used volume-builder shortcuts on gutter pitch, hanger spacing, and downspout sizing. Twenty-plus years later those shortcuts surface as sagging runs, separated seams, and overflow at every heavy rain.",
+    propsOverride: [
+      ["Re-pitch and re-hang","Most Brandon sag is fixed with proper hangers at proper spacing, not with brand-new gutters."],
+      ["Seam sealing done right","Commercial-grade gutter sealant, not silicone caulk that fails by next summer."],
+      ["Downspout resize and replacement","Volume builders undersized downspouts in 1990s Brandon. We upsize to handle real Florida rain volume."],
+      ["Storm damage documentation","Insurance-ready scope and photos if the claim is open after Idalia or any future storm."],
+    ],
+    faqs: [
+      { q: "How much does gutter repair cost in Brandon?", a: "Spot repairs (one seam, one downspout, a few hanger replacements) typically run $175 to $425. Full re-pitch and re-hang of a single run runs $300 to $600 depending on length and access. Section replacement on a damaged run is $8 to $14 per linear foot installed including matching the existing profile. Free flat-price estimate at the property, no per-trip charge for the visit." },
+      { q: "Should I repair my Brandon gutters or replace them?", a: "Depends on three things. If the aluminum itself is sound and the problem is hangers, seams, or pitch, repair is the right call and runs roughly one-third to one-half the cost of replacement. If the aluminum is cracked at multiple points, the original profile is too small for the roof load (most 1990s Brandon installs are), or you are replacing more than 40 percent of the linear footage in spot work, replacement makes more sense. We walk the property and tell you straight which way the math works. We do not push replacement when repair is the right answer." },
+      { q: "What causes Brandon gutters to sag?", a: "Three common causes. First, original hanger spacing too wide for Florida rain volume, common in 1990s and 2000s volume-builder installs. Second, hanger nails or screws that have pulled loose from fascia that has softened from moisture. Third, accumulated debris weight pulling the gutter forward over years of missed cleanings. The fix is rarely the gutter itself, it is the hangers, the fascia, and the maintenance schedule. Re-pitch and re-hang at proper spacing fixes most sag without replacement." },
+      { q: "Do you do storm-damage gutter repair in Brandon?", a: "Yes, and we prioritize storm calls. After Idalia in 2023 and Ian in 2022 we logged hundreds of Brandon repair visits, most of them sections pulled loose from fascia, downspouts torn off at the elbow, and runs separated at seams from wind-pressure differential. We document everything for insurance with photos and itemized scope. If your gutter is loose or hanging after a storm, do not wait for the next rain event." },
+      { q: "Can you repair gutters that have already pulled away from the fascia?", a: "Usually yes, depending on the condition of the fascia underneath. If the fascia is sound, we re-hang at proper spacing with new fasteners and re-pitch the run. If the fascia behind the gutter is soft or rotted (common on 1990s Brandon homes that have had clogged gutters), we quote the fascia replacement as a separate line item before re-hanging. We do not screw new gutters into rotted fascia and pretend it is fixed." },
+      { q: "How long do gutter repairs in Brandon last?", a: "A proper re-pitch and re-hang with new hidden hangers at correct spacing typically lasts 10 to 15 years before any of that hardware needs attention again, assuming the gutter itself is sound and the homeowner keeps up with twice-a-year cleaning. A silicone-caulk seam repair done by a handyman typically fails the next summer. The difference is the spec and the hardware. We use commercial-grade gutter sealant and hidden hangers screwed into solid fascia." },
+      { q: "Do you provide warranties on Brandon gutter repairs?", a: "Yes. Workmanship warranty on all repair work, written, with the scope itemized so there is no ambiguity about what is covered. Manufacturer warranty on any replacement aluminum or hardware we install. Full terms provided in writing before work begins. We are family-owned with over 30 years in Tampa Bay, we are not going anywhere if you need warranty service two years from now." },
+    ],
+    neighborhoodsOfNote: ["Brandon Pointe","Bloomingdale","Providence Lakes","Sterling Ranch","Brandon Hills","Lakemont","Lake Brandon"],
+    trustNumbers: ["60 Brandon projects in the JR One CompanyCam record since February 2023, with current top-10 organic ranking for gutter repair in Brandon"],
+  },
+
+  "wesley-chapel/seamless-aluminum-gutters": {
+    introOverride: "Wesley Chapel is a newer-construction market, median home year-built 2000 per Pasco County records and roughly 70 percent of homes built after 2000. That means a lot of original-install gutter systems are now reaching the 20 to 25 year point where volume-builder aluminum is showing its age, sagging, cracking at fastener points, and overflowing because the original 5-inch profile cannot handle current rainfall volume. Pasco's flat terrain plus 50.8 inches of average annual rainfall per NOAA make proper downspout sizing critical, water that does not exit cleanly pools at the slab. We install 6-inch and 7-inch K-style on Wesley Chapel homes. We do not install 5-inch in Florida.",
+    propsOverride: [
+      ["On-site fabrication","Cut to your exact roofline from a single coil, no warehouse-stocked sections."],
+      ["6-inch and 7-inch K-style","Wesley Chapel rain volume needs 6-inch minimum. 7-inch for steeper rooflines or larger 2,800 plus sq ft footprints common in Estancia at Wiregrass and Saddlebrook."],
+      ["25 plus colors","Matched to existing fascia, trim, and body. HOA architectural-review compatible."],
+      ["Hidden hangers, screw-in","Pasco County wind code requires it. We install it that way regardless of whether it gets inspected."],
+    ],
+    faqs: [
+      { q: "How much does seamless aluminum gutter installation cost in Wesley Chapel?", a: "Single-story homes in Seven Oaks, Meadow Pointe, or Lexington Oaks typically run $1,800 to $3,400 for a full gutter replacement including downspouts and hidden hangers. Larger custom homes in Estancia at Wiregrass or Saddlebrook run $3,500 to $6,500 depending on linear footage, roofline complexity, and color. Two-story homes add roughly 30 percent. Free flat-price estimate after a property walk, no per-foot surprises." },
+      { q: "Why 6-inch instead of 5-inch gutters in Wesley Chapel?", a: "Volume. Florida thunderstorms drop more rain in a 15-minute window than most U.S. markets see in an hour. A 5-inch K-style gutter overflows under Wesley Chapel rain volume even when perfectly clean. JR One installs 6-inch as the minimum on every Florida home and 7-inch on steeper rooflines or larger footprints. We do not install 5-inch in Florida. It does not match the climate." },
+      { q: "How long does seamless gutter installation take in Wesley Chapel?", a: "Most single-story homes complete in a single day, fabrication on site in the morning, install in the afternoon. Two-story homes and larger custom homes run one to two days depending on complexity. We coordinate the install date with HOA architectural-review approval where required, most Wesley Chapel subdivisions need it." },
+      { q: "Do Wesley Chapel HOAs require approval before gutter replacement?", a: "Most do. Seven Oaks, Meadow Pointe, Lexington Oaks, Saddlebrook, Lake Bernadette, and Estancia at Wiregrass all have architectural-review boards that require color match documentation and contractor insurance before approval. We provide the color sample, the spec sheet, and the certificate of insurance as a standard part of the estimate. We do not start work until the HOA approval is in writing." },
+      { q: "Can you match my existing fascia and trim colors?", a: "Yes. We carry 25 plus aluminum colors and can color-match to existing fascia, trim, and body within the standard palette. If your HOA spec requires a specific named color (common in master-planned Wesley Chapel communities), we will confirm the match before fabrication. The goal is for the new gutter to look like part of the original architecture, not an aftermarket addition." },
+      { q: "What is the warranty on JR One seamless gutters in Wesley Chapel?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and the hidden hangers. We are family-owned with over 30 years in Tampa Bay, and we have been working Pasco County since 2023 with 77 logged Wesley Chapel projects. If you need warranty service three years from now, we are still here." },
+      { q: "Will you remove and dispose of my old gutters?", a: "Yes. Old gutter, old hangers, old downspouts, all removed and hauled off site as part of the install. We sweep the property and check beds and walkways before we leave. No piles of scrap aluminum left at the curb for the homeowner to deal with." },
+    ],
+    neighborhoodsOfNote: ["Seven Oaks","Meadow Pointe","Lexington Oaks","Saddlebrook","Lake Bernadette","Estancia at Wiregrass","Country Walk","Watergrass"],
+    trustNumbers: ["77 Wesley Chapel projects in the JR One CompanyCam record since February 2023, the highest density of any Pasco County market we serve"],
+  },
+
+  "brandon/gutter-guards": {
+    introOverride: "Brandon's tree coverage is the gutter-guard case in one fact: mature oak and pine drop debris into gutters faster than a twice-a-year cleaning schedule can keep up with. Hillsborough County records show median home year-built 1990 with 45 percent post-2000, and many of those subdivisions backed up to wooded preserves or were built around existing oak canopy. Brandon also gets 80 thunderstorm days a year per NOAA, which drives wind-blown debris into gutters in single-storm bursts. Guards turn a three-cleanings-a-year property into a once-a-year inspection property, and they pay for themselves in two to four years on a typical Brandon home.",
+    propsOverride: [
+      ["Micro-mesh stainless guard","Blocks pine needles, the test most consumer guards fail. Brandon has too many pines for anything less."],
+      ["Works with existing 6-inch and 7-inch gutters","Retrofit onto your current system, no full replacement needed if the existing gutter is sound."],
+      ["Cuts cleaning frequency","Three cleanings a year drops to one inspection visit. Math works in 2 to 4 years."],
+      ["Lifetime mesh warranty","The mesh itself does not rust, warp, or collapse under debris load. Written warranty in the install package."],
+    ],
+    faqs: [
+      { q: "How much do gutter guards cost in Brandon?", a: "Micro-mesh stainless guard installation typically runs $8 to $14 per linear foot installed in Brandon. A standard single-story home with 150 to 200 linear feet of gutter runs $1,200 to $2,800 total. Larger two-story homes and homes with complex rooflines run higher. Free flat-price estimate at the property, no per-trip charge for the visit." },
+      { q: "Are gutter guards worth it in Brandon?", a: "On a property with mature oak or pine canopy, yes. A typical Brandon home with heavy tree coverage needs three cleanings per year at roughly $200 to $300 each, so $600 to $900 annually. A guard install at $1,500 to $2,500 pays back in two to four years and lasts 20 plus. On a property with minimal tree coverage, guards are still nice but the math is closer to break-even, and we will tell you that straight during the estimate." },
+      { q: "Will gutter guards stop pine needles?", a: "Micro-mesh stainless guards do, if the mesh is fine enough. Most consumer-grade guards on the market (the perforated metal screen at hardware stores) fail the pine-needle test, needles slide right through the holes and clog the gutter underneath where you cannot reach them. JR One installs micro-mesh that handles pine needles, which matters in Brandon because pine canopy is everywhere from Lakemont to Sterling Ranch." },
+      { q: "Do gutter guards work with existing 6-inch gutters?", a: "Yes. We retrofit guards onto sound existing 6-inch and 7-inch K-style gutters. If the existing gutter has separated seams, sagging runs, or pulled-loose hangers, we address those issues first or quote a full replacement, installing guards on a failing gutter is throwing money away. We walk the property and tell you straight which path makes sense." },
+      { q: "How long do gutter guards last in Brandon?", a: "Stainless steel micro-mesh itself does not rust, warp, or collapse under debris load, it lasts the life of the gutter system. The frame and fasteners typically warrant for 20 plus years. The gutter underneath is the wearing part, and a properly maintained gutter with guards installed lasts 25 to 35 years in Florida." },
+      { q: "Will I still need any gutter maintenance with guards installed?", a: "Yes, but it shrinks from active cleaning to once-a-year inspection. Some fine debris and pollen accumulates on top of the mesh and gets washed off by the next rain, but if pine needles or oak leaves pile up enough to block the mesh from above, they need to be brushed off. We offer an annual inspection visit for guarded homes that handles this in 30 minutes. Most homeowners do it themselves with a leaf blower from a ladder twice a year." },
+      { q: "Do you offer storm-damage warranty on Brandon gutter guards?", a: "Yes. Workmanship warranty on the install, written, full terms in the package. Manufacturer warranty on the mesh and frame. After named storms we provide insurance-ready damage documentation if any component fails outside warranty. We are family-owned with over 30 years in Tampa Bay and currently rank in the top 10 organically for gutter guards in Brandon, which means we are not going anywhere if you need service two years from now." },
+    ],
+    neighborhoodsOfNote: ["Bloomingdale","Brandon Pointe","Providence Lakes","Sterling Ranch","Brandon Hills","Lakemont","Lake Brandon","FishHawk Ranch"],
+    trustNumbers: ["60 Brandon projects in the JR One CompanyCam record since February 2023, with current top-10 organic ranking for gutter guards in Brandon"],
+  },
+
+  "sarasota/gutter-repair": {
+    introOverride: "Sarasota housing skews the oldest in our service area, median year-built around 1975 with roughly 52 percent of homes built before 1980 per Sarasota County records. Original gutter systems on 50-year-old fascia behind 50-year-old roofs are not failing because of one cause, they are failing because hangers loosened, fascia softened, downspouts undersized, and seams separated, all at once. Add 53.1 inches of average annual rainfall per NOAA and three named storms in the last ten years (Idalia, Ian, Eta), and Sarasota gutter repair is a specialist call, not a handyman caulk job.",
+    propsOverride: [
+      ["Re-pitch and re-hang","Original-pitch 1970s gutters rarely drain right after 50 years. Proper hangers, proper spacing fix it."],
+      ["Seam sealing done right","Commercial-grade gutter sealant, not silicone caulk. 10 to 15 year fix instead of next-summer fix."],
+      ["Downspout resize","Original 1970s downspouts are undersized for current Florida rain volume. We upsize."],
+      ["Storm-claim documentation","Photos, scope, replacement-cost itemization, insurance-ready, after Idalia, Ian, or any future storm."],
+    ],
+    faqs: [
+      { q: "How much does gutter repair cost in Sarasota?", a: "Spot repairs (one seam, one downspout, hanger replacement) typically run $200 to $475. Full re-pitch and re-hang of a single run is $325 to $700 depending on length and access. Section replacement on a damaged run is $9 to $15 per linear foot installed including matching the existing profile. Estate properties west of Trail or on the keys are walked and quoted on a per-property basis. Free flat-price estimate, no per-trip charge." },
+      { q: "Should I repair or replace my 1970s Sarasota gutters?", a: "Honest answer, sometimes the better economics is replacement, and we will tell you that even though the repair quote is smaller. If the aluminum is cracked at multiple points from 50 years of UV and salt-air exposure, if the original profile is too small for current rain volume (most 1970s installs are), and if you are replacing more than 40 percent of linear footage in spot work anyway, full replacement saves money in the long run. If the aluminum is still sound and the issue is hangers, seams, or pitch, repair is the right call. We walk the property and tell you straight." },
+      { q: "What is special about repairing older Sarasota homes?", a: "Two things. First, fascia behind 50-year-old gutters is often soft from decades of moisture exposure, and you cannot screw new hardware into rotted wood and call it fixed. We document fascia condition and quote any rebuild separately before doing the gutter work. Second, original-install pitch was rarely Florida-rain-volume correct even in 1975. A flow test with live water tells you in two minutes what is actually happening up there, and most older Sarasota homes need a re-pitch in addition to whatever else got us called out." },
+      { q: "Do you handle gutter repair on Siesta Key, Lido Key, and Bird Key?", a: "Yes. Island properties get the same service standard as inland Sarasota. We work around bridge access, gated communities, and HOA architectural-review requirements. Salt-air corrosion is more aggressive on the keys, so even repair calls double as corrosion inspections on every fastener, downspout elbow, and aluminum-to-aluminum joint." },
+      { q: "Can you repair storm damage after a hurricane?", a: "Yes. After Idalia in 2023 and Ian in 2022 we logged dozens of Sarasota storm-damage repair calls. Sections pulled loose from fascia, downspouts torn off at the elbow, runs separated at seams from wind-pressure differential. We document everything for insurance with photos and itemized scope. We work directly with adjusters. If your gutter is loose, hanging, or detached after a storm, do not wait for the next rain event to call." },
+      { q: "Do you provide warranties on Sarasota gutter repairs?", a: "Yes. Workmanship warranty on all repair work, written, with itemized scope. Manufacturer warranty on any replacement aluminum or hardware. Full terms provided in the estimate package. We are family-owned with over 30 years in Tampa Bay and have 85 logged Sarasota projects in the CompanyCam record since 2022. We are not a fly-by-night, we will be here if you need warranty service two years from now." },
+      { q: "How long do JR One Sarasota gutter repairs last?", a: "A proper re-pitch and re-hang with hidden hangers at correct spacing typically lasts 10 to 15 years before that hardware needs attention again, assuming the gutter itself is sound and the homeowner cleans twice a year. A commercial-grade seam reseal lasts 10 plus years. A silicone-caulk handyman repair typically fails the next summer. The difference is spec and hardware, not effort." },
+    ],
+    neighborhoodsOfNote: ["Palmer Ranch","Lakewood Ranch","Siesta Key","Lido Key","Bird Key","Gulf Gate","Sarasota Springs","West of Trail","Oyster Bay","Arlington Park"],
+    trustNumbers: ["85 Sarasota projects in the JR One CompanyCam record since November 2022, across cleanings, repairs, and seamless-gutter replacements"],
+  },
+};
+
 // ── Next.js config ────────────────────────────────────────────────────────
 export async function generateStaticParams() {
   const params = [];
@@ -229,6 +446,11 @@ export default async function CityServicePage({ params }) {
   const svc = SERVICES[service];
   const url = `https://jronegutters.com/areas/${slug}/${service}`;
 
+  // Phase 3 Batch 1 — top-10 ROI combo enrichment lookup. Falls through to
+  // generic template when no enrichment is defined for this combo.
+  const enrichment = ENRICHMENT[`${slug}/${service}`] || null;
+  const propsToRender = enrichment?.propsOverride || svc.props;
+
   const otherServices = Object.entries(SERVICES).filter(([k]) => k !== service);
 
   const serviceSchema = {
@@ -272,10 +494,26 @@ export default async function CityServicePage({ params }) {
     ],
   };
 
+  // FAQPage JSON-LD only emitted when enrichment provides FAQs.
+  const faqSchema = enrichment?.faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: enrichment.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       <div style={{ background: C.bg, minHeight: "100vh", fontFamily: f.b, color: C.white }}>
         <SiteNav />
@@ -316,20 +554,35 @@ export default async function CityServicePage({ params }) {
           <span style={{ color: C.gold }}>{svc.name}</span>
         </nav>
 
-        {/* Intro */}
+        {/* Intro — enriched combos replace city.localP + city.weatherNote with
+            a service-specific opening paragraph; svc.who line stays for service
+            relevance. */}
         <section style={{ maxWidth: "900px", margin: "0 auto", padding: "40px 20px" }}>
           <h2 style={{ fontFamily: f.h, fontSize: "28px", fontWeight: 700, color: C.gold, marginBottom: "18px" }}>
             Why {svc.short} matters in {city.name}
           </h2>
-          <p style={{ fontSize: "17px", lineHeight: 1.7, color: C.offWhite, marginBottom: "18px" }}>
-            {city.localP}
-          </p>
-          <p style={{ fontSize: "17px", lineHeight: 1.7, color: C.offWhite, marginBottom: "18px" }}>
-            {city.weatherNote}
-          </p>
+          {enrichment?.introOverride ? (
+            <p style={{ fontSize: "17px", lineHeight: 1.7, color: C.offWhite, marginBottom: "18px" }}>
+              {enrichment.introOverride}
+            </p>
+          ) : (
+            <>
+              <p style={{ fontSize: "17px", lineHeight: 1.7, color: C.offWhite, marginBottom: "18px" }}>
+                {city.localP}
+              </p>
+              <p style={{ fontSize: "17px", lineHeight: 1.7, color: C.offWhite, marginBottom: "18px" }}>
+                {city.weatherNote}
+              </p>
+            </>
+          )}
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: C.offWhite }}>
             {svc.who} JR One has over 30 years of Tampa Bay aluminum specialist experience, and we bring the same Gold Standard service to every {city.name} project, fully insured, bilingual English/Spanish, family-owned and family-operated.
           </p>
+          {enrichment?.trustNumbers?.length > 0 && (
+            <p style={{ fontSize: "16px", lineHeight: 1.7, color: C.gold, marginTop: "18px", fontStyle: "italic" }}>
+              {enrichment.trustNumbers.join(" · ")}.
+            </p>
+          )}
         </section>
 
         {/* Value props */}
@@ -339,7 +592,7 @@ export default async function CityServicePage({ params }) {
               What {city.name} homeowners get with JR One
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "22px" }}>
-              {svc.props.map(([title, body]) => (
+              {propsToRender.map(([title, body]) => (
                 <div key={title} style={{ background: C.navyMid, padding: "22px", borderRadius: "10px", border: `1px solid ${C.navyLight}` }}>
                   <h3 style={{ fontFamily: f.h, fontSize: "16px", fontWeight: 700, color: C.gold, marginBottom: "8px" }}>{title}</h3>
                   <p style={{ fontSize: "14.5px", color: C.offWhite, lineHeight: 1.55, margin: 0 }}>{body}</p>
@@ -371,6 +624,48 @@ export default async function CityServicePage({ params }) {
             <CityPortfolio citySlug={slug} cityName={city.name} serviceFilter={service} limit={9} />
           </div>
         </section>
+
+        {/* FAQ section — enriched combos only. FAQPage JSON-LD emitted in head. */}
+        {enrichment?.faqs?.length > 0 && (
+          <section style={{ maxWidth: "900px", margin: "0 auto", padding: "50px 20px" }}>
+            <h2 style={{ fontFamily: f.h, fontSize: "28px", fontWeight: 700, color: C.gold, marginBottom: "28px", textAlign: "center" }}>
+              Frequently asked, {svc.short} in {city.name}
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: "22px" }}>
+              {enrichment.faqs.map((f, i) => (
+                <div key={i} style={{ background: C.navyMid, padding: "22px 24px", borderRadius: "10px", border: `1px solid ${C.navyLight}` }}>
+                  <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "17px", fontWeight: 700, color: C.white, margin: "0 0 12px" }}>
+                    {f.q}
+                  </h3>
+                  <p style={{ fontSize: "15.5px", color: C.offWhite, lineHeight: 1.65, margin: 0 }}>
+                    {f.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Neighborhood callouts — enriched combos only. */}
+        {enrichment?.neighborhoodsOfNote?.length > 0 && (
+          <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "20px 20px 40px" }}>
+            <div style={{ background: C.navyMid, padding: "28px", borderRadius: "10px", border: `1px solid ${C.gold}` }}>
+              <h3 style={{ fontFamily: f.h, fontSize: "18px", fontWeight: 700, color: C.gold, marginBottom: "14px" }}>
+                {svc.name} across {city.name} neighborhoods
+              </h3>
+              <p style={{ fontSize: "15px", color: C.offWhite, lineHeight: 1.65, margin: "0 0 14px" }}>
+                We work {svc.short} jobs across {city.name} including:
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+                {enrichment.neighborhoodsOfNote.map((n) => (
+                  <span key={n} style={{ background: C.navyLight, color: C.white, padding: "8px 14px", borderRadius: "20px", fontSize: "14px", fontFamily: f.h, fontWeight: 600 }}>
+                    {n}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Cross-links */}
         <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "20px 20px 50px" }}>
