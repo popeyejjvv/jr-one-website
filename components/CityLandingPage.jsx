@@ -1,16 +1,12 @@
-"use client";
-
 /* ═══════════════════════════════════════════════════════════
    JR ONE ALUMINUM: CITY LANDING TEMPLATE
-   Brand-brain compliant. Tokens via app/tokens.css.
-   Renders for every city + every city/service combo.
-   City DATA is preserved; prose strings have em-dashes
-   converted to keyboard punctuation and puffery stripped
-   from hero headlines per brand-brain.
+   Server component. Lang is passed as a prop (en | es) by the page
+   wrapper; SiteNav / SiteFooter / MobileCTA / CityLeadForm are
+   client islands that consume LanguageContext for the toggle.
+   Phase 1.5 FCP refactor 2026-05-29: dropped "use client" and the
+   form's useState so the bulk of the page ships zero JS.
    ═══════════════════════════════════════════════════════════ */
 
-import { useState } from "react";
-import { useLanguage } from "../lib/LanguageContext";
 import SiteNav from "./SiteNav";
 import SiteFooter from "./SiteFooter";
 import MobileCTA from "./MobileCTA";
@@ -21,8 +17,8 @@ import ServiceCard from "./ui/ServiceCard";
 import ReviewCard from "./ui/ReviewCard";
 import ProcessStep from "./ui/ProcessStep";
 import TrustLine from "./ui/TrustLine";
-import PhotoUpload from "./ui/PhotoUpload";
-import { CheckCircleIcon, MapPinIcon, PhoneIcon } from "./../lib/icons";
+import CityLeadForm from "./CityLeadForm";
+import { MapPinIcon, PhoneIcon } from "./../lib/icons";
 
 // ══════════════════════════════════════════════════════════
 // CITY DATA: Unique per city
@@ -637,27 +633,12 @@ const T = {
   },
 };
 
-const inputStyle = {
-  width: "100%",
-  padding: "13px 16px",
-  fontFamily: "var(--jr-font-body)",
-  fontSize: 15,
-  border: "1.5px solid #D1D5DB",
-  borderRadius: "var(--jr-radius-md)",
-  outline: "none",
-  color: "var(--jr-ink)",
-  background: "#FAFAFA",
-  marginBottom: 12,
-  transition: "border-color var(--jr-dur-fast) var(--jr-ease-out)",
-  boxSizing: "border-box",
-};
-
 // ══════════════════════════════════════════════════════════
-// CITY PAGE COMPONENT
+// CITY PAGE COMPONENT (server)
+// Lang prop drives EN vs ES content; form is a client island.
 // ══════════════════════════════════════════════════════════
-export default function CityLandingPage({ citySlug = "tampa", portfolio = null }) {
-  const { lang } = useLanguage();
-  const t = T[lang];
+export default function CityLandingPage({ citySlug = "tampa", portfolio = null, lang = "en" }) {
+  const t = T[lang] || T.en;
   const city = CITIES[citySlug];
   const cityEs = CITIES_ES[citySlug] || {};
   const servicesData = lang === "es" ? SERVICES_ES : SERVICES;
@@ -665,44 +646,6 @@ export default function CityLandingPage({ citySlug = "tampa", portfolio = null }
     ...r,
     service: i === 2 ? (city ? city.county : r.service) : r.service,
   }));
-  const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "", service: "" });
-  const [photos, setPhotos] = useState([]);
-  const [photoProcessing, setPhotoProcessing] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [formLoading, setFormLoading] = useState(false);
-
-  const handleCityForm = async (e) => {
-    e?.preventDefault?.();
-    if (!formData.name || !formData.phone) return;
-    setFormLoading(true);
-    try {
-      const params = new URLSearchParams(window.location.search);
-      await fetch("/api/send-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email,
-          service: formData.service,
-          zip: formData.zip,
-          photos,
-          page: window.location.pathname,
-          city: city.name,
-          state: "FL",
-          gclid: params.get("gclid") || "",
-          utm_source: params.get("utm_source") || "",
-          utm_medium: params.get("utm_medium") || "",
-          utm_campaign: params.get("utm_campaign") || "",
-          utm_term: params.get("utm_term") || "",
-        }),
-      });
-    } catch {
-      /* ignore network failure, still show received state */
-    }
-    setSubmitted(true);
-    setFormLoading(false);
-  };
 
   if (!city) {
     return (
@@ -881,138 +824,25 @@ export default function CityLandingPage({ citySlug = "tampa", portfolio = null }
                 </div>
               </div>
 
-              {/* QUOTE FORM */}
-              <div id="city-form">
-                <div
-                  style={{
-                    background: "var(--jr-paper)",
-                    borderRadius: "var(--jr-radius-xl)",
-                    padding: "var(--jr-space-8) var(--jr-space-6)",
-                    boxShadow: "var(--jr-shadow-form)",
-                  }}
-                >
-                  {submitted ? (
-                    <div style={{ textAlign: "center", padding: "var(--jr-space-6) 0" }}>
-                      <div style={{ display: "inline-flex", color: "var(--jr-success)", marginBottom: "var(--jr-space-3)" }}>
-                        <CheckCircleIcon size={48} />
-                      </div>
-                      <h2
-                        style={{
-                          fontFamily: "var(--jr-font-heading)",
-                          fontSize: "var(--jr-text-xl)",
-                          fontWeight: 700,
-                          color: "var(--jr-navy)",
-                          marginBottom: "var(--jr-space-2)",
-                        }}
-                      >
-                        {t.received}
-                      </h2>
-                      <p
-                        style={{
-                          fontFamily: "var(--jr-font-body)",
-                          fontSize: "var(--jr-text-md)",
-                          color: "var(--jr-muted-on-light)",
-                        }}
-                      >
-                        {t.receivedSub}
-                      </p>
-                    </div>
-                  ) : (
-                    <form onSubmit={handleCityForm}>
-                      <h2
-                        style={{
-                          fontFamily: "var(--jr-font-heading)",
-                          fontSize: "var(--jr-text-lg)",
-                          fontWeight: 700,
-                          color: "var(--jr-navy)",
-                          textAlign: "center",
-                          marginBottom: "var(--jr-space-1)",
-                        }}
-                      >
-                        {t.freeQuoteFor}
-                        {city.name}
-                        {t.freeQuoteSuffix}
-                      </h2>
-                      <div
-                        aria-hidden
-                        style={{
-                          width: 40,
-                          height: 3,
-                          background: "var(--jr-gold)",
-                          borderRadius: 2,
-                          margin: "10px auto var(--jr-space-5)",
-                        }}
-                      />
-                      <input
-                        aria-label={t.placeName}
-                        style={inputStyle}
-                        placeholder={t.placeName}
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        required
-                      />
-                      <input
-                        aria-label={t.placePhone}
-                        style={inputStyle}
-                        placeholder={t.placePhone}
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        required
-                      />
-                      <input
-                        aria-label={t.placeEmail}
-                        style={inputStyle}
-                        placeholder={t.placeEmail}
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      />
-                      <select
-                        aria-label={t.placeService}
-                        style={{ ...inputStyle, cursor: "pointer" }}
-                        value={formData.service}
-                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      >
-                        {t.serviceOpts.map((o, i) => (
-                          <option key={i} value={i === 0 ? "" : o}>
-                            {o}
-                          </option>
-                        ))}
-                      </select>
-                      <input
-                        aria-label={t.placeZip}
-                        style={inputStyle}
-                        placeholder={t.placeZip}
-                        value={formData.zip}
-                        onChange={(e) => setFormData({ ...formData, zip: e.target.value })}
-                        maxLength={5}
-                      />
-                      <PhotoUpload
-                        photos={photos}
-                        onChange={setPhotos}
-                        onProcessingChange={setPhotoProcessing}
-                        theme="light"
-                        idPrefix="city-photo"
-                      />
-                      <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading || photoProcessing}>
-                        {formLoading ? "..." : t.requestQuote}
-                      </Button>
-                      <p
-                        style={{
-                          fontFamily: "var(--jr-font-body)",
-                          fontSize: "var(--jr-text-xs)",
-                          color: "var(--jr-muted-on-light)",
-                          textAlign: "center",
-                          marginTop: "var(--jr-space-3)",
-                        }}
-                      >
-                        {t.noSpam}
-                      </p>
-                    </form>
-                  )}
-                </div>
-              </div>
+              {/* QUOTE FORM (client island) */}
+              <CityLeadForm
+                citySlug={citySlug}
+                cityName={city.name}
+                strings={{
+                  received: t.received,
+                  receivedSub: t.receivedSub,
+                  freeQuoteFor: t.freeQuoteFor,
+                  freeQuoteSuffix: t.freeQuoteSuffix,
+                  placeName: t.placeName,
+                  placePhone: t.placePhone,
+                  placeEmail: t.placeEmail,
+                  placeService: t.placeService,
+                  placeZip: t.placeZip,
+                  serviceOpts: t.serviceOpts,
+                  requestQuote: t.requestQuote,
+                  noSpam: t.noSpam,
+                }}
+              />
             </div>
           </Container>
         </section>
@@ -1237,6 +1067,7 @@ export default function CityLandingPage({ citySlug = "tampa", portfolio = null }
                 <a
                   key={i}
                   href={r.href}
+                  className="jr-resource-card"
                   style={{
                     display: "block",
                     background: "var(--jr-paper)",
@@ -1246,14 +1077,6 @@ export default function CityLandingPage({ citySlug = "tampa", portfolio = null }
                     textDecoration: "none",
                     color: "inherit",
                     transition: "border-color 0.2s, transform 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "var(--jr-gold)";
-                    e.currentTarget.style.transform = "translateY(-2px)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "var(--jr-hair)";
-                    e.currentTarget.style.transform = "translateY(0)";
                   }}
                 >
                   <h3

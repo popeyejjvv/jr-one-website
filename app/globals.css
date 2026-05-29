@@ -223,6 +223,10 @@ textarea:focus {
 }
 @media (hover: hover) and (pointer: fine) {
   .portfolio-photo:hover { box-shadow: var(--jr-shadow-md); }
+  .jr-resource-card:hover {
+    border-color: var(--jr-gold) !important;
+    transform: translateY(-2px);
+  }
 }
 .portfolio-photo img {
   width: 100%;
