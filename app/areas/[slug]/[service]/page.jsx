@@ -743,7 +743,7 @@ export default async function CityServicePage({ params }) {
           <div style={{ maxWidth: "900px", margin: "0 auto" }}>
             <div style={{ display: "inline-block", padding: "6px 16px", background: C.goldPale, borderRadius: "4px", marginBottom: "16px" }}>
               <span style={{ fontFamily: f.h, fontSize: "12px", fontWeight: 700, color: C.gold, letterSpacing: "3px" }}>
-                {city.name.toUpperCase()}, FL · SPECIALIST ALUMINUM CONTRACTOR
+                {city.name.toUpperCase()}, FL / SPECIALIST ALUMINUM CONTRACTOR
               </span>
             </div>
             <h1 style={{ fontFamily: f.h, fontSize: "clamp(32px,5vw,54px)", fontWeight: 800, lineHeight: 1.15, margin: "0 0 18px", color: C.white }}>
@@ -800,7 +800,7 @@ export default async function CityServicePage({ params }) {
           </p>
           {enrichment?.trustNumbers?.length > 0 && (
             <p style={{ fontSize: "16px", lineHeight: 1.7, color: C.gold, marginTop: "18px", fontStyle: "italic" }}>
-              {enrichment.trustNumbers.join(" · ")}.
+              {enrichment.trustNumbers.join(" / ")}.
             </p>
           )}
         </section>
@@ -826,8 +826,8 @@ export default async function CityServicePage({ params }) {
         <section style={{ padding: "40px 20px", textAlign: "center" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "14px", padding: "14px 26px", background: C.navyMid, borderRadius: "10px", border: `1px solid ${C.gold}` }}>
             <span style={{ color: C.gold, fontSize: "18px", letterSpacing: "2px" }}>★★★★★</span>
-            <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>4.9 / 5.0 · 55 reviews</span>
-            <span style={{ color: C.muted, fontSize: "14px" }}>· Fully insured · Bilingual EN/ES</span>
+            <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>4.9 / 5.0 from 55 reviews</span>
+            <span style={{ color: C.muted, fontSize: "14px" }}>Fully insured / Bilingual EN/ES</span>
           </div>
         </section>
 
@@ -942,7 +942,7 @@ export default async function CityServicePage({ params }) {
             </Link>
           </div>
           <p style={{ marginTop: "18px", fontSize: "13px", color: C.muted }}>
-            info@jronegutters.com · 3420 W Cherry St, Tampa, FL 33607
+            info@jronegutters.com / 3420 W Cherry St, Tampa, FL 33607
           </p>
         </section>
 
