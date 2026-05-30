@@ -623,10 +623,18 @@ export async function generateMetadata({ params }) {
   const title = `${svc.name} in ${city.name}, FL`;
   const description = `${svc.name} in ${city.name}, Florida. Family-owned specialist with over 30 years in Tampa Bay. Bilingual English/Spanish. Free estimate (844) 444-3114.`;
   const url = `https://jronegutters.com/areas/${slug}/${service}`;
+  // ES counterpart at /es/areas/[slug]/[service] not yet built — declare x-default only
+  // so the hreflang check passes the explicitly-allowed single-language fallback path.
+  // When the ES combo route ships, add "es-US": `https://jronegutters.com/es/areas/${slug}/${service}`.
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        "x-default": url,
+      },
+    },
     keywords: [
       `${svc.short} ${city.name} FL`,
       `${svc.short} ${city.name}`,
