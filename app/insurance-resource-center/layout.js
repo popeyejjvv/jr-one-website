@@ -5,8 +5,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Insurance Resource Center", item: "https://jronegutters.com/insurance-resource-center" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Insurance Resource Center", item: "https://www.jronegutters.com/insurance-resource-center" },
   ],
 };
 
@@ -14,11 +14,11 @@ export const metadata = {
   title: "Tampa Bay Storm Damage & Insurance Claims — Gutter, Soffit, Fascia",
   description:
     "Insurance claim help for storm-damaged gutters, soffit, fascia, and roofs in Tampa Bay. We document damage and provide contractor estimates for your adjuster. (844) 444-3114.",
-  alternates: { canonical: "https://jronegutters.com/insurance-resource-center" },
+  alternates: { canonical: "https://www.jronegutters.com/insurance-resource-center" },
   openGraph: {
     title: "Tampa Bay Storm Damage & Insurance Claims — JR One Aluminum",
     description: "We document storm damage and provide contractor estimates for your insurance adjuster.",
-    url: "https://jronegutters.com/insurance-resource-center",
+    url: "https://www.jronegutters.com/insurance-resource-center",
     type: "website",
   },
 };

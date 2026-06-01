@@ -8,7 +8,7 @@ const serviceSchema = {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
   },
@@ -39,9 +39,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Services", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 3, name: "Gutter Repair Tampa", item: "https://jronegutters.com/gutter-repair" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 3, name: "Gutter Repair Tampa", item: "https://www.jronegutters.com/gutter-repair" },
   ],
 };
 
@@ -49,7 +49,7 @@ const imageObjectSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
   contentUrl: "https://jronegutters.com/images/seamless-gutter-install.webp",
-  url: "https://jronegutters.com/images/seamless-gutter-install.webp",
+  url: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
   caption: "JR One Aluminum crew installing seamless aluminum gutter on a Tampa Bay home",
   description: "Professional gutter installer mounting a 6-inch white seamless aluminum gutter on a Florida home, gutter machine visible in the driveway.",
   creditText: "JR One Aluminum LLC",
@@ -102,11 +102,11 @@ export const metadata = {
   description:
     "Gutter repair Tampa Bay, sagging gutters, leaking seams, clogged downspouts, pitch correction, fascia repair. Same-week scheduling. Free assessment (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/gutter-repair",
+    canonical: "https://www.jronegutters.com/gutter-repair",
     languages: {
-      "en-US": "https://jronegutters.com/gutter-repair",
-      "es-US": "https://jronegutters.com/es/reparacion-canaletas-tampa",
-      "x-default": "https://jronegutters.com/gutter-repair",
+      "en-US": "https://www.jronegutters.com/gutter-repair",
+      "es-US": "https://www.jronegutters.com/es/reparacion-canaletas-tampa",
+      "x-default": "https://www.jronegutters.com/gutter-repair",
     },
   },
   keywords: [
@@ -121,11 +121,11 @@ export const metadata = {
   openGraph: {
     title: "Gutter Repair Tampa | JR One Aluminum",
     description: "Tampa Bay gutter repair specialists. Sagging, leaks, overflow, fascia. Fixed same week by aluminum experts with 30+ years experience. (844) 444-3114.",
-    url: "https://jronegutters.com/gutter-repair",
+    url: "https://www.jronegutters.com/gutter-repair",
     type: "website",
     images: [
       {
-        url: "https://jronegutters.com/images/seamless-gutter-install.webp",
+        url: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
         width: 1920,
         height: 1080,
         alt: "JR One Aluminum installer repairing a seamless gutter on a Tampa Bay home",

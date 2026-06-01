@@ -6,7 +6,7 @@ const serviceSchema = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
   },
@@ -26,8 +26,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Peak 301 Roof Rejuvenation", item: "https://jronegutters.com/peak-301" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Peak 301 Roof Rejuvenation", item: "https://www.jronegutters.com/peak-301" },
   ],
 };
 
@@ -36,17 +36,17 @@ export const metadata = {
   description:
     "Peak 301 soy-based roof rejuvenation in Tampa Bay. Adds 6-10 years of life. 6-year warranty. Supports Florida insurance renewal under Statute 627.7011. Free inspection, (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/peak-301",
+    canonical: "https://www.jronegutters.com/peak-301",
     languages: {
-      "en-US": "https://jronegutters.com/peak-301",
-      "es-US": "https://jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa",
-      "x-default": "https://jronegutters.com/peak-301",
+      "en-US": "https://www.jronegutters.com/peak-301",
+      "es-US": "https://www.jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa",
+      "x-default": "https://www.jronegutters.com/peak-301",
     },
   },
   openGraph: {
     title: "Peak 301 Roof Rejuvenation Tampa FL, JR One Aluminum",
     description: "Extend roof life 6-10 years at a fraction of replacement cost. Supports Florida insurance renewal.",
-    url: "https://jronegutters.com/peak-301",
+    url: "https://www.jronegutters.com/peak-301",
     type: "website",
   },
 };

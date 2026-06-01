@@ -13,7 +13,7 @@ const organizationSchemaEs = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   name: "JR One Aluminum LLC",
-  url: "https://jronegutters.com/es",
+  url: "https://www.jronegutters.com/es",
   telephone: "(844) 444-3114",
   email: "info@jronegutters.com",
   inLanguage: "es-US",
@@ -41,7 +41,7 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
   ],
 };
 
@@ -49,21 +49,21 @@ export const metadata = {
   title: "Canaletas, Sofito y Fascia en Tampa Bay | JR One Aluminum - Hablamos Espanol",
   description: "Empresa familiar de canaletas, sofito y fascia en Tampa Bay. Solo 6 y 7 pulgadas de aluminio sin costura. Mas de 30 anos en el oficio. Estimado gratis (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/es",
+    canonical: "https://www.jronegutters.com/es",
     languages: {
-      "en-US": "https://jronegutters.com",
-      "es-US": "https://jronegutters.com/es",
-      "x-default": "https://jronegutters.com",
+      "en-US": "https://www.jronegutters.com",
+      "es-US": "https://www.jronegutters.com/es",
+      "x-default": "https://www.jronegutters.com",
     },
   },
   openGraph: {
     title: "Canaletas, Sofito y Fascia Tampa Bay | JR One Aluminum",
     description: "Mas de 30 anos en el oficio. Solo 6 y 7 pulgadas. Empresa familiar. Hablamos espanol. (844) 444-3114.",
-    url: "https://jronegutters.com/es",
+    url: "https://www.jronegutters.com/es",
     siteName: "JR One Aluminum",
     type: "website",
     locale: "es_US",
-    images: [{ url: "https://jronegutters.com/images/spanish-hero-familia.webp", width: 1920, height: 1080, alt: "Familia hispana frente a su hogar en Tampa Bay con canaletas y sofito instalados por JR One Aluminum" }],
+    images: [{ url: "https://www.jronegutters.com/images/spanish-hero-familia.webp", width: 1920, height: 1080, alt: "Familia hispana frente a su hogar en Tampa Bay con canaletas y sofito instalados por JR One Aluminum" }],
   },
   twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/spanish-hero-familia.webp"] },
   robots: { index: true, follow: true },

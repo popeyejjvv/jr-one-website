@@ -26,11 +26,11 @@ export async function generateMetadata({ params }) {
     title: `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
     description: `Seamless gutters, soffit repair, fascia replacement, gutter guards, and siding in ${cityName}, Florida. Family-owned Tampa Bay aluminum specialists. 30+ years experience. Free estimate (844) 444-3114.`,
     alternates: {
-      canonical: `https://jronegutters.com/areas/${slug}`,
+      canonical: `https://www.jronegutters.com/areas/${slug}`,
       languages: {
-        "en-US": `https://jronegutters.com/areas/${slug}`,
-        "es-US": `https://jronegutters.com/es/areas/${slug}`,
-        "x-default": `https://jronegutters.com/areas/${slug}`,
+        "en-US": `https://www.jronegutters.com/areas/${slug}`,
+        "es-US": `https://www.jronegutters.com/es/areas/${slug}`,
+        "x-default": `https://www.jronegutters.com/areas/${slug}`,
       },
     },
     keywords: [
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${cityName}, FL Gutters, Soffit & Fascia, JR One Aluminum`,
       description: `Aluminum specialists in ${cityName}, FL. Seamless gutters, soffit, fascia, gutter guards, siding. Free estimate, (844) 444-3114.`,
-      url: `https://jronegutters.com/areas/${slug}`,
+      url: `https://www.jronegutters.com/areas/${slug}`,
       type: "website",
     },
   };
@@ -63,7 +63,7 @@ export default async function CityPage({ params }) {
     provider: {
       "@type": "HomeAndConstructionBusiness",
       name: "JR One Aluminum LLC",
-      url: "https://jronegutters.com",
+      url: "https://www.jronegutters.com",
       telephone: "(844) 444-3114",
       email: "info@jronegutters.com",
       address: {
@@ -87,9 +87,9 @@ export default async function CityPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-      { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://jronegutters.com/areas" },
-      { "@type": "ListItem", position: 3, name: cityName, item: `https://jronegutters.com/areas/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+      { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://www.jronegutters.com/areas" },
+      { "@type": "ListItem", position: 3, name: cityName, item: `https://www.jronegutters.com/areas/${slug}` },
     ],
   };
 

@@ -5,7 +5,7 @@ import path from "path";
 // Apex host per Tier 2.13 audit fix 2026-05-26. Reconciles with app/layout.js
 // metadataBase + canonicals which use apex. Previously emitted www URLs which
 // caused a www/apex split in declared hosts.
-const BASE_URL = "https://jronegutters.com";
+const BASE_URL = "https://www.jronegutters.com";
 
 // AI-citation knowledge markdown files, auto-discovered from public/llms/
 // so new MDs get crawled without a sitemap edit. These are the dense factual
@@ -50,6 +50,8 @@ const STATIC_PAGES = [
   { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
   { path: "/projects", priority: 0.7, changeFrequency: "weekly" },
   { path: "/warranties", priority: 0.5, changeFrequency: "yearly" },
+  { path: "/image-license", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/areas", priority: 0.7, changeFrequency: "weekly" },
   { path: "/financing", priority: 0.7, changeFrequency: "monthly" },
   { path: "/service-plans", priority: 0.7, changeFrequency: "monthly" },
   { path: "/govee-lights", priority: 0.6, changeFrequency: "monthly" },

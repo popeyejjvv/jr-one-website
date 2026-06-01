@@ -6,7 +6,7 @@ const serviceSchema = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
   },
@@ -28,8 +28,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Rental Property Maintenance", item: "https://jronegutters.com/rental-property-maintenance" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Rental Property Maintenance", item: "https://www.jronegutters.com/rental-property-maintenance" },
   ],
 };
 
@@ -39,17 +39,17 @@ export const metadata = {
     "Gutter, soffit, and fascia service for Airbnb, long-term rentals, and investment properties in Tampa Bay. Built for absentee owners, scheduled visits, photo reports, tenant coordination. (844) 444-3114.",
   keywords: "rental property gutter maintenance Tampa, Airbnb exterior maintenance, absentee owner gutter service, investment property Tampa, VRBO property maintenance Florida",
   alternates: {
-    canonical: "https://jronegutters.com/rental-property-maintenance",
+    canonical: "https://www.jronegutters.com/rental-property-maintenance",
     languages: {
-      "en-US": "https://jronegutters.com/rental-property-maintenance",
-      "es-US": "https://jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
-      "x-default": "https://jronegutters.com/rental-property-maintenance",
+      "en-US": "https://www.jronegutters.com/rental-property-maintenance",
+      "es-US": "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
+      "x-default": "https://www.jronegutters.com/rental-property-maintenance",
     },
   },
   openGraph: {
     title: "Rental Property Maintenance Tampa FL, JR One Aluminum",
     description: "Gutter, soffit, and fascia maintenance for Tampa Bay rentals. Absentee-owner-friendly with photo reporting.",
-    url: "https://jronegutters.com/rental-property-maintenance",
+    url: "https://www.jronegutters.com/rental-property-maintenance",
     type: "website",
   },
   twitter: {

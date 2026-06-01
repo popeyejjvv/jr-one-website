@@ -50,11 +50,11 @@ export const metadata = {
   title: "Zonas de Servicio, JR One Aluminum LLC, Canaletas Tampa Bay",
   description: "Canaletas sin costura, sofito, fascia, protectores de canaletas y siding en 28 ciudades del area de Tampa Bay. Condados de Hillsborough, Pinellas, Pasco, Manatee, Sarasota, Polk y Hernando.",
   alternates: {
-    canonical: "https://jronegutters.com/es/areas",
+    canonical: "https://www.jronegutters.com/es/areas",
     languages: {
-      "en-US": "https://jronegutters.com/areas",
-      "es-US": "https://jronegutters.com/es/areas",
-      "x-default": "https://jronegutters.com/areas",
+      "en-US": "https://www.jronegutters.com/areas",
+      "es-US": "https://www.jronegutters.com/es/areas",
+      "x-default": "https://www.jronegutters.com/areas",
     },
   },
 };
@@ -66,8 +66,8 @@ export default function AreasIndexPageES() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-      { "@type": "ListItem", position: 2, name: "Zonas de Servicio", item: "https://jronegutters.com/es/areas" },
+      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+      { "@type": "ListItem", position: 2, name: "Zonas de Servicio", item: "https://www.jronegutters.com/es/areas" },
     ],
   };
 
@@ -75,17 +75,17 @@ export default function AreasIndexPageES() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Zonas de Servicio de JR One Aluminum",
-    url: "https://jronegutters.com/es/areas",
+    url: "https://www.jronegutters.com/es/areas",
     description: "28 ciudades de Tampa Bay atendidas por JR One Aluminum LLC para canaletas sin costura, sofito, fascia, protectores, cobre, iluminacion Govee permanente y siding.",
     isPartOf: {
       "@type": "WebSite",
       name: "JR One Aluminum LLC",
-      url: "https://jronegutters.com",
+      url: "https://www.jronegutters.com",
     },
     hasPart: allCities.map((slug) => ({
       "@type": "WebPage",
       name: `${slugToCity(slug)}, FL`,
-      url: `https://jronegutters.com/es/areas/${slug}`,
+      url: `https://www.jronegutters.com/es/areas/${slug}`,
     })),
   };
 

@@ -9,7 +9,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
     availableLanguage: ["en", "es"],
@@ -23,8 +23,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Limpieza de Canaletas", item: "https://jronegutters.com/es/limpieza-canaletas-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Limpieza de Canaletas", item: "https://www.jronegutters.com/es/limpieza-canaletas-tampa" },
   ],
 };
 
@@ -32,17 +32,17 @@ export const metadata = {
   title: "Limpieza de Canaletas Tampa FL | $150-$400 Casa Unifamiliar",
   description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa, lavado de bajantes, fotografias. Casa unifamiliar $150-$400. (844) 444-3114. Hablamos espanol.",
   alternates: {
-    canonical: "https://jronegutters.com/es/limpieza-canaletas-tampa",
+    canonical: "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/gutter-cleaning",
-      "es-US": "https://jronegutters.com/es/limpieza-canaletas-tampa",
-      "x-default": "https://jronegutters.com/gutter-cleaning",
+      "en-US": "https://www.jronegutters.com/gutter-cleaning",
+      "es-US": "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
+      "x-default": "https://www.jronegutters.com/gutter-cleaning",
     },
   },
   openGraph: {
     title: "Limpieza de Canaletas Tampa — JR One Aluminum",
     description: "Limpieza completa, lavado de bajantes, fotografias. $150-$400 casa unifamiliar. (844) 444-3114.",
-    url: "https://jronegutters.com/es/limpieza-canaletas-tampa",
+    url: "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
     type: "website",
     locale: "es_US",
   },

@@ -28,17 +28,17 @@ export async function generateMetadata({ params }) {
     title: `Canaletas, Sofito y Fascia en ${cityName}, FL`,
     description: `Canaletas continuas de aluminio (6 y 7 pulgadas), reparacion de sofito y fascia, protectores de canaleta, drenaje subterraneo en ${cityName}, Florida. Empresa familiar, mas de 30 anos en el oficio. Estimado gratis (844) 444-3114. Hablamos espanol.`,
     alternates: {
-      canonical: `https://jronegutters.com/es/areas/${slug}`,
+      canonical: `https://www.jronegutters.com/es/areas/${slug}`,
       languages: {
-        "en-US": `https://jronegutters.com/areas/${slug}`,
-        "es-US": `https://jronegutters.com/es/areas/${slug}`,
-        "x-default": `https://jronegutters.com/areas/${slug}`,
+        "en-US": `https://www.jronegutters.com/areas/${slug}`,
+        "es-US": `https://www.jronegutters.com/es/areas/${slug}`,
+        "x-default": `https://www.jronegutters.com/areas/${slug}`,
       },
     },
     openGraph: {
       title: `${cityName}, FL — Canaletas, Sofito y Fascia | JR One Aluminum`,
       description: `Especialistas en aluminio en ${cityName}, FL. Canaletas continuas, sofito, fascia, protectores, drenaje. Estimado gratis (844) 444-3114.`,
-      url: `https://jronegutters.com/es/areas/${slug}`,
+      url: `https://www.jronegutters.com/es/areas/${slug}`,
       type: "website",
       locale: "es_US",
     },
@@ -58,7 +58,7 @@ export default async function CityPageEs({ params }) {
     provider: {
       "@type": "HomeAndConstructionBusiness",
       name: "JR One Aluminum LLC",
-      url: "https://jronegutters.com",
+      url: "https://www.jronegutters.com",
       telephone: "(844) 444-3114",
       email: "info@jronegutters.com",
       address: {
@@ -84,9 +84,9 @@ export default async function CityPageEs({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-      { "@type": "ListItem", position: 2, name: "Areas de Servicio", item: "https://jronegutters.com/es/areas" },
-      { "@type": "ListItem", position: 3, name: cityName, item: `https://jronegutters.com/es/areas/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+      { "@type": "ListItem", position: 2, name: "Areas de Servicio", item: "https://www.jronegutters.com/es/areas" },
+      { "@type": "ListItem", position: 3, name: cityName, item: `https://www.jronegutters.com/es/areas/${slug}` },
     ],
   };
 

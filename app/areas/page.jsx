@@ -50,11 +50,11 @@ export const metadata = {
   title: "Service Areas, JR One Aluminum LLC, Tampa Bay Gutters",
   description: "Seamless gutters, soffit, fascia, gutter guards, and siding across 28 cities in the Tampa Bay region. Hillsborough, Pinellas, Pasco, Manatee, Sarasota, Polk, and Hernando counties.",
   alternates: {
-    canonical: "https://jronegutters.com/areas",
+    canonical: "https://www.jronegutters.com/areas",
     languages: {
-      "en-US": "https://jronegutters.com/areas",
-      "es-US": "https://jronegutters.com/es/areas",
-      "x-default": "https://jronegutters.com/areas",
+      "en-US": "https://www.jronegutters.com/areas",
+      "es-US": "https://www.jronegutters.com/es/areas",
+      "x-default": "https://www.jronegutters.com/areas",
     },
   },
 };
@@ -66,8 +66,8 @@ export default function AreasIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-      { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://jronegutters.com/areas" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+      { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://www.jronegutters.com/areas" },
     ],
   };
 
@@ -75,17 +75,17 @@ export default function AreasIndexPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "JR One Aluminum Service Areas",
-    url: "https://jronegutters.com/areas",
+    url: "https://www.jronegutters.com/areas",
     description: "28 Tampa Bay cities served by JR One Aluminum LLC for seamless gutters, soffit, fascia, gutter guards, copper, Govee permanent lighting, and siding.",
     isPartOf: {
       "@type": "WebSite",
       name: "JR One Aluminum LLC",
-      url: "https://jronegutters.com",
+      url: "https://www.jronegutters.com",
     },
     hasPart: allCities.map((slug) => ({
       "@type": "WebPage",
       name: `${slugToCity(slug)}, FL`,
-      url: `https://jronegutters.com/areas/${slug}`,
+      url: `https://www.jronegutters.com/areas/${slug}`,
     })),
   };
 

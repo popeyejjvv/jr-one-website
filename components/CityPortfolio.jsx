@@ -124,8 +124,17 @@ function PortfolioGrid({ photos, regional = false }) {
                 creator: {
                   "@type": "Organization",
                   name: "JR One Aluminum LLC",
-                  url: "https://jronegutters.com",
+                  url: "https://www.jronegutters.com",
                 },
+                copyrightHolder: {
+                  "@type": "Organization",
+                  name: "JR One Aluminum LLC",
+                  url: "https://www.jronegutters.com",
+                },
+                license: "https://www.jronegutters.com/image-license",
+                acquireLicensePage: "https://www.jronegutters.com/image-license",
+                copyrightNotice: "Copyright 2022 to 2026 JR One Aluminum LLC. All rights reserved.",
+                creditText: "JR One Aluminum LLC",
               }),
             }}
           />

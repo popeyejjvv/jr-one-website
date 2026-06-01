@@ -625,7 +625,7 @@ export async function generateMetadata({ params }) {
   const url = `https://jronegutters.com/areas/${slug}/${service}`;
   // ES counterpart at /es/areas/[slug]/[service] not yet built — declare x-default only
   // so the hreflang check passes the explicitly-allowed single-language fallback path.
-  // When the ES combo route ships, add "es-US": `https://jronegutters.com/es/areas/${slug}/${service}`.
+  // When the ES combo route ships, add "es-US": `https://www.jronegutters.com/es/areas/${slug}/${service}`.
   return {
     title,
     description,
@@ -687,7 +687,7 @@ export default async function CityServicePage({ params }) {
     provider: {
       "@type": "HomeAndConstructionBusiness",
       name: "JR One Aluminum LLC",
-      url: "https://jronegutters.com",
+      url: "https://www.jronegutters.com",
       telephone: "(844) 444-3114",
       email: "info@jronegutters.com",
       address: {
@@ -707,9 +707,9 @@ export default async function CityServicePage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-      { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://jronegutters.com/areas" },
-      { "@type": "ListItem", position: 3, name: city.name, item: `https://jronegutters.com/areas/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+      { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://www.jronegutters.com/areas" },
+      { "@type": "ListItem", position: 3, name: city.name, item: `https://www.jronegutters.com/areas/${slug}` },
       { "@type": "ListItem", position: 4, name: svc.name, item: url },
     ],
   };

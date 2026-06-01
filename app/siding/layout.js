@@ -6,7 +6,7 @@ const serviceSchema = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
   },
@@ -26,8 +26,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Siding", item: "https://jronegutters.com/siding" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Siding", item: "https://www.jronegutters.com/siding" },
   ],
 };
 
@@ -36,17 +36,17 @@ export const metadata = {
   description:
     "Siding installation in Tampa Bay, Hardie board, vinyl lap, custom aluminum. One crew handles siding, soffit, fascia, and gutters. Free estimate, (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/siding",
+    canonical: "https://www.jronegutters.com/siding",
     languages: {
-      "en-US": "https://jronegutters.com/siding",
-      "es-US": "https://jronegutters.com/es/revestimiento-tampa",
-      "x-default": "https://jronegutters.com/siding",
+      "en-US": "https://www.jronegutters.com/siding",
+      "es-US": "https://www.jronegutters.com/es/revestimiento-tampa",
+      "x-default": "https://www.jronegutters.com/siding",
     },
   },
   openGraph: {
     title: "Siding Installation Tampa FL, JR One Aluminum",
     description: "Tampa Bay siding specialist, Hardie, vinyl, custom aluminum. Integrated with soffit, fascia, and gutters.",
-    url: "https://jronegutters.com/siding",
+    url: "https://www.jronegutters.com/siding",
     type: "website",
   },
 };

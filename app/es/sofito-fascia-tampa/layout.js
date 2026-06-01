@@ -9,7 +9,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
     availableLanguage: ["en", "es"],
@@ -22,8 +22,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Sofito y Fascia", item: "https://jronegutters.com/es/sofito-fascia-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Sofito y Fascia", item: "https://www.jronegutters.com/es/sofito-fascia-tampa" },
   ],
 };
 
@@ -31,17 +31,17 @@ export const metadata = {
   title: "Reemplazo de Sofito y Fascia Tampa FL | Aluminio Ventilado",
   description: "Sofito y fascia de aluminio en Tampa Bay. Conversion de madera a aluminio que detiene el ciclo de pudricion. Del color de las canaletas. (844) 444-3114. Hablamos espanol.",
   alternates: {
-    canonical: "https://jronegutters.com/es/sofito-fascia-tampa",
+    canonical: "https://www.jronegutters.com/es/sofito-fascia-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/soffit-and-fascia",
-      "es-US": "https://jronegutters.com/es/sofito-fascia-tampa",
-      "x-default": "https://jronegutters.com/soffit-and-fascia",
+      "en-US": "https://www.jronegutters.com/soffit-and-fascia",
+      "es-US": "https://www.jronegutters.com/es/sofito-fascia-tampa",
+      "x-default": "https://www.jronegutters.com/soffit-and-fascia",
     },
   },
   openGraph: {
     title: "Sofito y Fascia Tampa — JR One Aluminum",
     description: "Reemplazo de sofito y fascia en aluminio. Detiene el ciclo de pudricion permanentemente. (844) 444-3114.",
-    url: "https://jronegutters.com/es/sofito-fascia-tampa",
+    url: "https://www.jronegutters.com/es/sofito-fascia-tampa",
     type: "website",
     locale: "es_US",
   },

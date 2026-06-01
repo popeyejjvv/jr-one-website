@@ -10,7 +10,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
     availableLanguage: ["en", "es"],
@@ -23,8 +23,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Sofito Sagiper PVC", item: "https://jronegutters.com/es/sagiper-soffit-pvc-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Sofito Sagiper PVC", item: "https://www.jronegutters.com/es/sagiper-soffit-pvc-tampa" },
   ],
 };
 
@@ -32,17 +32,17 @@ export const metadata = {
   title: "Sofito Sagiper PVC Premium Tampa FL | Veta de Madera, Cero Mantenimiento | JR One",
   description: "Sofito Sagiper PVC premium con apariencia de veta de madera en Tampa Bay. Cero mantenimiento, no se pudre. Ideal para clima humedo de Florida. (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/es/sagiper-soffit-pvc-tampa",
+    canonical: "https://www.jronegutters.com/es/sagiper-soffit-pvc-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/sagiper",
-      "es-US": "https://jronegutters.com/es/sagiper-soffit-pvc-tampa",
-      "x-default": "https://jronegutters.com/sagiper",
+      "en-US": "https://www.jronegutters.com/sagiper",
+      "es-US": "https://www.jronegutters.com/es/sagiper-soffit-pvc-tampa",
+      "x-default": "https://www.jronegutters.com/sagiper",
     },
   },
   openGraph: {
     title: "Sofito Sagiper PVC Tampa Bay — JR One Aluminum",
     description: "Veta de madera real. Cero mantenimiento. No se pudre. (844) 444-3114.",
-    url: "https://jronegutters.com/es/sagiper-soffit-pvc-tampa",
+    url: "https://www.jronegutters.com/es/sagiper-soffit-pvc-tampa",
     type: "website",
     locale: "es_US",
   },

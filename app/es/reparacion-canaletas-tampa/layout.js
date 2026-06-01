@@ -9,7 +9,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
     availableLanguage: ["en", "es"],
@@ -22,8 +22,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Reparacion de Canaletas", item: "https://jronegutters.com/es/reparacion-canaletas-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Reparacion de Canaletas", item: "https://www.jronegutters.com/es/reparacion-canaletas-tampa" },
   ],
 };
 
@@ -31,17 +31,17 @@ export const metadata = {
   title: "Reparacion de Canaletas Tampa FL | Hundimientos y Fugas",
   description: "Reparacion de canaletas en Tampa Bay: hundimientos, fugas, desbordamiento, dano de tormenta. Servicio misma semana. (844) 444-3114. Hablamos espanol.",
   alternates: {
-    canonical: "https://jronegutters.com/es/reparacion-canaletas-tampa",
+    canonical: "https://www.jronegutters.com/es/reparacion-canaletas-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/gutter-repair",
-      "es-US": "https://jronegutters.com/es/reparacion-canaletas-tampa",
-      "x-default": "https://jronegutters.com/gutter-repair",
+      "en-US": "https://www.jronegutters.com/gutter-repair",
+      "es-US": "https://www.jronegutters.com/es/reparacion-canaletas-tampa",
+      "x-default": "https://www.jronegutters.com/gutter-repair",
     },
   },
   openGraph: {
     title: "Reparacion de Canaletas Tampa — JR One Aluminum",
     description: "Hundimientos, fugas, desbordamiento, dano de tormenta. Servicio misma semana. (844) 444-3114.",
-    url: "https://jronegutters.com/es/reparacion-canaletas-tampa",
+    url: "https://www.jronegutters.com/es/reparacion-canaletas-tampa",
     type: "website",
     locale: "es_US",
   },

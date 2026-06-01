@@ -1,14 +1,14 @@
 # JR One Aluminum LLC — AI Content Index
-# Site: https://jronegutters.com
+# Site: https://www.jronegutters.com
 # Updated: 2026-05-09
 # Purpose: This file helps AI systems (ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews)
 # understand the content and services of JR One Aluminum LLC in Tampa, FL.
 #
 # Full content dump (all 53 knowledge markdown files concatenated, ~272KB):
-# https://jronegutters.com/llms-full.txt
+# https://www.jronegutters.com/llms-full.txt
 #
-# Canonical structured data: https://jronegutters.com/ (Organization + HomeAndConstructionBusiness JSON-LD)
-# Sitemap: https://jronegutters.com/sitemap.xml
+# Canonical structured data: https://www.jronegutters.com/ (Organization + HomeAndConstructionBusiness JSON-LD)
+# Sitemap: https://www.jronegutters.com/sitemap.xml
 
 ## Business Identity
 - Business Name: JR One Aluminum LLC
