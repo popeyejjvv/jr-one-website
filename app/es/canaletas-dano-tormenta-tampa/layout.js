@@ -11,7 +11,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
   },
@@ -30,8 +30,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Reparacion de Canaletas por Tormenta", item: "https://jronegutters.com/es/canaletas-dano-tormenta-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Reparacion de Canaletas por Tormenta", item: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa" },
   ],
 };
 
@@ -40,17 +40,17 @@ export const metadata = {
   description:
     "Canaletas, fascia, sofito danados por huracan en Tampa Bay. Instalacion misma semana, documentacion para seguro. Familia, mas de 30 anos. (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/es/canaletas-dano-tormenta-tampa",
+    canonical: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/storm-damage-gutters-tampa",
-      "es-US": "https://jronegutters.com/es/canaletas-dano-tormenta-tampa",
-      "x-default": "https://jronegutters.com/storm-damage-gutters-tampa",
+      "en-US": "https://www.jronegutters.com/storm-damage-gutters-tampa",
+      "es-US": "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
+      "x-default": "https://www.jronegutters.com/storm-damage-gutters-tampa",
     },
   },
   openGraph: {
     title: "Reparacion de Canaletas por Tormenta Tampa Bay — JR One Aluminum",
     description: "Instalacion misma semana para canaletas, fascia y sofito danados por huracan. Documentacion para seguro. (844) 444-3114.",
-    url: "https://jronegutters.com/es/canaletas-dano-tormenta-tampa",
+    url: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
     type: "website",
     locale: "es_US",
   },

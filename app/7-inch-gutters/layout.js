@@ -8,7 +8,7 @@ const serviceSchema = {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
   },
@@ -31,8 +31,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "7-Inch Gutters", item: "https://jronegutters.com/7-inch-gutters" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "7-Inch Gutters", item: "https://www.jronegutters.com/7-inch-gutters" },
   ],
 };
 
@@ -42,19 +42,19 @@ export const metadata = {
     "Oversized 7\" seamless aluminum gutters for Tampa Bay luxury homes, large roof areas, and steep-pitch properties. Commercial-grade water capacity. Premium upcharge vs 6\", lifetime protection. (844) 444-3114.",
   keywords: "7 inch gutters Tampa, oversized gutters Florida, South Tampa luxury gutters, commercial grade residential gutters, 7 inch seamless aluminum Tampa Bay, upgrade from 6 inch gutter",
   alternates: {
-    canonical: "https://jronegutters.com/7-inch-gutters",
+    canonical: "https://www.jronegutters.com/7-inch-gutters",
     languages: {
-      "en-US": "https://jronegutters.com/7-inch-gutters",
-      "es-US": "https://jronegutters.com/es/canaletas-7-pulgadas-tampa",
-      "x-default": "https://jronegutters.com/7-inch-gutters",
+      "en-US": "https://www.jronegutters.com/7-inch-gutters",
+      "es-US": "https://www.jronegutters.com/es/canaletas-7-pulgadas-tampa",
+      "x-default": "https://www.jronegutters.com/7-inch-gutters",
     },
   },
   openGraph: {
     title: "7-Inch Gutters Tampa FL, JR One Aluminum",
     description: "Oversized 7-inch seamless gutters for Tampa luxury homes and high-volume roofs. Commercial-grade capacity.",
-    url: "https://jronegutters.com/7-inch-gutters",
+    url: "https://www.jronegutters.com/7-inch-gutters",
     type: "website",
-    images: [{ url: "https://jronegutters.com/images/7inch-gutter-comparison.webp", width: 1920, height: 1080, alt: "Side-by-side 5-inch vs 7-inch gutter comparison by JR One Aluminum Tampa" }],
+    images: [{ url: "https://www.jronegutters.com/images/7inch-gutter-comparison.webp", width: 1920, height: 1080, alt: "Side-by-side 5-inch vs 7-inch gutter comparison by JR One Aluminum Tampa" }],
   },
   twitter: {
     card: "summary_large_image",

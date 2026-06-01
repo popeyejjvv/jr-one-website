@@ -12,7 +12,7 @@ const serviceSchema = {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: {
       "@type": "PostalAddress",
@@ -51,8 +51,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Seamless Aluminum Gutters", item: "https://jronegutters.com/seamless-aluminum-gutters" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Seamless Aluminum Gutters", item: "https://www.jronegutters.com/seamless-aluminum-gutters" },
   ],
 };
 
@@ -61,20 +61,20 @@ export const metadata = {
   description:
     "Custom-fabricated seamless aluminum gutters installed on-site in Tampa Bay. 6\" and 7\" K-style and half-round profiles (no 5\" in Florida). Licensed, insured, bilingual. Free estimate, (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/seamless-aluminum-gutters",
+    canonical: "https://www.jronegutters.com/seamless-aluminum-gutters",
     languages: {
-      "en-US": "https://jronegutters.com/seamless-aluminum-gutters",
-      "es-US": "https://jronegutters.com/es/canaletas-sin-costura-tampa",
-      "x-default": "https://jronegutters.com/seamless-aluminum-gutters",
+      "en-US": "https://www.jronegutters.com/seamless-aluminum-gutters",
+      "es-US": "https://www.jronegutters.com/es/canaletas-sin-costura-tampa",
+      "x-default": "https://www.jronegutters.com/seamless-aluminum-gutters",
     },
   },
   openGraph: {
     title: "Seamless Aluminum Gutter Installation Tampa FL, JR One Aluminum",
     description:
       "Custom-fabricated seamless aluminum gutters in Tampa Bay. Over 30 years installing gutters, soffit, fascia. Free estimates.",
-    url: "https://jronegutters.com/seamless-aluminum-gutters",
+    url: "https://www.jronegutters.com/seamless-aluminum-gutters",
     type: "website",
-    images: [{ url: "https://jronegutters.com/images/seamless-gutter-install.webp", width: 1920, height: 1080, alt: "JR One Aluminum installer mounting a 6-inch seamless aluminum gutter on a Tampa Bay home" }],
+    images: [{ url: "https://www.jronegutters.com/images/seamless-gutter-install.webp", width: 1920, height: 1080, alt: "JR One Aluminum installer mounting a 6-inch seamless aluminum gutter on a Tampa Bay home" }],
   },
   twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/seamless-gutter-install.webp"] },
 };

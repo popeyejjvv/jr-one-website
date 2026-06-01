@@ -6,7 +6,7 @@ const serviceSchema = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
   },
@@ -25,8 +25,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Specialty Gutters", item: "https://jronegutters.com/specialty-gutters" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Specialty Gutters", item: "https://www.jronegutters.com/specialty-gutters" },
   ],
 };
 
@@ -35,17 +35,17 @@ export const metadata = {
   description:
     "Half-round, commercial box, D-style, and oversized K-style aluminum gutters installed in Tampa Bay. Historic homes, architectural properties, commercial. (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/specialty-gutters",
+    canonical: "https://www.jronegutters.com/specialty-gutters",
     languages: {
-      "en-US": "https://jronegutters.com/specialty-gutters",
-      "es-US": "https://jronegutters.com/es/canaletas-especiales-tampa",
-      "x-default": "https://jronegutters.com/specialty-gutters",
+      "en-US": "https://www.jronegutters.com/specialty-gutters",
+      "es-US": "https://www.jronegutters.com/es/canaletas-especiales-tampa",
+      "x-default": "https://www.jronegutters.com/specialty-gutters",
     },
   },
   openGraph: {
     title: "Specialty Gutters Tampa FL, JR One Aluminum",
     description: "Half-round, box, D-style specialty gutter profiles for Tampa Bay homes and commercial.",
-    url: "https://jronegutters.com/specialty-gutters",
+    url: "https://www.jronegutters.com/specialty-gutters",
     type: "website",
   },
 };

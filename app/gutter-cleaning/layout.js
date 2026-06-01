@@ -8,7 +8,7 @@ const serviceSchema = {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
   },
@@ -40,9 +40,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Services", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 3, name: "Gutter Cleaning Tampa", item: "https://jronegutters.com/gutter-cleaning" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 3, name: "Gutter Cleaning Tampa", item: "https://www.jronegutters.com/gutter-cleaning" },
   ],
 };
 
@@ -50,7 +50,7 @@ const imageObjectSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
   contentUrl: "https://jronegutters.com/images/gutter-cleaning-before.webp",
-  url: "https://jronegutters.com/images/gutter-cleaning-before.webp",
+  url: "https://www.jronegutters.com/images/gutter-cleaning-before.webp",
   caption: "Clogged residential gutter overflowing during a Tampa Bay rainstorm before professional cleaning",
   description: "Top-down view of a residential rain gutter packed with wet leaves and pine debris causing overflow on a Tampa Bay home — the condition JR One Aluminum cleans on every routine service call.",
   creditText: "JR One Aluminum LLC",
@@ -113,21 +113,21 @@ export const metadata = {
     "Professional gutter cleaning Tampa Bay, full debris removal, downspout flushing, hanger inspection, haul-away. Typical single-family $150-$400. Same-day estimates (844) 444-3114.",
   keywords: "gutter cleaning tampa, gutter cleaning tampa fl, gutter cleaning cost tampa, downspout flushing, gutter maintenance tampa bay, professional gutter cleaner florida, gutter cleaning clearwater, gutter cleaning st petersburg",
   alternates: {
-    canonical: "https://jronegutters.com/gutter-cleaning",
+    canonical: "https://www.jronegutters.com/gutter-cleaning",
     languages: {
-      "en-US": "https://jronegutters.com/gutter-cleaning",
-      "es-US": "https://jronegutters.com/es/limpieza-canaletas-tampa",
-      "x-default": "https://jronegutters.com/gutter-cleaning",
+      "en-US": "https://www.jronegutters.com/gutter-cleaning",
+      "es-US": "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
+      "x-default": "https://www.jronegutters.com/gutter-cleaning",
     },
   },
   openGraph: {
     title: "Gutter Cleaning Tampa | JR One Aluminum",
     description: "Full debris removal, downspout flushing, photo documentation. Typical single-family $150-$400.",
-    url: "https://jronegutters.com/gutter-cleaning",
+    url: "https://www.jronegutters.com/gutter-cleaning",
     type: "website",
     images: [
       {
-        url: "https://jronegutters.com/images/gutter-cleaning-before.webp",
+        url: "https://www.jronegutters.com/images/gutter-cleaning-before.webp",
         width: 1920,
         height: 1080,
         alt: "Clogged residential gutter in Tampa Bay before JR One Aluminum cleaning service",

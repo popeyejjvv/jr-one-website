@@ -12,7 +12,7 @@ const serviceSchema = {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
   },
@@ -36,8 +36,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Storm Damage Gutter Repair", item: "https://jronegutters.com/storm-damage-gutters-tampa" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Storm Damage Gutter Repair", item: "https://www.jronegutters.com/storm-damage-gutters-tampa" },
   ],
 };
 
@@ -46,20 +46,20 @@ export const metadata = {
   description:
     "Hurricane-damaged gutters, fascia, soffit in Tampa Bay. Same-week install, insurance documentation, photos for adjuster. Family-owned, 30+ years. (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/storm-damage-gutters-tampa",
+    canonical: "https://www.jronegutters.com/storm-damage-gutters-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/storm-damage-gutters-tampa",
-      "es-US": "https://jronegutters.com/es/canaletas-dano-tormenta-tampa",
-      "x-default": "https://jronegutters.com/storm-damage-gutters-tampa",
+      "en-US": "https://www.jronegutters.com/storm-damage-gutters-tampa",
+      "es-US": "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
+      "x-default": "https://www.jronegutters.com/storm-damage-gutters-tampa",
     },
   },
   openGraph: {
     title: "Storm Damage Gutter Repair Tampa Bay | JR One Aluminum",
     description: "Same-week install for hurricane-damaged gutters, fascia, soffit. Insurance claim documentation. (844) 444-3114.",
-    url: "https://jronegutters.com/storm-damage-gutters-tampa",
+    url: "https://www.jronegutters.com/storm-damage-gutters-tampa",
     type: "website",
     locale: "en_US",
-    images: [{ url: "https://jronegutters.com/images/storm-damage-hero.webp", width: 1920, height: 1080, alt: "Storm-damaged gutters and fascia on a Tampa Bay home before JR One Aluminum same-week repair" }],
+    images: [{ url: "https://www.jronegutters.com/images/storm-damage-hero.webp", width: 1920, height: 1080, alt: "Storm-damaged gutters and fascia on a Tampa Bay home before JR One Aluminum same-week repair" }],
   },
   twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/storm-damage-hero.webp"] },
 };

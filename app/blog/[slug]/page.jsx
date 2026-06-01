@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
       authors: ["JR One Aluminum"],
     },
     alternates: {
-      canonical: `https://jronegutters.com/blog/${slug}`,
+      canonical: `https://www.jronegutters.com/blog/${slug}`,
     },
   };
 }
@@ -44,9 +44,9 @@ export default async function BlogPostPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://jronegutters.com/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://jronegutters.com/blog/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.jronegutters.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://www.jronegutters.com/blog/${slug}` },
     ],
   };
 
@@ -57,8 +57,8 @@ export default async function BlogPostPage({ params }) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://jronegutters.com" },
-    publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://jronegutters.com" },
+    author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
+    publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
     mainEntityOfPage: `https://jronegutters.com/blog/${slug}`,
   };
 

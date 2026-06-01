@@ -31,7 +31,7 @@ const localBusinessSchema = {
     "JR1 Aluminum",
     "Jr One Aluminum",
   ],
-  url: "https://jronegutters.com",
+  url: "https://www.jronegutters.com",
   image: [
     "https://jronegutters.com/images/seamless-gutter-install.webp",
     "https://jronegutters.com/images/soffit-fascia-detail.webp",
@@ -83,20 +83,20 @@ const localBusinessSchema = {
     "@type": "OfferCatalog",
     name: "JR One Aluminum Services",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Seamless Aluminum Gutter Installation", url: "https://jronegutters.com/seamless-aluminum-gutters" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Guards", url: "https://jronegutters.com/gutter-guards" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Soffit and Fascia Replacement", url: "https://jronegutters.com/soffit-and-fascia" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Repair", url: "https://jronegutters.com/gutter-repair" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Siding Installation", url: "https://jronegutters.com/siding" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Copper Gutters", url: "https://jronegutters.com/copper-gutters" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Drainage Installation", url: "https://jronegutters.com/drainage-assessment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Peak 301 Roof Rejuvenation", url: "https://jronegutters.com/peak-301" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sagiper Premium Cladding", url: "https://jronegutters.com/sagiper" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Govee Permanent Exterior Lighting", url: "https://jronegutters.com/govee-lights" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Cleaning & Maintenance", url: "https://jronegutters.com/gutter-cleaning" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "HOA Gutter & Soffit Maintenance Contracts", url: "https://jronegutters.com/hoa-contracts" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rental & Airbnb Property Maintenance", url: "https://jronegutters.com/rental-property-maintenance" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Commercial Gutter & Aluminum Services", url: "https://jronegutters.com/commercial-gutters" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Seamless Aluminum Gutter Installation", url: "https://www.jronegutters.com/seamless-aluminum-gutters" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Guards", url: "https://www.jronegutters.com/gutter-guards" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Soffit and Fascia Replacement", url: "https://www.jronegutters.com/soffit-and-fascia" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Repair", url: "https://www.jronegutters.com/gutter-repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Siding Installation", url: "https://www.jronegutters.com/siding" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Copper Gutters", url: "https://www.jronegutters.com/copper-gutters" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Drainage Installation", url: "https://www.jronegutters.com/drainage-assessment" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Peak 301 Roof Rejuvenation", url: "https://www.jronegutters.com/peak-301" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sagiper Premium Cladding", url: "https://www.jronegutters.com/sagiper" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Govee Permanent Exterior Lighting", url: "https://www.jronegutters.com/govee-lights" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Cleaning & Maintenance", url: "https://www.jronegutters.com/gutter-cleaning" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "HOA Gutter & Soffit Maintenance Contracts", url: "https://www.jronegutters.com/hoa-contracts" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rental & Airbnb Property Maintenance", url: "https://www.jronegutters.com/rental-property-maintenance" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Commercial Gutter & Aluminum Services", url: "https://www.jronegutters.com/commercial-gutters" } },
     ],
   },
   numberOfEmployees: "15-20",
@@ -123,7 +123,7 @@ const organizationSchema = {
     "JR1 Aluminum",
   ],
   legalName: "JR One Aluminum LLC",
-  url: "https://jronegutters.com",
+  url: "https://www.jronegutters.com",
   logo: "https://jronegutters.com/images/seamless-gutter-install.webp",
   description: "Family-owned Tampa Bay aluminum specialty contractor. Seamless gutters (6 inch and 7 inch only), soffit, fascia, drainage, and Peak 301 roof rejuvenation. Over 30 years in the trade.",
   foundingDate: "2006",
@@ -147,7 +147,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": "https://jronegutters.com/#website",
-  url: "https://jronegutters.com",
+  url: "https://www.jronegutters.com",
   name: "JR One Aluminum",
   alternateName: ["JR One Gutters", "JR Aluminum", "JR Gutters"],
   inLanguage: ["en-US", "es-US"],
@@ -155,7 +155,7 @@ const websiteSchema = {
 };
 
 export const metadata = {
-  metadataBase: new URL("https://jronegutters.com"),
+  metadataBase: new URL("https://www.jronegutters.com"),
   title: {
     default: "JR One Aluminum LLC | Tampa Bay Gutters, Soffit, Fascia, Drainage",
     template: "%s | JR One Aluminum",
@@ -163,7 +163,7 @@ export const metadata = {
   description:
     "Family-owned, over 30 years in the trade. Seamless gutters, soffit, fascia, drainage, Peak 301 roof rejuvenation. In-house crews, fully insured. Tampa Bay specialty trade contractor. Free estimates. (844) 444-3114.",
   applicationName: "JR One Aluminum",
-  authors: [{ name: "JR One Aluminum LLC", url: "https://jronegutters.com" }],
+  authors: [{ name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" }],
   creator: "JR One Aluminum LLC",
   publisher: "JR One Aluminum LLC",
   keywords: [
@@ -178,7 +178,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     siteName: "JR One Aluminum LLC",
     title: "JR One Aluminum LLC | Tampa Bay Specialty Trade",
     description:
@@ -207,11 +207,11 @@ export const metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: "https://jronegutters.com",
+    canonical: "https://www.jronegutters.com",
     languages: {
-      "en-US": "https://jronegutters.com",
-      "es-US": "https://jronegutters.com/es",
-      "x-default": "https://jronegutters.com",
+      "en-US": "https://www.jronegutters.com",
+      "es-US": "https://www.jronegutters.com/es",
+      "x-default": "https://www.jronegutters.com",
     },
   },
 };

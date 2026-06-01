@@ -10,7 +10,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
     availableLanguage: ["en", "es"],
@@ -23,8 +23,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Contratos HOA", item: "https://jronegutters.com/es/contratos-hoa-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Contratos HOA", item: "https://www.jronegutters.com/es/contratos-hoa-tampa" },
   ],
 };
 
@@ -32,17 +32,17 @@ export const metadata = {
   title: "Contratos HOA de Canaletas y Aluminio Tampa FL | JR One",
   description: "Contratos de mantenimiento de canaletas, sofito y fascia para HOA y administradores de propiedades en Tampa Bay. Limpieza programada e inspecciones. (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/es/contratos-hoa-tampa",
+    canonical: "https://www.jronegutters.com/es/contratos-hoa-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/hoa-contracts",
-      "es-US": "https://jronegutters.com/es/contratos-hoa-tampa",
-      "x-default": "https://jronegutters.com/hoa-contracts",
+      "en-US": "https://www.jronegutters.com/hoa-contracts",
+      "es-US": "https://www.jronegutters.com/es/contratos-hoa-tampa",
+      "x-default": "https://www.jronegutters.com/hoa-contracts",
     },
   },
   openGraph: {
     title: "Contratos HOA Tampa Bay — JR One Aluminum",
     description: "Contratos de mantenimiento para asociaciones de propietarios. Limpieza, inspeccion, informes. (844) 444-3114.",
-    url: "https://jronegutters.com/es/contratos-hoa-tampa",
+    url: "https://www.jronegutters.com/es/contratos-hoa-tampa",
     type: "website",
     locale: "es_US",
   },

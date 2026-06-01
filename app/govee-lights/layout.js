@@ -6,7 +6,7 @@ const serviceSchema = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
   },
@@ -26,8 +26,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Govee Lights", item: "https://jronegutters.com/govee-lights" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Govee Lights", item: "https://www.jronegutters.com/govee-lights" },
   ],
 };
 
@@ -36,17 +36,17 @@ export const metadata = {
   description:
     "Govee permanent exterior LED light installation in Tampa Bay. App-controlled, 16M colors, holiday and accent lighting year-round. Alexa + Google Home compatible. Free quote, (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/govee-lights",
+    canonical: "https://www.jronegutters.com/govee-lights",
     languages: {
-      "en-US": "https://jronegutters.com/govee-lights",
-      "es-US": "https://jronegutters.com/es/luces-govee-tampa",
-      "x-default": "https://jronegutters.com/govee-lights",
+      "en-US": "https://www.jronegutters.com/govee-lights",
+      "es-US": "https://www.jronegutters.com/es/luces-govee-tampa",
+      "x-default": "https://www.jronegutters.com/govee-lights",
     },
   },
   openGraph: {
     title: "Govee Exterior LED Lighting Tampa FL, JR One Aluminum",
     description: "Permanent smart LED lighting installed along your Tampa roofline. Holiday + team colors + security, all year.",
-    url: "https://jronegutters.com/govee-lights",
+    url: "https://www.jronegutters.com/govee-lights",
     type: "website",
   },
 };

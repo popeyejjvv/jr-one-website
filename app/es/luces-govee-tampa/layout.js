@@ -10,7 +10,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
     availableLanguage: ["en", "es"],
@@ -23,8 +23,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Luces Govee", item: "https://jronegutters.com/es/luces-govee-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Luces Govee", item: "https://www.jronegutters.com/es/luces-govee-tampa" },
   ],
 };
 
@@ -32,17 +32,17 @@ export const metadata = {
   title: "Luces Govee Permanentes Tampa FL | LED Inteligentes Todo el Ano | JR One",
   description: "Instalacion de luces LED Govee permanentes en Tampa Bay. Iluminacion inteligente todo el ano controlada por app. Navidad, Halloween, dias normales. (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/es/luces-govee-tampa",
+    canonical: "https://www.jronegutters.com/es/luces-govee-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/govee-lights",
-      "es-US": "https://jronegutters.com/es/luces-govee-tampa",
-      "x-default": "https://jronegutters.com/govee-lights",
+      "en-US": "https://www.jronegutters.com/govee-lights",
+      "es-US": "https://www.jronegutters.com/es/luces-govee-tampa",
+      "x-default": "https://www.jronegutters.com/govee-lights",
     },
   },
   openGraph: {
     title: "Luces Govee Tampa Bay — JR One Aluminum",
     description: "Luces LED permanentes inteligentes. Todo el ano, control por app. (844) 444-3114.",
-    url: "https://jronegutters.com/es/luces-govee-tampa",
+    url: "https://www.jronegutters.com/es/luces-govee-tampa",
     type: "website",
     locale: "es_US",
   },

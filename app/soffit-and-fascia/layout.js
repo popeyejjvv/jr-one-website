@@ -8,7 +8,7 @@ const serviceSchema = {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", addressLocality: "Tampa", addressRegion: "FL", addressCountry: "US" },
   },
@@ -39,9 +39,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 2, name: "Services", item: "https://jronegutters.com" },
-    { "@type": "ListItem", position: 3, name: "Soffit and Fascia Tampa", item: "https://jronegutters.com/soffit-and-fascia" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://www.jronegutters.com" },
+    { "@type": "ListItem", position: 3, name: "Soffit and Fascia Tampa", item: "https://www.jronegutters.com/soffit-and-fascia" },
   ],
 };
 
@@ -49,7 +49,7 @@ const imageObjectSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
   contentUrl: "https://jronegutters.com/images/soffit-fascia-detail.webp",
-  url: "https://jronegutters.com/images/soffit-fascia-detail.webp",
+  url: "https://www.jronegutters.com/images/soffit-fascia-detail.webp",
   caption: "Freshly installed aluminum soffit and fascia on a Tampa Bay home",
   description: "Close-up of white aluminum soffit panels and fascia wrap with clean mitered corner installation by JR One Aluminum in Tampa, Florida.",
   creditText: "JR One Aluminum LLC",
@@ -101,11 +101,11 @@ export const metadata = {
   description:
     "Soffit and fascia Tampa Bay specialists. Aluminum and vinyl soffit, custom-bent fascia wraps, rotted wood replaced underneath. Free estimate (844) 444-3114. 30+ years in the trade.",
   alternates: {
-    canonical: "https://jronegutters.com/soffit-and-fascia",
+    canonical: "https://www.jronegutters.com/soffit-and-fascia",
     languages: {
-      "en-US": "https://jronegutters.com/soffit-and-fascia",
-      "es-US": "https://jronegutters.com/es/sofito-fascia-tampa",
-      "x-default": "https://jronegutters.com/soffit-and-fascia",
+      "en-US": "https://www.jronegutters.com/soffit-and-fascia",
+      "es-US": "https://www.jronegutters.com/es/sofito-fascia-tampa",
+      "x-default": "https://www.jronegutters.com/soffit-and-fascia",
     },
   },
   keywords: [
@@ -122,11 +122,11 @@ export const metadata = {
   openGraph: {
     title: "Soffit and Fascia Tampa | JR One Aluminum",
     description: "Soffit and fascia Tampa Bay specialists. Rotted wood out, aluminum in. Over 30 years in the trade. (844) 444-3114.",
-    url: "https://jronegutters.com/soffit-and-fascia",
+    url: "https://www.jronegutters.com/soffit-and-fascia",
     type: "website",
     images: [
       {
-        url: "https://jronegutters.com/images/soffit-fascia-detail.webp",
+        url: "https://www.jronegutters.com/images/soffit-fascia-detail.webp",
         width: 1920,
         height: 1080,
         alt: "Freshly installed aluminum soffit and fascia on a Tampa Bay home by JR One Aluminum",

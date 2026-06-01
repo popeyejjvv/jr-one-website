@@ -10,7 +10,7 @@ const serviceSchemaEs = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
-    url: "https://jronegutters.com",
+    url: "https://www.jronegutters.com",
     telephone: "(844) 444-3114",
     address: { "@type": "PostalAddress", streetAddress: "3420 W Cherry St", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33607", addressCountry: "US" },
     availableLanguage: ["en", "es"],
@@ -23,8 +23,8 @@ const breadcrumbSchemaEs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Mantenimiento Propiedad Alquiler", item: "https://jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
+    { "@type": "ListItem", position: 2, name: "Mantenimiento Propiedad Alquiler", item: "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa" },
   ],
 };
 
@@ -32,17 +32,17 @@ export const metadata = {
   title: "Mantenimiento de Canaletas para Alquileres Tampa FL | Airbnb, LTR, Inversionista | JR One",
   description: "Mantenimiento de canaletas para propiedades de alquiler en Tampa Bay. Airbnb, alquiler a largo plazo, carteras de inversion. Limpieza programada. (844) 444-3114.",
   alternates: {
-    canonical: "https://jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
+    canonical: "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
     languages: {
-      "en-US": "https://jronegutters.com/rental-property-maintenance",
-      "es-US": "https://jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
-      "x-default": "https://jronegutters.com/rental-property-maintenance",
+      "en-US": "https://www.jronegutters.com/rental-property-maintenance",
+      "es-US": "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
+      "x-default": "https://www.jronegutters.com/rental-property-maintenance",
     },
   },
   openGraph: {
     title: "Mantenimiento Propiedades de Alquiler Tampa Bay — JR One Aluminum",
     description: "Airbnb, LTR, inversionista. Mantenimiento programado de canaletas. (844) 444-3114.",
-    url: "https://jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
+    url: "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
     type: "website",
     locale: "es_US",
   },
