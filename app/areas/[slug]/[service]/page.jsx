@@ -927,6 +927,10 @@ export default async function CityServicePage({ params }) {
   };
 
   // FAQPage JSON-LD only emitted when enrichment provides FAQs.
+  // TODO 2026-07-15: Strip FAQPage JSON-LD from all combo pages before
+  // Google's August 2026 FAQPage rich-result API removal. Tier 1 ban
+  // stands for non-combo pages; combos keep FAQPage during the rich-
+  // result window. Policy locked 2026-06-02 (see decisions/log.md).
   const faqSchema = enrichment?.faqs?.length
     ? {
         "@context": "https://schema.org",
