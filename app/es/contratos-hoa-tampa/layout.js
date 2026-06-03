@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Contratos HOA Tampa Bay — JR One Aluminum",
+    title: "Contratos HOA Tampa Bay - JR One Aluminum",
     description: "Contratos de mantenimiento para asociaciones de propietarios. Limpieza, inspeccion, informes. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/contratos-hoa-tampa",
     type: "website",

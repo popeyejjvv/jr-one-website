@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Canaletas Continuas de Aluminio Tampa — JR One Aluminum",
+    title: "Canaletas Continuas de Aluminio Tampa - JR One Aluminum",
     description: "Fabricadas en el sitio. Solo 6 y 7 pulgadas. Mas de 30 anos en el oficio. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-sin-costura-tampa",
     type: "website",

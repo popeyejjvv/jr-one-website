@@ -11,12 +11,12 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Gutter, Soffit, Fascia Resources — JR One Aluminum Tampa Bay",
+  title: "Gutter, Soffit, Fascia Resources - JR One Aluminum Tampa Bay",
   description:
     "Tampa Bay homeowner guides on gutter sizes (we install 6\" and 7\" only), gutter cleaning frequency, fascia repair, Peak 301 roof rejuvenation, hurricane prep, and more. Family-owned, over 30 years.",
   alternates: { canonical: "https://www.jronegutters.com/resources" },
   openGraph: {
-    title: "Gutter, Soffit, Fascia Resources — JR One Aluminum",
+    title: "Gutter, Soffit, Fascia Resources - JR One Aluminum",
     description: "Tampa Bay homeowner guides on gutters, soffit, fascia, drainage, and Peak 301.",
     url: "https://www.jronegutters.com/resources",
     type: "website",

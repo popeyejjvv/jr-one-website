@@ -11,12 +11,12 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Tampa Bay Storm Damage & Insurance Claims — Gutter, Soffit, Fascia",
+  title: "Tampa Bay Storm Damage & Insurance Claims - Gutter, Soffit, Fascia",
   description:
     "Insurance claim help for storm-damaged gutters, soffit, fascia, and roofs in Tampa Bay. We document damage and provide contractor estimates for your adjuster. (844) 444-3114.",
   alternates: { canonical: "https://www.jronegutters.com/insurance-resource-center" },
   openGraph: {
-    title: "Tampa Bay Storm Damage & Insurance Claims — JR One Aluminum",
+    title: "Tampa Bay Storm Damage & Insurance Claims - JR One Aluminum",
     description: "We document storm damage and provide contractor estimates for your insurance adjuster.",
     url: "https://www.jronegutters.com/insurance-resource-center",
     type: "website",

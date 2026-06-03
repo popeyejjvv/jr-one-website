@@ -39,7 +39,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Protectores de Canaleta Tampa — JR One Aluminum",
+    title: "Protectores de Canaleta Tampa - JR One Aluminum",
     description: "Micro-malla anti-pino. Reduce limpieza a anual. Familia, mas de 30 anos. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/protectores-canaletas-tampa",
     type: "website",

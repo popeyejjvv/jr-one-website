@@ -39,7 +39,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Reparacion de Canaletas Tampa — JR One Aluminum",
+    title: "Reparacion de Canaletas Tampa - JR One Aluminum",
     description: "Hundimientos, fugas, desbordamiento, dano de tormenta. Servicio misma semana. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/reparacion-canaletas-tampa",
     type: "website",

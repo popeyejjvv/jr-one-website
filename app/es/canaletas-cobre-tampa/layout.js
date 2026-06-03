@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Canaletas de Cobre Tampa FL — JR One Aluminum",
+    title: "Canaletas de Cobre Tampa FL - JR One Aluminum",
     description: "Estilo K y media cana sin costura. Para hogares arquitectonicos e historicos. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-cobre-tampa",
     type: "website",

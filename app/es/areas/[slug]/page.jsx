@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
       },
     },
     openGraph: {
-      title: `${cityName}, FL — Canaletas, Sofito y Fascia | JR One Aluminum`,
+      title: `${cityName}, FL - Canaletas, Sofito y Fascia | JR One Aluminum`,
       description: `Especialistas en aluminio en ${cityName}, FL. Canaletas continuas, sofito, fascia, protectores, drenaje. Estimado gratis (844) 444-3114.`,
       url: `https://www.jronegutters.com/es/areas/${slug}`,
       type: "website",

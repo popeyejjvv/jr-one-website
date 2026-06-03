@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sofito Sagiper PVC Tampa Bay — JR One Aluminum",
+    title: "Sofito Sagiper PVC Tampa Bay - JR One Aluminum",
     description: "Veta de madera real. Cero mantenimiento. No se pudre. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/sagiper-soffit-pvc-tampa",
     type: "website",

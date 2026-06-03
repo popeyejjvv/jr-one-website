@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Limpieza de Canaletas Tampa — JR One Aluminum",
+    title: "Limpieza de Canaletas Tampa - JR One Aluminum",
     description: "Limpieza completa, lavado de bajantes, fotografias. $150-$400 casa unifamiliar. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
     type: "website",

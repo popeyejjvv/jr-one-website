@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Canaletas de 7 Pulgadas Tampa Bay — JR One Aluminum",
+    title: "Canaletas de 7 Pulgadas Tampa Bay - JR One Aluminum",
     description: "Sobredimensionadas grado comercial. Para hogares grandes y de lujo. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-7-pulgadas-tampa",
     type: "website",

@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Luces Govee Tampa Bay — JR One Aluminum",
+    title: "Luces Govee Tampa Bay - JR One Aluminum",
     description: "Luces LED permanentes inteligentes. Todo el ano, control por app. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/luces-govee-tampa",
     type: "website",

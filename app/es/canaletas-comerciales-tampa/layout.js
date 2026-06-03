@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Canaletas Comerciales Tampa Bay — JR One Aluminum",
+    title: "Canaletas Comerciales Tampa Bay - JR One Aluminum",
     description: "Apartamentos, multifamiliares, comercial. Sistemas estilo caja y super canaleta. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-comerciales-tampa",
     type: "website",

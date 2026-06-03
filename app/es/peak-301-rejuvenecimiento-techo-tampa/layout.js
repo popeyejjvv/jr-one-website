@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Peak 301 Rejuvenecimiento de Techo Tampa — JR One Aluminum",
+    title: "Peak 301 Rejuvenecimiento de Techo Tampa - JR One Aluminum",
     description: "Peak 301 solo en techos de tejas asfalticas. Extiende vida 6-10 anos. 70% menos que techo nuevo. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa",
     type: "website",

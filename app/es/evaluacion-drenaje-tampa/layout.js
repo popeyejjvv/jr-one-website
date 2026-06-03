@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Evaluacion de Drenaje Tampa Bay — JR One Aluminum",
+    title: "Evaluacion de Drenaje Tampa Bay - JR One Aluminum",
     description: "Tuberia PVC + cuencas de captacion + rejillas + emisores pop-up. Soluciones reales para agua estancada. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/evaluacion-drenaje-tampa",
     type: "website",

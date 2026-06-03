@@ -36,7 +36,7 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Reparacion de Canaletas por Tormenta Tampa FL — Misma Semana",
+  title: "Reparacion de Canaletas por Tormenta Tampa FL - Misma Semana",
   description:
     "Canaletas, fascia, sofito danados por huracan en Tampa Bay. Instalacion misma semana, documentacion para seguro. Familia, mas de 30 anos. (844) 444-3114.",
   alternates: {
@@ -48,7 +48,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Reparacion de Canaletas por Tormenta Tampa Bay — JR One Aluminum",
+    title: "Reparacion de Canaletas por Tormenta Tampa Bay - JR One Aluminum",
     description: "Instalacion misma semana para canaletas, fascia y sofito danados por huracan. Documentacion para seguro. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
     type: "website",

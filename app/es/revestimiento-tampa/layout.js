@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Revestimiento Tampa Bay — JR One Aluminum",
+    title: "Revestimiento Tampa Bay - JR One Aluminum",
     description: "Hardie Board, vinilo, aluminio. Proteccion resistente al clima. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/revestimiento-tampa",
     type: "website",

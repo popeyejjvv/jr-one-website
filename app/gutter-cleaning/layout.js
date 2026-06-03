@@ -52,7 +52,7 @@ const imageObjectSchema = {
   contentUrl: "https://jronegutters.com/images/gutter-cleaning-before.webp",
   url: "https://www.jronegutters.com/images/gutter-cleaning-before.webp",
   caption: "Clogged residential gutter overflowing during a Tampa Bay rainstorm before professional cleaning",
-  description: "Top-down view of a residential rain gutter packed with wet leaves and pine debris causing overflow on a Tampa Bay home — the condition JR One Aluminum cleans on every routine service call.",
+  description: "Top-down view of a residential rain gutter packed with wet leaves and pine debris causing overflow on a Tampa Bay home - the condition JR One Aluminum cleans on every routine service call.",
   creditText: "JR One Aluminum LLC",
   creator: { "@type": "Organization", "@id": "https://jronegutters.com/#organization" },
 };

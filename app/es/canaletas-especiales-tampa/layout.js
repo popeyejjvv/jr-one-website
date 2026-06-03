@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Canaletas Especiales Tampa Bay — JR One Aluminum",
+    title: "Canaletas Especiales Tampa Bay - JR One Aluminum",
     description: "Media cana, estilo D, caja comercial, super canaleta. Para arquitectura y comercial. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-especiales-tampa",
     type: "website",

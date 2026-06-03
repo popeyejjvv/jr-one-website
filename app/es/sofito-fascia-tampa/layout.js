@@ -39,7 +39,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sofito y Fascia Tampa — JR One Aluminum",
+    title: "Sofito y Fascia Tampa - JR One Aluminum",
     description: "Reemplazo de sofito y fascia en aluminio. Detiene el ciclo de pudricion permanentemente. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/sofito-fascia-tampa",
     type: "website",
