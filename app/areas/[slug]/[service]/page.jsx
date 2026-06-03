@@ -834,7 +834,7 @@ export async function generateMetadata({ params }) {
   const svc = SERVICES[service];
   const title = `${svc.name} in ${city.name}, FL`;
   const description = `${svc.name} in ${city.name}, Florida. Family-owned specialist with over 30 years in Tampa Bay. Bilingual English/Spanish. Free estimate (844) 444-3114.`;
-  const url = `https://jronegutters.com/areas/${slug}/${service}`;
+  const url = `https://www.jronegutters.com/areas/${slug}/${service}`;
   // ES counterpart at /es/areas/[slug]/[service] not yet built — declare x-default only
   // so the hreflang check passes the explicitly-allowed single-language fallback path.
   // When the ES combo route ships, add "es-US": `https://www.jronegutters.com/es/areas/${slug}/${service}`.
@@ -876,7 +876,7 @@ export default async function CityServicePage({ params }) {
 
   const city = CITY_META[slug];
   const svc = SERVICES[service];
-  const url = `https://jronegutters.com/areas/${slug}/${service}`;
+  const url = `https://www.jronegutters.com/areas/${slug}/${service}`;
 
   // Phase 3 Batch 1 — top-10 ROI combo enrichment lookup. Falls through to
   // generic template when no enrichment is defined for this combo.

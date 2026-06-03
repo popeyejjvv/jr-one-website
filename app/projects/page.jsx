@@ -558,7 +558,7 @@ export default function ProjectsPage() {
                 }}
               >
                 {lightbox.photo.city && `${lightbox.photo.city}, ${lightbox.photo.state}`}
-                {lightbox.photo.tags.length > 0 && ` · ${lightbox.photo.tags.map((tg) => tagLabels[tg] || tg).join(", ")}`}
+                {lightbox.photo.tags.length > 0 && ` / ${lightbox.photo.tags.map((tg) => tagLabels[tg] || tg).join(", ")}`}
               </span>
               <span
                 style={{
