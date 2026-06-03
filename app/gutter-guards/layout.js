@@ -3,7 +3,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Gutter Guard Installation Tampa",
   serviceType: "Gutter Guard Installation",
-  image: "https://jronegutters.com/images/gutter-guard-installed.webp",
+  image: "https://www.jronegutters.com/images/gutter-guard-installed.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -57,7 +57,7 @@ export const metadata = {
     type: "website",
     images: [{ url: "https://www.jronegutters.com/images/gutter-guard-installed.webp", width: 1920, height: 1080, alt: "Micro-mesh gutter guard installed on a JR One Aluminum seamless gutter in Tampa Bay" }],
   },
-  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/gutter-guard-installed.webp"] },
+  twitter: { card: "summary_large_image", images: ["https://www.jronegutters.com/images/gutter-guard-installed.webp"] },
 };
 
 export default function Layout({ children }) {

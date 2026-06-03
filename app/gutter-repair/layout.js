@@ -3,7 +3,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Gutter Repair Tampa",
   serviceType: "Gutter Repair",
-  image: "https://jronegutters.com/images/seamless-gutter-install.webp",
+  image: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -48,7 +48,7 @@ const breadcrumbSchema = {
 const imageObjectSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
-  contentUrl: "https://jronegutters.com/images/seamless-gutter-install.webp",
+  contentUrl: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
   url: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
   caption: "JR One Aluminum crew installing seamless aluminum gutter on a Tampa Bay home",
   description: "Professional gutter installer mounting a 6-inch white seamless aluminum gutter on a Florida home, gutter machine visible in the driveway.",
@@ -136,7 +136,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Gutter Repair Tampa | JR One Aluminum",
     description: "Same-week scheduling. Sagging, leaks, overflow, fascia. (844) 444-3114.",
-    images: ["https://jronegutters.com/images/seamless-gutter-install.webp"],
+    images: ["https://www.jronegutters.com/images/seamless-gutter-install.webp"],
   },
 };
 

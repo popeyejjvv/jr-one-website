@@ -3,7 +3,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "7-Inch Seamless Aluminum Gutters Tampa",
   serviceType: "Oversized Gutter Installation",
-  image: "https://jronegutters.com/images/7inch-gutter-comparison.webp",
+  image: "https://www.jronegutters.com/images/7inch-gutter-comparison.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -60,7 +60,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "7-Inch Gutters Tampa FL, JR One Aluminum",
     description: "Commercial-grade water capacity for South Tampa luxury homes and large-roof properties.",
-    images: ["https://jronegutters.com/images/7inch-gutter-comparison.webp"],
+    images: ["https://www.jronegutters.com/images/7inch-gutter-comparison.webp"],
   },
 };
 

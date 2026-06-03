@@ -59,7 +59,7 @@ export default async function BlogPostPage({ params }) {
     datePublished: post.date,
     author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
     publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
-    mainEntityOfPage: `https://jronegutters.com/blog/${slug}`,
+    mainEntityOfPage: `https://www.jronegutters.com/blog/${slug}`,
   };
 
   return (

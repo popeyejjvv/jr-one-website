@@ -7,7 +7,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Seamless Aluminum Gutter Installation Tampa",
   serviceType: "Seamless Aluminum Gutter Installation",
-  image: "https://jronegutters.com/images/seamless-gutter-install.webp",
+  image: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -76,7 +76,7 @@ export const metadata = {
     type: "website",
     images: [{ url: "https://www.jronegutters.com/images/seamless-gutter-install.webp", width: 1920, height: 1080, alt: "JR One Aluminum installer mounting a 6-inch seamless aluminum gutter on a Tampa Bay home" }],
   },
-  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/seamless-gutter-install.webp"] },
+  twitter: { card: "summary_large_image", images: ["https://www.jronegutters.com/images/seamless-gutter-install.webp"] },
 };
 
 export default function Layout({ children }) {

@@ -1,6 +1,6 @@
 // Server-side metadata + canonical + breadcrumb schema for /about.
 // Added 2026-05-23 to fix the broken-canonical bug where /about inherited
-// the root canonical https://jronegutters.com and was at risk of being merged
+// the root canonical https://www.jronegutters.com and was at risk of being merged
 // into the homepage by Google.
 
 const breadcrumbSchema = {

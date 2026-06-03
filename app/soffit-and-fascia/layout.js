@@ -3,7 +3,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Soffit and Fascia Tampa",
   serviceType: "Soffit and Fascia Installation",
-  image: "https://jronegutters.com/images/soffit-fascia-detail.webp",
+  image: "https://www.jronegutters.com/images/soffit-fascia-detail.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -48,7 +48,7 @@ const breadcrumbSchema = {
 const imageObjectSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
-  contentUrl: "https://jronegutters.com/images/soffit-fascia-detail.webp",
+  contentUrl: "https://www.jronegutters.com/images/soffit-fascia-detail.webp",
   url: "https://www.jronegutters.com/images/soffit-fascia-detail.webp",
   caption: "Freshly installed aluminum soffit and fascia on a Tampa Bay home",
   description: "Close-up of white aluminum soffit panels and fascia wrap with clean mitered corner installation by JR One Aluminum in Tampa, Florida.",
@@ -79,7 +79,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "Replace rotted wood substrate",
-      text: "Remove rotted fascia boards down to solid framing. Install pressure-treated wood substrate. Never wrap aluminum over rotten wood — that hides the problem and forces a redo within 5 years.",
+      text: "Remove rotted fascia boards down to solid framing. Install pressure-treated wood substrate. Never wrap aluminum over rotten wood, that hides the problem and forces a redo within 5 years.",
     },
     {
       "@type": "HowToStep",
@@ -137,7 +137,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Soffit and Fascia Tampa | JR One Aluminum",
     description: "Tampa Bay soffit and fascia specialists. Aluminum + vinyl. Over 30 years.",
-    images: ["https://jronegutters.com/images/soffit-fascia-detail.webp"],
+    images: ["https://www.jronegutters.com/images/soffit-fascia-detail.webp"],
   },
 };
 

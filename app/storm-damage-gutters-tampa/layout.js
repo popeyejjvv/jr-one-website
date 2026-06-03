@@ -7,7 +7,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Storm Damage Gutter Repair Tampa",
   serviceType: "Gutter Installation and Repair",
-  image: "https://jronegutters.com/images/storm-damage-hero.webp",
+  image: "https://www.jronegutters.com/images/storm-damage-hero.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -61,7 +61,7 @@ export const metadata = {
     locale: "en_US",
     images: [{ url: "https://www.jronegutters.com/images/storm-damage-hero.webp", width: 1920, height: 1080, alt: "Storm-damaged gutters and fascia on a Tampa Bay home before JR One Aluminum same-week repair" }],
   },
-  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/storm-damage-hero.webp"] },
+  twitter: { card: "summary_large_image", images: ["https://www.jronegutters.com/images/storm-damage-hero.webp"] },
 };
 
 export default function Layout({ children }) {

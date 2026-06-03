@@ -65,7 +65,7 @@ export const metadata = {
     locale: "es_US",
     images: [{ url: "https://www.jronegutters.com/images/spanish-hero-familia.webp", width: 1920, height: 1080, alt: "Familia hispana frente a su hogar en Tampa Bay con canaletas y sofito instalados por JR One Aluminum" }],
   },
-  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/spanish-hero-familia.webp"] },
+  twitter: { card: "summary_large_image", images: ["https://www.jronegutters.com/images/spanish-hero-familia.webp"] },
   robots: { index: true, follow: true },
 };
 

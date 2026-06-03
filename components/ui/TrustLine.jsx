@@ -2,9 +2,9 @@
  * TrustLine , single inline credentials line.
  *
  * Replaces the impeccable-banned hero-metric template (4 colored trust badges
- * in a row). Renders as: [icon] item · [icon] item · [icon] item · [icon] item
+ * in a row). Renders as: [icon] item | [icon] item | [icon] item | [icon] item
  *
- * Items are dot-separated with a thin divider, NOT colored backgrounds.
+ * Items are vertical-bar-divider separated with a thin border, NOT colored backgrounds.
  * Use on any dark surface (hero, footer band, CTA band).
  */
 import { FamilyIcon, ClockIcon, HardHatIcon, ShieldCheckIcon, StarIcon } from "../../lib/icons";

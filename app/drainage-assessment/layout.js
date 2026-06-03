@@ -3,7 +3,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Drainage Assessment and Installation Tampa",
   serviceType: "Drainage Installation",
-  image: "https://jronegutters.com/images/florida-rain-gutters.webp",
+  image: "https://www.jronegutters.com/images/florida-rain-gutters.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -52,7 +52,7 @@ export const metadata = {
     type: "website",
     images: [{ url: "https://www.jronegutters.com/images/florida-rain-gutters.webp", width: 1920, height: 1080, alt: "Heavy tropical rain flowing through JR One Aluminum gutter and downspout system on a Tampa Bay home" }],
   },
-  twitter: { card: "summary_large_image", images: ["https://jronegutters.com/images/florida-rain-gutters.webp"] },
+  twitter: { card: "summary_large_image", images: ["https://www.jronegutters.com/images/florida-rain-gutters.webp"] },
 };
 
 export default function Layout({ children }) {

@@ -45,7 +45,7 @@ const T = {
     referNowBtn: "REFER SOMEONE NOW",
     emailReferralBtn: "EMAIL A REFERRAL",
     referralEmailSubject: "A Tampa contractor I trust for gutters and exterior work",
-    referralEmailBody: "Hi,\n\nWanted to send you JR One Aluminum's info. They handle gutters, soffit, fascia, drainage, and Peak 301 roof rejuvenation across Tampa Bay.\n\nFamily-owned. Over 30 years in the trade. Fully insured. They show up when they say they will, and the bid doesn't change after the deposit.\n\nIf you need exterior work, give them a call:\n\nPhone: (844) 444-3114\nEmail: info@jronegutters.com\nWebsite: https://jronegutters.com\n\nTell them I sent you. They run a referral program, so you get 10% off your first qualifying project ($880 minimum) and I get a small thank-you for the introduction.\n",
+    referralEmailBody: "Hi,\n\nWanted to send you JR One Aluminum's info. They handle gutters, soffit, fascia, drainage, and Peak 301 roof rejuvenation across Tampa Bay.\n\nFamily-owned. Over 30 years in the trade. Fully insured. They show up when they say they will, and the bid doesn't change after the deposit.\n\nIf you need exterior work, give them a call:\n\nPhone: (844) 444-3114\nEmail: info@jronegutters.com\nWebsite: https://www.jronegutters.com\n\nTell them I sent you. They run a referral program, so you get 10% off your first qualifying project ($880 minimum) and I get a small thank-you for the introduction.\n",
     stats: [
       { icon: "gift", value: "$80", label: "Gift card for every qualifying referral" },
       { icon: "percent", value: "10%", label: "Off next service for referred customers" },
@@ -127,7 +127,7 @@ const T = {
     referNowBtn: "REFIERE A ALGUIEN AHORA",
     emailReferralBtn: "ENVIA UN REFERIDO POR CORREO",
     referralEmailSubject: "Un contratista de Tampa que recomiendo para canaletas y trabajo de exterior",
-    referralEmailBody: "Hola,\n\nTe envío la info de JR One Aluminum. Ellos hacen canaletas, sofito, fascia, drenaje y rejuvenecimiento Peak 301 en todo Tampa Bay.\n\nEmpresa familiar. Más de 30 años en el oficio. Totalmente asegurados. Llegan cuando dicen y el precio no cambia después del depósito.\n\nSi necesitas trabajo de exterior, llámalos:\n\nTeléfono: (844) 444-3114\nCorreo: info@jronegutters.com\nSitio web: https://jronegutters.com\n\nDiles que yo te referí. Tienen un programa de referidos: tú recibes 10% de descuento en tu primer proyecto que califique ($880 mínimo) y yo recibo un pequeño agradecimiento por la presentación.\n",
+    referralEmailBody: "Hola,\n\nTe envío la info de JR One Aluminum. Ellos hacen canaletas, sofito, fascia, drenaje y rejuvenecimiento Peak 301 en todo Tampa Bay.\n\nEmpresa familiar. Más de 30 años en el oficio. Totalmente asegurados. Llegan cuando dicen y el precio no cambia después del depósito.\n\nSi necesitas trabajo de exterior, llámalos:\n\nTeléfono: (844) 444-3114\nCorreo: info@jronegutters.com\nSitio web: https://www.jronegutters.com\n\nDiles que yo te referí. Tienen un programa de referidos: tú recibes 10% de descuento en tu primer proyecto que califique ($880 mínimo) y yo recibo un pequeño agradecimiento por la presentación.\n",
     stats: [
       { icon: "gift", value: "$80", label: "Tarjeta de regalo por cada referido que califique" },
       { icon: "percent", value: "10%", label: "De descuento en el proximo servicio para clientes referidos" },

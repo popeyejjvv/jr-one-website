@@ -3,7 +3,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Gutter Cleaning Tampa",
   serviceType: "Gutter Cleaning",
-  image: "https://jronegutters.com/images/gutter-cleaning-before.webp",
+  image: "https://www.jronegutters.com/images/gutter-cleaning-before.webp",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     "@id": "https://jronegutters.com/#business",
@@ -49,7 +49,7 @@ const breadcrumbSchema = {
 const imageObjectSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
-  contentUrl: "https://jronegutters.com/images/gutter-cleaning-before.webp",
+  contentUrl: "https://www.jronegutters.com/images/gutter-cleaning-before.webp",
   url: "https://www.jronegutters.com/images/gutter-cleaning-before.webp",
   caption: "Clogged residential gutter overflowing during a Tampa Bay rainstorm before professional cleaning",
   description: "Top-down view of a residential rain gutter packed with wet leaves and pine debris causing overflow on a Tampa Bay home - the condition JR One Aluminum cleans on every routine service call.",
@@ -84,7 +84,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "Clear every run end-to-end",
-      text: "Scoop wet debris by hand from each gutter run, working from one corner to the next. No skipping middle sections — debris compacts most in the dead-flow middle of long runs, which is the part homeowners and handymen miss.",
+      text: "Scoop wet debris by hand from each gutter run, working from one corner to the next. No skipping middle sections, debris compacts most in the dead-flow middle of long runs, which is the part homeowners and handymen miss.",
     },
     {
       "@type": "HowToStep",
@@ -138,7 +138,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Gutter Cleaning Tampa | JR One Aluminum",
     description: "Full service cleaning, flushing, and inspection with photo documentation.",
-    images: ["https://jronegutters.com/images/gutter-cleaning-before.webp"],
+    images: ["https://www.jronegutters.com/images/gutter-cleaning-before.webp"],
   },
 };
 
