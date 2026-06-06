@@ -41,3 +41,18 @@ yarn-error.log*
 next-env.d.ts
 .claude-flow/
 public/images/*.png
+
+# CompanyCam photo-audit regenerable artifacts (keep scripts + *.json reports, not these)
+audit/photos/
+audit/sheets/
+audit/live-gallery.json
+data/photo-filter-log.jsonl
+
+# audit intermediate data (carry CompanyCam image URLs incl. the PII photos) - keep out of git
+audit/displayed-photos.json
+audit/photo-analysis.json
+audit/classification-final.json
+audit/blocked-ids.json
+audit/sheet-index.json
+audit/monitor-report.json
+audit/verdicts/

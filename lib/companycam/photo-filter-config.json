@@ -1,0 +1,223 @@
+{
+  "_comment": "Manual override lists for the CompanyCam photo quality gate (lib/companycam/photo-filter.js). blocked_photo_ids: never display, regardless of any heuristic. approved_photo_ids: bypass automated name/status heuristics (still subject to the block list). Edit by hand to hide or force-allow a specific photo, then rebuild the site.",
+  "_audit": {
+    "date": "2026-06-05",
+    "reviewed": 367,
+    "unsafe": 29,
+    "counts": {
+      "SAFE": 338,
+      "UNSAFE-UNPROFESSIONAL": 26,
+      "UNSAFE-INTERNAL": 1,
+      "UNSAFE-PII": 2
+    },
+    "method": "vision review of every displayed photo via contact sheets (audit/ pipeline)"
+  },
+  "blocked_photo_ids": [
+    "inv-102328800",
+    "inv-101641704",
+    "inv-101311754",
+    "2981466275",
+    "2953691766",
+    "inv-99445487",
+    "inv-98686018",
+    "inv-96814225",
+    "inv-94510288",
+    "inv-93915175",
+    "inv-92078333",
+    "inv-91904115",
+    "inv-91238749",
+    "inv-90650061",
+    "inv-87735117",
+    "inv-87452506",
+    "inv-87200019",
+    "inv-87134798",
+    "inv-85419159",
+    "inv-85306681",
+    "inv-85219174",
+    "inv-84897820",
+    "inv-83610440",
+    "inv-83003553",
+    "inv-78653014",
+    "inv-73357143",
+    "inv-70544587",
+    "1760756761",
+    "inv-67298052"
+  ],
+  "approved_photo_ids": [],
+  "_blocked_reasons": {
+    "1760756761": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Dark, unclear shot of dark tarp/material against block wall, no JR One finished work visible, low usability",
+      "project": "PITCH!",
+      "source": "live"
+    },
+    "2953691766": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Dim/blurry close-up of ladder/material with no clear finished work, low usability",
+      "project": "Clear Source LLC",
+      "source": "live"
+    },
+    "2981466275": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Distant/dark commercial-area capture with construction equipment, no clear JR One work, low usability",
+      "project": "Clear Source LLC",
+      "source": "live"
+    },
+    "inv-102328800": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "blurry dark ground/pavers shot, accidental capture, no JR One work visible",
+      "project": "Susan Olsen - Stephan Self Gen JR One",
+      "source": "inventory"
+    },
+    "inv-101641704": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Photo dominated by American flag and a tree with no clear JR One work; appears accidental/non-work capture",
+      "project": "",
+      "source": "inventory"
+    },
+    "inv-101311754": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Pre-work shot with fallen tree/debris and no visible JR One work",
+      "project": "Jeff Hacker - JRONE",
+      "source": "inventory"
+    },
+    "inv-99445487": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Roof photo with pink/magenta digital markup lines and text overlay (measurement annotation)",
+      "project": "Rob Icenogle - JRONE",
+      "source": "inventory"
+    },
+    "inv-98686018": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Mostly empty sky with sun glare, no usable work content",
+      "project": "Stronghold Roofing",
+      "source": "inventory"
+    },
+    "inv-96814225": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Pink/magenta drawn oval markup circling a damaged roof area - digital annotation overlay",
+      "project": "PITCH!",
+      "source": "inventory"
+    },
+    "inv-94510288": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Aerial/satellite measurement diagram of a property with drawn markup lines and points",
+      "project": "Pamela Lovett - JRONE",
+      "source": "inventory"
+    },
+    "inv-93915175": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Tall narrow dark blurry close-up of pole/material, unusable framing",
+      "project": "PITCH!",
+      "source": "inventory"
+    },
+    "inv-92078333": {
+      "class": "UNSAFE-INTERNAL",
+      "reason": "Product material sample board with printed label/packaging branding text, internal material shot",
+      "project": "Lam - JRONE",
+      "source": "inventory"
+    },
+    "inv-91904115": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Garage/driveway with truck and tailgate down, accidental/internal capture not finished work",
+      "project": "Lolitta Thornton - JRONE",
+      "source": "inventory"
+    },
+    "inv-91238749": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Mostly white sky/sun blowout with minimal subject, unusable overexposed photo",
+      "project": "ONSITE",
+      "source": "inventory"
+    },
+    "inv-90650061": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Yellow hand-drawn arrow and handwritten text overlay markup on the photo.",
+      "project": "Amanda Gill - JRONE",
+      "source": "inventory"
+    },
+    "inv-87735117": {
+      "class": "UNSAFE-PII",
+      "reason": "Printed document/paperwork with text and red markup overlay - looks like an estimate or order sheet.",
+      "project": "Westfall - Alex A",
+      "source": "inventory"
+    },
+    "inv-87452506": {
+      "class": "UNSAFE-PII",
+      "reason": "Hand-drawn diagram/sketch with handwritten notes and text - internal crew notes with potential customer detail.",
+      "project": "Westfall - Carlos V",
+      "source": "inventory"
+    },
+    "inv-87200019": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Overlay numbers (4, 23) and drawn text annotations on roof photo - digital markup.",
+      "project": "Sook Chang - JRONE",
+      "source": "inventory"
+    },
+    "inv-87134798": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Blurry extreme close-up of finger/thumb, accidental capture.",
+      "project": "Jim Buck - JRONE",
+      "source": "inventory"
+    },
+    "inv-85419159": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Blurry accidental shot with hand/finger, unusable.",
+      "project": "",
+      "source": "inventory"
+    },
+    "inv-85306681": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Dark blurry close-up of surface with finger, accidental/unusable.",
+      "project": "",
+      "source": "inventory"
+    },
+    "inv-85219174": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Wet driveway/ground with motorcycle and debris, no JR One work visible.",
+      "project": "Westfall - Brian C",
+      "source": "inventory"
+    },
+    "inv-84897820": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "House exterior with burned-in yellow digital markup ('30') drawn on the image",
+      "project": "Lorena Woods - JRONE",
+      "source": "inventory"
+    },
+    "inv-83610440": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Teal house with burned-in yellow text overlay 'Drain this floor' - digital markup",
+      "project": "Westfall - Susan M",
+      "source": "inventory"
+    },
+    "inv-83003553": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "House exterior with burned-in yellow text overlay markup",
+      "project": "Kevin Brown - JRONE",
+      "source": "inventory"
+    },
+    "inv-78653014": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Mostly tree and sky, no JR One work visible / accidental capture",
+      "project": "Westfall - Thomas S",
+      "source": "inventory"
+    },
+    "inv-73357143": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Brick house with sign/overlay on roofline, appears to be a damage or markup shot",
+      "project": "",
+      "source": "inventory"
+    },
+    "inv-70544587": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Crew member working on roof with green tarp, person captured in candid work shot",
+      "project": "Jose - JRONE",
+      "source": "inventory"
+    },
+    "inv-67298052": {
+      "class": "UNSAFE-UNPROFESSIONAL",
+      "reason": "Blurry blue out-of-focus motion capture, unusable accidental shot",
+      "project": "Michelle - JRONE",
+      "source": "inventory"
+    }
+  }
+}

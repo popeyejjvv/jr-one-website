@@ -1,3 +1,5 @@
+import { filterPhotos } from "../../../lib/companycam/photo-filter";
+
 const COMPANYCAM_TOKEN = process.env.COMPANYCAM_TOKEN;
 const API = "https://api.companycam.com/v2";
 
@@ -118,14 +120,20 @@ async function buildGallery() {
     delete photo.tag; // we use tags[] now
   }
 
+  // Quality gate: drop PII / unprofessional / internal photos before they ever leave the
+  // server. Same shared filter the SSG pages use (lib/companycam/photo-filter.js).
+  const safePhotos = filterPhotos(allPhotos, { page: "projects-gallery" });
+
   // Sort by most recent first
-  allPhotos.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
+  safePhotos.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
+
+  const safeProjectIds = new Set(safePhotos.map((p) => p.projectId).filter(Boolean));
 
   return {
-    photos: allPhotos,
+    photos: safePhotos,
     tagLabels: TAG_LABELS,
-    totalPhotos: allPhotos.length,
-    totalProjects: projectIds.size,
+    totalPhotos: safePhotos.length,
+    totalProjects: safeProjectIds.size,
     fetchedAt: new Date().toISOString(),
   };
 }

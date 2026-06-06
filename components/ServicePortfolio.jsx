@@ -21,7 +21,11 @@ export default async function ServicePortfolio({
   if (density.tier === "none") return null;
 
   const photos = await getJobsByService(serviceSlug, { limit });
-  if (photos.length === 0) return null;
+  // Min-render gate: never show a sparse 1-2 photo grid. If the quality filter (or a thin
+  // service line) leaves fewer than MIN_PORTFOLIO photos, omit the section entirely and let
+  // the rest of the page carry. Better no portfolio than a sparse, low-trust one.
+  const MIN_PORTFOLIO = 3;
+  if (photos.length < MIN_PORTFOLIO) return null;
 
   const headingLabel = serviceLabel || "JR One";
 

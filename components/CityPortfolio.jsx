@@ -20,13 +20,17 @@ export default async function CityPortfolio({
   serviceFilter,
   limit = 12,
 }) {
+  // Min-render gate: never show a sparse 1-2 photo grid. If filtering (PII/unprofessional
+  // removal) or thin evidence leaves fewer than this, omit the portfolio entirely.
+  const MIN_PORTFOLIO = 3;
+
   const density = await getCityEvidenceDensity(citySlug);
 
   // LOW or NONE density → regional fallback. Honest county labeling, no city-specific claims.
   if (density.tier === "low" || density.tier === "none") {
     const fallback = await getCountyFallbackJobs(density.county, { limit });
-    if (fallback.length === 0) {
-      return null; // no evidence of any kind — render nothing (let other page content carry)
+    if (fallback.length < MIN_PORTFOLIO) {
+      return null; // not enough safe evidence — render nothing (let other page content carry)
     }
     return (
       <section
@@ -48,11 +52,11 @@ export default async function CityPortfolio({
   // HIGH or MEDIUM density → real per-city portfolio
   const photos = await getJobsByCity(citySlug, { limit, serviceFilter });
 
-  if (photos.length === 0) {
-    // Defensive: density said HIGH/MEDIUM but filter narrowed to empty
-    // (e.g., copper filter on a city with no copper jobs). Fall back to mixed-service.
+  if (photos.length < MIN_PORTFOLIO) {
+    // Density said HIGH/MEDIUM but the service filter (or PII filtering) narrowed this too
+    // far (e.g., copper filter on a city with few copper jobs). Fall back to mixed-service.
     const mixed = await getJobsByCity(citySlug, { limit });
-    if (mixed.length === 0) return null;
+    if (mixed.length < MIN_PORTFOLIO) return null;
     return (
       <section
         className="city-portfolio"

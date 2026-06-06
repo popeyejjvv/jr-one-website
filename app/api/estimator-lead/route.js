@@ -79,6 +79,24 @@ function getClientIp(request) {
   return "unknown";
 }
 
+// =============================================================================
+// UTM helpers (mirrored from send-lead/route.js).
+// Estimator page builds a URL with UTM params when ad traffic lands on it;
+// those params need to travel through to BP so ad spend is attributable.
+// =============================================================================
+
+/**
+ * Extract a named UTM parameter from query string first, then body.
+ * Returns the raw string value or undefined.
+ */
+function pickUtm(searchParams, body, key) {
+  const fromQs = searchParams.get(key);
+  if (fromQs) return fromQs;
+  const fromBody = body[key];
+  if (fromBody && String(fromBody).length <= 256) return String(fromBody);
+  return undefined;
+}
+
 function splitName(fullName) {
   if (!fullName) return { firstName: "Estimator", lastName: "Lead" };
   const parts = String(fullName).trim().split(/\s+/);
@@ -134,6 +152,7 @@ export async function POST(request) {
     }
 
     const body = await request.json();
+    const searchParams = new URL(request.url).searchParams;
 
     // Estimator payload shape (from public/estimator.html sendToJROne / sendToCustomer):
     //   type: 'lead' | 'customer'
@@ -163,6 +182,15 @@ export async function POST(request) {
       customerName,
       customerEmail,
     } = body;
+
+    // UTM attribution: query string takes precedence over body.
+    // The estimator page URL may carry UTM params from Google/Meta ads.
+    const utm_source   = pickUtm(searchParams, body, "utm_source");
+    const utm_medium   = pickUtm(searchParams, body, "utm_medium");
+    const utm_campaign = pickUtm(searchParams, body, "utm_campaign");
+    const utm_term     = pickUtm(searchParams, body, "utm_term");
+    const utm_content  = pickUtm(searchParams, body, "utm_content");
+    const gclid        = pickUtm(searchParams, body, "gclid");
 
     // Phone is the minimum required to capture a lead
     if (!phone) {
@@ -203,6 +231,16 @@ export async function POST(request) {
           .filter(Boolean)
           .join("\n");
 
+        // BP custom fields for UTM attribution.
+        // TODO: confirm exact BP custom field names with Popeye before relying
+        // on these in reports. Same field names as send-lead/route.js.
+        const utmCustomFields = {};
+        if (utm_source)   utmCustomFields.lead_source   = utm_source;
+        if (utm_medium)   utmCustomFields.lead_medium   = utm_medium;
+        if (utm_campaign) utmCustomFields.lead_campaign = utm_campaign;
+        if (utm_term)     utmCustomFields.lead_term     = utm_term;
+        if (utm_content)  utmCustomFields.lead_content  = utm_content;
+
         const bpPayload = {
           userAccount: {
             firstName: firstName,
@@ -218,6 +256,8 @@ export async function POST(request) {
           leadSourceDescription: "Form Inquiry",
           projectTypeDescription: inferProjectType(measurements),
           buildingTypeDescription: "Single Family",
+          // UTM attribution as BP custom fields (see TODO above)
+          ...(Object.keys(utmCustomFields).length > 0 && { customFields: utmCustomFields }),
         };
 
         const bpResponse = await fetch(`${BP_BASE_URL}/clients`, {
@@ -256,6 +296,34 @@ export async function POST(request) {
               });
             } catch (actErr) {
               console.warn("⚠ Could not attach activity note:", actErr.message);
+            }
+
+            // Best-effort: log UTM attribution as a separate activity note.
+            // Fallback in case BP custom fields (customFields above) are rejected.
+            if (gclid || utm_source || utm_campaign || utm_medium || utm_term || utm_content) {
+              const attrParts = [];
+              if (gclid)        attrParts.push(`gclid: ${gclid}`);
+              if (utm_source)   attrParts.push(`source: ${utm_source}`);
+              if (utm_medium)   attrParts.push(`medium: ${utm_medium}`);
+              if (utm_campaign) attrParts.push(`campaign: ${utm_campaign}`);
+              if (utm_term)     attrParts.push(`term: ${utm_term}`);
+              if (utm_content)  attrParts.push(`content: ${utm_content}`);
+              try {
+                await fetch(`${BP_BASE_URL}/client-activities/v1`, {
+                  method: "POST",
+                  headers: {
+                    "x-api-key": process.env.BUILDER_PRIME_API_KEY,
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                  },
+                  body: JSON.stringify({
+                    opportunityId: parseInt(bpResult.opportunity_id, 10),
+                    description: `[AD ATTRIBUTION] ${attrParts.join(" | ")}`,
+                  }),
+                });
+              } catch (attrErr) {
+                console.error(`✗ Estimator attribution activity log failed (non-fatal): ${attrErr.message}`);
+              }
             }
           }
         } else {

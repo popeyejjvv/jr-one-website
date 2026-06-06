@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Weekly CompanyCam photo-gate monitor for the JR One website.
+  Runs audit/weekly_monitor.mjs every Sunday at 6:00 AM ET, refreshing the live gallery,
+  flagging any newly-displayed photo that has not been vision-reviewed, and verifying the
+  filter still blocks every audited-unsafe photo and leaves no sparse page.
+
+  NOT auto-loaded. JR One automations are human-gated. To enable:
+    1. Edit NODE_BIN below if `which node` differs from /opt/homebrew/bin/node.
+    2. cp audit/com.jrone.companycam-monitor.plist ~/Library/LaunchAgents/
+    3. launchctl load ~/Library/LaunchAgents/com.jrone.companycam-monitor.plist
+  Logs land in audit/monitor.log. Exit code 2 (action needed) is recorded there.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jrone.companycam-monitor</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/node</string>
+    <string>audit/weekly_monitor.mjs</string>
+    <string>--refresh</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/popeye/Desktop/JRONE/jr-one-website</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key>
+    <integer>0</integer>
+    <key>Hour</key>
+    <integer>23</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/popeye/Desktop/JRONE/jr-one-website/audit/monitor.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/popeye/Desktop/JRONE/jr-one-website/audit/monitor.log</string>
+</dict>
+</plist>
