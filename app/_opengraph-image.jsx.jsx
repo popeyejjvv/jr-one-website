@@ -201,7 +201,7 @@ export default function Image() {
           }}
         >
           <span style={{ display: "flex" }}>(844) 444-3114</span>
-          <span style={{ display: "flex", color: "#7A8FA8" }}>·</span>
+          <span style={{ display: "flex", color: "#7A8FA8" }}>|</span>
           <span style={{ display: "flex" }}>jronegutters.com</span>
         </div>
 

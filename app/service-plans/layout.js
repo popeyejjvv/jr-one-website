@@ -11,7 +11,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Gutter & Exterior Maintenance Plans - Tampa Bay JR One Aluminum",
+  title: "Gutter & Exterior Maintenance Plans Tampa",
   description:
     "Annual gutter cleaning, soffit and fascia inspection, and exterior maintenance plans for Tampa Bay homeowners, HOAs, and property managers. Family-owned. (844) 444-3114.",
   alternates: { canonical: "https://www.jronegutters.com/service-plans" },

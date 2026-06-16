@@ -56,47 +56,6 @@ const imageObjectSchema = {
   creator: { "@type": "Organization", "@id": "https://jronegutters.com/#organization" },
 };
 
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How JR One Repairs Gutters in Tampa",
-  description: "The diagnostic + repair process JR One Aluminum uses for sagging, leaking, or overflowing gutters in Tampa Bay.",
-  totalTime: "PT4H",
-  estimatedCost: { "@type": "MonetaryAmount", currency: "USD", value: "350" },
-  step: [
-    {
-      "@type": "HowToStep",
-      position: 1,
-      name: "Diagnose the failure mode",
-      text: "Walk the gutter line, check pitch with a level, inspect every hanger, identify seam leaks with a moisture meter, and confirm downspout flow. A sagging gutter and a leaking gutter look the same from the ground but require different fixes.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 2,
-      name: "Correct the pitch",
-      text: "Most gutter overflow in Tampa is an incorrect-pitch problem, not a clog. We re-pitch each run to a quarter inch of fall per 10 feet of gutter so water actually moves toward the downspouts.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 3,
-      name: "Replace failed hangers and seal seams",
-      text: "Pulled spike-and-ferrule hangers get replaced with hidden hangers every 24 inches. Leaking seams at corners and end caps get cleaned and re-sealed with professional-grade gutter sealant rated for Florida UV.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 4,
-      name: "Clear and flush downspouts",
-      text: "Remove all debris from the gutter run, snake out clogged downspouts, and flush the system with water until every downspout has clean flow. Repair any damaged downspout elbows or extensions.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 5,
-      name: "Inspect underlying fascia",
-      text: "Gutter failure often masks fascia rot behind the gutter. We probe the fascia board and recommend replacement before reinstalling so the repair lasts.",
-    },
-  ],
-};
-
 export const metadata = {
   title: "Gutter Repair Tampa FL",
   description:
@@ -147,7 +106,6 @@ export default function Layout({ children }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       {children}
     </>
   );

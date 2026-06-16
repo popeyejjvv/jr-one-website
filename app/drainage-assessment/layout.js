@@ -47,7 +47,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Drainage Installation Tampa FL, JR One Aluminum",
-    description: "Tampa Bay drainage specialists, PVC, catch basins, dry wells. Move water away from foundations.",
+    description: "Tampa Bay drainage specialists. Underground PVC, catch basins, surface grates, pop-up emitters. Move water away from foundations.",
     url: "https://www.jronegutters.com/drainage-assessment",
     type: "website",
     images: [{ url: "https://www.jronegutters.com/images/florida-rain-gutters.webp", width: 1920, height: 1080, alt: "Heavy tropical rain flowing through JR One Aluminum gutter and downspout system on a Tampa Bay home" }],

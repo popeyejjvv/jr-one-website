@@ -11,7 +11,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Gutter & Roof Rejuvenation Warranties - JR One Aluminum Tampa",
+  title: "Gutter & Peak 301 Warranties Tampa Bay",
   description:
     "Workmanship and product warranties on JR One Aluminum gutters, soffit, fascia, drainage, and Peak 301 roof rejuvenation jobs. Locked in writing. (844) 444-3114.",
   alternates: { canonical: "https://www.jronegutters.com/warranties" },

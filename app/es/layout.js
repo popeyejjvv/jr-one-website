@@ -9,40 +9,15 @@
 
 import { LanguageProvider } from "../../lib/LanguageContext";
 
+// Spanish-locale signal that MERGES into the canonical #business entity
+// (same @id) rendered by RootLayout. Stripped to @id + inLanguage so the ES
+// pages do not emit a second, conflicting LocalBusiness (the old copy carried
+// wrong hours/geo that contradicted #business and the contact page).
 const organizationSchemaEs = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  name: "JR One Aluminum LLC",
-  url: "https://www.jronegutters.com/es",
-  telephone: "(844) 444-3114",
-  email: "info@jronegutters.com",
+  "@id": "https://jronegutters.com/#business",
   inLanguage: "es-US",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "3420 W Cherry St",
-    addressLocality: "Tampa",
-    addressRegion: "FL",
-    postalCode: "33607",
-    addressCountry: "US",
-  },
-  geo: { "@type": "GeoCoordinates", latitude: 27.9596, longitude: -82.4858 },
-  description: "Empresa familiar de canaletas, sofito y fascia en Tampa Bay. Mas de 30 anos en el oficio. Solo instalamos canaletas de 6 y 7 pulgadas. Hablamos espanol.",
-  areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Land O' Lakes", "Sarasota", "Bradenton", "Lakeland", "Palm Harbor", "New Port Richey", "Largo", "Spring Hill", "Tarpon Springs", "Dunedin", "Ruskin", "Sun City Center", "Temple Terrace", "Plant City", "South Tampa", "New Tampa", "Valrico", "Lithia", "Oldsmar", "Safety Harbor", "Seminole", "Pinellas Park"].map((name) => ({ "@type": "City", name })),
-  priceRange: "$$",
-  availableLanguage: ["en", "es"],
-  paymentAccepted: ["Cash", "Check", "Credit Card", "Financing"],
-  openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:00", closes: "19:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "16:00" },
-  ],
-};
-
-const breadcrumbSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-  ],
 };
 
 export const metadata = {
@@ -74,7 +49,6 @@ export default function EsLayout({ children }) {
     <LanguageProvider initialLang="es" forceLang={true}>
       <link rel="preload" as="image" href="/images/spanish-hero-familia.webp" fetchPriority="high" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchemaEs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaEs) }} />
       {children}
     </LanguageProvider>
   );

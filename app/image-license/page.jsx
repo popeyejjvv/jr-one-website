@@ -13,7 +13,7 @@ const C = {
 const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 
 export const metadata = {
-  title: "Image License and Usage, JR One Aluminum LLC",
+  title: "Image License and Usage Terms",
   description: "Licensing and usage terms for the jobsite photography on jronegutters.com. All photos are first-party CompanyCam-captured installs from real JR One Tampa Bay jobs.",
   alternates: {
     canonical: "https://www.jronegutters.com/image-license",

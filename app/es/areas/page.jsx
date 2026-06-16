@@ -15,7 +15,7 @@ const f = { h: "'Montserrat', sans-serif", b: "'Source Sans 3', sans-serif" };
 const CITY_GROUPS = [
   {
     county: "Condado de Hillsborough",
-    cities: ["tampa", "new-tampa", "brandon", "riverview", "ruskin", "sun-city-center", "temple-terrace", "plant-city", "lutz", "valrico", "lithia"],
+    cities: ["tampa", "south-tampa", "new-tampa", "brandon", "riverview", "ruskin", "sun-city-center", "temple-terrace", "plant-city", "lutz", "valrico", "lithia"],
   },
   {
     county: "Condado de Pinellas",
@@ -48,7 +48,7 @@ const slugToCity = (slug) =>
 
 export const metadata = {
   title: "Zonas de Servicio, JR One Aluminum LLC, Canaletas Tampa Bay",
-  description: "Canaletas sin costura, sofito, fascia, protectores de canaletas y siding en 28 ciudades del area de Tampa Bay. Condados de Hillsborough, Pinellas, Pasco, Manatee, Sarasota, Polk y Hernando.",
+  description: "Canaletas sin costura, sofito, fascia, protectores de canaletas y siding en 29 ciudades del area de Tampa Bay. Condados de Hillsborough, Pinellas, Pasco, Manatee, Sarasota, Polk y Hernando.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/areas",
     languages: {
@@ -76,7 +76,7 @@ export default function AreasIndexPageES() {
     "@type": "CollectionPage",
     name: "Zonas de Servicio de JR One Aluminum",
     url: "https://www.jronegutters.com/es/areas",
-    description: "28 ciudades de Tampa Bay atendidas por JR One Aluminum LLC para canaletas sin costura, sofito, fascia, protectores, cobre, iluminacion Govee permanente y siding.",
+    description: "29 ciudades de Tampa Bay atendidas por JR One Aluminum LLC para canaletas sin costura, sofito, fascia, protectores, cobre, iluminacion Govee permanente y siding.",
     isPartOf: {
       "@type": "WebSite",
       name: "JR One Aluminum LLC",
@@ -106,7 +106,7 @@ export default function AreasIndexPageES() {
               Zonas de Servicio de JR One
             </h1>
             <p style={{ fontSize: "var(--jr-text-lg)", color: C.muted, maxWidth: "780px", margin: "0 auto var(--jr-space-2)" }}>
-              28 ciudades en 7 condados del area de Tampa Bay. Canaletas de aluminio sin costura, sofito, fascia, protectores de canaletas, cobre, iluminacion Govee permanente, siding y drenaje. Mas de 30 anos en el oficio, empresa familiar, totalmente asegurada.
+              29 ciudades en 7 condados del area de Tampa Bay. Canaletas de aluminio sin costura, sofito, fascia, protectores de canaletas, cobre, iluminacion Govee permanente, siding y drenaje. Mas de 30 anos en el oficio, empresa familiar, totalmente asegurada.
             </p>
             <p style={{ fontSize: "var(--jr-text-base)", color: C.muted }}>
               <a href="tel:+18444443114" style={{ color: C.gold, fontWeight: 600, textDecoration: "none" }}>Estimado gratis: (844) 444-3114</a>

@@ -30,6 +30,8 @@ const CITY_SLUGS = [
   // ── 7 mission cities added 2026-05-23 (Play 4) ──
   "new-tampa","valrico","lithia","oldsmar","safety-harbor",
   "seminole","pinellas-park",
+  // south-tampa surfaced 2026-06-15 SEO audit (was orphaned: live + already ranking, missing from sitemap)
+  "south-tampa",
 ];
 
 const CITY_SERVICE_SLUGS = [
@@ -51,6 +53,8 @@ const STATIC_PAGES = [
   { path: "/projects", priority: 0.7, changeFrequency: "weekly" },
   { path: "/warranties", priority: 0.5, changeFrequency: "yearly" },
   { path: "/image-license", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/privacy-policy", priority: 0.2, changeFrequency: "yearly" },
+  { path: "/terms-of-service", priority: 0.2, changeFrequency: "yearly" },
   { path: "/areas", priority: 0.7, changeFrequency: "weekly" },
   { path: "/financing", priority: 0.7, changeFrequency: "monthly" },
   { path: "/service-plans", priority: 0.7, changeFrequency: "monthly" },
@@ -77,6 +81,8 @@ const STATIC_PAGES = [
 const ES_STATIC_PAGES = [
   // Spanish homepage
   { path: "/es", priority: 1.0, changeFrequency: "weekly" },
+  // Spanish service-area index (was missing from sitemap; EN /areas was present) - 2026-06-15 audit
+  { path: "/es/areas", priority: 0.7, changeFrequency: "weekly" },
   // Phase 1 service routes (May 23 mission)
   { path: "/es/canaletas-dano-tormenta-tampa", priority: 0.9, changeFrequency: "monthly" },
   { path: "/es/canaletas-sin-costura-tampa", priority: 0.9, changeFrequency: "monthly" },

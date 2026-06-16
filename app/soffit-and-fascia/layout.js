@@ -56,46 +56,6 @@ const imageObjectSchema = {
   creator: { "@type": "Organization", "@id": "https://jronegutters.com/#organization" },
 };
 
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How JR One installs Soffit and Fascia in Tampa",
-  description: "The 4-step process JR One Aluminum uses to install soffit and fascia on Tampa Bay homes.",
-  totalTime: "P1D",
-  estimatedCost: { "@type": "MonetaryAmount", currency: "USD", value: "1800" },
-  supply: [
-    { "@type": "HowToSupply", name: "Aluminum or vinyl soffit panels" },
-    { "@type": "HowToSupply", name: "Aluminum fascia coil (custom-bent on-site)" },
-    { "@type": "HowToSupply", name: "Pressure-treated wood fascia substrate replacement" },
-  ],
-  step: [
-    {
-      "@type": "HowToStep",
-      position: 1,
-      name: "Inspect roof edge and wood substrate",
-      text: "Walk the perimeter, document existing soffit and fascia condition with photos, and probe for hidden wood rot behind the existing fascia board. Identify pest entry points and ventilation issues.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 2,
-      name: "Replace rotted wood substrate",
-      text: "Remove rotted fascia boards down to solid framing. Install pressure-treated wood substrate. Never wrap aluminum over rotten wood, that hides the problem and forces a redo within 5 years.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 3,
-      name: "Install aluminum or vinyl soffit panels",
-      text: "Fit vented or non-vented panels with proper attic ventilation. Cut to length with shears. Lock panels into J-channel along the eave. Continuous airflow restored to keep shingle temperature down.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 4,
-      name: "Wrap fascia with custom-bent aluminum",
-      text: "Bend aluminum coil on-site with a brake to match exact fascia depth. Cap the wood substrate in single, 2-tier, or 3-tier profile depending on home style. Caulk seams and color-match to gutters and trim.",
-    },
-  ],
-};
-
 export const metadata = {
   title: "Soffit and Fascia Tampa FL",
   description:
@@ -148,7 +108,6 @@ export default function Layout({ children }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       {children}
     </>
   );

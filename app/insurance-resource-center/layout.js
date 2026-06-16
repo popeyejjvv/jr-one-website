@@ -11,7 +11,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Tampa Bay Storm Damage & Insurance Claims - Gutter, Soffit, Fascia",
+  title: "Storm Damage & Insurance Claims Help Tampa",
   description:
     "Insurance claim help for storm-damaged gutters, soffit, fascia, and roofs in Tampa Bay. We document damage and provide contractor estimates for your adjuster. (844) 444-3114.",
   alternates: { canonical: "https://www.jronegutters.com/insurance-resource-center" },

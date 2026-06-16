@@ -57,56 +57,6 @@ const imageObjectSchema = {
   creator: { "@type": "Organization", "@id": "https://jronegutters.com/#organization" },
 };
 
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How JR One Cleans Gutters in Tampa",
-  description: "The 5-step process JR One Aluminum uses for professional gutter cleaning on Tampa Bay homes.",
-  totalTime: "PT2H",
-  estimatedCost: { "@type": "MonetaryAmount", currency: "USD", value: "275" },
-  supply: [
-    { "@type": "HowToSupply", name: "Drop cloth and debris collection tarps" },
-    { "@type": "HowToSupply", name: "Water source for downspout flush" },
-  ],
-  tool: [
-    { "@type": "HowToTool", name: "Extension ladder (rated for 2-story residential)" },
-    { "@type": "HowToTool", name: "Gutter scoop and debris bags" },
-    { "@type": "HowToTool", name: "Pressurized water flush wand" },
-  ],
-  step: [
-    {
-      "@type": "HowToStep",
-      position: 1,
-      name: "Protect the property",
-      text: "Tarp landscape beds underneath gutter runs. Move outdoor furniture and decor away from drop zones. Pets brought inside if requested. Protect what is below before touching what is above.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 2,
-      name: "Clear every run end-to-end",
-      text: "Scoop wet debris by hand from each gutter run, working from one corner to the next. No skipping middle sections, debris compacts most in the dead-flow middle of long runs, which is the part homeowners and handymen miss.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 3,
-      name: "Flush every downspout",
-      text: "Run water from the top of each gutter run and watch the downspout outlet at ground level. Any backup, snake the downspout immediately. Common Tampa clog points are inside elbows and at the underground tie-in.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 4,
-      name: "Inspect hangers and seams",
-      text: "While on the ladder, check every hanger for pull-out, check end caps and inside corners for sealant failure, and document any issues with photos. Catch a sagging gutter in cleaning season before it pulls off in a storm.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 5,
-      name: "Bag and haul away",
-      text: "All debris bagged and removed from the property. Cleanup includes pressure-rinse of downspout splash blocks and walkways under work areas. Clean exit, no piles left for the homeowner.",
-    },
-  ],
-};
-
 export const metadata = {
   title: "Gutter Cleaning Tampa FL",
   description:
@@ -149,7 +99,6 @@ export default function Layout({ children }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       {children}
     </>
   );

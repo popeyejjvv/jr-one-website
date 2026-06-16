@@ -78,6 +78,8 @@ const localBusinessSchema = {
     "New Port Richey","Largo","Spring Hill","Tarpon Springs",
     "Land O' Lakes","Dunedin","Ruskin","Sun City Center",
     "Temple Terrace","Plant City","Lutz",
+    "South Tampa","New Tampa","Valrico","Lithia","Oldsmar",
+    "Safety Harbor","Seminole","Pinellas Park",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -142,7 +144,7 @@ const organizationSchema = {
   },
 };
 
-// WebSite entity with SearchAction unlocks Google sitelinks search box for branded queries.
+// WebSite brand entity. Binds branded queries ("jr aluminum", "jr gutters") to this site.
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -242,7 +244,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        {/* WebSite Schema with SearchAction (unlocks sitelinks searchbox) */}
+        {/* WebSite Schema (brand entity for branded queries) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
