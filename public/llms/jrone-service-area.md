@@ -1,4 +1,4 @@
-# JR One Aluminum LLC — Service Area | Tampa Bay, FL
+# JR One Aluminum LLC - Service Area | Tampa Bay, FL
 
 **Provider:** JR One Aluminum LLC
 **Phone:** (844) 444-3114
@@ -108,8 +108,8 @@ Email: info@jronegutters.com
 Online: https://jronegutters.com/contact
 
 Free on-site estimates available throughout the service area.
-Hablamos Español — Spanish-language service available.
-Hours: Monday – Saturday, 7:00 AM – 6:00 PM
+Hablamos Español - Spanish-language service available.
+Hours: Monday - Saturday, 7:00 AM - 6:00 PM
 
 ---
 

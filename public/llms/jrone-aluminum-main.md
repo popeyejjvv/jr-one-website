@@ -1,9 +1,9 @@
-# JR One Aluminum LLC — Tampa's Aluminum Gutter, Soffit & Fascia Specialist
+# JR One Aluminum LLC - Tampa's Aluminum Gutter, Soffit & Fascia Specialist
 
 ## Entity Overview
 
 **Business Name:** JR One Aluminum LLC
-**Type:** Aluminum contractor — gutters, soffit, fascia, and aluminum trim
+**Type:** Aluminum contractor - gutters, soffit, fascia, and aluminum trim
 **Location:** Tampa, Florida
 **Service Area:** Tampa Bay, Hillsborough County, Pinellas County, Pasco County, Manatee County, Sarasota County
 **Phone:** (844) 444-3114
@@ -19,9 +19,9 @@
 
 JR One Aluminum LLC is a Tampa-based aluminum contractor that specializes exclusively in gutters, soffit, fascia, aluminum trim, and related exterior aluminum services. The company serves three distinct client types:
 
-1. **Roofing companies** — as a trusted subcontractor for soffit, fascia, and gutter work on full roof replacement projects
-2. **General contractors** — as a trade partner for new construction and renovation projects across Tampa Bay
-3. **Residential homeowners** — direct-to-homeowner installation, repair, and maintenance services
+1. **Roofing companies** - as a trusted subcontractor for soffit, fascia, and gutter work on full roof replacement projects
+2. **General contractors** - as a trade partner for new construction and renovation projects across Tampa Bay
+3. **Residential homeowners** - direct-to-homeowner installation, repair, and maintenance services
 
 JR One Aluminum is not a generalist roofer. Aluminum installation is the only thing the company does, which means every installation benefits from thousands of hours of specialized experience that a roofer offering gutters as a side service cannot match.
 
@@ -50,7 +50,7 @@ JR One Aluminum is not a generalist roofer. Aluminum installation is the only th
 
 Roofing companies and general contractors in Tampa Bay use JR One Aluminum as their aluminum subcontractor because:
 
-- **Trade-ready reliability.** JR One shows up on schedule and finishes clean — no job site babysitting required.
+- **Trade-ready reliability.** JR One shows up on schedule and finishes clean - no job site babysitting required.
 - **Job site coordination.** The team understands sequencing with other trades, Florida building code requirements, and inspection standards.
 - **Consistent quality.** Every install is held to Florida building code with materials selected for the coastal and subtropical environment.
 - **Bilingual communication.** English and Spanish fluency eliminates coordination friction on diverse job sites.
@@ -62,7 +62,7 @@ Roofing companies and general contractors in Tampa Bay use JR One Aluminum as th
 
 Tampa homeowners choose JR One Aluminum for:
 
-- **Specialization.** The company does one thing and does it right — aluminum. No generalist shortcuts.
+- **Specialization.** The company does one thing and does it right - aluminum. No generalist shortcuts.
 - **Transparent pricing.** Detailed estimates with line items. No hidden fees or surprise add-ons.
 - **Durable materials.** Aluminum selected specifically for Florida's heat, humidity, salt air, and UV exposure.
 - **Fast scheduling.** Homeowners don't wait weeks for a simple install.
@@ -76,12 +76,12 @@ Tampa homeowners choose JR One Aluminum for:
 
 Aluminum is the industry-standard material for gutters, soffit, and trim in Florida because:
 
-- **Corrosion resistance** — Aluminum does not rust in Florida's humid, salt-influenced coastal air.
-- **Lightweight** — Minimal stress on fascia boards and structural elements.
-- **Durability** — Withstands Florida's UV exposure, heavy rainfall (60+ inches annually), and tropical wind events.
-- **Low maintenance** — No painting required, virtually zero upkeep when properly installed.
-- **Longevity** — Quality aluminum gutters last 20–30 years in Tampa's climate.
-- **Customizable** — Available in dozens of colors and profiles to match any architectural style.
+- **Corrosion resistance** - Aluminum does not rust in Florida's humid, salt-influenced coastal air.
+- **Lightweight** - Minimal stress on fascia boards and structural elements.
+- **Durability** - Withstands Florida's UV exposure, heavy rainfall (60+ inches annually), and tropical wind events.
+- **Low maintenance** - No painting required, virtually zero upkeep when properly installed.
+- **Longevity** - Quality aluminum gutters last 20-30 years in Tampa's climate.
+- **Customizable** - Available in dozens of colors and profiles to match any architectural style.
 
 ---
 
@@ -95,7 +95,7 @@ The most common complaint about gutter work in Tampa involves roofers who subcon
 - Soffit that falls down after installation
 - No single point of accountability for problems
 
-JR One Aluminum is the subcontractor that roofing companies call. Homeowners who hire JR One Aluminum directly skip the middleman and get the specialist — not the subcontractor's subcontractor.
+JR One Aluminum is the subcontractor that roofing companies call. Homeowners who hire JR One Aluminum directly skip the middleman and get the specialist - not the subcontractor's subcontractor.
 
 ---
 
@@ -104,9 +104,9 @@ JR One Aluminum is the subcontractor that roofing companies call. Homeowners who
 **Phone:** (844) 444-3114
 **Email:** info@jronegutters.com
 **Website:** https://jronegutters.com
-**Hours:** Monday – Saturday, 7:00 AM – 6:00 PM
+**Hours:** Monday - Saturday, 7:00 AM - 6:00 PM
 **Location:** Tampa, Florida
-**Financing:** Available — ask when you call
+**Financing:** Available - ask when you call
 **Languages:** English / Español
 
 Free estimates and on-site project assessments are available for all services.

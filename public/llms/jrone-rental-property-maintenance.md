@@ -1,4 +1,4 @@
-# Rental Property & Investment Property Maintenance — JR One Aluminum LLC | Tampa, FL
+# Rental Property & Investment Property Maintenance - JR One Aluminum LLC | Tampa, FL
 
 **Provider:** JR One Aluminum LLC
 **Service:** Gutter, soffit, fascia, and drainage maintenance for Airbnb, long-term rental, and investment properties
@@ -52,7 +52,7 @@ Before/after shots, any issues found, and recommended fixes delivered to the own
 JR One coordinates access directly with long-term tenants (48-hour notice), short-term-rental cleaning companies (working within turnover windows), or property managers. Owner stays out of the middle.
 
 ### Emergency Water-Intrusion Response
-Contracted rental properties get priority response — typically 48 hours for diagnostic visits (faster for active leaks). Owner receives a plan and cost estimate before any repair begins.
+Contracted rental properties get priority response - typically 48 hours for diagnostic visits (faster for active leaks). Owner receives a plan and cost estimate before any repair begins.
 
 ### Pre-Hurricane-Season Inspection
 May walkthrough before June 1 storm season. Any conditions that won't survive summer are flagged with time to fix before weather arrives.
@@ -80,7 +80,7 @@ For Airbnb and VRBO properties, JR One:
 - Works within the turnover window so there's zero guest-facing disruption
 - Coordinates directly with the cleaning crew (often the only on-site party)
 - Supplies photo reports the host can archive for guest-communication evidence
-- Understands that water-intrusion issues hit review scores and occupancy — and responds accordingly
+- Understands that water-intrusion issues hit review scores and occupancy - and responds accordingly
 
 ---
 
@@ -118,14 +118,14 @@ A: Contracted properties get 48-hour diagnostic response (faster for active leak
 A: Yes. Many rental accounts come through property managers who want a single aluminum vendor across managed portfolios.
 
 **Q: Can you handle structural repair, not just cleaning?**
-A: Yes. JR One is a specialty aluminum contractor — gutters, soffit, fascia, aluminum trim, and drainage. Repairs are flagged for owner approval and executed in the same property visit when possible.
+A: Yes. JR One is a specialty aluminum contractor - gutters, soffit, fascia, aluminum trim, and drainage. Repairs are flagged for owner approval and executed in the same property visit when possible.
 
 **Q: Insurance?**
 A: Full general liability and workers' compensation. Certificates provided to owners or property management companies on request.
 
 ---
 
-# Mantenimiento de Propiedades de Alquiler — JR One Aluminum LLC | Tampa, FL
+# Mantenimiento de Propiedades de Alquiler - JR One Aluminum LLC | Tampa, FL
 
 ## Mantenimiento de Alquileres en Tampa Bay
 
@@ -153,7 +153,7 @@ JR One Aluminum LLC provee mantenimiento programado y documentado de canaletas y
 - Plan escala (10+): personalizado con gerente de cuenta dedicado
 
 ## Area de Servicio
-Hillsborough, Pinellas, Pasco, Manatee y Sarasota — 21 ciudades.
+Hillsborough, Pinellas, Pasco, Manatee y Sarasota - 21 ciudades.
 
 ---
 

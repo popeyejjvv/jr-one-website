@@ -1,7 +1,7 @@
-# Copper Gutter Installation in Tampa, FL — JR One Aluminum LLC
+# Copper Gutter Installation in Tampa, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Copper gutter installation — seamless and half-round copper gutters
+**Service:** Copper gutter installation - seamless and half-round copper gutters
 **Location:** Tampa, Florida
 **Phone:** (844) 444-3114
 **Website:** https://jronegutters.com/copper-gutters
@@ -16,15 +16,15 @@ Copper gutters are the premium tier of residential gutter installation. JR One A
 
 ## Why Copper Gutters?
 
-**Longevity** — Copper gutters last 50–100+ years. While standard aluminum gutters last 20–30 years, copper is a generational investment that will outlast the roof, the fascia, and likely the current owner.
+**Longevity** - Copper gutters last 50-100+ years. While standard aluminum gutters last 20-30 years, copper is a generational investment that will outlast the roof, the fascia, and likely the current owner.
 
-**Patina** — Copper develops a natural patina over time, transitioning from bright penny-copper to a warm brown and eventually the classic verdigris green. This natural aging process is part of the appeal — copper gutters look better as they age.
+**Patina** - Copper develops a natural patina over time, transitioning from bright penny-copper to a warm brown and eventually the classic verdigris green. This natural aging process is part of the appeal - copper gutters look better as they age.
 
-**No painting, ever** — Copper requires zero maintenance finishes. It doesn't rust, doesn't peel, and never needs paint.
+**No painting, ever** - Copper requires zero maintenance finishes. It doesn't rust, doesn't peel, and never needs paint.
 
-**Architectural distinction** — Copper gutters are visually distinctive in a way no other gutter material achieves. They are standard on high-end estate homes, historic districts, and architectural showpieces.
+**Architectural distinction** - Copper gutters are visually distinctive in a way no other gutter material achieves. They are standard on high-end estate homes, historic districts, and architectural showpieces.
 
-**Increased home value** — Premium materials signal quality and craftsmanship that aluminum cannot replicate.
+**Increased home value** - Premium materials signal quality and craftsmanship that aluminum cannot replicate.
 
 ---
 
@@ -63,10 +63,10 @@ A complete copper system creates an architecturally coherent exterior accent tha
 
 ---
 
-## Frequently Asked Questions — Copper Gutters Tampa FL
+## Frequently Asked Questions - Copper Gutters Tampa FL
 
 **Q: How much do copper gutters cost?**
-A: Copper gutter systems are a premium investment priced accordingly. For a typical 150-linear-foot home, a full copper gutter system runs approximately $9,000–$15,000 installed, depending on profile, downspout configuration, and accessories. Contact JR One Aluminum at (844) 444-3114 for a project-specific quote.
+A: Copper gutter systems are a premium investment priced accordingly. For a typical 150-linear-foot home, a full copper gutter system runs approximately $9,000 - $15,000 installed, depending on profile, downspout configuration, and accessories. Contact JR One Aluminum at (844) 444-3114 for a project-specific quote.
 
 **Q: Do copper gutters turn green?**
 A: Yes, over time. The natural patina process moves from bright copper to brown to the classic verdigris (blue-green) finish. This process takes several years in Florida's humid climate. Many homeowners consider the patina the defining characteristic of copper gutters.

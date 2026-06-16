@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JR One Aluminum — Aerial Estimator</title>
-<meta name="description" content="Free instant aerial estimate from JR One Aluminum — Tampa Bay's seamless gutter, soffit & fascia, and leaf guard specialists.">
-<meta property="og:title" content="JR One Aluminum — Aerial Estimator">
+<title>JR One Aluminum - Aerial Estimator</title>
+<meta name="description" content="Free instant aerial estimate from JR One Aluminum - Tampa Bay's seamless gutter, soffit & fascia, and leaf guard specialists.">
+<meta property="og:title" content="JR One Aluminum - Aerial Estimator">
 <meta property="og:description" content="Measure your home from the sky and get an instant price range in under 2 minutes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.jronegutters.com/estimator">
@@ -284,7 +284,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <div class="instructions">
       <div class="inst-title" data-i18n="how_to_use">📐 How to Use</div>
       <div class="step"><span class="step-num">1</span><span class="step-text" data-i18n-html="step_1"><strong>Search your address</strong> above to find your home on the map</span></div>
-      <div class="step"><span class="step-num">2</span><span class="step-text" data-i18n-html="step_2"><strong>Select what you're measuring</strong> — Gutters, Soffit & Fascia, Leaf Guard, or Gutter Cleaning</span></div>
+      <div class="step"><span class="step-num">2</span><span class="step-text" data-i18n-html="step_2"><strong>Select what you're measuring</strong> - Gutters, Soffit & Fascia, Leaf Guard, or Gutter Cleaning</span></div>
       <div class="step"><span class="step-num">3</span><span class="step-text" data-i18n-html="step_3"><strong>Click along your roof edges</strong> on the map to draw measurement lines</span></div>
       <div class="step"><span class="step-num">4</span><span class="step-text" data-i18n-html="step_4">Press <span class="kbd">Finish Line</span> when each section is complete</span></div>
       <div class="step"><span class="step-num">5</span><span class="step-text" data-i18n-html="step_5">Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong></span></div>
@@ -313,7 +313,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 
     <div class="estimate-hero">
       <div class="est-label" data-i18n="project_range">Your Estimated Project Range</div>
-      <div class="est-range price-hidden" id="heroRange">$0 – $0</div>
+      <div class="est-range price-hidden" id="heroRange">$0 - $0</div>
       <div class="est-note" data-i18n-html="based_on_aerial">Based on aerial measurements. Final pricing<br>confirmed with a free on-site consultation.</div>
     </div>
 
@@ -327,13 +327,13 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
       <h4 data-i18n="discount_earned">YOU EARNED 5% OFF YOUR PROJECT</h4>
       <p style="font-size:12px;color:var(--gray-med);margin-top:4px" data-i18n="discount_thanks">Thank you for using our Aerial Estimator</p>
       <div class="code-display" id="discountCode">JR1-AE-XXXXX</div>
-      <div class="exp-date"><span data-i18n="valid_through">Valid through</span> <strong id="expDate">—</strong></div>
+      <div class="exp-date"><span data-i18n="valid_through">Valid through</span> <strong id="expDate"> - </strong></div>
     </div>
 
     <!-- FINANCING BADGE -->
     <div class="financing-badge" id="financingBadge" style="display:none">
       <span class="financing-icon">💳</span>
-      <span class="financing-text" data-i18n="financing_badge">Financing Available — Flexible payment plans to fit your budget.</span>
+      <span class="financing-text" data-i18n="financing_badge">Financing Available - Flexible payment plans to fit your budget.</span>
       <a href="https://jronegutters.com/financing" target="_blank" class="financing-link" data-i18n="financing_link">Learn More →</a>
     </div>
 
@@ -370,7 +370,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
   <div class="cursor-mode" id="cursorMode"><span class="mode-dot" style="background:#4A9EFF" id="cursorDot"></span><span id="cursorLabel">MEASURING GUTTERS</span></div>
   <div class="map-controls">
     <button class="map-ctrl-btn" onclick="map.zoomIn()" title="Zoom In">+</button>
-    <button class="map-ctrl-btn" onclick="map.zoomOut()" title="Zoom Out">−</button>
+    <button class="map-ctrl-btn" onclick="map.zoomOut()" title="Zoom Out">-</button>
     <button class="map-ctrl-btn active" id="toggleMeasure" onclick="toggleMeasuring()" title="Toggle Measuring">📐</button>
   </div>
   <div class="status-bar">
@@ -382,10 +382,10 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 </div>
 
 <script>
-// ═══ INTERNAL PRICING — NEVER SHOWN TO CUSTOMERS ═══
+// ═══ INTERNAL PRICING - NEVER SHOWN TO CUSTOMERS ═══
 // Updated 2026-04-12. Base per-foot rates per Popeye.
 // Displayed as a RANGE (±15%) so customers can't reverse-engineer per-foot price.
-// Strategy: under-promise, over-deliver — actual price usually comes in at or below low end.
+// Strategy: under-promise, over-deliver - actual price usually comes in at or below low end.
 // Gutter rates are all-in (downspouts included in per-foot price).
 // 1 downspout per ~34 ft of gutter (min 1).
 const RATES = {
@@ -425,7 +425,7 @@ const STRINGS = {
     undo:'↩ Undo', finish_line:'✓ Finish Line', see_estimate:'SEE MY ESTIMATE →', clear_all:'Clear All',
     how_to_use:'📐 How to Use',
     step_1:'<strong>Search your address</strong> above to find your home on the map',
-    step_2:"<strong>Select what you're measuring</strong> — Gutters, Soffit & Fascia, Leaf Guard, or Gutter Cleaning",
+    step_2:"<strong>Select what you're measuring</strong> - Gutters, Soffit & Fascia, Leaf Guard, or Gutter Cleaning",
     step_3:'<strong>Click along your roof edges</strong> on the map to draw measurement lines',
     step_4:'Press <span class="kbd">Finish Line</span> when each section is complete',
     step_5:'Repeat for each service you need, then click <strong>SEE MY ESTIMATE</strong>',
@@ -441,7 +441,7 @@ const STRINGS = {
     discount_earned:'YOU EARNED 5% OFF YOUR PROJECT',
     discount_thanks:'Thank you for using our Aerial Estimator',
     valid_through:'Valid through',
-    financing_badge:'Financing Available — Flexible payment plans to fit your budget.',
+    financing_badge:'Financing Available - Flexible payment plans to fit your budget.',
     financing_link:'Learn More →',
     cta_title:'Ready to Lock In Your Project?',
     cta_body:'Mention your discount code when you call to lock in your 5% savings.',
@@ -458,12 +458,12 @@ const STRINGS = {
     please_valid_email:'Please enter a valid name and email',
     estimate_sent_jr:'✓ Estimate sent to JR One Aluminum',
     estimate_sent_to:'✓ Estimate sent to ',
-    error_sending:'Error sending — please try again',
+    error_sending:'Error sending - please try again',
     sending:'SENDING...',
     sent:'✓ SENT!',
     active_suffix:'(active)',
     gutter_breakdown_title:'K-Style Gutters',
-    gutter_breakdown_sub:function(lf,ds){return lf+' linear feet · '+ds+' downspouts included'},
+    gutter_breakdown_sub:function(lf,ds){return lf+' linear feet | '+ds+' downspouts included'},
     soffit_breakdown_sub:function(lf){return lf+' linear feet'},
     guard_breakdown_sub:function(lf){return lf+' linear feet'},
     cleaning_breakdown_sub:function(lf){return lf+' linear feet'},
@@ -485,7 +485,7 @@ const STRINGS = {
     undo:'↩ Deshacer', finish_line:'✓ Terminar Línea', see_estimate:'VER MI ESTIMADO →', clear_all:'Borrar Todo',
     how_to_use:'📐 Cómo Usar',
     step_1:'<strong>Busca tu dirección</strong> arriba para encontrar tu casa en el mapa',
-    step_2:'<strong>Elige qué vas a medir</strong> — Canaletas, Plafón y Fascia, Protector o Limpieza',
+    step_2:'<strong>Elige qué vas a medir</strong> - Canaletas, Plafón y Fascia, Protector o Limpieza',
     step_3:'<strong>Haz clic en los bordes del techo</strong> para dibujar las líneas de medida',
     step_4:'Presiona <span class="kbd">Terminar Línea</span> cuando cada sección esté completa',
     step_5:'Repite para cada servicio que necesites, luego haz clic en <strong>VER MI ESTIMADO</strong>',
@@ -501,7 +501,7 @@ const STRINGS = {
     discount_earned:'GANASTE 5% DE DESCUENTO',
     discount_thanks:'Gracias por usar nuestro Estimador Aéreo',
     valid_through:'Válido hasta',
-    financing_badge:'Financiamiento Disponible — Planes de pago flexibles para tu presupuesto.',
+    financing_badge:'Financiamiento Disponible - Planes de pago flexibles para tu presupuesto.',
     financing_link:'Más Información →',
     cta_title:'¿Listo para Asegurar Tu Proyecto?',
     cta_body:'Menciona tu código de descuento cuando llames para asegurar tu 5% de ahorro.',
@@ -518,12 +518,12 @@ const STRINGS = {
     please_valid_email:'Ingresa un nombre y correo válidos',
     estimate_sent_jr:'✓ Estimado enviado a JR One Aluminum',
     estimate_sent_to:'✓ Estimado enviado a ',
-    error_sending:'Error al enviar — intenta de nuevo',
+    error_sending:'Error al enviar - intenta de nuevo',
     sending:'ENVIANDO...',
     sent:'✓ ¡ENVIADO!',
     active_suffix:'(activo)',
     gutter_breakdown_title:'Canaletas K-Style',
-    gutter_breakdown_sub:function(lf,ds){return lf+' pies lineales · '+ds+' bajantes incluidos'},
+    gutter_breakdown_sub:function(lf,ds){return lf+' pies lineales | '+ds+' bajantes incluidos'},
     soffit_breakdown_sub:function(lf){return lf+' pies lineales'},
     guard_breakdown_sub:function(lf){return lf+' pies lineales'},
     cleaning_breakdown_sub:function(lf){return lf+' pies lineales'},
@@ -702,7 +702,7 @@ function formatPhone(el){
 }
 
 async function unlockEstimate(){
-  // Double-click guard — first thing, before any async
+  // Double-click guard - first thing, before any async
   const submitBtn=document.getElementById('gateSubmit');
   if(submitBtn.disabled)return;
   submitBtn.disabled=true;
@@ -735,7 +735,7 @@ async function unlockEstimate(){
   document.getElementById('loadingOverlay').classList.add('show');
   trackEvent('estimator_unlocked',{size:gutterSize,stories:stories});
 
-  // CRITICAL: BP lead capture FIRST — revenue data path.
+  // CRITICAL: BP lead capture FIRST - revenue data path.
   // Screenshot + PDF are best-effort; a failure there must NOT lose the lead.
   try{
     await sendToJROne();
@@ -786,7 +786,7 @@ function renderEstimate(){
 }
 
 function bdItem(m,bg,ic,name,det,range,blurCls){return`<div class="breakdown-item"><div class="breakdown-left"><div class="breakdown-icon" style="background:${bg}">${ic}</div><div><div class="breakdown-name">${name}</div><div class="breakdown-detail">${det}</div></div></div><div class="breakdown-value${blurCls||''}">${range}</div></div>`}
-function fmtRange(lo,hi){return'$'+Math.round(lo).toLocaleString()+' – $'+Math.round(hi).toLocaleString()}
+function fmtRange(lo,hi){return'$'+Math.round(lo).toLocaleString()+' - $'+Math.round(hi).toLocaleString()}
 function fmt$(v){return'$'+Math.round(v).toLocaleString()}
 
 // ═══ MAP SCREENSHOT ═══
@@ -836,7 +836,7 @@ async function generatePDF(){
   doc.text('Aerial Property Estimate',M,22);
   doc.setFontSize(8);doc.setTextColor(150,150,150);
   doc.text('(844) 444-3114  |  jronegutters.com',W-M,15,{align:'right'});
-  doc.text('Tampa Bay\'s Aluminum Specialists — Family-Owned',W-M,21,{align:'right'});
+  doc.text('Tampa Bay\'s Aluminum Specialists - Family-Owned',W-M,21,{align:'right'});
 
   y=40;
 
@@ -903,7 +903,7 @@ async function generatePDF(){
   doc.setFontSize(16);doc.setTextColor(27,42,74);
   doc.text(currentDiscountCode,W/2,y+16,{align:'center'});
   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(100,100,100);
-  doc.text('Valid through '+currentExpDate+' — Mention this code when you call',W/2,y+23,{align:'center'});
+  doc.text('Valid through '+currentExpDate+' - Mention this code when you call',W/2,y+23,{align:'center'});
   y+=35;
 
   // ── Footer ──
@@ -911,7 +911,7 @@ async function generatePDF(){
   doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(212,175,55);
   doc.text('(844) 444-3114',W/2,H-12,{align:'center'});
   doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(180,180,180);
-  doc.text('jronegutters.com  |  Tampa Bay\'s #1 in Aluminum  |  Family-Owned · Licensed & Insured',W/2,H-6,{align:'center'});
+  doc.text('jronegutters.com  |  Tampa Bay\'s #1 in Aluminum  |  Family-Owned | Licensed & Insured',W/2,H-6,{align:'center'});
 
   // ── Disclaimer ──
   doc.setFontSize(7);doc.setTextColor(150,150,150);
@@ -1065,7 +1065,7 @@ function selectAddress(item){
   trackEvent('estimator_address_selected',{city:parsedAddress.city,zip:parsedAddress.zip});
 }
 
-// Legacy fn kept for backward compat with any inline handler — new path uses selectAddress
+// Legacy fn kept for backward compat with any inline handler - new path uses selectAddress
 function flyTo(lat,lng,name){map.flyTo([lat,lng],19,{duration:1.5});searchInput.value=name;searchResults.classList.remove('show')}
 
 // ═══ INIT ═══

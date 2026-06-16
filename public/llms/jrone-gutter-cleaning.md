@@ -1,4 +1,4 @@
-# Gutter Cleaning in Tampa, FL — JR One Aluminum LLC
+# Gutter Cleaning in Tampa, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
 **Service:** Gutter cleaning, downspout flushing, gutter inspection
@@ -10,20 +10,20 @@
 
 ## Gutter Cleaning in Tampa Bay
 
-JR One Aluminum cleans residential and commercial gutters throughout Tampa Bay. Unlike generalist handymen or one-person operations, JR One's crews clean gutters as part of a full aluminum specialist's eye — flagging sagging hangers, loose fasteners, rotted fascia, failing seams, and pitch problems while they're on the roof. You get the cleaning you paid for and a free diagnostic on what else your system needs.
+JR One Aluminum cleans residential and commercial gutters throughout Tampa Bay. Unlike generalist handymen or one-person operations, JR One's crews clean gutters as part of a full aluminum specialist's eye - flagging sagging hangers, loose fasteners, rotted fascia, failing seams, and pitch problems while they're on the roof. You get the cleaning you paid for and a free diagnostic on what else your system needs.
 
 ---
 
 ## Why Tampa Gutters Need Frequent Cleaning
 
 Tampa's tree canopy and weather pattern produce heavy year-round gutter debris:
-- Live oaks shed leaves every month of the year — not just fall
+- Live oaks shed leaves every month of the year - not just fall
 - Pine needles pack tightly and block water flow
 - Magnolia, laurel oak, and palm drop constant seed pods
 - Afternoon summer storms wash sand and grit into gutters
 - Hurricane debris (branches, roof granules, tree litter) floods gutters after every named storm
 
-Most Tampa homes near trees need 2–4 cleanings per year. Homes without guards that skip cleaning wind up with:
+Most Tampa homes near trees need 2-4 cleanings per year. Homes without guards that skip cleaning wind up with:
 - Overflow behind the fascia, rotting wood and soaking soffit
 - Water running down foundation walls, causing erosion
 - Mosquito breeding in standing water inside the gutter channel
@@ -47,7 +47,7 @@ Most Tampa homes near trees need 2–4 cleanings per year. Homes without guards 
 - Lower-cost option for lightly soiled systems or regular recurring clients
 
 ### Deluxe Guard Package
-When you're adding gutter guards, JR One cleans the existing gutters first so the guards install over a clean system — not a channel full of debris.
+When you're adding gutter guards, JR One cleans the existing gutters first so the guards install over a clean system - not a channel full of debris.
 
 ### Downspout Clean-Out
 Specific-issue service for a single clogged downspout. Common symptom: gutter fills and overflows at one spot even after cleaning the channel.
@@ -56,11 +56,11 @@ Specific-issue service for a single clogged downspout. Common symptom: gutter fi
 
 ## When to Schedule Gutter Cleaning in Tampa
 
-- **Pre-summer (May)** — Clear out winter debris before afternoon thunderstorm season hits in June
-- **Post-hurricane season (November)** — Storms from June through October dump tree debris; clean before winter
-- **After major named storms** — Hurricanes, tropical storms, and severe thunderstorms drop enough debris in one event to clog a newly-cleaned system
-- **When you see overflow** — Water running over the gutter edge during rain means it's past time
-- **Before selling the home** — Clean gutters show well in inspection and photos
+- **Pre-summer (May)** - Clear out winter debris before afternoon thunderstorm season hits in June
+- **Post-hurricane season (November)** - Storms from June through October dump tree debris; clean before winter
+- **After major named storms** - Hurricanes, tropical storms, and severe thunderstorms drop enough debris in one event to clog a newly-cleaned system
+- **When you see overflow** - Water running over the gutter edge during rain means it's past time
+- **Before selling the home** - Clean gutters show well in inspection and photos
 
 ---
 
@@ -75,10 +75,10 @@ Specific-issue service for a single clogged downspout. Common symptom: gutter fi
 
 ---
 
-## Frequently Asked Questions — Gutter Cleaning Tampa FL
+## Frequently Asked Questions - Gutter Cleaning Tampa FL
 
 **Q: How often should I have my gutters cleaned in Tampa?**
-A: Homes under heavy tree cover: 3–4 times per year. Moderate tree cover: 2 times per year (spring and fall). Homes with gutter guards: every 2–3 years. Homes in open lots with no nearby trees may go 1 time per year.
+A: Homes under heavy tree cover: 3-4 times per year. Moderate tree cover: 2 times per year (spring and fall). Homes with gutter guards: every 2-3 years. Homes in open lots with no nearby trees may go 1 time per year.
 
 **Q: How much does gutter cleaning cost in Tampa?**
 A: Per-linear-foot pricing depends on roof height, gutter length, and level of debris. Contact JR One Aluminum at (844) 444-3114 for a same-day estimate.

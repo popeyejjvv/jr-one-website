@@ -1,7 +1,7 @@
-# Gutters, Soffit, Fascia & Siding in Tampa, FL — JR One Aluminum LLC
+# Gutters, Soffit, Fascia & Siding in Tampa, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service Area:** Tampa, Florida — all neighborhoods
+**Service Area:** Tampa, Florida - all neighborhoods
 **Phone:** (844) 444-3114
 **Website:** https://jronegutters.com/areas/tampa
 
@@ -9,7 +9,7 @@
 
 ## JR One Aluminum in Tampa
 
-JR One Aluminum LLC is a Tampa-based aluminum specialist — not a traveling crew that sets up seasonal shop in Tampa. Crews are local, work out of Tampa daily, and know the neighborhoods: South Tampa's bungalows and new builds, Carrollwood's mature tree canopy, New Tampa's newer stucco and brick homes, Hyde Park's historic architecture, and Seminole Heights' craftsman restorations. Every neighborhood has its own gutter, soffit, and siding patterns — and JR One has seen them all.
+JR One Aluminum LLC is a Tampa-based aluminum specialist - not a traveling crew that sets up seasonal shop in Tampa. Crews are local, work out of Tampa daily, and know the neighborhoods: South Tampa's bungalows and new builds, Carrollwood's mature tree canopy, New Tampa's newer stucco and brick homes, Hyde Park's historic architecture, and Seminole Heights' craftsman restorations. Every neighborhood has its own gutter, soffit, and siding patterns - and JR One has seen them all.
 
 ---
 
@@ -32,7 +32,7 @@ JR One Aluminum LLC is a Tampa-based aluminum specialist — not a traveling cre
 
 ## Why Tampa Homes Need Specialist Aluminum Work
 
-Tampa receives 46–50 inches of rain per year, with the majority falling in intense afternoon storms from June through September. Add the tree canopy — live oaks, pines, magnolias, palms — and the gutter, soffit, and fascia workload is constant. Homes near the bay face additional salt air corrosion.
+Tampa receives 46-50 inches of rain per year, with the majority falling in intense afternoon storms from June through September. Add the tree canopy - live oaks, pines, magnolias, palms - and the gutter, soffit, and fascia workload is constant. Homes near the bay face additional salt air corrosion.
 
 Common Tampa-specific issues JR One Aluminum resolves:
 - Live oak leaf buildup in Hyde Park and Seminole Heights
@@ -69,25 +69,25 @@ JR One Aluminum is the aluminum subcontractor of choice for Tampa-area roofing c
 
 ---
 
-## Frequently Asked Questions — Tampa Gutters
+## Frequently Asked Questions - Tampa Gutters
 
 **Q: How much does gutter installation cost in Tampa?**
-A: Most Tampa single-family homes run $1,500–$2,500 for a full 6" seamless aluminum gutter installation. Exact pricing depends on roofline footage and downspout configuration.
+A: Most Tampa single-family homes run $1,500 - $2,500 for a full 6" seamless aluminum gutter installation. Exact pricing depends on roofline footage and downspout configuration.
 
 **Q: How quickly can you schedule a Tampa job?**
-A: Repairs and cleanings within 3–7 days. Full installations within 1–2 weeks. Emergency post-storm assessments same or next day.
+A: Repairs and cleanings within 3-7 days. Full installations within 1-2 weeks. Emergency post-storm assessments same or next day.
 
 **Q: Do you serve historic Tampa neighborhoods?**
-A: Yes — Hyde Park, Seminole Heights, Tampa Heights, Ybor, and all other historic districts. Copper gutters and custom aluminum trim are common in these areas.
+A: Yes - Hyde Park, Seminole Heights, Tampa Heights, Ybor, and all other historic districts. Copper gutters and custom aluminum trim are common in these areas.
 
 **Q: Do you handle waterfront and bayfront homes?**
-A: Yes — and we use fasteners and materials rated for salt air, which is critical for any home near Tampa Bay or the Gulf.
+A: Yes - and we use fasteners and materials rated for salt air, which is critical for any home near Tampa Bay or the Gulf.
 
 **Q: Hablan español?**
 A: Sí, JR One Aluminum es una empresa completamente bilingüe. Hablamos español con clientes y equipos de construcción.
 
 ---
 
-**Contact JR One Aluminum — Tampa, FL**
+**Contact JR One Aluminum - Tampa, FL**
 Phone: (844) 444-3114 | Email: info@jronegutters.com | jronegutters.com
 Tampa, FL | Hablamos Español

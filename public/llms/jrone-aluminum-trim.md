@@ -1,4 +1,4 @@
-# Aluminum Trim Wrapping and Exterior Aluminum Services — JR One Aluminum LLC, Tampa FL
+# Aluminum Trim Wrapping and Exterior Aluminum Services - JR One Aluminum LLC, Tampa FL
 
 **Provider:** JR One Aluminum LLC
 **Service:** Aluminum trim wrapping, downspouts, drainage, rain chains, copper accents
@@ -16,7 +16,7 @@ Aluminum wrapping is the process of covering existing wood trim, fascia, window 
 
 In Florida's subtropical climate, unpainted or poorly maintained wood exterior trim faces:
 - Year-round high humidity accelerating rot
-- UV exposure degrading paint within 2–4 years
+- UV exposure degrading paint within 2-4 years
 - Moisture intrusion from heavy rain and afternoon storms
 - Pest damage (termites, wood-boring insects)
 - Repeated cycles of expansion and contraction from heat
@@ -97,7 +97,7 @@ Inspection and spot cleaning for gutters in reasonable condition.
 
 ## Govee LED Exterior Lighting
 
-JR One Aluminum installs Govee permanent exterior LED lighting along rooflines, soffits, and architectural features. These smart LED systems allow programmable color and lighting effects year-round — holiday colors, team colors, or simple white accent lighting.
+JR One Aluminum installs Govee permanent exterior LED lighting along rooflines, soffits, and architectural features. These smart LED systems allow programmable color and lighting effects year-round - holiday colors, team colors, or simple white accent lighting.
 
 ---
 

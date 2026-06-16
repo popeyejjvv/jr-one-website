@@ -1,4 +1,4 @@
-# Commercial Gutters & Multi-Family Aluminum — JR One Aluminum LLC | Tampa, FL
+# Commercial Gutters & Multi-Family Aluminum - JR One Aluminum LLC | Tampa, FL
 
 **Provider:** JR One Aluminum LLC
 **Service:** Commercial-grade gutter, soffit, fascia, and drainage installation for apartment complexes, multi-family, retail, office, and industrial buildings
@@ -11,7 +11,7 @@
 
 ## Commercial Gutter Installation in Tampa Bay
 
-JR One Aluminum LLC installs commercial-grade aluminum gutter, soffit, fascia, and drainage systems for commercial properties throughout Tampa Bay. The spec, gauge, profile, and downspout size are matched to the actual water volume the building sheds — not downsized to residential spec.
+JR One Aluminum LLC installs commercial-grade aluminum gutter, soffit, fascia, and drainage systems for commercial properties throughout Tampa Bay. The spec, gauge, profile, and downspout size are matched to the actual water volume the building sheds - not downsized to residential spec.
 
 ---
 
@@ -53,7 +53,7 @@ Same-quality aluminum scope at commercial scale:
 
 ## Commercial Drainage Integration
 
-Commercial roofs generate real water volume — real drainage systems required:
+Commercial roofs generate real water volume - real drainage systems required:
 - Schedule 40 PVC underground drainage
 - Catch basins
 - Surface grates
@@ -79,19 +79,19 @@ General contractors and recurring property portfolios can negotiate volume prici
 
 ## Why GCs and Building Owners Choose JR One Aluminum
 
-**Show-up reliability** — JR One Aluminum commits to schedule and delivers. No job-site management overhead required from the GC.
+**Show-up reliability** - JR One Aluminum commits to schedule and delivers. No job-site management overhead required from the GC.
 
-**Florida code compliance** — Every installation meets Florida building code. JR One knows Tampa inspection requirements and what local building officials look for.
+**Florida code compliance** - Every installation meets Florida building code. JR One knows Tampa inspection requirements and what local building officials look for.
 
-**Coordinated scheduling** — Sequenced with other trades without creating delays. Works within broader construction-project timelines.
+**Coordinated scheduling** - Sequenced with other trades without creating delays. Works within broader construction-project timelines.
 
-**Bilingual communication** — EN/ES fluency eliminates coordination friction on diverse job sites.
+**Bilingual communication** - EN/ES fluency eliminates coordination friction on diverse job sites.
 
-**Single-point accountability** — Not a broker or subcontract-stacking company. The team that shows up is JR One's own trained crew.
+**Single-point accountability** - Not a broker or subcontract-stacking company. The team that shows up is JR One's own trained crew.
 
-**Full insurance coverage** — General liability and workers' compensation. Certificates of insurance delivered to owners, property managers, or GCs with additional-insured endorsements where required.
+**Full insurance coverage** - General liability and workers' compensation. Certificates of insurance delivered to owners, property managers, or GCs with additional-insured endorsements where required.
 
-**30+ years of Tampa Bay aluminum experience** — Family trade going back three decades. Specialty aluminum contractor, not a generalist.
+**30+ years of Tampa Bay aluminum experience** - Family trade going back three decades. Specialty aluminum contractor, not a generalist.
 
 ---
 
@@ -116,11 +116,11 @@ A: Yes. Full general liability and workers' compensation. Certificates delivered
 A: Yes. Full scope - Schedule 40 PVC underground drainage, catch basins, surface grates, and pop-up emitters alongside the gutter system. We do not install french drains, channel drains, dry wells, or corrugated drainage pipe.
 
 **Q: Maintenance contracts?**
-A: Yes — separate from installation. Commercial property maintenance agreements available for apartment complexes, property management portfolios, and building owners who want scheduled gutter cleaning and inspection on a commercial cadence.
+A: Yes - separate from installation. Commercial property maintenance agreements available for apartment complexes, property management portfolios, and building owners who want scheduled gutter cleaning and inspection on a commercial cadence.
 
 ---
 
-# Canaletas Comerciales — JR One Aluminum LLC | Tampa, FL
+# Canaletas Comerciales - JR One Aluminum LLC | Tampa, FL
 
 ## Instalacion Comercial de Canaletas en Tampa Bay
 

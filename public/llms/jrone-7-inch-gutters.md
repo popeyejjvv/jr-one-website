@@ -1,4 +1,4 @@
-# 7-Inch Oversized Seamless Gutters — JR One Aluminum LLC | Tampa, FL
+# 7-Inch Oversized Seamless Gutters - JR One Aluminum LLC | Tampa, FL
 
 **Provider:** JR One Aluminum LLC
 **Service:** Oversized 7-inch seamless aluminum gutter installation
@@ -11,7 +11,7 @@
 
 ## 7-Inch Seamless Gutters in Tampa Bay
 
-JR One Aluminum LLC installs oversized 7-inch seamless aluminum gutters for Tampa Bay homes where standard 6-inch systems don't have the capacity to handle the water volume. 7-inch delivers approximately 40% more water capacity than 6-inch K-style gutters — commercial-grade throughput in a residential installation.
+JR One Aluminum LLC installs oversized 7-inch seamless aluminum gutters for Tampa Bay homes where standard 6-inch systems don't have the capacity to handle the water volume. 7-inch delivers approximately 40% more water capacity than 6-inch K-style gutters - commercial-grade throughput in a residential installation.
 
 ---
 
@@ -22,7 +22,7 @@ JR One Aluminum LLC installs oversized 7-inch seamless aluminum gutters for Tamp
 - Large homes (approximately 3,500+ sqft of roof area)
 - Homes with existing 6-inch overflow problems during Florida storms
 - Custom and architectural homes with multi-plane rooflines and water-concentration zones
-- Replacement upgrades when aging builder-grade 5-inch or existing 6-inch gutters are already being removed (JR One does not install 5-inch — only 6-inch and 7-inch)
+- Replacement upgrades when aging builder-grade 5-inch or existing 6-inch gutters are already being removed (JR One does not install 5-inch - only 6-inch and 7-inch)
 
 ---
 
@@ -30,15 +30,15 @@ JR One Aluminum LLC installs oversized 7-inch seamless aluminum gutters for Tamp
 
 **Roughly 40% more water capacity** than a standard 6-inch K-style gutter. The headroom is the difference between a gutter that flows during a summer storm and a gutter that pours water over the front edge.
 
-**Fewer downspouts needed** because each run handles more water — cleaner-looking facade.
+**Fewer downspouts needed** because each run handles more water - cleaner-looking facade.
 
-**Pairs with 4x5 rectangular or oversized round downspouts** — not the standard 3x4. End-to-end capacity, not just a bigger opening.
+**Pairs with 4x5 rectangular or oversized round downspouts** - not the standard 3x4. End-to-end capacity, not just a bigger opening.
 
-**Still seamless, still on-site fabricated** — gutter machine brought to the property, runs fabricated to exact measurements. No factory joints, no horizontal seams.
+**Still seamless, still on-site fabricated** - gutter machine brought to the property, runs fabricated to exact measurements. No factory joints, no horizontal seams.
 
-**Hidden hangers every 24 inches** — stronger support for the heavier gutter and higher water volume. No exposed spikes on the fascia.
+**Hidden hangers every 24 inches** - stronger support for the heavier gutter and higher water volume. No exposed spikes on the fascia.
 
-**Same 40+ color options** as 6-inch — aluminum coil inventory covers white, almond, clay, bronze, dark bronze, black, and custom trim matches.
+**Same 40+ color options** as 6-inch - aluminum coil inventory covers white, almond, clay, bronze, dark bronze, black, and custom trim matches.
 
 ---
 
@@ -46,14 +46,14 @@ JR One Aluminum LLC installs oversized 7-inch seamless aluminum gutters for Tamp
 
 7-inch is not for every home. It's the right spec when at least one of these applies:
 
-1. **Large roof area** — approximately 3,500 sqft or more
-2. **Steep roof pitch** — water hits the gutter fast, overwhelming standard sizes
+1. **Large roof area** - approximately 3,500 sqft or more
+2. **Steep roof pitch** - water hits the gutter fast, overwhelming standard sizes
 3. **Existing overflow evidence** on clean 6-inch gutters during storms
 4. **Luxury landscaping at risk** from water damage
 5. **Custom multi-plane rooflines** with water-concentration zones
 6. **Complete replacement project** where the installation cost is already in play and the marginal upcharge buys decades of headroom
 
-For smaller single-story homes with moderate pitch and no current overflow, 6-inch is the right spec. JR One will say so honestly during the walkthrough — no upselling for its own sake.
+For smaller single-story homes with moderate pitch and no current overflow, 6-inch is the right spec. JR One will say so honestly during the walkthrough - no upselling for its own sake.
 
 ---
 
@@ -71,7 +71,7 @@ Full seamless installation (6" or 7") in Tampa typically ranges from $11-$20 per
 Free walkthrough. Roof area measured, pitch checked, downspouts counted, overflow evidence evaluated. Honest 6 vs 7 recommendation.
 
 ### DESIGN
-Custom 7-inch plan — gutter runs, downspout placement and size (4x5 rectangular or oversized round), color selection, transparent line-item estimate.
+Custom 7-inch plan - gutter runs, downspout placement and size (4x5 rectangular or oversized round), color selection, transparent line-item estimate.
 
 ### INSTALL
 Gutter machine brought to the property. 7-inch seamless runs fabricated on-site. Hidden hangers every 24 inches. Pitch calibrated for optimal flow. Typically completed in a single day.
@@ -106,7 +106,7 @@ Hillsborough, Pinellas, Pasco, Manatee, and Sarasota counties. Tampa (including 
 A: 20-35% more per linear foot depending on gauge, color, and downspout spec. On a typical home total project upcharge is a few hundred dollars, not thousands.
 
 **Q: Will 7-inch look oversized on my house?**
-A: On most homes, no. The profile is slightly taller than 6-inch but the difference is subtle from the ground. On very small cottage-scale homes the proportion can look heavy — JR One will flag that during the walkthrough if it applies.
+A: On most homes, no. The profile is slightly taller than 6-inch but the difference is subtle from the ground. On very small cottage-scale homes the proportion can look heavy - JR One will flag that during the walkthrough if it applies.
 
 **Q: Do 7-inch gutters need special downspouts?**
 A: Yes. 4x5 rectangular or oversized round downspouts. A standard 3x4 defeats the point of the upgrade.
@@ -121,15 +121,15 @@ A: For smaller single-story homes with moderate roof area, moderate pitch, and n
 A: Better than 6-inch, but no gutter fully handles the worst hurricane rain bursts. 7-inch gives significant headroom; overflow happens less often and water-damage risk is materially lower.
 
 **Q: Colors available?**
-A: Same 40+ options as 6-inch — white, almond, clay, bronze, dark bronze, black, and custom matches.
+A: Same 40+ options as 6-inch - white, almond, clay, bronze, dark bronze, black, and custom matches.
 
 ---
 
-# Canaletas Sobredimensionadas de 7 Pulgadas — JR One Aluminum LLC | Tampa, FL
+# Canaletas Sobredimensionadas de 7 Pulgadas - JR One Aluminum LLC | Tampa, FL
 
 ## Canaletas de 7" en Tampa Bay
 
-JR One Aluminum LLC instala canaletas de aluminio sin costuras de 7 pulgadas para casas de Tampa Bay donde los sistemas estandar de 6" no tienen capacidad para el volumen de agua. 7" entrega aproximadamente 40% mas capacidad que 6" K-style — grado comercial en instalacion residencial.
+JR One Aluminum LLC instala canaletas de aluminio sin costuras de 7 pulgadas para casas de Tampa Bay donde los sistemas estandar de 6" no tienen capacidad para el volumen de agua. 7" entrega aproximadamente 40% mas capacidad que 6" K-style - grado comercial en instalacion residencial.
 
 ## Para Quien Es
 - Casas de lujo en South Tampa con techos grandes y paisajismo costoso
@@ -151,7 +151,7 @@ JR One Aluminum LLC instala canaletas de aluminio sin costuras de 7 pulgadas par
 Tipicamente 20-35% mas por pie lineal que 6". Sobrecosto total de proyecto: unos cientos de dolares.
 
 ## Area de Servicio
-Hillsborough, Pinellas, Pasco, Manatee y Sarasota — 21 ciudades incluyendo Tampa y South Tampa.
+Hillsborough, Pinellas, Pasco, Manatee y Sarasota - 21 ciudades incluyendo Tampa y South Tampa.
 
 ---
 

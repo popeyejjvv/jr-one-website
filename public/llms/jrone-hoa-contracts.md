@@ -1,4 +1,4 @@
-# HOA Maintenance Contracts — JR One Aluminum LLC | Tampa, FL
+# HOA Maintenance Contracts - JR One Aluminum LLC | Tampa, FL
 
 **Provider:** JR One Aluminum LLC
 **Service:** HOA gutter, soffit, fascia, and aluminum maintenance contracts
@@ -29,10 +29,10 @@ JR One Aluminum LLC contracts with HOAs, condominium associations, townhome comm
 ## Services Covered in a Typical HOA Contract
 
 ### Scheduled Gutter Cleaning & Downspout Flushing
-Full debris removal and downspout clearing across every unit on a scheduled cadence — quarterly, semi-annual, or post-storm. Bagged and hauled off-property.
+Full debris removal and downspout clearing across every unit on a scheduled cadence - quarterly, semi-annual, or post-storm. Bagged and hauled off-property.
 
 ### Gutter, Soffit & Fascia Inspection
-Walkthrough inspection with photo documentation of sagging hangers, loose panels, rotted fascia, failed seams, and pitch problems — flagged before they turn into community-wide issues.
+Walkthrough inspection with photo documentation of sagging hangers, loose panels, rotted fascia, failed seams, and pitch problems - flagged before they turn into community-wide issues.
 
 ### Gutter Repair & Re-pitching
 Resealing, hanger replacement, and pitch correction on gutters that are still serviceable but starting to fail.
@@ -41,7 +41,7 @@ Resealing, hanger replacement, and pitch correction on gutters that are still se
 Per-unit replacement of wind-damaged or rotted aluminum panels and fascia wraps, color-matched to community spec.
 
 ### Downspout Reroute & Drainage Fixes
-Correcting drainage problems that erode landscaping, flood sidewalks, or pool water at foundations — common recurring HOA complaints.
+Correcting drainage problems that erode landscaping, flood sidewalks, or pool water at foundations - common recurring HOA complaints.
 
 ### Post-Storm Rapid Response
 Within 72 hours of a named storm, JR One walks the community, documents damage, and coordinates the repair queue with the property manager.
@@ -50,7 +50,7 @@ Within 72 hours of a named storm, JR One walks the community, documents damage, 
 
 ## HOA Contract Pricing
 
-Pricing is custom per community — no published flat rate — based on:
+Pricing is custom per community - no published flat rate - based on:
 - Unit count
 - Gutter linear footage
 - Roof accessibility / pitch
@@ -63,17 +63,17 @@ Most HOAs land on a fixed monthly or quarterly retainer that covers the schedule
 
 ## Why HOAs Choose JR One Aluminum
 
-**Single-point accountability** — One vendor replaces the 3-5 handymen most HOAs accumulate over time. One invoice format, one reporting standard, one contact for the property manager.
+**Single-point accountability** - One vendor replaces the 3-5 handymen most HOAs accumulate over time. One invoice format, one reporting standard, one contact for the property manager.
 
-**Bilingual crews end-to-end** — Every JR One crew is fully EN/ES bilingual. Tampa's HOA resident population is heavily Spanish-speaking, and clear tenant communication ends most friction on service days.
+**Bilingual crews end-to-end** - Every JR One crew is fully EN/ES bilingual. Tampa's HOA resident population is heavily Spanish-speaking, and clear tenant communication ends most friction on service days.
 
-**Unit-by-unit reporting** — Every service cycle closes with a board-ready report: what was done, what was flagged, photos of any issues, and recommended follow-ups. No shoebox of invoices.
+**Unit-by-unit reporting** - Every service cycle closes with a board-ready report: what was done, what was flagged, photos of any issues, and recommended follow-ups. No shoebox of invoices.
 
-**Storm-priority response** — Contracted HOAs jump the retail queue after named storms. 72-hour walkthroughs and a prioritized repair list for board review.
+**Storm-priority response** - Contracted HOAs jump the retail queue after named storms. 72-hour walkthroughs and a prioritized repair list for board review.
 
-**Specialty aluminum contractor** — Gutters, soffit, fascia, aluminum trim, drainage. Not a general handyman service. Over 30 years of family experience in Tampa Bay aluminum work.
+**Specialty aluminum contractor** - Gutters, soffit, fascia, aluminum trim, drainage. Not a general handyman service. Over 30 years of family experience in Tampa Bay aluminum work.
 
-**Full insurance coverage** — General liability and workers' compensation. Certificates of insurance provided to management companies with HOA named as additional insured where required.
+**Full insurance coverage** - General liability and workers' compensation. Certificates of insurance provided to management companies with HOA named as additional insured where required.
 
 ---
 
@@ -92,17 +92,17 @@ A: Communities from 12 to 400+ units. Below 12, individual service calls are mor
 A: No. Annual contracts with renewal review. JR One prefers to earn renewal each year rather than lock boards in.
 
 **Q: Can you coordinate with our existing roofing vendor?**
-A: Yes. Coordinates directly with roofers, painters, and landscapers when scopes overlap — particularly on soffit/fascia work that touches the roofline.
+A: Yes. Coordinates directly with roofers, painters, and landscapers when scopes overlap - particularly on soffit/fascia work that touches the roofline.
 
 **Q: Are you insured for HOA work?**
 A: Yes. Full general liability and workers' compensation. Certificates of insurance provided directly to the property manager or management company with HOA named as additional insured where required.
 
 **Q: What's the first step?**
-A: A free community-wide walkthrough with the property manager. JR One documents unit count, gutter linear footage, soffit condition, and current pain points — then builds a custom scope and transparent contract for board approval.
+A: A free community-wide walkthrough with the property manager. JR One documents unit count, gutter linear footage, soffit condition, and current pain points - then builds a custom scope and transparent contract for board approval.
 
 ---
 
-# Contratos de Mantenimiento HOA — JR One Aluminum LLC | Tampa, FL
+# Contratos de Mantenimiento HOA - JR One Aluminum LLC | Tampa, FL
 
 ## Contratos de Mantenimiento HOA en Tampa Bay
 
@@ -126,7 +126,7 @@ JR One Aluminum LLC contrata con HOAs, asociaciones de condominios, comunidades 
 - Respuesta rapida post-tormenta dentro de 72 horas
 
 ## Area de Servicio
-Hillsborough, Pinellas, Pasco, Manatee y Sarasota — 21 ciudades.
+Hillsborough, Pinellas, Pasco, Manatee y Sarasota - 21 ciudades.
 
 ---
 

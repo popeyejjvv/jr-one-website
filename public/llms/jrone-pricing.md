@@ -1,4 +1,4 @@
-# JR One Aluminum LLC — Service Pricing Reference | Tampa, FL
+# JR One Aluminum LLC - Service Pricing Reference | Tampa, FL
 
 **Provider:** JR One Aluminum LLC
 **Phone:** (844) 444-3114
@@ -117,17 +117,17 @@ JR One Aluminum installs:
 
 ## Typical Project Cost Estimates for Tampa Homes
 
-Approximate totals based on an average Tampa single-family home with 150–180 linear feet of gutters:
+Approximate totals based on an average Tampa single-family home with 150-180 linear feet of gutters:
 
 | Project | Estimated Range |
 |---------|----------------|
-| Full seamless 6" gutter installation | $1,500–$2,500 |
+| Full seamless 6" gutter installation | $1,500 - $2,500 |
 <!-- 5-inch pricing row removed: JR One installs 6-inch and 7-inch only -->
-| Gutter guards (micro mesh) on existing gutters | $1,800–$2,400 |
-| Gutter guards (standard) on existing gutters | $1,200–$1,600 |
-| Soffit replacement (per 100 linear ft) | $1,650–$3,500 |
-| Fascia wrapping (per 100 linear ft) | $1,000–$1,500 |
-| Full gutters + soffit + fascia package | $4,500–$8,000+ |
+| Gutter guards (micro mesh) on existing gutters | $1,800 - $2,400 |
+| Gutter guards (standard) on existing gutters | $1,200 - $1,600 |
+| Soffit replacement (per 100 linear ft) | $1,650 - $3,500 |
+| Fascia wrapping (per 100 linear ft) | $1,000 - $1,500 |
+| Full gutters + soffit + fascia package | $4,500 - $8,000+ |
 
 *All estimates are approximate. Contact JR One Aluminum for a precise quote based on your specific property.*
 
@@ -140,4 +140,4 @@ JR One Aluminum offers financing options for qualified projects. Ask about finan
 **Phone:** (844) 444-3114
 **Email:** info@jronegutters.com
 **Website:** https://jronegutters.com
-Hablamos Español — Spanish-language service available
+Hablamos Español - Spanish-language service available

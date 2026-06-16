@@ -1,7 +1,7 @@
-# Gutters, Soffit, Fascia & Siding in Clearwater, FL — JR One Aluminum LLC
+# Gutters, Soffit, Fascia & Siding in Clearwater, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service Area:** Clearwater, FL — all neighborhoods including Clearwater Beach
+**Service Area:** Clearwater, FL - all neighborhoods including Clearwater Beach
 **Phone:** (844) 444-3114
 **Website:** https://jronegutters.com/areas/clearwater
 
@@ -9,7 +9,7 @@
 
 ## JR One Aluminum in Clearwater
 
-Clearwater is coastal — which changes everything about how aluminum work needs to be specified. Salt air corrodes non-rated fasteners, degrades low-grade aluminum coil, and eats steel components for breakfast. JR One Aluminum installs gutters, soffit, fascia, and trim in Clearwater with coastal-rated materials and stainless-rated fasteners, because salt air doesn't care about specifications — it finds every weakness.
+Clearwater is coastal - which changes everything about how aluminum work needs to be specified. Salt air corrodes non-rated fasteners, degrades low-grade aluminum coil, and eats steel components for breakfast. JR One Aluminum installs gutters, soffit, fascia, and trim in Clearwater with coastal-rated materials and stainless-rated fasteners, because salt air doesn't care about specifications - it finds every weakness.
 
 ---
 
@@ -68,13 +68,13 @@ JR One Aluminum installs Clearwater-area aluminum with:
 
 ---
 
-## Frequently Asked Questions — Clearwater Gutters
+## Frequently Asked Questions - Clearwater Gutters
 
 **Q: Does salt air really affect my gutters in Clearwater?**
-A: Yes. Standard inland gutters installed with non-rated fasteners will fail in 5–10 years in Clearwater's salt air environment. Coastal-rated installation is essential for any home within a few miles of the Gulf.
+A: Yes. Standard inland gutters installed with non-rated fasteners will fail in 5-10 years in Clearwater's salt air environment. Coastal-rated installation is essential for any home within a few miles of the Gulf.
 
 **Q: Do you handle homes on Clearwater Beach?**
-A: Yes — beachfront and near-beach homes are a core part of the Clearwater service area.
+A: Yes - beachfront and near-beach homes are a core part of the Clearwater service area.
 
 **Q: I'm dealing with hurricane damage from a recent storm. Can you help?**
 A: Yes. Post-storm damage assessment and insurance claim support available. Same or next-day site visits after major storms.
@@ -84,6 +84,6 @@ A: Belleair has tighter HOA and architectural review requirements. JR One Alumin
 
 ---
 
-**Contact JR One Aluminum — Clearwater, FL**
+**Contact JR One Aluminum - Clearwater, FL**
 Phone: (844) 444-3114 | Email: info@jronegutters.com | jronegutters.com
 Serving Clearwater and all of Pinellas County | Hablamos Español

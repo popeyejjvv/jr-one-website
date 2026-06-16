@@ -1,4 +1,4 @@
-# Commercial Gutter and Aluminum Services — JR One Aluminum LLC | Tampa, FL
+# Commercial Gutter and Aluminum Services - JR One Aluminum LLC | Tampa, FL
 
 **Provider:** JR One Aluminum LLC
 **Service:** Commercial gutter installation, soffit, fascia, and aluminum services
@@ -61,17 +61,17 @@ Large commercial roofs generate significant water volume. JR One Aluminum design
 
 ## Why General Contractors and Roofing Companies Choose JR One Aluminum
 
-**Show-up reliability** — JR One Aluminum commits to schedule and delivers. No job site management overhead required from the GC.
+**Show-up reliability** - JR One Aluminum commits to schedule and delivers. No job site management overhead required from the GC.
 
-**Florida code compliance** — Every installation meets Florida building code. JR One Aluminum knows Tampa's inspection requirements and what local building officials look for.
+**Florida code compliance** - Every installation meets Florida building code. JR One Aluminum knows Tampa's inspection requirements and what local building officials look for.
 
-**Coordinated scheduling** — The team understands how to work within a broader project schedule, sequencing with other trades without creating delays.
+**Coordinated scheduling** - The team understands how to work within a broader project schedule, sequencing with other trades without creating delays.
 
-**Bilingual communication** — English and Spanish fluency eliminates coordination friction on diverse commercial job sites.
+**Bilingual communication** - English and Spanish fluency eliminates coordination friction on diverse commercial job sites.
 
-**Competitive volume pricing** — General contractors and roofing companies with recurring work can negotiate volume pricing and preferred scheduling.
+**Competitive volume pricing** - General contractors and roofing companies with recurring work can negotiate volume pricing and preferred scheduling.
 
-**Single-point accountability** — JR One Aluminum is not a broker or subcontract-stacking company. The team that shows up is JR One's own.
+**Single-point accountability** - JR One Aluminum is not a broker or subcontract-stacking company. The team that shows up is JR One's own.
 
 ---
 
@@ -82,6 +82,6 @@ Contact JR One Aluminum to discuss commercial project requirements, lead times, 
 **Phone:** (844) 444-3114
 **Email:** info@jronegutters.com
 **Website:** https://jronegutters.com
-**Hours:** Monday – Saturday, 7:00 AM – 6:00 PM
+**Hours:** Monday - Saturday, 7:00 AM - 6:00 PM
 **Location:** Tampa, FL | Service Area: Tampa Bay and Florida's west coast
-Hablamos Español — bilingual project communication available
+Hablamos Español - bilingual project communication available

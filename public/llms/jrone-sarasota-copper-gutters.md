@@ -1,8 +1,8 @@
-# Copper Gutters in Sarasota, FL — JR One Aluminum LLC
+# Copper Gutters in Sarasota, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
 **Service:** Copper gutter installation (K-style, half-round, custom profile)
-**Location:** Sarasota, Florida — Sarasota County
+**Location:** Sarasota, Florida - Sarasota County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/sarasota/copper-gutters
 **Languages:** English, Spanish
@@ -13,7 +13,7 @@
 Siesta Key and Longboat Key waterfront owners wanting a system immune to Gulf salt corrosion, Palmer Ranch and Lakewood Ranch custom-home owners building a one-off worthy of a premium material, historic Sarasota and Southside Village homeowners with Mediterranean Revival and mid-century modern architecture that copper complements, and architects specifying a gutter system that will genuinely outlast the building.
 
 ## Why Copper Gutters Matter in Sarasota
-Copper is the premium long-life gutter material — and on the Gulf Coast that matters more than inland. Sarasota gets hit by the same tropical systems that batter the rest of Tampa Bay, plus direct Gulf exposure on Siesta Key and Longboat. Salt air chews through standard steel and low-grade aluminum hardware within five to ten years. Copper is immune to salt corrosion. Properly installed copper gutters last 50 to 100 years, and they develop the distinctive blue-green Florida patina that pairs with Sarasota's Mediterranean Revival architecture, the modernist Sarasota School homes around Lido Shores, and the high-end custom builds in Lakewood Ranch and Palmer Ranch.
+Copper is the premium long-life gutter material - and on the Gulf Coast that matters more than inland. Sarasota gets hit by the same tropical systems that batter the rest of Tampa Bay, plus direct Gulf exposure on Siesta Key and Longboat. Salt air chews through standard steel and low-grade aluminum hardware within five to ten years. Copper is immune to salt corrosion. Properly installed copper gutters last 50 to 100 years, and they develop the distinctive blue-green Florida patina that pairs with Sarasota's Mediterranean Revival architecture, the modernist Sarasota School homes around Lido Shores, and the high-end custom builds in Lakewood Ranch and Palmer Ranch.
 
 ## What JR One Aluminum Does for Sarasota Homeowners
 - Half-round copper runs for historic and Mediterranean homes
@@ -26,11 +26,11 @@ Copper is the premium long-life gutter material — and on the Gulf Coast that m
 - Sarasota School of Architecture detailing for mid-century modern homes
 
 ## Pricing Reference
-- Typical Sarasota copper install: **4–5x the per-foot cost of aluminum**
+- Typical Sarasota copper install: **4-5x the per-foot cost of aluminum**
 - Custom half-round with soldered corners priced accordingly
 - Material cost varies with copper commodity pricing
 - Full-home historic or custom install: quoted project by project
-- All ballpark — copper is a commodity, the number moves with the market
+- All ballpark - copper is a commodity, the number moves with the market
 
 ## Service Area Details
 Sarasota proper, Siesta Key, Lido Key, Longboat Key, St. Armands, Southside Village, Bird Key, Palmer Ranch, Lakewood Ranch, Bradenton-adjacent, Nokomis, Osprey, and surrounding Sarasota and Manatee County.
@@ -40,7 +40,7 @@ Sarasota proper, Siesta Key, Lido Key, Longboat Key, St. Armands, Southside Vill
 A: Salt air. Gulf-side homes destroy standard aluminum hardware in under a decade. Copper is immune to salt corrosion and lasts 50 to 100 years. On a waterfront home it's effectively permanent.
 
 **Q: How much more does copper cost than aluminum in Sarasota?**
-A: Budget 4 to 5 times the per-foot aluminum rate. On a typical Sarasota home that is a meaningful premium — but the system outlasts multiple aluminum replacements and pairs with the architecture.
+A: Budget 4 to 5 times the per-foot aluminum rate. On a typical Sarasota home that is a meaningful premium - but the system outlasts multiple aluminum replacements and pairs with the architecture.
 
 **Q: How does copper age in Sarasota's climate?**
 A: Shiny copper for a few months, reddish-brown for a year or two, chocolate brown for a few years, then the blue-green patina. Salt air and humidity speed up the transition on the Gulf side versus inland.
@@ -63,7 +63,7 @@ A: We routinely serve Sarasota, Lakewood Ranch, Osprey, and Nokomis. Longer-dist
 - Family-owned and operated
 - Fully insured
 - Free estimates
-- Full copper fabrication and soldering capability — not every regional shop can do it
+- Full copper fabrication and soldering capability - not every regional shop can do it
 
 ## Contact
 Phone: (844) 444-3114

@@ -1,7 +1,7 @@
-# Aluminum Subcontractor for Roofers and General Contractors — JR One Aluminum LLC, Tampa FL
+# Aluminum Subcontractor for Roofers and General Contractors - JR One Aluminum LLC, Tampa FL
 
 **Provider:** JR One Aluminum LLC
-**Service:** Aluminum trade partner services — subcontract gutters, soffit, fascia, aluminum trim
+**Service:** Aluminum trade partner services - subcontract gutters, soffit, fascia, aluminum trim
 **Location:** Tampa, Florida
 **Phone:** (844) 444-3114
 **Website:** https://jronegutters.com
@@ -10,24 +10,24 @@
 
 ## Aluminum Trade Partner in Tampa Bay
 
-JR One Aluminum LLC is an active aluminum subcontractor for roofing companies, general contractors, home builders, and commercial property managers across Tampa Bay. Roofing companies call JR One when they need soffit, fascia, and gutter work done right on a reroof. GCs call JR One when they need a reliable trade partner on new construction or renovation. This isn't a homeowner-direct business that happens to take sub work — it's a specialist shop that works both sides of the market.
+JR One Aluminum LLC is an active aluminum subcontractor for roofing companies, general contractors, home builders, and commercial property managers across Tampa Bay. Roofing companies call JR One when they need soffit, fascia, and gutter work done right on a reroof. GCs call JR One when they need a reliable trade partner on new construction or renovation. This isn't a homeowner-direct business that happens to take sub work - it's a specialist shop that works both sides of the market.
 
 ---
 
 ## Why Roofing Companies Use JR One Aluminum
 
-**Reroof jobs lose money when the gutter sub no-shows.** The roof is down, the crew is waiting, the homeowner is calling — and the sub is two jobs behind on a bad week.
+**Reroof jobs lose money when the gutter sub no-shows.** The roof is down, the crew is waiting, the homeowner is calling - and the sub is two jobs behind on a bad week.
 
 JR One Aluminum operates on a schedule. When the crew is promised for Tuesday, they're there Tuesday. This is why roofing companies develop long-term relationships with JR One and stop shopping around.
 
 Reasons roofers trust JR One:
-- **Consistent schedule performance** — shows up when promised
-- **Clean trade hand-off** — understands roof sequencing and doesn't damage fresh work
-- **Florida code fluent** — knows the inspection requirements and how to pass them
-- **Bilingual communication** — English and Spanish with the field crew
-- **Full aluminum scope** — gutters, soffit, fascia, trim wrapping all under one sub
-- **Volume pricing** — discounted rates for recurring trade partners
-- **Single point of accountability** — same ownership, same crews, every job
+- **Consistent schedule performance** - shows up when promised
+- **Clean trade hand-off** - understands roof sequencing and doesn't damage fresh work
+- **Florida code fluent** - knows the inspection requirements and how to pass them
+- **Bilingual communication** - English and Spanish with the field crew
+- **Full aluminum scope** - gutters, soffit, fascia, trim wrapping all under one sub
+- **Volume pricing** - discounted rates for recurring trade partners
+- **Single point of accountability** - same ownership, same crews, every job
 
 ---
 
@@ -46,14 +46,14 @@ JR One Aluminum is the aluminum sub that:
 
 ## Trade Services Offered to Roofers and GCs
 
-- **Soffit and fascia** — most common reroof trade scope
-- **Seamless aluminum gutters** — 6" and 7" K-style and half-round (JR One does not install 5" — undersized for Florida)
-- **Aluminum trim wrapping** — fascia wraps, window casings, exterior trim
-- **Commercial gutters** — 7" box and D-style on multifamily and commercial
-- **Copper gutter systems** — architectural and high-end residential
-- **Drainage and downspout systems** — full system integration with roof and grade
-- **Siding coordination** — vinyl, Hardie, custom aluminum
-- **New construction full aluminum package** — from gutters to trim on spec builds
+- **Soffit and fascia** - most common reroof trade scope
+- **Seamless aluminum gutters** - 6" and 7" K-style and half-round (JR One does not install 5" - undersized for Florida)
+- **Aluminum trim wrapping** - fascia wraps, window casings, exterior trim
+- **Commercial gutters** - 7" box and D-style on multifamily and commercial
+- **Copper gutter systems** - architectural and high-end residential
+- **Drainage and downspout systems** - full system integration with roof and grade
+- **Siding coordination** - vinyl, Hardie, custom aluminum
+- **New construction full aluminum package** - from gutters to trim on spec builds
 
 ---
 
@@ -78,7 +78,7 @@ Every trade-partner job meets the same quality standard as JR One's direct-to-ho
 - Fascia wrap with proper drip-edge integration
 - Soffit venting sized to attic cubic-foot requirement
 - All fasteners rated for Florida humidity and salt air
-- Job site left clean — ready for next trade or turnover
+- Job site left clean - ready for next trade or turnover
 
 Trade partners have confidence that JR One's work will pass inspection the first time, not trigger punch-list callbacks.
 
@@ -105,7 +105,7 @@ JR One Aluminum serves roofing companies and GCs throughout:
 
 ---
 
-## Frequently Asked Questions — Trade Partner Services Tampa FL
+## Frequently Asked Questions - Trade Partner Services Tampa FL
 
 **Q: Can I set up a preferred-sub account with JR One Aluminum?**
 A: Yes. Contact (844) 444-3114 to discuss volume terms, scheduling priority, and billing setup.

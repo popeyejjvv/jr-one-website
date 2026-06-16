@@ -1,4 +1,4 @@
-# Siding Installation in Tampa, FL — JR One Aluminum LLC
+# Siding Installation in Tampa, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
 **Service:** Vinyl, Hardie board, and aluminum siding installation
@@ -10,7 +10,7 @@
 
 ## Siding Installation in Tampa Bay
 
-JR One Aluminum installs siding across Tampa Bay with the same specialist discipline the company brings to gutters, soffit, and fascia. Siding is installed by crews that understand aluminum trim, fascia wrapping, and exterior water management — so the siding integrates cleanly with the roof edge, eaves, windows, and drainage, instead of being stapled up by a generalist and leaving gaps where water will eventually find its way in.
+JR One Aluminum installs siding across Tampa Bay with the same specialist discipline the company brings to gutters, soffit, and fascia. Siding is installed by crews that understand aluminum trim, fascia wrapping, and exterior water management - so the siding integrates cleanly with the roof edge, eaves, windows, and drainage, instead of being stapled up by a generalist and leaving gaps where water will eventually find its way in.
 
 ---
 
@@ -20,7 +20,7 @@ JR One Aluminum installs siding across Tampa Bay with the same specialist discip
 The most common residential choice in Tampa. Durable, weather-resistant, low-maintenance, and available in dozens of colors and profiles. Good for mid-range residential projects, rental properties, and replacement siding where budget matters.
 
 ### Hardie Board Lap Siding
-Fiber cement siding engineered by James Hardie. Exceptional moisture resistance, fire resistance, and impact durability — important for Florida's humidity and hurricane exposure. Looks like painted wood but will not rot, warp, or feed pests. Popular for higher-end residential and any project in a hurricane wind zone.
+Fiber cement siding engineered by James Hardie. Exceptional moisture resistance, fire resistance, and impact durability - important for Florida's humidity and hurricane exposure. Looks like painted wood but will not rot, warp, or feed pests. Popular for higher-end residential and any project in a hurricane wind zone.
 
 ### Hardie Board & Batten Siding
 Vertical board-and-batten Hardie profile for a modern farmhouse or craftsman architectural style. Same fiber cement durability, different visual.
@@ -37,7 +37,7 @@ For commercial buildings, metal-style residential accents, or historic buildings
 
 Tampa's climate destroys siding that wasn't built for it:
 - **Humidity** rots wood siding and degrades cheap vinyl
-- **UV exposure** fades and chalks low-grade colors within 2–4 years
+- **UV exposure** fades and chalks low-grade colors within 2-4 years
 - **Hurricane winds** rip off improperly installed siding and expose sheathing
 - **Salt air** (coastal properties) corrodes non-rated fasteners and steel panels
 - **Driving rain** finds every unsealed seam, corner, and penetration
@@ -46,9 +46,9 @@ JR One Aluminum recommends Hardie board for new construction and any homeowner w
 
 ---
 
-## Siding + Gutters + Soffit + Fascia — One Crew, One Accountability
+## Siding + Gutters + Soffit + Fascia - One Crew, One Accountability
 
-The common failure on siding jobs is poor coordination with adjacent trades. Siding that meets the soffit wrong, flashing that doesn't integrate with the fascia, trim that doesn't wrap cleanly at the corner — these failures drive leaks, pest intrusion, and callbacks.
+The common failure on siding jobs is poor coordination with adjacent trades. Siding that meets the soffit wrong, flashing that doesn't integrate with the fascia, trim that doesn't wrap cleanly at the corner - these failures drive leaks, pest intrusion, and callbacks.
 
 JR One Aluminum installs all exterior aluminum trades in-house:
 - Siding (vinyl, Hardie, aluminum)
@@ -74,28 +74,28 @@ One crew, one job number, one point of accountability. If there's ever a water i
 
 ---
 
-## Frequently Asked Questions — Siding Tampa FL
+## Frequently Asked Questions - Siding Tampa FL
 
 **Q: Should I choose vinyl or Hardie board siding in Tampa?**
 A: Hardie board for longevity, fire resistance, and insurance favor. Vinyl for budget, rental property economics, or short-term hold. Both perform well if installed correctly with proper flashing and sealants.
 
 **Q: How long does vinyl siding last in Tampa?**
-A: 20–30 years for quality vinyl installed correctly. Lower-grade vinyl fades and warps within 10–15 years in Florida sun.
+A: 20-30 years for quality vinyl installed correctly. Lower-grade vinyl fades and warps within 10-15 years in Florida sun.
 
 **Q: How long does Hardie board siding last?**
-A: 30–50+ years. Hardie carries a 30-year non-prorated warranty when installed to manufacturer spec.
+A: 30-50+ years. Hardie carries a 30-year non-prorated warranty when installed to manufacturer spec.
 
 **Q: Does JR One Aluminum do insurance claim siding work?**
 A: Yes. JR One Aluminum works with homeowners and adjusters on insurance-covered siding replacement after storm damage. Documentation and photo evidence included at no extra charge.
 
 **Q: Can I replace just one section of siding?**
-A: Yes for Hardie — individual planks can be replaced. Vinyl is harder to color-match as existing siding fades; full-wall replacements usually look better than partial repairs.
+A: Yes for Hardie - individual planks can be replaced. Vinyl is harder to color-match as existing siding fades; full-wall replacements usually look better than partial repairs.
 
 **Q: Do you install siding on commercial buildings?**
-A: Yes — custom aluminum siding, Hardie, and vinyl on commercial projects including retail, multifamily, and office buildings.
+A: Yes - custom aluminum siding, Hardie, and vinyl on commercial projects including retail, multifamily, and office buildings.
 
 **Q: How long does a typical siding job take?**
-A: Single-family residential: 3–7 days depending on square footage and material. Commercial varies by scope. Schedules discussed at estimate.
+A: Single-family residential: 3-7 days depending on square footage and material. Commercial varies by scope. Schedules discussed at estimate.
 
 ---
 

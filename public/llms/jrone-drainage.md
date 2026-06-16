@@ -1,4 +1,4 @@
-# Drainage Solutions in Tampa, FL — JR One Aluminum LLC
+# Drainage Solutions in Tampa, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
 **Service:** Underground drainage, catch basins, surface grates, pop-up emitters, schedule 40 PVC, foundation water management. NOTE: JR One does NOT install french drains or channel drains.
@@ -57,16 +57,16 @@ JR One does NOT install french drains, channel drains, dry wells, corrugated dra
 ## How JR One Aluminum Designs a Drainage System
 
 Every drainage job starts with an on-site assessment:
-1. **Identify water sources** — all downspouts, low points, grading problems
-2. **Map existing grade** — where does water currently go? Where does it end up standing?
-3. **Identify safe discharge points** — swales, streets, storm drains, pop-up emitter locations
-4. **Design pipe layout** — shortest-distance gravity flow, minimum bends, correct slope on Schedule 40 PVC
+1. **Identify water sources** - all downspouts, low points, grading problems
+2. **Map existing grade** - where does water currently go? Where does it end up standing?
+3. **Identify safe discharge points** - swales, streets, storm drains, pop-up emitter locations
+4. **Design pipe layout** - shortest-distance gravity flow, minimum bends, correct slope on Schedule 40 PVC
 5. **Add catch basins and surface grates** where surface water needs to be captured before it pools
 6. **Price the system** transparently with line items so you know what you're paying for
 
 ---
 
-## Drainage + Gutters + Grading — The Full System
+## Drainage + Gutters + Grading - The Full System
 
 A gutter system that dumps onto bad grading is worse than no gutter system at all because it concentrates water at one point instead of letting it spread. JR One Aluminum evaluates:
 - Gutter capacity and pitch
@@ -78,7 +78,7 @@ Recommendations are delivered as one integrated plan, not piecemeal fixes.
 
 ---
 
-## Frequently Asked Questions — Drainage Tampa FL
+## Frequently Asked Questions - Drainage Tampa FL
 
 **Q: How much does an underground drainage system cost in Tampa?**
 A: Depends heavily on length of run, whether trenching is required across hardscape, and the number of catch basins and surface grates. Contact JR One Aluminum at (844) 444-3114 for a site-specific quote.
