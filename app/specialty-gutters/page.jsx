@@ -24,7 +24,7 @@ const T = {
   en: {
     breadcrumb: ["Home", "Services", "Specialty Gutters"],
     heroTag: "CUSTOM & SPECIALTY GUTTER SYSTEMS",
-    heroH1: "Beyond Standard.",
+    heroH1: "Specialty Gutters in Tampa Bay.",
     heroH1Gold: "Built for Your Home.",
     heroP: "Half-round, box, D-style, super gutter, commercial, and more. When standard gutters won't do, our specialty systems deliver the precision, capacity, and look your home demands.",
     btnEstimate: "GET YOUR FREE ESTIMATE",

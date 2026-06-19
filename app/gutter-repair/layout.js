@@ -57,9 +57,9 @@ const imageObjectSchema = {
 };
 
 export const metadata = {
-  title: "Gutter Repair Tampa FL",
+  title: "Gutter Repair Tampa Bay FL",
   description:
-    "Gutter repair Tampa Bay, sagging gutters, leaking seams, clogged downspouts, pitch correction, fascia repair. Same-week scheduling. Free assessment (844) 444-3114.",
+    "Gutter repair near you in Tampa FL. We fix sagging gutters, leaking seams, overflow and downspouts, often same week. Free inspection, call (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/gutter-repair",
     languages: {

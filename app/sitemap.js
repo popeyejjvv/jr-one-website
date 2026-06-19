@@ -42,6 +42,7 @@ const CITY_SERVICE_SLUGS = [
 const STATIC_PAGES = [
   { path: "/", priority: 1.0, changeFrequency: "weekly" },
   { path: "/seamless-aluminum-gutters", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/7-inch-gutters", priority: 0.8, changeFrequency: "monthly" },
   { path: "/gutter-guards", priority: 0.9, changeFrequency: "monthly" },
   { path: "/soffit-and-fascia", priority: 0.9, changeFrequency: "monthly" },
   { path: "/siding", priority: 0.8, changeFrequency: "monthly" },

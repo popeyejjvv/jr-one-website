@@ -39,9 +39,9 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Gutter Guards Tampa FL",
+  title: "Mesh Gutter Guards Tampa FL",
   description:
-    "Professional gutter guard installation in Tampa Bay. Micro mesh for pine needles and fine debris. 30+ years specialist experience. Local pricing, free estimate at (844) 444-3114.",
+    "Mesh gutter guards installed in Tampa FL by a local crew, not a franchise. Micro mesh blocks pine needles and fine debris. Free estimate at (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/gutter-guards",
     languages: {

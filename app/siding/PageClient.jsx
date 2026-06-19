@@ -31,8 +31,8 @@ const T = {
   en: {
     breadcrumb: ["Home", "Services", "Siding"],
     heroTag: "SIDING INSTALLATION & REPAIR",
-    heroH1a: "Your Home's First Line",
-    heroH1b: "of Defense Against",
+    heroH1a: "Siding Replacement in Tampa Bay,",
+    heroH1b: "Built for",
     heroH1c: "Florida Weather.",
     heroP: "Vinyl siding installation and repair built to handle Tampa Bay's sun, rain, humidity, and hurricanes. We install it right so your home stays protected and looking sharp for years.",
     heroCta: "Get Your Free Estimate",

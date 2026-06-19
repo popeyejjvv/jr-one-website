@@ -25,8 +25,8 @@ const T = {
   en: {
     breadcrumb: ["Home", "Services", "Gutter Guards"],
     heroTag: "GUTTER GUARD INSTALLATION",
-    heroH1: "Keep Debris Out.",
-    heroH1Gold: "Keep Your Gutters Flowing.",
+    heroH1: "Mesh Gutter Guards in Tampa,",
+    heroH1Gold: "Installed by Our Crew",
     heroP: "Gutter guards prevent leaves, pine needles, and debris from clogging your gutters and downspouts. The #1 cause of gutter failure and water damage. Guards make maintenance easier, extend your system's lifespan, and keep drainage working when Florida storms hit hardest.",
     btnEstimate: "GET YOUR FREE ESTIMATE",
     btnCall: "(844) 444-3114",

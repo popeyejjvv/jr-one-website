@@ -110,8 +110,8 @@ const CITIES = {
   },
   riverview: {
     name: "Riverview", county: "Hillsborough County", slug: "riverview",
-    heroH1: "Riverview's Family-Owned",
-    heroH1Gold: "Gutter & Fascia Trade",
+    heroH1: "Riverview Gutter Repair",
+    heroH1Gold: "& Gutter Guards",
     localP: "Riverview's explosive growth has brought thousands of new homes, many built quickly by volume builders. If your gutters were installed as part of a fast-paced new construction process, they may not have received the attention to pitch, hanger spacing, and material quality that a specialty trade provides. JR One fixes what builders cut corners on and installs new systems built to last.",
     weatherNote: "Riverview's position along the Alafia River means proper drainage is critical for preventing foundation issues and yard erosion.",
     neighborhoods: ["FishHawk", "Riverview Hills", "Boyette", "Summerfield", "Pavilion"],
@@ -128,8 +128,8 @@ const CITIES = {
   },
   largo: {
     name: "Largo", county: "Pinellas County", slug: "largo",
-    heroH1: "Largo's Family-Owned",
-    heroH1Gold: "Gutter & Soffit Trade",
+    heroH1: "Largo Fascia Repair",
+    heroH1Gold: "& Gutter Specialists",
     localP: "Largo sits in the heart of Pinellas County: close enough to the Gulf for salt air exposure, dense enough with tree canopy for constant gutter debris, and established enough that many homes have soffit and fascia systems that are well past their lifespan. JR One brings specialty-trade aluminum work to Largo homeowners who want the job done right.",
     weatherNote: "Largo's central Pinellas location means you get both coastal weather and suburban tree coverage, a combination that accelerates gutter and soffit wear.",
     neighborhoods: ["Largo Central", "Belcher", "Seminole", "Ridgecrest", "Oakhurst"],
@@ -210,7 +210,7 @@ const CITIES = {
   lutz: {
     name: "Lutz", county: "Hillsborough/Pasco County", slug: "lutz",
     heroH1: "Lutz's Family-Owned",
-    heroH1Gold: "Aluminum & Gutter Trade",
+    heroH1Gold: "Seamless Gutter Installation & Repair",
     localP: "Lutz straddles the Hillsborough-Pasco county line, offering a suburban feel with heavy tree canopy and established neighborhoods alongside newer developments. That tree coverage is beautiful but means constant gutter debris, and many older Lutz homes are overdue for soffit and fascia upgrades. JR One serves Lutz with the same precision and thoroughness we bring to every Tampa Bay community.",
     weatherNote: "Lutz's signature oak and pine canopy drops debris year-round, making gutter maintenance and guards especially important. Combined with Florida's heavy seasonal rains, clogged gutters here lead to fascia rot and foundation issues fast.",
     neighborhoods: ["Heritage Isles", "Calusa Trace", "Cheval", "Lake Park"],

@@ -25,7 +25,7 @@ const T = {
   en: {
     breadcrumb: ["Home", "Services", "Gutter Repair & Maintenance"],
     heroTag: "GUTTER REPAIR & MAINTENANCE",
-    heroH1: "Leaking, Sagging, or Overflowing?",
+    heroH1: "Gutter Repair in Tampa Bay, FL.",
     heroH1Gold: "We Fix It Right the First Time.",
     heroP: "Don't let small gutter problems become expensive home damage. We diagnose the real issue, not just the symptom, and fix it so you don't have to call again. Plus seasonal maintenance programs to prevent problems before they start.",
     btnEstimate: "GET YOUR FREE INSPECTION",

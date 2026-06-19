@@ -26,9 +26,21 @@ export const dynamicParams = false;
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const cityName = slugToCity(slug);
+  // Per-city overrides for striking-distance pages: lead the title with the top
+  // local GSC query instead of the generic service-list template. 2026-06-15 audit.
+  const TITLE_OVERRIDES = {
+    largo: "Fascia Repair & Gutters Largo, FL",
+    lutz: "Seamless Gutter Installation Lutz FL",
+    riverview: "Gutter Repair & Guards in Riverview FL",
+  };
+  const DESC_OVERRIDES = {
+    largo: "Roof fascia repair and seamless gutters in Largo, FL. Wood-to-aluminum fascia, soffit, gutter guards, and cleaning by a family-owned Pinellas specialty trade. Free estimate (844) 444-3114.",
+    lutz: "Gutter installation in Lutz, FL. Seamless 6-inch and 7-inch aluminum gutters, gutter guards, repair, soffit and fascia. Family-owned, 30+ years. Call (844) 444-3114.",
+    riverview: "Gutter repair and gutter guards in Riverview, FL. 6-inch and 7-inch seamless aluminum, fascia repair, and cleaning. Free estimate (844) 444-3114.",
+  };
   return {
-    title: `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
-    description: `Seamless gutters, soffit repair, fascia replacement, gutter guards, and siding in ${cityName}, Florida. Family-owned Tampa Bay aluminum specialists. 30+ years experience. Free estimate (844) 444-3114.`,
+    title: TITLE_OVERRIDES[slug] || `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
+    description: DESC_OVERRIDES[slug] || `Seamless gutters, soffit repair, fascia replacement, gutter guards, and siding in ${cityName}, Florida. Family-owned Tampa Bay aluminum specialists. 30+ years experience. Free estimate (844) 444-3114.`,
     alternates: {
       canonical: `https://www.jronegutters.com/areas/${slug}`,
       languages: {

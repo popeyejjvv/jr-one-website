@@ -54,7 +54,7 @@ export const metadata = {
     description: "Oversized 7-inch seamless gutters for Tampa luxury homes and high-volume roofs. Commercial-grade capacity.",
     url: "https://www.jronegutters.com/7-inch-gutters",
     type: "website",
-    images: [{ url: "https://www.jronegutters.com/images/7inch-gutter-comparison.webp", width: 1920, height: 1080, alt: "Side-by-side 5-inch vs 7-inch gutter comparison by JR One Aluminum Tampa" }],
+    images: [{ url: "https://www.jronegutters.com/images/7inch-gutter-comparison.webp", width: 1920, height: 1080, alt: "An undersized 5-inch builder gutter beside a JR One 7-inch oversized gutter in Tampa. JR One installs 6 and 7 inch only." }],
   },
   twitter: {
     card: "summary_large_image",

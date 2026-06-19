@@ -32,9 +32,9 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Vinyl and Hardie Siding Tampa FL",
+  title: "Siding Replacement Tampa FL",
   description:
-    "Siding installation in Tampa Bay, Hardie board, vinyl lap, custom aluminum. One crew handles siding, soffit, fascia, and gutters. Free estimate, (844) 444-3114.",
+    "Siding replacement in Tampa: vinyl, Hardie fiber-cement, aluminum, and Sagiper PVC installed by one crew with your soffit, fascia, and gutters. Free estimate, (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/siding",
     languages: {

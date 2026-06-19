@@ -31,9 +31,9 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Specialty Gutters Tampa FL",
+  title: "Specialty Gutters Tampa: Half-Round & Box",
   description:
-    "Half-round, commercial box, D-style, and oversized K-style aluminum gutters installed in Tampa Bay. Historic homes, architectural properties, commercial. (844) 444-3114.",
+    "Specialty gutters in Tampa Bay: half-round, box, D-style, 7-inch oversized, and copper profiles for historic, architectural, and commercial properties. Call (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/specialty-gutters",
     languages: {
