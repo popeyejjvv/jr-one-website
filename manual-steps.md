@@ -23,11 +23,13 @@ None blocked. Vercel is authed + linked, GSC is wired through Ahrefs, IndexNow k
 
 ## CONTENT / CODE FOLLOW-UPS (ranked)
 
-1. **Spanish pages for already-translated content.** about, contact, faq, projects, financing, referral, service-plans already have hand-written Spanish (T.es blocks) but no /es/ URL, so Google cannot see the Spanish. Highest value: /es/sobre-nosotros, /es/contacto, /es/preguntas-frecuentes. I can build these as thin wrapper routes on your go-ahead.
+1. **[DONE 2026-06-15]** All 12 Spanish key-page routes built as thin /es wrappers (nosotros, contacto, preguntas-frecuentes, proyectos, financiamiento, referidos, recursos, centro-recursos-seguros, garantias, planes-de-servicio-tampa, politica-privacidad, terminos-servicio), in the sitemap, reciprocal hreflang wired.
 
-2. **Spanish html lang tag.** Every /es page is served as `<html lang="en">` because the root layout hardcodes it. Fixing it needs a locale-aware root layout (a small architecture change) - left out of the safe pass.
+2. **[DONE 2026-06-15]** Spanish `<html lang="es">` fixed via middleware + async root layout. (Tradeoff: pages now render dynamically - fine for this site's traffic; a `[lang]` route-group refactor would restore static generation if ever needed.)
 
-3. **Spanish navigation locale leak.** The main nav + homepage service cards link Spanish visitors to the English pages. Fix: route nav/card hrefs through the existing EN_TO_ES map when language is Spanish (SiteNav.jsx + app/page.jsx).
+3. **[DONE 2026-06-15]** Navigation locale leak fixed site-wide: one `lib/locale.js` `localizeHref` routes every internal link (nav, footer, service cards, CTAs, breadcrumbs, in-body cross-links) to the right language. Verified on production: zero English links on `/es`.
+
+3b. **Still EN-only (need real translation, not a wrapper):** `/estimator` and the blog (`/blog`, `/blog/[slug]`). `localizeHref` intentionally keeps Spanish visitors on the working English version of these until a Spanish version is written. Image-license stays EN (legal).
 
 4. **Blog FAQ rendering + duplicate H1.** Blog posts render the post title AND the markdown "#" heading as two H1s, and the frontmatter FAQs are parsed but never rendered (the FAQPage block is a commented-out stub in page.jsx). A small BlogPost.jsx change fixes both and unlocks the FAQ content below.
 
