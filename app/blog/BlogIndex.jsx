@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import MobileCTA from "../../components/MobileCTA";
+import SiteNav from "../../components/SiteNav";
+import SiteFooter from "../../components/SiteFooter";
 import { useLanguage } from "../../lib/LanguageContext";
 import { localizeHref } from "../../lib/locale";
 
@@ -55,6 +57,7 @@ export default function BlogIndex({ posts }) {
 
   return (
     <div style={{ background: C.bg, minHeight: "100vh", fontFamily: f.b }}>
+      <SiteNav />
       {/* Header */}
       <div style={{ background: C.navy, padding: "60px 20px 40px", textAlign: "center" }}>
         <div style={{ display: "inline-block", padding: "6px 16px", background: C.goldPale, borderRadius: "4px", marginBottom: "12px" }}>
@@ -145,6 +148,7 @@ export default function BlogIndex({ posts }) {
           </div>
         )}
       </div>
+      <SiteFooter />
       <MobileCTA />
     </div>
   );

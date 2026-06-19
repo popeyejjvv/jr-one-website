@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useLanguage } from "../../../lib/LanguageContext";
 import MobileCTA from "../../../components/MobileCTA";
+import SiteNav from "../../../components/SiteNav";
+import SiteFooter from "../../../components/SiteFooter";
 import { localizeHref } from "../../../lib/locale";
 
 const C = {
@@ -44,6 +46,7 @@ export default function BlogPost({ post, related }) {
   const t = T[lang];
   return (
     <div style={{ background: C.bg, minHeight: "100vh", fontFamily: f.b }}>
+      <SiteNav />
       {/* Back link */}
       <div style={{ maxWidth: "780px", margin: "0 auto", padding: "20px 20px 0" }}>
         <Link href={localizeHref("/blog", lang)} style={{ fontFamily: f.h, fontSize: "13px", color: C.gold, textDecoration: "none" }}>
@@ -180,6 +183,7 @@ export default function BlogPost({ post, related }) {
         )}
       </article>
 
+      <SiteFooter />
       <MobileCTA />
 
       {/* Blog content styles */}
