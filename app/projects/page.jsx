@@ -121,7 +121,9 @@ export default function ProjectsPage() {
   }, [lightbox, navLightbox]);
 
   const statsData = [
-    { v: stats.totalProjects ? `${stats.totalProjects}+` : "300+", l: t.statProjects },
+    // 2,122 JR One projects documented with photos in CompanyCam (live count, 2026-06-19);
+    // shown as a stable floor that stays true as the count grows.
+    { v: "2,100+", l: t.statProjects },
     { v: "4.9 ★", l: t.statRating },
     { v: "20+", l: t.statCities },
     { v: "30+", l: t.statExperience },

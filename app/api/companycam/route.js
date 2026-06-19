@@ -48,6 +48,7 @@ async function fetchPhotosForTag(tagId, tagName) {
       photos.push({
         id: p.id,
         projectId: p.project_id,
+        companyId: p.company_id,
         tag: tagName,
         web: (p.uris.find(u => u.type === "web") || {}).uri,
         original: (p.uris.find(u => u.type === "original") || {}).uri,
