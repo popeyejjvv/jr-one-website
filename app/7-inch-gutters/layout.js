@@ -24,7 +24,7 @@ const serviceSchema = {
   ],
   description:
     "Oversized 7-inch seamless aluminum gutters, commercial-grade water capacity for South Tampa luxury homes, large roof areas, and steep-pitched homes that overwhelm standard 6-inch systems. Premium upcharge vs. 6-inch; lifetime protection.",
-  offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+  offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
 };
 
 const breadcrumbSchema = {

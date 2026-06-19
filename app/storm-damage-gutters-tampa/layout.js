@@ -26,7 +26,6 @@ const serviceSchema = {
     "Hurricane and named-storm damage repair for gutters, fascia, soffit, and downspouts across Tampa Bay. Same-week install. 6\" and 7\" seamless aluminum gutters only (no 5\" in Florida). Insurance claim documentation provided. Family-owned, over 30 years in the trade.",
   offers: {
     "@type": "Offer",
-    priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     description: "Same-week post-storm install scheduling during hurricane season.",
   },

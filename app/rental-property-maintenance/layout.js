@@ -21,7 +21,7 @@ const serviceSchema = {
   ],
   description:
     "Gutter, soffit, and fascia maintenance for Airbnb, VRBO, long-term rental, and investment properties across Tampa Bay. Built for absentee owners, scheduled service, photo reports, and tenant coordination without the owner showing up.",
-  offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+  offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
 };
 
 const breadcrumbSchema = {

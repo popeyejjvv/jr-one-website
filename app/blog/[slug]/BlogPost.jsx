@@ -21,6 +21,7 @@ const T = {
     callCta: "Call (844) 444-3114",
     getQuote: "Get Free Quote",
     relatedArticles: "Related Articles",
+    faqHeading: "Frequently Asked Questions",
     dateLocale: "en-US",
   },
   es: {
@@ -32,6 +33,7 @@ const T = {
     callCta: "Llamar al (844) 444-3114",
     getQuote: "Cotizacion Gratis",
     relatedArticles: "Articulos Relacionados",
+    faqHeading: "Preguntas Frecuentes",
     dateLocale: "es-US",
   },
 };
@@ -81,6 +83,37 @@ export default function BlogPost({ post, related }) {
             fontFamily: f.b, fontSize: "17px", lineHeight: 1.75, color: "#D1D5DB",
           }}
         />
+
+        {/* FAQs — rendered from frontmatter as visible Q&A (AEO + readers).
+            FAQPage JSON-LD intentionally omitted: Google retired the rich result June 2026. */}
+        {post.faqs && post.faqs.length > 0 && (
+          <section style={{ marginTop: "50px" }} aria-labelledby="post-faq-heading">
+            <h2
+              id="post-faq-heading"
+              style={{ fontFamily: f.h, fontSize: "26px", fontWeight: 700, color: C.white, marginBottom: "20px" }}
+            >
+              {t.faqHeading}
+            </h2>
+            <div style={{ display: "grid", gap: "14px" }}>
+              {post.faqs.map((faq, i) => (
+                <div
+                  key={i}
+                  style={{
+                    padding: "20px", background: C.navyMid, borderRadius: "10px",
+                    border: `1px solid ${C.navyLight}`,
+                  }}
+                >
+                  <h3 style={{ fontFamily: f.h, fontSize: "17px", fontWeight: 700, color: C.gold, marginBottom: "8px" }}>
+                    {faq.question}
+                  </h3>
+                  <p style={{ fontFamily: f.b, fontSize: "16px", lineHeight: 1.7, color: "#D1D5DB", margin: 0 }}>
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <div style={{

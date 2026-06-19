@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
   };
   return {
     title: TITLE_OVERRIDES[slug] || `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
-    description: DESC_OVERRIDES[slug] || `Seamless gutters, soffit repair, fascia replacement, gutter guards, and siding in ${cityName}, Florida. Family-owned Tampa Bay aluminum specialists. 30+ years experience. Free estimate (844) 444-3114.`,
+    description: DESC_OVERRIDES[slug] || `Gutters, soffit, fascia, gutter guards, and siding in ${cityName}, FL. Family-owned Tampa Bay specialists, 30+ years. Free estimate (844) 444-3114.`,
     alternates: {
       canonical: `https://www.jronegutters.com/areas/${slug}`,
       languages: {
@@ -96,7 +96,7 @@ export default async function CityPage({ params }) {
       address: { "@type": "PostalAddress", addressRegion: "FL", addressCountry: "US" },
     },
     description: `Seamless aluminum gutters, soffit, fascia, gutter guards, siding, and drainage in ${cityName}, Florida. 30+ years of Tampa Bay aluminum specialist experience. Bilingual service (English/Spanish).`,
-    offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
 
   const breadcrumbSchema = {

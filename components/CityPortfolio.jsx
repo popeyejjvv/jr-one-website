@@ -121,9 +121,18 @@ function PortfolioGrid({ photos, regional = false }) {
                 contentUrl: photo.original || photo.web,
                 thumbnailUrl: photo.thumbnail || photo.web,
                 name: photo.altText,
-                contentLocation: regional
-                  ? `${photo.countyDisplay} County, FL`
-                  : `${photo.cityNameDisplay}, FL`,
+                contentLocation: {
+                  "@type": "Place",
+                  name: regional
+                    ? `${photo.countyDisplay} County, FL`
+                    : `${photo.cityNameDisplay}, FL`,
+                  address: {
+                    "@type": "PostalAddress",
+                    ...(regional ? {} : { addressLocality: photo.cityNameDisplay }),
+                    addressRegion: "FL",
+                    addressCountry: "US",
+                  },
+                },
                 datePublished: photo.capturedAt,
                 creator: {
                   "@type": "Organization",

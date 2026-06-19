@@ -69,7 +69,16 @@ export default async function ServicePortfolio({
                   contentUrl: photo.original || photo.web,
                   thumbnailUrl: photo.thumbnail || photo.web,
                   name: photo.altText,
-                  contentLocation: `${photo.cityNameDisplay}, FL`,
+                  contentLocation: {
+                    "@type": "Place",
+                    name: `${photo.cityNameDisplay}, FL`,
+                    address: {
+                      "@type": "PostalAddress",
+                      addressLocality: photo.cityNameDisplay,
+                      addressRegion: "FL",
+                      addressCountry: "US",
+                    },
+                  },
                   datePublished: photo.capturedAt,
                   creator: {
                     "@type": "Organization",

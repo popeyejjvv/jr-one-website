@@ -1136,7 +1136,7 @@ export default async function CityServicePage({ params }) {
       },
       // aggregateRating removed 2026-05-26 per audit Tier 1.7 (self-serving rule).
     },
-    offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
 
   const breadcrumbSchema = {

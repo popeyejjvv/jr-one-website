@@ -11,14 +11,15 @@ import { PhoneIcon, MailIcon, MapPinIcon } from "../lib/icons";
 import { localizeHref } from "../lib/locale";
 
 const SERVICE_NAMES = {
-  en: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
-  es: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales"],
+  en: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "7-Inch Gutters"],
+  es: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Canaletas de 7 Pulgadas"],
 };
 
 const SERVICE_HREFS = [
   "/copper-gutters", "/drainage-assessment", "/govee-lights", "/gutter-guards",
   "/gutter-repair", "/peak-301", "/sagiper", "/seamless-aluminum-gutters",
   "/service-plans", "/siding", "/soffit-and-fascia", "/specialty-gutters",
+  "/7-inch-gutters",
 ];
 
 const T = {
@@ -38,6 +39,7 @@ const T = {
       { label: "Financing", href: "/financing" },
       { label: "Insurance Resource Center", href: "/insurance-resource-center" },
       { label: "Blog", href: "/blog" },
+      { label: "Image License", href: "/image-license" },
     ],
     address: "Serving Tampa Bay, FL and surrounding counties",
     copyright: "© 2026 JR One Aluminum LLC. All rights reserved.",
@@ -60,6 +62,7 @@ const T = {
       { label: "Financiamiento", href: "/financing" },
       { label: "Centro de Recursos de Seguros", href: "/insurance-resource-center" },
       { label: "Blog", href: "/blog" },
+      { label: "Licencia de Imágenes", href: "/image-license" },
     ],
     address: "Sirviendo Tampa Bay, FL y áreas cercanas",
     copyright: "© 2026 JR One Aluminum LLC. Todos los derechos reservados.",
