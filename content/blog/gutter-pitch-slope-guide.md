@@ -8,20 +8,20 @@ faqs:
   - question: "What is the correct pitch for gutters?"
     answer: "The standard gutter pitch is 1/4 inch of slope per 10 feet of gutter run toward the nearest downspout. For Florida's heavy rain, some installers use up to 1/2 inch per 10 feet for faster drainage. Too little pitch causes standing water. Too much pitch creates a visible slant."
   - question: "How can I tell if my gutters are pitched wrong?"
-    answer: "Look for standing water in the gutter after rain stops (water should drain within 30 minutes), water overflowing at the middle of a run (indicates a low spot or reverse pitch), or mosquitoes breeding in the gutters (standing water). You can also place a level on the gutter — it should slope slightly toward the downspout."
+    answer: "Look for standing water in the gutter after rain stops (water should drain within 30 minutes), water overflowing at the middle of a run (indicates a low spot or reverse pitch), or mosquitoes breeding in the gutters (standing water). You can also place a level on the gutter - it should slope slightly toward the downspout."
   - question: "Can gutter pitch be fixed without replacing the gutters?"
     answer: "Yes. Re-pitching is a repair, not a replacement. The contractor adjusts the hanger positions to create the correct slope. This is one of the most common and cost-effective gutter repairs, typically $150-$350 per section."
 ---
 
 # What Is Gutter Pitch and Why Does It Matter?
 
-Gutter pitch — the slight slope that makes water flow toward the downspout instead of sitting in the channel — is one of the most important details in gutter installation. Get it wrong and your gutters hold water instead of moving it. Get it right and water drains in minutes even after a heavy storm.
+Gutter pitch - the slight slope that makes water flow toward the downspout instead of sitting in the channel - is one of the most important details in gutter installation. Get it wrong and your gutters hold water instead of moving it. Get it right and water drains in minutes even after a heavy storm.
 
 Most homeowners never think about pitch until something goes wrong. Here's what you need to know.
 
 ## What Gutter Pitch Means
 
-Pitch (also called slope or fall) is the angle at which the gutter tilts from its high point to the downspout. Gutters aren't level — they're intentionally tilted so gravity pulls water toward the drain point.
+Pitch (also called slope or fall) is the angle at which the gutter tilts from its high point to the downspout. Gutters aren't level - they're intentionally tilted so gravity pulls water toward the drain point.
 
 The standard pitch is **1/4 inch of drop per 10 feet of gutter run**.
 
@@ -76,9 +76,9 @@ Re-pitching is one of the most common gutter repairs and one of the most cost-ef
 3. Re-install hangers along the correct line, typically every 24-36 inches
 4. Run water through the section to verify flow
 
-No new materials needed in most cases — just labor to re-position the hangers. Cost: **$150-$350 per section** for most homes.
+No new materials needed in most cases - just labor to re-position the hangers. Cost: **$150-$350 per section** for most homes.
 
-If the fascia behind the gutter is rotted or uneven, that needs to be addressed first — hangers mounted to bad wood will lose pitch again quickly.
+If the fascia behind the gutter is rotted or uneven, that needs to be addressed first - hangers mounted to bad wood will lose pitch again quickly.
 
 ## The Bottom Line
 

@@ -15,7 +15,7 @@ faqs:
 
 # Soffit and Fascia Replacement in Tampa: The Complete Homeowner Guide
 
-Most Tampa homeowners don't think about soffit and fascia until something goes visibly wrong — peeling paint, a wasp nest in a gap, or a raccoon in the attic. By that point, the damage has been progressing for months or years behind the scenes.
+Most Tampa homeowners don't think about soffit and fascia until something goes visibly wrong - peeling paint, a wasp nest in a gap, or a raccoon in the attic. By that point, the damage has been progressing for months or years behind the scenes.
 
 Here's what you need to know about soffit and fascia in Tampa's climate, when to act, and what the fix actually looks like.
 
@@ -25,7 +25,7 @@ Here's what you need to know about soffit and fascia in Tampa's climate, when to
 
 **Soffit** is the horizontal panel underneath the roof overhang. It seals the gap between your roofline and exterior wall, keeping weather, pests, and moisture out of your attic and roof structure.
 
-Together, they're the protective envelope around the most vulnerable part of your home's exterior — the roof edge.
+Together, they're the protective envelope around the most vulnerable part of your home's exterior - the roof edge.
 
 ## Why Tampa Destroys Wood Soffit and Fascia
 
@@ -41,10 +41,10 @@ The result: wood soffit and fascia in Tampa typically shows meaningful deteriora
 ## Signs Your Soffit or Fascia Needs Attention
 
 **Fascia warning signs:**
-- Paint peeling or bubbling — moisture is underneath
-- Visible discoloration or dark spots — active rot
-- Soft spots when you press on the board — advanced rot
-- Gutters pulling away — the fascia can't hold the weight anymore
+- Paint peeling or bubbling - moisture is underneath
+- Visible discoloration or dark spots - active rot
+- Soft spots when you press on the board - advanced rot
+- Gutters pulling away - the fascia can't hold the weight anymore
 - Visible gaps between fascia and roof edge
 
 **Soffit warning signs:**
@@ -62,7 +62,7 @@ Repainting wood soffit buys you 3-5 years before you're doing it again. Replacin
 **Aluminum soffit and fascia ends the cycle permanently.**
 
 - Doesn't rot, warp, or absorb moisture
-- Doesn't need painting — the color is baked into the finish
+- Doesn't need painting - the color is baked into the finish
 - Resists UV degradation for decades
 - Seals tight against pest entry
 - Ventilated soffit panels provide proper attic airflow (reduces AC costs)
@@ -97,7 +97,7 @@ Factors that affect price: home height (multi-story costs more), accessibility (
 
 ## Don't Wait for the Pest Problem
 
-The most expensive outcome of ignoring soffit and fascia damage isn't the replacement cost — it's the pest remediation cost. A family of raccoons in the attic, a termite colony in rotted fascia, or a wasp nest in a soffit gap all create secondary problems that cost more than the original fix.
+The most expensive outcome of ignoring soffit and fascia damage isn't the replacement cost - it's the pest remediation cost. A family of raccoons in the attic, a termite colony in rotted fascia, or a wasp nest in a soffit gap all create secondary problems that cost more than the original fix.
 
 If you see any warning signs, get an inspection. We'll tell you what needs attention now and what can wait.
 

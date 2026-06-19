@@ -8,21 +8,21 @@ faqs:
   - question: "How do I know if my downspout is clogged?"
     answer: "Signs of a clogged downspout: water overflows from the gutter near the downspout instead of draining, water barely trickles from the downspout bottom during rain, you can hear water inside the downspout but little comes out, or the gutter near the downspout is full of standing water after rain stops."
   - question: "What causes downspout clogs?"
-    answer: "Most downspout clogs happen at three points: the gutter-to-downspout transition (where the outlet meets the drop), the elbow at the top of the downspout, and the elbow at the bottom. Debris — especially pine needles and decomposed leaf sludge — accumulates at these transition points where the water changes direction."
+    answer: "Most downspout clogs happen at three points: the gutter-to-downspout transition (where the outlet meets the drop), the elbow at the top of the downspout, and the elbow at the bottom. Debris - especially pine needles and decomposed leaf sludge - accumulates at these transition points where the water changes direction."
   - question: "Can I unclog a downspout myself?"
     answer: "Simple clogs can often be cleared with a garden hose, plumber's snake, or by disconnecting and flushing the downspout. Clogs deep in the downspout or in underground drainage pipes usually require professional equipment. If the hose method doesn't work within 10 minutes, call a professional."
 ---
 
 # How to Unclog a Downspout (Step-by-Step)
 
-A clogged downspout turns your entire gutter system into a holding tank. Water backs up, gutters overflow, and all the damage gutters are supposed to prevent — fascia rot, foundation erosion, landscape washout — happens anyway.
+A clogged downspout turns your entire gutter system into a holding tank. Water backs up, gutters overflow, and all the damage gutters are supposed to prevent - fascia rot, foundation erosion, landscape washout - happens anyway.
 
 Here's how to identify, clear, and prevent downspout clogs.
 
 ## How to Tell If Your Downspout Is Clogged
 
 **During rain:**
-- Water overflows from the gutter section near the downspout (not at the far end — that's a different problem)
+- Water overflows from the gutter section near the downspout (not at the far end - that's a different problem)
 - Very little or no water exits the bottom of the downspout
 - You can hear water gurgling inside the downspout
 - The downspout feels heavier than usual (packed with wet debris)
@@ -36,9 +36,9 @@ Here's how to identify, clear, and prevent downspout clogs.
 
 Downspout clogs don't happen randomly. They occur at three predictable locations:
 
-1. **The outlet transition** — where the gutter channel meets the downspout opening. Debris narrows from a wide channel into a small hole.
-2. **The top elbow** — where the downspout turns from the gutter outlet to run vertically against the wall. Direction change = debris collection.
-3. **The bottom elbow** — where the downspout transitions to the ground-level extension. Another direction change where debris settles.
+1. **The outlet transition** - where the gutter channel meets the downspout opening. Debris narrows from a wide channel into a small hole.
+2. **The top elbow** - where the downspout turns from the gutter outlet to run vertically against the wall. Direction change = debris collection.
+3. **The bottom elbow** - where the downspout transitions to the ground-level extension. Another direction change where debris settles.
 
 ## DIY Methods (In Order of Escalation)
 
@@ -100,10 +100,10 @@ Professional downspout clearing typically costs $75-$200 and includes gutter cle
 
 **Install downspout strainers.** Metal cage strainers sit in the gutter outlet and catch debris before it enters the downspout. They need periodic cleaning but prevent most clogs.
 
-**Check downspouts during every gutter cleaning.** Don't just clean the gutter channel — flush every downspout with a hose to confirm flow. A partially clogged downspout becomes a fully clogged one after the next storm.
+**Check downspouts during every gutter cleaning.** Don't just clean the gutter channel - flush every downspout with a hose to confirm flow. A partially clogged downspout becomes a fully clogged one after the next storm.
 
 ## The Bottom Line
 
-Most downspout clogs are clearable with a garden hose or plumber's snake. The key is catching them before they cause overflow damage. If you're clearing the same downspout repeatedly, the problem is debris in the gutter — solve it at the source with gutter guards or more frequent cleaning.
+Most downspout clogs are clearable with a garden hose or plumber's snake. The key is catching them before they cause overflow damage. If you're clearing the same downspout repeatedly, the problem is debris in the gutter - solve it at the source with gutter guards or more frequent cleaning.
 
-**[Schedule gutter cleaning + downspout flush](/estimator)** or call **(844) 444-3114**. We flush every downspout on every cleaning — it's not optional, it's standard.
+**[Schedule gutter cleaning + downspout flush](/estimator)** or call **(844) 444-3114**. We flush every downspout on every cleaning - it's not optional, it's standard.

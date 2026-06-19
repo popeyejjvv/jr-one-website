@@ -13,14 +13,14 @@ faqs:
 
 # Selling Your Home? 5 Exterior Upgrades That Increase Your Sale Price
 
-Buyers make their first judgment before they walk through the front door. Curb appeal isn't just landscaping — it's the entire exterior system, including gutters, soffit, fascia, and drainage. These are the upgrades that directly affect your Tampa home's sale price and days-on-market.
+Buyers make their first judgment before they walk through the front door. Curb appeal isn't just landscaping - it's the entire exterior system, including gutters, soffit, fascia, and drainage. These are the upgrades that directly affect your Tampa home's sale price and days-on-market.
 
 ## 1. Replace Failing Gutters with Seamless Aluminum
 
 **Cost:** $1,500 - $3,000
 **Expected return:** 80-100% of cost at resale
 
-Old gutters with visible sags, rust stains, leaking seams, or overflow marks are the first thing a buyer notices at the roofline. They signal deferred maintenance — which makes buyers wonder what else is neglected.
+Old gutters with visible sags, rust stains, leaking seams, or overflow marks are the first thing a buyer notices at the roofline. They signal deferred maintenance - which makes buyers wonder what else is neglected.
 
 New seamless gutters in a color matched to the trim make the entire roofline look finished and maintained. For a Tampa home listing at $350K-$500K, this is one of the highest-ROI exterior investments available.
 
@@ -39,14 +39,14 @@ Fix these before listing, not during negotiations.
 
 Gutter guards tell buyers: "This home is low-maintenance." For any Tampa home with trees, guards eliminate the buyer's mental calculation of "how often will I need to clean these?"
 
-Guards also prevent the inspection-day disaster where the inspector finds packed gutters, standing water, and mosquito larvae — all of which end up in the inspection report and give the buyer leverage to negotiate your price down.
+Guards also prevent the inspection-day disaster where the inspector finds packed gutters, standing water, and mosquito larvae - all of which end up in the inspection report and give the buyer leverage to negotiate your price down.
 
 ## 3. Replace Rotted Fascia with Aluminum Wrap
 
 **Cost:** $1,500 - $3,500 for full perimeter
 **Expected return:** 90-100% (prevents deal-killing inspection flags)
 
-Rotted fascia is a red flag on every home inspection. The inspector photographs it, notes it as a "structural concern," and the buyer uses it to negotiate $3,000-$5,000 off your price — or walks entirely.
+Rotted fascia is a red flag on every home inspection. The inspector photographs it, notes it as a "structural concern," and the buyer uses it to negotiate $3,000-$5,000 off your price - or walks entirely.
 
 Aluminum fascia wrap solves this permanently. It looks clean, requires zero maintenance, and eliminates the rot concern from the inspection report entirely.
 
@@ -55,7 +55,7 @@ Aluminum fascia wrap solves this permanently. It looks clean, requires zero main
 **Cost:** $200 - $800
 **Expected return:** Prevents $5,000-$15,000 in buyer concessions
 
-Inspectors check where downspout water goes. If it dumps at the foundation, pools in the yard, or erodes the soil, that's documented. Buyers see "drainage issues" in an inspection report and think "foundation problems" — even if the foundation is fine.
+Inspectors check where downspout water goes. If it dumps at the foundation, pools in the yard, or erodes the soil, that's documented. Buyers see "drainage issues" in an inspection report and think "foundation problems" - even if the foundation is fine.
 
 Adding downspout extensions, splash blocks, or underground drainage pipes is cheap relative to the negotiation leverage it removes.
 
@@ -83,6 +83,6 @@ Every item on this list is something a home inspector will check and photograph.
 
 ## The Bottom Line
 
-$3,000-$6,000 in gutter, fascia, and drainage improvements can prevent $10,000-$15,000 in buyer concessions and speed up your sale. These aren't cosmetic upgrades — they're inspection-proofing investments that protect your asking price.
+$3,000-$6,000 in gutter, fascia, and drainage improvements can prevent $10,000-$15,000 in buyer concessions and speed up your sale. These aren't cosmetic upgrades - they're inspection-proofing investments that protect your asking price.
 
 **[Schedule a pre-sale exterior assessment](/estimator)** or call **(844) 444-3114**. We'll tell you exactly what needs attention before you list.

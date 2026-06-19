@@ -6,7 +6,7 @@ category: "Commercial"
 keyword: "hoa gutter maintenance"
 faqs:
   - question: "How often should HOA gutters be cleaned?"
-    answer: "HOA properties in Tampa Bay should have gutters cleaned at minimum twice per year — once before hurricane season (May) and once after fall debris (November/December). Properties with heavy tree canopy need quarterly service. Maintenance contracts with scheduled service prevent the emergency calls that cost 2-3x regular pricing."
+    answer: "HOA properties in Tampa Bay should have gutters cleaned at minimum twice per year - once before hurricane season (May) and once after fall debris (November/December). Properties with heavy tree canopy need quarterly service. Maintenance contracts with scheduled service prevent the emergency calls that cost 2-3x regular pricing."
   - question: "Does the HOA or the homeowner pay for gutter maintenance?"
     answer: "It depends on the HOA's governing documents (CC&Rs). In most Florida townhome and condo associations, exterior maintenance including gutters, soffit, and fascia is the HOA's responsibility. Single-family home HOAs typically make gutters the homeowner's responsibility but enforce appearance standards."
   - question: "Can an HOA get bulk pricing on gutter maintenance?"
@@ -62,10 +62,10 @@ This inspection feeds your reserve study and capital improvement planning.
 **Maintenance contracts** are the right approach for HOAs. Benefits:
 
 - **30-40% lower per-unit cost** vs. retail pricing
-- **Scheduled service** — no emergency calls at 2-3x pricing
-- **Consistent quality** — same crew, same standards, same accountability
-- **Documentation** — service reports for board meetings and reserve studies
-- **Priority response** — contract clients get priority scheduling during storm season
+- **Scheduled service** - no emergency calls at 2-3x pricing
+- **Consistent quality** - same crew, same standards, same accountability
+- **Documentation** - service reports for board meetings and reserve studies
+- **Priority response** - contract clients get priority scheduling during storm season
 
 A typical HOA maintenance contract covers 2-4 scheduled cleanings per year, annual capital inspection, and priority emergency response. Pricing is per-unit, scaled by unit count.
 
@@ -83,9 +83,9 @@ When individual homeowners handle their own gutters, compliance varies wildly. S
 
 ### Undersized Gutters on Volume-Built Communities
 
-Most Tampa Bay HOA communities were built by volume builders who installed the cheapest, smallest gutters available — 5-inch sectional aluminum or (worse) vinyl. These systems are already failing at 10-15 years old across dozens of communities in Brandon, Riverview, Wesley Chapel, and Land O' Lakes.
+Most Tampa Bay HOA communities were built by volume builders who installed the cheapest, smallest gutters available - 5-inch sectional aluminum or (worse) vinyl. These systems are already failing at 10-15 years old across dozens of communities in Brandon, Riverview, Wesley Chapel, and Land O' Lakes.
 
-The board needs to plan for community-wide gutter replacement as a capital improvement, not treat it as individual unit repairs. JR One replaces builder-grade undersized gutters with 6-inch or 7-inch seamless aluminum — we install 6-inch and 7-inch only.
+The board needs to plan for community-wide gutter replacement as a capital improvement, not treat it as individual unit repairs. JR One replaces builder-grade undersized gutters with 6-inch or 7-inch seamless aluminum - we install 6-inch and 7-inch only.
 
 ## Budgeting for Gutter Maintenance
 
@@ -104,12 +104,12 @@ Gutter systems should be included in your reserve study with a 20-25 year replac
 
 ## What to Look for in an HOA Gutter Contractor
 
-- **Experience with multi-unit properties** — single-home contractors aren't always equipped for HOA-scale work
-- **Insurance documentation** — general liability + workers' comp, provided annually
-- **Service reports** — written documentation after every visit
-- **Board communication** — proactive reporting on issues discovered during service
-- **Consistent crew** — same team on every visit who knows the property
-- **Bilingual capability** — critical for communicating with residents in Tampa Bay's diverse communities
+- **Experience with multi-unit properties** - single-home contractors aren't always equipped for HOA-scale work
+- **Insurance documentation** - general liability + workers' comp, provided annually
+- **Service reports** - written documentation after every visit
+- **Board communication** - proactive reporting on issues discovered during service
+- **Consistent crew** - same team on every visit who knows the property
+- **Bilingual capability** - critical for communicating with residents in Tampa Bay's diverse communities
 
 ## The Bottom Line
 

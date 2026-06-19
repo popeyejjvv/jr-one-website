@@ -8,9 +8,9 @@ faqs:
   - question: "How much does LeafFilter cost?"
     answer: "LeafFilter typically costs $25-$40 per linear foot installed. A typical home with 175 linear feet of gutters pays $4,375-$7,000. This is 2-3x the cost of the same micro mesh technology installed by a local specialist at $10-$18 per linear foot ($1,750-$3,150)."
   - question: "Is there a cheaper alternative to LeafFilter?"
-    answer: "Yes. Local gutter guard specialists install professional-grade micro mesh guards for $10-$18 per linear foot — roughly half of LeafFilter's price. The mesh technology is not proprietary. The difference in price pays for LeafFilter's national TV advertising, franchise fees, and in-home sales team, not better materials."
+    answer: "Yes. Local gutter guard specialists install professional-grade micro mesh guards for $10-$18 per linear foot - roughly half of LeafFilter's price. The mesh technology is not proprietary. The difference in price pays for LeafFilter's national TV advertising, franchise fees, and in-home sales team, not better materials."
   - question: "Is LeafFilter the same as micro mesh?"
-    answer: "LeafFilter uses micro mesh technology — stainless steel mesh over an aluminum frame. This is the same fundamental design that local gutter contractors install. LeafFilter's mesh is not a patented or proprietary technology. The installation method and materials are comparable to professional-grade micro mesh available from any qualified gutter specialist."
+    answer: "LeafFilter uses micro mesh technology - stainless steel mesh over an aluminum frame. This is the same fundamental design that local gutter contractors install. LeafFilter's mesh is not a patented or proprietary technology. The installation method and materials are comparable to professional-grade micro mesh available from any qualified gutter specialist."
 ---
 
 # LeafFilter vs. Local Gutter Guard Installation: Honest Price Comparison
@@ -27,7 +27,7 @@ But recognition and value aren't the same thing. Here's what you're actually pay
 | **Local specialist** | $10 - $18 | $1,750 - $3,150 | $2,500 - $4,500 |
 | **Savings with local** | $10 - $25/LF | **$2,000 - $4,500** | **$3,000 - $6,000** |
 
-That's not a small difference. On a typical Tampa home, you save $2,000-$4,500 by going local — for the same technology.
+That's not a small difference. On a typical Tampa home, you save $2,000-$4,500 by going local - for the same technology.
 
 ## What You Get with LeafFilter
 
@@ -53,11 +53,11 @@ What IS unique to LeafFilter is their marketing machine, franchise infrastructur
 
 LeafFilter's higher price pays for:
 
-1. **National TV and digital advertising** — estimated $100M+/year marketing spend
-2. **Franchise fees** — each LeafFilter dealer pays franchise royalties
-3. **In-home sales team** — the person who visits your home for 90 minutes isn't an installer, they're a salesperson on commission
-4. **The "manager callback" discount** — halfway through the in-home presentation, the salesperson calls their "manager" who authorizes a "today only" discount. This is a scripted sales technique, not a genuine negotiation.
-5. **Overhead** — corporate offices, call centers, CRM systems, branded trucks
+1. **National TV and digital advertising** - estimated $100M+/year marketing spend
+2. **Franchise fees** - each LeafFilter dealer pays franchise royalties
+3. **In-home sales team** - the person who visits your home for 90 minutes isn't an installer, they're a salesperson on commission
+4. **The "manager callback" discount** - halfway through the in-home presentation, the salesperson calls their "manager" who authorizes a "today only" discount. This is a scripted sales technique, not a genuine negotiation.
+5. **Overhead** - corporate offices, call centers, CRM systems, branded trucks
 
 None of these things improve the product on your gutters.
 
@@ -74,7 +74,7 @@ None of these things improve the product on your gutters.
 ### Local Specialist
 - Installer or owner visits your home
 - 15-30 minute inspection and estimate
-- Written quote left with you — no pressure to sign today
+- Written quote left with you - no pressure to sign today
 - Call back with questions whenever you want
 - Same person who estimates often does the installation
 
@@ -96,12 +96,12 @@ Local specialist warranties:
 
 ## When LeafFilter Makes Sense
 
-Honestly? We can't think of a scenario where paying 2-3x the price for the same technology makes financial sense. If the brand name gives you peace of mind, that has value to some people — but you're paying $2,000-$4,500 for that peace of mind.
+Honestly? We can't think of a scenario where paying 2-3x the price for the same technology makes financial sense. If the brand name gives you peace of mind, that has value to some people - but you're paying $2,000-$4,500 for that peace of mind.
 
 ## The Bottom Line
 
-LeafFilter is a marketing company that sells gutter guards. They deliver a quality micro mesh product — but at 2-3x the price of the same technology from a local specialist. The mesh isn't proprietary. The installation isn't different. The only thing unique is the price premium.
+LeafFilter is a marketing company that sells gutter guards. They deliver a quality micro mesh product - but at 2-3x the price of the same technology from a local specialist. The mesh isn't proprietary. The installation isn't different. The only thing unique is the price premium.
 
 Save $2,000-$4,500 and work with a local gutter specialist who installs the same technology, uses their own trained crew, and backs the work with their community reputation.
 
-**[Get a free micro mesh estimate — local pricing](/estimator)** or call **(844) 444-3114**. Same technology, half the price, no 90-minute sales pitch.
+**[Get a free micro mesh estimate - local pricing](/estimator)** or call **(844) 444-3114**. Same technology, half the price, no 90-minute sales pitch.

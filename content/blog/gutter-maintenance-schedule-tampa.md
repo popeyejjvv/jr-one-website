@@ -33,13 +33,13 @@ Here's a month-by-month guide to what your gutters need throughout the year in T
 
 ## March - April: Spring Inspection Window
 
-**What happens:** Live oak "leaf drop" — Tampa's live oaks shed their old leaves in March and April as new growth pushes them out. This is one of the heaviest debris periods for gutters in our area.
+**What happens:** Live oak "leaf drop" - Tampa's live oaks shed their old leaves in March and April as new growth pushes them out. This is one of the heaviest debris periods for gutters in our area.
 
 **What to do:**
-- **Clean all gutters** — this is a critical cleaning window
+- **Clean all gutters** - this is a critical cleaning window
 - Inspect hanger condition and fascia behind gutters
 - Check gutter guards for buildup (if installed)
-- Note any paint peeling or soft spots on fascia — these indicate water damage to address before hurricane season
+- Note any paint peeling or soft spots on fascia - these indicate water damage to address before hurricane season
 
 **Priority level:** High. This cleaning directly prepares for hurricane season.
 
@@ -62,7 +62,7 @@ Here's a month-by-month guide to what your gutters need throughout the year in T
 **What happens:** Peak thunderstorm season. Afternoon storms dump heavy rain multiple times per week. Hurricane risk is active.
 
 **What to do:**
-- **Monitor after major storms** — visual check from the ground for sagging, displacement, or overflow
+- **Monitor after major storms** - visual check from the ground for sagging, displacement, or overflow
 - Clear any debris knocked into gutters by storms
 - Check that downspouts are still connected and routing correctly
 - After any named storm, do a full ground-level inspection and document any damage
@@ -86,7 +86,7 @@ Here's a month-by-month guide to what your gutters need throughout the year in T
 **What happens:** Pine needles, dead palm fronds, and seed pods accumulate. Seasonal cold fronts bring wind-driven debris.
 
 **What to do:**
-- **Full gutter cleaning** — remove all fall debris before winter
+- **Full gutter cleaning** - remove all fall debris before winter
 - Final inspection for any damage from hurricane season
 - Verify drainage is clear ahead of winter rain patterns
 - Check fascia for any water damage that developed during storm season
@@ -117,7 +117,7 @@ Here's a month-by-month guide to what your gutters need throughout the year in T
 
 ## The Bottom Line
 
-Gutter maintenance in Tampa isn't a once-a-year task. Our year-round debris, intense storm season, and harsh UV/humidity combination require attention at least twice per year — more if you have heavy tree coverage.
+Gutter maintenance in Tampa isn't a once-a-year task. Our year-round debris, intense storm season, and harsh UV/humidity combination require attention at least twice per year - more if you have heavy tree coverage.
 
 The cost of maintaining gutters ($300-$800/year for professional cleaning) is a fraction of the cost of the damage that unmaintained gutters cause. Think of it as cheap insurance for your foundation, fascia, and roof edge.
 

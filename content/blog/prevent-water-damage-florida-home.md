@@ -1,6 +1,6 @@
 ---
 title: "How to Prevent Water Damage to Your Florida Home (Exterior Checklist)"
-description: "The complete exterior water damage prevention checklist for Florida homeowners. Gutters, drainage, soffit, fascia, and grading — everything that keeps water out."
+description: "The complete exterior water damage prevention checklist for Florida homeowners. Gutters, drainage, soffit, fascia, and grading - everything that keeps water out."
 date: "2026-03-14"
 category: "Maintenance"
 keyword: "prevent water damage florida home"
@@ -13,7 +13,7 @@ faqs:
 
 # How to Prevent Water Damage to Your Florida Home (Exterior Checklist)
 
-Water damage is the #1 insurance claim in Florida. Not hurricanes — everyday water intrusion from rain, humidity, and poor drainage causes more cumulative damage than any single storm event.
+Water damage is the #1 insurance claim in Florida. Not hurricanes - everyday water intrusion from rain, humidity, and poor drainage causes more cumulative damage than any single storm event.
 
 The good news: most exterior water damage is preventable. Here's the complete checklist.
 
@@ -21,20 +21,20 @@ The good news: most exterior water damage is preventable. Here's the complete ch
 
 Your home has five layers of exterior water defense. When any layer fails, the layers below it take damage:
 
-1. **Roof** — sheds water downward
-2. **Gutters** — catches roof water and channels it to downspouts
-3. **Downspouts** — moves water from roof level to ground level
-4. **Grading and drainage** — moves water away from the foundation
-5. **Foundation** — resists water penetration at ground level
+1. **Roof** - sheds water downward
+2. **Gutters** - catches roof water and channels it to downspouts
+3. **Downspouts** - moves water from roof level to ground level
+4. **Grading and drainage** - moves water away from the foundation
+5. **Foundation** - resists water penetration at ground level
 
-Most water damage starts at layers 2-4 — gutters, downspouts, and drainage. These are the layers homeowners neglect most.
+Most water damage starts at layers 2-4 - gutters, downspouts, and drainage. These are the layers homeowners neglect most.
 
 ## The Prevention Checklist
 
 ### Gutters
 
 - [ ] Clean gutters 2-4 times per year (or install guards and clean annually)
-- [ ] Verify gutters are properly sized — 6-inch minimum for most Florida homes
+- [ ] Verify gutters are properly sized - 6-inch minimum for most Florida homes
 - [ ] Check for sagging, pulling away from fascia, or visible damage
 - [ ] Test flow after cleaning by running water through each section
 - [ ] Seal any leaking seams with commercial gutter sealant
@@ -115,6 +115,6 @@ The math is clear. $500-$1,500/year in prevention eliminates the risk of $5,000-
 
 ## The Bottom Line
 
-Water damage prevention isn't complicated — it's just consistent. Clean your gutters, maintain your drainage, inspect your exterior annually, and fix small problems before they become big ones. Florida's rain and humidity test every exterior system on your home. The ones that are maintained survive. The ones that are neglected fail.
+Water damage prevention isn't complicated - it's just consistent. Clean your gutters, maintain your drainage, inspect your exterior annually, and fix small problems before they become big ones. Florida's rain and humidity test every exterior system on your home. The ones that are maintained survive. The ones that are neglected fail.
 
-**[Schedule a free exterior assessment](/estimator)** or call **(844) 444-3114**. We inspect gutters, soffit, fascia, and drainage — and tell you honestly what needs attention.
+**[Schedule a free exterior assessment](/estimator)** or call **(844) 444-3114**. We inspect gutters, soffit, fascia, and drainage - and tell you honestly what needs attention.

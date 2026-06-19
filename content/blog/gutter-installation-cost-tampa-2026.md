@@ -14,13 +14,13 @@ faqs:
   - question: "Why are gutters more expensive in Tampa than other parts of Florida?"
     answer: "Tampa pricing is roughly average for Florida. Coastal exposure, high humidity, and 51 inches of annual rainfall require thicker aluminum (.032 vs .027), more downspouts per foot, and tighter hanger spacing. These add cost but extend system life. Inland Florida cities with less rain often run 10 to 15 percent cheaper but with shorter system lifespans."
   - question: "What size gutter do I need in Tampa?"
-    answer: "JR One installs 6-inch and 7-inch seamless aluminum gutters only — we do not install 5-inch in Florida. 6-inch is the baseline for most Tampa homes. 7-inch is the upgrade for larger roof spans, steep pitches, or homes that already overflow with 6-inch. The 7-inch upgrade adds roughly $3 to $5 per linear foot over 6-inch and prevents overflow during summer thunderstorms that drop two inches of rain in 30 minutes."
+    answer: "JR One installs 6-inch and 7-inch seamless aluminum gutters only - we do not install 5-inch in Florida. 6-inch is the baseline for most Tampa homes. 7-inch is the upgrade for larger roof spans, steep pitches, or homes that already overflow with 6-inch. The 7-inch upgrade adds roughly $3 to $5 per linear foot over 6-inch and prevents overflow during summer thunderstorms that drop two inches of rain in 30 minutes."
   - question: "How much does fascia replacement add to gutter installation?"
     answer: "Aluminum fascia wrap typically adds $6 to $12 per linear foot to a gutter installation in Tampa. Wood fascia replacement runs $10 to $20 per linear foot. Most Tampa homes 15 plus years old need at least partial fascia work due to humidity and prior gutter leaks. We assess fascia condition before quoting and include any necessary work upfront."
   - question: "Are national brands like LeafFilter more expensive than local installers?"
-    answer: "Yes, typically 2 to 3 times more. National gutter franchises in Tampa often quote $25 to $40 per linear foot for installations that local specialists complete for $8 to $15 per linear foot. The price difference covers franchise fees, national TV advertising, and high-pressure in-home sales — not better materials or workmanship."
+    answer: "Yes, typically 2 to 3 times more. National gutter franchises in Tampa often quote $25 to $40 per linear foot for installations that local specialists complete for $8 to $15 per linear foot. The price difference covers franchise fees, national TV advertising, and high-pressure in-home sales - not better materials or workmanship."
   - question: "How long does gutter installation take?"
-    answer: "Most Tampa single-family homes complete in 4 to 8 hours start to finish. Larger homes or installations involving fascia work take 1 to 2 days. The actual seamless gutter forming happens on-site from a coil truck — a 200-foot system takes about 30 minutes to form once measurements are confirmed."
+    answer: "Most Tampa single-family homes complete in 4 to 8 hours start to finish. Larger homes or installations involving fascia work take 1 to 2 days. The actual seamless gutter forming happens on-site from a coil truck - a 200-foot system takes about 30 minutes to form once measurements are confirmed."
   - question: "Do I need a permit for gutter installation in Tampa?"
     answer: "No permit is required for residential gutter replacement or installation in Hillsborough County, Pasco County, Pinellas County, or most surrounding municipalities. Some HOAs require pre-approval for color changes or copper upgrades. We handle any HOA submission paperwork as part of the quote process."
   - question: "What are the red flags in a gutter installation quote?"
@@ -54,7 +54,7 @@ These are real 2026 ranges for Tampa, Wesley Chapel, St. Petersburg, Clearwater,
 
 The cost of new gutters depends on four main factors: material, gutter size, home height and complexity, and who's doing the work.
 
-JR One installs 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida — it is undersized for most Tampa roofs.
+JR One installs 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida - it is undersized for most Tampa roofs.
 
 ### Cost by Material
 
@@ -170,7 +170,7 @@ A legitimate gutter quote in Tampa includes all of the following. If any are mis
 
 1. **Linear footage** of gutter and downspout broken out separately
 2. **Material gauge** (.027 vs .032 aluminum)
-3. **Gutter size** (6-inch standard or 7-inch heavy-rain upgrade — JR One does not install 5-inch in Florida)
+3. **Gutter size** (6-inch standard or 7-inch heavy-rain upgrade - JR One does not install 5-inch in Florida)
 4. **Hanger type and spacing** (hidden hangers at 24 or 36 inches)
 5. **Downspout count and size** (2x3 vs 3x4)
 6. **Fascia condition assessment** with any repair scope itemized

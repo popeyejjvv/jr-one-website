@@ -8,28 +8,28 @@ faqs:
   - question: "What gauge aluminum are gutters made from?"
     answer: "Residential gutters are made from either .027 gauge (thinner, builder-grade) or .032 gauge (thicker, professional-grade) aluminum. The numbers refer to the thickness in inches. .032 gauge is roughly 19% thicker than .027 and significantly more resistant to denting, bending, and ladder damage."
   - question: "Does gutter gauge matter?"
-    answer: "Yes. Thicker gauge (.032) resists denting from ladders and debris impact, holds its shape better over time, supports heavier debris and water loads without bending, and lasts longer. The cost difference is small — about $1-$2 more per linear foot. For Florida's storms and ladder traffic during cleanings, .032 is the better investment."
+    answer: "Yes. Thicker gauge (.032) resists denting from ladders and debris impact, holds its shape better over time, supports heavier debris and water loads without bending, and lasts longer. The cost difference is small - about $1-$2 more per linear foot. For Florida's storms and ladder traffic during cleanings, .032 is the better investment."
 ---
 
 # What Gauge Aluminum Is Best for Gutters? (.027 vs .032 Explained)
 
-Most homeowners never ask about gutter gauge — and most contractors don't volunteer the information. But gauge (thickness) directly affects how long your gutters last, how well they resist damage, and whether they hold their shape over 20+ years of Florida weather.
+Most homeowners never ask about gutter gauge - and most contractors don't volunteer the information. But gauge (thickness) directly affects how long your gutters last, how well they resist damage, and whether they hold their shape over 20+ years of Florida weather.
 
 ## What "Gauge" Means
 
 Gauge is the thickness of the aluminum sheet used to form the gutter. For residential gutters, two gauges are standard:
 
-- **.027 gauge** — 0.027 inches thick (about 0.7mm). This is "builder grade" — the minimum thickness that qualifies as a functional gutter.
-- **.032 gauge** — 0.032 inches thick (about 0.8mm). This is "professional grade" — the standard for quality gutter contractors.
+- **.027 gauge** - 0.027 inches thick (about 0.7mm). This is "builder grade" - the minimum thickness that qualifies as a functional gutter.
+- **.032 gauge** - 0.032 inches thick (about 0.8mm). This is "professional grade" - the standard for quality gutter contractors.
 
-The difference sounds tiny — 0.005 inches. But that 19% increase in thickness translates to meaningful differences in strength and durability.
+The difference sounds tiny - 0.005 inches. But that 19% increase in thickness translates to meaningful differences in strength and durability.
 
 ## .027 vs .032: Side-by-Side
 
 | Property | .027 Gauge | .032 Gauge |
 |----------|-----------|-----------|
 | Thickness | 0.027" (0.7mm) | 0.032" (0.8mm) |
-| Dent resistance | Moderate — dents from ladder contact and debris impact | High — resists most ladder and debris dents |
+| Dent resistance | Moderate - dents from ladder contact and debris impact | High - resists most ladder and debris dents |
 | Shape retention | Can warp or bow over long runs | Holds straight lines over 30+ foot runs |
 | Load capacity | Adequate for light-moderate conditions | Handles heavy debris and water loads |
 | Lifespan in FL | 15-20 years | 20-30 years |
@@ -52,7 +52,7 @@ Florida's daily temperature swings (60s at night to 95+ during the day) cause al
 
 ### Debris Weight
 
-During periods between cleanings, gutters accumulate wet leaves, pine needles, and standing water. This weight sits on the gutter bottom continuously. Thinner gauge bottoms sag under sustained load — you see the "oil canning" effect where the bottom bows between hangers. .032 gauge resists this sag.
+During periods between cleanings, gutters accumulate wet leaves, pine needles, and standing water. This weight sits on the gutter bottom continuously. Thinner gauge bottoms sag under sustained load - you see the "oil canning" effect where the bottom bows between hangers. .032 gauge resists this sag.
 
 ## The Cost Difference
 
@@ -67,16 +67,16 @@ That's roughly **$175-$350 more** for the entire home. For a system that lasts 5
 
 Ask your contractor directly: "What gauge aluminum do you use?"
 
-If they say ".027" — ask why, and what the upgrade cost to .032 is.
+If they say ".027" - ask why, and what the upgrade cost to .032 is.
 
-If they can't answer or don't know — that's a red flag about their material knowledge.
+If they can't answer or don't know - that's a red flag about their material knowledge.
 
-If they say "standard gauge" or "industry standard" without a number — press for the specific gauge. "Standard" can mean either depending on who's saying it.
+If they say "standard gauge" or "industry standard" without a number - press for the specific gauge. "Standard" can mean either depending on who's saying it.
 
 **On a written estimate**, the gauge should be specified. If it's not listed, ask for it to be added before signing.
 
 ## The Bottom Line
 
-.032 gauge aluminum costs marginally more and lasts meaningfully longer. For any home you plan to live in for more than 5 years, .032 is the right choice. The savings from .027 are too small to justify the reduced durability — especially in Florida's demanding climate.
+.032 gauge aluminum costs marginally more and lasts meaningfully longer. For any home you plan to live in for more than 5 years, .032 is the right choice. The savings from .027 are too small to justify the reduced durability - especially in Florida's demanding climate.
 
-**[Get a free estimate with material specs](/estimator)** or call **(844) 444-3114**. We use .032 gauge aluminum as our standard — because it's what we'd put on our own homes.
+**[Get a free estimate with material specs](/estimator)** or call **(844) 444-3114**. We use .032 gauge aluminum as our standard - because it's what we'd put on our own homes.

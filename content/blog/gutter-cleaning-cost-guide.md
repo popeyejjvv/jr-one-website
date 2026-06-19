@@ -155,7 +155,7 @@ Clogged gutters in Tampa Bay are pest sanctuaries. Here's what we routinely find
 - **Bees and wasps:** nest in dry debris pockets
 - **Snakes (rare but real):** several Tampa cleaners report finding rat snakes in long-clogged gutters following the rat infestations
 
-This isn't a marketing pitch — it's why "I haven't cleaned my gutters in 4 years" calls are some of the most expensive and unpleasant for cleaners. The longer gutters stay clogged, the worse it gets. Quality gutter guards essentially eliminate this problem.
+This isn't a marketing pitch - it's why "I haven't cleaned my gutters in 4 years" calls are some of the most expensive and unpleasant for cleaners. The longer gutters stay clogged, the worse it gets. Quality gutter guards essentially eliminate this problem.
 
 ## Annual Cleaning Costs vs Gutter Guard Investment
 

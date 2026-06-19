@@ -23,19 +23,19 @@ Here's the full comparison.
 
 | Property | Aluminum | Vinyl (PVC) |
 |----------|----------|-------------|
-| Heat resistance | Excellent — no warping | Warps above 120F |
-| UV resistance | Excellent — decades | Poor — degrades in 5-10 years |
+| Heat resistance | Excellent - no warping | Warps above 120F |
+| UV resistance | Excellent - decades | Poor - degrades in 5-10 years |
 | Impact resistance | Dents but doesn't crack | Cracks and shatters when cold or aged |
 | Weight capacity | Heavy debris and water | Sags under weight over time |
 | Color durability | Baked enamel finish, 20+ years | Fades and chalks in 3-5 years |
-| Expansion/contraction | Minimal | Significant — creates gaps at joints |
-| Available as seamless | Yes | No — sections only |
+| Expansion/contraction | Minimal | Significant - creates gaps at joints |
+| Available as seamless | Yes | No - sections only |
 
 ## Why Vinyl Fails in Florida
 
 ### Heat Warping
 
-Florida rooflines regularly exceed 140F in direct sun. Vinyl begins to soften and deform around 120F. This means vinyl gutters on south-facing and west-facing roof sections warp during summer — pulling away from the fascia, sagging between hangers, and losing their shape.
+Florida rooflines regularly exceed 140F in direct sun. Vinyl begins to soften and deform around 120F. This means vinyl gutters on south-facing and west-facing roof sections warp during summer - pulling away from the fascia, sagging between hangers, and losing their shape.
 
 Once warped, vinyl doesn't return to shape when it cools. The deformation is permanent.
 
@@ -73,12 +73,12 @@ For any home you plan to live in longer than 5 years, aluminum is the right mate
 
 Aluminum gutters are the standard for Florida for good reason:
 
-- **No warping in heat** — handles Florida roofline temperatures without deformation
-- **UV stable** — baked enamel finish resists fading and chalking for decades
-- **Available seamless** — no joints, no leak points, no thermal expansion gaps
-- **25+ color options** — matched to your home's fascia, trim, and body
-- **Recyclable** — aluminum is one of the most recyclable materials on earth
-- **Repairable** — dents and damage can be fixed without replacing the entire run
+- **No warping in heat** - handles Florida roofline temperatures without deformation
+- **UV stable** - baked enamel finish resists fading and chalking for decades
+- **Available seamless** - no joints, no leak points, no thermal expansion gaps
+- **25+ color options** - matched to your home's fascia, trim, and body
+- **Recyclable** - aluminum is one of the most recyclable materials on earth
+- **Repairable** - dents and damage can be fixed without replacing the entire run
 
 ## The Bottom Line
 

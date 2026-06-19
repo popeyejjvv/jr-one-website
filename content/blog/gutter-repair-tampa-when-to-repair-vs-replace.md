@@ -15,13 +15,13 @@ faqs:
 
 # Gutter Repair in Tampa: When to Repair vs. Replace
 
-Most Tampa homeowners don't think about their gutters until something goes wrong — water pouring over the side during a summer thunderstorm, a visible sag along the roofline, or staining on the fascia behind the gutter.
+Most Tampa homeowners don't think about their gutters until something goes wrong - water pouring over the side during a summer thunderstorm, a visible sag along the roofline, or staining on the fascia behind the gutter.
 
 The question is always the same: **can this be fixed, or do I need new gutters?**
 
 Here's how to tell.
 
-> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida — it's undersized for Tampa rainfall on most roofs. Where this guide mentions 5-inch gutters, it's referring to existing builder-grade systems we replace, not what we install.
+> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida - it's undersized for Tampa rainfall on most roofs. Where this guide mentions 5-inch gutters, it's referring to existing builder-grade systems we replace, not what we install.
 
 ## Common Gutter Problems in Tampa
 
@@ -29,13 +29,13 @@ Tampa's climate is hard on gutters. Fifty-one inches of rain per year, intense U
 
 ### Sagging Gutters
 
-The most common issue we see. Gutters pull away from the fascia board because the hangers have loosened, spaced too far apart, or weren't screwed in to begin with. Many builders use spike-and-ferrule hangers that work loose over time. The fix is re-hanging with screw-in hidden hangers at proper intervals — typically every 24 to 36 inches.
+The most common issue we see. Gutters pull away from the fascia board because the hangers have loosened, spaced too far apart, or weren't screwed in to begin with. Many builders use spike-and-ferrule hangers that work loose over time. The fix is re-hanging with screw-in hidden hangers at proper intervals - typically every 24 to 36 inches.
 
 **Repair cost:** $150-$350 per section.
 
 ### Leaking Seams and Corners
 
-If you have sectional gutters (joined every 10 feet), the seams are the weak point. Caulk fails, joints separate, and water drips behind the gutter onto the fascia. Proper seam repair uses commercial-grade gutter sealant — not silicone caulk from the hardware store, which breaks down in Florida's UV exposure within a year.
+If you have sectional gutters (joined every 10 feet), the seams are the weak point. Caulk fails, joints separate, and water drips behind the gutter onto the fascia. Proper seam repair uses commercial-grade gutter sealant - not silicone caulk from the hardware store, which breaks down in Florida's UV exposure within a year.
 
 **Repair cost:** $100-$250 per joint.
 
@@ -47,13 +47,13 @@ Three causes: clogged gutters (needs cleaning, not repair), undersized gutters (
 
 ### Fascia Rot Behind the Gutter
 
-When gutters leak or overflow for years, the water soaks into the wood fascia behind them. By the time you notice discoloration or soft spots, the rot has been progressing for months. The fascia must be replaced before new gutters or guard installation — gutters mounted to rotted wood will fail again.
+When gutters leak or overflow for years, the water soaks into the wood fascia behind them. By the time you notice discoloration or soft spots, the rot has been progressing for months. The fascia must be replaced before new gutters or guard installation - gutters mounted to rotted wood will fail again.
 
 **Repair cost:** $6-$12 per linear foot for aluminum fascia wrap, plus gutter re-mounting.
 
 ### Downspout Problems
 
-Disconnected downspouts, undersized downspouts, or downspouts that dump water right at the foundation. These are straightforward repairs — reconnect, resize, or add extensions and splash blocks to direct water away from the house.
+Disconnected downspouts, undersized downspouts, or downspouts that dump water right at the foundation. These are straightforward repairs - reconnect, resize, or add extensions and splash blocks to direct water away from the house.
 
 **Repair cost:** $75-$200 per downspout.
 
@@ -71,11 +71,11 @@ Repair is the right call when:
 
 Replace your gutters when:
 
-- **Widespread corrosion or pitting** — aluminum doesn't rust, but it does corrode over decades, especially near the coast
-- **Multiple sections sagging or separating** — if more than half the system has issues, piecemeal repair costs add up fast
-- **Undersized gutters** — 5-inch gutters can't keep up with Florida's rain on most roof sizes. Upgrading to 6-inch seamless eliminates the overflow problem permanently
-- **Repeated repairs** — if you've repaired the same section twice in three years, you're paying to delay the inevitable
-- **Age** — gutters over 20 years old in Tampa's climate are typically past their useful life
+- **Widespread corrosion or pitting** - aluminum doesn't rust, but it does corrode over decades, especially near the coast
+- **Multiple sections sagging or separating** - if more than half the system has issues, piecemeal repair costs add up fast
+- **Undersized gutters** - 5-inch gutters can't keep up with Florida's rain on most roof sizes. Upgrading to 6-inch seamless eliminates the overflow problem permanently
+- **Repeated repairs** - if you've repaired the same section twice in three years, you're paying to delay the inevitable
+- **Age** - gutters over 20 years old in Tampa's climate are typically past their useful life
 
 ## The Tampa-Specific Factor
 
@@ -85,6 +85,6 @@ The cheapest option is not always the best investment. A $300 repair on a failin
 
 ## What to Do Next
 
-If you're seeing sagging, leaks, overflow, or fascia staining, get a professional inspection before deciding. We'll tell you honestly whether repair or replacement makes more sense for your specific situation — we'd rather fix a $200 problem than sell you $3,000 in gutters you don't need yet.
+If you're seeing sagging, leaks, overflow, or fascia staining, get a professional inspection before deciding. We'll tell you honestly whether repair or replacement makes more sense for your specific situation - we'd rather fix a $200 problem than sell you $3,000 in gutters you don't need yet.
 
 **[Get a free gutter inspection](/estimator)** or call **(844) 444-3114**. Serving Tampa, Clearwater, St. Petersburg, Bradenton, and 17 more cities across Tampa Bay.

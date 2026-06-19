@@ -8,18 +8,18 @@ faqs:
   - question: "Do rain chains work in heavy rain?"
     answer: "Standard cup-style rain chains handle moderate rain well but struggle in Florida's heavy thunderstorms. Water volume during intense storms exceeds what most rain chains can channel, causing splash and overflow. They work best as decorative accents on low-volume gutter sections, not as primary drainage on high-volume runs."
   - question: "Can I use rain chains in Florida?"
-    answer: "Yes, selectively. Use rain chains on short gutter runs that receive low water volume — covered porches, decorative alcoves, or secondary rooflines. Keep standard downspouts on all primary drainage points. Mixing rain chains and downspouts on the same home gives you the look where it works and the performance where it matters."
+    answer: "Yes, selectively. Use rain chains on short gutter runs that receive low water volume - covered porches, decorative alcoves, or secondary rooflines. Keep standard downspouts on all primary drainage points. Mixing rain chains and downspouts on the same home gives you the look where it works and the performance where it matters."
 ---
 
 # Rain Chains vs. Downspouts: Which Is Better for Florida?
 
-Rain chains are beautiful. Water cascading down copper cups or linked chains creates a visual and audible experience that a PVC downspout can't match. But beauty and function aren't the same thing — especially in a climate that dumps 2 inches of rain in 30 minutes.
+Rain chains are beautiful. Water cascading down copper cups or linked chains creates a visual and audible experience that a PVC downspout can't match. But beauty and function aren't the same thing - especially in a climate that dumps 2 inches of rain in 30 minutes.
 
 Here's the honest comparison.
 
 ## How They Work
 
-**Traditional downspouts** are enclosed tubes (rectangular or round) that channel water from the gutter to the ground inside a sealed pipe. All water goes where you point the downspout — no splash, no misdirection, no overflow.
+**Traditional downspouts** are enclosed tubes (rectangular or round) that channel water from the gutter to the ground inside a sealed pipe. All water goes where you point the downspout - no splash, no misdirection, no overflow.
 
 **Rain chains** are open chains or cup assemblies that hang from the gutter outlet. Water flows down the chain or from cup to cup by gravity and surface tension. The water is exposed to the air the entire way down.
 
@@ -33,7 +33,7 @@ Both work well. Rain chains guide water smoothly from cup to cup with a pleasant
 
 Rain chains start struggling. Water volume exceeds the cup capacity and chain surface area. You see splashing, water escaping the chain path, and spray in a 2-3 foot radius around the chain. This spray hits your wall, foundation plantings, and walkways.
 
-Traditional downspouts handle this volume without any change in behavior — same enclosed pipe, same directed flow.
+Traditional downspouts handle this volume without any change in behavior - same enclosed pipe, same directed flow.
 
 ### Intense Florida Storms (1-2+"/hour)
 
@@ -43,18 +43,18 @@ Traditional downspouts handle intense storms by design. The enclosed tube channe
 
 ## When Rain Chains Make Sense in Florida
 
-Rain chains aren't impractical everywhere — they just can't be your primary drainage:
+Rain chains aren't impractical everywhere - they just can't be your primary drainage:
 
-- **Covered porch or lanai gutter runs** — low water volume because the roof area is small
-- **Decorative accent on a secondary roofline** — the gable over a front entry, a bay window overhang
+- **Covered porch or lanai gutter runs** - low water volume because the roof area is small
+- **Decorative accent on a secondary roofline** - the gable over a front entry, a bay window overhang
 - **Interior courtyard** where splash doesn't reach walls or foundation
-- **Copper rain chains on copper gutter systems** — the aesthetic statement is the point, and you accept the trade-off
+- **Copper rain chains on copper gutter systems** - the aesthetic statement is the point, and you accept the trade-off
 
 ## The Hybrid Approach
 
 The smart move for Florida homeowners who love the rain chain look: **use rain chains on 1-2 low-volume positions and traditional downspouts everywhere else.**
 
-Your primary roof drainage — the runs that handle the bulk of your roof's water volume — gets standard enclosed downspouts. Your decorative positions — the short runs with small roof areas — get rain chains for visual impact.
+Your primary roof drainage - the runs that handle the bulk of your roof's water volume - gets standard enclosed downspouts. Your decorative positions - the short runs with small roof areas - get rain chains for visual impact.
 
 This gives you the aesthetic where it works and the performance where it matters.
 
@@ -72,7 +72,7 @@ Rain chains cost 5-10x more than standard downspouts. The premium is entirely ae
 
 ## The Bottom Line
 
-Rain chains are a decorative element, not a drainage solution for Florida. They look incredible in light rain and on low-volume gutter sections. They fail in the exact conditions Florida homes face most — heavy, intense thunderstorms that require maximum drainage capacity.
+Rain chains are a decorative element, not a drainage solution for Florida. They look incredible in light rain and on low-volume gutter sections. They fail in the exact conditions Florida homes face most - heavy, intense thunderstorms that require maximum drainage capacity.
 
 Use them selectively as accents, keep standard downspouts for primary drainage, and your home gets both beauty and function.
 

@@ -21,7 +21,7 @@ If you're shopping for new gutters in Tampa, you'll hear two terms constantly: s
 
 **Sectional gutters** come in pre-cut 10-foot pieces that are joined together with connectors and sealant on-site. Every joint is a potential leak point.
 
-**Seamless gutters** are formed on-site from a continuous coil of aluminum using a portable forming machine mounted on a truck. Each run of gutter is one unbroken piece — no seams, no joints, no connectors.
+**Seamless gutters** are formed on-site from a continuous coil of aluminum using a portable forming machine mounted on a truck. Each run of gutter is one unbroken piece - no seams, no joints, no connectors.
 
 ## Why Seams Matter in Florida
 
@@ -59,7 +59,7 @@ The math is straightforward: seamless costs more upfront but less over the life 
 
 Seamless gutters look cleaner from the curb. No visible joints, no connector hardware, no seam bumps along the gutter line. They're fabricated to the exact length of each roof run, so the fit is precise.
 
-This matters more than most homeowners realize. Gutters are visible from the street on every home. Clean, straight gutter lines with no visible joints enhance curb appeal. HOAs notice this — and many require it.
+This matters more than most homeowners realize. Gutters are visible from the street on every home. Clean, straight gutter lines with no visible joints enhance curb appeal. HOAs notice this - and many require it.
 
 ## When Sectional Gutters Make Sense
 
@@ -69,7 +69,7 @@ For any home you plan to live in for more than 5 years, seamless aluminum is the
 
 ## Gutter Size: 6-Inch vs. 7-Inch (JR One Does Not Install 5-Inch)
 
-While you're choosing between seamless and sectional, choose the right size too. JR One installs 6-inch and 7-inch seamless aluminum only — we do not install 5-inch in Florida because it's undersized for our rain volume on most roofs.
+While you're choosing between seamless and sectional, choose the right size too. JR One installs 6-inch and 7-inch seamless aluminum only - we do not install 5-inch in Florida because it's undersized for our rain volume on most roofs.
 
 - **6-inch K-style:** The JR One baseline for most Tampa residential applications. Handles heavy rain, works with standard 3x4 downspouts, and fits standard fascia heights.
 - **7-inch:** For larger roofs, steeper pitches, commercial buildings, or homes with unusually high water volume. We're one of the few Tampa Bay contractors who fabricate 7-inch on-site.

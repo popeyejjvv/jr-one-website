@@ -8,12 +8,12 @@ faqs:
   - question: "How many downspouts do I need?"
     answer: "One downspout for every 20-30 linear feet of gutter run. A typical Tampa home with 175 linear feet of gutters needs 6-8 downspouts. More downspouts means faster drainage and less chance of overflow during heavy Florida storms."
   - question: "What size downspouts should I use?"
-    answer: "JR One installs 6-inch and 7-inch gutters only. 6-inch gutters pair with 3x4 inch downspouts and 7-inch with 3x4 or 4x5 inch. 5-inch gutters with 2x3 inch downspouts is the builder-grade combo we replace, not what we install. Oversized downspouts are always better than undersized — they handle heavy rain volume without backing up."
+    answer: "JR One installs 6-inch and 7-inch gutters only. 6-inch gutters pair with 3x4 inch downspouts and 7-inch with 3x4 or 4x5 inch. 5-inch gutters with 2x3 inch downspouts is the builder-grade combo we replace, not what we install. Oversized downspouts are always better than undersized - they handle heavy rain volume without backing up."
 ---
 
 # Gutter Downspout Guide: Sizing, Placement, and Common Mistakes
 
-Downspouts are the exit point of your gutter system. The gutters collect rainwater; the downspouts move it to the ground and away from your foundation. When downspouts are undersized, too few, or poorly placed, the entire gutter system fails — even if the gutters themselves are perfect.
+Downspouts are the exit point of your gutter system. The gutters collect rainwater; the downspouts move it to the ground and away from your foundation. When downspouts are undersized, too few, or poorly placed, the entire gutter system fails - even if the gutters themselves are perfect.
 
 This is the most overlooked part of gutter installation.
 
@@ -32,14 +32,14 @@ In Florida, err toward more downspouts. Our rain intensity means the system need
 
 ## Downspout Sizing
 
-Downspouts come in standard rectangular sizes. JR One installs 6-inch and 7-inch gutters only — 5-inch is shown for reference only because we frequently replace builder-grade 5-inch with 2x3 downspouts.
+Downspouts come in standard rectangular sizes. JR One installs 6-inch and 7-inch gutters only - 5-inch is shown for reference only because we frequently replace builder-grade 5-inch with 2x3 downspouts.
 
 | Downspout Size | Pairs With | Water Capacity |
 |---------------|-----------|----------------|
 | 3x4 inch | 6-inch gutters (JR One baseline) | High volume |
 | 4x5 inch | 7-inch gutters / commercial | Maximum |
 | Round (3" or 4") | Specialty / decorative | Varies |
-| 2x3 inch | 5-inch gutters — builder-grade only, not installed by JR One | Standard |
+| 2x3 inch | 5-inch gutters - builder-grade only, not installed by JR One | Standard |
 
 **The most common mistake:** 6-inch gutters paired with 2x3-inch downspouts. The gutter has capacity for heavy rain, but the undersized downspout creates a bottleneck. Water backs up at the downspout transition, fills the gutter, and overflows.
 
@@ -62,9 +62,9 @@ Always pair gutter size with the correct downspout size. If in doubt, go larger.
 ### Common Placement Mistakes
 
 - **Downspout at the corner of an L-shaped roof** without accounting for double water volume from two converging runs
-- **Downspout discharging directly at the foundation** with no extension — concentrates water at the worst possible location
-- **Downspout routing toward the neighbor's property** — creates a drainage dispute
-- **Downspout into a flower bed** — drowns plants and erodes soil
+- **Downspout discharging directly at the foundation** with no extension - concentrates water at the worst possible location
+- **Downspout routing toward the neighbor's property** - creates a drainage dispute
+- **Downspout into a flower bed** - drowns plants and erodes soil
 
 ## Downspout Extensions and Ground Routing
 
@@ -80,8 +80,8 @@ The downspout gets water from the roof to the ground. The extension gets it away
 
 ## The Bottom Line
 
-Downspouts aren't an afterthought — they're half the drainage system. The right number, the right size, and the right placement make the difference between a system that handles Florida's rain and one that fails every thunderstorm.
+Downspouts aren't an afterthought - they're half the drainage system. The right number, the right size, and the right placement make the difference between a system that handles Florida's rain and one that fails every thunderstorm.
 
-If your gutters overflow despite being clean and properly sized, the problem is likely downspouts — not enough of them, too small, or poorly placed.
+If your gutters overflow despite being clean and properly sized, the problem is likely downspouts - not enough of them, too small, or poorly placed.
 
 **[Get a free drainage assessment](/estimator)** or call **(844) 444-3114**. We evaluate downspout count, sizing, and routing on every gutter inspection.

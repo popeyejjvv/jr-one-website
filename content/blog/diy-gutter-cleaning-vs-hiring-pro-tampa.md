@@ -14,7 +14,7 @@ faqs:
   - question: "How long does DIY gutter cleaning take in Tampa?"
     answer: "Most DIY gutter cleanings on Tampa single-family homes take 90 minutes to 3 hours including setup and cleanup. Single-story ranches with light debris run 90 minutes. Single-story homes with heavy oak or pine canopy run 2 to 3 hours. Two-story DIY (not recommended) typically takes 4 to 6 hours and significantly increases fall risk. Add 30 to 45 minutes for downspout flushing and post-job cleanup."
   - question: "What are the risks of DIY gutter cleaning in Florida?"
-    answer: "Three primary risks. (1) Falls — leading cause of ER visits among DIY home maintainers, average ER cost $30,000+ in 2026, often not covered by homeowner insurance. (2) Wildlife encounters — Florida gutters host frogs, lizards, palmetto bugs, mosquito larvae, occasional rats or snakes. (3) Equipment damage — improper ladder placement bends gutters or scratches fascia, requiring repair. Two-story falls are the worst-case outcome: roughly 20 percent of two-story ladder falls result in serious injury or worse."
+    answer: "Three primary risks. (1) Falls - leading cause of ER visits among DIY home maintainers, average ER cost $30,000+ in 2026, often not covered by homeowner insurance. (2) Wildlife encounters - Florida gutters host frogs, lizards, palmetto bugs, mosquito larvae, occasional rats or snakes. (3) Equipment damage - improper ladder placement bends gutters or scratches fascia, requiring repair. Two-story falls are the worst-case outcome: roughly 20 percent of two-story ladder falls result in serious injury or worse."
   - question: "What pests live in Florida gutters?"
     answer: "Tampa Bay gutters routinely host frogs, anoles (lizards), palmetto bugs (Florida cockroaches), mosquito larvae in standing water, rats nesting in long-clogged debris, bird nests in spring (legally protected once active), bees and wasps, and occasionally rat snakes. The longer gutters stay clogged, the worse the infestation. Quality gutter guards essentially eliminate this problem."
   - question: "When is DIY gutter cleaning a bad idea?"
@@ -145,14 +145,14 @@ The DIY math only works in specific scenarios:
 
 Tampa Bay gutters host:
 
-- **Frogs and tree frogs** — love wet decomposing leaves
-- **Anoles (Florida lizards)** — nest in dry debris under leaves
-- **Palmetto bugs (Florida cockroaches)** — breed in moist gutter sludge
-- **Mosquito larvae** — standing water in clogged gutters is a primary mosquito breeding ground in Tampa Bay
-- **Rats** — establish nests in gutters that have been clogged 6+ months
-- **Bird nests** — common in spring; legally protected once active so cleaning timing matters
-- **Bees and wasps** — nest in dry debris pockets
-- **Snakes (rare but real)** — several Tampa cleaners report finding rat snakes in long-clogged gutters
+- **Frogs and tree frogs** - love wet decomposing leaves
+- **Anoles (Florida lizards)** - nest in dry debris under leaves
+- **Palmetto bugs (Florida cockroaches)** - breed in moist gutter sludge
+- **Mosquito larvae** - standing water in clogged gutters is a primary mosquito breeding ground in Tampa Bay
+- **Rats** - establish nests in gutters that have been clogged 6+ months
+- **Bird nests** - common in spring; legally protected once active so cleaning timing matters
+- **Bees and wasps** - nest in dry debris pockets
+- **Snakes (rare but real)** - several Tampa cleaners report finding rat snakes in long-clogged gutters
 
 DIY discovery of any of these mid-cleaning while standing on a ladder is a real safety issue. Professional cleaners handle wildlife as part of the job.
 
@@ -171,11 +171,11 @@ If you've decided DIY is right for your situation, do it the way professionals d
 ### Step 1: Pre-cleaning safety check
 
 - Inspect ladder for damage (rungs, feet, locks)
-- Place ladder on level ground at a safe angle (4:1 ratio — 4 feet up for every 1 foot out from house)
+- Place ladder on level ground at a safe angle (4:1 ratio - 4 feet up for every 1 foot out from house)
 - Use ladder stabilizer/standoff arms to keep ladder off the gutter (prevents gutter dents)
 - Have a helper stabilize the base if possible
 - Wear closed-toe shoes with grippy soles
-- Don't carry the scoop in your hand while climbing — use a tool tray
+- Don't carry the scoop in your hand while climbing - use a tool tray
 
 ### Step 2: Start at the downspout end
 
@@ -217,10 +217,10 @@ Photo each gutter section after cleaning. This creates a maintenance log that su
 
 Most Tampa DIY-ers eventually switch to professional cleaning. Common triggers:
 
-- **Age and physical capability changes** — what was easy at 35 is harder at 55, dangerous at 70
+- **Age and physical capability changes** - what was easy at 35 is harder at 55, dangerous at 70
 - **Roof type changes** (replacing shingle with tile or metal makes DIY impractical)
 - **Time pressure increases** (new job, new kid, busy season)
-- **Near-miss event** — a slip, near-fall, or witnessed wildlife encounter
+- **Near-miss event** - a slip, near-fall, or witnessed wildlife encounter
 - **Single-cleaning takes too long** as gutters age and debris compounds
 - **Move from single-story to two-story**
 
@@ -230,10 +230,10 @@ There's no shame in switching. Pros do this for a living and have insurance. DIY
 
 Many Tampa homeowners use a hybrid model:
 
-- **Spring deep cleaning** — pro service ($175 to $275). Includes inspection, full debris removal, downspout flush, photo documentation.
-- **Mid-summer touch-up** — DIY surface clearing if needed (15 to 30 minutes)
-- **Pre-hurricane cleaning (May/early June)** — pro service. This is the most important cleaning of the year and worth professional thoroughness.
-- **Post-storm response** — DIY for visible debris, pro for inspection if damage is suspected
+- **Spring deep cleaning** - pro service ($175 to $275). Includes inspection, full debris removal, downspout flush, photo documentation.
+- **Mid-summer touch-up** - DIY surface clearing if needed (15 to 30 minutes)
+- **Pre-hurricane cleaning (May/early June)** - pro service. This is the most important cleaning of the year and worth professional thoroughness.
+- **Post-storm response** - DIY for visible debris, pro for inspection if damage is suspected
 
 This way you pay for professional thoroughness when it matters most (spring deep clean + pre-hurricane) and save money on minor maintenance in between.
 

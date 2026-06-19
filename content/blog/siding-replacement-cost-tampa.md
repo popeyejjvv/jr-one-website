@@ -8,12 +8,12 @@ faqs:
   - question: "How much does siding replacement cost in Tampa?"
     answer: "Siding replacement in Tampa costs $3-$12 per square foot depending on material. Vinyl runs $3-$7/sq ft, aluminum $5-$9/sq ft, and fiber cement (HardiePlank) $8-$12/sq ft. A typical Tampa home with 1,500-2,000 sq ft of siding costs $4,500-$24,000 depending on material choice."
   - question: "What is the best siding for Florida homes?"
-    answer: "Aluminum siding is the best overall choice for Florida — it handles heat, humidity, UV, and storms without warping or rotting. Fiber cement (HardiePlank) is the premium option with a painted-wood look. Vinyl is the budget option but warps in Florida's extreme heat and degrades in UV."
+    answer: "Aluminum siding is the best overall choice for Florida - it handles heat, humidity, UV, and storms without warping or rotting. Fiber cement (HardiePlank) is the premium option with a painted-wood look. Vinyl is the budget option but warps in Florida's extreme heat and degrades in UV."
 ---
 
 # Siding Replacement Cost in Tampa: Materials, Pricing, and What to Expect
 
-If your home's siding is faded, cracked, warped, or rotting, replacement is often more cost-effective than patching. Tampa's climate accelerates siding deterioration — UV, humidity, rain, and storm impacts all take their toll.
+If your home's siding is faded, cracked, warped, or rotting, replacement is often more cost-effective than patching. Tampa's climate accelerates siding deterioration - UV, humidity, rain, and storm impacts all take their toll.
 
 Here's what replacement costs and how to choose the right material for Florida.
 
@@ -75,4 +75,4 @@ Here's what replacement costs and how to choose the right material for Florida.
 
 Siding replacement in Tampa is a significant investment, but the right material choice turns it into a 30-40 year solution. Aluminum and fiber cement both handle Florida's climate. Vinyl is the budget path but has real limitations in our heat and UV environment.
 
-**[Get a free siding estimate](/estimator)** or call **(844) 444-3114**. We install aluminum and vinyl siding — UV-stable, wind-rated, color-matched to your gutters and trim.
+**[Get a free siding estimate](/estimator)** or call **(844) 444-3114**. We install aluminum and vinyl siding - UV-stable, wind-rated, color-matched to your gutters and trim.

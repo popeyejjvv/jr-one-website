@@ -12,11 +12,11 @@ faqs:
   - question: "Should I remove my gutters before a hurricane?"
     answer: "No. Properly installed gutters with .032 aluminum, 24-inch hanger spacing, and structural attachment to fascia survive hurricane-force winds. Removing them before a storm exposes the fascia and soffit to the very water and wind they're designed to deflect. The exception: badly damaged or sagging gutters should be repaired or replaced BEFORE hurricane season, not removed at the last minute."
   - question: "What pre-hurricane gutter prep can I do myself?"
-    answer: "DIY pre-hurricane prep includes: (1) clean all gutters (debris removal, downspout flushing, flow test); (2) clear roof of branches, leaves, and tree debris that could wash into gutters; (3) trim overhanging tree branches that could break off in wind; (4) check downspout splash blocks/extensions are securely positioned; (5) photograph everything for insurance baseline. Skip DIY on two-story homes — book a professional in May before the rush."
+    answer: "DIY pre-hurricane prep includes: (1) clean all gutters (debris removal, downspout flushing, flow test); (2) clear roof of branches, leaves, and tree debris that could wash into gutters; (3) trim overhanging tree branches that could break off in wind; (4) check downspout splash blocks/extensions are securely positioned; (5) photograph everything for insurance baseline. Skip DIY on two-story homes - book a professional in May before the rush."
   - question: "Does hurricane damage to gutters get covered by insurance in Tampa?"
     answer: "Most Florida homeowner policies cover gutter damage from named storms (hurricanes, tropical storms, depressions) minus the wind/hurricane deductible (typically 2 to 5 percent of dwelling value). Coverage typically applies to: storm-debris impact damage, wind-detached gutters, hail dents, and water damage to fascia/soffit caused by named-storm gutter failure. Document everything with photos before any cleanup."
   - question: "How do I file an insurance claim for hurricane gutter damage?"
-    answer: "(1) Photograph all damage immediately, including wide shots and close-ups. (2) Don't dispose of damaged components until adjuster has documented them. (3) Make temporary repairs only as needed to prevent further damage (tarp over hole, shore up hanging gutter). (4) File the claim within your policy's deadline (typically 1 year, sooner is better). (5) Get adjuster scope of work in writing before contractor selection. (6) Use a contractor familiar with Florida insurance carriers — Citizens, State Farm, Tower Hill, Universal Property all have specific documentation requirements."
+    answer: "(1) Photograph all damage immediately, including wide shots and close-ups. (2) Don't dispose of damaged components until adjuster has documented them. (3) Make temporary repairs only as needed to prevent further damage (tarp over hole, shore up hanging gutter). (4) File the claim within your policy's deadline (typically 1 year, sooner is better). (5) Get adjuster scope of work in writing before contractor selection. (6) Use a contractor familiar with Florida insurance carriers - Citizens, State Farm, Tower Hill, Universal Property all have specific documentation requirements."
   - question: "What is the difference between a hurricane and a tropical storm for insurance purposes?"
     answer: "Most Florida policies define them by official NHC designation. Tropical storms (39-73 mph) trigger standard wind deductibles. Hurricanes (74+ mph) trigger hurricane deductibles which are typically 2 to 5 percent of dwelling value (significantly higher than standard deductibles). Named tropical depressions (under 39 mph) are typically covered under standard wind/hail provisions. The distinction matters: a hurricane claim with a 5% deductible on a $400K dwelling has a $20,000 deductible."
   - question: "How can I tell if my Tampa gutters are hurricane-ready?"
@@ -27,10 +27,10 @@ faqs:
     answer: "(1) Check for safety hazards (downed power lines, structural damage) before any roof or gutter inspection. (2) Photograph damage from ground level before climbing or touching anything. (3) Tarp any roof or fascia damage to prevent water intrusion. (4) Document fallen debris in gutters and on the roof. (5) Clear downspouts of major debris if safe to do so from the ground. (6) Don't dispose of damaged gutter components until insurance adjuster documents. (7) File insurance claim within the policy deadline. (8) Hire only Florida-licensed contractors with valid insurance."
   - question: "How do I find a contractor that handles Florida hurricane insurance claims?"
     answer: "Look for contractors with: (1) prior insurance claim experience documented in references; (2) Florida specialty trade license; (3) full liability and workers' comp insurance; (4) willingness to work with adjuster scope of work; (5) photo-documentation process for before/during/after work; (6) physical Tampa Bay address and phone (avoid out-of-state 'storm chaser' contractors that appear after major events). Ask for 3 references from prior insurance claim work specifically."
-  - question: "What about generators and other hurricane prep — does it interact with gutter prep?"
-    answer: "Yes in two ways. (1) Generators must vent properly and away from the home's exterior eaves to avoid carbon monoxide drift — locate generator at least 20 feet from any window, door, or eave. (2) Generator fuel storage and exterior runtime affects roofline cleanliness — check for soot or exhaust residue in gutters near generator vent. Otherwise hurricane prep is interconnected: trim trees, clean gutters, secure outdoor furniture, install storm shutters, prep generator. The gutter step is one of about 12 prep items."
+  - question: "What about generators and other hurricane prep - does it interact with gutter prep?"
+    answer: "Yes in two ways. (1) Generators must vent properly and away from the home's exterior eaves to avoid carbon monoxide drift - locate generator at least 20 feet from any window, door, or eave. (2) Generator fuel storage and exterior runtime affects roofline cleanliness - check for soot or exhaust residue in gutters near generator vent. Otherwise hurricane prep is interconnected: trim trees, clean gutters, secure outdoor furniture, install storm shutters, prep generator. The gutter step is one of about 12 prep items."
   - question: "Is roof rejuvenation (Peak 301) hurricane prep?"
-    answer: "Indirectly yes. Brittle aged shingles tear off in hurricane wind events. Flexible shingles ride out wind loads better. Peak 301 or comparable bio-oil rejuvenation restores shingle flexibility, improving wind resistance. It's not a guarantee — no roof is hurricane-proof — but it's a real mitigation for asphalt shingle roofs aged 8 to 18 years. See the [Peak 301 guide](/blog/peak-301-roof-rejuvenation-tampa) for cost and candidate criteria."
+    answer: "Indirectly yes. Brittle aged shingles tear off in hurricane wind events. Flexible shingles ride out wind loads better. Peak 301 or comparable bio-oil rejuvenation restores shingle flexibility, improving wind resistance. It's not a guarantee - no roof is hurricane-proof - but it's a real mitigation for asphalt shingle roofs aged 8 to 18 years. See the [Peak 301 guide](/blog/peak-301-roof-rejuvenation-tampa) for cost and candidate criteria."
 ---
 
 # Hurricane Prep Gutter Checklist for Tampa Bay (2026)
@@ -79,7 +79,7 @@ Fallen branches, leaves, and tree debris on the roof get washed into gutters dur
 - Clear valley areas where debris collects
 - Check around chimney, vents, and skylights for debris dams
 
-If you can't safely access your roof, schedule a professional roof clearing — most Tampa gutter cleaners include this as part of pre-hurricane service.
+If you can't safely access your roof, schedule a professional roof clearing - most Tampa gutter cleaners include this as part of pre-hurricane service.
 
 ### Step 3: Tree Trimming
 
@@ -201,7 +201,7 @@ Annual June 1 task:
 - Note wind/hail deductible (different from hurricane)
 - Confirm contents coverage is adequate
 - Verify covered perils include named-storm wind damage
-- Confirm flood insurance is separate (it is — file with NFIP if needed)
+- Confirm flood insurance is separate (it is - file with NFIP if needed)
 
 Most Tampa homeowners are surprised to learn their hurricane deductible is 2 to 5 percent of dwelling value, which on a $400,000 home is $8,000 to $20,000 out of pocket before insurance pays. Plan accordingly.
 
@@ -227,7 +227,7 @@ When a named storm passes Tampa Bay:
 3. Tarp any visible roof, fascia, or wall damage to prevent water intrusion
 4. Document fallen debris in gutters and on roof
 5. Clear downspouts of major debris if safe to do so from ground
-6. Do NOT dispose of damaged components — adjuster needs to see them
+6. Do NOT dispose of damaged components - adjuster needs to see them
 
 ### Days 2 to 7
 
@@ -265,14 +265,14 @@ Use only contractors with established Tampa Bay presence, valid Florida licensin
 
 Gutter prep is one of about 12 pre-hurricane home prep items. Other critical items:
 
-- **Storm shutters or impact windows** — prevent wind/debris damage to glazing
-- **Garage door reinforcement** — garage door failure pressurizes the attic and is a common total-loss trigger
-- **Roof tie-downs** — hurricane straps connecting roof to walls
+- **Storm shutters or impact windows** - prevent wind/debris damage to glazing
+- **Garage door reinforcement** - garage door failure pressurizes the attic and is a common total-loss trigger
+- **Roof tie-downs** - hurricane straps connecting roof to walls
 - **Tree trimming** (covered above)
-- **Outdoor furniture, grills, planters** — secured or stored
-- **Generator** — fueled and tested
-- **Emergency supplies** — water, food, batteries, flashlights, medications
-- **Evacuation plan** — for Cat 3+ storms with surge potential
+- **Outdoor furniture, grills, planters** - secured or stored
+- **Generator** - fueled and tested
+- **Emergency supplies** - water, food, batteries, flashlights, medications
+- **Evacuation plan** - for Cat 3+ storms with surge potential
 
 The Florida Division of Emergency Management has full home prep checklists at https://www.floridadisaster.org.
 
@@ -299,7 +299,7 @@ Practical implication: get prep done by end of May, don't wait for forecasts.
 Pre-season service: full clean ($175), tree-overhang trim referral, downspout extension installed, photo baseline. Total: $185 plus $400 tree trim referral.
 
 **Wesley Chapel, two-story 2,650 sq ft, oak canopy, 18-year-old roof.**
-Pre-season service: full clean ($275), fascia repair on 12 feet of weather damage ($240), Peak 301 roof rejuvenation ($1,790 — extending roof life through next 5 years of hurricane seasons). Total: $2,305.
+Pre-season service: full clean ($275), fascia repair on 12 feet of weather damage ($240), Peak 301 roof rejuvenation ($1,790 - extending roof life through next 5 years of hurricane seasons). Total: $2,305.
 
 **St. Petersburg, single-story 1,950 sq ft Old Northeast historic.**
 Pre-season service: full clean with HOA-compliant photo documentation ($225), hanger upgrade from 36-inch to 24-inch spacing on Gulf-side fascia ($380). Total: $605.

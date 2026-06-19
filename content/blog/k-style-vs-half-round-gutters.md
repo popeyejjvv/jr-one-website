@@ -8,7 +8,7 @@ faqs:
   - question: "What is a K-style gutter?"
     answer: "K-style gutters have a flat bottom, angled sides, and a decorative front edge that resembles crown molding. They're the most common residential gutter profile in the U.S. The 'K' refers to the profile shape. K-style holds more water than half-round and is easier to mount flush against fascia boards."
   - question: "What is the difference between K-style and half-round gutters?"
-    answer: "K-style has a flat bottom and angular profile — holds more water per inch of width and mounts flush to fascia. Half-round is a semicircular trough — holds less water but is easier to clean, less prone to clogging, and has a traditional or European aesthetic. K-style costs less; half-round costs more but suits historic and high-end homes."
+    answer: "K-style has a flat bottom and angular profile - holds more water per inch of width and mounts flush to fascia. Half-round is a semicircular trough - holds less water but is easier to clean, less prone to clogging, and has a traditional or European aesthetic. K-style costs less; half-round costs more but suits historic and high-end homes."
   - question: "What are ogee gutters?"
     answer: "Ogee gutters are K-style gutters with an additional decorative S-curve on the front face. The term 'ogee' refers to the architectural molding profile. Functionally identical to standard K-style, ogee gutters add visual detail that complements traditional and colonial architecture."
 ---
@@ -21,15 +21,15 @@ The choice affects how much water your gutters hold, how they look on your home,
 
 ## K-Style Gutters
 
-K-style is the standard residential gutter profile in the United States. The name refers to the cross-section shape — flat bottom, angled sides, and a front edge that curves outward like crown molding.
+K-style is the standard residential gutter profile in the United States. The name refers to the cross-section shape - flat bottom, angled sides, and a front edge that curves outward like crown molding.
 
 ### Advantages
 
-- **Higher water capacity** — the flat bottom and angular sides hold more water per inch of width than half-round. A 6-inch K-style holds roughly 2.0 gallons per foot vs. 1.2 for a comparable half-round.
-- **Flush mounting** — the flat back sits tight against the fascia board, creating a clean seal
-- **Lower cost** — K-style aluminum coil is the standard, most-available material. Forming machines are ubiquitous. Competition keeps prices low.
-- **Seamless fabrication** — portable forming machines create K-style on-site from continuous coil
-- **25+ color options** — standard with baked enamel finish
+- **Higher water capacity** - the flat bottom and angular sides hold more water per inch of width than half-round. A 6-inch K-style holds roughly 2.0 gallons per foot vs. 1.2 for a comparable half-round.
+- **Flush mounting** - the flat back sits tight against the fascia board, creating a clean seal
+- **Lower cost** - K-style aluminum coil is the standard, most-available material. Forming machines are ubiquitous. Competition keeps prices low.
+- **Seamless fabrication** - portable forming machines create K-style on-site from continuous coil
+- **25+ color options** - standard with baked enamel finish
 - **Available in 6" and 7"** at JR One (industry-wide 5" exists but JR One does not install 5" in Florida)
 
 ### Best For
@@ -41,22 +41,22 @@ K-style is the standard residential gutter profile in the United States. The nam
 
 ## Half-Round Gutters
 
-Half-round gutters are semicircular troughs — exactly what the name suggests. They were the original gutter profile before K-style became standard in the mid-20th century.
+Half-round gutters are semicircular troughs - exactly what the name suggests. They were the original gutter profile before K-style became standard in the mid-20th century.
 
 ### Advantages
 
-- **Easier to clean** — the smooth, rounded interior has no flat surfaces or sharp corners where debris catches and compacts. Water and debris flow out more freely.
-- **Less prone to corrosion** — no standing water in corners (K-style's flat bottom can hold thin layers of water in the front corners after rain)
-- **Historic accuracy** — the correct profile for pre-1950 homes, colonial, Victorian, Mediterranean, craftsman, and European styles
-- **Aesthetic statement** — half-round with exposed brackets or decorative hangers is an architectural feature, not just a utility
-- **Pairs naturally with copper** — copper half-round is the premium combination for high-end and historic homes
+- **Easier to clean** - the smooth, rounded interior has no flat surfaces or sharp corners where debris catches and compacts. Water and debris flow out more freely.
+- **Less prone to corrosion** - no standing water in corners (K-style's flat bottom can hold thin layers of water in the front corners after rain)
+- **Historic accuracy** - the correct profile for pre-1950 homes, colonial, Victorian, Mediterranean, craftsman, and European styles
+- **Aesthetic statement** - half-round with exposed brackets or decorative hangers is an architectural feature, not just a utility
+- **Pairs naturally with copper** - copper half-round is the premium combination for high-end and historic homes
 
 ### Disadvantages
 
-- **Lower water capacity** — holds roughly 40% less per foot than K-style at the same width
-- **Higher cost** — less common, requires different forming equipment, fewer contractors install them
-- **Requires exposed hangers** — can't use hidden hangers (the mounting brackets are visible from the ground, which is either a feature or a drawback depending on your aesthetic)
-- **Fewer color options** — available in aluminum but with fewer standard colors than K-style
+- **Lower water capacity** - holds roughly 40% less per foot than K-style at the same width
+- **Higher cost** - less common, requires different forming equipment, fewer contractors install them
+- **Requires exposed hangers** - can't use hidden hangers (the mounting brackets are visible from the ground, which is either a feature or a drawback depending on your aesthetic)
+- **Fewer color options** - available in aluminum but with fewer standard colors than K-style
 
 ### Best For
 
@@ -68,7 +68,7 @@ Half-round gutters are semicircular troughs — exactly what the name suggests. 
 
 ## What About Ogee Gutters?
 
-Ogee (also called "OG" or "ogee crown") is a decorative variation of K-style. The front face has an additional S-curve that mimics classical architectural molding. Functionally identical to K-style — same water capacity, same mounting, same materials. The difference is purely visual.
+Ogee (also called "OG" or "ogee crown") is a decorative variation of K-style. The front face has an additional S-curve that mimics classical architectural molding. Functionally identical to K-style - same water capacity, same mounting, same materials. The difference is purely visual.
 
 Ogee suits colonial, traditional, and formal architectural styles where the extra front-face detail complements the home's trim work.
 
@@ -95,6 +95,6 @@ Ogee suits colonial, traditional, and formal architectural styles where the extr
 - You're doing a copper installation
 - You want easier debris flow and less clogging
 
-For 90% of Tampa Bay homes, 6-inch K-style seamless aluminum is the right call. But if you have the right house for half-round — especially in copper — it's worth the premium.
+For 90% of Tampa Bay homes, 6-inch K-style seamless aluminum is the right call. But if you have the right house for half-round - especially in copper - it's worth the premium.
 
 **[Get a free estimate for K-style or half-round gutters](/estimator)** or call **(844) 444-3114**. We fabricate and install both profiles in aluminum and copper.

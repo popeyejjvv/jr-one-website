@@ -13,7 +13,7 @@ faqs:
 
 # How Gutter Guards Save You Money Over Time (The Math)
 
-Gutter guards cost $1,500-$3,000 for most Tampa homes. That's real money. But homeowners who look only at the upfront cost miss the full picture — what you spend over 10-20 years without guards is significantly more than what you spend with them.
+Gutter guards cost $1,500-$3,000 for most Tampa homes. That's real money. But homeowners who look only at the upfront cost miss the full picture - what you spend over 10-20 years without guards is significantly more than what you spend with them.
 
 Here's the actual math.
 
@@ -49,7 +49,7 @@ Every year, a percentage of homeowners miss a cleaning cycle. Gutters clog. Wate
 | Annual surface clearing (1x/year) | $150 - $250 |
 | Total 10-year cost | $3,000 - $5,500 |
 
-**Savings over 10 years: $3,000 - $8,000** compared to the no-guard scenario — and that's without factoring in the major damage events that guards prevent.
+**Savings over 10 years: $3,000 - $8,000** compared to the no-guard scenario - and that's without factoring in the major damage events that guards prevent.
 
 ## The Break-Even Point
 
@@ -65,16 +65,16 @@ Most Tampa homes break even within 4-5 years. Every year after that is pure savi
 
 The financial math above only captures the direct, measurable costs. Guards also prevent:
 
-- **Inconvenience** — scheduling, waiting for contractors, being home for appointments
-- **Emergency calls** — clogged gutters during a storm require urgent service at 2-3x regular pricing
-- **Pest breeding** — standing water in clogged gutters breeds mosquitoes (a real health issue in Florida)
-- **Insurance complications** — damage from neglected gutters may not be covered if the insurer determines it was maintenance-related
+- **Inconvenience** - scheduling, waiting for contractors, being home for appointments
+- **Emergency calls** - clogged gutters during a storm require urgent service at 2-3x regular pricing
+- **Pest breeding** - standing water in clogged gutters breeds mosquitoes (a real health issue in Florida)
+- **Insurance complications** - damage from neglected gutters may not be covered if the insurer determines it was maintenance-related
 
 ## When Guards Don't Make Sense
 
 The only scenario where guards aren't worth it: **homes with zero tree coverage and minimal debris.** If your gutters only need cleaning once a year and there's minimal risk of clogging, the guard investment takes 8-10 years to break even.
 
-For every other Tampa Bay home — which means almost every home, given our tree canopy — guards are a clear financial win.
+For every other Tampa Bay home - which means almost every home, given our tree canopy - guards are a clear financial win.
 
 ## The Bottom Line
 

@@ -8,12 +8,12 @@ faqs:
   - question: "How long does it take to install gutters on a house?"
     answer: "Most single-story homes take 4-6 hours (one day). Two-story homes take 6-8 hours. Homes with complex rooflines, multiple stories, or combined projects (gutters + soffit + fascia + guards) take 1-3 days. We give you a timeline before we start and stick to it."
   - question: "Do I need to be home during gutter installation?"
-    answer: "Not necessarily. You should be available at the start (to confirm scope and access) and at the end (for walkthrough). The installation itself doesn't require you to be present — the crew works outside and doesn't need access to your home's interior."
+    answer: "Not necessarily. You should be available at the start (to confirm scope and access) and at the end (for walkthrough). The installation itself doesn't require you to be present - the crew works outside and doesn't need access to your home's interior."
 ---
 
 # How Long Does Gutter Installation Take? (Realistic Timeline)
 
-If you've scheduled a gutter installation, you're probably wondering how long the crew will be at your house and what to expect. Here's a realistic timeline based on what actually happens — not the optimistic estimates some contractors give to close the sale.
+If you've scheduled a gutter installation, you're probably wondering how long the crew will be at your house and what to expect. Here's a realistic timeline based on what actually happens - not the optimistic estimates some contractors give to close the sale.
 
 ## Installation Times by Home Type
 
@@ -37,7 +37,7 @@ The crew parks the gutter machine truck with access to your roofline. They walk 
 The forming machine shapes raw aluminum coil into seamless gutter right on-site. Each run is custom-cut to the exact length of your roofline section. No pre-cut pieces, no joints, no seams. You'll hear the machine running periodically as new sections are formed.
 
 ### Old Gutter Removal (if applicable, 1-2 hours)
-If you have existing gutters being replaced, the crew removes them and inspects the fascia underneath. This is when fascia damage is discovered — rotted wood, pest damage, or deteriorated paint that was hidden behind the old gutter.
+If you have existing gutters being replaced, the crew removes them and inspects the fascia underneath. This is when fascia damage is discovered - rotted wood, pest damage, or deteriorated paint that was hidden behind the old gutter.
 
 ### Fascia Repair (if needed, adds 2-4 hours)
 If the fascia behind the gutters is damaged, it needs to be repaired or wrapped before new gutters go up. Mounting gutters to rotted fascia guarantees early failure. This is an add-on that may not have been in the original estimate if the damage wasn't visible until the old gutters came down.
@@ -56,22 +56,22 @@ You walk the perimeter with the crew lead. They show you the finished work, poin
 
 ## What Can Delay Installation
 
-- **Weather** — rain stops exterior work. Crews don't install gutters in the rain. Schedule flexibility helps during Florida's storm season.
-- **Hidden fascia damage** — discovered during old gutter removal. The crew can usually repair it same-day, but it adds time.
-- **Access issues** — fences, pools, landscaping, or structures that block ladder placement require creative access solutions that add time.
-- **Roof complexity** — more corners, valleys, and transitions mean more custom cuts and miters.
-- **Add-on decisions** — sometimes homeowners see the old fascia condition and decide to add soffit/fascia work to the project. This extends the timeline but is more efficient than scheduling a separate visit.
+- **Weather** - rain stops exterior work. Crews don't install gutters in the rain. Schedule flexibility helps during Florida's storm season.
+- **Hidden fascia damage** - discovered during old gutter removal. The crew can usually repair it same-day, but it adds time.
+- **Access issues** - fences, pools, landscaping, or structures that block ladder placement require creative access solutions that add time.
+- **Roof complexity** - more corners, valleys, and transitions mean more custom cuts and miters.
+- **Add-on decisions** - sometimes homeowners see the old fascia condition and decide to add soffit/fascia work to the project. This extends the timeline but is more efficient than scheduling a separate visit.
 
 ## What You Should Do on Installation Day
 
-1. **Clear the perimeter** — move patio furniture, potted plants, and vehicles away from the house edges so the crew has clear access
-2. **Secure pets** — keep dogs inside or in a fenced area away from the work zone
-3. **Be available at start and end** — for scope confirmation and final walkthrough
-4. **Expect noise** — the forming machine and power tools are loud but intermittent
-5. **Ask questions** — a good crew is happy to show you what they're doing and why
+1. **Clear the perimeter** - move patio furniture, potted plants, and vehicles away from the house edges so the crew has clear access
+2. **Secure pets** - keep dogs inside or in a fenced area away from the work zone
+3. **Be available at start and end** - for scope confirmation and final walkthrough
+4. **Expect noise** - the forming machine and power tools are loud but intermittent
+5. **Ask questions** - a good crew is happy to show you what they're doing and why
 
 ## The Bottom Line
 
-Most gutter installations take one day. Larger homes or combined projects take 2-3 days. The crew handles everything — fabrication, mounting, downspouts, testing, and cleanup. Your only job is to clear the work area and be available for the walkthrough.
+Most gutter installations take one day. Larger homes or combined projects take 2-3 days. The crew handles everything - fabrication, mounting, downspouts, testing, and cleanup. Your only job is to clear the work area and be available for the walkthrough.
 
-**[Schedule your gutter installation](/estimator)** or call **(844) 444-3114**. We give you a specific timeline before the project starts — and we stick to it.
+**[Schedule your gutter installation](/estimator)** or call **(844) 444-3114**. We give you a specific timeline before the project starts - and we stick to it.

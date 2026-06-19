@@ -10,7 +10,7 @@ faqs:
   - question: "Why is St. Petersburg gutter pricing slightly higher than inland Tampa?"
     answer: "Three factors: (1) salt-air corrosion requires .032 aluminum minimum and stainless or aluminum hangers (no zinc-coated steel); (2) wind exposure on barrier islands requires 24-inch hanger spacing instead of 36-inch; (3) historic district HOAs in places like Snell Isle, Old Northeast, and downtown St. Pete require approved colors and brackets. Combined, expect a 5 to 10 percent premium over inland Tampa pricing."
   - question: "What gutter size do I need for a St. Petersburg home?"
-    answer: "JR One installs 6-inch and 7-inch seamless aluminum only — we do not install 5-inch in Florida. 6-inch is the baseline for most St. Pete homes. 7-inch is the upgrade for homes with steep pitches, large roof areas, or heavy oak coverage in older neighborhoods. Pinellas County's flat topography and frequent thunderstorms make undersized gutters a chronic source of overflow, which is why we don't carry 5-inch coil stock."
+    answer: "JR One installs 6-inch and 7-inch seamless aluminum only - we do not install 5-inch in Florida. 6-inch is the baseline for most St. Pete homes. 7-inch is the upgrade for homes with steep pitches, large roof areas, or heavy oak coverage in older neighborhoods. Pinellas County's flat topography and frequent thunderstorms make undersized gutters a chronic source of overflow, which is why we don't carry 5-inch coil stock."
   - question: "Are there permits required for gutter installation in St. Petersburg?"
     answer: "No permit is required for residential gutter installation, replacement, or repair anywhere in Pinellas County including St. Petersburg, Clearwater, Largo, Pinellas Park, Seminole, or the beach communities. Some HOAs and historic districts require pre-approval for color or material changes. We handle any HOA paperwork as part of the quote process."
   - question: "How much does fascia repair add to a St. Pete gutter install?"
@@ -139,7 +139,7 @@ A legitimate gutter quote in St. Petersburg includes all of the following. If an
 
 1. **Linear footage** of gutter and downspout, broken out separately
 2. **Material gauge** (.032 minimum for coastal, .027 acceptable inland)
-3. **Gutter size** (6-inch standard or 7-inch heavy-rain upgrade — JR One does not install 5-inch in Florida)
+3. **Gutter size** (6-inch standard or 7-inch heavy-rain upgrade - JR One does not install 5-inch in Florida)
 4. **Hanger type and spacing** (aluminum hangers with stainless screws for coastal, 24-inch spacing within 2 miles of water)
 5. **Downspout count and size** (2x3 standard, 3x4 for heavy-flow)
 6. **Fascia condition assessment** with any repair scope itemized separately
@@ -168,12 +168,12 @@ We've worked dozens of St. Pete storm damage claims over the past decade. See ou
 
 Quality seamless aluminum gutters last 25 to 35 years in inland St. Pete and 15 to 25 years in waterfront/coastal-exposed locations. The triggers for replacement (vs. repair) are:
 
-1. **Sagging despite hanger replacement** — usually means the gutter itself has lost rigidity
+1. **Sagging despite hanger replacement** - usually means the gutter itself has lost rigidity
 2. **Visible corrosion or pitting** on aluminum (rare but possible in heavy salt air after 20+ years)
 3. **Fascia damage from prior leaks** that requires gutter removal anyway
 4. **Aesthetic upgrade** during exterior renovation
 5. **Storm damage beyond cosmetic dents** (significant deformation, separation at corners)
-6. **Undersized for current rain load** (existing 5-inch builder gutters that overflow during summer storms — JR One replaces with 6-inch or 7-inch seamless)
+6. **Undersized for current rain load** (existing 5-inch builder gutters that overflow during summer storms - JR One replaces with 6-inch or 7-inch seamless)
 
 If you're seeing one or more of these, replacement is usually more economical than incremental repair. We'll inspect honestly and tell you which path fits your home.
 

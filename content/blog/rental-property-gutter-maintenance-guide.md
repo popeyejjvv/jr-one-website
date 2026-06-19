@@ -8,7 +8,7 @@ faqs:
   - question: "Is gutter maintenance the landlord's responsibility?"
     answer: "In Florida, the landlord is responsible for maintaining the structural integrity of the property including gutters, soffit, and fascia. Tenants are generally not required to clean gutters unless specifically stated in the lease. Neglecting gutter maintenance that leads to water damage can create habitability issues and tenant claims."
   - question: "How often should rental property gutters be cleaned?"
-    answer: "At minimum twice per year — before hurricane season (May) and after fall debris (December). Schedule cleanings between tenants during turnover. Annual inspections should check gutter condition, fascia integrity, and drainage routing. Gutter guards reduce the maintenance burden to once per year."
+    answer: "At minimum twice per year - before hurricane season (May) and after fall debris (December). Schedule cleanings between tenants during turnover. Annual inspections should check gutter condition, fascia integrity, and drainage routing. Gutter guards reduce the maintenance burden to once per year."
 ---
 
 # Rental Property Gutter Maintenance: A Tampa Landlord's Guide
@@ -19,7 +19,7 @@ Here's how to handle it without overspending.
 
 ## Landlord vs. Tenant Responsibility
 
-Under Florida law (Chapter 83, Florida Statutes), landlords are responsible for maintaining the structural components of the property. Gutters, soffit, and fascia are structural exterior elements — their maintenance falls on the landlord unless the lease specifically assigns it to the tenant.
+Under Florida law (Chapter 83, Florida Statutes), landlords are responsible for maintaining the structural components of the property. Gutters, soffit, and fascia are structural exterior elements - their maintenance falls on the landlord unless the lease specifically assigns it to the tenant.
 
 In practice, tenants rarely clean gutters even when the lease says they should. They don't have ladders, they don't think about it, and enforcement is impractical. **Budget for gutter maintenance as a landlord expense regardless of lease terms.**
 
@@ -59,10 +59,10 @@ The $1,500-$3,000 investment in guards typically pays for itself within 3-4 year
 
 If you own 3+ rental properties in Tampa Bay, a maintenance contract with a single gutter contractor is the most efficient approach:
 
-- **Volume pricing** — 20-30% below individual service calls
-- **Scheduled service** — contractor handles the calendar, not you
-- **Documentation** — service reports for each property
-- **Priority response** — storm damage gets handled fast with contract clients
+- **Volume pricing** - 20-30% below individual service calls
+- **Scheduled service** - contractor handles the calendar, not you
+- **Documentation** - service reports for each property
+- **Priority response** - storm damage gets handled fast with contract clients
 
 ## During Tenant Turnover
 

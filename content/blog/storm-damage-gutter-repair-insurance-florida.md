@@ -6,9 +6,9 @@ category: "Insurance"
 keyword: "storm damage gutter repair florida"
 faqs:
   - question: "Does homeowners insurance cover storm-damaged gutters?"
-    answer: "Yes, in most cases. Florida homeowners insurance covers gutter damage from named storms, hurricanes, and severe weather events. The damage must be from a covered peril (wind, hail, falling objects) — not from wear, neglect, or lack of maintenance. Your hurricane deductible (typically 2-5% of insured value) applies."
+    answer: "Yes, in most cases. Florida homeowners insurance covers gutter damage from named storms, hurricanes, and severe weather events. The damage must be from a covered peril (wind, hail, falling objects) - not from wear, neglect, or lack of maintenance. Your hurricane deductible (typically 2-5% of insured value) applies."
   - question: "How do I document gutter damage for an insurance claim?"
-    answer: "Take dated photos and video of all damage from multiple angles immediately after the storm. Include wide shots showing the damage in context and close-ups of specific damage points. Note the date, time, and storm name. Do not make permanent repairs before the adjuster inspects — temporary protective measures (tarps) are fine."
+    answer: "Take dated photos and video of all damage from multiple angles immediately after the storm. Include wide shots showing the damage in context and close-ups of specific damage points. Note the date, time, and storm name. Do not make permanent repairs before the adjuster inspects - temporary protective measures (tarps) are fine."
   - question: "Should I get a contractor estimate before filing a claim?"
     answer: "Yes. Get a written estimate from a licensed, insured contractor before or alongside your claim. The adjuster will do their own assessment, but having a professional contractor estimate establishes the real repair cost and gives you documentation to reference if the adjuster's number seems low."
 ---
@@ -45,7 +45,7 @@ Here's how to handle it from discovery through completion.
 
 Before you touch anything, document:
 
-- **Photos of all damage** from multiple angles — wide shots and close-ups
+- **Photos of all damage** from multiple angles - wide shots and close-ups
 - **Video walkthrough** narrating what you see
 - **Date and time** of documentation
 - **Storm name or date** that caused the damage
@@ -62,7 +62,7 @@ Acceptable temporary measures:
 - Placing buckets or temporary drainage to prevent foundation damage
 - Boarding up soffit gaps to prevent water and pest entry
 
-Save receipts for all temporary measures — these are typically reimbursable.
+Save receipts for all temporary measures - these are typically reimbursable.
 
 ### Step 3: File the Claim
 
@@ -91,7 +91,7 @@ The insurance company sends an adjuster to inspect the damage. Be present for th
 
 Key tips:
 - Point out damage they might miss (behind gutters, inside downspouts, on soffit)
-- Note any damage to fascia or soffit caused by displaced gutters — this is often missed
+- Note any damage to fascia or soffit caused by displaced gutters - this is often missed
 - If the adjuster's assessment seems low, ask what specific items they excluded and why
 
 ### Step 6: Review the Settlement
@@ -105,7 +105,7 @@ The insurance company sends a settlement offer. Compare it against your contract
 
 ### Step 7: Complete Repairs
 
-Once the claim is settled, hire your contractor to complete the permanent repairs. Keep all receipts and documentation — if you received a depreciation holdback (common in Florida), you'll need to submit proof of completed repairs to receive the remaining funds.
+Once the claim is settled, hire your contractor to complete the permanent repairs. Keep all receipts and documentation - if you received a depreciation holdback (common in Florida), you'll need to submit proof of completed repairs to receive the remaining funds.
 
 ## What's Covered vs. What's Not
 

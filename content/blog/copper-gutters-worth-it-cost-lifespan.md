@@ -52,13 +52,13 @@ Copper's color changes over time:
 - **Year 3-7:** Deep chocolate brown
 - **Year 10-20:** Develops green patina (verdigris)
 
-The green patina isn't corrosion — it's copper carbonate, a protective layer that actually prevents further oxidation. It's the same patina you see on the Statue of Liberty.
+The green patina isn't corrosion - it's copper carbonate, a protective layer that actually prevents further oxidation. It's the same patina you see on the Statue of Liberty.
 
 Some homeowners want the aged green look from day one. There are chemical treatments that accelerate the patina, but most copper gutter owners enjoy watching the color evolve naturally.
 
 ### Architectural Statement
 
-On the right house — historic homes, Mediterranean-style architecture, high-end custom builds — copper gutters are an architectural feature, not just a utility. They elevate the exterior aesthetic in a way that no other gutter material can.
+On the right house - historic homes, Mediterranean-style architecture, high-end custom builds - copper gutters are an architectural feature, not just a utility. They elevate the exterior aesthetic in a way that no other gutter material can.
 
 Half-round copper gutters with decorative leader heads and rain chains are a design element that adds real curb appeal and perceived home value.
 
@@ -99,17 +99,17 @@ Some homeowners don't want their gutters to be noticeable. Aluminum in a color-m
 
 ## Who Should Consider Copper
 
-- **Historic home owners** — copper matches the period architecture
-- **Custom home builders** — making an exterior design statement
-- **Long-term homeowners** — planning to stay 20+ years and want zero-replacement
-- **Investors in high-end properties** — copper adds real resale value to premium homes
-- **Anyone who values the patina aesthetic** — it's unique and develops naturally
+- **Historic home owners** - copper matches the period architecture
+- **Custom home builders** - making an exterior design statement
+- **Long-term homeowners** - planning to stay 20+ years and want zero-replacement
+- **Investors in high-end properties** - copper adds real resale value to premium homes
+- **Anyone who values the patina aesthetic** - it's unique and develops naturally
 
 ## Who Should Stick with Aluminum
 
-- **Most Tampa Bay homeowners** — aluminum delivers 20-30 years of excellent performance at 1/3 the cost
-- **Budget-conscious buyers** — the 3-4x premium rarely makes financial sense purely on ROI
-- **Homeowners who want gutters to blend in** — aluminum in matched colors is nearly invisible
+- **Most Tampa Bay homeowners** - aluminum delivers 20-30 years of excellent performance at 1/3 the cost
+- **Budget-conscious buyers** - the 3-4x premium rarely makes financial sense purely on ROI
+- **Homeowners who want gutters to blend in** - aluminum in matched colors is nearly invisible
 - **Any home where practical function matters more than aesthetic statement**
 
 ## The Bottom Line

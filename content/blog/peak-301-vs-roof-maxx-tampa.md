@@ -10,7 +10,7 @@ faqs:
   - question: "Which is better for Tampa Bay homes, Peak 301 or Roof Maxx?"
     answer: "For most Tampa homeowners, the choice comes down to which certified applicator quotes the job. Both products work. Both extend roof life 5 to 15 years. Both cost roughly the same per square foot. The bigger differentiator is the contractor: in-house crew vs subcontractor, written warranty terms, photo documentation, honest 'is this roof even a candidate' assessment. Pick the contractor first, the brand second."
   - question: "Are Peak 301 and Roof Maxx both ASTM D6944 tested?"
-    answer: "Yes, both products are validated by independent third-party testing under ASTM D6944, the standard cyclic flexibility test for asphalt shingles. After accelerated weathering cycles, treated shingles show flexibility comparable to new shingles. Beware contractors offering 'roof rejuvenation' products without ASTM testing — those are typically petroleum-based oils that evaporate within 12 to 24 months and provide no lasting flexibility restoration."
+    answer: "Yes, both products are validated by independent third-party testing under ASTM D6944, the standard cyclic flexibility test for asphalt shingles. After accelerated weathering cycles, treated shingles show flexibility comparable to new shingles. Beware contractors offering 'roof rejuvenation' products without ASTM testing - those are typically petroleum-based oils that evaporate within 12 to 24 months and provide no lasting flexibility restoration."
   - question: "How much does Peak 301 cost compared to Roof Maxx in Tampa?"
     answer: "Peak 301 typically runs $0.55 to $0.80 per square foot in Tampa in 2026. Roof Maxx runs $0.50 to $0.75 per square foot. The 5 to 15 percent Peak 301 premium typically reflects longer warranty and stricter applicator certification. For a 2,000 square foot home: Peak 301 is roughly $1,400 to $1,800; Roof Maxx is roughly $1,300 to $1,700. Compare to $10,000 to $30,000 plus for a full Tampa roof replacement in 2026."
   - question: "Which has the longer warranty: Peak 301 or Roof Maxx?"
@@ -18,9 +18,9 @@ faqs:
   - question: "Does Peak 301 or Roof Maxx work better on 3-tab vs architectural shingles?"
     answer: "Both products work on both 3-tab and architectural (dimensional) asphalt shingles. Architectural shingles tend to absorb the bio-oil more uniformly because of their thicker profile, which slightly improves treatment durability. 3-tab shingles benefit from earlier intervention (year 7 to 12) because they age faster than architectural in Florida UV. The product choice matters less than the roof's age and condition."
   - question: "Do Peak 301 and Roof Maxx require different application equipment?"
-    answer: "Yes, each has proprietary spray equipment calibrated to the specific bio-oil formulation. Peak 301 applicators use Peak-certified equipment; Roof Maxx applicators use Roof Maxx-branded equipment. The application process is similar (clean surface, spray, cure 24-48 hours) but the gear is product-specific. Avoid contractors trying to 'mix and match' — application errors void warranties on both products."
+    answer: "Yes, each has proprietary spray equipment calibrated to the specific bio-oil formulation. Peak 301 applicators use Peak-certified equipment; Roof Maxx applicators use Roof Maxx-branded equipment. The application process is similar (clean surface, spray, cure 24-48 hours) but the gear is product-specific. Avoid contractors trying to 'mix and match' - application errors void warranties on both products."
   - question: "Can a contractor apply both Peak 301 and Roof Maxx?"
-    answer: "Some contractors are certified in both, but most Tampa-area applicators are dealers for one or the other due to franchise exclusivity agreements. Either way, the product specified on your quote is what gets applied. If a contractor offers to substitute one brand for another mid-job, that's a red flag — the substitution voids any product warranty."
+    answer: "Some contractors are certified in both, but most Tampa-area applicators are dealers for one or the other due to franchise exclusivity agreements. Either way, the product specified on your quote is what gets applied. If a contractor offers to substitute one brand for another mid-job, that's a red flag - the substitution voids any product warranty."
   - question: "Is one safer for the environment than the other?"
     answer: "Both are soy-based bio-oils, both are non-toxic to plants and pets after curing (24-48 hours), both are biodegradable, both are technically environmentally similar. Neither contains the petroleum-based asphalt sealers or coatings that homeowners sometimes confuse with rejuvenation. From an environmental standpoint, the choice is functionally a wash."
   - question: "What about Roof Refine and other bio-oil rejuvenators?"
@@ -110,11 +110,11 @@ The sweet spot in Tampa is typically year 8 to 15 for architectural shingles, ye
 
 Identical limitations on both:
 
-- **Won't fix structural damage** — rotten decking, damaged underlayment, missing shingles need actual repair
-- **Won't work on non-shingle roofs** — tile, metal, flat/membrane, slate, wood shake are NOT candidates for either product
-- **Won't replace a roof that's already failed** — severely deteriorated, leaking, or missing-shingle roofs need replacement
-- **Won't prevent all future issues** — both extend life, neither makes the roof immortal
-- **Won't restore appearance permanently** — both cause slight darkening that fades within 30 days
+- **Won't fix structural damage** - rotten decking, damaged underlayment, missing shingles need actual repair
+- **Won't work on non-shingle roofs** - tile, metal, flat/membrane, slate, wood shake are NOT candidates for either product
+- **Won't replace a roof that's already failed** - severely deteriorated, leaking, or missing-shingle roofs need replacement
+- **Won't prevent all future issues** - both extend life, neither makes the roof immortal
+- **Won't restore appearance permanently** - both cause slight darkening that fades within 30 days
 
 If a contractor selling either product won't be honest about these limitations, get a different contractor.
 
