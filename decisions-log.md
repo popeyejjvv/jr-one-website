@@ -51,3 +51,7 @@ Autonomous SEO audit + fix pass. Format: [date] PHASE | change | why | files | V
 [2026-06-15] PHASE 3 | Fixed the Spanish drainage scope violation (tuberia corrugada + excavacion) on the commercial page that the English-only fix missed | scope integrity in both languages | app/commercial-gutters/PageClient.jsx | VERIFIED
 [2026-06-15] PHASE 2 | ASCII sweep of content/*.md (45 blog files, 484 banned chars -> 0) | blog renders customer-facing and was missed in the public-only first sweep | content/blog/*.md | VERIFIED
 [2026-06-15] PHASE 7 | npm run build PASSED clean round 2 (396 static pages incl live /7-inch-gutters + south-tampa) | gate before round-2 deploy | n/a | VERIFIED
+
+### Round 3 - FAQ depth (2026-06-15)
+[2026-06-15] DEC-D (cont.) | Added FAQ depth to 5 striking-distance service pages (gutter-guards +3, specialty-gutters +3, commercial-gutters +2, siding +3, gutter-repair +3 Q&A) via a parallel format workflow, then applied + built + deployed + verified live | compounds the title/H1 work with AEO + featured-snippet surface for the long-tail questions behind the impressions | app/gutter-guards/PageClient.jsx, app/specialty-gutters/page.jsx, app/commercial-gutters/PageClient.jsx, app/siding/PageClient.jsx, app/gutter-repair/page.jsx | VERIFIED
+[2026-06-15] OPS | GBP cleaned: website link de-tagged to clean URL + description "since 2018" replaced with "over 30 years in the gutter trade" (operator did the GBP edits, guided) | NAP/canonical consistency + trust accuracy | Google Business Profile | VERIFIED

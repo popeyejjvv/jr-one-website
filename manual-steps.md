@@ -15,12 +15,11 @@ None blocked. Vercel is authed + linked, GSC is wired through Ahrefs, IndexNow k
 
 ## GBP EDITS (you do these in business.google.com)
 
-1. **Fix the website-link UTM tag.** Google indexes your homepage as `https://www.jronegutters.com/?utm_source=google&utm_medium=organic&utm_campaign=local` because your GBP website link carries that tag, which splits ranking signals.
-   - Step 1: Go to business.google.com, sign in, open the JR One Aluminum profile.
-   - Step 2: Click "Edit profile" then the "Contact" tab.
-   - Step 3: In the Website field, delete everything from the `?` onward so it reads exactly `https://www.jronegutters.com`. Save.
+1. **[DONE 2026-06-15]** Fixed the website-link UTM tag. GBP Website field changed from `https://www.jronegutters.com/?utm_source=google&utm_medium=organic&utm_campaign=local` to the clean `https://www.jronegutters.com`. Google will consolidate the homepage URL over the next few weeks; watch the homepage row in GSC stop showing the `?utm_...` tail.
 
-2. **(Optional, ties to Decision C)** If you want a true service-area-business presentation, set the address in GBP to "service area" (hidden) so the profile matches the site. Only do this if you do not want walk-ins; your verified commercial address is a local-SEO asset, so I recommend leaving GBP as-is unless you have a reason to hide it.
+2. **[DONE 2026-06-15]** GBP Description rewritten: removed the inconsistent "since 2018" and used "over 30 years in the gutter trade" (matches the site, stays honest re: 2006 LLC / 1990 trade start). Scope-clean.
+
+3. **(Optional, ties to Decision C)** If you want a true service-area-business presentation, set the address in GBP to "service area" (hidden) so the profile matches the site. Only do this if you do not want walk-ins; your verified commercial address is a local-SEO asset, so I recommend leaving GBP as-is unless you have a reason to hide it.
 
 ## CONTENT / CODE FOLLOW-UPS (ranked)
 
@@ -38,7 +37,9 @@ None blocked. Vercel is authed + linked, GSC is wired through Ahrefs, IndexNow k
 
 ## READY-TO-PASTE FAQ CONTENT (Decision D depth layer)
 
-I applied the titles/metas/H1s (the ranking levers). These FAQ blocks add depth + AEO value and are written in your voice, ASCII-only, scope-clean. The service-page ones can be pasted directly into each page's `faqs` array (EN block). The blog/city ones need the FAQ-render wiring above first.
+**[DONE 2026-06-15]** The 5 service-page FAQ blocks below are now LIVE - added to each EN faqs array, built, deployed, and verified on production. The blog/city FAQs still need the FAQ-render wiring (item 4 above) before they display; kept here for when that lands.
+
+**Minor scope-to-confirm:** specialty-gutters mentions 8-inch half-round ("6 to 8 inch"). The brand-brain "6 and 7 inch only" rule is about standard K-style; oversized half-round in 8-inch is plausibly a real specialty offering. Confirm whether JR One installs 8-inch half-round; if not, change the specialty page + serviceSchema.
 
 ### /gutter-guards (app/gutter-guards/PageClient.jsx faqs)
 - Q: Are mesh gutter guards better than other types? A: For most Tampa homes, yes. Mesh and micro mesh guards filter the fine debris screen guards let through (pine needles, shingle grit, seed pods) while still handling Florida's heaviest downpours. Screen guards cost less and work for large leaves, but with pine or oak near the roofline mesh is the better long-term choice. We install both and recommend the right one after we look at your tree coverage and roof pitch.
