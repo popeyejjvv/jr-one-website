@@ -14,7 +14,14 @@ export const metadata = {
   title: "Storm Damage & Insurance Claims Help Tampa",
   description:
     "Insurance claim help for storm-damaged gutters, soffit, fascia, and roofs in Tampa Bay. We document damage and provide contractor estimates for your adjuster. (844) 444-3114.",
-  alternates: { canonical: "https://www.jronegutters.com/insurance-resource-center" },
+  alternates: {
+    canonical: "https://www.jronegutters.com/insurance-resource-center",
+    languages: {
+      "en-US": "https://www.jronegutters.com/insurance-resource-center",
+      "es-US": "https://www.jronegutters.com/es/centro-recursos-seguros",
+      "x-default": "https://www.jronegutters.com/insurance-resource-center",
+    },
+  },
   openGraph: {
     title: "Tampa Bay Storm Damage & Insurance Claims - JR One Aluminum",
     description: "We document storm damage and provide contractor estimates for your insurance adjuster.",

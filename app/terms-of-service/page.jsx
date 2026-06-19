@@ -10,6 +10,7 @@ import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
 import Container from "../../components/ui/Container";
 import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 
 const T = {
   en: {
@@ -162,7 +163,7 @@ export default function TermsOfServicePage() {
 
             <h2 style={h2Style}>{t.h2Warranties}</h2>
             <p style={pStyle}>
-              {t.pWarranties} <a href="/warranties" style={linkStyle}>{t.warrantiesLink}</a> {t.pWarrantiesSuffix}
+              {t.pWarranties} <a href={localizeHref("/warranties", lang)} style={linkStyle}>{t.warrantiesLink}</a> {t.pWarrantiesSuffix}
             </p>
 
             <h2 style={h2Style}>{t.h2Law}</h2>

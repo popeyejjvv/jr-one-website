@@ -14,6 +14,7 @@ import Container from "./ui/Container";
 import Button from "./ui/Button";
 import SectionHeading from "./ui/SectionHeading";
 import ServiceCard from "./ui/ServiceCard";
+import { localizeHref } from "../lib/locale";
 import ReviewCard from "./ui/ReviewCard";
 import ProcessStep from "./ui/ProcessStep";
 import TrustLine from "./ui/TrustLine";
@@ -684,7 +685,7 @@ export default function CityLandingPage({ citySlug = "tampa", portfolio = null, 
                 flexWrap: "wrap",
               }}
             >
-              <a href="/" style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
+              <a href={localizeHref("/", lang)} style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
                 {t.breadHome}
               </a>
               <span style={{ opacity: 0.5 }}>/</span>
@@ -1066,7 +1067,7 @@ export default function CityLandingPage({ citySlug = "tampa", portfolio = null, 
               ].map((r, i) => (
                 <a
                   key={i}
-                  href={r.href}
+                  href={localizeHref(r.href, lang)}
                   className="jr-resource-card"
                   style={{
                     display: "block",

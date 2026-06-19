@@ -10,49 +10,15 @@ import { useState, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useLanguage } from "../lib/LanguageContext";
 import { ChevronDownIcon, MenuIcon, XIcon, PhoneIcon } from "../lib/icons";
+import { localizeHref, pairedUrl } from "../lib/locale";
 
-// Paired EN ↔ ES route map. Toggle navigates to the paired URL so /es/* stays
-// SSR-rendered in Spanish (vs. just flipping state, which the locked /es layout ignores).
-const EN_TO_ES = {
-  "/": "/es",
-  "/seamless-aluminum-gutters": "/es/canaletas-sin-costura-tampa",
-  "/gutter-cleaning": "/es/limpieza-canaletas-tampa",
-  "/soffit-and-fascia": "/es/sofito-fascia-tampa",
-  "/gutter-guards": "/es/protectores-canaletas-tampa",
-  "/gutter-repair": "/es/reparacion-canaletas-tampa",
-  "/peak-301": "/es/peak-301-rejuvenecimiento-techo-tampa",
-  "/storm-damage-gutters-tampa": "/es/canaletas-dano-tormenta-tampa",
-  "/7-inch-gutters": "/es/canaletas-7-pulgadas-tampa",
-  "/commercial-gutters": "/es/canaletas-comerciales-tampa",
-  "/copper-gutters": "/es/canaletas-cobre-tampa",
-  "/drainage-assessment": "/es/evaluacion-drenaje-tampa",
-  "/govee-lights": "/es/luces-govee-tampa",
-  "/hoa-contracts": "/es/contratos-hoa-tampa",
-  "/rental-property-maintenance": "/es/mantenimiento-propiedad-alquiler-tampa",
-  "/sagiper": "/es/sagiper-soffit-pvc-tampa",
-  "/siding": "/es/revestimiento-tampa",
-  "/specialty-gutters": "/es/canaletas-especiales-tampa",
-};
-const ES_TO_EN = Object.fromEntries(Object.entries(EN_TO_ES).map(([k, v]) => [v, k]));
-
-function pairedUrl(currentPath, currentLang) {
-  if (currentLang === "en") {
-    if (EN_TO_ES[currentPath]) return EN_TO_ES[currentPath];
-    if (currentPath.startsWith("/areas/")) return "/es" + currentPath;
-    return "/es" + (currentPath.startsWith("/") ? currentPath : "/" + currentPath);
-  }
-  if (ES_TO_EN[currentPath]) return ES_TO_EN[currentPath];
-  if (currentPath.startsWith("/es/areas/")) return currentPath.replace(/^\/es/, "");
-  if (currentPath.startsWith("/es/")) return currentPath.replace(/^\/es/, "");
-  if (currentPath === "/es") return "/";
-  return "/";
-}
+// EN<->ES route map, localizeHref, and pairedUrl now live in lib/locale.js so
+// every link renderer in the app uses the same logic (no per-component drift).
 
 // Alphabetical for the standard services. HOA Contracts and Rental Property
 // Maintenance are pinned last (B2B / recurring-contract tier, kept together
-// at the end so homeowners see retail services first). 7-Inch Gutters merged
-// into Seamless (which now showcases 6" and 7" sizes); /7-inch-gutters
-// 301-redirects to /seamless-aluminum-gutters via next.config.js.
+// at the end so homeowners see retail services first). /7-inch-gutters is a
+// live dedicated page (un-merged 2026-06-15).
 const SERVICE_HREFS = [
   "/commercial-gutters", "/copper-gutters", "/drainage-assessment",
   "/govee-lights", "/gutter-cleaning", "/gutter-guards", "/gutter-repair",
@@ -167,7 +133,7 @@ export default function SiteNav({ promoBanner }) {
       >
         <div style={{ maxWidth: "var(--jr-container)", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <a
-            href="/"
+            href={localizeHref("/", lang)}
             aria-label="JR One Aluminum home"
             style={{
               fontFamily: "var(--jr-font-heading)",
@@ -251,7 +217,7 @@ export default function SiteNav({ promoBanner }) {
                     <a
                       key={i}
                       role="menuitem"
-                      href={SERVICE_HREFS[i]}
+                      href={localizeHref(SERVICE_HREFS[i], lang)}
                       style={{
                         display: "block",
                         padding: "8px 20px",
@@ -282,7 +248,7 @@ export default function SiteNav({ promoBanner }) {
             {t.navLabels.map((label, i) => (
               <a
                 key={i}
-                href={NAV_HREFS[i]}
+                href={localizeHref(NAV_HREFS[i], lang)}
                 style={{
                   fontFamily: "var(--jr-font-heading)",
                   fontSize: "11px",
@@ -305,7 +271,7 @@ export default function SiteNav({ promoBanner }) {
               return (
                 <a
                   key={`ft-${i}`}
-                  href={FEATURE_HREFS[i]}
+                  href={localizeHref(FEATURE_HREFS[i], lang)}
                   className="jr-press"
                   style={{
                     display: "inline-flex",
@@ -436,7 +402,7 @@ export default function SiteNav({ promoBanner }) {
             {mobileServicesOpen && t.serviceLabels.map((label, i) => (
               <a
                 key={i}
-                href={SERVICE_HREFS[i]}
+                href={localizeHref(SERVICE_HREFS[i], lang)}
                 style={{
                   display: "block",
                   fontFamily: "var(--jr-font-heading)",
@@ -455,7 +421,7 @@ export default function SiteNav({ promoBanner }) {
             {t.navLabels.map((label, i) => (
               <a
                 key={`n-${i}`}
-                href={NAV_HREFS[i]}
+                href={localizeHref(NAV_HREFS[i], lang)}
                 style={{
                   fontFamily: "var(--jr-font-heading)",
                   fontSize: "14px",
@@ -473,7 +439,7 @@ export default function SiteNav({ promoBanner }) {
               return (
                 <a
                   key={`mft-${i}`}
-                  href={FEATURE_HREFS[i]}
+                  href={localizeHref(FEATURE_HREFS[i], lang)}
                   style={{
                     display: "inline-flex",
                     alignItems: "center",

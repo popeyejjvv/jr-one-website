@@ -10,6 +10,7 @@
  * Bilingual via lang prop.
  */
 import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 
 const T = {
   en: {
@@ -94,7 +95,7 @@ export default function Peak301Alert() {
 
         <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
           <a
-            href="/peak-301"
+            href={localizeHref("/peak-301", lang)}
             className="jr-press"
             style={{
               padding: "12px 24px",
@@ -113,7 +114,7 @@ export default function Peak301Alert() {
             {t.primary}
           </a>
           <a
-            href="/insurance-resource-center"
+            href={localizeHref("/insurance-resource-center", lang)}
             className="jr-press"
             style={{
               padding: "12px 24px",

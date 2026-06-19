@@ -15,6 +15,7 @@ import ProcessStep from "../../components/ui/ProcessStep";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import CTABand from "../../components/ui/CTABand";
 import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 import {
   HouseIcon,
   ShieldIcon,
@@ -262,7 +263,7 @@ export default function ReferralPage() {
                 color: "var(--jr-muted-on-dark)",
               }}
             >
-              <a href="/" style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
+              <a href={localizeHref("/", lang)} style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
                 {t.breadcrumbHome}
               </a>
               <span style={{ margin: "0 8px", opacity: 0.5 }}>/</span>

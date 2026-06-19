@@ -16,7 +16,14 @@ export const metadata = {
   title: "Privacy Policy",
   description:
     "How JR One Aluminum LLC collects, uses, and protects the information you share through jronegutters.com and our estimate forms. Tampa Bay gutter, soffit, and fascia specialty trade.",
-  alternates: { canonical: "https://www.jronegutters.com/privacy-policy" },
+  alternates: {
+    canonical: "https://www.jronegutters.com/privacy-policy",
+    languages: {
+      "en-US": "https://www.jronegutters.com/privacy-policy",
+      "es-US": "https://www.jronegutters.com/es/politica-privacidad",
+      "x-default": "https://www.jronegutters.com/privacy-policy",
+    },
+  },
   robots: { index: true, follow: true },
 };
 

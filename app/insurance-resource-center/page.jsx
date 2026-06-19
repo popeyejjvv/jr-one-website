@@ -14,6 +14,7 @@ import Button from "../../components/ui/Button";
 import SectionHeading from "../../components/ui/SectionHeading";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 import { CheckIcon, XIcon, ShieldIcon, MapPinIcon, CardIcon, RoofEdgeIcon, PhoneIcon, ChevronDownIcon } from "../../lib/icons";
 
 const T = {
@@ -372,11 +373,11 @@ export default function InsuranceResourceCenter() {
                   {i === t.breadcrumb.length - 1 ? (
                     <span style={{ color: "var(--jr-gold)" }}>{item}</span>
                   ) : i === 0 ? (
-                    <a href="/" style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
+                    <a href={localizeHref("/", lang)} style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
                       {item}
                     </a>
                   ) : item === "Peak 301" ? (
-                    <a href="/peak-301" style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
+                    <a href={localizeHref("/peak-301", lang)} style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>
                       {item}
                     </a>
                   ) : (

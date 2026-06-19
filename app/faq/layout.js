@@ -6,7 +6,14 @@ export const metadata = {
   title: "Tampa Gutter, Soffit, Siding FAQ",
   description:
     "Straight answers to every gutter, soffit, fascia, gutter guard, siding, and Peak 301 question Tampa Bay homeowners ask. Still stuck? Call (844) 444-3114.",
-  alternates: { canonical: "https://www.jronegutters.com/faq" },
+  alternates: {
+    canonical: "https://www.jronegutters.com/faq",
+    languages: {
+      "en-US": "https://www.jronegutters.com/faq",
+      "es-US": "https://www.jronegutters.com/es/preguntas-frecuentes",
+      "x-default": "https://www.jronegutters.com/faq",
+    },
+  },
   openGraph: {
     title: "JR One Aluminum FAQ, Tampa Gutter & Soffit Questions Answered",
     description: "60+ honest answers on gutters, soffit, fascia, guards, siding, Peak 301, and insurance claims.",

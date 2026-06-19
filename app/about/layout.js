@@ -16,7 +16,14 @@ export const metadata = {
   title: "Family-Owned Tampa Bay Gutter Specialist",
   description:
     "Christopher Rivera and crew, 3420 W Cherry St Tampa. Over 30 years in the gutter, soffit, fascia, and drainage trade. Family-owned, fully insured. (844) 444-3114.",
-  alternates: { canonical: "https://www.jronegutters.com/about" },
+  alternates: {
+    canonical: "https://www.jronegutters.com/about",
+    languages: {
+      "en-US": "https://www.jronegutters.com/about",
+      "es-US": "https://www.jronegutters.com/es/nosotros",
+      "x-default": "https://www.jronegutters.com/about",
+    },
+  },
   openGraph: {
     title: "About JR One Aluminum - Tampa Bay Specialty Trade Contractor",
     description: "Family-owned. Over 30 years in the Tampa Bay gutter industry. In-house crews. Free estimates.",

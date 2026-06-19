@@ -8,6 +8,7 @@
 
 import { useLanguage } from "../lib/LanguageContext";
 import { PhoneIcon, MailIcon, MapPinIcon } from "../lib/icons";
+import { localizeHref } from "../lib/locale";
 
 const SERVICE_NAMES = {
   en: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters"],
@@ -191,7 +192,7 @@ export default function SiteFooter() {
         <div>
           <h4 style={headingStyle}>{t.services}</h4>
           {serviceNames.map((name, i) => (
-            <FooterLink key={i} href={SERVICE_HREFS[i]}>{name}</FooterLink>
+            <FooterLink key={i} href={localizeHref(SERVICE_HREFS[i], lang)}>{name}</FooterLink>
           ))}
         </div>
 
@@ -199,7 +200,7 @@ export default function SiteFooter() {
         <div>
           <h4 style={headingStyle}>{t.serviceAreas}</h4>
           {CITIES.map((city) => (
-            <FooterLink key={city.slug} href={`/areas/${city.slug}`}>{city.name}</FooterLink>
+            <FooterLink key={city.slug} href={localizeHref(`/areas/${city.slug}`, lang)}>{city.name}</FooterLink>
           ))}
         </div>
 
@@ -207,7 +208,7 @@ export default function SiteFooter() {
         <div>
           <h4 style={headingStyle}>{t.resources}</h4>
           {t.resourceLinks.map((link, i) => (
-            <FooterLink key={i} href={link.href}>{link.label}</FooterLink>
+            <FooterLink key={i} href={localizeHref(link.href, lang)}>{link.label}</FooterLink>
           ))}
         </div>
 
@@ -308,8 +309,8 @@ export default function SiteFooter() {
           {t.copyright}
         </p>
         <div style={{ display: "flex", gap: "20px" }}>
-          <a href="/privacy-policy" style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-muted-on-dark)" }}>{t.privacy}</a>
-          <a href="/terms-of-service" style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-muted-on-dark)" }}>{t.terms}</a>
+          <a href={localizeHref("/privacy-policy", lang)} style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-muted-on-dark)" }}>{t.privacy}</a>
+          <a href={localizeHref("/terms-of-service", lang)} style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-muted-on-dark)" }}>{t.terms}</a>
         </div>
       </div>
     </footer>

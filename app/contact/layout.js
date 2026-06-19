@@ -14,7 +14,14 @@ export const metadata = {
   title: "Contact a Tampa Bay Gutter Specialist",
   description:
     "Call (844) 444-3114 or email info@jronegutters.com. 3420 W Cherry St Tampa, Mon-Sat 7am-6pm. Free estimates across Hillsborough, Pinellas, Pasco.",
-  alternates: { canonical: "https://www.jronegutters.com/contact" },
+  alternates: {
+    canonical: "https://www.jronegutters.com/contact",
+    languages: {
+      "en-US": "https://www.jronegutters.com/contact",
+      "es-US": "https://www.jronegutters.com/es/contacto",
+      "x-default": "https://www.jronegutters.com/contact",
+    },
+  },
   openGraph: {
     title: "Contact JR One Aluminum - Tampa Bay Specialty Trade",
     description: "Free estimates, (844) 444-3114. Mon-Sat 7am-6pm. 3420 W Cherry St, Tampa.",

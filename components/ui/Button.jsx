@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Button , JR One brand-brain CTA chrome.
  *
@@ -15,6 +17,8 @@
  *   - Focus-visible ring inherits from globals.
  */
 import { ArrowRightIcon } from "../../lib/icons";
+import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 
 export default function Button({
   as = "button",
@@ -32,6 +36,7 @@ export default function Button({
   className = "",
   ...rest
 }) {
+  const { lang } = useLanguage();
   const Tag = href ? "a" : as;
 
   const sizes = {
@@ -78,7 +83,7 @@ export default function Button({
 
   return (
     <Tag
-      href={href}
+      href={localizeHref(href, lang)}
       type={!href && Tag === "button" ? type || "button" : undefined}
       className={`jr-press ${className}`}
       style={{

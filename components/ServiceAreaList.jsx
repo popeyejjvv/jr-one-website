@@ -10,6 +10,7 @@
 
 import Container from "./ui/Container";
 import SectionHeading from "./ui/SectionHeading";
+import { localizeHref } from "../lib/locale";
 
 const CITY_SLUGS = [
   "tampa", "clearwater", "st-petersburg", "sarasota", "bradenton",
@@ -75,7 +76,7 @@ export default function ServiceAreaList({ service, serviceLabel, lang = "en" }) 
           {CITY_SLUGS.map((slug) => (
             <a
               key={slug}
-              href={`/areas/${slug}/${service}`}
+              href={localizeHref(`/areas/${slug}/${service}`, lang)}
               style={{
                 background: "#FFFFFF",
                 border: "1px solid rgba(27,42,74,0.10)",

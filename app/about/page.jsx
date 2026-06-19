@@ -7,6 +7,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
@@ -249,7 +250,7 @@ export default function AboutUsPage() {
         {/* Breadcrumb */}
         <Container style={{ paddingTop: "var(--jr-space-4)" }}>
           <div style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)" }}>
-            <a href="/" style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>{t.breadcrumbHome}</a>
+            <a href={localizeHref("/", lang)} style={{ color: "var(--jr-muted-on-dark)", textDecoration: "none" }}>{t.breadcrumbHome}</a>
             <span style={{ margin: "0 var(--jr-space-2)", opacity: 0.5 }}>/</span>
             <span style={{ color: "var(--jr-gold)" }}>{t.breadcrumbAbout}</span>
           </div>

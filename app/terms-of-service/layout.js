@@ -16,7 +16,14 @@ export const metadata = {
   title: "Terms of Service",
   description:
     "The terms that govern use of jronegutters.com and JR One Aluminum LLC estimates, proposals, and services across Tampa Bay. Gutters, soffit, fascia, drainage, and Peak 301.",
-  alternates: { canonical: "https://www.jronegutters.com/terms-of-service" },
+  alternates: {
+    canonical: "https://www.jronegutters.com/terms-of-service",
+    languages: {
+      "en-US": "https://www.jronegutters.com/terms-of-service",
+      "es-US": "https://www.jronegutters.com/es/terminos-servicio",
+      "x-default": "https://www.jronegutters.com/terms-of-service",
+    },
+  },
   robots: { index: true, follow: true },
 };
 

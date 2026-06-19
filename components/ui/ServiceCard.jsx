@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * ServiceCard , replaces emoji-icon service cards.
  *
@@ -16,6 +18,8 @@ import {
   LightBulbIcon,
   ArrowRightIcon,
 } from "../../lib/icons";
+import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 
 const ICON_MAP = {
   water: WaterDropIcon,
@@ -35,6 +39,7 @@ export default function ServiceCard({
   href,
   cta = "Learn more",
 }) {
+  const { lang } = useLanguage();
   // Icon prop can be either an SVG-key (rendered via ICON_MAP) or a literal
   // emoji/text string (rendered directly). Falls through to ShieldIcon only
   // when it's an unknown SVG-key (i.e. plain ASCII like "shield-x").
@@ -121,7 +126,7 @@ export default function ServiceCard({
 
   if (href) {
     return (
-      <a href={href} className="jr-hover-lift jr-press" style={cardStyle}>
+      <a href={localizeHref(href, lang)} className="jr-hover-lift jr-press" style={cardStyle}>
         {inner}
       </a>
     );

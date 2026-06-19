@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { headers } from "next/headers";
 import { Montserrat, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -225,9 +226,11 @@ export const viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const pathname = (await headers()).get("x-pathname") || "";
+  const lang = pathname === "/es" || pathname.startsWith("/es/") ? "es" : "en";
   return (
-    <html lang="en" className={`${montserrat.variable} ${sourceSans.variable}`}>
+    <html lang={lang} className={`${montserrat.variable} ${sourceSans.variable}`}>
       <head>
         {/* Fonts now self-hosted via next/font/google (above) — eliminates render-blocking
             external CSS request, cut LCP by ~1-2s on mobile per Lighthouse 2026-05-08. */}
