@@ -1,60 +1,67 @@
 # JR One Website SEO Audit - Manual Steps for Christopher
 
-Items the autonomous run could NOT complete alone (need a decision, credentials, or content judgment). Everything mechanical and safe was already fixed and deployed. This is the action list.
+Everything mechanical and safe is fixed and deployed. This is what still needs a human: a credential, a GBP edit, or a content/code decision. Updated 2026-06-15 after decisions A/B/C/D were applied.
 
 ---
 
-## CREDENTIALS
-None blocked. Vercel CLI is authed and linked (project jrone-gutters-website). Google Search Console is wired and returning data through Ahrefs project 9674315.
+## RESOLVED THIS RUN (no action needed - logged for the record)
+- 7-inch gutters: un-redirected, now a live dedicated page, in the sitemap. (Decision A)
+- Hardie / fiber-cement siding: confirmed in scope, documented in the brand brain. (Decision B)
+- Contact/footer address: visible street address hidden site-wide (service-area-business posture); the structured-data address was kept because it matches your GBP and powers local ranking. (Decision C)
+- Striking-distance pages: titles, meta descriptions, and H1s rewritten + deployed on gutter-guards, specialty-gutters, commercial-gutters, siding, gutter-repair, largo, lutz, riverview, and the 6-vs-7 blog. (Decision D)
 
-## API KEYS
-None blocked. IndexNow key file is present (public/10705cc24faf98deedd312e024e43e53.txt) and was pinged after deploy.
+## CREDENTIALS / API KEYS / SPEND / PHYSICAL
+None blocked. Vercel is authed + linked, GSC is wired through Ahrefs, IndexNow key is live.
 
-## SPEND
-None. No paid step was required.
+## GBP EDITS (you do these in business.google.com)
 
-## PHYSICAL
-None.
+1. **Fix the website-link UTM tag.** Google indexes your homepage as `https://www.jronegutters.com/?utm_source=google&utm_medium=organic&utm_campaign=local` because your GBP website link carries that tag, which splits ranking signals.
+   - Step 1: Go to business.google.com, sign in, open the JR One Aluminum profile.
+   - Step 2: Click "Edit profile" then the "Contact" tab.
+   - Step 3: In the Website field, delete everything from the `?` onward so it reads exactly `https://www.jronegutters.com`. Save.
 
----
+2. **(Optional, ties to Decision C)** If you want a true service-area-business presentation, set the address in GBP to "service area" (hidden) so the profile matches the site. Only do this if you do not want walk-ins; your verified commercial address is a local-SEO asset, so I recommend leaving GBP as-is unless you have a reason to hide it.
 
-## SCOPE TO CONFIRM (one decision each)
+## CONTENT / CODE FOLLOW-UPS (ranked)
 
-1. **Hardie / fiber-cement siding** - The siding page schema + commercial page claim "Hardie board lap, Hardie batten and shaker" siding and "Hardie board soffit." The brand brain lists siding scope as aluminum / vinyl / Sagiper PVC cladding ONLY (fiber-cement is not in it). Files: app/siding/layout.js (lines 21-22), app/commercial-gutters/PageClient.jsx (line 60).
-   - If JR One does NOT install Hardie: tell me and I will strip the Hardie references.
-   - If JR One DOES install Hardie: I will add it to the brand brain so it stops flagging.
+1. **Spanish pages for already-translated content.** about, contact, faq, projects, financing, referral, service-plans already have hand-written Spanish (T.es blocks) but no /es/ URL, so Google cannot see the Spanish. Highest value: /es/sobre-nosotros, /es/contacto, /es/preguntas-frecuentes. I can build these as thin wrapper routes on your go-ahead.
 
-2. **7-inch gutters page** - A complete, brand-compliant /7-inch-gutters page exists but next.config.js hard-redirects it (301) to /seamless-aluminum-gutters, so it is unreachable. Meanwhile "7 inch gutters tampa" already ranks pos 13 on a blog post. See the A/B/C in the final report. Recommended: un-redirect and let the dedicated page rank.
+2. **Spanish html lang tag.** Every /es page is served as `<html lang="en">` because the root layout hardcodes it. Fixing it needs a locale-aware root layout (a small architecture change) - left out of the safe pass.
 
-3. **South Tampa as a marketed city** - I surfaced south-tampa (it was live + already ranking but hidden from the sitemap and internal links). If South Tampa should NOT be a standalone service area, tell me and I will pull it back out. Recommended: keep it (it is the highest-value affluent market and already earning impressions).
+3. **Spanish navigation locale leak.** The main nav + homepage service cards link Spanish visitors to the English pages. Fix: route nav/card hrefs through the existing EN_TO_ES map when language is Spanish (SiteNav.jsx + app/page.jsx).
 
-4. **Contact page street address** - The footer and schema show the full street address (3420 W Cherry St) site-wide, but the contact page itself only shows "Tampa, Florida." Decide: show the full address on the contact page too (consistent NAP, recommended), or hide it everywhere for a true service-area-business posture.
+4. **Blog FAQ rendering + duplicate H1.** Blog posts render the post title AND the markdown "#" heading as two H1s, and the frontmatter FAQs are parsed but never rendered (the FAQPage block is a commented-out stub in page.jsx). A small BlogPost.jsx change fixes both and unlocks the FAQ content below.
 
-## GBP EDITS (you do these in the Google Business Profile dashboard)
+5. **Thin city-service pages (192 of 232).** Do NOT mass-generate. Enrich the highest-demand: south-tampa/copper-gutters + south-tampa/seamless, new-tampa/seamless + new-tampa/gutter-guards, valrico + lithia/gutter-guards.
 
-1. **Fix the website link UTM tag.** Google is indexing your homepage as `https://www.jronegutters.com/?utm_source=google&utm_medium=organic&utm_campaign=local` instead of the clean URL, because your GBP website link points to the tagged version. This splits ranking signals.
-   - Step 1: Go to business.google.com and sign in.
-   - Step 2: Open the JR One Aluminum profile.
-   - Step 3: Click "Edit profile" then the "Contact" tab.
-   - Step 4: Find the Website field. If it ends in `/?utm_source=google...`, delete everything from the `?` onward so it reads exactly `https://www.jronegutters.com`.
-   - Step 5: Save. This lets the clean URL consolidate as canonical over the next few weeks.
+6. **306 schema validation warnings (Ahrefs).** Likely one template-level issue. The HowTo removal + ES entity merge this run should reduce the count; re-crawl in Ahrefs, then I can fix the template.
 
-## BUILD LIST (ranked by real GSC impression data - highest ROI first)
+## READY-TO-PASTE FAQ CONTENT (Decision D depth layer)
 
-The site went from 843 to 10,000+ monthly impressions but clicks stayed flat because pages rank in the "page 2-3 no-click" band (position 13-22). The single biggest lever now is LIFTING existing high-impression pages into the top 5, NOT adding new pages.
+I applied the titles/metas/H1s (the ranking levers). These FAQ blocks add depth + AEO value and are written in your voice, ASCII-only, scope-clean. The service-page ones can be pasted directly into each page's `faqs` array (EN block). The blog/city ones need the FAQ-render wiring above first.
 
-1. **Striking-distance optimization (do this first - it is where the revenue is).** These pages already get impressions and rank just below page 1. Each needs a title/H1/intro rewrite toward its top query + a localized FAQ block. I held off auto-rewriting these because they are already ranking and a bad title change could hurt - they need your eyes on the angle:
-   - /areas/largo (pos 13.5, 800 impressions) - target "roof fascia repair largo fl", "gutters largo fl"
-   - /gutter-guards (3,809 impressions, pos 30 - biggest untapped page) - target "mesh gutter guards tampa fl" (pos 12.9)
-   - /specialty-gutters (pos 22, 303 impressions) - target "specialty gutters", "commercial gutter replacement tampa fl"
-   - /commercial-gutters (pos 20, 386 impressions) - target "commercial gutter installation tampa fl"
-   - /siding (pos 10 on "siding replacement") - tighten title to win the click
-   - /areas/lutz (pos 18.7, 450 impr) and /areas/riverview (pos 19, 511 impr)
-   - /blog/6-inch-vs-7-inch-gutters-tampa (pos 8-19 on the brand's core differentiator)
-2. **Reassign "gutter repair near me"** (335 impressions, pos 21, the #1 non-branded query) - it currently lands on the weak /areas/tampa; point it at /gutter-repair via internal linking + title.
-3. **Spanish pages for already-translated content.** about, contact, faq, projects, financing, referral, service-plans already have hand-written Spanish (T.es blocks) but no /es/ URL, so the Spanish is invisible to Google. Highest value: /es/sobre-nosotros, /es/contacto, /es/preguntas-frecuentes. I can build these as thin wrapper routes when you greenlight.
-4. **Spanish html lang tag.** Every /es page is served with `<html lang="en">` because the root layout hardcodes it. Fixing this needs a locale-aware root layout (a small architecture change), so I left it out of the safe pass. Worth doing - it affects the whole Spanish locale's SEO + accessibility.
-5. **Spanish navigation locale leak.** The main nav and homepage service cards link Spanish visitors to the English pages (the EN-to-ES map exists but is not used by the links). Fix: route nav/card hrefs through the EN_TO_ES map when language is Spanish. Contained change, improves the ES experience.
-6. **7-inch ES hreflang** - /es/canaletas-7-pulgadas-tampa points its English alternate at the redirecting /7-inch-gutters. Fix this together with the 7-inch decision above.
-7. **Thin city-service pages (192 of 232).** Do NOT mass-generate. Enrich the highest-demand ones: south-tampa/copper-gutters + south-tampa/seamless (affluent market), new-tampa/seamless + new-tampa/gutter-guards (big-roof 7-inch demand), valrico + lithia/gutter-guards (FishHawk oak debris).
-8. **306 schema validation warnings** in the Ahrefs crawl - likely one template-level issue repeated across pages. The HowTo removal + ES entity merge done this pass should reduce the count; re-crawl in Ahrefs to see what remains, then I can fix the template.
+### /gutter-guards (app/gutter-guards/PageClient.jsx faqs)
+- Q: Are mesh gutter guards better than other types? A: For most Tampa homes, yes. Mesh and micro mesh guards filter the fine debris screen guards let through (pine needles, shingle grit, seed pods) while still handling Florida's heaviest downpours. Screen guards cost less and work for large leaves, but with pine or oak near the roofline mesh is the better long-term choice. We install both and recommend the right one after we look at your tree coverage and roof pitch.
+- Q: Do you install mesh gutter guards in Wimauma and the rest of south Hillsborough? A: Yes. We install mesh and micro mesh guards across Tampa Bay, including Wimauma, Riverview, Sun City Center, Brandon, and the rest of south Hillsborough. Local crew based in Tampa, same team for the assessment and the install. Call (844) 444-3114.
+- Q: How do I find a good gutter guard installer near me in Tampa? A: Look for an installer who does the work with their own crew instead of subcontracting it out. We are a family-owned specialty trade, over 30 years in gutters, fully insured, our own trained team on every install. No franchise markup, no high-pressure pitch.
+
+### /specialty-gutters (app/specialty-gutters/page.jsx faqs)
+- Q: What counts as a specialty gutter? A: Any profile beyond standard K-style. The most common in Tampa Bay are half-round (for Mediterranean, Spanish Colonial, and barrel-tile roofs), box gutters (custom rectangular profiles for commercial and modern homes), D-style, and oversized 7-inch systems. Copper and galvalume upgrades also count. We rollform and fabricate each one on-site.
+- Q: Half-round or box gutter, which one do I need? A: Architecture and water volume. Half-round suits Mediterranean, Spanish, and barrel-tile homes and sheds debris well. Box gutters carry more water and custom-fit, so they fit commercial buildings, modern homes, and flat-roof drainage. We assess your roof and recommend the right profile before any metal gets cut.
+- Q: Do you do commercial gutter replacement in Tampa? A: Yes. We replace oversized commercial gutter systems on offices, retail, churches, schools, and multi-family across Tampa Bay - heavier-gauge aluminum, 6-inch and 7-inch profiles, larger downspouts, and closer hanger spacing for wind resistance. See our commercial gutters page or call (844) 444-3114.
+
+### /commercial-gutters (app/commercial-gutters/PageClient.jsx faqs)
+- Q: What is a box gutter and is it right for my commercial roof? A: A box gutter is a large, square-profile gutter built for high water volume, not the K-style on houses. It is the standard spec for commercial roofs with big surface areas. JR One installs 7-inch box and 7-inch D-style commercial profiles. During the walkthrough we measure roof area and rainfall load, then tell you whether box, D-style, or oversized 7-inch K-style is right.
+- Q: What commercial gutter services does JR One offer in Tampa Bay? A: Full commercial scope from one specialty trade: 7-inch box gutter installation, D-style and oversized K-style, aluminum soffit and custom-bent fascia, and complete drainage with Schedule 40 PVC, catch basins, surface grates, and pop-up emitters. Plus scheduled commercial cleaning and maintenance. We serve apartments, retail, office parks, warehouses, and multi-family. Call (844) 444-3114.
+
+### /siding (app/siding/PageClient.jsx faqs)
+- Q: Do you replace whole-house siding or just sections in Tampa? A: Both. Full-home replacement when the siding is failing across the house, section replacement when the rest is sound (we match color and profile). A full re-side runs 5 to 10 days, a section 1 to 2 days. Call (844) 444-3114.
+- Q: What siding materials does JR One install in Tampa? A: Four: vinyl lap, James Hardie fiber-cement (board, batten, shaker), custom aluminum, and Sagiper PVC architectural cladding. Vinyl is the best value for most homes; Hardie gives fiber-cement durability; Sagiper carries a 50-year warranty and zero maintenance. We walk your home and give an honest recommendation.
+- Q: Is fiber-cement Hardie siding worth it in Florida's humidity? A: For a lot of Tampa homes, yes. Hardie resists moisture, rot, and impact better than older wood or low-grade vinyl. The trade-off is higher install cost than vinyl. We install Hardie board, batten, and shaker and set the moisture barrier underneath correctly.
+
+### /gutter-repair (app/gutter-repair/page.jsx faqs)
+- Q: Do you do gutter repair near me in Tampa Bay? A: Most likely yes. We repair gutters across Tampa, Brandon, Riverview, Wesley Chapel, Clearwater, St. Petersburg, Sarasota, Bradenton, Lakeland, and Largo, plus surrounding towns. Give us your address or ZIP at (844) 444-3114 and we will confirm and set up a free inspection.
+- Q: How fast can you come out for a gutter repair? A: For most repairs we schedule the free inspection within a few days and complete the work the same week once you approve the quote. Storm damage gets priority, usually an assessment within 24 to 48 hours.
+- Q: What gutter repairs do you handle? A: Leaking seams and joints, sagging gutters and failed hangers, overflow from clogs or wrong pitch, and damaged or disconnected downspouts. We work on 6-inch and 7-inch aluminum, copper, and galvalume, and we repair the soffit and fascia behind them when water has gotten in.
+
+(Largo / Lutz / Riverview city FAQs and the blog 6-vs-7 FAQs are drafted and stored in the workflow output; add them once the city template and blog post render an FAQ block.)

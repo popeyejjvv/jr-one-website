@@ -41,3 +41,13 @@ Autonomous SEO audit + fix pass. Format: [date] PHASE | change | why | files | V
 
 ### Verify / deploy
 [2026-06-15] PHASE 7 | npm run build PASSED clean (exit 0); verified built output: corrugated pipe=0, dry wells=0, drainage OG fixed, privacy self-canonical present, navyFade gradient rendering, south-tampa generating | gate before commit/deploy | n/a | VERIFIED
+[2026-06-15] PHASE 7 | Deployed to production (vercel --prod) + aliased www.jronegutters.com (push alone does not flip the alias for this project); IndexNow ping accepted 27 URLs | publish + index | n/a | VERIFIED
+
+### Round 2 - operator decisions A/B/C/D applied (2026-06-15)
+[2026-06-15] DEC-A | Un-redirected /7-inch-gutters into a live dedicated page + added to sitemap + fixed the OG-image 5-inch alt framing | "7 inch gutters tampa" has its own demand (ranked pos 13 while redirected); the page was already written | next.config.js, app/sitemap.js, app/7-inch-gutters/layout.js | VERIFIED
+[2026-06-15] DEC-B | Documented siding scope (aluminum / vinyl / Hardie fiber-cement / Sagiper PVC) in the brand brain | Popeye confirmed Hardie IS in scope; the brand brain had no siding scope line, which caused the audit flag | EAPOPEYE references/brand-brains/jrone.md | VERIFIED
+[2026-06-15] DEC-C | Hid the visible street address in the footer (SAB posture) but KEPT the structured-data PostalAddress | Popeye chose SAB; schema address retained because it matches GBP and powers the local pack - removing it would weaken ranking | components/SiteFooter.jsx | VERIFIED
+[2026-06-15] DEC-D | Striking-distance optimization: rewrote title + meta + H1 on gutter-guards, specialty-gutters, commercial-gutters, siding, gutter-repair; added per-slug title/desc overrides + keyword-led H1 on largo, lutz, riverview; shortened blog 6-vs-7 title + meta | GSC: these pages rank pos 8-30 with impressions but 0 clicks; lead each with its top query | 10 files | VERIFIED
+[2026-06-15] PHASE 3 | Fixed the Spanish drainage scope violation (tuberia corrugada + excavacion) on the commercial page that the English-only fix missed | scope integrity in both languages | app/commercial-gutters/PageClient.jsx | VERIFIED
+[2026-06-15] PHASE 2 | ASCII sweep of content/*.md (45 blog files, 484 banned chars -> 0) | blog renders customer-facing and was missed in the public-only first sweep | content/blog/*.md | VERIFIED
+[2026-06-15] PHASE 7 | npm run build PASSED clean round 2 (396 static pages incl live /7-inch-gutters + south-tampa) | gate before round-2 deploy | n/a | VERIFIED
