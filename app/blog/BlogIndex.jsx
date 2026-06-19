@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import MobileCTA from "../../components/MobileCTA";
 import { useLanguage } from "../../lib/LanguageContext";
+import { localizeHref } from "../../lib/locale";
 
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyMid: "#243556", navyLight: "#2C3E5A",
@@ -112,7 +113,7 @@ export default function BlogIndex({ posts }) {
             {filtered.map((post) => (
               <Link
                 key={post.slug}
-                href={`/blog/${post.slug}`}
+                href={localizeHref(`/blog/${post.slug}`, lang)}
                 style={{
                   display: "block", padding: "24px", background: C.navyMid,
                   borderRadius: "12px", border: `1px solid ${C.navyLight}`,

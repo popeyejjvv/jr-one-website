@@ -29,19 +29,23 @@ None blocked. Vercel is authed + linked, GSC is wired through Ahrefs, IndexNow k
 
 3. **[DONE 2026-06-15]** Navigation locale leak fixed site-wide: one `lib/locale.js` `localizeHref` routes every internal link (nav, footer, service cards, CTAs, breadcrumbs, in-body cross-links) to the right language. Verified on production: zero English links on `/es`.
 
-3b. **Still EN-only (need real translation, not a wrapper):** `/estimator` and the blog (`/blog`, `/blog/[slug]`). `localizeHref` intentionally keeps Spanish visitors on the working English version of these until a Spanish version is written. Image-license stays EN (legal).
+3b. **[DONE 2026-06-19]** Estimator was ALREADY fully bilingual (built-in i18n toggle, 54/54 keys) - no work needed. The blog now has a full Spanish version: `/es/blog` + `/es/blog/[slug]`, all 45 posts translated to natural Tampa Spanish, reciprocal hreflang, in sitemap. Image-license stays EN (legal).
 
-4. **Blog FAQ rendering + duplicate H1.** Blog posts render the post title AND the markdown "#" heading as two H1s, and the frontmatter FAQs are parsed but never rendered (the FAQPage block is a commented-out stub in page.jsx). A small BlogPost.jsx change fixes both and unlocks the FAQ content below.
+7. **[OWED] ES accent sweep.** The May-23 ES service pages strip Spanish accents in metadata/copy (e.g. "Mas de 30 anos", "Espanol"). The homepage `app/es/layout.js` meta was fixed 2026-06-19; the ~17 ES service routes + their body copy still need an accent pass - "anos" without the tilde reads as a vulgarity to a Spanish speaker.
+
+8. **[DEFERRED - low value] Title/meta length warnings.** 55 titles + ~127 remaining metas exceed Ahrefs length thresholds. Google ignores length for ranking (only truncates SERP display), and rewriting ranking blog/service titles risks the rankings. Skip unless a specific page's keyword is being cut off. The city-page template meta was already trimmed 2026-06-19.
+
+4. **[DONE 2026-06-19] Blog FAQ rendering + duplicate H1.** Fixed: lib/blog.js strips the leading markdown H1 (kills all 45 duplicate-H1s) and BlogPost.jsx now renders the frontmatter FAQs as visible Q&A. All 45 posts already had full FAQ content in frontmatter - it is now live. FAQPage JSON-LD intentionally omitted (Google retired the rich result June 2026).
 
 5. **Thin city-service pages (192 of 232).** Do NOT mass-generate. Enrich the highest-demand: south-tampa/copper-gutters + south-tampa/seamless, new-tampa/seamless + new-tampa/gutter-guards, valrico + lithia/gutter-guards.
 
-6. **306 schema validation warnings (Ahrefs).** Likely one template-level issue. The HowTo removal + ES entity merge this run should reduce the count; re-crawl in Ahrefs, then I can fix the template.
+6. **[DONE 2026-06-19] 306 schema validation warnings (Ahrefs).** The 06-19 crawl showed the count UNCHANGED, then root-caused: CompanyCam ImageObject `contentLocation` was a Text string where schema.org needs a Place. Fixed (now a Place object) + deployed. Re-crawl Ahrefs in a few days to confirm the count drops toward 0.
 
 ## READY-TO-PASTE FAQ CONTENT (Decision D depth layer)
 
 **[DONE 2026-06-15]** The 5 service-page FAQ blocks below are now LIVE - added to each EN faqs array, built, deployed, and verified on production. The blog/city FAQs still need the FAQ-render wiring (item 4 above) before they display; kept here for when that lands.
 
-**Minor scope-to-confirm:** specialty-gutters mentions 8-inch half-round ("6 to 8 inch"). The brand-brain "6 and 7 inch only" rule is about standard K-style; oversized half-round in 8-inch is plausibly a real specialty offering. Confirm whether JR One installs 8-inch half-round; if not, change the specialty page + serviceSchema.
+**[CONFIRMED 2026-06-19]** Popeye confirmed JR One DOES offer 8-inch half-round (a real specialty profile, distinct from K-style which stays 6/7-only). The specialty-gutters "6 to 8 inch" range is correct and stays as-is. Documented in the brand brain.
 
 ### /gutter-guards (app/gutter-guards/PageClient.jsx faqs)
 - Q: Are mesh gutter guards better than other types? A: For most Tampa homes, yes. Mesh and micro mesh guards filter the fine debris screen guards let through (pine needles, shingle grit, seed pods) while still handling Florida's heaviest downpours. Screen guards cost less and work for large leaves, but with pine or oak near the roofline mesh is the better long-term choice. We install both and recommend the right one after we look at your tree coverage and roof pitch.

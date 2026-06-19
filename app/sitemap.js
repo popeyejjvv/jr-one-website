@@ -84,6 +84,8 @@ const ES_STATIC_PAGES = [
   { path: "/es", priority: 1.0, changeFrequency: "weekly" },
   // Spanish service-area index (was missing from sitemap; EN /areas was present) - 2026-06-15 audit
   { path: "/es/areas", priority: 0.7, changeFrequency: "weekly" },
+  // Spanish blog index (ES blog added 2026-06-19)
+  { path: "/es/blog", priority: 0.8, changeFrequency: "daily" },
   // Phase 1 service routes (May 23 mission)
   { path: "/es/canaletas-dano-tormenta-tampa", priority: 0.9, changeFrequency: "monthly" },
   { path: "/es/canaletas-sin-costura-tampa", priority: 0.9, changeFrequency: "monthly" },
@@ -181,6 +183,14 @@ export default function sitemap() {
     priority: 0.75,
   }));
 
+  // Spanish blog posts (only translated slugs are listed; ES blog added 2026-06-19)
+  const esBlogEntries = getAllPostSlugs("es").map((slug) => ({
+    url: `${BASE_URL}/es/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
   return [
     ...staticEntries,
     ...cityEntries,
@@ -190,5 +200,6 @@ export default function sitemap() {
     ...aiIndexEntries,
     ...esStaticEntries,
     ...esCityEntries,
+    ...esBlogEntries,
   ];
 }

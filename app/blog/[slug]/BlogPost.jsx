@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useLanguage } from "../../../lib/LanguageContext";
 import MobileCTA from "../../../components/MobileCTA";
+import { localizeHref } from "../../../lib/locale";
 
 const C = {
   bg: "#0B1628", navy: "#1B2A4A", navyMid: "#243556", navyLight: "#2C3E5A",
@@ -45,7 +46,7 @@ export default function BlogPost({ post, related }) {
     <div style={{ background: C.bg, minHeight: "100vh", fontFamily: f.b }}>
       {/* Back link */}
       <div style={{ maxWidth: "780px", margin: "0 auto", padding: "20px 20px 0" }}>
-        <Link href="/blog" style={{ fontFamily: f.h, fontSize: "13px", color: C.gold, textDecoration: "none" }}>
+        <Link href={localizeHref("/blog", lang)} style={{ fontFamily: f.h, fontSize: "13px", color: C.gold, textDecoration: "none" }}>
           {t.backToBlog}
         </Link>
       </div>
@@ -138,7 +139,7 @@ export default function BlogPost({ post, related }) {
               {t.callCta}
             </a>
             <Link
-              href="/contact"
+              href={localizeHref("/contact", lang)}
               style={{
                 display: "inline-block", padding: "14px 28px", background: "transparent",
                 color: C.gold, fontFamily: f.h, fontSize: "15px", fontWeight: 700,
@@ -160,7 +161,7 @@ export default function BlogPost({ post, related }) {
               {related.map((r) => (
                 <Link
                   key={r.slug}
-                  href={`/blog/${r.slug}`}
+                  href={localizeHref(`/blog/${r.slug}`, lang)}
                   style={{
                     display: "block", padding: "18px", background: C.navyMid, borderRadius: "10px",
                     border: `1px solid ${C.navyLight}`, textDecoration: "none",

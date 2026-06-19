@@ -6,7 +6,14 @@ export const metadata = {
   title: "Blog: Gutter, Soffit & Fascia Tips",
   description:
     "Expert tips on gutter installation (6\" and 7\" only), soffit repair, fascia replacement, drainage, Peak 301, and home exterior maintenance from Tampa Bay's aluminum specialists.",
-  alternates: { canonical: "https://www.jronegutters.com/blog" },
+  alternates: {
+    canonical: "https://www.jronegutters.com/blog",
+    languages: {
+      "en-US": "https://www.jronegutters.com/blog",
+      "es-US": "https://www.jronegutters.com/es/blog",
+      "x-default": "https://www.jronegutters.com/blog",
+    },
+  },
 };
 
 export default function BlogPage() {
