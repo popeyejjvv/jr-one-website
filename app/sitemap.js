@@ -103,6 +103,19 @@ const ES_STATIC_PAGES = [
   { path: "/es/sagiper-soffit-pvc-tampa", priority: 0.7, changeFrequency: "monthly" },
   { path: "/es/revestimiento-tampa", priority: 0.8, changeFrequency: "monthly" },
   { path: "/es/canaletas-especiales-tampa", priority: 0.7, changeFrequency: "monthly" },
+  // Key-page ES wrappers added 2026-06-15 (leak-free Spanish unlock; content already existed)
+  { path: "/es/nosotros", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/es/contacto", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/es/preguntas-frecuentes", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/es/proyectos", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/es/financiamiento", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/es/referidos", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/es/recursos", priority: 0.5, changeFrequency: "monthly" },
+  { path: "/es/centro-recursos-seguros", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/es/garantias", priority: 0.5, changeFrequency: "yearly" },
+  { path: "/es/planes-de-servicio-tampa", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/es/politica-privacidad", priority: 0.2, changeFrequency: "yearly" },
+  { path: "/es/terminos-servicio", priority: 0.2, changeFrequency: "yearly" },
 ];
 
 export default function sitemap() {
