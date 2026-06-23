@@ -249,7 +249,7 @@ export const PlayIcon = (p) => (
 
 // Convenience: render N stars
 export const StarRow = ({ count = 5, size = 14, color = "var(--jr-gold)", gap = 2 }) => (
-  <span style={{ display: "inline-flex", gap, color }} aria-label={`${count} out of 5 stars`}>
+  <span role="img" style={{ display: "inline-flex", gap, color }} aria-label={`${count} out of 5 stars`}>
     {Array.from({ length: count }).map((_, i) => (
       <StarIcon key={i} size={size} />
     ))}

@@ -61,9 +61,9 @@ const T = {
 };
 
 const FEATURE_META = [
-  { color: "#3B82F6", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.30)", emoji: "📐" }, // Estimator: blue
-  { color: "#22C55E", bg: "rgba(34, 197, 94, 0.15)", border: "rgba(34, 197, 94, 0.30)", emoji: "💳" }, // Financing: green
-  { color: "#E91E8C", bg: "rgba(233, 30, 140, 0.15)", border: "rgba(233, 30, 140, 0.30)", emoji: "🎁" }, // Referral: pink
+  { color: "#93C5FD", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.30)", emoji: "📐" }, // Estimator: blue (text lightened for AA contrast on navy)
+  { color: "#22C55E", bg: "rgba(34, 197, 94, 0.15)", border: "rgba(34, 197, 94, 0.30)", emoji: "💳" }, // Financing: green (6.24:1, passes)
+  { color: "#F9A8D4", bg: "rgba(233, 30, 140, 0.15)", border: "rgba(233, 30, 140, 0.30)", emoji: "🎁" }, // Referral: pink (text lightened for AA contrast on navy)
 ];
 
 export default function SiteNav({ promoBanner }) {
@@ -105,7 +105,7 @@ export default function SiteNav({ promoBanner }) {
       <div
         className="jr-marquee"
         style={{
-          background: "#22C55E",
+          background: "#15803D",
           color: "#FFFFFF",
           padding: "8px 0",
           fontFamily: "var(--jr-font-heading)",

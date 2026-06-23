@@ -94,7 +94,8 @@ export default function PhotoUpload({
   const fileInputRef = useRef(null);
 
   const isDark = theme === "dark";
-  const labelColor = "var(--jr-gold)";
+  // Gold only on dark theme; navy on light cards (gold fails AA on white/cream).
+  const labelColor = isDark ? "var(--jr-gold)" : "var(--jr-navy)";
   const hintColor = isDark ? "var(--jr-muted-on-dark)" : "var(--jr-muted-on-light)";
   const tileBg = isDark ? "var(--jr-navy-deep)" : "#FFFFFF";
   const tileBorder = isDark ? "1.5px solid var(--jr-navy-3)" : "1.5px solid #D1D5DB";

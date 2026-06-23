@@ -18,24 +18,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap');
-:root{--navy:#1B2A4A;--navy-deep:#0F1E36;--navy-slate:#2C3E5A;--gold:#D4AF37;--gold-warm:#F2CD69;--gold-deep:#9F8329;--white:#FFFFFF;--offwhite:#F5F3EF;--gray-light:#E8E8E8;--gray-med:#6B7280;--charcoal:#2D2D2D;--green:#2D8B4E;--red:#B11A21}
+:root{--navy:#1B2A4A;--navy-deep:#0F1E36;--navy-slate:#2C3E5A;--gold:#D4AF37;--gold-warm:#F2CD69;--gold-deep:#9F8329;--white:#FFFFFF;--offwhite:#F5F3EF;--gray-light:#E8E8E8;--gray-med:#6B7280;--gray-on-dark:#9DB0C8;--charcoal:#2D2D2D;--green:#2D8B4E;--red:#B11A21}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:var(--white);overflow:hidden;height:100vh}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:9000;background:var(--gold);color:var(--navy-deep);font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;padding:10px 16px;border-radius:0 0 8px 0;text-decoration:none}
+.skip-link:focus{left:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .header{background:var(--navy-deep);border-bottom:1px solid rgba(212,175,55,0.3);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:1000;position:relative}
 .header-brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),var(--gold-deep));border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;color:var(--navy-deep);letter-spacing:-0.5px}
 .brand-text{font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;letter-spacing:1px;color:var(--white)}
 .brand-text span{color:var(--gold)}
-.brand-sub{font-size:10px;color:var(--gray-med);letter-spacing:2px;text-transform:uppercase}
+.brand-sub{font-size:10px;color:var(--gray-on-dark);letter-spacing:2px;text-transform:uppercase}
 .lang-toggle{display:flex;gap:2px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;padding:2px;flex-shrink:0}
-.lang-toggle button{padding:5px 10px;background:transparent;border:none;color:var(--gray-med);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.5px;cursor:pointer;border-radius:4px;transition:all 0.15s}
+.lang-toggle button{padding:5px 10px;background:transparent;border:none;color:var(--gray-on-dark);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.5px;cursor:pointer;border-radius:4px;transition:all 0.15s}
 .lang-toggle button.active{background:var(--gold);color:var(--navy-deep)}
 .lang-toggle button:hover:not(.active){color:var(--offwhite)}
 .search-wrap{flex:1;max-width:500px;position:relative}
 .search-wrap input{width:100%;padding:10px 16px 10px 40px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:8px;color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s}
 .search-wrap input:focus{border-color:var(--gold)}
-.search-wrap input::placeholder{color:var(--gray-med)}
-.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--gray-med);font-size:15px}
+.search-wrap input::placeholder{color:var(--gray-on-dark)}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--gray-on-dark);font-size:15px}
 .search-results{position:absolute;top:100%;left:0;right:0;background:var(--navy);border:1px solid var(--navy-slate);border-radius:0 0 8px 8px;max-height:200px;overflow-y:auto;z-index:2000;display:none}
 .search-results.show{display:block}
 .search-result-item{padding:10px 16px;cursor:pointer;font-size:13px;color:var(--offwhite);border-bottom:1px solid rgba(44,62,90,0.5);transition:background 0.15s}
@@ -43,7 +47,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .main-layout{display:flex;height:calc(100vh - 57px)}
 .sidebar{width:340px;background:var(--navy-deep);border-right:1px solid rgba(212,175,55,0.15);display:flex;flex-direction:column;overflow:hidden;flex-shrink:0}
 .tool-tabs{display:flex;border-bottom:1px solid var(--navy-slate)}
-.tool-tab{flex:1;padding:10px 8px;text-align:center;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gray-med);border-bottom:2px solid transparent;transition:all 0.2s}
+.tool-tab{flex:1;padding:10px 8px;text-align:center;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gray-on-dark);border-bottom:2px solid transparent;transition:all 0.2s}
 .tool-tab:hover{color:var(--offwhite)}
 .tool-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
 .tool-tab-icon{font-size:16px;display:block;margin-bottom:3px}
@@ -58,7 +62,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .mode-btn.active{background:rgba(212,175,55,0.15);border-color:var(--gold);color:var(--gold)}
 .mode-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .story-selector,.size-selector{display:flex;gap:4px;margin-top:10px}
-.story-btn,.size-btn{flex:1;padding:8px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;color:var(--gray-med);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;cursor:pointer;text-align:center;transition:all 0.2s}
+.story-btn,.size-btn{flex:1;padding:8px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;color:var(--gray-on-dark);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;cursor:pointer;text-align:center;transition:all 0.2s}
 .story-btn:hover,.size-btn:hover{border-color:var(--gold-warm);color:var(--offwhite)}
 .story-btn.active,.size-btn.active{background:rgba(212,175,55,0.12);border-color:var(--gold);color:var(--gold)}
 .segment-list{margin-top:10px}
@@ -68,13 +72,13 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .segment-color{width:10px;height:10px;border-radius:50%}
 .segment-label{color:var(--offwhite);font-weight:600;font-size:12px}
 .segment-ft{color:var(--gold-warm);font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px}
-.segment-delete{width:22px;height:22px;background:none;border:1px solid var(--navy-slate);border-radius:4px;color:var(--gray-med);cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;transition:all 0.15s}
+.segment-delete{width:22px;height:22px;background:none;border:1px solid var(--navy-slate);border-radius:4px;color:var(--gray-on-dark);cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;transition:all 0.15s}
 .segment-delete:hover{border-color:var(--red);color:var(--red)}
 .totals-card{background:linear-gradient(135deg,var(--navy),var(--navy-slate));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:14px}
 .total-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:13px}
 .total-row .t-label{color:var(--offwhite)}
 .total-row .t-value{font-family:'Montserrat',sans-serif;font-weight:700;color:var(--gold)}
-.total-row .t-sub{font-size:11px;color:var(--gray-med);font-weight:400}
+.total-row .t-sub{font-size:11px;color:var(--gray-on-dark);font-weight:400}
 .total-row.grand{border-top:1px solid var(--navy-slate);margin-top:6px;padding-top:10px}
 .total-row.grand .t-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px}
 .total-row.grand .t-value{font-size:17px}
@@ -82,36 +86,36 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 /* SOFT GATE (inline price reveal) */
 .soft-gate{background:linear-gradient(135deg,var(--navy),rgba(212,175,55,0.12));border:1px solid rgba(212,175,55,0.45);border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:14px}
 .soft-gate .gate-icon{font-size:26px;margin-bottom:6px}
-.soft-gate h3{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:4px}
-.soft-gate p{font-size:12px;color:var(--gray-med);line-height:1.5;margin-bottom:12px}
+.soft-gate h2{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:4px}
+.soft-gate p{font-size:12px;color:var(--gray-on-dark);line-height:1.5;margin-bottom:12px}
 .soft-gate input{width:100%;padding:12px 14px;background:var(--navy-deep);border:1px solid var(--navy-slate);border-radius:8px;color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:15px;outline:none;text-align:center;letter-spacing:1px;transition:border-color 0.2s;margin-bottom:8px}
 .soft-gate input:focus{border-color:var(--gold)}
-.soft-gate input::placeholder{color:var(--gray-med);letter-spacing:0}
+.soft-gate input::placeholder{color:var(--gray-on-dark);letter-spacing:0}
 .soft-gate button{width:100%;padding:12px;background:linear-gradient(135deg,var(--gold),var(--gold-deep));border:none;border-radius:8px;color:var(--navy-deep);font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.5px;cursor:pointer;transition:filter 0.2s}
 .soft-gate button:hover:not(:disabled){filter:brightness(1.1)}
 .soft-gate button:disabled{opacity:0.5;cursor:not-allowed}
-.soft-gate .gate-fine{font-size:10px;color:var(--gray-med);margin-top:8px}
+.soft-gate .gate-fine{font-size:10px;color:var(--gray-on-dark);margin-top:8px}
 
 /* PRICE BLUR (soft-gate reveal) */
 .price-hidden{filter:blur(8px);user-select:none;pointer-events:none;transition:filter 0.3s ease}
 
 /* ESTIMATE PANEL */
 .estimate-hero{text-align:center;padding:22px 16px;background:linear-gradient(135deg,var(--navy),rgba(212,175,55,0.08));border:1px solid rgba(212,175,55,0.3);border-radius:12px;margin-bottom:14px;position:relative}
-.est-label{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray-med);margin-bottom:6px}
+.est-label{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray-on-dark);margin-bottom:6px}
 .est-range{font-family:'Montserrat',sans-serif;font-weight:800;font-size:26px;color:var(--gold);margin-bottom:4px}
-.est-note{font-size:11px;color:var(--gray-med);line-height:1.5}
+.est-note{font-size:11px;color:var(--gray-on-dark);line-height:1.5}
 .breakdown-item{display:flex;align-items:center;justify-content:space-between;padding:11px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:8px;margin-bottom:5px}
 .breakdown-left{display:flex;align-items:center;gap:10px}
 .breakdown-icon{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px}
 .breakdown-name{font-weight:600;font-size:12px;color:var(--offwhite)}
-.breakdown-detail{font-size:11px;color:var(--gray-med);margin-top:1px}
+.breakdown-detail{font-size:11px;color:var(--gray-on-dark);margin-top:1px}
 .breakdown-value{font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;color:var(--gold-warm);text-align:right}
 
 /* DISCOUNT */
 .discount-card{background:linear-gradient(135deg,rgba(45,139,78,0.15),rgba(45,139,78,0.05));border:1px solid rgba(45,139,78,0.4);border-radius:12px;padding:18px;text-align:center;margin-top:14px}
-.discount-card h4{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--green);margin-bottom:4px}
+.discount-card h3{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--green);margin-bottom:4px}
 .discount-card .code-display{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:var(--white);letter-spacing:3px;margin:10px 0;padding:10px;background:var(--navy);border-radius:8px;border:1px dashed rgba(45,139,78,0.5)}
-.discount-card .exp-date{font-size:12px;color:var(--gray-med)}
+.discount-card .exp-date{font-size:12px;color:var(--gray-on-dark)}
 .discount-card .exp-date strong{color:var(--offwhite)}
 
 /* CTA */
@@ -136,19 +140,19 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .email-form.show{display:block}
 .email-field{width:100%;padding:11px 14px;background:var(--navy);border:1px solid var(--navy-slate);border-radius:6px;color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:14px;outline:none;margin-bottom:6px;transition:border-color 0.2s}
 .email-field:focus{border-color:var(--gold)}
-.email-field::placeholder{color:var(--gray-med)}
+.email-field::placeholder{color:var(--gray-on-dark)}
 .email-send{width:100%;padding:12px;background:linear-gradient(135deg,var(--gold),var(--gold-deep));border:none;border-radius:8px;color:var(--navy-deep);font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:filter 0.2s}
 .email-send:hover{filter:brightness(1.1)}
 .email-send:disabled{opacity:0.5;cursor:not-allowed}
 
-.disclaimer{text-align:center;font-size:10px;color:var(--gray-med);margin-top:10px;line-height:1.5;padding:0 8px}
+.disclaimer{text-align:center;font-size:10px;color:var(--gray-on-dark);margin-top:10px;line-height:1.5;padding:0 8px}
 .action-row{display:flex;gap:6px;margin-top:10px}
 .action-btn{flex:1;padding:9px;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.5px;cursor:pointer;transition:all 0.2s;text-align:center;border:none}
 .action-btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:var(--navy-deep)}
 .action-btn.primary:hover{filter:brightness(1.1)}
 .action-btn.secondary{background:var(--navy);border:1px solid var(--navy-slate);color:var(--offwhite)}
 .action-btn.secondary:hover{border-color:var(--gold-warm)}
-.action-btn.danger{background:var(--navy);border:1px solid rgba(177,26,33,0.4);color:#e55}
+.action-btn.danger{background:var(--navy);border:1px solid rgba(177,26,33,0.4);color:#FF7A7A}
 .action-btn.danger:hover{border-color:var(--red)}
 .instructions{background:linear-gradient(135deg,var(--navy),rgba(212,175,55,0.06));border:1px solid rgba(212,175,55,0.25);border-radius:10px;padding:16px;margin-top:12px}
 .instructions .inst-title{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:8px}
@@ -157,7 +161,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .instructions .step-num{width:22px;height:22px;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:var(--gold);flex-shrink:0;margin-top:1px}
 .instructions .step-text{font-size:12px;color:var(--offwhite);line-height:1.5}
 .instructions .step-text strong{color:var(--gold)}
-.instructions .inst-note{margin-top:12px;padding-top:10px;border-top:1px solid rgba(212,175,55,0.15);font-size:11px;color:var(--gray-med);line-height:1.5;display:flex;align-items:center;gap:6px}
+.instructions .inst-note{margin-top:12px;padding-top:10px;border-top:1px solid rgba(212,175,55,0.15);font-size:11px;color:var(--gray-on-dark);line-height:1.5;display:flex;align-items:center;gap:6px}
 .instructions .inst-note strong{color:var(--gold-warm)}
 .kbd{display:inline-block;padding:2px 8px;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.3);border-radius:4px;font-size:11px;color:var(--gold);font-family:'Montserrat',sans-serif;font-weight:600}
 
@@ -182,15 +186,15 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .measure-tooltip{background:var(--navy-deep)!important;border:1px solid var(--gold)!important;color:var(--gold)!important;font-family:'Montserrat',sans-serif!important;font-weight:700!important;font-size:12px!important;padding:4px 10px!important;border-radius:4px!important;white-space:nowrap!important;box-shadow:0 2px 8px rgba(0,0,0,0.5)!important}
 .measure-tooltip::before{display:none!important}
 .status-bar{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:800;background:var(--navy-deep);border:1px solid var(--navy-slate);border-radius:8px;padding:8px 20px;display:flex;align-items:center;gap:20px;font-size:12px}
-.status-item{display:flex;align-items:center;gap:6px;color:var(--gray-med)}
+.status-item{display:flex;align-items:center;gap:6px;color:var(--gray-on-dark)}
 .status-item .val{font-family:'Montserrat',sans-serif;font-weight:700;color:var(--offwhite)}
 .status-item .val.gold{color:var(--gold)}
 .cursor-mode{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:800;background:var(--navy-deep);border:1px solid var(--gold);border-radius:20px;padding:6px 18px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;color:var(--gold);display:none;animation:pulse-glow 2s infinite}
 .cursor-mode.show{display:flex;align-items:center;gap:8px}
 @keyframes pulse-glow{0%,100%{box-shadow:0 0 8px rgba(212,175,55,0.3)}50%{box-shadow:0 0 16px rgba(212,175,55,0.6)}}
 .leaflet-control-zoom{display:none}
-.leaflet-control-attribution{font-size:9px!important;background:rgba(15,30,54,0.85)!important;color:var(--gray-med)!important}
-.leaflet-control-attribution a{color:var(--gray-med)!important}
+.leaflet-control-attribution{font-size:9px!important;background:rgba(15,30,54,0.85)!important;color:var(--gray-on-dark)!important}
+.leaflet-control-attribution a{color:var(--gray-on-dark)!important}
 @media(max-width:768px){
   .sidebar{width:100%;height:45vh;border-right:none;border-bottom:1px solid var(--navy-slate)}
   .main-layout{flex-direction:column-reverse}
@@ -202,26 +206,29 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 </head>
 <body>
 
+<a href="#estimator-main" class="skip-link" data-i18n="skip_link">Skip to estimator</a>
+<h1 class="sr-only" data-i18n="page_h1">JR One Aluminum Aerial Gutter Estimator</h1>
+
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<div class="header">
+<header class="header">
   <div class="header-brand">
     <a href="/" style="text-decoration:none;font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:var(--white);letter-spacing:0.5px">JR <span style="color:var(--gold)">ONE</span> <span style="color:var(--white);font-size:16px">★</span></a>
     <div class="brand-sub" data-i18n="aerial_estimator">Aerial Estimator</div>
   </div>
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="addressInput" placeholder="Enter your address to get started" data-i18n-placeholder="search_placeholder" autocomplete="off"/>
+    <input type="text" id="addressInput" placeholder="Enter your address to get started" aria-label="Property address" data-i18n-placeholder="search_placeholder" data-i18n-aria="aria_address" autocomplete="off"/>
     <div class="search-results" id="searchResults"></div>
   </div>
   <div class="lang-toggle" role="group" aria-label="Language">
     <button type="button" id="langEn" class="active" onclick="setLang('en')">EN</button>
     <button type="button" id="langEs" onclick="setLang('es')">ES</button>
   </div>
-</div>
+</header>
 
-<div class="main-layout">
+<main id="estimator-main" class="main-layout">
 <div class="sidebar">
   <div class="tool-tabs">
     <div class="tool-tab active" onclick="switchTab('measure')"><span class="tool-tab-icon">📐</span><span data-i18n="tab_measure">MEASURE</span></div>
@@ -257,7 +264,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <div class="panel-section">
       <div class="panel-label" data-i18n="your_measurements">Your Measurements</div>
       <div class="segment-list" id="segmentList">
-        <div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;" data-i18n-html="measure_help">Search your address above, then<br>click along your roof edges to measure.</div>
+        <div style="text-align:center;padding:18px;color:var(--gray-on-dark);font-size:12px;" data-i18n-html="measure_help">Search your address above, then<br>click along your roof edges to measure.</div>
       </div>
     </div>
     <div class="panel-section" id="totalsSection" style="display:none">
@@ -304,9 +311,9 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <!-- SOFT GATE (visible until phone submitted) -->
     <div class="soft-gate" id="softGate">
       <div class="gate-icon">🔒</div>
-      <h3 data-i18n="gate_title">See Your Price Range</h3>
+      <h2 data-i18n="gate_title">See Your Price Range</h2>
       <p data-i18n="gate_sub">Drop your number below and we'll text you this estimate so you have it for 30 days. No spam, no sharing.</p>
-      <input type="tel" id="phoneInput" placeholder="(555) 123-4567" data-i18n-placeholder="gate_placeholder" maxlength="14" oninput="formatPhone(this)"/>
+      <input type="tel" id="phoneInput" placeholder="(555) 123-4567" aria-label="Phone number" data-i18n-placeholder="gate_placeholder" data-i18n-aria="aria_phone" maxlength="14" oninput="formatPhone(this)"/>
       <button id="gateSubmit" onclick="unlockEstimate()" disabled data-i18n="gate_btn">REVEAL MY PRICE</button>
       <div class="gate-fine" data-i18n="gate_fine">Your number is only used to contact you about your estimate.</div>
     </div>
@@ -324,8 +331,8 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 
     <!-- DISCOUNT CODE -->
     <div class="discount-card" id="discountCard" style="display:none">
-      <h4 data-i18n="discount_earned">YOU EARNED 5% OFF YOUR PROJECT</h4>
-      <p style="font-size:12px;color:var(--gray-med);margin-top:4px" data-i18n="discount_thanks">Thank you for using our Aerial Estimator</p>
+      <h3 data-i18n="discount_earned">YOU EARNED 5% OFF YOUR PROJECT</h3>
+      <p style="font-size:12px;color:var(--gray-on-dark);margin-top:4px" data-i18n="discount_thanks">Thank you for using our Aerial Estimator</p>
       <div class="code-display" id="discountCode">JR1-AE-XXXXX</div>
       <div class="exp-date"><span data-i18n="valid_through">Valid through</span> <strong id="expDate"> - </strong></div>
     </div>
@@ -350,8 +357,8 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <div class="email-self-section" id="emailSelfSection" style="display:none">
       <button class="email-self-btn" onclick="toggleEmailForm()" data-i18n="email_me">📧 Email Me My Estimate</button>
       <div class="email-form" id="emailForm">
-        <input type="text" class="email-field" id="custName" placeholder="Your Name" data-i18n-placeholder="your_name"/>
-        <input type="email" class="email-field" id="custEmail" placeholder="Your Email Address" data-i18n-placeholder="your_email"/>
+        <input type="text" class="email-field" id="custName" placeholder="Your Name" aria-label="Your name" data-i18n-placeholder="your_name" data-i18n-aria="aria_name"/>
+        <input type="email" class="email-field" id="custEmail" placeholder="Your Email Address" aria-label="Your email address" data-i18n-placeholder="your_email" data-i18n-aria="aria_email"/>
         <button class="email-send" id="emailSendBtn" onclick="sendToCustomer()" data-i18n="send_estimate">SEND MY ESTIMATE</button>
       </div>
     </div>
@@ -379,7 +386,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <div class="status-item"><span data-i18n="points_label">Points:</span><span class="val" id="pointCount">0</span></div>
   </div>
 </div>
-</div>
+</main>
 
 <script>
 // ═══ INTERNAL PRICING - NEVER SHOWN TO CUSTOMERS ═══
@@ -413,6 +420,8 @@ const ICONS = { gutter:'🏠', soffit:'🌬️', guard:'🛡️', cleaning:'🧹
 const STRINGS = {
   en: {
     aerial_estimator:'Aerial Estimator',
+    aria_address:'Property address', aria_phone:'Phone number', aria_name:'Your name', aria_email:'Your email address',
+    skip_link:'Skip to estimator', page_h1:'JR One Aluminum Aerial Gutter Estimator',
     search_placeholder:'Enter your address to get started',
     tab_measure:'MEASURE', tab_estimate:'MY ESTIMATE',
     what_measuring:"What Are You Measuring?",
@@ -473,6 +482,8 @@ const STRINGS = {
   },
   es: {
     aerial_estimator:'Estimador Aéreo',
+    aria_address:'Dirección de la propiedad', aria_phone:'Número de teléfono', aria_name:'Tu nombre', aria_email:'Tu correo electrónico',
+    skip_link:'Saltar al estimador', page_h1:'Estimador Aéreo de Canaletas de JR One Aluminum',
     search_placeholder:'Ingresa tu dirección para comenzar',
     tab_measure:'MEDIR', tab_estimate:'MI ESTIMADO',
     what_measuring:'¿Qué estás midiendo?',
@@ -557,6 +568,9 @@ function applyLang(){
   });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
     const k=el.dataset.i18nPlaceholder; el.placeholder=t(k);
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(el=>{
+    const k=el.dataset.i18nAria; el.setAttribute('aria-label',t(k));
   });
   // Re-render dynamic content so LABEL() picks up new language
   document.getElementById('statusMode').textContent=LABEL(currentMode);
@@ -670,7 +684,7 @@ function getModeTotals(){const t={gutter:0,soffit:0,guard:0,cleaning:0};segments
 function updateSegmentList(){
   const el=document.getElementById('segmentList');let aLen=0;
   if(activePoints.length>=2)for(let i=1;i<activePoints.length;i++)aLen+=calcFt(activePoints[i-1],activePoints[i]);
-  if(segments.length===0&&activePoints.length<2){el.innerHTML='<div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;">'+t('measure_help')+'</div>';return}
+  if(segments.length===0&&activePoints.length<2){el.innerHTML='<div style="text-align:center;padding:18px;color:var(--gray-on-dark);font-size:12px;">'+t('measure_help')+'</div>';return}
   let h='';
   segments.forEach((s,i)=>{const n=segments.filter((x,j)=>x.mode===s.mode&&j<=i).length;h+=`<div class="segment-item"><div class="segment-info"><span class="segment-color" style="background:${COLORS[s.mode]}"></span><span class="segment-label">${LABEL(s.mode)} #${n}</span></div><div style="display:flex;align-items:center;gap:8px"><span class="segment-ft">${s.totalFt.toFixed(1)} ft</span><button class="segment-delete" onclick="deleteSegment(${i})">✕</button></div></div>`});
   if(activePoints.length>=2)h+=`<div class="segment-item" style="border-color:${COLORS[currentMode]};opacity:0.7"><div class="segment-info"><span class="segment-color" style="background:${COLORS[currentMode]}"></span><span class="segment-label" style="font-style:italic">${LABEL(currentMode)} ${t('active_suffix')}</span></div><span class="segment-ft">${aLen.toFixed(1)} ft</span></div>`;
@@ -776,7 +790,7 @@ function renderEstimate(){
     breakdownHTML+=bdItem('cleaning','rgba(176,125,255,0.15)',ICONS.cleaning,t('cleaning_breakdown_title'),tf('cleaning_breakdown_sub',tot.cleaning.toFixed(0)),fmtRange(lo,hi),blurCls);
   }
   if(!breakdownHTML){
-    breakdownHTML='<div style="text-align:center;padding:18px;color:var(--gray-med);font-size:12px;">'+t('measure_help')+'</div>';
+    breakdownHTML='<div style="text-align:center;padding:18px;color:var(--gray-on-dark);font-size:12px;">'+t('measure_help')+'</div>';
   }
   document.getElementById('breakdownList').innerHTML=breakdownHTML;
   const heroEl=document.getElementById('heroRange');
@@ -1032,7 +1046,7 @@ searchInput.addEventListener('input',function(){
       const r=await fetch('https://nominatim.openstreetmap.org/search?q='+encodeURIComponent(q)+'&format=json&limit=5&countrycodes=us&addressdetails=1',{headers:{'Accept-Language':lang}});
       const d=await r.json();
       searchResultsCache=d;
-      if(!d.length){searchResults.innerHTML='<div class="search-result-item" style="color:var(--gray-med)">'+t('no_results')+'</div>';searchResults.classList.add('show');return}
+      if(!d.length){searchResults.innerHTML='<div class="search-result-item" style="color:var(--gray-on-dark)">'+t('no_results')+'</div>';searchResults.classList.add('show');return}
       searchResults.innerHTML=d.map((item,i)=>'<div class="search-result-item" data-idx="'+i+'">'+escapeHtml(item.display_name)+'</div>').join('');
       searchResults.querySelectorAll('.search-result-item').forEach(el=>{
         if(el.dataset.idx===undefined)return;

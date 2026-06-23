@@ -193,7 +193,7 @@ export default function SiteFooter() {
 
         {/* Services */}
         <div>
-          <h4 style={headingStyle}>{t.services}</h4>
+          <h3 style={headingStyle}>{t.services}</h3>
           {serviceNames.map((name, i) => (
             <FooterLink key={i} href={localizeHref(SERVICE_HREFS[i], lang)}>{name}</FooterLink>
           ))}
@@ -201,7 +201,7 @@ export default function SiteFooter() {
 
         {/* Areas */}
         <div>
-          <h4 style={headingStyle}>{t.serviceAreas}</h4>
+          <h3 style={headingStyle}>{t.serviceAreas}</h3>
           {CITIES.map((city) => (
             <FooterLink key={city.slug} href={localizeHref(`/areas/${city.slug}`, lang)}>{city.name}</FooterLink>
           ))}
@@ -209,7 +209,7 @@ export default function SiteFooter() {
 
         {/* Resources */}
         <div>
-          <h4 style={headingStyle}>{t.resources}</h4>
+          <h3 style={headingStyle}>{t.resources}</h3>
           {t.resourceLinks.map((link, i) => (
             <FooterLink key={i} href={localizeHref(link.href, lang)}>{link.label}</FooterLink>
           ))}
@@ -217,7 +217,7 @@ export default function SiteFooter() {
 
         {/* Contact */}
         <div>
-          <h4 style={headingStyle}>{t.contact}</h4>
+          <h3 style={headingStyle}>{t.contact}</h3>
           <a
             href="tel:8444443114"
             style={{
