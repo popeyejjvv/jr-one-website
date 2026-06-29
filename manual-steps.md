@@ -102,8 +102,8 @@ The 410 responses tell crawlers the pages are gone, but you can speed up removal
 2. Left menu: "Block URLs".
 3. Click "Block URL", paste each URL above, choose "URL", submit. Repeat per URL.
 
-## SPEND / CREDENTIALS (only if the EA could not deploy)
-- If the report says the deploy was logged here instead of done: run, from the website repo, `git push origin main`, then `vercel --prod`, then `vercel alias set <deployment-url> www.jronegutters.com` and again for the apex `jronegutters.com`. (git push ≠ production on this project — the alias step is required.) Needs Vercel CLI login (`vercel login`) if not already authed.
+## SPEND / CREDENTIALS / DEPLOY — DONE (no action needed)
+- Deploy completed 2026-06-28: merged to main, pushed to origin, `vercel --prod` (deployment dpl_J2QVD7W2..., READY), aliased to www.jronegutters.com + jronegutters.com. Live-verified all 8 removed URLs return 410. IndexNow fired (Google + Bing, HTTP 200). Nothing blocked.
 
 ## AMBIGUOUS (judgment calls the EA made — reverse any you disagree with)
 1. **insurance-resource-center deleted (EN + ES).** This page (and its 4 roof-insurance PDFs) was a 100% Peak 301 funnel — every CTA was "get Peak 301", breadcrumb nested it under Peak 301. With the service gone it had no offering, so it was hard-deleted and 410'd. If you want to keep a Florida-roof-insurance content page reframed around something else, say so and it can be rebuilt.
