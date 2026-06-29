@@ -72,3 +72,50 @@ None blocked. Vercel is authed + linked, GSC is wired through Ahrefs, IndexNow k
 - Q: What gutter repairs do you handle? A: Leaking seams and joints, sagging gutters and failed hangers, overflow from clogs or wrong pitch, and damaged or disconnected downspouts. We work on 6-inch and 7-inch aluminum, copper, and galvalume, and we repair the soffit and fascia behind them when water has gotten in.
 
 (Largo / Lutz / Riverview city FAQs and the blog 6-vs-7 FAQs are drafted and stored in the workflow output; add them once the city template and blog post render an FAQ block.)
+
+---
+
+# Peak 301 / Roof Rejuvenation HARD-DELETE (2026-06-28)
+
+Roof rejuvenation dropped as a service entirely. Pages hard-deleted, removed URLs return HTTP 410 Gone, scope sources updated so the SEO runner cannot rebuild it. Everything code-side is done and verified (build passes, 410s confirmed live on a local prod server). What still needs you:
+
+## DEINDEX (needs Google / Bing console access — cannot be automated)
+The 410 responses tell crawlers the pages are gone, but you can speed up removal. Do these after the deploy is live:
+
+**Google Search Console — Removals**
+1. Open https://search.google.com/search-console and pick the jronegutters.com property.
+2. Left menu: click "Removals".
+3. Click the red "New Request" button.
+4. Choose "Temporarily remove URL", paste each URL below, click "Next", then "Submit Request". Repeat per URL (or use "Remove all URLs with this prefix" only for the two service pages, NOT the blog/insurance ones).
+   - https://www.jronegutters.com/peak-301
+   - https://www.jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa
+   - https://www.jronegutters.com/insurance-resource-center
+   - https://www.jronegutters.com/es/centro-recursos-seguros
+   - https://www.jronegutters.com/blog/peak-301-roof-rejuvenation-tampa
+   - https://www.jronegutters.com/blog/peak-301-vs-roof-maxx-tampa
+   - https://www.jronegutters.com/es/blog/peak-301-roof-rejuvenation-tampa
+   - https://www.jronegutters.com/es/blog/peak-301-vs-roof-maxx-tampa
+5. (The 410 makes the removal permanent once Google recrawls; the Removals tool just hides them faster.)
+
+**Bing Webmaster Tools — Block URLs**
+1. Open https://www.bing.com/webmasters and pick jronegutters.com.
+2. Left menu: "Block URLs".
+3. Click "Block URL", paste each URL above, choose "URL", submit. Repeat per URL.
+
+## SPEND / CREDENTIALS (only if the EA could not deploy)
+- If the report says the deploy was logged here instead of done: run, from the website repo, `git push origin main`, then `vercel --prod`, then `vercel alias set <deployment-url> www.jronegutters.com` and again for the apex `jronegutters.com`. (git push ≠ production on this project — the alias step is required.) Needs Vercel CLI login (`vercel login`) if not already authed.
+
+## AMBIGUOUS (judgment calls the EA made — reverse any you disagree with)
+1. **insurance-resource-center deleted (EN + ES).** This page (and its 4 roof-insurance PDFs) was a 100% Peak 301 funnel — every CTA was "get Peak 301", breadcrumb nested it under Peak 301. With the service gone it had no offering, so it was hard-deleted and 410'd. If you want to keep a Florida-roof-insurance content page reframed around something else, say so and it can be rebuilt.
+2. **referral page "FOR INSURANCE AGENTS" section reframed, not deleted.** Its copy was entirely about roof-age non-renewal → Peak 301. Rather than delete the rendered section (risky JS surgery), the copy was rewritten to point insurance agents at general exterior referrals (gutters/soffit/fascia/drainage after a claim or inspection). If you'd rather drop that section entirely, it can be removed.
+3. **roi-calculator.html "Roof" tab removed.** /roi-calculator.html is a standalone, unlinked static tool with a Gutters/Guards/Soffit/Roof/Summary tabbed layout. The Roof tab was a Peak 301 + roof-insurance ROI section; it was surgically removed (button, section, JS, and the roof/insurance terms in the Summary aggregation). The JS was syntax-checked but this file is NOT processed by `npm run build`, so please open https://www.jronegutters.com/roi-calculator.html once after deploy and click each remaining tab to confirm it still works.
+
+## EAPOPEYE scope-source edits are UNCOMMITTED working-tree changes
+The brand brain (`references/brand-brains/jrone.md`) and the SEO runner config (`.claude/skills/seo-aeo-runner/configs/jrone.yaml`) were edited to drop Peak 301 and mark it NOT-offered, but were left uncommitted because the EAPOPEYE repo is on an unrelated branch (`tiktok-autoposter-20260529`) with other in-flight work. Commit them with your next EAPOPEYE commit.
+
+## Historical archives intentionally left as-is
+`references/cc-history/*` (chat-history exports) and `references/claude-projects/jr-one-aluminum-llc-docs/*` (frozen imported artifacts incl. `jr-one-peak301-page.jsx`, `JR_One_Peak301_Insurance_Blog_Posts.docx`) still mention Peak 301 as a historical record. These are not live scope sources and will not regenerate the service. Left untouched on purpose (don't rewrite history). The one file-listing in `references/claude-projects/jr-one-aluminum-llc.md` (lines listing those archived filenames) was also left as an accurate inventory.
+
+## Code cleanup (non-breaking, low priority)
+- `email_shell.py` `HERO_PRESETS` still contains a `peak301` hero preset that is now unused (the brand brain notes it is retired). Remove it from `~/Desktop/JRONE/jrone-outreach/scripts/email_shell.py` when convenient. It does not break anything as long as no email references it.
+- Pre-existing unrelated test failure: `tests/send-lead-utils.test.js` `normalizePhone("0551234567")` fails (phone-formatting edge case). This is NOT caused by the Peak 301 work (that function was untouched); all `mapServiceToProjectType` tests pass. Flagged for separate fix.
