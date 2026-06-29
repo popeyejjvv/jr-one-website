@@ -19,7 +19,6 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
-import Peak301Alert from "../../components/ui/Peak301Alert";
 import { CheckCircleIcon, PhoneIcon } from "../../lib/icons";
 
 const T = {
@@ -423,8 +422,6 @@ export default function SeamlessGuttersPage({ portfolio = null }) {
           </Container>
         </section>
 
-        {/* ── PEAK 301 ALERT ── */}
-        <Peak301Alert />
 
         {/* ── QUOTE FORM ── */}
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>

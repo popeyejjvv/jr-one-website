@@ -18,7 +18,6 @@ import CTABand from "../../components/ui/CTABand";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
-import Peak301Alert from "../../components/ui/Peak301Alert";
 import { CheckCircleIcon, PhoneIcon, ClockIcon } from "../../lib/icons";
 
 const T = {
@@ -371,7 +370,6 @@ export default function GutterCleaningPage() {
           </Container>
         </section>
 
-        <Peak301Alert />
 
         <section id="quote-form" style={{ background: "linear-gradient(165deg, var(--jr-navy), var(--jr-navy-2))", padding: "var(--jr-space-20) 0" }}>
           <Container size="narrow">

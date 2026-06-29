@@ -20,7 +20,6 @@ import Button from "../../components/ui/Button";
 import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import FAQAccordion from "../../components/ui/FAQAccordion";
-import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -314,8 +313,6 @@ export default function DrainageAssessmentPage() {
           </Container>
         </section>
 
-        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
-        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>

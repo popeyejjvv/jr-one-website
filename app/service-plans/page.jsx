@@ -16,7 +16,6 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import CTABand from "../../components/ui/CTABand";
-import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   CheckIcon,
@@ -546,8 +545,6 @@ export default function ServicePlansPage() {
           </Container>
         </section>
 
-        {/* PEAK 301 ALERT */}
-        <Peak301Alert />
 
         {/* GOLD STANDARD */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>
