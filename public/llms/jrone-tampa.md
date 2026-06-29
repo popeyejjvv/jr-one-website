@@ -56,7 +56,6 @@ Common Tampa-specific issues JR One Aluminum resolves:
 - Drainage solutions (Schedule 40 PVC, catch basins, surface grates, pop-up emitters; no french drains, no channel drains, no dry wells)
 - Gutter cleaning and maintenance
 - Gutter repair and downspout repair
-- Peak 301 roof rejuvenation
 - Govee permanent exterior LED lighting
 - Patio screen enclosures
 - Insurance claim assessment and repair

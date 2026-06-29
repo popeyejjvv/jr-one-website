@@ -55,7 +55,6 @@ St. Pete has three distinct aluminum-work universes: downtown and historic neigh
 - Drainage solutions for low-lying neighborhoods
 - Gutter cleaning and maintenance
 - Gutter repair and downspout services
-- Peak 301 roof rejuvenation
 - Insurance claim support for hurricane damage
 
 ---
