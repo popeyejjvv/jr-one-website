@@ -11,7 +11,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Terminos de Servicio",
-  description: "Los terminos que rigen el uso de jronegutters.com y los estimados, propuestas y servicios de JR One Aluminum LLC en Tampa Bay. Canaletas, sofito, fascia, drenaje y Peak 301. (844) 444-3114.",
+  description: "Los terminos que rigen el uso de jronegutters.com y los estimados, propuestas y servicios de JR One Aluminum LLC en Tampa Bay. Canaletas, sofito, fascia y drenaje. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/terminos-servicio",
     languages: {
@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Terminos de Servicio",
-    description: "Los terminos que rigen el uso de jronegutters.com y los estimados, propuestas y servicios de JR One Aluminum LLC en Tampa Bay. Canaletas, sofito, fascia, drenaje y Peak 301. (844) 444-3114.",
+    description: "Los terminos que rigen el uso de jronegutters.com y los estimados, propuestas y servicios de JR One Aluminum LLC en Tampa Bay. Canaletas, sofito, fascia y drenaje. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/terminos-servicio",
     type: "website",
     locale: "es_US",

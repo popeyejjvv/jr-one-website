@@ -34,8 +34,6 @@ function mapServiceToProjectType(service) {
   if (s.includes("soffit") || s.includes("fascia")) return "Soffit and Fascia";
   if (s.includes("siding")) return "Siding";
   if (s.includes("sagiper")) return "Siding";
-  if (s.includes("peak") || s.includes("301") || s.includes("rejuven"))
-    return "Peak 301";
   if (s.includes("govee") || s.includes("light")) return "Govee Lights";
   if (s.includes("drainage") || s.includes("drain")) return "Drainage";
   if (s.includes("service plan") || s.includes("maintenance"))
@@ -123,11 +121,6 @@ test("mapServiceToProjectType() - 'Soffit and Fascia'", () => {
 test("mapServiceToProjectType() - 'Siding'", () => {
   const result = mapServiceToProjectType("siding");
   assert.equal(result, "Siding");
-});
-
-test("mapServiceToProjectType() - 'Peak 301'", () => {
-  const result = mapServiceToProjectType("Peak 301 Rejuvenation");
-  assert.equal(result, "Peak 301");
 });
 
 test("mapServiceToProjectType() - 'Govee Lights'", () => {

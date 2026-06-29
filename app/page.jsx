@@ -29,7 +29,7 @@ const T = {
     heroH1b: "Done Once.",
     heroH1c: "Guaranteed.",
     heroSub:
-      "Gutters, soffit, fascia, drainage, and Peak 301 roof rejuvenation. Installed by our own crews, never subcontractors. Family-owned, over 30 years in the trade.",
+      "Gutters, soffit, fascia, and drainage. Installed by our own crews, never subcontractors. Family-owned, over 30 years in the trade.",
     formTitle: "Get Your Free Quote",
     formName: "Full Name",
     formPhone: "Phone Number",
@@ -40,7 +40,7 @@ const T = {
     formNote: "No spam. No pressure.",
     formSent: "Quote Request Received",
     formSentSub: "We'll get back to you within hours. In the meantime, try our instant estimator below.",
-    serviceOpt: ["Select a service...", "Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "HOA Contracts", "Rental Property Maintenance", "Other / Not Sure"],
+    serviceOpt: ["Select a service...", "Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "HOA Contracts", "Rental Property Maintenance", "Other / Not Sure"],
     trustBadges: [
       { emoji: "⏱", label: "Family-Owned", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
       { emoji: "⭐", label: "4.9★ Rating", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
@@ -59,7 +59,7 @@ const T = {
     ],
     servicesEyebrow: "What We Do",
     servicesTitle: "What We Do",
-    servicesSub: "Gutters, soffit, fascia, drainage, and Peak 301. Tampa Bay specialty trade.",
+    servicesSub: "Gutters, soffit, fascia, and drainage. Tampa Bay specialty trade.",
     serviceCards: [
       { icon: "💧", title: "Seamless Gutters", desc: "Custom-fabricated on-site for a perfect fit. 6\" and 7\" systems in your choice of color.", link: "/seamless-aluminum-gutters" },
       { icon: "🛡️", title: "Gutter Guards", desc: "Stop climbing ladders. Our guard systems keep debris out and water flowing.", link: "/gutter-guards" },
@@ -117,7 +117,7 @@ const T = {
     heroH1b: "Una Sola Vez.",
     heroH1c: "Garantizado.",
     heroSub:
-      "Canaletas, sofito, fascia, drenaje y rejuvenecimiento Peak 301. Instalado por nuestro propio equipo, nunca subcontratistas. Empresa familiar, más de 30 años en el oficio.",
+      "Canaletas, sofito, fascia y drenaje. Instalado por nuestro propio equipo, nunca subcontratistas. Empresa familiar, más de 30 años en el oficio.",
     formTitle: "Obtenga Su Cotización Gratis",
     formName: "Nombre Completo",
     formPhone: "Número de Teléfono",
@@ -128,7 +128,7 @@ const T = {
     formNote: "Sin spam. Sin presión.",
     formSent: "Solicitud Recibida",
     formSentSub: "Le responderemos en horas. Mientras tanto, pruebe nuestro estimador instantáneo.",
-    serviceOpt: ["Seleccione un servicio...", "Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Contratos HOA", "Mantenimiento de Alquileres", "Otro / No Estoy Seguro"],
+    serviceOpt: ["Seleccione un servicio...", "Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Contratos HOA", "Mantenimiento de Alquileres", "Otro / No Estoy Seguro"],
     trustBadges: [
       { emoji: "⏱", label: "Empresa Familiar", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
       { emoji: "⭐", label: "4.9★ Calificación", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
@@ -147,7 +147,7 @@ const T = {
     ],
     servicesEyebrow: "Lo Que Hacemos",
     servicesTitle: "Lo Que Hacemos",
-    servicesSub: "Canaletas, sofito, fascia, drenaje y Peak 301. Oficio especializado en Tampa Bay.",
+    servicesSub: "Canaletas, sofito, fascia y drenaje. Oficio especializado en Tampa Bay.",
     serviceCards: [
       { icon: "💧", title: "Canaletas Sin Costura", desc: "Fabricadas a medida en el sitio. Sistemas de 6\" y 7\" en el color de su elección.", link: "/seamless-aluminum-gutters" },
       { icon: "🛡️", title: "Protectores de Canaletas", desc: "Deje de subir escaleras. Nuestros protectores mantienen los escombros afuera y el agua fluyendo.", link: "/gutter-guards" },

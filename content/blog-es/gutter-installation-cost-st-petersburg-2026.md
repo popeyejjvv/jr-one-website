@@ -162,7 +162,7 @@ Consejos clave para los reclamos por daño de tormenta en St. Pete:
 - **Obtenga el alcance del trabajo del ajustador por escrito** antes de empezar las reparaciones
 - **Guarde todos los recibos** de materiales, mano de obra y desecho
 
-Hemos trabajado decenas de reclamos por daño de tormenta en St. Pete durante la última década. Vea nuestro [centro de recursos de seguros](/es/centro-recursos-seguros) para conocer el proceso completo del reclamo y la guía para elegir contratista.
+Hemos trabajado decenas de reclamos por daño de tormenta en St. Pete durante la última década y podemos documentar el alcance para su ajustador.
 
 ## Cuándo reemplazar las canaletas en St. Petersburg
 

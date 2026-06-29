@@ -15,7 +15,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Terms of Service",
   description:
-    "The terms that govern use of jronegutters.com and JR One Aluminum LLC estimates, proposals, and services across Tampa Bay. Gutters, soffit, fascia, drainage, and Peak 301.",
+    "The terms that govern use of jronegutters.com and JR One Aluminum LLC estimates, proposals, and services across Tampa Bay. Gutters, soffit, fascia, and drainage.",
   alternates: {
     canonical: "https://www.jronegutters.com/terms-of-service",
     languages: {

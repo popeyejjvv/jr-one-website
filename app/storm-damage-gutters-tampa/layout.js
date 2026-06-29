@@ -1,6 +1,6 @@
 // Server-side metadata + JSON-LD for /storm-damage-gutters-tampa.
 // Hurricane-season landing. Brand-brain compliant: 6"+7" only, no french drains,
-// Peak 301 shingle-only, locked phone (844) 444-3114, hreflang to /es/ counterpart.
+// locked phone (844) 444-3114, hreflang to /es/ counterpart.
 
 const serviceSchema = {
   "@context": "https://schema.org",

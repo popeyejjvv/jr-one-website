@@ -11,13 +11,13 @@ import { PhoneIcon, MailIcon, MapPinIcon } from "../lib/icons";
 import { localizeHref } from "../lib/locale";
 
 const SERVICE_NAMES = {
-  en: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "7-Inch Gutters"],
-  es: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Canaletas de 7 Pulgadas"],
+  en: ["Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Guards", "Gutter Repair", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "7-Inch Gutters"],
+  es: ["Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Protectores de Canaletas", "Reparación de Canaletas", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Canaletas de 7 Pulgadas"],
 };
 
 const SERVICE_HREFS = [
   "/copper-gutters", "/drainage-assessment", "/govee-lights", "/gutter-guards",
-  "/gutter-repair", "/peak-301", "/sagiper", "/seamless-aluminum-gutters",
+  "/gutter-repair", "/sagiper", "/seamless-aluminum-gutters",
   "/service-plans", "/siding", "/soffit-and-fascia", "/specialty-gutters",
   "/7-inch-gutters",
 ];
@@ -25,7 +25,7 @@ const SERVICE_HREFS = [
 const T = {
   en: {
     tagline: "Family-Owned. Over 30 Years in the Trade.",
-    description: "A Tampa Bay specialty trade contractor. Gutters, soffit, fascia, drainage, and Peak 301 roof rejuvenation. Fully insured.",
+    description: "A Tampa Bay specialty trade contractor. Gutters, soffit, fascia, and drainage. Fully insured.",
     services: "Services",
     serviceAreas: "Service Areas",
     contact: "Contact",
@@ -37,7 +37,6 @@ const T = {
       { label: "About Us", href: "/about" },
       { label: "FAQ", href: "/faq" },
       { label: "Financing", href: "/financing" },
-      { label: "Insurance Resource Center", href: "/insurance-resource-center" },
       { label: "Blog", href: "/blog" },
       { label: "Image License", href: "/image-license" },
     ],
@@ -48,7 +47,7 @@ const T = {
   },
   es: {
     tagline: "Empresa familiar. Más de 30 años en el oficio.",
-    description: "Un contratista especialista de Tampa Bay. Canaletas, sofito, fascia, drenaje y rejuvenecimiento Peak 301. Totalmente asegurados.",
+    description: "Un contratista especialista de Tampa Bay. Canaletas, sofito, fascia y drenaje. Totalmente asegurados.",
     services: "Servicios",
     serviceAreas: "Áreas de Servicio",
     contact: "Contacto",
@@ -60,7 +59,6 @@ const T = {
       { label: "Sobre Nosotros", href: "/about" },
       { label: "Preguntas Frecuentes", href: "/faq" },
       { label: "Financiamiento", href: "/financing" },
-      { label: "Centro de Recursos de Seguros", href: "/insurance-resource-center" },
       { label: "Blog", href: "/blog" },
       { label: "Licencia de Imágenes", href: "/image-license" },
     ],

@@ -6,7 +6,7 @@ export const runtime = "edge";
 // (no apex->www redirect to confuse the edge fetch, no data-URI embedding
 // to fight Satori's image decoder).
 const HERO_URL = "https://www.jronegutters.com/og/hero.jpg";
-export const alt = "JR One Aluminum LLC. Tampa Bay seamless gutters, soffit, fascia, drainage, Peak 301 roof rejuvenation. Family-owned, 30+ years.";
+export const alt = "JR One Aluminum LLC. Tampa Bay seamless gutters, soffit, fascia, drainage. Family-owned, 30+ years.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -179,7 +179,7 @@ export default function Image() {
               display: "flex",
             }}
           >
-            Seamless gutters. Soffit. Fascia. Drainage. Peak 301.
+            Seamless gutters. Soffit. Fascia. Drainage.
           </div>
         </div>
 
