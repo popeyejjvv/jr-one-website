@@ -39,7 +39,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "7-Inch Oversized Gutters Tampa",
   description:
-    "Oversized 7\" seamless aluminum gutters for Tampa Bay luxury homes, large roof areas, and steep-pitch properties. Commercial-grade water capacity. Premium upcharge vs 6\", lifetime protection. (844) 444-3114.",
+    "Oversized 7-inch seamless aluminum gutters for Tampa Bay luxury homes and large or steep roofs. Commercial-grade capacity. Free estimate (844) 444-3114.",
   keywords: "7 inch gutters Tampa, oversized gutters Florida, South Tampa luxury gutters, commercial grade residential gutters, 7 inch seamless aluminum Tampa Bay, upgrade from 6 inch gutter",
   alternates: {
     canonical: "https://www.jronegutters.com/7-inch-gutters",

@@ -119,3 +119,98 @@ The brand brain (`references/brand-brains/jrone.md`) and the SEO runner config (
 ## Code cleanup (non-breaking, low priority)
 - `email_shell.py` `HERO_PRESETS` still contains a `peak301` hero preset that is now unused (the brand brain notes it is retired). Remove it from `~/Desktop/JRONE/jrone-outreach/scripts/email_shell.py` when convenient. It does not break anything as long as no email references it.
 - Pre-existing unrelated test failure: `tests/send-lead-utils.test.js` `normalizePhone("0551234567")` fails (phone-formatting edge case). This is NOT caused by the Peak 301 work (that function was untouched); all `mapServiceToProjectType` tests pass. Flagged for separate fix.
+
+===========================================================================
+## 2026-06-29 AUDIT FIX PASS - DECISIONS FOR CHRISTOPHER
+===========================================================================
+
+### TOP GATE - SHIP THE WEBSITE FIXES TO PRODUCTION (your go)
+All website audit fixes are committed on branch `fix-brand-and-audit-2026-06-29` and the
+production build passes clean (446 pages, exit 0). I did NOT auto-push to production for two
+reasons: (1) your instruction gated deploy on "build AND tests pass" and the test suite has
+pre-existing edge-case failures I did not introduce (see DEFERRED 14), and (2) this is the
+only cashflow site. Nothing brand-unsafe is waiting on this deploy - the website has no Peak
+301; the urgent Peak 301 fixes are in the automation scripts and are already live on disk.
+To ship the website SEO fixes, run from /Users/popeye/Desktop/JRONE/jr-one-website:
+```
+git checkout main && git merge --no-ff fix-brand-and-audit-2026-06-29
+git push origin main
+vercel --prod
+vercel alias set <deployment-url> www.jronegutters.com
+vercel alias set <deployment-url> jronegutters.com
+```
+Then fire IndexNow for the changed pages (the key is live). Recommendation: ship it - the
+changes are surgical and build-verified.
+
+### CREDENTIALS (need your login)
+1. GSC service-account JSON (TOP unblocked SEO item). The runner's google libraries are now
+   restored and the import crash is fixed, but GOOGLE_SEARCH_CONSOLE_OAUTH_JSON in
+   .claude/skills/seo-aeo-runner/.env is still EMPTY, so Monday rank_delta reaches the auth
+   step and fails there until you add it. Steps: (a) Google Cloud Console, create a service
+   account, create a JSON key, save it OUTSIDE iCloud (e.g. ~/.jrone/creds/gsc-service-account.json);
+   (b) in Search Console for sc-domain:jronegutters.com, Settings, Users and permissions, add
+   the service-account email as a Full user; (c) set GOOGLE_SEARCH_CONSOLE_OAUTH_JSON to that
+   path in the runner .env. Recommendation: do this - it is the last blocker on live rank tracking.
+2. GBP captions are shipping STATIC fallback strings (not LLM-varied voice) because the launchd
+   environment has no ANTHROPIC_API_KEY, so the Haiku call fails every fire and falls back. The
+   fallback strings are now clean and on-brand (Peak 301 removed + guard-blocked), so this is
+   brand-SAFE. If you want the richer per-post LLM voice back, add ANTHROPIC_API_KEY to the
+   runner/poster launchd environment. Recommendation: optional; the clean fallback is fine.
+
+### SPEND
+3. jrone-competitor-watch is dead since 2026-05-25 (Firecrawl at 0 credits). Options: A upgrade
+   Firecrawl Hobby ~$16/mo, B cut targets.json to a smaller free tier, C pause the skill.
+   Recommendation: A if you want weekly competitor intel back, else C.
+
+### EXTERNAL CLAIMS (one-time manual)
+4. Apple Business Connect - JR One has NO Apple Maps / Siri presence. Claim the free listing at
+   business.apple.com with your Apple ID, match NAP to the Google Business Profile.
+   Recommendation: claim it, free Apple-device lead channel.
+5. Bing Webmaster - not verified/wired. Only worth it if you want Bing rank read-back; IndexNow
+   already feeds Bing's crawler. Recommendation: skip unless you want Bing rank data.
+
+### CONTENT DECISIONS (your call - not changed)
+6. Thin combo pages (192 of 232 near-duplicate; siding + drainage-assessment have zero
+   enrichment = 58 pages). Options: A enrich with real local data, B prune generateStaticParams
+   to enriched-only and let the rest 404 (start with the 58 zero-enrichment siding/drainage), C
+   leave as-is and accept the Helpful-Content risk. Recommendation: B for siding/drainage now,
+   phased A for the partially-enriched services.
+7. ES combo mirror (203 EN city-by-service pages have no Spanish version). Build only if ES
+   long-tail demand is validated (check GSC ES impressions first). Recommendation: validate first.
+8. Served footprint contradiction: the site claims Sarasota (dedicated pages) but the brand
+   brain names Polk instead. Tell me the REAL counties and I reconcile brand brain + llms files
+   + schema to match.
+9. Drainage accessories: the LLM file lists splash guards + downspout extensions beyond the
+   brand brain's locked four-item drainage scope. Keep and add to the brand brain, or trim. Your call.
+10. GBP + IG post-text are EN-only by your prior explicit decision (GBP 2026-04-28; IG handled
+    in-video). The brand spec says homeowner-facing should be EN+ES. Want GBP/IG flipped to
+    bilingual post-text, or keep EN-only? Recommendation: keep EN-only unless you want the change.
+11. Founder name: I set the schema to "Christopher Rivera" (no middle initial) to match every
+    other surface. If the intended form is "Christopher J Rivera", tell me and I revert.
+12. A discovery hashtag "#TampaRoofing" remains in the IG hashtag pool. Not a service claim (you
+    do no roofing) but roofing-adjacent. Remove it? Recommendation: remove to avoid mixed signal.
+
+### DEFERRED (planned, not urgent)
+13. Orphan iCloud venv (213 MB) at .claude/skills/seo-aeo-runner/.venv is dead (deps now pinned
+    in pyproject; nothing references it). The rm was declined this session. Remove when convenient:
+    rm -rf ~/Desktop/EAPOPEYE/.claude/skills/seo-aeo-runner/.venv
+14. Test-suite triage: 4 of 5 website test suites have a few pre-existing red EDGE-CASE assertions
+    (malformed 9-digit phone in send-lead-utils, a category-map case in estimator-utils, etc).
+    These are stale test expectations, NOT intake regressions (the main integration tests pass)
+    and predate this pass. Triage to classify stale-assertion vs real bug, then green up npm test.
+15. batch-012-maintenance-push/send_preview_samples.py rolls its OWN gmail send (bypasses the
+    branded chokepoint) and still has a peak301 sample. It is an OPERATOR preview tool, NOT
+    scheduled in any launchagent, so it cannot fire on its own. Delete it or route it through
+    send_prebuilt_branded so it is scope-gated too.
+16. middleware.js to proxy.js rename (Next.js deprecation warning) - do at the next Next.js
+    upgrade. All-pages-dynamic SSR (A3) - measure before changing; current behavior is intentional
+    for the <html lang> logic.
+17. FAQPage-strip deadline: combo pages emit FAQPage JSON-LD with a code-comment TODO to strip it
+    before Google's Aug 2026 FAQPage rich-result removal (target 2026-07-15). Tracked here so it
+    is not lost in a code comment.
+18. EAPOPEYE-side changes (brand brain, jrone-voice-spec.md, jrone_brand_guard.py, seo-aeo-runner,
+    social-autopost-runner) are LIVE on disk and effective immediately for the runners, but were
+    left UNCOMMITTED because the EAPOPEYE repo is mid-flight on branch tiktok-autoposter-20260529
+    with 204 unrelated dirty files. Commit them with your next EAPOPEYE commit. The social-pipeline
+    and jrone-outreach trees are not git repos; their changes are logged in decisions-log.md. (The
+    email_shell peak301 hero flagged in the older "Code cleanup" note above is now REMOVED.)

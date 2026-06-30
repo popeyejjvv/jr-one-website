@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "node --test tests/",
+    "lint": "next lint"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

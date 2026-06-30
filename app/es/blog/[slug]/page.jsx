@@ -56,15 +56,23 @@ export default async function EsBlogPostPage({ params }) {
     ],
   };
 
+  // image, dateModified, publisher.logo added 2026-06-29 (E1) for Article rich-result eligibility.
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     inLanguage: "es-US",
     headline: post.title,
     description: post.description,
+    image: post.image ? `https://www.jronegutters.com${post.image}` : "https://www.jronegutters.com/og/og-card.png",
     datePublished: post.date,
+    dateModified: post.dateModified || post.date,
     author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
-    publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
+    publisher: {
+      "@type": "Organization",
+      name: "JR One Aluminum LLC",
+      url: "https://www.jronegutters.com",
+      logo: { "@type": "ImageObject", url: "https://www.jronegutters.com/og/og-card.png" },
+    },
     mainEntityOfPage: `https://www.jronegutters.com/es/blog/${slug}`,
   };
 

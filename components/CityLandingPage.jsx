@@ -302,6 +302,10 @@ const SERVICES = [
   { icon: "edge", title: "Soffit and Fascia Tampa Bay", ctaPhrase: "soffit and fascia replacement", desc: "Aluminum and vinyl protection for your roof edge across Tampa, Clearwater, St Pete.", link: "/soffit-and-fascia", comboSlug: "soffit-and-fascia" },
   { icon: "wrench", title: "Gutter Repair Tampa", ctaPhrase: "gutter repair", desc: "Fix leaks, sagging, and overflow across Tampa Bay. Done right the first time.", link: "/gutter-repair", comboSlug: "gutter-repair" },
   { icon: "ruler", title: "Siding", ctaPhrase: "siding installation", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding", comboSlug: "siding" },
+  // 3 combo services linked from the city page (2026-06-29 audit C3): gutter-cleaning is the most-enriched service yet was unlinked.
+  { icon: "broom", title: "Gutter Cleaning Tampa Bay", ctaPhrase: "gutter cleaning", desc: "Debris removal, downspout flushing, and a flow test on every run.", link: "/gutter-cleaning", comboSlug: "gutter-cleaning" },
+  { icon: "water", title: "Copper Gutters", ctaPhrase: "copper gutter installation", desc: "Half-round and K-style copper with soldered, leak-free seams.", link: "/copper-gutters", comboSlug: "copper-gutters" },
+  { icon: "house", title: "Drainage Assessment", ctaPhrase: "drainage assessment", desc: "Underground PVC, catch basins, surface grates, and pop-up emitters.", link: "/drainage-assessment", comboSlug: "drainage-assessment" },
   { icon: "wrench", title: "Storm Damage Repair", ctaPhrase: "storm damage repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
 ];
 
@@ -521,6 +525,10 @@ const SERVICES_ES = [
   { icon: "edge", title: "Sofitos y Fascias", ctaPhrase: "reemplazo de sofito y fascia", desc: "Proteccion de aluminio y vinilo para el borde de su techo.", link: "/soffit-and-fascia", comboSlug: "soffit-and-fascia" },
   { icon: "wrench", title: "Reparacion de Canaletas", ctaPhrase: "reparacion de canaletas", desc: "Arreglamos fugas, hundimientos y desbordamientos. Bien hecho a la primera.", link: "/gutter-repair", comboSlug: "gutter-repair" },
   { icon: "ruler", title: "Revestimiento", ctaPhrase: "instalacion de revestimiento", desc: "Revestimiento de vinilo y aluminio construido para el clima de Florida.", link: "/siding", comboSlug: "siding" },
+  // 3 servicios enlazados desde la pagina de ciudad (auditoria 2026-06-29 C3).
+  { icon: "broom", title: "Limpieza de Canaletas", ctaPhrase: "limpieza de canaletas", desc: "Remoción de escombros, limpieza de bajantes y prueba de flujo en cada tramo.", link: "/gutter-cleaning", comboSlug: "gutter-cleaning" },
+  { icon: "water", title: "Canaletas de Cobre", ctaPhrase: "instalacion de canaletas de cobre", desc: "Cobre de media caña y estilo K con uniones soldadas sin fugas.", link: "/copper-gutters", comboSlug: "copper-gutters" },
+  { icon: "house", title: "Evaluación de Drenaje", ctaPhrase: "evaluacion de drenaje", desc: "PVC subterráneo, cuencas colectoras, rejillas de superficie y emisores emergentes.", link: "/drainage-assessment", comboSlug: "drainage-assessment" },
   { icon: "wrench", title: "Reparacion por Dano de Tormenta", ctaPhrase: "reparacion por dano de tormenta", desc: "Instalacion misma semana despues de tormentas con nombre. Documentacion de reclamo para su ajustador.", link: "/es/canaletas-dano-tormenta-tampa" },
 ];
 

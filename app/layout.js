@@ -22,7 +22,7 @@ const sourceSans = Source_Sans_3({
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  "@id": "https://jronegutters.com/#business",
+  "@id": "https://www.jronegutters.com/#business",
   name: "JR One Aluminum LLC",
   alternateName: [
     "JR One Gutters",
@@ -115,7 +115,7 @@ const localBusinessSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://jronegutters.com/#organization",
+  "@id": "https://www.jronegutters.com/#organization",
   name: "JR One Aluminum LLC",
   alternateName: [
     "JR One Gutters",
@@ -129,7 +129,7 @@ const organizationSchema = {
   logo: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
   description: "Family-owned Tampa Bay aluminum specialty contractor. Seamless gutters (6 inch and 7 inch only), soffit, fascia, and drainage. Over 30 years in the trade.",
   foundingDate: "2006",
-  founders: [{ "@type": "Person", name: "Christopher J Rivera" }],
+  founders: [{ "@type": "Person", name: "Christopher Rivera" }],
   sameAs: [
     "https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/",
     "https://www.instagram.com/jronegutters",
@@ -148,12 +148,12 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://jronegutters.com/#website",
+  "@id": "https://www.jronegutters.com/#website",
   url: "https://www.jronegutters.com",
   name: "JR One Aluminum",
   alternateName: ["JR One Gutters", "JR Aluminum", "JR Gutters"],
   inLanguage: ["en-US", "es-US"],
-  publisher: { "@id": "https://jronegutters.com/#organization" },
+  publisher: { "@id": "https://www.jronegutters.com/#organization" },
 };
 
 export const metadata = {

@@ -45,7 +45,8 @@ export default async function BlogPostPage({ params }) {
     .filter((p) => p.category === post.category && p.slug !== slug)
     .slice(0, 3);
 
-  // Build FAQ schema if FAQs exist
+  // No FAQPage JSON-LD on blog posts: FAQ content renders as visible on-page text (AEO),
+  // and FAQPage rich results were deprecated site-wide per the 2026-05-26 audit. 2026-06-29 (E5).
 
   // Breadcrumb schema for blog posts
   const breadcrumbSchema = {
@@ -59,14 +60,23 @@ export default async function BlogPostPage({ params }) {
   };
 
   // Article schema for rich results
+  // image, dateModified, publisher.logo added 2026-06-29 (E1) for Article rich-result eligibility.
+  // Per-post image falls back to the brand OG card when frontmatter has none.
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.description,
+    image: post.image ? `https://www.jronegutters.com${post.image}` : "https://www.jronegutters.com/og/og-card.png",
     datePublished: post.date,
+    dateModified: post.dateModified || post.date,
     author: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
-    publisher: { "@type": "Organization", name: "JR One Aluminum LLC", url: "https://www.jronegutters.com" },
+    publisher: {
+      "@type": "Organization",
+      name: "JR One Aluminum LLC",
+      url: "https://www.jronegutters.com",
+      logo: { "@type": "ImageObject", url: "https://www.jronegutters.com/og/og-card.png" },
+    },
     mainEntityOfPage: `https://www.jronegutters.com/blog/${slug}`,
   };
 

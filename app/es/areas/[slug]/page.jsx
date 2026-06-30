@@ -21,6 +21,11 @@ export async function generateStaticParams() {
   return VALID_SLUGS.map((slug) => ({ slug }));
 }
 
+// Only the enumerated VALID_SLUGS resolve; any other slug returns a real 404
+// instead of a soft-404 city page (kills unlimited junk indexable URLs).
+// Mirrors the EN guard at app/areas/[slug]/page.jsx. 2026-06-29 audit (A1 + D2).
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const cityName = slugToCity(slug);

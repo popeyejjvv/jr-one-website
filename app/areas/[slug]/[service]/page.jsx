@@ -1080,7 +1080,7 @@ export async function generateMetadata({ params }) {
       `${svc.short} installation ${city.name} FL`,
     ],
     openGraph: {
-      title: `${svc.name}, ${city.name}, FL`,
+      title: `${svc.name} in ${city.name}, FL`,
       description: `${svc.name} in ${city.name}, FL. Specialist aluminum contractor, over 30 years experience. (844) 444-3114.`,
       url,
       type: "website",
@@ -1264,9 +1264,11 @@ export default async function CityServicePage({ params }) {
 
         {/* Trust strip */}
         <section style={{ padding: "40px 20px", textAlign: "center" }}>
+          {/* 2026-06-29 audit C4: removed the unsourced "4.9 / 5.0 from 55 reviews" claim
+              (no source of truth; aggregateRating schema was already stripped 2026-05-26).
+              Replaced with the brand-brain trust line. */}
           <div style={{ display: "inline-flex", alignItems: "center", gap: "14px", padding: "14px 26px", background: C.navyMid, borderRadius: "10px", border: `1px solid ${C.gold}` }}>
-            <span style={{ color: C.gold, fontSize: "18px", letterSpacing: "2px" }}>★★★★★</span>
-            <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>4.9 / 5.0 from 55 reviews</span>
+            <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>Family-owned, over 30 years in the trade</span>
             <span style={{ color: C.muted, fontSize: "14px" }}>Fully insured / Bilingual EN/ES</span>
           </div>
         </section>
