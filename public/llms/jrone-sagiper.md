@@ -10,7 +10,13 @@
 
 ## What Is Sagiper?
 
-Sagiper is a premium Canadian-engineered PVC exterior cladding and soffit system built for high-performance, high-aesthetic applications where standard vinyl or aluminum soffit can't meet the design brief. Sagiper's cellular PVC construction looks like real wood - with deep grain texture, rich color saturation, and a premium profile - but performs like PVC: zero rot, zero warp, zero paint maintenance, and zero pest vulnerability.
+<!-- NOTE (2026-07-04 audit fix): SAGIPER country of origin is UNCONFIRMED. The site
+previously claimed both "Engineered in Portugal / manufactured in Plant City, FL" and
+"Canadian-engineered / Manufactured in Canada". Origin claims neutralized to
+"European-engineered" - Popeye must confirm the true origin before restoring any
+specific country claim. -->
+
+Sagiper is a premium European-engineered PVC exterior cladding and soffit system built for high-performance, high-aesthetic applications where standard vinyl or aluminum soffit can't meet the design brief. Sagiper's cellular PVC construction looks like real wood - with deep grain texture, rich color saturation, and a premium profile - but performs like PVC: zero rot, zero warp, virtually zero maintenance, and zero pest vulnerability.
 
 ---
 
@@ -23,7 +29,7 @@ Most soffit options compromise on one of three axes: appearance, durability, or 
 - **UV stable** - engineered to not chalk, fade, or yellow under Florida sun
 - **Termite-proof, rot-proof, pest-proof** - PVC doesn't feed or rot
 - **Wood-grain texture** - passes as real wood in architectural photography and curb appeal
-- **Manufactured in Canada** - premium material standards, consistent quality
+- **European-engineered** - premium material standards, consistent quality
 
 ---
 
@@ -44,7 +50,7 @@ Most soffit options compromise on one of three axes: appearance, durability, or 
 |--------|---------|----------------|--------------|------------------------|
 | Aesthetic | Premium wood-grain | Utilitarian | Utilitarian | Premium natural |
 | Florida humidity performance | Excellent | Excellent | Good | Poor (rots) |
-| Maintenance | Zero | Zero | Zero | High (paint, seal) |
+| Maintenance | Virtually zero | Low | Low | High (paint, seal) |
 | UV resistance | Excellent | Excellent | Good | Poor (fades) |
 | Pest resistance | Excellent | Excellent | Excellent | Poor |
 | Cost | Premium | Standard | Budget | Premium |
@@ -68,7 +74,7 @@ If the design brief calls for the look of real wood soffit or ceiling cladding a
 A: Sagiper is a premium material with a premium price - typically several times the cost of standard aluminum or vinyl soffit per linear foot. Contact JR One Aluminum at (844) 444-3114 for a project-specific quote.
 
 **Q: How long does Sagiper last?**
-A: Sagiper carries a manufacturer warranty of 30+ years and is engineered to last decades with zero maintenance. No painting, no sealing, no repair schedule.
+A: Sagiper carries a manufacturer warranty of 30+ years and is engineered to last decades with virtually zero maintenance. No painting, no sealing, no repair schedule.
 
 **Q: Can Sagiper be installed on an existing porch or lanai ceiling?**
 A: Yes. Sagiper is commonly retrofitted onto existing porch, patio, and lanai ceilings to upgrade the aesthetic.
@@ -77,7 +83,7 @@ A: Yes. Sagiper is commonly retrofitted onto existing porch, patio, and lanai ce
 A: Yes - from a few feet away it's convincingly wood. The grain texture is molded into the cellular PVC, not a surface print that can wear off.
 
 **Q: Is Sagiper worth the premium over aluminum or vinyl soffit?**
-A: For the right home - where the ceiling is visible, the aesthetic matters, and the homeowner wants zero maintenance - yes. For typical soffit work behind a gutter, aluminum is the practical choice.
+A: For the right home - where the ceiling is visible, the aesthetic matters, and the homeowner wants virtually zero maintenance - yes. For typical soffit work behind a gutter, aluminum is the practical choice.
 
 **Q: Do you install Sagiper on commercial projects?**
 A: Yes. Commercial outdoor dining areas, hotel lanais, and architectural retail projects are common Sagiper applications.

@@ -128,7 +128,7 @@ const organizationSchema = {
   url: "https://www.jronegutters.com",
   logo: "https://www.jronegutters.com/images/seamless-gutter-install.webp",
   description: "Family-owned Tampa Bay aluminum specialty contractor. Seamless gutters (6 inch and 7 inch only), soffit, fascia, and drainage. Over 30 years in the trade.",
-  foundingDate: "2006",
+  // foundingDate intentionally omitted: brand guardrail - never publish a founding year.
   founders: [{ "@type": "Person", name: "Christopher Rivera" }],
   sameAs: [
     "https://www.facebook.com/people/Jr-One-Aluminum-LLC/61568068558954/",

@@ -316,7 +316,7 @@ const CITIES_ES = {
   tampa: {
     heroH1: "Empresa Familiar de Tampa en",
     heroH1Gold: "Canaletas, Sofito y Aluminio",
-    localP: "Los propietarios de Tampa enfrentan una combinacion unica de desafios: tormentas intensas en verano, temporada de huracanes, humedad todo el ano y viviendas envejecidas en barrios desde South Tampa hasta New Tampa. Sus canaletas, sofitos y fascias reciben lo peor. JR One es una empresa familiar, operada por la familia, con mas de 30 anos de experiencia familiar en la industria de canaletas en Tampa Bay. Nuestro fundador Javier ha estado instalando canaletas en Tampa personalmente desde 1990, y muchas de las casas que atendemos hoy son las mismas que el trabajo hace decadas.",
+    localP: "Los propietarios de Tampa enfrentan una combinación única de desafíos: tormentas intensas en verano, temporada de huracanes, humedad todo el año y viviendas envejecidas en barrios desde South Tampa hasta New Tampa. Sus canaletas, sofitos y fascias reciben lo peor. JR One es una empresa familiar, operada por la familia, con más de 30 años de experiencia familiar en la industria de canaletas en Tampa Bay. Nuestro fundador Javier ha instalado canaletas en Tampa personalmente por más de tres décadas, y muchas de las casas que atendemos hoy son las mismas que él trabajó hace décadas.",
     weatherNote: "Tampa recibe un promedio de 51 pulgadas de lluvia al ano, muy por encima del promedio nacional. Ese volumen de agua necesita ir a algun lugar, y si su sistema de canaletas no lo maneja correctamente, sus cimientos, fascias y jardin pagan el precio.",
     nearbyText: "Tambien servimos a Clearwater, St. Petersburg, Brandon, Temple Terrace y comunidades cercanas.",
   },
