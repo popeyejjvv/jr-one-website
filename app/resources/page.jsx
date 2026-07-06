@@ -46,14 +46,20 @@ const T = {
       {
         icon: "shield",
         title: "Certificate of Insurance: General Liability",
-        desc: "ACORD 25 Certificate of Liability Insurance. $1M each occurrence, $2M general aggregate, $2M products/completed operations aggregate. Carrier: Ascendant Commercial Insurance Co. Policy GL-60282-7. Coverage for gutters installation work.",
+        desc: "ACORD 25 Certificate of Liability Insurance. $1M each occurrence, $2M general aggregate, $1M products/completed operations aggregate. Carrier: Ascendant Commercial Insurance Co. Policy GL-60282-8, in effect through June 21, 2027. Coverage for gutters installation, sheet metal work, and non-structural metal erection.",
         file: "JR_One_COI_General_Liability_2026.pdf",
       },
       {
         icon: "hardhat",
-        title: "Certificate of Insurance: Workers' Comp + Auto",
-        desc: "ACORD 25 Certificate covering Workers' Compensation ($1M each accident / $1M disease) via PIE Insurance Company, plus Commercial Auto Liability via Berkshire Hathaway Homestate. Includes blanket waiver of subrogation when required by written contract.",
+        title: "Certificate of Insurance: Workers' Compensation",
+        desc: "ACORD 25 Certificate of Workers' Compensation coverage: $1M each accident, $1M disease per employee, $1M disease policy limit, via PIE Insurance Company. Blanket waiver of subrogation included when required by written contract.",
         file: "JR_One_COI_Workers_Comp_Auto_2026.pdf",
+      },
+      {
+        icon: "shield",
+        title: "Certificate of Insurance: Commercial Auto",
+        desc: "ACORD 25 Certificate of Commercial Auto Liability via Security National Insurance Company. Policy M00012975600, in effect through April 27, 2027. Bodily injury and property damage coverage for scheduled business vehicles.",
+        file: "JR_One_COI_Auto_2026.pdf",
       },
     ],
 
@@ -98,14 +104,20 @@ const T = {
       {
         icon: "shield",
         title: "Certificado de Seguro: Responsabilidad General",
-        desc: "Certificado ACORD 25 de Seguro de Responsabilidad. $1M por ocurrencia, $2M agregado general, $2M agregado de productos/operaciones completadas. Aseguradora: Ascendant Commercial Insurance Co. Póliza GL-60282-7. Cobertura para trabajo de instalación de canaletas.",
+        desc: "Certificado ACORD 25 de Seguro de Responsabilidad. $1M por ocurrencia, $2M agregado general, $1M agregado de productos/operaciones completadas. Aseguradora: Ascendant Commercial Insurance Co. Póliza GL-60282-8, vigente hasta el 21 de junio de 2027. Cobertura para instalación de canaletas, trabajo de chapa metálica y montaje de metal no estructural.",
         file: "JR_One_COI_General_Liability_2026.pdf",
       },
       {
         icon: "hardhat",
-        title: "Certificado de Seguro: Compensación al Trabajador + Auto",
-        desc: "Certificado ACORD 25 que cubre Compensación al Trabajador ($1M por accidente / $1M por enfermedad) a través de PIE Insurance Company, más Responsabilidad de Auto Comercial a través de Berkshire Hathaway Homestate. Incluye exención general de subrogación cuando sea requerida por contrato escrito.",
+        title: "Certificado de Seguro: Compensación al Trabajador",
+        desc: "Certificado ACORD 25 de Compensación al Trabajador: $1M por accidente, $1M por enfermedad por empleado, $1M límite de póliza por enfermedad, a través de PIE Insurance Company. Incluye exención general de subrogación cuando sea requerida por contrato escrito.",
         file: "JR_One_COI_Workers_Comp_Auto_2026.pdf",
+      },
+      {
+        icon: "shield",
+        title: "Certificado de Seguro: Auto Comercial",
+        desc: "Certificado ACORD 25 de Responsabilidad de Auto Comercial a través de Security National Insurance Company. Póliza M00012975600, vigente hasta el 27 de abril de 2027. Cobertura de lesiones corporales y daños a la propiedad para vehículos comerciales programados.",
+        file: "JR_One_COI_Auto_2026.pdf",
       },
     ],
 
