@@ -4,8 +4,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Revestimiento",
-  serviceType: "Instalacion y Reparacion de Revestimiento",
+  name: "Instalación de Revestimiento",
+  serviceType: "Instalación y Reparación de Revestimiento",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Instalacion y reparacion de revestimiento en Tampa Bay. James Hardie (fibrocemento), vinilo y aluminio. Proteccion resistente al clima para hogares de Florida.",
+  description: "Instalación y reparación de revestimiento en Tampa Bay. James Hardie (fibrocemento), vinilo y aluminio. Protección resistente al clima para hogares de Florida.",
 };
 
 const breadcrumbSchemaEs = {
@@ -30,7 +30,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Revestimiento Tampa FL | Hardie Board, Vinilo, Aluminio | JR One",
-  description: "Instalacion de revestimiento en Tampa Bay. James Hardie, vinilo y aluminio. Proteccion resistente al clima. Mas de 30 anos en el oficio. (844) 444-3114.",
+  description: "Instalación de revestimiento en Tampa Bay. James Hardie, vinilo y aluminio. Protección resistente al clima. Más de 30 años en el oficio. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/revestimiento-tampa",
     languages: {
@@ -41,7 +41,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Revestimiento Tampa Bay - JR One Aluminum",
-    description: "Hardie Board, vinilo, aluminio. Proteccion resistente al clima. (844) 444-3114.",
+    description: "Hardie Board, vinilo, aluminio. Protección resistente al clima. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/revestimiento-tampa",
     type: "website",
     locale: "es_US",

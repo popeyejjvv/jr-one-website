@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Mantenimiento programado de canaletas para propiedades de alquiler en Tampa Bay: Airbnb, VRBO, alquileres de largo plazo y carteras de inversion. Limpieza, inspeccion y reparaciones para inversionistas.",
+  description: "Mantenimiento programado de canaletas para propiedades de alquiler en Tampa Bay: Airbnb, VRBO, alquileres de largo plazo y carteras de inversion. Limpieza, inspección y reparaciones para inversionistas.",
 };
 
 const breadcrumbSchemaEs = {

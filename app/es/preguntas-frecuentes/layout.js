@@ -11,7 +11,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Preguntas Frecuentes - Canaletas y Sofito Tampa",
-  description: "Respuestas honestas sobre canaletas de 6 y 7 pulgadas, sofito, fascia, protectores y revestimiento en Tampa Bay. Llama al (844) 444-3114. Hablamos espanol.",
+  description: "Respuestas honestas sobre canaletas de 6 y 7 pulgadas, sofito, fascia, protectores y revestimiento en Tampa Bay. Llama al (844) 444-3114. Hablamos español.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/preguntas-frecuentes",
     languages: {
@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Preguntas Frecuentes - Canaletas y Sofito Tampa",
-    description: "Respuestas honestas sobre canaletas de 6 y 7 pulgadas, sofito, fascia, protectores y revestimiento en Tampa Bay. Llama al (844) 444-3114. Hablamos espanol.",
+    description: "Respuestas honestas sobre canaletas de 6 y 7 pulgadas, sofito, fascia, protectores y revestimiento en Tampa Bay. Llama al (844) 444-3114. Hablamos español.",
     url: "https://www.jronegutters.com/es/preguntas-frecuentes",
     type: "website",
     locale: "es_US",

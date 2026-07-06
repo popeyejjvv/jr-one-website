@@ -11,7 +11,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Recursos: Guias, Licencia y Seguro Tampa",
-  description: "Guias de cuidado para canaletas, sofito y fascia, mas certificado de LLC de Florida y seguro de JR One Aluminum. Para propietarios y constructores en Tampa Bay. (844) 444-3114.",
+  description: "Guias de cuidado para canaletas, sofito y fascia, más certificado de LLC de Florida y seguro de JR One Aluminum. Para propietarios y constructores en Tampa Bay. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/recursos",
     languages: {
@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Recursos: Guias, Licencia y Seguro Tampa",
-    description: "Guias de cuidado para canaletas, sofito y fascia, mas certificado de LLC de Florida y seguro de JR One Aluminum. Para propietarios y constructores en Tampa Bay. (844) 444-3114.",
+    description: "Guias de cuidado para canaletas, sofito y fascia, más certificado de LLC de Florida y seguro de JR One Aluminum. Para propietarios y constructores en Tampa Bay. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/recursos",
     type: "website",
     locale: "es_US",

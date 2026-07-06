@@ -106,7 +106,7 @@ export default function AreasIndexPageES() {
               Zonas de Servicio de JR One
             </h1>
             <p style={{ fontSize: "var(--jr-text-lg)", color: C.muted, maxWidth: "780px", margin: "0 auto var(--jr-space-2)" }}>
-              29 ciudades en 7 condados del area de Tampa Bay. Canaletas de aluminio sin costura, sofito, fascia, protectores de canaletas, cobre, iluminacion Govee permanente, siding y drenaje. Mas de 30 anos en el oficio, empresa familiar, totalmente asegurada.
+              29 ciudades en 7 condados del area de Tampa Bay. Canaletas de aluminio sin costura, sofito, fascia, protectores de canaletas, cobre, iluminacion Govee permanente, siding y drenaje. Más de 30 años en el oficio, empresa familiar, totalmente asegurada.
             </p>
             <p style={{ fontSize: "var(--jr-text-base)", color: C.muted }}>
               <a href="tel:+18444443114" style={{ color: C.gold, fontWeight: 600, textDecoration: "none" }}>Estimado gratis: (844) 444-3114</a>

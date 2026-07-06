@@ -15,7 +15,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel"].map((name) => ({ "@type": "City", name })),
-  description: "Reemplazo de sofito y fascia en Tampa Bay. Conversion completa de madera a aluminio que detiene el ciclo de pudricion permanentemente. Sofito de aluminio ventilado del color de las canaletas. Familia, mas de 30 anos en el oficio.",
+  description: "Reemplazo de sofito y fascia en Tampa Bay. Conversion completa de madera a aluminio que detiene el ciclo de pudricion permanentemente. Sofito de aluminio ventilado del color de las canaletas. Familia, más de 30 años en el oficio.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,7 +29,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Reemplazo de Sofito y Fascia Tampa FL | Aluminio Ventilado",
-  description: "Sofito y fascia de aluminio en Tampa Bay. Conversion de madera a aluminio que detiene el ciclo de pudricion. Del color de las canaletas. (844) 444-3114. Hablamos espanol.",
+  description: "Sofito y fascia de aluminio en Tampa Bay. Conversion de madera a aluminio que detiene el ciclo de pudricion. Del color de las canaletas. (844) 444-3114. Hablamos español.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/sofito-fascia-tampa",
     languages: {

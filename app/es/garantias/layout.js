@@ -11,7 +11,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Garantias de Canaletas Tampa Bay",
-  description: "Garantia de mano de obra de 3 anos mas garantias del fabricante en canaletas, sofito y fascia de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
+  description: "Garantía de mano de obra de 3 años más garantias del fabricante en canaletas, sofito y fascia de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/garantias",
     languages: {
@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Garantias de Canaletas Tampa Bay",
-    description: "Garantia de mano de obra de 3 anos mas garantias del fabricante en canaletas, sofito y fascia de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
+    description: "Garantía de mano de obra de 3 años más garantias del fabricante en canaletas, sofito y fascia de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
     url: "https://www.jronegutters.com/es/garantias",
     type: "website",
     locale: "es_US",

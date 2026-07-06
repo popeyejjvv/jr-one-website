@@ -4,7 +4,7 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Canaletas de Cobre",
+  name: "Instalación de Canaletas de Cobre",
   serviceType: "Canaletas de Cobre Sin Costura",
   inLanguage: "es-US",
   provider: {
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Instalacion de canaletas de cobre a medida para hogares arquitectonicos e historicos de Tampa Bay. Cobre estilo K sin costura y media cana, cabezales conductores de cobre, bajantes de cobre y protectores de cobre. Vida util de mas de 50 anos.",
+  description: "Instalación de canaletas de cobre a medida para hogares arquitectonicos e historicos de Tampa Bay. Cobre estilo K sin costura y media cana, cabezales conductores de cobre, bajantes de cobre y protectores de cobre. Vida util de más de 50 años.",
 };
 
 const breadcrumbSchemaEs = {
@@ -30,7 +30,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Canaletas de Cobre Tampa FL | Sin Costura y Media Cana | JR One",
-  description: "Sistemas premium de canaletas de cobre para hogares arquitectonicos de Tampa Bay. Estilo K y media cana sin costura. Vida util de mas de 50 anos. (844) 444-3114.",
+  description: "Sistemas premium de canaletas de cobre para hogares arquitectonicos de Tampa Bay. Estilo K y media cana sin costura. Vida util de más de 50 años. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-cobre-tampa",
     languages: {

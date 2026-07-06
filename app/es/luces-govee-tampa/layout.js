@@ -4,7 +4,7 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Luces Govee Permanentes",
+  name: "Instalación de Luces Govee Permanentes",
   serviceType: "Luces LED Exteriores Permanentes",
   inLanguage: "es-US",
   provider: {
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz"].map((name) => ({ "@type": "City", name })),
-  description: "Instalacion de luces LED Govee permanentes en el exterior de hogares de Tampa Bay. Iluminacion inteligente todo el ano: Navidad, Halloween, 4 de julio, dias normales. Control por aplicacion movil.",
+  description: "Instalación de luces LED Govee permanentes en el exterior de hogares de Tampa Bay. Iluminacion inteligente todo el año: Navidad, Halloween, 4 de julio, días normales. Control por aplicacion movil.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,8 +29,8 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Luces Govee Permanentes Tampa FL | LED Inteligentes Todo el Ano | JR One",
-  description: "Instalacion de luces LED Govee permanentes en Tampa Bay. Iluminacion inteligente todo el ano controlada por app. Navidad, Halloween, dias normales. (844) 444-3114.",
+  title: "Luces Govee Permanentes Tampa FL | LED Inteligentes Todo el Año | JR One",
+  description: "Instalación de luces LED Govee permanentes en Tampa Bay. Iluminacion inteligente todo el año controlada por app. Navidad, Halloween, días normales. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/luces-govee-tampa",
     languages: {
@@ -41,7 +41,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Luces Govee Tampa Bay - JR One Aluminum",
-    description: "Luces LED permanentes inteligentes. Todo el ano, control por app. (844) 444-3114.",
+    description: "Luces LED permanentes inteligentes. Todo el año, control por app. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/luces-govee-tampa",
     type: "website",
     locale: "es_US",

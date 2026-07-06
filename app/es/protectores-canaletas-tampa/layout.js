@@ -3,7 +3,7 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Protectores de Canaleta",
+  name: "Instalación de Protectores de Canaleta",
   serviceType: "Protectores de Canaleta Micro-Malla",
   inLanguage: "es-US",
   provider: {
@@ -15,7 +15,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz"].map((name) => ({ "@type": "City", name })),
-  description: "Protectores de canaleta de malla fina y acero inoxidable en Tampa Bay. Bloquean hasta agujas de pino y arena de techo. Reducen limpieza de trimestral a anual. Familia, mas de 30 anos en el oficio.",
+  description: "Protectores de canaleta de malla fina y acero inoxidable en Tampa Bay. Bloquean hasta agujas de pino y arena de techo. Reducen limpieza de trimestral a anual. Familia, más de 30 años en el oficio.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,7 +29,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Protectores de Canaleta Tampa FL | Malla Fina Anti-Pino",
-  description: "Protectores de canaleta micro-malla en Tampa Bay. Bloquean agujas de pino y arena. Reducen limpieza a anual. (844) 444-3114. Hablamos espanol.",
+  description: "Protectores de canaleta micro-malla en Tampa Bay. Bloquean agujas de pino y arena. Reducen limpieza a anual. (844) 444-3114. Hablamos español.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/protectores-canaletas-tampa",
     languages: {
@@ -40,7 +40,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Protectores de Canaleta Tampa - JR One Aluminum",
-    description: "Micro-malla anti-pino. Reduce limpieza a anual. Familia, mas de 30 anos. (844) 444-3114.",
+    description: "Micro-malla anti-pino. Reduce limpieza a anual. Familia, más de 30 años. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/protectores-canaletas-tampa",
     type: "website",
     locale: "es_US",

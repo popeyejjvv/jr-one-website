@@ -15,7 +15,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Land O' Lakes"].map((name) => ({ "@type": "City", name })),
-  description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa de escombros, lavado de bajantes, prueba de flujo, fotografias de inspeccion. Casa unifamiliar tipica $150-$400. Familia, mas de 30 anos en el oficio.",
+  description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa de escombros, lavado de bajantes, prueba de flujo, fotografias de inspección. Casa unifamiliar tipica $150-$400. Familia, más de 30 años en el oficio.",
   offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
 };
 
@@ -30,7 +30,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Limpieza de Canaletas Tampa FL | $150-$400 Casa Unifamiliar",
-  description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa, lavado de bajantes, fotografias. Casa unifamiliar $150-$400. (844) 444-3114. Hablamos espanol.",
+  description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa, lavado de bajantes, fotografias. Casa unifamiliar $150-$400. (844) 444-3114. Hablamos español.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
     languages: {

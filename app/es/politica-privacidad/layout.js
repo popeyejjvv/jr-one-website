@@ -11,7 +11,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Politica de Privacidad",
-  description: "Como JR One Aluminum LLC recopila, usa y protege la informacion que usted comparte en jronegutters.com. Especialistas en canaletas en Tampa. (844) 444-3114.",
+  description: "Como JR One Aluminum LLC recopila, usa y protege la información que usted comparte en jronegutters.com. Especialistas en canaletas en Tampa. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/politica-privacidad",
     languages: {
@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Politica de Privacidad",
-    description: "Como JR One Aluminum LLC recopila, usa y protege la informacion que usted comparte en jronegutters.com. Especialistas en canaletas en Tampa. (844) 444-3114.",
+    description: "Como JR One Aluminum LLC recopila, usa y protege la información que usted comparte en jronegutters.com. Especialistas en canaletas en Tampa. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/politica-privacidad",
     type: "website",
     locale: "es_US",

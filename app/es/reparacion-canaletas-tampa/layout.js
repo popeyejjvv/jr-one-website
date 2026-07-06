@@ -3,8 +3,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Reparacion de Canaletas",
-  serviceType: "Reparacion de Canaletas",
+  name: "Reparación de Canaletas",
+  serviceType: "Reparación de Canaletas",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -15,7 +15,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel"].map((name) => ({ "@type": "City", name })),
-  description: "Reparacion de canaletas en Tampa Bay: hundimientos, fugas, desbordamiento, reemplazo de bajantes, dano de tormenta. Servicio misma semana. Familia, mas de 30 anos en el oficio.",
+  description: "Reparación de canaletas en Tampa Bay: hundimientos, fugas, desbordamiento, reemplazo de bajantes, dano de tormenta. Servicio misma semana. Familia, más de 30 años en el oficio.",
 };
 
 const breadcrumbSchemaEs = {
@@ -23,13 +23,13 @@ const breadcrumbSchemaEs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Reparacion de Canaletas", item: "https://www.jronegutters.com/es/reparacion-canaletas-tampa" },
+    { "@type": "ListItem", position: 2, name: "Reparación de Canaletas", item: "https://www.jronegutters.com/es/reparacion-canaletas-tampa" },
   ],
 };
 
 export const metadata = {
-  title: "Reparacion de Canaletas Tampa FL | Hundimientos y Fugas",
-  description: "Reparacion de canaletas en Tampa Bay: hundimientos, fugas, desbordamiento, dano de tormenta. Servicio misma semana. (844) 444-3114. Hablamos espanol.",
+  title: "Reparación de Canaletas Tampa FL | Hundimientos y Fugas",
+  description: "Reparación de canaletas en Tampa Bay: hundimientos, fugas, desbordamiento, dano de tormenta. Servicio misma semana. (844) 444-3114. Hablamos español.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/reparacion-canaletas-tampa",
     languages: {
@@ -39,7 +39,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Reparacion de Canaletas Tampa - JR One Aluminum",
+    title: "Reparación de Canaletas Tampa - JR One Aluminum",
     description: "Hundimientos, fugas, desbordamiento, dano de tormenta. Servicio misma semana. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/reparacion-canaletas-tampa",
     type: "website",
