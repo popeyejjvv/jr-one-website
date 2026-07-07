@@ -52,8 +52,8 @@ const T = {
       {
         icon: "hardhat",
         title: "Certificate of Insurance: Workers' Compensation",
-        desc: "ACORD 25 Certificate of Workers' Compensation coverage: $1M each accident, $1M disease per employee, $1M disease policy limit, via PIE Insurance Company. Blanket waiver of subrogation included when required by written contract.",
-        file: "JR_One_COI_Workers_Comp_Auto_2026.pdf",
+        desc: "ACORD 25 Certificate of Workers' Compensation coverage: $1M each accident, $1M disease per employee, $1M disease policy limit. Carrier: PIE Insurance Company. Policy WC PI 3042545-000, in effect through October 8, 2026. Blanket waiver of subrogation included when required by written contract.",
+        file: "JR_One_COI_Workers_Comp_2026.pdf",
       },
       {
         icon: "shield",
@@ -110,8 +110,8 @@ const T = {
       {
         icon: "hardhat",
         title: "Certificado de Seguro: Compensación al Trabajador",
-        desc: "Certificado ACORD 25 de Compensación al Trabajador: $1M por accidente, $1M por enfermedad por empleado, $1M límite de póliza por enfermedad, a través de PIE Insurance Company. Incluye exención general de subrogación cuando sea requerida por contrato escrito.",
-        file: "JR_One_COI_Workers_Comp_Auto_2026.pdf",
+        desc: "Certificado ACORD 25 de Compensación al Trabajador: $1M por accidente, $1M por enfermedad por empleado, $1M límite de póliza por enfermedad. Aseguradora: PIE Insurance Company. Póliza WC PI 3042545-000, vigente hasta el 8 de octubre de 2026. Incluye exención general de subrogación cuando sea requerida por contrato escrito.",
+        file: "JR_One_COI_Workers_Comp_2026.pdf",
       },
       {
         icon: "shield",
