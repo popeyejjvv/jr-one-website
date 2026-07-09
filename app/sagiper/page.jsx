@@ -17,6 +17,7 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -68,6 +69,11 @@ const T = {
       { title: "Zero maintenance forever", desc: "No painting, staining, or sealing. Ever. 50-year warranty with 15 years non-prorated." },
       { title: "Made in Florida", desc: "Plant City, FL manufacturing. Local production, shorter lead times, Florida-market focus." },
     ],
+    peakAlertLabel: "Florida Insurance Alert",
+    peakAlertTitle: "280% Increase in Non-Renewals. Roof Over 15 Years Old?",
+    peakAlertDesc: "Peak 301 restores shingles from the inside out. Adds 6 to 10 years of roof life for up to 70% less than a new roof install, with warranty docs Florida carriers may consider when evaluating your renewal.",
+    peakBtn: "Peak 301 Info",
+    peakRights: "Your Rights",
     goldEyebrow: "The Gold Standard",
     goldTitle: "Our SAGIPER Installation Process",
     goldSub: "Every home. Every time. No exceptions.",
@@ -146,6 +152,11 @@ const T = {
       { title: "Cero mantenimiento para siempre", desc: "Sin pintura, sin tinte, sin sellado. Nunca. Garantía de 50 años con 15 años sin prorrateo." },
       { title: "Hecho en Florida", desc: "Manufactura en Plant City, FL. Producción local, tiempos de entrega más cortos, enfoque en el mercado de Florida." },
     ],
+    peakAlertLabel: "Alerta de Seguros de Florida",
+    peakAlertTitle: "280% de Aumento en No Renovaciones. ¿Techo de Más de 15 Años?",
+    peakAlertDesc: "Peak 301 restaura las tejas desde adentro. Agrega 6 a 10 años de vida al techo por hasta 70% menos que un techo nuevo, con documentos de garantía que las aseguradoras de FL pueden considerar al evaluar la renovación.",
+    peakBtn: "Info Peak 301",
+    peakRights: "Sus Derechos",
     goldEyebrow: "El Estándar de Oro",
     goldTitle: "Nuestro Proceso de Instalación SAGIPER",
     goldSub: "Cada casa. Cada vez. Sin excepciones.",
@@ -349,6 +360,8 @@ export default function SagiperPage() {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy-deep)", padding: "var(--jr-space-20) 0" }}>

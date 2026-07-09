@@ -13,7 +13,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Referral Program - Tampa Bay Gutters",
   description:
-    "Refer a Tampa Bay neighbor for gutter, soffit, or fascia work and earn a gift card when they book. Family-owned, over 30 years. (844) 444-3114.",
+    "Refer a Tampa Bay neighbor for gutter, soffit, fascia, or Peak 301 work and earn a gift card when they book. Family-owned, over 30 years. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/referral",
     languages: {

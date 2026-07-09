@@ -162,7 +162,7 @@ These are anonymized real installs from the last 12 months, with pricing rounded
 
 Most Florida homeowner policies cover gutter replacement after a named storm, hail event, or falling debris (tree limbs after a hurricane). Cosmetic dents from wind-driven debris are usually covered. Age-related wear is not.
 
-If your gutters were damaged in a recent named storm event, document it with photos before any work, file the claim before contractor selection, and use a contractor who has direct experience with Florida insurance carriers (Citizens, State Farm, Tower Hill, Universal Property). We've worked dozens of storm damage claims and can document scope for the adjuster.
+If your gutters were damaged in a recent named storm event, document it with photos before any work, file the claim before contractor selection, and use a contractor who has direct experience with Florida insurance carriers (Citizens, State Farm, Tower Hill, Universal Property). We've worked dozens of storm damage claims and can document scope for the adjuster. See our [insurance resource center](/insurance-resource-center) for the full claim process.
 
 ## How to Read a Gutter Quote (2026 Edition)
 

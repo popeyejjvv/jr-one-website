@@ -29,6 +29,8 @@ faqs:
     answer: "Busque contratistas con: (1) experiencia previa en reclamos de seguro documentada en referencias; (2) licencia de oficio especializado de Florida; (3) seguro completo de responsabilidad civil y de compensación laboral; (4) disposición a trabajar con el alcance del trabajo del ajustador; (5) un proceso de documentación con fotos del antes, durante y después del trabajo; (6) una dirección física y teléfono en Tampa Bay (evite a los contratistas cazatormentas de otros estados que aparecen después de eventos grandes). Pida 3 referencias específicamente de trabajos previos de reclamos de seguro."
   - question: "¿Qué pasa con los generadores y otra preparación para huracanes? ¿Tiene que ver con la preparación de canaletas?"
     answer: "Sí, de dos maneras. (1) Los generadores deben ventilar bien y lejos de los aleros exteriores de la casa para evitar la entrada de monóxido de carbono: coloque el generador al menos a 20 pies de cualquier ventana, puerta o alero. (2) El almacenamiento de combustible del generador y el funcionamiento al aire libre afectan la limpieza de la línea del techo: revise si hay hollín o residuos de escape en las canaletas cerca de la salida del generador. Por lo demás, la preparación para huracanes está toda conectada: pode los árboles, limpie las canaletas, asegure los muebles de exterior, instale persianas para tormenta y prepare el generador. El paso de las canaletas es uno de unos 12 puntos de preparación."
+  - question: "¿La rejuvenecion del techo (Peak 301) es preparación para huracanes?"
+    answer: "Indirectamente, sí. Las tejas viejas y quebradizas se arrancan con el viento de un huracán. Las tejas flexibles aguantan mejor las cargas de viento. Peak 301 o una rejuvenecion comparable a base de bio-aceite restaura la flexibilidad de las tejas, mejorando la resistencia al viento. No es una garantía (ningún techo es a prueba de huracanes), pero es una mitigación real para techos de tejas de asfalto de entre 8 y 18 años de edad. Vea la [guía de Peak 301](/es/blog/peak-301-roof-rejuvenation-tampa) para conocer el costo y los criterios de candidatura."
 ---
 
 # Lista de preparación de canaletas para la temporada de huracanes en Tampa Bay (2026)
@@ -297,13 +299,13 @@ Implicación práctica: termine la preparación para finales de mayo, no espere 
 Servicio antes de la temporada: limpieza completa ($175), referencia para poda de ramas colgantes, extensión de bajante instalada, base fotográfica. Total: $185 más $400 de referencia de poda de árboles.
 
 **Wesley Chapel, dos pisos, 2,650 pies cuadrados, copa de robles, techo de 18 años.**
-Servicio antes de la temporada: limpieza completa ($275), reparación de fascia en 12 pies de daño por intemperie ($240). Total: $515.
+Servicio antes de la temporada: limpieza completa ($275), reparación de fascia en 12 pies de daño por intemperie ($240), rejuvenecion de techo Peak 301 ($1,790 - extendiendo la vida del techo durante las próximas 5 temporadas de huracanes). Total: $2,305.
 
 **St. Petersburg, un piso, 1,950 pies cuadrados, histórico de Old Northeast.**
 Servicio antes de la temporada: limpieza completa con documentación fotográfica conforme a la HOA ($225), mejora de soportes de separación de 36 pulgadas a 24 pulgadas en la fascia del lado del Golfo ($380). Total: $605.
 
 **Comunidad de HOA, South Tampa, 32 casas.**
-Programa de servicio antes de la temporada para toda la comunidad: limpieza de canaletas al por mayor. $250 por limpieza de cada casa ($8,000 en total). Terminación coordinada para mediados de mayo.
+Programa de servicio antes de la temporada para toda la comunidad: limpieza de canaletas al por mayor + evaluación de Peak 301. $250 por limpieza de cada casa ($8,000 en total) más 18 casas que optaron por Peak 301 ($23,400). Terminación coordinada para mediados de mayo.
 
 ## La conclusión
 
@@ -321,4 +323,6 @@ Brindamos limpieza de canaletas antes del huracán, reparación de fascia, mejor
 - [Hacerlo usted mismo o contratar a un profesional para la limpieza de canaletas](/es/blog/diy-gutter-cleaning-vs-hiring-pro-tampa)
 - [Reparación de canaletas por daño de tormenta y el seguro](/es/blog/storm-damage-gutter-repair-insurance-florida)
 - [Los mejores protectores de canaletas para casas de Florida](/es/blog/best-gutter-guards-florida-homes)
+- [Rejuvenecion de techo Peak 301 en Tampa](/es/blog/peak-301-roof-rejuvenation-tampa)
 - [Guía de reemplazo de sofito y fascia](/es/blog/soffit-fascia-replacement-tampa-guide)
+- [Centro de recursos de seguros](/es/centro-recursos-seguros)

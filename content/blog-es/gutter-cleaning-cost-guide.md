@@ -191,7 +191,7 @@ Si tiene daño de seguro que investigar o documentar:
 3. Use un contratista familiarizado con la documentación de seguros en Florida
 4. Guarde todos los recibos
 
-Vea la [guía de reparación de canaletas por daño de tormenta](/es/blog/storm-damage-gutter-repair-insurance-florida) para el proceso completo del reclamo.
+Vea nuestro [centro de recursos de seguros](/es/centro-recursos-seguros) y la [guía de reparación de canaletas por daño de tormenta](/es/blog/storm-damage-gutter-repair-insurance-florida) para el proceso completo del reclamo.
 
 ## Señales de alarma en las cotizaciones de limpieza de canaletas
 

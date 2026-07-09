@@ -91,6 +91,7 @@ function mapServiceToProjectType(service) {
   if (s.includes("soffit") || s.includes("fascia") || s.includes("sofito")) return "Soffit and Fascia";
   if (s.includes("siding") || s.includes("revestimiento")) return "Siding";
   if (s.includes("sagiper")) return "Siding";
+  if (s.includes("peak") || s.includes("301") || s.includes("rejuven")) return "Peak 301";
   if (s.includes("govee") || s.includes("light") || s.includes("luces")) return "Govee Lights";
   if (s.includes("drainage") || s.includes("drain") || s.includes("drenaje")) return "Drainage";
   if (s.includes("service plan") || s.includes("plan de servicio") || s.includes("planes de servicio") || s.includes("maintenance")) return "Gutter Maintenance";

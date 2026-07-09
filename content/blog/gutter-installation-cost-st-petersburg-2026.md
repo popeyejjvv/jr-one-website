@@ -162,7 +162,7 @@ Key tips for St. Pete storm damage claims:
 - **Get adjuster's scope of work in writing** before starting repairs
 - **Keep all receipts** for materials, labor, and disposal
 
-We've worked dozens of St. Pete storm damage claims over the past decade and can document the scope for your adjuster.
+We've worked dozens of St. Pete storm damage claims over the past decade. See our [insurance resource center](/insurance-resource-center) for the full claim process and contractor selection guidance.
 
 ## When to Replace Gutters in St. Petersburg
 

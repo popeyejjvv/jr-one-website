@@ -17,6 +17,7 @@ import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import CTABand from "../../components/ui/CTABand";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -538,6 +539,8 @@ export default function HOAContractsPage() {
           </Container>
         </section>
 
+        {/* PEAK 301 ALERT */}
+        <Peak301Alert />
 
         {/* CTA FORM */}
         <section

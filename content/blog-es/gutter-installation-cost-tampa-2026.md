@@ -162,7 +162,7 @@ Estos son trabajos reales y anónimos de los últimos 12 meses, con los precios 
 
 La mayoría de las pólizas de propietario en Florida cubren el reemplazo de canaletas después de una tormenta con nombre, un evento de granizo o escombros que caen (ramas de árboles tras un huracán). Las abolladuras cosméticas por escombros arrastrados por el viento normalmente están cubiertas. El desgaste por la edad no lo está.
 
-Si sus canaletas se dañaron en un evento reciente de tormenta con nombre, documéntelo con fotos antes de cualquier trabajo, presente el reclamo antes de elegir contratista y use un contratista con experiencia directa con las aseguradoras de Florida (Citizens, State Farm, Tower Hill, Universal Property). Hemos trabajado decenas de reclamos por daño de tormenta y podemos documentar el alcance para el ajustador.
+Si sus canaletas se dañaron en un evento reciente de tormenta con nombre, documéntelo con fotos antes de cualquier trabajo, presente el reclamo antes de elegir contratista y use un contratista con experiencia directa con las aseguradoras de Florida (Citizens, State Farm, Tower Hill, Universal Property). Hemos trabajado decenas de reclamos por daño de tormenta y podemos documentar el alcance para el ajustador. Vea nuestro [centro de recursos de seguros](/es/centro-recursos-seguros) para conocer el proceso completo del reclamo.
 
 ## Cómo leer una cotización de canaletas (edición 2026)
 

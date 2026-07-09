@@ -17,6 +17,7 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -60,6 +61,11 @@ const T = {
       { title: "Proper moisture-barrier installation", desc: "Every siding installation includes inspection and repair of the moisture barrier underneath. Siding over a compromised barrier is just a pretty cover over a rotting wall." },
       { title: "Color and style consultation", desc: "Wide selection of colors, profiles, and textures. We help you choose siding that complements your roof, trim, and neighborhood aesthetic, not just what's cheapest on the truck." },
     ],
+    peakAlertLabel: "Florida Insurance Alert",
+    peakAlertTitle: "280% Increase in Non-Renewals. Roof Over 15 Years Old?",
+    peakAlertDesc: "Peak 301 restores shingles from the inside out. Adds 6 to 10 years of roof life for up to 70% less than a new roof install, with warranty docs Florida carriers may consider when evaluating your renewal.",
+    peakBtn: "Peak 301 Info",
+    peakRights: "Your Rights",
     goldEyebrow: "The Gold Standard",
     goldTitle: "Our Siding Installation Process",
     goldSub: "Every home. Every time. No exceptions.",
@@ -134,6 +140,11 @@ const T = {
       { title: "Instalación adecuada de barrera de humedad", desc: "Cada instalación de revestimiento incluye inspección y reparación de la barrera de humedad debajo. Revestimiento sobre una barrera comprometida es solo una cubierta bonita sobre una pared pudriéndose." },
       { title: "Consulta de color y estilo", desc: "Amplia selección de colores, perfiles y texturas. Le ayudamos a elegir el revestimiento que complemente su techo, molduras y estética del vecindario, no solo lo más barato en el camión." },
     ],
+    peakAlertLabel: "Alerta de Seguros de Florida",
+    peakAlertTitle: "280% de Aumento en No Renovaciones. ¿Techo de Más de 15 Años?",
+    peakAlertDesc: "Peak 301 restaura las tejas desde adentro. Agrega 6 a 10 años de vida al techo por hasta 70% menos que un techo nuevo, con documentos de garantía que las aseguradoras de FL pueden considerar al evaluar la renovación.",
+    peakBtn: "Info Peak 301",
+    peakRights: "Sus Derechos",
     goldEyebrow: "El Estándar de Oro",
     goldTitle: "Nuestro Proceso de Instalación de Revestimiento",
     goldSub: "Cada hogar. Cada vez. Sin excepciones.",
@@ -318,6 +329,8 @@ export default function SidingPage({ portfolio = null }) {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>

@@ -191,7 +191,7 @@ If you have insurance damage to investigate or document:
 3. Use a contractor familiar with Florida insurance documentation
 4. Keep all receipts
 
-See the [storm damage gutter repair guide](/blog/storm-damage-gutter-repair-insurance-florida) for the full claim process.
+See our [insurance resource center](/insurance-resource-center) and the [storm damage gutter repair guide](/blog/storm-damage-gutter-repair-insurance-florida) for the full claim process.
 
 ## Red Flags in Gutter Cleaning Quotes
 

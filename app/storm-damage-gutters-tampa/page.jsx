@@ -5,7 +5,7 @@
    Bilingual EN+ES via useLanguage(). Hurricane-season landing.
    Brand-brain compliant: 6" + 7" only (no 5"), drainage scope
    locked to PVC + catch basins + grates + pop-up emitters,
-   no em-dashes, no banned phrases.
+   Peak 301 shingle-only, no em-dashes, no banned phrases.
    ═══════════════════════════════════════════════════════════ */
 
 import { useLanguage } from "../../lib/LanguageContext";
@@ -77,7 +77,7 @@ const T = {
       { q: "How fast can you replace the gutters after a hurricane?", a: "We book same-week installs during storm season. Material is in stock at the Tampa shop. Most single-family installs are done in one day. After a major named storm we triage by severity, homes with active water intrusion at the foundation jump the line." },
       { q: "Do you install hurricane-rated fasteners?", a: "Yes. All JR One installs use hidden screw-in hangers spaced for hurricane wind load. We do not use nail-in hangers because they pull out under uplift." },
       { q: "Can you wrap the fascia in aluminum to prevent the next round of rot?", a: "Yes. We replace the rotted fascia board, prime it, wrap it in factory-finished aluminum that matches the new gutters, and re-hang. The aluminum wrap stops the rot cycle permanently because there is no wood exposed to the weather." },
-      { q: "Do you do storm-damage roof work too?", a: "No. JR One Aluminum is a specialty gutter, soffit, fascia, and drainage trade. For storm-damaged roofs we refer to vetted Tampa Bay roofers." },
+      { q: "Do you do storm-damage roof work too?", a: "No. JR One Aluminum is a specialty gutter, soffit, fascia, and drainage trade. For storm-damaged roofs we refer to vetted Tampa Bay roofers. We do install Peak 301 roof rejuvenation on shingle roofs that are not storm-damaged but are showing age." },
       { q: "What does post-storm install cost?", a: "Pricing depends on linear footage, downspout count, fascia and soffit damage extent, gutter size (6\" or 7\"), color, and access. We measure on-site, photograph the damage, and quote in person. The estimate is free." },
     ],
     relatedEyebrow: "RELATED SERVICES",
@@ -86,6 +86,7 @@ const T = {
       { title: "Seamless aluminum gutters (6\" and 7\")", href: "/seamless-aluminum-gutters" },
       { title: "Soffit and fascia replacement", href: "/soffit-and-fascia" },
       { title: "Underground PVC drainage", href: "/drainage-assessment" },
+      { title: "Insurance claim documentation", href: "/insurance-resource-center" },
       { title: "Gutter repair (non-storm)", href: "/gutter-repair" },
     ],
     finalCTATitle: "SAME-WEEK POST-STORM ESTIMATE",
@@ -148,7 +149,7 @@ const T = {
       { q: "Que tan rapido pueden reemplazar las canaletas despues de un huracan?", a: "Reservamos instalaciones misma semana durante la temporada de tormentas. Hay material en stock en el taller de Tampa. La mayoria de instalaciones residenciales se hacen en un dia. Despues de una tormenta con nombre priorizamos por severidad." },
       { q: "Instalan ganchos resistentes a huracan?", a: "Si. Toda instalacion de JR One usa ganchos ocultos atornillados espaciados para carga de viento de huracan. No usamos ganchos de clavo porque se zafan bajo fuerza ascendente." },
       { q: "Pueden envolver el fascia en aluminio para evitar la proxima pudricion?", a: "Si. Reemplazamos el tablero de fascia podrido, lo imprimamos, lo envolvemos en aluminio con acabado de fabrica del color de las canaletas nuevas, y re-instalamos. El envoltorio de aluminio detiene el ciclo de pudricion permanentemente." },
-      { q: "Tambien hacen trabajo de techo por dano de tormenta?", a: "No. JR One Aluminum es oficio especializado en canaletas, sofito, fascia y drenaje. Para techos danados por tormenta referimos a techadores confiables." },
+      { q: "Tambien hacen trabajo de techo por dano de tormenta?", a: "No. JR One Aluminum es oficio especializado en canaletas, sofito, fascia y drenaje. Para techos danados por tormenta referimos a techadores confiables. Si instalamos rejuvenecimiento de techo Peak 301 en techos de tejas que no estan danados pero estan envejecidos." },
       { q: "Cuanto cuesta una instalacion post-tormenta?", a: "El precio depende de pies lineales, conteo de bajantes, extension del dano a fascia y sofito, tamano de canaleta (6 o 7 pulgadas), color y acceso. Medimos en sitio, fotografiamos el dano y damos el precio en persona. El estimado es gratis." },
     ],
     relatedEyebrow: "SERVICIOS RELACIONADOS",
@@ -157,6 +158,7 @@ const T = {
       { title: "Canaletas continuas (6\" y 7\")", href: "/es/canaletas-sin-costura-tampa" },
       { title: "Sofito y fascia", href: "/es/sofito-fascia-tampa" },
       { title: "Drenaje subterraneo en PVC", href: "/drainage-assessment" },
+      { title: "Documentacion para seguro", href: "/insurance-resource-center" },
       { title: "Reparacion de canaletas (no-tormenta)", href: "/es/reparacion-canaletas-tampa" },
     ],
     finalCTATitle: "ESTIMADO MISMA SEMANA POST-TORMENTA",

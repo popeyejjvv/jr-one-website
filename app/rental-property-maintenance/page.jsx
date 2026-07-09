@@ -17,6 +17,7 @@ import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import CTABand from "../../components/ui/CTABand";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -518,6 +519,8 @@ export default function RentalPropertyMaintenancePage() {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* GOLD STANDARD */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>

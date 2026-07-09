@@ -29,6 +29,8 @@ faqs:
     answer: "Look for contractors with: (1) prior insurance claim experience documented in references; (2) Florida specialty trade license; (3) full liability and workers' comp insurance; (4) willingness to work with adjuster scope of work; (5) photo-documentation process for before/during/after work; (6) physical Tampa Bay address and phone (avoid out-of-state 'storm chaser' contractors that appear after major events). Ask for 3 references from prior insurance claim work specifically."
   - question: "What about generators and other hurricane prep - does it interact with gutter prep?"
     answer: "Yes in two ways. (1) Generators must vent properly and away from the home's exterior eaves to avoid carbon monoxide drift - locate generator at least 20 feet from any window, door, or eave. (2) Generator fuel storage and exterior runtime affects roofline cleanliness - check for soot or exhaust residue in gutters near generator vent. Otherwise hurricane prep is interconnected: trim trees, clean gutters, secure outdoor furniture, install storm shutters, prep generator. The gutter step is one of about 12 prep items."
+  - question: "Is roof rejuvenation (Peak 301) hurricane prep?"
+    answer: "Indirectly yes. Brittle aged shingles tear off in hurricane wind events. Flexible shingles ride out wind loads better. Peak 301 or comparable bio-oil rejuvenation restores shingle flexibility, improving wind resistance. It's not a guarantee - no roof is hurricane-proof - but it's a real mitigation for asphalt shingle roofs aged 8 to 18 years. See the [Peak 301 guide](/blog/peak-301-roof-rejuvenation-tampa) for cost and candidate criteria."
 ---
 
 # Hurricane Prep Gutter Checklist for Tampa Bay (2026)
@@ -297,13 +299,13 @@ Practical implication: get prep done by end of May, don't wait for forecasts.
 Pre-season service: full clean ($175), tree-overhang trim referral, downspout extension installed, photo baseline. Total: $185 plus $400 tree trim referral.
 
 **Wesley Chapel, two-story 2,650 sq ft, oak canopy, 18-year-old roof.**
-Pre-season service: full clean ($275), fascia repair on 12 feet of weather damage ($240). Total: $515.
+Pre-season service: full clean ($275), fascia repair on 12 feet of weather damage ($240), Peak 301 roof rejuvenation ($1,790 - extending roof life through next 5 years of hurricane seasons). Total: $2,305.
 
 **St. Petersburg, single-story 1,950 sq ft Old Northeast historic.**
 Pre-season service: full clean with HOA-compliant photo documentation ($225), hanger upgrade from 36-inch to 24-inch spacing on Gulf-side fascia ($380). Total: $605.
 
 **HOA community, South Tampa, 32 homes.**
-Community-wide pre-season service program: bulk gutter cleaning. $250 per home cleaning ($8,000 total). Coordinated mid-May completion.
+Community-wide pre-season service program: bulk gutter cleaning + Peak 301 evaluation. $250 per home cleaning ($8,000 total) plus 18 homes opted into Peak 301 ($23,400). Coordinated mid-May completion.
 
 ## The Bottom Line
 
@@ -321,4 +323,6 @@ We provide pre-hurricane gutter cleaning, fascia repair, hanger upgrades, and st
 - [DIY vs Hiring a Pro for Gutter Cleaning](/blog/diy-gutter-cleaning-vs-hiring-pro-tampa)
 - [Storm Damage Gutter Repair and Insurance](/blog/storm-damage-gutter-repair-insurance-florida)
 - [Best Gutter Guards for Florida Homes](/blog/best-gutter-guards-florida-homes)
+- [Peak 301 Roof Rejuvenation in Tampa](/blog/peak-301-roof-rejuvenation-tampa)
 - [Soffit and Fascia Replacement Guide](/blog/soffit-fascia-replacement-tampa-guide)
+- [Insurance Resource Center](/insurance-resource-center)

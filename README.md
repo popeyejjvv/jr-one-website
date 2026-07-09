@@ -55,6 +55,7 @@ In your domain registrar (GoDaddy, Namecheap, etc.):
 | `/soffit-and-fascia` | Soffit & Fascia |
 | `/siding` | Siding |
 | `/gutter-repair` | Gutter Repair |
+| `/peak-301` | Peak 301 Roof Rejuvenation |
 | `/copper-gutters` | Copper Gutters |
 
 ### Business Pages (7)

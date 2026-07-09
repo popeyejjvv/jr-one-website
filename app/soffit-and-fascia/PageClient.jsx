@@ -17,6 +17,7 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -62,6 +63,11 @@ const T = {
       { title: "Color matching and seamless finish", desc: "We carry a wide selection of colors and profiles to match your existing trim, gutters, and home style. The finished look should be seamless, not obviously replaced." },
       { title: "Storm-damage response", desc: "Florida hurricanes rip soffit panels off like paper. We respond quickly to storm damage, board up exposed areas to prevent further damage, and schedule permanent replacement as fast as possible." },
     ],
+    peakAlertLabel: "Florida Insurance Alert",
+    peakAlertTitle: "280% Increase in Non-Renewals. Roof Over 15 Years Old?",
+    peakAlertDesc: "Peak 301 restores shingles from the inside out. Adds 6 to 10 years of roof life for up to 70% less than a new roof install, with warranty docs Florida carriers may consider when evaluating your renewal.",
+    peakBtn: "Peak 301 Info",
+    peakRights: "Your Rights",
     goldEyebrow: "The Gold Standard",
     goldTitle: "Our Soffit & Fascia Process",
     goldSub: "Every home. Every time. No exceptions.",
@@ -135,6 +141,11 @@ const T = {
       { title: "Combinación de color y acabado continuo", desc: "Tenemos una amplia selección de colores y perfiles para combinar con su moldura, canaletas y estilo de hogar existente. El resultado final debe verse continuo, no como un reemplazo obvio." },
       { title: "Respuesta a daños por tormenta", desc: "Los huracanes de Florida arrancan los paneles de sofito como papel. Respondemos rápidamente a daños por tormenta, aseguramos las áreas expuestas para prevenir más daño y programamos el reemplazo permanente lo más rápido posible." },
     ],
+    peakAlertLabel: "Alerta de Seguros de Florida",
+    peakAlertTitle: "280% de Aumento en No Renovaciones. ¿Techo de Más de 15 Años?",
+    peakAlertDesc: "Peak 301 restaura las tejas desde adentro. Agrega 6 a 10 años de vida al techo por hasta 70% menos que un techo nuevo, con documentos de garantía que las aseguradoras de FL pueden considerar al evaluar la renovación.",
+    peakBtn: "Info Peak 301",
+    peakRights: "Sus Derechos",
     goldEyebrow: "El Estándar de Oro",
     goldTitle: "Nuestro Proceso de Sofito y Fascia",
     goldSub: "Cada hogar. Cada vez. Sin excepciones.",
@@ -320,6 +331,8 @@ export default function SoffitFasciaPage({ portfolio = null }) {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>

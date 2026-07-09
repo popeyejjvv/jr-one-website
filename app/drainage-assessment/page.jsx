@@ -20,6 +20,7 @@ import Button from "../../components/ui/Button";
 import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -61,6 +62,11 @@ const T = {
       { emoji: "📐", title: "Surface grates", desc: "The visible inlet that sits flush with your lawn or hardscape. Lets water enter the catch basin without exposing the pipe. Pedestrian-rated and traffic-rated options for walkways and driveways." },
       { emoji: "💧", title: "Pop-up emitters", desc: "Discharge points that open when water flows through the system and close when dry. Installed at the end of underground lines to release water away from your home without visible pipe ends in the yard." },
     ],
+    peakAlertLabel: "Florida Insurance Alert",
+    peakAlertTitle: "280% Increase in Non-Renewals. Roof Over 15 Years Old?",
+    peakAlertDesc: "Peak 301 restores shingles from the inside out. Adds 6 to 10 years of roof life for up to 70% less than a new roof install, with warranty docs Florida carriers may consider when evaluating your renewal.",
+    peakBtn: "Peak 301 Info",
+    peakRights: "Your Rights",
     processEyebrow: "The Process",
     processTitle: "How We Solve Drainage Problems",
     processSub: "Inspect. Diagnose. Recommend. Fix.",
@@ -123,6 +129,11 @@ const T = {
       { emoji: "📐", title: "Rejillas de superficie", desc: "La entrada visible que se asienta a ras con su césped o superficie dura. Permite que el agua entre al sumidero sin exponer la tubería. Opciones clasificadas para peatones y para tráfico en caminos y entradas." },
       { emoji: "💧", title: "Emisores emergentes", desc: "Puntos de descarga que se abren cuando el agua fluye por el sistema y se cierran cuando están secos. Instalados al final de las líneas subterráneas para liberar agua lejos de su casa sin extremos de tubería visibles en el patio." },
     ],
+    peakAlertLabel: "Alerta de Seguros de Florida",
+    peakAlertTitle: "280% de Aumento en No Renovaciones. ¿Techo de Más de 15 Años?",
+    peakAlertDesc: "Peak 301 restaura las tejas desde adentro. Agrega 6 a 10 años de vida al techo por hasta 70% menos que un techo nuevo, con documentos de garantía que las aseguradoras de FL pueden considerar al evaluar la renovación.",
+    peakBtn: "Info Peak 301",
+    peakRights: "Sus Derechos",
     processEyebrow: "El Proceso",
     processTitle: "Cómo Resolvemos Problemas de Drenaje",
     processSub: "Inspeccionar. Diagnosticar. Recomendar. Reparar.",
@@ -303,6 +314,8 @@ export default function DrainageAssessmentPage() {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>

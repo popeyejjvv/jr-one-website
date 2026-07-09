@@ -16,6 +16,7 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProcessStep from "../../components/ui/ProcessStep";
 import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
+import Peak301Alert from "../../components/ui/Peak301Alert";
 import {
   CheckCircleIcon,
   PhoneIcon,
@@ -59,6 +60,11 @@ const T = {
       { title: "Multi-story capability", desc: "Two-story and multi-level homes are no problem. We have the ladders, scaffolding, and safety equipment to reach every roofline safely. Something most homeowners simply can't do on their own." },
       { title: "One crew, one visit, done right", desc: "No subcontractors. No return trips. Our trained team handles your entire installation in a single visit with the same craftsmanship standard we bring to every aluminum job." },
     ],
+    peakAlertLabel: "Florida Insurance Alert",
+    peakAlertTitle: "280% Increase in Non-Renewals. Roof Over 15 Years Old?",
+    peakAlertDesc: "Peak 301 restores shingles from the inside out. Adds 6 to 10 years of roof life for up to 70% less than a new roof install, with warranty docs Florida carriers may consider when evaluating your renewal.",
+    peakBtn: "Peak 301 Info",
+    peakRights: "Your Rights",
     goldEyebrow: "The Gold Standard",
     goldTitle: "Our Installation Process",
     goldSub: "Every home. Every time. No exceptions.",
@@ -131,6 +137,11 @@ const T = {
       { title: "Capacidad para múltiples pisos", desc: "Casas de dos pisos y multinivel no son problema. Tenemos las escaleras, andamios y equipo de seguridad para alcanzar cada línea de techo de forma segura. Algo que la mayoría de los propietarios simplemente no pueden hacer por su cuenta." },
       { title: "Un equipo, una visita, bien hecho", desc: "Sin subcontratistas. Sin visitas de retorno. Nuestro equipo capacitado maneja toda su instalación en una sola visita con el mismo estándar de artesanía que llevamos a cada trabajo de aluminio." },
     ],
+    peakAlertLabel: "Alerta de Seguros de Florida",
+    peakAlertTitle: "280% de Aumento en No Renovaciones. ¿Techo de Más de 15 Años?",
+    peakAlertDesc: "Peak 301 restaura las tejas desde adentro. Agrega 6 a 10 años de vida al techo por hasta 70% menos que un techo nuevo, con documentos de garantía que las aseguradoras de FL pueden considerar al evaluar la renovación.",
+    peakBtn: "Info Peak 301",
+    peakRights: "Sus Derechos",
     goldEyebrow: "El Estándar de Oro",
     goldTitle: "Nuestro Proceso de Instalación",
     goldSub: "Cada casa. Cada vez. Sin excepciones.",
@@ -316,6 +327,8 @@ export default function GoveeLightsPage({ portfolio = null }) {
           </Container>
         </section>
 
+        {/* ── PEAK 301 ALERT (red, drives traffic to /peak-301) ── */}
+        <Peak301Alert />
 
         {/* ── GOLD STANDARD ── */}
         <section style={{ background: "var(--jr-navy)", padding: "var(--jr-space-20) 0" }}>

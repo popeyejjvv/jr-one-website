@@ -22,7 +22,7 @@ import { localizeHref, pairedUrl } from "../lib/locale";
 const SERVICE_HREFS = [
   "/commercial-gutters", "/copper-gutters", "/drainage-assessment",
   "/govee-lights", "/gutter-cleaning", "/gutter-guards", "/gutter-repair",
-  "/sagiper", "/seamless-aluminum-gutters", "/service-plans",
+  "/peak-301", "/sagiper", "/seamless-aluminum-gutters", "/service-plans",
   "/siding", "/soffit-and-fascia", "/specialty-gutters",
   "/hoa-contracts", "/rental-property-maintenance",
 ];
@@ -34,7 +34,7 @@ const FEATURE_HREFS = ["/estimator", "/financing", "/referral"];
 const T = {
   en: {
     services: "Services",
-    serviceLabels: ["Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "HOA Contracts", "Rental Property Maintenance"],
+    serviceLabels: ["Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "HOA Contracts", "Rental Property Maintenance"],
     navLabels: ["The Gold Standard", "About", "Contact", "FAQ", "Projects"],
     featureLabels: ["Estimator", "Financing", "Referral"],
     promoBanner: [
@@ -47,7 +47,7 @@ const T = {
   },
   es: {
     services: "Servicios",
-    serviceLabels: ["Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Contratos HOA", "Mantenimiento de Alquileres"],
+    serviceLabels: ["Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Contratos HOA", "Mantenimiento de Alquileres"],
     navLabels: ["El Estándar de Oro", "Nosotros", "Contacto", "Preguntas Frecuentes", "Proyectos"],
     featureLabels: ["Estimador", "Financiamiento", "Referidos"],
     promoBanner: [
