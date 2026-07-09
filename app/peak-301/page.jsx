@@ -357,7 +357,7 @@ export default function Peak301Page() {
               {t.insuranceDesc}
             </p>
             <Button
-              href="/insurance-resource-center"
+              href="#quote-form"
               variant="primary"
               size="lg"
               iconRight
@@ -370,7 +370,7 @@ export default function Peak301Page() {
                 boxShadow: `0 4px 14px rgba(177, 26, 33, 0.32)`,
               }}
             >
-              {t.insuranceCta}
+              {t.heroCta}
             </Button>
             <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-sm)", color: "var(--jr-muted-on-dark)", marginTop: "var(--jr-space-4)" }}>{t.insuranceSub}</p>
           </Container>
