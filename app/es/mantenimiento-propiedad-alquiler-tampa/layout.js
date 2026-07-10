@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Mantenimiento programado de canaletas para propiedades de alquiler en Tampa Bay: Airbnb, VRBO, alquileres de largo plazo y carteras de inversion. Limpieza, inspeccion y reparaciones para inversionistas.",
+  description: "Mantenimiento programado de canaletas para propiedades de alquiler en Tampa Bay: Airbnb, VRBO, alquileres de largo plazo y carteras de inversión. Limpieza, inspección y reparaciones para inversionistas.",
 };
 
 const breadcrumbSchemaEs = {
@@ -30,7 +30,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Mantenimiento de Canaletas para Alquileres Tampa FL | Airbnb, LTR, Inversionista | JR One",
-  description: "Mantenimiento de canaletas para propiedades de alquiler en Tampa Bay. Airbnb, alquiler a largo plazo, carteras de inversion. Limpieza programada. (844) 444-3114.",
+  description: "Mantenimiento de canaletas para propiedades de alquiler en Tampa Bay. Airbnb, alquiler a largo plazo, carteras de inversión. Limpieza programada. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
     languages: {

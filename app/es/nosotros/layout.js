@@ -11,7 +11,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Sobre Nosotros - Especialistas en Canaletas Tampa",
-  description: "Empresa familiar, mas de 30 anos en el oficio de canaletas, sofito, fascia y revestimiento en Tampa Bay. Christopher Rivera y cuadrillas internas, sin subcontratistas. (844) 444-3114.",
+  description: "Empresa familiar, más de 30 años en el oficio de canaletas, sofito, fascia y revestimiento en Tampa Bay. Christopher Rivera y cuadrillas internas, sin subcontratistas. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/nosotros",
     languages: {
@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Sobre Nosotros - Especialistas en Canaletas Tampa",
-    description: "Empresa familiar, mas de 30 anos en el oficio de canaletas, sofito, fascia y revestimiento en Tampa Bay. Christopher Rivera y cuadrillas internas, sin subcontratistas. (844) 444-3114.",
+    description: "Empresa familiar, más de 30 años en el oficio de canaletas, sofito, fascia y revestimiento en Tampa Bay. Christopher Rivera y cuadrillas internas, sin subcontratistas. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/nosotros",
     type: "website",
     locale: "es_US",

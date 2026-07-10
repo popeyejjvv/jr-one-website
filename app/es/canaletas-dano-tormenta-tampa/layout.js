@@ -5,8 +5,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Reparacion de Canaletas Danadas por Tormenta",
-  serviceType: "Instalacion y Reparacion de Canaletas",
+  name: "Reparación de Canaletas Dañadas por Tormenta",
+  serviceType: "Instalación y Reparación de Canaletas",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -22,7 +22,7 @@ const serviceSchemaEs = {
     "Tarpon Springs", "Largo", "Seminole", "Pinellas Park"
   ].map((name) => ({ "@type": "City", name })),
   description:
-    "Reparacion de canaletas, fascia, sofito y bajantes danados por huracan o tormenta con nombre en Tampa Bay. Instalacion misma semana. Canaletas continuas de 6 y 7 pulgadas solamente (no 5 pulgadas en Florida). Documentacion para reclamo de seguro. Familia, mas de 30 anos en el oficio.",
+    "Reparación de canaletas, fascia, sofito y bajantes dañados por huracán o tormenta con nombre en Tampa Bay. Instalación misma semana. Canaletas continuas de 6 y 7 pulgadas solamente (no 5 pulgadas en Florida). Documentación para reclamo de seguro. Familia, más de 30 años en el oficio.",
   availableLanguage: ["en", "es"],
 };
 
@@ -31,14 +31,14 @@ const breadcrumbSchemaEs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Reparacion de Canaletas por Tormenta", item: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa" },
+    { "@type": "ListItem", position: 2, name: "Reparación de Canaletas por Tormenta", item: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa" },
   ],
 };
 
 export const metadata = {
-  title: "Reparacion de Canaletas por Tormenta Tampa FL - Misma Semana",
+  title: "Reparación de Canaletas por Tormenta Tampa FL - Misma Semana",
   description:
-    "Canaletas, fascia, sofito danados por huracan en Tampa Bay. Instalacion misma semana, documentacion para seguro. Familia, mas de 30 anos. (844) 444-3114.",
+    "Canaletas, fascia, sofito dañados por huracán en Tampa Bay. Instalación misma semana, documentación para seguro. Familia, más de 30 años. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
     languages: {
@@ -48,8 +48,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Reparacion de Canaletas por Tormenta Tampa Bay - JR One Aluminum",
-    description: "Instalacion misma semana para canaletas, fascia y sofito danados por huracan. Documentacion para seguro. (844) 444-3114.",
+    title: "Reparación de Canaletas por Tormenta Tampa Bay - JR One Aluminum",
+    description: "Instalación misma semana para canaletas, fascia y sofito dañados por huracán. Documentación para seguro. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
     type: "website",
     locale: "es_US",

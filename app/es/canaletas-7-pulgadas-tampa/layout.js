@@ -4,7 +4,7 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Canaletas de 7 Pulgadas",
+  name: "Instalación de Canaletas de 7 Pulgadas",
   serviceType: "Canaletas Sobredimensionadas de 7 Pulgadas",
   inLanguage: "es-US",
   provider: {
@@ -30,7 +30,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Canaletas de 7 Pulgadas Tampa FL | Sobredimensionadas Grado Comercial | JR One",
-  description: "Canaletas continuas de aluminio de 7 pulgadas para hogares de lujo en Tampa Bay. Capacidad maxima para lluvia tropical. Mas de 30 anos en el oficio. (844) 444-3114.",
+  description: "Canaletas continuas de aluminio de 7 pulgadas para hogares de lujo en Tampa Bay. Capacidad máxima para lluvia tropical. Más de 30 años en el oficio. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-7-pulgadas-tampa",
     languages: {

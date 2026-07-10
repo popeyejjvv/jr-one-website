@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
   const cityName = slugToCity(slug);
   return {
     title: `Canaletas, Sofito y Fascia en ${cityName}, FL`,
-    description: `Canaletas continuas de aluminio (6 y 7 pulgadas), reparacion de sofito y fascia, protectores de canaleta, drenaje subterraneo en ${cityName}, Florida. Empresa familiar, mas de 30 anos en el oficio. Estimado gratis (844) 444-3114. Hablamos espanol.`,
+    description: `Canaletas continuas de aluminio (6 y 7 pulgadas), reparación de sofito y fascia, protectores de canaleta, drenaje subterráneo en ${cityName}, Florida. Empresa familiar, más de 30 años en el oficio. Estimado gratis (844) 444-3114. Hablamos español.`,
     alternates: {
       canonical: `https://www.jronegutters.com/es/areas/${slug}`,
       languages: {
@@ -53,7 +53,7 @@ export default async function CityPageEs({ params }) {
     "@context": "https://schema.org",
     "@type": "Service",
     name: `Servicios de Canaletas, Sofito y Fascia en ${cityName}, FL`,
-    serviceType: "Instalacion de Canaletas, Sofito, Fascia y Drenaje",
+    serviceType: "Instalación de Canaletas, Sofito, Fascia y Drenaje",
     inLanguage: "es-US",
     provider: {
       "@type": "HomeAndConstructionBusiness",
@@ -77,7 +77,7 @@ export default async function CityPageEs({ params }) {
       name: cityName,
       address: { "@type": "PostalAddress", addressRegion: "FL", addressCountry: "US" },
     },
-    description: `Canaletas continuas de aluminio (6 y 7 pulgadas), sofito, fascia, protectores y drenaje subterraneo en ${cityName}, Florida. Mas de 30 anos de experiencia familiar en el oficio de aluminio en Tampa Bay. Servicio bilingue.`,
+    description: `Canaletas continuas de aluminio (6 y 7 pulgadas), sofito, fascia, protectores y drenaje subterráneo en ${cityName}, Florida. Más de 30 años de experiencia familiar en el oficio de aluminio en Tampa Bay. Servicio bilingüe.`,
   };
 
   const breadcrumbSchemaEs = {
@@ -85,7 +85,7 @@ export default async function CityPageEs({ params }) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-      { "@type": "ListItem", position: 2, name: "Areas de Servicio", item: "https://www.jronegutters.com/es/areas" },
+      { "@type": "ListItem", position: 2, name: "Áreas de Servicio", item: "https://www.jronegutters.com/es/areas" },
       { "@type": "ListItem", position: 3, name: cityName, item: `https://www.jronegutters.com/es/areas/${slug}` },
     ],
   };

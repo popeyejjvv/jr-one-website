@@ -5,13 +5,13 @@ const breadcrumbSchemaEs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Garantias", item: "https://www.jronegutters.com/es/garantias" },
+    { "@type": "ListItem", position: 2, name: "Garantías", item: "https://www.jronegutters.com/es/garantias" },
   ],
 };
 
 export const metadata = {
-  title: "Garantias de Canaletas y Peak 301 Tampa Bay",
-  description: "Garantia de mano de obra de 3 anos mas garantias del fabricante en canaletas, sofito, fascia y Peak 301 de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
+  title: "Garantías de Canaletas y Peak 301 Tampa Bay",
+  description: "Garantía de mano de obra de 3 años más garantías del fabricante en canaletas, sofito, fascia y Peak 301 de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/garantias",
     languages: {
@@ -21,8 +21,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Garantias de Canaletas y Peak 301 Tampa Bay",
-    description: "Garantia de mano de obra de 3 anos mas garantias del fabricante en canaletas, sofito, fascia y Peak 301 de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
+    title: "Garantías de Canaletas y Peak 301 Tampa Bay",
+    description: "Garantía de mano de obra de 3 años más garantías del fabricante en canaletas, sofito, fascia y Peak 301 de JR One Aluminum. Por escrito. Llame al (844) 444-3114.",
     url: "https://www.jronegutters.com/es/garantias",
     type: "website",
     locale: "es_US",
