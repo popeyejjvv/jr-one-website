@@ -1,6 +1,8 @@
 import { NextResponse, after } from "next/server";
+import nodemailer from "nodemailer";
 import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
+import { buildEstimateEmail } from "@/lib/estimate-email";
 
 // =============================================================================
 // JR One, Estimator Lead API
@@ -356,6 +358,39 @@ export async function POST(request) {
           console.log(`✓ Vapi after-hours callback triggered for estimator opp ${bpResult.opportunity_id}`);
         } catch (vapiErr) {
           console.error(`✗ Vapi trigger failed (non-fatal): ${vapiErr.message}`);
+        }
+      });
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Send the customer their estimate email (transactional, they clicked SEND
+    // MY ESTIMATE). Added 2026-07-13 - the UI previously claimed it emailed the
+    // estimate but nothing was sent. Post-response via after() so the customer's
+    // UI stays instant; best-effort, a mail failure never breaks lead capture.
+    // Branded template in lib/estimate-email.js (mirrors the JR One standard).
+    // ─────────────────────────────────────────────────────────────────────────
+    if (type === "customer" && customerEmail && process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
+      after(async () => {
+        try {
+          const { subject, html, text } = buildEstimateEmail({
+            customerName, lang, estimateLow, estimateHigh, estimate,
+            discountCode, expDate, measurements,
+          });
+          const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+          });
+          await transporter.sendMail({
+            from: `"JR One Aluminum" <${process.env.GMAIL_USER}>`,
+            to: customerEmail,
+            replyTo: "info@jronegutters.com",
+            subject,
+            html,
+            text,
+          });
+          console.log(`✓ Estimate email sent to ${customerEmail}`);
+        } catch (mailErr) {
+          console.error(`✗ Estimate email failed (non-fatal): ${mailErr.message}`);
         }
       });
     }
