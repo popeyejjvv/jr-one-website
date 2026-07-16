@@ -71,10 +71,13 @@ async function fetchPhotosForTag(tagId, tagName) {
 
 async function fetchProjectDetails(projectIds) {
   const projects = {};
-  // Fetch in parallel, batches of 10
+  // Fetch in parallel, batches of 30. With the tag backfill the gallery now
+  // spans ~350+ unique projects; sequential batches of 10 took ~35s cold
+  // (measured 39.7s total endpoint time on 2026-07-15). Batches of 30 keep
+  // the endpoint under ~10s cold without tripping CompanyCam rate limits.
   const ids = [...projectIds];
-  for (let i = 0; i < ids.length; i += 10) {
-    const batch = ids.slice(i, i + 10);
+  for (let i = 0; i < ids.length; i += 30) {
+    const batch = ids.slice(i, i + 30);
     const results = await Promise.all(
       batch.map(id => ccFetch(`/projects/${id}`).catch(() => null))
     );
