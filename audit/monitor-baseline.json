@@ -1,5 +1,5 @@
 {
- "blockCount": 327,
- "setAt": "2026-07-16T17:00:00Z",
- "note": "2026-07-16 full re-audit after tag backfill + photo-select rules"
+ "blockCount": 3646,
+ "setAt": "2026-07-16T20:27:37.290Z",
+ "note": "2026-07-16 full-catalog manifest audit: blocklist grew by manifest-review UNSAFE ids"
 }

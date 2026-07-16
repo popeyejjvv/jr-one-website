@@ -1,5 +1,10 @@
 import { filterPhotos, dropBlockedIds } from "../../../lib/companycam/photo-filter";
 import { selectPerProject, interleaveByProject } from "../../../lib/companycam/photo-select";
+// Curated manifest: every Complete-labeled project in CompanyCam, photo-select rules
+// applied, every photo vision-reviewed (2026-07-16 full-catalog audit). This is the
+// gallery's BASE layer -- the live fetch below only tops it up with photos newer than
+// the manifest. Rebuild with: node audit/build_manifest.mjs (see audit/ pipeline).
+import curated from "../../../lib/companycam/curated-gallery.json";
 
 const COMPANYCAM_TOKEN = process.env.COMPANYCAM_TOKEN;
 const API = "https://api.companycam.com/v2";
@@ -171,9 +176,15 @@ async function buildGallery() {
     delete photo.tag; // we use tags[] now
   }
 
+  // Merge: curated manifest is the base, live photos top it up (live wins on id clash
+  // so freshly re-fetched URLs/details take precedence).
+  const byId = new Map();
+  for (const p of curated.photos || []) byId.set(String(p.id), p);
+  for (const p of allPhotos) byId.set(String(p.id), p);
+
   // Quality gate: drop PII / unprofessional / internal photos before they ever leave the
   // server. Same shared filter the SSG pages use (lib/companycam/photo-filter.js).
-  const safePhotos = filterPhotos(allPhotos, { page: "projects-gallery" });
+  const safePhotos = filterPhotos([...byId.values()], { page: "projects-gallery" });
 
   // Display order: round-robin across projects (each ranked by newest photo) so one
   // job never renders as a wall of consecutive near-identical tiles.
@@ -184,9 +195,24 @@ async function buildGallery() {
   return {
     photos: displayPhotos,
     tagLabels: TAG_LABELS,
-    totalPhotos: safePhotos.length,
+    totalPhotos: displayPhotos.length,
     totalProjects: safeProjectIds.size,
     fetchedAt: new Date().toISOString(),
+  };
+}
+
+// Manifest-only gallery: served when the live CompanyCam fetch fails. The manifest is
+// pre-vetted, so this degrades to a full (slightly stale) gallery instead of a 502.
+function manifestOnlyGallery() {
+  const safePhotos = filterPhotos(curated.photos || [], { page: "projects-gallery", log: false });
+  const displayPhotos = interleaveByProject(safePhotos);
+  return {
+    photos: displayPhotos,
+    tagLabels: TAG_LABELS,
+    totalPhotos: displayPhotos.length,
+    totalProjects: new Set(displayPhotos.map((p) => p.projectId).filter(Boolean)).size,
+    fetchedAt: new Date().toISOString(),
+    degraded: "manifest-only (live CompanyCam fetch unavailable)",
   };
 }
 
@@ -216,6 +242,9 @@ export async function GET() {
         headers: { "Cache-Control": "public, s-maxage=60" },
       });
     }
-    return Response.json({ error: "Failed to fetch from CompanyCam" }, { status: 502 });
+    // No cache -> degrade to the pre-vetted manifest instead of a 502.
+    return Response.json(manifestOnlyGallery(), {
+      headers: { "Cache-Control": "public, s-maxage=300" },
+    });
   }
 }
