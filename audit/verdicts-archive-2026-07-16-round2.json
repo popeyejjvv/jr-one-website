@@ -1,0 +1,76 @@
+{
+ "verdicts": [
+  {
+   "index": 0,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Lawn-dominated arrival-style shot, work hidden in shadow",
+   "confidence": 0.9
+  },
+  {
+   "index": 1,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Crew straw hat pokes into frame under downspout",
+   "confidence": 0.9
+  },
+  {
+   "index": 2,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker boot in frame, on-roof POV shot",
+   "confidence": 0.9
+  },
+  {
+   "index": 3,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Guard panel protruding, diagnostic look-up, unclear subject",
+   "confidence": 0.9
+  },
+  {
+   "index": 4,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV down roof edge, material in corner",
+   "confidence": 0.9
+  },
+  {
+   "index": 5,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Guard mid-install, open gutter, person and bike behind",
+   "confidence": 0.9
+  },
+  {
+   "index": 6,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Person on ladder visible, sky-dominant framing",
+   "confidence": 0.9
+  },
+  {
+   "index": 7,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tile roof mid-work, exposed underlayment visible",
+   "confidence": 0.9
+  },
+  {
+   "index": 8,
+   "class": "SAFE",
+   "reason": "Clean bronze gutter/downspout with decorative elbow on white stucco",
+   "confidence": 0.9
+  },
+  {
+   "index": 9,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Concrete column dominates, work unclear",
+   "confidence": 0.9
+  },
+  {
+   "index": 10,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker boot in frame, top-down tile-edge POV",
+   "confidence": 0.9
+  },
+  {
+   "index": 11,
+   "class": "SAFE",
+   "reason": "Attractive clean house exterior, deliberate framing, work visible",
+   "confidence": 0.9
+  }
+ ]
+}
