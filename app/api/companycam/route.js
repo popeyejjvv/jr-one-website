@@ -94,6 +94,32 @@ async function fetchProjectDetails(projectIds) {
   return projects;
 }
 
+// PUBLISHING LAW (Popeye, 2026-07-15): the website may ONLY show photos from projects
+// labeled Complete. Bid / In Progress / Active / etc. are estimates or unfinished work -
+// houses we may never have worked on. Fail closed: a project whose labels cannot be
+// fetched is treated as NOT complete and its photos are dropped.
+const REQUIRED_PROJECT_LABEL = "complete";
+// Newest N photos per project only. Crews shoot before-shots first and finished work
+// last, so newest = finished; this also keeps any one job from flooding the gallery.
+const MAX_PHOTOS_PER_PROJECT = 8;
+
+async function fetchProjectLabels(projectIds) {
+  const labels = {};
+  const ids = [...projectIds];
+  for (let i = 0; i < ids.length; i += 30) {
+    const batch = ids.slice(i, i + 30);
+    const results = await Promise.all(
+      batch.map(id =>
+        ccFetch(`/projects/${id}/labels`)
+          .then(ls => ({ id, values: (ls || []).map(l => (l.value || "").toLowerCase()) }))
+          .catch(() => ({ id, values: null })) // null = unknown = fail closed
+      )
+    );
+    for (const r of results) labels[r.id] = r.values;
+  }
+  return labels;
+}
+
 async function buildGallery() {
   // Fetch photos for all tags in parallel
   const tagEntries = Object.entries(TAGS);
@@ -114,7 +140,25 @@ async function buildGallery() {
     }
   }
 
-  const allPhotos = [...photoMap.values()];
+  let allPhotos = [...photoMap.values()];
+
+  // Complete-label gate (fail closed) + newest-N-per-project cap.
+  const allProjectIds = new Set(allPhotos.map(p => p.projectId));
+  const projectLabels = await fetchProjectLabels(allProjectIds);
+  allPhotos = allPhotos.filter(p => {
+    const values = projectLabels[p.projectId];
+    return Array.isArray(values) && values.includes(REQUIRED_PROJECT_LABEL);
+  });
+  const byProject = new Map();
+  for (const p of allPhotos) {
+    if (!byProject.has(p.projectId)) byProject.set(p.projectId, []);
+    byProject.get(p.projectId).push(p);
+  }
+  allPhotos = [];
+  for (const group of byProject.values()) {
+    group.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
+    allPhotos.push(...group.slice(0, MAX_PHOTOS_PER_PROJECT));
+  }
 
   // Fetch project details for all unique project IDs
   const projectIds = new Set(allPhotos.map(p => p.projectId));
