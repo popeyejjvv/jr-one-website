@@ -38,10 +38,17 @@ async function ccFetch(path) {
   return res.json();
 }
 
+// CompanyCam returns photos newest-first. The gallery only ever displays a curated
+// subset, so cap pagination at the newest few pages per tag. Without this cap the
+// route walks EVERY tagged photo; after the 2026-07-15 tag backfill (46K tagged
+// photos vs ~150 before) the unbounded walk blew past serverless timeouts and killed
+// site builds via the by-city build-time fetch.
+const MAX_PAGES_PER_TAG = 3;
+
 async function fetchPhotosForTag(tagId, tagName) {
   const photos = [];
   let page = 1;
-  while (true) {
+  while (page <= MAX_PAGES_PER_TAG) {
     const batch = await ccFetch(`/photos?tag_ids[]=${tagId}&per_page=50&page=${page}`);
     if (!batch.length) break;
     for (const p of batch) {
