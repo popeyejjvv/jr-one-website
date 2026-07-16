@@ -56,3 +56,8 @@ audit/blocked-ids.json
 audit/sheet-index.json
 audit/monitor-report.json
 audit/verdicts/
+audit/verdicts-pass2/
+audit/manifest-candidates.json
+audit/complete-projects.json
+audit/vision-review.log
+audit/vision-review-pass2.log

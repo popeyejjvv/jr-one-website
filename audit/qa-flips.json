@@ -1,0 +1,237 @@
+{
+ "generatedAt": "2026-07-16T20:13:24.890Z",
+ "sample": "24 sheets stratified",
+ "totalChecked": 94,
+ "flips": [
+  {
+   "sheet": 65,
+   "index": 1046,
+   "reason": "Metal ladder/pole cuts vertically through the right side of the frame and the shot is a crooked, sky-dominant upward snapshot; the finished eave is not the deliberate subject"
+  },
+  {
+   "sheet": 65,
+   "index": 1048,
+   "reason": "Generic side-yard snapshot of a wall, lawn and palms; the gutter is a distant sliver at the top edge with no visible finished work as the clear subject"
+  },
+  {
+   "sheet": 75,
+   "index": 1205,
+   "reason": "Roof-top POV shot taken from on top of the roof looking down the eave at the driveway below; explicit flip criterion regardless of the clean leaf guard shown"
+  },
+  {
+   "sheet": 85,
+   "index": 1368,
+   "reason": "Casual wide snapshot of a condo building with visible stucco staining; gutters are incidental, not the clear subject of a deliberately framed finished-work photo"
+  },
+  {
+   "sheet": 95,
+   "index": 1531,
+   "reason": "Close-up shows raw concrete beam with dangling wires/fasteners under the soffit corner - unfinished detail, not a showcase photo"
+  },
+  {
+   "sheet": 95,
+   "index": 1533,
+   "reason": "Snapshot up at stucco wall/window with foreground tile roof ridge obstructing; no clear finished gutter/soffit subject visible"
+  },
+  {
+   "sheet": 105,
+   "index": 1684,
+   "reason": "Roof-top POV looking down the shingle roof edge into the yard with AC unit below - explicit UNSAFE criterion, not a finished-work showcase"
+  },
+  {
+   "sheet": 115,
+   "index": 1840,
+   "reason": "Downspout is leaning away from the wall unstrapped with a gap at the bottom - mid-install, not finished work"
+  },
+  {
+   "sheet": 115,
+   "index": 1842,
+   "reason": "Wide whole-house snapshot with no distinguishable finished gutter/soffit subject; open under-house bay shows stored items and clutter"
+  },
+  {
+   "sheet": 5,
+   "index": 81,
+   "reason": "Blank stucco wall and gravel bed dominate the frame with a black bin/planter; finished fascia/soffit is only a cut-off sliver at the top - no clear finished-work subject."
+  },
+  {
+   "sheet": 5,
+   "index": 83,
+   "reason": "Distant townhome streetscape shot over a black vehicle hood in the foreground; vehicle intrudes and no finished work is discernible as the subject."
+  },
+  {
+   "sheet": 15,
+   "index": 241,
+   "reason": "Sky-dominant backlit snapshot - storm clouds and sun glare fill the frame, gutter/fascia in shadow on a crooked diagonal."
+  },
+  {
+   "sheet": 15,
+   "index": 242,
+   "reason": "Tilted close-up dominated by blank stucco wall; soffit vent is only a strip at the top edge, not a deliberately framed gallery-grade subject."
+  },
+  {
+   "sheet": 15,
+   "index": 248,
+   "reason": "Aluminum ladder clearly visible leaning under the gutter corner - work-in-progress marker; frame also sky/tree heavy."
+  },
+  {
+   "sheet": 185,
+   "index": 2971,
+   "reason": "Roof-shingle and palm-frond dominant up-shot; gutter is a thin sliver, not a deliberately framed finished-work showcase"
+  },
+  {
+   "sheet": 185,
+   "index": 2975,
+   "reason": "No identifiable gutter/soffit/fascia work as subject; generic sky-heavy facade snapshot of a gable with decorative window"
+  },
+  {
+   "sheet": 195,
+   "index": 3124,
+   "reason": "Worn yellow house side with rooftop antenna and overgrown base; gutter incidental in a wide snapshot, not a showcase of finished work"
+  },
+  {
+   "sheet": 195,
+   "index": 3127,
+   "reason": "No clear gutter/soffit work as subject; shadowed house-front snapshot with hanging porch clutter"
+  },
+  {
+   "sheet": 195,
+   "index": 3134,
+   "reason": "Sky-dominant extreme up-angle along the eave; soffit is a thin diagonal strip, documentation-style shot not a deliberate showcase"
+  },
+  {
+   "sheet": 205,
+   "index": 3282,
+   "reason": "Burned-in timestamp overlay (Sep 2, 2023 08:25:15); also worn mobile-home skirting"
+  },
+  {
+   "sheet": 205,
+   "index": 3284,
+   "reason": "Tree/sky-dominant shadowy up-shot; fascia line barely legible as subject, possible material at wall base"
+  },
+  {
+   "sheet": 205,
+   "index": 3288,
+   "reason": "Burned-in timestamp overlay (Aug 24, 2023 08:03:12); palm fronds intrude over the gutter"
+  },
+  {
+   "sheet": 205,
+   "index": 3293,
+   "reason": "Burned-in timestamp overlay (Aug 9, 2023 09:51:52); chain-link fence and scrubby lot clutter, blurry obstruction at frame edge"
+  },
+  {
+   "sheet": 35,
+   "index": 564,
+   "reason": "Cluttered corner snapshot: floodlight fixture, lattice and dark screened-porch area dominate; finished soffit is not a deliberately framed showcase subject."
+  },
+  {
+   "sheet": 35,
+   "index": 570,
+   "reason": "Elevated roof-top POV across a shingle roof with palm fronds intruding and neighboring house prominent; not a level deliberate shot of finished gutter work."
+  },
+  {
+   "sheet": 45,
+   "index": 728,
+   "reason": "Roof-top POV: shingle roof slope fills the foreground (shot from on the roof) and the roof, not gutter/soffit/fascia work, is the subject."
+  },
+  {
+   "sheet": 45,
+   "index": 729,
+   "reason": "Tilted sky-heavy upward snapshot with the eave line running diagonally; no clear finished-work subject (wall is stucco, not the claimed siding)."
+  },
+  {
+   "sheet": 55,
+   "index": 890,
+   "reason": "Sky-dominant upward snapshot, gutter corner protruding into mostly cloud; same composition class as adjacent tiles 886-888 already ruled UNSAFE, so it fails closed."
+  },
+  {
+   "sheet": 215,
+   "index": 3455,
+   "reason": "Distant lawn/sky-dominant front snapshot; no finished gutter/soffit work identifiable as the subject (Westfall batch also carries burned-in timestamps)."
+  },
+  {
+   "sheet": 225,
+   "index": 3602,
+   "reason": "Overgrown vines/vegetation climbing the house dominate the frame; untidy exterior, gutter not a clean showcase subject (same overgrown job as flagged 3603)."
+  },
+  {
+   "sheet": 225,
+   "index": 3612,
+   "reason": "Casual distant backyard snapshot of the utility side with power lines; gutter line incidental, not the deliberate subject of the photo."
+  },
+  {
+   "sheet": 234,
+   "index": 3753,
+   "reason": "Roof-top POV: taken from atop the porch metal roof (roof surface fills foreground), dark sky-dominant tilted framing."
+  },
+  {
+   "sheet": 234,
+   "index": 3754,
+   "reason": "Roof-edge/roof-top POV looking down the gutter run with shingles dominating the foreground; excluded vantage for the public gallery."
+  },
+  {
+   "sheet": 125,
+   "index": 2000,
+   "reason": "Gutter/trim stock and debris lying on lawn and walkway, AC/utility clutter - in-progress job-site shot, not finished gallery work"
+  },
+  {
+   "sheet": 125,
+   "index": 2002,
+   "reason": "Backlit casual snapshot of mobile-home rear with potted cactus and window AC clutter; no clear finished-work subject"
+  },
+  {
+   "sheet": 135,
+   "index": 2163,
+   "reason": "Same active job site as UNSAFE #2162 (ladder shot of identical house); apparent material/debris on lawn plus heavy sun-flare backlighting leaves house underexposed"
+  },
+  {
+   "sheet": 135,
+   "index": 2167,
+   "reason": "Plain stucco wall and shingle-roof snapshot; no discernible gutter/soffit/fascia work as subject (roof is out of JR One scope)"
+  },
+  {
+   "sheet": 135,
+   "index": 2173,
+   "reason": "Tilted upward snapshot dominated by the arched window; gutter is only a sliver at top of frame, not the clear subject"
+  },
+  {
+   "sheet": 145,
+   "index": 2328,
+   "reason": "Sky-dominant backlit shot with sun flare; black soffit reads as an unreadable silhouette, balustrade dominates instead of the finished work"
+  },
+  {
+   "sheet": 145,
+   "index": 2334,
+   "reason": "Loose downspout offcuts and metal strap pieces on the pavers - in-progress debris in a downward snapshot"
+  },
+  {
+   "sheet": 145,
+   "index": 2335,
+   "reason": "No visible finished work; dingy stucco wall with chain-link fence and patchy yard, reads as a before photo"
+  },
+  {
+   "sheet": 155,
+   "index": 2485,
+   "reason": "Crooked upward snapshot dominated by blank stucco wall; cluttered deck/patio items and neighbor yard visible top-left; finished soffit is not a clear, deliberately framed subject"
+  },
+  {
+   "sheet": 165,
+   "index": 2641,
+   "reason": "Clutter-dominant: pergola lattice underside and palm fronds dominate the frame, visible ding on fascia corner; gutter is a small mid-frame band, not the subject — documentation snapshot, not gallery-grade"
+  },
+  {
+   "sheet": 165,
+   "index": 2654,
+   "reason": "No finished work as subject: eave has no gutter installed, siding shows grime/stain patches, window-dominant flat elevation — reads as a before/condition shot"
+  },
+  {
+   "sheet": 175,
+   "index": 2805,
+   "reason": "Balcony railing bisects the foreground, heavy gray sky, rough/unfinished junction at left eave corner; same active jobsite as adjacent WIP tiles (ladder/worker in 2806-2807) — work not cleanly presented"
+  },
+  {
+   "sheet": 175,
+   "index": 2814,
+   "reason": "Fascia streaked with black mildew/grime and an open gap with a missing/crooked soffit vent — condition-documentation photo, not finished professional work"
+  }
+ ]
+}

@@ -282,7 +282,12 @@ for (const service of SERVICE_PAGES) {
   for (const p of interleaveByProject(pool).slice(0, 12)) note(p, `/${service}`);
 }
 
-// 4. /projects — entire live gallery
+// 4. /projects — curated manifest base + entire live gallery (mirror route.js merge)
+const curated = JSON.parse(fs.readFileSync(new URL("../lib/companycam/curated-gallery.json", import.meta.url), "utf8"));
+for (const p of (curated.photos || [])) {
+  if (BLOCKED_IDS.has(String(p.id))) continue;
+  note({ ...p, source: "live" }, "/projects");
+}
 const live = await buildLiveGallery();
 for (const p of (live.photos || [])) note({ ...p, source: "live" }, "/projects");
 

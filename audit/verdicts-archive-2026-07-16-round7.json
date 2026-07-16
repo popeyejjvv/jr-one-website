@@ -1,0 +1,34 @@
+{
+ "verdicts": [
+  {
+   "index": 0,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky-heavy corner shot, work not showcased",
+   "confidence": 0.9
+  },
+  {
+   "index": 1,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down roof POV with vehicle below",
+   "confidence": 0.9
+  },
+  {
+   "index": 2,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof overview, crew shadow and boot visible",
+   "confidence": 0.9
+  },
+  {
+   "index": 3,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down shingle/guard POV",
+   "confidence": 0.9
+  },
+  {
+   "index": 4,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Downspout outlet cutout close-up, WIP",
+   "confidence": 0.9
+  }
+ ]
+}
