@@ -29,6 +29,7 @@ MAKE = EXIF_TAGS.get("Make")
 MODEL = EXIF_TAGS.get("Model")
 SOFTWARE = EXIF_TAGS.get("Software")
 GPSINFO = EXIF_TAGS.get("GPSInfo")
+ORIENTATION = EXIF_TAGS.get("Orientation")
 
 # Common phone screen resolutions (portrait + landscape) that indicate a screenshot.
 SCREEN_DIMS = {
@@ -79,6 +80,12 @@ def fetch(rec):
         out["flag_no_exif"] = not bool(make or model)
         out["flag_doc_aspect"] = bool(out["aspect"] and out["aspect"] < 0.62)  # tall doc/screenshot
         out["flag_screenshot_dims"] = (w, h) in SCREEN_DIMS
+        # EXIF Orientation: 1 = normal. 3 = rotated 180 (upside down), 6/8 = sideways.
+        # CompanyCam's web asset does not always bake the rotation in, so a non-1 value
+        # is a strong "renders wrong on the site" signal (2026-07-16 upside-down incident).
+        orientation = exif.get(ORIENTATION) if exif else None
+        out["exif_orientation"] = orientation
+        out["flag_bad_orientation"] = orientation in (3, 4, 5, 6, 7, 8)
         out["ok"] = True
     except Exception as e:
         out["error"] = str(e)

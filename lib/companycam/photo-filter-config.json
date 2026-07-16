@@ -1,223 +1,2310 @@
 {
-  "_comment": "Manual override lists for the CompanyCam photo quality gate (lib/companycam/photo-filter.js). blocked_photo_ids: never display, regardless of any heuristic. approved_photo_ids: bypass automated name/status heuristics (still subject to the block list). Edit by hand to hide or force-allow a specific photo, then rebuild the site.",
-  "_audit": {
-    "date": "2026-06-05",
-    "reviewed": 367,
-    "unsafe": 29,
-    "counts": {
-      "SAFE": 338,
-      "UNSAFE-UNPROFESSIONAL": 26,
-      "UNSAFE-INTERNAL": 1,
-      "UNSAFE-PII": 2
-    },
-    "method": "vision review of every displayed photo via contact sheets (audit/ pipeline)"
+ "_comment": "Manual override lists for the CompanyCam photo quality gate (lib/companycam/photo-filter.js). blocked_photo_ids: never display, regardless of any heuristic. approved_photo_ids: bypass automated name/status heuristics (still subject to the block list). Edit by hand to hide or force-allow a specific photo, then rebuild the site.",
+ "_audit": {
+  "date": "2026-07-16",
+  "reviewed": 453,
+  "unsafe": 298,
+  "counts": {
+   "UNSAFE-ORIENTATION": 2,
+   "UNSAFE-UNPROFESSIONAL": 158,
+   "UNSAFE-PII": 5,
+   "SAFE": 101,
+   "UNSAFE-INTERNAL": 13
   },
-  "blocked_photo_ids": [
-    "inv-102328800",
-    "inv-101641704",
-    "inv-101311754",
-    "2981466275",
-    "2953691766",
-    "inv-99445487",
-    "inv-98686018",
-    "inv-96814225",
-    "inv-94510288",
-    "inv-93915175",
-    "inv-92078333",
-    "inv-91904115",
-    "inv-91238749",
-    "inv-90650061",
-    "inv-87735117",
-    "inv-87452506",
-    "inv-87200019",
-    "inv-87134798",
-    "inv-85419159",
-    "inv-85306681",
-    "inv-85219174",
-    "inv-84897820",
-    "inv-83610440",
-    "inv-83003553",
-    "inv-78653014",
-    "inv-73357143",
-    "inv-70544587",
-    "1760756761",
-    "inv-67298052"
-  ],
-  "approved_photo_ids": [],
-  "_blocked_reasons": {
-    "1760756761": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Dark, unclear shot of dark tarp/material against block wall, no JR One finished work visible, low usability",
-      "project": "PITCH!",
-      "source": "live"
-    },
-    "2953691766": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Dim/blurry close-up of ladder/material with no clear finished work, low usability",
-      "project": "Clear Source LLC",
-      "source": "live"
-    },
-    "2981466275": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Distant/dark commercial-area capture with construction equipment, no clear JR One work, low usability",
-      "project": "Clear Source LLC",
-      "source": "live"
-    },
-    "inv-102328800": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "blurry dark ground/pavers shot, accidental capture, no JR One work visible",
-      "project": "Susan Olsen - Stephan Self Gen JR One",
-      "source": "inventory"
-    },
-    "inv-101641704": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Photo dominated by American flag and a tree with no clear JR One work; appears accidental/non-work capture",
-      "project": "",
-      "source": "inventory"
-    },
-    "inv-101311754": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Pre-work shot with fallen tree/debris and no visible JR One work",
-      "project": "Jeff Hacker - JRONE",
-      "source": "inventory"
-    },
-    "inv-99445487": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Roof photo with pink/magenta digital markup lines and text overlay (measurement annotation)",
-      "project": "Rob Icenogle - JRONE",
-      "source": "inventory"
-    },
-    "inv-98686018": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Mostly empty sky with sun glare, no usable work content",
-      "project": "Stronghold Roofing",
-      "source": "inventory"
-    },
-    "inv-96814225": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Pink/magenta drawn oval markup circling a damaged roof area - digital annotation overlay",
-      "project": "PITCH!",
-      "source": "inventory"
-    },
-    "inv-94510288": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Aerial/satellite measurement diagram of a property with drawn markup lines and points",
-      "project": "Pamela Lovett - JRONE",
-      "source": "inventory"
-    },
-    "inv-93915175": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Tall narrow dark blurry close-up of pole/material, unusable framing",
-      "project": "PITCH!",
-      "source": "inventory"
-    },
-    "inv-92078333": {
-      "class": "UNSAFE-INTERNAL",
-      "reason": "Product material sample board with printed label/packaging branding text, internal material shot",
-      "project": "Lam - JRONE",
-      "source": "inventory"
-    },
-    "inv-91904115": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Garage/driveway with truck and tailgate down, accidental/internal capture not finished work",
-      "project": "Lolitta Thornton - JRONE",
-      "source": "inventory"
-    },
-    "inv-91238749": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Mostly white sky/sun blowout with minimal subject, unusable overexposed photo",
-      "project": "ONSITE",
-      "source": "inventory"
-    },
-    "inv-90650061": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Yellow hand-drawn arrow and handwritten text overlay markup on the photo.",
-      "project": "Amanda Gill - JRONE",
-      "source": "inventory"
-    },
-    "inv-87735117": {
-      "class": "UNSAFE-PII",
-      "reason": "Printed document/paperwork with text and red markup overlay - looks like an estimate or order sheet.",
-      "project": "Westfall - Alex A",
-      "source": "inventory"
-    },
-    "inv-87452506": {
-      "class": "UNSAFE-PII",
-      "reason": "Hand-drawn diagram/sketch with handwritten notes and text - internal crew notes with potential customer detail.",
-      "project": "Westfall - Carlos V",
-      "source": "inventory"
-    },
-    "inv-87200019": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Overlay numbers (4, 23) and drawn text annotations on roof photo - digital markup.",
-      "project": "Sook Chang - JRONE",
-      "source": "inventory"
-    },
-    "inv-87134798": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Blurry extreme close-up of finger/thumb, accidental capture.",
-      "project": "Jim Buck - JRONE",
-      "source": "inventory"
-    },
-    "inv-85419159": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Blurry accidental shot with hand/finger, unusable.",
-      "project": "",
-      "source": "inventory"
-    },
-    "inv-85306681": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Dark blurry close-up of surface with finger, accidental/unusable.",
-      "project": "",
-      "source": "inventory"
-    },
-    "inv-85219174": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Wet driveway/ground with motorcycle and debris, no JR One work visible.",
-      "project": "Westfall - Brian C",
-      "source": "inventory"
-    },
-    "inv-84897820": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "House exterior with burned-in yellow digital markup ('30') drawn on the image",
-      "project": "Lorena Woods - JRONE",
-      "source": "inventory"
-    },
-    "inv-83610440": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Teal house with burned-in yellow text overlay 'Drain this floor' - digital markup",
-      "project": "Westfall - Susan M",
-      "source": "inventory"
-    },
-    "inv-83003553": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "House exterior with burned-in yellow text overlay markup",
-      "project": "Kevin Brown - JRONE",
-      "source": "inventory"
-    },
-    "inv-78653014": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Mostly tree and sky, no JR One work visible / accidental capture",
-      "project": "Westfall - Thomas S",
-      "source": "inventory"
-    },
-    "inv-73357143": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Brick house with sign/overlay on roofline, appears to be a damage or markup shot",
-      "project": "",
-      "source": "inventory"
-    },
-    "inv-70544587": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Crew member working on roof with green tarp, person captured in candid work shot",
-      "project": "Jose - JRONE",
-      "source": "inventory"
-    },
-    "inv-67298052": {
-      "class": "UNSAFE-UNPROFESSIONAL",
-      "reason": "Blurry blue out-of-focus motion capture, unusable accidental shot",
-      "project": "Michelle - JRONE",
-      "source": "inventory"
-    }
+  "method": "vision review via contact sheets (audit/ pipeline), 6-agent parallel pass; post tag-backfill + photo-select (last-day window / 30-min gap / cap 8) selection"
+ },
+ "blocked_photo_ids": [
+  "inv-102328800",
+  "inv-101641704",
+  "inv-101311754",
+  "2981466275",
+  "2953691766",
+  "inv-99445487",
+  "inv-98686018",
+  "inv-96814225",
+  "inv-94510288",
+  "inv-93915175",
+  "inv-92078333",
+  "inv-91904115",
+  "inv-91238749",
+  "inv-90650061",
+  "inv-87735117",
+  "inv-87452506",
+  "inv-87200019",
+  "inv-87134798",
+  "inv-85419159",
+  "inv-85306681",
+  "inv-85219174",
+  "inv-84897820",
+  "inv-83610440",
+  "inv-83003553",
+  "inv-78653014",
+  "inv-73357143",
+  "inv-70544587",
+  "1760756761",
+  "inv-67298052",
+  "3361747387",
+  "3360411217",
+  "3360271589",
+  "3360102824",
+  "3359811297",
+  "3359300666",
+  "3356264286",
+  "inv-106413881",
+  "inv-106265403",
+  "inv-106256139",
+  "inv-106191412",
+  "inv-106110192",
+  "inv-106044361",
+  "inv-106010905",
+  "inv-105982871",
+  "inv-105955983",
+  "inv-105560572",
+  "inv-105533249",
+  "inv-105383612",
+  "inv-105379876",
+  "inv-105291921",
+  "inv-105156030",
+  "inv-104978052",
+  "inv-104881011",
+  "inv-104870399",
+  "inv-104805184",
+  "inv-104766392",
+  "inv-104456353",
+  "inv-104322561",
+  "inv-104095576",
+  "inv-103991152",
+  "inv-103821243",
+  "inv-103807502",
+  "3120656239",
+  "inv-103542612",
+  "inv-103352169",
+  "inv-103050943",
+  "inv-103036694",
+  "inv-102560772",
+  "inv-102027080",
+  "inv-101943191",
+  "inv-101908120",
+  "inv-101778146",
+  "inv-101578407",
+  "inv-101404586",
+  "inv-100948052",
+  "inv-100896218",
+  "inv-100278435",
+  "inv-100265427",
+  "inv-99790996",
+  "2955713068",
+  "inv-99594643",
+  "inv-99280124",
+  "inv-99070104",
+  "inv-99063611",
+  "inv-99055561",
+  "inv-99031822",
+  "inv-98845512",
+  "inv-98769618",
+  "inv-98595826",
+  "inv-98036863",
+  "inv-97704756",
+  "inv-97560823",
+  "inv-97167732",
+  "inv-96854124",
+  "inv-96749135",
+  "inv-96525441",
+  "inv-96512111",
+  "inv-96116266",
+  "inv-96116094",
+  "inv-96054167",
+  "2811628672",
+  "inv-95912052",
+  "inv-95302266",
+  "inv-95269751",
+  "inv-95232588",
+  "inv-95193827",
+  "inv-95110431",
+  "inv-94611321",
+  "inv-94539913",
+  "inv-94136124",
+  "inv-93938494",
+  "inv-93875369",
+  "2723220070",
+  "inv-93768772",
+  "inv-93704149",
+  "inv-93251926",
+  "inv-93010598",
+  "2688611827",
+  "inv-92739835",
+  "inv-91785054",
+  "inv-91783494",
+  "inv-91780475",
+  "2628153613",
+  "inv-91529566",
+  "inv-91407108",
+  "inv-91381340",
+  "inv-91254420",
+  "inv-91058399",
+  "inv-90943873",
+  "inv-90863869",
+  "2598765508",
+  "inv-90837204",
+  "inv-90614020",
+  "inv-90391944",
+  "inv-90388420",
+  "inv-90196739",
+  "2570460461",
+  "inv-89766828",
+  "inv-89753454",
+  "inv-89576218",
+  "inv-89495606",
+  "inv-89438225",
+  "inv-89344541",
+  "inv-89302291",
+  "inv-89220291",
+  "inv-89145901",
+  "inv-89008246",
+  "inv-88872155",
+  "inv-88853107",
+  "inv-88426195",
+  "inv-88411300",
+  "inv-88287304",
+  "inv-88024194",
+  "inv-87976553",
+  "inv-87946643",
+  "inv-87932443",
+  "inv-87808405",
+  "inv-87741162",
+  "inv-87712819",
+  "inv-87597360",
+  "inv-87561279",
+  "inv-87289711",
+  "inv-85918308",
+  "inv-85887148",
+  "2384739601",
+  "inv-84486699",
+  "inv-84430793",
+  "inv-84062651",
+  "inv-83610120",
+  "inv-83567391",
+  "inv-82475814",
+  "inv-81880823",
+  "inv-81288961",
+  "inv-80496150",
+  "inv-79524789",
+  "inv-78469626",
+  "inv-78363948",
+  "inv-78241898",
+  "inv-78209032",
+  "inv-78067443",
+  "inv-78067355",
+  "inv-77965344",
+  "inv-77474079",
+  "inv-76974461",
+  "inv-76889407",
+  "inv-76883462",
+  "inv-75725849",
+  "inv-75446363",
+  "inv-74740259",
+  "inv-74664981",
+  "inv-73360953",
+  "inv-69258393",
+  "inv-68035929",
+  "inv-67671656",
+  "inv-67653350",
+  "inv-67607914",
+  "inv-65151565",
+  "1341824191",
+  "1338818865",
+  "1333846247",
+  "inv-56670010",
+  "inv-55077951",
+  "981606940",
+  "931836499",
+  "927992631",
+  "916018356",
+  "891757888",
+  "3361747167",
+  "3360411008",
+  "3360102023",
+  "3359810720",
+  "3359299722",
+  "3356264016",
+  "2955665992",
+  "2952182667",
+  "2688610838",
+  "2570460397",
+  "3361746997",
+  "3360410287",
+  "3360101489",
+  "3359810514",
+  "3359299703",
+  "3356261763",
+  "3361746290",
+  "3360409924",
+  "3360101317",
+  "3359810415",
+  "3359275672",
+  "3356261294",
+  "3361746029",
+  "3360101112",
+  "3359810363",
+  "3359275442",
+  "3356260696",
+  "3361745662",
+  "3359938769",
+  "3359674478",
+  "3359275386",
+  "3356260571",
+  "3361744688",
+  "3359937400",
+  "3359674363",
+  "3359275358",
+  "3356115032",
+  "3355987496",
+  "3355987368",
+  "3355986790",
+  "3355986535",
+  "3355986397",
+  "3355986310",
+  "3355986186",
+  "3355934114",
+  "3355934016",
+  "3355921653",
+  "3355920577",
+  "3355920329",
+  "3355920236",
+  "3355689136",
+  "3355689035",
+  "3355688908",
+  "3355688791",
+  "3355576132",
+  "3355576036",
+  "3355532494",
+  "3355532373",
+  "3359936061",
+  "3359934480",
+  "3359933058",
+  "3359931985",
+  "3359927917",
+  "3359925518",
+  "3359925180",
+  "3359925106",
+  "3359923860",
+  "3359923523",
+  "3359922723",
+  "3359922602",
+  "3359808646",
+  "3359808405",
+  "3359808355",
+  "3359808287",
+  "3359673379",
+  "3359672786",
+  "3359672003",
+  "3359671698",
+  "3359275277",
+  "3359275041",
+  "3359275020",
+  "3359274918",
+  "3359274800",
+  "3359273949",
+  "3359273567",
+  "3359273536",
+  "3359273506",
+  "3361743990",
+  "3361743674",
+  "3361741763",
+  "3361741667",
+  "3361734706",
+  "3361733734",
+  "3361702519",
+  "3361702198",
+  "3361702447",
+  "3361702251",
+  "3361702633",
+  "3361702374",
+  "3361702138",
+  "3356114878",
+  "3356114628",
+  "3356113878",
+  "3356113815",
+  "3356109691",
+  "3356109523",
+  "3356108349",
+  "3356108269",
+  "3356108166",
+  "3356085097",
+  "3356084931",
+  "3356084848",
+  "3356084735",
+  "3356073802",
+  "3356073672",
+  "3356073599",
+  "3356073507",
+  "3355990932",
+  "3355990840",
+  "3355987723"
+ ],
+ "approved_photo_ids": [],
+ "_blocked_reasons": {
+  "1760756761": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark, unclear shot of dark tarp/material against block wall, no JR One finished work visible, low usability",
+   "project": "PITCH!",
+   "source": "live"
+  },
+  "2953691766": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dim/blurry close-up of ladder/material with no clear finished work, low usability",
+   "project": "Clear Source LLC",
+   "source": "live"
+  },
+  "2981466275": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Distant/dark commercial-area capture with construction equipment, no clear JR One work, low usability",
+   "project": "Clear Source LLC",
+   "source": "live"
+  },
+  "inv-102328800": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "blurry dark ground/pavers shot, accidental capture, no JR One work visible",
+   "project": "Susan Olsen - Stephan Self Gen JR One",
+   "source": "inventory"
+  },
+  "inv-101641704": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Photo dominated by American flag and a tree with no clear JR One work; appears accidental/non-work capture",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-101311754": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Pre-work shot with fallen tree/debris and no visible JR One work",
+   "project": "Jeff Hacker - JRONE",
+   "source": "inventory"
+  },
+  "inv-99445487": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof photo with pink/magenta digital markup lines and text overlay (measurement annotation)",
+   "project": "Rob Icenogle - JRONE",
+   "source": "inventory"
+  },
+  "inv-98686018": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly empty sky with sun glare, no usable work content",
+   "project": "Stronghold Roofing",
+   "source": "inventory"
+  },
+  "inv-96814225": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Pink/magenta drawn oval markup circling a damaged roof area - digital annotation overlay",
+   "project": "PITCH!",
+   "source": "inventory"
+  },
+  "inv-94510288": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Aerial/satellite measurement diagram of a property with drawn markup lines and points",
+   "project": "Pamela Lovett - JRONE",
+   "source": "inventory"
+  },
+  "inv-93915175": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tall narrow dark blurry close-up of pole/material, unusable framing",
+   "project": "PITCH!",
+   "source": "inventory"
+  },
+  "inv-92078333": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Product material sample board with printed label/packaging branding text, internal material shot",
+   "project": "Lam - JRONE",
+   "source": "inventory"
+  },
+  "inv-91904115": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Garage/driveway with truck and tailgate down, accidental/internal capture not finished work",
+   "project": "Lolitta Thornton - JRONE",
+   "source": "inventory"
+  },
+  "inv-91238749": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly white sky/sun blowout with minimal subject, unusable overexposed photo",
+   "project": "ONSITE",
+   "source": "inventory"
+  },
+  "inv-90650061": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Yellow hand-drawn arrow and handwritten text overlay markup on the photo.",
+   "project": "Amanda Gill - JRONE",
+   "source": "inventory"
+  },
+  "inv-87735117": {
+   "class": "UNSAFE-PII",
+   "reason": "Printed document/paperwork with text and red markup overlay - looks like an estimate or order sheet.",
+   "project": "Westfall - Alex A",
+   "source": "inventory"
+  },
+  "inv-87452506": {
+   "class": "UNSAFE-PII",
+   "reason": "Hand-drawn diagram/sketch with handwritten notes and text - internal crew notes with potential customer detail.",
+   "project": "Westfall - Carlos V",
+   "source": "inventory"
+  },
+  "inv-87200019": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Overlay numbers (4, 23) and drawn text annotations on roof photo - digital markup.",
+   "project": "Sook Chang - JRONE",
+   "source": "inventory"
+  },
+  "inv-87134798": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Blurry extreme close-up of finger/thumb, accidental capture.",
+   "project": "Jim Buck - JRONE",
+   "source": "inventory"
+  },
+  "inv-85419159": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Blurry accidental shot with hand/finger, unusable.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-85306681": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark blurry close-up of surface with finger, accidental/unusable.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-85219174": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Wet driveway/ground with motorcycle and debris, no JR One work visible.",
+   "project": "Westfall - Brian C",
+   "source": "inventory"
+  },
+  "inv-84897820": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "House exterior with burned-in yellow digital markup ('30') drawn on the image",
+   "project": "Lorena Woods - JRONE",
+   "source": "inventory"
+  },
+  "inv-83610440": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Teal house with burned-in yellow text overlay 'Drain this floor' - digital markup",
+   "project": "Westfall - Susan M",
+   "source": "inventory"
+  },
+  "inv-83003553": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "House exterior with burned-in yellow text overlay markup",
+   "project": "Kevin Brown - JRONE",
+   "source": "inventory"
+  },
+  "inv-78653014": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly tree and sky, no JR One work visible / accidental capture",
+   "project": "Westfall - Thomas S",
+   "source": "inventory"
+  },
+  "inv-73357143": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Brick house with sign/overlay on roofline, appears to be a damage or markup shot",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-70544587": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Crew member working on roof with green tarp, person captured in candid work shot",
+   "project": "Jose - JRONE",
+   "source": "inventory"
+  },
+  "inv-67298052": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Blurry blue out-of-focus motion capture, unusable accidental shot",
+   "project": "Michelle - JRONE",
+   "source": "inventory"
+  },
+  "3361747387": {
+   "class": "UNSAFE-ORIENTATION",
+   "reason": "Image is upside down",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3360411217": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder is prominent subject, work in progress",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3360271589": {
+   "class": "UNSAFE-PII",
+   "reason": "Work order document with readable customer name and diagram",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3360102824": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Boot in frame, awkward downward rooftop shot, not deliberate",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359811297": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder rails cross frame, mid-install feel",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359300666": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly shingle roof and trees, work not the subject",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3356264286": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker prominent, gutter guard install in progress",
+   "project": "Neal Roofing - James",
+   "source": "live"
+  },
+  "inv-106413881": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cluttered yard, estimate-style shot, work not showcased",
+   "project": "Salim Merchant - JRONE",
+   "source": "inventory"
+  },
+  "inv-106265403": {
+   "class": "UNSAFE-PII",
+   "reason": "Readable house number 2302; also weedy awkward framing",
+   "project": "Bryan GC",
+   "source": "inventory"
+  },
+  "inv-106256139": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Heavy sun glare, work distant, pool dominates",
+   "project": "Sterling Alexander - JRONE",
+   "source": "inventory"
+  },
+  "inv-106191412": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Construction dirt lot, no finished work visible",
+   "project": "Jack Ward Builders",
+   "source": "inventory"
+  },
+  "inv-106110192": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Metal shed with pipe debris and dirt, jobsite mess",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-106044361": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sun glare, ladder at porch, estimate-style wide shot",
+   "project": "David Hueberger - JRONE",
+   "source": "inventory"
+  },
+  "inv-106010905": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dead lawn, dated house, no visible finished work",
+   "project": "David",
+   "source": "inventory"
+  },
+  "inv-105982871": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tilted shot, utility pole dominates, no clear work",
+   "project": "Greg Nielsen - JRONE",
+   "source": "inventory"
+  },
+  "inv-105955983": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Blank wall dominates, equipment in background, work barely visible",
+   "project": "Danaisy Gonzalez",
+   "source": "inventory"
+  },
+  "inv-105560572": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed roof framing in progress, not finished work",
+   "project": "Neal Roofing",
+   "source": "inventory"
+  },
+  "inv-105533249": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Aerial measurement screenshot with drawn roof outline",
+   "project": "Rao - JRONE",
+   "source": "inventory"
+  },
+  "inv-105383612": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Damage shot: peeling roof edge, rust, debris in gutter",
+   "project": "Robert Tabler- JRONE",
+   "source": "inventory"
+  },
+  "inv-105379876": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly patchy lawn and trees, house distant, no work",
+   "project": "Zekes Roofing ",
+   "source": "inventory"
+  },
+  "inv-105291921": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Tape-measure measurement documentation photo",
+   "project": "Shelby Waldo - JRONE",
+   "source": "inventory"
+  },
+  "inv-105156030": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Old dirty downspout obscured by leaves",
+   "project": "Keller Williams (Alexandra) - JRONE",
+   "source": "inventory"
+  },
+  "inv-104978052": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Parked SUV dominates, work not the subject",
+   "project": "Alyson Scull - JRONE",
+   "source": "inventory"
+  },
+  "inv-104881011": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Office building and parking lot, no visible work",
+   "project": "ONSITE",
+   "source": "inventory"
+  },
+  "inv-104870399": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Entryway decor shot, no gutter/soffit work visible",
+   "project": "Ken Kudalk - JRONE",
+   "source": "inventory"
+  },
+  "inv-104805184": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Unfinished metal soffit, construction dirt site",
+   "project": "Jimmy Nickerson American Veteran Construction ",
+   "source": "inventory"
+  },
+  "inv-104766392": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed rafters mid-repair, worker's hand in frame",
+   "project": "Pitch",
+   "source": "inventory"
+  },
+  "inv-104456353": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Patio bins and clutter, unsure if finished showcase",
+   "project": "ONSITE",
+   "source": "inventory"
+  },
+  "inv-104322561": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Tape measure to eave, measurement documentation photo",
+   "project": "Andrew Devenezia - JRONE",
+   "source": "inventory"
+  },
+  "inv-104095576": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Materials, ladders, cables on bare block wall, WIP",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-103991152": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Active construction site, worker on ladder, dirt",
+   "project": "Bay To Bay Dunkin",
+   "source": "inventory"
+  },
+  "inv-103821243": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Patio furniture and pool dominate, glare, work unclear",
+   "project": "Cathie Personal - JRONE",
+   "source": "inventory"
+  },
+  "inv-103807502": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dated house before-shot, power lines, cluttered yard",
+   "project": "Cathie",
+   "source": "inventory"
+  },
+  "3120656239": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder is the prominent subject",
+   "project": "Burton Mulford - JRONE (Dean)",
+   "source": "live"
+  },
+  "inv-103542612": {
+   "class": "UNSAFE-PII",
+   "reason": "Readable house number 1434 on facade",
+   "project": "Zekes roofing",
+   "source": "inventory"
+  },
+  "inv-103352169": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly blank stucco wall, blown-out sky; soffit barely visible, weak framing",
+   "project": "Joseph Suldo - JRONE",
+   "source": "inventory"
+  },
+  "inv-103050943": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Active construction site with dirt and debris piles dominating foreground",
+   "project": "Pitch",
+   "source": "inventory"
+  },
+  "inv-103036694": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly lawn; house distant, no work visible",
+   "project": "Ric Szala - JRONE",
+   "source": "inventory"
+  },
+  "inv-102560772": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cluttered backyard with grill and leaning items, not deliberate work framing",
+   "project": "Zekes Roofing",
+   "source": "inventory"
+  },
+  "inv-102027080": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Odd column/pool framing, unclear subject, no clear finished work",
+   "project": "VNPS",
+   "source": "inventory"
+  },
+  "inv-101943191": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Closeup of raw material with barcode label, not finished work",
+   "project": "Classic Construction",
+   "source": "inventory"
+  },
+  "inv-101908120": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Scruffy dirt yard with trash can, reads as before/estimate photo",
+   "project": "Brian Loch - JRONE",
+   "source": "inventory"
+  },
+  "inv-101778146": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly blank wall with heavy sun flare, work barely visible",
+   "project": "Capt Ron",
+   "source": "inventory"
+  },
+  "inv-101578407": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Person and ladder prominent, work in progress",
+   "project": "Zekes Roofing",
+   "source": "inventory"
+  },
+  "inv-101404586": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder and work-in-progress on porch, bucket visible",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-100948052": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder against graffiti building, work in progress",
+   "project": "Ted FOE - JRONE",
+   "source": "inventory"
+  },
+  "inv-100896218": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly blank stucco wall and sky, no clear finished work",
+   "project": "Dan H - JRONE",
+   "source": "inventory"
+  },
+  "inv-100278435": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Debris-filled gutter with worker boot, before/cleaning shot",
+   "project": "Alyssa - JRONE",
+   "source": "inventory"
+  },
+  "inv-100265427": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Flat-roof repair closeup with tar and grime, damage documentation",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-99790996": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder prominent against gable, work in progress",
+   "project": "",
+   "source": "inventory"
+  },
+  "2955713068": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Construction site with work truck, dirt lot, unfinished building",
+   "project": "Ace Conctruction",
+   "source": "live"
+  },
+  "inv-99594643": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Blank wall with materials/equipment in background, no finished work subject",
+   "project": "Ace Conctruction",
+   "source": "inventory"
+  },
+  "inv-99280124": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cars dominate, hood open; work not the subject",
+   "project": "Mezan Awad - JRONE",
+   "source": "inventory"
+  },
+  "inv-99070104": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tarped boat, bins and trailer clutter dominate foreground",
+   "project": "April Stone - JRONE",
+   "source": "inventory"
+  },
+  "inv-99063611": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down gutter with debris, feet visible, maintenance shot",
+   "project": "PITCH!",
+   "source": "inventory"
+  },
+  "inv-99055561": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Weathered trim, no clear finished work; fail closed",
+   "project": "Robert Desantis - JRONE",
+   "source": "inventory"
+  },
+  "inv-99031822": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Downward shot of post base plate with leaves, accidental framing",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-98845512": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed raw fascia strip, soffit work mid-install",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-98769618": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder and worker on roof, tilted framing, work in progress",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-98595826": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Soffit corner appears mid-install with exposed section; fail closed",
+   "project": "NEAL ROOFING",
+   "source": "inventory"
+  },
+  "inv-98036863": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Unfinished construction with dumpster prominent in foreground",
+   "project": "Exquisite Aluminum",
+   "source": "inventory"
+  },
+  "inv-97704756": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Carport framing in progress, cluttered yard and vehicles dominate.",
+   "project": "Ernie Nelson - JRONE",
+   "source": "inventory"
+  },
+  "inv-97560823": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Half sky, fascia edge looks unfinished; unsure, failing closed.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-97167732": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Eave-tile junction with debris and gap, reads mid-job documentation.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-96854124": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Open soffit cavity exposed, unfinished work as subject.",
+   "project": "Belmoor B - JRONE",
+   "source": "inventory"
+  },
+  "inv-96749135": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Yellow car dominates frame, no clear work visible.",
+   "project": "Brian - JRONE",
+   "source": "inventory"
+  },
+  "inv-96525441": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark underexposed gutter corner, unclear object beneath; failing closed.",
+   "project": "BART DAVIS GC",
+   "source": "inventory"
+  },
+  "inv-96512111": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rotted wood damage close-up, classic before shot.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-96116266": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Bush and harsh shadow dominate, unclear subject.",
+   "project": "Classic Construction",
+   "source": "inventory"
+  },
+  "inv-96116094": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder is the prominent subject, work in progress.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-96054167": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dull overcast wide shot with yard clutter, no clear finished work.",
+   "project": "MEM",
+   "source": "inventory"
+  },
+  "2811628672": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker arm and pole tool in frame, work in progress.",
+   "project": "NEAL ROOFING",
+   "source": "live"
+  },
+  "inv-95912052": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop documentation shot, shingles dominate, cluttered background.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-95302266": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Abstract weathered close-up, reads as damage documentation.",
+   "project": "Josaih GC - JRONE",
+   "source": "inventory"
+  },
+  "inv-95269751": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker prominent installing gutter, person and work in progress.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-95232588": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop shot, shingles dominate over visible eave work; failing closed.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-95193827": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Aerial screenshot with measurement overlay and markup.",
+   "project": "Exquisite Aluminum",
+   "source": "inventory"
+  },
+  "inv-95110431": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Aluminum stock and equipment close-up, materials not finished work.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-94611321": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dim backlit side-yard shot, no clear work visible.",
+   "project": "Mary Hodge - JRONE",
+   "source": "inventory"
+  },
+  "inv-94539913": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Open garage full of clutter dominates the frame.",
+   "project": "Cynthia Dennis - JRONE",
+   "source": "inventory"
+  },
+  "inv-94136124": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Vehicles dominate foreground, work not the subject.",
+   "project": "HDD/VNPS",
+   "source": "inventory"
+  },
+  "inv-93938494": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Flat backyard lanai shot, dull light, work unclear.",
+   "project": "John Parker - JRONE",
+   "source": "inventory"
+  },
+  "inv-93875369": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, pergola underside with raw lumber, reads in-progress.",
+   "project": "",
+   "source": "inventory"
+  },
+  "2723220070": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop shingle-dominated shot, fresh sealant smear reads mid-job.",
+   "project": "Sandy Pennington - JRONE",
+   "source": "live"
+  },
+  "inv-93768772": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Harsh sun flare backlights house, compromised lighting.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-93704149": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop documentation angle, object on gutter; failing closed.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-93251926": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder leaning against house, job in progress.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-93010598": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Workers and ladder prominent, active jobsite scene.",
+   "project": "Chappelle Roofing",
+   "source": "inventory"
+  },
+  "2688611827": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Heavy shadow, awkward crop; downspout barely reads. Failing closed.",
+   "project": "HDD/VNPS",
+   "source": "live"
+  },
+  "inv-92739835": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, extreme upward angle, work barely visible.",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-91785054": {
+   "class": "UNSAFE-PII",
+   "reason": "Readable house number 9088; vehicle prominent in frame",
+   "project": "Brennan Shirk - JRONE",
+   "source": "inventory"
+  },
+  "inv-91783494": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Heavy lens flare streak across frame degrades shot",
+   "project": "PITCH!",
+   "source": "inventory"
+  },
+  "inv-91780475": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed Tyvek house wrap, unfinished work in progress",
+   "project": "",
+   "source": "inventory"
+  },
+  "2628153613": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker's boot and hand visible, guard install mid-progress",
+   "project": "Heather McHugh - JRONE",
+   "source": "live"
+  },
+  "inv-91529566": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder handling metal panel, active work",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-91407108": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Accidental shot of sidewalk and grass, no work",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-91381340": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly bare yard, house distant, no visible work",
+   "project": "Chad - JRONE",
+   "source": "inventory"
+  },
+  "inv-91254420": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Two workers on ladders, active installation",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-91058399": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Weathered worn structure, reads as before/damage shot",
+   "project": "Michel - JRONE",
+   "source": "inventory"
+  },
+  "inv-90943873": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, backlit sun glare, house minor subject",
+   "project": "Erik - JRONE",
+   "source": "inventory"
+  },
+  "inv-90863869": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark gloomy underexposed shot, no clear finished work",
+   "project": "Deborah Carrol - JRONE",
+   "source": "inventory"
+  },
+  "2598765508": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladders dominate frame, downspout detached, work in progress",
+   "project": "Chappelle Roofing",
+   "source": "live"
+  },
+  "inv-90837204": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Plain stucco wall, no visible gutter/soffit work",
+   "project": "Junior McLeish - JRONE",
+   "source": "inventory"
+  },
+  "inv-90614020": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Construction-site dirt and mess around pool area",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-90391944": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Brick/material pallets dominate foreground, jobsite mess",
+   "project": "Nolan - JRONE",
+   "source": "inventory"
+  },
+  "inv-90388420": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "House under construction, person and dumpster visible",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-90196739": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Unfinished construction, manufacturer stickers still on windows",
+   "project": "",
+   "source": "inventory"
+  },
+  "2570460461": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Downward roof-edge shot, no clear finished work visible",
+   "project": "Exquisite Aluminum",
+   "source": "live"
+  },
+  "inv-89766828": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tree trunk blocks frame, casual backyard snapshot",
+   "project": "Lindsey Wisely - JRONE",
+   "source": "inventory"
+  },
+  "inv-89753454": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder against house, vehicles dominate driveway",
+   "project": "NEAL ROOFING",
+   "source": "inventory"
+  },
+  "inv-89576218": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Open cluttered garage and sun flare distract from work",
+   "project": "Lynda Keever - JRONE",
+   "source": "inventory"
+  },
+  "inv-89495606": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Buckets, trash bin, leaning sign clutter the frame",
+   "project": "Brantz R - JRONE",
+   "source": "inventory"
+  },
+  "inv-89438225": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Overgrown yard, wet mess, reads as before shot",
+   "project": "Stuart Kincade - JRONE",
+   "source": "inventory"
+  },
+  "inv-89344541": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rot/damage at soffit corner, mostly sky",
+   "project": "HDD/VNPS",
+   "source": "inventory"
+  },
+  "inv-89302291": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tarp on roof, damage documentation shot",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-89220291": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Washed out by severe sun glare",
+   "project": "Paul Hellebuyck",
+   "source": "inventory"
+  },
+  "inv-89145901": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder prominent, work in progress",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-89008246": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Active construction, bare block and roof underlayment",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-88872155": {
+   "class": "UNSAFE-ORIENTATION",
+   "reason": "Image rotated sideways; also debris and equipment visible",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-88853107": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cluttered side yard with AC unit and pots",
+   "project": "Luis Rodriguez - JRONE",
+   "source": "inventory"
+  },
+  "inv-88426195": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, awkward straight-up angle, work unclear",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-88411300": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Damaged light fixtures and wiring close-up, repair documentation",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-88287304": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Aerial screenshot with drawn measurement lines and arrows",
+   "project": "Westfall - John F",
+   "source": "inventory"
+  },
+  "inv-88024194": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Weathered dented metal barn wall, no finished work",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-87976553": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, awkward upward angle, work barely visible",
+   "project": "Westfall - Angelo V",
+   "source": "inventory"
+  },
+  "inv-87946643": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dirt yard dominates, finished work not clearly visible",
+   "project": "Clay Barnes - JRONE",
+   "source": "inventory"
+  },
+  "inv-87932443": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Diagnostic corner close-up dominated by shingles, not finished-work framing",
+   "project": "Westfall - Brian K",
+   "source": "inventory"
+  },
+  "inv-87808405": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Warehouse interior with stacked material boxes, not exterior work",
+   "project": "HDD/VNPS",
+   "source": "inventory"
+  },
+  "inv-87741162": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Weathered rusty fascia edge, reads as before/damage inspection shot",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-87712819": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tyvek house wrap, unfinished construction in progress",
+   "project": "PITCH!",
+   "source": "inventory"
+  },
+  "inv-87597360": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Burned-in pink drawn arrow markup on soffit",
+   "project": "Donita - JRONE",
+   "source": "inventory"
+  },
+  "inv-87561279": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Yellow drawn measurement lines and X markup on image",
+   "project": "Sylvia Webb - JRONE",
+   "source": "inventory"
+  },
+  "inv-87289711": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Bare wood fascia work-in-progress, foliage-dominated frame",
+   "project": "Westfall - Derek S",
+   "source": "inventory"
+  },
+  "inv-85918308": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cluster of misaligned floodlights dominates, inspection-style shot",
+   "project": "Westfall - James R",
+   "source": "inventory"
+  },
+  "inv-85887148": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark opening/hole in soffit, reads as before/inspection shot",
+   "project": "Westfall - Kathy R",
+   "source": "inventory"
+  },
+  "2384739601": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tilted sky-heavy look-up with chain, accidental-looking framing",
+   "project": "Westfall - Arturo N",
+   "source": "live"
+  },
+  "inv-84486699": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Raw OSB sheathing close-up, material/WIP shot",
+   "project": "BRYAN GC",
+   "source": "inventory"
+  },
+  "inv-84430793": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Door and window close-up, no gutter/soffit work visible",
+   "project": "Linn Bridwell - JRONE",
+   "source": "inventory"
+  },
+  "inv-84062651": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder, people prominent, work in progress",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-83610120": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Orange ladder prominent in frame, job-in-progress look",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-83567391": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly trees and fence, unclear subject, no clear work",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-82475814": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed raw wood at eave corner, unfinished/diagnostic shot",
+   "project": "Westfall - Amanda S",
+   "source": "inventory"
+  },
+  "inv-81880823": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder dominates frame under porch soffit",
+   "project": "Westfall - Dennis C",
+   "source": "inventory"
+  },
+  "inv-81288961": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, tilted framing, house small in corner",
+   "project": "Westfall - Doug L",
+   "source": "inventory"
+  },
+  "inv-80496150": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Diagnostic eave corner with pole/ladder edge in frame",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-79524789": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Stripped column mid-repair, truck in frame, work in progress",
+   "project": "John Maher - JRONE",
+   "source": "inventory"
+  },
+  "inv-78469626": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Awkward tilted balcony look-up, no clear finished work subject",
+   "project": "LUIS SALAS GC",
+   "source": "inventory"
+  },
+  "inv-78363948": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Bare unpainted wood fascia, clear work-in-progress",
+   "project": "Westfall - Michael F",
+   "source": "inventory"
+  },
+  "inv-78241898": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Pre-work estimate shot, no finished gutter/soffit work evident",
+   "project": "Westfall - John W",
+   "source": "inventory"
+  },
+  "inv-78209032": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Drawn pink circle markup, plus ladder and person on roof",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-78067443": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tilted sky-dominated look-up, weak framing of siding",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-78067355": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Entry door is subject, cluttered yard, work incidental",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-77965344": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Fountain dominates foreground, porch clutter, work incidental",
+   "project": "Ricardo GC - JRONE",
+   "source": "inventory"
+  },
+  "inv-77474079": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Construction site background, raw wood beam, unfinished",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-76974461": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop shingles and lawn dominate, no JR One work subject",
+   "project": "Classic Construction",
+   "source": "inventory"
+  },
+  "inv-76889407": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder leaning against building, job-in-progress look",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-76883462": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladders and workers on building, work in progress",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-75725849": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder against wall, harsh shadows, poor gallery quality",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-75446363": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Aerial roof measurement diagram with dimension labels",
+   "project": "PITCH! - Salesman Will R",
+   "source": "inventory"
+  },
+  "inv-74740259": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Severely underexposed backlit eave, poor lighting",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-74664981": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Shadowed gable wall, awkward framing, no clear finished-work subject",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-73360953": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on roof plus ladder, work in progress",
+   "project": "",
+   "source": "inventory"
+  },
+  "inv-69258393": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tree dominates, ladder in background, downspout on ground",
+   "project": "Westfall - Caryn R",
+   "source": "inventory"
+  },
+  "inv-68035929": {
+   "class": "UNSAFE-PII",
+   "reason": "Readable house name/address sign prominent, cluttered garage behind",
+   "project": "Mark S - JRONE",
+   "source": "inventory"
+  },
+  "inv-67671656": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark warehouse shot with trailer, no clear finished work",
+   "project": "Sean Shackleton - JRONE",
+   "source": "inventory"
+  },
+  "inv-67653350": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Cyan drawn markup lines burned into photo",
+   "project": "Eric Yen - JRONE",
+   "source": "inventory"
+  },
+  "inv-67607914": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Drawn markup plus text overlay 'Wedges, gutters only'",
+   "project": "Brian Fanning JR One ",
+   "source": "inventory"
+  },
+  "inv-65151565": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Heavy lens flare, no clear JR One work visible",
+   "project": "Tina Phan - JRONE",
+   "source": "inventory"
+  },
+  "1341824191": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker installing guard visible, work in progress",
+   "project": "Classic Construction",
+   "source": "live"
+  },
+  "1338818865": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Trash bag and lumber on patio, messy scene",
+   "project": "PTGR - #8094",
+   "source": "live"
+  },
+  "1333846247": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Underexposed, palm fronds dominate the frame",
+   "project": "Classic Construction",
+   "source": "live"
+  },
+  "inv-56670010": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Badly tilted framing, ladder against house",
+   "project": "Classic Construction",
+   "source": "inventory"
+  },
+  "inv-55077951": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Burned-in timestamp overlay; ladders also present",
+   "project": "Classic Construction",
+   "source": "inventory"
+  },
+  "981606940": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Frame mostly roof shingles, gutter work not the subject",
+   "project": "Westfall - Jeremy W",
+   "source": "live"
+  },
+  "931836499": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cables draped over eave, peeling wall paint",
+   "project": "Heaven Sent Construction",
+   "source": "live"
+  },
+  "927992631": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Entryway shot, no visible JR One work, solar dominates",
+   "project": "Westfall - Andy K",
+   "source": "live"
+  },
+  "916018356": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Water heaters, trash bins, chain-link clutter dominate",
+   "project": "Westfall - Brian L",
+   "source": "live"
+  },
+  "891757888": {
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Burned-in timestamp overlay on construction-site shot",
+   "project": "Michael M Cedar Soffit",
+   "source": "live"
+  },
+  "3361747167": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Lawn-dominated arrival-style shot, work hidden in shadow",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3360411008": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Crew straw hat pokes into frame under downspout",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3360102023": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker boot in frame, on-roof POV shot",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359810720": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Guard panel protruding, diagnostic look-up, unclear subject",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359299722": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV down roof edge, material in corner",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3356264016": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Guard mid-install, open gutter, person and bike behind",
+   "project": "Neal Roofing - James",
+   "source": "live"
+  },
+  "2955665992": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Person on ladder visible, sky-dominant framing",
+   "project": "Ace Conctruction",
+   "source": "live"
+  },
+  "2952182667": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tile roof mid-work, exposed underlayment visible",
+   "project": "Clear Source LLC",
+   "source": "live"
+  },
+  "2688610838": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Concrete column dominates, work unclear",
+   "project": "HDD/VNPS",
+   "source": "live"
+  },
+  "2570460397": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker boot in frame, top-down tile-edge POV",
+   "project": "Exquisite Aluminum",
+   "source": "live"
+  },
+  "3361746997": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Arrival-style wide shot, work not showcased",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3360410287": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Crew straw hat in frame under downspout",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3360101489": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof top-down POV of guard, not deliberate framing",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359810514": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky dominates frame, fascia sliver at bottom",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359299703": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Straight-down roof-corner POV, accidental-looking",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3356261763": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Hands installing guard, work in progress",
+   "project": "Neal Roofing - James",
+   "source": "live"
+  },
+  "3361746290": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Side-alley documentation shot, screen enclosure dominates",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3360409924": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker at electrical panel, person prominent",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3360101317": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof top-down POV of guard edge",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359810415": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky dominates, fascia sliver only",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359275672": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof POV of metal awning edge, WIP look",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3356261294": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker prominent, guard install in progress",
+   "project": "Neal Roofing - James",
+   "source": "live"
+  },
+  "3361746029": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Garden plants dominate, work barely visible",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3360101112": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker boot in frame, on-roof POV",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359810363": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky dominates, soffit underside sliver",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359275442": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof POV down shingle run",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3356260696": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sealant close-up with plastic wrap, WIP detail",
+   "project": "Neal Roofing - James",
+   "source": "live"
+  },
+  "3361745662": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky-heavy gable shot, work not showcased",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3359938769": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down roof POV to lawn below",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359674478": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof overview with crew shadow and materials",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359275386": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down guard shot with debris and caulk gun",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3356260571": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sealant smear close-up, WIP detail",
+   "project": "Neal Roofing - James",
+   "source": "live"
+  },
+  "3361744688": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky-heavy corner shot, work not showcased",
+   "project": "Bob Mackenzie - JRONE",
+   "source": "live"
+  },
+  "3359937400": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down roof POV with vehicle below",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359674363": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof overview, crew shadow and boot visible",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3359275358": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down shingle/guard POV",
+   "project": "Jamie Nadeau - JRONE",
+   "source": "live"
+  },
+  "3356115032": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Downspout outlet cutout close-up, WIP",
+   "project": "Neal Roofing - James",
+   "source": "live"
+  },
+  "3355987496": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV looking down gutter guard, not ground viewpoint",
+   "project": "",
+   "source": "live"
+  },
+  "3355987368": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof POV close-up of guard, banned viewpoint",
+   "project": "",
+   "source": "live"
+  },
+  "3355986790": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker in frame installing guard, work in progress",
+   "project": "",
+   "source": "live"
+  },
+  "3355986535": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV with power drill on shingles",
+   "project": "",
+   "source": "live"
+  },
+  "3355986397": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down guard close-up from roof, work-in-progress",
+   "project": "",
+   "source": "live"
+  },
+  "3355986310": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof POV corner close-up, ladder and worker edge visible",
+   "project": "",
+   "source": "live"
+  },
+  "3355986186": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof POV guard close-up, ladder visible, mid-install",
+   "project": "",
+   "source": "live"
+  },
+  "3355934114": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker with caulk gun in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3355934016": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker applying sealant, person in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3355921653": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on roof over open gutter, in-progress",
+   "project": "",
+   "source": "live"
+  },
+  "3355920577": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down inside-gutter outlet close-up, unfinished",
+   "project": "",
+   "source": "live"
+  },
+  "3355920329": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sealant mess close-up inside gutter",
+   "project": "",
+   "source": "live"
+  },
+  "3355920236": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sealant close-up inside gutter end cap",
+   "project": "",
+   "source": "live"
+  },
+  "3355689136": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker's hat and head visible at bottom edge",
+   "project": "",
+   "source": "live"
+  },
+  "3355689035": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Workers visible at bottom of frame",
+   "project": "",
+   "source": "live"
+  },
+  "3355688908": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker reaching up to gutter, person dominates",
+   "project": "",
+   "source": "live"
+  },
+  "3355688791": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Orange ladder and worker in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3355576132": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder against house, torn-up ground, jobsite mess",
+   "project": "",
+   "source": "live"
+  },
+  "3355576036": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder in frame, disturbed landscaping, in-progress site",
+   "project": "",
+   "source": "live"
+  },
+  "3355532494": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Trash cans, material bags, ladder dominate foreground",
+   "project": "",
+   "source": "live"
+  },
+  "3355532373": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Trash cans, stacked materials, ladder rail in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3359936061": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV looking down over eave edge",
+   "project": "",
+   "source": "live"
+  },
+  "3359934480": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV down roof slope",
+   "project": "",
+   "source": "live"
+  },
+  "3359933058": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV over roof edge",
+   "project": "",
+   "source": "live"
+  },
+  "3359931985": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker's body on roof dominates frame",
+   "project": "",
+   "source": "live"
+  },
+  "3359927917": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV with worker visible on roof",
+   "project": "",
+   "source": "live"
+  },
+  "3359925518": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV, boot visible at bottom",
+   "project": "",
+   "source": "live"
+  },
+  "3359925180": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof POV, shingles dominate",
+   "project": "",
+   "source": "live"
+  },
+  "3359925106": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV with boot and worker shadow",
+   "project": "",
+   "source": "live"
+  },
+  "3359923860": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof POV down the eave line",
+   "project": "",
+   "source": "live"
+  },
+  "3359923523": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Boot in frame, rooftop POV",
+   "project": "",
+   "source": "live"
+  },
+  "3359922723": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV over eave",
+   "project": "",
+   "source": "live"
+  },
+  "3359922602": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Boots in frame, rooftop POV",
+   "project": "",
+   "source": "live"
+  },
+  "3359808646": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Extreme dim close-up, grime specks on gutter",
+   "project": "",
+   "source": "live"
+  },
+  "3359808405": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Backlit sun glare, mostly sky, poor framing",
+   "project": "",
+   "source": "live"
+  },
+  "3359808355": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Person's head visible near eave",
+   "project": "",
+   "source": "live"
+  },
+  "3359808287": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Backlit glare, mostly sky, inspection-style shot",
+   "project": "",
+   "source": "live"
+  },
+  "3359673379": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV down at street, foot at edge",
+   "project": "",
+   "source": "live"
+  },
+  "3359672786": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV across roof planes",
+   "project": "",
+   "source": "live"
+  },
+  "3359672003": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV overlooking street",
+   "project": "",
+   "source": "live"
+  },
+  "3359671698": {
+   "class": "UNSAFE-ORIENTATION",
+   "reason": "Image rotated sideways, house and lawn tilted 90 degrees",
+   "project": "",
+   "source": "live"
+  },
+  "3359275277": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Gutter full of leaf debris, before/dirty shot",
+   "project": "",
+   "source": "live"
+  },
+  "3359275041": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Eave-level inspection close-up, no context",
+   "project": "",
+   "source": "live"
+  },
+  "3359275020": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Abstract featureless gutter close-up",
+   "project": "",
+   "source": "live"
+  },
+  "3359274918": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark tilted close-up, awkward framing",
+   "project": "",
+   "source": "live"
+  },
+  "3359274800": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof-level shot along eave, not ground viewpoint",
+   "project": "",
+   "source": "live"
+  },
+  "3359273949": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder standoff prominent in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3359273567": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder leaning against gutter dominates",
+   "project": "",
+   "source": "live"
+  },
+  "3359273536": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder prominent in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3359273506": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder rails and equipment against eave",
+   "project": "",
+   "source": "live"
+  },
+  "3361743990": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Heavy backlight lens flare, washed-out lighting",
+   "project": "",
+   "source": "live"
+  },
+  "3361743674": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Backlit haze and glare, poorly lit",
+   "project": "",
+   "source": "live"
+  },
+  "3361741763": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tilted close-up dominated by dark eave underside, awkward framing",
+   "project": "",
+   "source": "live"
+  },
+  "3361741667": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Near-duplicate tilted shot, dark underside dominates frame",
+   "project": "",
+   "source": "live"
+  },
+  "3361734706": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly blank wall and sky; work barely visible",
+   "project": "",
+   "source": "live"
+  },
+  "3361733734": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Person in straw hat visible at bottom of frame",
+   "project": "",
+   "source": "live"
+  },
+  "3361702519": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV into gutter, sealant close-up",
+   "project": "",
+   "source": "live"
+  },
+  "3361702198": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sealant and bracket close-up from roof",
+   "project": "",
+   "source": "live"
+  },
+  "3361702447": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof POV, hanger hardware and sealant blobs close-up",
+   "project": "",
+   "source": "live"
+  },
+  "3361702251": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down roof valley shot with sealant seam",
+   "project": "",
+   "source": "live"
+  },
+  "3361702633": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof POV looking over eave edge",
+   "project": "",
+   "source": "live"
+  },
+  "3361702374": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Gutter outlet sealant close-up from above",
+   "project": "",
+   "source": "live"
+  },
+  "3361702138": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof POV valley and gutter corner sealant",
+   "project": "",
+   "source": "live"
+  },
+  "3356114878": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Gutter interior close-up from roof, work-detail shot",
+   "project": "",
+   "source": "live"
+  },
+  "3356114628": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rooftop POV down gutter interior",
+   "project": "",
+   "source": "live"
+  },
+  "3356113878": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Caulk seam close-up dominates frame",
+   "project": "",
+   "source": "live"
+  },
+  "3356113815": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Miter corner sealant and screws close-up",
+   "project": "",
+   "source": "live"
+  },
+  "3356109691": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Bare splattered dirt jobsite dominates lower frame",
+   "project": "",
+   "source": "live"
+  },
+  "3356109523": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Raw dirt with splatter and wire, jobsite mess",
+   "project": "",
+   "source": "live"
+  },
+  "3356108349": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down dirt mess, ladder foot and debris visible",
+   "project": "",
+   "source": "live"
+  },
+  "3356108269": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down bare dirt and pavers, jobsite mess",
+   "project": "",
+   "source": "live"
+  },
+  "3356108166": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Splattered dirt dominates; possible person in background",
+   "project": "",
+   "source": "live"
+  },
+  "3356085097": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder and leaf blower prominent in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3356084931": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Leaf blower and ladder edge in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3356084848": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Leaf blower equipment visible in background",
+   "project": "",
+   "source": "live"
+  },
+  "3356084735": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker arm and tool over gutter",
+   "project": "",
+   "source": "live"
+  },
+  "3356073802": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker boots in frame, top-down dirt shot",
+   "project": "",
+   "source": "live"
+  },
+  "3356073672": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker actively installing downspout in frame",
+   "project": "",
+   "source": "live"
+  },
+  "3356073599": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker visible installing downspout",
+   "project": "",
+   "source": "live"
+  },
+  "3356073507": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Person reaching up visible at bottom",
+   "project": "",
+   "source": "live"
+  },
+  "3355990932": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Hand and arm in top corner of frame",
+   "project": "",
+   "source": "live"
+  },
+  "3355990840": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker arm over gutter at top of frame",
+   "project": "",
+   "source": "live"
+  },
+  "3355987723": {
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Elevated eave-edge POV along gutter, street below",
+   "project": "",
+   "source": "live"
   }
+ }
 }

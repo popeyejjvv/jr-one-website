@@ -1,0 +1,40 @@
+{
+ "verdicts": [
+  {
+   "index": 0,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Side-alley documentation shot, screen enclosure dominates",
+   "confidence": 0.9
+  },
+  {
+   "index": 1,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker at electrical panel, person prominent",
+   "confidence": 0.9
+  },
+  {
+   "index": 2,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof top-down POV of guard edge",
+   "confidence": 0.9
+  },
+  {
+   "index": 3,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky dominates, fascia sliver only",
+   "confidence": 0.9
+  },
+  {
+   "index": 4,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof POV of metal awning edge, WIP look",
+   "confidence": 0.9
+  },
+  {
+   "index": 5,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker prominent, guard install in progress",
+   "confidence": 0.9
+  }
+ ]
+}

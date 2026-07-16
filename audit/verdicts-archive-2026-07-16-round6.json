@@ -1,0 +1,34 @@
+{
+ "verdicts": [
+  {
+   "index": 0,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky-heavy gable shot, work not showcased",
+   "confidence": 0.9
+  },
+  {
+   "index": 1,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down roof POV to lawn below",
+   "confidence": 0.9
+  },
+  {
+   "index": 2,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Roof overview with crew shadow and materials",
+   "confidence": 0.9
+  },
+  {
+   "index": 3,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Top-down guard shot with debris and caulk gun",
+   "confidence": 0.9
+  },
+  {
+   "index": 4,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sealant smear close-up, WIP detail",
+   "confidence": 0.9
+  }
+ ]
+}

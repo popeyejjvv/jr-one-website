@@ -1,0 +1,52 @@
+{
+ "verdicts": [
+  {
+   "index": 0,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Arrival-style wide shot, work not showcased",
+   "confidence": 0.9
+  },
+  {
+   "index": 1,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Crew straw hat in frame under downspout",
+   "confidence": 0.9
+  },
+  {
+   "index": 2,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "On-roof top-down POV of guard, not deliberate framing",
+   "confidence": 0.9
+  },
+  {
+   "index": 3,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sky dominates frame, fascia sliver at bottom",
+   "confidence": 0.9
+  },
+  {
+   "index": 4,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Straight-down roof-corner POV, accidental-looking",
+   "confidence": 0.9
+  },
+  {
+   "index": 5,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Hands installing guard, work in progress",
+   "confidence": 0.9
+  },
+  {
+   "index": 6,
+   "class": "SAFE",
+   "reason": "Finished custom box downspout and dark fascia on chapel entry, deliberate",
+   "confidence": 0.9
+  },
+  {
+   "index": 7,
+   "class": "SAFE",
+   "reason": "New white gutter and downspout on clean corner, work visible",
+   "confidence": 0.9
+  }
+ ]
+}

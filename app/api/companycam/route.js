@@ -1,4 +1,5 @@
-import { filterPhotos } from "../../../lib/companycam/photo-filter";
+import { filterPhotos, dropBlockedIds } from "../../../lib/companycam/photo-filter";
+import { selectPerProject, interleaveByProject } from "../../../lib/companycam/photo-select";
 
 const COMPANYCAM_TOKEN = process.env.COMPANYCAM_TOKEN;
 const API = "https://api.companycam.com/v2";
@@ -99,9 +100,8 @@ async function fetchProjectDetails(projectIds) {
 // houses we may never have worked on. Fail closed: a project whose labels cannot be
 // fetched is treated as NOT complete and its photos are dropped.
 const REQUIRED_PROJECT_LABEL = "complete";
-// Newest N photos per project only. Crews shoot before-shots first and finished work
-// last, so newest = finished; this also keeps any one job from flooding the gallery.
-const MAX_PHOTOS_PER_PROJECT = 8;
+// Per-project SELECTION (which of a Complete project's photos qualify) lives in
+// lib/companycam/photo-select.js: last-day window + 30-min min gap + cap 8.
 
 async function fetchProjectLabels(projectIds) {
   const labels = {};
@@ -142,23 +142,19 @@ async function buildGallery() {
 
   let allPhotos = [...photoMap.values()];
 
-  // Complete-label gate (fail closed) + newest-N-per-project cap.
+  // Complete-label gate (fail closed).
   const allProjectIds = new Set(allPhotos.map(p => p.projectId));
   const projectLabels = await fetchProjectLabels(allProjectIds);
   allPhotos = allPhotos.filter(p => {
     const values = projectLabels[p.projectId];
     return Array.isArray(values) && values.includes(REQUIRED_PROJECT_LABEL);
   });
-  const byProject = new Map();
-  for (const p of allPhotos) {
-    if (!byProject.has(p.projectId)) byProject.set(p.projectId, []);
-    byProject.get(p.projectId).push(p);
-  }
-  allPhotos = [];
-  for (const group of byProject.values()) {
-    group.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
-    allPhotos.push(...group.slice(0, MAX_PHOTOS_PER_PROJECT));
-  }
+  // Drop vision-audit-blocked ids BEFORE selection so a blocked photo never
+  // consumes a slot -- the project's next-best same-day photo is chosen instead.
+  allPhotos = dropBlockedIds(allPhotos);
+  // Per-project selection: last-day window (drop quote/before-visit photos),
+  // 30-min minimum gap (drop near-duplicate bursts of the same area), cap 8.
+  allPhotos = selectPerProject(allPhotos);
 
   // Fetch project details for all unique project IDs
   const projectIds = new Set(allPhotos.map(p => p.projectId));
@@ -179,13 +175,14 @@ async function buildGallery() {
   // server. Same shared filter the SSG pages use (lib/companycam/photo-filter.js).
   const safePhotos = filterPhotos(allPhotos, { page: "projects-gallery" });
 
-  // Sort by most recent first
-  safePhotos.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
+  // Display order: round-robin across projects (each ranked by newest photo) so one
+  // job never renders as a wall of consecutive near-identical tiles.
+  const displayPhotos = interleaveByProject(safePhotos);
 
-  const safeProjectIds = new Set(safePhotos.map((p) => p.projectId).filter(Boolean));
+  const safeProjectIds = new Set(displayPhotos.map((p) => p.projectId).filter(Boolean));
 
   return {
-    photos: safePhotos,
+    photos: displayPhotos,
     tagLabels: TAG_LABELS,
     totalPhotos: safePhotos.length,
     totalProjects: safeProjectIds.size,

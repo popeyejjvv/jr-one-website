@@ -10,6 +10,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { selectPerProject, interleaveByProject } from "../lib/companycam/photo-select.js";
+// blocked ids from the filter config, dropped pre-selection (mirror route.js)
+const BLOCKED_IDS = new Set(
+  (JSON.parse(fs.readFileSync(new URL("../lib/companycam/photo-filter-config.json", import.meta.url), "utf8")).blocked_photo_ids || []).map(String)
+);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -89,6 +94,9 @@ function pickServiceTag(tags) {
 }
 
 // ---- live API fetch (mirror route.js) ----
+// Selection logic is imported from the REAL module (lib/companycam/photo-select.js)
+// so the mirror can never drift from what production actually selects.
+const MAX_PAGES_PER_TAG = 3; // mirror route.js pagination cap (2026-07-15)
 async function ccFetch(p) {
   const res = await fetch(`${API}${p}`, { headers: { Authorization: `Bearer ${COMPANYCAM_TOKEN}` } });
   if (!res.ok) throw new Error(`CompanyCam ${res.status}: ${p}`);
@@ -96,7 +104,7 @@ async function ccFetch(p) {
 }
 async function fetchPhotosForTag(tagId, tagName) {
   const photos = []; let page = 1;
-  while (true) {
+  while (page <= MAX_PAGES_PER_TAG) {
     const batch = await ccFetch(`/photos?tag_ids[]=${tagId}&per_page=50&page=${page}`);
     if (!batch.length) break;
     for (const p of batch) {
@@ -143,7 +151,24 @@ async function buildLiveGallery() {
     if (photoMap.has(p.id)) { const e = photoMap.get(p.id); if (!e.tags.includes(p.tag)) e.tags.push(p.tag); }
     else photoMap.set(p.id, { ...p, tags: [p.tag] });
   }
-  const allPhotos = [...photoMap.values()];
+  let allPhotos = [...photoMap.values()];
+  // Complete-label gate (mirror route.js, fail closed) then per-project selection
+  // (last-day window + min gap + cap) via the shared photo-select module.
+  const allProjectIds = new Set(allPhotos.map(p => p.projectId));
+  const labels = {};
+  const labelIds = [...allProjectIds];
+  for (let i = 0; i < labelIds.length; i += 30) {
+    const batch = labelIds.slice(i, i + 30);
+    const results = await Promise.all(batch.map(id =>
+      ccFetch(`/projects/${id}/labels`)
+        .then(ls => ({ id, values: (ls || []).map(l => (l.value || "").toLowerCase()) }))
+        .catch(() => ({ id, values: null }))
+    ));
+    for (const r of results) labels[r.id] = r.values;
+  }
+  allPhotos = allPhotos.filter(p => Array.isArray(labels[p.projectId]) && labels[p.projectId].includes("complete"));
+  allPhotos = allPhotos.filter(p => !BLOCKED_IDS.has(String(p.id))); // mirror route.js dropBlockedIds
+  allPhotos = selectPerProject(allPhotos);
   const projectIds = new Set(allPhotos.map(p => p.projectId));
   const projects = await fetchProjectDetails(projectIds);
   for (const photo of allPhotos) {
@@ -151,7 +176,7 @@ async function buildLiveGallery() {
     if (proj) { photo.projectName = proj.name; photo.city = proj.city; photo.state = proj.state; photo.projectStatus = proj.status; }
     delete photo.tag;
   }
-  allPhotos.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
+  allPhotos = interleaveByProject(allPhotos);
   const data = { photos: allPhotos, totalPhotos: allPhotos.length, projectsMeta: projects };
   fs.writeFileSync(cachePath, JSON.stringify(data, null, 1));
   console.log(`[live] fetched ${allPhotos.length} tagged photos`);
@@ -189,7 +214,7 @@ async function loadGalleryByCity() {
     if (p.projectId) byCity[slug].projectIds.add(p.projectId);
   }
   for (const s of Object.keys(byCity)) {
-    byCity[s].photos.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
+    byCity[s].photos = interleaveByProject(byCity[s].photos); // mirror by-city.js finalize
     byCity[s].totalProjects = byCity[s].projectIds.size;
   }
   return byCity;
@@ -230,8 +255,7 @@ for (const slug of ALL_CITY_SLUGS) {
     const sameCounty = Object.entries(CITY_COUNTY).filter(([, c]) => c === county).map(([s]) => s);
     const pool = [];
     for (const cs of sameCounty) for (const p of (byCity[cs]?.photos || [])) pool.push(p);
-    pool.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
-    for (const p of pool.slice(0, 12)) note(p, `/areas/${slug} (county-fallback)`);
+    for (const p of interleaveByProject(pool).slice(0, 12)) note(p, `/areas/${slug} (county-fallback)`);
   }
 }
 
@@ -255,8 +279,7 @@ for (const service of SERVICE_PAGES) {
   const pool = [];
   for (const slug of ALL_CITY_SLUGS) for (const p of byCity[slug].photos)
     if (Array.isArray(p.tags) && p.tags.includes(tag)) pool.push(p);
-  pool.sort((a, b) => (b.capturedAt || 0) - (a.capturedAt || 0));
-  for (const p of pool.slice(0, 12)) note(p, `/${service}`);
+  for (const p of interleaveByProject(pool).slice(0, 12)) note(p, `/${service}`);
 }
 
 // 4. /projects — entire live gallery

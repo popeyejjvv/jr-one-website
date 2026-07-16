@@ -1,0 +1,1678 @@
+{
+ "verdicts": [
+  {
+   "index": 240,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean full house exterior, deliberate framing"
+  },
+  {
+   "index": 241,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Worker on roof plus ladder, work in progress"
+  },
+  {
+   "index": 242,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Finished gable siding and fascia, in focus"
+  },
+  {
+   "index": 243,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Clean brick house, white soffit and fascia visible"
+  },
+  {
+   "index": 244,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Clean brick house corner, finished fascia and soffit"
+  },
+  {
+   "index": 245,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Finished downspout and soffit on clean exterior"
+  },
+  {
+   "index": 246,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished gray fascia, soffit, downspout, well framed"
+  },
+  {
+   "index": 247,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Tree dominates, ladder in background, downspout on ground"
+  },
+  {
+   "index": 248,
+   "class": "UNSAFE-PII",
+   "confidence": 0.55,
+   "reason": "Readable house name/address sign prominent, cluttered garage behind"
+  },
+  {
+   "index": 249,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Dark warehouse shot with trailer, no clear finished work"
+  },
+  {
+   "index": 250,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.95,
+   "reason": "Cyan drawn markup lines burned into photo"
+  },
+  {
+   "index": 251,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.98,
+   "reason": "Drawn markup plus text overlay 'Wedges, gutters only'"
+  },
+  {
+   "index": 252,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Clean house exterior, gutters visible, tidy lawn"
+  },
+  {
+   "index": 253,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Heavy lens flare, no clear JR One work visible"
+  },
+  {
+   "index": 254,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished modern soffit with recessed lighting"
+  },
+  {
+   "index": 255,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished angular dark fascia and soffit, modern home"
+  },
+  {
+   "index": 256,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Finished gutter, fascia, vented soffit close-up"
+  },
+  {
+   "index": 257,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Worker installing guard visible, work in progress"
+  },
+  {
+   "index": 258,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Trash bag and lumber on patio, messy scene"
+  },
+  {
+   "index": 259,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Underexposed, palm fronds dominate the frame"
+  },
+  {
+   "index": 260,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Finished carport fascia, gutter, downspout; vehicles incidental"
+  },
+  {
+   "index": 261,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Clean finished gutter guard run, no people"
+  },
+  {
+   "index": 262,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Badly tilted framing, ladder against house"
+  },
+  {
+   "index": 263,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Finished black fascia and gutter on stucco corner"
+  },
+  {
+   "index": 264,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.75,
+   "reason": "Burned-in timestamp overlay; ladders also present"
+  },
+  {
+   "index": 265,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean aerial of finished house, deliberate framing"
+  },
+  {
+   "index": 266,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Finished gutters and downspouts; fence and generator incidental"
+  },
+  {
+   "index": 267,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished white gutter and downspout, good framing"
+  },
+  {
+   "index": 268,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Finished garage fascia and soffit; minor corner clutter"
+  },
+  {
+   "index": 269,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Frame mostly roof shingles, gutter work not the subject"
+  },
+  {
+   "index": 270,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean two-story exterior with gutters and downspouts"
+  },
+  {
+   "index": 271,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished white vented soffit and fascia close-up"
+  },
+  {
+   "index": 272,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished collector box and downspout detail shot"
+  },
+  {
+   "index": 273,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Cables draped over eave, peeling wall paint"
+  },
+  {
+   "index": 274,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Finished white soffit and downspout on blue house"
+  },
+  {
+   "index": 275,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Entryway shot, no visible JR One work, solar dominates"
+  },
+  {
+   "index": 276,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Finished fascia, soffit, and siding on clean side wall"
+  },
+  {
+   "index": 277,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Water heaters, trash bins, chain-link clutter dominate"
+  },
+  {
+   "index": 278,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.8,
+   "reason": "Burned-in timestamp overlay on construction-site shot"
+  },
+  {
+   "index": 144,
+   "class": "SAFE",
+   "reason": "Clean exterior, finished fascia/gutter edge visible, decent framing",
+   "confidence": 0.6
+  },
+  {
+   "index": 145,
+   "class": "SAFE",
+   "reason": "Clean full-house exterior, roofline work visible, well framed",
+   "confidence": 0.6
+  },
+  {
+   "index": 146,
+   "class": "UNSAFE-PII",
+   "reason": "Readable house number 9088; vehicle prominent in frame",
+   "confidence": 0.6
+  },
+  {
+   "index": 147,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Heavy lens flare streak across frame degrades shot",
+   "confidence": 0.6
+  },
+  {
+   "index": 148,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed Tyvek house wrap, unfinished work in progress",
+   "confidence": 0.95
+  },
+  {
+   "index": 149,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker's boot and hand visible, guard install mid-progress",
+   "confidence": 0.7
+  },
+  {
+   "index": 150,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder handling metal panel, active work",
+   "confidence": 0.95
+  },
+  {
+   "index": 151,
+   "class": "SAFE",
+   "reason": "Clean new gutter on tile roof corner, crisp close-up",
+   "confidence": 0.9
+  },
+  {
+   "index": 152,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Accidental shot of sidewalk and grass, no work",
+   "confidence": 0.97
+  },
+  {
+   "index": 153,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly bare yard, house distant, no visible work",
+   "confidence": 0.85
+  },
+  {
+   "index": 154,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Two workers on ladders, active installation",
+   "confidence": 0.95
+  },
+  {
+   "index": 155,
+   "class": "SAFE",
+   "reason": "Installed gutter guard close-up, ladders only incidental background",
+   "confidence": 0.55
+  },
+  {
+   "index": 156,
+   "class": "SAFE",
+   "reason": "Clean finished exterior, tidy framing, work visible",
+   "confidence": 0.75
+  },
+  {
+   "index": 157,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Weathered worn structure, reads as before/damage shot",
+   "confidence": 0.85
+  },
+  {
+   "index": 158,
+   "class": "SAFE",
+   "reason": "New dark gutters and downspout on clean exterior",
+   "confidence": 0.9
+  },
+  {
+   "index": 159,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, backlit sun glare, house minor subject",
+   "confidence": 0.75
+  },
+  {
+   "index": 160,
+   "class": "SAFE",
+   "reason": "Finished gutter and downspout run visible, acceptable framing",
+   "confidence": 0.55
+  },
+  {
+   "index": 161,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dark gloomy underexposed shot, no clear finished work",
+   "confidence": 0.8
+  },
+  {
+   "index": 162,
+   "class": "SAFE",
+   "reason": "Finished white gutters and downspout, clean home exterior",
+   "confidence": 0.85
+  },
+  {
+   "index": 163,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladders dominate frame, downspout detached, work in progress",
+   "confidence": 0.9
+  },
+  {
+   "index": 164,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Plain stucco wall, no visible gutter/soffit work",
+   "confidence": 0.7
+  },
+  {
+   "index": 165,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Construction-site dirt and mess around pool area",
+   "confidence": 0.7
+  },
+  {
+   "index": 166,
+   "class": "SAFE",
+   "reason": "Finished modern siding and box fascia, sharp shot",
+   "confidence": 0.8
+  },
+  {
+   "index": 167,
+   "class": "SAFE",
+   "reason": "Finished bronze gutters on upscale home, well framed",
+   "confidence": 0.85
+  },
+  {
+   "index": 168,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Brick/material pallets dominate foreground, jobsite mess",
+   "confidence": 0.9
+  },
+  {
+   "index": 169,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "House under construction, person and dumpster visible",
+   "confidence": 0.9
+  },
+  {
+   "index": 170,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Unfinished construction, manufacturer stickers still on windows",
+   "confidence": 0.85
+  },
+  {
+   "index": 171,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Downward roof-edge shot, no clear finished work visible",
+   "confidence": 0.6
+  },
+  {
+   "index": 172,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tree trunk blocks frame, casual backyard snapshot",
+   "confidence": 0.5
+  },
+  {
+   "index": 173,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder against house, vehicles dominate driveway",
+   "confidence": 0.85
+  },
+  {
+   "index": 174,
+   "class": "SAFE",
+   "reason": "Installed gutter guard close-up, finished and clear",
+   "confidence": 0.7
+  },
+  {
+   "index": 175,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Open cluttered garage and sun flare distract from work",
+   "confidence": 0.55
+  },
+  {
+   "index": 176,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Buckets, trash bin, leaning sign clutter the frame",
+   "confidence": 0.85
+  },
+  {
+   "index": 177,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Overgrown yard, wet mess, reads as before shot",
+   "confidence": 0.85
+  },
+  {
+   "index": 178,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Rot/damage at soffit corner, mostly sky",
+   "confidence": 0.8
+  },
+  {
+   "index": 179,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tarp on roof, damage documentation shot",
+   "confidence": 0.9
+  },
+  {
+   "index": 180,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Washed out by severe sun glare",
+   "confidence": 0.85
+  },
+  {
+   "index": 181,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder prominent, work in progress",
+   "confidence": 0.9
+  },
+  {
+   "index": 182,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Active construction, bare block and roof underlayment",
+   "confidence": 0.9
+  },
+  {
+   "index": 183,
+   "class": "UNSAFE-ORIENTATION",
+   "reason": "Image rotated sideways; also debris and equipment visible",
+   "confidence": 0.6
+  },
+  {
+   "index": 184,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cluttered side yard with AC unit and pots",
+   "confidence": 0.85
+  },
+  {
+   "index": 185,
+   "class": "SAFE",
+   "reason": "New dark soffit and fascia close-up, finished work",
+   "confidence": 0.8
+  },
+  {
+   "index": 186,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, awkward straight-up angle, work unclear",
+   "confidence": 0.7
+  },
+  {
+   "index": 187,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Damaged light fixtures and wiring close-up, repair documentation",
+   "confidence": 0.85
+  },
+  {
+   "index": 188,
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Aerial screenshot with drawn measurement lines and arrows",
+   "confidence": 0.95
+  },
+  {
+   "index": 189,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Weathered dented metal barn wall, no finished work",
+   "confidence": 0.85
+  },
+  {
+   "index": 190,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly sky, awkward upward angle, work barely visible",
+   "confidence": 0.65
+  },
+  {
+   "index": 191,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dirt yard dominates, finished work not clearly visible",
+   "confidence": 0.5
+  },
+  {
+   "index": 48,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Mostly blank stucco wall, blown-out sky; soffit barely visible, weak framing"
+  },
+  {
+   "index": 49,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Active construction site with dirt and debris piles dominating foreground"
+  },
+  {
+   "index": 50,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Mostly lawn; house distant, no work visible"
+  },
+  {
+   "index": 51,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Clean upward shot of finished siding, fascia and gutters"
+  },
+  {
+   "index": 52,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished multi-story home, clean exterior beauty shot"
+  },
+  {
+   "index": 53,
+   "class": "SAFE",
+   "confidence": 0.9,
+   "reason": "Finished white gutter and downspout on clean house corner"
+  },
+  {
+   "index": 54,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Cluttered backyard with grill and leaning items, not deliberate work framing"
+  },
+  {
+   "index": 55,
+   "class": "SAFE",
+   "confidence": 0.9,
+   "reason": "Clean two-story home with finished gutters, good framing"
+  },
+  {
+   "index": 56,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Clean stucco exterior, roofline and fascia visible, decent framing"
+  },
+  {
+   "index": 57,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished yellow home, gutters visible, deliberate framing"
+  },
+  {
+   "index": 58,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Odd column/pool framing, unclear subject, no clear finished work"
+  },
+  {
+   "index": 59,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Clean home exterior with visible gutters and tidy landscaping"
+  },
+  {
+   "index": 60,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Closeup of raw material with barcode label, not finished work"
+  },
+  {
+   "index": 61,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.65,
+   "reason": "Scruffy dirt yard with trash can, reads as before/estimate photo"
+  },
+  {
+   "index": 62,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Deliberate corner detail of finished gutter and soffit"
+  },
+  {
+   "index": 63,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Mostly blank wall with heavy sun flare, work barely visible"
+  },
+  {
+   "index": 64,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished gutter, downspout elbow and vented soffit, well framed"
+  },
+  {
+   "index": 65,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Finished white soffit and fascia corner; flag incidental"
+  },
+  {
+   "index": 66,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Person and ladder prominent, work in progress"
+  },
+  {
+   "index": 67,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Finished gutters on sunroom roofline; sun glare acceptable"
+  },
+  {
+   "index": 68,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Ladder and work-in-progress on porch, bucket visible"
+  },
+  {
+   "index": 69,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Ladder against graffiti building, work in progress"
+  },
+  {
+   "index": 70,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.65,
+   "reason": "Mostly blank stucco wall and sky, no clear finished work"
+  },
+  {
+   "index": 71,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Finished custom box gutter and downspout detail, in focus"
+  },
+  {
+   "index": 72,
+   "class": "SAFE",
+   "confidence": 0.85,
+   "reason": "Finished bronze gutters and downspout on brick home"
+  },
+  {
+   "index": 73,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Debris-filled gutter with worker boot, before/cleaning shot"
+  },
+  {
+   "index": 74,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Flat-roof repair closeup with tar and grime, damage documentation"
+  },
+  {
+   "index": 75,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Finished wood-look soffit and fascia, clean upward shot"
+  },
+  {
+   "index": 76,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Finished modern siding and roofline; window stickers minor"
+  },
+  {
+   "index": 77,
+   "class": "SAFE",
+   "confidence": 0.8,
+   "reason": "Finished siding panel with downspout and soffit detail"
+  },
+  {
+   "index": 78,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Ladder prominent against gable, work in progress"
+  },
+  {
+   "index": 79,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Finished bronze gutter and downspout on stucco corner"
+  },
+  {
+   "index": 80,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Construction site with work truck, dirt lot, unfinished building"
+  },
+  {
+   "index": 81,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Blank wall with materials/equipment in background, no finished work subject"
+  },
+  {
+   "index": 82,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Finished white fascia and soffit vent on gable, deliberate framing"
+  },
+  {
+   "index": 83,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Clean commercial building exterior, roofline visible, decent framing"
+  },
+  {
+   "index": 84,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Cars dominate, hood open; work not the subject"
+  },
+  {
+   "index": 85,
+   "class": "SAFE",
+   "confidence": 0.65,
+   "reason": "Finished soffit and fascia edge, dramatic but deliberate angle"
+  },
+  {
+   "index": 86,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Tarped boat, bins and trailer clutter dominate foreground"
+  },
+  {
+   "index": 87,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Top-down gutter with debris, feet visible, maintenance shot"
+  },
+  {
+   "index": 88,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Weathered trim, no clear finished work; fail closed"
+  },
+  {
+   "index": 89,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Downward shot of post base plate with leaves, accidental framing"
+  },
+  {
+   "index": 90,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean two-story exterior with finished white fascia and soffit"
+  },
+  {
+   "index": 91,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Exposed raw fascia strip, soffit work mid-install"
+  },
+  {
+   "index": 92,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Ladder and worker on roof, tilted framing, work in progress"
+  },
+  {
+   "index": 93,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Finished gutter and downspout on clean house corner"
+  },
+  {
+   "index": 94,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.65,
+   "reason": "Soffit corner appears mid-install with exposed section; fail closed"
+  },
+  {
+   "index": 95,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Unfinished construction with dumpster prominent in foreground"
+  },
+  {
+   "index": 192,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.65,
+   "reason": "Diagnostic corner close-up dominated by shingles, not finished-work framing"
+  },
+  {
+   "index": 193,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.95,
+   "reason": "Warehouse interior with stacked material boxes, not exterior work"
+  },
+  {
+   "index": 194,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Weathered rusty fascia edge, reads as before/damage inspection shot"
+  },
+  {
+   "index": 195,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Tyvek house wrap, unfinished construction in progress"
+  },
+  {
+   "index": 196,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Finished dark soffit and fascia over brick, clean and in focus"
+  },
+  {
+   "index": 197,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.95,
+   "reason": "Burned-in pink drawn arrow markup on soffit"
+  },
+  {
+   "index": 198,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Clean finished white porch soffit and column, deliberate framing"
+  },
+  {
+   "index": 199,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.9,
+   "reason": "Yellow drawn measurement lines and X markup on image"
+  },
+  {
+   "index": 200,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Finished soffit, fascia and downspout corner, clean framing"
+  },
+  {
+   "index": 201,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean finished fascia on scalloped roofline, well framed"
+  },
+  {
+   "index": 202,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Bare wood fascia work-in-progress, foliage-dominated frame"
+  },
+  {
+   "index": 203,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean house exterior with visible soffit/fascia, well framed"
+  },
+  {
+   "index": 204,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Clean exterior with finished white gutters and downspout"
+  },
+  {
+   "index": 205,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Cluster of misaligned floodlights dominates, inspection-style shot"
+  },
+  {
+   "index": 206,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Dark opening/hole in soffit, reads as before/inspection shot"
+  },
+  {
+   "index": 207,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Tilted sky-heavy look-up with chain, accidental-looking framing"
+  },
+  {
+   "index": 208,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Clean front elevation with finished fascia, deliberate framing"
+  },
+  {
+   "index": 209,
+   "class": "SAFE",
+   "confidence": 0.65,
+   "reason": "Finished bronze gutter on eave, clean stucco exterior"
+  },
+  {
+   "index": 210,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Raw OSB sheathing close-up, material/WIP shot"
+  },
+  {
+   "index": 211,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Door and window close-up, no gutter/soffit work visible"
+  },
+  {
+   "index": 212,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Finished dark fascia/gutter on gable, clean sky framing"
+  },
+  {
+   "index": 213,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.9,
+   "reason": "Worker on ladder, people prominent, work in progress"
+  },
+  {
+   "index": 214,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Orange ladder prominent in frame, job-in-progress look"
+  },
+  {
+   "index": 215,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Mostly trees and fence, unclear subject, no clear work"
+  },
+  {
+   "index": 216,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Attractive finished home exterior, soffit and fascia visible"
+  },
+  {
+   "index": 217,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Exposed raw wood at eave corner, unfinished/diagnostic shot"
+  },
+  {
+   "index": 218,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Ladder dominates frame under porch soffit"
+  },
+  {
+   "index": 219,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Mostly sky, tilted framing, house small in corner"
+  },
+  {
+   "index": 220,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Clean sided exterior with gutter visible, decent framing"
+  },
+  {
+   "index": 221,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Diagnostic eave corner with pole/ladder edge in frame"
+  },
+  {
+   "index": 222,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Stripped column mid-repair, truck in frame, work in progress"
+  },
+  {
+   "index": 223,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Awkward tilted balcony look-up, no clear finished work subject"
+  },
+  {
+   "index": 224,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Bare unpainted wood fascia, clear work-in-progress"
+  },
+  {
+   "index": 225,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Pre-work estimate shot, no finished gutter/soffit work evident"
+  },
+  {
+   "index": 226,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.8,
+   "reason": "Drawn pink circle markup, plus ladder and person on roof"
+  },
+  {
+   "index": 227,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Tilted sky-dominated look-up, weak framing of siding"
+  },
+  {
+   "index": 228,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Entry door is subject, cluttered yard, work incidental"
+  },
+  {
+   "index": 229,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Fountain dominates foreground, porch clutter, work incidental"
+  },
+  {
+   "index": 230,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Construction site background, raw wood beam, unfinished"
+  },
+  {
+   "index": 231,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Finished white gutter run on clean two-story stucco corner"
+  },
+  {
+   "index": 232,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Rooftop shingles and lawn dominate, no JR One work subject"
+  },
+  {
+   "index": 233,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Ladder leaning against building, job-in-progress look"
+  },
+  {
+   "index": 234,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Clean building exterior with new siding panels, deliberate framing"
+  },
+  {
+   "index": 235,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Ladders and workers on building, work in progress"
+  },
+  {
+   "index": 236,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Ladder against wall, harsh shadows, poor gallery quality"
+  },
+  {
+   "index": 237,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.95,
+   "reason": "Aerial roof measurement diagram with dimension labels"
+  },
+  {
+   "index": 238,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Severely underexposed backlit eave, poor lighting"
+  },
+  {
+   "index": 239,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Shadowed gable wall, awkward framing, no clear finished-work subject"
+  },
+  {
+   "index": 0,
+   "class": "UNSAFE-ORIENTATION",
+   "reason": "Image is upside down",
+   "confidence": 0.97
+  },
+  {
+   "index": 1,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder is prominent subject, work in progress",
+   "confidence": 0.9
+  },
+  {
+   "index": 2,
+   "class": "UNSAFE-PII",
+   "reason": "Work order document with readable customer name and diagram",
+   "confidence": 0.95
+  },
+  {
+   "index": 3,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Boot in frame, awkward downward rooftop shot, not deliberate",
+   "confidence": 0.8
+  },
+  {
+   "index": 4,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Ladder rails cross frame, mid-install feel",
+   "confidence": 0.6
+  },
+  {
+   "index": 5,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly shingle roof and trees, work not the subject",
+   "confidence": 0.7
+  },
+  {
+   "index": 6,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker prominent, gutter guard install in progress",
+   "confidence": 0.92
+  },
+  {
+   "index": 7,
+   "class": "SAFE",
+   "reason": "Finished downspout routed under soffit, clean and framed",
+   "confidence": 0.7
+  },
+  {
+   "index": 8,
+   "class": "SAFE",
+   "reason": "Finished soffit and fascia overhang, clean framing",
+   "confidence": 0.8
+  },
+  {
+   "index": 9,
+   "class": "SAFE",
+   "reason": "Clean exterior with finished gutters and fascia visible",
+   "confidence": 0.65
+  },
+  {
+   "index": 10,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Cluttered yard, estimate-style shot, work not showcased",
+   "confidence": 0.6
+  },
+  {
+   "index": 11,
+   "class": "UNSAFE-PII",
+   "reason": "Readable house number 2302; also weedy awkward framing",
+   "confidence": 0.55
+  },
+  {
+   "index": 12,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Heavy sun glare, work distant, pool dominates",
+   "confidence": 0.6
+  },
+  {
+   "index": 13,
+   "class": "SAFE",
+   "reason": "Finished porch ceiling and soffit panels, deliberate shot",
+   "confidence": 0.6
+  },
+  {
+   "index": 14,
+   "class": "SAFE",
+   "reason": "Clean house corner with finished gutter visible",
+   "confidence": 0.6
+  },
+  {
+   "index": 15,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Construction dirt lot, no finished work visible",
+   "confidence": 0.9
+  },
+  {
+   "index": 16,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Metal shed with pipe debris and dirt, jobsite mess",
+   "confidence": 0.85
+  },
+  {
+   "index": 17,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Sun glare, ladder at porch, estimate-style wide shot",
+   "confidence": 0.55
+  },
+  {
+   "index": 18,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dead lawn, dated house, no visible finished work",
+   "confidence": 0.75
+  },
+  {
+   "index": 19,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Tilted shot, utility pole dominates, no clear work",
+   "confidence": 0.8
+  },
+  {
+   "index": 20,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Blank wall dominates, equipment in background, work barely visible",
+   "confidence": 0.7
+  },
+  {
+   "index": 21,
+   "class": "SAFE",
+   "reason": "Finished white soffit and fascia corner, clean framing",
+   "confidence": 0.6
+  },
+  {
+   "index": 22,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed roof framing in progress, not finished work",
+   "confidence": 0.6
+  },
+  {
+   "index": 23,
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Aerial measurement screenshot with drawn roof outline",
+   "confidence": 0.95
+  },
+  {
+   "index": 24,
+   "class": "SAFE",
+   "reason": "Finished soffit, fascia, and gutter corner, well framed",
+   "confidence": 0.65
+  },
+  {
+   "index": 25,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Damage shot: peeling roof edge, rust, debris in gutter",
+   "confidence": 0.9
+  },
+  {
+   "index": 26,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Mostly patchy lawn and trees, house distant, no work",
+   "confidence": 0.85
+  },
+  {
+   "index": 27,
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Tape-measure measurement documentation photo",
+   "confidence": 0.85
+  },
+  {
+   "index": 28,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Old dirty downspout obscured by leaves",
+   "confidence": 0.85
+  },
+  {
+   "index": 29,
+   "class": "SAFE",
+   "reason": "Finished patio ceiling and fascia, tidy and framed",
+   "confidence": 0.55
+  },
+  {
+   "index": 30,
+   "class": "SAFE",
+   "reason": "Finished soffit and fascia at brick chimney, minor clutter",
+   "confidence": 0.55
+  },
+  {
+   "index": 31,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Parked SUV dominates, work not the subject",
+   "confidence": 0.7
+  },
+  {
+   "index": 32,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Office building and parking lot, no visible work",
+   "confidence": 0.8
+  },
+  {
+   "index": 33,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Entryway decor shot, no gutter/soffit work visible",
+   "confidence": 0.7
+  },
+  {
+   "index": 34,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Unfinished metal soffit, construction dirt site",
+   "confidence": 0.85
+  },
+  {
+   "index": 35,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Exposed rafters mid-repair, worker's hand in frame",
+   "confidence": 0.9
+  },
+  {
+   "index": 36,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Patio bins and clutter, unsure if finished showcase",
+   "confidence": 0.5
+  },
+  {
+   "index": 37,
+   "class": "UNSAFE-INTERNAL",
+   "reason": "Tape measure to eave, measurement documentation photo",
+   "confidence": 0.85
+  },
+  {
+   "index": 38,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Materials, ladders, cables on bare block wall, WIP",
+   "confidence": 0.9
+  },
+  {
+   "index": 39,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Active construction site, worker on ladder, dirt",
+   "confidence": 0.9
+  },
+  {
+   "index": 40,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Patio furniture and pool dominate, glare, work unclear",
+   "confidence": 0.7
+  },
+  {
+   "index": 41,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Dated house before-shot, power lines, cluttered yard",
+   "confidence": 0.75
+  },
+  {
+   "index": 42,
+   "class": "SAFE",
+   "reason": "Finished white soffit and fascia on brick home, clean",
+   "confidence": 0.75
+  },
+  {
+   "index": 43,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "reason": "Worker on ladder is the prominent subject",
+   "confidence": 0.9
+  },
+  {
+   "index": 44,
+   "class": "SAFE",
+   "reason": "Attractive house exterior, gutters visible, decent framing",
+   "confidence": 0.55
+  },
+  {
+   "index": 45,
+   "class": "SAFE",
+   "reason": "Clean finished fascia and soffit corner against sky",
+   "confidence": 0.75
+  },
+  {
+   "index": 46,
+   "class": "UNSAFE-PII",
+   "reason": "Readable house number 1434 on facade",
+   "confidence": 0.55
+  },
+  {
+   "index": 47,
+   "class": "SAFE",
+   "reason": "Finished soffit and gutter visible, foliage only incidental",
+   "confidence": 0.55
+  },
+  {
+   "index": 96,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean finished soffit and fascia roofline, in focus, well framed."
+  },
+  {
+   "index": 97,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Finished gutter and downspout on stucco home, clean and deliberate."
+  },
+  {
+   "index": 98,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Clean full house exterior, gutters visible, acceptable framing despite sun glare."
+  },
+  {
+   "index": 99,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Finished white soffit, fascia and gutter corner, clean shot."
+  },
+  {
+   "index": 100,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Striking finished navy soffit/panel detail over white brick, deliberate angle."
+  },
+  {
+   "index": 101,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Carport framing in progress, cluttered yard and vehicles dominate."
+  },
+  {
+   "index": 102,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Half sky, fascia edge looks unfinished; unsure, failing closed."
+  },
+  {
+   "index": 103,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Ornate home with copper-tone gutters visible; open garage only minor."
+  },
+  {
+   "index": 104,
+   "class": "SAFE",
+   "confidence": 0.65,
+   "reason": "Clean close-up of finished gutter with guard mesh installed."
+  },
+  {
+   "index": 105,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Eave-tile junction with debris and gap, reads mid-job documentation."
+  },
+  {
+   "index": 106,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Clean house entry exterior, rooflines visible, well lit and framed."
+  },
+  {
+   "index": 107,
+   "class": "SAFE",
+   "confidence": 0.5,
+   "reason": "House exterior with white fascia visible; tree-heavy but acceptable."
+  },
+  {
+   "index": 108,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Open soffit cavity exposed, unfinished work as subject."
+  },
+  {
+   "index": 109,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Finished downspout and fascia on modern white home."
+  },
+  {
+   "index": 110,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Finished soffit, gutter and downspout shown from below, clean."
+  },
+  {
+   "index": 111,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Yellow car dominates frame, no clear work visible."
+  },
+  {
+   "index": 112,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Dark underexposed gutter corner, unclear object beneath; failing closed."
+  },
+  {
+   "index": 113,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Rotted wood damage close-up, classic before shot."
+  },
+  {
+   "index": 114,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Clean modern house exterior, rooflines visible, well composed."
+  },
+  {
+   "index": 115,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Bush and harsh shadow dominate, unclear subject."
+  },
+  {
+   "index": 116,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Ladder is the prominent subject, work in progress."
+  },
+  {
+   "index": 117,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Dull overcast wide shot with yard clutter, no clear finished work."
+  },
+  {
+   "index": 118,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Attractive finished home exterior, gutters visible, well lit."
+  },
+  {
+   "index": 119,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Worker arm and pole tool in frame, work in progress."
+  },
+  {
+   "index": 120,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Rooftop documentation shot, shingles dominate, cluttered background."
+  },
+  {
+   "index": 121,
+   "class": "SAFE",
+   "confidence": 0.7,
+   "reason": "Finished white gutter and downspout corner, clean blue-sky shot."
+  },
+  {
+   "index": 122,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Abstract weathered close-up, reads as damage documentation."
+  },
+  {
+   "index": 123,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.85,
+   "reason": "Worker prominent installing gutter, person and work in progress."
+  },
+  {
+   "index": 124,
+   "class": "SAFE",
+   "confidence": 0.75,
+   "reason": "Finished Govee lighting install at night, deliberate and striking."
+  },
+  {
+   "index": 125,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Rooftop shot, shingles dominate over visible eave work; failing closed."
+  },
+  {
+   "index": 126,
+   "class": "UNSAFE-INTERNAL",
+   "confidence": 0.9,
+   "reason": "Aerial screenshot with measurement overlay and markup."
+  },
+  {
+   "index": 127,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Aluminum stock and equipment close-up, materials not finished work."
+  },
+  {
+   "index": 128,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Clean beach house exterior, finished fascia and railing visible."
+  },
+  {
+   "index": 129,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.7,
+   "reason": "Dim backlit side-yard shot, no clear work visible."
+  },
+  {
+   "index": 130,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Open garage full of clutter dominates the frame."
+  },
+  {
+   "index": 131,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.75,
+   "reason": "Vehicles dominate foreground, work not the subject."
+  },
+  {
+   "index": 132,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Flat backyard lanai shot, dull light, work unclear."
+  },
+  {
+   "index": 133,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Mostly sky, pergola underside with raw lumber, reads in-progress."
+  },
+  {
+   "index": 134,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Rooftop shingle-dominated shot, fresh sealant smear reads mid-job."
+  },
+  {
+   "index": 135,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Harsh sun flare backlights house, compromised lighting."
+  },
+  {
+   "index": 136,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Rooftop documentation angle, object on gutter; failing closed."
+  },
+  {
+   "index": 137,
+   "class": "SAFE",
+   "confidence": 0.6,
+   "reason": "Finished dark fascia, gutter and downspout, clean composition."
+  },
+  {
+   "index": 138,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.55,
+   "reason": "Ladder leaning against house, job in progress."
+  },
+  {
+   "index": 139,
+   "class": "SAFE",
+   "confidence": 0.55,
+   "reason": "Finished gutters and soffit along eaves, acceptable upward framing."
+  },
+  {
+   "index": 140,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.8,
+   "reason": "Workers and ladder prominent, active jobsite scene."
+  },
+  {
+   "index": 141,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.5,
+   "reason": "Heavy shadow, awkward crop; downspout barely reads. Failing closed."
+  },
+  {
+   "index": 142,
+   "class": "SAFE",
+   "confidence": 0.65,
+   "reason": "Clean modern exterior with finished bronze downspout visible."
+  },
+  {
+   "index": 143,
+   "class": "UNSAFE-UNPROFESSIONAL",
+   "confidence": 0.6,
+   "reason": "Mostly sky, extreme upward angle, work barely visible."
+  }
+ ]
+}
