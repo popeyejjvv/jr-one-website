@@ -359,6 +359,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
       <div class="email-form" id="emailForm">
         <input type="text" class="email-field" id="custName" placeholder="Your Name" aria-label="Your name" data-i18n-placeholder="your_name" data-i18n-aria="aria_name"/>
         <input type="email" class="email-field" id="custEmail" placeholder="Your Email Address" aria-label="Your email address" data-i18n-placeholder="your_email" data-i18n-aria="aria_email"/>
+        <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><input type="text" id="jr1RefX9" tabindex="-1" autocomplete="off" placeholder="Do not fill"/></div>
         <button class="email-send" id="emailSendBtn" onclick="sendToCustomer()" data-i18n="send_estimate">SEND MY ESTIMATE</button>
       </div>
     </div>
@@ -389,6 +390,8 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 </main>
 
 <script>
+// Bot-guard: fill-time baseline for the server-side spam scorer (lib/lead-spam.js)
+const PAGE_LOADED_AT = Date.now();
 // ═══ INTERNAL PRICING - NEVER SHOWN TO CUSTOMERS ═══
 // Updated 2026-04-12. Base per-foot rates per Popeye.
 // Displayed as a RANGE (±15%) so customers can't reverse-engineer per-foot price.
@@ -947,6 +950,8 @@ async function sendToJROne(){
 
   const payload={
     type:'lead',
+    form_ms:Date.now()-PAGE_LOADED_AT,
+    company:(document.getElementById('jr1RefX9')||{value:''}).value||'',
     phone:customerPhone,
     address:document.getElementById('addressInput').value||'Not specified',
     addressCity:parsedAddress.city,
@@ -996,6 +1001,8 @@ async function sendToCustomer(){
 
   const payload={
     type:'customer',
+    form_ms:Date.now()-PAGE_LOADED_AT,
+    company:(document.getElementById('jr1RefX9')||{value:''}).value||'',
     phone:customerPhone,
     customerName:name,
     customerEmail:email,

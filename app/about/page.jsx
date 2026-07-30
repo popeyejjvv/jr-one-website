@@ -7,6 +7,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
+import { useLeadGuard } from "../../lib/lead-guard";
 import { localizeHref } from "../../lib/locale";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
@@ -182,6 +183,7 @@ export default function AboutUsPage() {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
     e?.preventDefault?.();
@@ -193,6 +195,7 @@ export default function AboutUsPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          ...guardFields(),
           name: formData.name,
           phone: formData.phone,
           email: formData.email,
@@ -601,6 +604,7 @@ export default function AboutUsPage() {
                 </div>
               ) : (
                 <form onSubmit={handleForm}>
+                  {honeypot}
                   <h3
                     style={{
                       fontFamily: "var(--jr-font-heading)",

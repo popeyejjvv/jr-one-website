@@ -1,6 +1,7 @@
 import { NextResponse, after } from "next/server";
 import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
+import { assessLeadSpam } from "@/lib/lead-spam";
 
 // =============================================================================
 // JR One, Estimator Lead API
@@ -198,6 +199,56 @@ export async function POST(request) {
         { error: "Phone number is required" },
         { status: 400 }
       );
+    }
+
+    // ── Spam assessment (2026-07-29, gibberish-name bot campaign) ──
+    // Blocked submissions never reach BuilderPrime or Vapi. The bot still gets
+    // a normal success response so it learns nothing. See lib/lead-spam.js.
+    const spamCheck = assessLeadSpam({
+      name: customerName,
+      email: customerEmail,
+      phone,
+      zip: addressZip,
+      company: body.company,
+      form_ms: body.form_ms,
+    });
+    if (spamCheck.block) {
+      console.warn(`⚠ SPAM BLOCKED (estimator) from ${ip}: ${spamCheck.reasons.join("; ")}`);
+      // Rescue path: this route has no normal email fallback, so a blocked
+      // false positive would otherwise vanish silently. Send the info@
+      // notification tagged [SPAM BLOCKED], then return the exact success
+      // shape a captured lead gets (no adaptation oracle for the bot).
+      if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
+        try {
+          const nodemailer = (await import("nodemailer")).default;
+          const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+          });
+          const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+          await transporter.sendMail({
+            from: `"JR One Website" <${process.env.GMAIL_USER}>`,
+            to: "info@jronegutters.com",
+            subject: `[SPAM BLOCKED] Estimator Lead: ${customerName || "no name"}, ${addressZip || "N/A"}`,
+            html: `
+              <div style="font-family: Arial, sans-serif; max-width: 600px;">
+                <h2 style="color: #1B2A4A;">Estimator submission blocked as spam</h2>
+                <p style="color:#6B7280;">Reasons: ${esc(spamCheck.reasons.join("; "))}</p>
+                <p>Name: ${esc(customerName || "—")}<br/>Email: ${esc(customerEmail || "—")}<br/>
+                Phone: ${esc(phone)}<br/>Address: ${esc(address || "—")}, ${esc(addressCity || "")} ${esc(addressZip || "")}</p>
+                <p style="color:#6B7280;font-size:13px;">Not sent to BuilderPrime. If this looks like a real customer, call them back and enter manually.</p>
+              </div>`,
+          });
+        } catch (spamMailErr) {
+          console.error("✗ SPAM BLOCKED (estimator) and notification email failed — payload for manual recovery:",
+            JSON.stringify({ customerName, customerEmail, phone, addressZip, reasons: spamCheck.reasons }));
+        }
+      }
+      return NextResponse.json({
+        success: true,
+        captured_in_bp: true,
+        bp_opportunity_id: String(6000000 + (Date.now() % 1000000)),
+      });
     }
 
     let bpResult = { attempted: false, ok: false, error: null, opportunity_id: null };

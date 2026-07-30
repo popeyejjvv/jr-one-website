@@ -8,6 +8,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "../lib/LanguageContext";
+import { useLeadGuard } from "../lib/lead-guard";
 import SiteNav from "../components/SiteNav";
 import SiteFooter from "../components/SiteFooter";
 import MobileCTA from "../components/MobileCTA";
@@ -230,6 +231,7 @@ export default function JROneHomepage() {
   const [formLoading, setFormLoading] = useState(false);
   const [emailInput, setEmailInput] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
     e?.preventDefault?.();
@@ -241,6 +243,7 @@ export default function JROneHomepage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          ...guardFields(),
           name: formData.name,
           phone: formData.phone,
           email: formData.email,
@@ -369,6 +372,7 @@ export default function JROneHomepage() {
                     </div>
                   ) : (
                     <form onSubmit={handleForm}>
+                      {honeypot}
                       <h2 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>
                         {t.formTitle}
                       </h2>

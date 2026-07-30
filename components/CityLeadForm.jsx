@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "./ui/Button";
 import PhotoUpload from "./ui/PhotoUpload";
 import { CheckCircleIcon } from "../lib/icons";
+import { useLeadGuard } from "../lib/lead-guard";
 
 const inputStyle = {
   width: "100%",
@@ -27,6 +28,7 @@ export default function CityLeadForm({ citySlug, cityName, strings }) {
   const [photoProcessing, setPhotoProcessing] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [formLoading, setFormLoading] = useState(false);
+  const { guardFields, honeypot } = useLeadGuard();
 
   const handleSubmit = async (e) => {
     e?.preventDefault?.();
@@ -38,6 +40,7 @@ export default function CityLeadForm({ citySlug, cityName, strings }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          ...guardFields(),
           name: formData.name,
           phone: formData.phone,
           email: formData.email,
@@ -99,6 +102,7 @@ export default function CityLeadForm({ citySlug, cityName, strings }) {
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
+            {honeypot}
             <h2
               style={{
                 fontFamily: "var(--jr-font-heading)",

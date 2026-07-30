@@ -7,6 +7,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
+import { useLeadGuard } from "../../lib/lead-guard";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import ServiceAreaList from "../../components/ServiceAreaList";
@@ -193,6 +194,7 @@ export default function CopperGuttersPage({ portfolio = null }) {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "" });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formLoading, setFormLoading] = useState(false);
+  const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
     e?.preventDefault?.();
@@ -204,6 +206,7 @@ export default function CopperGuttersPage({ portfolio = null }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          ...guardFields(),
           name: formData.name, phone: formData.phone, email: formData.email,
           service: "Copper Gutters", zip: formData.zip,
           page: window.location.pathname,
@@ -350,6 +353,7 @@ export default function CopperGuttersPage({ portfolio = null }) {
                 </div>
               ) : (
                 <form onSubmit={handleForm} style={{ background: "var(--jr-paper)", borderRadius: "var(--jr-radius-xl)", padding: "var(--jr-space-8) var(--jr-space-6)", boxShadow: "var(--jr-shadow-form)" }}>
+                  {honeypot}
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>{t.formTitle}</h3>
                   <div aria-hidden style={{ width: 40, height: 3, background: ACCENT, borderRadius: 2, margin: "10px auto var(--jr-space-5)" }} />
                   <input aria-label={t.formName} style={inputStyle} placeholder={t.formName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />

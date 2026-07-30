@@ -2,6 +2,7 @@ import { NextResponse, after } from "next/server";
 import nodemailer from "nodemailer";
 import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
+import { assessLeadSpam } from "@/lib/lead-spam";
 
 // =============================================================================
 // JR One, Lead Submission API
@@ -207,6 +208,20 @@ export async function POST(request) {
       timeZone: "America/New_York",
     });
 
+    // ── Spam assessment (2026-07-29, gibberish-name bot campaign) ──
+    // Blocked submissions NEVER reach BuilderPrime (which also keeps them out
+    // of the Vapi callback and the nurture drip), but the notification email
+    // still goes out tagged [SPAM BLOCKED] so a false positive is rescuable.
+    // The bot gets a normal success response — never tip it off.
+    const spamCheck = assessLeadSpam({
+      name, email, phone, zip, message,
+      company: body.company,
+      form_ms: body.form_ms,
+    });
+    if (spamCheck.block) {
+      console.warn(`⚠ SPAM BLOCKED from ${ip}: ${spamCheck.reasons.join("; ")}`);
+    }
+
     const { firstName, lastName } = splitName(name);
     const normalizedPhone = normalizePhone(phone);
     const projectType = mapServiceToProjectType(service);
@@ -220,7 +235,7 @@ export async function POST(request) {
     //    Verified working schema as of 2026-04-06.
     //    Required: userAccount nested object with firstName + lastName.
     // ─────────────────────────────────────────────────────────────────────────
-    if (process.env.BUILDER_PRIME_API_KEY) {
+    if (process.env.BUILDER_PRIME_API_KEY && !spamCheck.block) {
       bpResult.attempted = true;
       try {
         // BP custom fields for UTM attribution.
@@ -310,6 +325,8 @@ export async function POST(request) {
         bpResult.error = bpErr.message;
         console.error(`✗ Builder Prime exception: ${bpErr.message}`);
       }
+    } else if (spamCheck.block) {
+      console.warn("⚠ Skipping BuilderPrime create: spam-blocked submission");
     } else {
       console.warn("⚠ BUILDER_PRIME_API_KEY not set in environment, skipping BP create");
     }
@@ -352,7 +369,10 @@ export async function POST(request) {
           },
         });
 
-        const bpStatusBadge = bpResult.ok
+        const escapeHtml = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+        const bpStatusBadge = spamCheck.block
+          ? `<span style="background:#6B7280;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">🚫 SPAM BLOCKED, not in BuilderPrime (${escapeHtml(spamCheck.reasons.join("; "))})</span>`
+          : bpResult.ok
           ? `<span style="background:#10B981;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">✓ In BuilderPrime (Opp ${bpResult.opportunity_id || "?"})</span>`
           : `<span style="background:#EF4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">⚠ NOT in BuilderPrime, manual entry required</span>`;
 
@@ -364,7 +384,7 @@ export async function POST(request) {
         await transporter.sendMail({
           from: `"JR One Website" <${process.env.GMAIL_USER}>`,
           to: "info@jronegutters.com",
-          subject: `New Web Lead: ${name}, ${service || "General"}, ${zip || "N/A"}${photoAttachments.length > 0 ? ` (📎 ${photoAttachments.length})` : ""}`,
+          subject: `${spamCheck.block ? "[SPAM BLOCKED] " : ""}New Web Lead: ${name}, ${service || "General"}, ${zip || "N/A"}${photoAttachments.length > 0 ? ` (📎 ${photoAttachments.length})` : ""}`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px;">
               <h2 style="color: #1B2A4A; border-bottom: 3px solid #D4AF37; padding-bottom: 10px;">
@@ -397,6 +417,26 @@ export async function POST(request) {
       }
     } else {
       console.warn("⚠ GMAIL_USER or GMAIL_APP_PASSWORD not set, skipping email notification");
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Spam-blocked: ALWAYS return the exact shape of a fully-captured lead so
+    // the bot can't A/B-test the filter (captured_in_bp:false would be a
+    // perfect adaptation oracle). Fabricated opportunity id, plausible range.
+    // Even if the [SPAM BLOCKED] email failed, never fall through to the 500 —
+    // log the payload instead so it's recoverable from Vercel logs.
+    // ─────────────────────────────────────────────────────────────────────────
+    if (spamCheck.block) {
+      if (!emailResult.ok) {
+        console.error("✗ SPAM BLOCKED and notification email failed — payload for manual recovery:",
+          JSON.stringify({ name, phone, email, service, zip, message, page, reasons: spamCheck.reasons }));
+      }
+      return NextResponse.json({
+        success: true,
+        message: "Lead received",
+        captured_in_bp: true,
+        bp_opportunity_id: String(6000000 + (Date.now() % 1000000)),
+      });
     }
 
     // ─────────────────────────────────────────────────────────────────────────

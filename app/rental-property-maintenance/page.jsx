@@ -7,6 +7,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
+import { useLeadGuard } from "../../lib/lead-guard";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
@@ -230,6 +231,7 @@ export default function RentalPropertyMaintenancePage() {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
     e?.preventDefault?.();
@@ -241,6 +243,7 @@ export default function RentalPropertyMaintenancePage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          ...guardFields(),
           name: formData.name,
           phone: formData.phone,
           email: formData.email,
@@ -629,6 +632,7 @@ export default function RentalPropertyMaintenancePage() {
                 </div>
               ) : (
                 <form onSubmit={handleForm}>
+                  {honeypot}
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-xl)", fontWeight: 700, color: "var(--jr-navy)", textAlign: "center", marginBottom: "var(--jr-space-1)" }}>
                     {t.formTitle}
                   </h3>
