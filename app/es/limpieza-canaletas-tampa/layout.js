@@ -15,7 +15,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Land O' Lakes"].map((name) => ({ "@type": "City", name })),
-  description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa de escombros, lavado de bajantes, prueba de flujo, fotografias de inspeccion. Casa unifamiliar tipica $150-$400. Familia, mas de 30 anos en el oficio.",
+  description: "Limpieza profesional de canaletas en Tampa Bay. Remoción completa de escombros, lavado de bajantes, prueba de flujo e inspección de ganchos, con fotos antes y después de cada trabajo. Empresa familiar, más de 30 años en el oficio.",
   offers: { "@type": "Offer", priceCurrency: "USD", availability: "https://schema.org/InStock" },
 };
 
@@ -29,8 +29,12 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Limpieza de Canaletas Tampa FL | $150-$400 Casa Unifamiliar",
-  description: "Limpieza profesional de canaletas en Tampa Bay. Remocion completa, lavado de bajantes, fotografias. Casa unifamiliar $150-$400. (844) 444-3114. Hablamos espanol.",
+  // title.absolute drops the global "| JR One Aluminum" template tail so the
+  // city plus one approved offer survive SERP truncation (A1 pattern, wave 2 ES).
+  // Published price range removed 2026-08-02 to match the EN page (brand law: no
+  // dollar figures in metadata).
+  title: { absolute: "Limpieza de Canaletas en Tampa FL | Servicio en 14 Días" },
+  description: "Remoción de escombros, lavado de bajantes e inspección de ganchos en Tampa Bay, con fotos antes y después de cada trabajo. Llame al (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
     languages: {
@@ -41,7 +45,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Limpieza de Canaletas Tampa - JR One Aluminum",
-    description: "Limpieza completa, lavado de bajantes, fotografias. $150-$400 casa unifamiliar. (844) 444-3114.",
+    description: "Limpieza completa, lavado de bajantes e inspección de ganchos, con fotos antes y después de cada trabajo. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/limpieza-canaletas-tampa",
     type: "website",
     locale: "es_US",

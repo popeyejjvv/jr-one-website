@@ -29,6 +29,7 @@ const T = {
     heroH1Gold: "Your Home Will Ever Need.",
     heroP: "Copper gutters are the top of residential gutter systems. A lifetime investment that gets more beautiful with age. Custom-fabricated half-round and K-style copper systems with matching copper downspouts, leader heads, and rain chains. Installed by our crew.",
     btnEstimate: "GET YOUR COPPER CONSULTATION",
+    btnEstimator: "MEASURE YOUR GUTTER FOOTAGE",
     btnCall: "(844) 444-3114",
     solutionsEyebrow: "COPPER SYSTEMS",
     solutionsTitle: "Our Copper Gutter Offerings",
@@ -78,8 +79,8 @@ const T = {
     faqEyebrow: "FAQ",
     faqTitle: "Copper Gutter Questions",
     faqs: [
-      { q: "How much do copper gutters cost?", a: "Copper gutter systems are a higher-tier investment. Half-round copper gutters start around $65 per linear foot installed, with copper downspouts at approximately $50 per linear foot. A complete copper system for a typical home runs significantly more than aluminum, but it also lasts 3 to 5 times longer. We provide detailed quotes so you can evaluate the investment." },
-      { q: "Are copper gutters worth the investment?", a: "Over a 50-year period, copper often costs less than aluminum because you never replace it. A $1,800 aluminum system replaced twice over 50 years costs $3,600+. A $5,000 copper system installed once costs $5,000, and it's still working at year 50. For homes you plan to keep long-term, or for coastal properties where aluminum corrodes faster, copper is the smarter long-term investment." },
+      { q: "How much do copper gutters cost?", a: "Half-round copper gutters from JR One Aluminum in Tampa Bay, FL start around $65 per linear foot installed, with copper downspouts at approximately $50 per linear foot. Price is driven by linear footage, roofline complexity and the number of corners and miters that have to be hand-soldered, roof height and ladder access, one-story versus two-story, gutter profile, and number of downspouts. A complete copper system for a typical home runs significantly more than aluminum, but it also lasts 3 to 5 times longer. We provide detailed quotes so you can evaluate the investment. To size the run on your own home, start with the JR One estimator at jronegutters.com/estimator to get your gutter footage measured, then call (844) 444-3114 for a copper quote." },
+      { q: "Are copper gutters worth the investment?", a: "Over a 50-year period, copper gutters from JR One Aluminum in Tampa Bay, FL often cost less than aluminum because you never replace them. A $1,800 aluminum system replaced twice over 50 years costs $3,600 or more. A $5,000 copper system installed once costs $5,000, and it's still working at year 50. What moves the math is how long you plan to keep the home, linear footage, and whether the property is coastal, where salt air corrodes aluminum faster. For homes you plan to keep long-term, or for coastal properties, copper is the smarter long-term investment. To size the run on your own home, start with the JR One estimator at jronegutters.com/estimator to get your gutter footage measured, then call (844) 444-3114 for a copper quote." },
       { q: "Will copper gutters turn green?", a: "Yes, and that's a feature, not a flaw. Copper develops a natural green patina over several years of exposure to weather. This patina is actually a protective layer that prevents further oxidation. Many homeowners specifically choose copper for this aging effect. If you prefer the original copper tone, periodic cleaning maintains the warm color." },
       { q: "Do you solder copper gutter joints?", a: "Yes. Copper gutter joints should be soldered for a watertight, permanent seal. Not just caulked like aluminum. Our crew is trained in copper soldering techniques to ensure every joint is secure and leak-free for decades." },
       { q: "Can you install copper gutters on any home?", a: "Technically yes, but copper isn't the best choice for every home. It looks best on homes with architectural character. Historic styles, Mediterranean, craftsman, colonial, or high-end contemporary. On a standard suburban ranch, the higher cost may not deliver proportional visual impact. We'll give you an honest recommendation." },
@@ -106,6 +107,7 @@ const T = {
     heroH1Gold: "Que Su Hogar Necesitara.",
     heroP: "Los canalones de cobre son lo mejor en sistemas residenciales. Una inversion de por vida que se vuelve mas hermosa con el tiempo. Sistemas de cobre half-round y K-style fabricados a medida con bajantes, cabezales decorativos y cadenas de lluvia de cobre. Instalados por nuestro equipo.",
     btnEstimate: "OBTENGA SU CONSULTA",
+    btnEstimator: "MIDA SUS PIES LINEALES",
     btnCall: "(844) 444-3114",
     solutionsEyebrow: "SISTEMAS DE COBRE",
     solutionsTitle: "Nuestras Ofertas de Canalones de Cobre",
@@ -155,7 +157,7 @@ const T = {
     faqEyebrow: "PREGUNTAS",
     faqTitle: "Preguntas Sobre Canalones de Cobre",
     faqs: [
-      { q: "Cuanto cuestan los canalones de cobre?", a: "Los sistemas de canalones de cobre son una inversion de mayor nivel. Los canalones half-round de cobre comienzan alrededor de $65 por pie lineal instalado, con bajantes de cobre a aproximadamente $50 por pie lineal. Un sistema completo de cobre para una casa tipica cuesta significativamente mas que el aluminio, pero tambien dura 3 a 5 veces mas." },
+      { q: "Cuanto cuestan los canalones de cobre?", a: "Los canalones half-round de cobre de JR One Aluminum en Tampa Bay, FL comienzan alrededor de $65 por pie lineal instalado, con bajantes de cobre a aproximadamente $50 por pie lineal. El precio depende de los pies lineales, la complejidad de la linea de techo y el numero de esquinas y uniones que se sueldan a mano, la altura del techo y el acceso con escalera, si la casa es de uno o dos pisos, el perfil del canalon y el numero de bajantes. Un sistema completo de cobre para una casa tipica cuesta significativamente mas que el aluminio, pero tambien dura 3 a 5 veces mas. Para medir el tramo de su propia casa, empiece con el estimador de JR One en jronegutters.com/estimator y luego llame al (844) 444-3114 para una cotizacion de cobre." },
       { q: "Vale la pena la inversion en canalones de cobre?", a: "En un periodo de 50 anos, el cobre frecuentemente cuesta menos que el aluminio porque nunca lo reemplaza. Un sistema de aluminio de $1,800 reemplazado dos veces en 50 anos cuesta $3,600+. Un sistema de cobre de $5,000 instalado una vez cuesta $5,000, y sigue funcionando en el ano 50." },
       { q: "Los canalones de cobre se ponen verdes?", a: "Si, y eso es una ventaja, no un defecto. El cobre desarrolla una patina verde natural con varios anos de exposicion al clima. Esta patina es en realidad una capa protectora que previene mayor oxidacion. Muchos propietarios eligen cobre especificamente por este efecto." },
       { q: "Sueldan las juntas de los canalones?", a: "Si. Las juntas de canalones de cobre deben soldarse para un sello permanente e impermeable. No solo sellarse con silicona como el aluminio. Nuestro equipo esta entrenado en tecnicas de soldadura de cobre." },
@@ -247,6 +249,7 @@ export default function CopperGuttersPage({ portfolio = null }) {
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-10)" }}>
                 <Button href="#quote-form" variant="primary" size="lg" iconRight accent={ACCENT} accentLight={ACCENT_LIGHT}>{t.btnEstimate}</Button>
+                <Button href="/estimator" variant="outline" size="lg" iconRight accent={ACCENT}>{t.btnEstimator}</Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT}>{t.btnCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>

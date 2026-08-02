@@ -2,9 +2,9 @@ import { getAllPosts } from "@/lib/blog";
 import BlogIndex from "../../blog/BlogIndex";
 
 export const metadata = {
-  title: "Blog: Consejos sobre Canaletas, Sofito y Fascia",
+  title: { absolute: "Blog de Canaletas, Sofito y Fascia | JR One Tampa Bay" },
   description:
-    "Consejos expertos sobre instalación de canaletas (solo 6 y 7 pulgadas), reparación de sofito, reemplazo de fascia, drenaje, Peak 301 y mantenimiento del hogar, de los especialistas en aluminio de Tampa Bay.",
+    "Consejos de mantenimiento, señales de que necesita reemplazo y cómo elegir entre 6 y 7 pulgadas, escritos por los especialistas en aluminio de Tampa Bay.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/blog",
     languages: {

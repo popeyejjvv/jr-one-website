@@ -5,8 +5,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Reparacion de Canaletas Danadas por Tormenta",
-  serviceType: "Instalacion y Reparacion de Canaletas",
+  name: "Reparación de Canaletas Dañadas por Tormenta",
+  serviceType: "Instalación y Reparación de Canaletas",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -22,7 +22,7 @@ const serviceSchemaEs = {
     "Tarpon Springs", "Largo", "Seminole", "Pinellas Park"
   ].map((name) => ({ "@type": "City", name })),
   description:
-    "Reparacion de canaletas, fascia, sofito y bajantes danados por huracan o tormenta con nombre en Tampa Bay. Instalacion misma semana. Canaletas continuas de 6 y 7 pulgadas solamente (no 5 pulgadas en Florida). Documentacion para reclamo de seguro. Familia, mas de 30 anos en el oficio.",
+    "Reparación de canaletas, fascia, sofito y bajantes dañados por huracán o tormenta con nombre en Tampa Bay. Programación prioritaria después de la tormenta y evaluación en 24 a 48 horas. Canaletas continuas de 6 y 7 pulgadas solamente. Documentación para su reclamo de seguro. Empresa familiar, más de 30 años en la industria de canaletas de Tampa Bay.",
   availableLanguage: ["en", "es"],
 };
 
@@ -31,14 +31,18 @@ const breadcrumbSchemaEs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Reparacion de Canaletas por Tormenta", item: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa" },
+    { "@type": "ListItem", position: 2, name: "Reparación de Canaletas por Tormenta", item: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa" },
   ],
 };
 
 export const metadata = {
-  title: "Reparacion de Canaletas por Tormenta Tampa FL - Misma Semana",
+  // title.absolute drops the global "| JR One Aluminum" template tail (A1 pattern,
+  // wave 4 ES). The old title, meta, schema and OG all carried the banned Spanish
+  // same-week promise. Storm work uses priority-scheduling wording instead, plus
+  // the true 24 to 48 hour assessment window.
+  title: { absolute: "Canaletas Dañadas por Tormenta Tampa | Equipos Propios" },
   description:
-    "Canaletas, fascia, sofito danados por huracan en Tampa Bay. Instalacion misma semana, documentacion para seguro. Familia, mas de 30 anos. (844) 444-3114.",
+    "Reparación de canaletas, fascia y sofito dañados por huracán en Tampa Bay. Programación prioritaria y evaluación en 24 a 48 horas: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
     languages: {
@@ -48,8 +52,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Reparacion de Canaletas por Tormenta Tampa Bay - JR One Aluminum",
-    description: "Instalacion misma semana para canaletas, fascia y sofito danados por huracan. Documentacion para seguro. (844) 444-3114.",
+    title: "Reparación de Canaletas por Tormenta Tampa Bay - JR One Aluminum",
+    description: "Programación prioritaria para canaletas, fascia y sofito dañados por huracán. Evaluación en 24 a 48 horas. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-dano-tormenta-tampa",
     type: "website",
     locale: "es_US",

@@ -10,8 +10,8 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Programa de Referidos Tampa - Gana $80",
-  description: "Refiere a un vecino de Tampa Bay para canaletas, sofito, fascia o Peak 301 y gana una tarjeta de regalo de $80 cuando contrate. Empresa familiar, mas de 30 anos. (844) 444-3114.",
+  title: { absolute: "Gane $80 por Referido | Programa JR One en Tampa Bay" },
+  description: "Refiera a un vecino de Tampa Bay y gane una tarjeta de regalo de $80 cuando firme un proyecto de $880 o más. Su vecino recibe 10% de descuento. Sin límite.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/referidos",
     languages: {
@@ -21,8 +21,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Programa de Referidos Tampa - Gana $80",
-    description: "Refiere a un vecino de Tampa Bay para canaletas, sofito, fascia o Peak 301 y gana una tarjeta de regalo de $80 cuando contrate. Empresa familiar, mas de 30 anos. (844) 444-3114.",
+    title: "Programa de Referidos JR One | Gane $80 en Tampa Bay",
+    description: "Refiera a un vecino de Tampa Bay y gane una tarjeta de regalo de $80 cuando firme un proyecto de $880 o más. Sin límite. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/referidos",
     type: "website",
     locale: "es_US",

@@ -4,8 +4,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Luces Govee Permanentes",
-  serviceType: "Luces LED Exteriores Permanentes",
+  name: "Instalación de Luces Govee Exteriores",
+  serviceType: "Luces LED Exteriores",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz"].map((name) => ({ "@type": "City", name })),
-  description: "Instalacion de luces LED Govee permanentes en el exterior de hogares de Tampa Bay. Iluminacion inteligente todo el ano: Navidad, Halloween, 4 de julio, dias normales. Control por aplicacion movil.",
+  description: "Instalación de luces LED Goveees en el exterior de casas de Tampa Bay. Iluminación inteligente todo el año: Navidad, Halloween, 4 de julio y días normales. Control desde una aplicación móvil, compatible con Alexa y Google Home.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,8 +29,11 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Luces Govee Permanentes Tampa FL | LED Inteligentes Todo el Ano | JR One",
-  description: "Instalacion de luces LED Govee permanentes en Tampa Bay. Iluminacion inteligente todo el ano controlada por app. Navidad, Halloween, dias normales. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail plus the
+  // hardcoded second "| JR One" that rendered twice (A1 pattern, wave 4 ES).
+  // The old title wrote año without its tilde, which is a different word entirely.
+  title: { absolute: "Luces LED Govee Exteriores Tampa FL | Financiamiento" },
+  description: "Instalación de luces LED Goveees en el alero de su casa en Tampa Bay, controladas desde el celular todo el año. Llame al (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/luces-govee-tampa",
     languages: {
@@ -41,7 +44,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Luces Govee Tampa Bay - JR One Aluminum",
-    description: "Luces LED permanentes inteligentes. Todo el ano, control por app. (844) 444-3114.",
+    description: "Luces LED inteligentes instaladas en el alero. Todo el año, controladas desde el celular. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/luces-govee-tampa",
     type: "website",
     locale: "es_US",

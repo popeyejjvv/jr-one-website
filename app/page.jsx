@@ -101,7 +101,7 @@ const T = {
     faqEyebrow: "FAQ",
     faqTitle: "Frequently Asked Questions",
     faqs: [
-      { q: "How much do new gutters cost in Tampa?", a: "Gutter installation in Tampa typically ranges from $11 to $20 per linear foot depending on size, material, and complexity. We provide free, detailed estimates so you know exactly what you're paying for. No hidden fees." },
+      { q: "How much do new gutters cost in Tampa?", a: "New seamless gutter installation from JR One Aluminum in Tampa, FL typically ranges from $11 to $20 per linear foot. Price is driven by linear footage, gutter size, 6-inch or 7-inch, roof height and ladder access, one-story versus two-story, roofline complexity and number of corners, number of downspouts, and material. We provide free, detailed line-item estimates so you know exactly what you are paying for. No hidden fees. For a number on your own Tampa home, use the JR One estimator at jronegutters.com/estimator or call (844) 444-3114." },
       { q: "Do you use subcontractors?", a: "Never. Every person on your property is a trained, full-time JR One crew member. That's how we maintain quality control and accountability on every job." },
       { q: "How long does gutter installation take?", a: "Most residential gutter installations are completed in a single day. Larger projects involving soffit, fascia, and gutters together typically take 2 to 3 days." },
       { q: "Do you offer financing?", a: "Yes. We offer flexible financing options to make quality gutter and aluminum services accessible. Ask about our current programs when you request your free quote." },
@@ -189,7 +189,7 @@ const T = {
     faqEyebrow: "Preguntas",
     faqTitle: "Preguntas Frecuentes",
     faqs: [
-      { q: "¿Cuánto cuestan canaletas nuevas en Tampa?", a: "La instalación de canaletas en Tampa típicamente varía de $11 a $20 por pie lineal dependiendo del tamaño, material y complejidad. Proporcionamos presupuestos gratuitos y detallados. Sin tarifas ocultas." },
+      { q: "¿Cuánto cuestan canaletas nuevas en Tampa?", a: "La instalación de canaletas sin costura de JR One Aluminum en Tampa, FL típicamente varía de $11 a $20 por pie lineal. El precio depende de los pies lineales, el tamaño de la canaleta de 6 o 7 pulgadas, la altura del techo y el acceso con escalera, si la casa es de uno o dos pisos, la complejidad de la línea de techo y el número de esquinas, la cantidad de bajantes y el material. Proporcionamos presupuestos gratuitos y detallados por partida. Sin tarifas ocultas. Para un número de su propia casa en Tampa, use el estimador de JR One en jronegutters.com/estimator o llame al (844) 444-3114." },
       { q: "¿Usan subcontratistas?", a: "Nunca. Cada persona en su propiedad es un miembro capacitado y de tiempo completo del equipo JR One." },
       { q: "¿Cuánto tarda la instalación de canaletas?", a: "La mayoría de las instalaciones residenciales se completan en un solo día. Proyectos más grandes con sofito y fascia toman 2 a 3 días." },
       { q: "¿Ofrecen financiamiento?", a: "Sí. Ofrecemos opciones de financiamiento flexibles para hacer accesibles nuestros servicios de calidad." },

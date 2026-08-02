@@ -4,7 +4,7 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Canaletas de 7 Pulgadas",
+  name: "Instalación de Canaletas de 7 Pulgadas",
   serviceType: "Canaletas Sobredimensionadas de 7 Pulgadas",
   inLanguage: "es-US",
   provider: {
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "South Tampa", "Davis Islands", "Hyde Park", "St. Petersburg", "Clearwater", "Sarasota", "Bradenton", "Brandon", "Riverview", "Wesley Chapel", "Lutz"].map((name) => ({ "@type": "City", name })),
-  description: "Canaletas continuas de aluminio de 7 pulgadas para hogares grandes y de lujo en Tampa Bay. Capacidad de grado comercial para techos extensos, pendientes pronunciadas y lluvia tropical fuerte. Solo 6 y 7 pulgadas, no 5 pulgadas en Florida.",
+  description: "Canaletas continuas de aluminio de 7 pulgadas para hogares grandes y de lujo en Tampa Bay. Capacidad de grado comercial para techos extensos, pendientes pronunciadas y lluvia tropical fuerte. JR One instala solamente canaletas de 6 y 7 pulgadas.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,8 +29,10 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Canaletas de 7 Pulgadas Tampa FL | Sobredimensionadas Grado Comercial | JR One",
-  description: "Canaletas continuas de aluminio de 7 pulgadas para hogares de lujo en Tampa Bay. Capacidad maxima para lluvia tropical. Mas de 30 anos en el oficio. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail plus the
+  // hardcoded second "| JR One" that rendered twice (A1 pattern, wave 4 ES).
+  title: { absolute: "Canaletas de 7 Pulgadas Tampa FL | Financiamiento Disponible" },
+  description: "Canaletas continuas de 7 pulgadas para casas grandes de Tampa Bay, con capacidad de grado comercial para la lluvia tropical. Llame al (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-7-pulgadas-tampa",
     languages: {
@@ -41,7 +43,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Canaletas de 7 Pulgadas Tampa Bay - JR One Aluminum",
-    description: "Sobredimensionadas grado comercial. Para hogares grandes y de lujo. (844) 444-3114.",
+    description: "Capacidad de grado comercial para techos extensos y lluvia tropical fuerte. Financiamiento disponible. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-7-pulgadas-tampa",
     type: "website",
     locale: "es_US",

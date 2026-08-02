@@ -4,7 +4,7 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Canaletas de Cobre",
+  name: "Instalación de Canaletas de Cobre",
   serviceType: "Canaletas de Cobre Sin Costura",
   inLanguage: "es-US",
   provider: {
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Instalacion de canaletas de cobre a medida para hogares arquitectonicos e historicos de Tampa Bay. Cobre estilo K sin costura y media cana, cabezales conductores de cobre, bajantes de cobre y protectores de cobre. Vida util de mas de 50 anos.",
+  description: "Instalación de canaletas de cobre a medida para hogares arquitectónicos e históricos de Tampa Bay. Cobre estilo K sin costura y media caña, cabezales conductores de cobre, bajantes de cobre y protectores de cobre. Vida útil de más de 50 años.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,8 +29,11 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Canaletas de Cobre Tampa FL | Sin Costura y Media Cana | JR One",
-  description: "Sistemas premium de canaletas de cobre para hogares arquitectonicos de Tampa Bay. Estilo K y media cana sin costura. Vida util de mas de 50 anos. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail so the
+  // city plus one approved offer survive SERP truncation (A1 pattern, wave 2 ES).
+  // Also removes the duplicated "| JR One" that rendered twice before.
+  title: { absolute: "Canaletas de Cobre en Tampa FL | Financiamiento Disponible" },
+  description: "Canaletas de cobre sin costura, estilo K y media caña, con bajantes y protectores de cobre, para casas históricas de Tampa Bay. Llame al (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-cobre-tampa",
     languages: {
@@ -41,7 +44,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Canaletas de Cobre Tampa FL - JR One Aluminum",
-    description: "Estilo K y media cana sin costura. Para hogares arquitectonicos e historicos. (844) 444-3114.",
+    description: "Estilo K y media caña sin costura. Para hogares arquitectónicos e históricos. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-cobre-tampa",
     type: "website",
     locale: "es_US",

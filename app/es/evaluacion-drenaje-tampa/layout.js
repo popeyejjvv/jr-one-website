@@ -4,8 +4,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Evaluacion de Drenaje y Drenaje Subterraneo",
-  serviceType: "Instalacion de Drenaje Subterraneo",
+  name: "Evaluación de Drenaje y Drenaje Subterráneo",
+  serviceType: "Instalación de Drenaje Subterráneo",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Land O' Lakes", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Instalacion de drenaje subterraneo en Tampa Bay: tuberia PVC, cuencas de captacion, rejillas de superficie y emisores pop-up. Soluciones para hogares con problemas de agua estancada, erosion del jardin y inundacion de cimientos.",
+  description: "Instalación de drenaje subterráneo en Tampa Bay: tubería de PVC subterránea, cajas colectoras, rejillas de superficie, emisores emergentes y conexión de bajante. Para casas con agua estancada, erosión del jardín y agua acumulada junto a los cimientos. Esos cinco componentes son el alcance completo del servicio de drenaje de JR One.",
 };
 
 const breadcrumbSchemaEs = {
@@ -24,13 +24,16 @@ const breadcrumbSchemaEs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Evaluacion de Drenaje", item: "https://www.jronegutters.com/es/evaluacion-drenaje-tampa" },
+    { "@type": "ListItem", position: 2, name: "Evaluación de Drenaje", item: "https://www.jronegutters.com/es/evaluacion-drenaje-tampa" },
   ],
 };
 
 export const metadata = {
-  title: "Evaluacion de Drenaje Tampa FL | PVC, Cuencas de Captacion, Emisores Pop-Up | JR One",
-  description: "Instalacion de drenaje subterraneo en Tampa Bay. Tuberia PVC, cuencas de captacion, rejillas, emisores pop-up. Soluciones para agua estancada y erosion. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail plus the
+  // hardcoded second "| JR One" (A1 pattern, wave 4 ES). Scope wording is locked to
+  // the verified five items only; french drains and channel drains are out of scope.
+  title: { absolute: "Drenaje Subterráneo en Tampa FL | Financiamiento Disponible" },
+  description: "Drenaje subterráneo de PVC, cajas colectoras, rejillas y emisores emergentes conectados a sus bajantes en Tampa Bay. Evaluación gratis: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/evaluacion-drenaje-tampa",
     languages: {
@@ -40,8 +43,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Evaluacion de Drenaje Tampa Bay - JR One Aluminum",
-    description: "Tuberia PVC + cuencas de captacion + rejillas + emisores pop-up. Soluciones reales para agua estancada. (844) 444-3114.",
+    title: "Evaluación de Drenaje Tampa Bay - JR One Aluminum",
+    description: "Tubería de PVC, cajas colectoras, rejillas de superficie y emisores emergentes para el agua estancada de su jardín. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/evaluacion-drenaje-tampa",
     type: "website",
     locale: "es_US",

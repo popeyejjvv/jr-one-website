@@ -28,8 +28,9 @@ const T = {
     heroTag: "GUTTER CLEANING & MAINTENANCE",
     heroH1: "Clean Gutters.",
     heroH1Gold: "Inspected, Photographed, Documented.",
-    heroP: "Most cleaners scoop debris and leave. We remove every bit of debris, flush every downspout, inspect every hanger, photograph any issues we find, and haul the waste off your property. Typical single-family home: $150 to $400, priced honestly on linear footage and roof access.",
+    heroP: "Gutter cleaning from JR One Aluminum runs $150 to $400 on a typical single-family home in Tampa, FL, priced on linear footage, roof height and access, one-story versus two-story, debris load, and number of downspouts. Most cleaners scoop debris and leave. We remove every bit of debris, flush every downspout, inspect every hanger, photograph any issues we find, and haul the waste off your property.",
     btnEstimate: "BOOK YOUR CLEANING",
+    btnEstimator: "GET YOUR PRICE RANGE",
     btnCall: "(844) 444-3114",
     problemTag: "WHY TAMPA GUTTERS NEED IT MORE",
     problemTitle: "Florida's Trees Never Stop Dropping",
@@ -51,7 +52,7 @@ const T = {
       { emoji: "👷", title: "Aluminum-trade eyes, not a general handyman", desc: "JR One is family-owned with over 30 years in the aluminum trade. We see things generalist cleaners miss, and we can quote any repair on the spot because we're the contractor who'd do the fix anyway." },
     ],
     stats: [
-      { value: "$150-$400", label: "Typical single-family range" },
+      { value: "$150-$400", label: "Typical Tampa single-family cleaning range" },
       { value: "30+", label: "Years of Tampa Bay experience" },
       { value: "100%", label: "Debris hauled away" },
       { value: "100%", label: "Photo documentation" },
@@ -90,23 +91,23 @@ const T = {
     faqEyebrow: "FAQ",
     faqTitle: "Gutter Cleaning Questions",
     faqs: [
-      { q: "How much does gutter cleaning cost in Tampa?", a: "Typical single-family homes run $150 to $400 depending on roof height, linear footage of gutter, debris level, and access. Two-story homes with complex rooflines run higher. Smaller one-story homes with straightforward access run lower. Exact pricing after a quick look. No generic rate quoted sight-unseen." },
+      { q: "How much does gutter cleaning cost in Tampa?", a: "Gutter cleaning from JR One Aluminum runs $150 to $400 on a typical single-family home in Tampa, FL. Price is driven by linear footage of gutter, roof height and ladder access, one-story versus two-story, debris level, and number of downspouts. Two-story homes with complex rooflines run higher. Smaller one-story homes with straightforward access run lower. Exact pricing after a quick look, no generic rate quoted sight-unseen. For a number on your own Tampa home, use the JR One estimator at jronegutters.com/estimator or call (844) 444-3114." },
       { q: "How often should I clean my gutters in Tampa?", a: "Heavy tree coverage (live oaks, pines, magnolias nearby): 3 to 4 cleanings per year. Moderate cover: twice a year. Pre-summer (May) and post-hurricane (November). Homes with gutter guards: every 2 to 3 years. Open-lot homes with no trees: once a year minimum. Add a cleaning after any named storm regardless of the cycle." },
       { q: "Do you haul away the debris?", a: "Yes. All debris is bagged and removed from your property. You don't deal with piles of leaves or buckets of muck after we leave. Clean job, clean exit." },
       { q: "What's the difference between your cleaning and a handyman?", a: "Most general handymen scoop what they can see and leave. We clear every run end-to-end, flush every downspout, inspect hangers and sealant, photograph issues, and haul the waste. Plus we're an aluminum specialty trade contractor. We can quote any repair we find on the spot instead of telling you to call someone else." },
       { q: "Can you clean gutters on a two- or three-story home?", a: "Yes. JR One is equipped for multi-story residential and commercial. Our crews have the ladders, equipment, and training for high-access work homeowners shouldn't try from a ladder." },
       { q: "Do you service rental properties and absentee owners?", a: "Yes. See our rental property maintenance page for recurring service plans built around absentee owners. Scheduled visits, tenant coordination, and photo reports after every cleaning." },
-      { q: "Do you offer emergency or post-storm cleaning?", a: "Yes. After named storms we prioritize existing customers and contracted properties, with same-week or next-day availability depending on demand. Call us and we'll get you in as fast as the schedule allows." },
+      { q: "Do you offer emergency or post-storm cleaning?", a: "Yes. After named storms we prioritize existing customers and contracted properties. Cleaning books faster than most of our work, usually well inside our 14 day standard and often sooner, though a heavy post-storm week can stretch the schedule. Call us and we'll get you in as fast as the schedule allows." },
     ],
     ctaTitle: "READY TO BOOK A CLEANING?",
-    ctaSub: "Tell us your address and a rough gutter length if you know it. We'll get you a same-day estimate. No pressure, no upsell.",
+    ctaSub: "Tell us your address and a rough gutter length if you know it. We'll get you a quick, honest estimate. No pressure, no upsell.",
     formTitle: "Book a Gutter Cleaning",
     formName: "Full Name",
     formPhone: "Phone Number",
     formEmail: "Email Address",
     formZip: "Property ZIP Code",
     formBtn: "Book My Cleaning",
-    formDisclaimer: "No spam. No pressure. Same-day estimate.",
+    formDisclaimer: "No spam. No pressure. Free estimate.",
     formSuccess: "Cleaning Request Received",
     formSuccessSub: "We'll get back to you within hours.",
     preferTalk: "Prefer to talk?",
@@ -116,8 +117,9 @@ const T = {
     heroTag: "LIMPIEZA Y MANTENIMIENTO",
     heroH1: "Canaletas Limpias.",
     heroH1Gold: "Inspeccionadas, Fotografiadas, Documentadas.",
-    heroP: "La mayoria de limpiadores sacan escombros y se van. Nosotros removemos cada pedazo, lavamos cada bajante, inspeccionamos cada soporte, fotografiamos cualquier problema y nos llevamos los desechos. Casa unifamiliar tipica: $150 a $400, con precio honesto segun pies lineales y acceso al techo.",
+    heroP: "La limpieza de canaletas de JR One Aluminum cuesta $150 a $400 en una casa unifamiliar tipica en Tampa, FL, con precio segun pies lineales, altura del techo y acceso, uno o dos pisos, cantidad de escombro y numero de bajantes. La mayoria de limpiadores sacan escombros y se van. Nosotros removemos cada pedazo, lavamos cada bajante, inspeccionamos cada soporte, fotografiamos cualquier problema y nos llevamos los desechos.",
     btnEstimate: "RESERVE SU LIMPIEZA",
+    btnEstimator: "VEA SU RANGO DE PRECIO",
     btnCall: "(844) 444-3114",
     problemTag: "POR QUE NECESITAN MAS",
     problemTitle: "Los Arboles de Florida Nunca Paran",
@@ -139,7 +141,7 @@ const T = {
       { emoji: "👷", title: "Ojos del oficio, no handyman generalista", desc: "JR One es empresa familiar con mas de 30 anos en el oficio del aluminio. Vemos cosas que los generalistas se pierden, y podemos cotizar cualquier reparacion en el momento." },
     ],
     stats: [
-      { value: "$150-$400", label: "Rango tipico unifamiliar" },
+      { value: "$150-$400", label: "Rango tipico de limpieza unifamiliar en Tampa" },
       { value: "30+", label: "Anos en Tampa Bay" },
       { value: "100%", label: "Escombro llevado" },
       { value: "100%", label: "Documentacion fotografica" },
@@ -178,23 +180,23 @@ const T = {
     faqEyebrow: "PREGUNTAS",
     faqTitle: "Preguntas Sobre Limpieza",
     faqs: [
-      { q: "Cuanto cuesta la limpieza de canaletas en Tampa?", a: "Casas unifamiliares tipicas corren $150 a $400 dependiendo de altura del techo, pies lineales, nivel de escombro y acceso. Casas de dos pisos con techos complejos corren mas alto. Precio exacto despues de un vistazo rapido." },
+      { q: "Cuanto cuesta la limpieza de canaletas en Tampa?", a: "La limpieza de canaletas de JR One Aluminum cuesta $150 a $400 en una casa unifamiliar tipica en Tampa, FL. El precio depende de los pies lineales de canaleta, la altura del techo y el acceso con escalera, si la casa es de uno o dos pisos, el nivel de escombro y el numero de bajantes. Casas de dos pisos con techos complejos corren mas alto. Casas de un piso mas pequenas con acceso sencillo corren mas bajo. Precio exacto despues de un vistazo rapido. Para un numero de su propia casa en Tampa, use el estimador de JR One en jronegutters.com/estimator o llame al (844) 444-3114." },
       { q: "Con que frecuencia debo limpiar mis canaletas?", a: "Mucha cobertura de arboles: 3 a 4 limpiezas al ano. Cobertura moderada: dos veces al ano. Pre-verano (mayo) y post-huracan (noviembre). Casas con protectores: cada 2 a 3 anos. Casas de lote abierto sin arboles: una vez al ano minimo." },
       { q: "Llevan los escombros?", a: "Si. Todo el escombro se embolsa y se remueve de su propiedad. No llega a casa a montones de hojas." },
       { q: "Cual es la diferencia entre su limpieza y un handyman?", a: "La mayoria de handymen generales sacan lo que pueden ver y se van. Nosotros aclaramos cada tramo de extremo a extremo, lavamos cada bajante, inspeccionamos soportes y sellador, fotografiamos problemas y llevamos los desechos. Ademas somos contratista del oficio especializado de aluminio." },
       { q: "Pueden limpiar canaletas en casa de dos o tres pisos?", a: "Si. JR One esta equipado para multi-piso residencial y comercial. Nuestros equipos tienen escaleras, equipo y entrenamiento para trabajo de alto acceso." },
       { q: "Dan servicio a propiedades de alquiler?", a: "Si. Vea nuestra pagina de mantenimiento de alquileres para planes recurrentes construidos para duenos ausentes." },
-      { q: "Ofrecen limpieza de emergencia o post-tormenta?", a: "Si. Despues de tormentas priorizamos clientes existentes y propiedades con contrato, con disponibilidad mismo dia o siguiente dia segun demanda." },
+      { q: "Ofrecen limpieza de emergencia o post-tormenta?", a: "Si. Despues de tormentas priorizamos clientes existentes y propiedades con contrato. La limpieza se agenda mas rapido que la mayoria de nuestro trabajo, normalmente bien dentro de nuestro estandar de 14 dias y muchas veces antes, aunque una semana intensa post-tormenta puede alargar el calendario." },
     ],
     ctaTitle: "LISTO PARA RESERVAR?",
-    ctaSub: "Cuentenos su direccion y largo aproximado de canaleta si lo sabe. Le daremos estimado mismo dia. Sin presion, sin sobreventa.",
+    ctaSub: "Cuentenos su direccion y largo aproximado de canaleta si lo sabe. Le daremos un estimado gratis despues de revisar la propiedad. Sin presion, sin sobreventa.",
     formTitle: "Reserve Limpieza",
     formName: "Nombre Completo",
     formPhone: "Numero de Telefono",
     formEmail: "Correo Electronico",
     formZip: "Codigo Postal",
     formBtn: "Reservar Mi Limpieza",
-    formDisclaimer: "Sin spam. Sin presion. Estimado mismo dia.",
+    formDisclaimer: "Sin spam. Sin presion. Estimado gratis.",
     formSuccess: "Solicitud Recibida",
     formSuccessSub: "Le responderemos en pocas horas.",
     preferTalk: "Prefiere hablar?",
@@ -270,6 +272,7 @@ export default function GutterCleaningPage() {
               <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-lg)", color: "var(--jr-cream-2)", lineHeight: 1.65, marginBottom: "var(--jr-space-8)", maxWidth: "640px" }}>{t.heroP}</p>
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-10)" }}>
                 <Button href="#quote-form" variant="primary" size="lg" iconRight accent={ACCENT} accentLight={ACCENT_LIGHT}>{t.btnEstimate}</Button>
+                <Button href="/estimator" variant="outline" size="lg" iconRight accent={ACCENT}>{t.btnEstimator}</Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT}>{t.btnCall}</Button>
               </div>
               <div style={{ display: "flex", gap: "var(--jr-space-8)", flexWrap: "wrap" }}>
@@ -413,7 +416,7 @@ export default function GutterCleaningPage() {
         </section>
 
         <CTABand
-          title={lang === "en" ? "Get a Same-Day Cleaning Estimate" : "Obtenga un Estimado el Mismo Dia"}
+          title={lang === "en" ? "Get a Free Cleaning Estimate" : "Obtenga un Estimado Gratis de Limpieza"}
           sub={lang === "en" ? "No upsell, no pressure. Just a clean job and a clean exit." : "Sin sobreventa, sin presion. Solo un trabajo limpio."}
           primaryLabel={lang === "en" ? "Book a Cleaning" : "Reservar Limpieza"}
           primaryHref="#quote-form"

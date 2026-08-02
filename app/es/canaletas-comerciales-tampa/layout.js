@@ -5,7 +5,7 @@ const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Canaletas Comerciales",
-  serviceType: "Instalacion de Canaletas Comerciales",
+  serviceType: "Instalación de Canaletas Comerciales",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -29,8 +29,10 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Canaletas Comerciales Tampa FL | Apartamentos, Multifamiliares, Comercial | JR One",
-  description: "Canaletas comerciales para edificios y propiedades multifamiliares en Tampa Bay. Estilo caja, super canaleta, 7 pulgadas. Mas de 30 anos en el oficio. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail plus the
+  // hardcoded second "| JR One" that rendered twice (A1 pattern, wave 4 ES).
+  title: { absolute: "Canaletas Comerciales en Tampa FL | Equipos Propios" },
+  description: "Canaletas comerciales para edificios de apartamentos, multifamiliares y locales comerciales en Tampa Bay. Estilo caja y 7 pulgadas: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-comerciales-tampa",
     languages: {
@@ -41,7 +43,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Canaletas Comerciales Tampa Bay - JR One Aluminum",
-    description: "Apartamentos, multifamiliares, comercial. Sistemas estilo caja y super canaleta. (844) 444-3114.",
+    description: "Apartamentos, multifamiliares y locales comerciales. Sistemas estilo caja y super canaleta. Equipos propios. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-comerciales-tampa",
     type: "website",
     locale: "es_US",

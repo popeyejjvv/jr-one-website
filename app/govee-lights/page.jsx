@@ -7,7 +7,7 @@ export default function Page() {
       portfolio={
         <ServicePortfolio
           serviceSlug="govee-lights"
-          serviceLabel="Govee permanent LED lighting"
+          serviceLabel="Govee LED lighting"
           limit={12}
         />
       }

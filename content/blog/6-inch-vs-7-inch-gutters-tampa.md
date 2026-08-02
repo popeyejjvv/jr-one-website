@@ -1,6 +1,6 @@
 ---
-title: "6-inch vs 7-inch Gutters Tampa"
-description: "6 inch vs 7 inch gutters in Tampa: capacity, cost, and how to size yours. JR One installs 6 and 7 inch seamless, never 5 inch. Call (844) 444-3114."
+title: "6-Inch vs 7-Inch Gutters in Tampa: How to Size Yours"
+description: "How roof area, pitch, and Tampa rain volume decide between 6 inch and 7 inch seamless gutters, and the overflow signs that mean you sized too small."
 date: "2026-04-16"
 category: "Gutters"
 keyword: "6 inch vs 7 inch gutters tampa"

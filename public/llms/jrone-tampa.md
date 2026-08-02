@@ -57,7 +57,7 @@ Common Tampa-specific issues JR One Aluminum resolves:
 - Gutter cleaning and maintenance
 - Gutter repair and downspout repair
 - Peak 301 roof rejuvenation
-- Govee permanent exterior LED lighting
+- Govee exterior LED lighting
 - Patio screen enclosures
 - Insurance claim assessment and repair
 

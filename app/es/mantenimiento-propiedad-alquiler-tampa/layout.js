@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Mantenimiento programado de canaletas para propiedades de alquiler en Tampa Bay: Airbnb, VRBO, alquileres de largo plazo y carteras de inversion. Limpieza, inspeccion y reparaciones para inversionistas.",
+  description: "Mantenimiento programado de canaletas para propiedades de alquiler en Tampa Bay: Airbnb, VRBO, alquileres de largo plazo y carteras de inversión. Limpieza, inspección y reparaciones para inversionistas, con fotos de cada visita.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,8 +29,10 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Mantenimiento de Canaletas para Alquileres Tampa FL | Airbnb, LTR, Inversionista | JR One",
-  description: "Mantenimiento de canaletas para propiedades de alquiler en Tampa Bay. Airbnb, alquiler a largo plazo, carteras de inversion. Limpieza programada. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail plus the
+  // hardcoded second "| JR One" that rendered twice (A1 pattern, wave 4 ES).
+  title: { absolute: "Canaletas en Propiedades de Alquiler Tampa | Equipos Propios" },
+  description: "Mantenimiento programado de canaletas para propiedades de alquiler y Airbnb en Tampa Bay. Limpieza e inspección con fotos de cada visita: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
     languages: {
@@ -41,7 +43,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Mantenimiento Propiedades de Alquiler Tampa Bay - JR One Aluminum",
-    description: "Airbnb, LTR, inversionista. Mantenimiento programado de canaletas. (844) 444-3114.",
+    description: "Airbnb, alquiler a largo plazo y carteras de inversión. Mantenimiento programado de canaletas. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/mantenimiento-propiedad-alquiler-tampa",
     type: "website",
     locale: "es_US",

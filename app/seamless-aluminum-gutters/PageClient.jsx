@@ -31,6 +31,7 @@ const T = {
     heroH1Gold: "Seamless Gutter Systems",
     heroP: "Custom-fabricated on-site for a watertight, perfect fit. Our in-house crews install 6\" and 7\" seamless aluminum gutters that protect your home from Florida's relentless rain. Family-owned, over 30 years in the trade.",
     btnEstimate: "GET YOUR FREE ESTIMATE",
+    btnEstimator: "SEE YOUR PRICE RANGE",
     btnCall: "(844) 444-3114",
     problemTag: "WHY GUTTERS MATTER",
     problemTitle: "Gutters Matter More Than You Think",
@@ -90,7 +91,7 @@ const T = {
     faqEyebrow: "FAQ",
     faqTitle: "Seamless Gutter Questions",
     faqs: [
-      { q: "How much do seamless gutters cost in Tampa?", a: "Seamless aluminum gutter installation in Tampa typically ranges from $11 to $20 per linear foot, depending on gutter size (6\" or 7\"), accessibility, number of corners, and downspout configuration. Our estimates are detailed and transparent. You see every line item before any work begins." },
+      { q: "How much do seamless gutters cost in Tampa?", a: "Seamless aluminum gutter installation from JR One Aluminum in Tampa, FL typically ranges from $11 to $20 per linear foot. Price is driven by linear footage, gutter size (6\" or 7\"), roof height and ladder access, one-story versus two-story, roofline complexity and number of corners, and downspout configuration. Our estimates are detailed and transparent. You see every line item before any work begins. For a number on your own Tampa home, use the JR One estimator at jronegutters.com/estimator or call (844) 444-3114." },
       { q: "What's the difference between 6\" and 7\" gutters?", a: "The number refers to the width of the gutter opening. 6\" is our standard recommendation for Florida homes. It handles typical residential water flow plus the extra capacity needed for our heavy rain. 7\" is commercial-grade capacity for maximum water handling during intense storms, large roof areas, or steep pitches. We assess your home and recommend the right size." },
       { q: "How long does gutter installation take?", a: "Most residential gutter installations are completed in a single day. Homes with complex rooflines, multiple stories, or combined gutter and soffit/fascia projects may take 2 to 3 days. We give you a specific timeline before work begins." },
       { q: "Do seamless gutters really not leak?", a: "Seamless gutters eliminate the horizontal seams where sectional gutters typically fail. The only joints in a seamless system are at corners and downspout connections, and those are sealed with professional-grade sealant. The result is dramatically fewer leak points compared to pre-formed sectional gutters." },
@@ -118,6 +119,7 @@ const T = {
     heroH1Gold: "Canaletas Sin Costuras",
     heroP: "Fabricadas a medida en su propiedad para un ajuste perfecto y sin filtraciones. Nuestros equipos propios instalan canaletas de aluminio sin costuras de 6\" y 7\" que protegen su hogar de las lluvias de Florida. Empresa familiar, mas de 30 anos en el oficio.",
     btnEstimate: "OBTENGA SU ESTIMADO GRATIS",
+    btnEstimator: "VEA SU RANGO DE PRECIO",
     btnCall: "(844) 444-3114",
     problemTag: "POR QUE IMPORTAN",
     problemTitle: "Las Canaletas Importan Mas de lo que Cree",
@@ -177,7 +179,7 @@ const T = {
     faqEyebrow: "PREGUNTAS",
     faqTitle: "Preguntas Sobre Canaletas Sin Costuras",
     faqs: [
-      { q: "Cuanto cuestan las canaletas sin costuras en Tampa?", a: "La instalacion de canaletas de aluminio sin costuras en Tampa generalmente oscila entre $11 y $20 por pie lineal, dependiendo del tamano de la canaleta (6\" o 7\"), accesibilidad, numero de esquinas y configuracion de bajantes. Nuestros estimados son detallados y transparentes. Usted ve cada item antes de que comience cualquier trabajo." },
+      { q: "Cuanto cuestan las canaletas sin costuras en Tampa?", a: "La instalacion de canaletas de aluminio sin costuras de JR One Aluminum en Tampa, FL generalmente oscila entre $11 y $20 por pie lineal. El precio depende de los pies lineales, el tamano de la canaleta (6\" o 7\"), la altura del techo y el acceso con escalera, si la casa es de uno o dos pisos, la complejidad de la linea de techo y numero de esquinas, y la configuracion de bajantes. Nuestros estimados son detallados y transparentes. Usted ve cada item antes de que comience cualquier trabajo. Para un numero de su propia casa en Tampa, use el estimador de JR One en jronegutters.com/estimator o llame al (844) 444-3114." },
       { q: "Cual es la diferencia entre canaletas de 6\" y 7\"?", a: "El numero se refiere al ancho de la abertura de la canaleta. 6\" es nuestra recomendacion estandar para hogares en Florida. Maneja el flujo de agua residencial tipico mas la capacidad extra necesaria para nuestras lluvias fuertes. 7\" es capacidad de grado comercial para maximo manejo de agua durante tormentas intensas, areas de techo grandes o pendientes pronunciadas. Evaluamos su hogar y recomendamos el tamano correcto." },
       { q: "Cuanto tiempo toma la instalacion de canaletas?", a: "La mayoria de las instalaciones residenciales se completan en un solo dia. Hogares con lineas de techo complejas, multiples pisos o proyectos combinados de canaletas y sofito/fascia pueden tomar 2 a 3 dias. Le damos un plazo especifico antes de comenzar el trabajo." },
       { q: "Las canaletas sin costuras realmente no filtran?", a: "Las canaletas sin costuras eliminan las costuras horizontales donde las canaletas seccionales tipicamente fallan. Las unicas uniones en un sistema sin costuras estan en las esquinas y conexiones de bajantes, y esas se sellan con sellador de grado profesional. El resultado es dramaticamente menos puntos de filtracion comparado con canaletas seccionales prefabricadas." },
@@ -312,6 +314,9 @@ export default function SeamlessGuttersPage({ portfolio = null }) {
               <div style={{ display: "flex", gap: "var(--jr-space-4)", flexWrap: "wrap", marginBottom: "var(--jr-space-10)" }}>
                 <Button href="#quote-form" variant="primary" size="lg" iconRight accent={ACCENT} accentLight={ACCENT_LIGHT}>
                   {t.btnEstimate}
+                </Button>
+                <Button href="/estimator" variant="outline" size="lg" iconRight accent={ACCENT}>
+                  {t.btnEstimator}
                 </Button>
                 <Button href="tel:8444443114" variant="outline" size="lg" iconLeft={<PhoneIcon size={18} />} accent={ACCENT}>
                   {t.btnCall}

@@ -4,7 +4,7 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Sofito Sagiper PVC Premium",
+  name: "Instalación de Sofito Sagiper de PVC Premium",
   serviceType: "Sofito de PVC con Veta de Madera",
   inLanguage: "es-US",
   provider: {
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Sarasota", "Bradenton"].map((name) => ({ "@type": "City", name })),
-  description: "Instalacion de sofito Sagiper PVC premium en Tampa Bay. Apariencia de veta de madera real con cero mantenimiento. No se pudre, no se descolora, ideal para el clima humedo de Florida.",
+  description: "Instalación de sofito y revestimiento Sagiper de PVC celular en Tampa Bay. Textura de veta de madera natural con prácticamente cero mantenimiento: no se pudre y no necesita pintura. Hecho para el clima húmedo de Florida.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,8 +29,12 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Sofito Sagiper PVC Premium Tampa FL | Veta de Madera, Cero Mantenimiento | JR One",
-  description: "Sofito Sagiper PVC premium con apariencia de veta de madera en Tampa Bay. Cero mantenimiento, no se pudre. Ideal para clima humedo de Florida. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail plus the
+  // hardcoded second "| JR One" (A1 pattern, wave 4 ES). The old title and meta
+  // claimed zero maintenance outright, which is the banned absolute. SAGIPER is
+  // only ever described as prácticamente cero mantenimiento.
+  title: { absolute: "Sofito Sagiper de PVC Tampa FL | Financiamiento Disponible" },
+  description: "Sofito y revestimiento Sagiper de PVC celular con textura de veta de madera natural en Tampa Bay. Prácticamente cero mantenimiento: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/sagiper-soffit-pvc-tampa",
     languages: {
@@ -40,8 +44,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sofito Sagiper PVC Tampa Bay - JR One Aluminum",
-    description: "Veta de madera real. Cero mantenimiento. No se pudre. (844) 444-3114.",
+    title: "Sofito Sagiper de PVC Tampa Bay - JR One Aluminum",
+    description: "Textura de veta de madera natural. Prácticamente cero mantenimiento. No se pudre. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/sagiper-soffit-pvc-tampa",
     type: "website",
     locale: "es_US",

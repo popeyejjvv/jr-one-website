@@ -76,7 +76,7 @@ export default function AreasIndexPage() {
     "@type": "CollectionPage",
     name: "JR One Aluminum Service Areas",
     url: "https://www.jronegutters.com/areas",
-    description: "29 Tampa Bay cities served by JR One Aluminum LLC for seamless gutters, soffit, fascia, gutter guards, copper, Govee permanent lighting, and siding.",
+    description: "29 Tampa Bay cities served by JR One Aluminum LLC for seamless gutters, soffit, fascia, gutter guards, copper, Govee lighting, and siding.",
     isPartOf: {
       "@type": "WebSite",
       name: "JR One Aluminum LLC",
@@ -106,7 +106,7 @@ export default function AreasIndexPage() {
               JR One Service Areas
             </h1>
             <p style={{ fontSize: "var(--jr-text-lg)", color: C.muted, maxWidth: "780px", margin: "0 auto var(--jr-space-2)" }}>
-              29 cities across 7 Tampa Bay counties. Seamless aluminum gutters, soffit, fascia, gutter guards, copper, Govee permanent lighting, siding, and drainage. Over 30 years in the trade, family-owned, fully insured.
+              29 cities across 7 Tampa Bay counties. Seamless aluminum gutters, soffit, fascia, gutter guards, copper, Govee lighting, siding, and drainage. Over 30 years in the trade, family-owned, fully insured.
             </p>
             <p style={{ fontSize: "var(--jr-text-base)", color: C.muted }}>
               <a href="tel:+18444443114" style={{ color: C.gold, fontWeight: 600, textDecoration: "none" }}>Free estimate: (844) 444-3114</a>

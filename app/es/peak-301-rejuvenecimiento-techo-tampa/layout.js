@@ -4,8 +4,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Rejuvenecimiento de Techo Peak 301",
-  serviceType: "Rejuvenecimiento de Techo de Tejas Asfalticas",
+  name: "Sellador de Rejuvenecimiento de Tejas Peak 301",
+  serviceType: "Sellador de Rejuvenecimiento para Tejas Asfálticas",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel"].map((name) => ({ "@type": "City", name })),
-  description: "Rejuvenecimiento de techo Peak 301 a base de soya, solo techos de tejas asfalticas. Extiende la vida del techo 6 a 10 anos. Hasta 70% menos que un techo nuevo. No funciona en techos planos, metal o teja. Garantia de producto 6 anos.",
+  description: "Sellador de rejuvenecimiento Peak 301 a base de soya, aplicado sobre las tejas asfálticas que ya tiene su casa en Tampa Bay. Suma de 6 a 10 años de vida útil a las tejas por hasta 70% menos que un techo nuevo. Solo tejas asfálticas: no se aplica en techos planos, de metal ni de teja de barro. Incluye garantía de producto, con los términos confirmados en la evaluación. No es un reemplazo ni una reparación de techo.",
 };
 
 const breadcrumbSchemaEs = {
@@ -24,13 +24,17 @@ const breadcrumbSchemaEs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Peak 301 Rejuvenecimiento de Techo", item: "https://www.jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa" },
+    { "@type": "ListItem", position: 2, name: "Peak 301 Rejuvenecimiento de Tejas", item: "https://www.jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa" },
   ],
 };
 
 export const metadata = {
-  title: "Peak 301 Rejuvenecimiento de Techo Tampa FL | Solo Tejas",
-  description: "Peak 301 a base de soya, solo techos de tejas asfalticas en Tampa Bay. Extiende vida 6-10 anos. Hasta 70% menos que techo nuevo. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail (A1 pattern,
+  // wave 4 ES). Wording is deliberately "tejas", not "techo": Peak 301 is a sealant
+  // applied to existing shingles, never a roof repair or replacement, and the
+  // 6-year warranty TERM was removed to match the English page.
+  title: { absolute: "Peak 301 Rejuvenecimiento de Tejas Tampa | Equipos Propios" },
+  description: "Sellador Peak 301 a base de soya para tejas asfálticas de Tampa Bay. Suma 6 a 10 años de vida por hasta 70% menos que un techo nuevo: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa",
     languages: {
@@ -40,8 +44,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Peak 301 Rejuvenecimiento de Techo Tampa - JR One Aluminum",
-    description: "Peak 301 solo en techos de tejas asfalticas. Extiende vida 6-10 anos. 70% menos que techo nuevo. (844) 444-3114.",
+    title: "Peak 301 Rejuvenecimiento de Tejas Tampa - JR One Aluminum",
+    description: "Sellador a base de soya sobre las tejas asfálticas que ya tiene. Suma 6 a 10 años de vida útil. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/peak-301-rejuvenecimiento-techo-tampa",
     type: "website",
     locale: "es_US",

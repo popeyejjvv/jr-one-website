@@ -23,11 +23,11 @@ const serviceSchema = {
     "Tarpon Springs", "Largo", "Seminole", "Pinellas Park"
   ].map((name) => ({ "@type": "City", name })),
   description:
-    "Hurricane and named-storm damage repair for gutters, fascia, soffit, and downspouts across Tampa Bay. Same-week install. 6\" and 7\" seamless aluminum gutters only (no 5\" in Florida). Insurance claim documentation provided. Family-owned, over 30 years in the trade.",
+    "Hurricane and named-storm damage repair for gutters, fascia, soffit, and downspouts across Tampa Bay. Priority storm scheduling with assessment within 24 to 48 hours. 6\" and 7\" seamless aluminum gutters only (no 5\" in Florida). Insurance claim documentation provided. Family-owned, over 30 years in the trade.",
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStock",
-    description: "Same-week post-storm install scheduling during hurricane season.",
+    description: "Priority post-storm scheduling during hurricane season. Assessment within 24 to 48 hours.",
   },
 };
 
@@ -43,7 +43,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Storm Damage Gutter Repair Tampa",
   description:
-    "Hurricane-damaged gutters, fascia, soffit in Tampa Bay. Same-week install, insurance documentation, photos for adjuster. Family-owned, 30+ years. (844) 444-3114.",
+    "Hurricane-damaged gutters, fascia, soffit in Tampa Bay. Priority storm scheduling, assessment within 24 to 48 hours, insurance documentation. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/storm-damage-gutters-tampa",
     languages: {
@@ -54,7 +54,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Storm Damage Gutter Repair Tampa Bay | JR One Aluminum",
-    description: "Same-week install for hurricane-damaged gutters, fascia, soffit. Insurance claim documentation. (844) 444-3114.",
+    description: "Priority storm scheduling for hurricane-damaged gutters, fascia, soffit. Assessment within 24 to 48 hours. Insurance claim documentation. (844) 444-3114.",
     url: "https://www.jronegutters.com/storm-damage-gutters-tampa",
     type: "website",
     locale: "en_US",

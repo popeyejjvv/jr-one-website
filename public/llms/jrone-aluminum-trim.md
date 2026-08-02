@@ -97,7 +97,7 @@ Inspection and spot cleaning for gutters in reasonable condition.
 
 ## Govee LED Exterior Lighting
 
-JR One Aluminum installs Govee permanent exterior LED lighting along rooflines, soffits, and architectural features. These smart LED systems allow programmable color and lighting effects year-round - holiday colors, team colors, or simple white accent lighting.
+JR One Aluminum installs Govee exterior LED lighting along rooflines, soffits, and architectural features. These smart LED systems allow programmable color and lighting effects year-round - holiday colors, team colors, or simple white accent lighting.
 
 ---
 

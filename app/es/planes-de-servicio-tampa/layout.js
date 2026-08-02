@@ -10,8 +10,10 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Planes de Mantenimiento de Canaletas Tampa",
-  description: "Planes de limpieza y mantenimiento de canaletas en Tampa Bay para casas, HOA y administradores de propiedades. Tres niveles, sin contratos. Familia, mas de 30 anos. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail so the city
+  // plus one approved offer survive SERP truncation (A1 pattern, wave 4 ES).
+  title: { absolute: "Planes de Mantenimiento de Canaletas Tampa | Equipos Propios" },
+  description: "Planes de limpieza y mantenimiento de canaletas en Tampa Bay para casas, HOA y administradores de propiedades. Tres niveles, sin contrato: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/planes-de-servicio-tampa",
     languages: {
@@ -21,8 +23,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Planes de Mantenimiento de Canaletas Tampa",
-    description: "Planes de limpieza y mantenimiento de canaletas en Tampa Bay para casas, HOA y administradores de propiedades. Tres niveles, sin contratos. Familia, mas de 30 anos. (844) 444-3114.",
+    title: "Planes de Mantenimiento de Canaletas Tampa - JR One Aluminum",
+    description: "Tres niveles de limpieza y mantenimiento de canaletas, sin contrato. Empresa familiar, más de 30 años. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/planes-de-servicio-tampa",
     type: "website",
     locale: "es_US",

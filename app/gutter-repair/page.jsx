@@ -51,7 +51,7 @@ const T = {
       { emoji: "📋", title: "Seasonal maintenance programs", desc: "Preventive maintenance twice a year keeps your gutters performing and extends their lifespan significantly. We clean, inspect, tighten, seal, and document the condition of your entire system." },
     ],
     stats: [
-      { value: "Same Day", label: "Emergency response available" },
+      { value: "24-48 hr", label: "Storm damage assessment" },
       { value: "500+", label: "Repairs completed annually" },
       { value: "1st", label: "Call. We fix it right" },
       { value: "30+", label: "Years diagnosing gutter issues" },
@@ -82,7 +82,7 @@ const T = {
       { q: "How often should I have my gutters cleaned?", a: "In Tampa Bay, we recommend professional cleaning at least twice a year. Once before hurricane season (May/June) and once after fall leaf drop (November/December). Homes near pine trees or heavy tree coverage may need quarterly cleaning." },
       { q: "What does a maintenance program include?", a: "Our seasonal maintenance includes full gutter and downspout cleanout, leak inspection and sealing, hanger tightening, pitch verification, and a written condition report with photos. Think of it as a checkup that catches small problems before they become expensive ones." },
       { q: "Do you do gutter repair near me in Tampa Bay?", a: "Most likely yes. We repair gutters across Tampa, Brandon, Riverview, Wesley Chapel, Clearwater, St. Petersburg, Sarasota, Bradenton, Lakeland, and Largo, plus surrounding towns. Give us your address or ZIP at (844) 444-3114 and we will confirm and set up a free inspection." },
-      { q: "How fast can you come out for a gutter repair?", a: "For most repairs we schedule the free inspection within a few days and complete the work the same week once you approve the quote. Storm damage gets priority, usually an assessment within 24 to 48 hours." },
+      { q: "How fast can you come out for a gutter repair?", a: "For most repairs we schedule the free inspection within a few days and complete the work within 14 days once you approve the quote. Storm damage gets priority scheduling, usually an assessment within 24 to 48 hours." },
       { q: "What gutter repairs do you handle?", a: "Leaking seams and joints, sagging gutters and failed hangers, overflow from clogs or wrong pitch, and damaged or disconnected downspouts. We work on 6-inch and 7-inch aluminum, copper, and galvalume, and we repair the soffit and fascia behind them when water has gotten in." },
     ],
     ctaTitle: "GUTTERS ACTING UP?",
@@ -126,7 +126,7 @@ const T = {
       { emoji: "📋", title: "Programas de mantenimiento estacional", desc: "Mantenimiento preventivo dos veces al ano mantiene sus canaletas funcionando y extiende su vida util significativamente. Limpiamos, inspeccionamos, ajustamos, sellamos y documentamos la condicion de todo su sistema." },
     ],
     stats: [
-      { value: "Mismo Dia", label: "Respuesta de emergencia" },
+      { value: "24-48 h", label: "Evaluacion de dano por tormenta" },
       { value: "500+", label: "Reparaciones anuales" },
       { value: "1ra", label: "Llamada. Lo arreglamos bien" },
       { value: "30+", label: "Anos diagnosticando problemas" },

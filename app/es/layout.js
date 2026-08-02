@@ -21,8 +21,16 @@ const organizationSchemaEs = {
 };
 
 export const metadata = {
-  title: "Canaletas, Sofito y Fascia en Tampa Bay | JR One Aluminum - Hablamos Español",
-  description: "Empresa familiar de canaletas, sofito y fascia en Tampa Bay. Solo 6 y 7 pulgadas de aluminio sin costura. Más de 30 años en el oficio. Estimado gratis (844) 444-3114.",
+  // absolute: the root layout template is "%s | JR One Aluminum". Without this the
+  // Spanish homepage rendered its own brand name twice and ran 94 characters.
+  // template must be re-declared here: an `absolute` in a segment nulls the inherited
+  // template for every descendant, which would silently strip the brand tail from
+  // every /es/* page that does not set its own `absolute`.
+  title: {
+    absolute: "Canaletas, Sofito y Fascia Tampa Bay | Hablamos Español",
+    template: "%s | JR One Aluminum",
+  },
+  description: "Canaletas continuas de 6 y 7 pulgadas, sofito, fascia y drenaje en Tampa Bay. Empresa familiar con equipos propios. Estimado gratis: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es",
     languages: {
@@ -33,7 +41,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Canaletas, Sofito y Fascia Tampa Bay | JR One Aluminum",
-    description: "Más de 30 años en el oficio. Solo 6 y 7 pulgadas. Empresa familiar. Hablamos español. (844) 444-3114.",
+    description: "Canaletas continuas de 6 y 7 pulgadas, sofito, fascia y drenaje. Empresa familiar con equipos propios. Hablamos español. (844) 444-3114.",
     url: "https://www.jronegutters.com/es",
     siteName: "JR One Aluminum",
     type: "website",

@@ -10,8 +10,8 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Sobre Nosotros - Especialistas en Canaletas Tampa",
-  description: "Empresa familiar, mas de 30 anos en el oficio de canaletas, sofito, fascia y revestimiento en Tampa Bay. Christopher Rivera y cuadrillas internas, sin subcontratistas. (844) 444-3114.",
+  title: { absolute: "Empresa Familiar de Canaletas en Tampa | Sobre JR One" },
+  description: "La historia de JR One Aluminum: una familia hondureña, más de 30 años doblando aluminio en Tampa Bay y tres cuadrillas propias, nunca subcontratistas.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/nosotros",
     languages: {
@@ -21,8 +21,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sobre Nosotros - Especialistas en Canaletas Tampa",
-    description: "Empresa familiar, mas de 30 anos en el oficio de canaletas, sofito, fascia y revestimiento en Tampa Bay. Christopher Rivera y cuadrillas internas, sin subcontratistas. (844) 444-3114.",
+    title: "Sobre JR One Aluminum | Empresa Familiar de Canaletas en Tampa",
+    description: "Una familia hondureña, más de 30 años doblando aluminio en Tampa Bay y tres cuadrillas propias, nunca subcontratistas. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/nosotros",
     type: "website",
     locale: "es_US",

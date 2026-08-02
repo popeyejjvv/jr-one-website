@@ -1,8 +1,8 @@
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Govee Permanent Exterior LED Lighting Installation",
-  serviceType: "Permanent Exterior LED Lighting",
+  name: "Govee Exterior LED Lighting Installation",
+  serviceType: "Exterior LED Lighting",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "JR One Aluminum LLC",
@@ -19,7 +19,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Govee permanent exterior LED lighting installation in Tampa Bay. App-controlled, 16M colors, year-round holiday and accent lighting. Install once, never take down. Integrates with Alexa, Google Home, Apple HomeKit.",
+    "Govee exterior LED lighting installation in Tampa Bay. App-controlled, 16M colors, year-round holiday and accent lighting. Install once, never take down. Integrates with Alexa, Google Home, Apple HomeKit.",
 };
 
 const breadcrumbSchema = {
@@ -32,9 +32,9 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Govee Permanent LED Lights Tampa",
+  title: "Govee LED Lights Tampa",
   description:
-    "Govee permanent exterior LED light installation in Tampa Bay. App-controlled, 16M colors, holiday and accent lighting year-round. Alexa + Google Home compatible. Free quote, (844) 444-3114.",
+    "Govee exterior LED light installation in Tampa Bay. App-controlled, 16M colors, holiday and accent lighting year-round. Alexa + Google Home compatible. Free quote, (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/govee-lights",
     languages: {
@@ -45,7 +45,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Govee Exterior LED Lighting Tampa FL, JR One Aluminum",
-    description: "Permanent smart LED lighting installed along your Tampa roofline. Holiday + team colors + security, all year.",
+    description: "Professionally mounted smart LED lighting installed along your Tampa roofline. Holiday + team colors + security, all year.",
     url: "https://www.jronegutters.com/govee-lights",
     type: "website",
   },

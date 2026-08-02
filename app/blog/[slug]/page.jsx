@@ -18,7 +18,11 @@ export async function generateMetadata({ params }) {
   };
   if (esPost) languages["es-US"] = `https://www.jronegutters.com/es/blog/${slug}`;
   return {
-    title: post.title,
+    // absolute drops the global "%s | JR One Aluminum" tail (18 chars). 50 of 52
+    // blog titles already rendered past 60 chars with the tail, so Google was
+    // truncating it off anyway. Buying those 18 chars back is what lets a blog
+    // title carry the full head query. Same pattern approved in the A1 wave.
+    title: { absolute: post.title },
     description: post.description,
     openGraph: {
       title: post.title,

@@ -29,8 +29,10 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Contratos HOA de Canaletas y Aluminio Tampa FL | JR One",
-  description: "Contratos de mantenimiento de canaletas, sofito y fascia para HOA y administradores de propiedades en Tampa Bay. Limpieza programada e inspecciones. (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail plus the
+  // hardcoded second "| JR One" that rendered twice (A1 pattern, wave 4 ES).
+  title: { absolute: "Contratos de Canaletas para HOA Tampa FL | Equipos Propios" },
+  description: "Contratos de mantenimiento de canaletas, sofito y fascia para HOA y administradores de propiedades en Tampa Bay. Equipos propios: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/contratos-hoa-tampa",
     languages: {
@@ -41,7 +43,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Contratos HOA Tampa Bay - JR One Aluminum",
-    description: "Contratos de mantenimiento para asociaciones de propietarios. Limpieza, inspeccion, informes. (844) 444-3114.",
+    description: "Contratos de mantenimiento para asociaciones de propietarios. Limpieza programada, inspección e informes. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/contratos-hoa-tampa",
     type: "website",
     locale: "es_US",

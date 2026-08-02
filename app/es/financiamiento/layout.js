@@ -10,8 +10,9 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Financiamiento de Canaletas y Techo Tampa FL",
-  description: "Financiamiento para canaletas, sofito, fascia, revestimiento y Peak 301 en Tampa Bay. Aprobacion rapida, pagos mensuales. JR One Aluminum, (844) 444-3114.",
+  // Roof wording removed from the title: JR One is a specialty exterior trade.
+  title: { absolute: "Financiamiento de Canaletas y Sofito | Pagos Mensuales" },
+  description: "Pague su proyecto de canaletas, sofito, fascia o revestimiento en pagos mensuales. Aprobación rápida y el mismo precio que al contado. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/financiamiento",
     languages: {
@@ -21,8 +22,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Financiamiento de Canaletas y Techo Tampa FL",
-    description: "Financiamiento para canaletas, sofito, fascia, revestimiento y Peak 301 en Tampa Bay. Aprobacion rapida, pagos mensuales. JR One Aluminum, (844) 444-3114.",
+    title: "Financiamiento de JR One Aluminum | Canaletas y Sofito Tampa",
+    description: "Pague su proyecto de canaletas, sofito, fascia o revestimiento en pagos mensuales. Aprobación rápida y el mismo precio que al contado. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/financiamiento",
     type: "website",
     locale: "es_US",

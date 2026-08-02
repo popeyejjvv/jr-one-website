@@ -10,8 +10,8 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Proyectos en Tampa Bay - Galeria JR One",
-  description: "Fotos reales de trabajos de JR One en Tampa Bay. Canaletas sin costura de 6 y 7 pulgadas, sofito, fascia, cobre y Peak 301. Familiar, mas de 30 anos. (844) 444-3114.",
+  title: { absolute: "Galería de Proyectos | Canaletas y Sofito en Tampa Bay" },
+  description: "Fotos reales de trabajos terminados en Tampa Bay: canaletas continuas, protectores, sofito, fascia, cobre y revestimiento. Sin imágenes de archivo.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/proyectos",
     languages: {
@@ -21,8 +21,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Proyectos en Tampa Bay - Galeria JR One",
-    description: "Fotos reales de trabajos de JR One en Tampa Bay. Canaletas sin costura de 6 y 7 pulgadas, sofito, fascia, cobre y Peak 301. Familiar, mas de 30 anos. (844) 444-3114.",
+    title: "Galería de Proyectos de JR One Aluminum en Tampa Bay",
+    description: "Fotos reales de trabajos terminados en Tampa Bay: canaletas continuas, protectores, sofito, fascia, cobre y revestimiento. Sin imágenes de archivo.",
     url: "https://www.jronegutters.com/es/proyectos",
     type: "website",
     locale: "es_US",

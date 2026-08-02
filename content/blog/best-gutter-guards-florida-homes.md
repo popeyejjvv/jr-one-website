@@ -1,6 +1,6 @@
 ---
-title: "Best Gutter Guards for Florida Homes (2026 Tampa Bay Guide)"
-description: "Honest 2026 comparison of every gutter guard type for Florida's heavy rain, pine needles, and oak debris. Micro mesh vs. screen vs. foam vs. brush. National brands (LeafFilter, LeafGuard, Gutter Helmet) vs. local installation. What actually works in Tampa Bay."
+title: "Best Gutter Guards for Florida Homes: 2026 Installer Guide"
+description: "Micro mesh vs screen vs foam vs brush, judged on Florida rain, pine needles, and oak debris. Which guards actually cut cleaning across Tampa Bay homes."
 date: "2026-05-08"
 category: "Gutter Guards"
 keyword: "gutter guards florida"

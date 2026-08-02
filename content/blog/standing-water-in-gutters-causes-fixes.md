@@ -1,6 +1,6 @@
 ---
-title: "Standing Water in Gutters: What It Means and How to Fix It"
-description: "Why water sits in your gutters after rain. The 4 causes of standing water, why it matters in Florida, and the specific fix for each cause."
+title: "Standing Water in Gutters: 4 Causes and the Fix for Each"
+description: "Gutters should drain within 30 minutes of rain stopping. The four reasons yours do not, how to tell which one you have, and the repair each one needs."
 date: "2026-04-12"
 category: "Gutter Cleaning"
 keyword: "standing water in gutters"

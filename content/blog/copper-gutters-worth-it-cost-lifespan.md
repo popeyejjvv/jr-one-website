@@ -1,6 +1,6 @@
 ---
-title: "Copper Gutters: Are They Worth It? Cost, Lifespan, and Pros vs. Cons"
-description: "Everything you need to know about copper gutters. Cost comparison vs. aluminum, lifespan, patina development, maintenance, and whether copper makes sense for your Tampa home."
+title: "Copper Gutters: Cost vs Aluminum, Lifespan, and Patina"
+description: "What copper gutters really cost next to seamless aluminum, how long they last, how the patina develops, and when copper is the wrong call in Florida."
 date: "2026-03-28"
 category: "Copper Gutters"
 keyword: "copper gutters"

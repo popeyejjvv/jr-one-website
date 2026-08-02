@@ -3,8 +3,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Protectores de Canaleta",
-  serviceType: "Protectores de Canaleta Micro-Malla",
+  name: "Instalación de Protectores de Canaletas",
+  serviceType: "Protectores de Canaletas de Micro Malla",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -15,7 +15,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz"].map((name) => ({ "@type": "City", name })),
-  description: "Protectores de canaleta de malla fina y acero inoxidable en Tampa Bay. Bloquean hasta agujas de pino y arena de techo. Reducen limpieza de trimestral a anual. Familia, mas de 30 anos en el oficio.",
+  description: "Protectores de canaletas de micro malla de acero inoxidable en Tampa Bay. Bloquean agujas de pino y arena de techo. Reducen la frecuencia de limpieza sin eliminarla. Empresa familiar, más de 30 años en el oficio.",
 };
 
 const breadcrumbSchemaEs = {
@@ -23,13 +23,15 @@ const breadcrumbSchemaEs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.jronegutters.com/es" },
-    { "@type": "ListItem", position: 2, name: "Protectores de Canaleta", item: "https://www.jronegutters.com/es/protectores-canaletas-tampa" },
+    { "@type": "ListItem", position: 2, name: "Protectores de Canaletas", item: "https://www.jronegutters.com/es/protectores-canaletas-tampa" },
   ],
 };
 
 export const metadata = {
-  title: "Protectores de Canaleta Tampa FL | Malla Fina Anti-Pino",
-  description: "Protectores de canaleta micro-malla en Tampa Bay. Bloquean agujas de pino y arena. Reducen limpieza a anual. (844) 444-3114. Hablamos espanol.",
+  // title.absolute drops the global "| JR One Aluminum" template tail so the
+  // city plus one approved offer survive SERP truncation (A1 pattern, wave 2 ES).
+  title: { absolute: "Protectores de Canaletas Tampa FL | Equipos Propios" },
+  description: "Protectores de canaletas de micro malla que bloquean agujas de pino en Tampa Bay. Reducen la frecuencia de limpieza. Estimado gratis: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/protectores-canaletas-tampa",
     languages: {
@@ -39,8 +41,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Protectores de Canaleta Tampa - JR One Aluminum",
-    description: "Micro-malla anti-pino. Reduce limpieza a anual. Familia, mas de 30 anos. (844) 444-3114.",
+    title: "Protectores de Canaletas Tampa - JR One Aluminum",
+    description: "Micro malla que bloquea agujas de pino. Reduce la frecuencia de limpieza. Empresa familiar, más de 30 años. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/protectores-canaletas-tampa",
     type: "website",
     locale: "es_US",

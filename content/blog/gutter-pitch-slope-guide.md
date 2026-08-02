@@ -1,6 +1,6 @@
 ---
-title: "What Is Gutter Pitch and Why Does It Matter?"
-description: "Gutter pitch explained: how slope affects drainage, what the correct pitch is, and how to tell if your gutters are pitched wrong. Common cause of overflow and standing water."
+title: "Gutter Slope: Minimum Pitch, How to Check It, How to Fix"
+description: "Correct gutter slope is about 1/4 inch of drop per 10 feet toward the downspout. How to check yours with a level and what standing water is telling you."
 date: "2026-04-11"
 category: "Gutters"
 keyword: "gutter pitch"

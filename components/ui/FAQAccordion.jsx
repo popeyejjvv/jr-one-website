@@ -37,41 +37,47 @@ export default function FAQAccordion({ items, theme = "dark" }) {
               borderBottom: `1px solid ${dividerColor}`,
             }}
           >
-            <button
-              id={triggerId}
-              aria-expanded={isOpen}
-              aria-controls={panelId}
-              onClick={() => setOpenIndex(isOpen ? null : i)}
-              style={{
-                display: "flex",
-                width: "100%",
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "20px 4px",
-                background: "transparent",
-                border: "none",
-                cursor: "pointer",
-                fontFamily: "var(--jr-font-heading)",
-                fontSize: "var(--jr-text-md)",
-                fontWeight: 600,
-                color: titleColor,
-                textAlign: "left",
-                gap: "var(--jr-space-4)",
-              }}
-            >
-              <span style={{ flex: 1 }}>{item.q}</span>
-              <span
-                aria-hidden
+            {/* WAI-ARIA accordion pattern: the trigger is wrapped in a real
+                heading so each question is a question-shaped heading in the
+                rendered HTML. Passage-level retrieval (AI answer engines) uses
+                the nearest heading to decide what a passage is about. */}
+            <h3 style={{ margin: 0 }}>
+              <button
+                id={triggerId}
+                aria-expanded={isOpen}
+                aria-controls={panelId}
+                onClick={() => setOpenIndex(isOpen ? null : i)}
                 style={{
-                  display: "inline-flex",
-                  color: "var(--jr-gold)",
-                  transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-                  transition: "transform var(--jr-dur-base) var(--jr-ease-out)",
+                  display: "flex",
+                  width: "100%",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  padding: "20px 4px",
+                  background: "transparent",
+                  border: "none",
+                  cursor: "pointer",
+                  fontFamily: "var(--jr-font-heading)",
+                  fontSize: "var(--jr-text-md)",
+                  fontWeight: 600,
+                  color: titleColor,
+                  textAlign: "left",
+                  gap: "var(--jr-space-4)",
                 }}
               >
-                <ChevronDownIcon size={20} />
-              </span>
-            </button>
+                <span style={{ flex: 1 }}>{item.q}</span>
+                <span
+                  aria-hidden
+                  style={{
+                    display: "inline-flex",
+                    color: "var(--jr-gold)",
+                    transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+                    transition: "transform var(--jr-dur-base) var(--jr-ease-out)",
+                  }}
+                >
+                  <ChevronDownIcon size={20} />
+                </span>
+              </button>
+            </h3>
             <div
               id={panelId}
               role="region"

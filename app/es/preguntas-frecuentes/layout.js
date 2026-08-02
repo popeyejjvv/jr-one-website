@@ -10,8 +10,8 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Preguntas Frecuentes - Canaletas y Sofito Tampa",
-  description: "Respuestas honestas sobre canaletas de 6 y 7 pulgadas, sofito, fascia, protectores, revestimiento y Peak 301 en Tampa Bay. Llama al (844) 444-3114. Hablamos espanol.",
+  title: { absolute: "Preguntas Frecuentes | Canaletas, Sofito y Fascia Tampa" },
+  description: "Qué servicios hacemos, por qué solo canaletas de 6 y 7 pulgadas, si usamos subcontratistas y qué cubre la garantía. Respuestas directas de Tampa Bay.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/preguntas-frecuentes",
     languages: {
@@ -21,8 +21,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Preguntas Frecuentes - Canaletas y Sofito Tampa",
-    description: "Respuestas honestas sobre canaletas de 6 y 7 pulgadas, sofito, fascia, protectores, revestimiento y Peak 301 en Tampa Bay. Llama al (844) 444-3114. Hablamos espanol.",
+    title: "Preguntas Frecuentes | JR One Aluminum Tampa Bay",
+    description: "Qué servicios hacemos, por qué solo canaletas de 6 y 7 pulgadas, si usamos subcontratistas y qué cubre la garantía. Llame al (844) 444-3114.",
     url: "https://www.jronegutters.com/es/preguntas-frecuentes",
     type: "website",
     locale: "es_US",

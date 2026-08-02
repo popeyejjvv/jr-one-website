@@ -10,8 +10,8 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Contacta a un Especialista en Canaletas Tampa Bay",
-  description: "Llama al (844) 444-3114 o escribe a info@jronegutters.com. 3420 W Cherry St, Tampa. Lun-Sab 7am-6pm. Estimados gratis en Hillsborough, Pinellas y Pasco.",
+  title: { absolute: "Contacto y Teléfono | Canaletas y Sofito en Tampa Bay" },
+  description: "Llame al (844) 444-3114 o escriba a info@jronegutters.com. 3420 W Cherry St, Tampa. Lunes a sábado de 7am a 6pm. Servimos Hillsborough, Pinellas y Pasco.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/contacto",
     languages: {
@@ -21,8 +21,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Contacta a un Especialista en Canaletas Tampa Bay",
-    description: "Llama al (844) 444-3114 o escribe a info@jronegutters.com. 3420 W Cherry St, Tampa. Lun-Sab 7am-6pm. Estimados gratis en Hillsborough, Pinellas y Pasco.",
+    title: "Contacto y Teléfono | JR One Aluminum Tampa Bay",
+    description: "Llame al (844) 444-3114 o escriba a info@jronegutters.com. 3420 W Cherry St, Tampa. Lunes a sábado de 7am a 6pm. Estimados gratis.",
     url: "https://www.jronegutters.com/es/contacto",
     type: "website",
     locale: "es_US",

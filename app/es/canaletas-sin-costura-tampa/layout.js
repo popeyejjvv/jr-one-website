@@ -4,8 +4,8 @@
 const serviceSchemaEs = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Instalacion de Canaletas Continuas de Aluminio",
-  serviceType: "Instalacion de Canaletas Sin Costura",
+  name: "Instalación de Canaletas Continuas de Aluminio",
+  serviceType: "Instalación de Canaletas Sin Costura",
   inLanguage: "es-US",
   provider: {
     "@type": "HomeAndConstructionBusiness",
@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz", "Land O' Lakes", "New Tampa", "Valrico", "Lithia", "Plant City"].map((name) => ({ "@type": "City", name })),
-  description: "Canaletas continuas de aluminio fabricadas a medida en el sitio en Tampa Bay. Solo instalamos 6 y 7 pulgadas (no 5 pulgadas en Florida). Cobre y galvalume disponibles. Mas de 30 anos de experiencia familiar.",
+  description: "Canaletas continuas de aluminio fabricadas a medida en el sitio en Tampa Bay. Solo instalamos 6 y 7 pulgadas, en estilo K y media caña. Cobre y galvalume disponibles. Empresa familiar con más de 30 años de experiencia.",
 };
 
 const breadcrumbSchemaEs = {
@@ -29,8 +29,10 @@ const breadcrumbSchemaEs = {
 };
 
 export const metadata = {
-  title: "Canaletas Continuas de Aluminio Tampa FL | 6 y 7 Pulgadas",
-  description: "Canaletas continuas de aluminio fabricadas a medida en Tampa Bay. Solo 6 y 7 pulgadas (no 5 pulgadas). Familia, mas de 30 anos en el oficio. Estimado gratis (844) 444-3114.",
+  // title.absolute drops the global "| JR One Aluminum" template tail so the
+  // city plus one approved offer survive SERP truncation (A1 pattern, wave 2 ES).
+  title: { absolute: "Canaletas Continuas Tampa FL | Financiamiento Disponible" },
+  description: "Canaletas continuas de aluminio formadas en el sitio para su casa en Tampa Bay. Solo 6 y 7 pulgadas, estilo K y media caña. Llame al (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/canaletas-sin-costura-tampa",
     languages: {
@@ -41,7 +43,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Canaletas Continuas de Aluminio Tampa - JR One Aluminum",
-    description: "Fabricadas en el sitio. Solo 6 y 7 pulgadas. Mas de 30 anos en el oficio. (844) 444-3114.",
+    description: "Formadas en el sitio. Solo 6 y 7 pulgadas. Más de 30 años en el oficio. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/canaletas-sin-costura-tampa",
     type: "website",
     locale: "es_US",
