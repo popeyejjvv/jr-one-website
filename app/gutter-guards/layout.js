@@ -21,7 +21,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Micro mesh, leaf guard, and copper gutter guards professionally installed in Tampa Bay. Local specialist pricing, typically $1,000-$1,500 less than national brands like LeafFilter and Gutter Helmet.",
+    "Micro mesh, leaf guard, and copper gutter guards professionally installed in Tampa Bay by in-house crews. Guards reduce how often gutters need cleaning.",
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",
@@ -39,9 +39,9 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Mesh Gutter Guards Tampa FL",
+  title: { absolute: "Gutter Guards Tampa FL | Micro Mesh, In-House Crews" },
   description:
-    "Mesh gutter guards installed in Tampa FL by a local crew, not a franchise. Micro mesh blocks pine needles and fine debris. Free estimate at (844) 444-3114.",
+    "Micro mesh gutter guards installed across Tampa Bay by our own crews. Guards cut how often gutters need cleaning. Free estimate: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/gutter-guards",
     languages: {

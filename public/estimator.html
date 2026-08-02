@@ -8,8 +8,29 @@
 <meta property="og:title" content="JR One Aluminum - Aerial Estimator">
 <meta property="og:description" content="Measure your home from the sky and get an instant price range in under 2 minutes.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.jronegutters.com/estimator.html">
-<link rel="canonical" href="https://www.jronegutters.com/estimator.html">
+<meta property="og:url" content="https://www.jronegutters.com/estimator">
+<link rel="canonical" href="https://www.jronegutters.com/estimator">
+<!-- 2026-08-02: canonical + og:url moved from /estimator.html to the clean /estimator
+     URL. /estimator now serves this file directly via the beforeFiles rewrite in
+     next.config.js, and /estimator is what the sitemap, the nav, the 404 CTA, and
+     both FAQ answers already link to. Both URLs now consolidate on /estimator. -->
+<!-- 2026-08-02: JSON-LD added. This file is served from public/ so it never passes
+     through app/layout.js and therefore carried zero structured data. The @id values
+     match app/layout.js exactly (#business, #organization, #website) so Google merges
+     these nodes with the entity graph emitted by every other page instead of creating
+     a duplicate business. Keep the @id strings in sync with app/layout.js. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","@id":"https://jronegutters.com/#business","name":"JR One Aluminum LLC","url":"https://www.jronegutters.com","telephone":"(844) 444-3114","email":"info@jronegutters.com","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"3420 W Cherry St","addressLocality":"Tampa","addressRegion":"FL","postalCode":"33607","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":"27.961411","longitude":"-82.5006675"},"knowsLanguage":["English","Spanish"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://jronegutters.com/#website","url":"https://www.jronegutters.com","name":"JR One Aluminum","publisher":{"@id":"https://jronegutters.com/#organization"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","@id":"https://www.jronegutters.com/estimator#tool","name":"JR One Aerial Gutter Estimator","url":"https://www.jronegutters.com/estimator","applicationCategory":"BusinessApplication","operatingSystem":"Any modern web browser","browserRequirements":"Requires JavaScript","inLanguage":["en-US","es-US"],"isPartOf":{"@id":"https://jronegutters.com/#website"},"about":{"@id":"https://jronegutters.com/#business"},"provider":{"@id":"https://jronegutters.com/#business"},"description":"Measure a roofline from satellite imagery and get an instant price range for seamless aluminum gutters (6 inch and 7 inch), soffit and fascia, and gutter guards across Tampa Bay. Built and operated by JR One Aluminum LLC, a family-owned specialty trade contractor with in-house crews and over 30 years in the Tampa Bay gutter industry."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.jronegutters.com"},{"@type":"ListItem","position":2,"name":"Aerial Gutter Estimator","item":"https://www.jronegutters.com/estimator"}]}
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HY6GK76P44"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HY6GK76P44');</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>

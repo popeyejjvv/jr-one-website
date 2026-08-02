@@ -26,20 +26,37 @@ export const dynamicParams = false;
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const cityName = slugToCity(slug);
-  // Per-city overrides for striking-distance pages: lead the title with the top
-  // local GSC query instead of the generic service-list template. 2026-06-15 audit.
+  // Per-city overrides for the dead-CTR pages: lead the title with the top local
+  // GSC query instead of the generic service-list template, cap the rendered title
+  // at 50-60 chars (title.absolute drops the "| JR One Aluminum" template tail so
+  // the offer survives SERP truncation), and carry ONE approved offer.
+  // 2026-06-15 audit; expanded to 9 cities by the A1 dead-CTR strike 2026-08-02.
   const TITLE_OVERRIDES = {
-    largo: "Fascia Repair & Gutters Largo, FL",
-    lutz: "Seamless Gutter Installation Lutz FL",
-    riverview: "Gutter Repair & Guards in Riverview FL",
+    brandon: "Gutter Installation Brandon FL | Financing Available",
+    riverview: "Gutter Repair & Installation Riverview FL | In-House Crews",
+    lutz: "Seamless Gutter Installation Lutz FL | Financing Available",
+    largo: "Fascia Repair and Gutters in Largo FL | In-House Crews",
+    lakeland: "Seamless Gutters and Soffit in Lakeland FL | In-House Crews",
+    bradenton: "Gutter Repair and Installation Bradenton FL | In-House Crews",
+    tampa: "Gutters, Soffit and Fascia in Tampa FL | In-House Crews",
+    "plant-city": "Gutters and Guards in Plant City FL | Financing Available",
+    clearwater: "Gutters, Soffit and Fascia in Clearwater FL | In-House Crews",
   };
   const DESC_OVERRIDES = {
-    largo: "Roof fascia repair and seamless gutters in Largo, FL. Wood-to-aluminum fascia, soffit, gutter guards, and cleaning by a family-owned Pinellas specialty trade. Free estimate (844) 444-3114.",
-    lutz: "Gutter installation in Lutz, FL. Seamless 6-inch and 7-inch aluminum gutters, gutter guards, repair, soffit and fascia. Family-owned, 30+ years. Call (844) 444-3114.",
-    riverview: "Gutter repair and gutter guards in Riverview, FL. 6-inch and 7-inch seamless aluminum, fascia repair, and cleaning. Free estimate (844) 444-3114.",
+    brandon: "Seamless gutters, gutter guards, soffit, fascia, and siding in Brandon, FL. Family-owned with in-house crews, fully insured. Free estimate: (844) 444-3114.",
+    riverview: "Gutter repair, seamless 6 inch and 7 inch installation, and gutter guards in Riverview, FL. Our own crews, never subcontractors. Call (844) 444-3114.",
+    lutz: "Seamless 6 inch and 7 inch aluminum gutters, leaf guards, repair, and cleaning in Lutz, FL. Family-owned, in-house crews. Call (844) 444-3114.",
+    largo: "Wood to aluminum fascia, soffit, seamless gutters, and gutter guards in Largo, FL. Family-owned Pinellas specialty trade. Call (844) 444-3114.",
+    lakeland: "Seamless 6 inch and 7 inch gutters, gutter guards, soffit, fascia, and siding in Lakeland, FL. Fully insured, in-house crews. Call (844) 444-3114.",
+    bradenton: "Gutter repair, seamless installation, guards, soffit, and fascia in Bradenton, FL. Family-owned, our own crews, fully insured. Call (844) 444-3114.",
+    tampa: "Seamless gutters, gutter guards, soffit, fascia, and siding in Tampa, FL. Family-owned, over 30 years in the trade. Free estimate: (844) 444-3114.",
+    "plant-city": "Seamless gutters, gutter guards, soffit, and fascia in Plant City, FL. Family-owned with in-house crews, fully insured. Free estimate: (844) 444-3114.",
+    clearwater: "Soffit, fascia, seamless gutters, and micro mesh gutter guards in Clearwater, FL. Family-owned, in-house crews. Free estimate: (844) 444-3114.",
   };
   return {
-    title: TITLE_OVERRIDES[slug] || `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
+    title: TITLE_OVERRIDES[slug]
+      ? { absolute: TITLE_OVERRIDES[slug] }
+      : `Gutters, Soffit, Fascia & Siding in ${cityName}, FL`,
     description: DESC_OVERRIDES[slug] || `Gutters, soffit, fascia, gutter guards, and siding in ${cityName}, FL. Family-owned Tampa Bay specialists, 30+ years. Free estimate (844) 444-3114.`,
     alternates: {
       canonical: `https://www.jronegutters.com/areas/${slug}`,

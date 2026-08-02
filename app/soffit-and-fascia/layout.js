@@ -57,9 +57,9 @@ const imageObjectSchema = {
 };
 
 export const metadata = {
-  title: "Soffit and Fascia Tampa FL",
+  title: { absolute: "Soffit and Fascia Replacement in Tampa FL | In-House Crews" },
   description:
-    "Soffit and fascia Tampa Bay specialists. Aluminum and vinyl soffit, custom-bent fascia wraps, rotted wood replaced underneath. Free estimate (844) 444-3114. 30+ years in the trade.",
+    "Rotted wood out, aluminum or vinyl soffit in, with custom bent fascia wraps. Tampa Bay soffit and fascia specialists. Free estimate: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/soffit-and-fascia",
     languages: {

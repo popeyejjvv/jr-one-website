@@ -25,13 +25,11 @@ const serviceSchema = {
     { "@type": "City", name: "Largo" },
   ],
   description:
-    "Professional gutter cleaning Tampa Bay, debris removal, downspout flushing, pitch and hanger inspection, haul-away. Typical single-family home $150-$400. Photo documentation of any issues found.",
+    "Professional gutter cleaning Tampa Bay, debris removal, downspout flushing, pitch and hanger inspection, haul-away. Photo documentation of any issues found.",
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",
-    price: "150",
-    priceSpecification: { "@type": "PriceSpecification", minPrice: "150", maxPrice: "400", priceCurrency: "USD" },
-    description: "Professional gutter cleaning in Tampa Bay, typical single-family home price range",
+    description: "Professional gutter cleaning in Tampa Bay, free estimate on request",
     availability: "https://schema.org/InStock",
   },
 };
@@ -58,9 +56,9 @@ const imageObjectSchema = {
 };
 
 export const metadata = {
-  title: "Gutter Cleaning Tampa FL",
+  title: { absolute: "Gutter Cleaning in Tampa FL | Service Within 14 Days" },
   description:
-    "Professional gutter cleaning Tampa Bay, full debris removal, downspout flushing, hanger inspection, haul-away. Typical single-family $150-$400. Same-day estimates (844) 444-3114.",
+    "Full debris removal, downspout flushing, and hanger inspection across Tampa Bay, with before and after photos of every job. Call (844) 444-3114.",
   keywords: "gutter cleaning tampa, gutter cleaning tampa fl, gutter cleaning cost tampa, downspout flushing, gutter maintenance tampa bay, professional gutter cleaner florida, gutter cleaning clearwater, gutter cleaning st petersburg",
   alternates: {
     canonical: "https://www.jronegutters.com/gutter-cleaning",
@@ -72,7 +70,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Gutter Cleaning Tampa | JR One Aluminum",
-    description: "Full debris removal, downspout flushing, photo documentation. Typical single-family $150-$400.",
+    description: "Full debris removal, downspout flushing, and hanger inspection with before and after photos of every job.",
     url: "https://www.jronegutters.com/gutter-cleaning",
     type: "website",
     images: [

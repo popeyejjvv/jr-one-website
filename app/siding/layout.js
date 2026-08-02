@@ -32,9 +32,9 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Siding Replacement Tampa FL",
+  title: { absolute: "Siding Installation in Tampa FL | Financing Available" },
   description:
-    "Siding replacement in Tampa: vinyl, Hardie fiber-cement, aluminum, and Sagiper PVC installed by one crew with your soffit, fascia, and gutters. Free estimate, (844) 444-3114.",
+    "Vinyl, Hardie fiber cement, aluminum, and Sagiper PVC siding in Tampa, installed by the crew that also does your soffit and gutters. Call (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/siding",
     languages: {

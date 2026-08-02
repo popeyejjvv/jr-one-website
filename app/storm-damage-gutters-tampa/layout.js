@@ -58,7 +58,7 @@ export const metadata = {
     url: "https://www.jronegutters.com/storm-damage-gutters-tampa",
     type: "website",
     locale: "en_US",
-    images: [{ url: "https://www.jronegutters.com/images/storm-damage-hero.webp", width: 1920, height: 1080, alt: "Storm-damaged gutters and fascia on a Tampa Bay home before JR One Aluminum same-week repair" }],
+    images: [{ url: "https://www.jronegutters.com/images/storm-damage-hero.webp", width: 1920, height: 1080, alt: "Storm-damaged gutters and fascia on a Tampa Bay home before JR One Aluminum repair" }],
   },
   twitter: { card: "summary_large_image", images: ["https://www.jronegutters.com/images/storm-damage-hero.webp"] },
 };

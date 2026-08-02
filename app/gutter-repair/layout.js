@@ -25,7 +25,7 @@ const serviceSchema = {
     { "@type": "City", name: "Largo" },
   ],
   description:
-    "Gutter repair Tampa Bay, fix sagging gutters, leaking seams, pulled hangers, clogged downspouts, pitch correction, and combined fascia repair. Same-week scheduling. 30+ years of aluminum specialist experience.",
+    "Gutter repair Tampa Bay, fix sagging gutters, leaking seams, pulled hangers, clogged downspouts, pitch correction, and combined fascia repair. Service within 14 days. 30+ years of aluminum specialist experience.",
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",
@@ -57,9 +57,9 @@ const imageObjectSchema = {
 };
 
 export const metadata = {
-  title: "Gutter Repair Tampa Bay FL",
+  title: { absolute: "Gutter Repair Tampa Bay FL | Service Within 14 Days" },
   description:
-    "Gutter repair near you in Tampa FL. We fix sagging gutters, leaking seams, overflow and downspouts, often same week. Free inspection, call (844) 444-3114.",
+    "We fix sagging gutters, leaking seams, overflow, and clogged downspouts across Tampa Bay. In-house crews, fully insured. Free inspection: (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/gutter-repair",
     languages: {
@@ -79,7 +79,7 @@ export const metadata = {
   ],
   openGraph: {
     title: "Gutter Repair Tampa | JR One Aluminum",
-    description: "Tampa Bay gutter repair specialists. Sagging, leaks, overflow, fascia. Fixed same week by aluminum experts with 30+ years experience. (844) 444-3114.",
+    description: "Tampa Bay gutter repair specialists. Sagging, leaks, overflow, fascia. Service within 14 days by aluminum experts with 30+ years experience. (844) 444-3114.",
     url: "https://www.jronegutters.com/gutter-repair",
     type: "website",
     images: [
@@ -94,7 +94,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gutter Repair Tampa | JR One Aluminum",
-    description: "Same-week scheduling. Sagging, leaks, overflow, fascia. (844) 444-3114.",
+    description: "Service within 14 days. Sagging, leaks, overflow, fascia. (844) 444-3114.",
     images: ["https://www.jronegutters.com/images/seamless-gutter-install.webp"],
   },
 };
