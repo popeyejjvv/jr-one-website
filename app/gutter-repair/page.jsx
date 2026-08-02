@@ -41,7 +41,7 @@ const T = {
     ],
     solutionTag: "THE JR ONE WAY",
     solutionTitle: "Repairs That Actually Last",
-    solutionSub: "We diagnose the root cause and fix it permanently. No band-aid solutions that fail next storm season.",
+    solutionSub: "We diagnose the root cause and fix it at the source. No band-aid solutions that fail next storm season.",
     solutions: [
       { emoji: "💧", title: "Leak repair and sealing", desc: "We locate every leak point (seams, end caps, corners, downspout connections) and seal them with professional-grade sealant that flexes with temperature changes. No temporary fixes that fail in six months." },
       { emoji: "🔧", title: "Hanger replacement and realignment", desc: "We replace failed spike-and-ferrule hangers with modern hidden bracket systems, refasten gutters to solid fascia, and re-pitch for proper water flow. Your gutters hang straight and drain completely." },
@@ -99,73 +99,73 @@ const T = {
     preferTalk: "Prefer to talk?",
   },
   es: {
-    breadcrumb: ["Inicio", "Servicios", "Reparacion y Mantenimiento de Canaletas"],
-    heroTag: "REPARACION Y MANTENIMIENTO",
-    heroH1: "Filtrando, Combandose o Desbordandose?",
+    breadcrumb: ["Inicio", "Servicios", "Reparación y Mantenimiento de Canaletas"],
+    heroTag: "REPARACIÓN Y MANTENIMIENTO",
+    heroH1: "Filtrando, Combándose o Desbordándose?",
     heroH1Gold: "Lo Arreglamos Bien a la Primera.",
-    heroP: "No deje que problemas pequenos de canaletas se conviertan en danos costosos para su hogar. Diagnosticamos el problema real, no solo el sintoma, y lo arreglamos para que no tenga que llamar de nuevo. Ademas, programas de mantenimiento estacional para prevenir problemas antes de que comiencen.",
-    btnEstimate: "OBTENGA SU INSPECCION GRATIS",
+    heroP: "No deje que problemas pequeños de canaletas se conviertan en daños costosos para su hogar. Diagnosticamos el problema real, no solo el síntoma, y lo arreglamos para que no tenga que llamar de nuevo. Además, programas de mantenimiento estacional para prevenir problemas antes de que comiencen.",
+    btnEstimate: "OBTENGA SU INSPECCIÓN GRATIS",
     btnCall: "(844) 444-3114",
-    problemTag: "POR QUE IMPORTA",
-    problemTitle: "Problemas que se Vuelven Costosos Rapido",
+    problemTag: "POR QUÉ IMPORTA",
+    problemTitle: "Problemas que se Vuelven Costosos Rápido",
     problems: [
-      { title: "Costuras y uniones con filtraciones", desc: "Agua goteando entre secciones de canaleta, en esquinas o alrededor de conexiones de bajantes. Sin reparar, las filtraciones manchan su fascia, pudren la madera y erosionan el suelo de su fundacion." },
-      { title: "Combandose y desprendiendose", desc: "Canaletas desprendiendose de la tabla de fascia debido a soportes fallidos, madera podrida o peso de escombros. Las canaletas combadas no drenan. Acumulan agua y eventualmente colapsan." },
-      { title: "Desbordamiento durante la lluvia", desc: "Agua desbordandose por el borde delantero durante tormentas. Generalmente causado por obstrucciones, inclinacion incorrecta o canaletas de tamano insuficiente. El agua va exactamente donde las canaletas deberian evitar que vaya." },
-      { title: "Bajantes danados o faltantes", desc: "Bajantes aplastados, desconectados o faltantes significan que el agua se descarga directamente en su fundacion en vez de ser dirigida lejos. Asi es como ocurren las grietas en la fundacion, inundaciones y erosion del suelo." },
+      { title: "Costuras y uniones con filtraciones", desc: "Agua goteando entre secciones de canaleta, en esquinas o alrededor de conexiones de bajantes. Sin reparar, las filtraciones manchan su fascia, pudren la madera y erosionan el suelo de su fundación." },
+      { title: "Combándose y desprendiéndose", desc: "Canaletas desprendiéndose de la tabla de fascia debido a soportes fallidos, madera podrida o peso de escombros. Las canaletas combadas no drenan. Acumulan agua y eventualmente colapsan." },
+      { title: "Desbordamiento durante la lluvia", desc: "Agua desbordándose por el borde delantero durante tormentas. Generalmente causado por obstrucciones, inclinación incorrecta o canaletas de tamaño insuficiente. El agua va exactamente donde las canaletas deberían evitar que vaya." },
+      { title: "Bajantes dañados o faltantes", desc: "Bajantes aplastados, desconectados o faltantes significan que el agua se descarga directamente en su fundación en vez de ser dirigida lejos. Así es como ocurren las grietas en la fundación, inundaciones y erosión del suelo." },
     ],
     solutionTag: "EL OFICIO ESPECIALIZADO",
     solutionTitle: "Reparaciones que Realmente Duran",
-    solutionSub: "Diagnosticamos la causa raiz y la arreglamos permanentemente. Sin soluciones temporales que fallan en la proxima temporada de tormentas.",
+    solutionSub: "Diagnosticamos la causa raíz y la arreglamos de fondo. Sin soluciones temporales que fallan en la próxima temporada de tormentas.",
     solutions: [
-      { emoji: "💧", title: "Reparacion y sellado de filtraciones", desc: "Localizamos cada punto de filtracion (costuras, tapas, esquinas, conexiones de bajantes) y los sellamos con sellador de grado profesional que se flexiona con los cambios de temperatura. Sin arreglos temporales que fallan en seis meses." },
-      { emoji: "🔧", title: "Reemplazo y realineacion de soportes", desc: "Reemplazamos soportes de clavos y ferrulas fallidos con sistemas modernos de soportes ocultos, refijamos las canaletas a fascia solida y re-inclinamos para un flujo de agua adecuado. Sus canaletas quedan rectas y drenan completamente." },
-      { emoji: "🛠️", title: "Reparacion y redireccion de bajantes", desc: "Reparamos o reemplazamos bajantes danados, agregamos extensiones para dirigir el agua lejos de su fundacion y redirigimos el drenaje cuando el diseno original no funciona." },
-      { emoji: "🧹", title: "Limpieza de canaletas y remocion de escombros", desc: "Limpieza completa de hojas, agujas de pino, granulos de tejas y agua estancada. Lavamos cada bajante para confirmar flujo libre e inspeccionamos danos mientras estamos arriba." },
-      { emoji: "⚠️", title: "Respuesta de emergencia por danos de tormenta", desc: "La temporada de huracanes de Tampa no espera y nosotros tampoco. Respondemos rapidamente a canaletas danadas por tormentas. Estabilizacion temporal primero para prevenir mas danos, luego reparacion permanente tan pronto como los materiales y la programacion lo permitan." },
-      { emoji: "📋", title: "Programas de mantenimiento estacional", desc: "Mantenimiento preventivo dos veces al ano mantiene sus canaletas funcionando y extiende su vida util significativamente. Limpiamos, inspeccionamos, ajustamos, sellamos y documentamos la condicion de todo su sistema." },
+      { emoji: "💧", title: "Reparación y sellado de filtraciones", desc: "Localizamos cada punto de filtración (costuras, tapas, esquinas, conexiones de bajantes) y los sellamos con sellador de grado profesional que se flexiona con los cambios de temperatura. Sin arreglos temporales que fallan en seis meses." },
+      { emoji: "🔧", title: "Reemplazo y realineación de soportes", desc: "Reemplazamos soportes de clavos y ferrulas fallidos con sistemas modernos de soportes ocultos, refijamos las canaletas a fascia sólida y re-inclinamos para un flujo de agua adecuado. Sus canaletas quedan rectas y drenan completamente." },
+      { emoji: "🛠️", title: "Reparación y redirección de bajantes", desc: "Reparamos o reemplazamos bajantes dañados, agregamos extensiones para dirigir el agua lejos de su fundación y redirigimos el drenaje cuando el diseño original no funciona." },
+      { emoji: "🧹", title: "Limpieza de canaletas y remoción de escombros", desc: "Limpieza completa de hojas, agujas de pino, gránulos de tejas y agua estancada. Lavamos cada bajante para confirmar flujo libre e inspeccionamos daños mientras estamos arriba." },
+      { emoji: "⚠️", title: "Respuesta de emergencia por daños de tormenta", desc: "La temporada de huracanes de Tampa no espera y nosotros tampoco. Respondemos rápidamente a canaletas dañadas por tormentas. Estabilización temporal primero para prevenir más daños, luego reparación permanente tan pronto como los materiales y la programación lo permitan." },
+      { emoji: "📋", title: "Programas de mantenimiento estacional", desc: "Mantenimiento preventivo dos veces al año mantiene sus canaletas funcionando y extiende su vida útil significativamente. Limpiamos, inspeccionamos, ajustamos, sellamos y documentamos la condición de todo su sistema." },
     ],
     stats: [
-      { value: "24-48 h", label: "Evaluacion de dano por tormenta" },
+      { value: "24-48 h", label: "Evaluación de daño por tormenta" },
       { value: "500+", label: "Reparaciones anuales" },
       { value: "1ra", label: "Llamada. Lo arreglamos bien" },
-      { value: "30+", label: "Anos diagnosticando problemas" },
+      { value: "30+", label: "Años diagnosticando problemas" },
     ],
-    goldEyebrow: "EL ESTANDAR DE ORO",
-    goldTitle: "Nuestro Proceso de Reparacion",
+    goldEyebrow: "EL ESTÁNDAR DE ORO",
+    goldTitle: "Nuestro Proceso de Reparación",
     goldSub: "Cada hogar. Cada vez. Sin excepciones.",
     goldSteps: [
-      { num: "01", title: "Evaluar", desc: "Diagnosticamos la causa raiz, no solo el sintoma visible. Una canaleta combada puede significar un soporte fallido, fascia podrida o ambos. Encontramos el problema real." },
-      { num: "02", title: "Disenar", desc: "Explicacion clara de que esta mal, que necesita hacerse y cuanto cuesta. Sin vagos lo iremos viendo. Usted aprueba el plan antes de que empecemos." },
-      { num: "03", title: "Instalar", desc: "Nuestro equipo realiza la reparacion con los materiales correctos y la tecnica adecuada. Lo arreglamos para que dure, no para bajar de la escalera mas rapido." },
-      { num: "04", title: "Proteger", desc: "Probamos la reparacion con flujo de agua, limpiamos y le damos consejos de mantenimiento para prevenir recurrencia. Si el problema regresa, nosotros tambien." },
+      { num: "01", title: "Evaluar", desc: "Diagnosticamos la causa raíz, no solo el síntoma visible. Una canaleta combada puede significar un soporte fallido, fascia podrida o ambos. Encontramos el problema real." },
+      { num: "02", title: "Diseñar", desc: "Explicación clara de qué está mal, qué necesita hacerse y cuánto cuesta. Sin vagos lo iremos viendo. Usted aprueba el plan antes de que empecemos." },
+      { num: "03", title: "Instalar", desc: "Nuestro equipo realiza la reparación con los materiales correctos y la técnica adecuada. Lo arreglamos para que dure, no para bajar de la escalera más rápido." },
+      { num: "04", title: "Proteger", desc: "Probamos la reparación con flujo de agua, limpiamos y le damos consejos de mantenimiento para prevenir recurrencia. Si el problema regresa, nosotros también." },
     ],
-    reviewEyebrow: "RESENAS",
+    reviewEyebrow: "RESEÑAS",
     reviewTitle: "Lo Que Dicen los Clientes",
     reviews: [
-      { text: "Reemplace dos piezas largas de fascia de aluminio debido a huracanes recientes. Un trabajo muy pequeno y me preocupaba que alguien estuviera interesado en un trabajo tan pequeno a un precio razonable. JR One fue muy receptivo para cotizar y hacer el trabajo a tiempo, todo a un precio muy justo.", name: "Steven M.", service: "Trabajo Pequeno", stars: 5 },
-      { text: "Que gran experiencia despues de Milton. Ben vino dos dias despues de la tormenta para evaluar el dano. Me agrego al cronograma rapidamente. Arreglaron y agregaron una canaleta nueva. No podria estar mas satisfecho.", name: "Johnny C.", service: "Reparacion Post-Huracan", stars: 5 },
-      { text: "Gran experiencia. Respuesta rapida con comunicacion maravillosa de Emily. Los trabajadores llegaron con el equipo y materiales adecuados. Un trabajo muy profesional.", name: "Rich B.", service: "Reparacion de Canaletas", stars: 5 },
+      { text: "Reemplacé dos piezas largas de fascia de aluminio debido a huracanes recientes. Un trabajo muy pequeño y me preocupaba que alguien estuviera interesado en un trabajo tan pequeño a un precio razonable. JR One fue muy receptivo para cotizar y hacer el trabajo a tiempo, todo a un precio muy justo.", name: "Steven M.", service: "Trabajo Pequeño", stars: 5 },
+      { text: "Qué gran experiencia después de Milton. Ben vino dos días después de la tormenta para evaluar el daño. Me agregó al cronograma rápidamente. Arreglaron y agregaron una canaleta nueva. No podría estar más satisfecho.", name: "Johnny C.", service: "Reparación Post-Huracán", stars: 5 },
+      { text: "Gran experiencia. Respuesta rápida con comunicación maravillosa de Emily. Los trabajadores llegaron con el equipo y materiales adecuados. Un trabajo muy profesional.", name: "Rich B.", service: "Reparación de Canaletas", stars: 5 },
     ],
     faqEyebrow: "PREGUNTAS",
-    faqTitle: "Preguntas Sobre Reparacion",
+    faqTitle: "Preguntas Sobre Reparación",
     faqs: [
-      { q: "Cuanto cuesta la reparacion de canaletas?", a: "La mayoria de las reparaciones de canaletas oscilan entre $150 y $500 dependiendo del tipo y extension del dano. El sellado simple de filtraciones o reemplazo de soportes esta en el extremo inferior. Re-inclinar un tramo completo, reemplazar secciones o reparar fascia podrida cuesta mas. Proporcionamos una cotizacion exacta antes de comenzar cualquier trabajo." },
-      { q: "Vale la pena reparar canaletas viejas o debo reemplazarlas?", a: "Depende de la condicion general. Si sus canaletas estan en buen estado general y el problema es localizado (algunas filtraciones, una seccion combada), la reparacion tiene sentido. Si ve problemas generalizados (multiples filtraciones, combadura significativa, corrosion), el reemplazo generalmente es mas rentable a largo plazo." },
-      { q: "Que tan rapido pueden responder a danos por tormenta?", a: "Priorizamos las llamadas por danos de tormenta y tipicamente realizamos una evaluacion inicial dentro de 24 a 48 horas de su llamada. Si se necesita estabilizacion inmediata para prevenir mas dano, lo manejamos primero. Las reparaciones permanentes se programan tan rapido como los materiales y disponibilidad del equipo lo permitan." },
-      { q: "Hacen trabajos pequenos?", a: "Si. No rechazamos reparaciones pequenas porque no valen nuestro tiempo. Una sola union con filtracion o una seccion suelta aun merece atencion profesional. Algunas de nuestras mejores resenas vienen de trabajos pequenos donde otras empresas ni siquiera devolvieron la llamada." },
-      { q: "Con que frecuencia debo limpiar mis canaletas?", a: "En Tampa Bay, recomendamos limpieza profesional al menos dos veces al ano. Una antes de la temporada de huracanes (mayo/junio) y otra despues de la caida de hojas en otono (noviembre/diciembre). Hogares cerca de pinos o con mucha cobertura de arboles pueden necesitar limpieza trimestral." },
-      { q: "Que incluye un programa de mantenimiento?", a: "Nuestro mantenimiento estacional incluye limpieza completa de canaletas y bajantes, inspeccion y sellado de filtraciones, ajuste de soportes, verificacion de inclinacion y un informe escrito de condicion con fotos. Piense en ello como un chequeo que detecta problemas pequenos antes de que se vuelvan costosos." },
+      { q: "Cuánto cuesta la reparación de canaletas?", a: "La mayoría de las reparaciones de canaletas oscilan entre $150 y $500 dependiendo del tipo y extensión del daño. El sellado simple de filtraciones o reemplazo de soportes está en el extremo inferior. Re-inclinar un tramo completo, reemplazar secciones o reparar fascia podrida cuesta más. Proporcionamos una cotización exacta antes de comenzar cualquier trabajo." },
+      { q: "Vale la pena reparar canaletas viejas o debo reemplazarlas?", a: "Depende de la condición general. Si sus canaletas están en buen estado general y el problema es localizado (algunas filtraciones, una sección combada), la reparación tiene sentido. Si ve problemas generalizados (múltiples filtraciones, combadura significativa, corrosión), el reemplazo generalmente es más rentable a largo plazo." },
+      { q: "Qué tan rápido pueden responder a daños por tormenta?", a: "Priorizamos las llamadas por daños de tormenta y típicamente realizamos una evaluación inicial dentro de 24 a 48 horas de su llamada. Si se necesita estabilización inmediata para prevenir más daño, lo manejamos primero. Las reparaciones permanentes se programan tan rápido como los materiales y disponibilidad del equipo lo permitan." },
+      { q: "Hacen trabajos pequeños?", a: "Sí. No rechazamos reparaciones pequeñas porque no valen nuestro tiempo. Una sola unión con filtración o una sección suelta aún merece atención profesional. Algunas de nuestras mejores reseñas vienen de trabajos pequeños donde otras empresas ni siquiera devolvieron la llamada." },
+      { q: "Con qué frecuencia debo limpiar mis canaletas?", a: "En Tampa Bay, recomendamos limpieza profesional al menos dos veces al año. Una antes de la temporada de huracanes (mayo/junio) y otra después de la caída de hojas en otoño (noviembre/diciembre). Hogares cerca de pinos o con mucha cobertura de árboles pueden necesitar limpieza trimestral." },
+      { q: "Qué incluye un programa de mantenimiento?", a: "Nuestro mantenimiento estacional incluye limpieza completa de canaletas y bajantes, inspección y sellado de filtraciones, ajuste de soportes, verificación de inclinación y un informe escrito de condición con fotos. Piense en ello como un chequeo que detecta problemas pequeños antes de que se vuelvan costosos." },
     ],
     ctaTitle: "PROBLEMAS CON SUS CANALETAS?",
-    ctaSub: "Obtenga su inspeccion gratis. Encontraremos el problema, lo explicaremos claramente y le daremos una cotizacion justa.",
-    formTitle: "Obtenga Su Inspeccion Gratis",
+    ctaSub: "Obtenga su inspección gratis. Encontraremos el problema, lo explicaremos claramente y le daremos una cotización justa.",
+    formTitle: "Obtenga Su Inspección Gratis",
     formName: "Nombre Completo",
-    formPhone: "Numero de Telefono",
-    formEmail: "Correo Electronico",
-    formZip: "Codigo Postal",
-    formBtn: "Solicitar Mi Inspeccion Gratis",
-    formDisclaimer: "Sin spam. Sin presion.",
+    formPhone: "Número de Teléfono",
+    formEmail: "Correo Electrónico",
+    formZip: "Código Postal",
+    formBtn: "Solicitar Mi Inspección Gratis",
+    formDisclaimer: "Sin spam. Sin presión.",
     formSuccess: "Solicitud Recibida",
     formSuccessSub: "Le responderemos en pocas horas.",
     preferTalk: "Prefiere hablar?",
@@ -367,9 +367,9 @@ export default function GutterRepairPage() {
         </section>
 
         <CTABand
-          title={lang === "en" ? "Storm Damage? Leak? We Respond Fast." : "Dano por Tormenta? Filtracion? Respondemos Rapido."}
-          sub={lang === "en" ? "Get a free inspection today. We respond within hours." : "Obtenga una inspeccion gratis hoy. Respondemos en horas."}
-          primaryLabel={lang === "en" ? "Request a Quote" : "Solicitar Cotizacion"}
+          title={lang === "en" ? "Storm Damage? Leak? We Respond Fast." : "Daño por Tormenta? Filtración? Respondemos Rápido."}
+          sub={lang === "en" ? "Get a free inspection today. We respond within hours." : "Obtenga una inspección gratis hoy. Respondemos en horas."}
+          primaryLabel={lang === "en" ? "Request a Quote" : "Solicitar Cotización"}
           primaryHref="#quote-form"
           accent={ACCENT}
           accentLight={ACCENT_LIGHT}
@@ -377,7 +377,7 @@ export default function GutterRepairPage() {
       </main>
       <ServiceAreaList
         service="gutter-repair"
-        serviceLabel={lang === "es" ? "Reparacion de Canaletas" : "Gutter Repair"}
+        serviceLabel={lang === "es" ? "Reparación de Canaletas" : "Gutter Repair"}
         lang={lang}
       />
 
