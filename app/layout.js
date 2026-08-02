@@ -95,7 +95,7 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Drainage Installation", url: "https://www.jronegutters.com/drainage-assessment" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Peak 301 Roof Rejuvenation", url: "https://www.jronegutters.com/peak-301" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sagiper Premium Cladding", url: "https://www.jronegutters.com/sagiper" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Govee Permanent Exterior Lighting", url: "https://www.jronegutters.com/govee-lights" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Govee Exterior LED Lighting", url: "https://www.jronegutters.com/govee-lights" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gutter Cleaning & Maintenance", url: "https://www.jronegutters.com/gutter-cleaning" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "HOA Gutter & Soffit Maintenance Contracts", url: "https://www.jronegutters.com/hoa-contracts" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rental & Airbnb Property Maintenance", url: "https://www.jronegutters.com/rental-property-maintenance" } },
