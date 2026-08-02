@@ -1151,10 +1151,37 @@ export default async function CityServicePage({ params }) {
   };
 
   // FAQPage JSON-LD only emitted when enrichment provides FAQs.
-  // TODO 2026-07-15: Strip FAQPage JSON-LD from all combo pages before
-  // Google's August 2026 FAQPage rich-result API removal. Tier 1 ban
-  // stands for non-combo pages; combos keep FAQPage during the rich-
-  // result window. Policy locked 2026-06-02 (see decisions/log.md).
+  //
+  // RESOLVED 2026-08-02: the prior "TODO 2026-07-15: strip before Google's
+  // August 2026 removal" was based on a misreading of the deprecation notice.
+  // Verified against Google Search Central before acting. What the August 2026
+  // date actually covers is the Search CONSOLE API reporting endpoint for the
+  // FAQ rich result, not the markup on the page. Nothing is removed from, or
+  // penalized on, this site. Timeline:
+  //   2026-05-07  FAQ rich result stops rendering in Google Search results.
+  //   2026-06     Search Console FAQ report, search-appearance filter, and
+  //               Rich Results Test support removed.
+  //   2026-08     Search Console API stops returning FAQ rich-result data.
+  //               Affects dashboards querying that API. Not page markup.
+  // Google's position: FAQPage is still a valid schema.org type, unused
+  // structured data does not cause problems for Search, and site owners may
+  // keep or remove it with no effect on search visibility. No warning, no
+  // error, no invalid-markup signal, no penalty.
+  // Source: developers.google.com/search/docs/appearance/structured-data/faqpage
+  // (deprecation notice) + Search Engine Journal 2026-05-07 coverage
+  // searchenginejournal.com/google-drops-faq-rich-results-from-search/574429/
+  //
+  // DECISION: KEEP the markup on combo pages. It is free, harmless, and still
+  // read by Bing, Perplexity, and the AI/RAG crawlers, which is exactly the
+  // AEO-first surface this site optimizes for. Do NOT open a new removal task
+  // on the strength of the 2026-05 headline alone.
+  //
+  // Not a contradiction of the Tier 1 ban: /faq (app/faq/layout.js) and blog
+  // posts (app/blog/[slug]/BlogPost.jsx) omit FAQPage for a different reason,
+  // which is that those were standalone FAQ surfaces whose only purpose was
+  // winning the rich result. Combo pages carry per-city cost answers that hold
+  // independent AEO value, so the markup keeps earning its place here.
+  // Superseded policy note dated 2026-06-02 in decisions/log.md.
   const faqSchema = enrichment?.faqs?.length
     ? {
         "@context": "https://schema.org",
