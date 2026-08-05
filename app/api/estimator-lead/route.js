@@ -2,6 +2,7 @@ import { NextResponse, after } from "next/server";
 import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
 import { assessLeadSpam } from "@/lib/lead-spam";
+import { spoolNotice } from "@/lib/notify-spool";
 
 // =============================================================================
 // JR One, Estimator Lead API
@@ -215,35 +216,35 @@ export async function POST(request) {
     if (spamCheck.block) {
       console.warn(`⚠ SPAM BLOCKED (estimator) from ${ip}: ${spamCheck.reasons.join("; ")}`);
       // Rescue path: this route has no normal email fallback, so a blocked
-      // false positive would otherwise vanish silently. Send the info@
-      // notification tagged [SPAM BLOCKED], then return the exact success
-      // shape a captured lead gets (no adaptation oracle for the bot).
-      if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
-        try {
-          const nodemailer = (await import("nodemailer")).default;
-          const transporter = nodemailer.createTransport({
-            service: "gmail",
-            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
-          });
-          const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-          await transporter.sendMail({
-            from: `"JR One Website" <${process.env.GMAIL_USER}>`,
-            to: "info@jronegutters.com",
-            subject: `[SPAM BLOCKED] Estimator Lead: ${customerName || "no name"}, ${addressZip || "N/A"}`,
-            html: `
-              <div style="font-family: Arial, sans-serif; max-width: 600px;">
-                <h2 style="color: #1B2A4A;">Estimator submission blocked as spam</h2>
-                <p style="color:#6B7280;">Reasons: ${esc(spamCheck.reasons.join("; "))}</p>
-                <p>Name: ${esc(customerName || "—")}<br/>Email: ${esc(customerEmail || "—")}<br/>
-                Phone: ${esc(phone)}<br/>Address: ${esc(address || "—")}, ${esc(addressCity || "")} ${esc(addressZip || "")}</p>
-                <p style="color:#6B7280;font-size:13px;">Not sent to BuilderPrime. If this looks like a real customer, call them back and enter manually.</p>
-              </div>`,
-          });
-        } catch (spamMailErr) {
-          console.error("✗ SPAM BLOCKED (estimator) and notification email failed — payload for manual recovery:",
-            JSON.stringify({ customerName, customerEmail, phone, addressZip, reasons: spamCheck.reasons }));
+      // false positive would otherwise vanish silently. It stays rescuable -
+      // but as a line in the daily operator digest rather than its own email.
+      // CHANGED 2026-08-04 alongside send-lead, same reasoning: keep the
+      // record, drop the interrupt. Console logging is the second copy so the
+      // payload survives in Vercel logs even if the spool is unreachable.
+      console.warn("⚠ SPAM BLOCKED (estimator) — payload for manual recovery:",
+        JSON.stringify({ customerName, customerEmail, phone, addressZip, reasons: spamCheck.reasons }));
+
+      // One appended line each, same as send-lead: the digest carries a count
+      // plus a scannable list so a false positive is still findable.
+      const t = new Date().toLocaleTimeString("en-US", {
+        timeZone: "America/New_York", hour: "numeric", minute: "2-digit",
+      });
+      after(async () => {
+        const res = await spoolNotice({
+          source: "website",
+          tag: "spam-blocked-estimator",
+          subject: "Spam-blocked estimator submissions (kept out of BuilderPrime)",
+          severity: "info",
+          append: true,
+          body:
+            `${t}  ${customerName || "no name"} | ${phone || "no phone"} | ` +
+            `${customerEmail || "no email"} | ${addressZip || "no zip"} | ` +
+            `${spamCheck.reasons.join(", ")}`,
+        });
+        if (!res.ok) {
+          console.error("✗ spam-blocked estimator lead could not be spooled:", res.error);
         }
-      }
+      });
       return NextResponse.json({
         success: true,
         captured_in_bp: true,

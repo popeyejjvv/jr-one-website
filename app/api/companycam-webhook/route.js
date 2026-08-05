@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import crypto from "crypto";
-import nodemailer from "nodemailer";
+import { spoolNotice } from "@/lib/notify-spool";
 
 // =============================================================================
 // JR One, CompanyCam Webhook Receiver
@@ -92,19 +92,17 @@ export async function POST(request) {
 
   if (isCompleteLabel || isChecklistDone) {
     try {
-      const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: process.env.GMAIL_USER,
-          pass: process.env.GMAIL_APP_PASSWORD,
-        },
-      });
+      // CHANGED 2026-08-04: this used to email info@ on every completed
+      // project. It is an INTAKE SIGNAL for two pipelines that are both
+      // human-gated anyway - nothing downstream happens faster because Popeye
+      // read it within the hour. So it spools and rides the daily digest.
       const what = isCompleteLabel ? "labeled COMPLETE" : "checklist completed";
-      await transporter.sendMail({
-        from: `"JR One CompanyCam" <${process.env.GMAIL_USER}>`,
-        to: "info@jronegutters.com",
+      await spoolNotice({
+        source: "companycam",
+        tag: `project-${projectId}`,
         subject: `CompanyCam: ${projectName || projectId} ${what}`,
-        text:
+        severity: "info",
+        body:
           `Project: ${projectName} (id ${projectId})\n` +
           `Event: ${eventType}\n` +
           `Queued for: marketing before/after staging + review-request candidate list.\n` +

@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
 import { assessLeadSpam } from "@/lib/lead-spam";
+import { spoolNotice } from "@/lib/notify-spool";
 
 // =============================================================================
 // JR One, Lead Submission API
@@ -357,8 +358,18 @@ export async function POST(request) {
     // ─────────────────────────────────────────────────────────────────────────
     // 2. FALLBACK: Email notification to info@jronegutters.com
     //    Used as a backup so a human still sees the lead even if BP fails.
+    //
+    //    CHANGED 2026-08-04: only REAL leads email. A spam-blocked submission
+    //    used to send its own [SPAM BLOCKED] copy so a false positive stayed
+    //    rescuable - good instinct, wrong channel. Those now spool into the
+    //    daily operator digest (see the spam-blocked branch below): still
+    //    reviewable the same day, no longer an interrupt.
+    //
+    //    A genuine lead keeps its instant email on purpose. It is the one event
+    //    on this site where a few hours of delay can lose a job, and JR One
+    //    cashflow is the guardrail everything else bends around.
     // ─────────────────────────────────────────────────────────────────────────
-    if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
+    if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD && !spamCheck.block) {
       emailResult.attempted = true;
       try {
         const transporter = nodemailer.createTransport({
@@ -427,10 +438,40 @@ export async function POST(request) {
     // log the payload instead so it's recoverable from Vercel logs.
     // ─────────────────────────────────────────────────────────────────────────
     if (spamCheck.block) {
-      if (!emailResult.ok) {
-        console.error("✗ SPAM BLOCKED and notification email failed — payload for manual recovery:",
-          JSON.stringify({ name, phone, email, service, zip, message, page, reasons: spamCheck.reasons }));
-      }
+      // The rescue path. Everything the old [SPAM BLOCKED] email carried is
+      // filed here instead, so a wrongly-blocked customer is still recoverable
+      // from the morning digest. Console logging stays as the second copy: if
+      // the spool is unreachable the payload is still in the Vercel logs.
+      const blockedPayload = { name, phone, email, service, zip, message, page,
+        reasons: spamCheck.reasons };
+      console.warn("⚠ SPAM BLOCKED — payload for manual recovery:", JSON.stringify(blockedPayload));
+
+      // Fire-and-forget: a lead response must never wait on, or fail because
+      // of, a notification write.
+      // ONE LINE per blocked lead, appended. The daily digest then shows a
+      // count plus a scannable list, which is what makes a false positive
+      // spottable - a bare "12 blocked" would hide a real customer inside it,
+      // and 12 separate emails is the clutter we are removing.
+      const t = new Date().toLocaleTimeString("en-US", {
+        timeZone: "America/New_York", hour: "numeric", minute: "2-digit",
+      });
+      after(async () => {
+        const res = await spoolNotice({
+          source: "website",
+          tag: "spam-blocked-lead",
+          subject: "Spam-blocked web leads (kept out of BuilderPrime)",
+          severity: "info",
+          append: true,
+          body:
+            `${t}  ${name || "no name"} | ${phone || "no phone"} | ` +
+            `${email || "no email"} | ${service || "no service"} | ${zip || "no zip"} | ` +
+            `${spamCheck.reasons.join(", ")}`,
+        });
+        if (!res.ok) {
+          console.error("✗ spam-blocked lead could not be spooled:", res.error);
+        }
+      });
+
       return NextResponse.json({
         success: true,
         message: "Lead received",
