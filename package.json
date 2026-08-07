@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:documents": "python3 scripts/generate_documents.py",
+    "check:documents": "python3 scripts/generate_documents.py --check"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
