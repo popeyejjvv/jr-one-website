@@ -8,7 +8,7 @@ faqs:
   - question: "What is the main difference between Peak 301 and Roof Maxx?"
     answer: "Both are soy-based bio-oil roof rejuvenators that work the same way: spray onto aging asphalt shingles, the bio-oil penetrates the material, restores flexibility, extends roof life. The differences are applicator certification rigor (Peak 301 has higher training requirements), national network size (Roof Maxx has larger franchise footprint), and pricing (Peak 301 typically commands a small premium in Tampa Bay)."
   - question: "Which is better for Tampa Bay homes, Peak 301 or Roof Maxx?"
-    answer: "For most Tampa homeowners, the choice comes down to which certified applicator quotes the job. Both products work. Both extend roof life 5 to 15 years. Both cost roughly the same per square foot. The bigger differentiator is the contractor: in-house crew vs subcontractor, photo documentation, honest 'is this roof even a candidate' assessment. Pick the contractor first, the brand second."
+    answer: "For most Tampa homeowners, the choice comes down to which certified applicator quotes the job. Both products work. Both extend roof life, and Peak 301 adds 6 to 10 years. Both cost roughly the same per square foot. The bigger differentiator is the contractor: in-house crew vs subcontractor, photo documentation, honest 'is this roof even a candidate' assessment. Pick the contractor first, the brand second."
   - question: "Are Peak 301 and Roof Maxx both ASTM D6944 tested?"
     answer: "Yes, both products are validated by independent third-party testing under ASTM D6944, the standard cyclic flexibility test for asphalt shingles. After accelerated weathering cycles, treated shingles show flexibility comparable to new shingles. Beware contractors offering 'roof rejuvenation' products without ASTM testing - those are typically petroleum-based oils that evaporate within 12 to 24 months and provide no lasting flexibility restoration."
   - question: "How much does Peak 301 cost compared to Roof Maxx in Tampa?"
@@ -128,7 +128,7 @@ If a contractor selling either product won't be honest about these limitations, 
 ## What's the Same Either Way
 
 - Both work
-- Both extend shingle life 5 to 15 years
+- Both extend shingle life, Peak 301 by 6 to 10 years
 - Both cost a fraction of replacement
 - Both require professional application (no DIY)
 - Both have ASTM D6944 third-party validation
@@ -139,7 +139,7 @@ If a contractor selling either product won't be honest about these limitations, 
 ## Real 2026 Tampa Bay Job Examples
 
 **Brandon, single-story 1,750 sq ft, year 12 architectural shingles**
-Peak 301 applied: $1,420. Estimated additional roof life: 7 to 12 years.
+Peak 301 applied: $1,420. Estimated additional roof life: 6 to 10 years.
 
 **Wesley Chapel, two-story 2,650 sq ft, year 14 3-tab shingles**
 Peak 301 applied: $1,790. Roof Maxx alternative quote: $1,650. Customer chose Peak 301.
@@ -165,7 +165,7 @@ The same vetting questions apply regardless of which product you choose:
 
 ## The Bottom Line
 
-Peak 301 and Roof Maxx are functionally similar bio-oil roof rejuvenation products. Both work. Both extend Tampa shingle roof life 5 to 15 years. Both cost a fraction of replacement.
+Peak 301 and Roof Maxx are functionally similar bio-oil roof rejuvenation products. Both work. Both extend Tampa shingle roof life, and Peak 301 adds 6 to 10 years. Both cost a fraction of replacement.
 
 The product choice matters less than:
 - Whether your roof is actually a good candidate (right age, no leaks, no structural damage)

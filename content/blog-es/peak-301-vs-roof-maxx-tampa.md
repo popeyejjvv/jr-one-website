@@ -8,7 +8,7 @@ faqs:
   - question: "¿Cuál es la diferencia principal entre Peak 301 y Roof Maxx?"
     answer: "Ambos son rejuvenecedores de techo a base de bioaceite de soya que funcionan igual: se rocían sobre las tejas de asfalto envejecidas, el bioaceite penetra el material, restaura la flexibilidad y alarga la vida del techo. Las diferencias están en el rigor de la certificación del aplicador (Peak 301 exige más entrenamiento), el tamaño de la red nacional (Roof Maxx tiene mayor presencia de franquicias) y el precio (Peak 301 normalmente cuesta un poco más en Tampa Bay)."
   - question: "¿Cuál es mejor para las casas de Tampa Bay, Peak 301 o Roof Maxx?"
-    answer: "Para la mayoría de los dueños de casa en Tampa, la decisión se reduce a cuál aplicador certificado le cotiza el trabajo. Ambos productos funcionan. Ambos alargan la vida del techo de 5 a 15 años. Ambos cuestan más o menos lo mismo por pie cuadrado. La diferencia más grande es el contratista: cuadrilla propia vs subcontratista, documentación con fotos y una evaluación honesta de si este techo es siquiera candidato. Elija primero el contratista y después la marca."
+    answer: "Para la mayoría de los dueños de casa en Tampa, la decisión se reduce a cuál aplicador certificado le cotiza el trabajo. Ambos productos funcionan. Ambos alargan la vida del techo, y Peak 301 suma de 6 a 10 años. Ambos cuestan más o menos lo mismo por pie cuadrado. La diferencia más grande es el contratista: cuadrilla propia vs subcontratista, documentación con fotos y una evaluación honesta de si este techo es siquiera candidato. Elija primero el contratista y después la marca."
   - question: "¿Están Peak 301 y Roof Maxx probados bajo ASTM D6944?"
     answer: "Sí, ambos productos están validados por pruebas independientes de terceros bajo la norma ASTM D6944, la prueba estándar de flexibilidad cíclica para tejas de asfalto. Después de ciclos de envejecimiento acelerado, las tejas tratadas muestran una flexibilidad comparable a la de tejas nuevas. Cuidado con los contratistas que ofrecen productos de rejuvenecimiento de techo sin pruebas ASTM, porque normalmente son aceites a base de petróleo que se evaporan en 12 a 24 meses y no restauran la flexibilidad de forma duradera."
   - question: "¿Cuánto cuesta Peak 301 comparado con Roof Maxx en Tampa?"
@@ -128,7 +128,7 @@ Si un contratista que vende cualquiera de los dos productos no es honesto sobre 
 ## Lo que es igual de cualquier forma
 
 - Ambos funcionan
-- Ambos alargan la vida de las tejas de 5 a 15 años
+- Ambos alargan la vida de las tejas, Peak 301 de 6 a 10 años
 - Ambos cuestan una fracción del reemplazo
 - Ambos requieren aplicación profesional (nada de hágalo usted mismo)
 - Ambos tienen validación de terceros bajo ASTM D6944
@@ -139,7 +139,7 @@ Si un contratista que vende cualquiera de los dos productos no es honesto sobre 
 ## Ejemplos reales de trabajos 2026 en Tampa Bay
 
 **Brandon, una planta de 1,750 pies cuadrados, tejas arquitectónicas en el año 12**
-Peak 301 aplicado: $1,420. Vida adicional estimada del techo: 7 a 12 años.
+Peak 301 aplicado: $1,420. Vida adicional estimada del techo: 6 a 10 años.
 
 **Wesley Chapel, dos plantas de 2,650 pies cuadrados, tejas de 3 pestañas en el año 14**
 Peak 301 aplicado: $1,790. Cotización alternativa de Roof Maxx: $1,650. El cliente eligió Peak 301.
@@ -165,7 +165,7 @@ Las mismas preguntas de evaluación aplican sin importar cuál producto elija:
 
 ## La conclusión
 
-Peak 301 y Roof Maxx son productos de rejuvenecimiento de techo a base de bioaceite que funcionan de manera similar. Ambos funcionan. Ambos alargan la vida de los techos de tejas en Tampa de 5 a 15 años. Ambos cuestan una fracción del reemplazo.
+Peak 301 y Roof Maxx son productos de rejuvenecimiento de techo a base de bioaceite que funcionan de manera similar. Ambos funcionan. Ambos alargan la vida de los techos de tejas en Tampa, y Peak 301 suma de 6 a 10 años. Ambos cuestan una fracción del reemplazo.
 
 La elección del producto importa menos que:
 - Si su techo es de verdad un buen candidato (edad correcta, sin goteras, sin daño estructural)

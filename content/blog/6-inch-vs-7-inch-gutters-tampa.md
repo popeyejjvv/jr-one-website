@@ -8,7 +8,7 @@ faqs:
   - question: "Does JR One install 5-inch gutters?"
     answer: "No. JR One installs 6-inch and 7-inch seamless aluminum gutters only - plus copper and galvalume in the same sizes. We do not install 5-inch in Florida because it's undersized for our rain volume on most roofs. Builder-grade 5-inch is what we replace, not what we install."
   - question: "When should I choose 7-inch over 6-inch?"
-    answer: "Choose 7-inch when your roof area exceeds 2,800 square feet, your roof pitch is steep, you have a multi-wing layout, your existing 6-inch overflows in heavy rain, or you have a commercial building. 7-inch handles roughly 50% more water than 6-inch and is the right call for any home where 6-inch would still leave overflow risk."
+    answer: "Choose 7-inch when your roof area exceeds 2,800 square feet, your roof pitch is steep, you have a multi-wing layout, your existing 6-inch overflows in heavy rain, or you have a commercial building. 7-inch handles roughly 40% more water than 6-inch and is the right call for any home where 6-inch would still leave overflow risk."
   - question: "Is 7-inch worth the extra cost?"
     answer: "If your roof needs it, yes - overflow damage to fascia, foundation, and landscaping costs far more than the 20-30% material premium. If 6-inch is sized correctly for your roof, 7-inch is overkill. JR One sizes the system based on actual roof area, pitch, and Tampa's 51-inches-of-rain climate during the on-site assessment."
   - question: "Can JR One fabricate 7-inch on-site?"
@@ -33,7 +33,7 @@ The decision for almost every Tampa Bay homeowner is between **6-inch (the JR On
 | 6-inch K-style | ~2.0 gallons per foot | 1,400 - 2,800 sq ft | JR One baseline for most Tampa homes |
 | 7-inch K-style | ~3.0 gallons per foot | 2,800+ sq ft | Large homes, commercial, steep pitches |
 
-A 7-inch gutter holds roughly **50% more water per linear foot** than a 6-inch. On a typical 200-foot system, that's the difference between handling a Tampa summer thunderstorm cleanly and watching water sheet over the front edge.
+A 7-inch gutter holds roughly **40% more water per linear foot** than a 6-inch. On a typical 200-foot system, that's the difference between handling a Tampa summer thunderstorm cleanly and watching water sheet over the front edge.
 
 ## When 6-Inch Is the Right Call
 

@@ -23,7 +23,7 @@ Asphalt shingle roofs in Tampa live a harder life than roofs anywhere else in th
 - **Hurricane wind uplift** stresses aged, brittle shingles to failure
 - **Insurance scrutiny** - many Florida carriers are increasingly scrutinizing, and in some cases declining or non-renewing, policies on aging asphalt roofs
 
-A roof that's lost its flexibility is a roof that's one bad storm away from failure, claims, and replacement. Peak 301 buys back years of service life - typically 5 to 10 additional years per treatment.
+A roof that's lost its flexibility is a roof that's one bad storm away from failure, claims, and replacement. Peak 301 buys back years of service life - 6 to 10 additional years per treatment.
 
 ---
 
@@ -73,7 +73,7 @@ Peak 301 is not a substitute for replacement when replacement is truly needed. I
 ## Frequently Asked Questions - Peak 301 Tampa FL
 
 **Q: How long does Peak 301 last?**
-A: One treatment typically adds 5-10 years of service life. Reapplication at that interval can extend the roof life further.
+A: One treatment adds 6 to 10 years of service life. Reapplication at that interval can extend the roof life further.
 
 **Q: Is Peak 301 safe for landscaping and pets?**
 A: Yes. Peak 301 is a plant-based bio-oil, not a petroleum-based chemical. Runoff is safe for plants, lawns, pets, and people. Treatment is fully cured within hours of application.

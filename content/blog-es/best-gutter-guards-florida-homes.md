@@ -26,7 +26,7 @@ faqs:
   - question: "¿Funcionan los protectores de canaletas en canaletas existentes o solo en instalaciones nuevas?"
     answer: "Los protectores de calidad se pueden adaptar a canaletas existentes que estén en buen estado. La inspección previa a la instalación debe confirmar: que la inclinación de la canaleta sea correcta, que los soportes estén firmes, que no haya óxido ni agujeros, que la fascia detrás de las canaletas esté sólida, y que el tamaño de la canaleta coincida con el protector que se va a instalar. La instalación de adaptación cuesta más o menos lo mismo que los protectores en canaletas nuevas. Las canaletas dañadas o mal dimensionadas se deben reemplazar primero."
   - question: "¿Puedo instalar yo mismo los protectores de canaletas?"
-    answer: "Los protectores de rejilla de las ferreterías para instalación por cuenta propia funcionan para cobertura ligera de árboles, pero normalmente duran de 2 a 5 años antes de deformarse o desprenderse. Los sistemas profesionales de micromalla requieren colocación precisa de soportes, verificación de la inclinación de la canaleta y tapas de extremo adecuadas para una vida útil de 15 a 20 años. El ahorro de hacerlo uno mismo, de $400 a $800, es real, pero el sol y la humedad de Florida castigan rápido los materiales de grado casero."
+    answer: "Los protectores de rejilla de las ferreterías para instalación por cuenta propia funcionan para cobertura ligera de árboles, pero normalmente duran de 2 a 5 años antes de deformarse o desprenderse. Los sistemas profesionales de micromalla requieren colocación precisa de soportes, verificación de la inclinación de la canaleta y tapas de extremo adecuadas para una vida útil de 15 a 20+ años. El ahorro de hacerlo uno mismo, de $400 a $800, es real, pero el sol y la humedad de Florida castigan rápido los materiales de grado casero."
   - question: "¿Cuál es la mejor marca de protectores de canaletas para Florida en 2026?"
     answer: "No existe una única marca que sea la mejor. El mejor sistema es el que se ajusta a su casa específica: tipo de cobertura de árboles, tamaño de canaleta, inclinación del techo y presupuesto. Para la mayoría de las casas de Tampa Bay, la micromalla de aluminio de grado profesional de cualquier instalador con buena reputación (no necesariamente una marca nacional) ofrece el mejor valor a largo plazo. El sobreprecio de marca de las franquicias nacionales no se traduce en mejor desempeño en campo."
   - question: "¿Funcionan los protectores de canaletas con las palmas?"
@@ -45,8 +45,8 @@ Después de más de 30 años instalando y dando servicio a sistemas de canaletas
 
 | Tipo de protector | Por pie instalado | Vida útil en FL | Mejor para |
 |------------|-------------------|----------------|----------|
-| Micromalla de aluminio | $7 a $15 | 15 a 25 años | Pino, roble, cobertura mixta de árboles |
-| Sólido de aluminio con canal de agua | $9 a $18 | 15 a 20 años | Hojas grandes, magnolia, palma |
+| Micromalla de aluminio | $7 a $15 | 15 a 20+ años | Pino, roble, cobertura mixta de árboles |
+| Sólido de aluminio con canal de agua | $9 a $18 | 15 a 20+ años | Hojas grandes, magnolia, palma |
 | Rejilla de acero con recubrimiento en polvo | $4 a $8 | 5 a 10 años | Cobertura ligera de árboles, presupuesto |
 | Malla EZ / malla de aluminio | $5 a $9 | 8 a 12 años | Presupuesto moderado, cobertura mixta |
 | Insertos de espuma | $2 a $4 | 1 a 3 años | No se recomiendan en Florida |

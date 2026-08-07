@@ -53,7 +53,7 @@ const T = {
     stats: [
       { value: "1,000+", label: "Guard installations completed" },
       { value: "80%", label: "Less cleaning with guards" },
-      { value: "20+", label: "Year guard lifespan" },
+      { value: "15-20+", label: "Year guard lifespan" },
       { value: "100%", label: "In-house installation" },
     ],
     guardEyebrow: "OUR GUARD OPTIONS",
@@ -136,7 +136,7 @@ const T = {
     stats: [
       { value: "1,000+", label: "Instalaciones completadas" },
       { value: "80%", label: "Menos limpieza con protectores" },
-      { value: "20+", label: "Años de vida útil" },
+      { value: "15-20+", label: "Años de vida útil" },
       { value: "100%", label: "Equipo propio" },
     ],
     guardEyebrow: "NUESTRAS OPCIONES",

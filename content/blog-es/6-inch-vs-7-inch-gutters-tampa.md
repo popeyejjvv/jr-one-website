@@ -8,7 +8,7 @@ faqs:
   - question: "¿Instala JR One canaletas de 5 pulgadas?"
     answer: "No. JR One instala únicamente canaletas de aluminio sin costura de 6 pulgadas y 7 pulgadas, además de cobre y galvalume en los mismos tamaños. No instalamos 5 pulgadas en Florida porque queda corto para el volumen de lluvia que tenemos en la mayoría de los techos. Las de 5 pulgadas de grado constructor son las que reemplazamos, no las que instalamos."
   - question: "¿Cuándo debo elegir 7 pulgadas en lugar de 6 pulgadas?"
-    answer: "Elija 7 pulgadas cuando el área de su techo supera los 2,800 pies cuadrados, cuando la pendiente del techo es pronunciada, cuando tiene un diseño de varias alas, cuando sus canaletas actuales de 6 pulgadas se desbordan en lluvia fuerte, o cuando tiene un edificio comercial. Las de 7 pulgadas manejan cerca de un 50% más de agua que las de 6 pulgadas y son la decisión correcta para cualquier casa donde 6 pulgadas aún dejaría riesgo de desbordamiento."
+    answer: "Elija 7 pulgadas cuando el área de su techo supera los 2,800 pies cuadrados, cuando la pendiente del techo es pronunciada, cuando tiene un diseño de varias alas, cuando sus canaletas actuales de 6 pulgadas se desbordan en lluvia fuerte, o cuando tiene un edificio comercial. Las de 7 pulgadas manejan cerca de un 40% más de agua que las de 6 pulgadas y son la decisión correcta para cualquier casa donde 6 pulgadas aún dejaría riesgo de desbordamiento."
   - question: "¿Vale la pena el costo adicional de las 7 pulgadas?"
     answer: "Si su techo lo necesita, sí. El daño por desbordamiento a la fascia, los cimientos y el jardín cuesta mucho más que el sobreprecio del 20% al 30% en material. Si las de 6 pulgadas están dimensionadas correctamente para su techo, las de 7 pulgadas son excesivas. JR One dimensiona el sistema según el área real del techo, la pendiente y el clima de Tampa con 51 pulgadas de lluvia al año durante la evaluación en sitio."
   - question: "¿Puede JR One fabricar canaletas de 7 pulgadas en sitio?"
@@ -33,7 +33,7 @@ La decisión para casi todo dueño de casa en Tampa Bay es entre **6 pulgadas (l
 | Estilo K de 6 pulgadas | ~2.0 galones por pie | 1,400 - 2,800 pies cuadrados | Base de JR One para la mayoría de las casas en Tampa |
 | Estilo K de 7 pulgadas | ~3.0 galones por pie | 2,800+ pies cuadrados | Casas grandes, comercial, pendientes pronunciadas |
 
-Una canaleta de 7 pulgadas retiene cerca de un **50% más de agua por pie lineal** que una de 6 pulgadas. En un sistema típico de 200 pies, esa es la diferencia entre manejar limpiamente una tormenta de verano en Tampa y ver el agua derramarse por el borde delantero.
+Una canaleta de 7 pulgadas retiene cerca de un **40% más de agua por pie lineal** que una de 6 pulgadas. En un sistema típico de 200 pies, esa es la diferencia entre manejar limpiamente una tormenta de verano en Tampa y ver el agua derramarse por el borde delantero.
 
 ## Cuándo 6 pulgadas es la decisión correcta
 

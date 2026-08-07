@@ -26,7 +26,7 @@ faqs:
   - question: "Do gutter guards work on existing gutters or only new installations?"
     answer: "Quality guards can be retrofitted onto existing gutters in good condition. Pre-installation inspection should confirm: gutter pitch is correct, hangers are tight, no rust or holes, fascia behind gutters is sound, and gutter size matches the guard you're installing. Retrofit installation runs roughly the same cost as guards on new gutters. Damaged or undersized gutters should be replaced first."
   - question: "Can I install gutter guards myself?"
-    answer: "DIY screen guards from hardware stores work for light tree coverage but typically last 2 to 5 years before warping or detaching. Professional micro mesh systems require precise hanger placement, gutter pitch verification, and proper end caps for a 15 to 20 year service life. The DIY savings of $400 to $800 are real, but Florida UV and humidity punish DIY-grade materials fast."
+    answer: "DIY screen guards from hardware stores work for light tree coverage but typically last 2 to 5 years before warping or detaching. Professional micro mesh systems require precise hanger placement, gutter pitch verification, and proper end caps for a 15 to 20+ year service life. The DIY savings of $400 to $800 are real, but Florida UV and humidity punish DIY-grade materials fast."
   - question: "What is the best gutter guard brand for Florida in 2026?"
     answer: "There is no single 'best' brand. The best system is matched to your specific home: tree coverage type, gutter size, roof pitch, and budget. For most Tampa Bay homes, professional-grade aluminum micro mesh from any reputable installer (not necessarily a national brand) delivers the best long-term value. Brand premiums on national franchises don't translate to better field performance."
   - question: "Do gutter guards work with palm trees?"
@@ -45,8 +45,8 @@ After over 30 years of installing and servicing gutter systems across Tampa Bay,
 
 | Guard type | Per-foot installed | Lifespan in FL | Best for |
 |------------|-------------------|----------------|----------|
-| Aluminum micro mesh | $7 to $15 | 15 to 25 years | Pine, oak, mixed tree coverage |
-| Aluminum solid water-channel | $9 to $18 | 15 to 20 years | Large leaves, magnolia, palm |
+| Aluminum micro mesh | $7 to $15 | 15 to 20+ years | Pine, oak, mixed tree coverage |
+| Aluminum solid water-channel | $9 to $18 | 15 to 20+ years | Large leaves, magnolia, palm |
 | Powder-coated steel screen | $4 to $8 | 5 to 10 years | Light tree coverage, budget |
 | EZ mesh / aluminum mesh | $5 to $9 | 8 to 12 years | Moderate budget, mixed coverage |
 | Foam inserts | $2 to $4 | 1 to 3 years | Not recommended in Florida |

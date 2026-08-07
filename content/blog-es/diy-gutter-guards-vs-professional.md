@@ -88,7 +88,7 @@ Para cualquier cosa más allá de eso (pinos, casas de dos pisos, muchos desecho
 
 ## En resumen
 
-Los protectores de canaletas que usted instala son baratos al principio, pero no resuelven el problema en el ambiente de desechos de Florida. Dejan pasar las agujas de pino y la arenilla de las tejas, se degradan con los rayos UV en pocos años y necesitan reemplazo repetido. Los protectores profesionales de malla fina cuestan más una sola vez y rinden durante 15 a 20 años.
+Los protectores de canaletas que usted instala son baratos al principio, pero no resuelven el problema en el ambiente de desechos de Florida. Dejan pasar las agujas de pino y la arenilla de las tejas, se degradan con los rayos UV en pocos años y necesitan reemplazo repetido. Los protectores profesionales de malla fina cuestan más una sola vez y rinden durante 15 a 20+ años.
 
 La pregunta no es si puedo ahorrar dinero haciéndolo yo mismo, sino quiero resolver este problema una vez o seguir lidiando con él cada pocos años?
 
