@@ -23,10 +23,11 @@ const T = {
     heroTitle1: "Real Projects.",
     heroTitle2: "Real Homes.",
     heroP: "Every photo is from an actual JR One job. No stock images, no staged shoots. This is what our craftsmanship looks like across Tampa Bay.",
-    statProjects: "Projects completed",
+    statProjects: "Completed projects",
     statRating: "Google rating",
     statCities: "Cities served",
     statExperience: "Years experience",
+    statUnitNote: "A project is one job at one address. A single project can carry gutters, soffit, and fascia as three separate installations, so our per-service installation counts run higher than the project count.",
     filterAll: "All",
     loading: "Loading projects from CompanyCam...",
     error: "Could not load project photos. Please try again later.",
@@ -48,6 +49,7 @@ const T = {
     statRating: "Calificación en Google",
     statCities: "Ciudades atendidas",
     statExperience: "Años de experiencia",
+    statUnitNote: "Un proyecto es un trabajo en una dirección. Un solo proyecto puede llevar canaletas, sofito y fascia como tres instalaciones distintas, por eso nuestros conteos de instalaciones por servicio son más altos que el conteo de proyectos.",
     filterAll: "Todos",
     loading: "Cargando proyectos desde CompanyCam...",
     error: "No se pudieron cargar las fotos del proyecto. Intente de nuevo más tarde.",
@@ -231,6 +233,19 @@ export default function ProjectsPage() {
                 </div>
               ))}
             </div>
+            <p
+              style={{
+                fontFamily: "var(--jr-font-body)",
+                fontSize: "var(--jr-text-xs)",
+                color: "var(--jr-muted-on-dark)",
+                textAlign: "center",
+                maxWidth: "58ch",
+                margin: "var(--jr-space-4) auto 0",
+                lineHeight: 1.6,
+              }}
+            >
+              {t.statUnitNote}
+            </p>
           </Container>
         </section>
 

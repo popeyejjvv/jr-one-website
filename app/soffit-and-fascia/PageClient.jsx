@@ -40,7 +40,7 @@ const T = {
     heroCta: "Get Your Free Inspection",
     heroCall: "Call (844) 444-3114",
     stats: [
-      { value: "2,000+", label: "Soffit & fascia projects" },
+      { value: "2,000+", label: "Soffit & fascia installations" },
       { value: "30+", label: "Years in the trade" },
       { value: "3", label: "In-house crews" },
       { value: "0", label: "Subcontractors used, ever" },
@@ -118,7 +118,7 @@ const T = {
     heroCta: "Obtenga Su Inspección Gratis",
     heroCall: "Llame al (844) 444-3114",
     stats: [
-      { value: "2,000+", label: "Proyectos de sofito y fascia" },
+      { value: "2,000+", label: "Instalaciones de sofito y fascia" },
       { value: "30+", label: "Años en el oficio" },
       { value: "3", label: "Equipos propios" },
       { value: "0", label: "Subcontratistas, nunca" },

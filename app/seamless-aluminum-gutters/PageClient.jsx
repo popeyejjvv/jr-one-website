@@ -53,7 +53,7 @@ const T = {
       { emoji: "🎨", title: "40+ color options", desc: "Match your gutters to your trim, fascia, roof, or siding. We carry the full aluminum coil color spectrum so your gutters look intentional, not afterthought." },
     ],
     stats: [
-      { value: "3,000+", label: "Gutter installations completed" },
+      { value: "3,000+", label: "Lifetime gutter installations" },
       { value: "20-30", label: "Year lifespan on our systems" },
       { value: "40+", label: "Color options available" },
       { value: "24\"", label: "Hidden hanger spacing" },
@@ -141,7 +141,7 @@ const T = {
       { emoji: "🎨", title: "Más de 40 opciones de color", desc: "Combine sus canaletas con su moldura, fascia, techo o revestimiento. Tenemos el espectro completo de colores de aluminio para que sus canaletas se vean intencionales, no improvisadas." },
     ],
     stats: [
-      { value: "3,000+", label: "Instalaciones de canaletas completadas" },
+      { value: "3,000+", label: "Instalaciones de canaletas acumuladas" },
       { value: "20-30", label: "Años de vida útil en nuestros sistemas" },
       { value: "40+", label: "Opciones de color disponibles" },
       { value: "24\"", label: "Espaciado de soportes ocultos" },

@@ -134,7 +134,7 @@ const T = {
       { title: "Instalado por nuestro equipo, no una franquicia", desc: "Las empresas nacionales de protectores envían vendedores a su puerta y luego subcontratan la instalación. Nosotros hacemos ambos. La consulta y la instalación. Con nuestro propio equipo capacitado." },
     ],
     stats: [
-      { value: "1,000+", label: "Instalaciones completadas" },
+      { value: "1,000+", label: "Instalaciones de protectores completadas" },
       { value: "80%", label: "Menos limpieza con protectores" },
       { value: "15-20+", label: "Años de vida útil" },
       { value: "100%", label: "Equipo propio" },
