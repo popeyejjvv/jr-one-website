@@ -63,7 +63,7 @@ Aluminum fascia wrap is the permanent solution. Custom-bent aluminum covers the 
 - **Seals against pests** - no soft wood for carpenter ants, termites, or wasps to exploit
 - **Supports gutter mounting** - provides a solid, stable surface for gutter hangers
 - **Color-matches your gutters** - everything at the roof edge looks like one finished system
-- **Lasts 30+ years** with zero maintenance
+- **Lasts 30+ years** with no repainting cycle - it still gets washed and inspected like the rest of the roof edge
 
 The process: remove old gutter, strip damaged wood if needed (repair structural subfascia if the rot has gone that deep), custom-bend aluminum fascia to fit, install, and re-mount the gutter with new hidden hangers.
 
@@ -87,6 +87,6 @@ If your fascia is still sound:
 
 ## The Bottom Line
 
-Fascia rot is a when-not-if problem for wood fascia in Florida. The humidity, rain, and UV exposure guarantee that unprotected wood will eventually fail. Aluminum fascia wrap breaks the cycle permanently - one installation, no maintenance, 30+ year lifespan.
+Fascia rot is a when-not-if problem for wood fascia in Florida. The humidity, rain, and UV exposure guarantee that unprotected wood will eventually fail. Aluminum fascia wrap breaks that cycle - one installation, no repainting, 30+ year lifespan, and the only upkeep is the periodic cleaning and inspection the roof edge already needs.
 
 **[Get a free fascia inspection](/estimator)** or call **(844) 444-3114**. We check fascia condition on every gutter inspection - no extra charge.

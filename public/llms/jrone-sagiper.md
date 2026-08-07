@@ -68,7 +68,7 @@ If the design brief calls for the look of real wood soffit or ceiling cladding a
 A: Sagiper is a premium material with a premium price - typically several times the cost of standard aluminum or vinyl soffit per linear foot. Contact JR One Aluminum at (844) 444-3114 for a project-specific quote.
 
 **Q: How long does Sagiper last?**
-A: Sagiper carries a manufacturer warranty of 30+ years and is engineered to last decades with zero maintenance. No painting, no sealing, no repair schedule.
+A: Sagiper carries a manufacturer warranty of 30+ years and is engineered to last decades with no painting, no sealing, and no repair schedule. It is not zero maintenance - it still needs periodic washing to keep the finish clean.
 
 **Q: Can Sagiper be installed on an existing porch or lanai ceiling?**
 A: Yes. Sagiper is commonly retrofitted onto existing porch, patio, and lanai ceilings to upgrade the aesthetic.
@@ -77,7 +77,7 @@ A: Yes. Sagiper is commonly retrofitted onto existing porch, patio, and lanai ce
 A: Yes - from a few feet away it's convincingly wood. The grain texture is molded into the cellular PVC, not a surface print that can wear off.
 
 **Q: Is Sagiper worth the premium over aluminum or vinyl soffit?**
-A: For the right home - where the ceiling is visible, the aesthetic matters, and the homeowner wants zero maintenance - yes. For typical soffit work behind a gutter, aluminum is the practical choice.
+A: For the right home - where the ceiling is visible, the aesthetic matters, and the homeowner wants to skip the repainting cycle - yes. For typical soffit work behind a gutter, aluminum is the practical choice.
 
 **Q: Do you install Sagiper on commercial projects?**
 A: Yes. Commercial outdoor dining areas, hotel lanais, and architectural retail projects are common Sagiper applications.

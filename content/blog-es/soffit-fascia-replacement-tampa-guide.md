@@ -67,7 +67,7 @@ Repintar el sofito de madera le da 3 a 5 años antes de tener que hacerlo otra v
 - Sella bien contra la entrada de plagas
 - Los paneles de sofito ventilados dan el flujo de aire adecuado al ático (reduce los costos del aire acondicionado)
 - Combina con el color de su sistema de canaletas para un acabado completo
-- Dura más de 30 años sin mantenimiento
+- Dura más de 30 años sin ciclo de repintado: solo pide lavado e inspección periódica
 
 El costo inicial es mayor que el reemplazo en madera, pero usted elimina los costos recurrentes de pintura, los costos de reparación de podredumbre y los costos de eliminación de plagas. A lo largo de 15 a 20 años, el aluminio sale mucho más barato que mantener la madera.
 

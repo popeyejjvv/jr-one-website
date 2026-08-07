@@ -62,9 +62,9 @@ En la casa adecuada (casas históricas, arquitectura de estilo mediterráneo, co
 
 Las canaletas de cobre semicirculares con cabezales decorativos y cadenas de lluvia son un elemento de diseño que agrega verdadero atractivo visual y aumenta el valor percibido de la casa.
 
-### Cero mantenimiento
+### Sin pintura ni sellado
 
-El cobre no necesita pintura, sellado ni tratamiento protector. La pátina ES la protección. El único mantenimiento es la limpieza periódica (igual que cualquier canaleta) para evitar que los escombros tapen el sistema.
+El cobre no necesita pintura, sellado ni tratamiento protector. La pátina ES la protección. Aun así, el cobre no es de cero mantenimiento: necesita la misma limpieza periódica que cualquier canaleta para evitar que los escombros tapen el sistema, y la pátina significa que el color va a cambiar, quiera usted o no.
 
 ## Por qué la gente no elige el cobre
 

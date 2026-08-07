@@ -62,9 +62,9 @@ On the right house - historic homes, Mediterranean-style architecture, high-end 
 
 Half-round copper gutters with decorative leader heads and rain chains are a design element that adds real curb appeal and perceived home value.
 
-### Zero Maintenance
+### No Painting or Sealing
 
-Copper doesn't need painting, sealing, or protective treatment. The patina IS the protection. The only maintenance is periodic cleaning (same as any gutter) to keep debris from clogging the system.
+Copper doesn't need painting, sealing, or protective treatment. The patina IS the protection. Copper is not zero maintenance, though: it still needs the same periodic cleaning as any gutter to keep debris from clogging the system, and the patina means the color will change on you whether you want it to or not.
 
 ## Why People Don't Choose Copper
 

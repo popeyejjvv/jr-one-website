@@ -67,7 +67,7 @@ Repainting wood soffit buys you 3-5 years before you're doing it again. Replacin
 - Seals tight against pest entry
 - Ventilated soffit panels provide proper attic airflow (reduces AC costs)
 - Color-matches to your gutter system for a finished look
-- Lasts 30+ years with zero maintenance
+- Lasts 30+ years with no repainting cycle - periodic washing and inspection is all it asks for
 
 The upfront cost is higher than wood replacement, but you eliminate recurring paint costs, rot repair costs, and pest remediation costs. Over 15-20 years, aluminum is significantly cheaper than maintaining wood.
 
