@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "build:documents": "python3 scripts/generate_documents.py",
-    "check:documents": "python3 scripts/generate_documents.py --check"
+    "check:documents": "python3 scripts/generate_documents.py --check",
+    "postbuild": "node scripts/check-sitemap.mjs --build",
+    "check:sitemap": "node scripts/check-sitemap.mjs --build",
+    "check:sitemap:live": "node scripts/check-sitemap.mjs --origin https://www.jronegutters.com"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
