@@ -6,7 +6,7 @@ category: "Gutters"
 keyword: "seamless gutters tampa"
 faqs:
   - question: "How often should gutters be replaced in Florida?"
-    answer: "Quality seamless aluminum gutters last 20-30 years in Florida with proper maintenance. Sectional gutters with seams typically last 10-15 years. Vinyl gutters rarely make it past 8-10 years in Florida's UV and heat. If your gutters are 15+ years old and showing problems, it's time for an inspection."
+    answer: "Quality seamless aluminum gutters last 20-30 years in Florida with proper maintenance. Sectional gutters with seams typically last 10-15 years. Vinyl gutters rarely make it past 8-12 years in Florida's UV and heat. If your gutters are 15+ years old and showing problems, it's time for an inspection."
   - question: "What is the best type of gutter for Florida?"
     answer: "Seamless aluminum gutters in 6-inch K-style are the standard recommendation for Florida homes. They handle heavy rain volume, resist corrosion, don't warp in heat, and last 20-30 years. Copper is the premium option for historic or high-end homes. Vinyl is not recommended for Florida."
 ---

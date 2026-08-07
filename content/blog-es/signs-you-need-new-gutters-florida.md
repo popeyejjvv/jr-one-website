@@ -6,7 +6,7 @@ category: "Canaletas"
 keyword: "canaletas sin costura tampa"
 faqs:
   - question: "¿Cada cuánto se deben reemplazar las canaletas en Florida?"
-    answer: "Las canaletas de aluminio sin costura de buena calidad duran de 20 a 30 años en Florida con un mantenimiento adecuado. Las canaletas en secciones con uniones suelen durar de 10 a 15 años. Las canaletas de vinilo rara vez pasan de los 8 a 10 años con el sol y el calor de Florida. Si sus canaletas tienen 15 años o más y presentan problemas, ya es hora de una inspección."
+    answer: "Las canaletas de aluminio sin costura de buena calidad duran de 20 a 30 años en Florida con un mantenimiento adecuado. Las canaletas en secciones con uniones suelen durar de 10 a 15 años. Las canaletas de vinilo rara vez pasan de los 8 a 12 años con el sol y el calor de Florida. Si sus canaletas tienen 15 años o más y presentan problemas, ya es hora de una inspección."
   - question: "¿Cuál es el mejor tipo de canaleta para Florida?"
     answer: "Las canaletas de aluminio sin costura en estilo K de 6 pulgadas son la recomendación estándar para los hogares de Florida. Manejan el alto volumen de lluvia, resisten la corrosión, no se deforman con el calor y duran de 20 a 30 años. El cobre es la opción premium para casas históricas o de alta gama. El vinilo no se recomienda para Florida."
 ---
