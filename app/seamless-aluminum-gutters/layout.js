@@ -34,7 +34,7 @@ const serviceSchema = {
     { "@type": "City", name: "Apollo Beach" },
   ],
   description:
-    "Custom-fabricated on-site seamless aluminum gutters in 6\" and 7\" K-style and half-round profiles. Tampa Bay residential and commercial installation by JR One Aluminum specialist crews. Over 30 years in the trade. We install 6\" and 7\" only (not 5\") because Florida rain volume needs the larger capacity.",
+    "Custom-fabricated on-site seamless aluminum gutters in 6\" and 7\" K-style and half-round profiles. Copper and galvalume available. Tampa Bay residential and commercial installation by JR One Aluminum specialist crews. Over 30 years in the trade. We install 6\" and 7\" only (not 5\") because Florida rain volume needs the larger capacity.",
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",

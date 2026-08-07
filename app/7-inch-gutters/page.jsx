@@ -152,7 +152,7 @@ const T = {
       { emoji: "🏗️", title: "Áreas Grandes (3,500+ sqft)", desc: "Casas sobre 3,500 sqft de techo descargan suficiente agua en una tormenta de Florida que 6\" está en o pasado su límite. 7\" da margen real." },
       { emoji: "💧", title: "Casas con Desbordamiento", desc: "Si sus canaletas actuales de 6\" se desbordan en tormentas aún limpias, no necesita más limpieza. Necesita más capacidad. 7\" resuelve lo que ninguna cantidad de mantenimiento puede." },
       { emoji: "🎨", title: "Casas Personalizadas", desc: "Construcciones personalizadas con líneas de techo complejas, techos multi-plano o geometría inusual concentran agua en tramos específicos. 7\" maneja esas zonas sin desbordamiento." },
-      { emoji: "🔧", title: "Upgrades de Reemplazo", desc: "Reemplazar canaletas viejas de 5\" o 6\" es el momento perfecto para subir a 7\". El costo de instalación ya está en juego, el sobrecosto marginal es modesto." },
+      { emoji: "🔧", title: "Upgrades de Reemplazo", desc: "Reemplazar canaletas viejas de grado constructor o de 6\" es el momento perfecto para subir a 7\". El costo de instalación ya está en juego, el sobrecosto marginal es modesto." },
     ],
     callToWalkTitle: "La mayoría de casas de Tampa están bien con 6\". Cuando no, es obvio.",
     callToWalkDesc: "Si su casa es menos de 3,000 sqft de techo con pendiente moderada y sin desbordamiento actual, 6\" es la decisión correcta. Si está arriba de eso, o ya ve desbordamiento, 7\" se paga sola en daño evitado. Le diremos cuál es usted durante el recorrido gratis.",

@@ -41,7 +41,7 @@ Los protectores no hacen que las canaletas sean invisibles y libres de mantenimi
 
 - **Eliminar todo el mantenimiento.** Los desechos todavía caen encima del protector y necesitan limpieza ocasional (normalmente una vez al año con malla fina).
 - **Arreglar problemas existentes de la canaleta.** Si sus canaletas son muy pequeñas, tienen mala inclinación o están dañadas, los protectores no arreglan esos problemas. Los protectores van sobre canaletas que ya funcionan bien.
-- **Funcionar igual en todas las condiciones.** Diferentes tipos de protector manejan diferentes desechos. Las agujas de pino vencen a las mallas estándar. Solo la malla fina bloquea todo.
+- **Funcionar igual en todas las condiciones.** Diferentes tipos de protector manejan diferentes desechos. Las agujas de pino vencen a las mallas estándar. La malla fina maneja la variedad más amplia de desechos, pero ningún protector bloquea todo.
 
 ## Qué tipos de protectores funcionan (y cuáles no)
 
