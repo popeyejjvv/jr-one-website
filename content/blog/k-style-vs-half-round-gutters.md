@@ -29,7 +29,7 @@ K-style is the standard residential gutter profile in the United States. The nam
 - **Flush mounting** - the flat back sits tight against the fascia board, creating a clean seal
 - **Lower cost** - K-style aluminum coil is the standard, most-available material. Forming machines are ubiquitous. Competition keeps prices low.
 - **Seamless fabrication** - portable forming machines create K-style on-site from continuous coil
-- **25+ color options** - standard with baked enamel finish
+- **Wide color selection** - standard with baked enamel finish
 - **Available in 6" and 7"** at JR One (industry-wide 5" exists but JR One does not install 5" in Florida)
 
 ### Best For

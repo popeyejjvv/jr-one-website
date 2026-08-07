@@ -8,7 +8,7 @@ faqs:
   - question: "¿Qué son las canaletas de galvalume?"
     answer: "Las canaletas de galvalume están hechas de acero recubierto con una aleación de zinc y aluminio (55% aluminio, 43.4% zinc, 1.6% silicio). El recubrimiento previene el óxido. Son más fuertes que el aluminio puro, pero más pesadas, más difíciles de formar sin costura y más costosas. El galvalume es común en techos comerciales y agrícolas, pero menos común en canaletas residenciales."
   - question: "¿Son mejores las canaletas de galvalume que las de aluminio?"
-    answer: "Depende de la aplicación. El galvalume es más fuerte y más resistente a los rayones, lo que lo hace mejor para usos comerciales o industriales donde se espera maltrato físico. Para casas residenciales en Florida, el aluminio es la mejor opción: más ligero, más fácil de formar sin costura (sin uniones propensas a fugas), disponible en más de 25 colores y más que suficientemente fuerte para el volumen de agua residencial."
+    answer: "Depende de la aplicación. El galvalume es más fuerte y más resistente a los rayones, lo que lo hace mejor para usos comerciales o industriales donde se espera maltrato físico. Para casas residenciales en Florida, el aluminio es la mejor opción: más ligero, más fácil de formar sin costura (sin uniones propensas a fugas), disponible en una amplia selección de colores y más que suficientemente fuerte para el volumen de agua residencial."
   - question: "¿Se oxidan las canaletas de galvalume?"
     answer: "El galvalume resiste el óxido mucho mejor que el acero desnudo, pero no es a prueba de óxido. Si el recubrimiento protector se raya, se corta o se daña, el acero expuesto debajo se oxidará. En los bordes cortados (cada unión, cada esquina a inglete, cada tapa final) el acero queda expuesto. En el ambiente húmedo y de aire salado de Florida, la corrosión en los bordes cortados es una preocupación real con el tiempo."
 ---
@@ -35,7 +35,7 @@ El resultado es un material que es más fuerte que el aluminio puro y más resis
 | Resistencia a la corrosión | Buena (recubierto) | Excelente (natural) | Excelente (pátina) |
 | Vulnerabilidad en bordes cortados | SÍ - acero expuesto en los cortes | No - aluminio en todo el material | No - cobre en todo el material |
 | Fabricación sin costura | Difícil (requiere equipo diferente) | Estándar (máquinas formadoras portátiles) | Requiere soldadura |
-| Opciones de color | Limitadas (pintura o metálico desnudo) | Más de 25 colores en esmalte horneado | Cobre natural/pátina |
+| Opciones de color | Limitadas (pintura o metálico desnudo) | Amplia selección en esmalte horneado | Cobre natural/pátina |
 | Costo por pie lineal instalado | $10 - $18 | $8 - $15 | $25 - $40 |
 | Vida útil residencial (FL) | 20 - 30 años | 20 - 30 años | 50 años o más |
 | Mejor para | Comercial, industrial, agrícola | Residencial, la mayoría de las aplicaciones | Residencial premium, histórico |
@@ -58,7 +58,7 @@ En el ambiente húmedo y de aire salado de Tampa (especialmente cerca de la cost
 
 ### Opciones de color
 
-Las canaletas de aluminio vienen en más de 25 colores en esmalte horneado que combinan con prácticamente cualquier exterior de casa. El color se aplica en fábrica y dura toda la vida de la canaleta.
+Las canaletas de aluminio vienen en una amplia selección de colores en esmalte horneado que combinan con prácticamente cualquier exterior de casa. El color se aplica en fábrica y dura toda la vida de la canaleta.
 
 El galvalume normalmente está disponible en acabado metálico desnudo o en una gama limitada de opciones pintadas. Para casas residenciales donde el atractivo visual importa, la variedad de colores del aluminio es una ventaja significativa.
 
@@ -79,7 +79,7 @@ El galvalume es la opción correcta en aplicaciones específicas:
 
 ## En resumen
 
-El galvalume es un material legítimo para aplicaciones específicas, pero no es la mejor opción para canaletas residenciales en Florida. El aluminio te da fabricación sin costura (sin puntos de fuga), sin vulnerabilidad a la corrosión en los bordes cortados, más de 25 opciones de color y una vida útil equivalente a un costo comparable o menor.
+El galvalume es un material legítimo para aplicaciones específicas, pero no es la mejor opción para canaletas residenciales en Florida. El aluminio te da fabricación sin costura (sin puntos de fuga), sin vulnerabilidad a la corrosión en los bordes cortados, una amplia selección de colores y una vida útil equivalente a un costo comparable o menor.
 
 Si un contratista te recomienda galvalume para tu casa, pregunta por qué. A menos que tengas una razón estructural específica, el aluminio es la opción residencial más inteligente en nuestro clima.
 

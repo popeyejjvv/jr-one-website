@@ -41,7 +41,7 @@ const T = {
     stats: [
       { value: "500+", label: "Siding projects completed" },
       { value: "20+", label: "Year material warranties" },
-      { value: "30+", label: "Color options available" },
+      { value: "Custom", label: "Color and profile matched" },
       { value: "100%", label: "In-house crews" },
     ],
     problemEyebrow: "The Problem",
@@ -120,7 +120,7 @@ const T = {
     stats: [
       { value: "500+", label: "Proyectos de revestimiento" },
       { value: "20+", label: "Años de garantía de materiales" },
-      { value: "30+", label: "Opciones de color" },
+      { value: "A medida", label: "Color y perfil combinados" },
       { value: "100%", label: "Equipos propios" },
     ],
     problemEyebrow: "El Problema",

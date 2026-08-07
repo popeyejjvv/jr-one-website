@@ -29,7 +29,7 @@ La tipo K es el perfil de canaleta residencial estándar en los Estados Unidos. 
 - **Montaje al ras**: la parte trasera plana queda ajustada contra la tabla de fascia, creando un sello limpio
 - **Menor costo**: la bobina de aluminio tipo K es el material estándar y más disponible. Las máquinas formadoras están en todas partes. La competencia mantiene los precios bajos.
 - **Fabricación sin costura**: las máquinas formadoras portátiles crean la tipo K en sitio a partir de una bobina continua
-- **Más de 25 opciones de color**: estándar con acabado de esmalte horneado
+- **Amplia selección de colores**: estándar con acabado de esmalte horneado
 - **Disponible en 6 pulgadas y 7 pulgadas** en JR One (en la industria existe la de 5 pulgadas, pero JR One no instala la de 5 pulgadas en Florida)
 
 ### Ideal Para

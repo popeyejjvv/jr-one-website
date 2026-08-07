@@ -8,7 +8,7 @@ faqs:
   - question: "What are galvalume gutters?"
     answer: "Galvalume gutters are made from steel coated with a zinc-aluminum alloy (55% aluminum, 43.4% zinc, 1.6% silicon). The coating prevents rust. They're stronger than pure aluminum but heavier, harder to form seamlessly, and more expensive. Galvalume is common in commercial and agricultural roofing but less common in residential gutters."
   - question: "Are galvalume gutters better than aluminum?"
-    answer: "It depends on the application. Galvalume is stronger and more scratch-resistant, making it better for commercial or industrial applications where physical abuse is expected. For residential homes in Florida, aluminum is the better choice - lighter, easier to form seamlessly (no leak-prone joints), available in 25+ colors, and more than strong enough for residential water volume."
+    answer: "It depends on the application. Galvalume is stronger and more scratch-resistant, making it better for commercial or industrial applications where physical abuse is expected. For residential homes in Florida, aluminum is the better choice - lighter, easier to form seamlessly (no leak-prone joints), available in a wide selection of colors, and more than strong enough for residential water volume."
   - question: "Do galvalume gutters rust?"
     answer: "Galvalume resists rust far better than bare steel but is not rust-proof. If the protective coating is scratched, cut, or damaged, the exposed steel underneath will rust. At cut edges (every joint, every miter, every end cap), the steel is exposed. In Florida's humid, salt-air environment, cut-edge corrosion is a real concern over time."
 ---
@@ -35,7 +35,7 @@ The result is a material that's stronger than pure aluminum and more corrosion-r
 | Corrosion resistance | Good (coated) | Excellent (natural) | Excellent (patina) |
 | Cut-edge vulnerability | YES - steel exposed at cuts | No - aluminum throughout | No - copper throughout |
 | Seamless fabrication | Difficult (needs different equipment) | Standard (portable forming machines) | Requires soldering |
-| Color options | Limited (paint or bare metallic) | 25+ baked enamel colors | Natural copper/patina |
+| Color options | Limited (paint or bare metallic) | Wide baked enamel selection | Natural copper/patina |
 | Cost per LF installed | $10 - $18 | $8 - $15 | $25 - $40 |
 | Residential lifespan (FL) | 20 - 30 years | 20 - 30 years | 50 years or more |
 | Best for | Commercial, industrial, agricultural | Residential, most applications | Premium residential, historic |
@@ -58,7 +58,7 @@ In Tampa's humid, salt-air environment (especially near the coast), exposed stee
 
 ### Color Options
 
-Aluminum gutters come in 25+ baked enamel colors matched to virtually any home exterior. The color is factory-applied and lasts the life of the gutter.
+Aluminum gutters come in a wide selection of baked enamel colors matched to virtually any home exterior. The color is factory-applied and lasts the life of the gutter.
 
 Galvalume is typically available in bare metallic finish or a limited range of painted options. For residential homes where curb appeal matters, aluminum's color range is a significant advantage.
 
@@ -79,7 +79,7 @@ For residential homes in Tampa Bay? Aluminum handles everything the climate thro
 
 ## The Bottom Line
 
-Galvalume is a legitimate material for specific applications, but it's not the best choice for residential gutters in Florida. Aluminum gives you seamless fabrication (no leak points), no cut-edge corrosion vulnerability, 25+ color options, and equivalent lifespan at comparable or lower cost.
+Galvalume is a legitimate material for specific applications, but it's not the best choice for residential gutters in Florida. Aluminum gives you seamless fabrication (no leak points), no cut-edge corrosion vulnerability, a wide selection of colors, and equivalent lifespan at comparable or lower cost.
 
 If a contractor recommends galvalume for your home, ask why. Unless you have a specific structural reason, aluminum is the smarter residential choice in our climate.
 

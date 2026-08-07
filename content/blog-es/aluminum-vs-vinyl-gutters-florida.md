@@ -76,7 +76,7 @@ Las canaletas de aluminio son el estándar en Florida por una buena razón:
 - **No se deforman con el calor** - soportan las temperaturas de los techos de Florida sin deformarse
 - **Estables ante los rayos UV** - el acabado en esmalte horneado resiste la decoloración y el efecto calcáreo por décadas
 - **Disponibles sin costura** - sin uniones, sin puntos de filtración, sin huecos por expansión térmica
-- **Más de 25 opciones de color** - combinadas con la fascia, los marcos y el cuerpo de su casa
+- **Amplia selección de colores** - combinados con la fascia, los marcos y el cuerpo de su casa
 - **Reciclables** - el aluminio es uno de los materiales más reciclables del planeta
 - **Reparables** - las abolladuras y los daños se pueden arreglar sin reemplazar todo el tramo
 
@@ -84,4 +84,4 @@ Las canaletas de aluminio son el estándar en Florida por una buena razón:
 
 En Florida, las canaletas de aluminio duran de 2 a 3 veces más que las de vinilo, soportan nuestro clima sin deformarse ni agrietarse y cuestan menos a lo largo de la vida útil del sistema. El ahorro inicial del vinilo se gasta en reemplazos y reparaciones en menos de una década.
 
-**[Obtenga un estimado gratis para canaletas de aluminio](/estimator)** o llame al **(844) 444-3114**. Instalamos aluminio sin costura en más de 25 colores en toda el área de Tampa Bay.
+**[Obtenga un estimado gratis para canaletas de aluminio](/estimator)** o llame al **(844) 444-3114**. Instalamos aluminio sin costura en una amplia selección de colores en toda el área de Tampa Bay.

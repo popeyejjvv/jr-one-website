@@ -76,7 +76,7 @@ Aluminum gutters are the standard for Florida for good reason:
 - **No warping in heat** - handles Florida roofline temperatures without deformation
 - **UV stable** - baked enamel finish resists fading and chalking for decades
 - **Available seamless** - no joints, no leak points, no thermal expansion gaps
-- **25+ color options** - matched to your home's fascia, trim, and body
+- **Wide color selection** - matched to your home's fascia, trim, and body
 - **Recyclable** - aluminum is one of the most recyclable materials on earth
 - **Repairable** - dents and damage can be fixed without replacing the entire run
 
@@ -84,4 +84,4 @@ Aluminum gutters are the standard for Florida for good reason:
 
 In Florida, aluminum gutters outlast vinyl by 2-3x, handle our climate without warping or cracking, and cost less over the life of the system. The upfront savings on vinyl are spent on replacements and repairs within a decade.
 
-**[Get a free estimate for aluminum gutters](/estimator)** or call **(844) 444-3114**. We install seamless aluminum in 25+ colors across Tampa Bay.
+**[Get a free estimate for aluminum gutters](/estimator)** or call **(844) 444-3114**. We install seamless aluminum in a wide selection of colors across Tampa Bay.

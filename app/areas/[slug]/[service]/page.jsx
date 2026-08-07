@@ -43,7 +43,7 @@ const SERVICES = {
     who: "The right choice for any home upgrading from sectional gutters, replacing a failing system, or outfitting new construction.",
     props: [
       ["On-site fabrication","Gutters cut to your exact roofline, not ordered from a warehouse."],
-      ["25+ colors","Matched to fascia, trim, and body to enhance curb appeal."],
+      ["Wide color selection","Matched to fascia, trim, and body to enhance curb appeal."],
       ["6\" and 7\" K-style","Tampa Bay rain volume needs 6\" minimum; 7\" upgrade for large or steep roofs. We do not install 5\" in Florida."],
       ["Hidden hangers, screw-in","Hurricane-rated fastening, no nails that pull out."],
     ],
@@ -332,7 +332,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single coil, no warehouse-stocked sections."],
       ["6-inch and 7-inch K-style","Wesley Chapel rain volume needs 6-inch minimum. 7-inch for steeper rooflines or larger 2,800 plus sq ft footprints common in Estancia at Wiregrass and Saddlebrook."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. HOA architectural-review compatible."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. HOA architectural-review compatible."],
       ["Hidden hangers, screw-in","Pasco County wind code requires it. We install it that way regardless of whether it gets inspected."],
     ],
     faqs: [
@@ -397,7 +397,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single coil, no warehouse-stocked sections, no seams that fail under wind load."],
       ["6-inch and 7-inch K-style","Bradenton rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger 2,800 plus sq ft footprints common in Lakewood Ranch and along the Manatee River."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. Color match documentation for Lakewood Ranch and Anna Maria Island HOAs."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. Color match documentation for Lakewood Ranch and Anna Maria Island HOAs."],
       ["Hidden hangers, screw-in","Manatee County wind code requires it. We install it that way every time regardless of inspection."],
     ],
     faqs: [
@@ -407,7 +407,7 @@ const ENRICHMENT = {
       { q: "Do Bradenton HOAs require approval before gutter replacement?", a: "Lakewood Ranch, Anna Maria Island, Longboat Key, and many West Bradenton communities have architectural-review boards that require color match documentation and contractor insurance before approval. We provide the color sample, the spec sheet, and the certificate of insurance as a standard part of the estimate. We do not start work until HOA approval is in writing." },
       { q: "What is the warranty on JR One seamless gutters in Bradenton?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and the hidden hangers. We are family-owned with over 30 years in Tampa Bay and we have 170 logged Bradenton projects in the CompanyCam record since November 2022. We are still here for warranty service three years from now." },
       { q: "Will you remove and dispose of my old gutters?", a: "Yes. Old gutter aluminum, old hangers, old downspouts, all removed and hauled off site as part of the install. We sweep the property, check beds and walkways, and leave nothing behind for the homeowner to deal with." },
-      { q: "Can you match copper or specialty trim on a Bradenton home?", a: "Yes. Standard aluminum installs in 25 plus color options. For high-end waterfront homes on Anna Maria Island or Longboat Key we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a 1980s or older estate-class home. Free copper-vs-aluminum comparison during the estimate." },
+      { q: "Can you match copper or specialty trim on a Bradenton home?", a: "Yes. Standard aluminum installs in a wide range of color options, and the exact palette varies by product and by supplier. For high-end waterfront homes on Anna Maria Island or Longboat Key we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a 1980s or older estate-class home. Free copper-vs-aluminum comparison during the estimate." },
     ],
     neighborhoodsOfNote: ["Cortez","Palma Sola","West Bradenton","Lakewood Ranch","Bayshore Gardens","Anna Maria Island","Longboat Key","Palmetto","Parrish","Holmes Beach"],
     trustNumbers: ["170 Bradenton projects in the JR One CompanyCam record since November 2022, the highest density of any market we serve outside Tampa and St. Petersburg"],
@@ -418,7 +418,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single coil. No warehouse sections, no seam failures."],
       ["6-inch and 7-inch K-style","Spring Hill rain volume needs 6-inch minimum. 7-inch upgrade for steeper or larger rooflines."],
-      ["25 plus colors","Matched to existing fascia and trim. Standard Florida-stock palette covers most Spring Hill subdivisions."],
+      ["Wide color selection","Matched to existing fascia and trim. Standard Florida-stock palette covers most Spring Hill subdivisions."],
       ["Hidden hangers, screw-in","Hernando County wind code requires it. We install it that way every time."],
     ],
     faqs: [
@@ -502,7 +502,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single continuous coil. No sections, no seams, no leaks at the joints."],
       ["6-inch and 7-inch K-style","Sarasota rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger 2,800 plus sq ft footprints common in West of Trail, Oyster Bay, and Lakewood Ranch."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. Custom-color matching for high-end Siesta Key, Lido Key, and Bird Key estate homes."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. Custom-color matching for high-end Siesta Key, Lido Key, and Bird Key estate homes."],
       ["Hidden hangers, screw-in","Sarasota County wind code requires it. We install it that way every time regardless of inspection."],
     ],
     faqs: [
@@ -510,7 +510,7 @@ const ENRICHMENT = {
       { q: "Why 6-inch instead of 5-inch in Sarasota?", a: "Volume. Sarasota gets 53.1 inches of average annual rainfall per NOAA, the highest in our service area. A 5-inch K-style gutter overflows at peak rain volume even when perfectly clean, and a clogged 5-inch gutter overflows on the first thunderstorm of the season. JR One installs 6-inch as the minimum on every Florida home and 7-inch on steeper rooflines or larger footprints. We do not install 5-inch in Florida, it does not match the climate." },
       { q: "How long does seamless gutter installation take in Sarasota?", a: "Most single-story homes complete in a single day. Fabrication on site in the morning, install in the afternoon. Two-story homes, larger Lakewood Ranch builds, and estate-class properties west of Trail run one to two days. Island installs on Siesta Key, Lido Key, and Bird Key add bridge-access and HOA-coordination time." },
       { q: "Do Sarasota HOAs require approval before gutter replacement?", a: "Most do. Lakewood Ranch, Palmer Ranch, Oyster Bay, and most Siesta Key, Lido Key, and Bird Key communities have architectural-review boards that require color match documentation and contractor insurance before approval. We provide the color sample, spec sheet, and certificate of insurance as part of the estimate. We do not start work until HOA approval is in writing." },
-      { q: "Can you match copper or specialty trim on a high-end Sarasota home?", a: "Yes. Standard aluminum installs in 25 plus color options. For high-end West of Trail, Oyster Bay, or island estate homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a 1970s estate-class home. Free copper-vs-aluminum comparison during the estimate." },
+      { q: "Can you match copper or specialty trim on a high-end Sarasota home?", a: "Yes. Standard aluminum installs in a wide range of color options, and the exact palette varies by product and by supplier. For high-end West of Trail, Oyster Bay, or island estate homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a 1970s estate-class home. Free copper-vs-aluminum comparison during the estimate." },
       { q: "What is the warranty on JR One seamless gutters in Sarasota?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and the hidden hangers. We are family-owned with over 30 years in Tampa Bay and 85 logged Sarasota projects in the CompanyCam record since November 2022. We are still here for warranty service three years from now." },
       { q: "Will you remove and dispose of my old gutters?", a: "Yes. Old gutter aluminum, hangers, and downspouts removed and hauled off site as part of the install. We sweep the property, check beds and walkways, and leave nothing behind. No scrap aluminum piles at the curb for the homeowner to deal with." },
     ],
@@ -544,7 +544,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single coil, no warehouse sections, no seam failures under hurricane wind load."],
       ["6-inch and 7-inch K-style","Clearwater rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or coastal-facing Clearwater Beach and Sand Key properties."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. Color match documentation for Sand Key, Island Estates, and Belleair HOAs."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. Color match documentation for Sand Key, Island Estates, and Belleair HOAs."],
       ["Hidden hangers, screw-in","Pinellas County wind code requires it. We install it that way every time regardless of inspection, especially on coastal Clearwater properties."],
     ],
     faqs: [
@@ -554,7 +554,7 @@ const ENRICHMENT = {
       { q: "Do Clearwater HOAs require approval before gutter replacement?", a: "Most do. Sand Key, Island Estates, Belleair, and the gated communities in Countryside have architectural-review boards that require color match documentation and contractor insurance before approval. We provide the color sample, spec sheet, and certificate of insurance as part of the estimate. We do not start work until HOA approval is in writing." },
       { q: "Are seamless gutters more resistant to hurricane wind?", a: "Yes. Sectional gutters fail at the seams under wind-pressure differential, that is where wind lifts the gutter and pries it off the fascia. A continuous seamless run with hidden hangers screwed into solid fascia handles hurricane wind better because there are no failure points along the run, only at the corners and downspout connections, both of which we spec for Florida hurricane code. Coastal Clearwater is where this matters most." },
       { q: "What is the warranty on JR One seamless gutters in Clearwater?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and the hidden hangers. We are family-owned with over 30 years in Tampa Bay and 102 logged Clearwater projects in the CompanyCam record since November 2022. We are still here for warranty service three years from now." },
-      { q: "Can you match copper trim on a Clearwater Beach estate home?", a: "Yes. Standard aluminum installs in 25 plus color options. For Sand Key, Clearwater Beach, or Belleair estate homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim or shooting for the next 50 years of low maintenance on a coastal property. Free copper-vs-aluminum comparison during the estimate." },
+      { q: "Can you match copper trim on a Clearwater Beach estate home?", a: "Yes. Standard aluminum installs in a wide range of color options, and the exact palette varies by product and by supplier. For Sand Key, Clearwater Beach, or Belleair estate homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim or shooting for the next 50 years of low maintenance on a coastal property. Free copper-vs-aluminum comparison during the estimate." },
     ],
     neighborhoodsOfNote: ["Countryside","Sunset Point","Clearwater Beach","Island Estates","Sand Key","Belleair","Morningside","Skycrest"],
     trustNumbers: ["102 Clearwater projects in the JR One CompanyCam record since November 2022, the second-highest density in Pinellas County for us"],
@@ -630,7 +630,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single continuous coil, no warehouse-stocked sections, no seams that fail under hurricane wind load."],
       ["6-inch and 7-inch K-style","Largo rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger 2,800 plus sq ft footprints common in Harbor Bluffs and Bay Vista Estates."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. Color match documentation for Belleair Bluffs and Harbor Bluffs HOAs."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. Color match documentation for Belleair Bluffs and Harbor Bluffs HOAs."],
       ["Hidden hangers, screw-in","Pinellas County wind code requires it. We install it that way every time regardless of inspection."],
     ],
     faqs: [
@@ -639,7 +639,7 @@ const ENRICHMENT = {
       { q: "How long does seamless gutter installation take in Largo?", a: "Most single-story homes complete in a single day. Fabrication on site in the morning, install in the afternoon. Two-story homes and larger Harbor Bluffs or Bay Vista Estates custom builds run one to two days depending on complexity. Coastal-facing installs near Indian Rocks Beach add corrosion-resistant fastener inspection time." },
       { q: "Do Largo HOAs require approval before gutter replacement?", a: "Belleair Bluffs, Harbor Bluffs, Imperial Point, and several Largo Central neighborhoods have architectural-review boards that require color match documentation and contractor insurance before approval. We provide the color sample, spec sheet, and certificate of insurance as part of the estimate. We do not start work until HOA approval is in writing." },
       { q: "Are seamless gutters more resistant to hurricane wind?", a: "Yes. Sectional gutters fail at the seams under wind-pressure differential, that is where wind lifts the gutter and pries it off the fascia. A continuous seamless run with hidden hangers screwed into solid fascia handles hurricane wind better because there are no failure points along the run, only at the corners and downspout connections, both of which we spec for Florida hurricane code. Coastal Pinellas is where this matters most." },
-      { q: "Can you match copper or specialty trim on a Largo waterfront home?", a: "Yes. Standard aluminum installs in 25 plus color options. For Harbor Bluffs or Indian Rocks Beach area estate homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a high-end coastal property. Free copper-vs-aluminum comparison during the estimate." },
+      { q: "Can you match copper or specialty trim on a Largo waterfront home?", a: "Yes. Standard aluminum installs in a wide range of color options, and the exact palette varies by product and by supplier. For Harbor Bluffs or Indian Rocks Beach area estate homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a high-end coastal property. Free copper-vs-aluminum comparison during the estimate." },
       { q: "What is the warranty on JR One seamless gutters in Largo?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and the hidden hangers. We are family-owned with over 30 years in Tampa Bay and 72 logged Largo projects in the CompanyCam record since December 2022. We are still here for warranty service three years from now." },
     ],
     neighborhoodsOfNote: ["Belleair Bluffs","Largo Central","Anona","Harbor Bluffs","Imperial Point","Bay Vista Estates","Pinebrook Estates","Indian Rocks Beach area"],
@@ -672,7 +672,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single continuous coil, no warehouse sections, no seams that fail under hurricane wind load."],
       ["6-inch and 7-inch K-style","St. Pete rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger footprints common in Snell Isle, Bayway Isles, and Lakewood Estates."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. Color match documentation for Old Northeast historic district and Snell Isle HOAs."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. Color match documentation for Old Northeast historic district and Snell Isle HOAs."],
       ["Hidden hangers, screw-in","Pinellas County wind code requires it. We install it that way every time regardless of inspection, especially on coastal St. Pete properties."],
     ],
     faqs: [
@@ -681,7 +681,7 @@ const ENRICHMENT = {
       { q: "How long does seamless gutter installation take in St. Petersburg?", a: "Most single-story homes complete in a single day. Fabrication on site in the morning, install in the afternoon. Two-story homes in Old Northeast and larger Snell Isle or Bayway Isles builds run one to two days. Historic district homes in Old Northeast and Roser Park add architectural-review coordination time." },
       { q: "Do St. Petersburg HOAs require approval before gutter replacement?", a: "Most do. Snell Isle, Bayway Isles, Coquina Key, and Old Northeast historic district all have architectural-review requirements on exterior changes. We provide the color sample, spec sheet, and certificate of insurance as part of the estimate. We do not start work until HOA approval is in writing." },
       { q: "Are seamless gutters more resistant to hurricane wind?", a: "Yes. Sectional gutters fail at the seams under wind-pressure differential, that is where wind lifts the gutter and pries it off the fascia. A continuous seamless run with hidden hangers screwed into solid fascia handles hurricane wind better because there are no failure points along the run, only at the corners and downspout connections, both of which we spec for Florida hurricane code. Coastal St. Pete is where this matters most." },
-      { q: "Can you match copper or specialty trim on a high-end St. Pete home?", a: "Yes. Standard aluminum installs in 25 plus color options. For Old Northeast historic homes, Snell Isle estates, or Bayway Isles waterfront homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a 1920s to 1940s historic home or a high-end waterfront property. Free copper-vs-aluminum comparison during the estimate." },
+      { q: "Can you match copper or specialty trim on a high-end St. Pete home?", a: "Yes. Standard aluminum installs in a wide range of color options, and the exact palette varies by product and by supplier. For Old Northeast historic homes, Snell Isle estates, or Bayway Isles waterfront homes we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim on a 1920s to 1940s historic home or a high-end waterfront property. Free copper-vs-aluminum comparison during the estimate." },
       { q: "What is the warranty on JR One seamless gutters in St. Petersburg?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and the hidden hangers. We are family-owned with over 30 years in Tampa Bay and 292 logged St. Petersburg projects in the CompanyCam record since November 2022, the highest density in Pinellas County for us. We are still here for warranty service three years from now." },
     ],
     neighborhoodsOfNote: ["Downtown St. Pete","Old Northeast","Snell Isle","Coquina Key","Lakewood Estates","Disston Heights","Crescent Lake","Roser Park","Bayway Isles"],
@@ -693,7 +693,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single continuous coil, no warehouse sections, no seams that fail under thunderstorm wind."],
       ["6-inch and 7-inch K-style","Lakeland rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger 2,800 plus sq ft footprints common in Lakeland Highlands and Christina."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. Color match documentation for South Lake Morton Historic District and Lakeland Highlands HOAs."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. Color match documentation for South Lake Morton Historic District and Lakeland Highlands HOAs."],
       ["Hidden hangers, screw-in","Polk County wind code requires it. We install it that way every time regardless of inspection."],
     ],
     faqs: [
@@ -777,7 +777,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single continuous coil, no warehouse sections, no seams that fail under hurricane wind load."],
       ["6-inch and 7-inch K-style","New Port Richey rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger custom homes common in Trinity, Seven Springs, and River Ridge."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. Color match documentation for Gulf Harbors, Trinity, and Riverside Drive HOAs."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. Color match documentation for Gulf Harbors, Trinity, and Riverside Drive HOAs."],
       ["Hidden hangers, screw-in","Pasco County wind code requires it. We install it that way every time regardless of inspection, especially on coastal-facing properties."],
     ],
     faqs: [
@@ -786,7 +786,7 @@ const ENRICHMENT = {
       { q: "How long does seamless gutter installation take in New Port Richey?", a: "Most single-story homes complete in a single day. Fabrication on site in the morning, install in the afternoon. Two-story homes and larger Trinity, Seven Springs, or River Ridge custom builds run one to two days depending on complexity. Coastal-facing installs in Gulf Harbors add corrosion-resistant fastener inspection time." },
       { q: "Do New Port Richey HOAs require approval before gutter replacement?", a: "Gulf Harbors, Trinity, Seven Springs, and Riverside Drive communities have architectural-review boards that require color match documentation and contractor insurance before approval. We provide the color sample, spec sheet, and certificate of insurance as part of the estimate. We do not start work until HOA approval is in writing." },
       { q: "Are seamless gutters more resistant to hurricane wind?", a: "Yes. Sectional gutters fail at the seams under wind-pressure differential, that is where wind lifts the gutter and pries it off the fascia. A continuous seamless run with hidden hangers screwed into solid fascia handles hurricane wind better because there are no failure points along the run, only at the corners and downspout connections, both of which we spec for Florida hurricane code. Coastal Pasco is where this matters most." },
-      { q: "Can you match copper or specialty trim on a waterfront New Port Richey home?", a: "Yes. Standard aluminum installs in 25 plus color options. For Gulf Harbors waterfront homes or higher-end Riverside Drive properties we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim or shooting for the next 50 years of low maintenance on a coastal property. Free copper-vs-aluminum comparison during the estimate." },
+      { q: "Can you match copper or specialty trim on a waterfront New Port Richey home?", a: "Yes. Standard aluminum installs in a wide range of color options, and the exact palette varies by product and by supplier. For Gulf Harbors waterfront homes or higher-end Riverside Drive properties we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more and is the right answer when matching original trim or shooting for the next 50 years of low maintenance on a coastal property. Free copper-vs-aluminum comparison during the estimate." },
       { q: "What is the warranty on JR One seamless gutters in New Port Richey?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and the hidden hangers. We are family-owned with over 30 years in Tampa Bay and 51 logged New Port Richey projects in the CompanyCam record since November 2022, the established coastal-Pasco specialist. We are still here for warranty service three years from now." },
     ],
     neighborhoodsOfNote: ["Gulf Harbors","Magnolia Valley","Jasmine Lakes","River Ridge","Trinity","Seven Springs","Holiday","Riverside Drive"],
@@ -955,7 +955,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single continuous coil. No warehouse sections, no seam failures, no per-section weakness under hurricane wind."],
       ["6-inch and 7-inch K-style","Palm Harbor rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger 2,800 plus sq ft footprints common in Lansbrook, Boot Ranch, and Innisbrook."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. HOA color-match documentation for Highland Lakes, Innisbrook, and Lansbrook architectural review."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. HOA color-match documentation for Highland Lakes, Innisbrook, and Lansbrook architectural review."],
       ["Hidden hangers, screw-in","Pinellas County wind code requires it. We install it that way every time regardless of inspection."],
     ],
     faqs: [
@@ -965,7 +965,7 @@ const ENRICHMENT = {
       { q: "Do Palm Harbor HOAs require approval before gutter replacement?", a: "Most do. Highland Lakes, Lansbrook, Boot Ranch, and Innisbrook have active architectural-review boards that require color match documentation and contractor insurance before approval. Tarpon Woods and Spring Lake vary by section. We provide the color sample, spec sheet, and certificate of insurance as part of the estimate. We do not start work until HOA approval is in writing." },
       { q: "Are seamless gutters more resistant to hurricane wind?", a: "Yes. Sectional gutters fail at the seams under wind-pressure differential, that is where wind lifts the gutter and pries it off the fascia. A continuous seamless run with hidden hangers screwed into solid fascia handles hurricane wind better because there are no failure points along the run, only at the corners and downspout connections, both of which we spec for Florida hurricane code. After Idalia in 2023 the typical Palm Harbor seamless-install post-storm visit was an inspection, not a replacement." },
       { q: "What is the warranty on JR One seamless gutters in Palm Harbor?", a: "Workmanship warranty on the install, written, full terms in the estimate package. Manufacturer warranty on the aluminum coil and hidden hangers. We are family-owned with over 30 years in Tampa Bay and 65 logged Palm Harbor projects in the CompanyCam record since November 2022. We are still here for warranty service three years from now." },
-      { q: "Can you match copper or specialty trim on a Palm Harbor home?", a: "Yes. Standard aluminum installs in 25 plus color options. For Innisbrook resort homes, Crystal Beach estates, or any Palm Harbor property with original copper trim we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more. Free copper-vs-aluminum comparison during the estimate." },
+      { q: "Can you match copper or specialty trim on a Palm Harbor home?", a: "Yes. Standard aluminum installs in a wide range of color options, and the exact palette varies by product and by supplier. For Innisbrook resort homes, Crystal Beach estates, or any Palm Harbor property with original copper trim we also fabricate copper gutters on site. Copper costs roughly three times standard aluminum but lasts 50 years or more. Free copper-vs-aluminum comparison during the estimate." },
     ],
     neighborhoodsOfNote: ["Highland Lakes","Spring Lake","Crystal Beach","Lansbrook","Tarpon Woods","Boot Ranch","Innisbrook"],
     trustNumbers: ["65 Palm Harbor projects in the JR One CompanyCam record since November 2022, the established specialist aluminum contractor for north Pinellas seamless replacements"],
@@ -977,7 +977,7 @@ const ENRICHMENT = {
     propsOverride: [
       ["On-site fabrication","Cut to your exact roofline from a single coil, no warehouse-stocked sections, no seam failures, the upgrade from sectional builder-grade to true seamless."],
       ["6-inch and 7-inch K-style","Riverview rainfall volume needs 6-inch minimum. 7-inch upgrade for steeper rooflines or larger 2,800 plus sq ft footprints common in Triple Creek and Riverview Estates."],
-      ["25 plus colors","Matched to existing fascia, trim, and body. HOA-ready color documentation for Panther Trace, Rivercrest, and Bloomingdale architectural review."],
+      ["Wide color selection","Matched to existing fascia, trim, and body. HOA-ready color documentation for Panther Trace, Rivercrest, and Bloomingdale architectural review."],
       ["Hidden hangers, screw-in","Hillsborough County wind code requires it. We install it that way every time regardless of inspection."],
     ],
     faqs: [
