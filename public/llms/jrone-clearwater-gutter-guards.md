@@ -20,6 +20,7 @@ Clearwater is coastal - which changes everything. Palm fronds, sea grape, and sa
 - Salt-rated micro mesh - aluminum mesh, aluminum frame
 - Stainless or aluminum fasteners only (no galvanized)
 - Standard aluminum gutter guards for yards without pine
+- Copper guards on copper gutter systems only, matched to the copper gutters they sit on
 - Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Hurricane-rated hanger spacing underneath
 - Post-storm guard inspection and re-seating for existing customers

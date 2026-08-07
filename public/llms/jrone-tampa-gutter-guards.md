@@ -19,6 +19,7 @@ Tampa's tree canopy and 51 inches of annual rain is a gutter's worst combination
 - Pre-install gutter cleaning so guards go over a clean system
 - Micromesh guards for pine-needle-heavy yards (recommended for most Tampa homes)
 - Standard aluminum gutter guards for yards without pine
+- Copper guards on copper gutter systems only, matched to the copper gutters they sit on
 - Custom guard sizing for the 6-inch and 7-inch profiles we install
 - Hanger tightening and miter re-sealing during install
 - Guard reinstallation if gutters need future repair

@@ -19,6 +19,7 @@ Riverview's master-planned subdivisions are dense with builder-grade 5-inch gutt
 - Pre-install cleaning
 - Micro mesh guards - best performer for Riverview's mixed oak/pine debris
 - Standard aluminum gutter guards for yards without pine
+- Copper guards on copper gutter systems only, matched to the copper gutters they sit on
 - Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Optional gutter upgrade at the same time (builder-grade 5-inch replaced with JR One 6-inch or 7-inch)
 - Hanger tightening and miter resealing during install

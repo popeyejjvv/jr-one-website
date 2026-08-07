@@ -32,6 +32,9 @@ The upgrade tier. A finer mesh over an aluminum frame, and that finer mesh is wh
 ### Standard Aluminum Gutter Guard
 Our standard tier. Aluminum, sized to the gutter, blocking larger leaves and debris. The right call on homes without pine. Available in 6-inch and 7-inch widths.
 
+### Copper Gutter Guards
+Copper guards matched to the copper gutter system they sit on. Installed only as part of a copper gutter system, never as an add-on to an aluminum gutter system. Available in 6-inch and 7-inch widths.
+
 ### Custom Gutter Guards
 Specialty applications for non-standard gutter profiles or commercial installations.
 

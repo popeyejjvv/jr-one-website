@@ -19,6 +19,7 @@ St. Pete gets less rain than the rest of Tampa Bay thanks to its sunshine record
 - Pre-install cleaning so guards go over a clean system
 - Micromesh guards for mixed-debris properties
 - Standard aluminum gutter guards for yards without pine
+- Copper guards on copper gutter systems only, matched to the copper gutters they sit on
 - Salt-rated hardware on waterfront installs
 - Sizing for 6-inch, 7-inch, and half-round profiles (JR One does not install 5-inch)
 - Hanger tightening and miter resealing during install
@@ -40,6 +41,9 @@ A: Yes. Palm frond fragments and sea grape slide off the top of a micro mesh gua
 
 **Q: Is salt air a problem for the guards themselves?**
 A: Only if the wrong material is specified. We use salt-rated micro mesh frames and stainless or aluminum fasteners on any waterfront Snell Isle or Shore Acres install.
+
+**Q: Can you match copper guards to an existing copper gutter system?**
+A: Yes. Copper guards are regular work on the historic copper installs around Old Northeast and Historic Kenwood. They go on copper gutter systems only, not on aluminum gutters.
 
 **Q: Can you install guards on my Old Northeast bungalow without damaging historic trim?**
 A: Yes. We work carefully around 1920s detail - no lifting original soffit boards, no hardware in places it wasn't. We've been in Old Northeast often enough to know the quirks.
