@@ -10,7 +10,7 @@ faqs:
   - question: "How much does Peak 301 cost in Tampa in 2026?"
     answer: "Peak 301 treatment in Tampa typically costs $0.40 to $0.80 per square foot, or $1,200 to $2,400 per application for an average home. A 2,000 square foot roof runs $1,400 to $1,800; a 3,000 square foot roof runs $1,800 to $2,800. Compare that to $10,000 to $30,000 for a full roof replacement in Tampa in 2026. Peak 301 is up to 70 percent less than a new roof install."
   - question: "How does Peak 301 compare to Roof Maxx?"
-    answer: "Both are soy-based bio-oil rejuvenators. Peak 301 typically commands a 5 to 15 percent price premium in Tampa, often justified by a longer written product warranty (current terms confirmed at your free assessment; Roof Maxx typically states 5 years) and more rigorous applicator certification requirements. Roof Maxx has the larger national franchise network. Both products are validated by ASTM D6944 cyclic flexibility testing. For most Tampa homeowners the choice comes down to which certified applicator quotes the job."
+    answer: "Both are soy-based bio-oil rejuvenators. Peak 301 typically commands a 5 to 15 percent price premium in Tampa, often justified by more rigorous applicator certification requirements. Roof Maxx has the larger national franchise network. Both products are validated by ASTM D6944 cyclic flexibility testing. For most Tampa homeowners the choice comes down to which certified applicator quotes the job."
   - question: "Does Peak 301 work on all roof types?"
     answer: "Peak 301 works on asphalt shingle roofs only. It does NOT work on tile, metal, flat/membrane, slate, or wood shake roofs. The treatment is designed specifically for the petroleum-based asphalt in shingle roofing materials. If you have a tile or metal roof, Peak 301 is not the right product and any contractor who tries to sell it for those substrates is misleading you."
   - question: "How long does Peak 301 last?"
@@ -25,14 +25,12 @@ faqs:
     answer: "Peak 301 doesn't make a roof hurricane-proof, but it improves wind resistance by restoring shingle flexibility. Brittle shingles tear off in wind events. Flexible shingles ride out wind loads better. The treatment also restores granule adhesion, reducing the rate at which UV-exposed asphalt continues to degrade between storms. It's a mitigation, not a guarantee."
   - question: "Can Peak 301 be applied to a metal or tile roof?"
     answer: "No. Peak 301 is specifically formulated for asphalt shingles. The bio-oil chemistry interacts with the petroleum binders in asphalt to restore flexibility. Tile, metal, and flat roofing materials don't have those binders, so the treatment has no effect. If a contractor tries to apply Peak 301 to a tile or metal roof, they don't understand the product."
-  - question: "What is the warranty on Peak 301 in Tampa?"
-    answer: "Peak 301 is offered with a written product warranty for shingle flexibility and granule retention when applied by a certified applicator; current terms are confirmed at your free assessment and provided in writing before treatment. Coverage varies by roof condition at time of treatment, so a roof at year 14 may have shorter warranty terms than a roof at year 9. We document baseline condition with photos and provide written warranty terms before any application."
   - question: "Should I do Peak 301 or replace my roof?"
     answer: "It depends on the condition of your roof. If shingles have minor curling and some granule loss but no leaks or major damage, Peak 301 buys 5 to 15 years for $1,200 to $2,400. If shingles are severely deteriorated, leaking, or missing in patches, you need replacement, not rejuvenation. We assess honestly. If your roof needs replacement, we tell you and refer you to roofing partners we trust."
   - question: "Is Peak 301 approved for HOA communities in Tampa?"
     answer: "Yes. Peak 301 doesn't change roof color or appearance significantly (slight darkening that fades within 30 days), so HOA pre-approval is typically straightforward. Several HOA communities in Wesley Chapel, Brandon, and South Tampa have approved community-wide Peak 301 programs as a roof maintenance option. We provide HOA submission documentation as part of the assessment."
   - question: "Can I apply Peak 301 myself?"
-    answer: "No. Peak 301 is sold only to certified applicators and requires specialized equipment and training to apply correctly. The product is not available at hardware stores. Improper application can damage shingles or fail to penetrate properly. Certified applicators carry liability insurance and can offer written product warranty terms that DIY application cannot."
+    answer: "No. Peak 301 is sold only to certified applicators and requires specialized equipment and training to apply correctly. The product is not available at hardware stores. Improper application can damage shingles or fail to penetrate properly. Certified applicators carry liability insurance that DIY application cannot."
 ---
 
 # Peak 301 Roof Rejuvenation in Tampa: 2026 Complete Guide
@@ -71,7 +69,6 @@ The product is third-party tested under ASTM D6944, the industry standard cyclic
 - **Extends roof life by 5 to 15 years:** depending on current condition and remaining useful life
 - **Improves wind resistance:** flexible shingles hold up better in storms than brittle ones
 - **Reduces thermal stress damage:** brittle shingles crack with daily expansion/contraction; flexible shingles flex
-- **Comes with a written warranty:** coverage for flexibility and granule retention when applied by a certified applicator (current terms confirmed at your free assessment and in writing before treatment)
 
 ## What Peak 301 Does NOT Do
 
@@ -86,15 +83,15 @@ The product is third-party tested under ASTM D6944, the industry standard cyclic
 
 Peak 301 isn't the only roof rejuvenation product on the market in 2026. Here's how the major players compare in the Tampa Bay region.
 
-| Product | Type | Tampa price | Warranty | Notes |
-|---------|------|-------------|----------|-------|
-| Peak 301 | Soy methyl ester | $0.55 to $0.80/sq ft | Written warranty (terms confirmed at assessment) | Higher applicator certification standard |
-| Roof Maxx | Soy methyl ester | $0.50 to $0.75/sq ft | 5 years | Largest national network |
-| Roof Refine | Bio-based oil blend | $0.45 to $0.70/sq ft | 5 years | Smaller network in FL |
-| Generic "roof oil" | Petroleum-based | $0.30 to $0.50/sq ft | 1 to 2 years | Avoid: petroleum oils evaporate quickly |
-| Asphalt sealers/coatings | Surface coating | $0.30 to $0.60/sq ft | 1 to 5 years | Different category, sits on top, traps moisture |
+| Product | Type | Tampa price | Notes |
+|---------|------|-------------|-------|
+| Peak 301 | Soy methyl ester | $0.55 to $0.80/sq ft | Higher applicator certification standard |
+| Roof Maxx | Soy methyl ester | $0.50 to $0.75/sq ft | Largest national network |
+| Roof Refine | Bio-based oil blend | $0.45 to $0.70/sq ft | Smaller network in FL |
+| Generic "roof oil" | Petroleum-based | $0.30 to $0.50/sq ft | Avoid: petroleum oils evaporate quickly |
+| Asphalt sealers/coatings | Surface coating | $0.30 to $0.60/sq ft | Different category, sits on top, traps moisture |
 
-Peak 301 and Roof Maxx are the two reputable bio-oil products in Tampa with measurable third-party validation. They use the same general chemistry. The differences are warranty length, applicator certification rigor, and which dealer is local to you.
+Peak 301 and Roof Maxx are the two reputable bio-oil products in Tampa with measurable third-party validation. They use the same general chemistry. The differences are applicator certification rigor and which dealer is local to you.
 
 Avoid generic petroleum-based "roof oils" sold at hardware stores or online. They evaporate within 12 to 24 months in Florida UV and provide no lasting flexibility restoration. Asphalt sealer coatings are a different category entirely. They sit on top of shingles and can trap moisture, accelerating decking rot. Don't confuse them with bio-oil rejuvenators.
 
@@ -150,8 +147,7 @@ The sweet spot in Tampa is typically year 8 to 15 for architectural shingles, ye
 2. **Surface preparation:** any surface debris is cleared (loose granules, leaves, twigs)
 3. **Application:** Peak 301 is sprayed across the entire roof surface using professional spray equipment calibrated to manufacturer specifications
 4. **Curing:** the bio-oil penetrates into the shingle material over the following 24 to 48 hours
-5. **Documentation:** you receive treatment documentation, photos of before-and-after, and warranty paperwork
-6. **Written warranty:** coverage for shingle flexibility and granule retention (terms confirmed at your free assessment and provided in writing before application)
+5. **Documentation:** you receive treatment documentation and photos of before-and-after
 
 The application itself takes 2 to 4 hours for most residential roofs. No disruption to your daily routine - no tear-off noise, no debris, no dumpster in the driveway. You can be home or at work, makes no difference.
 
@@ -197,9 +193,9 @@ Pre-rental refurbishment package: Peak 301 + minor flashing repair. Treatment: $
 
 Peak 301 is a real technology that extends shingle roof life. It's not magic, it doesn't fix failed roofs, and it only works on asphalt shingles. But for the right candidate, it buys 5 to 15 years of additional roof life at a fraction of replacement cost.
 
-We'll inspect your roof honestly and tell you whether Peak 301 makes sense or whether you're better off planning for replacement. We're a certified Peak 301 applicator serving all of Tampa Bay, with full insurance, written warranty terms provided before treatment, and direct accountability - no franchise call center, no subcontractors, no high-pressure sales process.
+We'll inspect your roof honestly and tell you whether Peak 301 makes sense or whether you're better off planning for replacement. We're a certified Peak 301 applicator serving all of Tampa Bay, with full insurance and direct accountability - no franchise call center, no subcontractors, no high-pressure sales process.
 
-**[Schedule a free roof assessment](/contact)** or call **(844) 444-3114**. See our full [Peak 301 service page](/peak-301) for warranty terms and the complete process.
+**[Schedule a free roof assessment](/contact)** or call **(844) 444-3114**. See our full [Peak 301 service page](/peak-301) for the complete process.
 
 ## Related Reading
 
