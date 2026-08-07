@@ -80,7 +80,7 @@ One annual clearing is genuinely all that's needed with properly installed micro
 
 ## When Guards Are Worth It
 
-- **Heavy tree coverage** (oak, pine, palm) - the more debris, the more valuable guards become
+- **Heavy tree coverage** (oak, pine, palm) - the more debris, the more valuable guards become. Canopy-heavy areas like [Lutz](/areas/lutz) are where the math turns fastest
 - **Two-story homes** - ladder work is dangerous and expensive to hire out quarterly
 - **Homes with chronic clogging** - if you're cleaning 3-4x per year, the guard pays for itself in 3-4 years
 - **Rental properties** - tenants don't clean gutters, guards prevent the neglect-damage cycle

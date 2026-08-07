@@ -254,7 +254,7 @@ Decisión: Limpiezas profesionales trimestrales ($275 cada una), considerando pr
 **St. Petersburg, bungalow de un piso de 1,400 pies cuadrados en Old Northeast, jubilado.**
 Decisión: Limpieza por su cuenta dos veces al año, antes pagaba a un profesional $300 dos veces al año. Ahorro anual: $560 menos $50 en materiales. Compró una escalera de 24 pies por $220, recuperada en 5 meses.
 
-**Brandon, dos pisos de 3,400 pies cuadrados con techo de forma compleja, mucha cobertura de árboles.**
+**[Brandon](/es/areas/brandon), dos pisos de 3,400 pies cuadrados con techo de forma compleja, mucha cobertura de árboles.**
 Decisión: Protectores de canaletas instalados el año pasado, ahora solo necesita una limpieza de superficie al año (por su cuenta 30 minutos al año o profesional $150). Bajó de $1,200 al año en limpiezas previas a los protectores.
 
 ## En resumen

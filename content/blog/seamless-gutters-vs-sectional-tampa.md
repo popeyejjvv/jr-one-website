@@ -77,6 +77,6 @@ While you're choosing between seamless and sectional, choose the right size too.
 
 ## The Bottom Line
 
-Seamless aluminum gutters in 6-inch K-style are the standard recommendation for Tampa Bay homes. They cost more upfront than sectional but last considerably longer and remove the every-10-feet seams where sectional systems typically start leaking, so they cost less over 20 years once you factor in the repairs and replacement you avoid.
+Seamless aluminum gutters in 6-inch K-style are the standard recommendation for Tampa Bay homes. They cost more upfront than sectional but last considerably longer and remove the every-10-feet seams where sectional systems typically start leaking, so they cost less over 20 years once you factor in the repairs and replacement you avoid. On heavily wooded lots the 7-inch upgrade earns its keep, which is the conversation we have most often around [seamless gutters in Lutz](/areas/lutz/seamless-aluminum-gutters).
 
 **[Get a free estimate for seamless gutters](/estimator)** or call **(844) 444-3114**. Custom-fabricated on-site, installed by our in-house crew, over 30 years of Tampa Bay experience.

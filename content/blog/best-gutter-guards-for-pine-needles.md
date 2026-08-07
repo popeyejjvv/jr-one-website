@@ -13,7 +13,7 @@ faqs:
 
 # Best Gutter Guards for Pine Needles (Tested in Florida)
 
-Pine needles are the #1 enemy of gutter systems in Tampa Bay. They're thin enough to slip through standard guards, long enough to interlock into dense mats, and they drop year-round in Florida - not just in fall.
+Pine needles are the #1 enemy of gutter systems in Tampa Bay. They're thin enough to slip through standard guards, long enough to interlock into dense mats, and they drop year-round in Florida - not just in fall. The question comes up most in the canopy-heavy pockets, and [gutter guards in Lutz](/areas/lutz/gutter-guards) are a good example: oak and pine drop debris there all year, on both sides of the Hillsborough-Pasco county line.
 
 After 30+ years of servicing homes with pine trees across Tampa Bay, here's what actually works.
 

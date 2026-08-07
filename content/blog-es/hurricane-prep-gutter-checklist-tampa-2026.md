@@ -295,7 +295,7 @@ Implicación práctica: termine la preparación para finales de mayo, no espere 
 
 ## Ejemplos reales de servicio antes del huracán en Tampa Bay 2026
 
-**Brandon, un piso, 1,750 pies cuadrados, mezcla de pino y roble.**
+**[Brandon](/es/areas/brandon), un piso, 1,750 pies cuadrados, mezcla de pino y roble.**
 Servicio antes de la temporada: limpieza completa ($175), referencia para poda de ramas colgantes, extensión de bajante instalada, base fotográfica. Total: $185 más $400 de referencia de poda de árboles.
 
 **Wesley Chapel, dos pisos, 2,650 pies cuadrados, copa de robles, techo de 18 años.**

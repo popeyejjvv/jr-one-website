@@ -47,7 +47,7 @@ Three causes: clogged gutters (needs cleaning, not repair), undersized gutters (
 
 ### Fascia Rot Behind the Gutter
 
-When gutters leak or overflow for years, the water soaks into the wood fascia behind them. By the time you notice discoloration or soft spots, the rot has been progressing for months. The fascia must be replaced before new gutters or guard installation - gutters mounted to rotted wood will fail again.
+When gutters leak or overflow for years, the water soaks into the wood fascia behind them. By the time you notice discoloration or soft spots, the rot has been progressing for months. The fascia must be replaced before new gutters or guard installation - gutters mounted to rotted wood will fail again. This is the usual sequence behind a call for [gutter repair in Lutz](/areas/lutz/gutter-repair), where year-round canopy debris keeps gutters full and the fascia behind them wet.
 
 **Repair cost:** $6-$12 per linear foot for aluminum fascia wrap, plus gutter re-mounting.
 

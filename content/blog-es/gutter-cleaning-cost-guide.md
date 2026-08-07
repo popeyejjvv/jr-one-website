@@ -51,7 +51,7 @@ La limpieza de canaletas es uno de esos servicios donde los precios están por t
 | Adicional: destape/enjuague de bajante | A menudo incluido; $25-50 cada uno si es por separado |
 | Adicional: reparaciones menores (sellado, reemplazo de soporte) | $35 a $150 |
 
-Estos son rangos reales de 2026 para Tampa, Wesley Chapel, St. Petersburg, Clearwater, Brandon y el área metropolitana de alrededor. Dentro de Tampa Bay, la variación de precios es pequeña (5 a 15 por ciento) y la marca la competencia de mano de obra, no la calidad del servicio.
+Estos son rangos reales de 2026 para Tampa, Wesley Chapel, St. Petersburg, Clearwater, [Brandon](/es/areas/brandon) y el área metropolitana de alrededor. Dentro de Tampa Bay, la variación de precios es pequeña (5 a 15 por ciento) y la marca la competencia de mano de obra, no la calidad del servicio.
 
 ## Costos promedio de limpieza de canaletas por región
 

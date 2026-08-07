@@ -51,7 +51,7 @@ Gutter cleaning is one of those services where pricing is all over the map. You 
 | Add-on: downspout snake/flush | Often included; $25-50 each if separate |
 | Add-on: minor repairs (sealing, hanger replacement) | $35 to $150 |
 
-These are real 2026 ranges for Tampa, Wesley Chapel, St. Petersburg, Clearwater, Brandon, and the surrounding metro. Within Tampa Bay, pricing variance is small (5 to 15 percent) and driven by labor competition, not service quality.
+These are real 2026 ranges for Tampa, Wesley Chapel, St. Petersburg, Clearwater, [Brandon](/areas/brandon/gutter-cleaning), and the surrounding metro. Within Tampa Bay, pricing variance is small (5 to 15 percent) and driven by labor competition, not service quality.
 
 ## Average Gutter Cleaning Costs by Region
 

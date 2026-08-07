@@ -48,7 +48,7 @@ If you're a Tampa homeowner researching gutter prices, you've probably found a w
 | Whole-home single-story job | $1,200 to $2,400 typical |
 | Whole-home two-story job | $1,800 to $3,400 typical |
 
-These are real 2026 ranges for Tampa, Wesley Chapel, St. Petersburg, Clearwater, Brandon, and the surrounding metro. Pricing ranges reflect home size, complexity, and material upgrades, not contractor markup.
+These are real 2026 ranges for Tampa, Wesley Chapel, St. Petersburg, Clearwater, [Brandon](/areas/brandon), and the surrounding metro. Pricing ranges reflect home size, complexity, and material upgrades, not contractor markup.
 
 ## Tampa Gutter Installation Cost Breakdown
 
@@ -94,7 +94,7 @@ Pricing varies by 5 to 15 percent across Tampa Bay depending on labor competitio
 | [Palm Harbor](/areas/palm-harbor) | $1,750 to $2,600 |
 | [Wesley Chapel](/areas/wesley-chapel) | $1,650 to $2,475 |
 
-Coastal cities (Clearwater, Palm Harbor, Sarasota) run slightly higher because installers price in salt-air-grade hardware and longer truck routes. Inland cities (Brandon, Lakeland, Riverview) run slightly lower due to easier access and shorter drive times.
+Coastal cities (Clearwater, Palm Harbor, Sarasota) run slightly higher because installers price in salt-air-grade hardware and longer truck routes. Inland cities (Brandon, Lakeland, Riverview) run slightly lower due to easier access and shorter drive times. Because the coil is fabricated on site rather than ordered from a warehouse, [seamless gutter installation in Brandon](/areas/brandon/seamless-aluminum-gutters) runs off the same setup as the rest of the metro.
 
 ### What Affects Your Price
 

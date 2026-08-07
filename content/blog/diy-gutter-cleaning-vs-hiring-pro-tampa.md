@@ -254,7 +254,7 @@ Decision: Quarterly pro cleanings ($275 each), considering gutter guards next ye
 **St. Petersburg, single-story 1,400 sq ft Old Northeast bungalow, retiree.**
 Decision: DIY semiannual cleaning, was previously paying pro $300 twice a year. Annual savings: $560 minus $50 in materials. Bought a 24-foot ladder for $220, paid back in 5 months.
 
-**Brandon, two-story 3,400 sq ft complex roofline, heavy tree coverage.**
+**[Brandon](/areas/brandon/gutter-cleaning), two-story 3,400 sq ft complex roofline, heavy tree coverage.**
 Decision: Gutter guards installed last year, now needs only annual surface clearing (DIY 30 minutes/year or pro $150). Down from $1,200/year in pre-guard cleanings.
 
 ## The Bottom Line

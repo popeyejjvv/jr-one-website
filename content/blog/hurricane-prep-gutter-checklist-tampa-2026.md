@@ -295,7 +295,7 @@ Practical implication: get prep done by end of May, don't wait for forecasts.
 
 ## Real 2026 Tampa Bay Pre-Hurricane Service Examples
 
-**Brandon, single-story 1,750 sq ft, mixed pine and oak.**
+**[Brandon](/areas/brandon), single-story 1,750 sq ft, mixed pine and oak.**
 Pre-season service: full clean ($175), tree-overhang trim referral, downspout extension installed, photo baseline. Total: $185 plus $400 tree trim referral.
 
 **Wesley Chapel, two-story 2,650 sq ft, oak canopy, 18-year-old roof.**

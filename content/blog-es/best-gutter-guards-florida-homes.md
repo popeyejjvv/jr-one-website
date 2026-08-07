@@ -181,7 +181,7 @@ Tres factores determinan qué tipo de protector funciona mejor:
 
 ## Instalaciones Reales de Protectores en Tampa Bay 2026
 
-**Brandon, una planta, 1,750 pies cuadrados, mezcla de pino y roble.**
+**[Brandon](/es/areas/brandon), una planta, 1,750 pies cuadrados, mezcla de pino y roble.**
 145 pies lineales de micromalla instalados en canaletas existentes de 6 pulgadas en buen estado. Total: $1,450.
 
 **Wesley Chapel, dos plantas, 2,650 pies cuadrados, dosel de roble.**

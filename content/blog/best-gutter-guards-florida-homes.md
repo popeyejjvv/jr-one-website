@@ -181,7 +181,7 @@ Three factors determine which guard type works best:
 
 ## Real 2026 Tampa Bay Guard Installations
 
-**Brandon, single-story 1,750 sq ft, mixed pine and oak.**
+**[Brandon](/areas/brandon/gutter-guards), single-story 1,750 sq ft, mixed pine and oak.**
 145 linear feet of micro mesh installed on existing 6-inch gutters in good condition. Total: $1,450.
 
 **Wesley Chapel, two-story 2,650 sq ft, oak canopy.**

@@ -33,7 +33,7 @@ Here's a month-by-month guide to what your gutters need throughout the year in T
 
 ## March - April: Spring Inspection Window
 
-**What happens:** Live oak "leaf drop" - Tampa's live oaks shed their old leaves in March and April as new growth pushes them out. This is one of the heaviest debris periods for gutters in our area.
+**What happens:** Live oak "leaf drop" - Tampa's live oaks shed their old leaves in March and April as new growth pushes them out. This is one of the heaviest debris periods for gutters in our area. Homes under mature canopy feel it hardest, which is why [gutter cleaning in Lutz](/areas/lutz/gutter-cleaning) follows the heavy-coverage schedule below rather than the light one.
 
 **What to do:**
 - **Clean all gutters** - this is a critical cleaning window
