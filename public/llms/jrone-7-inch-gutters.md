@@ -121,7 +121,7 @@ A: For smaller single-story homes with moderate roof area, moderate pitch, and n
 A: Better than 6-inch, but no gutter fully handles the worst hurricane rain bursts. 7-inch gives significant headroom; overflow happens less often and water-damage risk is materially lower.
 
 **Q: Colors available?**
-A: Same 40+ options as 6-inch - white, almond, clay, bronze, dark bronze, black, and custom matches.
+A: The same wide selection as 6-inch - white, almond, clay, bronze, dark bronze, black, and custom matches. The exact palette varies by product and by supplier.
 
 ---
 
