@@ -86,13 +86,30 @@ logical paragraph and is wrapped at build time, so write it as a single long lin
 - ASCII everywhere else, apart from the accented Spanish, the `•` separators and the
   `—` em dashes that the original documents already used.
 
+## Layout guards
+
+Two defects were fixed in the generator rather than worked around in the copy, and
+both are now gates that fail the build instead of things somebody spots in a PDF.
+
+- **Footer clearance.** `fit_page()` measures every page before drawing it. A page
+  whose ink would reach below `FOOTER_FLOOR` (y=68, twelve points above the footer
+  hairline at y=56) is restarted higher at `CONTINUATION_TIGHT_Y` and, if that is
+  still not enough, has its inter-block gaps scaled down until it fits. Below
+  `MIN_GAP_SCALE` the build fails and the copy has to be shortened or split. A page
+  that already fits is drawn exactly as before at scale 1.0, so the four warranties
+  and both guide page 1s are untouched op for op.
+
+  This is what fixed `es-JR_One_Maintenance_Care_Guide.pdf` page 2. Its second
+  callout ("Cuándo llamar a JR One") used to run to y=6, swallowing the footer
+  hairline and printing its last two lines through the address and company name.
+  The English guide had a milder version of the same thing, its box crossing the
+  hairline. Both now clear the footer.
+
+- **Header bar.** `assert_header_fits()` checks the tagline against the right-aligned
+  phone and domain, and against the eyebrow. The eyebrow moved from y=733 to y=722 so
+  it no longer shares a line with the tagline at all; at 733 it only survived because
+  the English tagline is short, and the longer Spanish one ran straight through it.
+
 ## Known issues
 
-- **`es-JR_One_Maintenance_Care_Guide.pdf` page 2 has a layout collision**, inherited
-  from the 2026-04-08 original and reproduced here on purpose so the rebuild stayed a
-  provable no-op. The second callout ("Cuándo llamar a JR One") is taller than the
-  space left above the footer, so its last two lines overlap the footer text. The
-  English guide has the same box shape but shorter copy, so it only overlaps the
-  footer hairline, not the text. Fixing it means either shortening that Spanish
-  paragraph or moving the box up, both of which change the page, so it is left as a
-  flagged decision rather than a silent edit.
+- None open.

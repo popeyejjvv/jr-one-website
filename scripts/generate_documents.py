@@ -13,9 +13,11 @@ Run from /Users/popeye/Desktop/JRONE/jr-one-website:
 Add --check (npm run check:documents) to build into a temp dir and diff against
 what is committed in public/documents instead of overwriting it.
 
-Layout note: this reproduces the original 2026-04-08 ReportLab output
-position-for-position, including two quirks the original had (see GAP tables).
-Do not "tidy" those numbers, they are there so a rebuild is a no-op diff.
+Layout note: this started as a position-for-position reproduction of the original
+2026-04-08 ReportLab output, quirks included (see GAP tables), so that a rebuild
+was a provable no-op. Do not "tidy" those numbers. Two deliberate departures now
+exist, both of them defect fixes rather than taste, and both gated in code:
+assert_header_fits() for the header bar and fit_page() for the footer.
 """
 
 import argparse
@@ -25,7 +27,7 @@ import tempfile
 from pathlib import Path
 
 from reportlab.pdfgen import canvas
-from reportlab.pdfbase.pdfmetrics import stringWidth
+from reportlab.pdfbase.pdfmetrics import getAscent, getDescent, stringWidth
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "scripts" / "documents"
@@ -80,6 +82,14 @@ FOOTER_ADDR = "3420 W Cherry St, Tampa, FL 33607  •  (844) 444-3114  •  info
 HEADER_RIGHT_PHONE = "(844) 444-3114"
 HEADER_RIGHT_DOMAIN = "jronegutters.com"
 HEADER_MIN_CLEARANCE = 10.0   # points the tagline must keep clear of the right block
+
+# Header baselines. The eyebrow used to sit at 733, seven points under the
+# tagline, which was only survivable because the English tagline is short enough
+# to end well left of it. The Spanish tagline is longer and ran straight into it,
+# so the eyebrow gets its own line and the two can no longer touch whatever the
+# copy does. Both are inside the navy bar, which spans y 714 to 792.
+TAGLINE_Y = 740.0
+EYEBROW_Y = 722.0
 # These are templates sent to every customer, not executed instruments, so the
 # block under the rule carries a title rather than a person's signature.
 SIGN_TITLE = {
@@ -123,6 +133,16 @@ GUIDE_CONTINUATION_BODY_SUBHEAD = 29
 
 LEAD_START_Y = {"warranty": 602.0, "guide": 606.0}
 CONTINUATION_START_Y = 672.0     # section head y at the top of a later page
+
+# Footer clearance. The footer hairline sits at y=56 and its first text baseline
+# at y=42, so anything a page draws below FOOTER_FLOOR lands on the footer. Each
+# page is measured before it is drawn; a page that would cross the floor is first
+# started higher (CONTINUATION_TIGHT_Y, still clear of the gold rule at y=711)
+# and then, if that is not enough, has its inter-block gaps scaled down until it
+# fits. A page that already fits is drawn exactly as before, scale 1.0.
+FOOTER_FLOOR = 68.0
+CONTINUATION_TIGHT_Y = 694.0
+MIN_GAP_SCALE = 0.75             # below this the copy is too long, fail the build
 
 LEADING = {"lead": 16.0, "body": 15.0, "item": 15.0, "callout": 14.0}
 CALLOUT_PARA_GAP = 18.0
@@ -175,11 +195,14 @@ def parse(path):
     return meta, blocks
 
 
-def assert_header_fits(lang):
-    """The tagline runs left to right under the company name and the phone and
-    domain are right-aligned on nearly the same baselines. Translating the
-    tagline makes it longer, so this is a build-time gate rather than a thing
-    somebody notices in a PDF later."""
+def assert_header_fits(lang, eyebrow):
+    """Build-time gate on the header bar.
+
+    The tagline runs left to right under the company name while the phone, the
+    domain and the eyebrow are right-aligned in the same bar. Translating the
+    tagline makes it longer, so this fails the build rather than letting somebody
+    find the overlap in a customer's PDF.
+    """
     end = LEFT + (
         stringWidth(TAGLINE[lang], "Helvetica-Oblique", 9)
         + stringWidth(STAR, "ZapfDingbats", 9)
@@ -193,9 +216,22 @@ def assert_header_fits(lang):
     if clear < HEADER_MIN_CLEARANCE:
         raise SystemExit(
             f"header tagline for lang={lang} ends at x={end:.1f}, only {clear:.1f}pt "
-            f"clear of the right block at x={right_block:.1f} "
+            f"clear of the phone and domain block at x={right_block:.1f} "
             f"(minimum {HEADER_MIN_CLEARANCE}pt). Shorten TAGLINE or TENURE."
         )
+
+    # The eyebrow is only safe because it sits on its own baseline. If anybody
+    # moves it back up next to the tagline, say so here instead of shipping it.
+    tagline_bottom = TAGLINE_Y + getDescent("Helvetica-Oblique", 9)   # descent is negative
+    eyebrow_top = EYEBROW_Y + getAscent("Helvetica", 8)
+    if eyebrow_top >= tagline_bottom:
+        eb_start = RIGHT - stringWidth(eyebrow, "Helvetica", 8)
+        if eb_start - end < HEADER_MIN_CLEARANCE:
+            raise SystemExit(
+                f'header eyebrow "{eyebrow}" starts at x={eb_start:.1f} and shares a '
+                f"line with a tagline ending at x={end:.1f}. Separate the baselines "
+                f"or shorten one of them."
+            )
 
 
 def draw_header(c, eyebrow, lang):
@@ -209,7 +245,7 @@ def draw_header(c, eyebrow, lang):
     c.drawString(LEFT, 754, "JR ONE ALUMINUM LLC")
 
     hexcolor(c, GOLD_TEXT)
-    t = c.beginText(LEFT, 740)
+    t = c.beginText(LEFT, TAGLINE_Y)
     t.setFont("Helvetica-Oblique", 9)
     t.textOut(TAGLINE[lang])
     t.setFont("ZapfDingbats", 9)
@@ -225,7 +261,7 @@ def draw_header(c, eyebrow, lang):
     c.drawRightString(RIGHT, 745, HEADER_RIGHT_DOMAIN)
     hexcolor(c, SLATE)
     c.setFont("Helvetica", 8)
-    c.drawRightString(RIGHT, 733, eyebrow)
+    c.drawRightString(RIGHT, EYEBROW_Y, eyebrow)
 
 
 def draw_footer(c, page_no, lang):
@@ -255,39 +291,41 @@ def draw_title(c, title, subtitle):
     c.drawCentredString(306, 636, subtitle)
 
 
-def render(meta, blocks, dest):
-    tmpl = meta["template"]
-    lang = meta.get("lang", "en")
-    gaps = GAPS[tmpl]
-    assert_header_fits(lang)
+def split_pages(blocks):
+    pages = [[]]
+    for b in blocks:
+        if b["kind"] == "pagebreak":
+            pages.append([])
+        else:
+            pages[-1].append(b)
+    return pages
 
-    c = canvas.Canvas(str(dest), pagesize=(PAGE_W, PAGE_H))
-    page_no = 1
-    draw_header(c, meta["eyebrow"], lang)
-    draw_title(c, meta["title"], meta["subtitle"])
-    y = LEAD_START_Y[tmpl]
+
+class _Measure:
+    """Stand-in canvas for the measure pass. Every draw call is a no-op, so the
+    measurement runs through the identical placement code the drawing does and
+    cannot drift from it."""
+
+    def __getattr__(self, _):
+        return lambda *a, **k: None
+
+
+def run_page(c, blocks, meta, tmpl, gaps, lang, start_y, is_continuation, gap_scale):
+    """Lay one page out on canvas c, return the lowest y any ink reached."""
+    y = start_y
+    lowest = y
     prev = None
-    quirk_due = False   # first body -> subhead step on a continuation page
+    quirk_due = is_continuation and tmpl == "guide"
 
     for b in blocks:
         kind = b["kind"]
-
-        if kind == "pagebreak":
-            draw_footer(c, page_no, lang)
-            c.showPage()
-            page_no += 1
-            draw_header(c, meta["eyebrow"], lang)
-            y = CONTINUATION_START_Y
-            prev = None
-            quirk_due = tmpl == "guide"
-            continue
 
         if prev is not None:
             gap = gaps[(prev, kind)]
             if quirk_due and prev == "body" and kind == "subhead":
                 gap = GUIDE_CONTINUATION_BODY_SUBHEAD
                 quirk_due = False
-            y -= gap
+            y -= gap * gap_scale
 
         if kind == "section":
             hexcolor(c, NAVY)
@@ -364,9 +402,64 @@ def render(meta, blocks, dest):
         else:
             raise SystemExit(f"unknown block ::{kind} in {meta['output']}")
 
+        lowest = min(lowest, y)
         prev = kind
 
-    draw_footer(c, page_no, lang)
+    return lowest
+
+
+def fit_page(blocks, meta, tmpl, gaps, lang, is_continuation):
+    """Pick a start y and a gap scale that keep this page clear of the footer.
+
+    A page that already fits comes back (nominal start, 1.0) and is drawn exactly
+    as it always was. Everything below the first return is only reached by a page
+    that would otherwise collide with the footer.
+    """
+    def low(start, scale):
+        return run_page(_Measure(), blocks, meta, tmpl, gaps, lang,
+                        start, is_continuation, scale)
+
+    start = CONTINUATION_START_Y if is_continuation else LEAD_START_Y[tmpl]
+    if low(start, 1.0) >= FOOTER_FLOOR:
+        return start, 1.0
+
+    if is_continuation:
+        start = CONTINUATION_TIGHT_Y
+        if low(start, 1.0) >= FOOTER_FLOOR:
+            return start, 1.0
+
+    # lowest(scale) is linear in scale: no gap depends on y, and no wrap depends
+    # on a gap. Two probes give the intercept and the slope, so solve it directly.
+    at_zero, at_one = low(start, 0.0), low(start, 1.0)
+    gap_total = at_zero - at_one
+    if gap_total <= 0:
+        raise SystemExit(f"{meta['output']}: a page is too tall to fit even with no gaps")
+    scale = (at_zero - FOOTER_FLOOR) / gap_total
+    if scale < MIN_GAP_SCALE:
+        raise SystemExit(
+            f"{meta['output']}: a page needs its gaps at {scale:.2f} to clear the "
+            f"footer, below the {MIN_GAP_SCALE} floor. Shorten the copy or split the page."
+        )
+    return start, scale
+
+
+def render(meta, blocks, dest):
+    tmpl = meta["template"]
+    lang = meta.get("lang", "en")
+    gaps = GAPS[tmpl]
+    assert_header_fits(lang, meta["eyebrow"])
+
+    c = canvas.Canvas(str(dest), pagesize=(PAGE_W, PAGE_H))
+    for page_no, page in enumerate(split_pages(blocks), start=1):
+        is_continuation = page_no > 1
+        if is_continuation:
+            c.showPage()
+        draw_header(c, meta["eyebrow"], lang)
+        if not is_continuation:
+            draw_title(c, meta["title"], meta["subtitle"])
+        start, scale = fit_page(page, meta, tmpl, gaps, lang, is_continuation)
+        run_page(c, page, meta, tmpl, gaps, lang, start, is_continuation, scale)
+        draw_footer(c, page_no, lang)
     c.save()
 
 
