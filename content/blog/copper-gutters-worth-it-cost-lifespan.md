@@ -8,7 +8,7 @@ faqs:
   - question: "How much do copper gutters cost?"
     answer: "Copper gutter installation costs $25-$40 per linear foot in Tampa, compared to $8-$15 for seamless aluminum. A typical home with 175 linear feet of gutters costs $4,375-$7,000 for copper vs. $1,400-$2,625 for aluminum. Copper is a premium investment with a 50+ year lifespan."
   - question: "How long do copper gutters last?"
-    answer: "Copper gutters last 50-100+ years with minimal maintenance. They're the longest-lasting gutter material available. The copper develops a natural patina (green-brown color change) over time that actually adds a protective layer. Many copper gutter systems outlast the buildings they're installed on."
+    answer: "Copper gutters commonly last 50 years or more with minimal maintenance. They're the longest-lasting gutter material available. The copper develops a natural patina (green-brown color change) over time that actually adds a protective layer. Many copper gutter systems outlast the buildings they're installed on."
   - question: "Do copper gutters turn green?"
     answer: "Yes, over time. New copper starts bright and shiny, then oxidizes to a brown tone within 1-2 years, and eventually develops the characteristic green patina over 10-20 years. The patina is a protective copper carbonate layer that prevents further corrosion. Many homeowners choose copper specifically for this aged look."
 ---
@@ -38,9 +38,9 @@ The price premium is significant. Copper costs 3-4x more than aluminum for mater
 
 ## Why People Choose Copper
 
-### Lifespan: 50-100+ Years
+### Lifespan: 50 Years or More
 
-Copper is the longest-lasting gutter material available. Period. While aluminum lasts 20-30 years and vinyl lasts 8-12 years, copper systems regularly exceed 50 years. Many are still functioning after 100+ years on historic buildings.
+Copper is the longest-lasting gutter material available. Period. While aluminum lasts 20-30 years and vinyl lasts 8-12 years, copper systems commonly last 50 years or more.
 
 There is no maintenance-related end-of-life for copper. It doesn't rust, rot, warp, or degrade in UV. The only things that end a copper gutter's life are physical damage (impact) or removal during renovation.
 
@@ -89,7 +89,7 @@ Some homeowners don't want their gutters to be noticeable. Aluminum in a color-m
 | Factor | Copper | Aluminum |
 |--------|--------|----------|
 | Cost | $25-$40/LF | $8-$15/LF |
-| Lifespan | 50-100+ years | 20-30 years |
+| Lifespan | 50 years or more | 20-30 years |
 | Maintenance | Cleaning only | Cleaning only |
 | Appearance | Statement piece, evolves over time | Clean, color-matched, blends in |
 | Joints | Soldered (permanent) | Seamless or sealed |

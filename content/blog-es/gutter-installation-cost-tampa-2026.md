@@ -62,7 +62,7 @@ JR One instala únicamente aluminio sin costura de 6 pulgadas y 7 pulgadas, cobr
 |----------|---------------------|------------------|----------|
 | Aluminio sin costura de 6 pulgadas | $10 a $15 | 25 a 35 años | Base de JR One para la mayoría de las casas de Tampa |
 | Aluminio sin costura de 7 pulgadas | $13 a $18 | 25 a 35 años | Techos más grandes, pendientes pronunciadas, lluvia intensa |
-| Canaletas de cobre | $25 a $40 | 50 a 100 años | Casas históricas, instalaciones premium |
+| Canaletas de cobre | $25 a $40 | 50 años o más | Casas históricas, instalaciones premium |
 | Acero galvalume | $14 a $22 | 30 a 40 años | Propiedades costeras, comercial |
 
 ### Costo según el tamaño y los pisos de la casa

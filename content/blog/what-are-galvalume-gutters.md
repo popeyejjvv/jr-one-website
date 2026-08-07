@@ -37,7 +37,7 @@ The result is a material that's stronger than pure aluminum and more corrosion-r
 | Seamless fabrication | Difficult (needs different equipment) | Standard (portable forming machines) | Requires soldering |
 | Color options | Limited (paint or bare metallic) | 25+ baked enamel colors | Natural copper/patina |
 | Cost per LF installed | $10 - $18 | $8 - $15 | $25 - $40 |
-| Residential lifespan (FL) | 20 - 30 years | 20 - 30 years | 50 - 100+ years |
+| Residential lifespan (FL) | 20 - 30 years | 20 - 30 years | 50 years or more |
 | Best for | Commercial, industrial, agricultural | Residential, most applications | Premium residential, historic |
 
 ## Why Most Tampa Gutter Specialists Use Aluminum

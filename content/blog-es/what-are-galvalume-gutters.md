@@ -37,7 +37,7 @@ El resultado es un material que es más fuerte que el aluminio puro y más resis
 | Fabricación sin costura | Difícil (requiere equipo diferente) | Estándar (máquinas formadoras portátiles) | Requiere soldadura |
 | Opciones de color | Limitadas (pintura o metálico desnudo) | Más de 25 colores en esmalte horneado | Cobre natural/pátina |
 | Costo por pie lineal instalado | $10 - $18 | $8 - $15 | $25 - $40 |
-| Vida útil residencial (FL) | 20 - 30 años | 20 - 30 años | Más de 50 - 100 años |
+| Vida útil residencial (FL) | 20 - 30 años | 20 - 30 años | 50 años o más |
 | Mejor para | Comercial, industrial, agrícola | Residencial, la mayoría de las aplicaciones | Residencial premium, histórico |
 
 ## Por qué la mayoría de los especialistas en canaletas de Tampa usan aluminio

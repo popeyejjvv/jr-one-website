@@ -13,7 +13,7 @@
 Siesta Key and Longboat Key waterfront owners wanting a system immune to Gulf salt corrosion, Palmer Ranch and Lakewood Ranch custom-home owners building a one-off worthy of a premium material, historic Sarasota and Southside Village homeowners with Mediterranean Revival and mid-century modern architecture that copper complements, and architects specifying a gutter system that will genuinely outlast the building.
 
 ## Why Copper Gutters Matter in Sarasota
-Copper is the premium long-life gutter material - and on the Gulf Coast that matters more than inland. Sarasota gets hit by the same tropical systems that batter the rest of Tampa Bay, plus direct Gulf exposure on Siesta Key and Longboat. Salt air chews through standard steel and low-grade aluminum hardware within five to ten years. Copper is immune to salt corrosion. Properly installed copper gutters last 50 to 100 years, and they develop the distinctive blue-green Florida patina that pairs with Sarasota's Mediterranean Revival architecture, the modernist Sarasota School homes around Lido Shores, and the high-end custom builds in Lakewood Ranch and Palmer Ranch.
+Copper is the premium long-life gutter material - and on the Gulf Coast that matters more than inland. Sarasota gets hit by the same tropical systems that batter the rest of Tampa Bay, plus direct Gulf exposure on Siesta Key and Longboat. Salt air chews through standard steel and low-grade aluminum hardware within five to ten years. Copper is immune to salt corrosion. Properly installed copper gutters last 50 years or more, and they develop the distinctive blue-green Florida patina that pairs with Sarasota's Mediterranean Revival architecture, the modernist Sarasota School homes around Lido Shores, and the high-end custom builds in Lakewood Ranch and Palmer Ranch.
 
 ## What JR One Aluminum Does for Sarasota Homeowners
 - Half-round copper runs for historic and Mediterranean homes
@@ -37,7 +37,7 @@ Sarasota proper, Siesta Key, Lido Key, Longboat Key, St. Armands, Southside Vill
 
 ## FAQ
 **Q: Why copper over aluminum on a Siesta Key home?**
-A: Salt air. Gulf-side homes destroy standard aluminum hardware in under a decade. Copper is immune to salt corrosion and lasts 50 to 100 years. On a waterfront home it's effectively permanent.
+A: Salt air. Gulf-side homes destroy standard aluminum hardware in under a decade. Copper is immune to salt corrosion and lasts 50 years or more. On a waterfront home it's effectively permanent.
 
 **Q: How much more does copper cost than aluminum in Sarasota?**
 A: Budget 4 to 5 times the per-foot aluminum rate. On a typical Sarasota home that is a meaningful premium - but the system outlasts multiple aluminum replacements and pairs with the architecture.

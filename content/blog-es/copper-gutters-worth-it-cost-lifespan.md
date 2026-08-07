@@ -8,7 +8,7 @@ faqs:
   - question: "¿Cuánto cuestan las canaletas de cobre?"
     answer: "La instalación de canaletas de cobre cuesta entre $25 y $40 por pie lineal en Tampa, comparado con $8 a $15 por las canaletas de aluminio sin costura. Una casa típica con 175 pies lineales de canaletas cuesta entre $4,375 y $7,000 en cobre frente a $1,400 a $2,625 en aluminio. El cobre es una inversión premium con una vida útil de más de 50 años."
   - question: "¿Cuánto duran las canaletas de cobre?"
-    answer: "Las canaletas de cobre duran entre 50 y más de 100 años con muy poco mantenimiento. Son el material de canaleta de mayor duración que existe. El cobre desarrolla una pátina natural (un cambio de color verde-marrón) con el tiempo que en realidad agrega una capa protectora. Muchos sistemas de canaletas de cobre duran más que los edificios donde se instalan."
+    answer: "Las canaletas de cobre suelen durar 50 años o más con muy poco mantenimiento. Son el material de canaleta de mayor duración que existe. El cobre desarrolla una pátina natural (un cambio de color verde-marrón) con el tiempo que en realidad agrega una capa protectora. Muchos sistemas de canaletas de cobre duran más que los edificios donde se instalan."
   - question: "¿Las canaletas de cobre se vuelven verdes?"
     answer: "Sí, con el tiempo. El cobre nuevo empieza brillante y reluciente, luego se oxida a un tono marrón dentro de 1 a 2 años, y con el tiempo desarrolla la característica pátina verde a lo largo de 10 a 20 años. La pátina es una capa protectora de carbonato de cobre que evita una mayor corrosión. Muchos dueños de casa eligen el cobre precisamente por ese aspecto envejecido."
 ---
@@ -38,9 +38,9 @@ El sobreprecio es considerable. El cobre cuesta de 3 a 4 veces más que el alumi
 
 ## Por qué la gente elige el cobre
 
-### Vida útil: de 50 a más de 100 años
+### Vida útil: 50 años o más
 
-El cobre es el material de canaleta de mayor duración que existe. Punto. Mientras que el aluminio dura de 20 a 30 años y el vinilo dura de 8 a 12 años, los sistemas de cobre superan los 50 años con regularidad. Muchos siguen funcionando después de más de 100 años en edificios históricos.
+El cobre es el material de canaleta de mayor duración que existe. Punto. Mientras que el aluminio dura de 20 a 30 años y el vinilo dura de 8 a 12 años, los sistemas de cobre suelen durar 50 años o más.
 
 No hay un final de vida útil relacionado con el mantenimiento en el cobre. No se oxida, no se pudre, no se deforma ni se degrada por los rayos UV. Lo único que termina la vida de una canaleta de cobre es el daño físico (un impacto) o el retiro durante una remodelación.
 
@@ -89,7 +89,7 @@ Algunos dueños de casa no quieren que sus canaletas se noten. El aluminio con u
 | Factor | Cobre | Aluminio |
 |--------|--------|----------|
 | Costo | $25-$40 por pie lineal | $8-$15 por pie lineal |
-| Vida útil | de 50 a más de 100 años | de 20 a 30 años |
+| Vida útil | 50 años o más | de 20 a 30 años |
 | Mantenimiento | Solo limpieza | Solo limpieza |
 | Aspecto | Pieza llamativa, evoluciona con el tiempo | Limpio, a juego con el color, se mezcla |
 | Uniones | Soldadas (permanentes) | Sin costura o selladas |

@@ -16,7 +16,7 @@ Copper gutters are the premium tier of residential gutter installation. JR One A
 
 ## Why Copper Gutters?
 
-**Longevity** - Copper gutters last 50-100+ years. While standard aluminum gutters last 20-30 years, copper is a generational investment that will outlast the roof, the fascia, and likely the current owner.
+**Longevity** - Copper gutters last 50 years or more. While standard aluminum gutters last 20-30 years, copper is a generational investment that will outlast the roof, the fascia, and likely the current owner.
 
 **Patina** - Copper develops a natural patina over time, transitioning from bright penny-copper to a warm brown and eventually the classic verdigris green. This natural aging process is part of the appeal - copper gutters look better as they age.
 
