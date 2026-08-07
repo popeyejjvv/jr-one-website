@@ -89,7 +89,7 @@ const T = {
     ctaTitle: "Ready to Work With Us?",
     ctaSub: "Get your free, no-pressure quote. We respond within hours and we'll explain everything as thoroughly as you'd expect from us.",
     ctaForm: "Request a Quote",
-    imgAlt: "Javier Rivera, founder of the family trade, in Tampa Bay gutters since 1990",
+    imgAlt: "Javier Rivera, founder of the family trade, with over 30 years in the Tampa Bay gutter industry",
   },
   es: {
     breadcrumbHome: "Inicio",
@@ -159,7 +159,7 @@ const T = {
     ctaTitle: "Listo Para Trabajar Con Nosotros?",
     ctaSub: "Obtene tu cotización gratuita sin presión. Respondemos en horas y te explicamos todo tan detalladamente como esperarías de nosotros.",
     ctaForm: "Solicitar Cotización",
-    imgAlt: "Javier Rivera, fundador del oficio familiar, en canaletas de Tampa Bay desde 1990",
+    imgAlt: "Javier Rivera, fundador del oficio familiar, con más de 30 años en la industria de canaletas de Tampa Bay",
   },
 };
 
