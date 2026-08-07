@@ -21,7 +21,7 @@ Here's what replacement costs and how to choose the right material for Florida.
 
 | Material | Cost Per Sq Ft (Installed) | Typical Home Cost (1,750 sq ft) | Lifespan in FL |
 |----------|---------------------------|--------------------------------|----------------|
-| Vinyl | $3 - $7 | $5,250 - $12,250 | 15-25 years |
+| Vinyl | $3 - $7 | $5,250 - $12,250 | Varies by brand and grade |
 | Aluminum | $5 - $9 | $8,750 - $15,750 | 30-40 years |
 | Fiber Cement (HardiePlank) | $8 - $12 | $14,000 - $21,000 | 30-50 years |
 | Engineered Wood | $6 - $10 | $10,500 - $17,500 | 20-30 years |

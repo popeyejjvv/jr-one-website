@@ -21,7 +21,7 @@ Aquí le explicamos cuánto cuesta el reemplazo y cómo elegir el material corre
 
 | Material | Costo por pie cuadrado (instalado) | Costo típico de la casa (1,750 pies cuadrados) | Vida útil en FL |
 |----------|---------------------------|--------------------------------|----------------|
-| Vinilo | $3 - $7 | $5,250 - $12,250 | 15-25 años |
+| Vinilo | $3 - $7 | $5,250 - $12,250 | Varía según la marca y el grado |
 | Aluminio | $5 - $9 | $8,750 - $15,750 | 30-40 años |
 | Fibrocemento (HardiePlank) | $8 - $12 | $14,000 - $21,000 | 30-50 años |
 | Madera de ingeniería | $6 - $10 | $10,500 - $17,500 | 20-30 años |
