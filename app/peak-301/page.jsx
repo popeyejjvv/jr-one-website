@@ -5,7 +5,7 @@
    Brand-brain compliant. Tokens via app/tokens.css.
    Components via components/ui/. Icons via lib/icons.
    Per-business memory: Peak 301 fits SHINGLE roofs only.
-   "Up to 70% less than a new roof install" + term-agnostic product warranty (terms confirmed at assessment).
+   "Up to 70% less than a new roof install". No warranty term or warranty language is published for Peak 301.
    ═══════════════════════════════════════════════════════════ */
 
 import { useState } from "react";
@@ -78,14 +78,14 @@ const T = {
     mathReplacementDesc: "Weeks of tear-off, dumpsters, and a five-figure check. Your carrier may still not be happy.",
     mathPeakLabel: "Peak 301 Treatment",
     mathPeakPrice: "Up to 70% Less",
-    mathPeakDesc: "Than a new roof install. One-day application. 6 to 10 years of added life. Product warranty (terms confirmed at assessment). Treatment documentation you can share with your insurer when they evaluate your policy. Exact pricing after your free assessment.",
+    mathPeakDesc: "Than a new roof install. One-day application. 6 to 10 years of added life. Treatment documentation you can share with your insurer when they evaluate your policy. Exact pricing after your free assessment.",
     mathSub: "Most homeowners who call us didn't know roof rejuvenation was an option. Book a free assessment. We'll tell you exactly what your shingle roof needs, with real pricing for your home.",
     goldEyebrow: "The Gold Standard",
     goldTitle: "Our Peak 301 Process",
     goldSub: "Every home. Every time. No exceptions.",
     goldSteps: [
       { num: "01", title: "Assess", desc: "We inspect your roof's current condition, age, and shingle type to determine if Peak 301 is the right solution. Not every roof is a candidate. We'll be honest if yours isn't." },
-      { num: "02", title: "Design", desc: "Treatment plan based on your roof's specific needs, transparent pricing, and a clear explanation of what to expect, including the warranty documentation you'll receive." },
+      { num: "02", title: "Design", desc: "Treatment plan based on your roof's specific needs, transparent pricing, and a clear explanation of what to expect before we start." },
       { num: "03", title: "Install", desc: "Our crew applies the Peak 301 sealant across your entire shingle roof. The soy-based formula penetrates and begins restoring your shingles from the inside immediately." },
       { num: "04", title: "Protect", desc: "You receive documentation showing your roof was professionally treated, which you can share with your insurance company as part of their review." },
     ],
@@ -163,14 +163,14 @@ const T = {
     mathReplacementDesc: "Semanas de arrancar el techo, contenedores y un cheque de cinco cifras. Puede que su aseguradora aún no quede contenta.",
     mathPeakLabel: "Tratamiento Peak 301",
     mathPeakPrice: "Hasta 70% Menos",
-    mathPeakDesc: "Que una instalación de techo nuevo. Aplicación de un solo día. 6 a 10 años de vida añadida. Garantía de producto (términos confirmados en la evaluación). Documentación del tratamiento que puede compartir con su aseguradora al evaluar su póliza. Precio exacto después de su evaluación gratuita.",
+    mathPeakDesc: "Que una instalación de techo nuevo. Aplicación de un solo día. 6 a 10 años de vida añadida. Documentación del tratamiento que puede compartir con su aseguradora al evaluar su póliza. Precio exacto después de su evaluación gratuita.",
     mathSub: "La mayoría de los propietarios que nos llaman no sabían que el rejuvenecimiento era una opción. Reserve una evaluación gratuita. Le diremos exactamente lo que necesita su techo de tejas, con precios reales para su hogar.",
     goldEyebrow: "El Estándar de Oro",
     goldTitle: "Nuestro Proceso Peak 301",
     goldSub: "Cada hogar. Cada vez. Sin excepciones.",
     goldSteps: [
       { num: "01", title: "Evaluar", desc: "Inspeccionamos la condición actual de su techo, edad y tipo de tejas para determinar si Peak 301 es la solución correcta. No todo techo es candidato. Seremos honestos si el suyo no lo es." },
-      { num: "02", title: "Diseñar", desc: "Plan de tratamiento basado en las necesidades específicas de su techo, precios transparentes y una explicación clara de qué esperar, incluyendo la documentación de garantía que recibirá." },
+      { num: "02", title: "Diseñar", desc: "Plan de tratamiento basado en las necesidades específicas de su techo, precios transparentes y una explicación clara de qué esperar antes de comenzar." },
       { num: "03", title: "Instalar", desc: "Nuestro equipo aplica el sellador Peak 301 en todo su techo de tejas. La fórmula a base de soya penetra y comienza a restaurar sus tejas desde adentro inmediatamente." },
       { num: "04", title: "Proteger", desc: "Usted recibe documentación que muestra que su techo fue tratado profesionalmente, que puede compartir con su compañía de seguros como parte de su revisión." },
     ],

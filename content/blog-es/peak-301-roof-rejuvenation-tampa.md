@@ -84,12 +84,12 @@ El producto se prueba por terceros bajo la norma ASTM D6944, la prueba estándar
 Peak 301 no es el único producto de rejuvenecimiento de techos en el mercado en 2026. Aquí le mostramos cómo se comparan los principales competidores en la región de Tampa Bay.
 
 | Producto | Tipo | Precio en Tampa | Notas |
-|---------|------|-------------|----------|-------|
+|---------|------|-------------|-------|
 | Peak 301 | Éster metílico de soya | $0.55 a $0.80/pie cuadrado | Estándar de certificación de aplicador más alto |
-| Roof Maxx | Éster metílico de soya | $0.50 a $0.75/pie cuadrado | 5 años | La red nacional más grande |
-| Roof Refine | Mezcla de aceite de base biológica | $0.45 a $0.70/pie cuadrado | 5 años | Red más pequeña en FL |
-| Aceite de techo genérico | A base de petróleo | $0.30 a $0.50/pie cuadrado | 1 a 2 años | Evitar: los aceites de petróleo se evaporan rápido |
-| Selladores o recubrimientos de asfalto | Recubrimiento de superficie | $0.30 a $0.60/pie cuadrado | 1 a 5 años | Categoría diferente, se queda encima, atrapa humedad |
+| Roof Maxx | Éster metílico de soya | $0.50 a $0.75/pie cuadrado | La red nacional más grande |
+| Roof Refine | Mezcla de aceite de base biológica | $0.45 a $0.70/pie cuadrado | Red más pequeña en FL |
+| Aceite de techo genérico | A base de petróleo | $0.30 a $0.50/pie cuadrado | Evitar: los aceites de petróleo se evaporan rápido |
+| Selladores o recubrimientos de asfalto | Recubrimiento de superficie | $0.30 a $0.60/pie cuadrado | Categoría diferente, se queda encima, atrapa humedad |
 
 Peak 301 y Roof Maxx son los dos productos de bio-aceite de buena reputación en Tampa con validación medible por terceros. Usan la misma química general. Las diferencias son el rigor de la certificación del aplicador y cuál distribuidor está cerca de usted.
 
