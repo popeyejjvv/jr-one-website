@@ -1,0 +1,100 @@
+{
+ "ranAt": "2026-08-07T07:06:29.760Z",
+ "today": "2026-08-07",
+ "source": "app/resources/page.jsx",
+ "alertThresholdsDays": [
+  60,
+  30,
+  7
+ ],
+ "certificatesFound": 3,
+ "healthy": true,
+ "disabled": false,
+ "alerts": [],
+ "certificates": [
+  {
+   "title": "Certificate of Insurance: Workers' Compensation",
+   "file": "JR_One_COI_Workers_Comp_2026.pdf",
+   "expires": "2026-10-08",
+   "daysRemaining": 62,
+   "spanishExpires": "2026-10-08",
+   "spanishMatchesEnglish": true,
+   "pdfPresent": true,
+   "alertDates": [
+    {
+     "threshold": 60,
+     "on": "2026-08-09",
+     "passed": false
+    },
+    {
+     "threshold": 30,
+     "on": "2026-09-08",
+     "passed": false
+    },
+    {
+     "threshold": 7,
+     "on": "2026-10-01",
+     "passed": false
+    }
+   ],
+   "nextAlertOn": "2026-08-09",
+   "nextAlertThreshold": 60
+  },
+  {
+   "title": "Certificate of Insurance: Commercial Auto",
+   "file": "JR_One_COI_Auto_2026.pdf",
+   "expires": "2027-04-27",
+   "daysRemaining": 263,
+   "spanishExpires": "2027-04-27",
+   "spanishMatchesEnglish": true,
+   "pdfPresent": true,
+   "alertDates": [
+    {
+     "threshold": 60,
+     "on": "2027-02-26",
+     "passed": false
+    },
+    {
+     "threshold": 30,
+     "on": "2027-03-28",
+     "passed": false
+    },
+    {
+     "threshold": 7,
+     "on": "2027-04-20",
+     "passed": false
+    }
+   ],
+   "nextAlertOn": "2027-02-26",
+   "nextAlertThreshold": 60
+  },
+  {
+   "title": "Certificate of Insurance: General Liability",
+   "file": "JR_One_COI_General_Liability_2026.pdf",
+   "expires": "2027-06-21",
+   "daysRemaining": 318,
+   "spanishExpires": "2027-06-21",
+   "spanishMatchesEnglish": true,
+   "pdfPresent": true,
+   "alertDates": [
+    {
+     "threshold": 60,
+     "on": "2027-04-22",
+     "passed": false
+    },
+    {
+     "threshold": 30,
+     "on": "2027-05-22",
+     "passed": false
+    },
+    {
+     "threshold": 7,
+     "on": "2027-06-14",
+     "passed": false
+    }
+   ],
+   "nextAlertOn": "2027-04-22",
+   "nextAlertThreshold": 60
+  }
+ ]
+}

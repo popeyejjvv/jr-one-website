@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Daily expiry watch for the certificates of insurance published on /resources and
+  /es/recursos. Runs audit/certificate_expiry_monitor.mjs at 8:00 AM ET, parses the
+  "in effect through" dates straight out of app/resources/page.jsx, and alerts at 60,
+  30 and 7 days before each expiry, then every day once one has passed.
+
+  Daily, not weekly: publishing an expired certificate is worse than publishing none,
+  and a weekly tick can sit up to six days on an expiry that has already gone by.
+
+  /opt/homebrew/bin/node, not bare "node": under launchd the shell has no PATH and bare
+  "node" exits 127, which silently dark-ed the CompanyCam monitor for a month. The hour
+  is inside Popeye's active window on purpose, because a dark-wake tick on an iCloud
+  dataless file fails silently.
+
+  NOT auto-loaded. JR One automations are human-gated. To enable:
+    1. Confirm `which node` is /opt/homebrew/bin/node, and edit below if it is not.
+    2. cp audit/com.jrone.certificate-expiry-monitor.plist ~/Library/LaunchAgents/
+    3. launchctl load ~/Library/LaunchAgents/com.jrone.certificate-expiry-monitor.plist
+  Logs land in audit/certificate-expiry-monitor.log, the machine-readable state in
+  audit/certificate-expiry-report.json. Exit code 2 means action is needed: request the
+  renewed ACORD 25 from the carrier, replace the PDF in public/documents, then update the
+  carrier, policy number and date in app/resources/page.jsx in BOTH English and Spanish.
+  This monitor never edits page copy itself.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jrone.certificate-expiry-monitor</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/node</string>
+    <string>audit/certificate_expiry_monitor.mjs</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/popeye/Desktop/JRONE/jr-one-website</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>8</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/popeye/Desktop/JRONE/jr-one-website/audit/certificate-expiry-monitor.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/popeye/Desktop/JRONE/jr-one-website/audit/certificate-expiry-monitor.log</string>
+</dict>
+</plist>
