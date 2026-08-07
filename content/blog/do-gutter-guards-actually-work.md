@@ -41,7 +41,7 @@ Guards don't make gutters invisible and maintenance-free. Here's what they DON'T
 
 - **Eliminate all maintenance.** Debris still lands on top of the guard and needs occasional clearing (typically once per year with micro mesh).
 - **Fix existing gutter problems.** If your gutters are undersized, improperly pitched, or damaged, guards don't fix those issues. Guards go on properly functioning gutters.
-- **Work equally in all conditions.** Different guard types handle different debris. Pine needles defeat standard screens. Only micro mesh blocks everything.
+- **Work equally in all conditions.** Different guard types handle different debris. Pine needles defeat standard screens. Micro mesh handles the widest range of debris, but no guard blocks everything.
 
 ## Which Guard Types Work (And Which Don't)
 

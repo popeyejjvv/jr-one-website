@@ -49,10 +49,10 @@ Fiber cement soffit option. Excellent moisture resistance and fire resistance. P
 ## Fascia Products JR One Aluminum Installs
 
 ### Custom-Bent Aluminum Fascia
-JR One Aluminum bends fascia on-site to match the exact profile of the existing trim. This is not a prefabricated product - it's custom-formed aluminum that wraps the existing fascia board, providing a permanent weather seal. Available in single tier, 2-tier, and 3-tier profiles. Wood fascia replacement also available when damaged wood is encountered.
+JR One Aluminum bends fascia on-site to match the exact profile of the existing trim. This is not a prefabricated product - it's custom-formed aluminum that wraps the existing fascia board, shielding it from direct weather exposure. Available in single tier, 2-tier, and 3-tier profiles. Wood fascia replacement also available when damaged wood is encountered.
 
 ### Fascia Wrapping
-Aluminum fascia wrapping covers existing wood fascia boards with custom-bent aluminum coil stock, permanently sealing them from moisture and eliminating the need for repainting. This is one of the most cost-effective ways to protect and modernize the roofline appearance on an existing home.
+Aluminum fascia wrapping covers existing wood fascia boards with custom-bent aluminum coil stock, shielding them from direct rain and sun exposure and removing the need for repainting. This is one of the most cost-effective ways to protect and modernize the roofline appearance on an existing home.
 
 ---
 

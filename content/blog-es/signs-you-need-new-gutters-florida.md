@@ -61,7 +61,7 @@ Esta es la consecuencia más costosa de la falla de las canaletas. La reparació
 
 Las canaletas en secciones tienen juntas cada 10 pies. Con el tiempo, el sellador falla y las juntas se separan. Verá goteo a intervalos regulares a lo largo de la línea de la canaleta cuando llueve.
 
-La reparación de uniones funciona como solución a corto plazo, pero si sus canaletas en secciones gotean en varias juntas, cambiar a canaletas sin costura elimina el problema de forma permanente. Las canaletas sin costura se fabrican de una sola pieza continua: no hay juntas que puedan fallar.
+La reparación de uniones funciona como solución a corto plazo, pero si sus canaletas en secciones gotean en varias juntas, cambiar a canaletas sin costura quita las uniones cada 10 pies que están fallando. Las canaletas sin costura se forman de una sola pieza continua a lo largo del tramo; los únicos puntos sellados que quedan son las esquinas a inglete, las tapas de extremo y las salidas de bajante.
 
 ## 7. Sus Canaletas Tienen Más de 20 Años
 

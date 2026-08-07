@@ -78,6 +78,6 @@ Para cualquier otra casa en Tampa Bay, lo que significa casi todas las casas, da
 
 ## En resumen
 
-Los protectores de canaletas son una inversión que se paga sola en 3 a 5 años para la mayoría de las casas en Tampa. Después de eso, ahorra de $400 a $800 al año en costos de limpieza mientras elimina el riesgo de los eventos de daño de $2,000 a $15,000 que causan las canaletas tapadas. Las cuentas no están ni cerca.
+Los protectores de canaletas son una inversión que se paga sola en 3 a 5 años para la mayoría de las casas en Tampa. Después de eso, ahorra de $400 a $800 al año en costos de limpieza y baja mucho su exposición a los eventos de daño de $2,000 a $15,000 que causan las canaletas tapadas. Los protectores reducen la limpieza, no la eliminan.
 
 **[Obtenga un estimado gratis de protectores de canaletas](/estimator)** o llame al **(844) 444-3114**. Instalamos protectores de micro malla, aluminio, malla estándar y EZ mesh. Sirviendo a 21 ciudades en Tampa Bay.

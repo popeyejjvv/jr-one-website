@@ -30,7 +30,7 @@ Un protector de canaletas de micro malla tiene dos componentes:
 
 El agua pasa a través de la malla por tensión superficial y gravedad. Los escombros se quedan encima de la malla, donde el viento, las salpicaduras de lluvia y la gravedad los mueven hacia el borde, o se secan y salen volando.
 
-La diferencia clave con los protectores de rejilla estándar: **las rejillas estándar tienen aberturas de 1/4 de pulgada o más grandes.** Las agujas de pino, el granulado de tejas, las semillas y los pequeños escombros pasan directamente a través de ellas y se acumulan dentro de la canaleta. Las aberturas de la micro malla son de 50 a 100 veces más pequeñas, no pasa nada excepto el agua.
+La diferencia clave con los protectores de rejilla estándar: **las rejillas estándar tienen aberturas de 1/4 de pulgada o más grandes.** Las agujas de pino, el granulado de tejas, las semillas y los pequeños escombros pasan directamente a través de ellas y se acumulan dentro de la canaleta. Las aberturas de la micro malla son de 50 a 100 veces más pequeñas, así que detienen las agujas de pino, las semillas y el granulado de tejas que se cuelan por una rejilla estándar. El polvo y el sedimento muy fino sí pueden pasar con el tiempo.
 
 ## Qué Bloquea la Micro Malla
 
@@ -110,7 +110,7 @@ La micro malla no elimina el mantenimiento, lo reduce dramáticamente:
 - **Sin protectores:** Limpiar las canaletas de 2 a 4 veces al año ($400-$1,600/año)
 - **Con micro malla:** Despejar los escombros de superficie 1 vez al año ($150-$250/año)
 
-La limpieza anual consiste en cepillar o soplar las hojas y escombros de encima de la malla. Nada dentro de la canaleta necesita atención porque nada pasa a través de la malla.
+La limpieza anual consiste en cepillar o soplar las hojas y escombros de encima de la malla. Como la malla detiene la mayor parte de los escombros en la superficie, el interior de la canaleta necesita atención con mucha menos frecuencia, aunque el sedimento fino sí se puede juntar ahí con los años.
 
 ## Quién Debería Conseguir Micro Malla
 

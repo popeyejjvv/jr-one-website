@@ -13,7 +13,7 @@
 Seven Oaks and Meadow Pointe homeowners with tall two-story houses and builder-grade 5-inch gutters that still overflow, Epperson Lagoon residents who don't want to climb a ladder twice a year, Saddlebrook and Lexington Oaks residents under oaks and pines shedding year-round, and busy professionals in new Wesley Chapel subdivisions willing to pay once to mostly solve the problem.
 
 ## Why Gutter Guards Matter in Wesley Chapel
-Wesley Chapel is mostly newer master-planned construction - big two-story roof footprints, lots of surrounding oaks and pines, and the same 50-plus inches of Tampa Bay annual rainfall pounding those roofs in summer thunderstorms. On a typical Seven Oaks or Meadow Pointe two-story, cleaning the gutters means a 25-foot ladder and a free afternoon - three or four times a year. Good micro mesh guards cut that down to once every two to three years and solve the overflow problem at the same time.
+Wesley Chapel is mostly newer master-planned construction - big two-story roof footprints, lots of surrounding oaks and pines, and the same 50-plus inches of Tampa Bay annual rainfall pounding those roofs in summer thunderstorms. On a typical Seven Oaks or Meadow Pointe two-story, cleaning the gutters means a 25-foot ladder and a free afternoon - three or four times a year. Good micro mesh guards typically cut that down to once every two to three years and stop the debris-driven overflow that happens when a gutter clogs mid-storm. If your gutters overflow even when clean, they are undersized and guards will not fix that.
 
 ## What JR One Aluminum Does for Wesley Chapel Homeowners
 - Pre-install gutter cleaning

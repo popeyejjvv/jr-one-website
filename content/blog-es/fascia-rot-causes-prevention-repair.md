@@ -8,7 +8,7 @@ faqs:
   - question: "¿Qué causa la pudrición de la fascia en Florida?"
     answer: "Tres factores: la exposición al agua de canaletas que gotean o se desbordan, la humedad de todo el año en Florida que no deja que la madera se seque, y el deterioro por rayos UV que destruye la protección de la pintura. La mayoría de la pudrición de fascia empieza detrás de la canaleta, donde no se ve hasta que el daño ya está avanzado."
   - question: "¿Cuánto cuesta reparar la fascia en Tampa?"
-    answer: "Reemplazar la fascia de madera cuesta de $4 a $8 por pie lineal, pero se volverá a pudrir. El recubrimiento de fascia en aluminio cuesta de $6 a $12 por pie lineal y es una solución permanente: no más pudrición, no más repintar. Un recubrimiento completo de fascia en aluminio alrededor de toda una casa en Tampa cuesta de $1,500 a $3,500."
+    answer: "Reemplazar la fascia de madera cuesta de $4 a $8 por pie lineal, pero se volverá a pudrir. El recubrimiento de fascia en aluminio cuesta de $6 a $12 por pie lineal y suele durar más de 30 años sin ciclo de repintado, porque el aluminio no absorbe humedad y el color viene horneado en el acabado. Un recubrimiento completo de fascia en aluminio alrededor de toda una casa en Tampa cuesta de $1,500 a $3,500."
 ---
 
 # Pudrición de la fascia en Florida: causas, prevención y reparación permanente

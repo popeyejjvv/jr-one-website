@@ -8,7 +8,7 @@ faqs:
   - question: "What causes fascia rot in Florida?"
     answer: "Three factors: water exposure from leaking or overflowing gutters, Florida's year-round humidity that prevents wood from drying, and UV degradation that breaks down paint protection. Most fascia rot starts behind the gutter where you can't see it until the damage is advanced."
   - question: "How much does fascia repair cost in Tampa?"
-    answer: "Wood fascia replacement costs $4-$8 per linear foot but will rot again. Aluminum fascia wrap costs $6-$12 per linear foot and is a permanent fix - no more rot, no more repainting. A typical full-perimeter aluminum fascia wrap on a Tampa home costs $1,500-$3,500."
+    answer: "Wood fascia replacement costs $4-$8 per linear foot but will rot again. Aluminum fascia wrap costs $6-$12 per linear foot and typically lasts 30+ years with no repainting cycle, because the aluminum does not absorb moisture and the color is baked into the finish. A typical full-perimeter aluminum fascia wrap on a Tampa home costs $1,500-$3,500."
 ---
 
 # Fascia Rot in Florida: Causes, Prevention, and Permanent Repair
@@ -56,7 +56,7 @@ If the wood is already soft or rotted, painting over it is money wasted - the ro
 
 ## The Right Fix: Aluminum Fascia Wrap
 
-Aluminum fascia wrap is the permanent solution. Custom-bent aluminum covers the entire fascia board, creating a waterproof, UV-proof surface that:
+Aluminum fascia wrap is the longest-lasting fix. Custom-bent aluminum covers the entire fascia board, creating a water-shedding, UV-stable surface that:
 
 - **Never rots** - aluminum doesn't absorb moisture
 - **Never needs painting** - the color is baked into the finish at the factory

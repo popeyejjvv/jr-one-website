@@ -43,7 +43,7 @@ Las canaletas sin costura eliminan todos estos puntos de falla. Una sola pieza c
 | Material + instalación por pie lineal | $4 - $8 | $8 - $15 |
 | Casa típica de Tampa (175 pies lineales) | $700 - $1,400 | $1,400 - $2,625 |
 | Vida útil esperada en FL | 10 - 15 años | 20 - 30 años |
-| Reparaciones de costuras durante la vida útil | $200-$500+ | $0 |
+| Reparaciones de costuras durante la vida útil | $200-$500+ | Mínimas: no hay uniones a lo largo del tramo; las esquinas, tapas y salidas sí se pueden resellar |
 | Frecuencia de limpieza | 3-4 veces al año | 2 veces al año (atrapan menos residuos) |
 | Costo total a 20 años | $1,400 - $2,900+ | $1,400 - $2,625 |
 
@@ -77,6 +77,6 @@ Mientras decide entre sin costura y seccionales, elija también el tamaño corre
 
 ## En resumen
 
-Las canaletas de aluminio sin costura de 6 pulgadas estilo K son la recomendación estándar para las casas de Tampa Bay. Cuestan más al principio que las seccionales, pero duran el doble, nunca gotean en las uniones y cuestan menos a lo largo de 20 años cuando se toman en cuenta las reparaciones y el reemplazo que se ahorra.
+Las canaletas de aluminio sin costura de 6 pulgadas estilo K son la recomendación estándar para las casas de Tampa Bay. Cuestan más al principio que las seccionales, pero duran bastante más y quitan las uniones cada 10 pies, que es justo donde empiezan a gotear los sistemas en secciones, así que cuestan menos a lo largo de 20 años cuando se toman en cuenta las reparaciones y el reemplazo que se ahorra.
 
 **[Reciba un estimado gratis de canaletas sin costura](/estimator)** o llame al **(844) 444-3114**. Fabricadas a la medida en el sitio, instaladas por nuestro equipo propio, con más de 30 años de experiencia en Tampa Bay.

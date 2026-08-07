@@ -70,7 +70,7 @@ Gutter Helmet charges $12 - $18+ per linear foot ($2,000 - $3,500 for average ho
 
 No gutter guard eliminates all maintenance. What good guards do:
 - Dramatically reduce cleaning frequency (from 2-4 times/year to once every 2-3 years for most homes)
-- Eliminate the risk of clogged gutters causing overflow and water damage
+- Sharply reduce the risk of clogged gutters causing overflow and water damage
 - Reduce the risk of mosquito breeding in standing water inside gutters
 - Reduce the risk of fascia and soffit damage from overflowing gutters
 

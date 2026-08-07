@@ -13,7 +13,7 @@
 Two-story Panther Trace, Rivercrest, and South Fork homeowners tired of hiring out multiple cleanings a year, Summerfield and Ayersworth Glen residents whose builder-grade 5-inch gutters overflow regardless of cleaning, busy professionals in new Riverview subdivisions willing to pay once to mostly stop the problem, and preserve-backed homeowners dealing with constant oak and pine debris.
 
 ## Why Gutter Guards Matter in Riverview
-Riverview's master-planned subdivisions are dense with builder-grade 5-inch gutters on big two-story roofs, often bordered by oaks, pines, or conservation areas that drop debris year-round. Cleaning three or four times a year on a 25-foot ladder gets old fast. Good micro mesh guards drop the cleaning cadence to once every two to three years and end the overflow problem. Because Riverview lots often grade poorly, overflow at the slab causes more damage faster than on well-graded lots - which is another reason to stop it at the gutter.
+Riverview's master-planned subdivisions are dense with builder-grade 5-inch gutters on big two-story roofs, often bordered by oaks, pines, or conservation areas that drop debris year-round. Cleaning three or four times a year on a 25-foot ladder gets old fast. Good micro mesh guards drop the cleaning cadence to once every two to three years and cut the debris-driven overflow. If the gutters themselves are undersized, guards alone will not stop overflow - the gutter has to be upsized too. Because Riverview lots often grade poorly, overflow at the slab causes more damage faster than on well-graded lots - which is another reason to stop it at the gutter.
 
 ## What JR One Aluminum Does for Riverview Homeowners
 - Pre-install cleaning

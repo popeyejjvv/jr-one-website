@@ -10,7 +10,7 @@
 
 ## What Is Sagiper?
 
-Sagiper is a premium Canadian-engineered PVC exterior cladding and soffit system built for high-performance, high-aesthetic applications where standard vinyl or aluminum soffit can't meet the design brief. Sagiper's cellular PVC construction looks like real wood - with deep grain texture, rich color saturation, and a premium profile - but performs like PVC: zero rot, zero warp, zero paint maintenance, and zero pest vulnerability.
+Sagiper is a premium Canadian-engineered PVC exterior cladding and soffit system built for high-performance, high-aesthetic applications where standard vinyl or aluminum soffit can't meet the design brief. Sagiper's cellular PVC construction looks like real wood - with deep grain texture, rich color saturation, and a premium profile - but performs like PVC: it will not rot, it holds its color without repainting, and it gives termites and other pests nothing to feed on. Cellular PVC does move with temperature, so it is installed with the manufacturer's expansion gaps.
 
 ---
 
@@ -44,7 +44,7 @@ Most soffit options compromise on one of three axes: appearance, durability, or 
 |--------|---------|----------------|--------------|------------------------|
 | Aesthetic | Premium wood-grain | Utilitarian | Utilitarian | Premium natural |
 | Florida humidity performance | Excellent | Excellent | Good | Poor (rots) |
-| Maintenance | Zero | Zero | Zero | High (paint, seal) |
+| Maintenance | Periodic washing only | Periodic washing only | Periodic washing only | High (paint, seal, refinish) |
 | UV resistance | Excellent | Excellent | Good | Poor (fades) |
 | Pest resistance | Excellent | Excellent | Excellent | Poor |
 | Cost | Premium | Standard | Budget | Premium |

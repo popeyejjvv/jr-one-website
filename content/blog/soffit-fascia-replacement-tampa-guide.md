@@ -55,11 +55,11 @@ The result: wood soffit and fascia in Tampa typically shows meaningful deteriora
 - Water stains on attic ceiling near the eaves
 - Peeling paint or discoloration on soffit panels
 
-## The Permanent Fix: Wood-to-Aluminum Conversion
+## The Long-Term Fix: Wood-to-Aluminum Conversion
 
 Repainting wood soffit buys you 3-5 years before you're doing it again. Replacing rotted wood with new wood restarts the same clock in the same climate.
 
-**Aluminum soffit and fascia ends the cycle permanently.**
+**Aluminum soffit and fascia breaks the repaint-and-rot cycle.**
 
 - Doesn't rot, warp, or absorb moisture
 - Doesn't need painting - the color is baked into the finish

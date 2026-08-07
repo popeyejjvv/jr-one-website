@@ -354,7 +354,7 @@ const ENRICHMENT = {
       ["Micro-mesh stainless guard","Blocks pine needles, the test most consumer guards fail. Brandon has too many pines for anything less."],
       ["Works with existing 6-inch and 7-inch gutters","Retrofit onto your current system, no full replacement needed if the existing gutter is sound."],
       ["Cuts cleaning frequency","Three cleanings a year drops to one inspection visit. Math works in 2 to 4 years."],
-      ["Lifetime mesh warranty","The mesh itself does not rust, warp, or collapse under debris load. Written warranty in the install package."],
+      ["Stainless mesh warranty","The mesh itself does not rust, warp, or collapse under debris load. The manufacturer's written warranty is in your install package."],
     ],
     faqs: [
       { q: "How much do gutter guards cost in Brandon?", a: "Micro-mesh stainless gutter guard installation from JR One Aluminum runs $8 to $14 per linear foot installed in Brandon, FL. A standard single-story home with 150 to 200 linear feet of gutter runs $1,200 to $2,800 total. Larger two-story homes and homes with complex rooflines run higher. Price is driven by linear footage, roof height and ladder access, one-story versus two-story, gutter size, 6-inch or 7-inch, and number of downspouts. Free flat-price estimate at the property, no per-trip charge for the visit. Use the JR One estimator at jronegutters.com/estimator for a number on your own home, or call (844) 444-3114." },
@@ -482,7 +482,7 @@ const ENRICHMENT = {
       ["Micro-mesh stainless guard","Blocks pine needles, the test most consumer guards fail. Spring Hill has too much pine canopy for anything less."],
       ["Works with existing 6-inch and 7-inch gutters","Retrofit onto your current system if the existing gutter is sound. No full replacement needed."],
       ["Cuts cleaning frequency","Three cleanings a year drops to one inspection visit. Math works in two to four years for canopy-heavy homes."],
-      ["Lifetime mesh warranty","Stainless steel mesh does not rust, warp, or collapse under debris load. Written warranty in the install package."],
+      ["Stainless mesh warranty","Stainless steel mesh does not rust, warp, or collapse under debris load. The manufacturer's written warranty is in your install package."],
     ],
     faqs: [
       { q: "How much do gutter guards cost in Spring Hill?", a: "Micro-mesh stainless gutter guard installation from JR One Aluminum runs $8 to $14 per linear foot installed in Spring Hill, FL. A standard single-story home with 150 to 200 linear feet of gutter runs $1,200 to $2,800 total. Larger Glen Lakes or Timber Pines homes and homes with complex rooflines run higher. Price is driven by linear footage, roof height and ladder access, one-story versus two-story, gutter size, 6-inch or 7-inch, and number of downspouts. Free flat-price estimate at the property. Use the JR One estimator at jronegutters.com/estimator for a number on your own home, or call (844) 444-3114." },
@@ -799,7 +799,7 @@ const ENRICHMENT = {
       ["Micro-mesh stainless guard","Blocks pine needles, the test most consumer guards fail. New Port Richey has too much pine and palm canopy for anything less."],
       ["Works with existing 6-inch and 7-inch gutters","Retrofit onto your current system if the existing gutter is sound. No full replacement needed."],
       ["Cuts cleaning frequency","Three cleanings a year drops to one inspection visit. Math works in two to four years for canopy-heavy homes."],
-      ["Lifetime mesh warranty","Stainless steel mesh does not rust, warp, or collapse under debris load. Written warranty in the install package."],
+      ["Stainless mesh warranty","Stainless steel mesh does not rust, warp, or collapse under debris load. The manufacturer's written warranty is in your install package."],
     ],
     faqs: [
       { q: "How much do gutter guards cost in New Port Richey?", a: "Micro-mesh stainless gutter guard installation from JR One Aluminum runs $8 to $14 per linear foot installed in New Port Richey, FL. A standard single-story home with 150 to 200 linear feet of gutter runs $1,200 to $2,800 total. Larger Trinity, Seven Springs, or River Ridge homes and homes with complex rooflines run higher. Price is driven by linear footage, roof height and ladder access, one-story versus two-story, gutter size, 6-inch or 7-inch, and number of downspouts. Free flat-price estimate at the property, no per-trip charge for the visit. Use the JR One estimator at jronegutters.com/estimator for a number on your own home, or call (844) 444-3114." },
@@ -1000,7 +1000,7 @@ const ENRICHMENT = {
       ["Micro-mesh stainless guard","Blocks pine needles and oak debris, the test most consumer guards fail. Riverview canopy-heavy subdivisions have too much pine and oak for anything less."],
       ["Works with existing 6-inch and 7-inch gutters","Retrofit onto your current system if the existing gutter is sound. No full replacement needed."],
       ["Cuts cleaning frequency","Three cleanings a year drops to one inspection visit. Math works in two to four years for canopy-heavy Panther Trace and Bloomingdale homes."],
-      ["Lifetime mesh warranty","Stainless steel mesh does not rust, warp, or collapse under debris load. Written warranty in the install package."],
+      ["Stainless mesh warranty","Stainless steel mesh does not rust, warp, or collapse under debris load. The manufacturer's written warranty is in your install package."],
     ],
     faqs: [
       { q: "How much do gutter guards cost in Riverview?", a: "Micro-mesh stainless gutter guard installation from JR One Aluminum runs $8 to $14 per linear foot installed in Riverview, FL. A standard single-story home with 150 to 200 linear feet of gutter runs $1,200 to $2,800 total. Larger Triple Creek and Riverview Estates homes and homes with complex rooflines run higher. Price is driven by linear footage, roof height and ladder access, one-story versus two-story, gutter size, 6-inch or 7-inch, and number of downspouts. Free flat-price estimate at the property. Use the JR One estimator at jronegutters.com/estimator for a number on your own home, or call (844) 444-3114." },

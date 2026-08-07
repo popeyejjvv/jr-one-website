@@ -44,7 +44,7 @@ Gutter-related damage on rental properties is expensive and disruptive:
 - **Mold remediation:** $2,000-$10,000 (plus potential habitability complaint)
 - **Insurance premium increase:** varies, but claims history raises rates
 
-$300-$600/year in maintenance prevents all of these.
+A $300-$600/year maintenance budget is small next to any one of these repairs, and consistent gutter maintenance is the cheapest way to lower the risk of gutter-caused water damage.
 
 ## Gutter Guards for Rentals
 
@@ -53,7 +53,7 @@ Gutter guards are especially valuable on rental properties because they reduce t
 - **Without guards:** You depend on scheduling and completing 2-4 cleanings per year. Miss one, and you're accumulating damage.
 - **With guards:** One annual clearing is sufficient. The guards prevent the clogs that cause 90% of gutter-related damage.
 
-The $1,500-$3,000 investment in guards typically pays for itself within 3-4 years on a rental property through reduced cleaning costs and eliminated damage risk.
+The $1,500-$3,000 investment in guards typically pays for itself within 3-4 years on a rental property through reduced cleaning costs and lower risk of clog-related water damage.
 
 ## Multi-Property Management
 

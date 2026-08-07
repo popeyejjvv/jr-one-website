@@ -111,7 +111,7 @@ Llame a un profesional para: cualquier cosa que requiera una escalera en una cas
 | Restauración de daño por agua en el interior | $3,000 - $15,000 |
 | Deducible del seguro + aumento de la prima | $2,500 - $10,000 |
 
-Las cuentas son claras. De $500 a $1,500 al año en prevención elimina el riesgo de $5,000 a $50,000 en reparaciones.
+Las cuentas favorecen la prevención. De $500 a $1,500 al año en mantenimiento es una fracción de los $5,000 a $50,000 que puede costar reparar el daño por agua cuando un problema chico se deja crecer.
 
 ## En resumen
 

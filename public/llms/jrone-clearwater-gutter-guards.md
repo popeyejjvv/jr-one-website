@@ -53,7 +53,7 @@ A: Properly installed guards ride out storms. Large displaced branches can occas
 A: Usually yes. Belleair has tighter HOA and architectural review rules - we handle the approval process where needed.
 
 **Q: Is copper worth it on a waterfront home?**
-A: Yes, if you want permanent. Copper is immune to salt corrosion and pairs with the higher-end Island Estates, Harbor Oaks, and Belleair architecture. Premium price, multi-generational lifespan.
+A: Yes. On a waterfront home copper is the longest-lived system we install. It resists salt corrosion far better than painted steel or standard aluminum and self-patinates instead of rusting, and it pairs with the higher-end Island Estates, Harbor Oaks, and Belleair architecture. Premium price, multi-generational lifespan.
 
 **Q: Do guards work on existing older gutters?**
 A: Yes, if the gutters themselves are still sound. We inspect during the quote - if the gutters are failing, we say so before putting guards over a system about to go.

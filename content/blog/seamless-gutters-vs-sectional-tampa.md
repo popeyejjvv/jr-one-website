@@ -43,7 +43,7 @@ Seamless gutters eliminate all of these failure points. One continuous piece mea
 | Material + install per LF | $4 - $8 | $8 - $15 |
 | Typical Tampa home (175 LF) | $700 - $1,400 | $1,400 - $2,625 |
 | Expected lifespan in FL | 10 - 15 years | 20 - 30 years |
-| Seam repairs over life | $200-$500+ | $0 |
+| Seam repairs over life | $200-$500+ | Minimal - no seams along the runs; corners, end caps, and outlets can still need resealing |
 | Cleaning frequency | 3-4x/year | 2x/year (less debris catch) |
 | 20-year total cost | $1,400 - $2,900+ | $1,400 - $2,625 |
 
@@ -77,6 +77,6 @@ While you're choosing between seamless and sectional, choose the right size too.
 
 ## The Bottom Line
 
-Seamless aluminum gutters in 6-inch K-style are the standard recommendation for Tampa Bay homes. They cost more upfront than sectional but last twice as long, never leak at joints, and cost less over 20 years when you factor in the repairs and replacement you avoid.
+Seamless aluminum gutters in 6-inch K-style are the standard recommendation for Tampa Bay homes. They cost more upfront than sectional but last considerably longer and remove the every-10-feet seams where sectional systems typically start leaking, so they cost less over 20 years once you factor in the repairs and replacement you avoid.
 
 **[Get a free estimate for seamless gutters](/estimator)** or call **(844) 444-3114**. Custom-fabricated on-site, installed by our in-house crew, over 30 years of Tampa Bay experience.
