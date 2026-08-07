@@ -69,7 +69,7 @@ const T = {
 
     trustTag: "TRANSPARENCY",
     trustTitle: "Why We Put This Here",
-    trustBody: "Most contractors hide their license and insurance documents, or make you call and ask for them. We don't. Our LLC has been active in Florida since 2010, our insurance is current, and our work is backed by a 3-year workmanship warranty. If you want to verify any of it before signing a contract, you should be able to do that on your own time.",
+    trustBody: "Most contractors hide their license and insurance documents, or make you call and ask for them. We don't. Our LLC is active and in good standing in Florida, our insurance is current, and our work is backed by a 3-year workmanship warranty. If you want to verify any of it before signing a contract, you should be able to do that on your own time.",
 
     ctaTitle: "Questions About Any of This?",
     ctaSub: "Call us. We answer the phone, and we'll send anything you need by email if you can't find it here.",
@@ -127,7 +127,7 @@ const T = {
 
     trustTag: "TRANSPARENCIA",
     trustTitle: "Por Qué Publicamos Esto",
-    trustBody: "La mayoría de los contratistas esconden sus documentos de licencia y seguro, o hacen que llame y los pida. Nosotros no. Nuestra LLC ha estado activa en Florida desde 2010, nuestro seguro está vigente, y nuestro trabajo está respaldado por una garantía de mano de obra de 3 años. Si quiere verificar cualquiera de esto antes de firmar un contrato, debería poder hacerlo en su propio tiempo.",
+    trustBody: "La mayoría de los contratistas esconden sus documentos de licencia y seguro, o hacen que llame y los pida. Nosotros no. Nuestra LLC está activa y en regla en Florida, nuestro seguro está vigente, y nuestro trabajo está respaldado por una garantía de mano de obra de 3 años. Si quiere verificar cualquiera de esto antes de firmar un contrato, debería poder hacerlo en su propio tiempo.",
 
     ctaTitle: "¿Preguntas Sobre Algo de Esto?",
     ctaSub: "Llámenos. Contestamos el teléfono, y le enviaremos cualquier cosa que necesite por correo si no la encuentra aquí.",
