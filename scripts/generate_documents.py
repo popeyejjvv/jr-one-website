@@ -55,13 +55,31 @@ CALLOUT_W = 470.0
 
 STAR = "★"         # ReportLab maps this to ZapfDingbats 0x48, the black star
 
-# Shared chrome. No founding year is published anywhere in here: the header
-# carries the sanctioned tenure line and the footer carries family-owned only.
+# Shared chrome, per language. A Spanish document is Spanish all the way through,
+# including the parts that are not in the markdown. What deliberately does NOT
+# translate: the company name, the street address, the phone, the email and the
+# domain are facts, and the FL document number is a state identifier.
+#
+# No founding year is published anywhere in here: the header carries the
+# sanctioned tenure line and the footer carries family-owned only.
 # See .claude/rules/ jrone brand notes + decisions-log.md 2026-08-07.
-TENURE = "Over 30 years in the Tampa Bay gutter industry"
-TAGLINE = "The Superior Soffit & Gutter Experts  "
-FOOTER_LEGAL = "FL Document Number L10000115561  •  Family-owned and operated"
+TENURE = {
+    "en": "Over 30 years in the Tampa Bay gutter industry",
+    "es": "Más de 30 años en la industria de canaletas de Tampa Bay",
+}
+TAGLINE = {
+    "en": "The Superior Soffit & Gutter Experts  ",
+    "es": "Expertos Superiores en Sofito y Canaletas  ",
+}
+FOOTER_LEGAL = {
+    "en": "FL Document Number L10000115561  •  Family-owned and operated",
+    "es": "Número de documento de Florida L10000115561  •  Empresa familiar",
+}
+PAGE_WORD = {"en": "Page", "es": "Página"}
 FOOTER_ADDR = "3420 W Cherry St, Tampa, FL 33607  •  (844) 444-3114  •  info@jronegutters.com"
+HEADER_RIGHT_PHONE = "(844) 444-3114"
+HEADER_RIGHT_DOMAIN = "jronegutters.com"
+HEADER_MIN_CLEARANCE = 10.0   # points the tagline must keep clear of the right block
 # These are templates sent to every customer, not executed instruments, so the
 # block under the rule carries a title rather than a person's signature.
 SIGN_TITLE = {
@@ -157,7 +175,30 @@ def parse(path):
     return meta, blocks
 
 
-def draw_header(c, eyebrow):
+def assert_header_fits(lang):
+    """The tagline runs left to right under the company name and the phone and
+    domain are right-aligned on nearly the same baselines. Translating the
+    tagline makes it longer, so this is a build-time gate rather than a thing
+    somebody notices in a PDF later."""
+    end = LEFT + (
+        stringWidth(TAGLINE[lang], "Helvetica-Oblique", 9)
+        + stringWidth(STAR, "ZapfDingbats", 9)
+        + stringWidth("  " + TENURE[lang], "Helvetica-Oblique", 9)
+    )
+    right_block = RIGHT - max(
+        stringWidth(HEADER_RIGHT_PHONE, "Helvetica", 9),
+        stringWidth(HEADER_RIGHT_DOMAIN, "Helvetica", 9),
+    )
+    clear = right_block - end
+    if clear < HEADER_MIN_CLEARANCE:
+        raise SystemExit(
+            f"header tagline for lang={lang} ends at x={end:.1f}, only {clear:.1f}pt "
+            f"clear of the right block at x={right_block:.1f} "
+            f"(minimum {HEADER_MIN_CLEARANCE}pt). Shorten TAGLINE or TENURE."
+        )
+
+
+def draw_header(c, eyebrow, lang):
     hexcolor(c, NAVY)
     c.rect(0, 714, 612, 78, stroke=0, fill=1)
     hexcolor(c, GOLD_RULE)
@@ -170,24 +211,24 @@ def draw_header(c, eyebrow):
     hexcolor(c, GOLD_TEXT)
     t = c.beginText(LEFT, 740)
     t.setFont("Helvetica-Oblique", 9)
-    t.textOut(TAGLINE)
+    t.textOut(TAGLINE[lang])
     t.setFont("ZapfDingbats", 9)
     t.textOut(STAR)
     t.setFont("Helvetica-Oblique", 9)
-    t.textOut("  " + TENURE)
+    t.textOut("  " + TENURE[lang])
     c.drawText(t)
 
     hexcolor(c, WHITE)
     c.setFont("Helvetica", 9)
-    c.drawRightString(RIGHT, 757, "(844) 444-3114")
+    c.drawRightString(RIGHT, 757, HEADER_RIGHT_PHONE)
     hexcolor(c, GOLD_TEXT)
-    c.drawRightString(RIGHT, 745, "jronegutters.com")
+    c.drawRightString(RIGHT, 745, HEADER_RIGHT_DOMAIN)
     hexcolor(c, SLATE)
     c.setFont("Helvetica", 8)
     c.drawRightString(RIGHT, 733, eyebrow)
 
 
-def draw_footer(c, page_no):
+def draw_footer(c, page_no, lang):
     hexcolor(c, HAIRLINE)
     c.rect(LEFT, 56, BODY_W, 0.7, stroke=0, fill=1)
     hexcolor(c, NAVY)
@@ -196,11 +237,11 @@ def draw_footer(c, page_no):
     hexcolor(c, SLATE)
     c.setFont("Helvetica", 8.5)
     c.drawString(LEFT, 30, FOOTER_ADDR)
-    c.drawString(LEFT, 18, FOOTER_LEGAL)
+    c.drawString(LEFT, 18, FOOTER_LEGAL[lang])
     c.setFont("Helvetica-Oblique", 8)
-    c.drawRightString(RIGHT, 42, "jronegutters.com")
+    c.drawRightString(RIGHT, 42, HEADER_RIGHT_DOMAIN)
     c.setFont("Helvetica", 8)
-    c.drawRightString(RIGHT, 30, f"Page {page_no}")
+    c.drawRightString(RIGHT, 30, f"{PAGE_WORD[lang]} {page_no}")
 
 
 def draw_title(c, title, subtitle):
@@ -218,10 +259,11 @@ def render(meta, blocks, dest):
     tmpl = meta["template"]
     lang = meta.get("lang", "en")
     gaps = GAPS[tmpl]
+    assert_header_fits(lang)
 
     c = canvas.Canvas(str(dest), pagesize=(PAGE_W, PAGE_H))
     page_no = 1
-    draw_header(c, meta["eyebrow"])
+    draw_header(c, meta["eyebrow"], lang)
     draw_title(c, meta["title"], meta["subtitle"])
     y = LEAD_START_Y[tmpl]
     prev = None
@@ -231,10 +273,10 @@ def render(meta, blocks, dest):
         kind = b["kind"]
 
         if kind == "pagebreak":
-            draw_footer(c, page_no)
+            draw_footer(c, page_no, lang)
             c.showPage()
             page_no += 1
-            draw_header(c, meta["eyebrow"])
+            draw_header(c, meta["eyebrow"], lang)
             y = CONTINUATION_START_Y
             prev = None
             quirk_due = tmpl == "guide"
@@ -324,7 +366,7 @@ def render(meta, blocks, dest):
 
         prev = kind
 
-    draw_footer(c, page_no)
+    draw_footer(c, page_no, lang)
     c.save()
 
 

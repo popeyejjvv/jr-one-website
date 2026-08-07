@@ -34,8 +34,16 @@ Fix the markdown, run the build, commit both the `.md` and the `.pdf`. That is t
 whole loop. Never edit a PDF directly.
 
 Shared chrome (header bar, tagline, signature block, footer) is **not** in the
-markdown, because it has to stay identical across all six. It lives in the constants
-at the top of `scripts/generate_documents.py`.
+markdown, because it has to stay consistent across all six. It lives in the constants
+at the top of `scripts/generate_documents.py`, keyed by the `lang:` in the front
+matter, so a Spanish document renders Spanish chrome. What deliberately does *not*
+translate: the company name, the street address, the phone, the email, the domain,
+and the FL document number. Those are facts, not copy.
+
+`assert_header_fits()` runs on every build. The tagline and the tenure line share a
+baseline with the right-aligned phone and domain, and translating them makes them
+longer, so the build fails rather than shipping a header collision. If it fires,
+shorten `TAGLINE` or `TENURE` for that language.
 
 ### Block syntax
 
