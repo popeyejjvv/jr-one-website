@@ -46,7 +46,7 @@ Common Tampa-specific issues JR One Aluminum resolves:
 
 ## Services Available in Tampa
 
-- Seamless aluminum gutter installation (5", 6", 7" K-style, half-round, commercial)
+- Seamless aluminum gutter installation (6" and 7" K-style, half-round, commercial)
 - Copper gutter systems for historic and architectural homes
 - Soffit installation (aluminum, vinyl, Hardie, Sagiper)
 - Fascia installation and wrapping (single, 2-tier, 3-tier)

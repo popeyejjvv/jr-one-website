@@ -21,7 +21,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Micro mesh, leaf guard, and copper gutter guards professionally installed in Tampa Bay by in-house crews. Guards reduce how often gutters need cleaning.",
+    "Standard aluminum and micromesh gutter guards professionally installed in Tampa Bay by in-house crews. Guards reduce how often gutters need cleaning.",
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",
@@ -52,7 +52,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Gutter Guards Tampa FL, JR One Aluminum",
-    description: "Micro mesh and standard gutter guards professionally installed in Tampa Bay. Free estimates.",
+    description: "Standard aluminum and micromesh gutter guards professionally installed in Tampa Bay. Free estimates.",
     url: "https://www.jronegutters.com/gutter-guards",
     type: "website",
     images: [{ url: "https://www.jronegutters.com/images/gutter-guard-installed.webp", width: 1920, height: 1080, alt: "Micro-mesh gutter guard installed on a JR One Aluminum seamless gutter in Tampa Bay" }],

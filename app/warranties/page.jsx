@@ -47,9 +47,9 @@ const T = {
     materialsTitle: "Manufacturer Warranties",
     materialsDesc: "In addition to our workmanship warranty, the materials we install carry their own manufacturer warranties. We provide all relevant documentation at project completion.",
     materials: [
-      { title: "Aluminum Coil", desc: "Manufacturer paint finish warranties vary by brand and color. Typically 20-40 years on finish." },
+      { title: "Aluminum Coil", desc: "Painted aluminum products carry a 20-year manufacturer paint warranty against cracking, peeling, and chipping. Full terms are in your written warranty." },
       { title: "Copper", desc: "Copper isn't sold with a paint-finish warranty because it isn't painted. The patina is its own protective layer, and copper doesn't rust or rot. Installed copper systems commonly last 50 years or more with periodic cleaning. Joints, fasteners, and impact damage are still ordinary repair items, and our 3-year workmanship warranty covers the installation." },
-      { title: "Vinyl Soffit/Siding", desc: "Manufacturer warranties vary by brand. Typically limited lifetime warranties covering defects in material." },
+      { title: "Vinyl Soffit/Siding", desc: "Manufacturer warranties vary by brand and cover defects in material. We hand you the documentation for the specific product we install at project completion." },
       { title: "Gutter Guards", desc: "Guard manufacturer warranties vary by product type. Documentation provided at installation." },
     ],
     downloadTag: "DOWNLOAD CENTER",
@@ -117,9 +117,9 @@ const T = {
     materialsTitle: "Garantías del Fabricante",
     materialsDesc: "Además de nuestra garantía de mano de obra, los materiales que instalamos tienen sus propias garantías del fabricante. Proporcionamos toda la documentación relevante al completar el proyecto.",
     materials: [
-      { title: "Bobina de Aluminio", desc: "Las garantías de acabado de pintura del fabricante varían según la marca y el color. Típicamente 20-40 años en acabado." },
+      { title: "Bobina de Aluminio", desc: "Los productos de aluminio pintado tienen una garantía de pintura del fabricante de 20 años contra agrietamiento, descascarado y desprendimiento. Los términos completos vienen en su garantía por escrito." },
       { title: "Cobre", desc: "El cobre no se vende con garantía de acabado porque no lleva pintura. La pátina es su propia capa protectora, y el cobre no se oxida ni se pudre. Los sistemas de cobre instalados suelen durar 50 años o más con limpieza periódica. Las uniones, los sujetadores y los golpes siguen siendo reparaciones normales, y nuestra garantía de mano de obra de 3 años cubre la instalación." },
-      { title: "Sofito/Revestimiento de Vinilo", desc: "Las garantías del fabricante varían según la marca. Típicamente garantías limitadas de por vida que cubren defectos en el material." },
+      { title: "Sofito/Revestimiento de Vinilo", desc: "Las garantías del fabricante varían según la marca y cubren defectos en el material. Le entregamos la documentación del producto específico que instalamos al terminar el proyecto." },
       { title: "Protectores de Canaletas", desc: "Las garantías del fabricante de protectores varían según el tipo de producto. Documentación proporcionada en la instalación." },
     ],
     downloadTag: "CENTRO DE DESCARGAS",

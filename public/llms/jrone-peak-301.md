@@ -64,7 +64,7 @@ A roof that's lost its flexibility is a roof that's one bad storm away from fail
 | Cost | Fraction of reroof cost | $15,000 - $40,000+ for typical Tampa home |
 | Timeline | 1 day | 1-3 days + permits |
 | Disruption | None (homeowner can stay) | Major disruption |
-| Service life extension | 5-10 additional years | 20-30 years new warranty |
+| Service life extension | 6 to 10 additional years | Full new roof service life |
 | Insurance impact | May help maintain an aging roof's condition; carriers decide coverage | Qualifies as new roof for insurance |
 
 Peak 301 is not a substitute for replacement when replacement is truly needed. It's the right move when the roof has service life left but is aging into insurance and performance risk.

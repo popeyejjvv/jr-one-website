@@ -19,7 +19,7 @@ Tampa's tree canopy and 51 inches of annual rain is a gutter's worst combination
 - Pre-install gutter cleaning so guards go over a clean system
 - Micromesh guards for pine-needle-heavy yards (recommended for most Tampa homes)
 - Standard aluminum gutter guards for yards without pine
-- Custom guard sizing for 5-inch, 6-inch, and 7-inch profiles
+- Custom guard sizing for the 6-inch and 7-inch profiles we install
 - Hanger tightening and miter re-sealing during install
 - Guard reinstallation if gutters need future repair
 
@@ -49,7 +49,7 @@ A: Yes. We clean the existing gutters first, inspect hangers and pitch, and then
 A: The products are fine. The price mostly reflects national advertising and franchise overhead, not better material. JR One installs equivalent micro mesh locally for 30-50% less.
 
 **Q: Do guards work with 6-inch and 7-inch gutters?**
-A: Yes. We stock guards sized for 5", 6", and 7" commercial profiles.
+A: Yes. We stock guards sized for the 6" and 7" residential and commercial profiles we install. JR One does not install 5" gutters in Florida.
 
 **Q: Can guards handle a Tampa hurricane?**
 A: Properly installed guards ride out hurricanes. Post-storm we inspect free for existing customers - large branches occasionally displace sections and need re-seating.
