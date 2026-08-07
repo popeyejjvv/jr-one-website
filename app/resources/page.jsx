@@ -20,7 +20,7 @@ const T = {
     tag: "RESOURCES",
     heroTitle1: "Everything You Need.",
     heroTitle2: "All In One Place.",
-    heroP: "Care guides, license verification, and insurance documentation. Whether you're a homeowner protecting your install for the long run, or a builder vetting us for your next project, it's all here.",
+    heroP: "Care guides and insurance documentation. Whether you're a homeowner protecting your install for the long run, or a builder vetting us for your next project, it's all here.",
 
     careTag: "MAINTENANCE",
     careTitle: "Care & Maintenance",
@@ -33,16 +33,10 @@ const T = {
       es: "es-JR_One_Maintenance_Care_Guide.pdf",
     },
 
-    legalTag: "LICENSE & INSURANCE",
+    legalTag: "INSURANCE",
     legalTitle: "Verification Documents",
-    legalIntro: "We don't expect you to take our word for it. Below are our official documents, straight from the State of Florida and our insurance carriers. Download whichever you need.",
+    legalIntro: "We don't expect you to take our word for it. Below are our current certificates of insurance, straight from our carriers. Download whichever you need.",
     legalDocs: [
-      {
-        icon: "edge",
-        title: "Florida LLC Certificate of Active Status",
-        desc: "Certificate of Status from the Florida Department of State confirming JR One Aluminum LLC is an active limited liability company in good standing, with its annual report current. Document number L10000115561.",
-        file: "JR_One_Sunbiz_Active_Status_2026.pdf",
-      },
       {
         icon: "shield",
         title: "Certificate of Insurance: General Liability",
@@ -69,7 +63,7 @@ const T = {
 
     trustTag: "TRANSPARENCY",
     trustTitle: "Why We Put This Here",
-    trustBody: "Most contractors hide their license and insurance documents, or make you call and ask for them. We don't. Our LLC is active and in good standing in Florida, our insurance is current, and our work is backed by a 3-year workmanship warranty. If you want to verify any of it before signing a contract, you should be able to do that on your own time.",
+    trustBody: "Most contractors hide their insurance documents, or make you call and ask for them. We don't. Our insurance is current, our work is backed by a 3-year workmanship warranty, and JR One Aluminum LLC is active and in good standing with the State of Florida under document number L10000115561. If you want to verify any of it before signing a contract, you should be able to do that on your own time.",
 
     ctaTitle: "Questions About Any of This?",
     ctaSub: "Call us. We answer the phone, and we'll send anything you need by email if you can't find it here.",
@@ -78,7 +72,7 @@ const T = {
     tag: "RECURSOS",
     heroTitle1: "Todo Lo Que Necesita.",
     heroTitle2: "En Un Solo Lugar.",
-    heroP: "Guías de cuidado, verificación de licencia y documentación de seguro. Ya sea que sea un propietario protegiendo su instalación a largo plazo, o un constructor evaluándonos para su próximo proyecto, todo está aquí.",
+    heroP: "Guías de cuidado y documentación de seguro. Ya sea que sea un propietario protegiendo su instalación a largo plazo, o un constructor evaluándonos para su próximo proyecto, todo está aquí.",
 
     careTag: "MANTENIMIENTO",
     careTitle: "Cuidado y Mantenimiento",
@@ -91,16 +85,10 @@ const T = {
       es: "es-JR_One_Maintenance_Care_Guide.pdf",
     },
 
-    legalTag: "LICENCIA Y SEGURO",
+    legalTag: "SEGURO",
     legalTitle: "Documentos de Verificación",
-    legalIntro: "No esperamos que solo crea en nuestra palabra. A continuación están nuestros documentos oficiales, directamente del Estado de Florida y nuestras compañías de seguros. Descargue lo que necesite.",
+    legalIntro: "No esperamos que solo crea en nuestra palabra. A continuación están nuestros certificados de seguro vigentes, directamente de nuestras compañías aseguradoras. Descargue lo que necesite.",
     legalDocs: [
-      {
-        icon: "edge",
-        title: "Certificado de Estado Activo: Florida LLC",
-        desc: "Certificado de Estado del Departamento de Estado de Florida que confirma que JR One Aluminum LLC es una compañía de responsabilidad limitada activa y en buen estado, con su reporte anual al día. Número de documento L10000115561.",
-        file: "JR_One_Sunbiz_Active_Status_2026.pdf",
-      },
       {
         icon: "shield",
         title: "Certificado de Seguro: Responsabilidad General",
@@ -127,7 +115,7 @@ const T = {
 
     trustTag: "TRANSPARENCIA",
     trustTitle: "Por Qué Publicamos Esto",
-    trustBody: "La mayoría de los contratistas esconden sus documentos de licencia y seguro, o hacen que llame y los pida. Nosotros no. Nuestra LLC está activa y en regla en Florida, nuestro seguro está vigente, y nuestro trabajo está respaldado por una garantía de mano de obra de 3 años. Si quiere verificar cualquiera de esto antes de firmar un contrato, debería poder hacerlo en su propio tiempo.",
+    trustBody: "La mayoría de los contratistas esconden sus documentos de seguro, o hacen que llame y los pida. Nosotros no. Nuestro seguro está vigente, nuestro trabajo está respaldado por una garantía de mano de obra de 3 años, y JR One Aluminum LLC está activa y en regla ante el Estado de Florida bajo el número de documento L10000115561. Si quiere verificar cualquiera de esto antes de firmar un contrato, debería poder hacerlo en su propio tiempo.",
 
     ctaTitle: "¿Preguntas Sobre Algo de Esto?",
     ctaSub: "Llámenos. Contestamos el teléfono, y le enviaremos cualquier cosa que necesite por correo si no la encuentra aquí.",

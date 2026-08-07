@@ -12,9 +12,13 @@ words live here, in plain markdown, one file per PDF:
 | `es-JR_One_Commercial_Warranty.md` | `public/documents/es-JR_One_Commercial_Warranty.pdf` |
 | `es-JR_One_Maintenance_Care_Guide.md` | `public/documents/es-JR_One_Maintenance_Care_Guide.pdf` |
 
-Everything else in `public/documents/` (COIs, Sunbiz certificate, Peak 301 and
+Everything else in `public/documents/` (COIs, Peak 301 and
 insurance-rights sheets) is **not** generated here. Those are third-party or state
 records. Do not try to rebuild them.
+
+The Florida Certificate of Status is no longer among them. It lives in
+`internal-documents/`, which is not served, because it states the LLC filing date.
+See that folder's README before moving it back.
 
 ## Build
 
@@ -69,7 +73,7 @@ logical paragraph and is wrapped at build time, so write it as a single long lin
 | `::item A` / `::item 1` | hanging-label list item; the label gets its own `.` |
 | `::callout` | cream box with the gold left bar; `--` on its own line starts a second paragraph |
 | `::note` | 9pt italic slate line |
-| `::signature` | hairline rule + the shared CEO signature block |
+| `::signature` | hairline rule + the shared owner-title block (a title, not a name) |
 | `::pagebreak` | starts a new page; the next block must be a `::section` |
 
 ## Rules that apply to the content
