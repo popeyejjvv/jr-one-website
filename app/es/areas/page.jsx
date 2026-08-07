@@ -48,7 +48,7 @@ const slugToCity = (slug) =>
 
 export const metadata = {
   title: "Zonas de Servicio, JR One Aluminum LLC, Canaletas Tampa Bay",
-  description: "Canaletas sin costura, sofito, fascia, protectores de canaletas y siding en 29 ciudades del area de Tampa Bay. Condados de Hillsborough, Pinellas, Pasco, Manatee, Sarasota, Polk y Hernando.",
+  description: "Canaletas sin costura, sofito, fascia, protectores de canaletas y siding en 29 ciudades del área de Tampa Bay. Condados de Hillsborough, Pinellas, Pasco, Manatee, Sarasota, Polk y Hernando.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/areas",
     languages: {

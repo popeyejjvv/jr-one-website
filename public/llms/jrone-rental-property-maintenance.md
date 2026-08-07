@@ -129,30 +129,30 @@ A: Full general liability and workers' compensation. Certificates provided to ow
 
 ## Mantenimiento de Alquileres en Tampa Bay
 
-JR One Aluminum LLC provee mantenimiento programado y documentado de canaletas y aluminio para propiedades Airbnb, VRBO, alquiler a largo plazo y de inversion en Tampa Bay. Construido para duenos ausentes que necesitan visibilidad sin viajar.
+JR One Aluminum LLC provee mantenimiento programado y documentado de canaletas y aluminio para propiedades Airbnb, VRBO, alquiler a largo plazo y de inversión en Tampa Bay. Construido para dueños ausentes que necesitan visibilidad sin viajar.
 
-## Para Quien Es
-- Duenos fuera del estado de propiedades de alquiler Tampa
+## Para quién es
+- Dueños fuera del estado de propiedades de alquiler en Tampa
 - Anfitriones Airbnb / VRBO / STR
-- Duenos de alquileres unifamiliares a largo plazo
-- Inversores de portafolio pequeno (2-10 unidades)
+- Dueños de alquileres unifamiliares a largo plazo
+- Inversores de portafolio pequeño (2-10 unidades)
 - Portafolios medianos (10-40+ unidades)
-- Administradoras buscando un vendedor unico de aluminio
+- Administradoras que buscan un solo proveedor de aluminio
 
-## Alcance Tipico del Plan
+## Alcance típico del plan
 - Visitas programadas (semestral o trimestral)
-- Reportes con fotos despues de cada visita
-- Coordinacion con inquilinos y limpiadores STR
-- Respuesta de emergencia por intrusion de agua
-- Inspeccion pre-temporada de huracanes
-- Documentacion post-tormenta
+- Reportes con fotos después de cada visita
+- Coordinación con inquilinos y limpiadores STR
+- Respuesta de emergencia por intrusión de agua
+- Inspección previa a la temporada de huracanes
+- Documentación post-tormenta
 
 ## Precios
 - Plan de un solo alquiler: ~$300-$800 anual
 - Plan de portafolio (2-10): precios agrupados
-- Plan escala (10+): personalizado con gerente de cuenta dedicado
+- Plan a escala (10+): personalizado con gerente de cuenta dedicado
 
-## Area de Servicio
+## Área de servicio
 Hillsborough, Pinellas, Pasco, Manatee y Sarasota - 21 ciudades.
 
 ---

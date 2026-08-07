@@ -122,27 +122,27 @@ A: Yes - separate from installation. Commercial property maintenance agreements 
 
 # Canaletas Comerciales - JR One Aluminum LLC | Tampa, FL
 
-## Instalacion Comercial de Canaletas en Tampa Bay
+## Instalación comercial de canaletas en Tampa Bay
 
-JR One Aluminum LLC instala sistemas de canaletas, sofito, fascia y drenaje de grado comercial para propiedades comerciales en Tampa Bay. Especificacion y calibre dimensionados al volumen real de agua del edificio.
+JR One Aluminum LLC instala sistemas de canaletas, sofito, fascia y drenaje de grado comercial para propiedades comerciales en Tampa Bay. Especificación y calibre dimensionados al volumen real de agua del edificio.
 
-## Para Quien Es
-- Duenos y administradoras de complejos de apartamentos
-- Desarrolladores y duenos de edificios multifamiliares
-- Duenos de strip centers y minoristas independientes
+## Para quién es
+- Dueños y administradoras de complejos de apartamentos
+- Desarrolladores y dueños de edificios multifamiliares
+- Dueños de strip centers y minoristas independientes
 - Edificios de oficinas y parques empresariales
 - Propiedades industriales y bodegas
 - Hoteles, hospitalidad e institucional
-- GCs y techeros subcontratando el alcance de aluminio
+- Contratistas generales y techeros que subcontratan el alcance de aluminio
 
 ## Productos Comerciales
 - Canaleta de caja comercial de 7"
 - Estilo D comercial de 7"
 - K-style sin costura de 7"
 - Sofito y fascia a escala comercial
-- Drenaje subterraneo integrado
+- Drenaje subterráneo integrado
 
-## Area de Servicio
+## Área de servicio
 Hillsborough, Pinellas, Pasco, Manatee y Sarasota.
 
 ---
