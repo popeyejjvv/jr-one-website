@@ -106,26 +106,26 @@ A: A free community-wide walkthrough with the property manager. JR One documents
 
 ## Contratos de Mantenimiento HOA en Tampa Bay
 
-JR One Aluminum LLC contrata con HOAs, asociaciones de condominios, comunidades de townhomes y administradoras de propiedades en Tampa Bay para entregar mantenimiento programado de canaletas, sofito, fascia y aluminio en cada unidad de la comunidad. Un proveedor, un punto de contacto para el administrador, equipos bilingues y reportes fotograficos unidad-por-unidad despues de cada ciclo de servicio.
+JR One Aluminum LLC contrata con HOAs, asociaciones de condominios, comunidades de townhomes y administradoras de propiedades en Tampa Bay para entregar mantenimiento programado de canaletas, sofito, fascia y aluminio en cada unidad de la comunidad. Un proveedor, un punto de contacto para el administrador, equipos bilingües y reportes fotográficos unidad por unidad después de cada ciclo de servicio.
 
-## Para Quien Es
+## Para quién es
 
 - HOAs de casas unifamiliares separadas
 - Comunidades de townhomes
-- Asociaciones de condominios (alcance de aluminio exterior donde sea propiedad HOA)
+- Asociaciones de condominios (alcance de aluminio exterior donde sea propiedad de la HOA)
 - Comunidades planificadas (12-400+ unidades)
-- Administradoras coordinando mantenimiento de aluminio en portafolios
-- HOAs de construccion nueva estableciendo vendedores de mantenimiento
+- Administradoras que coordinan mantenimiento de aluminio en portafolios
+- HOAs de construcción nueva que establecen proveedores de mantenimiento
 
 ## Servicios Cubiertos
 - Limpieza programada de canaletas + lavado de bajantes
-- Inspeccion de canaletas, sofito y fascia con documentacion fotografica
-- Reparacion de canaletas y re-inclinacion
+- Inspección de canaletas, sofito y fascia con documentación fotográfica
+- Reparación de canaletas y reajuste de inclinación
 - Reemplazo de paneles de sofito y fascia
-- Redireccion de bajantes y arreglos de drenaje
-- Respuesta rapida post-tormenta dentro de 72 horas
+- Redirección de bajantes y arreglos de drenaje
+- Respuesta rápida post-tormenta dentro de 72 horas
 
-## Area de Servicio
+## Área de servicio
 Hillsborough, Pinellas, Pasco, Manatee y Sarasota - 21 ciudades.
 
 ---

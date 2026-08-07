@@ -129,28 +129,28 @@ A: The same wide selection as 6-inch - white, almond, clay, bronze, dark bronze,
 
 ## Canaletas de 7" en Tampa Bay
 
-JR One Aluminum LLC instala canaletas de aluminio sin costuras de 7 pulgadas para casas de Tampa Bay donde los sistemas estandar de 6" no tienen capacidad para el volumen de agua. 7" entrega aproximadamente 40% mas capacidad que 6" K-style - grado comercial en instalacion residencial.
+JR One Aluminum LLC instala canaletas de aluminio sin costuras de 7 pulgadas para casas de Tampa Bay donde los sistemas estándar de 6" no tienen capacidad para el volumen de agua. 7" entrega aproximadamente 40% más capacidad que 6" K-style - grado comercial en instalación residencial.
 
-## Para Quien Es
+## Para quién es
 - Casas de lujo en South Tampa con techos grandes y paisajismo costoso
 - Casas con techos de pendiente fuerte
 - Casas grandes (aproximadamente 3,500+ sqft de techo)
 - Casas con desbordamiento existente en 6" durante tormentas
-- Casas personalizadas con lineas de techo multi-plano
-- Upgrades de reemplazo
+- Casas personalizadas con líneas de techo multiplano
+- Mejoras de reemplazo
 
 ## Ventaja de 7"
-- ~40% mas capacidad de agua vs 6"
-- Menos bajantes, fachada mas limpia
+- ~40% más capacidad de agua frente a 6"
+- Menos bajantes, fachada más limpia
 - Combina con bajantes 4x5 o redondos grandes
-- Aun sin costuras, fabricado en sitio
+- Aun así sin costuras, fabricado en sitio
 - Soportes ocultos cada 24"
 - Amplia selección de colores, la paleta exacta varía según el producto y el proveedor
 
 ## Precios
-Tipicamente 20-35% mas por pie lineal que 6". Sobrecosto total de proyecto: unos cientos de dolares.
+Típicamente 20-35% más por pie lineal que 6". Sobrecosto total del proyecto: unos cientos de dólares.
 
-## Area de Servicio
+## Área de servicio
 Hillsborough, Pinellas, Pasco, Manatee y Sarasota - 21 ciudades incluyendo Tampa y South Tampa.
 
 ---

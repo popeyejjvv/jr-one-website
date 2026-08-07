@@ -11,7 +11,7 @@ const breadcrumbSchemaEs = {
 
 export const metadata = {
   title: "Seguro de Techo Tampa - Centro de Recursos Peak 301",
-  description: "La ley de Florida protege su seguro de techo por condicion, no por edad. Plantillas gratis, guia de aseguradoras y Peak 301 para tejas asfalticas. (844) 444-3114.",
+  description: "La ley de Florida protege su seguro de techo por condición, no por edad. Plantillas gratis, guía de aseguradoras y Peak 301 para tejas asfálticas. (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/es/centro-recursos-seguros",
     languages: {
@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Seguro de Techo Tampa - Centro de Recursos Peak 301",
-    description: "La ley de Florida protege su seguro de techo por condicion, no por edad. Plantillas gratis, guia de aseguradoras y Peak 301 para tejas asfalticas. (844) 444-3114.",
+    description: "La ley de Florida protege su seguro de techo por condición, no por edad. Plantillas gratis, guía de aseguradoras y Peak 301 para tejas asfálticas. (844) 444-3114.",
     url: "https://www.jronegutters.com/es/centro-recursos-seguros",
     type: "website",
     locale: "es_US",
