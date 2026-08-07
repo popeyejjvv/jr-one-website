@@ -10,7 +10,7 @@
 
 ## Aluminum Trim Wrapping
 
-Aluminum wrapping is the process of covering existing wood trim, fascia, window casings, door frames, columns, and other exterior wood surfaces with custom-bent aluminum coil stock. The result is a permanently sealed, maintenance-free exterior surface that never needs painting.
+Aluminum wrapping is the process of covering existing wood trim, fascia, window casings, door frames, columns, and other exterior wood surfaces with custom-bent aluminum coil stock. The result is a permanently sealed exterior surface that does not need repainting the way bare wood does.
 
 ### Why Tampa Homeowners Wrap Their Trim
 

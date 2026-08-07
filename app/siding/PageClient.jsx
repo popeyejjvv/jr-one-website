@@ -55,7 +55,7 @@ const T = {
     solutionEyebrow: "The JR One Difference",
     solutionTitle: "Siding That Handles Florida",
     solutions: [
-      { title: "Vinyl siding installation", desc: "Modern vinyl siding is engineered for Florida conditions: UV-resistant, impact-rated, and maintenance-free. No painting, no scraping, no staining. We install panels with proper overlap and fastening for hurricane-rated wind resistance." },
+      { title: "Vinyl siding installation", desc: "Modern vinyl siding is engineered for Florida conditions: UV-resistant, impact-rated, and far lower upkeep than wood. No painting, no scraping, no staining. We install panels with proper overlap and fastening for hurricane-rated wind resistance." },
       { title: "SAGIPER architectural cladding", desc: "For maximum exterior protection and aesthetics, we install SAGIPER architectural cladding systems (SagiWall, SagiRev, and more). Wind-load tested, 50-year warranty, zero maintenance." },
       { title: "Storm-damage repair", desc: "Cracked panels, dented sections, torn pieces. We match your existing siding color and profile to replace damaged sections seamlessly. No need to reside your entire home for localized storm damage." },
       { title: "Hardie Board maintenance", desc: "Already have fiber-cement siding? We maintain, repair, and repaint Hardie Board to keep it performing and looking its best through Florida's demanding climate cycles." },
@@ -134,7 +134,7 @@ const T = {
     solutionEyebrow: "La Diferencia JR One",
     solutionTitle: "Revestimiento Que Resiste Florida",
     solutions: [
-      { title: "Instalación de revestimiento de vinilo", desc: "El revestimiento de vinilo moderno está diseñado para las condiciones de Florida: resistente a UV, clasificado contra impactos y libre de mantenimiento. Sin pintar, sin raspar, sin manchar. Instalamos los paneles con el traslape y fijación adecuados para resistencia a vientos de huracán." },
+      { title: "Instalación de revestimiento de vinilo", desc: "El revestimiento de vinilo moderno está diseñado para las condiciones de Florida: resistente a UV, clasificado contra impactos y de mucho menor mantenimiento que la madera. Sin pintar, sin raspar, sin manchar. Instalamos los paneles con el traslape y fijación adecuados para resistencia a vientos de huracán." },
       { title: "Revestimiento arquitectónico SAGIPER", desc: "Para máxima protección exterior y estética, instalamos sistemas de revestimiento arquitectónico SAGIPER (SagiWall, SagiRev y más). Probado contra cargas de viento, garantía de 50 años, cero mantenimiento." },
       { title: "Reparación de daños por tormenta", desc: "Paneles agrietados, secciones abolladas, piezas rotas. Combinamos el color y perfil de su revestimiento existente para reemplazar las secciones dañadas sin problemas. No necesita re-revestir toda su casa por daño localizado de tormenta." },
       { title: "Mantenimiento de Hardie Board", desc: "¿Ya tiene revestimiento de fibrocemento? Mantenemos, reparamos y repintamos Hardie Board para que siga funcionando y luciendo lo mejor posible a través de los ciclos climáticos exigentes de Florida." },

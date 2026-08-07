@@ -56,7 +56,7 @@ If the wood is already soft or rotted, painting over it is money wasted - the ro
 
 ## The Right Fix: Aluminum Fascia Wrap
 
-Aluminum fascia wrap is the permanent solution. Custom-bent aluminum covers the entire fascia board, creating a waterproof, UV-proof, maintenance-free surface that:
+Aluminum fascia wrap is the permanent solution. Custom-bent aluminum covers the entire fascia board, creating a waterproof, UV-proof surface that:
 
 - **Never rots** - aluminum doesn't absorb moisture
 - **Never needs painting** - the color is baked into the finish at the factory
