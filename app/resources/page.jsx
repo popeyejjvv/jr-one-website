@@ -40,7 +40,7 @@ const T = {
       {
         icon: "edge",
         title: "Florida LLC Certificate of Active Status",
-        desc: "Certificate of Status from the Florida Department of State confirming JR One Aluminum LLC is an active limited liability company in good standing. Filed November 5, 2010. Document number L10000115561. Most recent annual report filed April 7, 2026.",
+        desc: "Certificate of Status from the Florida Department of State confirming JR One Aluminum LLC is an active limited liability company in good standing, with its annual report current. Document number L10000115561.",
         file: "JR_One_Sunbiz_Active_Status_2026.pdf",
       },
       {
@@ -98,7 +98,7 @@ const T = {
       {
         icon: "edge",
         title: "Certificado de Estado Activo: Florida LLC",
-        desc: "Certificado de Estado del Departamento de Estado de Florida que confirma que JR One Aluminum LLC es una compañía de responsabilidad limitada activa y en buen estado. Registrada el 5 de noviembre de 2010. Número de documento L10000115561. Reporte anual más reciente presentado el 7 de abril de 2026.",
+        desc: "Certificado de Estado del Departamento de Estado de Florida que confirma que JR One Aluminum LLC es una compañía de responsabilidad limitada activa y en buen estado, con su reporte anual al día. Número de documento L10000115561.",
         file: "JR_One_Sunbiz_Active_Status_2026.pdf",
       },
       {
