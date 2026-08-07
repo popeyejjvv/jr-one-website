@@ -10,7 +10,7 @@
 
 ## What Is Sagiper?
 
-Sagiper is a premium Canadian-engineered PVC exterior cladding and soffit system built for high-performance, high-aesthetic applications where standard vinyl or aluminum soffit can't meet the design brief. Sagiper's cellular PVC construction looks like real wood - with deep grain texture, rich color saturation, and a premium profile - but performs like PVC: it will not rot, it holds its color without repainting, and it gives termites and other pests nothing to feed on. Cellular PVC does move with temperature, so it is installed with the manufacturer's expansion gaps.
+Sagiper is a premium PVC exterior cladding and soffit system, made in Portugal, built for high-performance, high-aesthetic applications where standard vinyl or aluminum soffit can't meet the design brief. Sagiper's cellular PVC construction looks like real wood - with deep grain texture, rich color saturation, and a premium profile - but performs like PVC: it will not rot, it holds its color without repainting, and it gives termites and other pests nothing to feed on. Cellular PVC does move with temperature, so it is installed with the manufacturer's expansion gaps.
 
 ---
 
@@ -23,7 +23,7 @@ Most soffit options compromise on one of three axes: appearance, durability, or 
 - **UV stable** - engineered to not chalk, fade, or yellow under Florida sun
 - **Termite-proof, rot-proof, pest-proof** - PVC doesn't feed or rot
 - **Wood-grain texture** - passes as real wood in architectural photography and curb appeal
-- **Manufactured in Canada** - premium material standards, consistent quality
+- **Made in Portugal** - European production standards, consistent quality
 
 ---
 
@@ -68,7 +68,7 @@ If the design brief calls for the look of real wood soffit or ceiling cladding a
 A: Sagiper is a premium material with a premium price - typically several times the cost of standard aluminum or vinyl soffit per linear foot. Contact JR One Aluminum at (844) 444-3114 for a project-specific quote.
 
 **Q: How long does Sagiper last?**
-A: Sagiper carries a manufacturer warranty of 30+ years and is engineered to last decades with no painting, no sealing, and no repair schedule. It is not zero maintenance - it still needs periodic washing to keep the finish clean.
+A: Sagiper's PVC cladding, siding, and soffit lines carry a 50-year limited manufacturer warranty that includes a 15-year non-prorated period. No painting, no sealing, and no repair schedule in normal service. It is not zero maintenance - it still needs periodic washing to keep the finish clean.
 
 **Q: Can Sagiper be installed on an existing porch or lanai ceiling?**
 A: Yes. Sagiper is commonly retrofitted onto existing porch, patio, and lanai ceilings to upgrade the aesthetic.

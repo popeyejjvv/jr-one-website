@@ -63,7 +63,7 @@ None blocked. Vercel is authed + linked, GSC is wired through Ahrefs, IndexNow k
 
 ### /siding (app/siding/PageClient.jsx faqs)
 - Q: Do you replace whole-house siding or just sections in Tampa? A: Both. Full-home replacement when the siding is failing across the house, section replacement when the rest is sound (we match color and profile). A full re-side runs 5 to 10 days, a section 1 to 2 days. Call (844) 444-3114.
-- Q: What siding materials does JR One install in Tampa? A: Four: vinyl lap, James Hardie fiber-cement (board, batten, shaker), custom aluminum, and Sagiper PVC architectural cladding. Vinyl is the best value for most homes; Hardie gives fiber-cement durability; Sagiper carries a 50-year warranty and needs no repainting or sealing. We walk your home and give an honest recommendation.
+- Q: What siding materials does JR One install in Tampa? A: Four: vinyl lap, James Hardie fiber-cement (board, batten, shaker), custom aluminum, and Sagiper PVC architectural cladding. Vinyl is the best value for most homes; Hardie gives fiber-cement durability; Sagiper is made in Portugal, carries a 50-year limited warranty on its PVC lines, and needs no repainting or sealing. We walk your home and give an honest recommendation.
 - Q: Is fiber-cement Hardie siding worth it in Florida's humidity? A: For a lot of Tampa homes, yes. Hardie resists moisture, rot, and impact better than older wood or low-grade vinyl. The trade-off is higher install cost than vinyl. We install Hardie board, batten, and shaker and set the moisture barrier underneath correctly.
 
 ### /gutter-repair (app/gutter-repair/page.jsx faqs)

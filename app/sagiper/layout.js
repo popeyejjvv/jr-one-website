@@ -17,7 +17,7 @@ const serviceSchema = {
     { "@type": "City", name: "Sarasota" },
   ],
   description:
-    "Sagiper premium cellular PVC soffit and cladding installation in Tampa Bay, wood-grain aesthetic, zero rot, zero paint maintenance. 30+ year manufacturer warranty. Common on lanais, patios, and architectural homes.",
+    "Sagiper premium cellular PVC soffit and cladding installation in Tampa Bay, wood-grain aesthetic, no rot, no repainting cycle. 50-year limited manufacturer warranty. Common on lanais, patios, and architectural homes.",
 };
 
 const breadcrumbSchema = {
@@ -32,7 +32,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Sagiper PVC Soffit Tampa FL",
   description:
-    "Sagiper cellular PVC soffit and cladding in Tampa Bay. Wood-grain texture, zero rot, zero paint. 30+ year warranty. Free estimate, (844) 444-3114.",
+    "Sagiper cellular PVC soffit and cladding in Tampa Bay. Wood-grain texture, no rot, no repainting. 50-year limited warranty. Free estimate, (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/sagiper",
     languages: {
@@ -43,7 +43,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Sagiper Premium Cladding Tampa FL, JR One Aluminum",
-    description: "Canadian-engineered PVC cladding with wood-grain texture. Architectural soffit for Tampa Bay homes.",
+    description: "PVC cladding with wood-grain texture, made in Portugal. Architectural soffit for Tampa Bay homes.",
     url: "https://www.jronegutters.com/sagiper",
     type: "website",
   },
