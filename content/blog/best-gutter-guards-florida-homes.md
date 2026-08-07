@@ -129,19 +129,19 @@ This is the section most homeowners actually want. Here's the honest comparison 
 
 | Brand | Type | Per-foot price | What you're really paying for |
 |-------|------|---------------|-------------------------------|
-| LeafFilter | Stainless micro mesh | $25 to $40 | National TV ads, in-home sales process, lifetime transferable warranty |
-| LeafGuard | Aluminum one-piece w/ hood | $20 to $35 | Built-in gutter system, no-clog guarantee, proprietary install |
-| Gutter Helmet | Aluminum solid w/ channel | $20 to $35 | 30-year warranty, heated option, franchise dealer network |
+| LeafFilter | Micromesh | $25 to $40 | National TV ads, in-home sales process, franchise sales overhead |
+| LeafGuard | Aluminum one-piece w/ hood | $20 to $35 | Built-in gutter system, proprietary install |
+| Gutter Helmet | Aluminum solid w/ channel | $20 to $35 | Heated option, franchise dealer network |
 | MasterShield | Stainless micro mesh | $20 to $30 | Third-party-tested mesh, local dealer network |
 | HomeCraft | Aluminum mesh | $15 to $25 | Aluminum frame, mid-tier pricing |
-| Local micro mesh (JR One et al) | Stainless micro mesh | $7 to $15 | Same materials, no franchise overhead, local accountability |
+| Local micromesh (JR One et al) | Micromesh | $7 to $15 | Same materials, no franchise overhead, local accountability |
 | Local aluminum solid | Aluminum water-channel | $9 to $18 | Mid-tier durability, local install |
 
 The materials at the top tier and the local tier come from a small handful of mesh manufacturers. The franchise brands buy the same coil and the same mesh from the same suppliers as the legitimate local installers. The 2 to 3x price difference is overhead, marketing, and sales commission, not product quality.
 
 What the franchises do offer that local installers often don't: nationally transferable warranties (useful if you sell within 5 years), and a polished sales experience for homeowners who want a single decision-maker walking them through it.
 
-What local installers offer that franchises don't: pricing that reflects materials and labor instead of franchise economics, faster scheduling, and a phone number where the owner actually answers.
+What local installers offer that franchises don't: pricing that reflects materials and labor instead of franchise economics, faster scheduling, and a phone number where the owner actually answers. That is how we approach [gutter guard installation across Tampa Bay](/gutter-guards).
 
 ## Florida Region: How Tree Coverage Changes the Decision
 
@@ -165,7 +165,7 @@ Three factors determine which guard type works best:
 1. **Tree coverage type, not just amount.** Pine needles and oak catkins demand micro mesh. Magnolia leaves and palm fronds work with solid aluminum. Mixed coverage favors micro mesh because it handles both.
 2. **Gutter size.** Guards must be matched to your gutter width. If you have builder-grade undersized gutters (5-inch), JR One replaces them with [6-inch or 7-inch seamless](/blog/6-inch-vs-7-inch-gutters-tampa) and installs guards at the same time - most cost-effective approach. JR One installs 6-inch and 7-inch only - never 5-inch.
 3. **Roof pitch.** Steep roofs shed water faster, which puts more volume pressure on guards. Steep pitches favor micro mesh; shallow pitches handle solid aluminum better.
-4. **Budget and timeline.** Quality micro mesh at local pricing is the best value. Franchise pricing buys you the warranty and the sales experience, not better protection.
+4. **Budget and timeline.** Quality micro mesh at local pricing is the best value. Franchise pricing buys you the warranty and the sales experience, not better protection. Here is [what we install and why](/gutter-guards).
 
 ## Common Mistakes Tampa Homeowners Make
 
@@ -173,7 +173,7 @@ Three factors determine which guard type works best:
 
 **Letting a roofer add gutter guards as part of a re-roof.** Gutter guards are gutter work, not roofing work. Roofers often install whatever the wholesaler had on the truck, not what fits the home.
 
-**Falling for the "lifetime no-clog guarantee."** Read the fine print. Most warranties exclude pine needles, shingle grit, palm debris, and the act of needing surface clearing. The "lifetime" applies only to the manufacturing defect of the guard itself.
+**Taking a long warranty headline at face value.** Read the fine print. Guard warranties routinely exclude pine needles, shingle grit, palm debris, and the act of needing surface clearing. Ask for the written terms before you sign, and ask specifically what is covered and for how long.
 
 **Skipping the gutter inspection before adding guards.** Guards on rotted hangers or sagging gutters are throwing money away. The system needs to be sound before guards go on.
 
@@ -212,7 +212,7 @@ For most Tampa Bay homes in 2026, stainless steel micro mesh gutter guards are t
 
 Skip the hardware store DIY inserts. Skip the national franchise markup unless you specifically want the warranty transferability. Get a local specialist who installs quality guards at honest pricing and backs the work with their reputation.
 
-We install micro mesh, aluminum water-channel, EZ mesh, and standard screen guards across all 21 cities we serve in Tampa Bay. Free assessment includes existing gutter inspection so we can recommend the right system instead of selling you what's on the truck.
+We install two guard tiers across the Tampa Bay cities we serve: a standard aluminum gutter guard, and a micromesh guard whose finer mesh stops even pine needles. Free assessment includes existing gutter inspection so we can recommend the right system instead of selling you what's on the truck.
 
 **[Get a free gutter guard estimate](/estimator)** or call **(844) 444-3114**.
 

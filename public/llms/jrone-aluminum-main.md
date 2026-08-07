@@ -33,7 +33,7 @@ JR One Aluminum is not a generalist roofer. Aluminum installation is the only th
 - Soffit installation (vented and non-vented aluminum soffit)
 - Fascia installation (custom-bent aluminum fascia, single, double, and triple tier)
 - Aluminum trim wrapping (windows, doors, exterior wood surfaces)
-- Gutter guard installation (micro mesh, leaf guard, copper options)
+- Gutter guard installation (standard aluminum and micromesh)
 - Copper gutter installation (half round, seamless)
 - Commercial gutter installation (box gutters, D-style commercial gutters)
 - Gutter repair and maintenance

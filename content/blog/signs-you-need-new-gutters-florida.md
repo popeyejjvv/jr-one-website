@@ -61,7 +61,7 @@ This is the most expensive consequence of gutter failure - foundation repair cos
 
 Sectional gutters have joints every 10 feet. Over time, the sealant fails and joints separate. You'll see dripping at regular intervals along the gutter line during rain.
 
-Seam repair works as a short-term fix, but if your sectional gutters are leaking at multiple joints, upgrading to seamless gutters eliminates the problem permanently. Seamless gutters are fabricated from a single continuous piece - no joints to fail.
+Seam repair works as a short-term fix, but if your sectional gutters are leaking at multiple joints, upgrading to seamless gutters removes the every-10-feet seams that are failing. Seamless gutters are fabricated from a single continuous piece, so the only sealed points left are the mitered corners, end caps, and downspout outlets.
 
 ## 7. Your Gutters Are More Than 20 Years Old
 

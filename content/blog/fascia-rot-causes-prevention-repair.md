@@ -8,7 +8,7 @@ faqs:
   - question: "What causes fascia rot in Florida?"
     answer: "Three factors: water exposure from leaking or overflowing gutters, Florida's year-round humidity that prevents wood from drying, and UV degradation that breaks down paint protection. Most fascia rot starts behind the gutter where you can't see it until the damage is advanced."
   - question: "How much does fascia repair cost in Tampa?"
-    answer: "Wood fascia replacement costs $4-$8 per linear foot but will rot again. Aluminum fascia wrap costs $6-$12 per linear foot and is a permanent fix - no more rot, no more repainting. A typical full-perimeter aluminum fascia wrap on a Tampa home costs $1,500-$3,500."
+    answer: "Wood fascia replacement costs $4-$8 per linear foot but will rot again. Aluminum fascia wrap costs $6-$12 per linear foot and typically lasts 30+ years with no repainting cycle, because the aluminum does not absorb moisture and the color is baked into the finish. A typical full-perimeter aluminum fascia wrap on a Tampa home costs $1,500-$3,500."
 ---
 
 # Fascia Rot in Florida: Causes, Prevention, and Permanent Repair
@@ -56,14 +56,14 @@ If the wood is already soft or rotted, painting over it is money wasted - the ro
 
 ## The Right Fix: Aluminum Fascia Wrap
 
-Aluminum fascia wrap is the permanent solution. Custom-bent aluminum covers the entire fascia board, creating a waterproof, UV-proof, maintenance-free surface that:
+Aluminum fascia wrap is the longest-lasting fix. Custom-bent aluminum covers the entire fascia board, creating a water-shedding, UV-stable surface that:
 
 - **Never rots** - aluminum doesn't absorb moisture
 - **Never needs painting** - the color is baked into the finish at the factory
 - **Seals against pests** - no soft wood for carpenter ants, termites, or wasps to exploit
 - **Supports gutter mounting** - provides a solid, stable surface for gutter hangers
 - **Color-matches your gutters** - everything at the roof edge looks like one finished system
-- **Lasts 30+ years** with zero maintenance
+- **Lasts 30+ years** with no repainting cycle - it still gets washed and inspected like the rest of the roof edge
 
 The process: remove old gutter, strip damaged wood if needed (repair structural subfascia if the rot has gone that deep), custom-bend aluminum fascia to fit, install, and re-mount the gutter with new hidden hangers.
 
@@ -87,6 +87,6 @@ If your fascia is still sound:
 
 ## The Bottom Line
 
-Fascia rot is a when-not-if problem for wood fascia in Florida. The humidity, rain, and UV exposure guarantee that unprotected wood will eventually fail. Aluminum fascia wrap breaks the cycle permanently - one installation, no maintenance, 30+ year lifespan.
+Fascia rot is a when-not-if problem for wood fascia in Florida. The humidity, rain, and UV exposure guarantee that unprotected wood will eventually fail. Aluminum fascia wrap breaks that cycle - one installation, no repainting, 30+ year lifespan, and the only upkeep is the periodic cleaning and inspection the roof edge already needs.
 
 **[Get a free fascia inspection](/estimator)** or call **(844) 444-3114**. We check fascia condition on every gutter inspection - no extra charge.

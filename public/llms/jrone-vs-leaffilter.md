@@ -68,7 +68,7 @@ For everyone else - especially homeowners who care about total cost and long-ter
 
 The question of "is LeafFilter's micro mesh better than alternatives?" is mostly marketing. Multiple manufacturers make quality stainless steel micro-mesh products. The material differences across premium brands are small. What matters more for long-term performance:
 - Correct installation (pitch, fastening, integration with existing gutters)
-- Correct sizing for your gutters (5" vs 6" vs 7")
+- Correct sizing for your gutters (6" vs 7")
 - Cleaning of the existing gutters before guards go on
 - Post-install inspection after the first major storm
 

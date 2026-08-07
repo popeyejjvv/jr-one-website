@@ -22,7 +22,6 @@ JR One Aluminum fabricates seamless gutters on-site using a portable roll-formin
 JR One Aluminum installs multiple seamless gutter profiles:
 
 ### K-Style Gutters (Most Common)
-- <!-- 5-inch K-style section removed: JR One installs 6-inch and 7-inch only -->
 - **6-inch K-style** - Recommended for larger roof areas, high-pitch roofs, or homes in areas with intense rainfall. Florida's subtropical climate often warrants 6-inch gutters.
 - **7-inch K-style seamless** - Heavy-duty residential or light commercial applications.
 

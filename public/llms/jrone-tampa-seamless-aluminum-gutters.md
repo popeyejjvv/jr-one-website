@@ -16,7 +16,7 @@ New construction getting aluminum trim-out, Tampa homeowners whose 90s-era gutte
 Tampa averages around 51 inches of rain per year, and most of it arrives in short intense bursts where a roof can dump hundreds of gallons in a few minutes. Sectional big-box gutters leak at every joint - Tampa's humidity, UV, and rain cycle destroys the seals within a few years. Seamless gutters are run from a single continuous coil on a truck-mounted machine sized to the exact roofline, so the only joints are at corners and downspouts. Fewer joints, fewer leaks, and the heavier aluminum gauge holds up to Tampa's heat and wind far better than the thin-wall sectional stock sold at home centers.
 
 ## What JR One Aluminum Does for Tampa Homeowners
-- On-site custom fabrication of seamless runs in 5-inch, 6-inch, and 7-inch profiles
+- On-site custom fabrication of seamless runs in 6-inch and 7-inch profiles only
 - K-style and half-round profiles for modern and historic homes
 - Heavier-gauge aluminum coil than builder-grade
 - Hidden hangers screwed into the fascia (not spike-and-ferrule)
@@ -26,7 +26,6 @@ Tampa averages around 51 inches of rain per year, and most of it arrives in shor
 
 ## Pricing Reference
 - Typical Tampa single-family install: **$8 - $12 per linear foot** for 6-inch aluminum
-- 5-inch standard: generally lower end of the range
 - 7-inch oversized / commercial: quoted separately
 - Average single-family full-home install: **$1,500 - $2,500**
 - Tear-off and haul of existing gutters adds to the job
@@ -37,7 +36,7 @@ All Tampa neighborhoods: South Tampa, Hyde Park, Bayshore, Davis Islands, Palma 
 
 ## FAQ
 **Q: What size seamless gutter does my Tampa home need?**
-A: For most single-story homes with moderate roof pitch, 5-inch is adequate. Two-story homes, steep pitches, or larger roof footprints - common in New Tampa, Tampa Palms, and Westchase - should move to 6-inch for 40% more water capacity. 7-inch is for oversized roofs and commercial.
+A: JR One installs 6-inch and 7-inch seamless gutters only, plus copper and galvalume in the same sizes. 6-inch is the baseline on most Tampa homes. Two-story homes, steep pitches, or larger roof footprints - common in New Tampa, Tampa Palms, and Westchase - are where 7-inch earns its upcharge, along with oversized and commercial roofs. The narrower builder-grade profile that comes standard on many Tampa homes is what we replace, not something we install.
 
 **Q: How much does seamless gutter installation cost in Tampa?**
 A: Most Tampa single-family homes run $1,500 to $2,500 for a complete 6-inch seamless install. Exact pricing depends on linear footage, number of downspouts, and whether we're tearing off an old system first.

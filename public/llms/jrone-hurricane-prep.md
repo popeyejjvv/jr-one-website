@@ -21,7 +21,7 @@ Pre-storm aluminum prep isn't about preventing every failure. It's about making 
 - **Secure loose hangers.** Walk the perimeter of the house. Any visible gutter sag or gap between gutter and fascia is a failure point waiting to happen.
 - **Clean gutters thoroughly.** Full gutters of wet debris are significantly heavier and easier to tear off in high wind.
 - **Check downspout connections.** Loose downspouts become projectiles. Elbows, extensions, and splash guards - all either secured or removed.
-- **Consider gutter guards.** Debris-filled gutters in high wind are weaker than clean ones; guards keep them clean through the storm.
+- **Consider gutter guards.** Debris-filled gutters in high wind are heavier and easier to tear loose than clean ones. Quality guards reduce how much debris collects inside the trough between cleanings, but no guard eliminates cleaning, and storm debris can still pile on top.
 
 ### Soffit
 - **Inspect for loose panels.** Any visible gaps, lifted edges, or missing J-channel - fix now, not the week of the storm.

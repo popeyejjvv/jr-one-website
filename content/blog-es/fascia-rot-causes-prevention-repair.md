@@ -8,7 +8,7 @@ faqs:
   - question: "¿Qué causa la pudrición de la fascia en Florida?"
     answer: "Tres factores: la exposición al agua de canaletas que gotean o se desbordan, la humedad de todo el año en Florida que no deja que la madera se seque, y el deterioro por rayos UV que destruye la protección de la pintura. La mayoría de la pudrición de fascia empieza detrás de la canaleta, donde no se ve hasta que el daño ya está avanzado."
   - question: "¿Cuánto cuesta reparar la fascia en Tampa?"
-    answer: "Reemplazar la fascia de madera cuesta de $4 a $8 por pie lineal, pero se volverá a pudrir. El recubrimiento de fascia en aluminio cuesta de $6 a $12 por pie lineal y es una solución permanente: no más pudrición, no más repintar. Un recubrimiento completo de fascia en aluminio alrededor de toda una casa en Tampa cuesta de $1,500 a $3,500."
+    answer: "Reemplazar la fascia de madera cuesta de $4 a $8 por pie lineal, pero se volverá a pudrir. El recubrimiento de fascia en aluminio cuesta de $6 a $12 por pie lineal y suele durar más de 30 años sin ciclo de repintado, porque el aluminio no absorbe humedad y el color viene horneado en el acabado. Un recubrimiento completo de fascia en aluminio alrededor de toda una casa en Tampa cuesta de $1,500 a $3,500."
 ---
 
 # Pudrición de la fascia en Florida: causas, prevención y reparación permanente
@@ -56,14 +56,14 @@ Si la madera ya está blanda o podrida, pintar encima es dinero perdido: la pudr
 
 ## La solución correcta: recubrimiento de fascia en aluminio
 
-El recubrimiento de fascia en aluminio es la solución permanente. Aluminio doblado a la medida cubre toda la tabla de fascia y crea una superficie impermeable, resistente a los rayos UV y libre de mantenimiento que:
+El recubrimiento de fascia en aluminio es la solución de fondo. Aluminio doblado a la medida cubre toda la tabla de fascia y crea una superficie impermeable, resistente a los rayos UV y sin ciclo de repintado que:
 
 - **Nunca se pudre**: el aluminio no absorbe humedad
 - **Nunca necesita pintura**: el color viene horneado en el acabado de fábrica
 - **Sella contra las plagas**: no queda madera blanda para que la aprovechen las hormigas carpinteras, las termitas o las avispas
 - **Soporta el montaje de la canaleta**: ofrece una superficie sólida y estable para los soportes de la canaleta
 - **Combina con el color de sus canaletas**: todo en el borde del techo se ve como un solo sistema terminado
-- **Dura más de 30 años** sin ningún mantenimiento
+- **Dura más de 30 años** sin ciclo de repintado: se sigue lavando e inspeccionando como el resto del borde del techo
 
 El proceso: quitar la canaleta vieja, retirar la madera dañada si hace falta (reparar la subfascia estructural si la pudrición llegó tan profundo), doblar el aluminio de fascia a la medida, instalarlo y volver a montar la canaleta con soportes ocultos nuevos.
 
@@ -87,6 +87,6 @@ Si su fascia todavía está sana:
 
 ## En resumen
 
-La pudrición de la fascia es un problema de cuándo, no de si, para la fascia de madera en Florida. La humedad, la lluvia y la exposición a los rayos UV garantizan que la madera sin protección eventualmente falle. El recubrimiento de fascia en aluminio rompe el ciclo de forma permanente: una sola instalación, sin mantenimiento, más de 30 años de vida útil.
+La pudrición de la fascia es un problema de cuándo, no de si, para la fascia de madera en Florida. La humedad, la lluvia y la exposición a los rayos UV garantizan que la madera sin protección eventualmente falle. El recubrimiento de fascia en aluminio rompe ese ciclo: una sola instalación, sin repintado, más de 30 años de vida útil, y el único cuidado es la limpieza e inspección periódica que el borde del techo ya necesita.
 
 **[Reciba una inspección gratis de su fascia](/estimator)** o llame al **(844) 444-3114**. Revisamos el estado de la fascia en cada inspección de canaletas, sin cargo adicional.

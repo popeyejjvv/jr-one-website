@@ -165,7 +165,7 @@ This isn't a marketing pitch - it's why "I haven't cleaned my gutters in 4 years
 | Semi-annual cleaning ($225 avg) | $450 | $2,250 | $4,500 |
 | Gutter guards + annual clearing | $1,500 to $3,000 | $2,000 to $3,500 | $2,500 to $4,000 |
 
-For homes with heavy tree coverage requiring quarterly cleaning, gutter guards pay for themselves within 3 to 4 years and save thousands over the decade. For homes that only need cleaning twice yearly, gutter guards still pay back in 5 to 8 years and reduce the pest and water-damage risk separately.
+For homes with heavy tree coverage requiring quarterly cleaning, gutter guards pay for themselves within 3 to 4 years and save thousands over the decade. For homes that only need cleaning twice yearly, gutter guards still pay back in 5 to 8 years and reduce the pest and water-damage risk separately. If the math works for your home, these are the [guards that cut cleaning frequency](/gutter-guards) we install.
 
 See our full [gutter guards for Florida homes guide](/blog/best-gutter-guards-florida-homes) for the guard-type comparison and cost details.
 

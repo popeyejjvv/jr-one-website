@@ -75,8 +75,8 @@ The voicemail script reads the phone number as separated digits: **"8-4-4, 4-4-4
 ## Banned Phrases (NEVER say)
 
 - "BBB" / "Better Business Bureau" — JR One does not reference the BBB anywhere
-- **"Since 1990"** / **"founded 1990"** / **"serving since 1990"** / any year-based founding claim — JR One Aluminum LLC was formed in 2006; 1990 was the founder's personal career start. Never conflate. The locked tenure phrasing is "over 30 years in the Tampa Bay gutter industry" (family experience). See `~/.claude/projects/-Users-popeye-Desktop-EAPOPEYE/memory/project_jr-one-licensing-stance.md`.
-- "LLC since 2010" / any specific company founding year — do not publish a company age at all
+- **"Since [year]"** / **"founded in [year]"** / **"serving since [year]"** / any year-based founding claim — never state or imply a year the LLC was formed, the LLC was registered with the state, or the founder started in the trade. A year in that position reads as a founding date. The locked tenure phrasing is "over 30 years in the Tampa Bay gutter industry" (family experience). See `~/.claude/projects/-Users-popeye-Desktop-EAPOPEYE/memory/project_jr-one-licensing-stance.md`.
+- Any filing date, incorporation date, or registration date — the FL document number may be given if asked; the date attached to it may not
 - Any specific price or estimate range — pricing is for the morning team
 - "Subcontractor" — JR One uses **in-house crews only**
 

@@ -28,7 +28,6 @@ Wesley Chapel has bigger-than-average roof footprints - master-planned two-story
 
 ## Pricing Reference
 - Typical Wesley Chapel install: **$8 - $12 per linear foot** for 6-inch aluminum
-<!-- 5-inch pricing bullet removed: JR One installs 6-inch and 7-inch only -->
 - 7-inch oversized: quoted separately
 - Average two-story full-home install: **$2,000 - $3,200** depending on linear footage
 - Single-story: **$1,500 - $2,500**

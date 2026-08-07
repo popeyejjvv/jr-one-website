@@ -48,7 +48,7 @@ Los protectores también evitan el desastre del día de la inspección, cuando e
 
 La fascia podrida es una alerta roja en toda inspección de casa. El inspector la fotografía, la anota como una preocupación estructural, y el comprador la usa para negociar entre $3,000 y $5,000 menos en su precio, o de plano se retira.
 
-El recubrimiento de fascia de aluminio resuelve esto de forma permanente. Se ve limpio, no requiere ningún mantenimiento y elimina por completo la preocupación por la pudrición en el reporte de inspección.
+El recubrimiento de fascia de aluminio ataca el problema de raíz: el aluminio no se pudre como la madera. Se ve limpio, su único cuidado es lavado e inspección periódica, y en la mayoría de los casos saca el señalamiento de fascia podrida del reporte de inspección.
 
 ## 4. Arregle el drenaje y la salida de los bajantes
 

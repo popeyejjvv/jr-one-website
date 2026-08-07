@@ -84,6 +84,6 @@ Total wasted: $500-$1,000 on guards that didn't solve the problem. Get micro mes
 
 ## The Bottom Line
 
-If you have pine trees, the only gutter guard that actually solves the problem is micro mesh. Standard screens, foam inserts, and brush guards all fail against pine needles. Don't waste money on a guard type that can't handle your specific debris - go straight to micro mesh.
+If you have pine trees, the only gutter guard that actually solves the problem is micro mesh. Standard screens, foam inserts, and brush guards all fail against pine needles. Don't waste money on a guard type that can't handle your specific debris - go straight to [fine-filter guards for pine debris](/gutter-guards).
 
 **[Get a free micro mesh estimate](/estimator)** or call **(844) 444-3114**. We'll assess your tree coverage and recommend the right guard type for your specific home.

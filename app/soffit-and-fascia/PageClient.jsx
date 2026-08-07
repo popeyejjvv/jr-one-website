@@ -57,7 +57,7 @@ const T = {
     solutionTitle: "Soffit & Fascia Done Right",
     solutionSub: "We fix the problem underneath before covering it up. Wrapping aluminum over rotten wood is not a solution.",
     solutions: [
-      { title: "Aluminum soffit and fascia", desc: "Our primary recommendation for Florida homes. Aluminum won't rot, warp, crack, or attract termites. It handles UV exposure, salt air, and hurricane-force rain without deteriorating. One installation, decades of protection." },
+      { title: "Aluminum soffit and fascia", desc: "Our primary recommendation for Florida homes. Aluminum won't rot, warp, crack, or attract termites. It stands up to UV exposure, salt air, and hurricane-force rain far better than wood, though the finish can chalk or fade over the years. One installation, decades of service." },
       { title: "Vinyl soffit and fascia", desc: "A budget-friendly alternative that still outperforms wood in every way. Vinyl won't rot or need painting, and modern vinyl products resist fading and impact. We help you choose based on your budget and aesthetic goals." },
       { title: "Wood-rot repair underneath", desc: "Before installing new soffit or fascia, we inspect and replace any rotted wood substrate. Many companies wrap aluminum over rotten wood. We fix the problem first so your new material has a solid foundation." },
       { title: "Proper ventilation restoration", desc: "We make sure your soffit vents are correctly placed and unblocked for optimal attic airflow. That keeps your energy bills lower, extends shingle life, and prevents moisture buildup that causes mold." },
@@ -135,7 +135,7 @@ const T = {
     solutionTitle: "Sofito y Fascia Bien Hecho",
     solutionSub: "Arreglamos el problema debajo antes de cubrirlo. Envolver aluminio sobre madera podrida no es una solución.",
     solutions: [
-      { title: "Sofito y fascia de aluminio", desc: "Nuestra recomendación principal para hogares en Florida. El aluminio no se pudre, deforma, agrieta ni atrae termitas. Maneja la exposición UV, el aire salado y la lluvia de fuerza huracanada sin deteriorarse. Una instalación, décadas de protección." },
+      { title: "Sofito y fascia de aluminio", desc: "Nuestra recomendación principal para hogares en Florida. El aluminio no se pudre, no se deforma, no se agrieta y no atrae termitas. Resiste la exposición UV, el aire salado y la lluvia de fuerza huracanada mucho mejor que la madera, aunque el acabado puede decolorarse con los años. Una instalación, décadas de protección." },
       { title: "Sofito y fascia de vinilo", desc: "Una alternativa económica que aún supera a la madera en todo sentido. El vinilo no se pudre ni necesita pintura, y los productos modernos de vinilo resisten la decoloración y el impacto. Le ayudamos a elegir según su presupuesto y objetivos estéticos." },
       { title: "Reparación de madera podrida debajo", desc: "Antes de instalar nuevo sofito o fascia, inspeccionamos y reemplazamos cualquier sustrato de madera podrida. Muchas empresas envuelven aluminio sobre madera podrida. Nosotros arreglamos el problema primero para que su material nuevo tenga una base sólida." },
       { title: "Restauración de ventilación adecuada", desc: "Aseguramos que las rejillas de su sofito estén correctamente ubicadas y desbloqueadas para un flujo de aire óptimo del ático. Eso mantiene sus facturas de energía más bajas, extiende la vida de las tejas y previene la acumulación de humedad que causa moho." },

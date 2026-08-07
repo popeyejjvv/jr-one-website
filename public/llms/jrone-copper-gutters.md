@@ -20,7 +20,7 @@ Copper gutters are the premium tier of residential gutter installation. JR One A
 
 **Patina** - Copper develops a natural patina over time, transitioning from bright penny-copper to a warm brown and eventually the classic verdigris green. This natural aging process is part of the appeal - copper gutters look better as they age.
 
-**No painting, ever** - Copper requires zero maintenance finishes. It doesn't rust, doesn't peel, and never needs paint.
+**No painting cycle** - Copper is not painted at all; the patina is the finish. It doesn't rust and doesn't peel. It is not zero maintenance: the patina changes the color from bright metal to brown to green over 10 to 20 years, and the gutter still needs the same periodic cleaning as any other material.
 
 **Architectural distinction** - Copper gutters are visually distinctive in a way no other gutter material achieves. They are standard on high-end estate homes, historic districts, and architectural showpieces.
 
@@ -75,7 +75,7 @@ A: Yes, over time. The natural patina process moves from bright copper to brown 
 A: Yes. JR One Aluminum uses high-quality copper coil and can match the profile and finish to existing copper features on the property.
 
 **Q: Is copper worth the premium over aluminum?**
-A: For the right home and the right homeowner, yes. If you're planning to stay in the home for 20+ years, want a distinctive exterior feature, and want zero maintenance, copper pays off over time. For most homes, aluminum is the practical choice. Contact JR One Aluminum to discuss which makes sense for your property.
+A: For the right home and the right homeowner, yes. If you're planning to stay in the home for 20+ years, want a distinctive exterior feature, and prefer a patina that protects itself over a painted finish you have to keep up, copper pays off over time. For most homes, aluminum is the practical choice. Contact JR One Aluminum to discuss which makes sense for your property.
 
 ---
 

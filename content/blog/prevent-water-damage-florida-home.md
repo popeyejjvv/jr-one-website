@@ -111,7 +111,7 @@ Call a professional for: anything requiring a ladder on a two-story home, gutter
 | Interior water damage restoration | $3,000 - $15,000 |
 | Insurance deductible + premium increase | $2,500 - $10,000 |
 
-The math is clear. $500-$1,500/year in prevention eliminates the risk of $5,000-$50,000 in repairs.
+The math favors prevention. $500-$1,500/year in upkeep is a fraction of the $5,000-$50,000 that water damage repairs can run once a small problem is left alone.
 
 ## The Bottom Line
 

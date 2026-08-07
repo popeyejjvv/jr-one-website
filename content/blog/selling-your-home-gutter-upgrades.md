@@ -48,7 +48,7 @@ Guards also prevent the inspection-day disaster where the inspector finds packed
 
 Rotted fascia is a red flag on every home inspection. The inspector photographs it, notes it as a "structural concern," and the buyer uses it to negotiate $3,000-$5,000 off your price - or walks entirely.
 
-Aluminum fascia wrap solves this permanently. It looks clean, requires zero maintenance, and eliminates the rot concern from the inspection report entirely.
+Aluminum fascia wrap addresses this at the source. It looks clean, needs no repainting, and takes the rot concern off the inspection report.
 
 ## 4. Fix Drainage and Downspout Routing
 

@@ -241,7 +241,7 @@ This way you pay for professional thoroughness when it matters most (spring deep
 
 For Tampa homeowners with moderate to heavy tree coverage, gutter guards eliminate most of this decision. Quality micro mesh or aluminum solid guards reduce annual cleaning needs by 80 to 95 percent. The full guard comparison is in the [Best Gutter Guards for Florida Homes](/blog/best-gutter-guards-florida-homes) guide.
 
-Cost: $1,150 to $2,500 installed for most Tampa homes. Lifespan: 15 to 20 plus years. Break-even on cleaning savings: 3 to 5 years for moderate tree coverage, 2 to 3 years for heavy coverage.
+Cost: $1,150 to $2,500 installed for most Tampa homes. Lifespan: 15 to 20 plus years. Break-even on cleaning savings: 3 to 5 years for moderate tree coverage, 2 to 3 years for heavy coverage. We install [guards that reduce how often this is needed](/gutter-guards) across Tampa Bay.
 
 ## Real 2026 Tampa Bay Decision Examples
 

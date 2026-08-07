@@ -297,7 +297,7 @@
       <input type="range" min="2000" max="7000" value="3748" step="50" oninput="uRf()" id="rf-ins-s">
     </div>
     <div class="rg">
-      <div class="rc hl"><div class="rc-lbl">Peak 301 treatment</div><div class="rc-v bl" id="rf-treat">Free Quote</div><div class="rc-s">One day | 6-yr warranty</div></div>
+      <div class="rc hl"><div class="rc-lbl">Peak 301 treatment</div><div class="rc-v bl" id="rf-treat">Free Quote</div><div class="rc-s">One day | written product warranty</div></div>
       <div class="rc rd"><div class="rc-lbl">Full replacement cost</div><div class="rc-v rd" id="rf-rep">$14,300</div><div class="rc-s">Asphalt shingle | Tampa Bay</div></div>
       <div class="rc gr"><div class="rc-lbl">Typical savings vs. replacement</div><div class="rc-v gr" id="rf-save">Up to 70%</div><div class="rc-s">Less than a new roof install</div></div>
       <div class="rc" id="rf-ins-card"><div class="rc-lbl">Insurance risk status</div><div class="ins-pill low" id="rf-pill">Low risk</div><div class="rc-s" id="rf-ins-sub">Under 15-yr threshold</div></div>
@@ -375,7 +375,7 @@ const gTypes = [
   { name:'Screen/mesh', lo:3, hi:6, sub:'Screen/mesh | 5-10 yr life' },
   { name:'Micro-mesh entry', lo:5, hi:10, sub:'Micro-mesh | 15-25 yr life' },
   { name:'Micro-mesh Pro', lo:8, hi:15, sub:'Micro-mesh pro | 20+ yr life' },
-  { name:'LeafFilter', lo:15, hi:30, sub:'LeafFilter premium | Lifetime warranty' },
+  { name:'LeafFilter', lo:15, hi:30, sub:'LeafFilter premium | national franchise pricing' },
   { name:'Reverse curve', lo:4, hi:10, sub:'Reverse curve | 20+ yr life' }
 ];
 let S = {
@@ -484,7 +484,7 @@ function uRf() {
     document.getElementById('rf-ins-sub').textContent=(15-age)+' years until 15-yr review';
     warn.className='risk-box yw'; warn.style.display='block';
     warn.querySelector('h4').className='y'; warn.querySelector('h4').textContent='Getting close - plan your treatment window';
-    document.getElementById('rf-warn-list').innerHTML=`<li>You have ${15-age} year${15-age!==1?'s':''} before the 15-year insurance threshold</li><li>Scheduling Peak 301 now maximizes the 6-year warranty coverage window</li><li>Proactive treatment keeps your roof certifiable and your premiums stable</li>`;
+    document.getElementById('rf-warn-list').innerHTML=`<li>You have ${15-age} year${15-age!==1?'s':''} before the 15-year insurance threshold</li><li>Scheduling Peak 301 now starts the written warranty coverage window sooner</li><li>Proactive treatment keeps your roof certifiable and your premiums stable</li>`;
   } else {
     pill.className='ins-pill low'; pill.textContent='Low risk';
     document.getElementById('rf-ins-sub').textContent=(15-age)+' years until threshold review';

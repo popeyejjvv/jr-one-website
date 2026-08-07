@@ -55,11 +55,11 @@ El resultado: el sofito y la fascia de madera en Tampa normalmente muestran un d
 - Manchas de agua en el techo del ático cerca de los aleros
 - Pintura descascarada o decoloración en los paneles del sofito
 
-## La Solución Permanente: Conversión de Madera a Aluminio
+## La Solución de Largo Plazo: Conversión de Madera a Aluminio
 
 Repintar el sofito de madera le da 3 a 5 años antes de tener que hacerlo otra vez. Reemplazar la madera podrida con madera nueva vuelve a poner el mismo reloj en marcha bajo el mismo clima.
 
-**El sofito y la fascia de aluminio acaban con el ciclo de forma permanente.**
+**El sofito y la fascia de aluminio rompen el ciclo de repintar y pudrirse.**
 
 - No se pudre, no se deforma ni absorbe humedad
 - No necesita pintura: el color viene integrado en el acabado
@@ -67,7 +67,7 @@ Repintar el sofito de madera le da 3 a 5 años antes de tener que hacerlo otra v
 - Sella bien contra la entrada de plagas
 - Los paneles de sofito ventilados dan el flujo de aire adecuado al ático (reduce los costos del aire acondicionado)
 - Combina con el color de su sistema de canaletas para un acabado completo
-- Dura más de 30 años sin mantenimiento
+- Dura más de 30 años sin ciclo de repintado: solo pide lavado e inspección periódica
 
 El costo inicial es mayor que el reemplazo en madera, pero usted elimina los costos recurrentes de pintura, los costos de reparación de podredumbre y los costos de eliminación de plagas. A lo largo de 15 a 20 años, el aluminio sale mucho más barato que mantener la madera.
 

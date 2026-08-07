@@ -21,6 +21,19 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+# --- media spend cap (added 2026-08-05) -------------------------------------------------------
+# cost_governor.py defined $100/mo for this service but NOTHING recorded to its ledger, so the cap
+# could never trip. This routes every generate_content call through it. Fails closed at 90%.
+import sys as _sys
+_sys.path.insert(0, "/Users/popeye/Desktop/EAPOPEYE/scripts/lib")
+try:
+    import media_spend as _media_spend
+    _media_spend.install_genai_guard()
+except Exception as _e:  # never let the meter break a production run silently
+    print(f"[media_spend] WARNING: spend cap NOT installed ({_e})", file=_sys.stderr)
+# ----------------------------------------------------------------------------------------------
+
+
 _CHLOE_ENV = Path.home() / "Desktop" / "CHLOE" / ".env"
 if _CHLOE_ENV.exists():
     for line in _CHLOE_ENV.read_text().splitlines():

@@ -31,7 +31,7 @@ DIY gutter guards fall into four categories:
 
 ## What You Get with Professional Installation
 
-**Micro mesh guards ($10-$18/LF installed):** Stainless steel fine-weave mesh over custom-fitted aluminum frames. Blocks everything including pine needles and shingle grit. Professionally sealed to the gutter profile. Lasts 15-20+ years.
+**Micro mesh guards ($10-$18/LF installed):** Stainless steel fine-weave mesh over custom-fitted aluminum frames. Stops debris down to pine needles and shingle grit. Professionally sealed to the gutter profile. Lasts 15-20+ years.
 
 **Professional aluminum guards ($7-$12/LF installed):** Solid aluminum covers custom-fitted to your specific gutter size and roofline. Professionally mounted with no gaps or entry points.
 
@@ -88,7 +88,7 @@ For anything beyond that - pine trees, two-story homes, heavy debris, or homeown
 
 ## The Bottom Line
 
-DIY gutter guards are cheap upfront but don't solve the problem in Florida's debris environment. They let pine needles and shingle grit through, degrade in UV within a few years, and need repeated replacement. Professional micro mesh guards cost more once and perform for 15-20 years.
+DIY gutter guards are cheap upfront but don't solve the problem in Florida's debris environment. They let pine needles and shingle grit through, degrade in UV within a few years, and need repeated replacement. Professional micro mesh guards cost more once and perform for 15-20 years. That is the case for [professional guard installation](/gutter-guards) over a hardware-store kit.
 
 The question isn't "can I save money with DIY?" - it's "do I want to solve this problem once or keep dealing with it every few years?"
 

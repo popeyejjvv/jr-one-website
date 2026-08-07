@@ -172,7 +172,7 @@ const T = {
     qualifiesLabel: "CALIFICA",
     services: [
       { name: "Canaletas Sin Costura", desc: 'Instalación de canaletas de aluminio sin costura de 6" y 7"' },
-      { name: "Protectores de Canaletas", desc: "Sistemas de protección de canaletas de micro malla y malla" },
+      { name: "Protectores de Canaletas", desc: "Protectores de canaletas: aluminio estándar y micromalla" },
       { name: "Reparación de Canaletas", desc: "Realineación, resellado, reparación de bajantes y reemplazo" },
       { name: "Reemplazo de Sofito", desc: "Instalación de paneles de sofito de aluminio y reparación de madera" },
       { name: "Reemplazo de Fascia", desc: "Envoltura de fascia de aluminio y reparación de sustrato de madera" },

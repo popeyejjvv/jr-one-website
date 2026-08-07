@@ -27,13 +27,10 @@ Without gutter guards, gutters in heavily treed Tampa yards may need cleaning 2-
 ## Gutter Guard Products JR One Aluminum Installs
 
 ### Micro Mesh Guards - Best Performance
-Fine stainless steel mesh over an aluminum frame. Blocks the smallest debris including pine needles and seed pods while allowing water to pass freely. Best overall performance in Florida's heavy debris environment. Recommended for most homes. Available in 6-inch width.
+The upgrade tier. A finer mesh over an aluminum frame, and that finer mesh is what stops pine needles and seed pods while letting water pass freely. Best overall performance in Florida's heavy debris environment. Recommended for most homes. Available in 6-inch width.
 
-### Standard Leaf Guard / Gutter Guard
-Perforated aluminum or screen-style guards that block larger leaves and debris. Good value option for homes with primarily larger leaf debris. Available in 6-inch and 7-inch widths.
-
-### Copper Gutter Guards - Premium
-Premium copper guards matched to copper gutter systems. Exceptional durability and distinctive aesthetic that develops a natural patina over time. Available in 6-inch and 7-inch widths.
+### Standard Aluminum Gutter Guard
+Our standard tier. Aluminum, sized to the gutter, blocking larger leaves and debris. The right call on homes without pine. Available in 6-inch and 7-inch widths.
 
 ### Custom Gutter Guards
 Specialty applications for non-standard gutter profiles or commercial installations.
@@ -70,7 +67,7 @@ Gutter Helmet charges $12 - $18+ per linear foot ($2,000 - $3,500 for average ho
 
 No gutter guard eliminates all maintenance. What good guards do:
 - Dramatically reduce cleaning frequency (from 2-4 times/year to once every 2-3 years for most homes)
-- Eliminate the risk of clogged gutters causing overflow and water damage
+- Sharply reduce the risk of clogged gutters causing overflow and water damage
 - Reduce the risk of mosquito breeding in standing water inside gutters
 - Reduce the risk of fascia and soffit damage from overflowing gutters
 

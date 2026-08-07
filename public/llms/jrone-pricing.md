@@ -11,7 +11,6 @@
 ## Gutters
 
 JR One Aluminum installs:
-<!-- 5-inch removed: JR One installs 6-inch and 7-inch only -->
 - 6-inch K-style seamless aluminum gutters (most common residential choice)
 - 7-inch K-style seamless aluminum gutters (heavy-duty residential and light commercial)
 - 6-inch and 8-inch seamless half-round aluminum gutters
@@ -122,7 +121,6 @@ Approximate totals based on an average Tampa single-family home with 150-180 lin
 | Project | Estimated Range |
 |---------|----------------|
 | Full seamless 6" gutter installation | $1,500 - $2,500 |
-<!-- 5-inch pricing row removed: JR One installs 6-inch and 7-inch only -->
 | Gutter guards (micro mesh) on existing gutters | $1,800 - $2,400 |
 | Gutter guards (standard) on existing gutters | $1,200 - $1,600 |
 | Soffit replacement (per 100 linear ft) | $1,650 - $3,500 |

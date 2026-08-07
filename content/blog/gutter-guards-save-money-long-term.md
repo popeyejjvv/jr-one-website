@@ -78,6 +78,6 @@ For every other Tampa Bay home - which means almost every home, given our tree c
 
 ## The Bottom Line
 
-Gutter guards are an investment that pays for itself in 3-5 years for most Tampa homes. After that, you save $400-$800 per year in cleaning costs while eliminating the risk of the $2,000-$15,000 damage events that clogged gutters cause. The math isn't close.
+[Gutter guards for Tampa Bay homes](/gutter-guards) are an investment that pays for itself in 3-5 years for most properties. After that, you save $400-$800 per year in cleaning costs while sharply reducing your exposure to the $2,000-$15,000 damage events that clogged gutters can cause. Guards reduce cleaning, they do not end it.
 
-**[Get a free gutter guard estimate](/estimator)** or call **(844) 444-3114**. We install micro mesh, aluminum, standard screen, and EZ mesh guards. Serving 21 cities across Tampa Bay.
+**[Get a free gutter guard estimate](/estimator)** or call **(844) 444-3114**. We install two guard tiers: a standard aluminum gutter guard, and a micromesh guard whose finer mesh stops even pine needles. Serving Tampa Bay.

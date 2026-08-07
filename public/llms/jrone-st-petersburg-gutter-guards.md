@@ -1,7 +1,7 @@
 # Gutter Guards in St. Petersburg, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Gutter guard installation (micro mesh, leaf guard, copper)
+**Service:** Gutter guard installation (standard aluminum and micromesh)
 **Location:** St. Petersburg, Florida - Pinellas County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/st-petersburg/gutter-guards
@@ -17,9 +17,8 @@ St. Pete gets less rain than the rest of Tampa Bay thanks to its sunshine record
 
 ## What JR One Aluminum Does for St. Pete Homeowners
 - Pre-install cleaning so guards go over a clean system
-- Micro mesh guards for mixed-debris properties
-- Standard perforated leaf guards for simple big-leaf yards
-- Copper guards matched to historic bungalow copper systems
+- Micromesh guards for mixed-debris properties
+- Standard aluminum gutter guards for yards without pine
 - Salt-rated hardware on waterfront installs
 - Sizing for 6-inch, 7-inch, and half-round profiles (JR One does not install 5-inch)
 - Hanger tightening and miter resealing during install
@@ -28,9 +27,8 @@ St. Pete gets less rain than the rest of Tampa Bay thanks to its sunshine record
 ## Pricing Reference
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average St. Pete single-family (150-200 linear feet): **$1,200 - $2,400** installed
-- Copper guards: premium tier, priced with matching copper gutters
 - Salt-rated hardware may add slightly on waterfront installs
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micro mesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
 - All ballpark
 
 ## Service Area Details
@@ -54,9 +52,6 @@ A: The material is fine. The premium is national advertising and franchise overh
 
 **Q: How often will I still need to clean?**
 A: Once every two to three years instead of twice a year, plus quick sweeps of loose frond debris off the top after major storms.
-
-**Q: Can you match copper guards to an existing copper gutter system?**
-A: Yes. Copper gutter guards for historic copper installs are regular work.
 
 ## Why JR One Aluminum for St. Pete
 - Over 30 years of family experience in Tampa Bay aluminum work

@@ -83,7 +83,7 @@ A: Hardie board for longevity, fire resistance, and insurance favor. Vinyl for b
 A: 20-30 years for quality vinyl installed correctly. Lower-grade vinyl fades and warps within 10-15 years in Florida sun.
 
 **Q: How long does Hardie board siding last?**
-A: 30-50+ years. Hardie carries a 30-year non-prorated warranty when installed to manufacturer spec.
+A: 30-50+ years. Hardie carries its own manufacturer warranty when installed to spec, and we hand you that documentation at project completion.
 
 **Q: Does JR One Aluminum do insurance claim siding work?**
 A: Yes. JR One Aluminum works with homeowners and adjusters on insurance-covered siding replacement after storm damage. Documentation and photo evidence included at no extra charge.

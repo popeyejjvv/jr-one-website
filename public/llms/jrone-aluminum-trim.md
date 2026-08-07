@@ -10,7 +10,7 @@
 
 ## Aluminum Trim Wrapping
 
-Aluminum wrapping is the process of covering existing wood trim, fascia, window casings, door frames, columns, and other exterior wood surfaces with custom-bent aluminum coil stock. The result is a permanently sealed, maintenance-free exterior surface that never needs painting.
+Aluminum wrapping is the process of covering existing wood trim, fascia, window casings, door frames, columns, and other exterior wood surfaces with custom-bent aluminum coil stock. The result is a sealed, factory-finished exterior surface that does not need repainting the way bare wood does.
 
 ### Why Tampa Homeowners Wrap Their Trim
 
@@ -21,7 +21,7 @@ In Florida's subtropical climate, unpainted or poorly maintained wood exterior t
 - Pest damage (termites, wood-boring insects)
 - Repeated cycles of expansion and contraction from heat
 
-Aluminum wrapping eliminates all of these problems permanently. The aluminum is custom-bent on-site to match the exact profile of the existing trim and is available in colors that match or complement the home's exterior.
+Aluminum wrapping addresses these problems at the source: the aluminum itself does not rot, does not attract termites or wood-boring insects, and does not need repainting the way bare wood does. Wrapped trim still benefits from periodic inspection, and any wood damage present before wrapping should be repaired first. The aluminum is custom-bent on-site to match the exact profile of the existing trim and is available in colors that match or complement the home's exterior.
 
 ### Trim Wrapping Applications
 - Fascia boards
@@ -104,7 +104,7 @@ JR One Aluminum installs Govee exterior LED lighting along rooflines, soffits, a
 ## Frequently Asked Questions
 
 **Q: What is aluminum trim wrapping?**
-A: It's the process of permanently covering exterior wood trim with custom-bent aluminum. The aluminum is formed on-site to match the existing trim profile and sealed to prevent any moisture penetration. Eliminates the need to repaint and protects the wood underneath indefinitely.
+A: It's the process of covering exterior wood trim with custom-bent aluminum. The aluminum is formed on-site to match the existing trim profile and sealed at the seams to shed water and limit moisture intrusion. It removes the need to repaint that trim and shields the wood underneath from direct sun and rain. Sealant joints should be inspected periodically as part of normal exterior maintenance.
 
 **Q: How do I know if my downspouts are the right size?**
 A: JR One Aluminum assesses downspout sizing based on the gutter capacity and the roof's drainage area. A common problem is undersized or too-few downspouts that can't handle Tampa's intense rainfall rates, causing gutters to overflow even when clean and unobstructed.

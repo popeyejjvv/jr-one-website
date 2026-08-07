@@ -80,7 +80,7 @@ A: Yes. Soffit and fascia replacement is completely independent of the roof. It'
 A: Aluminum soffit and fascia, properly installed, can last 30-40+ years. It does not rot, does not require painting, and is corrosion-resistant - ideal for Florida's humid, salt-air environment.
 
 **Q: What is aluminum fascia wrapping?**
-A: Fascia wrapping is covering existing wood fascia boards with custom-bent aluminum coil stock. The aluminum is formed on-site to match the exact trim profile, permanently sealing the wood from moisture and eliminating the need for repainting.
+A: Fascia wrapping is covering existing wood fascia boards with custom-bent aluminum coil stock. The aluminum is formed on-site to match the exact trim profile, shielding the wood from direct rain and sun and removing the need for repainting.
 
 ---
 

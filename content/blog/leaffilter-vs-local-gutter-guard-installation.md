@@ -102,6 +102,6 @@ Honestly? We can't think of a scenario where paying 2-3x the price for the same 
 
 LeafFilter is a marketing company that sells gutter guards. They deliver a quality micro mesh product - but at 2-3x the price of the same technology from a local specialist. The mesh isn't proprietary. The installation isn't different. The only thing unique is the price premium.
 
-Save $2,000-$4,500 and work with a local gutter specialist who installs the same technology, uses their own trained crew, and backs the work with their community reputation.
+Save $2,000-$4,500 and choose [local gutter guard installation](/gutter-guards) from a specialist who installs the same technology, uses their own trained crew, and backs the work with their community reputation.
 
 **[Get a free micro mesh estimate - local pricing](/estimator)** or call **(844) 444-3114**. Same technology, half the price, no 90-minute sales pitch.

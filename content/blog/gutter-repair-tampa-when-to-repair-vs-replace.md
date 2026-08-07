@@ -10,7 +10,7 @@ faqs:
   - question: "When should I replace gutters instead of repairing them?"
     answer: "Replace when you have widespread corrosion, multiple sagging sections, repeated leaks after repairs, or gutters that are 20+ years old and undersized (5-inch in heavy rain zones). If repair costs would exceed 50% of new gutter cost, replacement is the better investment."
   - question: "Can sagging gutters be fixed without replacing them?"
-    answer: "Yes, in most cases. Sagging is usually caused by failed hangers or improper hanger spacing. Re-hanging with screw-in hidden hangers at proper intervals (every 24-36 inches) fixes the sag permanently without replacing the gutter run itself."
+    answer: "Yes, in most cases. Sagging is usually caused by failed hangers or improper hanger spacing. Re-hanging with screw-in hidden hangers at proper intervals (every 24-36 inches) corrects the sag without replacing the gutter run itself, provided the fascia board behind the gutter is still sound."
 ---
 
 # Gutter Repair in Tampa: When to Repair vs. Replace
@@ -73,7 +73,7 @@ Replace your gutters when:
 
 - **Widespread corrosion or pitting** - aluminum doesn't rust, but it does corrode over decades, especially near the coast
 - **Multiple sections sagging or separating** - if more than half the system has issues, piecemeal repair costs add up fast
-- **Undersized gutters** - 5-inch gutters can't keep up with Florida's rain on most roof sizes. Upgrading to 6-inch seamless eliminates the overflow problem permanently
+- **Undersized gutters** - 5-inch gutters can't keep up with Florida's rain on most roof sizes. Upgrading to properly sized 6-inch or 7-inch seamless gutters removes the capacity bottleneck, though any gutter still needs regular cleaning and correct pitch to drain the way it should
 - **Repeated repairs** - if you've repaired the same section twice in three years, you're paying to delay the inevitable
 - **Age** - gutters over 20 years old in Tampa's climate are typically past their useful life
 
@@ -81,7 +81,7 @@ Replace your gutters when:
 
 Florida's combination of heavy rain, humidity, UV exposure, and tree debris means gutters here age faster than the national average. A gutter system that might last 30 years in the Midwest often needs attention at 15-20 years in Tampa Bay.
 
-The cheapest option is not always the best investment. A $300 repair on a failing 20-year-old system buys you a year or two. A new seamless aluminum system with proper 6-inch sizing and gutter guards buys you 25+ years of zero-worry drainage.
+The cheapest option is not always the best investment. A $300 repair on a failing 20-year-old system buys you a year or two. A new seamless aluminum system with proper 6-inch sizing and gutter guards is built to handle Tampa Bay rain for decades with far less upkeep than an undersized system, though guards reduce cleaning rather than end it.
 
 ## What to Do Next
 

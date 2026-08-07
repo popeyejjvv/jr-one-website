@@ -10,7 +10,7 @@ faqs:
   - question: "¿Cuándo debo reemplazar las canaletas en lugar de repararlas?"
     answer: "Reemplácelas cuando tenga corrosión generalizada, varias secciones caídas, fugas que vuelven después de las reparaciones, o canaletas de más de 20 años que además son de tamaño insuficiente (de 5 pulgadas en zonas de lluvia fuerte). Si el costo de reparar supera el 50% del costo de canaletas nuevas, reemplazar es la mejor inversión."
   - question: "¿Se pueden arreglar las canaletas caídas sin reemplazarlas?"
-    answer: "Sí, en la mayoría de los casos. Las canaletas caídas suelen deberse a soportes fallidos o a un espaciado incorrecto de los soportes. Volver a colgarlas con soportes ocultos atornillados a la distancia adecuada (cada 24 a 36 pulgadas) corrige la caída de forma permanente sin reemplazar la canaleta en sí."
+    answer: "Sí, en la mayoría de los casos. Las canaletas caídas suelen deberse a soportes fallidos o a un espaciado incorrecto de los soportes. Volver a colgarlas con soportes ocultos atornillados a la distancia adecuada (cada 24 a 36 pulgadas) corrige la caída sin reemplazar la canaleta en sí, siempre que la tabla de fascia detrás de la canaleta siga en buen estado."
 ---
 
 # Reparación de Canaletas en Tampa: Cuándo Reparar vs. Reemplazar
@@ -73,7 +73,7 @@ Reemplace sus canaletas cuando:
 
 - **Corrosión o picaduras generalizadas** - el aluminio no se oxida, pero sí se corroe con las décadas, especialmente cerca de la costa
 - **Varias secciones caídas o separándose** - si más de la mitad del sistema tiene problemas, el costo de reparar por partes se acumula rápido
-- **Canaletas de tamaño insuficiente** - las canaletas de 5 pulgadas no dan abasto con la lluvia de Florida en la mayoría de los tamaños de techo. Cambiar a 6 pulgadas sin costura elimina el problema de desbordamiento de forma permanente
+- **Canaletas de tamaño insuficiente** - las canaletas de 5 pulgadas no dan abasto con la lluvia de Florida en la mayoría de los tamaños de techo. Cambiar a canaletas sin costura de 6 o 7 pulgadas con el tamaño correcto quita el cuello de botella de capacidad, aunque cualquier canaleta necesita limpieza regular y la inclinación correcta para drenar como debe
 - **Reparaciones repetidas** - si ha reparado la misma sección dos veces en tres años, está pagando para retrasar lo inevitable
 - **Edad** - las canaletas de más de 20 años en el clima de Tampa normalmente ya pasaron su vida útil
 
@@ -81,7 +81,7 @@ Reemplace sus canaletas cuando:
 
 La combinación de Florida de lluvia fuerte, humedad, exposición UV, y residuos de árboles hace que las canaletas aquí envejezcan más rápido que el promedio nacional. Un sistema de canaletas que podría durar 30 años en el Medio Oeste a menudo necesita atención a los 15-20 años en Tampa Bay.
 
-La opción más barata no siempre es la mejor inversión. Una reparación de $300 en un sistema de 20 años que ya está fallando le compra un año o dos. Un sistema nuevo de aluminio sin costura con el tamaño correcto de 6 pulgadas y protectores de canaletas le compra más de 25 años de drenaje sin preocupaciones.
+La opción más barata no siempre es la mejor inversión. Una reparación de $300 en un sistema de 20 años que ya está fallando le compra un año o dos. Un sistema nuevo de aluminio sin costura con el tamaño correcto de 6 pulgadas y protectores de canaletas está hecho para aguantar la lluvia de Tampa Bay por décadas y con mucho menos mantenimiento que un sistema de tamaño insuficiente, aunque los protectores reducen la limpieza, no la eliminan.
 
 ## Qué Hacer Después
 

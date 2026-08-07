@@ -34,7 +34,7 @@ const T = {
     whyTag: "Why Finance",
     whyTitle: "Protecting Your Home Is an Investment",
     whyItems: [
-      { title: "Prevent expensive damage now", desc: "Waiting on gutter or soffit repairs because of budget concerns lets water damage compound. A $3,000 installation financed today prevents a $10,000+ foundation repair next year." },
+      { title: "Address damage sooner", desc: "Putting off gutter or soffit work because of budget concerns gives water more time to do damage. Handling it now is generally far cheaper than repairing the water damage that follows." },
       { title: "Manageable monthly payments", desc: "Spread the cost of your project over months instead of paying everything upfront. Keep your savings intact for emergencies while your home gets the protection it needs." },
       { title: "No price difference", desc: "Your estimate is your estimate. Financing doesn't add to the project cost. It's simply a payment method. You get the same materials, the same crew, the same Gold Standard service." },
       { title: "Senior and military discounts available", desc: "We offer additional discounts for seniors and military families. Combine with financing for the most affordable path to protecting your home." },
@@ -70,7 +70,7 @@ const T = {
     whyTag: "Por Qué Financiar",
     whyTitle: "Proteger Tu Hogar Es una Inversión",
     whyItems: [
-      { title: "Preveni daños costosos ahora", desc: "Esperar en reparaciones de canaletas o sofito por preocupaciones de presupuesto deja que el daño por agua se acumule. Una instalación de $3,000 financiada hoy previene una reparación de cimientos de $10,000+ el próximo año." },
+      { title: "Atienda el daño a tiempo", desc: "Posponer el trabajo de canaletas o sofito por presupuesto le da más tiempo al agua para hacer daño. Atenderlo ahora por lo general sale mucho más barato que reparar el daño por agua que viene después." },
       { title: "Pagos mensuales manejables", desc: "Distribuye el costo de tu proyecto en meses en lugar de pagar todo por adelantado. Mantén tus ahorros intactos para emergencias mientras tu hogar obtiene la protección que necesita." },
       { title: "Sin diferencia de precio", desc: "Tu estimado es tu estimado. El financiamiento no agrega al costo del proyecto. Es simplemente un método de pago. Obtenes los mismos materiales, la misma cuadrilla, el mismo servicio Estándar de Oro." },
       { title: "Descuentos para personas mayores y militares disponibles", desc: "Ofrecemos descuentos adicionales para personas mayores y familias militares. Combina con financiamiento para el camino más accesible para proteger tu hogar." },

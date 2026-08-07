@@ -44,7 +44,7 @@ Los daños relacionados con las canaletas en propiedades de alquiler son costoso
 - **Remediación de moho:** $2,000-$10,000 (más una posible queja por habitabilidad)
 - **Aumento de la prima del seguro:** varía, pero un historial de reclamos sube las tarifas
 
-De $300 a $600 al año en mantenimiento previene todos estos problemas.
+Un presupuesto de $300 a $600 al año en mantenimiento es poco al lado de cualquiera de estas reparaciones, y la limpieza constante de canaletas es la forma más barata de bajar el riesgo de daño por agua.
 
 ## Protectores de canaletas para alquileres
 
@@ -53,7 +53,7 @@ Los protectores de canaletas son especialmente valiosos en las propiedades de al
 - **Sin protectores:** Usted depende de programar y completar de 2 a 4 limpiezas al año. Si falla una, va acumulando daños.
 - **Con protectores:** Una limpieza anual es suficiente. Los protectores previenen las obstrucciones que causan el 90% de los daños relacionados con las canaletas.
 
-La inversión de $1,500-$3,000 en protectores normalmente se paga sola en 3 a 4 años en una propiedad de alquiler, gracias a la reducción de los costos de limpieza y a la eliminación del riesgo de daños.
+La inversión de $1,500-$3,000 en protectores normalmente se paga sola en 3 a 4 años en una propiedad de alquiler, gracias a la reducción de los costos de limpieza y a un menor riesgo de daño por agua causado por obstrucciones.
 
 ## Administración de múltiples propiedades
 
