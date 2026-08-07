@@ -39,7 +39,7 @@ const T = {
     heroCta: "Get Your Free Estimate",
     heroCall: "Call (844) 444-3114",
     stats: [
-      { value: "500+", label: "Siding projects completed" },
+      { value: "500+", label: "Siding installations completed" },
       { value: "20+", label: "Year material warranties" },
       { value: "Custom", label: "Color and profile matched" },
       { value: "100%", label: "In-house crews" },
@@ -118,7 +118,7 @@ const T = {
     heroCta: "Obtenga Su Estimado Gratis",
     heroCall: "Llame al (844) 444-3114",
     stats: [
-      { value: "500+", label: "Proyectos de revestimiento" },
+      { value: "500+", label: "Instalaciones de revestimiento" },
       { value: "20+", label: "Años de garantía de materiales" },
       { value: "A medida", label: "Color y perfil combinados" },
       { value: "100%", label: "Equipos propios" },
