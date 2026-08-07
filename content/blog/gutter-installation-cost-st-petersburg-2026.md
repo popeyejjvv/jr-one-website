@@ -166,7 +166,7 @@ We've worked dozens of St. Pete storm damage claims over the past decade. See ou
 
 ## When to Replace Gutters in St. Petersburg
 
-Quality seamless aluminum gutters last 25 to 35 years in inland St. Pete and 15 to 25 years in waterfront/coastal-exposed locations. The triggers for replacement (vs. repair) are:
+Quality seamless aluminum gutters last 20 to 30 years in Florida's climate, and heavy salt air on waterfront and coastal-exposed St. Pete properties works the low end of that range. The triggers for replacement (vs. repair) are:
 
 1. **Sagging despite hanger replacement** - usually means the gutter itself has lost rigidity
 2. **Visible corrosion or pitting** on aluminum (rare but possible in heavy salt air after 20+ years)

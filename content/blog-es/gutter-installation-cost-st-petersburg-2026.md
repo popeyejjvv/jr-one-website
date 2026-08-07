@@ -166,7 +166,7 @@ Hemos trabajado decenas de reclamos por daño de tormenta en St. Pete durante la
 
 ## Cuándo reemplazar las canaletas en St. Petersburg
 
-Las canaletas de aluminio sin costura de calidad duran de 25 a 35 años en el St. Pete de tierra adentro y de 15 a 25 años en ubicaciones frente al agua o con exposición costera. Los motivos para reemplazar (en lugar de reparar) son:
+Las canaletas de aluminio sin costura de calidad duran de 20 a 30 años en el clima de Florida, y el aire salino fuerte en las propiedades de St. Pete frente al agua o con exposición costera empuja hacia el extremo bajo de ese rango. Los motivos para reemplazar (en lugar de reparar) son:
 
 1. **Hundimiento a pesar de reemplazar los soportes** - por lo general significa que la canaleta misma ha perdido rigidez
 2. **Corrosión o picaduras visibles** en el aluminio (poco común pero posible en aire salino fuerte después de más de 20 años)

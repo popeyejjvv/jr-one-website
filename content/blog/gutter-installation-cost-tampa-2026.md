@@ -60,8 +60,8 @@ JR One installs 6-inch and 7-inch seamless aluminum, copper, and galvalume only.
 
 | Material | Cost Per Linear Foot | Lifespan (Tampa) | Best For |
 |----------|---------------------|------------------|----------|
-| 6-inch seamless aluminum | $10 to $15 | 25 to 35 years | JR One baseline for most Tampa homes |
-| 7-inch seamless aluminum | $13 to $18 | 25 to 35 years | Larger roofs, steep pitches, heavy rain |
+| 6-inch seamless aluminum | $10 to $15 | 20 to 30 years | JR One baseline for most Tampa homes |
+| 7-inch seamless aluminum | $13 to $18 | 20 to 30 years | Larger roofs, steep pitches, heavy rain |
 | Copper gutters | $25 to $40 | 50 years or more | Historic homes, premium installs |
 | Galvalume steel | $14 to $22 | 30 to 40 years | Coastal properties, commercial |
 
