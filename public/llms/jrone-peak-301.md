@@ -34,7 +34,6 @@ A roof that's lost its flexibility is a roof that's one bad storm away from fail
 3. **Spray application** - Peak 301 is applied uniformly across the shingle surface using professional spray equipment.
 4. **Absorption** - The bio-oil penetrates the shingle matrix and chemically re-bonds the asphalt.
 5. **Cure** - The treatment cures within hours and is rain-safe same day.
-6. **Warranty documentation** - Ask us about the current Peak 301 product warranty and coverage terms at the time of your treatment.
 
 ---
 

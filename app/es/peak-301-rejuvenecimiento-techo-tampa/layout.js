@@ -16,7 +16,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel"].map((name) => ({ "@type": "City", name })),
-  description: "Sellador de rejuvenecimiento Peak 301 a base de soya, aplicado sobre las tejas asfálticas que ya tiene su casa en Tampa Bay. Suma de 6 a 10 años de vida útil a las tejas por hasta 70% menos que un techo nuevo. Solo tejas asfálticas: no se aplica en techos planos, de metal ni de teja de barro. Incluye garantía de producto, con los términos confirmados en la evaluación. No es un reemplazo ni una reparación de techo.",
+  description: "Sellador de rejuvenecimiento Peak 301 a base de soya, aplicado sobre las tejas asfálticas que ya tiene su casa en Tampa Bay. Suma de 6 a 10 años de vida útil a las tejas por hasta 70% menos que un techo nuevo. Solo tejas asfálticas: no se aplica en techos planos, de metal ni de teja de barro. No es un reemplazo ni una reparación de techo.",
 };
 
 const breadcrumbSchemaEs = {

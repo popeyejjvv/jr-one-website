@@ -19,7 +19,7 @@ const serviceSchema = {
     { "@type": "City", name: "St. Petersburg" },
   ],
   description:
-    "Peak 301 soy-based roof rejuvenation treatment in Tampa Bay. Penetrates asphalt shingles to restore oils lost to UV and heat. Adds 6-10 years of roof life. Comes with a product warranty (terms confirmed at assessment). May help homeowners document remaining roof useful life for their insurer's review.",
+    "Peak 301 soy-based roof rejuvenation treatment in Tampa Bay. Penetrates asphalt shingles to restore oils lost to UV and heat. Adds 6-10 years of roof life. May help homeowners document remaining roof useful life for their insurer's review.",
 };
 
 const breadcrumbSchema = {
@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Peak 301 Roof Rejuvenation Tampa",
   description:
-    "Peak 301 soy-based roof rejuvenation in Tampa Bay. Adds 6-10 years of life. Comes with a product warranty (terms confirmed at assessment). May help document remaining roof life for your insurer's renewal review. Free inspection, (844) 444-3114.",
+    "Peak 301 soy-based roof rejuvenation in Tampa Bay. Adds 6-10 years of life. May help document remaining roof life for your insurer's renewal review. Free inspection, (844) 444-3114.",
   alternates: {
     canonical: "https://www.jronegutters.com/peak-301",
     languages: {
