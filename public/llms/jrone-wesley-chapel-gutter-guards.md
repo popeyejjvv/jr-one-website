@@ -45,7 +45,7 @@ A: Most Wesley Chapel two-stories run $1,500 to $3,000 installed depending on li
 A: Micro mesh. Pasco yards have a mix of oak leaves, pine needles, and seed pods - only fine mesh handles all three without letting the small debris through.
 
 **Q: My builder installed 5-inch gutters - should I upgrade at the same time?**
-A: Often yes. On big Wesley Chapel two-story roofs the 5-inch overflows during heavy rain even when clean. 6-inch holds 40% more water. If you're already paying for guards, it's worth doing both at once.
+A: Often yes. On big Wesley Chapel two-story roofs the original gutters overflow during heavy rain even when clean. 6-inch is sized for that water volume. If you're already paying for guards, it's worth doing both at once.
 
 **Q: Do guards work after a hurricane?**
 A: Properly installed guards ride out storms. After a named storm we inspect for existing customers - occasionally a big branch displaces a section and needs re-seating.

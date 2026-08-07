@@ -40,7 +40,7 @@ A: JR One Aluminum installs seamless aluminum gutters custom-fabricated on-site.
 A: A seamless gutter is fabricated in one continuous piece cut to the exact length of your roofline. It has no joints or seams along the straight runs, only at corners and downspout connections. This dramatically reduces leak points compared to sectional gutters sold in hardware stores.
 
 **Q: What size gutter does JR One install?**
-A: 6-inch gutters have 40% more water-carrying capacity. For most Tampa homes - given Florida's intense rainfall (46-50 inches annually) and larger roof footprints - 6-inch gutters are often the better choice. JR One Aluminum recommends the correct size based on your specific roof area and pitch during the free assessment.
+A: For most Tampa homes - given Florida's intense rainfall (46-50 inches annually) and larger roof footprints - 6-inch gutters are often the better choice. JR One Aluminum recommends the correct size based on your specific roof area and pitch during the free assessment.
 
 **Q: How long do aluminum gutters last in Tampa?**
 A: Quality aluminum gutters installed correctly last 20-30 years in Tampa's climate. Copper gutters last 50+ years. The main factors that shorten gutter life are improper installation, standing water due to incorrect pitch, and infrequent cleaning leading to weight-induced sagging.

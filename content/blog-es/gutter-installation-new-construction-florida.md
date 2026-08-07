@@ -31,7 +31,7 @@ Esta configuración le cuesta al constructor entre $800 y $1,200 por casa. Funci
 
 ## Cómo se ve una instalación de calidad
 
-- **Aluminio sin costura de 6 pulgadas** - sin uniones que goteen, 40% más de capacidad que las de 5 pulgadas
+- **Aluminio sin costura de 6 pulgadas** - sin uniones que goteen, dimensionadas para el volumen de lluvia de Florida
 - **Soportes ocultos atornillados cada 24 a 36 pulgadas** - montaje seguro que resiste las tormentas
 - **Bajantes de 3x4** - ajustados a la capacidad de la canaleta de 6 pulgadas
 - **Una bajante por cada 20 a 30 pies lineales** - cobertura de drenaje adecuada

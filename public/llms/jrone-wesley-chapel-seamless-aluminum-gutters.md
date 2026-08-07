@@ -13,7 +13,7 @@
 Seven Oaks, Meadow Pointe, and Watergrass owners whose builder-grade 5-inch gutters can't keep up with a big two-story roof in heavy rain, homeowners in 10-15 year old Lexington Oaks and Country Walk homes replacing their first-generation gutters, Epperson and newer-build residents who want to upgrade before the builder's originals fail, and anyone tired of leaks at the sectional joints of their original aluminum system.
 
 ## Why Seamless Gutters Matter in Wesley Chapel
-Wesley Chapel has bigger-than-average roof footprints - master-planned two-story homes with 2,500 to 4,000+ square feet of roof area. Those roofs shed a lot of water fast in a Pasco County thunderstorm. Builder-grade 5-inch gutters with sectional joints were spec'd to hit a price point, not to move that water volume. Seamless 6-inch aluminum comes off a truck-mounted machine as one continuous piece, with only corner and downspout joints, and moves about 40% more water than 5-inch. In a Tampa Bay summer storm that's the difference between a clean edge drip and an overflow waterfall.
+Wesley Chapel has bigger-than-average roof footprints - master-planned two-story homes with 2,500 to 4,000+ square feet of roof area. Those roofs shed a lot of water fast in a Pasco County thunderstorm. Builder-grade 5-inch gutters with sectional joints were spec'd to hit a price point, not to move that water volume. Seamless 6-inch aluminum comes off a truck-mounted machine as one continuous piece, with only corner and downspout joints, and is sized for that water volume. In a Tampa Bay summer storm that's the difference between a clean edge drip and an overflow waterfall.
 
 ## What JR One Aluminum Does for Wesley Chapel Homeowners
 - On-site custom fabrication in 6" and 7" profiles
@@ -39,7 +39,7 @@ Seven Oaks, Meadow Pointe I/II/III/IV, Saddlebrook, Lexington Oaks, Watergrass, 
 
 ## FAQ
 **Q: Should I upgrade from builder 5-inch to 6-inch seamless?**
-A: On a big Wesley Chapel two-story roof, almost always yes. 6-inch moves about 40% more water and solves the overflow problem that 5-inch can't handle on large footprints. Most common upgrade we do here.
+A: On a big Wesley Chapel two-story roof, almost always yes. 6-inch is sized for the water volume those roofs shed and solves the overflow problem on large footprints. Most common upgrade we do here.
 
 **Q: How much for a full replacement on a Meadow Pointe two-story?**
 A: Most Wesley Chapel two-stories run $2,000 to $3,200 for a complete 6-inch seamless install. Single-story is closer to $1,500 to $2,500.

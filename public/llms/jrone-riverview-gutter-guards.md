@@ -39,7 +39,7 @@ Panther Trace, Rivercrest, Summerfield, Valhalla, Riverview Meadows, The Reserve
 
 ## FAQ
 **Q: My builder-grade 5-inch gutters overflow even when clean - should I upgrade to 6-inch while I'm installing guards?**
-A: Usually yes. 6-inch moves about 40% more water. If overflow is already happening clean, guards alone won't fix it - the gutters themselves are undersized. Doing the upgrade and the guards together saves a second install trip.
+A: Usually yes. If overflow is already happening clean, guards alone won't fix it - the gutters themselves are undersized. Doing the upgrade and the guards together saves a second install trip.
 
 **Q: How much will guards cost for my two-story Riverview home?**
 A: Most Riverview two-stories run $1,500 to $3,000 installed, depending on linear footage and guard selection. Free measurement at (844) 444-3114.

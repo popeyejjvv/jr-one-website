@@ -61,7 +61,7 @@ Riverview is one of the fastest-growing areas in Hillsborough County - big maste
 ## Frequently Asked Questions - Riverview Gutters
 
 **Q: My builder installed 5" gutters - should I upgrade to 6"?**
-A: Often yes. 6" gutters have 40% more water capacity. For larger roof footprints common in Riverview, 6" solves overflow issues that 5" systems can't handle.
+A: Often yes. For the larger roof footprints common in Riverview, 6" is sized for the water volume and solves the overflow issues that undersized gutters cause.
 
 **Q: Do you work in Panther Trace and Rivercrest?**
 A: Yes - both are frequently-serviced Riverview subdivisions.

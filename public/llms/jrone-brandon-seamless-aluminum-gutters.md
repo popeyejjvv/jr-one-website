@@ -38,7 +38,7 @@ Central Brandon, Bloomingdale, Providence Lakes, Heather Lakes, Four Winds, Hick
 
 ## FAQ
 **Q: My builder put in 5-inch gutters on my big two-story - should I go to 6-inch?**
-A: Usually yes. 6-inch holds roughly 40% more water than 5-inch. Common upgrade on Bloomingdale, Providence Lakes, and Brandon Oaks homes with larger roof footprints where the original 5-inch overflows in heavy rain.
+A: Usually yes. Common upgrade on Bloomingdale, Providence Lakes, and Brandon Oaks homes with larger roof footprints where the original gutters overflow in heavy rain.
 
 **Q: How much for a full gutter replacement on an average Brandon home?**
 A: $1,500 to $2,500 for most single-family seamless installs. Exact number depends on linear footage, downspouts, and whether we're tearing off an old system.

@@ -23,7 +23,7 @@ If the gutter size isn't matched to the water volume, you get overflow. Overflow
 The standard residential size nationally. Adequate for smaller roofs (under ~1,500 square feet), lower-pitch roofs, and regions with moderate rainfall. On most Tampa homes, 5-inch gutters are under-capacity in intense storms - which is why JR One does not carry 5-inch coil stock and does not install 5-inch in Florida. We replace builder-grade 5-inch with 6-inch or 7-inch during gutter replacement jobs.
 
 ### 6-Inch K-Style Gutters (JR One baseline)
-40% more water-carrying capacity than 5-inch. The Tampa-appropriate standard for most single-family homes. Handles the intense summer thunderstorm water volume without overflow. JR One's default residential size unless the roof needs 7-inch.
+The Tampa-appropriate standard for most single-family homes. Handles the intense summer thunderstorm water volume without overflow. JR One's default residential size unless the roof needs 7-inch.
 
 ### 7-Inch K-Style Gutters
 Heavy-duty residential or light-commercial applications. Used on homes with very large roof footprints, steep roof pitches creating concentrated water flow, or commercial-adjacent buildings.
