@@ -219,19 +219,35 @@ Plus the ES twins where the ES post carries the same sentence, pointed at
 
 **Lutz** - this is the honest constraint. Lutz appears in **zero** blog sentences, so
 there is no existing body copy to place a link inside. Inventing a Lutz mention purely
-to hang a link on is the appended-link-block failure in disguise. So Lutz links come
-from the two places where naming Lutz is genuinely correct in context:
+to hang a link on is the appended-link-block failure in disguise.
 
-| # | Source | Target | Anchor | Why it belongs there |
-|---|---|---|---|---|
-| 8 | `/areas/land-o-lakes` localP, existing sentence about the Pasco county-line corridor | `/areas/lutz` | the Lutz side of the county line | Lutz already sits in `land-o-lakes.nearby`; the corridor is the sentence's actual subject |
-| 9 | `/areas/wesley-chapel` localP | `/areas/lutz` | neighboring Lutz | already in `wesley-chapel.nearby` |
-| 10 | `/areas/new-tampa` localP, existing canopy sentence | `/areas/lutz/gutter-guards` | heavy-canopy homes toward Lutz | New Tampa's copy already discusses oak and pine canopy, which is the guard argument |
-| 11 | `/areas/temple-terrace` localP | `/areas/lutz` | Lutz | already in `temple-terrace.nearby` |
+**PLAN REVISED DURING THE BUILD.** The first plan routed the Lutz links through the
+`localP` field on adjacent city pages (`land-o-lakes`, `wesley-chapel`, `new-tampa`,
+`temple-terrace`, all of which carry Lutz in their `nearby` array). That is not
+possible: `components/CityLandingPage.jsx:787` renders `localP` as a plain React text
+child, so a markdown or JSX link cannot go inside it without restructuring the
+component. VERIFIED by reading the render, not assumed.
 
-Each of those four is a real editorial addition to a sentence that is already about the
-adjacent-area corridor, in both EN and ES. That is four genuine prose inbound links to
-a page that has zero today.
+The replacement is better anyway, and it matches the `9aa3865` precedent exactly -
+links from blog prose into commercial pages. Lutz's defining verified trait is its
+oak and pine canopy, so the canopy posts are where naming Lutz is genuinely earned:
+
+| # | Source (existing sentence about the topic) | Target | Anchor |
+|---|---|---|---|
+| 8 | `content/blog/best-gutter-guards-for-pine-needles.md` pine-needle opener | `/areas/lutz/gutter-guards` | gutter guards in Lutz |
+| 9 | `content/blog/gutter-maintenance-schedule-tampa.md` live-oak leaf-drop section | `/areas/lutz/gutter-cleaning` | gutter cleaning in Lutz |
+| 10 | `content/blog/do-gutter-guards-actually-work.md` heavy-tree-coverage bullet | `/areas/lutz` | Lutz |
+| 11 | `content/blog/seamless-gutters-vs-sectional-tampa.md` sizing conclusion | `/areas/lutz/seamless-aluminum-gutters` | seamless gutters in Lutz |
+| 12 | `content/blog/gutter-repair-tampa-when-to-repair-vs-replace.md` fascia-rot sequence | `/areas/lutz/gutter-repair` | gutter repair in Lutz |
+
+Five genuine prose inbound links to a page that has zero today.
+
+**Note on the baseline measurement.** Every blog page renders a templated
+`/areas/brandon` and `/areas/lutz` link through sitewide chrome, VERIFIED by finding
+both on `/blog/gutter-apron-tampa-what-it-is`, whose markdown mentions neither city.
+That is the same "footer as body content" artifact the rank-lift plan flagged at its
+line 252. Those template links are not prose and carry no topical signal, which is why
+the Step 1 count is scoped to prose.
 
 ### What this does NOT do
 
@@ -267,3 +283,70 @@ work, but leaves "English and Spanish" only half-honored for the new depth.
 
 My recommendation is **A**. It honors the bilingual requirement, it matches the note
 the EN route already carries, and it creates depth without creating thinness.
+
+**ANSWERED: A.** Popeye chose the six-ES-twins option. Shipped as
+`app/es/areas/[slug]/[service]/page.jsx` + `lib/city-service-es.js`, with
+`ES_COMBO_PAIRS` shared by both routes so the English `es-US` hreflang can never point
+at a page the Spanish route does not generate.
+
+---
+
+## What shipped, and what is still open
+
+### Facts the copy wanted and did NOT get (left out, not invented)
+
+The six authoring passes surfaced these gaps. Every one was omitted rather than guessed.
+Answering any of them would measurably strengthen the page named beside it.
+
+- **A no-cost inspection or estimate offer.** `free gutter inspection lutz fl` is a real
+  query. The site says "free estimate" elsewhere, but no verified inspection offer
+  exists, so the cleaning page could not answer it.
+- **Emergency / same-day response commitment.** Several Lutz repair queries are urgency
+  queries. The draft originally wrote "storm calls get priority"; that was removed
+  because nothing verifies JR One can hold it.
+- **Whether a repair carries the same 3-year workmanship warranty as a new install.**
+  Canon gives the term for installations. The repair page applied it; confirm or correct.
+- **Whether JR One services the Pasco side of Lutz.** Lutz straddles the county line.
+  Every county-coverage claim was stripped from both languages because none is verified.
+- **Whether JR One repairs gutters it did not install**, and whether it repairs guards
+  another company installed. Both are the unspoken question behind most repair searches.
+- **Vinyl siding lifespan, warranty term, brand, wind rating, and Florida Product
+  Approval number.** Canon bans the first three by name. The Brandon siding page is
+  therefore a siding page carrying no siding lifespan, which is a real competitive
+  handicap on `siding contractor brandon fl` (171 impressions, the largest single
+  query on either city). Worth a deliberate decision rather than leaving it inherited.
+- **Aluminum siding panel gauge.** The canon gauges read as gutter coil specs, so they
+  were not applied to siding panel.
+- **Per-city project counts.** `lib/companycam/inventory.json` (pull_date 2026-05-29)
+  gives Brandon 49 / Lutz 47 by `city_official` and 58 / 50 by `city_slug`. The live
+  `riverview/gutter-guards` entry publishes 84, which matches neither field. Because
+  the two fields disagree and the precedent matches neither, no count was published on
+  any of the six pages. The existing entries that DO publish counts were left alone.
+
+### Two defects found in the tooling, not in the copy
+
+1. **`canon_gate` cannot see the 20-year manufacturer paint warranty.** Canon line 28
+   authorizes it ("Plus the 20-year manufacturer paint warranty on painted aluminum"),
+   but it lives in the Notes cell, and `warranty_terms()` parses only the value cell, so
+   it yields `{3, 15, 50}`. Seven true, canon-authorized sentences were flagged as
+   BLOCK. They were removed rather than shipped past a gate. **Fix: add a
+   `| Manufacturer paint warranty | 20 years | painted aluminum |` row to the canonical
+   table**, then the claim can be restored.
+2. **`canon_gate` substring-matches subject tokens without word boundaries, which
+   misfires on Spanish.** The Spanish verb `guardando` ("holding", as in holding water)
+   contains the English token `guard`, so a paragraph using it was matched against the
+   "Guard cleaning reduction" rule and its canonical 40% capacity figure was reported as
+   contradicting the guard-cleaning 80%. Three occurrences were reworded to
+   `reteniendo`. **This will bite every future Spanish draft**, because `guardar` is an
+   everyday verb. Fix: word-boundary the subject match in `_check_percentages`, or
+   language-scope the rule.
+
+Neither was changed here. Both are in `~/Desktop/EAPOPEYE/.claude/skills/seo-aeo-runner`,
+outside this repo's authorized scope for this task.
+
+### One inherited claim carried, not verified
+
+The combo-page trust strip renders "4.9 / 5.0 from 55 reviews" from
+`app/areas/[slug]/[service]/page.jsx`. It already ships on all 232 English combo pages.
+The six new pages inherit it unchanged. It was not re-verified against the live review
+count and is flagged here rather than silently carried.
