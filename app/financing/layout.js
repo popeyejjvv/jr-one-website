@@ -11,7 +11,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Gutter & Roof Financing Tampa FL",
+  title: "Gutter & Exterior Financing Tampa FL",
   description:
     "Financing options for Tampa Bay gutter, soffit, fascia, siding, and Peak 301 roof rejuvenation jobs. Quick approval, monthly payments. JR One Aluminum, (844) 444-3114.",
   alternates: {
