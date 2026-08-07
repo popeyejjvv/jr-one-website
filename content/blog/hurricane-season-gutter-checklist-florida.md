@@ -33,6 +33,8 @@ Remove all debris from every gutter run and flush every downspout until water ru
 - Debris-weighted gutters tear away from fascia in high winds
 - Overflowing water dumps directly at the foundation when you need drainage most
 
+If you are clearing the same debris load every season, it is worth pricing [gutter guards before storm season](/gutter-guards) so there is less to clear in the first place.
+
 ### 2. Inspect Every Hanger
 
 Walk the perimeter and check that every hanger is tight against the fascia. Push up on the gutter at multiple points - it shouldn't move.

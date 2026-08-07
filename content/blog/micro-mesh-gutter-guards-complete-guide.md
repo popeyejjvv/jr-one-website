@@ -101,7 +101,7 @@ The price difference pays for their TV commercials, franchise fees, and in-home 
 5. **Installation** - mesh guards secured to the front lip and under the first row of shingles (or mounted on top depending on roof type)
 6. **Testing** - water run through to verify flow and mesh drainage
 
-Most homes take 4-6 hours for guard installation on existing gutters.
+Most homes take 4-6 hours for guard installation on existing gutters. That is the same sequence our crew follows for the [micro mesh guards we install in Tampa Bay](/gutter-guards).
 
 ## Maintenance with Micro Mesh
 

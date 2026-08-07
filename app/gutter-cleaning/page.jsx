@@ -21,6 +21,7 @@ import ReviewCard from "../../components/ui/ReviewCard";
 import FAQAccordion from "../../components/ui/FAQAccordion";
 import Peak301Alert from "../../components/ui/Peak301Alert";
 import { CheckCircleIcon, PhoneIcon, ClockIcon } from "../../lib/icons";
+import { localizeHref } from "../../lib/locale";
 
 const T = {
   en: {
@@ -63,7 +64,7 @@ const T = {
     scopeItems: [
       { emoji: "⭐", title: "Full-Service Cleaning", desc: "Full debris removal, downspout flush, hanger and sealant inspection, photo documentation, and debris haul-away. The recommended default for most Tampa homes." },
       { emoji: "🧹", title: "Basic Tune-Up", desc: "Inspection and spot cleaning for gutters in reasonable condition or on a regular recurring schedule. Lower cost for systems that aren't heavily soiled." },
-      { emoji: "🛡️", title: "Deluxe Guard Package", desc: "When you're adding gutter guards, we clean first so the guards install over a clean system. Bundled pricing vs. two separate visits." },
+      { emoji: "🛡️", title: "Deluxe Guard Package", desc: "When you're adding gutter guards, we clean first so the guards install over a clean system. Bundled pricing vs. two separate visits.", linkHref: "/gutter-guards", linkLead: "See the", linkText: "gutter guards that reduce cleaning frequency" },
       { emoji: "💧", title: "Downspout Clean-Out", desc: "Targeted fix for a single clogged downspout. Common symptom: gutter fills and overflows at one spot even after a general cleaning." },
       { emoji: "⏱", title: "Recurring Schedule", desc: "Semi-annual, quarterly, or post-storm recurring cleaning. Priced below one-off cleanings and priority-slotted during storm seasons." },
       { emoji: "🏠", title: "Commercial & HOA", desc: "Apartment complexes, retail, HOA-managed communities, and commercial buildings. Priced and scheduled separately. See the commercial and HOA pages for contract structure." },
@@ -152,7 +153,7 @@ const T = {
     scopeItems: [
       { emoji: "⭐", title: "Limpieza Completa", desc: "Remoción completa, lavado de bajantes, inspección de soportes y sellador, documentación fotográfica y llevado de escombros. Por defecto recomendado para la mayoría de casas." },
       { emoji: "🧹", title: "Ajuste Básico", desc: "Inspección y limpieza puntual para canaletas en condición razonable o en horario recurrente. Menor costo para sistemas no muy sucios." },
-      { emoji: "🛡️", title: "Paquete Deluxe con Protectores", desc: "Cuando agrega protectores, limpiamos primero para que se instalen sobre un sistema limpio. Precio combinado vs. dos visitas separadas." },
+      { emoji: "🛡️", title: "Paquete Deluxe con Protectores", desc: "Cuando agrega protectores, limpiamos primero para que se instalen sobre un sistema limpio. Precio combinado vs. dos visitas separadas.", linkHref: "/gutter-guards", linkLead: "Vea los", linkText: "protectores de canaletas que reducen la frecuencia de limpieza" },
       { emoji: "💧", title: "Limpieza de Bajante", desc: "Arreglo dirigido para un bajante obstruido. Síntoma común: canaleta se llena y desborda en un punto aun después de limpieza general." },
       { emoji: "⏱", title: "Horario Recurrente", desc: "Limpieza semestral, trimestral o post-tormenta. Con precio por debajo de limpiezas únicas y espacio prioritario en temporada de tormentas." },
       { emoji: "🏠", title: "Comercial y HOA", desc: "Complejos, retail, comunidades HOA y edificios comerciales. Cotizados y programados separadamente. Vea páginas comercial y HOA." },
@@ -328,7 +329,12 @@ export default function GutterCleaningPage() {
                     <span aria-hidden style={{ fontSize: 26, lineHeight: 1 }}>{g.emoji}</span>
                   </div>
                   <h3 style={{ fontFamily: "var(--jr-font-heading)", fontSize: "var(--jr-text-lg)", fontWeight: 700, color: "var(--jr-paper)", marginBottom: "var(--jr-space-3)" }}>{g.title}</h3>
-                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>{g.desc}</p>
+                  <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-md)", color: "var(--jr-muted-on-dark)", lineHeight: 1.6 }}>
+                    {g.desc}
+                    {g.linkHref ? (
+                      <> {g.linkLead} <a href={localizeHref(g.linkHref, lang)} style={{ color: ACCENT, textDecoration: "underline" }}>{g.linkText}</a>.</>
+                    ) : null}
+                  </p>
                 </article>
               ))}
             </div>

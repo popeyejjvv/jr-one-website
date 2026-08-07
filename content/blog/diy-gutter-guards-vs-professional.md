@@ -88,7 +88,7 @@ For anything beyond that - pine trees, two-story homes, heavy debris, or homeown
 
 ## The Bottom Line
 
-DIY gutter guards are cheap upfront but don't solve the problem in Florida's debris environment. They let pine needles and shingle grit through, degrade in UV within a few years, and need repeated replacement. Professional micro mesh guards cost more once and perform for 15-20 years.
+DIY gutter guards are cheap upfront but don't solve the problem in Florida's debris environment. They let pine needles and shingle grit through, degrade in UV within a few years, and need repeated replacement. Professional micro mesh guards cost more once and perform for 15-20 years. That is the case for [professional guard installation](/gutter-guards) over a hardware-store kit.
 
 The question isn't "can I save money with DIY?" - it's "do I want to solve this problem once or keep dealing with it every few years?"
 

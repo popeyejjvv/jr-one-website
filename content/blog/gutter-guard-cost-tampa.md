@@ -50,7 +50,7 @@ When you are comparing gutter guard quotes in Tampa, make sure each one spells o
 - Whether the crew doing the install is in-house or subcontracted
 - A written warranty term, in writing, not a verbal promise
 
-A quote that skips most of these and just gives you a single number per linear foot is hard to evaluate against anything else you collect.
+A quote that skips most of these and just gives you a single number per linear foot is hard to evaluate against anything else you collect. Run the same checklist against [our gutter guard service](/gutter-guards) when you compare.
 
 ## Bottom line for Tampa Bay homeowners
 

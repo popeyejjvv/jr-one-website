@@ -141,7 +141,7 @@ The materials at the top tier and the local tier come from a small handful of me
 
 What the franchises do offer that local installers often don't: nationally transferable warranties (useful if you sell within 5 years), and a polished sales experience for homeowners who want a single decision-maker walking them through it.
 
-What local installers offer that franchises don't: pricing that reflects materials and labor instead of franchise economics, faster scheduling, and a phone number where the owner actually answers.
+What local installers offer that franchises don't: pricing that reflects materials and labor instead of franchise economics, faster scheduling, and a phone number where the owner actually answers. That is how we approach [gutter guard installation across Tampa Bay](/gutter-guards).
 
 ## Florida Region: How Tree Coverage Changes the Decision
 
@@ -165,7 +165,7 @@ Three factors determine which guard type works best:
 1. **Tree coverage type, not just amount.** Pine needles and oak catkins demand micro mesh. Magnolia leaves and palm fronds work with solid aluminum. Mixed coverage favors micro mesh because it handles both.
 2. **Gutter size.** Guards must be matched to your gutter width. If you have builder-grade undersized gutters (5-inch), JR One replaces them with [6-inch or 7-inch seamless](/blog/6-inch-vs-7-inch-gutters-tampa) and installs guards at the same time - most cost-effective approach. JR One installs 6-inch and 7-inch only - never 5-inch.
 3. **Roof pitch.** Steep roofs shed water faster, which puts more volume pressure on guards. Steep pitches favor micro mesh; shallow pitches handle solid aluminum better.
-4. **Budget and timeline.** Quality micro mesh at local pricing is the best value. Franchise pricing buys you the warranty and the sales experience, not better protection.
+4. **Budget and timeline.** Quality micro mesh at local pricing is the best value. Franchise pricing buys you the warranty and the sales experience, not better protection. Here is [what we install and why](/gutter-guards).
 
 ## Common Mistakes Tampa Homeowners Make
 

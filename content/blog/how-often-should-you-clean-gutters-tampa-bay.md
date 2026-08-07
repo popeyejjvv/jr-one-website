@@ -29,7 +29,7 @@ Skip a cleaning in that environment and the failure shows up fast. Water backs u
 
 ## What gutter guards change, and what they do not
 
-Gutter guards reduce how often you need to get up on a ladder. They do not eliminate cleaning. Fine debris, roof grit, and seed pods still work their way past most guard systems over time, and guards need their own periodic rinse and inspection to keep functioning correctly. A home with well-installed guards can often stretch from a quarterly schedule to twice a year. It should not be read as a reason to stop checking the gutters altogether.
+Gutter guards reduce how often you need to get up on a ladder. They do not eliminate cleaning. Fine debris, roof grit, and seed pods still work their way past most guard systems over time, and guards need their own periodic rinse and inspection to keep functioning correctly. A home with well-installed guards can often stretch from a quarterly schedule to twice a year. It should not be read as a reason to stop checking the gutters altogether. If that trade is worth it for your tree coverage, here is [what it takes to stretch the cleaning interval](/gutter-guards).
 
 ## Signs your gutters are overdue right now
 

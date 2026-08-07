@@ -49,6 +49,8 @@ Mounting: Same as micro mesh - gutter-only.
 
 Some guard systems hinge upward for easy cleaning access. These work well on metal roofs because they don't require roof attachment and can be lifted for periodic maintenance.
 
+All three of these are [guard options for metal roof homes](/gutter-guards) that fasten to the gutter rather than the roof.
+
 ## Guard Types That Don't Work on Metal Roofs
 
 ### Slip-Under-Shingle Guards

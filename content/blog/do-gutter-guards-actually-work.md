@@ -86,6 +86,8 @@ One annual clearing is genuinely all that's needed with properly installed micro
 - **Rental properties** - tenants don't clean gutters, guards prevent the neglect-damage cycle
 - **Homeowners who physically can't clean** - safer than climbing ladders quarterly
 
+If your home fits more than one of those, [professionally installed gutter guards](/gutter-guards) are worth pricing out.
+
 ## When Guards Aren't Necessary
 
 - **Minimal tree coverage** - if your gutters only need cleaning once per year, guards don't save much

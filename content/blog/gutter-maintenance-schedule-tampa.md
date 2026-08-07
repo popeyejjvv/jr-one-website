@@ -115,6 +115,8 @@ Here's a month-by-month guide to what your gutters need throughout the year in T
 | Light | 2x/year (May, Dec) | 2x/year (May, Dec) |
 | With gutter guards | 1x/year (May) | 2x/year (May, Dec) |
 
+That bottom row is the [guard-equipped service schedule](/gutter-guards), and it is the lightest cadence on the table.
+
 ## The Bottom Line
 
 Gutter maintenance in Tampa isn't a once-a-year task. Our year-round debris, intense storm season, and harsh UV/humidity combination require attention at least twice per year - more if you have heavy tree coverage.
