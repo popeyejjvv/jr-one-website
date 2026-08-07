@@ -42,7 +42,7 @@ const CITIES = {
     heroH1: "Clearwater's Family-Owned",
     heroH1Gold: "Gutter & Soffit Trade",
     localP: "Clearwater's coastal location means your home's exterior takes a beating from salt air, tropical storms, and intense UV exposure year-round. Aluminum gutters, soffit, and fascia are ideal for Clearwater's conditions because they resist corrosion from salt air that deteriorates lesser materials. JR One serves Clearwater and all of Pinellas County with the same care and thoroughness we bring to every Tampa Bay community.",
-    weatherNote: "Clearwater's coastal proximity adds salt air corrosion to the standard Florida challenges of heavy rain, UV, and humidity. Aluminum is the material of choice here because it handles all of these without degrading.",
+    weatherNote: "Clearwater's coastal proximity adds salt air corrosion to the standard Florida challenges of heavy rain, UV, and humidity. Aluminum is the material of choice here because it will not rot like wood or rust like steel. Salt air still drives oxidation at fastener points over time, which is why we use corrosion-resistant fasteners on coastal jobs.",
     neighborhoods: ["Clearwater Beach", "Countryside", "East Clearwater", "Clearwater Mall Area", "Skycrest", "Harbor Oaks", "Old Clearwater Bay"],
     nearbyText: "We also serve Palm Harbor, Dunedin, Safety Harbor, Largo, and all of Pinellas County.",
   },
@@ -267,7 +267,7 @@ const CITIES = {
     name: "Safety Harbor", county: "Pinellas County", slug: "safety-harbor",
     heroH1: "Safety Harbor's Family-Owned",
     heroH1Gold: "Gutter & Soffit Trade",
-    localP: "Safety Harbor is one of Pinellas County's most distinctive towns, with a historic downtown along Bayshore Boulevard, Philippe Park's centuries-old oaks, and waterfront homes that have weathered everything from Hurricane Elena to Hurricane Idalia. Many of these homes are forty to seventy years old with original wood soffit and fascia that have been rotting quietly behind the gutters for years. JR One replaces those systems with factory-finished aluminum that matches the architecture and ends the rot cycle permanently.",
+    localP: "Safety Harbor is one of Pinellas County's most distinctive towns, with a historic downtown along Bayshore Boulevard, Philippe Park's centuries-old oaks, and waterfront homes that have weathered everything from Hurricane Elena to Hurricane Idalia. Many of these homes are forty to seventy years old with original wood soffit and fascia that have been rotting quietly behind the gutters for years. JR One replaces those systems with factory-finished aluminum that matches the architecture and takes the rot-prone wood out of the weather.",
     weatherNote: "Safety Harbor's position on Old Tampa Bay puts it in the path of every tropical system that pushes inland from the Gulf, and the centuries-old oak canopy at Philippe Park drops debris into every gutter along the bayshore. Aluminum + micro-mesh guards is the right combination here, not vinyl, not painted wood, and never 5-inch gutters.",
     neighborhoods: ["Bayshore Drive", "Philippe Park", "Downtown Safety Harbor", "Espiritu Santo Springs", "Briar Creek", "Mariner Estates"],
     nearbyText: "We also serve Dunedin, Clearwater, Oldsmar, Palm Harbor, and surrounding Pinellas County.",
@@ -303,7 +303,7 @@ const SERVICES = [
   { icon: "wrench", title: "Gutter Repair Tampa", ctaPhrase: "gutter repair", desc: "Fix leaks, sagging, and overflow across Tampa Bay. Done right the first time.", link: "/gutter-repair", comboSlug: "gutter-repair" },
   { icon: "ruler", title: "Siding", ctaPhrase: "siding installation", desc: "Vinyl and aluminum siding built for Florida weather.", link: "/siding", comboSlug: "siding" },
   { icon: "broom", title: "Peak 301 Roof Rejuvenation", ctaPhrase: "Peak 301 roof rejuvenation", desc: "Extend your roof's life 6 to 10 years with this soy-based sealant.", link: "/peak-301" },
-  { icon: "wrench", title: "Storm Damage Repair", ctaPhrase: "storm damage repair", desc: "Same-week install after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
+  { icon: "wrench", title: "Storm Damage Repair", ctaPhrase: "storm damage repair", desc: "Priority scheduling after named storms. Insurance claim documentation for your adjuster.", link: "/storm-damage-gutters-tampa" },
 ];
 
 // ══════════════════════════════════════════════════════════
@@ -496,7 +496,7 @@ const CITIES_ES = {
   "safety-harbor": {
     heroH1: "Empresa Familiar de Safety Harbor en",
     heroH1Gold: "Canaletas y Sofito",
-    localP: "Safety Harbor es uno de los pueblos más distintivos de Pinellas County, con un centro histórico a lo largo de Bayshore Boulevard, los robles centenarios de Philippe Park, y hogares frente al agua que han aguantado todo desde el Huracán Elena hasta el Huracán Idalia. Muchas de estas casas tienen cuarenta a setenta años con sofito y fascia originales de madera que llevan años pudriéndose silenciosamente detrás de las canaletas. JR One reemplaza esos sistemas con aluminio con acabado de fábrica que combina con la arquitectura y termina el ciclo de pudrición permanentemente. Familia, más de 30 años en el oficio.",
+    localP: "Safety Harbor es uno de los pueblos más distintivos de Pinellas County, con un centro histórico a lo largo de Bayshore Boulevard, los robles centenarios de Philippe Park, y hogares frente al agua que han aguantado todo desde el Huracán Elena hasta el Huracán Idalia. Muchas de estas casas tienen cuarenta a setenta años con sofito y fascia originales de madera que llevan años pudriéndose silenciosamente detrás de las canaletas. JR One reemplaza esos sistemas con aluminio con acabado de fábrica que combina con la arquitectura y saca del exterior la madera que alimenta el ciclo de pudrición. Familia, más de 30 años en el oficio.",
     weatherNote: "La posición de Safety Harbor sobre Old Tampa Bay la pone en el camino de cada sistema tropical que empuja tierra adentro desde el Golfo, y el dosel centenario de robles en Philippe Park deja caer escombros en cada canaleta a lo largo de la bayshore. Aluminio más protectores de malla fina es la combinación correcta aquí, no vinilo, no madera pintada, y nunca canaletas de 5 pulgadas.",
     nearbyText: "También servimos a Dunedin, Clearwater, Oldsmar, Palm Harbor y comunidades cercanas de Pinellas County.",
   },
@@ -523,7 +523,7 @@ const SERVICES_ES = [
   { icon: "wrench", title: "Reparación de Canaletas", ctaPhrase: "reparación de canaletas", desc: "Arreglamos fugas, hundimientos y desbordamientos. Bien hecho a la primera.", link: "/gutter-repair", comboSlug: "gutter-repair" },
   { icon: "ruler", title: "Revestimiento", ctaPhrase: "instalación de revestimiento", desc: "Revestimiento de vinilo y aluminio construido para el clima de Florida.", link: "/siding", comboSlug: "siding" },
   { icon: "broom", title: "Peak 301 Rejuvenecimiento de Techo", ctaPhrase: "rejuvenecimiento de techo Peak 301", desc: "Extienda la vida de su techo 6 a 10 años con este sellador a base de soya.", link: "/peak-301" },
-  { icon: "wrench", title: "Reparación por Daño de Tormenta", ctaPhrase: "reparación por daño de tormenta", desc: "Instalación misma semana después de tormentas con nombre. Documentación de reclamo para su ajustador.", link: "/es/canaletas-dano-tormenta-tampa" },
+  { icon: "wrench", title: "Reparación por Daño de Tormenta", ctaPhrase: "reparación por daño de tormenta", desc: "Programación prioritaria después de tormentas con nombre. Documentación de reclamo para su ajustador.", link: "/es/canaletas-dano-tormenta-tampa" },
 ];
 
 // ══════════════════════════════════════════════════════════

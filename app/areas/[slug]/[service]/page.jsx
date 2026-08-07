@@ -39,7 +39,7 @@ const SERVICES = {
     name: "Seamless Aluminum Gutters",
     short: "seamless aluminum gutters",
     link: "/seamless-aluminum-gutters",
-    blurb: "Custom-fabricated on-site from a single continuous coil so there are no seams, no leaks, and a perfect fit for your roofline.",
+    blurb: "Custom-fabricated on-site from a single continuous coil, so there are no seams along the run to split or leak, and the fit is matched to your roofline.",
     who: "The right choice for any home upgrading from sectional gutters, replacing a failing system, or outfitting new construction.",
     props: [
       ["On-site fabrication","Gutters cut to your exact roofline, not ordered from a warehouse."],
@@ -122,7 +122,7 @@ const SERVICES = {
     props: [
       ["Lifetime material","Copper outlasts the house in most cases."],
       ["Develops a patina","Turns from bright copper to deep bronze over years, a feature, not a flaw."],
-      ["Soldered seams","Joints that never leak, for the life of the system."],
+      ["Soldered seams","A continuous metal bond at the joints instead of sealant that dries out and lets go."],
       ["Custom fabrication","Half-round, K-style, European, built to match the architecture."],
     ],
   },
@@ -853,7 +853,7 @@ const ENRICHMENT = {
       { q: "Are gutter guards worth it in Clearwater?", a: "On a Clearwater, FL property with mature oak, laurel, or pine canopy, yes. A typical Clearwater home with heavy tree coverage needs three cleanings per year at $200 to $300 each, so $600 to $900 annually, while a JR One guard install at $1,500 to $2,500 pays back in two to four years and lasts 20 plus. On a newer property in Skycrest or a coastal lot with no canopy, the math is closer to break-even and we will tell you that during the estimate. What moves the payback math is tree canopy, linear footage, roof height and access, and how many cleanings a year the property actually needs. Guards reduce cleaning frequency, they do not eliminate it. Use the JR One estimator at jronegutters.com/estimator for a number on your own home, or call (844) 444-3114." },
       { q: "Will gutter guards stop pine needles and oak debris?", a: "Micro-mesh stainless guards do, if the mesh is fine enough. Most consumer-grade guards on the market (the perforated metal screen sold at hardware stores) fail the pine-needle test, needles slide through the holes and clog the gutter underneath. JR One installs micro-mesh that handles pine needles and oak catkins, which matters in Countryside, Morningside, and Belleair where mature canopy is everywhere." },
       { q: "Do gutter guards work on Clearwater Beach and Sand Key homes?", a: "Yes. Coastal exposure changes the calculation, salt-laden Gulf air drives faster oxidation at fastener points and any moisture-holding debris on the gutter floor accelerates that. Guards keep the floor clear of standing debris between cleanings, which extends the underlying gutter life on coastal properties. We confirm the corrosion-resistant hardware spec on site during the walk." },
-      { q: "Will guards hold up to hurricane wind in Clearwater?", a: "Properly screwed-in micro-mesh guards stay on through Florida hurricane wind because they are fastened to the front of the gutter run, not draped or clipped. The failure mode for guards in a storm is debris pile-up from above blocking flow, not the guard itself coming off. We design for it. After Idalia in 2023 the typical post-storm visit on guarded Clearwater installs was an inspection and clear-out, not a replacement." },
+      { q: "Will guards hold up to hurricane wind in Clearwater?", a: "Properly screwed-in micro-mesh guards hold up far better in Florida storm wind than draped or clipped guards, because they are mechanically fastened to the front of the gutter run rather than resting in place. No exterior component is immune to a strong enough storm and we will not tell you otherwise. The failure mode for guards in a storm is debris pile-up from above blocking flow, not the guard itself coming off. We design for it. After Idalia in 2023 the typical post-storm visit on guarded Clearwater installs was an inspection and clear-out, not a replacement." },
       { q: "Do gutter guards work with existing 6-inch gutters?", a: "Yes. We retrofit guards onto sound existing 6-inch and 7-inch K-style gutters. If the existing gutter has separated seams, sagging runs, or pulled-loose hangers, we address those issues first or quote a full replacement, installing guards on a failing gutter is throwing money away. We walk the property and tell you straight which path makes sense." },
       { q: "Do you offer storm-damage warranty on Clearwater gutter guards?", a: "Yes. Workmanship warranty on the install, written, full terms in the package. Manufacturer warranty on the mesh and frame. After named storms we provide insurance-ready damage documentation if any component fails outside warranty. We are family-owned with over 30 years in Tampa Bay and 102 logged Clearwater projects in the CompanyCam record since November 2022, the second-highest density in Pinellas County for us." },
     ],

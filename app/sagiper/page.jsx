@@ -63,7 +63,7 @@ const T = {
     whyTitle: "Engineered for Florida. Designed for Architects.",
     whySub: "Architectural cladding with Solar Shield Technology. The siding system built to handle dark colors in direct Florida sun.",
     whyItems: [
-      { title: "Solar Shield Technology", desc: "5-layer heat-reflective film. Dark colors stay stable in Florida sun. No warping, no fading." },
+      { title: "Solar Shield Technology", desc: "5-layer heat-reflective film reflects heat before it reaches the panel, so dark colors hold their finish far better than standard vinyl in Florida sun." },
       { title: "Custom lengths up to 35 feet", desc: "Fewer seams equals a cleaner look and less water infiltration." },
       { title: "Architect-grade specs", desc: "BIM/Revit files, CSI specs, AIA-accredited courses. Specified by architects, not just sold at lumber yards." },
       { title: "Code-compliant", desc: "ICC-ES ESR-4876, NFPA 285, ASTM E330 tested. Real certifications for Florida coastal construction." },
@@ -146,7 +146,7 @@ const T = {
     whyTitle: "Ingeniería para Florida. Diseñado para Arquitectos.",
     whySub: "Revestimiento arquitectónico con Tecnología Solar Shield. El sistema construido para manejar colores oscuros bajo el sol directo de Florida.",
     whyItems: [
-      { title: "Tecnología Solar Shield", desc: "Película reflectante de calor de 5 capas. Los colores oscuros se mantienen estables bajo el sol de Florida. Sin deformación, sin desvanecimiento." },
+      { title: "Tecnología Solar Shield", desc: "Película reflectante de calor de 5 capas que refleja el calor antes de que llegue al panel, así los colores oscuros conservan su acabado mucho mejor que el vinilo estándar bajo el sol de Florida." },
       { title: "Longitudes personalizadas hasta 35 pies", desc: "Menos uniones equivale a aspecto más limpio y menos infiltración de agua." },
       { title: "Especificaciones arquitectónicas", desc: "Archivos BIM/Revit, especificaciones CSI, cursos acreditados AIA. Especificado por arquitectos, no solo vendido en ferreterías." },
       { title: "Cumple con códigos", desc: "ICC-ES ESR-4876, NFPA 285, ASTM E330 probado. Certificaciones reales para construcción costera en Florida." },
