@@ -100,7 +100,7 @@ La junta debe planificar el reemplazo de canaletas de toda la comunidad como una
 
 ### Fondo de reserva (reemplazo de capital)
 
-Los sistemas de canaletas deben incluirse en su estudio de reservas con un ciclo de reemplazo de 20 a 25 años. Cuando llegue el momento, el reemplazo de toda la comunidad es mucho más barato por unidad que los reemplazos individuales a lo largo de varios años.
+Los sistemas de canaletas deben incluirse en su estudio de reservas con un ciclo de reemplazo de 20 a 30 años. Cuando llegue el momento, el reemplazo de toda la comunidad es mucho más barato por unidad que los reemplazos individuales a lo largo de varios años.
 
 ## Qué buscar en un contratista de canaletas para HOA
 

@@ -51,7 +51,7 @@ const T = {
     ],
     stats: [
       { value: "~40%", label: "More capacity vs 6-inch" },
-      { value: "20+", label: "Year system lifespan" },
+      { value: "20-30", label: "Year system lifespan" },
       { value: "40+", label: "Color options available" },
       { value: "24\"", label: "Hidden hanger spacing" },
     ],
@@ -139,7 +139,7 @@ const T = {
     ],
     stats: [
       { value: "~40%", label: "Más capacidad vs 6\"" },
-      { value: "20+", label: "Años de vida útil" },
+      { value: "20-30", label: "Años de vida útil" },
       { value: "40+", label: "Opciones de color" },
       { value: "24\"", label: "Espaciado de soportes" },
     ],

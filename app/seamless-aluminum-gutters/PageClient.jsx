@@ -54,7 +54,7 @@ const T = {
     ],
     stats: [
       { value: "3,000+", label: "Gutter installations completed" },
-      { value: "20+", label: "Year lifespan on our systems" },
+      { value: "20-30", label: "Year lifespan on our systems" },
       { value: "40+", label: "Color options available" },
       { value: "24\"", label: "Hidden hanger spacing" },
     ],
@@ -142,7 +142,7 @@ const T = {
     ],
     stats: [
       { value: "3,000+", label: "Instalaciones de canaletas completadas" },
-      { value: "20+", label: "Años de vida útil en nuestros sistemas" },
+      { value: "20-30", label: "Años de vida útil en nuestros sistemas" },
       { value: "40+", label: "Opciones de color disponibles" },
       { value: "24\"", label: "Espaciado de soportes ocultos" },
     ],

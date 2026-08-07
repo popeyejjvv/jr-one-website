@@ -100,7 +100,7 @@ The board needs to plan for community-wide gutter replacement as a capital impro
 
 ### Reserve Fund (Capital Replacement)
 
-Gutter systems should be included in your reserve study with a 20-25 year replacement cycle. When the time comes, community-wide replacement is significantly cheaper per-unit than individual replacements over multiple years.
+Gutter systems should be included in your reserve study with a 20-30 year replacement cycle. When the time comes, community-wide replacement is significantly cheaper per-unit than individual replacements over multiple years.
 
 ## What to Look for in an HOA Gutter Contractor
 

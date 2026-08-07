@@ -65,7 +65,7 @@ La reparación de uniones funciona como solución a corto plazo, pero si sus can
 
 ## 7. Sus Canaletas Tienen Más de 20 Años
 
-Hasta las canaletas bien mantenidas tienen una vida útil. En el clima de Florida, eso suele ser de 20 a 25 años para el aluminio de calidad, y menos para los sistemas de las constructoras o de vinilo.
+Hasta las canaletas bien mantenidas tienen una vida útil. En el clima de Florida, eso suele ser de 20 a 30 años para el aluminio de calidad, y menos para los sistemas de las constructoras o de vinilo.
 
 Si sus canaletas se acercan a esa edad y muestran alguna de las señales de arriba, usted está dentro de la ventana de reemplazo. Seguir reparando un sistema al final de su vida útil cuesta más con el tiempo que reemplazarlo.
 

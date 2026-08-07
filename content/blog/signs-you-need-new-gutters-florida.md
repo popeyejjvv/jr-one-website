@@ -65,7 +65,7 @@ Seam repair works as a short-term fix, but if your sectional gutters are leaking
 
 ## 7. Your Gutters Are More Than 20 Years Old
 
-Even well-maintained gutters have a lifespan. In Florida's climate, that's typically 20-25 years for quality aluminum, less for builder-grade or vinyl systems.
+Even well-maintained gutters have a lifespan. In Florida's climate, that's typically 20-30 years for quality aluminum, less for builder-grade or vinyl systems.
 
 If your gutters are approaching that age and showing any of the signs above, you're in the replacement window. Continuing to repair a system at end-of-life costs more over time than replacing it.
 
