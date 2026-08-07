@@ -1,4 +1,5 @@
 import { getAllPostSlugs } from "@/lib/blog";
+import { ES_COMBO_PAIRS } from "@/lib/city-service-es";
 import fs from "fs";
 import path from "path";
 
@@ -181,6 +182,18 @@ export default function sitemap() {
     priority: 0.75,
   }));
 
+  // Spanish city/service combos. Driven off ES_COMBO_PAIRS, the same set the ES
+  // route generates and the EN route reads to decide its es-US hreflang, so the
+  // sitemap cannot drift from what actually renders. Added 2026-08-07: the six
+  // pages shipped live and hreflang-linked but absent here, which is a discovery
+  // delay, caught by diffing the deployed sitemap against the deployed routes.
+  const esCityServiceEntries = [...ES_COMBO_PAIRS].map((pair) => ({
+    url: `${BASE_URL}/es/areas/${pair}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   // Spanish blog posts (only translated slugs are listed; ES blog added 2026-06-19)
   const esBlogEntries = getAllPostSlugs("es").map((slug) => ({
     url: `${BASE_URL}/es/blog/${slug}`,
@@ -198,6 +211,7 @@ export default function sitemap() {
     ...aiIndexEntries,
     ...esStaticEntries,
     ...esCityEntries,
+    ...esCityServiceEntries,
     ...esBlogEntries,
   ];
 }
