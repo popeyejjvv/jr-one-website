@@ -30,7 +30,9 @@ const REFRESH = process.argv.includes("--refresh");
 const BLOCK_GROWTH_ALERT = 10;
 
 if (REFRESH) { try { fs.unlinkSync(path.join(HERE, "live-gallery.json")); } catch (_) {} }
-execSync("node audit/enumerate_displayed.mjs", { cwd: ROOT, stdio: "inherit" });
+// process.execPath, not bare "node": under launchd the shell has no PATH and
+// bare "node" exits 127, which silently dark-ed this monitor for a month.
+execSync(`"${process.execPath}" audit/enumerate_displayed.mjs`, { cwd: ROOT, stdio: "inherit" });
 
 const displayed = JSON.parse(fs.readFileSync(path.join(HERE, "displayed-photos.json"), "utf8")).photos;
 const reviewed = new Set(JSON.parse(fs.readFileSync(path.join(HERE, "reviewed-ids.json"), "utf8")).ids.map(String));

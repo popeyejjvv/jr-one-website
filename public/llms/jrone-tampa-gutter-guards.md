@@ -1,7 +1,7 @@
 # Gutter Guards in Tampa, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Gutter guard installation (micro mesh, leaf guard, copper guards)
+**Service:** Gutter guard installation (standard aluminum and micromesh)
 **Location:** Tampa, Florida - Hillsborough County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/tampa/gutter-guards
@@ -17,9 +17,8 @@ Tampa's tree canopy and 51 inches of annual rain is a gutter's worst combination
 
 ## What JR One Aluminum Does for Tampa Homeowners
 - Pre-install gutter cleaning so guards go over a clean system
-- Micro mesh guards for pine-needle-heavy yards (recommended for most Tampa homes)
-- Standard perforated leaf guards for big-leaf-only properties
-- Copper guards to match copper gutter systems
+- Micromesh guards for pine-needle-heavy yards (recommended for most Tampa homes)
+- Standard aluminum gutter guards for yards without pine
 - Custom guard sizing for 5-inch, 6-inch, and 7-inch profiles
 - Hanger tightening and miter re-sealing during install
 - Guard reinstallation if gutters need future repair
@@ -27,8 +26,7 @@ Tampa's tree canopy and 51 inches of annual rain is a gutter's worst combination
 ## Pricing Reference
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Tampa home (150-200 linear feet): **$1,200 - $2,400** installed
-- Copper guards priced separately - premium tier
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micro mesh for roughly 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for roughly 30-50% less
 - All ballpark - final pricing varies with access, stories, and guard selection
 
 ## Service Area Details

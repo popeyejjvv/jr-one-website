@@ -129,4 +129,4 @@ La limpieza anual consiste en cepillar o soplar las hojas y escombros de encima 
 
 La micro malla es la tecnología de protectores de canaletas más efectiva para las condiciones de escombros de Florida. Bloquea todo lo que los protectores estándar dejan pasar (agujas de pino, granulado de tejas y semillas pequeñas) mientras maneja nuestra lluvia fuerte. El costo es una fracción del precio de las franquicias nacionales por la misma tecnología.
 
-**[Obtenga un estimado gratis de protectores de canaletas de micro malla](/estimator)** o llame al **(844) 444-3114**. Instalamos protectores de micro malla, aluminio, rejilla estándar y EZ mesh en 21 ciudades de Tampa Bay.
+**[Obtenga un estimado gratis de protectores de canaletas de micro malla](/estimator)** o llame al **(844) 444-3114**. Instalamos dos niveles de protector en Tampa Bay: uno estándar de aluminio y uno de micromalla, cuya malla más fina detiene hasta las agujas de pino.

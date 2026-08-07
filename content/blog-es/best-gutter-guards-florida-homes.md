@@ -129,9 +129,9 @@ Esta es la sección que la mayoría de los propietarios de verdad quiere. Aquí 
 
 | Marca | Tipo | Precio por pie | Por qué está pagando en realidad |
 |-------|------|---------------|-------------------------------|
-| LeafFilter | Micromalla de inoxidable | $25 a $40 | Anuncios nacionales de TV, proceso de venta a domicilio, garantía vitalicia transferible |
+| LeafFilter | Micromalla | $25 a $40 | Anuncios nacionales de TV, proceso de venta a domicilio, sobrecosto de franquicia |
 | LeafGuard | Aluminio de una pieza con capucha | $20 a $35 | Sistema de canaleta integrado, garantía anti-obstrucción, instalación propietaria |
-| Gutter Helmet | Sólido de aluminio con canal | $20 a $35 | Garantía de 30 años, opción con calefacción, red de distribuidores de franquicia |
+| Gutter Helmet | Sólido de aluminio con canal | $20 a $35 | Opción con calefacción, red de distribuidores de franquicia |
 | MasterShield | Micromalla de inoxidable | $20 a $30 | Malla probada por terceros, red de distribuidores locales |
 | HomeCraft | Malla de aluminio | $15 a $25 | Marco de aluminio, precio de gama media |
 | Micromalla local (JR One y otros) | Micromalla de inoxidable | $7 a $15 | Mismos materiales, sin gastos generales de franquicia, responsabilidad local |
@@ -173,7 +173,7 @@ Tres factores determinan qué tipo de protector funciona mejor:
 
 **Dejar que un techador agregue protectores de canaletas como parte de un retecho.** Los protectores de canaletas son trabajo de canaletas, no trabajo de techado. Los techadores a menudo instalan lo que el mayorista tenía en el camión, no lo que le queda a la casa.
 
-**Caer por la garantía vitalicia anti-obstrucción.** Lea la letra pequeña. La mayoría de las garantías excluyen las agujas de pino, la arenilla de las tejas, los restos de palma y la necesidad de limpiar la superficie. La garantía vitalicia aplica solo al defecto de fabricación del protector en sí.
+**Creerle al titular de una garantía muy larga.** Lea la letra pequeña. Las garantías de protectores suelen excluir las agujas de pino, la arenilla de las tejas, los restos de palma y la necesidad de limpiar la superficie. Pida los términos por escrito antes de firmar, y pregunte exactamente qué cubre y por cuánto tiempo.
 
 **Saltarse la inspección de la canaleta antes de agregar protectores.** Los protectores sobre soportes podridos o canaletas hundidas son tirar el dinero. El sistema debe estar sólido antes de colocar los protectores.
 

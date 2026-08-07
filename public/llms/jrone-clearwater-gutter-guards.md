@@ -1,7 +1,7 @@
 # Gutter Guards in Clearwater, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Gutter guard installation (micro mesh, leaf guard, copper)
+**Service:** Gutter guard installation (standard aluminum and micromesh)
 **Location:** Clearwater, Florida - Pinellas County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/clearwater/gutter-guards
@@ -19,8 +19,7 @@ Clearwater is coastal - which changes everything. Palm fronds, sea grape, and sa
 - Pre-install cleaning
 - Salt-rated micro mesh - stainless mesh, aluminum frame
 - Stainless or aluminum fasteners only (no galvanized)
-- Standard perforated leaf guards for inland Countryside yards
-- Copper guards matched to copper systems
+- Standard aluminum gutter guards for yards without pine
 - Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Hurricane-rated hanger spacing underneath
 - Post-storm guard inspection and re-seating for existing customers
@@ -29,8 +28,7 @@ Clearwater is coastal - which changes everything. Palm fronds, sea grape, and sa
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Clearwater single-family: **$1,200 - $2,400** installed
 - Coastal salt-rated installs may add slightly to hardware cost
-- Copper guards priced as a premium tier
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micro mesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
 - All ballpark
 
 ## Service Area Details

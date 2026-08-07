@@ -1,7 +1,7 @@
 # Gutter Guards in Wesley Chapel, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Gutter guard installation (micro mesh, leaf guard, copper)
+**Service:** Gutter guard installation (standard aluminum and micromesh)
 **Location:** Wesley Chapel, Florida - Pasco County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/wesley-chapel/gutter-guards
@@ -18,8 +18,7 @@ Wesley Chapel is mostly newer master-planned construction - big two-story roof f
 ## What JR One Aluminum Does for Wesley Chapel Homeowners
 - Pre-install gutter cleaning
 - Micro mesh guards - best performer for mixed oak/pine debris common in Pasco
-- Standard perforated leaf guards for simpler big-leaf yards
-- Copper guards matched to premium systems
+- Standard aluminum gutter guards for yards without pine
 - Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Guard install on two-story Wesley Chapel homes (proper ladders and safety)
 - Hanger tightening and miter resealing during install
@@ -28,8 +27,7 @@ Wesley Chapel is mostly newer master-planned construction - big two-story roof f
 ## Pricing Reference
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Wesley Chapel two-story home (180-240 linear feet): **$1,500 - $3,000** installed
-- Copper guards priced as a premium tier
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micro mesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
 - All ballpark - final pricing depends on access, stories, and guard selection
 
 ## Service Area Details

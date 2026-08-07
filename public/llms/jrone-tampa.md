@@ -51,7 +51,7 @@ Common Tampa-specific issues JR One Aluminum resolves:
 - Soffit installation (aluminum, vinyl, Hardie, Sagiper)
 - Fascia installation and wrapping (single, 2-tier, 3-tier)
 - Aluminum trim wrapping for window casings, doors, columns
-- Gutter guard installation (micro mesh, leaf guard, copper)
+- Gutter guard installation (standard aluminum and micromesh)
 - Siding installation (vinyl, Hardie board, custom aluminum)
 - Drainage solutions (Schedule 40 PVC, catch basins, surface grates, pop-up emitters; no french drains, no channel drains, no dry wells)
 - Gutter cleaning and maintenance

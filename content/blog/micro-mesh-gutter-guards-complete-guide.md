@@ -129,4 +129,4 @@ The annual clearing involves brushing or blowing leaves and debris off the top o
 
 Micro mesh is the most effective gutter guard technology for Florida's debris conditions. It stops the debris standard guards miss - pine needles, shingle grit, and small seeds - while handling our heavy rain. The cost is a fraction of national franchise pricing for the same technology.
 
-**[Get a free micro mesh gutter guard estimate](/estimator)** or call **(844) 444-3114**. We install micro mesh, aluminum, standard screen, and EZ mesh guards across 21 Tampa Bay cities.
+**[Get a free micro mesh gutter guard estimate](/estimator)** or call **(844) 444-3114**. We install two guard tiers across Tampa Bay: a standard aluminum gutter guard, and a micromesh guard whose finer mesh stops even pine needles.

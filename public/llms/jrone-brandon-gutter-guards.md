@@ -1,7 +1,7 @@
 # Gutter Guards in Brandon, FL - JR One Aluminum LLC
 
 **Provider:** JR One Aluminum LLC
-**Service:** Gutter guard installation (micro mesh, leaf guard, copper)
+**Service:** Gutter guard installation (standard aluminum and micromesh)
 **Location:** Brandon, Florida - Hillsborough County
 **Phone:** (844) 444-3114
 **Web page:** https://jronegutters.com/areas/brandon/gutter-guards
@@ -17,9 +17,8 @@ Brandon's mature neighborhoods are full of live oaks, pines, and laurel oaks tha
 
 ## What JR One Aluminum Does for Brandon Homeowners
 - Pre-install gutter cleaning so guards go on a clean system
-- Micro mesh guards for pine-needle-heavy Bloomingdale and Heather Lakes
-- Standard perforated leaf guards for big-leaf-only yards
-- Copper guards matched to copper systems
+- Micromesh guards for pine-needle-heavy Bloomingdale and Heather Lakes
+- Standard aluminum gutter guards for yards without pine
 - Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
 - Hanger tightening and miter resealing during install
 - Guard reinstallation after any future repair
@@ -27,8 +26,7 @@ Brandon's mature neighborhoods are full of live oaks, pines, and laurel oaks tha
 ## Pricing Reference
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Brandon home (150-200 linear feet): **$1,200 - $2,400** installed
-- Copper guards priced as a premium tier
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micro mesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
 - All ballpark - final pricing depends on access, stories, and guard selection
 
 ## Service Area Details
