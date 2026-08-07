@@ -6,7 +6,7 @@ category: "Gutters"
 keyword: "gutter downspout"
 faqs:
   - question: "How many downspouts do I need?"
-    answer: "One downspout for every 20-30 linear feet of gutter run. A typical Tampa home with 175 linear feet of gutters needs 6-8 downspouts. More downspouts means faster drainage and less chance of overflow during heavy Florida storms."
+    answer: "A common starting point is about one downspout every 30 to 35 feet of gutter run, though the actual spacing depends on the roof, the roofline, and other job factors. More downspouts means faster drainage and less chance of overflow during heavy Florida storms, so the count on your home is set during the on-site measurement rather than from a rule of thumb."
   - question: "What size downspouts should I use?"
     answer: "JR One installs 6-inch and 7-inch gutters only. 6-inch gutters pair with 3x4 inch downspouts and 7-inch with 3x4 or 4x5 inch. 5-inch gutters with 2x3 inch downspouts is the builder-grade combo we replace, not what we install. Oversized downspouts are always better than undersized - they handle heavy rain volume without backing up."
 ---
@@ -19,14 +19,16 @@ This is the most overlooked part of gutter installation.
 
 ## How Many Downspouts You Need
 
-The general rule: **one downspout for every 20-30 linear feet of gutter run.**
+A common starting point is **about one downspout every 30 to 35 feet of gutter run**, though the actual spacing depends on the roof, the roofline, and other job factors. Treat it as a starting point, not a fixed rule.
 
-| Home Size | Typical Gutter LF | Recommended Downspouts |
-|-----------|-------------------|----------------------|
-| Small (under 1,500 sq ft) | 100-130 LF | 4-5 |
-| Standard (1,500-2,500 sq ft) | 140-200 LF | 5-8 |
-| Large (2,500-4,000 sq ft) | 200-300 LF | 8-12 |
-| Very large or commercial | 300+ LF | 12+ |
+| Home Size | Typical Gutter LF |
+|-----------|-------------------|
+| Small (under 1,500 sq ft) | 100-130 LF |
+| Standard (1,500-2,500 sq ft) | 140-200 LF |
+| Large (2,500-4,000 sq ft) | 200-300 LF |
+| Very large or commercial | 300+ LF |
+
+The downspout count for your home is set during the on-site measurement, where the roof area, the pitch, the corners and roofline breaks, and the drainage path all get accounted for.
 
 In Florida, err toward more downspouts. Our rain intensity means the system needs to move more water per minute than a home in a drier climate. Extra downspouts cost $50-$100 each but prevent the overflow and backup that cause real damage.
 
@@ -53,7 +55,7 @@ Always pair gutter size with the correct downspout size. If in doubt, go larger.
 
 2. **At the end of every run.** A gutter run that terminates at a corner or end cap should have a downspout within 2-3 feet of the end.
 
-3. **No run longer than 30 feet without a downspout.** Longer runs without a drain point accumulate too much water before it can exit. The channel fills from the far end back.
+3. **Keep about 30 to 35 feet of run between downspouts.** Longer runs without a drain point accumulate too much water before it can exit. The channel fills from the far end back. How far you can stretch a run depends on the roof, the roofline, and other job factors.
 
 4. **Away from walkways and entry points.** Route downspouts so they don't discharge water where people walk. Nobody wants to step through a puddle at their front door.
 

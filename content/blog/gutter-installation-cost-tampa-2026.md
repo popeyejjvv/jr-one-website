@@ -104,7 +104,7 @@ Coastal cities (Clearwater, Palm Harbor, Sarasota) run slightly higher because i
 
 **Fascia condition.** If your fascia boards are rotted (common in Tampa's humidity), they need to be replaced before new gutters go up. That adds $6 to $12 per linear foot for [aluminum fascia wrap](/soffit-and-fascia) or $10 to $20 per foot for full wood replacement.
 
-**Downspout count and routing.** More downspouts mean better drainage but higher material and labor costs. Tampa's heavy rain means you generally want more downspouts, not fewer. Industry minimum is one downspout per 35 feet of gutter; in Tampa we recommend one per 25 feet.
+**Downspout count and routing.** More downspouts mean better drainage but higher material and labor costs. Tampa's heavy rain means you generally want more downspouts, not fewer. A common starting point is about one downspout every 30 to 35 feet of gutter run, and the actual spacing depends on the roof, the roofline, and other job factors.
 
 **Material gauge.** Standard residential aluminum is .027 inches thick. Premium installations use .032 inches, which is 19 percent thicker, more rigid, and stands up to wind loads better. The cost difference is roughly $1 to $2 per linear foot.
 

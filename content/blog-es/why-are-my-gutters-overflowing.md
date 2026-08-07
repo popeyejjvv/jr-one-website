@@ -53,7 +53,7 @@ Aquí están las cinco causas, ordenadas de la más común a la menos común, y 
 
 **Lo que está pasando:** su tramo de canaleta es demasiado largo para un solo bajante. El agua tiene que viajar demasiado lejos para llegar al punto de drenaje, y el canal se llena antes de que el agua llegue.
 
-**La solución:** agregar bajantes. La regla general es un bajante por cada 20 a 30 pies lineales de canaleta. Agregar un bajante a un tramo largo es una reparación sencilla, se corta la abertura, se agrega el conector y se dirige el bajante.
+**La solución:** agregar bajantes. Un punto de partida común es aproximadamente una bajante cada 30 a 35 pies de canaleta, aunque el espaciado real depende del techo, la línea del techo y otros factores del trabajo. Agregar un bajante a un tramo largo es una reparación sencilla, se corta la abertura, se agrega el conector y se dirige el bajante.
 
 ## 5. Canaletas dañadas o mal alineadas
 

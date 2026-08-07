@@ -89,7 +89,7 @@ Gutter size only works if the downspouts match. Undersized downspouts bottleneck
 - **6-inch gutters** → 3x4-inch downspouts
 - **7-inch gutters** → 3x4-inch or 4x5-inch commercial downspouts
 
-JR One specs the right downspout size and count (one per 20-30 linear feet of gutter run) as part of every quote.
+JR One specs the right downspout size and count as part of every quote. A common starting point is about one downspout every 30 to 35 feet of gutter run, though the actual spacing depends on the roof, the roofline, and other job factors.
 
 ## How JR One Sizes Your System
 

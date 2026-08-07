@@ -53,7 +53,7 @@ Here are the five causes, in order from most common to least, and the specific f
 
 **What's happening:** Your gutter run is too long for a single downspout. Water has to travel too far to reach the drain point, and the channel fills up before the water arrives.
 
-**The fix:** Add downspouts. The rule of thumb is one downspout for every 20-30 linear feet of gutter. Adding a downspout to a long run is a straightforward repair - cut the opening, add the connector, route the downspout.
+**The fix:** Add downspouts. A common starting point is about one downspout every 30 to 35 feet of gutter run, though the actual spacing depends on the roof, the roofline, and other job factors. Adding a downspout to a long run is a straightforward repair - cut the opening, add the connector, route the downspout.
 
 ## 5. Damaged or Misaligned Gutters
 

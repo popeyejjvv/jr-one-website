@@ -104,7 +104,7 @@ Las ciudades costeras (Clearwater, Palm Harbor, Sarasota) salen un poco más car
 
 **Estado de la fascia.** Si las tablas de la fascia están podridas (algo común en la humedad de Tampa), hay que reemplazarlas antes de instalar las canaletas nuevas. Eso agrega $6 a $12 por pie lineal para el [forrado de fascia con aluminio](/es/sofito-fascia-tampa) o $10 a $20 por pie para el reemplazo total de madera.
 
-**Cantidad y enrutamiento de bajantes.** Más bajantes significan mejor drenaje pero costos de material y mano de obra más altos. La lluvia intensa de Tampa hace que en general convenga tener más bajantes, no menos. El mínimo de la industria es un bajante por cada 35 pies de canaleta; en Tampa recomendamos uno por cada 25 pies.
+**Cantidad y enrutamiento de bajantes.** Más bajantes significan mejor drenaje pero costos de material y mano de obra más altos. La lluvia intensa de Tampa hace que en general convenga tener más bajantes, no menos. Un punto de partida común es aproximadamente una bajante cada 30 a 35 pies de canaleta, y el espaciado real depende del techo, la línea del techo y otros factores del trabajo.
 
 **Calibre del material.** El aluminio residencial estándar tiene .027 pulgadas de grosor. Las instalaciones premium usan .032 pulgadas, que es 19 por ciento más grueso, más rígido y resiste mejor las cargas de viento. La diferencia de costo es más o menos $1 a $2 por pie lineal.
 

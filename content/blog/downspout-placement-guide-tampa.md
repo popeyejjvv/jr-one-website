@@ -6,7 +6,7 @@ category: Gutters
 keyword: gutter downspout placement
 faqs:
 - question: How far apart should downspouts be spaced on a Tampa Bay home?
-  answer: Most gutter runs need one downspout every 35 to 40 feet, positioned at the low point of the run. Homes with steep rooflines or multiple roof valleys often need closer spacing because valleys concentrate more water into a single section of gutter.
+  answer: A common starting point is about one downspout every 30 to 35 feet, positioned at the low point of the run, though the actual spacing depends on the roof, the roofline, and other job factors. Homes with steep rooflines or multiple roof valleys often need closer spacing because valleys concentrate more water into a single section of gutter.
 - question: How far should a downspout discharge from the foundation?
   answer: At least 4 to 6 feet. Water discharged closer than that can contribute to soil and slab issues over time, especially with Florida's heavy seasonal rain.
 - question: Can a downspout tie into underground drainage?
@@ -19,7 +19,7 @@ faqs:
   answer: Water overshoots the gutter during heavy storms, pools at the fascia, and can work its way into the soffit. Left long enough, that turns a simple cleaning into a fascia repair.
 ---
 
-Downspout placement determines whether a gutter system protects your home or just moves the water problem somewhere else. In Tampa Bay, downspouts belong at the low points of each gutter run, spaced no more than 35 to 40 feet apart, and positioned to carry water at least 4 to 6 feet away from the foundation.
+Downspout placement determines whether a gutter system protects your home or just moves the water problem somewhere else. In Tampa Bay, downspouts belong at the low points of each gutter run, spaced about every 30 to 35 feet as a starting point, and positioned to carry water at least 4 to 6 feet away from the foundation. Actual spacing depends on the roof, the roofline, and other job factors.
 
 ## Why Placement Matters More in Tampa Bay
 
@@ -27,7 +27,7 @@ Florida rain does not fall the way it does up north. It comes in short, heavy bu
 
 ## Where Downspouts Should Go on a Typical Home
 
-Every roof plane needs at least one downspout at its lowest point. On a typical Tampa Bay home, that usually means one downspout per 35 to 40 feet of gutter run, positioned at inside corners or at the midpoint of long straight runs where water naturally collects. Homes with steep rooflines, large roof planes, or multiple valleys often need more downspouts than a standard spacing chart would suggest, because valleys concentrate water faster than a flat run.
+Every roof plane needs at least one downspout at its lowest point. On a typical Tampa Bay home, that usually means about one downspout every 30 to 35 feet of gutter run, positioned at inside corners or at the midpoint of long straight runs where water naturally collects. Homes with steep rooflines, large roof planes, or multiple valleys often need more downspouts than a standard spacing chart would suggest, because valleys concentrate water faster than a flat run.
 
 ## Common Placement Mistakes We See on Service Calls
 
@@ -47,7 +47,7 @@ JR One installs 6-inch and 7-inch seamless aluminum gutters, sized for Florida r
 
 ## Downspout Placement Checklist
 
-- One downspout at minimum per 35 to 40 feet of gutter run
+- About one downspout every 30 to 35 feet of gutter run, adjusted for the roof, the roofline, and other job factors
 - Downspouts positioned at the run's low point, not guessed at
 - Discharge point at least 4 to 6 feet from the foundation
 - Extra downspouts on steep rooflines, large roof planes, or valley-heavy layouts

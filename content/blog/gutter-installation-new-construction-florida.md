@@ -34,7 +34,7 @@ This setup costs the builder $800-$1,200 per home. It works on day one. By year 
 - **6-inch seamless aluminum** - no joints to leak, sized for Florida rain volume
 - **Screw-in hidden hangers every 24-36 inches** - secure mounting that holds through storms
 - **3x4 downspouts** - matched to the 6-inch gutter capacity
-- **One downspout per 20-30 linear feet** - proper drainage coverage
+- **About one downspout every 30 to 35 feet of gutter run** - a starting point for proper drainage coverage; the actual spacing depends on the roof, the roofline, and other job factors
 - **Proper pitch verification** - 1/4 inch per 10 feet confirmed with water test
 - **.032 gauge aluminum** - thicker than the .027 gauge most builders use
 

@@ -6,7 +6,7 @@ category: "Canaletas"
 keyword: "bajante de canaleta"
 faqs:
   - question: "¿Cuántas bajantes necesito?"
-    answer: "Una bajante por cada 20-30 pies lineales de canaleta. Una casa típica de Tampa con 175 pies lineales de canaletas necesita de 6 a 8 bajantes. Más bajantes significa drenaje más rápido y menos posibilidad de desbordamiento durante las fuertes tormentas de Florida."
+    answer: "Un punto de partida común es aproximadamente una bajante cada 30 a 35 pies de canaleta, aunque el espaciado real depende del techo, la línea del techo y otros factores del trabajo. Más bajantes significa drenaje más rápido y menos posibilidad de desbordamiento durante las fuertes tormentas de Florida, así que la cantidad para su casa se define en la medición en sitio y no con una regla general."
   - question: "¿Qué tamaño de bajantes debo usar?"
     answer: "JR One instala canaletas de 6 pulgadas y 7 pulgadas únicamente. Las canaletas de 6 pulgadas se combinan con bajantes de 3x4 pulgadas y las de 7 pulgadas con bajantes de 3x4 o 4x5 pulgadas. Las canaletas de 5 pulgadas con bajantes de 2x3 pulgadas son la combinación de constructor que nosotros reemplazamos, no lo que instalamos. Las bajantes sobredimensionadas siempre son mejores que las pequeñas: manejan grandes volúmenes de lluvia sin atascarse."
 ---
@@ -19,14 +19,16 @@ Esta es la parte más pasada por alto de la instalación de canaletas.
 
 ## Cuántas bajantes necesita
 
-La regla general: **una bajante por cada 20-30 pies lineales de canaleta.**
+Un punto de partida común es **aproximadamente una bajante cada 30 a 35 pies de canaleta**, aunque el espaciado real depende del techo, la línea del techo y otros factores del trabajo. Tómelo como un punto de partida, no como una regla fija.
 
-| Tamaño de la casa | Pies lineales típicos de canaleta | Bajantes recomendadas |
-|-----------|-------------------|----------------------|
-| Pequeña (menos de 1,500 pies cuadrados) | 100-130 pies lineales | 4-5 |
-| Estándar (1,500-2,500 pies cuadrados) | 140-200 pies lineales | 5-8 |
-| Grande (2,500-4,000 pies cuadrados) | 200-300 pies lineales | 8-12 |
-| Muy grande o comercial | 300+ pies lineales | 12+ |
+| Tamaño de la casa | Pies lineales típicos de canaleta |
+|-----------|-------------------|
+| Pequeña (menos de 1,500 pies cuadrados) | 100-130 pies lineales |
+| Estándar (1,500-2,500 pies cuadrados) | 140-200 pies lineales |
+| Grande (2,500-4,000 pies cuadrados) | 200-300 pies lineales |
+| Muy grande o comercial | 300+ pies lineales |
+
+La cantidad de bajantes para su casa se define en la medición en sitio, donde se toman en cuenta el área del techo, la inclinación, las esquinas y los quiebres de la línea del techo, y la ruta del drenaje.
 
 En Florida, inclínese por más bajantes. La intensidad de nuestra lluvia significa que el sistema necesita mover más agua por minuto que una casa en un clima más seco. Cada bajante adicional cuesta entre $50 y $100, pero previene el desbordamiento y el atasco que causan daño real.
 
@@ -53,7 +55,7 @@ Siempre combine el tamaño de la canaleta con el tamaño correcto de bajante. Si
 
 2. **Al final de cada tramo.** Un tramo de canaleta que termina en una esquina o tapa final debe tener una bajante a 2 o 3 pies del extremo.
 
-3. **Ningún tramo de más de 30 pies sin una bajante.** Los tramos más largos sin un punto de drenaje acumulan demasiada agua antes de que pueda salir. El canal se llena desde el extremo más lejano hacia atrás.
+3. **Deje aproximadamente 30 a 35 pies de tramo entre bajantes.** Los tramos más largos sin un punto de drenaje acumulan demasiada agua antes de que pueda salir. El canal se llena desde el extremo más lejano hacia atrás. Cuánto puede estirar un tramo depende del techo, la línea del techo y otros factores del trabajo.
 
 4. **Lejos de pasillos y entradas.** Dirija las bajantes para que no descarguen agua donde camina la gente. Nadie quiere pisar un charco en la puerta de entrada.
 

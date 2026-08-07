@@ -89,7 +89,7 @@ El tamaño de la canaleta solo funciona si los bajantes coinciden. Los bajantes 
 - **Canaletas de 6 pulgadas** -> bajantes de 3x4 pulgadas
 - **Canaletas de 7 pulgadas** -> bajantes de 3x4 pulgadas o de 4x5 pulgadas comerciales
 
-JR One especifica el tamaño y la cantidad correcta de bajantes (uno por cada 20 a 30 pies lineales de canaleta) como parte de cada cotización.
+JR One especifica el tamaño y la cantidad correcta de bajantes como parte de cada cotización. Un punto de partida común es aproximadamente una bajante cada 30 a 35 pies de canaleta, aunque el espaciado real depende del techo, la línea del techo y otros factores del trabajo.
 
 ## Cómo dimensiona JR One su sistema
 
