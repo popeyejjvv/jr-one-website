@@ -31,7 +31,7 @@ DIY gutter guards fall into four categories:
 
 ## What You Get with Professional Installation
 
-**Micro mesh guards ($10-$18/LF installed):** Stainless steel fine-weave mesh over custom-fitted aluminum frames. Stops debris down to pine needles and shingle grit. Professionally sealed to the gutter profile. Lasts 15-20+ years.
+**Micro mesh guards ($10-$18/LF installed):** Aluminum fine-weave mesh over custom-fitted aluminum frames. Stops debris down to pine needles and shingle grit. Professionally sealed to the gutter profile. Lasts 15-20+ years.
 
 **Professional aluminum guards ($7-$12/LF installed):** Solid aluminum covers custom-fitted to your specific gutter size and roofline. Professionally mounted with no gaps or entry points.
 
@@ -41,7 +41,7 @@ DIY gutter guards fall into four categories:
 
 | Factor | DIY (Hardware Store) | Professional |
 |--------|---------------------|-------------|
-| Mesh material | Plastic, vinyl, or basic aluminum | Stainless steel (corrosion-proof) |
+| Mesh material | Plastic, vinyl, or basic aluminum | Fine-weave aluminum (corrosion-resistant) |
 | Frame material | Thin plastic or aluminum | Heavy-gauge aluminum |
 | UV resistance | 2-5 years before degradation | 15-20+ years |
 | Debris filtering | Blocks leaves only | Blocks pine needles, shingle grit, seeds |

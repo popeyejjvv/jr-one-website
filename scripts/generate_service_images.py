@@ -60,7 +60,7 @@ IMAGES = [
     },
     {
         "filename": "gutter-guard-installed",
-        "prompt": "Stainless steel micro-mesh gutter guard installed on a white seamless aluminum gutter on a Florida home, several oak leaves and pine needles resting on top of the mesh unable to enter, the gutter underneath visibly clean, Spanish moss hanging from a nearby live oak tree. Medium close-up shot from ladder height. Bright afternoon Florida sun, slight backlight on the leaves. Ultra-photorealistic, product-photography sharpness.",
+        "prompt": "Aluminum micro-mesh gutter guard installed on a white seamless aluminum gutter on a Florida home, several oak leaves and pine needles resting on top of the mesh unable to enter, the gutter underneath visibly clean, Spanish moss hanging from a nearby live oak tree. Medium close-up shot from ladder height. Bright afternoon Florida sun, slight backlight on the leaves. Ultra-photorealistic, product-photography sharpness.",
     },
     {
         "filename": "gutter-cleaning-before",

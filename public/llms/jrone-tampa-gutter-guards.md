@@ -34,7 +34,7 @@ All of Tampa - South Tampa, Hyde Park, Bayshore, Davis Islands, Palma Ceia, Carr
 
 ## FAQ
 **Q: What's the best gutter guard for Tampa?**
-A: Micro mesh. Tampa debris is a mix of big leaves, small pine needles, and tiny seed pods - only a fine stainless mesh handles all three. Surface-tension and coarse-screen guards let pine needles through and still clog.
+A: Micro mesh. Tampa debris is a mix of big leaves, small pine needles, and tiny seed pods - only a fine aluminum mesh handles all three. Surface-tension and coarse-screen guards let pine needles through and still clog.
 
 **Q: How much do gutter guards cost for a Tampa home?**
 A: Most single-family homes run $1,200 to $2,400 installed for the full roofline. Exact quote depends on linear footage, gutter size, and guard type. Call (844) 444-3114 for a free measurement.

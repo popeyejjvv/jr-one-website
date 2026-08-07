@@ -46,7 +46,7 @@ Guards don't make gutters invisible and maintenance-free. Here's what they DON'T
 ## Which Guard Types Work (And Which Don't)
 
 ### Works Well: Micro Mesh
-Stainless steel fine-weave screen over aluminum frame. Blocks pine needles, shingle grit, seeds, and small debris. Handles heavy rain. Lasts 15-20+ years. **The best option for Florida.**
+Aluminum fine-weave screen over aluminum frame. Blocks pine needles, shingle grit, seeds, and small debris. Handles heavy rain. Lasts 15-20+ years. **The best option for Florida.**
 
 ### Works Well: Aluminum Solid Guards
 Solid aluminum covers with water channels that use surface tension. Sheds large debris effectively. Can struggle with heavy downpours in Florida. Good for homes with large-leaf debris (magnolia, palm) but minimal pine.

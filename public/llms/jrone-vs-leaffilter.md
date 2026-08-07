@@ -15,7 +15,7 @@ LeafFilter spends more on advertising than most Tampa gutter companies earn in a
 
 ## LeafFilter - What They Are and What They Do
 
-LeafFilter is a national franchise that sells micro-mesh gutter guards installed over a metal frame. Their core product is effective - the stainless steel micro-mesh does block pine needles, seed pods, and most debris. The installation is typically competent.
+LeafFilter is a national franchise that sells micro-mesh gutter guards installed over a metal frame. Their core product is effective - the micro-mesh does block pine needles, seed pods, and most debris. The installation is typically competent.
 
 Where LeafFilter loses ground in a direct comparison:
 - **Price.** LeafFilter typically charges $13 - $20+ per linear foot - $2,500 - $4,000+ for an average Tampa home. A significant portion of that price is national advertising budget and franchise overhead, not the materials or labor.
@@ -66,7 +66,7 @@ For everyone else - especially homeowners who care about total cost and long-ter
 
 ## The Micro Mesh Question
 
-The question of "is LeafFilter's micro mesh better than alternatives?" is mostly marketing. Multiple manufacturers make quality stainless steel micro-mesh products. The material differences across premium brands are small. What matters more for long-term performance:
+The question of "is LeafFilter's micro mesh better than alternatives?" is mostly marketing. Multiple manufacturers make quality micro-mesh products. The material differences across premium brands are small. What matters more for long-term performance:
 - Correct installation (pitch, fastening, integration with existing gutters)
 - Correct sizing for your gutters (6" vs 7")
 - Cleaning of the existing gutters before guards go on

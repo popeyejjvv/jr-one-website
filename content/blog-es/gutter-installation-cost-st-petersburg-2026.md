@@ -20,7 +20,7 @@ faqs:
   - question: "¿Cuánto cuestan las canaletas de cobre en St. Petersburg?"
     answer: "Las canaletas de cobre en St. Petersburg salen de $25 a $40 por pie lineal instalado en 2026. Las casas del histórico Old Northeast, Snell Isle y Granada Terrace muchas veces optan por el cobre por aprobación de la HOA y por estética. El cobre dura de 50 a 100 años en el aire salino de St. Pete (mucho más que tierra adentro), lo que hace que el recargo inicial sea económico a lo largo de la vida de la casa."
   - question: "¿Cuál es el costo de los protectores de canaletas en St. Petersburg?"
-    answer: "La instalación de protectores de canaletas en St. Petersburg cuesta de $7 a $15 por pie lineal para la micromalla de acero inoxidable en 2026. Los protectores sólidos de aluminio con canal de agua salen de $9 a $18 por pie lineal. El recargo por aire salino en los protectores es mínimo porque tanto la micromalla como los sistemas sólidos de aluminio son resistentes a la corrosión por naturaleza. Una casa típica de St. Pete con 165 pies lineales de canaletas cuesta entre $1,150 y $2,500 en protectores."
+    answer: "La instalación de protectores de canaletas en St. Petersburg cuesta de $7 a $15 por pie lineal para la micromalla de aluminio en 2026. Los protectores sólidos de aluminio con canal de agua salen de $9 a $18 por pie lineal. El recargo por aire salino en los protectores es mínimo porque tanto la micromalla como los sistemas sólidos de aluminio son resistentes a la corrosión por naturaleza. Una casa típica de St. Pete con 165 pies lineales de canaletas cuesta entre $1,150 y $2,500 en protectores."
   - question: "¿Debería usar una franquicia nacional como LeafFilter en St. Petersburg?"
     answer: "La mayoría de los propietarios de St. Pete ahorran de 50 a 70 por ciento al usar un instalador local. Las franquicias nacionales por lo general cotizan de $25 a $40 por pie lineal en el mercado de St. Pete, mientras que los especialistas locales instalan productos de micromalla comparables o idénticos por $7 a $15 por pie lineal. El recargo de precio cubre la publicidad de la franquicia y el proceso de ventas a domicilio, no mejores materiales."
   - question: "¿Cuánto tarda la instalación de canaletas en St. Petersburg?"
@@ -44,7 +44,7 @@ Si usted es propietario en St. Pete y está cotizando un sistema de canaletas nu
 | Canaletas de cobre | $25 a $40 por pie lineal |
 | Galvalume (grado comercial) | $14 a $22 por pie lineal |
 | Recubrimiento de fascia con aluminio (agregado) | $6 a $12 por pie lineal |
-| Protectores de canaletas de micromalla de acero inoxidable | $7 a $15 por pie lineal |
+| Protectores de canaletas de micromalla de aluminio | $7 a $15 por pie lineal |
 | Protectores sólidos de aluminio con canal de agua | $9 a $18 por pie lineal |
 | Trabajo en toda la casa de un piso (típico) | $1,400 a $2,600 |
 | Trabajo en toda la casa de dos pisos (típico) | $2,000 a $3,800 |
@@ -129,7 +129,7 @@ Especialistas locales frente a franquicias nacionales en St. Petersburg en 2026:
 | Recargo de contratista de techos | $13 a $22 | Recargo por conveniencia sobre la mano de obra de canaletas subcontratada |
 | Personal de mantenimiento o contratista general | $5 a $10 | Precio más bajo, muchas veces subcontratado, garantía limitada |
 
-Los materiales son en gran medida idénticos. El rollo de aluminio .032 de una marca nacional y el de un proveedor local vienen del mismo puñado de fábricas (Mastic, Berger, Quality Aluminum). La micromalla de acero inoxidable de una franquicia y la de un instalador local son el mismo rollo.
+Los materiales son en gran medida idénticos. El rollo de aluminio .032 de una marca nacional y el de un proveedor local vienen del mismo puñado de fábricas (Mastic, Berger, Quality Aluminum). La micromalla de una franquicia y la de un instalador local son el mismo rollo.
 
 Lo que paga de más en el nivel de franquicia es el proceso de ventas a domicilio, el presupuesto de publicidad nacional y el vendedor entrenado para cerrar. Nada de eso pone una mejor canaleta en su casa.
 

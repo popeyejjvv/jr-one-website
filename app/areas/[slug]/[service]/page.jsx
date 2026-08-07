@@ -56,7 +56,7 @@ const SERVICES = {
     who: "Essential for homes with oak, pine, or palm canopy, and for any homeowner tired of climbing a ladder every season.",
     props: [
       ["Micromesh filtering","Blocks even pine needles and shingle grit."],
-      ["Stainless steel mesh","Won't rust, warp, or collapse under debris load."],
+      ["Aluminum mesh","Won't rust, warp, or collapse under debris load."],
       ["Works with existing gutters","Retrofit onto your current system, no full replacement needed."],
       ["Reduces maintenance","Cuts cleaning frequency from quarterly to annual in most cases."],
     ],

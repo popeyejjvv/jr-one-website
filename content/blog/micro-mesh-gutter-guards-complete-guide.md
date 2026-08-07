@@ -6,7 +6,7 @@ category: "Gutter Guards"
 keyword: "micro mesh gutter guards"
 faqs:
   - question: "What are micro mesh gutter guards?"
-    answer: "Micro mesh gutter guards use a fine stainless steel screen (typically 50-100 mesh count) over an aluminum frame to filter debris while allowing water to pass through. The mesh openings are small enough to block pine needles, shingle grit, seeds, and pollen - things that standard screen guards let through."
+    answer: "Micro mesh gutter guards use a fine aluminum screen (typically 50-100 mesh count) over an aluminum frame to filter debris while allowing water to pass through. The mesh openings are small enough to block pine needles, shingle grit, seeds, and pollen - things that standard screen guards let through."
   - question: "How small are the holes in micro mesh gutter guards?"
     answer: "Micro mesh openings are typically 50-100 microns - roughly the width of a human hair. This is small enough to block pine needles (1-2mm), shingle granules (0.5-1mm), maple seeds, oak catkins, and even most pollen. Only water passes through."
   - question: "Do micro mesh gutter guards clog?"
@@ -26,7 +26,7 @@ Here's how they work, what they cost, and whether they're the right choice for y
 A micro mesh gutter guard has two components:
 
 1. **Aluminum frame** - a rigid support structure that sits on top of the gutter channel, often with a slight pitch to help shed surface debris
-2. **Stainless steel mesh screen** - a fine-weave metal screen stretched across the frame with openings small enough to block particles down to 50-100 microns
+2. **Aluminum mesh screen** - a fine-weave metal screen stretched across the frame with openings small enough to block particles down to 50-100 microns
 
 Water passes through the mesh by surface tension and gravity. Debris sits on top of the mesh where wind, rain splash, and gravity move it off the edge or it dries and blows away.
 
@@ -82,7 +82,7 @@ During extreme downpours (2+ inches per hour), some water may sheet over the fro
 
 ### National Franchise Comparison
 
-National brands like LeafFilter charge $25-$40 per linear foot for micro mesh technology. That's the same basic product - stainless steel mesh over aluminum frame - at 2-3x the price.
+National brands like LeafFilter charge $25-$40 per linear foot for micro mesh technology. That's the same basic product - micro mesh over an aluminum frame - at 2-3x the price.
 
 The price difference pays for their TV commercials, franchise fees, and in-home sales process. The mesh technology is not proprietary.
 

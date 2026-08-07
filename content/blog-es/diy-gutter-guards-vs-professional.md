@@ -31,7 +31,7 @@ Los protectores de canaletas que usted instala se dividen en cuatro categorías:
 
 ## Lo que obtiene con la instalación profesional
 
-**Protectores de malla fina ($10 a $18 por pie lineal instalados):** Malla de tejido fino de acero inoxidable sobre marcos de aluminio hechos a la medida. Bloquea todo, incluyendo las agujas de pino y la arenilla de las tejas. Sellada profesionalmente al perfil de la canaleta. Dura de 15 a 20 años o más.
+**Protectores de malla fina ($10 a $18 por pie lineal instalados):** Malla de tejido fino de aluminio sobre marcos de aluminio hechos a la medida. Bloquea todo, incluyendo las agujas de pino y la arenilla de las tejas. Sellada profesionalmente al perfil de la canaleta. Dura de 15 a 20 años o más.
 
 **Protectores profesionales de aluminio ($7 a $12 por pie lineal instalados):** Cubiertas sólidas de aluminio hechas a la medida según el tamaño específico de su canaleta y la línea de su techo. Montadas profesionalmente sin espacios ni puntos de entrada.
 
@@ -41,7 +41,7 @@ Los protectores de canaletas que usted instala se dividen en cuatro categorías:
 
 | Factor | Casero (ferretería) | Profesional |
 |--------|---------------------|-------------|
-| Material de la malla | Plástico, vinilo o aluminio básico | Acero inoxidable (a prueba de corrosión) |
+| Material de la malla | Plástico, vinilo o aluminio básico | Aluminio de tejido fino (resistente a la corrosión) |
 | Material del marco | Plástico delgado o aluminio | Aluminio de calibre grueso |
 | Resistencia a los rayos UV | 2 a 5 años antes de degradarse | 15 a 20 años o más |
 | Filtrado de desechos | Bloquea solo las hojas | Bloquea agujas de pino, arenilla de tejas, semillas |

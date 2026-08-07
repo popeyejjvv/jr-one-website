@@ -10,7 +10,7 @@ faqs:
   - question: "Is there a cheaper alternative to LeafFilter?"
     answer: "Yes. Local gutter guard specialists install professional-grade micro mesh guards for $10-$18 per linear foot - roughly half of LeafFilter's price. The mesh technology is not proprietary. The difference in price pays for LeafFilter's national TV advertising, franchise fees, and in-home sales team, not better materials."
   - question: "Is LeafFilter the same as micro mesh?"
-    answer: "LeafFilter uses micro mesh technology - stainless steel mesh over an aluminum frame. This is the same fundamental design that local gutter contractors install. LeafFilter's mesh is not a patented or proprietary technology. The installation method and materials are comparable to professional-grade micro mesh available from any qualified gutter specialist."
+    answer: "LeafFilter uses micro mesh technology - a fine mesh over an aluminum frame. This is the same fundamental design that local gutter contractors install. LeafFilter's mesh is not a patented or proprietary technology. The installation method and materials are comparable to professional-grade micro mesh available from any qualified gutter specialist."
 ---
 
 # LeafFilter vs. Local Gutter Guard Installation: Honest Price Comparison
@@ -31,21 +31,21 @@ That's not a small difference. On a typical Tampa home, you save $2,000-$4,500 b
 
 ## What You Get with LeafFilter
 
-- Stainless steel micro mesh screen over aluminum frame
+- Micro mesh screen over aluminum frame
 - Professional installation by a subcontracted crew
 - Company warranty (terms vary by market)
 - The LeafFilter brand name
 
 ## What You Get with a Local Specialist
 
-- Stainless steel micro mesh screen over aluminum frame
+- Micro mesh screen over aluminum frame
 - Professional installation by the company's own crew
 - Company warranty backed by a local business
 - Direct access to the owner/installer for questions or issues
 
 ## The Product Is the Same
 
-LeafFilter's micro mesh is stainless steel mesh over an aluminum support frame. That's the same design every micro mesh guard manufacturer uses. The mesh isn't patented. The frame design isn't unique. The installation method is standard.
+LeafFilter's micro mesh is a fine mesh over an aluminum support frame. That's the same design every micro mesh guard manufacturer uses. The mesh isn't patented. The frame design isn't unique. The installation method is standard.
 
 What IS unique to LeafFilter is their marketing machine, franchise infrastructure, and in-home sales process.
 

@@ -20,7 +20,7 @@ faqs:
   - question: "How much do copper gutters cost in St. Petersburg?"
     answer: "Copper gutters in St. Petersburg run $25 to $40 per linear foot installed in 2026. Historic Old Northeast, Snell Isle, and Granada Terrace homes often pursue copper for HOA approval and aesthetic reasons. Copper lasts 50 to 100 years in St. Pete's salt air (significantly longer than inland), making the upfront premium economical over the home's lifetime."
   - question: "What is the cost of gutter guards in St. Petersburg?"
-    answer: "Gutter guard installation in St. Petersburg costs $7 to $15 per linear foot for stainless micro mesh in 2026. Aluminum solid water-channel guards run $9 to $18 per linear foot. The salt-air premium on guards is minimal because both micro mesh and aluminum solid systems are inherently corrosion-resistant. A typical St. Pete home with 165 linear feet of gutters costs between $1,150 and $2,500 for guards."
+    answer: "Gutter guard installation in St. Petersburg costs $7 to $15 per linear foot for aluminum micro mesh in 2026. Aluminum solid water-channel guards run $9 to $18 per linear foot. The salt-air premium on guards is minimal because both micro mesh and aluminum solid systems are inherently corrosion-resistant. A typical St. Pete home with 165 linear feet of gutters costs between $1,150 and $2,500 for guards."
   - question: "Should I use a national franchise like LeafFilter in St. Petersburg?"
     answer: "Most St. Pete homeowners save 50 to 70 percent by using a local installer. National franchises typically quote $25 to $40 per linear foot in the St. Pete market, while local specialists install comparable or identical micro mesh products for $7 to $15 per linear foot. The price premium covers franchise advertising and the in-home sales process, not better materials."
   - question: "How long does gutter installation take in St. Petersburg?"
@@ -44,7 +44,7 @@ If you're a St. Pete homeowner pricing out a new gutter system in 2026, this gui
 | Copper gutters | $25 to $40 per linear foot |
 | Galvalume (commercial-grade) | $14 to $22 per linear foot |
 | Aluminum fascia wrap (added) | $6 to $12 per linear foot |
-| Stainless micro mesh gutter guards | $7 to $15 per linear foot |
+| Aluminum micro mesh gutter guards | $7 to $15 per linear foot |
 | Aluminum solid water-channel guards | $9 to $18 per linear foot |
 | Whole-home single-story job (typical) | $1,400 to $2,600 |
 | Whole-home two-story job (typical) | $2,000 to $3,800 |
@@ -129,7 +129,7 @@ Local specialists vs national franchises in 2026 St. Petersburg:
 | Roofing contractor add-on | $13 to $22 | Convenience markup on subcontracted gutter labor |
 | Handyman or general contractor | $5 to $10 | Lower price, often subcontracted, limited warranty |
 
-The materials are largely identical. .032 aluminum coil from a national brand and from a local supplier come from the same handful of mills (Mastic, Berger, Quality Aluminum). Stainless micro mesh from a franchise and from a local installer is the same coil.
+The materials are largely identical. .032 aluminum coil from a national brand and from a local supplier come from the same handful of mills (Mastic, Berger, Quality Aluminum). Micro mesh from a franchise and from a local installer is the same coil.
 
 What you pay extra for at the franchise tier is the in-home sales process, the national advertising budget, and the trained closer. None of that puts a better gutter on your house.
 

@@ -46,7 +46,7 @@ Los protectores no hacen que las canaletas sean invisibles y libres de mantenimi
 ## Qué tipos de protectores funcionan (y cuáles no)
 
 ### Funciona bien: Malla fina (micro mesh)
-Malla de tejido fino de acero inoxidable sobre un marco de aluminio. Bloquea agujas de pino, granos de teja, semillas y desechos pequeños. Maneja lluvias fuertes. Dura más de 15 a 20 años. **La mejor opción para Florida.**
+Malla de tejido fino de aluminio sobre un marco de aluminio. Bloquea agujas de pino, granos de teja, semillas y desechos pequeños. Maneja lluvias fuertes. Dura más de 15 a 20 años. **La mejor opción para Florida.**
 
 ### Funciona bien: Protectores sólidos de aluminio
 Cubiertas sólidas de aluminio con canales de agua que usan tensión superficial. Bota los desechos grandes de manera efectiva. Puede tener dificultades con aguaceros fuertes en Florida. Bueno para casas con desechos de hoja grande (magnolia, palma) pero poco pino.

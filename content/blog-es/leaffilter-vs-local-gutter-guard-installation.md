@@ -10,7 +10,7 @@ faqs:
   - question: "¿Existe una alternativa más económica a LeafFilter?"
     answer: "Sí. Los especialistas locales en protectores de canaletas instalan protectores de micro malla de grado profesional por entre $10 y $18 por pie lineal, aproximadamente la mitad del precio de LeafFilter. La tecnología de la malla no es exclusiva. La diferencia de precio paga la publicidad nacional de televisión de LeafFilter, las regalías de franquicia y el equipo de ventas a domicilio, no mejores materiales."
   - question: "¿LeafFilter es lo mismo que la micro malla?"
-    answer: "LeafFilter usa tecnología de micro malla, una malla de acero inoxidable sobre un marco de aluminio. Ese es el mismo diseño fundamental que instalan los contratistas locales de canaletas. La malla de LeafFilter no es una tecnología patentada ni exclusiva. El método de instalación y los materiales son comparables a la micro malla de grado profesional disponible con cualquier especialista en canaletas calificado."
+    answer: "LeafFilter usa tecnología de micro malla, una malla fina sobre un marco de aluminio. Ese es el mismo diseño fundamental que instalan los contratistas locales de canaletas. La malla de LeafFilter no es una tecnología patentada ni exclusiva. El método de instalación y los materiales son comparables a la micro malla de grado profesional disponible con cualquier especialista en canaletas calificado."
 ---
 
 # LeafFilter vs. instalación local de protectores de canaletas: comparación honesta de precios
@@ -31,21 +31,21 @@ Esa no es una diferencia pequeña. En una casa típica de Tampa, usted ahorra en
 
 ## Lo que recibe con LeafFilter
 
-- Pantalla de micro malla de acero inoxidable sobre un marco de aluminio
+- Pantalla de micro malla sobre un marco de aluminio
 - Instalación profesional por una cuadrilla subcontratada
 - Garantía de la empresa (los términos varían según el mercado)
 - El nombre de marca LeafFilter
 
 ## Lo que recibe con un especialista local
 
-- Pantalla de micro malla de acero inoxidable sobre un marco de aluminio
+- Pantalla de micro malla sobre un marco de aluminio
 - Instalación profesional por la propia cuadrilla de la empresa
 - Garantía de la empresa respaldada por un negocio local
 - Acceso directo al dueño o instalador para preguntas o problemas
 
 ## El producto es el mismo
 
-La micro malla de LeafFilter es una malla de acero inoxidable sobre un marco de soporte de aluminio. Ese es el mismo diseño que usa cada fabricante de protectores de micro malla. La malla no está patentada. El diseño del marco no es único. El método de instalación es estándar.
+La micro malla de LeafFilter es una malla fina sobre un marco de soporte de aluminio. Ese es el mismo diseño que usa cada fabricante de protectores de micro malla. La malla no está patentada. El diseño del marco no es único. El método de instalación es estándar.
 
 Lo que SÍ es único de LeafFilter es su maquinaria de marketing, su infraestructura de franquicia y su proceso de ventas a domicilio.
 

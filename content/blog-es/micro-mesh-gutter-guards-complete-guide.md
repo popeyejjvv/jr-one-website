@@ -6,7 +6,7 @@ category: "Protectores de Canaletas"
 keyword: "protectores de canaletas de micro malla"
 faqs:
   - question: "¿Qué son los protectores de canaletas de micro malla?"
-    answer: "Los protectores de canaletas de micro malla usan una fina rejilla de acero inoxidable (normalmente de 50 a 100 de conteo de malla) sobre un marco de aluminio para filtrar los escombros mientras dejan pasar el agua. Las aberturas de la malla son lo suficientemente pequeñas para bloquear agujas de pino, granulado de tejas, semillas y polen, cosas que los protectores de rejilla estándar dejan pasar."
+    answer: "Los protectores de canaletas de micro malla usan una fina rejilla de aluminio (normalmente de 50 a 100 de conteo de malla) sobre un marco de aluminio para filtrar los escombros mientras dejan pasar el agua. Las aberturas de la malla son lo suficientemente pequeñas para bloquear agujas de pino, granulado de tejas, semillas y polen, cosas que los protectores de rejilla estándar dejan pasar."
   - question: "¿Qué tan pequeños son los agujeros de los protectores de canaletas de micro malla?"
     answer: "Las aberturas de la micro malla normalmente son de 50 a 100 micras, aproximadamente el ancho de un cabello humano. Esto es lo suficientemente pequeño para bloquear agujas de pino (1 a 2 mm), gránulos de tejas (0.5 a 1 mm), semillas de arce, amentos de roble e incluso la mayoría del polen. Solo el agua pasa a través."
   - question: "¿Se tapan los protectores de canaletas de micro malla?"
@@ -26,7 +26,7 @@ Aquí le explicamos cómo funcionan, cuánto cuestan, y si son la opción correc
 Un protector de canaletas de micro malla tiene dos componentes:
 
 1. **Marco de aluminio** - una estructura de soporte rígida que se asienta encima del canal de la canaleta, a menudo con una ligera inclinación para ayudar a despedir los escombros de superficie
-2. **Rejilla de malla de acero inoxidable** - una fina rejilla metálica de tejido cerrado estirada sobre el marco con aberturas lo suficientemente pequeñas para bloquear partículas de hasta 50 a 100 micras
+2. **Rejilla de malla de aluminio** - una fina rejilla metálica de tejido cerrado estirada sobre el marco con aberturas lo suficientemente pequeñas para bloquear partículas de hasta 50 a 100 micras
 
 El agua pasa a través de la malla por tensión superficial y gravedad. Los escombros se quedan encima de la malla, donde el viento, las salpicaduras de lluvia y la gravedad los mueven hacia el borde, o se secan y salen volando.
 
@@ -82,7 +82,7 @@ Durante aguaceros extremos (2 o más pulgadas por hora), algo de agua puede escu
 
 ### Comparación con Franquicias Nacionales
 
-Las marcas nacionales como LeafFilter cobran de $25 a $40 por pie lineal por la tecnología de micro malla. Es el mismo producto básico (malla de acero inoxidable sobre marco de aluminio) a 2 o 3 veces el precio.
+Las marcas nacionales como LeafFilter cobran de $25 a $40 por pie lineal por la tecnología de micro malla. Es el mismo producto básico (micro malla sobre marco de aluminio) a 2 o 3 veces el precio.
 
 La diferencia de precio paga sus comerciales de televisión, las cuotas de franquicia y el proceso de venta a domicilio. La tecnología de la malla no es exclusiva.
 

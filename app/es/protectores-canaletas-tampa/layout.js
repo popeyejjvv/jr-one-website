@@ -15,7 +15,7 @@ const serviceSchemaEs = {
     availableLanguage: ["en", "es"],
   },
   areaServed: ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Wesley Chapel", "Lutz"].map((name) => ({ "@type": "City", name })),
-  description: "Protectores de canaletas de micro malla de acero inoxidable en Tampa Bay. Bloquean agujas de pino y arena de techo. Reducen la frecuencia de limpieza sin eliminarla. Empresa familiar, más de 30 años en el oficio.",
+  description: "Protectores de canaletas de micro malla de aluminio en Tampa Bay. Bloquean agujas de pino y arena de techo. Reducen la frecuencia de limpieza sin eliminarla. Empresa familiar, más de 30 años en el oficio.",
 };
 
 const breadcrumbSchemaEs = {

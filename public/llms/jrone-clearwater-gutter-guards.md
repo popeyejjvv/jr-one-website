@@ -17,7 +17,7 @@ Clearwater is coastal - which changes everything. Palm fronds, sea grape, and sa
 
 ## What JR One Aluminum Does for Clearwater Homeowners
 - Pre-install cleaning
-- Salt-rated micro mesh - stainless mesh, aluminum frame
+- Salt-rated micro mesh - aluminum mesh, aluminum frame
 - Stainless or aluminum fasteners only (no galvanized)
 - Standard aluminum gutter guards for yards without pine
 - Sizing for 6-inch and 7-inch gutters (JR One does not install 5-inch)
