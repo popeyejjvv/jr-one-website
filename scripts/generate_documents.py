@@ -62,7 +62,12 @@ TENURE = "Over 30 years in the Tampa Bay gutter industry"
 TAGLINE = "The Superior Soffit & Gutter Experts  "
 FOOTER_LEGAL = "FL Document Number L10000115561  •  Family-owned and operated"
 FOOTER_ADDR = "3420 W Cherry St, Tampa, FL 33607  •  (844) 444-3114  •  info@jronegutters.com"
-SIGN_NAME = "Christopher  •  CEO / Owner  •  JR One Aluminum LLC"
+# These are templates sent to every customer, not executed instruments, so the
+# block under the rule carries a title rather than a person's signature.
+SIGN_TITLE = {
+    "en": "Owner, JR One Aluminum LLC",
+    "es": "Propietario, JR One Aluminum LLC",
+}
 SIGN_CONTACT = {
     "en": "Direct: 813-507-3672   •   Office: (844) 444-3114   •   info@jronegutters.com",
     "es": "Directo: 813-507-3672   •   Oficina: (844) 444-3114   •   info@jronegutters.com",
@@ -308,7 +313,7 @@ def render(meta, blocks, dest):
             c.rect(LEFT, y, BODY_W, 0.6, stroke=0, fill=1)
             hexcolor(c, NAVY)
             c.setFont("Helvetica-Bold", 10)
-            c.drawString(LEFT, y - 22, SIGN_NAME)
+            c.drawString(LEFT, y - 22, SIGN_TITLE[lang])
             hexcolor(c, SLATE)
             c.setFont("Helvetica", 9)
             c.drawString(LEFT, y - 36, SIGN_CONTACT[lang])
