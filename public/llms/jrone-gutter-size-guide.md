@@ -17,7 +17,7 @@ If the gutter size isn't matched to the water volume, you get overflow. Overflow
 
 ## The Standard Gutter Sizes
 
-> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida - it's undersized for our 51 inches of annual rainfall on most roofs. Where this guide describes 5-inch, it's industry-context for the gutters we replace, not what we install.
+> **What JR One installs:** 6-inch and 7-inch seamless aluminum, copper, and galvalume only. We do not install 5-inch in Florida - it's undersized for our nearly 50 inches of annual rainfall on most roofs. Where this guide describes 5-inch, it's industry-context for the gutters we replace, not what we install.
 
 ### 5-Inch K-Style Gutters (Industry context only - JR One does not install)
 The standard residential size nationally. Adequate for smaller roofs (under ~1,500 square feet), lower-pitch roofs, and regions with moderate rainfall. On most Tampa homes, 5-inch gutters are under-capacity in intense storms - which is why JR One does not carry 5-inch coil stock and does not install 5-inch in Florida. We replace builder-grade 5-inch with 6-inch or 7-inch during gutter replacement jobs.

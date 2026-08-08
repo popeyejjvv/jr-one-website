@@ -12,7 +12,12 @@ import { ES_COMBO_PAIRS } from "@/lib/city-service-es";
 // and the date it was last checked recorded beside the values. Never hard-code
 // these again: this line renders on 232 pages, which is how the count sat two
 // years stale at 55 while the live profile said 59.
-import { ratingWithScaleAndCount } from "@/lib/review-stats";
+import { ratingWithScaleAndCount, REVIEW_RATING } from "@/lib/review-stats";
+// The trust strip below used to print five SOLID stars beside the 4.9. Five
+// solid stars is how a 5.0 is drawn, so the picture contradicted the number
+// next to it on all 232 pages this route generates. StarRating draws the
+// fraction, the way Google does.
+import { StarRating } from "@/lib/icons";
 
 // ── Constants ─────────────────────────────────────────────────────────────
 const C = {
@@ -151,7 +156,7 @@ const SERVICES = {
 };
 
 const CITY_META = {
-  tampa: { name: "Tampa", localP: "Tampa homeowners face intense summer thunderstorms, hurricane season, year-round humidity, and a mix of aging housing stock and new construction from South Tampa to New Tampa.", weatherNote: "Tampa averages 51 inches of rain per year, well above the national average. Your gutter system has to move serious water volume or your foundation pays the price.", nearby: ["clearwater","brandon","temple-terrace","riverview"] },
+  tampa: { name: "Tampa", localP: "Tampa homeowners face intense summer thunderstorms, hurricane season, year-round humidity, and a mix of aging housing stock and new construction from South Tampa to New Tampa.", weatherNote: "Tampa averages about 50 inches of rain per year, well above the national average. Your gutter system has to move serious water volume or your foundation pays the price.", nearby: ["clearwater","brandon","temple-terrace","riverview"] },
   clearwater: { name: "Clearwater", localP: "Clearwater's coastal location means salt air, tropical storms, and intense UV exposure year-round, conditions that corrode anything less than proper aluminum.", weatherNote: "Coastal proximity adds salt air corrosion on top of Florida's standard heavy rain, UV, and humidity. Aluminum is the material of choice because it handles all of it.", nearby: ["palm-harbor","dunedin","largo","tarpon-springs"] },
   "st-petersburg": { name: "St. Petersburg", localP: "St. Pete's mix of historic homes, mid-century neighborhoods, and new construction means every job is different, and many older homes still have original wood soffit that's been rotting for decades.", weatherNote: "St. Pete holds the Guinness record for consecutive sunny days, 768. That UV exposure degrades wood soffit and fascia faster than most homeowners realize.", nearby: ["largo","clearwater","tampa","dunedin"] },
   sarasota: { name: "Sarasota", localP: "Sarasota homeowners expect contractors who match the standard of their properties, from waterfront homes on the keys to established neighborhoods like Palmer Ranch and Lakewood Ranch.", weatherNote: "Coastal storms here drive rain sideways, testing gutters and soffit in ways inland homes rarely experience. Proper install pitch and fastening aren't optional.", nearby: ["bradenton"] },
@@ -1437,7 +1442,7 @@ export default async function CityServicePage({ params }) {
         {/* Trust strip */}
         <section style={{ padding: "40px 20px", textAlign: "center" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "14px", padding: "14px 26px", background: C.navyMid, borderRadius: "10px", border: `1px solid ${C.gold}` }}>
-            <span style={{ color: C.gold, fontSize: "18px", letterSpacing: "2px" }}>★★★★★</span>
+            <StarRating rating={Number(REVIEW_RATING)} size={18} gap={2} color={C.gold} />
             <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>{ratingWithScaleAndCount("en")}</span>
             <span style={{ color: C.muted, fontSize: "14px" }}>Fully insured / Bilingual EN/ES</span>
           </div>

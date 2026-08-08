@@ -122,6 +122,28 @@
   .cta { display: block; width: 100%; background: var(--b-blue); color: white; border: none; border-radius: 10px; padding: 14px; font-size: 15px; font-weight: 500; cursor: pointer; margin-top: 18px; text-align: center; letter-spacing: 0.3px; }
   .cta:hover { background: var(--b-blue2); }
 
+  /* Lead capture, added 2026-08-08. Replaces a call to action whose entire
+     behaviour was alert(), which captured nothing and told nobody. */
+  .cap { margin-top: 18px; border: 1px solid var(--b-border2); background: var(--b-blue-dim); border-radius: 10px; padding: 16px; }
+  .cap-hd { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 6px; }
+  .cap h4 { font-size: 14px; font-weight: 600; color: var(--b-text); }
+  .cap p { font-size: 12px; color: var(--b-muted); line-height: 1.5; margin-bottom: 12px; }
+  .cap-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cap-in { flex: 1 1 200px; min-width: 0; background: var(--b-card2); border: 1px solid var(--b-border2); border-radius: 8px; padding: 12px; color: var(--b-text); font-size: 14px; font-family: inherit; }
+  .cap-in::placeholder { color: var(--b-muted2); }
+  .cap-in:focus { outline: none; border-color: var(--b-blue2); }
+  .cap-btn { flex: 0 0 auto; background: var(--b-blue); color: #fff; border: none; border-radius: 8px; padding: 12px 20px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .cap-btn:hover:not(:disabled) { background: var(--b-blue2); }
+  .cap-btn:disabled { opacity: 0.6; cursor: default; }
+  .cap-msg { font-size: 12.5px; line-height: 1.5; margin-top: 10px; display: none; }
+  .cap-msg.show { display: block; }
+  .cap-msg.ok { color: #86efac; }
+  .cap-msg.err { color: #fca5a5; }
+  .cap-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .lang-toggle { display: flex; gap: 2px; background: var(--b-card2); border: 1px solid var(--b-border2); border-radius: 6px; padding: 2px; flex-shrink: 0; }
+  .lang-toggle button { padding: 4px 9px; background: transparent; border: none; color: var(--b-muted); font-family: inherit; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; cursor: pointer; border-radius: 4px; }
+  .lang-toggle button.active { background: var(--b-blue); color: #fff; }
+
   .ins-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 4px 10px; border-radius: 12px; font-weight: 500; margin-top: 4px; }
   .ins-pill.low { background: var(--b-green-dim); color: #86efac; border: 1px solid var(--b-green-border); }
   .ins-pill.mid { background: var(--b-yellow-dim); color: #fde68a; border: 1px solid var(--b-yellow-border); }
@@ -358,14 +380,43 @@
     <div class="risk-box bl">
       <h4 class="b">Tampa Bay's climate makes this the highest-ROI home investment you can make</h4>
       <ul>
-        <li>50+ inches of annual rainfall &nbsp; | &nbsp; 74% average humidity &nbsp; | &nbsp; 10-month hurricane season</li>
+        <!-- Corrected 2026-08-08. Was "50+ inches of annual rainfall" and
+             "10-month hurricane season". Tampa's NOAA 1991-2020 annual
+             precipitation normal is 49.48 inches, which is not "50+", and the
+             official Atlantic hurricane season is June 1 to November 30, which
+             is six months, not ten. Both values and their sources are recorded
+             in lib/climate-stats.js; tests/climate-stats.test.js fails if this
+             line drifts away from them. The 74% humidity figure is deliberately
+             untouched: no authoritative source for it was established. -->
+        <li>about 50 inches of annual rainfall &nbsp; | &nbsp; 74% average humidity &nbsp; | &nbsp; 6-month hurricane season</li>
         <li>Florida average homeowner insurance: $3,748/yr - 24-80% above the national average</li>
         <li>Hurricane deductible on a $390K home: $7,800 - $19,500 out of pocket</li>
         <li>Insurers routinely deny claims attributed to neglected maintenance - no exceptions</li>
         <li>Roof age is the single biggest factor in Florida insurance eligibility and premium cost</li>
       </ul>
     </div>
-    <button class="cta" onclick="alert('Contact JRone Gutters for a free inspection and quote!')">Schedule a free inspection with JRone Gutters ↗</button>
+    <!-- Lead capture. Until 2026-08-08 this was a button whose only behaviour
+         was alert('Contact JRone Gutters for a free inspection and quote!').
+         It captured nothing, so every visitor who finished the calculator and
+         pressed it was lost. It now posts to the existing /api/send-lead
+         route, which already owns the origin allow-list, the per-IP rate
+         limit, the validation and the honeypot. -->
+    <div class="cap">
+      <div class="cap-hd">
+        <h4 id="cap-h">Get a free inspection and a real quote</h4>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" id="langEn" class="active" onclick="setLang('en')">EN</button>
+          <button type="button" id="langEs" onclick="setLang('es')">ES</button>
+        </div>
+      </div>
+      <p id="cap-p">The numbers above are this tool's estimate, not a quote. Leave your email and we will send your figures to our team and reach out to schedule a free on-site inspection.</p>
+      <div class="cap-row">
+        <input type="email" class="cap-in" id="cap-email" autocomplete="email" placeholder="Your email address" aria-label="Your email address">
+        <button class="cap-btn" id="cap-btn" onclick="submitRoiLead()">Send my results</button>
+      </div>
+      <div class="cap-hp" aria-hidden="true"><input type="text" id="jr1RefX9" tabindex="-1" autocomplete="off" placeholder="Do not fill"></div>
+      <div class="cap-msg" id="cap-msg" role="status" aria-live="polite"></div>
+    </div>
   </div>
 </div>
 
@@ -525,7 +576,209 @@ function uSum() {
   document.getElementById('s-pro-bar').style.width=pct+'%';
   document.getElementById('s-pro-bar').textContent=fmt(invest);
   document.getElementById('s-diy-bar').textContent=fmt(v10)+'+';
+
+  // Record what the visitor was actually shown. The lead capture below sends
+  // THESE figures, so the record in BuilderPrime carries the same numbers the
+  // visitor saw rather than a recomputation that could drift from the display.
+  ROI_LAST={investment:invest,annualValue:grand,tenYearValue:v10,roiPct:roi,paybackYears:Number(pb)};
 }
 
 uG(); uGd(); uSf(); uRf();
+
+// ===========================================================================
+// LEAD CAPTURE (added 2026-08-08)
+// ===========================================================================
+// The call to action above used to be a button whose entire onclick handler
+// was a single alert() reading "Contact JRone Gutters for a free inspection and
+// quote!", which captured nothing. (The exact attribute is not reproduced here:
+// tests/roi-capture.test.js greps this file for a live alert handler and a
+// verbatim quotation in a comment would trip it.)
+// A visitor moved four sets of sliders, watched the
+// tool compute an investment figure, an annual value, a ten year value, a ROI
+// percentage and a payback period, pressed the button, got a browser dialog,
+// and left. Nothing was recorded and nobody was told.
+//
+// It now posts to /api/send-lead, the EXISTING route. That route already owns
+// the origin allow-list, the per-IP rate limit (5/min), the input validation
+// and the honeypot, so none of those are restated here. The server branch is
+// app/api/send-lead/route.js and the logic is lib/roi-capture.js.
+//
+// NOTE: this file is NOT processed by `npm run build` (manual-steps.md:111);
+// it is served as a static asset allow-listed in middleware.js:30. So this
+// script is plain ES5-compatible browser JS with no build step, and it is
+// syntax-checked separately with `node --check`.
+// ===========================================================================
+
+var ROI_LAST=null;
+var PAGE_LOADED_AT=Date.now();
+var ROI_SENT=false;
+
+// Bilingual. Only the capture card is translated: the instruction that added
+// this asked for the CAPTURE in EN and ES, and translating the whole
+// calculator body was not part of it. The toggle sits inside the card so its
+// scope is visible rather than implied.
+//
+// Spanish is written idiomatically with real accents, not translated word for
+// word, and uses usted throughout to match public/estimator.html.
+var STRINGS={
+  en:{
+    heading:'Get a free inspection and a real quote',
+    blurb:"The numbers above are this tool's estimate, not a quote. Leave your email and we will send your figures to our team and reach out to schedule a free on-site inspection.",
+    placeholder:'Your email address',
+    aria_email:'Your email address',
+    send:'Send my results',
+    sending:'SENDING...',
+    invalid_email:'Please enter a valid email address.',
+    ok:'Thanks. Your results are on their way to our team and we will be in touch to schedule your free inspection.',
+    rate_limited:'That was a lot of tries at once. Please wait a moment and try again.',
+    call_us:'Your request did not go through. Please call us at (844) 444-3114 and we will take care of it.',
+    network:'Your connection dropped, so your request never reached us. Check your internet and try again, or call us at (844) 444-3114.'
+  },
+  es:{
+    heading:'Reciba una inspección gratis y un presupuesto real',
+    blurb:'Las cifras de arriba son el estimado de esta herramienta, no un presupuesto. Déjenos su correo y le enviaremos sus resultados a nuestro equipo, y nos comunicaremos con usted para agendar una inspección gratis en su casa.',
+    placeholder:'Su correo electrónico',
+    aria_email:'Su correo electrónico',
+    send:'Enviar mis resultados',
+    sending:'ENVIANDO...',
+    invalid_email:'Ingrese un correo electrónico válido.',
+    ok:'Gracias. Sus resultados van en camino a nuestro equipo y nos comunicaremos con usted para agendar su inspección gratis.',
+    rate_limited:'Fueron muchos intentos seguidos. Espere un momento e inténtelo de nuevo.',
+    call_us:'Su solicitud no se envió. Llámenos al (844) 444-3114 y lo resolvemos.',
+    network:'Se perdió la conexión y su solicitud nunca nos llegó. Revise su internet e inténtelo de nuevo, o llámenos al (844) 444-3114.'
+  }
+};
+
+// Same resolution order and the same localStorage key as public/estimator.html,
+// so a visitor who picked Spanish on the estimator gets Spanish here too.
+var lang=(function(){
+  try{
+    var q=new URLSearchParams(location.search).get('lang');
+    if(q==='es'||q==='en')return q;
+    var stored=localStorage.getItem('jr1_lang');
+    if(stored==='es'||stored==='en')return stored;
+    if((navigator.language||'').toLowerCase().indexOf('es')===0)return 'es';
+  }catch(e){}
+  return 'en';
+})();
+
+function t(k){return (STRINGS[lang]&&STRINGS[lang][k])||STRINGS.en[k]||k}
+
+function applyLang(){
+  try{document.documentElement.lang=lang}catch(e){}
+  document.getElementById('langEn').classList.toggle('active',lang==='en');
+  document.getElementById('langEs').classList.toggle('active',lang==='es');
+  document.getElementById('cap-h').textContent=t('heading');
+  document.getElementById('cap-p').textContent=t('blurb');
+  var em=document.getElementById('cap-email');
+  em.placeholder=t('placeholder');
+  em.setAttribute('aria-label',t('aria_email'));
+  // Never relabel the button back to "send" once the lead has landed, or the
+  // visitor is invited to submit the same thing twice.
+  if(!ROI_SENT)document.getElementById('cap-btn').textContent=t('send');
+}
+
+function setLang(l){
+  if(l===lang)return;
+  lang=l;
+  try{localStorage.setItem('jr1_lang',l)}catch(e){}
+  applyLang();
+}
+
+function showCapMsg(kind,text){
+  var el=document.getElementById('cap-msg');
+  el.textContent=text;
+  el.className='cap-msg show '+(kind==='ok'?'ok':'err');
+}
+
+// Mirrors lib/homepage-email-capture.js isValidCaptureEmail closely enough to
+// refuse obvious junk before a request is made. The SERVER is still the
+// authority: this is a courtesy check, never the gate.
+function roiEmailLooksValid(e){
+  var s=String(e||'').trim();
+  if(s.length<6||s.length>254)return false;
+  if(/\s/.test(s))return false;
+  var parts=s.split('@');
+  if(parts.length!==2)return false;
+  if(!parts[0]||parts[0].length>64)return false;
+  var d=parts[1];
+  if(!d||d.length>253||d.indexOf('.')===-1)return false;
+  if(d.charAt(0)==='.'||d.charAt(d.length-1)==='.')return false;
+  if(d.indexOf('..')!==-1)return false;
+  var tld=d.slice(d.lastIndexOf('.')+1);
+  if(tld.length<2||!/^[a-zA-Z]+$/.test(tld))return false;
+  return /^[^@]+@[A-Za-z0-9.-]+$/.test(s);
+}
+
+async function submitRoiLead(){
+  if(ROI_SENT)return;
+  var btn=document.getElementById('cap-btn');
+  var email=(document.getElementById('cap-email').value||'').trim();
+
+  if(!roiEmailLooksValid(email)){
+    showCapMsg('err',t('invalid_email'));
+    return;
+  }
+
+  // Recompute so the payload matches the CURRENT slider positions even if the
+  // visitor never opened the Summary tab, which is what populates ROI_LAST.
+  uSum();
+
+  var gt=gTypes[S.gd.t];
+  var payload={
+    captureType:'roi-calculator',
+    email:email,
+    lang:lang,
+    page:'/roi-calculator.html',
+    form_ms:Date.now()-PAGE_LOADED_AT,
+    company:(document.getElementById('jr1RefX9')||{value:''}).value||'',
+    roi:ROI_LAST||{},
+    inputs:{
+      gutters:{linearFeet:S.g.lf,downspouts:S.g.ds,needsRepair:!!S.g.rep},
+      guards:{linearFeet:S.gd.lf,type:gt?gt.name:'',cleaningsPerYear:S.gd.cl,heavyTrees:!!S.gd.tr},
+      soffit:{linearFeet:S.sf.lf,monthlyBill:S.sf.bill,rot:!!S.sf.rot,pests:!!S.sf.pest},
+      roof:{squareFeet:S.rf.sq,ageYears:S.rf.age,insuranceAnnual:S.rf.ins}
+    },
+    timestamp:new Date().toISOString()
+  };
+
+  btn.disabled=true;
+  btn.textContent=t('sending');
+
+  // Read the server reply and tell the truth. A success message is shown ONLY
+  // after the server confirms the lead actually landed. Showing a checkmark on
+  // a failed request is the bug that was fixed across the other 23 surfaces in
+  // commit 5f7f333 and it is not reintroduced here.
+  try{
+    var resp=await fetch('/api/send-lead',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    });
+    if(!resp.ok){
+      showCapMsg('err',resp.status===429?t('rate_limited'):t('call_us'));
+      btn.disabled=false;
+      btn.textContent=t('send');
+      return;
+    }
+    var data=await resp.json().catch(function(){return null});
+    // A 200 whose body does not confirm capture is still a failure. Do not
+    // infer success from the status code alone.
+    if(!data||data.success!==true){
+      showCapMsg('err',t('call_us'));
+      btn.disabled=false;
+      btn.textContent=t('send');
+      return;
+    }
+    ROI_SENT=true;
+    showCapMsg('ok',t('ok'));
+    btn.textContent=lang==='es'?'✓ ENVIADO':'✓ SENT';
+  }catch(e){
+    showCapMsg('err',t('network'));
+    btn.disabled=false;
+    btn.textContent=t('send');
+  }
+}
+
+applyLang();
 </script>

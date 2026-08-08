@@ -9,6 +9,8 @@
  *   <WaterDropIcon size={20} color="var(--jr-gold)" />
  */
 
+import { starFillWidthPx } from "./star-geometry.js";
+
 const base = ({ size = 24, color = "currentColor", className = "", "aria-hidden": ariaHidden = true, ...rest }) => ({
   width: size,
   height: size,
@@ -255,3 +257,83 @@ export const StarRow = ({ count = 5, size = 14, color = "var(--jr-gold)", gap = 
     ))}
   </span>
 );
+
+/**
+ * StarRating , a rating drawn the way Google draws it.
+ *
+ * Added 2026-08-08. app/areas/[slug]/[service]/page.jsx printed five SOLID
+ * stars next to the 4.9 rating on all 232 city-and-service pages. Five solid
+ * stars is how a 5.0 is drawn, so the picture claimed a perfect score while the
+ * number beside it said 4.9. Google draws 4.9 as four full stars and a fifth
+ * that is mostly, not entirely, filled.
+ *
+ * StarRow above is deliberately NOT changed: it takes an integer COUNT and is
+ * used by testimonial cards, where a reviewer who left five stars really did
+ * leave five. This component takes a fractional RATING instead, which is a
+ * different question, so it is a separate component rather than an overload.
+ *
+ * HOW THE PARTIAL STAR IS DRAWN
+ * Two layers. The bottom layer is `outOf` stars in the empty colour. The top
+ * layer is the same stars in the filled colour, inside a box that is clipped to
+ * the exact width the rating earns. No SVG gradient, so there is no generated
+ * element id that could collide when several ratings render on one page, and no
+ * client JavaScript, so it renders identically server-side.
+ *
+ * The clip width is computed in pixels rather than as a percentage of the row,
+ * because the row includes the gaps BETWEEN stars and a percentage would smear
+ * those gaps into the fill. Stars are laid out at a pitch of (size + gap), so
+ * the first `full` stars end at full * (size + gap), and the partial star adds
+ * frac * size on top of that. For 4.9 at size 18 and gap 2 that is
+ * 4 * 20 + 0.9 * 18 = 96.2px, which lands the edge nine tenths of the way
+ * across the fifth star.
+ */
+export const StarRating = ({
+  rating,
+  outOf = 5,
+  size = 14,
+  color = "var(--jr-gold)",
+  emptyColor = "rgba(255,255,255,0.28)",
+  gap = 2,
+  label,
+}) => {
+  const raw = Number(rating);
+  // A missing or unparseable rating renders an empty row rather than throwing
+  // or silently drawing a full one. Drawing full on bad input is exactly the
+  // failure this component exists to fix.
+  const value = Number.isFinite(raw) ? Math.max(0, Math.min(outOf, raw)) : 0;
+  // The arithmetic lives in lib/star-geometry.js because nothing in tests/ can
+  // import a .jsx file. Both this component and tests/star-rating.test.js call
+  // that one function, so the test cannot pass against a stale copy.
+  const fillPx = starFillWidthPx({ rating: value, outOf, size, gap });
+
+  const row = (extra) => (
+    <span style={{ display: "inline-flex", gap, lineHeight: 0, ...extra }}>
+      {Array.from({ length: outOf }).map((_, i) => (
+        <StarIcon key={i} size={size} />
+      ))}
+    </span>
+  );
+
+  return (
+    <span
+      role="img"
+      aria-label={label || `${value} out of ${outOf} stars`}
+      style={{ position: "relative", display: "inline-block", lineHeight: 0 }}
+    >
+      {row({ color: emptyColor })}
+      <span
+        aria-hidden
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: `${fillPx}px`,
+          overflow: "hidden",
+          color,
+        }}
+      >
+        {row()}
+      </span>
+    </span>
+  );
+};

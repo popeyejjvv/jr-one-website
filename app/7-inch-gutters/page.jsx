@@ -34,7 +34,11 @@ const T = {
     problemTag: "WHY 6 INCHES OVERFLOWS",
     problemTitle: "When Standard Gutters Can't Keep Up",
     problems: [
-      { title: "Florida rain is not average rain", desc: "Tampa averages 50+ inches of rain a year and drops a disproportionate share of it in violent afternoon bursts. A standard 6-inch K-style gutter is spec'd for normal rainfall, not summer storms that dump 2 inches in 30 minutes." },
+      // "50+" corrected to "about 50" on 2026-08-08. The NOAA/NCEI 1991-2020
+      // annual precipitation normal for Tampa Intl is 49.48 inches, which is
+      // under fifty, so the plus sign was the defect. Value and source recorded
+      // in lib/climate-stats.js.
+      { title: "Florida rain is not average rain", desc: "Tampa averages about 50 inches of rain a year and drops a disproportionate share of it in violent afternoon bursts. A standard 6-inch K-style gutter is spec'd for normal rainfall, not summer storms that dump 2 inches in 30 minutes." },
       { title: "Steep roofs accelerate water", desc: "The steeper your roof pitch, the faster water hits the gutter, and the more capacity you need to keep it in the channel instead of pouring over the front edge. South Tampa's higher-pitch luxury roofs overrun 6-inch gutters regularly." },
       { title: "Large roof areas equal large water volume", desc: "A 4,000 sqft home sheds nearly double the water of a 2,000 sqft home during the same storm. Using the same gutter size on both is guaranteed overflow on the larger house." },
       { title: "Overflow damage is expensive", desc: "A gutter that can't keep up pours water exactly where you don't want it. At the foundation, against the fascia, into the soffit, through the landscape. Fixing water damage dwarfs the upcharge for the right-sized gutter." },
@@ -122,7 +126,10 @@ const T = {
     problemTag: "POR QUÉ 6 PULGADAS SE DESBORDA",
     problemTitle: "Cuando las Canaletas Estándar No Aguantan",
     problems: [
-      { title: "La lluvia de Florida no es lluvia promedio", desc: "Tampa promedia 50+ pulgadas al año y deja una parte desproporcionada en ráfagas violentas de la tarde. Una canaleta estándar de 6\" K-style está especificada para lluvia normal, no tormentas que caen 2 pulgadas en 30 minutos." },
+      // Igual que la versión en inglés, corregido el 2026-08-08: la normal de
+      // precipitacion anual de NOAA/NCEI 1991-2020 para Tampa Intl es de 49.48
+      // pulgadas, o sea menos de cincuenta. Fuente en lib/climate-stats.js.
+      { title: "La lluvia de Florida no es lluvia promedio", desc: "Tampa promedia unas 50 pulgadas al año y deja una parte desproporcionada en ráfagas violentas de la tarde. Una canaleta estándar de 6\" K-style está especificada para lluvia normal, no tormentas que caen 2 pulgadas en 30 minutos." },
       { title: "Techos empinados aceleran el agua", desc: "Mientras más empinado el techo, más rápido llega el agua a la canaleta, y más capacidad necesita. Los techos de lujo de mayor pendiente en South Tampa sobrecargan canaletas de 6\" regularmente." },
       { title: "Áreas de techo grandes equivalen a gran volumen", desc: "Una casa de 4,000 sqft descarga casi el doble que una de 2,000 sqft en la misma tormenta. Usar el mismo tamaño de canaleta en ambas garantiza desbordamiento en la casa grande." },
       { title: "Daño por desbordamiento es caro", desc: "Una canaleta que no aguanta vierte agua exactamente donde no la quiere. En la fundación, contra la fascia, al sofito. Arreglar el daño empequeneeece el sobrecosto de la canaleta correcta." },

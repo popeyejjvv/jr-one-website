@@ -13,7 +13,7 @@
 New construction getting aluminum trim-out, Tampa homeowners whose 90s-era gutters are sagging or leaking at every seam, buyers who just closed on an older South Tampa or Seminole Heights home with no gutters at all, and homeowners whose builder-grade 5-inch system can't keep up with afternoon summer storms on a larger modern roof.
 
 ## Why Seamless Gutters Matter in Tampa
-Tampa averages around 51 inches of rain per year, and most of it arrives in short intense bursts where a roof can dump hundreds of gallons in a few minutes. Sectional big-box gutters leak at every joint - Tampa's humidity, UV, and rain cycle destroys the seals within a few years. Seamless gutters are run from a single continuous coil on a truck-mounted machine sized to the exact roofline, so the only joints are at corners and downspouts. Fewer joints, fewer leaks, and the heavier aluminum gauge holds up to Tampa's heat and wind far better than the thin-wall sectional stock sold at home centers.
+Tampa averages about 50 inches of rain per year, and most of it arrives in short intense bursts where a roof can dump hundreds of gallons in a few minutes. Sectional big-box gutters leak at every joint - Tampa's humidity, UV, and rain cycle destroys the seals within a few years. Seamless gutters are run from a single continuous coil on a truck-mounted machine sized to the exact roofline, so the only joints are at corners and downspouts. Fewer joints, fewer leaks, and the heavier aluminum gauge holds up to Tampa's heat and wind far better than the thin-wall sectional stock sold at home centers.
 
 ## What JR One Aluminum Does for Tampa Homeowners
 - On-site custom fabrication of seamless runs in 6-inch and 7-inch profiles only

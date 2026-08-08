@@ -9,6 +9,7 @@ import {
   isValidCaptureEmail,
   runHomepageCapture,
 } from "@/lib/homepage-email-capture";
+import { isRoiCapture, runRoiCapture } from "@/lib/roi-capture";
 
 // =============================================================================
 // JR One, Lead Submission API
@@ -78,6 +79,64 @@ function isAllowedOrigin(request) {
     if (referer.startsWith(allowed)) return true;
   }
   return false;
+}
+
+// =============================================================================
+// Shared transport adapters for the lightweight capture branches
+// =============================================================================
+// The homepage email band and the ROI calculator both need exactly two side
+// effects: create a BuilderPrime client, and send one plain-text notice to
+// info@. These used to be written inline inside the homepage branch. They were
+// hoisted here on 2026-08-08 when the ROI calculator gained a capture, because
+// the alternative was a second verbatim copy of both, and a copy of a transport
+// is a copy that drifts (a fix to one would silently miss the other).
+//
+// They are the REAL implementations. Both capture modules take their side
+// effects as injected parameters, so tests drive the same orchestration with
+// stubs and never reach this code, no network, and no mail.
+// =============================================================================
+
+/** Create a BuilderPrime client. Returns {ok, opportunityId?, error?}. */
+async function createBpClientRemote(payload) {
+  if (!process.env.BUILDER_PRIME_API_KEY) {
+    return { ok: false, error: "BUILDER_PRIME_API_KEY not set" };
+  }
+  const res = await fetch(`${BP_BASE_URL}/clients`, {
+    method: "POST",
+    headers: {
+      "x-api-key": process.env.BUILDER_PRIME_API_KEY,
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+  const text = await res.text();
+  if (!res.ok) return { ok: false, error: `${res.status}: ${text.slice(0, 500)}` };
+  const m = text.match(/Opportunity:\s*(\d+)/);
+  return { ok: true, opportunityId: m ? m[1] : null };
+}
+
+/**
+ * Send one plain-text operator notice to info@jronegutters.com.
+ *
+ * Internal operator mail, NOT customer-facing, so it deliberately does not use
+ * the branded customer chokepoint. Returns {ok, error?}.
+ */
+async function sendOperatorNotification({ subject, text }) {
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+    return { ok: false, error: "GMAIL_USER or GMAIL_APP_PASSWORD not set" };
+  }
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+  });
+  await transporter.sendMail({
+    from: `"JR One Website" <${process.env.GMAIL_USER}>`,
+    to: "info@jronegutters.com",
+    subject,
+    text,
+  });
+  return { ok: true };
 }
 
 // Map website form service strings to BuilderPrime project type descriptions
@@ -279,44 +338,10 @@ export async function POST(request) {
         timestampEt: timestamp,
 
         // ── Half 1: BuilderPrime ──
-        createBpClient: async (payload) => {
-          if (!process.env.BUILDER_PRIME_API_KEY) {
-            return { ok: false, error: "BUILDER_PRIME_API_KEY not set" };
-          }
-          const res = await fetch(`${BP_BASE_URL}/clients`, {
-            method: "POST",
-            headers: {
-              "x-api-key": process.env.BUILDER_PRIME_API_KEY,
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify(payload),
-          });
-          const text = await res.text();
-          if (!res.ok) return { ok: false, error: `${res.status}: ${text.slice(0, 500)}` };
-          const m = text.match(/Opportunity:\s*(\d+)/);
-          return { ok: true, opportunityId: m ? m[1] : null };
-        },
+        createBpClient: createBpClientRemote,
 
         // ── Half 2: the info@ notification ──
-        // Internal operator notice, NOT customer-facing, so it deliberately
-        // does not use the branded customer chokepoint.
-        sendNotification: async ({ subject, text }) => {
-          if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
-            return { ok: false, error: "GMAIL_USER or GMAIL_APP_PASSWORD not set" };
-          }
-          const transporter = nodemailer.createTransport({
-            service: "gmail",
-            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
-          });
-          await transporter.sendMail({
-            from: `"JR One Website" <${process.env.GMAIL_USER}>`,
-            to: "info@jronegutters.com",
-            subject,
-            text,
-          });
-          return { ok: true };
-        },
+        sendNotification: sendOperatorNotification,
       });
 
       const captureBpOk = captureResult.bp.ok;
@@ -362,6 +387,132 @@ export async function POST(request) {
         captured_in_bp: captureBpOk,
         notified: captureEmailOk,
         bp_opportunity_id: captureBpOppId,
+      });
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // ROI CALCULATOR CAPTURE (2026-08-08)
+    // public/roi-calculator.html had a call to action whose entire behaviour
+    // was alert('Contact JRone Gutters for a free inspection and quote!'). It
+    // captured nothing and told nobody. Third dead lead capture found on this
+    // site, after the homepage email band and the 21 always-checkmark forms.
+    //
+    // Handled HERE, in this route, for the same reason the homepage capture is:
+    // the origin allow-list, the per-IP rate limit, the input validation and
+    // the honeypot all already live above this line and are shared. A second
+    // route would mean a second copy of all four, and copies drift.
+    //
+    // Self-contained branch, so the 21 forms that already work and the homepage
+    // band above are not touched at all. Everything before this point has run:
+    // origin check, rate limit, body parse.
+    // ─────────────────────────────────────────────────────────────────────────
+    if (isRoiCapture(body)) {
+      // Reject junk before ANY network call is made. Same validator the
+      // homepage band uses, imported, not restated.
+      if (!isValidCaptureEmail(email)) {
+        return NextResponse.json(
+          { error: "Please enter a valid email address." },
+          { status: 400 }
+        );
+      }
+
+      // Same honeypot + fill-timer gate every other form gets. A blocked bot is
+      // told nothing useful and never reaches BuilderPrime or the inbox.
+      const roiSpam = assessLeadSpam({
+        email,
+        company: body.company,
+        form_ms: body.form_ms,
+      });
+      if (roiSpam.block) {
+        console.warn(
+          `SPAM BLOCKED (roi calculator) from ${ip}: ${roiSpam.reasons.join("; ")}`
+        );
+        console.warn(
+          "SPAM BLOCKED (roi calculator) - payload for manual recovery:",
+          JSON.stringify({ email, page, reasons: roiSpam.reasons })
+        );
+        const tBlocked = new Date().toLocaleTimeString("en-US", {
+          timeZone: "America/New_York", hour: "numeric", minute: "2-digit",
+        });
+        after(async () => {
+          const res = await spoolNotice({
+            source: "website",
+            tag: "spam-blocked-roi-calculator",
+            subject: "Spam-blocked ROI calculator captures (kept out of BuilderPrime)",
+            severity: "info",
+            append: true,
+            body: `${tBlocked}  ${email || "no email"} | ${page || "/roi-calculator.html"} | ${roiSpam.reasons.join(", ")}`,
+          });
+          if (!res.ok) {
+            console.error("spam-blocked roi capture could not be spooled:", res.error);
+          }
+        });
+        // Same fabricated-success shape the other blocked paths use, so a bot
+        // gets no oracle telling it which field tripped the filter.
+        return NextResponse.json({ success: true, captured: true });
+      }
+
+      // Both halves run through lib/roi-capture.js runRoiCapture, which owns
+      // the independence guarantee. The two side effects are injected, so the
+      // tests exercise this exact control flow with stubs instead of a second
+      // copy of it.
+      const roiResult = await runRoiCapture({
+        email,
+        page,
+        timestampEt: timestamp,
+        lang: body.lang,
+        roi: body.roi,
+        inputs: body.inputs,
+        createBpClient: createBpClientRemote,
+        sendNotification: sendOperatorNotification,
+      });
+
+      const roiBpOk = roiResult.bp.ok;
+      const roiBpOppId = roiResult.bp.opportunityId;
+      const roiBpError = roiResult.bp.error;
+      const roiEmailOk = roiResult.notification.ok;
+      const roiEmailError = roiResult.notification.error;
+
+      // Both outcomes go somewhere Popeye can inspect, whichever way they went.
+      console.log(
+        "ROI calculator capture result:",
+        JSON.stringify({
+          email, page,
+          bp: { ok: roiBpOk, opportunity_id: roiBpOppId, error: roiBpError },
+          notification: { ok: roiEmailOk, error: roiEmailError },
+        })
+      );
+      if (!roiBpOk || !roiEmailOk) {
+        after(async () => {
+          await spoolNotice({
+            source: "website",
+            tag: "roi-capture-partial-failure",
+            subject: "ROI calculator capture did not complete both halves",
+            severity: roiBpOk || roiEmailOk ? "info" : "warn",
+            append: true,
+            body:
+              `${timestamp}  ${email} | ${page || "/roi-calculator.html"} | ` +
+              `builderprime=${roiBpOk ? `ok ${roiBpOppId || "?"}` : `FAILED ${roiBpError}`} | ` +
+              `notification=${roiEmailOk ? "ok" : `FAILED ${roiEmailError}`}`,
+          });
+        });
+      }
+
+      // Only claim success if at least one half actually landed.
+      const roiOutcome = roiResult.outcome;
+      if (!roiOutcome.ok) {
+        console.error("CRITICAL: ROI calculator capture lost on BOTH paths", { email, page });
+        return NextResponse.json(
+          { error: roiOutcome.error, captured: false },
+          { status: roiOutcome.status }
+        );
+      }
+      return NextResponse.json({
+        success: true,
+        captured: true,
+        captured_in_bp: roiBpOk,
+        notified: roiEmailOk,
+        bp_opportunity_id: roiBpOppId,
       });
     }
 

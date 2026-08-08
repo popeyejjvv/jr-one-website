@@ -13,7 +13,7 @@
 Tampa homeowners with mature live oaks, pines, or palms overhanging the roof, anyone who has seen water cascade over the gutter edge during a summer thunderstorm, and owners of 1990s and 2000s South Tampa, Carrollwood, and Seminole Heights homes where the original gutters have never been professionally serviced. Also commercial property managers in Westshore and Downtown needing routine multi-story cleaning.
 
 ## Why Gutter Cleaning Matters in Tampa
-Tampa averages about 51 inches of rain per year, most of it falling in short intense afternoon storms from June through September. Live oaks shed leaves twelve months a year - not just in fall - and pine needles, Spanish moss, palm fronds, and magnolia seed pods pack gutters tight. Clogged gutters in Tampa overflow within minutes of a storm starting, push water behind the fascia, rot soffit, and saturate the soil at the foundation. In heavily canopied Tampa neighborhoods, gutters typically need cleaning two to four times per year.
+Tampa averages about 50 inches of rain per year, most of it falling in short intense afternoon storms from June through September. Live oaks shed leaves twelve months a year - not just in fall - and pine needles, Spanish moss, palm fronds, and magnolia seed pods pack gutters tight. Clogged gutters in Tampa overflow within minutes of a storm starting, push water behind the fascia, rot soffit, and saturate the soil at the foundation. In heavily canopied Tampa neighborhoods, gutters typically need cleaning two to four times per year.
 
 ## What JR One Aluminum Does for Tampa Homeowners
 - Full hand-removal of debris from every gutter run

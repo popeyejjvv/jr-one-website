@@ -13,7 +13,7 @@
 Owners of Hyde Park, Seminole Heights, Tampa Heights, and Ybor historic homes where the architecture deserves a copper system, custom home builders doing a one-off in South Tampa or Davis Islands, Bayshore waterfront owners wanting a material that shrugs off salt air, and homeowners who want a gutter system that will outlast the roof above it and develop a genuine patina instead of a painted finish.
 
 ## Why Copper Gutters Matter in Tampa
-Copper is the premium long-life gutter material. In Tampa's climate - 51 inches of rain, high humidity, UV, and salt air near the bay - copper outperforms painted aluminum on both durability and aesthetic. Properly installed copper gutters routinely last 50 years or more. Over the first three to five years they shift from bright copper through brown to the distinctive blue-green Florida patina that matches the architecture of Hyde Park bungalows, Seminole Heights craftsman homes, and Mediterranean Revival builds across Bayshore.
+Copper is the premium long-life gutter material. In Tampa's climate - about 50 inches of rain, high humidity, UV, and salt air near the bay - copper outperforms painted aluminum on both durability and aesthetic. Properly installed copper gutters routinely last 50 years or more. Over the first three to five years they shift from bright copper through brown to the distinctive blue-green Florida patina that matches the architecture of Hyde Park bungalows, Seminole Heights craftsman homes, and Mediterranean Revival builds across Bayshore.
 
 ## What JR One Aluminum Does for Tampa Homeowners
 - Half-round copper runs for historic and Mediterranean homes

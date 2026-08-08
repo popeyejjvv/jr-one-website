@@ -31,7 +31,7 @@ En un tramo de canaleta de 40 pies con un bajante en un extremo, el extremo alto
 
 En climas secos, una inclinación imprecisa es un problema menor. En Florida, es un problema mayor.
 
-Tampa recibe 51 pulgadas de lluvia al año, gran parte de ella en aguaceros intensos. Durante una tormenta fuerte de la tarde, sus canaletas necesitan mover grandes volúmenes de agua rápidamente. Hasta los errores pequeños de inclinación crean problemas:
+Tampa recibe unas 50 pulgadas de lluvia al año, gran parte de ella en aguaceros intensos. Durante una tormenta fuerte de la tarde, sus canaletas necesitan mover grandes volúmenes de agua rápidamente. Hasta los errores pequeños de inclinación crean problemas:
 
 - **Agua estancada** en los puntos bajos que cría mosquitos y acelera la corrosión
 - **Desbordamiento en el medio de un tramo** donde el agua se acumula detrás de una sección plana o con inclinación invertida

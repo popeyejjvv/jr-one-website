@@ -32,7 +32,7 @@ Together, they're the protective envelope around the most vulnerable part of you
 Tampa's climate is the worst-case scenario for exposed wood:
 
 - **Humidity.** Tampa averages 74% relative humidity year-round. Wood absorbs moisture constantly and never fully dries out.
-- **Rain.** 51 inches per year, often in heavy bursts that splash behind gutters onto fascia boards.
+- **Rain.** About 50 inches per year, often in heavy bursts that splash behind gutters onto fascia boards.
 - **UV.** Relentless Florida sun breaks down paint and wood fibers, creating entry points for moisture.
 - **Pests.** Termites, carpenter ants, wasps, bees, rats, squirrels, and bats all exploit gaps in deteriorating soffit to access attics.
 

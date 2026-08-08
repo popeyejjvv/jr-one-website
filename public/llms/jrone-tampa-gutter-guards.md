@@ -13,7 +13,7 @@
 Tampa homeowners tired of cleaning gutters three and four times a year, owners under a heavy live oak or pine canopy in Seminole Heights, Carrollwood, Hyde Park, and South Tampa, older residents who do not want to get on a two-story ladder, and anyone who has already paid to repair fascia rot caused by overflowing gutters and wants to stop it from happening again.
 
 ## Why Gutter Guards Matter in Tampa
-Tampa's tree canopy and 51 inches of annual rain is a gutter's worst combination. Live oaks shed year-round. Pine needles pack tight and sieve water right over the lip. Magnolia seed pods, Spanish moss, palm fronds, and roof sand all land in the channel. Without guards, most Tampa homes near trees need two to four cleanings a year. With the right micro mesh guard, that cadence typically drops to about once every two to three years, and overflow during summer downpours drops sharply. Guards cut the debris that causes most overflow - they cannot fix a gutter that is undersized to begin with.
+Tampa's tree canopy and about 50 inches of annual rain is a gutter's worst combination. Live oaks shed year-round. Pine needles pack tight and sieve water right over the lip. Magnolia seed pods, Spanish moss, palm fronds, and roof sand all land in the channel. Without guards, most Tampa homes near trees need two to four cleanings a year. With the right micro mesh guard, that cadence typically drops to about once every two to three years, and overflow during summer downpours drops sharply. Guards cut the debris that causes most overflow - they cannot fix a gutter that is undersized to begin with.
 
 ## What JR One Aluminum Does for Tampa Homeowners
 - Pre-install gutter cleaning so guards go over a clean system

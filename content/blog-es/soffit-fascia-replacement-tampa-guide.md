@@ -32,7 +32,7 @@ Juntos, forman la envoltura protectora alrededor de la parte más vulnerable del
 El clima de Tampa es el peor escenario posible para la madera expuesta:
 
 - **Humedad.** Tampa promedia 74% de humedad relativa todo el año. La madera absorbe humedad constantemente y nunca se seca por completo.
-- **Lluvia.** 51 pulgadas al año, muchas veces en aguaceros fuertes que salpican por detrás de las canaletas sobre las tablas de fascia.
+- **Lluvia.** Unas 50 pulgadas al año, muchas veces en aguaceros fuertes que salpican por detrás de las canaletas sobre las tablas de fascia.
 - **Rayos UV.** El sol implacable de Florida deshace la pintura y las fibras de la madera, creando puntos de entrada para la humedad.
 - **Plagas.** Las termitas, las hormigas carpinteras, las avispas, las abejas, las ratas, las ardillas y los murciélagos aprovechan los huecos en el sofito deteriorado para entrar a los áticos.
 

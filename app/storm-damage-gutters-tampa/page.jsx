@@ -58,7 +58,7 @@ const T = {
     scopeEyebrow: "WHAT WE INSTALL",
     scopeTitle: "Locked Scope, No Surprises",
     scopeItems: [
-      { title: "6\" and 7\" seamless aluminum gutters", desc: "We do not install 5\" in Florida. The 51 inches of annual rainfall needs the larger capacity. Copper and galvalume available in the same sizes." },
+      { title: "6\" and 7\" seamless aluminum gutters", desc: "We do not install 5\" in Florida. The nearly 50 inches of annual rainfall needs the larger capacity. Copper and galvalume available in the same sizes." },
       { title: "3 x 4 rectangular downspouts", desc: "Default sizing for residential. Larger on demand when roof volume calls for it." },
       { title: "Hidden hangers, screw-in", desc: "Hurricane-rated fastening. No nails that pull out under wind load." },
       { title: "Underground PVC drainage", desc: "Schedule 40 PVC with catch basins, surface grates, pop-up emitters. No french drains, no channel drains, no buried aluminum downspouts." },
@@ -130,7 +130,7 @@ const T = {
     scopeEyebrow: "LO QUE INSTALAMOS",
     scopeTitle: "Alcance Definido, Sin Sorpresas",
     scopeItems: [
-      { title: "Canaletas continuas de 6\" y 7\" en aluminio", desc: "No instalamos 5\" en Florida. Las 51 pulgadas de lluvia anual necesitan mayor capacidad. Cobre y galvalume disponibles en los mismos tamaños." },
+      { title: "Canaletas continuas de 6\" y 7\" en aluminio", desc: "No instalamos 5\" en Florida. Las casi 50 pulgadas de lluvia anual necesitan mayor capacidad. Cobre y galvalume disponibles en los mismos tamaños." },
       { title: "Bajantes rectangulares 3 x 4", desc: "Tamaño por defecto residencial. Más grandes a pedido cuando el volumen del techo lo requiere." },
       { title: "Ganchos ocultos, atornillados", desc: "Sujeción resistente a huracán. No usamos clavos que se zafan bajo presión de viento." },
       { title: "Drenaje subterráneo en PVC", desc: "PVC cédula 40 con cajas de captación, rejillas y emisores pop-up. No drenes franceses, no drenes de canal." },

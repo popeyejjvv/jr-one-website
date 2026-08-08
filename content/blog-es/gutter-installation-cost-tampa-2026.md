@@ -12,7 +12,7 @@ faqs:
   - question: "¿Valen la pena las canaletas sin costura por el costo adicional?"
     answer: "Sí. Las canaletas sin costura eliminan las juntas donde las canaletas en secciones gotean y fallan. En el ambiente de lluvia intensa de Tampa, las canaletas de aluminio sin costura duran de 20 a 30 años, frente a los 10 a 15 años de las canaletas en secciones. El costo a lo largo de su vida útil es menor a pesar del precio inicial más alto, y se ven más limpias desde la calle."
   - question: "¿Por qué las canaletas son más caras en Tampa que en otras partes de Florida?"
-    answer: "Los precios de Tampa son más o menos promedio para Florida. La exposición costera, la humedad alta y las 51 pulgadas de lluvia al año requieren un aluminio más grueso (.032 en lugar de .027), más bajantes por pie y una separación más ajustada entre los soportes. Esto agrega costo pero alarga la vida del sistema. Las ciudades del interior de Florida con menos lluvia suelen salir de 10 a 15 por ciento más baratas, pero con una vida útil más corta."
+    answer: "Los precios de Tampa son más o menos promedio para Florida. La exposición costera, la humedad alta y las casi 50 pulgadas de lluvia al año requieren un aluminio más grueso (.032 en lugar de .027), más bajantes por pie y una separación más ajustada entre los soportes. Esto agrega costo pero alarga la vida del sistema. Las ciudades del interior de Florida con menos lluvia suelen salir de 10 a 15 por ciento más baratas, pero con una vida útil más corta."
   - question: "¿Qué tamaño de canaleta necesito en Tampa?"
     answer: "JR One instala únicamente canaletas de aluminio sin costura de 6 pulgadas y 7 pulgadas; no instalamos las de 5 pulgadas en Florida. Las de 6 pulgadas son la base para la mayoría de las casas de Tampa. Las de 7 pulgadas son la mejora para techos más grandes, pendientes pronunciadas o casas que ya se desbordan con las de 6 pulgadas. La mejora a 7 pulgadas agrega más o menos $3 a $5 por pie lineal sobre las de 6 pulgadas y evita los desbordes durante las tormentas eléctricas de verano que dejan dos pulgadas de lluvia en 30 minutos."
   - question: "¿Cuánto agrega el reemplazo de la fascia a la instalación de canaletas?"
@@ -112,7 +112,7 @@ Las ciudades costeras (Clearwater, Palm Harbor, Sarasota) salen un poco más car
 
 ## Por qué las canaletas de Tampa cuestan lo que cuestan
 
-Tampa promedia 51 pulgadas de lluvia al año, 30 por ciento por encima del promedio nacional. Su sistema de canaletas maneja miles de galones de agua durante una sola tormenta eléctrica de verano. Los materiales baratos y la instalación descuidada no sobreviven aquí; fallan en 5 a 8 años, y el daño por agua a sus cimientos, su fascia y su jardín cuesta mucho más que las canaletas mismas.
+Tampa promedia unas 50 pulgadas de lluvia al año, 30 por ciento por encima del promedio nacional. Su sistema de canaletas maneja miles de galones de agua durante una sola tormenta eléctrica de verano. Los materiales baratos y la instalación descuidada no sobreviven aquí; fallan en 5 a 8 años, y el daño por agua a sus cimientos, su fascia y su jardín cuesta mucho más que las canaletas mismas.
 
 Por eso recomendamos las [canaletas de aluminio sin costura](/es/canaletas-sin-costura-tampa) para cada casa de Tampa. Resisten la corrosión de la humedad, manejan el flujo intenso de agua y duran de 20 a 30 años con una instalación adecuada.
 

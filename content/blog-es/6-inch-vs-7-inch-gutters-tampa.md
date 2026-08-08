@@ -10,7 +10,7 @@ faqs:
   - question: "¿Cuándo debo elegir 7 pulgadas en lugar de 6 pulgadas?"
     answer: "Elija 7 pulgadas cuando el área de su techo supera los 2,800 pies cuadrados, cuando la pendiente del techo es pronunciada, cuando tiene un diseño de varias alas, cuando sus canaletas actuales de 6 pulgadas se desbordan en lluvia fuerte, o cuando tiene un edificio comercial. Las de 7 pulgadas manejan cerca de un 40% más de agua que las de 6 pulgadas y son la decisión correcta para cualquier casa donde 6 pulgadas aún dejaría riesgo de desbordamiento."
   - question: "¿Vale la pena el costo adicional de las 7 pulgadas?"
-    answer: "Si su techo lo necesita, sí. El daño por desbordamiento a la fascia, los cimientos y el jardín cuesta mucho más que el sobreprecio del 20% al 30% en material. Si las de 6 pulgadas están dimensionadas correctamente para su techo, las de 7 pulgadas son excesivas. JR One dimensiona el sistema según el área real del techo, la pendiente y el clima de Tampa con 51 pulgadas de lluvia al año durante la evaluación en sitio."
+    answer: "Si su techo lo necesita, sí. El daño por desbordamiento a la fascia, los cimientos y el jardín cuesta mucho más que el sobreprecio del 20% al 30% en material. Si las de 6 pulgadas están dimensionadas correctamente para su techo, las de 7 pulgadas son excesivas. JR One dimensiona el sistema según el área real del techo, la pendiente y el clima de Tampa con unas 50 pulgadas de lluvia al año durante la evaluación en sitio."
   - question: "¿Puede JR One fabricar canaletas de 7 pulgadas en sitio?"
     answer: "Sí. JR One es uno de los pocos contratistas de Tampa Bay que tiene bobina de 7 pulgadas y una máquina formadora que maneja perfiles de 7 pulgadas. La mayoría de los contratistas solo fabrican 6 pulgadas y tienen que subcontratar o pedir 7 pulgadas por encargo especial, por eso pocos las recomiendan aunque el techo lo necesite."
 ---
@@ -104,7 +104,7 @@ El resultado es una recomendación de tamaño específica para su casa, no un va
 
 ## Por qué JR One no instala 5 pulgadas
 
-El estilo K de 5 pulgadas es el tamaño residencial estándar a nivel nacional, y es adecuado para partes del país con lluvia moderada y áreas de techo pequeñas. Florida no es una de esas partes. Tampa Bay promedia 51 pulgadas de lluvia al año, con ráfagas de verano de 1 a 2 pulgadas en 30 minutos. Una canaleta de 5 pulgadas en la mayoría de las casas de Tampa simplemente no puede mover el agua lo bastante rápido, el agua se derrama por el borde delantero durante la lluvia fuerte sin importar qué tan limpia esté la canaleta.
+El estilo K de 5 pulgadas es el tamaño residencial estándar a nivel nacional, y es adecuado para partes del país con lluvia moderada y áreas de techo pequeñas. Florida no es una de esas partes. Tampa Bay promedia unas 50 pulgadas de lluvia al año, con ráfagas de verano de 1 a 2 pulgadas en 30 minutos. Una canaleta de 5 pulgadas en la mayoría de las casas de Tampa simplemente no puede mover el agua lo bastante rápido, el agua se derrama por el borde delantero durante la lluvia fuerte sin importar qué tan limpia esté la canaleta.
 
 No tenemos bobina de 5 pulgadas y no la instalamos. La decisión correcta para cualquier casa en Tampa es 6 pulgadas como base o 7 pulgadas como mejora. Si su casa actualmente tiene 5 pulgadas de grado constructor, JR One la reemplaza durante el trabajo de reemplazo de canaletas.
 

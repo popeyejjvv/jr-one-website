@@ -37,7 +37,7 @@ const CITIES = {
     heroH1: "Tampa's Family-Owned",
     heroH1Gold: "Gutter, Soffit & Aluminum Trade",
     localP: "Tampa homeowners face a unique combination of challenges: intense summer thunderstorms, hurricane season, year-round humidity, and aging housing stock across neighborhoods from South Tampa to New Tampa. Your gutters, soffit, and fascia take the worst of it. JR One is family-owned and family-operated, with over 30 years in the Tampa Bay gutter industry. Our founder Javier has been installing gutters in Tampa since the very beginning, and many of the homes we service today are homes he originally worked on decades ago.",
-    weatherNote: "Tampa averages 51 inches of rain per year, significantly above the national average. That volume of water needs to go somewhere, and if your gutter system isn't handling it properly, your foundation, fascia, and landscaping pay the price.",
+    weatherNote: "Tampa averages about 50 inches of rain per year, significantly above the national average. That volume of water needs to go somewhere, and if your gutter system isn't handling it properly, your foundation, fascia, and landscaping pay the price.",
     neighborhoods: ["South Tampa", "Westchase", "Carrollwood", "New Tampa", "Seminole Heights", "Hyde Park", "Davis Islands", "Palma Ceia", "Channelside", "Ybor City", "Town 'N Country", "Northdale"],
     nearbyText: "We also serve Clearwater, St. Petersburg, Brandon, Temple Terrace, and surrounding communities.",
   },
@@ -318,7 +318,7 @@ const CITIES_ES = {
     heroH1: "Empresa Familiar de Tampa en",
     heroH1Gold: "Canaletas, Sofito y Aluminio",
     localP: "Los propietarios de Tampa enfrentan una combinación única de desafíos: tormentas intensas en verano, temporada de huracanes, humedad todo el año y viviendas envejecidas en barrios desde South Tampa hasta New Tampa. Sus canaletas, sofitos y fascias reciben lo peor. JR One es una empresa familiar, operada por la familia, con más de 30 años en la industria de canaletas de Tampa Bay. Nuestro fundador Javier ha estado instalando canaletas en Tampa desde el principio, y muchas de las casas que atendemos hoy son las mismas que él trabajó hace décadas.",
-    weatherNote: "Tampa recibe un promedio de 51 pulgadas de lluvia al año, muy por encima del promedio nacional. Ese volumen de agua necesita ir a algún lugar, y si su sistema de canaletas no lo maneja correctamente, sus cimientos, fascias y jardín pagan el precio.",
+    weatherNote: "Tampa recibe un promedio de unas 50 pulgadas de lluvia al año, muy por encima del promedio nacional. Ese volumen de agua necesita ir a algún lugar, y si su sistema de canaletas no lo maneja correctamente, sus cimientos, fascias y jardín pagan el precio.",
     nearbyText: "También servimos a Clearwater, St. Petersburg, Brandon, Temple Terrace y comunidades cercanas.",
   },
   clearwater: {

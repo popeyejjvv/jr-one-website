@@ -31,7 +31,7 @@ On a 40-foot gutter run with a downspout at one end, the high end sits 1 inch hi
 
 In dry climates, imprecise pitch is a minor issue. In Florida, it's a major one.
 
-Tampa gets 51 inches of rain per year, much of it in intense bursts. During a heavy afternoon storm, your gutters need to move large volumes of water quickly. Even small pitch errors create problems:
+Tampa gets about 50 inches of rain per year, much of it in intense bursts. During a heavy afternoon storm, your gutters need to move large volumes of water quickly. Even small pitch errors create problems:
 
 - **Standing water** in low spots breeds mosquitoes and accelerates corrosion
 - **Overflow at the middle of a run** where water backs up behind a flat or reverse-pitched section

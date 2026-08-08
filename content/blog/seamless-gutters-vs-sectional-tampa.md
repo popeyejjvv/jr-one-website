@@ -25,7 +25,7 @@ If you're shopping for new gutters in Tampa, you'll hear two terms constantly: s
 
 ## Why Seams Matter in Florida
 
-Tampa gets 51 inches of rain per year, much of it in intense 30-60 minute afternoon storms that dump massive volume into your gutters all at once.
+Tampa gets about 50 inches of rain per year, much of it in intense 30-60 minute afternoon storms that dump massive volume into your gutters all at once.
 
 Every seam in a sectional gutter system is a point where:
 

@@ -13,7 +13,7 @@
 Homeowners seeing water pour over the gutter edge during a summer storm, anyone with a visibly sagging run of gutter pulling away from the fascia, owners of 1990s South Tampa and Seminole Heights homes where old spike-and-ferrule hangers have let go, post-hurricane homeowners with dented or displaced gutters, and landlords needing a section patched without committing to a full replacement.
 
 ## Why Gutter Repair Matters in Tampa
-Tampa gets about 51 inches of rain a year packed into short intense events. A gutter that leaks, sags, or has the wrong pitch does not just look bad - it sends thousands of gallons in the wrong place. Water behind the fascia rots wood fast in Tampa's humidity. Water at the foundation erodes soil and can crack slab edges. Tampa's UV also breaks down the old silicone seals at miters and downspout outlets faster than inland climates. Most Tampa gutter systems need at least a minor repair every few years.
+Tampa gets about 50 inches of rain a year packed into short intense events. A gutter that leaks, sags, or has the wrong pitch does not just look bad - it sends thousands of gallons in the wrong place. Water behind the fascia rots wood fast in Tampa's humidity. Water at the foundation erodes soil and can crack slab edges. Tampa's UV also breaks down the old silicone seals at miters and downspout outlets faster than inland climates. Most Tampa gutter systems need at least a minor repair every few years.
 
 ## What JR One Aluminum Does for Tampa Homeowners
 - Miter and corner re-sealing with UV-stable sealant

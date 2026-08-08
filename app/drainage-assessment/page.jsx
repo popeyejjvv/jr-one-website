@@ -42,7 +42,12 @@ const T = {
     heroCta: "Schedule Assessment",
     heroCall: "Call (844) 444-3114",
     stats: [
-      { value: "50+", label: "Inches of rain per year in Tampa" },
+      // "50+" corrected to "~50" on 2026-08-08. This tile names TAMPA, and the
+      // NOAA/NCEI 1991-2020 normal for Tampa Intl is 49.48 inches, which does
+      // not clear a "50+" floor. The heroP above says FLORIDA gets over 50
+      // inches and is left alone, because statewide really is 54.42 inches.
+      // Two different places, two different claims. Source: lib/climate-stats.js.
+      { value: "~50", label: "Inches of rain per year in Tampa" },
       { value: "1 to 2", label: "Days, most residential installs" },
       { value: "Sched 40", label: "PVC underground spec" },
       { value: "100%", label: "In-house crews" },
@@ -109,7 +114,8 @@ const T = {
     heroCta: "Programar Evaluación",
     heroCall: "Llame al (844) 444-3114",
     stats: [
-      { value: "50+", label: "Pulgadas de lluvia al año en Tampa" },
+      // Igual que la version en ingles, corregido el 2026-08-08.
+      { value: "~50", label: "Pulgadas de lluvia al año en Tampa" },
       { value: "1 a 2", label: "Días, mayoría de instalaciones" },
       { value: "Sched 40", label: "Especificación de PVC subterráneo" },
       { value: "100%", label: "Equipos propios" },

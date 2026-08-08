@@ -25,7 +25,7 @@ Si está buscando canaletas nuevas en Tampa, va a escuchar dos términos todo el
 
 ## Por qué las costuras importan en Florida
 
-Tampa recibe 51 pulgadas de lluvia al año, gran parte de ella en tormentas intensas de la tarde de 30 a 60 minutos que descargan un volumen enorme en sus canaletas de golpe.
+Tampa recibe unas 50 pulgadas de lluvia al año, gran parte de ella en tormentas intensas de la tarde de 30 a 60 minutos que descargan un volumen enorme en sus canaletas de golpe.
 
 Cada costura en un sistema de canaletas seccionales es un punto donde:
 

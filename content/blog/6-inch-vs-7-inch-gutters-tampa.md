@@ -104,7 +104,7 @@ The result is a sizing recommendation specific to your home - not a default of "
 
 ## Why JR One Doesn't Install 5-Inch
 
-5-inch K-style is the national-standard residential size, and it's adequate for parts of the country with moderate rainfall and small roof areas. Florida is not one of those parts. Tampa Bay averages 51 inches of rain per year, with summer bursts of 1-2 inches in 30 minutes. A 5-inch gutter on most Tampa homes simply cannot move water fast enough - water sheets over the front edge during heavy rain regardless of how clean the gutter is.
+5-inch K-style is the national-standard residential size, and it's adequate for parts of the country with moderate rainfall and small roof areas. Florida is not one of those parts. Tampa Bay averages about 50 inches of rain per year, with summer bursts of 1-2 inches in 30 minutes. A 5-inch gutter on most Tampa homes simply cannot move water fast enough - water sheets over the front edge during heavy rain regardless of how clean the gutter is.
 
 We don't carry 5-inch coil stock and we don't install it. The right call for any Tampa home is 6-inch baseline or 7-inch upgrade. If your home currently has builder-grade 5-inch, JR One replaces it during the gutter replacement job.
 

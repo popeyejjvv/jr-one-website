@@ -12,7 +12,7 @@ faqs:
   - question: "Are seamless gutters worth the extra cost?"
     answer: "Yes. Seamless gutters eliminate the joints where sectional gutters leak and fail. In Tampa's heavy rain environment, seamless aluminum gutters last 20 to 30 years versus 10 to 15 years for sectional. The lifetime cost is lower despite higher upfront pricing, and they look cleaner from the curb."
   - question: "Why are gutters more expensive in Tampa than other parts of Florida?"
-    answer: "Tampa pricing is roughly average for Florida. Coastal exposure, high humidity, and 51 inches of annual rainfall require thicker aluminum (.032 vs .027), more downspouts per foot, and tighter hanger spacing. These add cost but extend system life. Inland Florida cities with less rain often run 10 to 15 percent cheaper but with shorter system lifespans."
+    answer: "Tampa pricing is roughly average for Florida. Coastal exposure, high humidity, and about 50 inches of annual rainfall require thicker aluminum (.032 vs .027), more downspouts per foot, and tighter hanger spacing. These add cost but extend system life. Inland Florida cities with less rain often run 10 to 15 percent cheaper but with shorter system lifespans."
   - question: "What size gutter do I need in Tampa?"
     answer: "JR One installs 6-inch and 7-inch seamless aluminum gutters only - we do not install 5-inch in Florida. 6-inch is the baseline for most Tampa homes. 7-inch is the upgrade for larger roof spans, steep pitches, or homes that already overflow with 6-inch. The 7-inch upgrade adds roughly $3 to $5 per linear foot over 6-inch and prevents overflow during summer thunderstorms that drop two inches of rain in 30 minutes."
   - question: "How much does fascia replacement add to gutter installation?"
@@ -112,7 +112,7 @@ Coastal cities (Clearwater, Palm Harbor, Sarasota) run slightly higher because i
 
 ## Why Tampa Gutters Cost What They Cost
 
-Tampa averages 51 inches of rain per year, 30 percent above the national average. Your gutter system handles thousands of gallons of water during a single summer thunderstorm. Cheap materials and sloppy installation don't survive here, they fail within 5 to 8 years, and the water damage to your foundation, fascia, and landscaping costs far more than the gutters themselves.
+Tampa averages about 50 inches of rain per year, 30 percent above the national average. Your gutter system handles thousands of gallons of water during a single summer thunderstorm. Cheap materials and sloppy installation don't survive here, they fail within 5 to 8 years, and the water damage to your foundation, fascia, and landscaping costs far more than the gutters themselves.
 
 This is why we recommend [seamless aluminum gutters](/seamless-aluminum-gutters) for every Tampa home. They resist corrosion from humidity, handle heavy water flow, and last 20 to 30 years with proper installation.
 
