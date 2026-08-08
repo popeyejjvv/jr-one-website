@@ -334,6 +334,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
       <div class="gate-icon">🔒</div>
       <h2 data-i18n="gate_title">See Your Price Range</h2>
       <p data-i18n="gate_sub">Drop your number below and we'll text you this estimate so you have it for 30 days. No spam, no sharing.</p>
+      <input type="text" id="gateNameInput" placeholder="Your Name (optional)" aria-label="Your name" data-i18n-placeholder="gate_name" data-i18n-aria="aria_name" maxlength="80" autocomplete="name"/>
       <input type="tel" id="phoneInput" placeholder="(555) 123-4567" aria-label="Phone number" data-i18n-placeholder="gate_placeholder" data-i18n-aria="aria_phone" maxlength="14" oninput="formatPhone(this)"/>
       <button id="gateSubmit" onclick="unlockEstimate()" disabled data-i18n="gate_btn">REVEAL MY PRICE</button>
       <div class="gate-fine" data-i18n="gate_fine">Your number is only used to contact you about your estimate.</div>
@@ -431,7 +432,7 @@ function gutterRate(){return RATES['gutter'+gutterSize]}
 // ═══ STATE ═══
 let map, measuring = true, currentMode = 'gutter', stories = 1, gutterSize = 6;
 let segments = [], activePoints = [], activeMarkers = [], activePolyline = null, hoverLine = null;
-let estimateUnlocked = false, currentDiscountCode = '', currentExpDate = '', customerPhone = '';
+let estimateUnlocked = false, currentDiscountCode = '', currentExpDate = '', customerPhone = '', customerGateName = '';
 // Opportunity id returned by the FIRST /api/estimator-lead call. Sent back on
 // the second call so the route attaches to that record instead of creating a
 // duplicate. BuilderPrime has no update endpoint (no PUT/PATCH on any
@@ -473,6 +474,7 @@ const STRINGS = {
     gate_title:'See Your Price Range',
     gate_sub:"Drop your number below and we'll text you this estimate so you have it for 30 days. No spam, no sharing.",
     gate_placeholder:'(555) 123-4567',
+    gate_name:'Your Name (optional)',
     gate_btn:'REVEAL MY PRICE',
     gate_fine:'Your number is only used to contact you about your estimate.',
     project_range:'Your Estimated Project Range',
@@ -539,6 +541,7 @@ const STRINGS = {
     gate_title:'Ve Tu Rango de Precio',
     gate_sub:'Deja tu número y te enviamos este estimado por mensaje para que lo tengas por 30 días. Sin spam, sin compartir.',
     gate_placeholder:'(555) 123-4567',
+    gate_name:'Tu Nombre (opcional)',
     gate_btn:'VER MI PRECIO',
     gate_fine:'Tu número solo se usa para contactarte sobre tu estimado.',
     project_range:'Rango Estimado del Proyecto',
@@ -786,6 +789,9 @@ async function unlockEstimate(){
   const phone=document.getElementById('phoneInput').value;
   if(phone.replace(/\D/g,'').length<10){submitBtn.disabled=false;return}
   customerPhone=phone;
+  // Optional: a blank name still unlocks. The record must exist either way;
+  // buildLeadName falls back to the anonymous label server-side.
+  customerGateName=document.getElementById('gateNameInput').value.trim();
   estimateUnlocked=true;
   // The job is ALREADY priced at this point: segments were drawn, getModeTotals()
   // has the footage, and renderEstimate() computed the range (it was only
@@ -1025,6 +1031,7 @@ async function sendToJROne(){
     form_ms:Date.now()-PAGE_LOADED_AT,
     company:(document.getElementById('jr1RefX9')||{value:''}).value||'',
     phone:customerPhone,
+    customerName:customerGateName,
     address:document.getElementById('addressInput').value||'Not specified',
     addressCity:parsedAddress.city,
     addressState:parsedAddress.state,

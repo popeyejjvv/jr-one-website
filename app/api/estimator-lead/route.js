@@ -123,6 +123,12 @@ function pickUtm(searchParams, body, key) {
  * script can read it back. Never put data here that something needs to read.
  */
 async function attachActivityNote(opportunityId, description) {
+  // AUTH SHAPE (verified 2026-08-08 against test record 6308800): this
+  // endpoint authenticates on `secretKey` in the BODY plus a valid
+  // `activityType`. The x-api-key header alone returns 401 "Authentication
+  // Failed", which is what every note POST from this site was silently
+  // getting before this fix. Working shape taken from
+  // jrone-outreach/scripts/run_outreach.py:205-218.
   const res = await fetch(`${BP_BASE_URL}/client-activities/v1`, {
     method: "POST",
     headers: {
@@ -130,8 +136,17 @@ async function attachActivityNote(opportunityId, description) {
       "Content-Type": "application/json",
       Accept: "application/json",
     },
-    body: JSON.stringify({ opportunityId: parseInt(opportunityId, 10), description }),
+    body: JSON.stringify({
+      opportunityId: parseInt(opportunityId, 10),
+      activityType: "NOTE",
+      description,
+      secretKey: process.env.BUILDER_PRIME_API_KEY,
+    }),
   });
+  if (!res.ok) {
+    const text = await res.text();
+    console.error(`✗ Activity note POST ${res.status}: ${text.slice(0, 200)}`);
+  }
   return res.ok;
 }
 
@@ -489,21 +504,17 @@ export async function POST(request) {
 
           // Best-effort: append a client activity note with the full estimator details
           // This way the sales rep sees the measurements + estimate range + discount code
-          // when they open the lead in BP. Non-blocking, failure is OK.
+          // when they open the lead in BP. Non-blocking, failure is OK - but it
+          // is LOGGED now: the pre-fix version checked nothing and the endpoint
+          // was 401-ing every one of these silently (see attachActivityNote).
           if (bpResult.opportunity_id) {
             try {
-              await fetch(`${BP_BASE_URL}/client-activities/v1`, {
-                method: "POST",
-                headers: {
-                  "x-api-key": process.env.BUILDER_PRIME_API_KEY,
-                  "Content-Type": "application/json",
-                  Accept: "application/json",
-                },
-                body: JSON.stringify({
-                  opportunityId: parseInt(bpResult.opportunity_id),
-                  description: notes,
-                }),
-              });
+              const noteOk = await attachActivityNote(bpResult.opportunity_id, notes);
+              if (noteOk) {
+                console.log(`✓ Job-data note attached to opportunity ${bpResult.opportunity_id}`);
+              } else {
+                console.error(`✗ Job-data note NOT attached to opportunity ${bpResult.opportunity_id}`);
+              }
             } catch (actErr) {
               console.warn("⚠ Could not attach activity note:", actErr.message);
             }
@@ -519,18 +530,10 @@ export async function POST(request) {
               if (utm_term)     attrParts.push(`term: ${utm_term}`);
               if (utm_content)  attrParts.push(`content: ${utm_content}`);
               try {
-                await fetch(`${BP_BASE_URL}/client-activities/v1`, {
-                  method: "POST",
-                  headers: {
-                    "x-api-key": process.env.BUILDER_PRIME_API_KEY,
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                  },
-                  body: JSON.stringify({
-                    opportunityId: parseInt(bpResult.opportunity_id, 10),
-                    description: `[AD ATTRIBUTION] ${attrParts.join(" | ")}`,
-                  }),
-                });
+                await attachActivityNote(
+                  bpResult.opportunity_id,
+                  `[AD ATTRIBUTION] ${attrParts.join(" | ")}`
+                );
               } catch (attrErr) {
                 console.error(`✗ Estimator attribution activity log failed (non-fatal): ${attrErr.message}`);
               }

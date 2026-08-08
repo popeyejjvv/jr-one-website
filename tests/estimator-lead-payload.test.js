@@ -150,10 +150,47 @@ test("the literal placeholder name is never written, on any input shape", () => 
   }
 });
 
-test("a supplied real name always wins over the anonymous label", () => {
+test("a supplied real name always wins over the anonymous label, and carries the price", () => {
+  // Popeye's convention (2026-08-08): record name is person plus price, so a
+  // rep sees the number the visitor was shown without opening the record.
   const p = buildBpPayload({ ...ABANDONED, customerName: "Vanessa Uselman" });
   assert.equal(p.userAccount.firstName, "Vanessa");
-  assert.equal(p.userAccount.lastName, "Uselman");
+  assert.equal(p.userAccount.lastName, "Uselman $2,100-$2,800");
+});
+
+test("name plus price: the exact convention example", () => {
+  const p = buildBpPayload({ ...ABANDONED, customerName: "Maria Gonzalez" });
+  assert.equal(p.userAccount.firstName, "Maria");
+  assert.equal(p.userAccount.lastName, "Gonzalez $2,100-$2,800");
+});
+
+test("single-word name with a price uses the range as the last name", () => {
+  const p = buildBpPayload({ ...ABANDONED, customerName: "Tyson" });
+  assert.equal(p.userAccount.firstName, "Tyson");
+  assert.equal(p.userAccount.lastName, "$2,100-$2,800");
+});
+
+test("a name without a price keeps the bare-name fallback", () => {
+  const p = buildBpPayload({
+    ...ABANDONED,
+    customerName: "Tyson",
+    estimateLow: 0,
+    estimateHigh: 0,
+  });
+  assert.equal(p.userAccount.firstName, "Tyson");
+  assert.equal(p.userAccount.lastName, "(no last name provided)");
+});
+
+test("blank name at the gate still produces a record name, never the banned constant", () => {
+  // A phone number with no name is still a lead worth calling. The record is
+  // created either way; the name falls back to the anonymous city+zip+price
+  // label. LEGACY_PLACEHOLDER_NAME must never appear anywhere in the payload.
+  for (const blank of [undefined, "", "   "]) {
+    const p = buildBpPayload({ ...ABANDONED, customerName: blank });
+    assert.equal(p.userAccount.firstName, ANON_FIRST_NAME);
+    assert.equal(p.userAccount.lastName, "Largo 33778 $2,100-$2,800");
+    assert.ok(!JSON.stringify(p).includes(LEGACY_PLACEHOLDER_NAME));
+  }
 });
 
 test("a single-word real name does not become the placeholder", () => {

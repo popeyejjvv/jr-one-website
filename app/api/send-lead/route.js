@@ -15,6 +15,7 @@ import {
   companyDomainRejection,
   logCompanyDomainRejection,
 } from "@/lib/company-domain";
+import { buildContactMessageNote, postContactNote } from "@/lib/contact-note";
 
 // =============================================================================
 // JR One, Lead Submission API
@@ -636,6 +637,27 @@ export async function POST(request) {
           if (oppMatch) bpResult.opportunity_id = oppMatch[1];
           console.log(`✓ Builder Prime lead created (opportunity ${bpResult.opportunity_id || "?"})`);
 
+          // Visitor's message -> rep-visible activity note (2026-08-08).
+          // The ops email below still carries the full text; this copy is the
+          // one a caller sees on the opportunity timeline. Best-effort by
+          // construction: postContactNote never throws and nothing here
+          // touches bpResult, so a note failure cannot fail the lead.
+          const contactNote = buildContactMessageNote({ message, page });
+          if (bpResult.opportunity_id && contactNote) {
+            const noteRes = await postContactNote({
+              fetchImpl: fetch,
+              baseUrl: BP_BASE_URL,
+              apiKey: process.env.BUILDER_PRIME_API_KEY,
+              opportunityId: bpResult.opportunity_id,
+              description: contactNote,
+            });
+            if (noteRes.ok) {
+              console.log(`✓ Contact message note attached (status ${noteRes.status}): ${noteRes.body}`);
+            } else {
+              console.error(`✗ Contact message note NOT attached (status ${noteRes.status}): ${noteRes.body}`);
+            }
+          }
+
           // Log UTM + gclid attribution as a BP activity note.
           // Serves as a human-readable fallback if the BP custom fields above are
           // rejected. The activity note is always visible on the opportunity timeline.
@@ -648,21 +670,17 @@ export async function POST(request) {
             if (utm_term)     attrParts.push(`term: ${utm_term}`);
             if (utm_content)  attrParts.push(`content: ${utm_content}`);
             if (page) attrParts.push(`page: ${page}`);
-            try {
-              await fetch(`${BP_BASE_URL}/client-activities/v1`, {
-                method: "POST",
-                headers: {
-                  "x-api-key": process.env.BUILDER_PRIME_API_KEY,
-                  "Content-Type": "application/json",
-                  Accept: "application/json",
-                },
-                body: JSON.stringify({
-                  opportunityId: parseInt(bpResult.opportunity_id, 10),
-                  description: `[AD ATTRIBUTION] ${attrParts.join(" | ")}`,
-                }),
-              });
-            } catch (attrErr) {
-              console.error(`✗ Attribution activity log failed (non-fatal): ${attrErr.message}`);
+            // Same body-secretKey auth shape as the contact note; the old
+            // header-only POST here was 401-ing silently (lib/contact-note.js).
+            const attrRes = await postContactNote({
+              fetchImpl: fetch,
+              baseUrl: BP_BASE_URL,
+              apiKey: process.env.BUILDER_PRIME_API_KEY,
+              opportunityId: bpResult.opportunity_id,
+              description: `[AD ATTRIBUTION] ${attrParts.join(" | ")}`,
+            });
+            if (!attrRes.ok) {
+              console.error(`✗ Attribution activity log failed (non-fatal, status ${attrRes.status}): ${attrRes.body}`);
             }
           }
         } else {
