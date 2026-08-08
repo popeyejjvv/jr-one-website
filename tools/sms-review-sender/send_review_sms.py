@@ -44,6 +44,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).parent))
 import config
 import messages
+import names
 
 try:
     from twilio.rest import Client as TwilioClient
@@ -122,7 +123,11 @@ def fetch_eligible_customers() -> list[dict]:
             continue
         eligible.append({
             "customer_id": str(c.get("id") or c.get("opportunityId") or c.get("clientId")),
-            "first_name": (c.get("firstName") or (c.get("lastName") or "").split(" ", 1)[0] or "there").strip(),
+            # 2026-08-08: was `(firstName or lastName.split()[0] or "there").strip()`,
+            # which only caught an EMPTY name. A BuilderPrime record created by a
+            # capture surface carries the SURFACE's name ("Homepage Email"), so a
+            # label reached real handsets as a first name. See names.py.
+            "first_name": names.safe_first_name(c.get("firstName"), c.get("lastName")),
             "phone": phone,
             "language": (c.get("preferredLanguage") or "en").lower(),
             "status": status_name,
@@ -154,7 +159,9 @@ def fetch_sms1_recipients_due_for_sms2(send_log: dict) -> list[dict]:
             continue
         due.append({
             "customer_id": cid,
-            "first_name": s.get("first_name", "there"),
+            # Re-checked on read, not just on write: entries already in the send
+            # log were recorded before the fix above and can still hold a label.
+            "first_name": names.safe_first_name(s.get("first_name")),
             "phone": s["phone"],
             "language": s.get("language", "en"),
         })

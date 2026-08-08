@@ -10,6 +10,11 @@ import {
   runHomepageCapture,
 } from "@/lib/homepage-email-capture";
 import { isRoiCapture, runRoiCapture } from "@/lib/roi-capture";
+import {
+  isCompanyDomainEmail,
+  companyDomainRejection,
+  logCompanyDomainRejection,
+} from "@/lib/company-domain";
 
 // =============================================================================
 // JR One, Lead Submission API
@@ -292,6 +297,21 @@ export async function POST(request) {
         );
       }
 
+      // A JR One address cannot be saved: BuilderPrime refuses its own company
+      // domain with a plain-text 500 that reads like an outage. Caught here so
+      // the submitter gets a clear, actionable message instead of a generic
+      // failure, and logged under its own tag so it is never again mistaken for
+      // a broken integration. VERIFIED against the live API 2026-08-08; see
+      // lib/company-domain.js. runHomepageCapture guards this again internally.
+      if (isCompanyDomainEmail(email)) {
+        logCompanyDomainRejection({ surface: "homepage-email-capture (route)", email });
+        const rejection = companyDomainRejection();
+        return NextResponse.json(
+          { error: rejection.error },
+          { status: rejection.status }
+        );
+      }
+
       // Same honeypot + fill-timer gate the other forms get. A blocked bot is
       // told nothing useful and never reaches BuilderPrime or the inbox.
       const captureSpam = assessLeadSpam({
@@ -413,6 +433,18 @@ export async function POST(request) {
         return NextResponse.json(
           { error: "Please enter a valid email address." },
           { status: 400 }
+        );
+      }
+
+      // Same company-domain rule as the homepage band above, for the same
+      // verified reason. An employee running their own numbers through the ROI
+      // calculator would otherwise get a bare failure with nothing to act on.
+      if (isCompanyDomainEmail(email)) {
+        logCompanyDomainRejection({ surface: "roi-calculator-capture (route)", email });
+        const rejection = companyDomainRejection();
+        return NextResponse.json(
+          { error: rejection.error },
+          { status: rejection.status }
         );
       }
 
