@@ -9,6 +9,13 @@
 import { useState } from "react";
 import { useLanguage } from "../lib/LanguageContext";
 import { useLeadGuard } from "../lib/lead-guard";
+import {
+  submitLeadForm,
+  SUBMIT_ERROR_STYLE,
+  classifySubmitFailure,
+  errorsFor,
+  reportSubmitFailure,
+} from "../lib/lead-submit";
 import SiteNav from "../components/SiteNav";
 import SiteFooter from "../components/SiteFooter";
 import MobileCTA from "../components/MobileCTA";
@@ -239,6 +246,7 @@ export default function JROneHomepage() {
   const [photoProcessing, setPhotoProcessing] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formLoading, setFormLoading] = useState(false);
+  const [formError, setFormError] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [emailLoading, setEmailLoading] = useState(false);
@@ -248,13 +256,14 @@ export default function JROneHomepage() {
   const handleForm = async (e) => {
     e?.preventDefault?.();
     if (!formData.name || !formData.phone) return;
+    setFormError("");
     setFormLoading(true);
     try {
       const params = new URLSearchParams(window.location.search);
-      const res = await fetch("/api/send-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const result = await submitLeadForm({
+        formId: "homepage-main",
+        lang,
+        body: {
           ...guardFields(),
           name: formData.name,
           phone: formData.phone,
@@ -268,12 +277,10 @@ export default function JROneHomepage() {
           utm_medium: params.get("utm_medium") || "",
           utm_campaign: params.get("utm_campaign") || "",
           utm_term: params.get("utm_term") || "",
-        }),
+        },
       });
-      setFormSubmitted(true);
-      void res;
-    } catch {
-      setFormSubmitted(true);
+      if (result.ok) setFormSubmitted(true);
+      else setFormError(result.message);
     } finally {
       setFormLoading(false);
     }
@@ -322,15 +329,20 @@ export default function JROneHomepage() {
       } else if (res.status === 400) {
         setEmailError(t.emailInvalid);
       } else {
-        // Covers 429 (rate limited) and 500 (both halves failed). The server
-        // knows the address is gone, so the visitor is told so and given the
-        // phone number rather than a confirmation.
-        setEmailError(t.emailError);
+        // Same distinction the 21 lead forms make: a 429 is temporary and will
+        // work shortly, so sending that person to the phone would be wrong.
+        // Anything else means it is actually broken and the phone is right.
+        const kind = classifySubmitFailure(res.status);
+        setEmailError(
+          kind === "rateLimited" ? errorsFor(lang).rateLimited : t.emailError
+        );
+        reportSubmitFailure({ formId: "homepage-email", status: res.status, kind });
       }
     } catch {
       // Genuine network failure. Nothing reached the server, so this is also
       // not a success.
-      setEmailError(t.emailError);
+      setEmailError(errorsFor(lang).network);
+      reportSubmitFailure({ formId: "homepage-email", status: "network", kind: "network" });
     } finally {
       setEmailLoading(false);
     }
@@ -460,6 +472,9 @@ export default function JROneHomepage() {
                       <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading || photoProcessing}>
                         {formLoading ? "Sending..." : t.formBtn}
                       </Button>
+                      {formError ? (
+                        <p role="alert" style={SUBMIT_ERROR_STYLE}>{formError}</p>
+                      ) : null}
                       <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>
                         {t.formNote}
                       </p>

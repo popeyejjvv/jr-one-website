@@ -5,6 +5,8 @@ import Button from "./ui/Button";
 import PhotoUpload from "./ui/PhotoUpload";
 import { CheckCircleIcon } from "../lib/icons";
 import { useLeadGuard } from "../lib/lead-guard";
+import { useLanguage } from "../lib/LanguageContext";
+import { submitLeadForm, SUBMIT_ERROR_STYLE } from "../lib/lead-submit";
 
 const inputStyle = {
   width: "100%",
@@ -23,23 +25,26 @@ const inputStyle = {
 
 export default function CityLeadForm({ citySlug, cityName, strings }) {
   const t = strings;
+  const { lang } = useLanguage();
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "", service: "" });
   const [photos, setPhotos] = useState([]);
   const [photoProcessing, setPhotoProcessing] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [formLoading, setFormLoading] = useState(false);
+  const [formError, setFormError] = useState("");
   const { guardFields, honeypot } = useLeadGuard();
 
   const handleSubmit = async (e) => {
     e?.preventDefault?.();
     if (!formData.name || !formData.phone) return;
+    setFormError("");
     setFormLoading(true);
     try {
       const params = new URLSearchParams(window.location.search);
-      await fetch("/api/send-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const result = await submitLeadForm({
+        formId: "city-lead-form",
+        lang,
+        body: {
           ...guardFields(),
           name: formData.name,
           phone: formData.phone,
@@ -55,13 +60,13 @@ export default function CityLeadForm({ citySlug, cityName, strings }) {
           utm_medium: params.get("utm_medium") || "",
           utm_campaign: params.get("utm_campaign") || "",
           utm_term: params.get("utm_term") || "",
-        }),
+        },
       });
-    } catch {
-      /* ignore network failure, still show received state */
+      if (result.ok) setSubmitted(true);
+      else setFormError(result.message);
+    } finally {
+      setFormLoading(false);
     }
-    setSubmitted(true);
-    setFormLoading(false);
   };
 
   return (
@@ -193,6 +198,9 @@ export default function CityLeadForm({ citySlug, cityName, strings }) {
             >
               {t.noSpam}
             </p>
+            {formError ? (
+              <p role="alert" style={SUBMIT_ERROR_STYLE}>{formError}</p>
+            ) : null}
           </form>
         )}
       </div>

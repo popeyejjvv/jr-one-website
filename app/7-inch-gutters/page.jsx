@@ -8,6 +8,7 @@
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
 import { useLeadGuard } from "../../lib/lead-guard";
+import { submitLeadForm, SUBMIT_ERROR_STYLE } from "../../lib/lead-submit";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
@@ -216,18 +217,20 @@ export default function SevenInchGuttersPage() {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "" });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formLoading, setFormLoading] = useState(false);
+  const [formError, setFormError] = useState("");
   const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
     e?.preventDefault?.();
     if (!formData.name || !formData.phone) return;
+    setFormError("");
     setFormLoading(true);
     try {
       const params = new URLSearchParams(window.location.search);
-      const res = await fetch("/api/send-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const result = await submitLeadForm({
+        formId: "7-inch-gutters",
+        lang,
+        body: {
           ...guardFields(),
           name: formData.name, phone: formData.phone, email: formData.email,
           service: "7-Inch Gutters", zip: formData.zip,
@@ -237,10 +240,13 @@ export default function SevenInchGuttersPage() {
           utm_medium: params.get("utm_medium") || "",
           utm_campaign: params.get("utm_campaign") || "",
           utm_term: params.get("utm_term") || "",
-        }),
+        },
       });
-      setFormSubmitted(true); void res;
-    } catch { setFormSubmitted(true); } finally { setFormLoading(false); }
+      if (result.ok) setFormSubmitted(true);
+      else setFormError(result.message);
+    } finally {
+      setFormLoading(false);
+    }
   };
 
   return (
@@ -394,6 +400,9 @@ export default function SevenInchGuttersPage() {
                   <input aria-label={t.formEmail} style={inputStyle} placeholder={t.formEmail} type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   <input aria-label={t.formZip} style={inputStyle} placeholder={t.formZip} value={formData.zip} onChange={(e) => setFormData({ ...formData, zip: e.target.value })} maxLength={5} />
                   <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={formLoading} accent={ACCENT} accentLight={ACCENT_LIGHT}>{formLoading ? "Sending..." : t.formBtn}</Button>
+                  {formError ? (
+                    <p role="alert" style={SUBMIT_ERROR_STYLE}>{formError}</p>
+                  ) : null}
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formDisclaimer}</p>
                 </form>
               )}

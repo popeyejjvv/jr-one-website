@@ -499,6 +499,9 @@ const STRINGS = {
     estimate_sent_jr:'✓ Estimate sent to JR One Aluminum',
     estimate_sent_to:'✓ Estimate sent to ',
     error_sending:'Error sending - please try again',
+    submit_rate_limited:'That was a lot of tries at once. Please wait a moment and try again.',
+    submit_call_us:'Your request did not go through. Please call us at (844) 444-3114 and we will take care of it.',
+    submit_network:'Your connection dropped, so your request never reached us. Check your internet and try again, or call us at (844) 444-3114.',
     sending:'SENDING...',
     sent:'✓ SENT!',
     active_suffix:'(active)',
@@ -561,6 +564,9 @@ const STRINGS = {
     estimate_sent_jr:'✓ Estimado enviado a JR One Aluminum',
     estimate_sent_to:'✓ Estimado enviado a ',
     error_sending:'Error al enviar - intenta de nuevo',
+    submit_rate_limited:'Fueron muchos intentos seguidos. Espere un momento e inténtelo de nuevo.',
+    submit_call_us:'Su solicitud no se envió. Llámenos al (844) 444-3114 y lo resolvemos.',
+    submit_network:'Se perdió la conexión y su solicitud nunca nos llegó. Revise su internet e inténtelo de nuevo, o llámenos al (844) 444-3114.',
     sending:'ENVIANDO...',
     sent:'✓ ¡ENVIADO!',
     active_suffix:'(activo)',
@@ -809,9 +815,13 @@ async function unlockEstimate(){
 
   // CRITICAL: BP lead capture FIRST - revenue data path.
   // Screenshot + PDF are best-effort; a failure there must NOT lose the lead.
+  var capture={ok:false,kind:'submit_call_us'};
   try{
-    await sendToJROne();
-  }catch(e){console.error('BP submission error:',e)}
+    capture=await sendToJROne()||{ok:false,kind:'submit_call_us'};
+  }catch(e){
+    console.error('BP submission error:',e);
+    capture={ok:false,kind:'submit_call_us'};
+  }
 
   try{
     await captureMapScreenshot();
@@ -821,7 +831,8 @@ async function unlockEstimate(){
     await generatePDF();
   }catch(e){console.error('PDF error:',e)}
 
-  showToast(t('estimate_sent_jr'));
+  // Only claim the estimate reached JR One if it actually did.
+  showToast(capture.ok?t('estimate_sent_jr'):t(capture.kind));
   document.getElementById('loadingOverlay').classList.remove('show');
 }
 
@@ -1033,15 +1044,49 @@ async function sendToJROne(){
   // measurements, the calculated range, and the address. It all goes in NOW,
   // at create time, because BuilderPrime exposes no way to edit the record
   // afterward.
+  // Returns {ok:boolean, kind:string} so the caller can tell the visitor the
+  // truth. It used to return early on a non-OK response with only a
+  // console.warn, and the caller then showed the success toast anyway.
   try{
     const resp=await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(!resp.ok){console.warn('BP capture non-OK:',resp.status);return}
+    if(!resp.ok){
+      console.warn('BP capture non-OK:',resp.status);
+      var kind=resp.status===429?'submit_rate_limited':'submit_call_us';
+      reportSubmitFailure('estimator-unlock',resp.status,kind);
+      return {ok:false,kind:kind};
+    }
     const data=await resp.json().catch(function(){return null});
     if(data&&data.bp_opportunity_id){
       bpOpportunityId=data.bp_opportunity_id;
       trackEvent('estimator_record_created',{opp:bpOpportunityId});
     }
-  }catch(e){console.error('BP send error:',e)}
+    return {ok:true};
+  }catch(e){
+    console.error('BP send error:',e);
+    reportSubmitFailure('estimator-unlock','network','submit_network');
+    return {ok:false,kind:'submit_network'};
+  }
+}
+
+// Lost-lead beacon. Posts to /api/estimator-events, a DIFFERENT route from the
+// lead route, so it can still be reachable when the lead route is failing.
+// Records that a submission failed, which form, the status and the time. It
+// deliberately carries NO personal detail, and sanitizeEventParams on the
+// server (lib/estimator-lead.js:79-92) drops any key matching
+// /phone|email|name|address|customer/i as a second line of defence.
+function reportSubmitFailure(form,status,kind){
+  try{
+    fetch('/api/estimator-events',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      keepalive:true,
+      body:JSON.stringify({
+        event:'lead_submit_failed',
+        sid:ESTIMATOR_SID,
+        params:{form:String(form),status:String(status),kind:String(kind),ts:new Date().toISOString()}
+      })
+    }).catch(function(){});
+  }catch(e){}
 }
 
 // ═══ SEND TO CUSTOMER ═══
@@ -1100,15 +1145,25 @@ async function sendToCustomer(){
 
   try{
     const resp=await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(!resp.ok)console.warn('BP capture non-OK:',resp.status);
+    if(!resp.ok){
+      // Used to fall through to the success toast and a "SENT!" button after
+      // only a console.warn, so the visitor was told it had gone when it had not.
+      var kind=resp.status===429?'submit_rate_limited':'submit_call_us';
+      console.warn('BP capture non-OK:',resp.status);
+      reportSubmitFailure('estimator-send-to-customer',resp.status,kind);
+      btn.textContent=t('send_estimate');btn.disabled=false;
+      showToast(t(kind));
+      return;
+    }
     showToast(t('estimate_sent_to')+email);
     btn.textContent=t('sent');
     trackEvent('estimator_email_sent');
     setTimeout(()=>{btn.textContent=t('send_estimate');btn.disabled=false},3000);
   }catch(e){
     console.error(e);
+    reportSubmitFailure('estimator-send-to-customer','network','submit_network');
     btn.textContent=t('send_estimate');btn.disabled=false;
-    showToast(t('error_sending'));
+    showToast(t('submit_network'));
   }
 }
 

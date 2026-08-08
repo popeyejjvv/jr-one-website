@@ -8,6 +8,7 @@
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
 import { useLeadGuard } from "../../lib/lead-guard";
+import { submitLeadForm, SUBMIT_ERROR_STYLE } from "../../lib/lead-submit";
 import { localizeHref } from "../../lib/locale";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
@@ -183,18 +184,20 @@ export default function AboutUsPage() {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [formError, setFormError] = useState("");
   const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
     e?.preventDefault?.();
     if (!formData.name || !formData.phone) return;
+    setFormError("");
     setLoading(true);
     try {
       const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
-      await fetch("/api/send-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const result = await submitLeadForm({
+        formId: "about",
+        lang,
+        body: {
           ...guardFields(),
           name: formData.name,
           phone: formData.phone,
@@ -206,11 +209,10 @@ export default function AboutUsPage() {
           utm_medium: params.get("utm_medium") || "",
           utm_campaign: params.get("utm_campaign") || "",
           utm_term: params.get("utm_term") || "",
-        }),
+        },
       });
-      setSubmitted(true);
-    } catch {
-      setSubmitted(true);
+      if (result.ok) setSubmitted(true);
+      else setFormError(result.message);
     } finally {
       setLoading(false);
     }
@@ -654,6 +656,9 @@ export default function AboutUsPage() {
                   <Button type="submit" variant="primary" size="md" fullWidth iconRight disabled={loading}>
                     {loading ? (lang === "en" ? "Sending..." : "Enviando...") : t.ctaForm}
                   </Button>
+                  {formError ? (
+                    <p role="alert" style={SUBMIT_ERROR_STYLE}>{formError}</p>
+                  ) : null}
                   <p
                     style={{
                       fontFamily: "var(--jr-font-body)",

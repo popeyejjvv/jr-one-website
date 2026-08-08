@@ -11,6 +11,7 @@
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
 import { useLeadGuard } from "../../lib/lead-guard";
+import { submitLeadForm, SUBMIT_ERROR_STYLE } from "../../lib/lead-submit";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
@@ -221,18 +222,20 @@ export default function Peak301Page() {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", zip: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [formError, setFormError] = useState("");
   const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
     e?.preventDefault?.();
     if (!formData.name || !formData.phone) return;
+    setFormError("");
     setLoading(true);
     try {
       const params = new URLSearchParams(window.location.search);
-      await fetch("/api/send-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const result = await submitLeadForm({
+        formId: "peak-301",
+        lang,
+        body: {
           ...guardFields(),
           name: formData.name,
           phone: formData.phone,
@@ -246,11 +249,10 @@ export default function Peak301Page() {
           utm_medium: params.get("utm_medium") || "",
           utm_campaign: params.get("utm_campaign") || "",
           utm_term: params.get("utm_term") || "",
-        }),
+        },
       });
-      setSubmitted(true);
-    } catch {
-      setSubmitted(true);
+      if (result.ok) setSubmitted(true);
+      else setFormError(result.message);
     } finally {
       setLoading(false);
     }
@@ -496,6 +498,9 @@ export default function Peak301Page() {
                   >
                     {loading ? "Sending..." : t.formBtn}
                   </Button>
+                  {formError ? (
+                    <p role="alert" style={SUBMIT_ERROR_STYLE}>{formError}</p>
+                  ) : null}
                   <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "var(--jr-text-xs)", color: "var(--jr-muted-on-light)", textAlign: "center", marginTop: "var(--jr-space-3)" }}>{t.formNote}</p>
                 </form>
               )}
