@@ -4,6 +4,11 @@ import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
 import { assessLeadSpam } from "@/lib/lead-spam";
 import { spoolNotice } from "@/lib/notify-spool";
+import {
+  isHomepageCapture,
+  isValidCaptureEmail,
+  runHomepageCapture,
+} from "@/lib/homepage-email-capture";
 
 // =============================================================================
 // JR One, Lead Submission API
@@ -197,6 +202,169 @@ export async function POST(request) {
     const utm_term     = pickUtm(searchParams, body, "utm_term");
     const utm_content  = pickUtm(searchParams, body, "utm_content");
 
+    const timestamp = new Date().toLocaleString("en-US", {
+      timeZone: "America/New_York",
+    });
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // HOMEPAGE EMAIL CAPTURE (2026-08-08)
+    // The homepage gold band collects an address and nothing else. It used to
+    // call no API at all and simply told the visitor "sent" (app/page.jsx
+    // handleEmail, shipped broken in a5621f3 on 2026-04-02).
+    //
+    // It is handled HERE, inside this route, rather than in a route of its own,
+    // because this route already carries the origin allow-list, the per-IP rate
+    // limit, the honeypot and the input validation. A second route would mean a
+    // second copy of all four, and copies drift.
+    //
+    // It is a self-contained branch rather than a set of conditionals threaded
+    // through the main lead path below, so that the 21 forms that already work
+    // are not touched at all.
+    //
+    // Everything above this point has already run: origin check, rate limit,
+    // body parse. The honeypot runs immediately below.
+    // ─────────────────────────────────────────────────────────────────────────
+    if (isHomepageCapture(body)) {
+      // Reject junk before ANY network call is made.
+      if (!isValidCaptureEmail(email)) {
+        return NextResponse.json(
+          { error: "Please enter a valid email address." },
+          { status: 400 }
+        );
+      }
+
+      // Same honeypot + fill-timer gate the other forms get. A blocked bot is
+      // told nothing useful and never reaches BuilderPrime or the inbox.
+      const captureSpam = assessLeadSpam({
+        email,
+        company: body.company,
+        form_ms: body.form_ms,
+      });
+      if (captureSpam.block) {
+        console.warn(
+          `SPAM BLOCKED (homepage capture) from ${ip}: ${captureSpam.reasons.join("; ")}`
+        );
+        console.warn(
+          "SPAM BLOCKED (homepage capture) - payload for manual recovery:",
+          JSON.stringify({ email, page, reasons: captureSpam.reasons })
+        );
+        const tBlocked = new Date().toLocaleTimeString("en-US", {
+          timeZone: "America/New_York", hour: "numeric", minute: "2-digit",
+        });
+        after(async () => {
+          const res = await spoolNotice({
+            source: "website",
+            tag: "spam-blocked-homepage-capture",
+            subject: "Spam-blocked homepage email captures (kept out of BuilderPrime)",
+            severity: "info",
+            append: true,
+            body: `${tBlocked}  ${email || "no email"} | ${page || "/"} | ${captureSpam.reasons.join(", ")}`,
+          });
+          if (!res.ok) {
+            console.error("spam-blocked homepage capture could not be spooled:", res.error);
+          }
+        });
+        // Same fabricated-success shape the other blocked paths use, so a bot
+        // gets no oracle telling it which field tripped the filter.
+        return NextResponse.json({ success: true, captured: true });
+      }
+
+      // Both halves run through lib/homepage-email-capture.js runHomepageCapture,
+      // which owns the independence guarantee. The two side effects below are
+      // injected into it, so the tests exercise this exact control flow with
+      // stubs instead of a second copy of it.
+      const captureResult = await runHomepageCapture({
+        email,
+        page,
+        timestampEt: timestamp,
+
+        // ── Half 1: BuilderPrime ──
+        createBpClient: async (payload) => {
+          if (!process.env.BUILDER_PRIME_API_KEY) {
+            return { ok: false, error: "BUILDER_PRIME_API_KEY not set" };
+          }
+          const res = await fetch(`${BP_BASE_URL}/clients`, {
+            method: "POST",
+            headers: {
+              "x-api-key": process.env.BUILDER_PRIME_API_KEY,
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+          const text = await res.text();
+          if (!res.ok) return { ok: false, error: `${res.status}: ${text.slice(0, 500)}` };
+          const m = text.match(/Opportunity:\s*(\d+)/);
+          return { ok: true, opportunityId: m ? m[1] : null };
+        },
+
+        // ── Half 2: the info@ notification ──
+        // Internal operator notice, NOT customer-facing, so it deliberately
+        // does not use the branded customer chokepoint.
+        sendNotification: async ({ subject, text }) => {
+          if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+            return { ok: false, error: "GMAIL_USER or GMAIL_APP_PASSWORD not set" };
+          }
+          const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+          });
+          await transporter.sendMail({
+            from: `"JR One Website" <${process.env.GMAIL_USER}>`,
+            to: "info@jronegutters.com",
+            subject,
+            text,
+          });
+          return { ok: true };
+        },
+      });
+
+      const captureBpOk = captureResult.bp.ok;
+      const captureBpOppId = captureResult.bp.opportunityId;
+      const captureBpError = captureResult.bp.error;
+      const captureEmailOk = captureResult.notification.ok;
+      const captureEmailError = captureResult.notification.error;
+
+      // Both outcomes go somewhere Popeye can inspect, whichever way they went.
+      console.log(
+        "Homepage email capture result:",
+        JSON.stringify({
+          email, page,
+          bp: { ok: captureBpOk, opportunity_id: captureBpOppId, error: captureBpError },
+          notification: { ok: captureEmailOk, error: captureEmailError },
+        })
+      );
+      if (!captureBpOk || !captureEmailOk) {
+        after(async () => {
+          await spoolNotice({
+            source: "website",
+            tag: "homepage-capture-partial-failure",
+            subject: "Homepage email capture did not complete both halves",
+            severity: captureBpOk || captureEmailOk ? "info" : "warn",
+            append: true,
+            body:
+              `${timestamp}  ${email} | ${page || "/"} | ` +
+              `builderprime=${captureBpOk ? `ok ${captureBpOppId || "?"}` : `FAILED ${captureBpError}`} | ` +
+              `notification=${captureEmailOk ? "ok" : `FAILED ${captureEmailError}`}`,
+          });
+        });
+      }
+
+      // Only claim success if at least one half actually landed.
+      const outcome = captureResult.outcome;
+      if (!outcome.ok) {
+        console.error("CRITICAL: homepage email capture lost on BOTH paths", { email, page });
+        return NextResponse.json({ error: outcome.error, captured: false }, { status: outcome.status });
+      }
+      return NextResponse.json({
+        success: true,
+        captured: true,
+        captured_in_bp: captureBpOk,
+        notified: captureEmailOk,
+        bp_opportunity_id: captureBpOppId,
+      });
+    }
+
     // ── Validate required fields ──
     if (!name || !phone) {
       return NextResponse.json(
@@ -204,10 +372,6 @@ export async function POST(request) {
         { status: 400 }
       );
     }
-
-    const timestamp = new Date().toLocaleString("en-US", {
-      timeZone: "America/New_York",
-    });
 
     // ── Spam assessment (2026-07-29, gibberish-name bot campaign) ──
     // Blocked submissions NEVER reach BuilderPrime (which also keeps them out

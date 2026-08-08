@@ -97,7 +97,14 @@ const T = {
     emailPlaceholder: "Enter your email",
     emailBtn: "Subscribe",
     emailNote: "Unsubscribe anytime.",
-    emailSent: "You're in. Check your inbox soon.",
+    // Says only what actually happens: the address reaches info@jronegutters.com,
+    // which a person reads. The old copy promised "Check your inbox soon", and
+    // nothing was ever sent to the visitor, so it was a promise the site could
+    // not keep even once the box started working.
+    emailSent: "Thanks. We have your email and will be in touch.",
+    emailInvalid: "Please enter a valid email address.",
+    emailError: "We could not save your email. Please call us at (844) 444-3114.",
+    emailSending: "Sending...",
     faqEyebrow: "FAQ",
     faqTitle: "Frequently Asked Questions",
     faqs: [
@@ -185,7 +192,10 @@ const T = {
     emailPlaceholder: "Ingrese su correo",
     emailBtn: "Suscribirse",
     emailNote: "Cancele cuando quiera.",
-    emailSent: "¡Listo! Revise su correo pronto.",
+    emailSent: "Gracias. Tenemos su correo y nos pondremos en contacto.",
+    emailInvalid: "Por favor ingrese un correo electrónico válido.",
+    emailError: "No pudimos guardar su correo. Llámenos al (844) 444-3114.",
+    emailSending: "Enviando...",
     faqEyebrow: "Preguntas",
     faqTitle: "Preguntas Frecuentes",
     faqs: [
@@ -231,6 +241,8 @@ export default function JROneHomepage() {
   const [formLoading, setFormLoading] = useState(false);
   const [emailInput, setEmailInput] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [emailLoading, setEmailLoading] = useState(false);
+  const [emailError, setEmailError] = useState("");
   const { guardFields, honeypot } = useLeadGuard();
 
   const handleForm = async (e) => {
@@ -267,9 +279,61 @@ export default function JROneHomepage() {
     }
   };
 
-  const handleEmail = (e) => {
+  // The homepage email box. Until 2026-08-08 this function set a success flag
+  // and did nothing else, so every address typed here since 2026-04-02 was
+  // discarded while the visitor was told it had been received.
+  //
+  // Unlike the other forms on this site, this one READS THE RESPONSE. A fetch
+  // that comes back 400, 429 or 500 does NOT throw, so a handler that ignores
+  // the response reports success on failures the server explicitly reported.
+  const handleEmail = async (e) => {
     e?.preventDefault?.();
-    if (emailInput.trim()) setEmailSubmitted(true);
+    const address = emailInput.trim();
+    setEmailError("");
+    // Cheap client-side check for instant feedback. The server validates again
+    // before it calls anything; this is not the gate, just the fast path.
+    if (!address || !/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(address)) {
+      setEmailError(t.emailInvalid);
+      return;
+    }
+    setEmailLoading(true);
+    try {
+      const params = new URLSearchParams(
+        typeof window !== "undefined" ? window.location.search : ""
+      );
+      const res = await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...guardFields(),
+          captureType: "homepage-email",
+          email: address,
+          page: typeof window !== "undefined" ? window.location.pathname : "/",
+          gclid: params.get("gclid") || "",
+          utm_source: params.get("utm_source") || "",
+          utm_medium: params.get("utm_medium") || "",
+          utm_campaign: params.get("utm_campaign") || "",
+          utm_term: params.get("utm_term") || "",
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.success) {
+        setEmailSubmitted(true);
+      } else if (res.status === 400) {
+        setEmailError(t.emailInvalid);
+      } else {
+        // Covers 429 (rate limited) and 500 (both halves failed). The server
+        // knows the address is gone, so the visitor is told so and given the
+        // phone number rather than a confirmation.
+        setEmailError(t.emailError);
+      }
+    } catch {
+      // Genuine network failure. Nothing reached the server, so this is also
+      // not a success.
+      setEmailError(t.emailError);
+    } finally {
+      setEmailLoading(false);
+    }
   };
 
   return (
@@ -664,9 +728,25 @@ export default function JROneHomepage() {
                     background: "rgba(255, 255, 255, 0.92)",
                   }}
                 />
-                <Button type="submit" variant="navy" size="md">{t.emailBtn}</Button>
+                <Button type="submit" variant="navy" size="md" disabled={emailLoading}>
+                  {emailLoading ? t.emailSending : t.emailBtn}
+                </Button>
               </form>
             )}
+            {emailError ? (
+              <p
+                role="alert"
+                style={{
+                  fontFamily: "var(--jr-font-body)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "#B3261E",
+                  marginTop: "var(--jr-space-3)",
+                }}
+              >
+                {emailError}
+              </p>
+            ) : null}
             <p style={{ fontFamily: "var(--jr-font-body)", fontSize: "12px", color: "var(--jr-navy-deep)", marginTop: "var(--jr-space-3)", opacity: 0.65 }}>
               {t.emailNote}
             </p>
