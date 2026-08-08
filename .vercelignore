@@ -1,0 +1,135 @@
+# =============================================================================
+# JR One - Vercel upload exclusions
+# =============================================================================
+# WHY THIS FILE EXISTS (2026-08-08):
+# `vercel --prod` uploads the working DIRECTORY, not the git tree. Vercel does
+# NOT read .gitignore. Proof: `.claude-flow/` is gitignored at .gitignore line
+# 42 and is untracked by git (`git ls-files .claude-flow` returns nothing), yet
+# https://www.jronegutters.com/.claude-flow/data/pending-insights.jsonl served
+# HTTP 200 with 304 bytes of local agent edit-telemetry. A gitignored file was
+# public on the customer-facing site.
+#
+# So every "keep it out of the repo" rule in .gitignore has to be restated here
+# or it does not apply to production.
+#
+# BUT DO NOT BLINDLY MIRROR .gitignore. It carries `public/images/*.png`
+# (.gitignore:43), which excludes SERVED site assets. Mirroring that line would
+# strip images off the live site. .gitignore answers "what should not be
+# committed"; this file answers "what should not be published". They overlap,
+# they are not the same question.
+#
+# ── TWO RULES FOR EDITING THIS FILE ──
+# 1. ANCHOR EVERY DIRECTORY WITH A LEADING SLASH. Gitignore syntax matches a
+#    bare `projects/` at ANY depth, which would have excluded `app/projects/`
+#    and 404'd a live route. Every directory below is anchored to the repo root
+#    on purpose. Verified with:
+#      find app components lib content public -type d -name projects
+#      -> app/projects   (a real route, must ship)
+# 2. Excluding something the build needs breaks the live site. Anything the
+#    build or runtime touches is listed under KEEP and must never be added.
+#
+# KEEP (verified required, do NOT exclude):
+#   app/ components/ lib/ content/ public/
+#   scripts/        - package.json runs `postbuild`: node scripts/check-sitemap.mjs
+#   lib/city-service-es.js - read by check-sitemap.mjs:49 (ES_SOURCE)
+#   content/blog, content/blog-es - read by lib/blog.js:7-8 via process.cwd()
+#   next.config.js middleware.js jsconfig.json package.json package-lock.json
+#   .browserslistrc
+# =============================================================================
+
+# ── Secrets. Vercel injects production env from its own dashboard, never from
+#    an uploaded file, so shipping these buys nothing and risks everything.
+#    .env.local is mode 600 locally and was being uploaded on every deploy.
+.env
+.env.*
+!.env.example
+
+# ── AI / agent tooling. `.claude-flow/data/pending-insights.jsonl` is the file
+#    that was actually live at HTTP 200. The rest never should have been sent.
+/.claude-flow/
+/.claude/
+/.cursor/
+/.roo/
+/.windsurf/
+/.aider.conf.yml
+.aider.tags.cache.v3/
+
+# ── Build caches and artifacts. Vercel runs a clean install and a fresh build,
+#    so uploading these only risks serving a stale local artifact.
+/.next/
+/out/
+/build/
+/dist/
+/coverage/
+node_modules/
+*.tsbuildinfo
+
+# ── Version control and deploy state
+/.git/
+/.gitignore
+/.gitattributes
+/.github/
+/.vercel/
+
+# ── Python tooling (scripts/generate_documents.py is a local-only build step,
+#    invoked by `npm run build:documents`, NOT by `npm run build`)
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+/.venv/
+/venv/
+
+# ── OS metadata. `.DS_Store` is gitignored but was still being uploaded.
+#    Unanchored on purpose: these appear at every depth.
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ── Editor and IDE
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+
+# ── Backups and scratch. An in-repo backup of a served file is itself an
+#    exposure, so these must never reach the deployment.
+*.bak
+*.backup
+*.orig
+*.rej
+*.tmp
+*.old
+
+# ── Logs (verified: zero *.log files under app/ components/ lib/ content/ public/)
+*.log
+/logs/
+
+# ── Internal / non-public working material. None of this is imported by app/,
+#    components/, lib/ or content/ - the only matches were source-citation
+#    COMMENTS, not imports. audit/ alone is 242M of CompanyCam analysis
+#    carrying customer photo URLs.
+/audit/
+/internal-documents/
+/projects/
+/tools/
+/docs/
+/tests/
+
+# ── 32M write-only debug log. lib/companycam/photo-filter.js:58 is the ONLY
+#    code that names it and it only APPENDS (:76); nothing in the repo reads it
+#    back (the sole other mention, :57, is a comment showing a manual jq
+#    command). It is already gitignored at .gitignore:49. The directory is
+#    recreated on demand by the mkdirSync at photo-filter.js:67, so excluding it
+#    cannot break the writer.
+/data/
+
+# ── Internal markdown that has no route and no reader on the public site
+/decisions-log.md
+/manual-steps.md
+/TESTING_GUIDE.md
+/TESTING_INDEX.md
+/TEST_COVERAGE_ANALYSIS.md
