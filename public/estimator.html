@@ -432,10 +432,17 @@ function gutterRate(){return RATES['gutter'+gutterSize]}
 let map, measuring = true, currentMode = 'gutter', stories = 1, gutterSize = 6;
 let segments = [], activePoints = [], activeMarkers = [], activePolyline = null, hoverLine = null;
 let estimateUnlocked = false, currentDiscountCode = '', currentExpDate = '', customerPhone = '';
+// Opportunity id returned by the FIRST /api/estimator-lead call. Sent back on
+// the second call so the route attaches to that record instead of creating a
+// duplicate. BuilderPrime has no update endpoint (no PUT/PATCH on any
+// resource, verified 2026-08-07), so preventing the second create is the only
+// way to keep one visitor to one record.
+let bpOpportunityId = null;
 let pdfBase64 = '', mapScreenshotBase64 = '';
 let parsedAddress = { city:'', state:'FL', zip:'' };
 let searchResultsCache = [];
 let firstMeasurementTracked = false;
+let priceShownTracked = false;
 
 const COLORS = { gutter:'#4A9EFF', soffit:'#FF6B6B', guard:'#FFA94D', cleaning:'#B07DFF' };
 const ICONS = { gutter:'🏠', soffit:'🌬️', guard:'🛡️', cleaning:'🧹' };
@@ -607,10 +614,33 @@ function setLang(l){
 }
 
 // ═══ ANALYTICS ═══
+// A stable per-visit id so the server log can rebuild one person's funnel.
+// Random, not persisted, carries nothing identifying.
+var ESTIMATOR_SID=(function(){try{return Math.random().toString(36).slice(2)+Date.now().toString(36)}catch(e){return'na'}})();
+
+// FIXED 2026-08-07. This used to be ONLY a dataLayer.push, which is the Google
+// Tag MANAGER convention. This page loads gtag.js directly (line 34) and there
+// is no GTM container anywhere in the repo, so gtag.js ignored every one of
+// those pushes and no estimator event has ever been recorded. Three sinks now,
+// so a single misconfiguration cannot blind the funnel again:
+//   1. gtag('event',...)  - the correct GA4 call, lands IF the property behind
+//      G-HY6GK76P44 is live. Whether it is: UNVERIFIED, no GA4 credential
+//      exists on this machine.
+//   2. dataLayer.push     - kept, so a GTM container still works if added.
+//   3. /api/estimator-events - a copy this repo controls. This is the one the
+//      denominator can actually be counted from.
 function trackEvent(name,params){
+  try{
+    if(typeof gtag==='function')gtag('event',name,Object.assign({tool:'estimator',sid:ESTIMATOR_SID},params||{}));
+  }catch(e){}
   try{
     window.dataLayer=window.dataLayer||[];
     window.dataLayer.push(Object.assign({event:name,tool:'estimator'},params||{}));
+  }catch(e){}
+  try{
+    const payload=JSON.stringify({event:name,sid:ESTIMATOR_SID,params:params||{}});
+    // keepalive so the beacon survives the visitor closing the tab.
+    fetch('/api/estimator-events',{method:'POST',headers:{'Content-Type':'application/json'},body:payload,keepalive:true}).catch(function(){});
   }catch(e){}
 }
 
@@ -749,6 +779,10 @@ async function unlockEstimate(){
   if(phone.replace(/\D/g,'').length<10){submitBtn.disabled=false;return}
   customerPhone=phone;
   estimateUnlocked=true;
+  // The job is ALREADY priced at this point: segments were drawn, getModeTotals()
+  // has the footage, and renderEstimate() computed the range (it was only
+  // blurred by the price-hidden class, never withheld). Record that fact.
+  (function(){const t=getModeTotals();trackEvent('estimator_phone_entered',{gutter_ft:Math.round(t.gutter),soffit_ft:Math.round(t.soffit),guard_ft:Math.round(t.guard),cleaning_ft:Math.round(t.cleaning),stories:stories,size:gutterSize});})();
 
   // Generate discount code
   const chars='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -820,6 +854,10 @@ function renderEstimate(){
   const heroEl=document.getElementById('heroRange');
   heroEl.textContent=fmtRange(grandLow,grandHigh);
   heroEl.classList.toggle('price-hidden',locked);
+  // Price is computed and in the DOM here regardless of `locked`; locked only
+  // adds an 8px blur (see .price-hidden). Fire once, the first time a real
+  // number exists, so "reached a price" is countable separately from "unlocked".
+  if(!priceShownTracked&&grandHigh>0){priceShownTracked=true;trackEvent('estimator_price_shown',{low:Math.round(grandLow),high:Math.round(grandHigh),locked:locked});}
   if(currentDiscountCode){document.getElementById('discountCode').textContent=currentDiscountCode;document.getElementById('expDate').textContent=currentExpDate}
 }
 
@@ -991,9 +1029,18 @@ async function sendToJROne(){
   };
 
   // Send to BuilderPrime via server-side route (API key stays server-side).
+  // Everything the estimator knows is already in `payload` above: service
+  // measurements, the calculated range, and the address. It all goes in NOW,
+  // at create time, because BuilderPrime exposes no way to edit the record
+  // afterward.
   try{
     const resp=await fetch('/api/estimator-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(!resp.ok)console.warn('BP capture non-OK:',resp.status);
+    if(!resp.ok){console.warn('BP capture non-OK:',resp.status);return}
+    const data=await resp.json().catch(function(){return null});
+    if(data&&data.bp_opportunity_id){
+      bpOpportunityId=data.bp_opportunity_id;
+      trackEvent('estimator_record_created',{opp:bpOpportunityId});
+    }
   }catch(e){console.error('BP send error:',e)}
 }
 
@@ -1008,6 +1055,10 @@ async function sendToCustomer(){
   let email=document.getElementById('custEmail').value.trim().toLowerCase();
   const emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
   if(!name||!emailOk){showToast(t('please_valid_email'));return}
+  // Name and email are both required here, so a record can never acquire an
+  // email address without also acquiring a real name. That is what keeps the
+  // anonymous label out of any customer-facing greeting.
+  trackEvent('estimator_name_given',{has_opp:!!bpOpportunityId});
 
   const btn=document.getElementById('emailSendBtn');
   btn.disabled=true;btn.textContent=t('sending');
@@ -1027,6 +1078,10 @@ async function sendToCustomer(){
     phone:customerPhone,
     customerName:name,
     customerEmail:email,
+    // Presence of this tells the route "the record exists, do not make
+    // another one". Without it the route would POST /clients a second time,
+    // which is exactly how duplicate pairs got into the CRM.
+    bpOpportunityId:bpOpportunityId,
     address:document.getElementById('addressInput').value||'Not specified',
     addressCity:parsedAddress.city,
     addressState:parsedAddress.state,

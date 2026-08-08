@@ -3,6 +3,12 @@ import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
 import { assessLeadSpam } from "@/lib/lead-spam";
 import { spoolNotice } from "@/lib/notify-spool";
+import {
+  buildBpPayload,
+  buildJobSummary,
+  normalizePhone,
+  planBpWrite,
+} from "@/lib/estimator-lead";
 
 // =============================================================================
 // JR One, Estimator Lead API
@@ -99,39 +105,28 @@ function pickUtm(searchParams, body, key) {
   return undefined;
 }
 
-function splitName(fullName) {
-  if (!fullName) return { firstName: "Estimator", lastName: "Lead" };
-  const parts = String(fullName).trim().split(/\s+/);
-  if (parts.length === 1) return { firstName: parts[0], lastName: "(no last name)" };
-  return {
-    firstName: parts[0],
-    lastName: parts.slice(1).join(" "),
-  };
-}
+// splitName / normalizePhone / inferProjectType moved to @/lib/estimator-lead
+// so the tests import the SAME code this route runs. They are re-exported
+// through the import above; do not re-declare them here.
 
-function normalizePhone(phone) {
-  if (!phone) return "";
-  const digits = String(phone).replace(/\D/g, "");
-  if (digits.length === 10) return `+1${digits}`;
-  if (digits.length === 11 && digits.startsWith("1")) return `+${digits}`;
-  return phone;
-}
-
-// Map estimator measurement totals to a meaningful project type
-function inferProjectType(measurements) {
-  if (!measurements) return "Gutters";
-  const m = measurements;
-  const hasGutter = (m.gutter || 0) > 0;
-  const hasSoffit = (m.soffit || 0) > 0;
-  const hasFascia = (m.fascia || 0) > 0;
-  const hasGuard = (m.guard || 0) > 0;
-  // Multi-service bundle = full house wrap = highest value
-  if (hasGutter && (hasSoffit || hasFascia) && hasGuard) return "Gutters";
-  if (hasGutter && hasGuard) return "Gutter Installation";
-  if (hasGutter) return "Gutter Installation";
-  if (hasSoffit || hasFascia) return "Soffit and Fascia";
-  if (hasGuard) return "Gutter Guards";
-  return "Gutters";
+/**
+ * Attach a client-activity note to an existing opportunity.
+ * POST is the only verb BuilderPrime allows on this endpoint
+ * (OPTIONS -> "Allow: POST,OPTIONS", verified 2026-08-07), and GET returns
+ * 405, so a note is write-only: a rep sees it in the BuilderPrime UI but no
+ * script can read it back. Never put data here that something needs to read.
+ */
+async function attachActivityNote(opportunityId, description) {
+  const res = await fetch(`${BP_BASE_URL}/client-activities/v1`, {
+    method: "POST",
+    headers: {
+      "x-api-key": process.env.BUILDER_PRIME_API_KEY,
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({ opportunityId: parseInt(opportunityId, 10), description }),
+  });
+  return res.ok;
 }
 
 export async function POST(request) {
@@ -183,6 +178,9 @@ export async function POST(request) {
       timestamp,
       customerName,
       customerEmail,
+      // Set by public/estimator.html on the SECOND call, after the record
+      // already exists. Its presence means "do not create another client".
+      bpOpportunityId,
     } = body;
 
     // UTM attribution: query string takes precedence over body.
@@ -254,63 +252,75 @@ export async function POST(request) {
 
     let bpResult = { attempted: false, ok: false, error: null, opportunity_id: null };
 
-    if (process.env.BUILDER_PRIME_API_KEY) {
+    // BP custom fields for UTM attribution.
+    // TODO: confirm exact BP custom field names with Popeye before relying
+    // on these in reports. Same field names as send-lead/route.js.
+    const utmCustomFields = {};
+    if (utm_source)   utmCustomFields.lead_source   = utm_source;
+    if (utm_medium)   utmCustomFields.lead_medium   = utm_medium;
+    if (utm_campaign) utmCustomFields.lead_campaign = utm_campaign;
+    if (utm_term)     utmCustomFields.lead_term     = utm_term;
+    if (utm_content)  utmCustomFields.lead_content  = utm_content;
+
+    const notes = buildJobSummary(body);
+
+    // ── SECOND CALL: the record already exists, so DO NOT create another ──
+    // public/estimator.html keeps the opportunity id returned by the first
+    // call and sends it back when the visitor supplies a name. Creating a
+    // second client here is what put duplicate records in this CRM (see
+    // opportunities 5651220 / 5651222, same phone, 86 seconds apart).
+    //
+    // BuilderPrime has NO PUT and NO PATCH on any resource (verified by
+    // OPTIONS on 14 paths, 2026-08-07), so the name CANNOT be written onto
+    // the existing record. It goes into an activity note, which the rep sees
+    // in the BuilderPrime UI. This is a BuilderPrime limitation, not a
+    // shortcut: there is no API that would do better.
+    const writePlan = planBpWrite({
+      bpOpportunityId,
+      hasApiKey: Boolean(process.env.BUILDER_PRIME_API_KEY),
+    });
+
+    if (writePlan.action === "attach") {
+      let noteOk = false;
+      try {
+        noteOk = await attachActivityNote(bpOpportunityId, notes);
+      } catch (err) {
+        console.error(`✗ Estimator follow-up note failed: ${err.message}`);
+      }
+      if (!noteOk) {
+        console.error(
+          `✗ Estimator follow-up note NOT attached to opportunity ${bpOpportunityId}`
+        );
+      }
+      // The name can never reach the record's own field, so surface it where
+      // a human will act on it instead of letting it evaporate.
+      after(async () => {
+        await spoolNotice({
+          source: "website",
+          tag: "estimator-name-supplied",
+          subject: "Estimator visitor gave a name after the record was created",
+          severity: "info",
+          append: true,
+          body:
+            `opportunity ${bpOpportunityId} | ${customerName || "no name"} | ` +
+            `${customerEmail || "no email"} | ${normalizePhone(phone)} | ` +
+            "BuilderPrime has no update endpoint, so the record name still " +
+            "reads as the anonymous label. Rename it by hand if you want it fixed.",
+        });
+      });
+      return NextResponse.json({
+        success: true,
+        captured_in_bp: true,
+        bp_opportunity_id: String(bpOpportunityId),
+        created_new_record: false,
+        note_attached: noteOk,
+      });
+    }
+
+    if (writePlan.action === "create") {
       bpResult.attempted = true;
       try {
-        // Use customer name if provided, otherwise placeholder
-        const nameToUse = customerName || "Estimator Lead";
-        const { firstName, lastName } = splitName(nameToUse);
-
-        // Build a detailed notes string with all the estimator context
-        const notes = [
-          `Lead from Instant Estimator tool (jronegutters.com/estimator)`,
-          `Type: ${type || "lead"}`,
-          `Language: ${lang || "en"}`,
-          `Stories: ${stories || "?"}`,
-          gutterSize ? `Gutter size: ${gutterSize}"` : "",
-          measurements
-            ? `Measurements: gutter=${measurements.gutter || 0}ft, soffit=${measurements.soffit || 0}ft, fascia=${measurements.fascia || 0}ft, guard=${measurements.guard || 0}ft`
-            : "",
-          downspouts ? `Downspouts: ${downspouts.totalFt || 0}ft total` : "",
-          estimateLow && estimateHigh
-            ? `Estimate range: $${estimateLow.toLocaleString()} - $${estimateHigh.toLocaleString()}`
-            : estimate
-              ? `Estimate: $${estimate.toLocaleString()}`
-              : "",
-          discountCode ? `Discount code: ${discountCode} (expires ${expDate || "?"})` : "",
-          timestamp ? `Submitted: ${timestamp}` : "",
-        ]
-          .filter(Boolean)
-          .join("\n");
-
-        // BP custom fields for UTM attribution.
-        // TODO: confirm exact BP custom field names with Popeye before relying
-        // on these in reports. Same field names as send-lead/route.js.
-        const utmCustomFields = {};
-        if (utm_source)   utmCustomFields.lead_source   = utm_source;
-        if (utm_medium)   utmCustomFields.lead_medium   = utm_medium;
-        if (utm_campaign) utmCustomFields.lead_campaign = utm_campaign;
-        if (utm_term)     utmCustomFields.lead_term     = utm_term;
-        if (utm_content)  utmCustomFields.lead_content  = utm_content;
-
-        const bpPayload = {
-          userAccount: {
-            firstName: firstName,
-            lastName: lastName,
-            emailAddress: customerEmail || "",
-          },
-          emailAddress: customerEmail || "",
-          phoneNumber: normalizePhone(phone),
-          addressLine1: address || "",
-          city: addressCity || "",
-          state: addressState || "FL",
-          zip: addressZip || "",
-          leadSourceDescription: "Form Inquiry",
-          projectTypeDescription: inferProjectType(measurements),
-          buildingTypeDescription: "Single Family",
-          // UTM attribution as BP custom fields (see TODO above)
-          ...(Object.keys(utmCustomFields).length > 0 && { customFields: utmCustomFields }),
-        };
+        const bpPayload = buildBpPayload({ ...body, utmCustomFields });
 
         const bpResponse = await fetch(`${BP_BASE_URL}/clients`, {
           method: "POST",
@@ -402,7 +412,10 @@ export async function POST(request) {
             phone: normalizePhone(phone),
             language: lang === "es" ? "es" : "en",
             bpOpportunityId: bpResult.opportunity_id,
-            customerName: customerName || "Estimator Lead",
+            // Only pass a REAL name. vapi-client.js:61 omits the field when
+            // this is falsy, which is what we want: the agent should not
+            // greet a customer by a placeholder it read off a CRM record.
+            customerName: customerName || undefined,
             leadSource: "estimator-lead",
           });
           console.log(`✓ Vapi after-hours callback triggered for estimator opp ${bpResult.opportunity_id}`);
