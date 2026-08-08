@@ -8,6 +8,9 @@
 import { useState } from "react";
 import { useLanguage } from "../../lib/LanguageContext";
 import { useLeadGuard } from "../../lib/lead-guard";
+// Google rating and review count. Single source of truth; lib/review-stats.js
+// records the profile URL and the date the numbers were last checked.
+import { REVIEW_RATING, googleRatingFromCount } from "../../lib/review-stats";
 import { submitLeadForm, SUBMIT_ERROR_STYLE } from "../../lib/lead-submit";
 import { localizeHref } from "../../lib/locale";
 import SiteNav from "../../components/SiteNav";
@@ -63,7 +66,7 @@ const T = {
       { value: "2", label: "Generations in the trade" },
       { value: "30+", label: "Years of family experience in the trade" },
       { value: "3", label: "In-house installation crews" },
-      { value: "4.9", label: "Google rating from 55+ reviews" },
+      { value: REVIEW_RATING, label: googleRatingFromCount("en") },
       { value: "0", label: "Subcontractors used, ever" },
       { value: "20+", label: "Cities served across Florida's west coast" },
     ],
@@ -133,7 +136,7 @@ const T = {
       { value: "2", label: "Generaciones en el oficio" },
       { value: "30+", label: "Años de experiencia familiar en el oficio" },
       { value: "3", label: "Cuadrillas de instalación internas" },
-      { value: "4.9", label: "Calificación en Google de 55+ reseñas" },
+      { value: REVIEW_RATING, label: googleRatingFromCount("es") },
       { value: "0", label: "Subcontratistas usados, jamás" },
       { value: "20+", label: "Ciudades atendidas en la costa oeste de Florida" },
     ],

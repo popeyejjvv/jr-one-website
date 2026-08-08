@@ -15,6 +15,10 @@ import Button from "./ui/Button";
 import SectionHeading from "./ui/SectionHeading";
 import ServiceCard from "./ui/ServiceCard";
 import { localizeHref } from "../lib/locale";
+// Google rating, single source of truth (lib/review-stats.js records the
+// profile URL and the date it was last checked). This template renders on 58
+// pages, 29 English and 29 Spanish.
+import { ratingOnGoogle } from "../lib/review-stats";
 import ReviewCard from "./ui/ReviewCard";
 import ProcessStep from "./ui/ProcessStep";
 import TrustLine from "./ui/TrustLine";
@@ -537,7 +541,7 @@ const T = {
     breadAreas: "Service Areas",
     trust: [
       { emoji: "⏱", label: "Family-Owned", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
-      { emoji: "⭐", label: "4.9 on Google", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "⭐", label: ratingOnGoogle("en"), color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
       { emoji: "👷", label: "In-House Crews", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
       { emoji: "✓", label: "Fully Insured", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
@@ -588,7 +592,7 @@ const T = {
     breadAreas: "Áreas de Servicio",
     trust: [
       { emoji: "⏱", label: "Empresa Familiar", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
-      { emoji: "⭐", label: "4.9 en Google", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "⭐", label: ratingOnGoogle("es"), color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
       { emoji: "👷", label: "Equipo Propio", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
       { emoji: "✓", label: "Totalmente Asegurados", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],

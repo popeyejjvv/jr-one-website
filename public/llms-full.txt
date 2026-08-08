@@ -20,7 +20,7 @@
 - Counties served: Hillsborough, Pinellas, Pasco, Manatee, Sarasota
 - Cities served (21): Tampa, Clearwater, St. Petersburg, Sarasota, Bradenton, Lakeland, Brandon, Wesley Chapel, Palm Harbor, Riverview, New Port Richey, Largo, Spring Hill, Tarpon Springs, Land O Lakes, Dunedin, Ruskin, Sun City Center, Temple Terrace, Plant City, Lutz
 - Google Business Profile place_id: ChIJJ5X3uyzDwogRjqf87jhh9tQ
-- Aggregate review rating: 4.9 / 55 reviews
+- Aggregate review rating: 4.9 / 59 reviews (Google Business Profile, checked 2026-08-07; source of truth lib/review-stats.js)
 
 ## Service Offering Note (locked 2026-05-09)
 JR One installs **6-inch and 7-inch** seamless aluminum gutters only - plus copper and galvalume in the same sizes. **JR One does not install 5-inch gutters in Florida.** Builder-grade 5-inch is what we replace, not what we install. Where 5-inch appears in this document, it is industry context for systems we replace.
