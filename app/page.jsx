@@ -9,6 +9,9 @@
 import { useState } from "react";
 import { useLanguage } from "../lib/LanguageContext";
 import { useLeadGuard } from "../lib/lead-guard";
+// Google rating and review count. Single source of truth; lib/review-stats.js
+// records the profile URL and the date the numbers were last checked.
+import { REVIEW_RATING, readAllReviewsCta } from "../lib/review-stats";
 import {
   submitLeadForm,
   SUBMIT_ERROR_STYLE,
@@ -51,7 +54,7 @@ const T = {
     serviceOpt: ["Select a service...", "Commercial Gutters", "Copper Gutters", "Drainage Installation", "Govee Lights", "Gutter Cleaning", "Gutter Guards", "Gutter Repair", "Peak 301", "SAGIPER", "Seamless Gutters", "Service Plans", "Siding", "Soffit & Fascia", "Specialty Gutters", "HOA Contracts", "Rental Property Maintenance", "Other / Not Sure"],
     trustBadges: [
       { emoji: "⏱", label: "Family-Owned", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
-      { emoji: "⭐", label: "4.9★ Rating", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "⭐", label: `${REVIEW_RATING}★ Rating`, color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
       { emoji: "👷", label: "In-House Crews", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
       { emoji: "✓", label: "Fully Insured", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
@@ -83,7 +86,7 @@ const T = {
       { title: "We specialize. Period.", desc: "Your roofer does roofs. Your painter does paint. We do gutters, soffit, and fascia, and we do them right. Singular focus means every installation benefits from thousands of hours of specialized experience." },
       { title: "Our crew. Not subcontractors.", desc: "Every person on your property is a trained JR One team member. No random subs, no surprise faces, no finger-pointing if something goes wrong." },
       { title: "Done right the first time.", desc: "We don't cut corners. We don't want callbacks. Our price reflects that you won't have to call us back. If you do, we keep coming back until everything meets your standards." },
-      { title: "Your neighbors trust us.", desc: "4.9 stars on Google. Family-owned and family-operated. Over 30 years in the Tampa Bay trade. We live here, we work here, and our reputation is built one home at a time." },
+      { title: "Your neighbors trust us.", desc: `${REVIEW_RATING} stars on Google. Family-owned and family-operated. Over 30 years in the Tampa Bay trade. We live here, we work here, and our reputation is built one home at a time.` },
     ],
     reviewsEyebrow: "Reviews",
     reviewsTitle: "What Our Customers Say",
@@ -93,7 +96,7 @@ const T = {
       { text: "After Milton I called a dozen companies. Only JR One called back. The team showed up and did a perfect job. Do not call anyone else.", name: "Matt D.", service: "Storm Damage Repair", stars: 5 },
       { text: "Six guys on site with a crew manager. They removed old wood soffit, replaced everything with aluminum, fixed all termite damage. Done in days. Best company for the money.", name: "Tampa Homeowner", service: "Full Soffit & Fascia", stars: 5 },
     ],
-    reviewsCta: "Read all 55+ reviews on Google",
+    reviewsCta: readAllReviewsCta("en"),
     estimatorEyebrow: "Instant Estimator",
     estimatorTitle: "See Your Price Range in 60 Seconds",
     estimatorSub: "Use the instant estimator to explore pricing for your project. Measure your roof from satellite imagery and get a price range, fast.",
@@ -146,7 +149,7 @@ const T = {
     serviceOpt: ["Seleccione un servicio...", "Canaletas Comerciales", "Canaletas de Cobre", "Instalación de Drenaje", "Luces Govee", "Limpieza de Canaletas", "Protectores de Canaletas", "Reparación de Canaletas", "Peak 301", "SAGIPER", "Canaletas Sin Costura", "Planes de Servicio", "Revestimiento", "Sofito y Fascia", "Canaletas Especiales", "Contratos HOA", "Mantenimiento de Alquileres", "Otro / No Estoy Seguro"],
     trustBadges: [
       { emoji: "⏱", label: "Empresa Familiar", color: "#60A5FA", bg: "rgba(59, 130, 246, 0.15)", border: "rgba(59, 130, 246, 0.32)" },
-      { emoji: "⭐", label: "4.9★ Calificación", color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
+      { emoji: "⭐", label: `${REVIEW_RATING}★ Calificación`, color: "#F2CD69", bg: "rgba(212, 168, 67, 0.15)", border: "rgba(212, 168, 67, 0.32)" },
       { emoji: "👷", label: "Equipo Propio", color: "#F97316", bg: "rgba(249, 115, 22, 0.15)", border: "rgba(249, 115, 22, 0.28)" },
       { emoji: "✓", label: "Totalmente Asegurados", color: "#4ADE80", bg: "rgba(45, 139, 78, 0.18)", border: "rgba(45, 139, 78, 0.42)" },
     ],
@@ -178,7 +181,7 @@ const T = {
       { title: "Nos especializamos. Punto.", desc: "Su techador hace techos. Su pintor pinta. Nosotros hacemos canaletas, sofito y fascia, y lo hacemos bien. Enfoque singular significa miles de horas de experiencia especializada en cada instalación." },
       { title: "Nuestro equipo. No subcontratistas.", desc: "Cada persona en su propiedad es un miembro capacitado del equipo JR One. Sin sorpresas, sin caras desconocidas." },
       { title: "Bien hecho a la primera.", desc: "No cortamos esquinas. No queremos que nos vuelvan a llamar. Si lo hacen, regresamos hasta que todo cumpla con sus estándares." },
-      { title: "Sus vecinos confían en nosotros.", desc: "4.9 estrellas en Google. Empresa familiar, operada por la familia. Más de 30 años en el oficio. Vivimos aquí, trabajamos aquí, y nuestra reputación se construye hogar por hogar." },
+      { title: "Sus vecinos confían en nosotros.", desc: `${REVIEW_RATING} estrellas en Google. Empresa familiar, operada por la familia. Más de 30 años en el oficio. Vivimos aquí, trabajamos aquí, y nuestra reputación se construye hogar por hogar.` },
     ],
     reviewsEyebrow: "Reseñas",
     reviewsTitle: "Lo Que Dicen Nuestros Clientes",
@@ -188,7 +191,7 @@ const T = {
       { text: "Después de Milton llamé a una docena de empresas. Solo JR One devolvió la llamada. Hicieron un trabajo perfecto. No llame a nadie más.", name: "Matt D.", service: "Reparación por Tormenta", stars: 5 },
       { text: "Seis personas en el sitio con un gerente de equipo. Removieron el sofito viejo de madera, reemplazaron todo con aluminio, arreglaron todo el daño de termitas. Hecho en días.", name: "Propietario de Tampa", service: "Sofito y Fascia Completo", stars: 5 },
     ],
-    reviewsCta: "Lea las 55+ reseñas en Google",
+    reviewsCta: readAllReviewsCta("es"),
     estimatorEyebrow: "Estimador Instantáneo",
     estimatorTitle: "Vea Su Rango de Precio en 60 Segundos",
     estimatorSub: "Use el estimador instantáneo para explorar precios. Mida su techo desde imágenes satelitales y obtenga un rango de precio al instante.",

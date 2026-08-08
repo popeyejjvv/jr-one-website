@@ -8,6 +8,11 @@ import CityPortfolio from "@/components/CityPortfolio";
 // app/es/areas/[slug]/[service] so the es-US hreflang below can never point at a
 // page the ES route does not generate.
 import { ES_COMBO_PAIRS } from "@/lib/city-service-es";
+// Google rating and review count. Single source of truth, with the profile URL
+// and the date it was last checked recorded beside the values. Never hard-code
+// these again: this line renders on 232 pages, which is how the count sat two
+// years stale at 55 while the live profile said 59.
+import { ratingWithScaleAndCount } from "@/lib/review-stats";
 
 // ── Constants ─────────────────────────────────────────────────────────────
 const C = {
@@ -1433,7 +1438,7 @@ export default async function CityServicePage({ params }) {
         <section style={{ padding: "40px 20px", textAlign: "center" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "14px", padding: "14px 26px", background: C.navyMid, borderRadius: "10px", border: `1px solid ${C.gold}` }}>
             <span style={{ color: C.gold, fontSize: "18px", letterSpacing: "2px" }}>★★★★★</span>
-            <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>4.9 / 5.0 from 55 reviews</span>
+            <span style={{ fontFamily: f.h, fontWeight: 700, color: C.white, fontSize: "15px" }}>{ratingWithScaleAndCount("en")}</span>
             <span style={{ color: C.muted, fontSize: "14px" }}>Fully insured / Bilingual EN/ES</span>
           </div>
         </section>

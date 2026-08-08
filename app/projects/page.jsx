@@ -7,6 +7,9 @@
    ═══════════════════════════════════════════════════════════ */
 
 import { useState, useEffect, useCallback } from "react";
+// Google rating, single source of truth (lib/review-stats.js records the
+// profile URL and the date it was last checked).
+import { REVIEW_RATING } from "../../lib/review-stats";
 import SiteNav from "../../components/SiteNav";
 import SiteFooter from "../../components/SiteFooter";
 import MobileCTA from "../../components/MobileCTA";
@@ -126,7 +129,7 @@ export default function ProjectsPage() {
     // 2,122 JR One projects documented with photos in CompanyCam (live count, 2026-06-19);
     // shown as a stable floor that stays true as the count grows.
     { v: "2,100+", l: t.statProjects },
-    { v: "4.9 ★", l: t.statRating },
+    { v: `${REVIEW_RATING} ★`, l: t.statRating },
     { v: "20+", l: t.statCities },
     { v: "30+", l: t.statExperience },
   ];

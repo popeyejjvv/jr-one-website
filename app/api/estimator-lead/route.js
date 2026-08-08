@@ -1,4 +1,5 @@
 import { NextResponse, after } from "next/server";
+import nodemailer from "nodemailer";
 import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
 import { assessLeadSpam } from "@/lib/lead-spam";
@@ -9,6 +10,11 @@ import {
   normalizePhone,
   planBpWrite,
 } from "@/lib/estimator-lead";
+import {
+  OPS_INBOX,
+  SEND_STATUS,
+  runEstimateEmail,
+} from "@/lib/estimate-email";
 
 // =============================================================================
 // JR One, Estimator Lead API
@@ -250,6 +256,142 @@ export async function POST(request) {
       });
     }
 
+    // ─────────────────────────────────────────────────────────────────────────
+    // SEND THE CUSTOMER THEIR ESTIMATE (2026-08-07)
+    //
+    // The estimator told the visitor "Estimate sent to {email}" and nothing was
+    // ever sent by anything. This is where the estimate is actually sent.
+    //
+    // WHY IT RUNS HERE, above the BuilderPrime branch, and not inside after():
+    //
+    //  - ABOVE THE BRANCH, because planBpWrite() returns "attach" and this route
+    //    returns early whenever bpOpportunityId is present, and
+    //    public/estimator.html:1129 ALWAYS sends bpOpportunityId on the customer
+    //    call. Anything placed below that branch is unreachable for every real
+    //    customer. The email does not depend on BuilderPrime at all, so it does
+    //    not belong inside either arm of that decision.
+    //
+    //  - NOT IN after(), because after() runs once the response has already been
+    //    sent, so the route could not report whether the mail actually went and
+    //    the browser would be back to guessing. Telling the browser the truth
+    //    costs one SMTP round trip, on a button that already reads "SENDING...".
+    //
+    // Only type "customer" sends. That is the submission where the visitor typed
+    // an address and pressed SEND MY ESTIMATE. The earlier phone-only call is
+    // type "lead" and carries no address to send to.
+    // ─────────────────────────────────────────────────────────────────────────
+    let estimateEmail = {
+      attempted: false,
+      emailed: false,
+      messageId: null,
+      status: SEND_STATUS.NO_ADDRESS,
+      error: null,
+      ops: { attempted: false, ok: false, error: null },
+    };
+
+    if (type === "customer") {
+      const mailUser = process.env.GMAIL_USER;
+      const mailPass = process.env.GMAIL_APP_PASSWORD;
+
+      estimateEmail = await runEstimateEmail({
+        customerName,
+        customerEmail,
+        phone,
+        address,
+        lang,
+        estimateLow,
+        estimateHigh,
+        measurements,
+        downspouts,
+        gutterSize,
+        discountCode,
+        expDate,
+        submittedAt: timestamp,
+        bpOpportunityId,
+
+        // Customer-facing. Branded HTML only. lib/estimate-email.js runs
+        // assertBrandedChrome() before this function is ever called and throws
+        // rather than let an unbranded or false-claiming email out the door.
+        sendCustomerEmail: async ({ to, subject, html, text }) => {
+          if (!mailUser || !mailPass) {
+            return { ok: false, error: "GMAIL_USER or GMAIL_APP_PASSWORD not set" };
+          }
+          const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: { user: mailUser, pass: mailPass },
+          });
+          const info = await transporter.sendMail({
+            from: `"JR One Aluminum" <${mailUser}>`,
+            to,
+            replyTo: OPS_INBOX,
+            subject,
+            html,
+            text,
+          });
+          return { ok: true, messageId: info && info.messageId };
+        },
+
+        // Internal operator notice to the monitored inbox. Same transport and
+        // same plain-text shape the homepage capture already uses for that inbox
+        // (app/api/send-lead/route.js sendNotification). Not customer-facing, so
+        // it deliberately does not carry brand chrome.
+        sendOpsNotification: async ({ subject, text }) => {
+          if (!mailUser || !mailPass) {
+            return { ok: false, error: "GMAIL_USER or GMAIL_APP_PASSWORD not set" };
+          }
+          const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: { user: mailUser, pass: mailPass },
+          });
+          await transporter.sendMail({
+            from: `"JR One Website" <${mailUser}>`,
+            to: OPS_INBOX,
+            subject,
+            text,
+          });
+          return { ok: true };
+        },
+      });
+
+      console.log(
+        "Estimate email result:",
+        JSON.stringify({
+          to: customerEmail || null,
+          status: estimateEmail.status,
+          emailed: estimateEmail.emailed,
+          messageId: estimateEmail.messageId || null,
+          error: estimateEmail.error,
+          ops: estimateEmail.ops,
+        })
+      );
+
+      // A failure is written down where a human will actually see it, not only
+      // in a Vercel log nobody opens. The visitor is separately told on screen
+      // that it did not go through, so this is the follow-up trail.
+      if (
+        estimateEmail.status === SEND_STATUS.FAILED ||
+        (estimateEmail.attempted && !estimateEmail.ops.ok)
+      ) {
+        after(async () => {
+          const res = await spoolNotice({
+            source: "website",
+            tag: "estimate-email-failed",
+            subject: "Instant Estimator could not email a customer their estimate",
+            severity: "warn",
+            append: true,
+            body:
+              `${timestamp || "(no timestamp)"}  ${customerEmail || "no email"} | ` +
+              `${customerName || "no name"} | ${normalizePhone(phone)} | ` +
+              `customer_copy=${estimateEmail.emailed ? "ok" : `FAILED ${estimateEmail.error}`} | ` +
+              `ops_notice=${estimateEmail.ops.ok ? "ok" : `FAILED ${estimateEmail.ops.error}`}`,
+          });
+          if (!res.ok) {
+            console.error("estimate email failure could not be spooled:", res.error);
+          }
+        });
+      }
+    }
+
     let bpResult = { attempted: false, ok: false, error: null, opportunity_id: null };
 
     // BP custom fields for UTM attribution.
@@ -314,6 +456,12 @@ export async function POST(request) {
         bp_opportunity_id: String(bpOpportunityId),
         created_new_record: false,
         note_attached: noteOk,
+        // The browser shows "Estimate sent to {address}" ONLY when this is true.
+        // This is the branch every real customer takes, which is exactly why the
+        // send runs above the branch rather than inside one arm of it.
+        estimate_emailed: estimateEmail.emailed,
+        estimate_email_status: estimateEmail.status,
+        estimate_email_error: estimateEmail.emailed ? null : estimateEmail.customerMessage || null,
       });
     }
 
@@ -429,6 +577,12 @@ export async function POST(request) {
       success: true,
       captured_in_bp: bpResult.ok,
       bp_opportunity_id: bpResult.opportunity_id,
+      // Same contract as the attach branch above. A lead can be captured while
+      // the estimate email fails; those two outcomes are reported separately so
+      // the browser never infers one from the other.
+      estimate_emailed: estimateEmail.emailed,
+      estimate_email_status: estimateEmail.status,
+      estimate_email_error: estimateEmail.emailed ? null : estimateEmail.customerMessage || null,
     });
   } catch (err) {
     console.error("Estimator lead error:", err);

@@ -498,6 +498,7 @@ const STRINGS = {
     please_valid_email:'Please enter a valid name and email',
     estimate_sent_jr:'✓ Estimate sent to JR One Aluminum',
     estimate_sent_to:'✓ Estimate sent to ',
+    estimate_email_failed:'We saved your request, but your estimate email did not go through. Please call us at (844) 444-3114 and we will send it to you.',
     error_sending:'Error sending - please try again',
     submit_rate_limited:'That was a lot of tries at once. Please wait a moment and try again.',
     submit_call_us:'Your request did not go through. Please call us at (844) 444-3114 and we will take care of it.',
@@ -563,6 +564,7 @@ const STRINGS = {
     please_valid_email:'Ingresa un nombre y correo válidos',
     estimate_sent_jr:'✓ Estimado enviado a JR One Aluminum',
     estimate_sent_to:'✓ Estimado enviado a ',
+    estimate_email_failed:'Guardamos su solicitud, pero su estimado no se pudo enviar por correo. Llámenos al (844) 444-3114 y se lo enviamos.',
     error_sending:'Error al enviar - intenta de nuevo',
     submit_rate_limited:'Fueron muchos intentos seguidos. Espere un momento e inténtelo de nuevo.',
     submit_call_us:'Su solicitud no se envió. Llámenos al (844) 444-3114 y lo resolvemos.',
@@ -1153,6 +1155,21 @@ async function sendToCustomer(){
       reportSubmitFailure('estimator-send-to-customer',resp.status,kind);
       btn.textContent=t('send_estimate');btn.disabled=false;
       showToast(t(kind));
+      return;
+    }
+    // Lead captured and estimate emailed are TWO different outcomes, and resp.ok
+    // only ever meant the first one. Showing "Estimate sent to {address}" off
+    // resp.ok is the bug this replaces: the API returned 200 for a BuilderPrime
+    // write while no estimate email existed anywhere in the codebase, so the
+    // checkmark was reporting a CRM insert in words that promised an inbox.
+    // The route now performs the send itself and reports it, and ONLY that flag
+    // is allowed to produce the confirmation.
+    let data={};
+    try{data=await resp.json()}catch(e){}
+    if(data.estimate_emailed!==true){
+      reportSubmitFailure('estimator-send-to-customer',data.estimate_email_status||'email_failed','estimate_email_failed');
+      btn.textContent=t('send_estimate');btn.disabled=false;
+      showToast(t('estimate_email_failed'));
       return;
     }
     showToast(t('estimate_sent_to')+email);
