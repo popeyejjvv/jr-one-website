@@ -247,6 +247,34 @@ export default function SiteFooter() {
             <MailIcon size={14} />
             info@jronegutters.com
           </a>
+          {/* Visible postal NAP. Added 2026-08-10.
+              The live crawl's nap.address_check reads VISIBLE TEXT ONLY (JSON-LD
+              excluded, see its own note field) and reported street_missing +
+              zip_missing on 18 of the 20 URLs it fetched: the address existed only
+              inside the PostalAddress node in app/layout.js:50-57, never on the page.
+              Street, city, state and ZIP below are character-for-character identical
+              to app/layout.js:52-55, and the phone is already visible directly above
+              in this same column, matching app/layout.js:41.
+              NOT translated on /es/*: this is a US mailing address, and Google reads
+              it as the same entity in both trees only if the strings are byte-identical.
+              fontStyle normal because <address> defaults to italic. */}
+          <address
+            style={{
+              fontFamily: "var(--jr-font-body)",
+              fontSize: "14px",
+              fontStyle: "normal",
+              lineHeight: 1.6,
+              color: "var(--jr-muted-on-dark)",
+              marginBottom: "10px",
+            }}
+          >
+            <span style={{ display: "block", color: "var(--jr-paper)", fontWeight: 600 }}>
+              JR One Aluminum LLC
+            </span>
+            3420 W Cherry St
+            <br />
+            Tampa, FL 33607
+          </address>
           <p
             style={{
               display: "inline-flex",

@@ -77,6 +77,7 @@ export default function BlogIndex({ posts }) {
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "30px 20px 0" }}>
         <input
           type="text"
+          aria-label={t.searchPlaceholder}
           placeholder={t.searchPlaceholder}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
