@@ -167,6 +167,12 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
 .email-send:disabled{opacity:0.5;cursor:not-allowed}
 
 .disclaimer{text-align:center;font-size:10px;color:var(--gray-on-dark);margin-top:10px;line-height:1.5;padding:0 8px}
+/* NAP block. This page is served static and does not render SiteFooter, so the
+   name, address and phone are carried here. Display only, no form involvement. */
+.nap{flex-shrink:0;border-top:1px solid var(--navy-slate);padding:10px 16px;text-align:center;font-family:'Source Sans 3',sans-serif;font-size:11px;line-height:1.6;color:var(--gray-on-dark)}
+.nap strong{color:var(--offwhite);font-weight:600}
+.nap a{color:var(--gold-warm);text-decoration:none}
+.nap a:hover{text-decoration:underline}
 .action-row{display:flex;gap:6px;margin-top:10px}
 .action-btn{flex:1;padding:9px;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.5px;cursor:pointer;transition:all 0.2s;text-align:center;border:none}
 .action-btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:var(--navy-deep)}
@@ -391,6 +397,12 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--navy-deep);color:va
     <div class="action-row" style="margin-top:14px">
       <button class="action-btn secondary" onclick="switchTab('measure')" data-i18n="back_measure">← Back to Measure</button>
     </div>
+  </div>
+
+  <div class="nap">
+    <strong>JR One Aluminum LLC</strong><br/>
+    3420 W Cherry St, Tampa, FL 33607<br/>
+    <a href="tel:8444443114">(844) 444-3114</a>
   </div>
 </div>
 

@@ -22,9 +22,15 @@ export default function NotFound() {
         Our site was recently updated. If you followed an old link or bookmark, the page may have moved.
       </p>
 
-      <p style={{ fontSize:"20px", fontWeight:700, color:C.gold, margin:"0 0 32px" }}>
+      <p style={{ fontSize:"20px", fontWeight:700, color:C.gold, margin:"0 0 10px" }}>
         <a href="tel:8444443114" style={{ color:C.gold, textDecoration:"none" }}>(844) 444-3114</a>
       </p>
+
+      {/* This page does not render SiteFooter, so the NAP is carried here. */}
+      <address style={{ fontSize:"15px", fontStyle:"normal", color:C.muted, lineHeight:1.6, margin:"0 0 32px", fontFamily:"'Source Sans 3', sans-serif" }}>
+        JR One Aluminum LLC<br />
+        3420 W Cherry St, Tampa, FL 33607
+      </address>
 
       <div style={{ display:"flex", gap:"16px", flexWrap:"wrap", justifyContent:"center" }}>
         <Link href="/" style={{ display:"inline-block", padding:"14px 32px", background:`linear-gradient(135deg,${C.gold},${C.goldLight})`, color:C.bg, fontWeight:700, fontSize:"14px", letterSpacing:"1px", borderRadius:"6px", textDecoration:"none" }}>
