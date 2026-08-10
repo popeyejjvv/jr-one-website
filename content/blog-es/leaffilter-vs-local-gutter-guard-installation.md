@@ -6,9 +6,9 @@ category: "Protectores de Canaletas"
 keyword: "alternativa a leaffilter"
 faqs:
   - question: "¿Cuánto cuesta LeafFilter?"
-    answer: "LeafFilter normalmente cuesta entre $25 y $40 por pie lineal instalado. Una casa típica con 175 pies lineales de canaletas paga entre $4,375 y $7,000. Eso es 2 a 3 veces el costo de la misma tecnología de micro malla instalada por un especialista local a entre $10 y $18 por pie lineal ($1,750 a $3,150)."
+    answer: "LeafFilter normalmente cuesta entre $25 y $40 por pie lineal instalado. Una casa típica con 175 pies lineales de canaletas paga entre $4,375 y $7,000. Eso es 2 a 2.5 veces el costo de la misma tecnología de micro malla instalada por un especialista local a entre $10 y $18 por pie lineal ($1,750 a $3,150)."
   - question: "¿Existe una alternativa más económica a LeafFilter?"
-    answer: "Sí. Los especialistas locales en protectores de canaletas instalan protectores de micro malla de grado profesional por entre $10 y $18 por pie lineal, aproximadamente la mitad del precio de LeafFilter. La tecnología de la malla no es exclusiva. La diferencia de precio paga la publicidad nacional de televisión de LeafFilter, las regalías de franquicia y el equipo de ventas a domicilio, no mejores materiales."
+    answer: "Sí. Los especialistas locales en protectores de canaletas instalan protectores de micro malla de grado profesional por entre $10 y $18 por pie lineal, menos de la mitad del precio de LeafFilter. La tecnología de la malla no es exclusiva. La diferencia de precio paga la publicidad nacional de televisión de LeafFilter, las regalías de franquicia y el equipo de ventas a domicilio, no mejores materiales."
   - question: "¿LeafFilter es lo mismo que la micro malla?"
     answer: "LeafFilter usa tecnología de micro malla, una malla fina sobre un marco de aluminio. Ese es el mismo diseño fundamental que instalan los contratistas locales de canaletas. La malla de LeafFilter no es una tecnología patentada ni exclusiva. El método de instalación y los materiales son comparables a la micro malla de grado profesional disponible con cualquier especialista en canaletas calificado."
 ---
@@ -25,9 +25,9 @@ Pero reconocimiento y valor no son lo mismo. Aquí le explicamos lo que realment
 |----------|-----------|------------|------------|
 | **LeafFilter** | $25 - $40 | $4,375 - $7,000 | $6,250 - $10,000 |
 | **Especialista local** | $10 - $18 | $1,750 - $3,150 | $2,500 - $4,500 |
-| **Ahorro con el local** | $10 - $25/pie lineal | **$2,000 - $4,500** | **$3,000 - $6,000** |
+| **Ahorro con el local** | $15 - $22/pie lineal | **$2,625 - $3,850** | **$3,750 - $5,500** |
 
-Esa no es una diferencia pequeña. En una casa típica de Tampa, usted ahorra entre $2,000 y $4,500 al elegir lo local, por la misma tecnología.
+Esa no es una diferencia pequeña. En una casa típica de Tampa, usted ahorra entre $2,625 y $3,850 al elegir lo local, por la misma tecnología.
 
 ## Lo que recibe con LeafFilter
 
@@ -96,12 +96,12 @@ Garantías de un especialista local:
 
 ## Cuándo LeafFilter tiene sentido
 
-¿Honestamente? No se nos ocurre un escenario en el que pagar 2 a 3 veces el precio por la misma tecnología tenga sentido financiero. Si el nombre de marca le da tranquilidad, eso tiene valor para algunas personas, pero está pagando entre $2,000 y $4,500 por esa tranquilidad.
+¿Honestamente? No se nos ocurre un escenario en el que pagar 2 a 2.5 veces el precio por la misma tecnología tenga sentido financiero. Si el nombre de marca le da tranquilidad, eso tiene valor para algunas personas, pero está pagando entre $2,625 y $3,850 por esa tranquilidad.
 
 ## En resumen
 
-LeafFilter es una empresa de marketing que vende protectores de canaletas. Entregan un producto de micro malla de calidad, pero a 2 a 3 veces el precio de la misma tecnología de un especialista local. La malla no es exclusiva. La instalación no es diferente. Lo único único es el sobreprecio.
+LeafFilter es una empresa de marketing que vende protectores de canaletas. Entregan un producto de micro malla de calidad, pero a 2 a 2.5 veces el precio de la misma tecnología de un especialista local. La malla no es exclusiva. La instalación no es diferente. Lo único único es el sobreprecio.
 
-Ahorre entre $2,000 y $4,500 y trabaje con un especialista local en canaletas que instala la misma tecnología, usa su propia cuadrilla capacitada y respalda el trabajo con su reputación en la comunidad.
+Ahorre entre $2,625 y $3,850 y trabaje con un especialista local en canaletas que instala la misma tecnología, usa su propia cuadrilla capacitada y respalda el trabajo con su reputación en la comunidad.
 
-**[Obtenga un estimado gratuito de micro malla con precios locales](/estimator)** o llame al **(844) 444-3114**. La misma tecnología, la mitad del precio, sin presentación de ventas de 90 minutos.
+**[Obtenga un estimado gratuito de micro malla con precios locales](/estimator)** o llame al **(844) 444-3114**. La misma tecnología, menos de la mitad del precio, sin presentación de ventas de 90 minutos.

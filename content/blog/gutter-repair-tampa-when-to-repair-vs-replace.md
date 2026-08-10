@@ -10,7 +10,7 @@ faqs:
   - question: "When should I replace gutters instead of repairing them?"
     answer: "Replace when you have widespread corrosion, multiple sagging sections, repeated leaks after repairs, or gutters that are 20+ years old and undersized (5-inch in heavy rain zones). If repair costs would exceed 50% of new gutter cost, replacement is the better investment."
   - question: "Can sagging gutters be fixed without replacing them?"
-    answer: "Yes, in most cases. Sagging is usually caused by failed hangers or improper hanger spacing. Re-hanging with screw-in hidden hangers at proper intervals (every 24-36 inches) corrects the sag without replacing the gutter run itself, provided the fascia board behind the gutter is still sound."
+    answer: "Yes, in most cases. Sagging is usually caused by failed hangers or improper hanger spacing. Re-hanging with screw-in hidden hangers at proper intervals (every 24 inches) corrects the sag without replacing the gutter run itself, provided the fascia board behind the gutter is still sound."
 ---
 
 # Gutter Repair in Tampa: When to Repair vs. Replace
@@ -29,7 +29,7 @@ Tampa's climate is hard on gutters. Fifty-one inches of rain per year, intense U
 
 ### Sagging Gutters
 
-The most common issue we see. Gutters pull away from the fascia board because the hangers have loosened, spaced too far apart, or weren't screwed in to begin with. Many builders use spike-and-ferrule hangers that work loose over time. The fix is re-hanging with screw-in hidden hangers at proper intervals - typically every 24 to 36 inches.
+The most common issue we see. Gutters pull away from the fascia board because the hangers have loosened, spaced too far apart, or weren't screwed in to begin with. Many builders use spike-and-ferrule hangers that work loose over time. The fix is re-hanging with screw-in hidden hangers at proper intervals - typically every 24 inches.
 
 **Repair cost:** $150-$350 per section.
 

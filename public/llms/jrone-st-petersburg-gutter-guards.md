@@ -29,7 +29,7 @@ St. Pete gets less rain than the rest of Tampa Bay thanks to its sunshine record
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average St. Pete single-family (150-200 linear feet): **$1,200 - $2,400** installed
 - Salt-rated hardware may add slightly on waterfront installs
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for less
 - All ballpark
 
 ## Service Area Details
@@ -52,7 +52,7 @@ A: Yes. We work carefully around 1920s detail - no lifting original soffit board
 A: Most single-family homes run $1,200 to $2,400 installed. Free measurement at (844) 444-3114.
 
 **Q: Are LeafFilter or Gutter Helmet worth the price?**
-A: The material is fine. The premium is national advertising and franchise overhead. We install comparable micro mesh for 30-50% less.
+A: The material is fine. The premium is national advertising and franchise overhead. We install comparable micro mesh for less.
 
 **Q: How often will I still need to clean?**
 A: Once every two to three years instead of twice a year, plus quick sweeps of loose frond debris off the top after major storms.

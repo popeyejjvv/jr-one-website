@@ -53,13 +53,13 @@ Includes premium guard material plus professional cleaning of existing gutters b
 ### LeafFilter
 LeafFilter typically charges $13 - $20+ per linear foot, totaling $2,500 - $4,000+ for the average Tampa home. Their micro mesh technology is effective, but the price includes significant national advertising overhead and franchise markup.
 
-JR One Aluminum installs comparable 6-inch micro mesh guards at a significantly lower per-foot rate - typically $1,000 - $1,500 less for the average home.
+JR One Aluminum installs comparable 6-inch micro mesh guards at a lower per-foot rate.
 
 ### Gutter Helmet
 Gutter Helmet charges $12 - $18+ per linear foot ($2,000 - $3,500 for average home). Surface-tension style design that works for larger debris but can struggle with pine needles common in Tampa.
 
 ### Why Local Installation Often Makes More Sense
-- 30-50% lower cost for comparable or equivalent products
+- Lower cost for comparable or equivalent products
 - Direct accountability - the installer is your neighbor, not a franchise employee
 - Faster service for adjustments or warranty issues
 - Local expertise about Tampa's specific debris types and rainfall intensity

@@ -20,9 +20,9 @@ faqs:
   - question: "¿Cuánto cuestan las canaletas de cobre en St. Petersburg?"
     answer: "Las canaletas de cobre en St. Petersburg salen de $25 a $40 por pie lineal instalado en 2026. Las casas del histórico Old Northeast, Snell Isle y Granada Terrace muchas veces optan por el cobre por aprobación de la HOA y por estética. El cobre dura 50 años o más en el aire salino de St. Pete, lo que hace que el recargo inicial sea económico a lo largo de la vida de la casa."
   - question: "¿Cuál es el costo de los protectores de canaletas en St. Petersburg?"
-    answer: "La instalación de protectores de canaletas en St. Petersburg cuesta de $7 a $15 por pie lineal para la micromalla de aluminio en 2026. Los protectores sólidos de aluminio con canal de agua salen de $9 a $18 por pie lineal. El recargo por aire salino en los protectores es mínimo porque tanto la micromalla como los sistemas sólidos de aluminio son resistentes a la corrosión por naturaleza. Una casa típica de St. Pete con 165 pies lineales de canaletas cuesta entre $1,150 y $2,500 en protectores."
+    answer: "La instalación de protectores de canaletas en St. Petersburg cuesta de $10 a $18 por pie lineal para la micromalla de aluminio en 2026. Los protectores sólidos de aluminio con canal de agua salen de $9 a $18 por pie lineal. El recargo por aire salino en los protectores es mínimo porque tanto la micromalla como los sistemas sólidos de aluminio son resistentes a la corrosión por naturaleza. Una casa típica de St. Pete con 165 pies lineales de canaletas cuesta entre $1,650 y $2,970 en protectores."
   - question: "¿Debería usar una franquicia nacional como LeafFilter en St. Petersburg?"
-    answer: "La mayoría de los propietarios de St. Pete ahorran de 50 a 70 por ciento al usar un instalador local. Las franquicias nacionales por lo general cotizan de $25 a $40 por pie lineal en el mercado de St. Pete, mientras que los especialistas locales instalan productos de micromalla comparables o idénticos por $7 a $15 por pie lineal. El recargo de precio cubre la publicidad de la franquicia y el proceso de ventas a domicilio, no mejores materiales."
+    answer: "La mayoría de los propietarios de St. Pete ahorran de 55 a 60 por ciento al usar un instalador local. Las franquicias nacionales por lo general cotizan de $25 a $40 por pie lineal en el mercado de St. Pete, mientras que los especialistas locales instalan productos de micromalla comparables o idénticos por $10 a $18 por pie lineal. El recargo de precio cubre la publicidad de la franquicia y el proceso de ventas a domicilio, no mejores materiales."
   - question: "¿Cuánto tarda la instalación de canaletas en St. Petersburg?"
     answer: "La mayoría de las casas unifamiliares de St. Pete se terminan en 4 a 8 horas. Las casas de dos pisos o las instalaciones que incluyen trabajo de fascia tardan de 1 a 2 días. La canaleta sin costura se forma en el sitio desde un camión con rollo de material, así que todo el sistema se corta a la medida de su techo en tiempo real. Programamos la instalación de 7 a 14 días después del estimado firmado en demanda normal, y un poco más en la temporada previa a los huracanes (mayo y junio)."
   - question: "¿Cuál es la garantía de la instalación de canaletas en St. Petersburg?"
@@ -44,7 +44,7 @@ Si usted es propietario en St. Pete y está cotizando un sistema de canaletas nu
 | Canaletas de cobre | $25 a $40 por pie lineal |
 | Galvalume (grado comercial) | $14 a $22 por pie lineal |
 | Recubrimiento de fascia con aluminio (agregado) | $6 a $12 por pie lineal |
-| Protectores de canaletas de micromalla de aluminio | $7 a $15 por pie lineal |
+| Protectores de canaletas de micromalla de aluminio | $10 a $18 por pie lineal |
 | Protectores sólidos de aluminio con canal de agua | $9 a $18 por pie lineal |
 | Trabajo en toda la casa de un piso (típico) | $1,400 a $2,600 |
 | Trabajo en toda la casa de dos pisos (típico) | $2,000 a $3,800 |
@@ -98,7 +98,7 @@ Las comunidades de playa (St. Pete Beach, Treasure Island, Madeira Beach, Indian
 
 **Calibre del material.** El aluminio residencial estándar tiene un grosor de .027 pulgadas. Las casas con exposición costera necesitan .032 pulgadas como mínimo (19 por ciento más grueso, más rígido, mayor vida útil en aire salino). La diferencia de costo es de aproximadamente $1 a $2 por pie lineal.
 
-**Cantidad de bajantes.** Las tormentas eléctricas frecuentes de St. Pete exigen más bajantes que los valores estándar nacionales. El mínimo de la industria es uno por cada 35 pies; en St. Petersburg recomendamos uno por cada 25 pies, lo que significa de 7 a 9 bajantes en un sistema típico de 200 pies.
+**Cantidad de bajantes.** Las tormentas eléctricas frecuentes de St. Pete exigen más bajantes que los valores estándar nacionales. Un punto de partida común es aproximadamente una bajante cada 30 a 35 pies de canaleta, aunque el espaciado real depende del techo, la línea del techo y otros factores del trabajo.
 
 **Grado del herraje.** Los soportes de aluminio y los tornillos de acero inoxidable cuestan más que el acero galvanizado con zinc pero duran de 5 a 10 veces más en el aire salino. Confirme que su instalador especifique por escrito los herrajes de grado anticorrosión.
 

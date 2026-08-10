@@ -32,7 +32,7 @@ Esta configuración le cuesta al constructor entre $800 y $1,200 por casa. Funci
 ## Cómo se ve una instalación de calidad
 
 - **Aluminio sin costura de 6 pulgadas** - sin uniones que goteen, dimensionadas para el volumen de lluvia de Florida
-- **Soportes ocultos atornillados cada 24 a 36 pulgadas** - montaje seguro que resiste las tormentas
+- **Soportes ocultos atornillados cada 24 pulgadas** - montaje seguro que resiste las tormentas
 - **Bajantes de 3x4** - ajustados a la capacidad de la canaleta de 6 pulgadas
 - **Aproximadamente una bajante cada 30 a 35 pies de canaleta** - un punto de partida para una cobertura de drenaje adecuada; el espaciado real depende del techo, la línea del techo y otros factores del trabajo
 - **Verificación de pendiente correcta** - 1/4 de pulgada por cada 10 pies confirmada con prueba de agua

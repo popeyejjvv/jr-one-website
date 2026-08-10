@@ -27,7 +27,7 @@ Tampa's tree canopy and about 50 inches of annual rain is a gutter's worst combi
 ## Pricing Reference
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Tampa home (150-200 linear feet): **$1,200 - $2,400** installed
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for roughly 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for less
 - All ballpark - final pricing varies with access, stories, and guard selection
 
 ## Service Area Details
@@ -47,7 +47,7 @@ A: No guard makes gutters fully maintenance-free. Good micro mesh drops the cade
 A: Yes. We clean the existing gutters first, inspect hangers and pitch, and then install. If the gutters themselves are at end of life, we say so before quoting guards on top of a system about to fail.
 
 **Q: Are LeafFilter and Gutter Helmet worth the price?**
-A: The products are fine. The price mostly reflects national advertising and franchise overhead, not better material. JR One installs equivalent micro mesh locally for 30-50% less.
+A: The products are fine. The price mostly reflects national advertising and franchise overhead, not better material. JR One installs equivalent micro mesh locally for less.
 
 **Q: Do guards work with 6-inch and 7-inch gutters?**
 A: Yes. We stock guards sized for the 6" and 7" residential and commercial profiles we install. JR One does not install 5" gutters in Florida.

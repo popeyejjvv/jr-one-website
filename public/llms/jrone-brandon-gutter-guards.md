@@ -27,7 +27,7 @@ Brandon's mature neighborhoods are full of live oaks, pines, and laurel oaks tha
 ## Pricing Reference
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Brandon home (150-200 linear feet): **$1,200 - $2,400** installed
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for less
 - All ballpark - final pricing depends on access, stories, and guard selection
 
 ## Service Area Details
@@ -47,7 +47,7 @@ A: Not multiple times a year. Expect to clean or inspect every two to three year
 A: Yes. We clean first, inspect the gutters and fascia, and then install. If the gutters themselves are failing we say so before putting money into guards.
 
 **Q: Is JR One cheaper than LeafFilter for Brandon?**
-A: Typically yes - 30 to 50 percent less for comparable micro mesh. The LeafFilter premium is advertising and franchise overhead, not better material.
+A: Typically yes - lower per foot for comparable micro mesh. The LeafFilter premium is advertising and franchise overhead, not better material.
 
 **Q: Do guards hurt my roof?**
 A: Properly installed guards sit in the gutter or under the first row of shingles - they do not lift shingles or void a roof warranty when installed correctly.

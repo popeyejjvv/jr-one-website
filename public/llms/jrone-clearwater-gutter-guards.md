@@ -29,7 +29,7 @@ Clearwater is coastal - which changes everything. Palm fronds, sea grape, and sa
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Clearwater single-family: **$1,200 - $2,400** installed
 - Coastal salt-rated installs may add slightly to hardware cost
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for less
 - All ballpark
 
 ## Service Area Details

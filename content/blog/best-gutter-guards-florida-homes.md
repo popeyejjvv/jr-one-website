@@ -10,9 +10,9 @@ faqs:
   - question: "Do gutter guards work in heavy Florida rain?"
     answer: "Quality micro mesh and aluminum gutter guards handle Florida's heavy rain without issue when properly installed on properly sized gutters. The combination matters: 6-inch gutters minimum for most Tampa Bay homes, mesh openings sized for tropical rain volume, and pitched correctly. Cheap plastic or vinyl guards can overflow during intense storms. Solid water-channel guards can shed water past the channel during 2 inch per hour rainfall events if undersized."
   - question: "How much do gutter guards cost in Tampa Bay in 2026?"
-    answer: "Professional gutter guard installation in Tampa costs $7 to $15 per linear foot for micro mesh, $9 to $18 per linear foot for aluminum solid guards, and $4 to $8 per linear foot for screen guards in 2026. A typical Tampa home with 165 linear feet of gutters costs between $1,150 and $2,500 for guards. National franchise brands often charge $20 to $40 per linear foot for comparable products."
+    answer: "Professional gutter guard installation in Tampa costs $10 to $18 per linear foot for micro mesh, $9 to $18 per linear foot for aluminum solid guards, and $4 to $8 per linear foot for screen guards in 2026. A typical Tampa home with 165 linear feet of gutters costs between $1,650 and $2,970 for guards. National franchise brands often charge $20 to $40 per linear foot for comparable products."
   - question: "How much does LeafFilter cost in Tampa compared to local installers?"
-    answer: "LeafFilter typically quotes $25 to $40 per linear foot in Tampa Bay in 2026, which is 2 to 3 times what local micro mesh installations cost. The product itself is comparable to professional-grade micro mesh that local specialists install for $7 to $15 per linear foot. The price premium pays for franchise advertising and the in-home sales process, not better materials."
+    answer: "LeafFilter typically quotes $25 to $40 per linear foot in Tampa Bay in 2026, which is about 2 to 2.5 times what local micro mesh installations cost. The product itself is comparable to professional-grade micro mesh that local specialists install for $10 to $18 per linear foot. The price premium pays for franchise advertising and the in-home sales process, not better materials."
   - question: "Are gutter guards worth it for Florida homes?"
     answer: "For homes with moderate to heavy tree coverage, yes. Annual gutter cleaning in Tampa costs $400 to $1,200 depending on cleaning frequency and home size. Gutter guards eliminate 80 to 95 percent of that cost over a 10 to 15 year period. Homes with no tree coverage may not see ROI unless storm debris is a recurring issue. Homes near pine, oak, palm, or magnolia coverage almost always benefit."
   - question: "Do gutter guards prevent mosquitoes and pests in Florida?"
@@ -45,7 +45,7 @@ After over 30 years of installing and servicing gutter systems across Tampa Bay,
 
 | Guard type | Per-foot installed | Lifespan in FL | Best for |
 |------------|-------------------|----------------|----------|
-| Aluminum micro mesh | $7 to $15 | 15 to 20+ years | Pine, oak, mixed tree coverage |
+| Aluminum micro mesh | $10 to $18 | 15 to 20+ years | Pine, oak, mixed tree coverage |
 | Aluminum solid water-channel | $9 to $18 | 15 to 20+ years | Large leaves, magnolia, palm |
 | Powder-coated steel screen | $4 to $8 | 5 to 10 years | Light tree coverage, budget |
 | EZ mesh / aluminum mesh | $5 to $9 | 8 to 12 years | Moderate budget, mixed coverage |
@@ -134,10 +134,10 @@ This is the section most homeowners actually want. Here's the honest comparison 
 | Gutter Helmet | Aluminum solid w/ channel | $20 to $35 | Heated option, franchise dealer network |
 | MasterShield | Micro mesh | $20 to $30 | Third-party-tested mesh, local dealer network |
 | HomeCraft | Aluminum mesh | $15 to $25 | Aluminum frame, mid-tier pricing |
-| Local micromesh (JR One et al) | Micromesh | $7 to $15 | Same materials, no franchise overhead, local accountability |
+| Local micromesh (JR One et al) | Micromesh | $10 to $18 | Same materials, no franchise overhead, local accountability |
 | Local aluminum solid | Aluminum water-channel | $9 to $18 | Mid-tier durability, local install |
 
-The materials at the top tier and the local tier come from a small handful of mesh manufacturers. The franchise brands buy the same coil and the same mesh from the same suppliers as the legitimate local installers. The 2 to 3x price difference is overhead, marketing, and sales commission, not product quality.
+The materials at the top tier and the local tier come from a small handful of mesh manufacturers. The franchise brands buy the same coil and the same mesh from the same suppliers as the legitimate local installers. The 2 to 2.5x price difference is overhead, marketing, and sales commission, not product quality.
 
 What the franchises do offer that local installers often don't: nationally transferable warranties (useful if you sell within 5 years), and a polished sales experience for homeowners who want a single decision-maker walking them through it.
 

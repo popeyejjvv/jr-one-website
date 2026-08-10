@@ -44,7 +44,7 @@ If you're a Tampa homeowner researching gutter prices, you've probably found a w
 | Copper gutters | $25 to $40 per linear foot |
 | Galvalume (commercial-grade) | $14 to $22 per linear foot |
 | Aluminum fascia wrap | $6 to $12 per linear foot added |
-| Gutter guards (micro mesh) | $7 to $15 per linear foot added |
+| Gutter guards (micro mesh) | $10 to $18 per linear foot added |
 | Whole-home single-story job | $1,200 to $2,400 typical |
 | Whole-home two-story job | $1,800 to $3,400 typical |
 

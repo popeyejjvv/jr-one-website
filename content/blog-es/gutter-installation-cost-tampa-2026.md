@@ -44,7 +44,7 @@ Si usted es propietario en Tampa y está investigando precios de canaletas, prob
 | Canaletas de cobre | $25 a $40 por pie lineal |
 | Galvalume (grado comercial) | $14 a $22 por pie lineal |
 | Forrado de fascia con aluminio | $6 a $12 por pie lineal adicional |
-| Protectores de canaletas (malla fina) | $7 a $15 por pie lineal adicional |
+| Protectores de canaletas (malla fina) | $10 a $18 por pie lineal adicional |
 | Trabajo completo de casa de un piso | $1,200 a $2,400 típico |
 | Trabajo completo de casa de dos pisos | $1,800 a $3,400 típico |
 

@@ -43,7 +43,7 @@ If you have existing gutters being replaced, the crew removes them and inspects 
 If the fascia behind the gutters is damaged, it needs to be repaired or wrapped before new gutters go up. Mounting gutters to rotted fascia guarantees early failure. This is an add-on that may not have been in the original estimate if the damage wasn't visible until the old gutters came down.
 
 ### Gutter Mounting (2-4 hours)
-The crew mounts each seamless gutter section with hidden hangers screwed into the fascia at 24-36 inch intervals. Proper pitch is set (1/4 inch per 10 feet toward each downspout). Corners are mitered and sealed. End caps are installed.
+The crew mounts each seamless gutter section with hidden hangers screwed into the fascia at 24 inch intervals. Proper pitch is set (1/4 inch per 10 feet toward each downspout). Corners are mitered and sealed. End caps are installed.
 
 ### Downspout Installation (1-2 hours)
 Downspout outlets are cut into the gutter, drop elbows are attached, and downspouts are mounted vertically along the wall. Extensions or splash blocks are placed at the base to route water away from the foundation.

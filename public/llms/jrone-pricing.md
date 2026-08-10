@@ -121,7 +121,7 @@ Approximate totals based on an average Tampa single-family home with 150-180 lin
 | Project | Estimated Range |
 |---------|----------------|
 | Full seamless 6" gutter installation | $1,500 - $2,500 |
-| Gutter guards (micro mesh) on existing gutters | $1,800 - $2,400 |
+| Gutter guards (micro mesh) on existing gutters | $1,500 - $3,240 |
 | Gutter guards (standard) on existing gutters | $1,200 - $1,600 |
 | Soffit replacement (per 100 linear ft) | $1,650 - $3,500 |
 | Fascia wrapping (per 100 linear ft) | $1,000 - $1,500 |

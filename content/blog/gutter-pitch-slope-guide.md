@@ -73,7 +73,7 @@ Re-pitching is one of the most common gutter repairs and one of the most cost-ef
 
 1. Remove existing hangers
 2. Snap a chalk line at the correct pitch angle from high point to downspout
-3. Re-install hangers along the correct line, typically every 24-36 inches
+3. Re-install hangers along the correct line, typically every 24 inches
 4. Run water through the section to verify flow
 
 No new materials needed in most cases - just labor to re-position the hangers. Cost: **$150-$350 per section** for most homes.

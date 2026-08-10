@@ -12,7 +12,7 @@ faqs:
   - question: "¿Se tapan los protectores de canaletas de micro malla?"
     answer: "La malla en sí no se tapa por dentro porque los escombros no pueden entrar en las aberturas. Sin embargo, los escombros de superficie (hojas, ramitas) pueden acumularse encima de la malla y necesitan limpieza ocasional, normalmente una vez al año. Esto es mucho menos trabajo que limpiar canaletas sin protección de 2 a 4 veces al año."
   - question: "¿Cuánto cuestan los protectores de canaletas de micro malla?"
-    answer: "La instalación profesional de protectores de canaletas de micro malla cuesta de $10 a $18 por pie lineal según la altura y la complejidad de la casa. Una casa típica con 175 pies lineales cuesta de $1,750 a $3,150. Esto es de 30 a 50% menos que las marcas de franquicia nacionales como LeafFilter por una tecnología de malla comparable."
+    answer: "La instalación profesional de protectores de canaletas de micro malla cuesta de $10 a $18 por pie lineal según la altura y la complejidad de la casa. Una casa típica con 175 pies lineales cuesta de $1,750 a $3,150. Esto es de 55 a 60% menos que las marcas de franquicia nacionales como LeafFilter por una tecnología de malla comparable."
 ---
 
 # Protectores de Canaletas de Micro Malla: La Guía Completa
@@ -82,7 +82,7 @@ Durante aguaceros extremos (2 o más pulgadas por hora), algo de agua puede escu
 
 ### Comparación con Franquicias Nacionales
 
-Las marcas nacionales como LeafFilter cobran de $25 a $40 por pie lineal por la tecnología de micro malla. Es el mismo producto básico (micro malla sobre marco de aluminio) a 2 o 3 veces el precio.
+Las marcas nacionales como LeafFilter cobran de $25 a $40 por pie lineal por la tecnología de micro malla. Es el mismo producto básico (micro malla sobre marco de aluminio) a 2 o 2.5 veces el precio.
 
 La diferencia de precio paga sus comerciales de televisión, las cuotas de franquicia y el proceso de venta a domicilio. La tecnología de la malla no es exclusiva.
 

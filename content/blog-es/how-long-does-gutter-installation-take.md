@@ -43,7 +43,7 @@ Si tiene canaletas existentes que se van a reemplazar, el equipo las retira e in
 Si la fascia detrás de las canaletas está dañada, hay que repararla o forrarla antes de poner las canaletas nuevas. Montar canaletas sobre fascia podrida garantiza una falla prematura. Esto es un trabajo adicional que tal vez no estaba en el cálculo original si el daño no se veía hasta quitar las canaletas viejas.
 
 ### Montaje de canaletas (2 a 4 horas)
-El equipo monta cada sección de canaleta sin costura con ganchos ocultos atornillados a la fascia cada 24 a 36 pulgadas. Se ajusta la inclinación correcta (1/4 de pulgada por cada 10 pies hacia cada bajante). Las esquinas se cortan a inglete y se sellan. Se instalan las tapas de los extremos.
+El equipo monta cada sección de canaleta sin costura con ganchos ocultos atornillados a la fascia cada 24 pulgadas. Se ajusta la inclinación correcta (1/4 de pulgada por cada 10 pies hacia cada bajante). Las esquinas se cortan a inglete y se sellan. Se instalan las tapas de los extremos.
 
 ### Instalación de bajantes (1 a 2 horas)
 Se cortan las salidas de los bajantes en la canaleta, se conectan los codos y los bajantes se montan verticalmente a lo largo de la pared. Se colocan extensiones o bloques de salpicadura en la base para alejar el agua de los cimientos.

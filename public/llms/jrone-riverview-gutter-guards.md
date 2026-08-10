@@ -31,7 +31,7 @@ Riverview's master-planned subdivisions are dense with builder-grade 5-inch gutt
 - Average Riverview two-story home (180-240 linear feet): **$1,500 - $3,000** installed
 - Single-story: **$1,200 - $2,400**
 - Upgrade from builder-grade 5-inch to JR One 6-inch seamless at the same time: quoted together, typically $8 - $12/ft for the gutter
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for less
 - All ballpark
 
 ## Service Area Details
@@ -51,7 +51,7 @@ A: Micro mesh. Preserve-backed means constant oak, pine, and laurel oak debris -
 A: Yes, if the gutters themselves are still sound. We inspect during the quote - if your 5-inch is failing, we flag it before putting money into guards on top.
 
 **Q: Is LeafFilter worth the extra money?**
-A: The product is fine. The premium is national advertising and franchise overhead, not better material. JR One installs comparable micromesh for 30-50% less.
+A: The product is fine. The premium is national advertising and franchise overhead, not better material. JR One installs comparable micromesh for less.
 
 **Q: Will I still need to clean after guards?**
 A: Once every two to three years instead of three or four times a year. Plus occasional sweeps off the top of the guard after major storms.

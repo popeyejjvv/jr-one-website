@@ -10,7 +10,7 @@ faqs:
   - question: "¿Cuándo debo reemplazar las canaletas en lugar de repararlas?"
     answer: "Reemplácelas cuando tenga corrosión generalizada, varias secciones caídas, fugas que vuelven después de las reparaciones, o canaletas de más de 20 años que además son de tamaño insuficiente (de 5 pulgadas en zonas de lluvia fuerte). Si el costo de reparar supera el 50% del costo de canaletas nuevas, reemplazar es la mejor inversión."
   - question: "¿Se pueden arreglar las canaletas caídas sin reemplazarlas?"
-    answer: "Sí, en la mayoría de los casos. Las canaletas caídas suelen deberse a soportes fallidos o a un espaciado incorrecto de los soportes. Volver a colgarlas con soportes ocultos atornillados a la distancia adecuada (cada 24 a 36 pulgadas) corrige la caída sin reemplazar la canaleta en sí, siempre que la tabla de fascia detrás de la canaleta siga en buen estado."
+    answer: "Sí, en la mayoría de los casos. Las canaletas caídas suelen deberse a soportes fallidos o a un espaciado incorrecto de los soportes. Volver a colgarlas con soportes ocultos atornillados a la distancia adecuada (cada 24 pulgadas) corrige la caída sin reemplazar la canaleta en sí, siempre que la tabla de fascia detrás de la canaleta siga en buen estado."
 ---
 
 # Reparación de Canaletas en Tampa: Cuándo Reparar vs. Reemplazar
@@ -29,7 +29,7 @@ El clima de Tampa es duro con las canaletas. Cincuenta y una pulgadas de lluvia 
 
 ### Canaletas Caídas
 
-El problema más común que vemos. Las canaletas se separan de la tabla de fascia porque los soportes se aflojaron, estaban demasiado separados, o nunca se atornillaron bien desde el principio. Muchos constructores usan soportes de clavo y casquillo que se aflojan con el tiempo. La solución es volver a colgarlas con soportes ocultos atornillados a la distancia adecuada, normalmente cada 24 a 36 pulgadas.
+El problema más común que vemos. Las canaletas se separan de la tabla de fascia porque los soportes se aflojaron, estaban demasiado separados, o nunca se atornillaron bien desde el principio. Muchos constructores usan soportes de clavo y casquillo que se aflojan con el tiempo. La solución es volver a colgarlas con soportes ocultos atornillados a la distancia adecuada, normalmente cada 24 pulgadas.
 
 **Costo de reparación:** $150-$350 por sección.
 

@@ -10,9 +10,9 @@ faqs:
   - question: "¿Funcionan los protectores de canaletas con la lluvia fuerte de Florida?"
     answer: "Los protectores de micromalla y de aluminio de buena calidad manejan la lluvia fuerte de Florida sin problema cuando se instalan correctamente en canaletas del tamaño adecuado. La combinación importa: canaletas de 6 pulgadas como mínimo para la mayoría de las casas de Tampa Bay, aberturas de malla dimensionadas para el volumen de lluvia tropical y con la inclinación correcta. Los protectores baratos de plástico o vinilo pueden desbordarse durante las tormentas intensas. Los protectores sólidos con canal de agua pueden dejar pasar el agua por encima del canal durante eventos de lluvia de 2 pulgadas por hora si están mal dimensionados."
   - question: "¿Cuánto cuestan los protectores de canaletas en Tampa Bay en 2026?"
-    answer: "La instalación profesional de protectores de canaletas en Tampa cuesta de $7 a $15 por pie lineal para micromalla, de $9 a $18 por pie lineal para protectores sólidos de aluminio, y de $4 a $8 por pie lineal para protectores de rejilla en 2026. Una casa típica de Tampa con 165 pies lineales de canaletas cuesta entre $1,150 y $2,500 por los protectores. Las marcas de franquicia nacionales a menudo cobran de $20 a $40 por pie lineal por productos comparables."
+    answer: "La instalación profesional de protectores de canaletas en Tampa cuesta de $10 a $18 por pie lineal para micromalla, de $9 a $18 por pie lineal para protectores sólidos de aluminio, y de $4 a $8 por pie lineal para protectores de rejilla en 2026. Una casa típica de Tampa con 165 pies lineales de canaletas cuesta entre $1,650 y $2,970 por los protectores. Las marcas de franquicia nacionales a menudo cobran de $20 a $40 por pie lineal por productos comparables."
   - question: "¿Cuánto cuesta LeafFilter en Tampa comparado con instaladores locales?"
-    answer: "LeafFilter normalmente cotiza de $25 a $40 por pie lineal en Tampa Bay en 2026, lo cual es de 2 a 3 veces lo que cuestan las instalaciones locales de micromalla. El producto en sí es comparable a la micromalla de grado profesional que los especialistas locales instalan por $7 a $15 por pie lineal. El sobreprecio paga la publicidad de la franquicia y el proceso de venta a domicilio, no mejores materiales."
+    answer: "LeafFilter normalmente cotiza de $25 a $40 por pie lineal en Tampa Bay en 2026, lo cual es de 2 a 2.5 veces lo que cuestan las instalaciones locales de micromalla. El producto en sí es comparable a la micromalla de grado profesional que los especialistas locales instalan por $10 a $18 por pie lineal. El sobreprecio paga la publicidad de la franquicia y el proceso de venta a domicilio, no mejores materiales."
   - question: "¿Valen la pena los protectores de canaletas para casas en Florida?"
     answer: "Para casas con cobertura de árboles moderada a alta, sí. La limpieza anual de canaletas en Tampa cuesta de $400 a $1,200 según la frecuencia de limpieza y el tamaño de la casa. Los protectores de canaletas eliminan del 80 al 95 por ciento de ese costo durante un período de 10 a 15 años. Las casas sin cobertura de árboles quizás no vean retorno a menos que la hojarasca por tormentas sea un problema recurrente. Las casas cerca de pinos, robles, palmas o magnolias casi siempre se benefician."
   - question: "¿Previenen los protectores de canaletas los mosquitos y las plagas en Florida?"
@@ -45,7 +45,7 @@ Después de más de 30 años instalando y dando servicio a sistemas de canaletas
 
 | Tipo de protector | Por pie instalado | Vida útil en FL | Mejor para |
 |------------|-------------------|----------------|----------|
-| Micromalla de aluminio | $7 a $15 | 15 a 20+ años | Pino, roble, cobertura mixta de árboles |
+| Micromalla de aluminio | $10 a $18 | 15 a 20+ años | Pino, roble, cobertura mixta de árboles |
 | Sólido de aluminio con canal de agua | $9 a $18 | 15 a 20+ años | Hojas grandes, magnolia, palma |
 | Rejilla de acero con recubrimiento en polvo | $4 a $8 | 5 a 10 años | Cobertura ligera de árboles, presupuesto |
 | Malla EZ / malla de aluminio | $5 a $9 | 8 a 12 años | Presupuesto moderado, cobertura mixta |
@@ -134,10 +134,10 @@ Esta es la sección que la mayoría de los propietarios de verdad quiere. Aquí 
 | Gutter Helmet | Sólido de aluminio con canal | $20 a $35 | Opción con calefacción, red de distribuidores de franquicia |
 | MasterShield | Micromalla | $20 a $30 | Malla probada por terceros, red de distribuidores locales |
 | HomeCraft | Malla de aluminio | $15 a $25 | Marco de aluminio, precio de gama media |
-| Micromalla local (JR One y otros) | Micromalla de aluminio | $7 a $15 | Mismos materiales, sin gastos generales de franquicia, responsabilidad local |
+| Micromalla local (JR One y otros) | Micromalla de aluminio | $10 a $18 | Mismos materiales, sin gastos generales de franquicia, responsabilidad local |
 | Sólido de aluminio local | Aluminio con canal de agua | $9 a $18 | Durabilidad de gama media, instalación local |
 
-Los materiales del nivel superior y los del nivel local vienen de un pequeño grupo de fabricantes de malla. Las marcas de franquicia compran la misma bobina y la misma malla a los mismos proveedores que los instaladores locales legítimos. La diferencia de precio de 2 a 3 veces es por gastos generales, marketing y comisión de ventas, no por la calidad del producto.
+Los materiales del nivel superior y los del nivel local vienen de un pequeño grupo de fabricantes de malla. Las marcas de franquicia compran la misma bobina y la misma malla a los mismos proveedores que los instaladores locales legítimos. La diferencia de precio de 2 a 2.5 veces es por gastos generales, marketing y comisión de ventas, no por la calidad del producto.
 
 Lo que las franquicias sí ofrecen y los instaladores locales a menudo no: garantías transferibles a nivel nacional (útiles si vende dentro de 5 años), y una experiencia de venta pulida para los propietarios que quieren un solo responsable que los guíe en todo el proceso.
 

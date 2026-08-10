@@ -73,7 +73,7 @@ Reajustar la inclinación es una de las reparaciones de canaletas más comunes y
 
 1. Quitar los soportes existentes
 2. Marcar una línea con tiza en el ángulo de inclinación correcto desde el punto alto hasta el bajante
-3. Reinstalar los soportes a lo largo de la línea correcta, normalmente cada 24 a 36 pulgadas
+3. Reinstalar los soportes a lo largo de la línea correcta, normalmente cada 24 pulgadas
 4. Correr agua por la sección para verificar el flujo
 
 En la mayoría de los casos no se necesitan materiales nuevos, solo mano de obra para reposicionar los soportes. Costo: **$150 a $350 por sección** en la mayoría de las casas.

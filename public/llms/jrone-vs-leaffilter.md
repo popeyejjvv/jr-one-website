@@ -29,7 +29,7 @@ Where LeafFilter loses ground in a direct comparison:
 
 JR One Aluminum is a 30+ year Tampa-based aluminum specialist. Not a franchise, not a sales organization with a loss-leader product - an actual aluminum contractor that installs gutters, soffit, fascia, trim, and gutter guards daily.
 
-- **Price.** JR One's 6" micro mesh guard pricing runs roughly 30-50% below LeafFilter's per-foot rate. On an average Tampa home, that's $1,000 - $1,500 in savings.
+- **Price.** JR One's 6" micro mesh guard pricing runs below LeafFilter's per-foot rate.
 - **No high-pressure sales.** Free assessment, written estimate, decision when you're ready. No "if you sign today" games.
 - **Local accountability.** The installer and the owner are the same people. If there's ever an issue, you call and get JR One - not a franchise office in another state.
 - **Specialist's eye during install.** When the crew installs guards, they're also assessing the fascia, the hangers, the pitch, the downspouts. You get a free system review you didn't ask for.
@@ -43,8 +43,8 @@ JR One Aluminum is a 30+ year Tampa-based aluminum specialist. Not a franchise, 
 |--------|-----------|-----------------|
 | Company type | National franchise | Local 30+ year specialist |
 | Micro mesh guard | Yes | Yes (comparable material) |
-| Per-foot price | $13 - $20+ | Substantially lower |
-| Average home total | $2,500 - $4,000+ | $1,000 - $1,500 less |
+| Per-foot price | $13 - $20+ | Lower |
+| Average home total | $2,500 - $4,000+ | Lower |
 | Sales process | In-home pressure pitch | Free estimate, no pressure |
 | Installer relationship | Franchise employee | Owner-operated local team |
 | Warranty handling | National franchise office | Local phone call |
@@ -79,7 +79,7 @@ JR One Aluminum installs equivalent-quality micro mesh to LeafFilter's, with the
 ## Making the Decision
 
 Homeowners who have both estimates in hand typically see:
-- JR One's estimate is $1,000 - $1,500 lower on an average home
+- JR One's estimate is lower on an average home
 - Both estimates describe effectively the same product
 - JR One's estimate is easier to read (no pressure-sale add-ons)
 

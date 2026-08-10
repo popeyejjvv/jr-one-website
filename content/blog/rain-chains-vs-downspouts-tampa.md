@@ -10,7 +10,7 @@ faqs:
 - question: Do rain chains cause water damage?
   answer: A rain chain itself does not cause damage, but in a heavy Florida downpour it can splash water sideways or drop it too close to the foundation if there is no splash block, paver bed, or drainage line underneath it.
 - question: What size downspout does JR One install?
-  answer: We install 6-inch and 7-inch seamless aluminum downspouts only, sized to the roof area feeding each gutter run.
+  answer: We install standard 3x4 rectangular downspouts, paired with 6-inch and 7-inch seamless aluminum gutters and sized to the roof area feeding each gutter run.
 - question: Can I add a rain chain alongside my existing downspouts?
   answer: Yes. Many homeowners keep standard downspouts on the main roof planes and add one rain chain near an entry or porch for the visual and sound, as long as the ground underneath handles the water properly.
 - question: How much rain can a Tampa Bay storm system push through a gutter in one afternoon?
@@ -23,7 +23,7 @@ A rain chain can replace a downspout on a small, low-flow section of roof, but f
 
 **Why Tampa Bay rain is the deciding factor.** Hillsborough and Pinellas County summer storms can dump an inch of rain in well under an hour. That volume needs to move fast and land somewhere controlled, usually a splash block or a piped extension that carries water several feet from the foundation. A rain chain in a heavy downpour tends to overshoot its base, splash sideways, and dump water close to the foundation instead of away from it. Over a few storm seasons that becomes a moisture problem at the slab, not a decorative feature.
 
-**Where a downspout wins.** An enclosed downspout is a sealed path from the gutter outlet to the ground or to an underground drainage line. It handles Florida's rain volume without splashing, it can be tied into a drainage extension, and it does not depend on the chain staying clean and unobstructed to work. JR One installs 6-inch and 7-inch seamless aluminum downspouts only, sized to the roof area they are draining, not off-the-shelf sizing.
+**Where a downspout wins.** An enclosed downspout is a sealed path from the gutter outlet to the ground or to an underground drainage line. It handles Florida's rain volume without splashing, it can be tied into a drainage extension, and it does not depend on the chain staying clean and unobstructed to work. JR One installs 6-inch and 7-inch seamless aluminum gutters with standard 3x4 rectangular downspouts, sized to the roof area they are draining, not off-the-shelf sizing.
 
 **Where a rain chain can make sense.** A rain chain works best as a secondary, decorative touch on a small roof section, a porch overhang, or an area where a splash block or paver bed is already set up to catch and spread water safely away from the house. It is not a substitute for the primary downspouts on the main roof planes. Some homeowners run one rain chain near an entry for the visual effect while keeping standard downspouts everywhere else on the home.
 

@@ -12,7 +12,7 @@ faqs:
   - question: "Do micro mesh gutter guards clog?"
     answer: "The mesh itself doesn't clog internally because debris can't enter the openings. However, surface debris (leaves, twigs) can accumulate on top of the mesh and needs occasional clearing - typically once per year. This is far less work than cleaning unprotected gutters 2-4 times per year."
   - question: "How much do micro mesh gutter guards cost?"
-    answer: "Professional micro mesh gutter guard installation costs $10-$18 per linear foot depending on home height and complexity. A typical home with 175 linear feet costs $1,750-$3,150. This is 30-50% less than national franchise brands like LeafFilter for comparable mesh technology."
+    answer: "Professional micro mesh gutter guard installation costs $10-$18 per linear foot depending on home height and complexity. A typical home with 175 linear feet costs $1,750-$3,150. This is 55-60% less than national franchise brands like LeafFilter for comparable mesh technology."
 ---
 
 # Micro Mesh Gutter Guards: The Complete Guide
@@ -82,7 +82,7 @@ During extreme downpours (2+ inches per hour), some water may sheet over the fro
 
 ### National Franchise Comparison
 
-National brands like LeafFilter charge $25-$40 per linear foot for micro mesh technology. That's the same basic product - micro mesh over an aluminum frame - at 2-3x the price.
+National brands like LeafFilter charge $25-$40 per linear foot for micro mesh technology. That's the same basic product - micro mesh over an aluminum frame - at 2 to 2.5x the price.
 
 The price difference pays for their TV commercials, franchise fees, and in-home sales process. The mesh technology is not proprietary.
 

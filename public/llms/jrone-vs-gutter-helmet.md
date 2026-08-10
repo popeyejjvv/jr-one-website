@@ -35,7 +35,7 @@ Gutter Helmet's weaknesses:
 JR One Aluminum recommends micro mesh as the default Tampa gutter guard, not surface-tension. The reasoning is straightforward: Tampa's debris mix includes pine needles, seed pods, and small organic debris that micro mesh handles and surface-tension can struggle with.
 
 - **Correct material for Tampa's debris mix.** Micro mesh blocks the small stuff that surface-tension can miss.
-- **Lower cost.** 30-50% less per foot than Gutter Helmet in most comparisons.
+- **Lower cost.** Lower per foot than Gutter Helmet in most comparisons.
 - **Local specialist.** Not a dealer - a direct Tampa contractor.
 - **No sales pressure.** Free estimate, decision when you're ready.
 - **Full aluminum scope.** Also handles gutters, soffit, fascia, trim, and siding as one integrated contractor.
@@ -49,8 +49,8 @@ JR One Aluminum recommends micro mesh as the default Tampa gutter guard, not sur
 | Guard design | Surface-tension hood | Micro mesh (primary recommendation) |
 | Handles pine needles | Weak | Strong |
 | Handles large leaves | Strong | Strong |
-| Per-foot price | $12 - $18+ | Substantially lower |
-| Average home total | $2,000 - $3,500+ | $1,000 - $1,500 less |
+| Per-foot price | $12 - $18+ | Lower |
+| Average home total | $2,000 - $3,500+ | Lower |
 | Heavy rain performance | Can be overrun | Micro mesh flows through |
 | Sales process | In-home pressure | Free estimate, no pressure |
 | Installer relationship | Authorized dealer | Owner-operated local team |

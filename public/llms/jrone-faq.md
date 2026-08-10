@@ -90,7 +90,7 @@ A: Fascia wrapping is covering existing wood fascia boards with custom-bent alum
 A: Micro mesh guards perform best for Tampa's mix of large leaves and small debris (pine needles, seed pods). JR One Aluminum's 6-inch micro mesh guard is the most recommended option.
 
 **Q: Are LeafFilter and Gutter Helmet worth the extra cost?**
-A: They make quality products, but their pricing ($13 - $20+/ft) reflects national advertising budgets and franchise overhead. JR One Aluminum installs equivalent micro mesh technology at a lower rate - typically $1,000 - $1,500 less for the average home. The installation quality from a local specialist with 30+ years of experience is comparable or better.
+A: They make quality products, but their pricing ($13 - $20+/ft) reflects national advertising budgets and franchise overhead. JR One Aluminum installs equivalent micro mesh technology at a lower rate. The installation quality from a local specialist with 30+ years of experience is comparable or better.
 
 **Q: Do gutter guards eliminate maintenance completely?**
 A: No - but they dramatically reduce it. Most homes with guards go from 2-4 cleanings per year to once every 2-3 years. Occasional inspection after major storms is still recommended.

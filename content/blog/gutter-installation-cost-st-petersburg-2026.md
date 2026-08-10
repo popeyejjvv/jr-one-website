@@ -20,9 +20,9 @@ faqs:
   - question: "How much do copper gutters cost in St. Petersburg?"
     answer: "Copper gutters in St. Petersburg run $25 to $40 per linear foot installed in 2026. Historic Old Northeast, Snell Isle, and Granada Terrace homes often pursue copper for HOA approval and aesthetic reasons. Copper lasts 50 years or more in St. Pete's salt air, making the upfront premium economical over the home's lifetime."
   - question: "What is the cost of gutter guards in St. Petersburg?"
-    answer: "Gutter guard installation in St. Petersburg costs $7 to $15 per linear foot for aluminum micro mesh in 2026. Aluminum solid water-channel guards run $9 to $18 per linear foot. The salt-air premium on guards is minimal because both micro mesh and aluminum solid systems are inherently corrosion-resistant. A typical St. Pete home with 165 linear feet of gutters costs between $1,150 and $2,500 for guards."
+    answer: "Gutter guard installation in St. Petersburg costs $10 to $18 per linear foot for aluminum micro mesh in 2026. Aluminum solid water-channel guards run $9 to $18 per linear foot. The salt-air premium on guards is minimal because both micro mesh and aluminum solid systems are inherently corrosion-resistant. A typical St. Pete home with 165 linear feet of gutters costs between $1,650 and $2,970 for guards."
   - question: "Should I use a national franchise like LeafFilter in St. Petersburg?"
-    answer: "Most St. Pete homeowners save 50 to 70 percent by using a local installer. National franchises typically quote $25 to $40 per linear foot in the St. Pete market, while local specialists install comparable or identical micro mesh products for $7 to $15 per linear foot. The price premium covers franchise advertising and the in-home sales process, not better materials."
+    answer: "Most St. Pete homeowners save 55 to 60 percent by using a local installer. National franchises typically quote $25 to $40 per linear foot in the St. Pete market, while local specialists install comparable or identical micro mesh products for $10 to $18 per linear foot. The price premium covers franchise advertising and the in-home sales process, not better materials."
   - question: "How long does gutter installation take in St. Petersburg?"
     answer: "Most St. Pete single-family homes complete in 4 to 8 hours. Two-story homes or installations involving fascia work take 1 to 2 days. The seamless gutter is formed on-site from a coil truck, so the entire system is custom-cut to your roof line in real time. We schedule installation 7 to 14 days out from the signed estimate during normal demand, longer in pre-hurricane-season (May-June)."
   - question: "What is the warranty on gutter installation in St. Petersburg?"
@@ -44,7 +44,7 @@ If you're a St. Pete homeowner pricing out a new gutter system in 2026, this gui
 | Copper gutters | $25 to $40 per linear foot |
 | Galvalume (commercial-grade) | $14 to $22 per linear foot |
 | Aluminum fascia wrap (added) | $6 to $12 per linear foot |
-| Aluminum micro mesh gutter guards | $7 to $15 per linear foot |
+| Aluminum micro mesh gutter guards | $10 to $18 per linear foot |
 | Aluminum solid water-channel guards | $9 to $18 per linear foot |
 | Whole-home single-story job (typical) | $1,400 to $2,600 |
 | Whole-home two-story job (typical) | $2,000 to $3,800 |
@@ -98,7 +98,7 @@ Beach communities (St. Pete Beach, Treasure Island, Madeira Beach, Indian Rocks)
 
 **Material gauge.** Standard residential aluminum is .027 inches thick. Coastal-exposed homes need .032 inches minimum (19 percent thicker, more rigid, longer service life in salt air). The cost difference is roughly $1 to $2 per linear foot.
 
-**Downspout count.** St. Pete's frequent thunderstorms demand more downspouts than national defaults. Industry minimum is one per 35 feet; in St. Petersburg we recommend one per 25 feet, which means 7 to 9 downspouts on a typical 200-foot system.
+**Downspout count.** St. Pete's frequent thunderstorms demand more downspouts than national defaults. A common starting point is about one downspout every 30 to 35 feet of gutter run, though the actual spacing depends on the roof, the roofline, and other job factors.
 
 **Hardware grade.** Aluminum hangers and stainless screws cost more than zinc-coated steel but last 5 to 10 times longer in salt-air. Confirm your installer is specifying corrosion-grade hardware in writing.
 

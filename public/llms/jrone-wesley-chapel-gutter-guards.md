@@ -28,7 +28,7 @@ Wesley Chapel is mostly newer master-planned construction - big two-story roof f
 ## Pricing Reference
 - Typical installed cost: **$8 - $15 per linear foot** depending on guard type
 - Average Wesley Chapel two-story home (180-240 linear feet): **$1,500 - $3,000** installed
-- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for 30-50% less
+- LeafFilter and Gutter Helmet typically run $13 - $20+ per foot; JR One installs comparable micromesh for less
 - All ballpark - final pricing depends on access, stories, and guard selection
 
 ## Service Area Details

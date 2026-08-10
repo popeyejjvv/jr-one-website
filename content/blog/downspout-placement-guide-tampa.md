@@ -35,7 +35,7 @@ The most common mistake is too few downspouts on a long run, which overloads the
 
 ## Corner Downspouts vs. Mid-Run Downspouts
 
-Corner downspouts are the standard choice because they tie into the existing structure without adding a new outlet in the middle of a clean fascia line. Mid-run downspouts become necessary once a gutter run passes about 40 feet, or when the roof pitch and valley layout push more water to one section than the ends can handle. We evaluate this run by run, not off a generic spacing rule, because Florida homes vary widely in roof pitch and roof plane size even within the same neighborhood.
+Corner downspouts are the standard choice because they tie into the existing structure without adding a new outlet in the middle of a clean fascia line. Mid-run downspouts become necessary once a gutter run passes about 30 to 35 feet, or when the roof pitch and valley layout push more water to one section than the ends can handle. We evaluate this run by run, not off a generic spacing rule, because Florida homes vary widely in roof pitch and roof plane size even within the same neighborhood.
 
 ## Tying Into Underground Drainage
 
