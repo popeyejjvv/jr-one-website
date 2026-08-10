@@ -9,16 +9,20 @@
 
 import { LanguageProvider } from "../../lib/LanguageContext";
 
-// Spanish-locale signal that MERGES into the canonical #business entity
-// (same @id) rendered by RootLayout. Stripped to @id + inLanguage so the ES
-// pages do not emit a second, conflicting LocalBusiness (the old copy carried
-// wrong hours/geo that contradicted #business and the contact page).
-const organizationSchemaEs = {
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "@id": "https://jronegutters.com/#business",
-  inLanguage: "es-US",
-};
+// NOTE (2026-08-09): this file used to emit a second top-level JSON-LD node
+// reusing RootLayout's @id ".../#business" with only inLanguage: "es-US" on it.
+// A node that carries "@context" is an independent record, not a merge, so every
+// /es/* URL published TWO records for one entity. Schema validation errors on
+// 111 URLs and climbing traced back to exactly this. Removed; app/layout.js:22-112
+// is the single source of truth for #business.
+//
+// Nothing was lost. inLanguage is a CreativeWork property and is not valid on an
+// Organization subtype anyway, and the Spanish signal never came from here:
+//   - knowsLanguage ["English","Spanish"] sits on the same #business node (app/layout.js:106)
+//   - inLanguage ["en-US","es-US"] sits on the #website node (app/layout.js:155)
+//   - <html lang="es"> is set in app/layout.js:230 from the middleware x-pathname header
+//   - hreflang alternates + the Spanish canonical are declared below in `metadata`
+// Do NOT re-add a business or organization record to this file.
 
 export const metadata = {
   // absolute: the root layout template is "%s | JR One Aluminum". Without this the
@@ -56,7 +60,6 @@ export default function EsLayout({ children }) {
   return (
     <LanguageProvider initialLang="es" forceLang={true}>
       <link rel="preload" as="image" href="/images/spanish-hero-familia.webp" fetchPriority="high" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchemaEs) }} />
       {children}
     </LanguageProvider>
   );
