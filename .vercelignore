@@ -97,8 +97,13 @@ desktop.ini
 
 # ── Backups and scratch. An in-repo backup of a served file is itself an
 #    exposure, so these must never reach the deployment.
-*.bak
-*.backup
+#    2026-08-09: globs widened from *.bak to *.bak* because the bare pattern did
+#    NOT match a dated suffix. public/estimator.html.bak-2026-08-08 slipped past
+#    it, deployed, and was serving HTTP 200 on the live domain with duplicate
+#    #business / #organization / #website @id nodes. Verified no tracked file
+#    anywhere in the repo has "bak" in its name, so the wildcard is safe.
+*.bak*
+*.backup*
 *.orig
 *.rej
 *.tmp
