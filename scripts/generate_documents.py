@@ -96,9 +96,11 @@ SIGN_TITLE = {
     "en": "Owner, JR One Aluminum LLC",
     "es": "Propietario, JR One Aluminum LLC",
 }
+# One published phone number, (844) 444-3114. The old direct mobile line was
+# removed 2026-08-10 so a customer-facing PDF cannot route around it.
 SIGN_CONTACT = {
-    "en": "Direct: 813-507-3672   •   Office: (844) 444-3114   •   info@jronegutters.com",
-    "es": "Directo: 813-507-3672   •   Oficina: (844) 444-3114   •   info@jronegutters.com",
+    "en": "Office: (844) 444-3114   •   info@jronegutters.com",
+    "es": "Oficina: (844) 444-3114   •   info@jronegutters.com",
 }
 
 # Vertical gaps, in points, between the baseline of the last line of the
