@@ -15,7 +15,12 @@ import {
   companyDomainRejection,
   logCompanyDomainRejection,
 } from "@/lib/company-domain";
-import { buildContactMessageNote, postContactNote } from "@/lib/contact-note";
+import { buildContactMessageNote, postContactNote, NOTE_MAX_CHARS } from "@/lib/contact-note";
+import {
+  resolveIntakeTarget,
+  returnVisitPrefix,
+  RETURN_VISIT_MESSAGES,
+} from "@/lib/bp-lookup";
 
 // =============================================================================
 // JR One, Lead Submission API
@@ -587,105 +592,146 @@ export async function POST(request) {
     if (process.env.BUILDER_PRIME_API_KEY && !spamCheck.block) {
       bpResult.attempted = true;
       try {
-        // BP custom fields for UTM attribution.
-        // TODO: confirm exact BP custom field names with Popeye before relying
-        // on these in reports. Field names below match the standard naming
-        // convention in builderprime-lead-to-close-config.md Section 4 (UTM gap).
-        // If BP rejects unknown fields, remove the customFields block and rely
-        // solely on the activity-note fallback below.
-        const utmCustomFields = {};
-        if (utm_source)   utmCustomFields.lead_source   = utm_source;
-        if (utm_medium)   utmCustomFields.lead_medium   = utm_medium;
-        if (utm_campaign) utmCustomFields.lead_campaign = utm_campaign;
-        if (utm_term)     utmCustomFields.lead_term     = utm_term;
-        if (utm_content)  utmCustomFields.lead_content  = utm_content;
-
-        const bpPayload = {
-          userAccount: {
-            firstName: firstName,
-            lastName: lastName || "(no last name provided)",
-            emailAddress: email || "",
-          },
-          emailAddress: email || "",
-          phoneNumber: normalizedPhone,
-          addressLine1: address || "",
-          city: city || "",
-          state: state || "FL",
-          zip: zip || "",
-          leadSourceDescription: "Form Inquiry",
-          projectTypeDescription: projectType,
-          buildingTypeDescription: "Single Family",
-          // UTM attribution as BP custom fields (see TODO above)
-          ...(Object.keys(utmCustomFields).length > 0 && { customFields: utmCustomFields }),
-        };
-
-        const bpResponse = await fetch(`${BP_BASE_URL}/clients`, {
-          method: "POST",
-          headers: {
-            "x-api-key": process.env.BUILDER_PRIME_API_KEY,
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(bpPayload),
+        // RETURN-VISIT LOOKUP (2026-08-08): never mint a second record for a
+        // phone or email BuilderPrime already knows. What the API supports and
+        // why email matching is client-side lives in lib/bp-lookup.js. A
+        // lookup failure falls through to create below - a duplicate is
+        // recoverable, a lost lead is not.
+        const intake = await resolveIntakeTarget({
+          fetchImpl: fetch,
+          baseUrl: BP_BASE_URL,
+          apiKey: process.env.BUILDER_PRIME_API_KEY,
+          phone,
+          email,
         });
-
-        const bpText = await bpResponse.text();
-        if (bpResponse.ok) {
+        if (intake.action === "attach-existing") {
           bpResult.ok = true;
-          // Response format: "Client Successfully Created. Opportunity: 5367029"
-          const oppMatch = bpText.match(/Opportunity:\s*(\d+)/);
-          if (oppMatch) bpResult.opportunity_id = oppMatch[1];
-          console.log(`✓ Builder Prime lead created (opportunity ${bpResult.opportunity_id || "?"})`);
-
-          // Visitor's message -> rep-visible activity note (2026-08-08).
-          // The ops email below still carries the full text; this copy is the
-          // one a caller sees on the opportunity timeline. Best-effort by
-          // construction: postContactNote never throws and nothing here
-          // touches bpResult, so a note failure cannot fail the lead.
+          bpResult.opportunity_id = intake.opportunityId;
+          bpResult.return_visit = true;
+          console.log(`✓ Return visit (${intake.matchedOn}) matched existing BP record ${intake.opportunityId} - no new record created`);
+          // What the visitor submitted goes on the EXISTING record's timeline.
+          // Falls back to a field summary when the message box was left empty
+          // so the rep still sees that the person came back.
           const contactNote = buildContactMessageNote({ message, page });
-          if (bpResult.opportunity_id && contactNote) {
-            const noteRes = await postContactNote({
-              fetchImpl: fetch,
-              baseUrl: BP_BASE_URL,
-              apiKey: process.env.BUILDER_PRIME_API_KEY,
-              opportunityId: bpResult.opportunity_id,
-              description: contactNote,
-            });
-            if (noteRes.ok) {
-              console.log(`✓ Contact message note attached (status ${noteRes.status}): ${noteRes.body}`);
-            } else {
-              console.error(`✗ Contact message note NOT attached (status ${noteRes.status}): ${noteRes.body}`);
-            }
-          }
-
-          // Log UTM + gclid attribution as a BP activity note.
-          // Serves as a human-readable fallback if the BP custom fields above are
-          // rejected. The activity note is always visible on the opportunity timeline.
-          if (bpResult.opportunity_id && (gclid || utm_source || utm_campaign || utm_medium || utm_term || utm_content)) {
-            const attrParts = [];
-            if (gclid)        attrParts.push(`gclid: ${gclid}`);
-            if (utm_source)   attrParts.push(`source: ${utm_source}`);
-            if (utm_medium)   attrParts.push(`medium: ${utm_medium}`);
-            if (utm_campaign) attrParts.push(`campaign: ${utm_campaign}`);
-            if (utm_term)     attrParts.push(`term: ${utm_term}`);
-            if (utm_content)  attrParts.push(`content: ${utm_content}`);
-            if (page) attrParts.push(`page: ${page}`);
-            // Same body-secretKey auth shape as the contact note; the old
-            // header-only POST here was 401-ing silently (lib/contact-note.js).
-            const attrRes = await postContactNote({
-              fetchImpl: fetch,
-              baseUrl: BP_BASE_URL,
-              apiKey: process.env.BUILDER_PRIME_API_KEY,
-              opportunityId: bpResult.opportunity_id,
-              description: `[AD ATTRIBUTION] ${attrParts.join(" | ")}`,
-            });
-            if (!attrRes.ok) {
-              console.error(`✗ Attribution activity log failed (non-fatal, status ${attrRes.status}): ${attrRes.body}`);
-            }
+          const rvBody = contactNote ||
+            `Contact form resubmitted${page ? ` (${page})` : ""} with no message. ` +
+            `Name: ${name || "?"} / phone: ${phone || "?"} / email: ${email || "?"} / service: ${service || "?"}`;
+          const noteRes = await postContactNote({
+            fetchImpl: fetch,
+            baseUrl: BP_BASE_URL,
+            apiKey: process.env.BUILDER_PRIME_API_KEY,
+            opportunityId: intake.opportunityId,
+            description: `${returnVisitPrefix()}: ${rvBody}`.slice(0, NOTE_MAX_CHARS),
+          });
+          if (noteRes.ok) {
+            console.log(`✓ Return-visit note attached (status ${noteRes.status}): ${noteRes.body}`);
+          } else {
+            console.error(`✗ Return-visit note NOT attached (status ${noteRes.status}): ${noteRes.body}`);
           }
         } else {
-          bpResult.error = `${bpResponse.status}: ${bpText.slice(0, 500)}`;
-          console.error(`✗ Builder Prime error: ${bpResult.error}`);
+          if (intake.lookupError) {
+            console.error(`✗ BP lookup failed, creating anyway (a duplicate is recoverable, a lost lead is not): ${intake.lookupError}`);
+          }
+          // BP custom fields for UTM attribution.
+          // TODO: confirm exact BP custom field names with Popeye before relying
+          // on these in reports. Field names below match the standard naming
+          // convention in builderprime-lead-to-close-config.md Section 4 (UTM gap).
+          // If BP rejects unknown fields, remove the customFields block and rely
+          // solely on the activity-note fallback below.
+          const utmCustomFields = {};
+          if (utm_source)   utmCustomFields.lead_source   = utm_source;
+          if (utm_medium)   utmCustomFields.lead_medium   = utm_medium;
+          if (utm_campaign) utmCustomFields.lead_campaign = utm_campaign;
+          if (utm_term)     utmCustomFields.lead_term     = utm_term;
+          if (utm_content)  utmCustomFields.lead_content  = utm_content;
+
+          const bpPayload = {
+            userAccount: {
+              firstName: firstName,
+              lastName: lastName || "(no last name provided)",
+              emailAddress: email || "",
+            },
+            emailAddress: email || "",
+            phoneNumber: normalizedPhone,
+            addressLine1: address || "",
+            city: city || "",
+            state: state || "FL",
+            zip: zip || "",
+            leadSourceDescription: "Form Inquiry",
+            projectTypeDescription: projectType,
+            buildingTypeDescription: "Single Family",
+            // UTM attribution as BP custom fields (see TODO above)
+            ...(Object.keys(utmCustomFields).length > 0 && { customFields: utmCustomFields }),
+          };
+
+          const bpResponse = await fetch(`${BP_BASE_URL}/clients`, {
+            method: "POST",
+            headers: {
+              "x-api-key": process.env.BUILDER_PRIME_API_KEY,
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(bpPayload),
+          });
+
+          const bpText = await bpResponse.text();
+          if (bpResponse.ok) {
+            bpResult.ok = true;
+            // Response format: "Client Successfully Created. Opportunity: 5367029"
+            const oppMatch = bpText.match(/Opportunity:\s*(\d+)/);
+            if (oppMatch) bpResult.opportunity_id = oppMatch[1];
+            console.log(`✓ Builder Prime lead created (opportunity ${bpResult.opportunity_id || "?"})`);
+
+            // Visitor's message -> rep-visible activity note (2026-08-08).
+            // The ops email below still carries the full text; this copy is the
+            // one a caller sees on the opportunity timeline. Best-effort by
+            // construction: postContactNote never throws and nothing here
+            // touches bpResult, so a note failure cannot fail the lead.
+            const contactNote = buildContactMessageNote({ message, page });
+            if (bpResult.opportunity_id && contactNote) {
+              const noteRes = await postContactNote({
+                fetchImpl: fetch,
+                baseUrl: BP_BASE_URL,
+                apiKey: process.env.BUILDER_PRIME_API_KEY,
+                opportunityId: bpResult.opportunity_id,
+                description: contactNote,
+              });
+              if (noteRes.ok) {
+                console.log(`✓ Contact message note attached (status ${noteRes.status}): ${noteRes.body}`);
+              } else {
+                console.error(`✗ Contact message note NOT attached (status ${noteRes.status}): ${noteRes.body}`);
+              }
+            }
+
+            // Log UTM + gclid attribution as a BP activity note.
+            // Serves as a human-readable fallback if the BP custom fields above are
+            // rejected. The activity note is always visible on the opportunity timeline.
+            if (bpResult.opportunity_id && (gclid || utm_source || utm_campaign || utm_medium || utm_term || utm_content)) {
+              const attrParts = [];
+              if (gclid)        attrParts.push(`gclid: ${gclid}`);
+              if (utm_source)   attrParts.push(`source: ${utm_source}`);
+              if (utm_medium)   attrParts.push(`medium: ${utm_medium}`);
+              if (utm_campaign) attrParts.push(`campaign: ${utm_campaign}`);
+              if (utm_term)     attrParts.push(`term: ${utm_term}`);
+              if (utm_content)  attrParts.push(`content: ${utm_content}`);
+              if (page) attrParts.push(`page: ${page}`);
+              // Same body-secretKey auth shape as the contact note; the old
+              // header-only POST here was 401-ing silently (lib/contact-note.js).
+              const attrRes = await postContactNote({
+                fetchImpl: fetch,
+                baseUrl: BP_BASE_URL,
+                apiKey: process.env.BUILDER_PRIME_API_KEY,
+                opportunityId: bpResult.opportunity_id,
+                description: `[AD ATTRIBUTION] ${attrParts.join(" | ")}`,
+              });
+              if (!attrRes.ok) {
+                console.error(`✗ Attribution activity log failed (non-fatal, status ${attrRes.status}): ${attrRes.body}`);
+              }
+            }
+          } else {
+            bpResult.error = `${bpResponse.status}: ${bpText.slice(0, 500)}`;
+            console.error(`✗ Builder Prime error: ${bpResult.error}`);
+          }
         }
       } catch (bpErr) {
         bpResult.error = bpErr.message;
@@ -748,6 +794,8 @@ export async function POST(request) {
         const escapeHtml = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
         const bpStatusBadge = spamCheck.block
           ? `<span style="background:#6B7280;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">🚫 SPAM BLOCKED, not in BuilderPrime (${escapeHtml(spamCheck.reasons.join("; "))})</span>`
+          : bpResult.return_visit
+          ? `<span style="background:#1B2A4A;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">↩ RETURN VISIT, noted on existing BuilderPrime record (Opp ${bpResult.opportunity_id || "?"}), no new record created</span>`
           : bpResult.ok
           ? `<span style="background:#10B981;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">✓ In BuilderPrime (Opp ${bpResult.opportunity_id || "?"})</span>`
           : `<span style="background:#EF4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;">⚠ NOT in BuilderPrime, manual entry required</span>`;
@@ -866,6 +914,13 @@ export async function POST(request) {
       message: "Lead received",
       captured_in_bp: bpResult.ok,
       bp_opportunity_id: bpResult.opportunity_id,
+      // Return visit: the record already existed, this submission was noted on
+      // it instead of minting a duplicate. Message ships EN + ES; the success
+      // screen the visitor sees is unchanged either way.
+      return_visit: Boolean(bpResult.return_visit),
+      return_visit_message: bpResult.return_visit
+        ? RETURN_VISIT_MESSAGES[body.lang === "es" ? "es" : "en"]
+        : null,
     });
   } catch (err) {
     console.error("Lead submission error:", err);

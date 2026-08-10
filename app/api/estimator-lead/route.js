@@ -15,6 +15,11 @@ import {
   SEND_STATUS,
   runEstimateEmail,
 } from "@/lib/estimate-email";
+import {
+  resolveIntakeTarget,
+  returnVisitPrefix,
+  RETURN_VISIT_MESSAGES,
+} from "@/lib/bp-lookup";
 
 // =============================================================================
 // JR One, Estimator Lead API
@@ -483,65 +488,96 @@ export async function POST(request) {
     if (writePlan.action === "create") {
       bpResult.attempted = true;
       try {
-        const bpPayload = buildBpPayload({ ...body, utmCustomFields });
-
-        const bpResponse = await fetch(`${BP_BASE_URL}/clients`, {
-          method: "POST",
-          headers: {
-            "x-api-key": process.env.BUILDER_PRIME_API_KEY,
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(bpPayload),
+        // RETURN-VISIT LOOKUP (2026-08-08): never mint a second record for a
+        // phone or email BuilderPrime already knows. What the API supports and
+        // why email matching is client-side lives in lib/bp-lookup.js. A
+        // lookup failure falls through to create below - a duplicate is
+        // recoverable, a lost lead is not.
+        const intake = await resolveIntakeTarget({
+          fetchImpl: fetch,
+          baseUrl: BP_BASE_URL,
+          apiKey: process.env.BUILDER_PRIME_API_KEY,
+          phone,
+          email: customerEmail,
         });
-
-        const bpText = await bpResponse.text();
-        if (bpResponse.ok) {
+        if (intake.action === "attach-existing") {
           bpResult.ok = true;
-          const oppMatch = bpText.match(/Opportunity:\s*(\d+)/);
-          if (oppMatch) bpResult.opportunity_id = oppMatch[1];
-          console.log(`✓ Estimator lead created in Builder Prime (opportunity ${bpResult.opportunity_id || "?"})`);
-
-          // Best-effort: append a client activity note with the full estimator details
-          // This way the sales rep sees the measurements + estimate range + discount code
-          // when they open the lead in BP. Non-blocking, failure is OK - but it
-          // is LOGGED now: the pre-fix version checked nothing and the endpoint
-          // was 401-ing every one of these silently (see attachActivityNote).
-          if (bpResult.opportunity_id) {
-            try {
-              const noteOk = await attachActivityNote(bpResult.opportunity_id, notes);
-              if (noteOk) {
-                console.log(`✓ Job-data note attached to opportunity ${bpResult.opportunity_id}`);
-              } else {
-                console.error(`✗ Job-data note NOT attached to opportunity ${bpResult.opportunity_id}`);
-              }
-            } catch (actErr) {
-              console.warn("⚠ Could not attach activity note:", actErr.message);
-            }
-
-            // Best-effort: log UTM attribution as a separate activity note.
-            // Fallback in case BP custom fields (customFields above) are rejected.
-            if (gclid || utm_source || utm_campaign || utm_medium || utm_term || utm_content) {
-              const attrParts = [];
-              if (gclid)        attrParts.push(`gclid: ${gclid}`);
-              if (utm_source)   attrParts.push(`source: ${utm_source}`);
-              if (utm_medium)   attrParts.push(`medium: ${utm_medium}`);
-              if (utm_campaign) attrParts.push(`campaign: ${utm_campaign}`);
-              if (utm_term)     attrParts.push(`term: ${utm_term}`);
-              if (utm_content)  attrParts.push(`content: ${utm_content}`);
-              try {
-                await attachActivityNote(
-                  bpResult.opportunity_id,
-                  `[AD ATTRIBUTION] ${attrParts.join(" | ")}`
-                );
-              } catch (attrErr) {
-                console.error(`✗ Estimator attribution activity log failed (non-fatal): ${attrErr.message}`);
-              }
-            }
+          bpResult.opportunity_id = intake.opportunityId;
+          bpResult.return_visit = true;
+          console.log(`✓ Return visit (${intake.matchedOn}) matched existing BP record ${intake.opportunityId} - no new record created`);
+          const rvOk = await attachActivityNote(
+            intake.opportunityId,
+            `${returnVisitPrefix()}: ${notes}`
+          );
+          if (rvOk) {
+            console.log(`✓ Return-visit note attached to opportunity ${intake.opportunityId}`);
+          } else {
+            console.error(`✗ Return-visit note NOT attached to opportunity ${intake.opportunityId}`);
           }
         } else {
-          bpResult.error = `${bpResponse.status}: ${bpText.slice(0, 500)}`;
-          console.error(`✗ Builder Prime error: ${bpResult.error}`);
+          if (intake.lookupError) {
+            console.error(`✗ BP lookup failed, creating anyway (a duplicate is recoverable, a lost lead is not): ${intake.lookupError}`);
+          }
+          const bpPayload = buildBpPayload({ ...body, utmCustomFields });
+
+          const bpResponse = await fetch(`${BP_BASE_URL}/clients`, {
+            method: "POST",
+            headers: {
+              "x-api-key": process.env.BUILDER_PRIME_API_KEY,
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(bpPayload),
+          });
+
+          const bpText = await bpResponse.text();
+          if (bpResponse.ok) {
+            bpResult.ok = true;
+            const oppMatch = bpText.match(/Opportunity:\s*(\d+)/);
+            if (oppMatch) bpResult.opportunity_id = oppMatch[1];
+            console.log(`✓ Estimator lead created in Builder Prime (opportunity ${bpResult.opportunity_id || "?"})`);
+
+            // Best-effort: append a client activity note with the full estimator details
+            // This way the sales rep sees the measurements + estimate range + discount code
+            // when they open the lead in BP. Non-blocking, failure is OK - but it
+            // is LOGGED now: the pre-fix version checked nothing and the endpoint
+            // was 401-ing every one of these silently (see attachActivityNote).
+            if (bpResult.opportunity_id) {
+              try {
+                const noteOk = await attachActivityNote(bpResult.opportunity_id, notes);
+                if (noteOk) {
+                  console.log(`✓ Job-data note attached to opportunity ${bpResult.opportunity_id}`);
+                } else {
+                  console.error(`✗ Job-data note NOT attached to opportunity ${bpResult.opportunity_id}`);
+                }
+              } catch (actErr) {
+                console.warn("⚠ Could not attach activity note:", actErr.message);
+              }
+
+              // Best-effort: log UTM attribution as a separate activity note.
+              // Fallback in case BP custom fields (customFields above) are rejected.
+              if (gclid || utm_source || utm_campaign || utm_medium || utm_term || utm_content) {
+                const attrParts = [];
+                if (gclid)        attrParts.push(`gclid: ${gclid}`);
+                if (utm_source)   attrParts.push(`source: ${utm_source}`);
+                if (utm_medium)   attrParts.push(`medium: ${utm_medium}`);
+                if (utm_campaign) attrParts.push(`campaign: ${utm_campaign}`);
+                if (utm_term)     attrParts.push(`term: ${utm_term}`);
+                if (utm_content)  attrParts.push(`content: ${utm_content}`);
+                try {
+                  await attachActivityNote(
+                    bpResult.opportunity_id,
+                    `[AD ATTRIBUTION] ${attrParts.join(" | ")}`
+                  );
+                } catch (attrErr) {
+                  console.error(`✗ Estimator attribution activity log failed (non-fatal): ${attrErr.message}`);
+                }
+              }
+            }
+          } else {
+            bpResult.error = `${bpResponse.status}: ${bpText.slice(0, 500)}`;
+            console.error(`✗ Builder Prime error: ${bpResult.error}`);
+          }
         }
       } catch (bpErr) {
         bpResult.error = bpErr.message;
@@ -580,6 +616,13 @@ export async function POST(request) {
       success: true,
       captured_in_bp: bpResult.ok,
       bp_opportunity_id: bpResult.opportunity_id,
+      // Return visit: the record already existed, this submission was noted on
+      // it instead of minting a duplicate. Message ships EN + ES; the success
+      // screen the visitor sees is unchanged either way.
+      return_visit: Boolean(bpResult.return_visit),
+      return_visit_message: bpResult.return_visit
+        ? RETURN_VISIT_MESSAGES[lang === "es" ? "es" : "en"]
+        : null,
       // Same contract as the attach branch above. A lead can be captured while
       // the estimate email fails; those two outcomes are reported separately so
       // the browser never infers one from the other.
