@@ -108,6 +108,18 @@ desktop.ini
 *.rej
 *.tmp
 *.old
+#    2026-08-11: both globs above require a DOT immediately before the word, so
+#    a hyphenated infix such as .vapi-guard-backup-2026-08-11 matched NEITHER
+#    (".vapi-guard-backup" has no ".bak" and no ".backup" substring). The two
+#    patterns below close that. Verified safe: `git ls-files | grep -Ei
+#    'backup|bak'` returns nothing, so no tracked or served file matches.
+*-backup*
+*-bak-*
+
+# Agent scratch output. Written by local Jarvis runs, never imported by app/,
+# components/, lib/ or content/, and never part of the site. Nothing in
+# .vercelignore excluded it before 2026-08-11, so it was upload-eligible.
+.jarvis_output*
 
 # ── Logs (verified: zero *.log files under app/ components/ lib/ content/ public/)
 *.log

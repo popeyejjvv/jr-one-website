@@ -61,3 +61,16 @@ audit/manifest-candidates.json
 audit/complete-projects.json
 audit/vision-review.log
 audit/vision-review-pass2.log
+
+# backups and agent scratch output (added 2026-08-11)
+# .vercelignore has excluded these from DEPLOYS since 2026-08-09, but nothing
+# kept them out of GIT. Ten dated .bak files and a .backups-numeric-fix-2026-08-09
+# directory were sitting untracked and one stray `git add` away from a commit.
+# Verified safe before adding: `git ls-files | grep -Ei 'backup|bak|jarvis'`
+# returns nothing, so no currently tracked file becomes ignored.
+*.bak
+*.bak-*
+*-backup*
+*-bak-*
+.backups-*/
+.jarvis_output*
