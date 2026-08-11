@@ -2,6 +2,7 @@ import { NextResponse, after } from "next/server";
 import nodemailer from "nodemailer";
 import { isAfterHours, isVoiceAgentEnabled } from "@/lib/business-hours";
 import { triggerOutboundCall } from "@/lib/vapi-client";
+import { isInternalTestSubmission } from "@/lib/estimator-lead";
 import { assessLeadSpam } from "@/lib/lead-spam";
 import { spoolNotice } from "@/lib/notify-spool";
 import {
@@ -749,7 +750,8 @@ export async function POST(request) {
     //     AND the kill switch is off. Uses next/server `after()` so it runs
     //     post-response, never blocks, slows, or fails the BP creation path.
     // ─────────────────────────────────────────────────────────────────────────
-    if (bpResult.ok && bpResult.opportunity_id && isAfterHours() && isVoiceAgentEnabled()) {
+    if (bpResult.ok && bpResult.opportunity_id && isAfterHours() && isVoiceAgentEnabled()
+        && !isInternalTestSubmission({ phone, customerEmail: email, address, name })) {
       after(async () => {
         try {
           await triggerOutboundCall({

@@ -7,6 +7,7 @@ import { spoolNotice } from "@/lib/notify-spool";
 import {
   buildBpPayload,
   buildJobSummary,
+  isInternalTestSubmission,
   normalizePhone,
   planBpWrite,
 } from "@/lib/estimator-lead";
@@ -592,7 +593,8 @@ export async function POST(request) {
     // for rationale. Runs post-response via next/server `after()` so the BP
     // path is never blocked or affected by Vapi latency / errors.
     // ─────────────────────────────────────────────────────────────────────────
-    if (bpResult.ok && bpResult.opportunity_id && isAfterHours() && isVoiceAgentEnabled()) {
+    if (bpResult.ok && bpResult.opportunity_id && isAfterHours() && isVoiceAgentEnabled()
+        && !isInternalTestSubmission({ phone, customerEmail, address, name: customerName })) {
       after(async () => {
         try {
           await triggerOutboundCall({
